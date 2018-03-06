@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group>
+<journal-title>PLoS ONE</journal-title></journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-13-03403</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0071183</article-id>
+<article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Biology</subject><subj-group><subject>Biotechnology</subject><subj-group><subject>Bioengineering</subject><subj-group><subject>Medical devices</subject></subj-group></subj-group></subj-group><subj-group><subject>Population biology</subject><subj-group><subject>Epidemiology</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Mathematics</subject><subj-group><subject>Statistics</subject><subj-group><subject>Biostatistics</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Medicine</subject><subj-group><subject>Clinical research design</subject><subj-group><subject>Cohort studies</subject><subject>Statistical methods</subject></subj-group></subj-group><subj-group><subject>Drugs and devices</subject><subj-group><subject>Medical devices</subject></subj-group></subj-group><subj-group><subject>Epidemiology</subject><subj-group><subject>Pediatric epidemiology</subject></subj-group></subj-group><subj-group><subject>Nutrition</subject><subj-group><subject>Obesity</subject></subj-group></subj-group><subj-group><subject>Public health</subject><subj-group><subject>Child health</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Social and behavioral sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Anthropometry</subject></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Developing Prediction Equations and a Mobile Phone Application to Identify Infants at Risk of Obesity</article-title>
+<alt-title alt-title-type="running-head">A Mobile Phone App for Risk of Childhood Obesity</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Santorelli</surname><given-names>Gillian</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Petherick</surname><given-names>Emily S.</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Wright</surname><given-names>John</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Wilson</surname><given-names>Brad</given-names></name><xref ref-type="aff" rid="aff2"><sup>2</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Samiei</surname><given-names>Haider</given-names></name><xref ref-type="aff" rid="aff2"><sup>2</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Cameron</surname><given-names>Noël</given-names></name><xref ref-type="aff" rid="aff3"><sup>3</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Johnson</surname><given-names>William</given-names></name><xref ref-type="aff" rid="aff4"><sup>4</sup></xref></contrib>
+</contrib-group>
+<aff id="aff1"><label>1</label><addr-line>Bradford Institute for Health Research, Bradford Royal Infirmary, Bradford, United Kingdom</addr-line></aff>
+<aff id="aff2"><label>2</label><addr-line>iED, Bradford, United Kingdom</addr-line></aff>
+<aff id="aff3"><label>3</label><addr-line>School of Sport, Exercise and Health Sciences, Loughborough University, Loughborough, United Kingdom</addr-line></aff>
+<aff id="aff4"><label>4</label><addr-line>Unit for Lifelong Health and Ageing, Medical Research Council, London, United Kingdom</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Lovis</surname><given-names>Christian</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>University Hospitals of Geneva, Switzerland</addr-line></aff>
+<author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">Gillian.Santorelli@bthft.nhs.uk</email></corresp>
+<fn fn-type="conflict"><p>Drs Wilson and Samiei are co-founders of iED, a company which specialises in creating medical apps. There are no further patents, products in development or marketed products to declare. This does not alter the authors’ adherence to all the PLOS ONE policies on sharing data and materials.</p></fn>
+<fn fn-type="con"><p>Conceived and designed the experiments: GS EP JW BW HS NC WJ. Performed the experiments: GS. Analyzed the data: GS. Contributed reagents/materials/analysis tools: GS. Wrote the paper: GS WJ. Affiliation with the commercial company iED who designed the app: BW HS.</p></fn>
+</author-notes>
+<pub-date pub-type="collection"><year>2013</year></pub-date>
+<pub-date pub-type="epub"><day>7</day><month>8</month><year>2013</year></pub-date>
+<volume>8</volume>
+<issue>8</issue>
+<elocation-id>e71183</elocation-id>
+<history>
+<date date-type="received"><day>21</day><month>12</month><year>2012</year></date>
+<date date-type="accepted"><day>27</day><month>6</month><year>2013</year></date>
+</history>
+<permissions>
+<copyright-year>2013</copyright-year>
+<copyright-holder>Santorelli et al</copyright-holder><license xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions>
+<abstract><sec>
+<title>Background</title>
+<p>Advancements in knowledge of obesity aetiology and mobile phone technology have created the opportunity to develop an electronic tool to predict an infant’s risk of childhood obesity. The study aims were to develop and validate equations for the prediction of childhood obesity and integrate them into a mobile phone application (App).</p>
+</sec><sec>
+<title>Methods and Findings</title>
+<p>Anthropometry and childhood obesity risk data were obtained for 1868 UK-born White or South Asian infants in the Born in Bradford cohort. Logistic regression was used to develop prediction equations (at 6±1.5, 9±1.5 and 12±1.5 months) for risk of childhood obesity (BMI at 2 years &gt;91<sup>st</sup> centile and weight gain from 0–2 years &gt;1 centile band) incorporating sex, birth weight, and weight gain as predictors. The discrimination accuracy of the equations was assessed by the area under the curve (AUC); internal validity by comparing area under the curve to those obtained in bootstrapped samples; and external validity by applying the equations to an external sample. An App was built to incorporate six final equations (two at each age, one of which included maternal BMI). The equations had good discrimination (AUCs 86–91%), with the addition of maternal BMI marginally improving prediction. The AUCs in the bootstrapped and external validation samples were similar to those obtained in the development sample. The App is user-friendly, requires a minimum amount of information, and provides a risk assessment of low, medium, or high accompanied by advice and website links to government recommendations.</p>
+</sec><sec>
+<title>Conclusions</title>
+<p>Prediction equations for risk of childhood obesity have been developed and incorporated into a novel App, thereby providing proof of concept that childhood obesity prediction research can be integrated with advancements in technology.</p>
+</sec></abstract>
+<funding-group><funding-statement>This paper presents independent research funded by the Child Growth Foundation and by the National Institute for Health Research (NIHR) under the Collaborations for Leadership in Applied Health Research and Care (CLAHRC) programme for Leeds, York and Bradford and the Programme Grants for Applied Research funding scheme (RP-PG-0407-10044). The views expressed in this publication are those of the author(s) and not necessarily those of the Child Growth Foundation, NHS, the NIHR or the Department of Health. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts><page-count count="8"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title>Introduction</title>
+<p>Childhood obesity is one of the most daunting global public health threats <xref ref-type="bibr" rid="pone.0071183-Wang1">[1]</xref>, with the projected cost to the UK National Health Service (NHS) estimated to be as high as £9.7 billion per year by 2050 <xref ref-type="bibr" rid="pone.0071183-McPherson1">[2]</xref>. The secular trend of increasing prevalence and earlier onset of childhood obesity <xref ref-type="bibr" rid="pone.0071183-Bundred1">[3]</xref>–<xref ref-type="bibr" rid="pone.0071183-Lobstein1">[5]</xref> will have long term implications for health care because obesity tracks through the life course <xref ref-type="bibr" rid="pone.0071183-Freedman1">[6]</xref>, <xref ref-type="bibr" rid="pone.0071183-Singh1">[7]</xref>, increasing risk for a plethora of adverse health outcomes <xref ref-type="bibr" rid="pone.0071183-Han1">[8]</xref>. A key to improving the future health of the nation must lie in the prevention of childhood obesity as well as the treatment of its downstream sequalae.</p>
+<p>The aetiology of childhood obesity is complex <xref ref-type="bibr" rid="pone.0071183-Procter1">[9]</xref>, but two simple measures, greater birth weight and accelerated weight growth during infancy, have consistently been shown to increase risk of childhood obesity <xref ref-type="bibr" rid="pone.0071183-Lawlor1">[10]</xref>–<xref ref-type="bibr" rid="pone.0071183-Singhal1">[14]</xref>. In a recent meta-analysis, Druet et al <xref ref-type="bibr" rid="pone.0071183-Druet1">[15]</xref> found that the risk of childhood obesity increased two-fold with each one unit increase in weight z-score between birth and one year (odds ratio (OR) 1.97, 95% confidence interval (95% CI) 1.83–2.12), with the risk of adult obesity increasing by 23% (OR 1.23, 95% CI 1.16–1.30). Further, the combination of birth weight, infant weight gain, and maternal body mass index (BMI) had a good ability to predict the risk of an infant becoming obese in childhood, with an area under the curve (AUC) of 77% (95% CI 74–80%).</p>
+<p>The advancing knowledge of risk factors for childhood obesity and in mobile phone technology has created the opportunity to develop an electronic tool that predicts during infancy an individual’s risk of becoming obese. In the UK, growth monitoring in infancy is part of routine National Health Service (NHS) care <xref ref-type="bibr" rid="pone.0071183-Department1">[16]</xref>, thereby making the integration of an obesity risk tool with routine practice an achievable goal. An example of a paper-based tool for predicting obesity has been published <xref ref-type="bibr" rid="pone.0071183-Rudolf1">[17]</xref>, but it lacks the sophistication and the usability necessary for practice. For example, it only includes one prediction equation, thereby limiting its use to one age in infancy, and it requires the user to do the calculations. More recently, a web-based risk calculator for predicting childhood obesity in newborns has been developed <xref ref-type="bibr" rid="pone.0071183-Morandi1">[18]</xref>, which performs the background calculations and estimates the risk of obesity as a percentage. Whilst this is a great improvement on the paper-based tool, extensive input data is required for variables which may not be available at assessment, and this may unfortunately limit its usability. It is the advent of smartphones and mobile devices such as tablets that really have the potential to revolutionise this type of clinical prediction tool. The uptake of smartphones is remarkable: in 2011 81% of US physicians used a smartphone <xref ref-type="bibr" rid="pone.0071183-Horowitz1">[19]</xref>, thus a mobile phone application (App) that can predict childhood obesity has the advantage of being instantly available to thousands of users.</p>
+<p>The present study aims to (1) develop prediction equations which can be used during infancy for the early identification of risk of childhood obesity, (2) validate the prediction equations internally using statistical methods and externally in a different population, and (3) integrate the equations into a novel user-friendly App.</p>
+</sec><sec id="s2" sec-type="methods">
+<title>Methods</title>
+<sec id="s2a">
+<title>Sample</title>
+<p>The sample comprised 1868 participants in the Born in Bradford (BiB) birth cohort study (<ext-link ext-link-type="uri" xlink:href="http://www.borninbradford.nhs.uk/" xlink:type="simple">http://www.borninbradford.nhs.uk/</ext-link>) <xref ref-type="bibr" rid="pone.0071183-Wright1">[20]</xref>, <xref ref-type="bibr" rid="pone.0071183-Raynor1">[21]</xref>, of whom 804 were White British (422 boys, 382 girls) and 1064 were South Asian (540 boys, 524 girls). Briefly, BiB is a longitudinal multi-ethnic birth cohort study which recruited 12,453 women comprising 13,776 pregnancies recruited at approximately 28 weeks gestation between 2007 and 2010. The study aims to examine the impact of environmental, psychological and genetic factors on maternal and child health. Bradford is a city in the north of England with high levels of socio-economic deprivation and ethnic diversity. Similar to other cohorts, BiB has a subsample (BiB 1000, N = 1,735) whose data have been augmented by more detailed assessments than those conducted in the full cohort <xref ref-type="bibr" rid="pone.0071183-Bryant1">[22]</xref>. The parents of all participants gave informed written consent for the data collection, and ethical approval was granted by Bradford Research Ethics Committee (Ref 07/H1302/112).</p>
+</sec><sec id="s2b">
+<title>Data</title>
+<p>Weight and length at six, 12, and 24 months of age were measured by trained study workers as part of the BiB 1000 assessment schedule. Weight in kilograms (kg) was assessed using Seca baby scales and length in centimetres (cm) using a standard neonatometer (both from Harlow Health Care, London UK). These data were supplemented by infant weight and length measurements collected by health visitors as part of routine NHS care. At the beginning of BiB, a measurement protocol/standard was produced and all health workers received training in anthropometry <xref ref-type="bibr" rid="pone.0071183-Johnson1">[23]</xref>. Test-retest reliability was subsequently assessed and technical errors of measurement were reported to be similar to those obtained by anthropometrists in research studies <xref ref-type="bibr" rid="pone.0071183-Johnson1">[23]</xref>. In addition, agreement between routine measurements and research measurements in a separate UK birth cohort study (ALSPAC) has been shown to be high <xref ref-type="bibr" rid="pone.0071183-Howe1">[24]</xref>, thereby providing justification for combining routine and research data in the present paper. A total of 3281 weight and length measurements were used in our analysis, 878 (26.8%) of which were research data and 2403 (73.2%) of which were routine data.</p>
+<p>Data on childhood obesity risk factors were obtained from a number of sources. Maternal height (cm), ethnicity (<italic>White British/South Asian (Pakistani, Indian, Bangladeshi and other South Asian</italic>)), education (<italic>&lt;5 GCSE equivalent, ≥5 GCSE equivalent, ‘A’ level equivalent, Degree level equivalent, and other</italic>), and smoking during pregnancy (<italic>yes/no</italic>)) were obtained from an administered baseline questionnaire completed at recruitment at approximately 28 weeks of gestation. Maternal weight (kg) at pregnancy booking (approximately 12 weeks gestation), gestational diabetes (yes/no), gestational age at birth (<italic>&lt;37 weeks/≥37 weeks</italic>), gender (<italic>male/female</italic>), and birth weight (kg) were extracted from NHS maternity records. Maternal BMI (kg/m<sup>2</sup>) was calculated using weight measured at pregnancy booking and height from the baseline questionnaire.</p>
+</sec><sec id="s2c">
+<title>Development of Prediction Equations</title>
+<p>Logistic regression was used to develop the prediction equations. Anthropometric data were converted to age- and sex-adjusted z-scores by comparison to the UK90 reference <xref ref-type="bibr" rid="pone.0071183-Freeman1">[25]</xref>. The outcome was “risk for childhood obesity” defined as a BMI greater than the 91st centile at age two years (± two months) and a conditional <xref ref-type="bibr" rid="pone.0071183-Cameron1">[26]</xref> weight z-score gain between birth and 2 years of age (± two months) greater than one centile band. Conditional weight gain was used because it accounts for starting size and regression to the mean. Predictor variables included sex, birth weight z-scores, conditional infant weight z-score gain from birth to assessment age (i.e. the age at which the infant would be assessed for risk), maternal BMI, and the other variables listed in the data section.</p>
+<p>To ensure that the App could be utilised in children over a wide range of ages in infancy, we developed three series of equations, the first to be used at 6±1.5 months (equation 1), the second at 9±1.5 months (equation 2), and the third at 12±1.5 months (equation 3). The App would therefore be able to assess risk for childhood obesity in infants aged 4.5 to 13.5 months. Sample selection was based on complete covariate data, birth weight and weight/length data at age two years (±2 months) in addition to weight data in at least one of the three age periods when assessment would take place. The number of infants in each prediction equation differed slightly, but was always greater than 700 (<xref ref-type="table" rid="pone-0071183-t001">Table 1</xref>).</p>
+<table-wrap id="pone-0071183-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0071183.t001</object-id><label>Table 1</label><caption>
+<title>Characteristics of the development equation samples in the BiB cohort.</title>
+</caption><alternatives><graphic id="pone-0071183-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0071183.t001" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Equation 1 sample</td>
+<td align="left" rowspan="1" colspan="1">Equation 2 sample</td>
+<td align="left" rowspan="1" colspan="1">Equation 3 sample</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">N = 1022</td>
+<td align="left" rowspan="1" colspan="1">N = 1528</td>
+<td align="left" rowspan="1" colspan="1">N = 731</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Source of data</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">BiB 1000 data</td>
+<td align="left" rowspan="1" colspan="1">310 (30.3)</td>
+<td align="left" rowspan="1" colspan="1">281 (18.4)</td>
+<td align="left" rowspan="1" colspan="1">287 (39.3)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Routine NHS data</td>
+<td align="left" rowspan="1" colspan="1">712 (69.7)</td>
+<td align="left" rowspan="1" colspan="1">1247 (81.6)</td>
+<td align="left" rowspan="1" colspan="1">444 (60.7)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Baby’s sex</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Boys</td>
+<td align="left" rowspan="1" colspan="1">538 (52.6)</td>
+<td align="left" rowspan="1" colspan="1">785 (51.4)</td>
+<td align="left" rowspan="1" colspan="1">368 (50.3)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Girls</td>
+<td align="left" rowspan="1" colspan="1">484 (47.4)</td>
+<td align="left" rowspan="1" colspan="1">743 (48.6)</td>
+<td align="left" rowspan="1" colspan="1">363 (49.7)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Birthweight z-score, mean (SD)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Boys</td>
+<td align="left" rowspan="1" colspan="1">−0.57 (1.2)</td>
+<td align="left" rowspan="1" colspan="1">−0.56 (1.2)</td>
+<td align="left" rowspan="1" colspan="1">−0.58 (1.2)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Girls</td>
+<td align="left" rowspan="1" colspan="1">−0.56 (1.2)</td>
+<td align="left" rowspan="1" colspan="1">−0.52 (1.2)</td>
+<td align="left" rowspan="1" colspan="1">−0.58 (1.2)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Weight change z-score, mean (SD)<xref ref-type="table-fn" rid="nt101">a</xref></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Boys</td>
+<td align="left" rowspan="1" colspan="1">0.07 (0.9)</td>
+<td align="left" rowspan="1" colspan="1">0.06 (1.0)</td>
+<td align="left" rowspan="1" colspan="1">0.02 (0.9)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Girls</td>
+<td align="left" rowspan="1" colspan="1">−0.08 (1.0)</td>
+<td align="left" rowspan="1" colspan="1">−0.06 (1.1)</td>
+<td align="left" rowspan="1" colspan="1">−0.02 (1.1)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Infant BMI z-score at 2 years, mean (SD)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Boys</td>
+<td align="left" rowspan="1" colspan="1">−0.03 (1.1)</td>
+<td align="left" rowspan="1" colspan="1">−0.03 (1.1)</td>
+<td align="left" rowspan="1" colspan="1">−0.08 (1.1)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Girls</td>
+<td align="left" rowspan="1" colspan="1">−0.08 (1.2)</td>
+<td align="left" rowspan="1" colspan="1">−0.03 (1.2)</td>
+<td align="left" rowspan="1" colspan="1">−0.01 (1.1)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ethnicity</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">White British</td>
+<td align="left" rowspan="1" colspan="1">492 (48.1)</td>
+<td align="left" rowspan="1" colspan="1">654 (42.8)</td>
+<td align="left" rowspan="1" colspan="1">331 (45.3)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">South Asian</td>
+<td align="left" rowspan="1" colspan="1">530 (51.9)</td>
+<td align="left" rowspan="1" colspan="1">874 (57.2)</td>
+<td align="left" rowspan="1" colspan="1">400 (54.7)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Maternal BMI, mean (SD)</td>
+<td align="left" rowspan="1" colspan="1">25.9 (5.6)</td>
+<td align="left" rowspan="1" colspan="1">26.0 (5.6)</td>
+<td align="left" rowspan="1" colspan="1">25.8 (5.5)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mother’s education<xref ref-type="table-fn" rid="nt102">b</xref></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">&lt;5 GCSE equivalent</td>
+<td align="left" rowspan="1" colspan="1">190 (18.6)</td>
+<td align="left" rowspan="1" colspan="1">330 (21.6)</td>
+<td align="left" rowspan="1" colspan="1">142 (19.4)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">≥5 GCSE equivalent</td>
+<td align="left" rowspan="1" colspan="1">310 (30.3)</td>
+<td align="left" rowspan="1" colspan="1">472 (30.9)</td>
+<td align="left" rowspan="1" colspan="1">222 (30.4)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">‘A’ level equivalent</td>
+<td align="left" rowspan="1" colspan="1">172 (16.8)</td>
+<td align="left" rowspan="1" colspan="1">233 (15.3)</td>
+<td align="left" rowspan="1" colspan="1">124 (17.0)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Degree level equivalent</td>
+<td align="left" rowspan="1" colspan="1">291 (28.5)</td>
+<td align="left" rowspan="1" colspan="1">406 (26.6)</td>
+<td align="left" rowspan="1" colspan="1">195 (26.7)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Other</td>
+<td align="left" rowspan="1" colspan="1">59 (5.8)</td>
+<td align="left" rowspan="1" colspan="1">87 (5.7)</td>
+<td align="left" rowspan="1" colspan="1">48 (6.6)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Smoked during pregnancy<xref ref-type="table-fn" rid="nt103">c</xref></td>
+<td align="left" rowspan="1" colspan="1">136 (13.3)</td>
+<td align="left" rowspan="1" colspan="1">201 (13.2)</td>
+<td align="left" rowspan="1" colspan="1">97 (13.3)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Gestational diabetes<xref ref-type="table-fn" rid="nt103">c</xref></td>
+<td align="left" rowspan="1" colspan="1">76 (7.4)</td>
+<td align="left" rowspan="1" colspan="1">113 (7.4)</td>
+<td align="left" rowspan="1" colspan="1">58 (7.9)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Gestational age (&lt;37 weeks)<xref ref-type="table-fn" rid="nt103">c</xref></td>
+<td align="left" rowspan="1" colspan="1">47 (4.6)</td>
+<td align="left" rowspan="1" colspan="1">75 (4.9)</td>
+<td align="left" rowspan="1" colspan="1">33 (4.5)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Obesity and rapid weight gain at 2 years<xref ref-type="table-fn" rid="nt104">d</xref></td>
+<td align="left" rowspan="1" colspan="1">83 (8.1)</td>
+<td align="left" rowspan="1" colspan="1">121 (7.9)</td>
+<td align="left" rowspan="1" colspan="1">61 (8.3)</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt101"><label>a</label><p>Weight change z-score from birth to 6, 9 or 12 months in equation 1, 2 and 3 samples respectively.</p></fn><fn id="nt102"><label>b</label><p>GSCE = General Certificate of Secondary Education; A-level = Advanced level.</p></fn><fn id="nt103"><label>c</label><p>Dichotomised <italic>Yes/No</italic> variable. Numbers are for <italic>Yes.</italic></p></fn><fn id="nt104"><label>d</label><p>Infant BMI &gt;91<sup>st</sup> centile and growth from birth to 2 years of age ≥1 centile band.</p></fn><fn id="nt105"><label/><p>Values are numbers (percentages) unless stated otherwise.</p></fn></table-wrap-foot></table-wrap>
+<p>All potential predictors were entered into backward stepwise multivariable models that retained predictors with a p-value &lt;0.05. These models tested possible interactions of sex by birth weight, sex by conditional infant weight z-score gain, ethnicity by birth weight, and ethnicity by conditional infant weight z-score gain. Individual risk prediction scores were calculated using the coefficients (where α is the constant and β<sub>1</sub> to β<sub>k</sub> is a vector of predictors) from each of the three final prediction equations:</p>
+<p><disp-formula id="pone.0071183.e001"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0071183.e001" xlink:type="simple"/></disp-formula>.</p>
+<p>Sensitivity, specificity, and positive and negative predictive values (PPV and NPV, respectively) were calculated at risk score distribution cut-off points of 10%, 20% and 30% and area under the curves (AUCs) for the final logistic regression models were obtained to quantify the overall discrimination of the equations.</p>
+<p>All analyses were conducted using Stata/SE v12 <xref ref-type="bibr" rid="pone.0071183-StataCorp1">[27]</xref>.</p>
+</sec><sec id="s2d">
+<title>Validation of Prediction Equations</title>
+<p>Internal validity was assessed using bootstrapping methods <xref ref-type="bibr" rid="pone.0071183-Efron1">[28]</xref>. One thousand repetitions were used with replacement from the original sample for each equation, and the final bootstrap models then applied to the original samples.</p>
+<p>External validity was assessed by applying the equations to an external sample and calculating the AUCs. We used data from the Children in Focus (CiF) subsample of the Avon Longitudinal Study of Parents and Children (ALSPAC) <xref ref-type="bibr" rid="pone.0071183-Boyd1">[29]</xref>. ALSPAC recruited 14,541 pregnant women, and 1432 families attended at least one CiF clinic. Ethical approval for the study was obtained from the ALSPAC Ethics and Law Committee and the Local Research Ethics Committees. The sample sizes of the ALSPAC cohort obtained for the present study were: equation 1 (n = 7), equation 2 (n = 880), and equation 3 (n = 867). Due to insufficient numbers equation 1 could not be validated with the ALSPAC data.</p>
+</sec></sec><sec id="s3">
+<title>Results</title>
+<p><xref ref-type="table" rid="pone-0071183-t001">Tables 1</xref> and <xref ref-type="table" rid="pone-0071183-t002">2</xref> describe the characteristics of the development (BiB 1000) and external validation (ALSPAC) samples respectively. The main difference between the samples from the two cohorts were that almost all the infants in the ALSPAC samples were of White origin (98%) compared to around 45% of infants of White British origin in the BiB 1000 cohort.</p>
+<table-wrap id="pone-0071183-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0071183.t002</object-id><label>Table 2</label><caption>
+<title>Characteristics of the external validation samples in the ALSPAC cohort.</title>
+</caption><alternatives><graphic id="pone-0071183-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0071183.t002" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Equation 2 sample</td>
+<td align="left" rowspan="1" colspan="1">Equation 3 sample</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">N = 880</td>
+<td align="left" rowspan="1" colspan="1">N = 867</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Baby’s sex</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Boys</td>
+<td align="left" rowspan="1" colspan="1">481 (54.7)</td>
+<td align="left" rowspan="1" colspan="1">470 (54.2)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Girls</td>
+<td align="left" rowspan="1" colspan="1">399 (45.3)</td>
+<td align="left" rowspan="1" colspan="1">397 (45.8)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Birthweight z-score, mean (SD)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Boys</td>
+<td align="left" rowspan="1" colspan="1">−0.10 (1.08)</td>
+<td align="left" rowspan="1" colspan="1">−0.09 (1.06)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Girls</td>
+<td align="left" rowspan="1" colspan="1">−0.01 (1.01)</td>
+<td align="left" rowspan="1" colspan="1">−0.02 (1.01)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Weight change z-score, mean (SD)<xref ref-type="table-fn" rid="nt106">a</xref></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Boys</td>
+<td align="left" rowspan="1" colspan="1">0.01 (0.98)</td>
+<td align="left" rowspan="1" colspan="1">0.30 (0.96)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Girls</td>
+<td align="left" rowspan="1" colspan="1">−0.01 (0.94)</td>
+<td align="left" rowspan="1" colspan="1">−0.35 (0.92)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Infant BMI z-score at 2 years</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Boys</td>
+<td align="left" rowspan="1" colspan="1">0.18 (0.98)</td>
+<td align="left" rowspan="1" colspan="1">0.17 (0.98)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Girls</td>
+<td align="left" rowspan="1" colspan="1">0.25 (0.93)</td>
+<td align="left" rowspan="1" colspan="1">0.26 (0.93)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ethnicity</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">White</td>
+<td align="left" rowspan="1" colspan="1">865 (98.3)</td>
+<td align="left" rowspan="1" colspan="1">852 (98.3)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Other</td>
+<td align="left" rowspan="1" colspan="1">15 (1.7)</td>
+<td align="left" rowspan="1" colspan="1">15 (1.7)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Maternal BMI, mean (SD)</td>
+<td align="left" rowspan="1" colspan="1">23.4 (4.0)</td>
+<td align="left" rowspan="1" colspan="1">23.4 (4.1)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mother’s education<xref ref-type="table-fn" rid="nt107">b</xref></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">&lt;5 GCSE equivalent</td>
+<td align="left" rowspan="1" colspan="1">92 (10.5)</td>
+<td align="left" rowspan="1" colspan="1">91 (10.5)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">≥ GCSE equivalent</td>
+<td align="left" rowspan="1" colspan="1">323 (36.7)</td>
+<td align="left" rowspan="1" colspan="1">318 (36.7)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">‘A’ level equivalent</td>
+<td align="left" rowspan="1" colspan="1">240 (27.3)</td>
+<td align="left" rowspan="1" colspan="1">236 (27.2)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Degree level equivalent</td>
+<td align="left" rowspan="1" colspan="1">132 (15.0)</td>
+<td align="left" rowspan="1" colspan="1">130 (15.0)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Other</td>
+<td align="left" rowspan="1" colspan="1">93 (10.6)</td>
+<td align="left" rowspan="1" colspan="1">92 (10.6)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Smoked during pregnancy<xref ref-type="table-fn" rid="nt108">c</xref></td>
+<td align="left" rowspan="1" colspan="1">150 (17.1)</td>
+<td align="left" rowspan="1" colspan="1">146 (16.8)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Gestational diabetes<xref ref-type="table-fn" rid="nt108">c</xref></td>
+<td align="left" rowspan="1" colspan="1">3 (0.3)</td>
+<td align="left" rowspan="1" colspan="1">2 (0.2)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Gestational age (&lt;37 weeks)<xref ref-type="table-fn" rid="nt108">c</xref></td>
+<td align="left" rowspan="1" colspan="1">36 (4.1)</td>
+<td align="left" rowspan="1" colspan="1">35 (4.0)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Obesity and rapid weight gain at 2 years<xref ref-type="table-fn" rid="nt109">d</xref></td>
+<td align="left" rowspan="1" colspan="1">84 (9.6)</td>
+<td align="left" rowspan="1" colspan="1">84 (9.7)</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt106"><label>a</label><p>Weight change z-score from birth to 9 or 12 months in equation 2 and 3 samples respectively.</p></fn><fn id="nt107"><label>b</label><p>GSCE = General Certificate of Secondary Education; A-level = Advanced level.</p></fn><fn id="nt108"><label>c</label><p>Dichotomised <italic>Yes/No</italic> variable. Numbers are for <italic>Yes.</italic></p></fn><fn id="nt109"><label>d</label><p>Infant BMI &gt;91<sup>st</sup> centile and growth from birth to 2 years of age ≥1 centile band.</p></fn><fn id="nt110"><label/><p>Values are numbers (percentages) unless stated otherwise. Equation 1 could not be validated due to insufficient numbers.</p></fn></table-wrap-foot></table-wrap>
+<p>The prevalence of childhood obesity in the BiB 1000 and ALSPAC samples respectively was 8.1% in equation 1 (insufficient data in the ALSPAC sample), 7.9% and 9.6% in equation 2, and 8.3% and 9.7% in equation 3.</p>
+<sec id="s3a">
+<title>Childhood Obesity Risk Prediction</title>
+<sec id="s3a1">
+<title>Development model</title>
+<p><xref ref-type="table" rid="pone-0071183-t003">Table 3</xref> shows the factors that were significantly associated with the risk of childhood obesity at 2 years in the development models. The equation 1 sample revealed significant associations between risk of childhood obesity at 2 years and birthweight z-score, weight change z-score, maternal BMI, South Asian ethnicity and gestational age &lt;37 weeks. The equation 2 sample saw significant associations with birthweight z-score, weight change z-score and maternal BMI. In the equation 3 sample, only birthweight z-score and weight change z-score were significant, though the effect size of weight gain was considerably greater than in the samples for equations 1 and 2. The AUC (95% CI) for the three equations were, equation 1∶86.5% (82.5–90.4%), equation 2∶86.1% (82.8–89.4%) and equation 3∶91.1% (87.8–94.4%).</p>
+<table-wrap id="pone-0071183-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0071183.t003</object-id><label>Table 3</label><caption>
+<title>The final development models showing factors significantly associated with risk of childhood obesity at 2 years for each equation.</title>
+</caption><alternatives><graphic id="pone-0071183-t003-3" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0071183.t003" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Equation 1</td>
+<td align="left" rowspan="1" colspan="1">Equation 2</td>
+<td align="left" rowspan="1" colspan="1">Equation 3</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Birthweight z-score</td>
+<td align="left" rowspan="1" colspan="1">2.09 (1.59, 2.75)</td>
+<td align="left" rowspan="1" colspan="1">1.67 (1.36, 2.05)</td>
+<td align="left" rowspan="1" colspan="1">2.28 (1.64, 3.12)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Weight change z-score</td>
+<td align="left" rowspan="1" colspan="1">4.45 (3.28, 6.04)</td>
+<td align="left" rowspan="1" colspan="1">4.48 (3.52, 5.72)</td>
+<td align="left" rowspan="1" colspan="1">8.80 (5.45, 14.21)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Maternal BMI</td>
+<td align="left" rowspan="1" colspan="1">1.05 (1.00, 1.09)</td>
+<td align="left" rowspan="1" colspan="1">1.05 (1.01, 1.09)</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">South Asian ethnicity<xref ref-type="table-fn" rid="nt112">a</xref></td>
+<td align="left" rowspan="1" colspan="1">1.80 (1.05, 3.11)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Gestational age (&lt;37 weeks)<xref ref-type="table-fn" rid="nt113">b</xref></td>
+<td align="left" rowspan="1" colspan="1">0.26 (0.07, 0.96)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt111"><label/><p>Reference categories:</p></fn><fn id="nt112"><label>a</label><p>White British;</p></fn><fn id="nt113"><label>b</label><p>Gestational age ≥37 weeks.</p></fn><fn id="nt114"><label/><p>Values are odds ratios with 95% confidence intervals.</p></fn></table-wrap-foot></table-wrap></sec><sec id="s3a2">
+<title>Validity of the prediction equations</title>
+<p>The final multivariable bootstrap model for the equation 1 sample demonstrated statistical significance of birthweight z-score, weight gain z-score and maternal BMI, but not gestational age and ethnicity. However, the AUC (95% CI) for the bootstrapped model was the same as for the development model (85.8% (81.6–90.0%)). The bootstrapped models for equations 2 and 3 retained the same variables as the development models, with no change in AUCs.</p>
+<p>Due to insufficient numbers equation 1 could not be validated using ALSPAC data. Equations 2 and 3 had AUCs (95% CI) of 85.0% (81.0–89.1%) and 88.6% (85.2–92.0%) respectively when applied to the ALSPAC sample.</p>
+</sec></sec><sec id="s3b">
+<title>Prediction Equations used in the App</title>
+<p>As birthweight z-score and weight gain z-score were significant predictors of childhood obesity in the development and validation models, they were selected as covariates in the sex-adjusted prediction model for the App. Discrimination accuracy of the risk scores for predicting childhood obesity was excellent, equation 1: AUC 85.3% (95% CI 81.0–89.6%), equation 2: AUC 85.7% (82.4–89.0%) and equation 3: AUC 91.1% (87.9–94.4%). The coefficients used to derive the childhood obesity risk scores from the final multivariable regression model are presented in <xref ref-type="table" rid="pone-0071183-t004">table 4</xref>. At the 10% distribution cut-off point, the ranges from the diagnostic tests for the three equations were: sensitivity (50.6–65.6%), specificity (93.5–94.9%), PPV (41.2–54.1%) and NPV (95.5–96.8%) (<xref ref-type="table" rid="pone-0071183-t005">Table 5</xref>).</p>
+<table-wrap id="pone-0071183-t004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0071183.t004</object-id><label>Table 4</label><caption>
+<title>Coefficients used to derive the childhood obesity risk score from a multivariable logistic regression model for each equation comprising baby’s sex, birthweight z-score and weight change z-score.</title>
+</caption><alternatives><graphic id="pone-0071183-t004-4" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0071183.t004" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td colspan="3" align="left" rowspan="1">Coefficient values</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Variable</td>
+<td align="left" rowspan="1" colspan="1">Equation 1</td>
+<td align="left" rowspan="1" colspan="1">Equation 2</td>
+<td align="left" rowspan="1" colspan="1">Equation 3</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Α</td>
+<td align="left" rowspan="1" colspan="1">Constant</td>
+<td align="left" rowspan="1" colspan="1">−3.718</td>
+<td align="left" rowspan="1" colspan="1">−3.542</td>
+<td align="left" rowspan="1" colspan="1">−3.937</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">β1</td>
+<td align="left" rowspan="1" colspan="1">Female sex</td>
+<td align="left" rowspan="1" colspan="1">0.488</td>
+<td align="left" rowspan="1" colspan="1">0.288</td>
+<td align="left" rowspan="1" colspan="1">0.234</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">β2</td>
+<td align="left" rowspan="1" colspan="1">Birthweight z-score</td>
+<td align="left" rowspan="1" colspan="1">0.599</td>
+<td align="left" rowspan="1" colspan="1">0.551</td>
+<td align="left" rowspan="1" colspan="1">0.824</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">β3</td>
+<td align="left" rowspan="1" colspan="1">Weight z-score change<xref ref-type="table-fn" rid="nt115">a</xref></td>
+<td align="left" rowspan="1" colspan="1">1.501</td>
+<td align="left" rowspan="1" colspan="1">1.508</td>
+<td align="left" rowspan="1" colspan="1">2.174</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt115"><label>a</label><p>Weight change z-score from birth to 6, 9 or 12 months in equation 1, 2 and 3 samples respectively.</p></fn><fn id="nt116"><label/><p>Probability childhood obesity = 1/(1+ e <sup>-[α+β1+ β2+ β3]</sup>).</p></fn></table-wrap-foot></table-wrap><table-wrap id="pone-0071183-t005" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0071183.t005</object-id><label>Table 5</label><caption>
+<title>The predictive ability of the obesity risk score for childhood obesity derived from a model comprising baby’s sex, birthweight z-score and weight change z-score between birth and 6 (equation 1), 9 (equation 2) or 12 (equation 3) months.</title>
+</caption><alternatives><graphic id="pone-0071183-t005-5" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0071183.t005" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Proportion of the populationabove risk score threshold (%)</td>
+<td align="left" rowspan="1" colspan="1">Risk scorethreshold</td>
+<td align="left" rowspan="1" colspan="1">Sensitivity %(95% CI)</td>
+<td align="left" rowspan="1" colspan="1">Specificity %(95% CI)</td>
+<td align="left" rowspan="1" colspan="1">PPV %(95% CI)</td>
+<td align="left" rowspan="1" colspan="1">NPV %(95% CI)</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Equation 1</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">30</td>
+<td align="left" rowspan="1" colspan="1">0.0731</td>
+<td align="left" rowspan="1" colspan="1">78.3 (67.9, 86.6)</td>
+<td align="left" rowspan="1" colspan="1">74.2 (71.3, 77.0)</td>
+<td align="left" rowspan="1" colspan="1">21.2 (16.7, 26.2)</td>
+<td align="left" rowspan="1" colspan="1">97.5 (96.1, 98.5)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">20</td>
+<td align="left" rowspan="1" colspan="1">0.1155</td>
+<td align="left" rowspan="1" colspan="1">69.9 (58.8, 79.5)</td>
+<td align="left" rowspan="1" colspan="1">84.3 (81.9, 86.6)</td>
+<td align="left" rowspan="1" colspan="1">28.3 (22.2, 35.0)</td>
+<td align="left" rowspan="1" colspan="1">96.9 (95.5, 98.0)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">10</td>
+<td align="left" rowspan="1" colspan="1">0.2072</td>
+<td align="left" rowspan="1" colspan="1">50.6 (39.4, 61.8)</td>
+<td align="left" rowspan="1" colspan="1">93.6 (91.9, 95.1)</td>
+<td align="left" rowspan="1" colspan="1">41.2 (31.5, 51.4)</td>
+<td align="left" rowspan="1" colspan="1">95.5 (94.0, 96.8)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Equation 2</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">30</td>
+<td align="left" rowspan="1" colspan="1">0.0662</td>
+<td align="left" rowspan="1" colspan="1">77.7 (69.2, 84.8)</td>
+<td align="left" rowspan="1" colspan="1">73.9 (71.5, 76.2)</td>
+<td align="left" rowspan="1" colspan="1">20.4 (16.8, 24.4)</td>
+<td align="left" rowspan="1" colspan="1">97.5 (96.3, 98.3)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">20</td>
+<td align="left" rowspan="1" colspan="1">0.1104</td>
+<td align="left" rowspan="1" colspan="1">68.6 (59.5, 76.7)</td>
+<td align="left" rowspan="1" colspan="1">84.1 (82.1, 86.0)</td>
+<td align="left" rowspan="1" colspan="1">27.0 (22.1, 32.4)</td>
+<td align="left" rowspan="1" colspan="1">96.9 (95.8, 97.8)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">10</td>
+<td align="left" rowspan="1" colspan="1">0.2082</td>
+<td align="left" rowspan="1" colspan="1">53.7 (44.4, 62.8)</td>
+<td align="left" rowspan="1" colspan="1">93.5 (92.1, 94.8)</td>
+<td align="left" rowspan="1" colspan="1">41.7 (33.8, 49.8)</td>
+<td align="left" rowspan="1" colspan="1">95.9 (94.7, 96.9)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Equation 3</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">30</td>
+<td align="left" rowspan="1" colspan="1">0.0609</td>
+<td align="left" rowspan="1" colspan="1">86.9 (75.8, 94.2)</td>
+<td align="left" rowspan="1" colspan="1">75.1 (71.6, 78.3)</td>
+<td align="left" rowspan="1" colspan="1">24.1 (18.6, 30.3)</td>
+<td align="left" rowspan="1" colspan="1">98.4 (96.9, 99.3)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">20</td>
+<td align="left" rowspan="1" colspan="1">0.1065</td>
+<td align="left" rowspan="1" colspan="1">77.0 (64.5, 86.8)</td>
+<td align="left" rowspan="1" colspan="1">85.1 (82.1, 87.7)</td>
+<td align="left" rowspan="1" colspan="1">32.0 (24.5, 40.2)</td>
+<td align="left" rowspan="1" colspan="1">97.6 (96.0, 98.7)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">10</td>
+<td align="left" rowspan="1" colspan="1">0.2391</td>
+<td align="left" rowspan="1" colspan="1">65.6 (52.3, 77.3)</td>
+<td align="left" rowspan="1" colspan="1">94.9 (93.0, 96.5)</td>
+<td align="left" rowspan="1" colspan="1">54.1 (42.1, 65.7)</td>
+<td align="left" rowspan="1" colspan="1">96.8 (95.2, 98.0)</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt117"><label/><p>PPV = positive predictive value; NPV = negative predictive value.</p></fn></table-wrap-foot></table-wrap>
+<p>The coefficients used to derive the risk scores for a further three models which additionally included maternal BMI are presented in <xref ref-type="table" rid="pone-0071183-t006">table 6</xref>. The ranges from the diagnostic tests at the 10% cut-off point were: sensitivity (50.6–67.2%), specificity (93.5–95.1%), PPV (40.8–55.4%) and NPV (95.5–97.0%) (<xref ref-type="table" rid="pone-0071183-t007">Table 7</xref>). The AUC (95% CI) for equations 1, 2 and 3 were 85.8% (81.6–90.0%), 86.1% (82.8–89.4%) and 91.1% (87.9–94.4%) respectively.</p>
+<table-wrap id="pone-0071183-t006" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0071183.t006</object-id><label>Table 6</label><caption>
+<title>Coefficients used to derive the childhood obesity risk score from a multivariable logistic regression model for each equation comprising baby’s sex, birthweight z-score, weight change z-score and maternal BMI. Probability childhood obesity = 1/(1+ e <sup>-[α+β1+ β2+ β3]+β4</sup>).</title>
+</caption><alternatives><graphic id="pone-0071183-t006-6" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0071183.t006" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td colspan="3" align="left" rowspan="1">Coefficient values</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Variable</td>
+<td align="left" rowspan="1" colspan="1">Equation 1</td>
+<td align="left" rowspan="1" colspan="1">Equation 2</td>
+<td align="left" rowspan="1" colspan="1">Equation 3</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">α</td>
+<td align="left" rowspan="1" colspan="1">Constant</td>
+<td align="left" rowspan="1" colspan="1">−4.920</td>
+<td align="left" rowspan="1" colspan="1">−4.745</td>
+<td align="left" rowspan="1" colspan="1">−4.625</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">β1</td>
+<td align="left" rowspan="1" colspan="1">Female sex</td>
+<td align="left" rowspan="1" colspan="1">0.493</td>
+<td align="left" rowspan="1" colspan="1">0.255</td>
+<td align="left" rowspan="1" colspan="1">0.230</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">β2</td>
+<td align="left" rowspan="1" colspan="1">Birthweight z-score</td>
+<td align="left" rowspan="1" colspan="1">0.577</td>
+<td align="left" rowspan="1" colspan="1">0.505</td>
+<td align="left" rowspan="1" colspan="1">0.798</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">β3</td>
+<td align="left" rowspan="1" colspan="1">Weight change z-score<xref ref-type="table-fn" rid="nt118">a</xref></td>
+<td align="left" rowspan="1" colspan="1">1.494</td>
+<td align="left" rowspan="1" colspan="1">1.501</td>
+<td align="left" rowspan="1" colspan="1">2.149</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">β4</td>
+<td align="left" rowspan="1" colspan="1">Maternal BMI</td>
+<td align="left" rowspan="1" colspan="1">0.044</td>
+<td align="left" rowspan="1" colspan="1">0.046</td>
+<td align="left" rowspan="1" colspan="1">0.026</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt118"><label>a</label><p>Weight change z-score from birth to 6, 9 or 12 months in equation 1, 2 and 3 samples respectively.</p></fn></table-wrap-foot></table-wrap><table-wrap id="pone-0071183-t007" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0071183.t007</object-id><label>Table 7</label><caption>
+<title>The predictive ability of the obesity risk score for childhood obesity derived from a model comprising sex, birthweight z-score, weight change z-score between birth and 6 (equation 1), 9 (equation 2) or 12 (equation 3)months, and maternal BMI.</title>
+</caption><alternatives><graphic id="pone-0071183-t007-7" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0071183.t007" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Proportion of the populationabove risk score threshold (%)</td>
+<td align="left" rowspan="1" colspan="1">Risk scorethreshold</td>
+<td align="left" rowspan="1" colspan="1">Sensitivity %(95% CI)</td>
+<td align="left" rowspan="1" colspan="1">Specificity %(95% CI)</td>
+<td align="left" rowspan="1" colspan="1">PPV %(95% CI)</td>
+<td align="left" rowspan="1" colspan="1">NPV %(95% CI)</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="6" align="left" rowspan="1">Equation 1</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">30</td>
+<td align="left" rowspan="1" colspan="1">0.0696</td>
+<td align="left" rowspan="1" colspan="1">81.9 (72.0, 89.5)</td>
+<td align="left" rowspan="1" colspan="1">74.5 (71.6, 77.3)</td>
+<td align="left" rowspan="1" colspan="1">22.1 (17.6, 27.2)</td>
+<td align="left" rowspan="1" colspan="1">97.9 (96.6, 98.8)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">20</td>
+<td align="left" rowspan="1" colspan="1">0.1156</td>
+<td align="left" rowspan="1" colspan="1">71.1 (60.1, 80.5)</td>
+<td align="left" rowspan="1" colspan="1">84.5 (82.0, 86.7)</td>
+<td align="left" rowspan="1" colspan="1">28.8 (22.7, 35.5)</td>
+<td align="left" rowspan="1" colspan="1">97.1 (95.7, 98.1)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">10</td>
+<td align="left" rowspan="1" colspan="1">0.2183</td>
+<td align="left" rowspan="1" colspan="1">50.6 (39.4, 61.8)</td>
+<td align="left" rowspan="1" colspan="1">93.5 (91.7, 95.0)</td>
+<td align="left" rowspan="1" colspan="1">40.8 (31.2, 50.9)</td>
+<td align="left" rowspan="1" colspan="1">95.5 (94.0, 96.8)</td>
+</tr>
+<tr>
+<td colspan="6" align="left" rowspan="1">Equation 2</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">30</td>
+<td align="left" rowspan="1" colspan="1">0.0646</td>
+<td align="left" rowspan="1" colspan="1">76.9 (68.3, 84.0)</td>
+<td align="left" rowspan="1" colspan="1">74.0 (71.6, 76.3)</td>
+<td align="left" rowspan="1" colspan="1">20.3 (16.7, 24.2)</td>
+<td align="left" rowspan="1" colspan="1">97.4 (96.2, 98.3)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">20</td>
+<td align="left" rowspan="1" colspan="1">0.1076</td>
+<td align="left" rowspan="1" colspan="1">69.4 (60.4, 77.5)</td>
+<td align="left" rowspan="1" colspan="1">84.2 (82.2, 86.1)</td>
+<td align="left" rowspan="1" colspan="1">27.5 (22.5, 32.8)</td>
+<td align="left" rowspan="1" colspan="1">97.0 (95.9, 97.9)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">10</td>
+<td align="left" rowspan="1" colspan="1">0.2042</td>
+<td align="left" rowspan="1" colspan="1">52.1 (42.8, 61.2)</td>
+<td align="left" rowspan="1" colspan="1">93.7 (92.3, 94.9)</td>
+<td align="left" rowspan="1" colspan="1">41.4 (33.5, 49.7)</td>
+<td align="left" rowspan="1" colspan="1">95.8 (94.6, 96.8)</td>
+</tr>
+<tr>
+<td colspan="6" align="left" rowspan="1">Equation 3</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">30</td>
+<td align="left" rowspan="1" colspan="1">0.0612</td>
+<td align="left" rowspan="1" colspan="1">88.5 (77.8, 95.3)</td>
+<td align="left" rowspan="1" colspan="1">75.2 (71.8, 78.5)</td>
+<td align="left" rowspan="1" colspan="1">24.5 (19.0, 30.8)</td>
+<td align="left" rowspan="1" colspan="1">98.6 (97.2, 99.4)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">20</td>
+<td align="left" rowspan="1" colspan="1">0.1051</td>
+<td align="left" rowspan="1" colspan="1">77.0 (64.5, 86.8)</td>
+<td align="left" rowspan="1" colspan="1">85.2 (82.3, 87.8)</td>
+<td align="left" rowspan="1" colspan="1">32.2 (24.7, 40.4)</td>
+<td align="left" rowspan="1" colspan="1">97.6 (96.0, 98.7)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">10</td>
+<td align="left" rowspan="1" colspan="1">0.2404</td>
+<td align="left" rowspan="1" colspan="1">67.2 (54.0, 78.7)</td>
+<td align="left" rowspan="1" colspan="1">95.1 (93.2, 96.6)</td>
+<td align="left" rowspan="1" colspan="1">55.4 (43.4, 67.0)</td>
+<td align="left" rowspan="1" colspan="1">97.0 (95.3, 98.1)</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt119"><label/><p>PPV = positive predictive value; NPV = negative predictive value.</p></fn></table-wrap-foot></table-wrap></sec><sec id="s3c">
+<title>The App: Healthy Infant Weight?</title>
+<p><xref ref-type="fig" rid="pone-0071183-g001">Figure 1</xref> shows the <italic>Healthy Infant Weight?</italic> App icon. Baby’s sex, date of birth, birthweight and current weight are required, and maternal height and weight (to calculate BMI) are optional. The App can accept weight measurements in kilograms or pounds and height in centimetres or feet and inches. A risk assessment is displayed as high, medium or low risk of obesity and the current weight z-score is displayed. We chose a risk score distribution cut-off threshold of 10% as being high risk as this approximately reflected the proportion of children in our development and validation samples with obesity and rapid weight gain at 2 years. Children with a cut-off threshold of between 10–20% were defined as being of medium risk and children above 20% low risk. The risk assessment page is accompanied by government endorsed advice on healthy eating, physical activity and parenting tips together with links to an external website where further information can be obtained.</p>
+<fig id="pone-0071183-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0071183.g001</object-id><label>Figure 1</label><caption>
+<title>The <italic>Healthy Infant Weight</italic>? App.</title>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0071183.g001" position="float" xlink:type="simple"/></fig>
+<p>The App can be used on all Apple devices (iPhone, iPad and iPod Touch) and is free to download from the App store.</p>
+</sec></sec><sec id="s4">
+<title>Discussion</title>
+<p>Childhood obesity is a major public health threat in the UK <xref ref-type="bibr" rid="pone.0071183-Wang1">[1]</xref> and innovative strategies to identify infants at the greatest risk are necessary for its prevention. Here, we provide proof of concept that childhood obesity risk prediction equations can be developed using existing birth cohort data and incorporated into a mobile phone application, suitable for use by parents and health care practitioners. The resulting App allows the prediction of risk for childhood obesity during a critical 9 month period of early growth (4.5 to 13.5 months), when biological responses to environmental stimuli can initiate obesogenic trajectories that have long-term consequences for health <xref ref-type="bibr" rid="pone.0071183-Cameron2">[30]</xref>.</p>
+<p>There is extensive literature on the early life risk factors for obesity <xref ref-type="bibr" rid="pone.0071183-Lawlor1">[10]</xref>–<xref ref-type="bibr" rid="pone.0071183-Parsons1">[12]</xref>, which is summarised in a recent review of systematic reviews <xref ref-type="bibr" rid="pone.0071183-Monasta1">[31]</xref>. Along with maternal diabetes, maternal smoking, no or short duration of breastfeeding, short sleep duration and physical inactivity; high birthweight and rapid infant weight gain were identified as consistent predictors of high obesity risk. The systematic review of Baird et al <xref ref-type="bibr" rid="pone.0071183-Baird1">[32]</xref>, for example, showed an increased odds of obesity at ages 4.5–20 years in infants who grew the fastest ranged between 1.06 and 5.70. These odds ratios were generally greater than those for the other risk factors <xref ref-type="bibr" rid="pone.0071183-Monasta1">[31]</xref>, but this is perhaps not surprising given that infant growth is a surrogate measure of accumulation of risk because the other risk factors act to accelerate early life growth to put infants on a trajectory towards obesity <xref ref-type="bibr" rid="pone.0071183-BaptisteRoberts1">[33]</xref>–<xref ref-type="bibr" rid="pone.0071183-Suzuki1">[37]</xref>. This is why our prediction equations focused on weight gain as the key predictor of risk for childhood obesity.</p>
+<p>A recent meta-analysis of 10 birth cohort studies including 47,661 participants reported that a one unit increase in weight z-score change between birth and one year of age conferred a two-fold increase in risk for childhood obesity at ages between six and 14 years <xref ref-type="bibr" rid="pone.0071183-Druet1">[15]</xref>. This study had a large multi-national sample and an outcome in middle to late childhood, but it only provides an equation to predict the risk of childhood obesity at one year of age. In this way, it is similar to other smaller studies that have used logistic regression to investigate exposures that confer increased childhood obesity risk <xref ref-type="bibr" rid="pone.0071183-Reilly1">[13]</xref>, <xref ref-type="bibr" rid="pone.0071183-Rudolf1">[17]</xref>, <xref ref-type="bibr" rid="pone.0071183-Koshy1">[38]</xref>–<xref ref-type="bibr" rid="pone.0071183-Taveras1">[40]</xref>. The problem with these existing prediction equations is that there is no practical translation as we cannot expect all infants to be assessed for obesity risk at one year of age, for example, or to have the same variables collected at the assessment as included in the prediction equations.</p>
+<p>A paper-based tool to predict an infant’s risk of childhood obesity has been proposed <xref ref-type="bibr" rid="pone.0071183-Rudolf1">[17]</xref>, but it relies heavily on the user and has a number of design issues. For example, the equation requires conditional weight gain, thus the user has to convert raw data to z-scores, which necessitates a strong understanding of statistics. As an obesity prediction tool needs to incorporate multiple complex equations and perform background calculations whilst also being user friendly, we believe that an electronic tool is the only realistic option. Indeed, a web-based prediction tool has recently been developed <xref ref-type="bibr" rid="pone.0071183-Morandi1">[18]</xref> which performs the background calculations and is therefore a great improvement on the paper-based model. The tool requires information on parental BMI, number of household members, maternal professional category, gestational smoking and birth weight, and this requirement for so many variables may unfortunately limit the usability of the tool. During the development of our App, we found that maternal BMI was often not available, and focus groups with health visitors revealed that frequently this was because the mother was unwilling to reveal her weight or be weighed. This is why we chose to have maternal BMI as an optional addition to the App, with little or no difference in discrimination. Furthermore, many mothers are not able to provide paternal BMI, either because they are single parents or simply because they did not know it: for example, it is notable that 12% of the BiB cohort sampled in this study were single or not cohabiting with their partner. In addition, it has been reported that women tend to underestimate the weight of partners who are very overweight <xref ref-type="bibr" rid="pone.0071183-Christensen1">[41]</xref>, thus there are several risks of introducing bias when parental BMI is required for prediction either through missingness or error of this information.</p>
+<p>We present the development of a practical mobile phone application that can be used during a wide range of ages (4.5 to 13.5 months) in infancy when growth monitoring is part of routine health care <xref ref-type="bibr" rid="pone.0071183-Department1">[16]</xref>. The App requires information on baby’s sex, date of birth, birthweight and current weight, and users can optionally add maternal height and weight (to calculate BMI). We chose not to include ethnicity and gestational age in equation 1 because although they were significant predictors in the development model, neither of these factors was significant in the internal and external validity analyses. Furthermore, ethnicity in our sample was restricted to White British and South Asian and it was felt that this would not reflect the ethnic diversity (or lack thereof) in many areas. The App is user friendly; it requests only essential information, allows the user to input data in any unit, and is designed so the user is always moving forward without having to return to screens that they have already seen. The advantages of an electronic tool over alternatives, such as the paper based tool <xref ref-type="bibr" rid="pone.0071183-Rudolf1">[17]</xref>, are that the App incorporates complex background equations to avoid the practitioner having to do the calculations themselves; it can include any number of prediction equations to account for infants being assessed at different ages and for the real life scenario that not all predictor variables will be available in all instances, and it gives a simple result linked to evidence based advice.</p>
+<p>The lack of a hard outcome in adolescence or adulthood is perhaps the greatest limitation of the present study, because even though obesity risk tracks across the life course <xref ref-type="bibr" rid="pone.0071183-Freitas1">[42]</xref>–<xref ref-type="bibr" rid="pone.0071183-Toselli1">[46]</xref>, some infants with high risk for our outcome at age two years may not progress to develop childhood obesity or disease outcomes in adolescence or adulthood. We did, however, include a measure of rapid weight gain over the prior age period (&gt;1 centile band between 0–2 years) in our outcome because it is a major risk factor for a plethora of adverse health outcomes <xref ref-type="bibr" rid="pone.0071183-Reilly1">[13]</xref>–<xref ref-type="bibr" rid="pone.0071183-Druet1">[15]</xref>, <xref ref-type="bibr" rid="pone.0071183-Adair1">[47]</xref>–<xref ref-type="bibr" rid="pone.0071183-vanderGugten1">[50]</xref> and therefore has greater specificity than just high BMI. Another limitation is that although the prediction equations were developed in the UK in a predominantly White/South Asian cohort in an area with high levels of socio-economic deprivation, and validated in a separate predominantly White cohort with low levels of socio-economic deprivation also in the UK, the equations may not be generalisable to international populations; further validation is therefore warranted.</p>
+<p>As a next step, qualitative work is needed to understand how this tool will be received by health care practitioners. As children in the Born in Bradford cohort grow up there will be an opportunity to update our prediction equations using later life health outcomes. Alternatively, a similar approach to that used in the Druet et al <xref ref-type="bibr" rid="pone.0071183-Druet1">[15]</xref> paper could be used to pool data from UK and international birth cohort studies to develop a series of prediction equations for use in infancy. Now the App has been developed, new prediction equations can be incorporated as software updates with minimal work. The App could also be developed to incorporate any number of other functionalities, such as plotting of growth measurements on a growth chart, geospatial mapping of an infant’s obesity risk score compared to their peers, and an obesity prevention programme for those infants identified as having high risk. A social networking service could also be integrated into the App to encourage parents to share personal experiences and learn from one another. Social networking analysis suggests that an individual’s weight is influenced by their friendship network <xref ref-type="bibr" rid="pone.0071183-Ali1">[51]</xref> and this may be a factor in the spread of obesity <xref ref-type="bibr" rid="pone.0071183-Christakis1">[52]</xref>, particularly in environments where overweight and obesity is prevalent and there is a misperception of one’s own weight status <xref ref-type="bibr" rid="pone.0071183-Ali2">[53]</xref>. Thus, the use of the App may become more widespread as parents discuss it within their social networks, resulting in a greater awareness of the risk of childhood obesity and possibly the sharing of information on ways to prevent it. Other future developments include building a web-based application, which could be integrated into existing clinical software, and to create an App for the android platform, thereby allowing the App to be accessed by a wider audience.</p>
+<p>In conclusion, we have developed data driven prediction equations for risk of childhood obesity and incorporated them into a mobile phone application, thereby providing proof of concept that childhood obesity prediction research can be integrated with advancements in technology to deliver a clinically relevant tool to practitioners.</p>
+</sec></body>
+<back>
+<ack>
+<p>Born in Bradford: We are grateful to all the families who took part in this study, to the midwives for their help in recruiting them, the paediatricians and health visitors and to the Born in Bradford team which included interviewers, data managers, laboratory staff, clerical workers, research scientists, volunteers and managers.</p>
+<p>ALSPAC: We are extremely grateful to all the families who took part in this study, the midwives for their help in recruiting them, and the whole ALSPAC team, which includes interviewers, computer and laboratory technicians, clerical workers, research scientists, volunteers, managers, receptionists and nurses. The UK Medical Research Council and the Wellcome Trust (Grant ref: 092731) and the University of Bristol provide core support for ALSPAC.</p>
+<p>We would also like to thank Simon Faulkner from NHS Airedale, Bradford and Leeds for providing us with the Child Health Data, and Lesley Fairley from Born in Bradford for appraising the manuscript.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0071183-Wang1"><label>1</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wang</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Lobstein</surname><given-names>T</given-names></name> (<year>2006</year>) <article-title>Worldwide trends in childhood overweight and obesity</article-title>. <source>IntJPediatrObes</source> <volume>1</volume>: <fpage>11</fpage>–<lpage>25</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-McPherson1"><label>2</label>
+<mixed-citation publication-type="other" xlink:type="simple">McPherson K, Marsh T, Brown M (2007) Modelling Future Trends in Obesity and the Impact on Health.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Bundred1"><label>3</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bundred</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Kitchiner</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Buchan</surname><given-names>I</given-names></name> (<year>2001</year>) <article-title>Prevalence of overweight and obese children between 1989 and 1998: population based series of cross sectional studies</article-title>. <source>BMJ</source> <volume>322</volume>: <fpage>326</fpage>–<lpage>328</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Kimbro1"><label>4</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kimbro</surname><given-names>RT</given-names></name>, <name name-style="western"><surname>Brooks-Gunn</surname><given-names>J</given-names></name>, <name name-style="western"><surname>McLanahan</surname><given-names>S</given-names></name> (<year>2007</year>) <article-title>Racial and ethnic differentials in overweight and obesity among 3-year-old children</article-title>. <source>AmJPublic Health</source> <volume>97</volume>: <fpage>298</fpage>–<lpage>305</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Lobstein1"><label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lobstein</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Baur</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Uauy</surname><given-names>R</given-names></name> (<year>2004</year>) <article-title>Obesity in children and young people: a crisis in public health</article-title>. <source>ObesRev</source> <volume>5</volume> Suppl 1<fpage>4</fpage>–<lpage>104</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Freedman1"><label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Freedman</surname><given-names>DS</given-names></name>, <name name-style="western"><surname>Khan</surname><given-names>LK</given-names></name>, <name name-style="western"><surname>Dietz</surname><given-names>WH</given-names></name>, <name name-style="western"><surname>Srinivasan</surname><given-names>SR</given-names></name>, <name name-style="western"><surname>Berenson</surname><given-names>GS</given-names></name> (<year>2001</year>) <article-title>Relationship of childhood obesity to coronary heart disease risk factors in adulthood: the Bogalusa Heart Study</article-title>. <source>Pediatrics</source> <volume>108</volume>: <fpage>712</fpage>–<lpage>718</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Singh1"><label>7</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Singh</surname><given-names>AS</given-names></name>, <name name-style="western"><surname>Mulder</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Twisk</surname><given-names>JW</given-names></name>, <name name-style="western"><surname>van Mechelen</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Chinapaw</surname><given-names>MJ</given-names></name> (<year>2008</year>) <article-title>Tracking of childhood overweight into adulthood: a systematic review of the literature</article-title>. <source>Obes Rev</source> <volume>9</volume>: <fpage>474</fpage>–<lpage>488</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Han1"><label>8</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Han</surname><given-names>JC</given-names></name>, <name name-style="western"><surname>Lawlor</surname><given-names>DA</given-names></name>, <name name-style="western"><surname>Kimm</surname><given-names>SY</given-names></name> (<year>2010</year>) <article-title>Childhood obesity</article-title>. <source>Lancet</source> <volume>375</volume>: <fpage>1737</fpage>–<lpage>1748</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Procter1"><label>9</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Procter</surname><given-names>KL</given-names></name> (<year>2007</year>) <article-title>The aetiology of childhood obesity: a review</article-title>. <source>NutrResRev</source> <volume>20</volume>: <fpage>29</fpage>–<lpage>45</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Lawlor1"><label>10</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lawlor</surname><given-names>DA</given-names></name>, <name name-style="western"><surname>Chaturvedi</surname><given-names>N</given-names></name> (<year>2006</year>) <article-title>Treatment and prevention of obesity–are there critical periods for intervention?</article-title> <source>IntJEpidemiol</source> <volume>35</volume>: <fpage>3</fpage>–<lpage>9</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Lawlor2"><label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lawlor</surname><given-names>DA</given-names></name>, <name name-style="western"><surname>Lichtenstein</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Langstrom</surname><given-names>N</given-names></name> (<year>2011</year>) <article-title>Association of maternal diabetes mellitus in pregnancy with offspring adiposity into early adulthood: sibling study in a prospective cohort of 280,866 men from 248,293 families</article-title>. <source>Circulation</source> <volume>123</volume>: <fpage>258</fpage>–<lpage>265</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Parsons1"><label>12</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Parsons</surname><given-names>TJ</given-names></name>, <name name-style="western"><surname>Power</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Manor</surname><given-names>O</given-names></name> (<year>2001</year>) <article-title>Fetal and early life growth and body mass index from birth to early adulthood in 1958 British cohort: longitudinal study</article-title>. <source>BMJ</source> <volume>323</volume>: <fpage>1331</fpage>–<lpage>1335</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Reilly1"><label>13</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Reilly</surname><given-names>JJ</given-names></name>, <name name-style="western"><surname>Armstrong</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Dorosty</surname><given-names>AR</given-names></name>, <name name-style="western"><surname>Emmett</surname><given-names>PM</given-names></name>, <name name-style="western"><surname>Ness</surname><given-names>A</given-names></name>, <etal>et al</etal>. (<year>2005</year>) <article-title>Early life risk factors for obesity in childhood: cohort study</article-title>. <source>BMJ</source> <volume>330</volume>: <fpage>1357</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Singhal1"><label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Singhal</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Fewtrell</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Cole</surname><given-names>TJ</given-names></name>, <name name-style="western"><surname>Lucas</surname><given-names>A</given-names></name> (<year>2003</year>) <article-title>Low nutrient intake and early growth for later insulin resistance in adolescents born preterm</article-title>. <source>Lancet</source> <volume>361</volume>: <fpage>1089</fpage>–<lpage>1097</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Druet1"><label>15</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Druet</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Stettler</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Sharp</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Simmons</surname><given-names>RK</given-names></name>, <name name-style="western"><surname>Cooper</surname><given-names>C</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Prediction of childhood obesity by infancy weight gain: an individual-level meta-analysis</article-title>. <source>PaediatrPerinatEpidemiol</source> <volume>26</volume>: <fpage>19</fpage>–<lpage>26</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Department1"><label>16</label>
+<mixed-citation publication-type="other" xlink:type="simple">Department of Health (2008) Healthy weight, healthy lives: a cross-government strategy for England. London, UK: Department of Health.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Rudolf1"><label>17</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rudolf</surname><given-names>M</given-names></name> (<year>2011</year>) <article-title>Predicting babies’ risk of obesity</article-title>. <source>British Medical Journal</source> <volume>96</volume>: <fpage>995</fpage>–<lpage>997</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Morandi1"><label>18</label>
+<mixed-citation publication-type="other" xlink:type="simple">Morandi A, Meyre D, Lobbens S, Kleinman K, Kaakinen M (2012) Estimation of newborn risk for child or adolescent obesity: lessons from longitudinal birth cohorts. Plos One 7.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Horowitz1"><label>19</label>
+<mixed-citation publication-type="other" xlink:type="simple">Horowitz B (2011) 75% of Physicians Prefer Apple iPad, iPhone: Survey. eWeek.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Wright1"><label>20</label>
+<mixed-citation publication-type="other" xlink:type="simple">Wright J, Small N, Raynor P, Tuffnell D, Bhopal R, <etal>et al</etal>.. (2012) Cohort Profile: The Born in Bradford multiethnic family cohort study. International Journal of Epidemiology In press.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Raynor1"><label>21</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Raynor</surname><given-names>P</given-names></name> (<year>2008</year>) <article-title>Born in Bradford, a cohort study of babies born in Bradford, and their parents: protocol for the recruitment phase</article-title>. <source>BMCPublic Health</source> <volume>8</volume>: <fpage>327</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Bryant1"><label>22</label>
+<mixed-citation publication-type="other" xlink:type="simple">Bryant M, Santorelli G, Fairley L, West J, Lawlor DA, <etal>et al</etal>.. (2013) Design and characteristics of a new birth cohort, beginning in pregnancy, to study the early origins and ethnic variation of childhood obesity: the BiB1000 study. Longitudinal and Life Course Studies. 4(2): 119–135, 2013.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Johnson1"><label>23</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Johnson</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Cameron</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Dickson</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Emsley</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Raynor</surname><given-names>P</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>The reliability of routine anthropometric data collected by health workers: a cross-sectional study</article-title>. <source>IntJNursStud</source> <volume>46</volume>: <fpage>310</fpage>–<lpage>316</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Howe1"><label>24</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Howe</surname><given-names>LD</given-names></name>, <name name-style="western"><surname>Tilling</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Lawlor</surname><given-names>DA</given-names></name> (<year>2009</year>) <article-title>Accuracy of height and weight data from child health records</article-title>. <source>ArchDisChild</source> <volume>94</volume>: <fpage>950</fpage>–<lpage>954</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Freeman1"><label>25</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Freeman</surname><given-names>JV</given-names></name>, <name name-style="western"><surname>Cole</surname><given-names>TJ</given-names></name>, <name name-style="western"><surname>Chinn</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Jones</surname><given-names>PR</given-names></name>, <name name-style="western"><surname>White</surname><given-names>EM</given-names></name>, <etal>et al</etal>. (<year>1995</year>) <article-title>Cross sectional stature and weight reference curves for the UK, 1990</article-title>. <source>ArchDisChild</source> <volume>73</volume>: <fpage>17</fpage>–<lpage>24</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Cameron1"><label>26</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cameron</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Preece</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Cole</surname><given-names>TJ</given-names></name> (<year>2005</year>) <article-title>Catch-up growth or regression to the mean? Recovery from stunting revisited</article-title>. <source>AmJHumBiol</source> <volume>17</volume>: <fpage>412</fpage>–<lpage>417</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-StataCorp1"><label>27</label>
+<mixed-citation publication-type="other" xlink:type="simple">StataCorp (2009) <italic>Stata Statistical Software: Release 11</italic>. College Station, TX: StataCorp LP.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Efron1"><label>28</label>
+<mixed-citation publication-type="other" xlink:type="simple">Efron B, Tibshirani R (1993) An introduction to the bootstrap. Monographs on statistics and applied probablility. New York: Chapman &amp; Hall.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Boyd1"><label>29</label>
+<mixed-citation publication-type="other" xlink:type="simple">Boyd A, Golding J, Macleod J, Lawlor DA, Fraser A, <etal>et al</etal>.. (2012) Cohort Profile: The ‘Children of the 90s’–the index offspring of the Avon Longitudinal Study of Parents and Children. Int J Epidemiol.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Cameron2"><label>30</label>
+<mixed-citation publication-type="other" xlink:type="simple">Cameron N, Demerath EW (2002) Critical periods in human growth and their relationship to diseases of aging. AmJPhysAnthropol Suppl 35: 159–184.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Monasta1"><label>31</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Monasta</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Batty</surname><given-names>GD</given-names></name>, <name name-style="western"><surname>Cattaneo</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Lutje</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Ronfani</surname><given-names>L</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Early-life determinants of overweight and obesity: a review of systematic reviews</article-title>. <source>ObesRev</source> <volume>11</volume>: <fpage>695</fpage>–<lpage>708</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Baird1"><label>32</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Baird</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Fisher</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Lucas</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Kleijnen</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Roberts</surname><given-names>H</given-names></name>, <etal>et al</etal>. (<year>2005</year>) <article-title>Being big or growing fast: systematic review of size and growth in infancy and later obesity</article-title>. <source>BMJ</source> <volume>331</volume>: <fpage>929</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-BaptisteRoberts1"><label>33</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Baptiste-Roberts</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Nicholson</surname><given-names>WK</given-names></name>, <name name-style="western"><surname>Wang</surname><given-names>NY</given-names></name>, <name name-style="western"><surname>Brancati</surname><given-names>FL</given-names></name> (<year>2012</year>) <article-title>Gestational diabetes and subsequent growth patterns of offspring: the National Collaborative Perinatal Project</article-title>. <source>Matern Child Health J</source> <volume>16</volume>: <fpage>125</fpage>–<lpage>132</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Betoko1"><label>34</label>
+<mixed-citation publication-type="other" xlink:type="simple">Betoko A, Charles MA, Hankard R, Forhan A, Bonet M, <etal>et al</etal>.. (2012) Determinants of infant formula use and relation with growth in the first 4 months. MaternChild Nutr.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Crume1"><label>35</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Crume</surname><given-names>TL</given-names></name>, <name name-style="western"><surname>Ogden</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Daniels</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Hamman</surname><given-names>RF</given-names></name>, <name name-style="western"><surname>Norris</surname><given-names>JM</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>The impact of in utero exposure to diabetes on childhood body mass index growth trajectories: the EPOCH study</article-title>. <source>JPediatr</source> <volume>158</volume>: <fpage>941</fpage>–<lpage>946</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Lampl1"><label>36</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lampl</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Johnson</surname><given-names>ML</given-names></name> (<year>2011</year>) <article-title>Infant growth in length follows prolonged sleep and increased naps</article-title>. <source>Sleep</source> <volume>34</volume>: <fpage>641</fpage>–<lpage>650</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Suzuki1"><label>37</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Suzuki</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Kondo</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Sato</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Tanaka</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Ando</surname><given-names>D</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Maternal smoking during pregnancy and childhood growth trajectory: a random effects regression analysis</article-title>. <source>JEpidemiol</source> <volume>22</volume>: <fpage>175</fpage>–<lpage>178</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Koshy1"><label>38</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Koshy</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Delpisheh</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Brabin</surname><given-names>BJ</given-names></name> (<year>2011</year>) <article-title>Dose response association of pregnancy cigarette smoke exposure, childhood stature, overweight and obesity</article-title>. <source>EurJPublic Health</source> <volume>21</volume>: <fpage>286</fpage>–<lpage>291</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Oken1"><label>39</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Oken</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Levitan</surname><given-names>EB</given-names></name>, <name name-style="western"><surname>Gillman</surname><given-names>MW</given-names></name> (<year>2008</year>) <article-title>Maternal smoking during pregnancy and child overweight: systematic review and meta-analysis</article-title>. <source>Int J Obes (Lond)</source> <volume>32</volume>: <fpage>201</fpage>–<lpage>210</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Taveras1"><label>40</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Taveras</surname><given-names>EM</given-names></name>, <name name-style="western"><surname>Gillman</surname><given-names>MW</given-names></name>, <name name-style="western"><surname>Kleinman</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Rich-Edwards</surname><given-names>JW</given-names></name>, <name name-style="western"><surname>Rifas-Shiman</surname><given-names>SL</given-names></name> (<year>2010</year>) <article-title>Racial/ethnic differences in early-life risk factors for childhood obesity</article-title>. <source>Pediatrics</source> <volume>125</volume>: <fpage>686</fpage>–<lpage>695</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Christensen1"><label>41</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Christensen</surname><given-names>VT</given-names></name> (<year>2012</year>) <article-title>Gendered perceptions of own and partner weight-level</article-title>. <source>Health (London)</source> <volume>16</volume>: <fpage>382</fpage>–<lpage>399</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Freitas1"><label>42</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Freitas</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Beunen</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Maia</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Claessens</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Thomis</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Tracking of fatness during childhood, adolescence and young adulthood: a 7-year follow-up study in Madeira Island, Portugal</article-title>. <source>AnnHumBiol</source> <volume>39</volume>: <fpage>59</fpage>–<lpage>67</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Chrzanowska1"><label>43</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chrzanowska</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Suder</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Kruszelnicki</surname><given-names>P</given-names></name> (<year>2012</year>) <article-title>Tracking and risk of abdominal obesity in the adolescence period in children aged 7–15. The Cracow Longitudinal Growth Study</article-title>. <source>AmJHumBiol</source> <volume>24</volume>: <fpage>62</fpage>–<lpage>67</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Oellingrath1"><label>44</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Oellingrath</surname><given-names>IM</given-names></name>, <name name-style="western"><surname>Svendsen</surname><given-names>MV</given-names></name>, <name name-style="western"><surname>Brantsaeter</surname><given-names>AL</given-names></name> (<year>2011</year>) <article-title>Tracking of eating patterns and overweight - a follow-up study of Norwegian schoolchildren from middle childhood to early adolescence</article-title>. <source>NutrJ</source> <volume>10</volume>: <fpage>106</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Ge1"><label>45</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ge</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Kubota</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Nagai</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Mamemoto</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Kojima</surname><given-names>C</given-names></name> (<year>2011</year>) <article-title>Retrospective individual tracking of body mass index in obese and thin adolescents back to childhood</article-title>. <source>Asia PacJClinNutr</source> <volume>20</volume>: <fpage>432</fpage>–<lpage>437</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Toselli1"><label>46</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Toselli</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Ventrella</surname><given-names>AR</given-names></name>, <name name-style="western"><surname>Brasili</surname><given-names>P</given-names></name> (<year>2012</year>) <article-title>Prevalence and tracking of weight disorders in Italian primary school students: a three-year follow-up</article-title>. <source>CollAntropol</source> <volume>36</volume>: <fpage>63</fpage>–<lpage>67</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Adair1"><label>47</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Adair</surname><given-names>LS</given-names></name> (<year>2007</year>) <article-title>Size at birth and growth trajectories to young adulthood</article-title>. <source>AmJHumBiol</source> <volume>19</volume>: <fpage>327</fpage>–<lpage>337</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Kuzawa1"><label>48</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kuzawa</surname><given-names>CW</given-names></name>, <name name-style="western"><surname>Hallal</surname><given-names>PC</given-names></name>, <name name-style="western"><surname>Adair</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Bhargava</surname><given-names>SK</given-names></name>, <name name-style="western"><surname>Fall</surname><given-names>CH</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Birth weight, postnatal weight gain, and adult body composition in five low and middle income countries</article-title>. <source>AmJHumBiol</source> <volume>24</volume>: <fpage>5</fpage>–<lpage>13</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Norris1"><label>49</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Norris</surname><given-names>SA</given-names></name>, <name name-style="western"><surname>Osmond</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Gigante</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Kuzawa</surname><given-names>CW</given-names></name>, <name name-style="western"><surname>Ramakrishnan</surname><given-names>L</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Size at birth, weight gain in infancy and childhood, and adult diabetes risk in five low- or middle-income country birth cohorts</article-title>. <source>Diabetes Care</source> <volume>35</volume>: <fpage>72</fpage>–<lpage>79</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-vanderGugten1"><label>50</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>van der Gugten</surname><given-names>AC</given-names></name>, <name name-style="western"><surname>Koopman</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Evelein</surname><given-names>AM</given-names></name>, <name name-style="western"><surname>Verheij</surname><given-names>TJ</given-names></name>, <name name-style="western"><surname>Uiterwaal</surname><given-names>CS</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Rapid early weight gain is associated with wheeze and reduced lung function in childhood</article-title>. <source>EurRespirJ</source> <volume>39</volume>: <fpage>403</fpage>–<lpage>410</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Ali1"><label>51</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ali</surname><given-names>MM</given-names></name>, <name name-style="western"><surname>Amialchuk</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Gao</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Heiland</surname><given-names>F</given-names></name> (<year>2007</year>) <article-title>Weight Gain and Social Networks: Is There a Contagion Effect?</article-title> <source>N Engl J Med</source> <volume>257</volume>: <fpage>370</fpage>–<lpage>379</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Christakis1"><label>52</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Christakis</surname><given-names>NA</given-names></name>, <name name-style="western"><surname>Fowler</surname><given-names>JH</given-names></name> (<year>2007</year>) <article-title>The spread of obesity in a large social network over 32 years</article-title>. <source>N Engl J Med</source> <volume>357</volume>: <fpage>370</fpage>–<lpage>379</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0071183-Ali2"><label>53</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ali</surname><given-names>MM</given-names></name>, <name name-style="western"><surname>Amialchuk</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Renna</surname><given-names>F</given-names></name> (<year>2011</year>) <article-title>Social Network and Weight Misperception among Adolescents</article-title>. <source>Southern Economic Journal</source> <volume>77</volume>: <fpage>827</fpage>–<lpage>842</lpage>.</mixed-citation>
+</ref>
+</ref-list></back>
+</article>

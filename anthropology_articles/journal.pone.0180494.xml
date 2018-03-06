@@ -1,0 +1,1165 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1d3 20150301//EN" "http://jats.nlm.nih.gov/publishing/1.1d3/JATS-journalpublishing1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="1.1d3" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1371/journal.pone.0180494</article-id>
+<article-id pub-id-type="publisher-id">PONE-D-16-21042</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3"><subject>Computer and information sciences</subject><subj-group><subject>Network analysis</subject><subj-group><subject>Centrality</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Computer and information sciences</subject><subj-group><subject>Network analysis</subject><subj-group><subject>Social networks</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Sociology</subject><subj-group><subject>Social networks</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Computer and information sciences</subject><subj-group><subject>Network analysis</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Economics</subject><subj-group><subject>Finance</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Musculoskeletal system</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Musculoskeletal system</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Mathematical and statistical techniques</subject><subj-group><subject>Statistical methods</subject><subj-group><subject>Regression analysis</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Physical sciences</subject><subj-group><subject>Mathematics</subject><subj-group><subject>Statistics (mathematics)</subject><subj-group><subject>Statistical methods</subject><subj-group><subject>Regression analysis</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Sociology</subject><subj-group><subject>Social policy</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Cultural anthropology</subject><subj-group><subject>Religion</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Sociology</subject><subj-group><subject>Religion</subject></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Network effects in environmental justice struggles: An investigation of conflicts between mining companies and civil society organizations from a network perspective</article-title>
+<alt-title alt-title-type="running-head">Network effects in environmental justice struggles</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Aydin</surname>
+<given-names>Cem Iskender</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Ozkaynak</surname>
+<given-names>Begum</given-names>
+</name>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Rodríguez-Labajos</surname>
+<given-names>Beatriz</given-names>
+</name>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<contrib-id authenticated="true" contrib-id-type="orcid">http://orcid.org/0000-0002-2615-2905</contrib-id>
+<name name-style="western">
+<surname>Yenilmez</surname>
+<given-names>Taylan</given-names>
+</name>
+<xref ref-type="aff" rid="aff004"><sup>4</sup></xref>
+</contrib>
+</contrib-group>
+<aff id="aff001"><label>1</label> <addr-line>REEDS-Centre for Research in Ecological Economics, Eco-Innovation and Tool Development for Sustainability, UVSQ-Universite Paris Saclay, Guyancourt, France</addr-line></aff>
+<aff id="aff002"><label>2</label> <addr-line>Department of Economics, Bogazici University, Istanbul, Turkey</addr-line></aff>
+<aff id="aff003"><label>3</label> <addr-line>Institute of Environmental Science and Technology (ICTA), Autonomous University of Barcelona, Barcelona, Spain</addr-line></aff>
+<aff id="aff004"><label>4</label> <addr-line>Independent scholar, Istanbul, Turkey</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Sendiña-Nadal</surname>
+<given-names>Irene</given-names>
+</name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Universidad Rey Juan Carlos, SPAIN</addr-line></aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<fn fn-type="con">
+<p><list list-type="simple"><list-item>
+<p><bold>Conceptualization:</bold> CIA BO BRL TY.</p></list-item> <list-item>
+<p><bold>Data curation:</bold> CIA TY BO BRL.</p></list-item> <list-item>
+<p><bold>Formal analysis:</bold> TY CIA.</p></list-item> <list-item>
+<p><bold>Funding acquisition:</bold> BRL BO.</p></list-item> <list-item>
+<p><bold>Methodology:</bold> TY CIA BO BRL.</p></list-item> <list-item>
+<p><bold>Project administration:</bold> BRL BO.</p></list-item> <list-item>
+<p><bold>Visualization:</bold> CIA TY.</p></list-item> <list-item>
+<p><bold>Writing – original draft:</bold> BO TY CIA BRL.</p></list-item> <list-item>
+<p><bold>Writing – review &amp; editing:</bold> BO TY CIA BRL.</p></list-item></list>
+</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">begum.ozkaynak@boun.edu.tr</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<day>7</day>
+<month>7</month>
+<year>2017</year>
+</pub-date>
+<pub-date pub-type="collection">
+<year>2017</year>
+</pub-date>
+<volume>12</volume>
+<issue>7</issue>
+<elocation-id>e0180494</elocation-id>
+<history>
+<date date-type="received">
+<day>25</day>
+<month>5</month>
+<year>2016</year>
+</date>
+<date date-type="accepted">
+<day>15</day>
+<month>5</month>
+<year>2017</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2017</copyright-year>
+<copyright-holder>Aydin et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0180494"/>
+<abstract>
+<p>This paper examines conflicts that occur between mining companies and civil society organizations (CSOs) around the world and offers an innovative analysis of mining conflicts from a social network perspective. The analysis showed that, as the number of CSOs involved in a conflict increased, its outcome was more likely to be perceived as a success in terms of environmental justice (EJ); if a CSO was connected to other central CSOs, the average perception of EJ success was likely to increase; and as network distance between two conflicts increased (or decreased), they were more likely to lead to different (or similar) EJ outcomes. Such network effects in mining conflicts have policy implications for EJ movements. It would be a strategic move on the part of successful CSOs to become involved in other major conflicts and disseminate information about how they achieved greater EJ success.</p>
+</abstract>
+<funding-group>
+<award-group id="award001">
+<funding-source>
+<institution>Seventh Framework Programme</institution>
+</funding-source>
+<award-id>266642</award-id>
+<principal-award-recipient>
+<name name-style="western">
+<surname>Aydin</surname>
+<given-names>Cem Iskender</given-names>
+</name>
+</principal-award-recipient>
+</award-group>
+<award-group id="award002">
+<funding-source>
+<institution>Seventh Framework Programme</institution>
+</funding-source>
+<award-id>289374</award-id>
+<principal-award-recipient>
+<name name-style="western">
+<surname>Ozkaynak</surname>
+<given-names>Begum</given-names>
+</name>
+</principal-award-recipient>
+</award-group>
+<funding-statement>We acknowledge financial support from the project Environmental Justice Organisations, Liabilities and Trade (EJOLT) which received funding from the European Union’s 7th Framework programme (FP7-Science in Society-2010-1) for research, technological development and demonstration under grant agreement no: 266642 and 289374. The funders had no role in study to design, data collection and analysis, decision to publish preparation of the manuscript. Authors who received the funding: BRL, BO, CIA. URL of funder's website: <ext-link ext-link-type="uri" xlink:href="http://ec.europa.eu/research/participants/portal/desktop/en/home.html" xlink:type="simple">http://ec.europa.eu/research/participants/portal/desktop/en/home.html</ext-link>.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="5"/>
+<table-count count="6"/>
+<page-count count="20"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability">
+<meta-name>Data Availability</meta-name>
+<meta-value>All relevant data are within the paper and its Supporting Information files.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec001" sec-type="intro">
+<title>1. Introduction</title>
+<p>The mining industry enjoys a prominent role in today’s global economy. Growth in consumption and production has escalated the need for energy and raw materials, with resource use reaching exceptionally high levels worldwide [<xref ref-type="bibr" rid="pone.0180494.ref001">1</xref>–<xref ref-type="bibr" rid="pone.0180494.ref003">3</xref>] leading to a concomitant rise in the number of conflicts over resource extraction and waste disposal. Mining activities generate various negative environmental and social impacts, including deforestation, biodiversity loss, high water consumption, groundwater contamination and population migration [<xref ref-type="bibr" rid="pone.0180494.ref004">4</xref>–<xref ref-type="bibr" rid="pone.0180494.ref006">6</xref>]. These all create discontent and conflict because the basic needs of some groups and their access to environmental resources and services are compromised, resulting in the loss of livelihoods, cultures, and even lives [<xref ref-type="bibr" rid="pone.0180494.ref007">7</xref>–<xref ref-type="bibr" rid="pone.0180494.ref009">9</xref>].</p>
+<p>There is an extensive and interdisciplinary body of scholarly work that utilizes qualitative and quantitative social research methods to analyze mining activities and conflicts from spatial, socio-economic and ecological distribution perspectives [<xref ref-type="bibr" rid="pone.0180494.ref010">10</xref>–<xref ref-type="bibr" rid="pone.0180494.ref013">13</xref>]. The environmental justice (EJ) and political ecology literatures, for instance, abound with studies that employ the case study approach to uncover and shed light on the central concerns and claims of the social actors involved in mining resistance struggles [<xref ref-type="bibr" rid="pone.0180494.ref014">14</xref>–<xref ref-type="bibr" rid="pone.0180494.ref021">21</xref>]. Accordingly, civil society organizations (CSOs) active in mining conflicts focus on two issues in particular: on the link between distributional concerns (the need for environmental health and security) and claims for recognition (the defense of basic human rights and indigenous territorial rights) [<xref ref-type="bibr" rid="pone.0180494.ref022">22</xref>–<xref ref-type="bibr" rid="pone.0180494.ref023">23</xref>], and on the importance of participation in decision-making, so as to be able to introduce alternative visions of development in decision-making processes (participation) [<xref ref-type="bibr" rid="pone.0180494.ref010">10</xref>,<xref ref-type="bibr" rid="pone.0180494.ref024">24</xref>]. Consequently, mining conflicts are extremely relevant to the global EJ movement [<xref ref-type="bibr" rid="pone.0180494.ref025">25</xref>].</p>
+<p>Moreover, mining conflicts usually occur between local communities/CSOs and multinational/national mining companies, and hence, are widely considered an example of contentious politics. As a result, the literature on collective action and social movements, is both insightful and relevant to better understanding the new wave of mobilization against extractive industries [<xref ref-type="bibr" rid="pone.0180494.ref026">26</xref>], with extensive debates ranging from how CSOs should be structured in their attempts to maximize the strength of collective challenges [<xref ref-type="bibr" rid="pone.0180494.ref027">27</xref>], and their degree of institutionalization [<xref ref-type="bibr" rid="pone.0180494.ref028">28</xref>], to funding sources and the extent of their membership base [<xref ref-type="bibr" rid="pone.0180494.ref029">29</xref>]. Given that institutionalization and professionalization require greater effort to generate financial resources, highly professionalized and institutionalized organizations are criticized, for instance, if they lose touch with the communities they seek to represent.</p>
+<p>Whether CSOs should organize and mobilize at the local, national and transnational levels is then another point of discussion that has implications for organizational structure, level of protest, grassroots support, and the overall effectiveness of the mobilization [<xref ref-type="bibr" rid="pone.0180494.ref030">30</xref>–<xref ref-type="bibr" rid="pone.0180494.ref032">32</xref>]. Nationwide organizations, for instance, are said to offer a relatively higher chance of engaging policy-makers and transnational networks, but their grassroots links are often quite weak. Conversely, local organizations are generally celebrated for their grassroots support [<xref ref-type="bibr" rid="pone.0180494.ref033">33</xref>]. There is, in fact, a particular strand of research on social conflict and mobilization which looks at the interaction among political processes, mobilizing structures and framing efforts as a means to explain the emergence and outcomes of social movements looking at the interaction of [<xref ref-type="bibr" rid="pone.0180494.ref034">34</xref>,<xref ref-type="bibr" rid="pone.0180494.ref035">35</xref>]. In the literature, social movements are also regarded as informal relationship networks among diverse organizations that share a distinctive collective identity and mobilize resources [<xref ref-type="bibr" rid="pone.0180494.ref036">36</xref>–<xref ref-type="bibr" rid="pone.0180494.ref038">38</xref>]. As a method, network analysis had already been used to examine numerous real-life situations, including the spread of epidemic diseases, traffic congestions, scientific collaborations, labor market outcomes, ownership structure of global markets and international trade relations[<xref ref-type="bibr" rid="pone.0180494.ref039">39</xref>–<xref ref-type="bibr" rid="pone.0180494.ref045">45</xref>]. After the Great Recession of 2008, for instance, network analysis was used extensively to understand how the financial crisis spread and how connections in financial systems might lead to systemic crisis [<xref ref-type="bibr" rid="pone.0180494.ref046">46</xref>–<xref ref-type="bibr" rid="pone.0180494.ref049">49</xref>]. According to Della Porta and Diani [<xref ref-type="bibr" rid="pone.0180494.ref050">50</xref>], the spread of global justice mobilizations has recently made the role of networks particularly visible in the literature on social movements: examples include coalitions that involve transnational actors and networks as well as local actors on issues such as environmental protection or human rights. Here, it is generally argued that network links make the organization in a movement better equipped to deal with the emergencies and threats in their environment. The theory also suggests that having a significant number of allies increases the chances of success for mobilizing groups [<xref ref-type="bibr" rid="pone.0180494.ref051">51</xref>,<xref ref-type="bibr" rid="pone.0180494.ref052">52</xref>]. No doubt, a network allows—to some extent—mediation between the participatory character of grassroots movements and the coordination guaranteed by formal structures. For example, Malinick et al. [<xref ref-type="bibr" rid="pone.0180494.ref053">53</xref>] found that being centrality positioned in the communication network of environmentalists in British Columbia had a positive impact on the amount of media coverage.</p>
+<p>Yet, even though alliance building seems a generally sensible and desirable option, as Della Porta and Diani [<xref ref-type="bibr" rid="pone.0180494.ref050">50</xref>] once again underline, inter-organizational relationships in practice vary markedly in terms of intensity of engagement and nature of organization. While one group of network studies tries to explain differential participation in social movements by looking at network formations [<xref ref-type="bibr" rid="pone.0180494.ref054">54</xref>,<xref ref-type="bibr" rid="pone.0180494.ref055">55</xref>], for instance, another group focuses on network organization models, noting that in contrast to conventional formal organizations, which are based on the vertical integration of multiple units, newly emerging models coordinate activities based on the independence of single components and multiple levels of interaction [<xref ref-type="bibr" rid="pone.0180494.ref038">38</xref>,<xref ref-type="bibr" rid="pone.0180494.ref056">56</xref>]. There are also hybrid models of network organization that develop by combining elements of formality with a loose network structure. A wave of scholarship that emerged on the social movement outcomes in the late 1990s has been influential in improving our knowledge of the conditions under which collective mobilizations produce certain effects [<xref ref-type="bibr" rid="pone.0180494.ref051">51</xref>,<xref ref-type="bibr" rid="pone.0180494.ref057">57</xref>]. Nonetheless, the discussion on “Do networks really matter? And in what forms?” still needs to be bolstered by empirical analysis that employ new data and methods. To date, relatively little has been written systematically on network effects in environmental justice struggles; moreover, the few existing studies underlying the importance of social movement networks do not use the tools of network analysis (see, for instance, <xref ref-type="bibr" rid="pone.0180494.ref033">33</xref>,<xref ref-type="bibr" rid="pone.0180494.ref056">56</xref>,<xref ref-type="bibr" rid="pone.0180494.ref058">58</xref>).</p>
+<p>At this junction, this paper brings together two rich insightful strands in the literature—one focusing on the efforts to better understand what constitutes EJ and transformations toward it, and the other on social movements and outcomes from a network perspective. Based on a collaborative effort that brings together information on mining conflicts and drawing on the tools of social network analysis, it also helps us position mining conflicts and EJ struggles within this growing literature on social movements and networks.</p>
+<p>As the first step in the study, we described the nature of the relationships among the corporations involved in mining activities and among the CSOs that stood up to these activities. To this end, the names of the mining companies and CSOs involved in 346 mining conflicts were obtained from The <italic>Atlas of Environmental Justice</italic> (EJAtlas, see <ext-link ext-link-type="uri" xlink:href="https://ejatlas.org" xlink:type="simple">https://ejatlas.org</ext-link>)—a database enriched by the interactive discussions of activists and experts as part of the EJOLT (The Environmental Justice Organizations, Liabilities, and Trade) project that ran from 2011 to 2015. [<xref ref-type="bibr" rid="pone.0180494.ref059">59</xref>].</p>
+<p>The reporting by activists and CSOs on EJ outcomes then formed the basis of our analyses, which revealed that conflicts were more likely to achieve greater EJ success as the number of CSOs increased, and that CSOs connected to other central CSOs in a network were more likely to achieve greater EJ success on average. More importantly, however, we examined whether network effects were a factor in mining conflicts in terms of EJ success. Analyses revealed that the closer (or more distant) two conflicts were in a network, the more likely they were to have similar (or different) EJ outcomes. Such network effects in mining conflicts have policy implications for EJ movements as it offer insights into the bridges that can be built to improve social movement outcomes. CSOs involved in mining conflicts are continuously looking for better ways to do their job and interpreting their struggles for the masses. As a strategy, CSOs that achieve success should become involved in other major conflicts and share information on how they achieved these results. Overall, the present study builds on recent debates on the importance and ways of coordinating action to make certain themes more pertinent to the political agenda. As Della Porta and Diani [<xref ref-type="bibr" rid="pone.0180494.ref050">50</xref>] indicate intense exchanges between organisations with sufficient interests and motives can produce non-competitive cooperation and collaborate to activate successful joint mobilizations.</p>
+<p>The approach adopted here can be seen as a first step in showing how mining conflict databases can be a learning source for activists and how social network analysis can be used as an effective tool to support EJ movements and inform relevant policy questions. To the best of our knowledge, this paper is the first to consider environmental conflicts as a real-life network and proves network effects in a worldwide sample of mining conflicts. While we did not look at network formations per se, the overall aim was to underline the importance of building social movement networks and enhance the capacity of EJ groups. With this paper, it will be possible to shape movement mobilization strategies by taking network structure and network effects into account.</p>
+<p>Following this introduction, the data and methods we used are explained in Section 2. Section 3 offers an overall picture of what CSOs face in mining conflicts, network analyses of both the mining companies and the CSOs involved in the reported conflicts, and information on how CSOs stand against mining. Section 4 looks at network effects through an analytical examination of how EJ is perceived in the reported cases of resistance to mining. The final section summarizes the insights gained and outlines various policy recommendations.</p>
+</sec>
+<sec id="sec002">
+<title>2. Data and methods</title>
+<p>As previously mentioned, the data used in this study was retrieved from the EJAtlas, where systematic information on ecological distribution conflicts are compiled; the information is provided by academics, civil society groups, and individuals who are interested in supporting the efforts of EJ movements. Data collection was a cooperative process that lasted four years: from April 2011, when the project began, to October 2014. The data became public when the map was released in March 2014. Of the 1,200 cases registered at the time, 346 were classified as mining conflicts, and an operational definition was established to select the appropriate entries: Conflicts related to the extraction, processing, and transport of minerals as well as to waste management in <italic>specific</italic> mining projects were defined as mining conflicts. This binds the idea of mining conflicts to localized processes, typically at the local or regional level.</p>
+<p>Several levels of data refinement were implemented while information was being gathered. As the cases in the EJAtlas were being compiled, a standard form was sent to collect qualitative and quantitative data for cases reported by CSOs. This helped in identifying what counts as an environmental conflict and in standardizing certain types of information, which made it easier to compare cases. Next, information quality was assured via the systematic moderation of data inputs. Finally, external reviews were sought not only to check the adopted operational definition of mining conflict, but also to avoid as much as possible problems of over/under-representation in filtering the mining cases from the EJAtlas database. Of the 346 mining conflicts identified, the vast majority were related to precious metals (39.0%) such as gold and silver, and base metals (35.8%) such as copper. These were followed by energy-related materials (18.5%) such as coal and uranium and construction-related materials (6.6%) such as sand and limestone. Almost 85 percent of conflicts occurred in rural and semi-urban areas.</p>
+<p>In the original EJAtlas database, respondents were asked whether they considered a particular case a success in terms of EJ and to explain their rationale, in an effort to understand how resistance movements define success and failure in the context of a mining conflict. This is a delicate point in that it combines concrete facts with the perception of a resistance movement by activists and the communities they support. Not surprisingly, the justifications that respondents provided varied enormously; this was especially noticeable in cases where the answer was “I'm not sure.” The answers were then classified as “favorable” (such as when a project was halted, compensations were obtained, or the social fabric was strengthened) or “unfavorable” (such as when a project was still operational, failed to comply with legislation, or could potentially be reactivated) from an EJ perspective. The most frequent answer to the EJ question was “No” for almost half of the registered mining conflicts (46%). Indeed, in 35 percent of these cases, not even a single favorable reason was reported in terms of EJ success; these cases were unambiguously recorded as EJ failures and coded with a score of 0, and the remaining 11 percent (that included some favorable reasons) was coded with a score of 1. Among the “Not sure” responses (33% percent), the most common justification (28%) was that the mining project was still operational and the conflict was ongoing, while in the remaining 5 percent, the project had stopped but uncertainty remained about what would happen in the long term. Finally, about 21 percent of the reported mining conflicts were considered an EJ success, although exclusively favorable reasons were provided in only 13 percent of the cases (coded with a score of 5).Then, using this additional qualitative information, the “Yes”, “Not sure” and “No” answers to the EJ perception question were coded on a scale of 0 (complete failure) to 5 (complete success) in an ordinal gradient of “EJ achievements” (see <xref ref-type="supplementary-material" rid="pone.0180494.s001">S1 File</xref>)</p>
+<p>Next, the 600 companies involved in the 346 mining cases being examined were identified from responses to an open-ended question, and used to form a coalition network. Similarly, another coalition network was formed with the 1,092 CSOs and other supporting organizations that had also been identified via an open-ended question (see <xref ref-type="supplementary-material" rid="pone.0180494.s001">S1 File</xref>). The information on CSOs was then re-coded and grouped under two main categories: (1) <italic>organization type</italic> (community organizations, non-environmental NGOs, environmental NGOs, religious organizations/charities, governmental organizations, human rights organizations, political parties, and research organizations) and (2) <italic>scale of operation</italic> (local, national, international) (see <xref ref-type="supplementary-material" rid="pone.0180494.s001">S1 File</xref>).</p>
+<p>To understand and visualize the network formations (of both the mining companies and the CSOs), we used Gephi<sup>®</sup>, an open-source network exploration and manipulation software. Due to privacy concerns and in an effort to protect various parties from potential threats and attacks, the names of all nodes were kept anonymous. We first constructed a network comprising CSOs and companies, where two nodes were connected if both were jointly involved in a mining conflict. By using ordinary least squares and ordered probit regressions, we found that CSOs with higher PageRank centrality had significantly higher average EJ scores. Second, we constructed a network of mining conflicts to see if outcomes were spread via the connections that CSOs and companies had; we assumed that two conflicts were linked if they had at least one CSO (or company) in common. Ordinary least squares and ordered probit regression results showed that the closer two conflicts were in the network, the more likely it was for them to have similar EJ outcomes. It is also worth noting that our findings are very robust because we controlled not only for the interaction of country characteristics of the two conflicts, but for conflict fixed effects as well.</p>
+</sec>
+<sec id="sec003">
+<title>3. The mining conflict networks: What do EJOs face? How do they react?</title>
+<p>This section provides an overview of the social resistance against mining. It does so by revealing the main parties involved in mining conflicts, thereby offering a broader understanding of the conditions CSOs and mining companies encounter when they are involved in these conflicts. In this context, first the relationships and coalitions among the 600 national and international mining corporations involved in the 346 reported cases were thoroughly examined. 79 were identified as subsidiaries of other bigger companies and thus merged with them, resulting in a total of 521 companies (see <xref ref-type="supplementary-material" rid="pone.0180494.s001">S1 File</xref>). In the network of companies, a company pair was connected if both companies took part in the same project that gave rise to a conflict. Next, a network of CSOs was built on the basis of the 1,092 groups that mobilized against mining projects. Again, similar to the network of companies, 23 NGOs were identified as the national branches of big international NGOs, and hence are merged with their international headquarters (see <xref ref-type="supplementary-material" rid="pone.0180494.s001">S1 File</xref>), resulting in a total of 1069 groups. In the network of CSOs, two CSOs were connected if both parties were involved in the same conflict.</p>
+<p>Analyses revealed that the network of mining corporations consisted of many different-sized components (sub-networks). A detailed view of this network is provided in <xref ref-type="fig" rid="pone.0180494.g001">Fig 1</xref>, which shows that almost half of the conflicts were located in the so-called giant strongly connected component (GSCC)—the main sub-network where nodes are highly interconnected. The GSCC contained 202 companies (40% of the companies); it had a total of 614 links, with an average of 3.03 links per company.</p>
+<fig id="pone.0180494.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0180494.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>The network of mining companies - The GSCC on the left.</title>
+<p>(Note: Red nodes depict companies; blue links depict company-to-company links).</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0180494.g001" xlink:type="simple"/>
+</fig>
+<p>In the GSCC, most of the companies central to the network (i.e. involved in many conflicts) were well-known international companies, with headquarters based in Australia, Brazil, Canada, South Africa, Switzerland and the U.K. They were well connected not only among themselves, but also to other national firms. Many multinationals in the network also had their own national subsidiaries. CSOs are of the opinion that this is a strategy to either overcome national regulations that prevent the participation of international investors or deliberately hide the involvement of multinational companies [<xref ref-type="bibr" rid="pone.0180494.ref060">60</xref>]. Another important point is that not all companies were specialized in mining; some were commodity traders; a finding that underlines the important role international trade plays as a driving force in local conflicts.</p>
+<p>Moreover, not all important or well-known companies were in the primary component of the network. Some were weakly connected to the GSCC or simply located in smaller and more isolated (but not less important) components of the network. These companies have their own spheres of influence for a particular commodity or in a specific region. A uranium or base metal mining giant, for instance, may have its own small mining network and create its own sphere of influence by forming coalitions with its local subsidiaries. As a result, in some cases, a company that relatively unknown by the public can be involved in conflicts that are geographically far apart; e.g., one in Turkey and one in Mexico.</p>
+<p>The fact that these companies were collectively observed in a network does not mean they all follow the same policies in terms of how they respond to anti-mining protests or relate to communities that oppose mining. However, demonstrating that a network of relationships exists among companies with regard to conflict brings two aspects to the table. First, mining companies have a common, albeit differentiated, interest in responding to mining conflicts, which arguably creates difficulties for their business operations [<xref ref-type="bibr" rid="pone.0180494.ref061">61</xref>]. Second, should a common framework to tackle conflicts be established, a network of corporate relationships would facilitate its development, dissemination, and operation. The Global Mining Initiative, for instance, promoted by the International Council on Mining and Metals (ICMM), is an example of a globally-shared discourse that uses “sustainable mining” as a slogan and presents the industry as a generator of societal benefits while legitimizing access to resources and intervention in the social life of communities and regions No doubt, analyses of mining companies is useful for CSOs as well, especially in determining where their resistance movements fit within the broader picture and showing where it might be beneficial to collaborate and join forces.</p>
+<p>Looking at the groups that mobilize against mining in terms of organization type, it was found that of the 1,069 entities named, environmental CSOs were represented the most (42.4%), followed by non-environmental CSOs (27.8%) and community organizations (18.9%) (<xref ref-type="table" rid="pone.0180494.t001">Table 1</xref>). Research organizations (4.1%), human rights organizations (2.0%), religious organizations (2.7%) and political parties (1.5%) also had some presence in the data set. In seven instances, it was governmental organizations that were fighting for EJ. In 21 of the 346 cases, no particular EJO or other organized group came to the fore; in these cases, local residents were the main resistance group.</p>
+<table-wrap id="pone.0180494.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0180494.t001</object-id>
+<label>Table 1</label> <caption><title>Mobilized organizations according to type.</title></caption>
+<alternatives>
+<graphic id="pone.0180494.t001g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0180494.t001" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Organization type</th>
+<th align="center">Node Color</th>
+<th align="center">Frequency</th>
+<th align="center">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Environmental NGOs</td>
+<td align="center">Green</td>
+<td align="center">453</td>
+<td align="char" char=".">42.4</td>
+</tr>
+<tr>
+<td align="left">Non-environmental NGOs</td>
+<td align="center">Dark blue</td>
+<td align="center">297</td>
+<td align="char" char=".">27.8</td>
+</tr>
+<tr>
+<td align="left">Communities/Residents</td>
+<td align="center">Red</td>
+<td align="center">202</td>
+<td align="char" char=".">18.9</td>
+</tr>
+<tr>
+<td align="left">Research organizations</td>
+<td align="center">Orange</td>
+<td align="center">44</td>
+<td align="char" char=".">4.1</td>
+</tr>
+<tr>
+<td align="left">Religious organizations/Charities</td>
+<td align="center">Yellow</td>
+<td align="center">29</td>
+<td align="char" char=".">2.7</td>
+</tr>
+<tr>
+<td align="left">Human rights organizations</td>
+<td align="center">Purple</td>
+<td align="center">21</td>
+<td align="char" char=".">2.0</td>
+</tr>
+<tr>
+<td align="left">Political parties</td>
+<td align="center">Light blue</td>
+<td align="center">16</td>
+<td align="char" char=".">1.5</td>
+</tr>
+<tr>
+<td align="left">Governmental organizations</td>
+<td align="center">Brown</td>
+<td align="center">7</td>
+<td align="char" char=".">0.7</td>
+</tr>
+<tr>
+<td align="left">Total # of organizations</td>
+<td align="center"/>
+<td align="center">1,069</td>
+<td align="center"/>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t001fn001"><p>Source: Authors’ calculations based on data from the EJAtlas</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<p>It is also worth noting that 189 of the total number of reported entities (17.3%) were already networks themselves (e.g., platforms, alliances, campaigns, coalitions, and movements). This suggests that anti-mining activists are well aware of the value of cooperation and collaboration.</p>
+<p>Given this context, the method used to depict the network of companies was used to illustrate the mining resistance network as well. <xref ref-type="fig" rid="pone.0180494.g002">Fig 2</xref> illustrates this network, according to organization type. Here, colored nodes represent the different types of organizations involved in the resistance, as presented in <xref ref-type="table" rid="pone.0180494.t001">Table 1</xref>.</p>
+<fig id="pone.0180494.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0180494.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>The network of CSOs (on the basis of conflicts).</title>
+<p>Note: The color-coding of CSOs is the same as that used in <xref ref-type="table" rid="pone.0180494.t001">Table 1</xref>.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0180494.g002" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec004">
+<title>4. Network effects in environmental justice</title>
+<p>In this section, network effects in mining conflicts are examined. Different regression models were applied to the data to analytically uncover whether there are network effects in the formation of EJ outcomes. As previously noted, we investigate network effects in EJ outcomes by taking the network structure as given and analyzing the relation of the network structure to the EJ outcomes. Hence, what we do is not modelling or explaining the formation of the network. We rather use a given network formation for explaining the EJ scores in mining conflicts.</p>
+<p>For the quantitative analysis, all CSOs and companies were first collected in a single network, where a CSO-CSO, company-company, or CSO-company pair was connected if both parties were involved in the same conflict (<xref ref-type="fig" rid="pone.0180494.g003">Fig 3</xref> depicts the GSCC of this unified network). Here, the degree centrality of a CSO or a company indicates the number of other CSOs or companies it is connected to, while the PageRank centrality [<xref ref-type="bibr" rid="pone.0180494.ref062">62</xref>] of a CSO or a company indicates how important or central their connections are in the network (for details of the modified PageRank algorithm used in this paper, see [<xref ref-type="bibr" rid="pone.0180494.ref063">63</xref>]). <xref ref-type="table" rid="pone.0180494.t002">Table 2</xref> provides descriptive statistics for the unified network of CSOs and companies.</p>
+<fig id="pone.0180494.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0180494.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>The GSCC network of CSOs and companies.</title>
+<p>Note: Red nodes and blue nodes represent companies and CSOs, respectively. If two companies are connected on the basis of a common conflict, the link is red. If a company and a CSO are connected through a common conflict, the links are shown in green and if two CSOs are connected on the basis of a common conflict, the links are shown in blue.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0180494.g003" xlink:type="simple"/>
+</fig>
+<table-wrap id="pone.0180494.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0180494.t002</object-id>
+<label>Table 2</label> <caption><title>Descriptive statistics for the unified network of CSOs and companies.</title></caption>
+<alternatives>
+<graphic id="pone.0180494.t002g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0180494.t002" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Indicator</th>
+<th align="center">CSOs</th>
+<th align="center">Companies</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Number of nodes</td>
+<td align="center">1069</td>
+<td align="center">521</td>
+</tr>
+<tr>
+<td align="left">Average degree centrality</td>
+<td align="center">10.42</td>
+<td align="center">10.15</td>
+</tr>
+<tr>
+<td align="left">Max degree centrality</td>
+<td align="center">197</td>
+<td align="center">106</td>
+</tr>
+<tr>
+<td align="left">Average PageRank centrality</td>
+<td align="center">0.98</td>
+<td align="center">1.02</td>
+</tr>
+<tr>
+<td align="left">Max PageRank centrality</td>
+<td align="center">14.04</td>
+<td align="center">8.09</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>To investigate how EJ outcome of a conflict is shaped, a regression analysis using ordinary least squares and ordered probit models was applied to determine whether the number of companies and CSOs involved in a conflict and their average values for degree centrality and PageRank centrality played a role. Conflict characteristics were all controlled for including geographical location which refers to the continent where the conflict takes place, population type which reflects whether the conflict is in an urban or a rural area and income level of the host country. The results provided in <xref ref-type="table" rid="pone.0180494.t003">Table 3</xref> show that, in all models, only the number of CSOs in a conflict had a statistically significant impact on EJ scores. As the number of CSOs increased, the EJ score of a conflict was also more likely to be higher. However, this result was not dependent on the centrality of the participating CSOs or companies. According to these regressions, it was only the number of CSOs that had a significant impact, regardless of how central the participating CSOs and companies were.</p>
+<table-wrap id="pone.0180494.t003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0180494.t003</object-id>
+<label>Table 3</label> <caption><title>Determinants of the outcome of a conflict.</title></caption>
+<alternatives>
+<graphic id="pone.0180494.t003g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0180494.t003" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="justify">EJ score (on a scale of 0 to 5)</th>
+<th align="center">OLS</th>
+<th align="center">OLS</th>
+<th align="center">Ordered Probit</th>
+<th align="center">Ordered Probit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="justify">Number of companies</td>
+<td align="center">-0.03</td>
+<td align="center">-0.01</td>
+<td align="center">-0.02</td>
+<td align="center">-0.01</td>
+</tr>
+<tr>
+<td align="justify">Degree centrality of companies</td>
+<td align="center">-0.01</td>
+<td align="center">-0.01</td>
+<td align="center">-0.01</td>
+<td align="center">-0.01</td>
+</tr>
+<tr>
+<td align="justify">PageRank centrality of companies</td>
+<td align="center">0.15</td>
+<td align="center">-0.15</td>
+<td align="center">0.15</td>
+<td align="center">-0.14</td>
+</tr>
+<tr>
+<td align="justify">Number of CSOs</td>
+<td align="center">0.12<xref ref-type="table-fn" rid="t003fn001">**</xref></td>
+<td align="center">0.13<xref ref-type="table-fn" rid="t003fn001">**</xref></td>
+<td align="center">0.08<xref ref-type="table-fn" rid="t003fn001">**</xref></td>
+<td align="center">0.09<xref ref-type="table-fn" rid="t003fn001">**</xref></td>
+</tr>
+<tr>
+<td align="justify">Degree centrality of CSOs</td>
+<td align="center">-0.00</td>
+<td align="center">-0.01</td>
+<td align="center">0.01</td>
+<td align="center">0.00</td>
+</tr>
+<tr>
+<td align="justify">PageRank centrality of CSOs</td>
+<td align="center">-0.22</td>
+<td align="center">-0.13</td>
+<td align="center">-0.23</td>
+<td align="center">-0.20</td>
+</tr>
+<tr>
+<td align="justify">Geographical location dummies</td>
+<td align="center">No</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td align="justify">Income dummies</td>
+<td align="center">No</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td align="justify">Population dummies</td>
+<td align="center">No</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td align="justify"># of observations</td>
+<td align="center">346</td>
+<td align="center">346</td>
+<td align="center">346</td>
+<td align="center">346</td>
+</tr>
+<tr>
+<td align="justify">R-squared</td>
+<td align="center">0.08</td>
+<td align="center">0.18</td>
+<td align="center">0.02</td>
+<td align="center">0.07</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t003fn001"><p>** significant at a 1 percent level</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<p>Further analyses were conducted to determine whether the centrality of a CSO or a company in the network influenced the outcome of the conflict it was involved in. To this end, regression analysis was used to see whether the PageRank values of a CSO or company affected the average EJ score of the conflicts in which they took part. In this regression, the network topology was used to explain success in achieving EJ. In this regard, the regression model was similar to the one in Banerjee et al. [<xref ref-type="bibr" rid="pone.0180494.ref064">64</xref>] where the diffusion of information is explained by an individual’s eigenvector centrality in society. While the degree centrality of the CSO or company and the number of conflicts they were involved in were controlled for, dummy variables for CSO type and operation level (local, national or international) were included. <xref ref-type="table" rid="pone.0180494.t004">Table 4</xref> shows that the number of conflicts in which a CSO or company was involved had a negative impact on average EJ score. This is understandable and statistically expected: If a CSO or company participates in a greater number of conflicts, maintaining a relatively higher average score becomes more difficult. In addition, the PageRank of a CSO had a significant positive effect on the average EJ scores of the conflicts in which it was involved, while degree centrality had no significant effect. This shows that CSOs connected to central CSOs or companies in the network are more likely to achieve a higher EJ score. It must be noted that this result was controlled for degree centrality which indicates the size of a CSO. Hence, higher success was related to being more centrally located; not to other factors such as size. Given that this result was not due to the number of connections (degree centrality), it appears that being connected to central CSOs or companies in the network increases the likelihood of success for CSOs. The positive effect that PageRank has on EJ scores can be interpreted as the impact that the accumulated experiences of central CSOs have on environmental conflicts. This has strong policy implications: Connecting central CSOs to remote areas in the network—or to conflicts in which only minor CSOs participate—can help foster greater EJ.</p>
+<table-wrap id="pone.0180494.t004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0180494.t004</object-id>
+<label>Table 4</label> <caption><title>Determinants of the average outcomes for CSOs and companies.</title></caption>
+<alternatives>
+<graphic id="pone.0180494.t004g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0180494.t004" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Average EJ score of a CSO or a company</th>
+<th align="center">CSO network<break/>(OLS)</th>
+<th align="center">CSO network<break/>(OLS)</th>
+<th align="center">Company network<break/>(OLS)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="justify"><bold>Number of conflicts</bold></td>
+<td align="center">-0.82<xref ref-type="table-fn" rid="t004fn001">**</xref></td>
+<td align="center">-0.81<xref ref-type="table-fn" rid="t004fn001">**</xref></td>
+<td align="center">-0.15</td>
+</tr>
+<tr>
+<td align="justify"><bold>Degree centrality</bold></td>
+<td align="center">0.00</td>
+<td align="center">0.01</td>
+<td align="center">0.01</td>
+</tr>
+<tr>
+<td align="justify"><bold>PageRank centrality</bold></td>
+<td align="center">1.49<xref ref-type="table-fn" rid="t004fn001">**</xref></td>
+<td align="center">1.46<xref ref-type="table-fn" rid="t004fn001">**</xref></td>
+<td align="center">0.18</td>
+</tr>
+<tr>
+<td align="justify"><bold>CSO dummies</bold></td>
+<td align="center">No</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td align="justify"><bold>Number of observations</bold></td>
+<td align="center">1069</td>
+<td align="center">1069</td>
+<td align="center">521</td>
+</tr>
+<tr>
+<td align="justify"><bold>R-squared</bold></td>
+<td align="center">0.06</td>
+<td align="center">0.08</td>
+<td align="center">0.01</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t004fn001"><p>** significant at a 1 percent level, no significance at a 5 percent level</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<p>One important aspect of a network is information flow and the way any given outcome spreads out through its connections. In our case, the question was whether connections in the network lead to similar outcomes for environmental conflicts. <xref ref-type="fig" rid="pone.0180494.g004">Fig 4</xref> illustrates environmental conflicts in terms of their EJ scores. In this figure, if any CSO (or company) was involved in two conflicts, it was assumed that these conflicts were connected via the CSO (or company).</p>
+<fig id="pone.0180494.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0180494.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title>The GSCC of the network of environmental conflicts.</title>
+<p>Notes: Nodes depict conflicts and are color-coded on the basis of their EJ scores: Red nodes represent a score of 0, orange nodes 1, yellow nodes 2, light green nodes 3, green nodes 4, and dark green nodes 5. Conflicts linked through companies are shown in red, those linked through an CSO in blue, and if both CSOs and companies are involved they are linked in green.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0180494.g004" xlink:type="simple"/>
+</fig>
+<p>An examination of the clusters in the network in <xref ref-type="fig" rid="pone.0180494.g004">Fig 4</xref> reveals that conflicts that are in close proximity to one another tend to have similar EJ scores. This visual result hints at network effects in environmental conflicts. CSOs and companies pass on their experiences and know-how from one conflict to the next; hence, network distance between conflicts should matter. Another issue is whether network proximity is just a reflection of geographic proximity and whether conflicts have similar EJ scores due to similar geographical locations. <xref ref-type="fig" rid="pone.0180494.g005">Fig 5</xref> depicts conflicts on a world map and clearly shows that geographical proximity alone cannot explain the variation in EJ scores. Conflicts in very similar locations can have very different EJ outcomes.</p>
+<fig id="pone.0180494.g005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0180494.g005</object-id>
+<label>Fig 5</label>
+<caption>
+<title>The network of environmental conflicts visualized on a world map.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0180494.g005" xlink:type="simple"/>
+</fig>
+<p>To show this empirically, regression analysis was applied to determine whether network distance had an effect on the EJ scores of two conflicts. To this end, the network of conflicts was defined through either the CSOs or companies, resulting in two types of distance between two conflicts: CSO-based distance, and company-based distance. CSO (company)-based distance denotes the length of the shortest path between two conflicts based on the links that CSOs (companies) form. For example, if the CSO (company)-based distance between two conflicts is one, then there is at least one CSO (company) common to both conflicts. If the CSO (company)-based distance between two conflicts is two, then there is no CSO (company) common to both conflicts but there is a third conflict where least one CSO (company) is common to these two conflicts.</p>
+<p>The regressions presented here were exempt from the network autocorrelation problem [<xref ref-type="bibr" rid="pone.0180494.ref065">65</xref>] or in other words, the assumption of the independence of cases was not violated. This problem appears when the outcome variable is regressed on other outcome variables in the network, which in our case would correspond to regressing the EJ score of a conflict on scores of other conflicts. Network autocorrelation models are used in attempts to solve autocorrelation problem this type of regression Similarly, Exponential Random Graph Models (ERGM) are used to explain how a network forms [<xref ref-type="bibr" rid="pone.0180494.ref066">66</xref>]. Here, however, we had not set out to explain how the network of CSOs, companies or environmental conflicts were formed, thus, we did not regress the outcome of a conflict on the outcome of other conflicts. We were only interested in how the network distance between two conflicts impacted the similarity of their outcomes. Consequently, the independent variable, network distance, was exogenous to the dependent variable, similarity of outcomes. This shows that our model is not about network formation but rather explaining the similarity of EJ scores by a given network structure. This is actually why we used standard statistical techniques instead of models that focus on network autocorrelation or ERGM type of models.</p>
+<p>We first regressed the absolute difference of EJ scores of two conflicts on network distance and controls (<xref ref-type="table" rid="pone.0180494.t005">Table 5</xref>). Our aim was to investigate whether conflicts closer in terms of network distance had similar EJ scores. Regression results showed that when two conflicts were connected by CSOs, i.e. there was a CSO common to both conflicts, the absolute difference between their EJ scores decreased significantly, even if they were not connected through companies. This implies that conflicts connected by CSOs have similar EJ scores. In addition, in cases where company-based distance between two conflicts is one or two, the impact of shorter distance through CSOs increased. In short, the EJ scores of two conflicts were more likely to be similar, when they were both connected by CSOs and have a low distance by companies. This suggests that if two conflicts are connected only through companies and have no CSOs in common, the difference between their EJ scores does not decrease. All combinations of income levels, population types and geographical regions between the two conflicts were controlled for, indicating that these results are robust; this is also evident from the last two columns in <xref ref-type="table" rid="pone.0180494.t005">Table 5</xref>, which reflect results from a regression on the conflict-fixed effects of one pivot conflict.</p>
+<table-wrap id="pone.0180494.t005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0180494.t005</object-id>
+<label>Table 5</label> <caption><title>Difference in EJ scores between two conflicts.</title></caption>
+<alternatives>
+<graphic id="pone.0180494.t005g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0180494.t005" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="justify">|ej1-ej2|</th>
+<th align="justify">OLS</th>
+<th align="justify">Ordered Probit</th>
+<th align="justify">OLS</th>
+<th align="justify">Ordered Probit</th>
+<th align="justify">OLS</th>
+<th align="justify">Ordered Probit</th>
+<th align="justify">OLS</th>
+<th align="justify">Ordered Probit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="justify"><bold>cso1</bold></td>
+<td align="justify">-0.16<xref ref-type="table-fn" rid="t005fn002">*</xref></td>
+<td align="justify">-0.11<xref ref-type="table-fn" rid="t005fn002">*</xref></td>
+<td align="justify">-0.15<xref ref-type="table-fn" rid="t005fn002">*</xref></td>
+<td align="justify">-0.11<xref ref-type="table-fn" rid="t005fn002">*</xref></td>
+<td align="justify">-0.14<xref ref-type="table-fn" rid="t005fn002">*</xref></td>
+<td align="justify">-0.10<xref ref-type="table-fn" rid="t005fn002">*</xref></td>
+<td align="justify">-0.10<xref ref-type="table-fn" rid="t005fn001">**</xref></td>
+<td align="justify">-0.08<xref ref-type="table-fn" rid="t005fn001">**</xref></td>
+</tr>
+<tr>
+<td align="justify"><bold>cso2</bold></td>
+<td align="justify">-0.07</td>
+<td align="justify">-0.05<xref ref-type="table-fn" rid="t005fn001">**</xref></td>
+<td align="justify">-0.06</td>
+<td align="justify">-0.04</td>
+<td align="justify">-0.02</td>
+<td align="justify">-0.01</td>
+<td align="justify">-0.01</td>
+<td align="justify">-0.01</td>
+</tr>
+<tr>
+<td align="justify"><bold>cso3</bold></td>
+<td align="justify">0.01</td>
+<td align="justify">0.00</td>
+<td align="justify">0.01</td>
+<td align="justify">0.01</td>
+<td align="justify">0.05</td>
+<td align="justify">0.03</td>
+<td align="justify">0.02</td>
+<td align="justify">0.02</td>
+</tr>
+<tr>
+<td align="justify"><bold>comp1</bold></td>
+<td align="justify">0.04</td>
+<td align="justify">0.03</td>
+<td align="justify">0.04</td>
+<td align="justify">0.03</td>
+<td align="justify">0.07</td>
+<td align="justify">0.04</td>
+<td align="justify">0.04</td>
+<td align="justify">0.03</td>
+</tr>
+<tr>
+<td align="justify"><bold>comp2</bold></td>
+<td align="justify">0.10</td>
+<td align="justify">0.06</td>
+<td align="justify">0.10</td>
+<td align="justify">0.06</td>
+<td align="justify">0.14<xref ref-type="table-fn" rid="t005fn002">*</xref></td>
+<td align="justify">0.09<xref ref-type="table-fn" rid="t005fn002">*</xref></td>
+<td align="justify">0.09<xref ref-type="table-fn" rid="t005fn001">**</xref></td>
+<td align="justify">0.06<xref ref-type="table-fn" rid="t005fn001">**</xref></td>
+</tr>
+<tr>
+<td align="justify"><bold>comp3</bold></td>
+<td align="justify">0.03</td>
+<td align="justify">0.03</td>
+<td align="justify">0.04</td>
+<td align="justify">0.03</td>
+<td align="justify">0.07</td>
+<td align="justify">0.04</td>
+<td align="justify">0.06<xref ref-type="table-fn" rid="t005fn001">**</xref></td>
+<td align="justify">0.04<xref ref-type="table-fn" rid="t005fn001">**</xref></td>
+</tr>
+<tr>
+<td align="justify"><bold>cso1*comp1</bold></td>
+<td align="justify">-0.39<xref ref-type="table-fn" rid="t005fn002">*</xref></td>
+<td align="justify">-0.30<xref ref-type="table-fn" rid="t005fn002">*</xref></td>
+<td align="justify">-0.38<xref ref-type="table-fn" rid="t005fn002">*</xref></td>
+<td align="justify">-0.29<xref ref-type="table-fn" rid="t005fn002">*</xref></td>
+<td align="justify">-0.38<xref ref-type="table-fn" rid="t005fn002">*</xref></td>
+<td align="justify">-0.29<xref ref-type="table-fn" rid="t005fn002">*</xref></td>
+<td align="justify">-0.24</td>
+<td align="justify">-0.22</td>
+</tr>
+<tr>
+<td align="justify"><bold>cso1*comp2</bold></td>
+<td align="justify">-0.60<xref ref-type="table-fn" rid="t005fn001">**</xref></td>
+<td align="justify">-0.44<xref ref-type="table-fn" rid="t005fn001">**</xref></td>
+<td align="justify">-0.59<xref ref-type="table-fn" rid="t005fn001">**</xref></td>
+<td align="justify">-0.44<xref ref-type="table-fn" rid="t005fn001">**</xref></td>
+<td align="justify">-0.68<xref ref-type="table-fn" rid="t005fn001">**</xref></td>
+<td align="justify">-0.49<xref ref-type="table-fn" rid="t005fn001">**</xref></td>
+<td align="justify">-0.38<xref ref-type="table-fn" rid="t005fn001">**</xref></td>
+<td align="justify">-0.32<xref ref-type="table-fn" rid="t005fn001">**</xref></td>
+</tr>
+<tr>
+<td align="justify"><bold>cso1*comp3</bold></td>
+<td align="justify">-0.04</td>
+<td align="justify">-0.05</td>
+<td align="justify">-0.05</td>
+<td align="justify">0.05</td>
+<td align="justify">-0.12</td>
+<td align="justify">0.00</td>
+<td align="justify">0.11</td>
+<td align="justify">0.16</td>
+</tr>
+<tr>
+<td align="justify"><bold>cso2*comp1</bold></td>
+<td align="justify">-0.21</td>
+<td align="justify">-0.19</td>
+<td align="justify">-0.21</td>
+<td align="justify">-0.19</td>
+<td align="justify">-0.27</td>
+<td align="justify">-0.22</td>
+<td align="justify">-0.12</td>
+<td align="justify">-0.15</td>
+</tr>
+<tr>
+<td align="justify"><bold>cso2*comp2</bold></td>
+<td align="justify">-0.29</td>
+<td align="justify">-0.19</td>
+<td align="justify">-0.30</td>
+<td align="justify">-0.19</td>
+<td align="justify">-0.36<xref ref-type="table-fn" rid="t005fn002">*</xref></td>
+<td align="justify">-0.23</td>
+<td align="justify">-0.24</td>
+<td align="justify">-0.16</td>
+</tr>
+<tr>
+<td align="justify"><bold>cso2*comp3</bold></td>
+<td align="justify">-0.23</td>
+<td align="justify">-0.14</td>
+<td align="justify">-0.24</td>
+<td align="justify">-0.14</td>
+<td align="justify">-0.29<xref ref-type="table-fn" rid="t005fn002">*</xref></td>
+<td align="justify">-0.18</td>
+<td align="justify">-0.13</td>
+<td align="justify">-0.07</td>
+</tr>
+<tr>
+<td align="justify"><bold>cso3*comp1</bold></td>
+<td align="justify">-0.76<xref ref-type="table-fn" rid="t005fn001">**</xref></td>
+<td align="justify">-0.52<xref ref-type="table-fn" rid="t005fn002">*</xref></td>
+<td align="justify">-0.76<xref ref-type="table-fn" rid="t005fn001">**</xref></td>
+<td align="justify">-0.52<xref ref-type="table-fn" rid="t005fn002">*</xref></td>
+<td align="justify">-0.82<xref ref-type="table-fn" rid="t005fn001">**</xref></td>
+<td align="justify">-0.56<xref ref-type="table-fn" rid="t005fn002">*</xref></td>
+<td align="justify">-0.58<xref ref-type="table-fn" rid="t005fn002">*</xref></td>
+<td align="justify">-0.42</td>
+</tr>
+<tr>
+<td align="justify"><bold>cso3*comp2</bold></td>
+<td align="justify">-0.08</td>
+<td align="justify">-0.03</td>
+<td align="justify">-0.08</td>
+<td align="justify">-0.03</td>
+<td align="justify">-0.11</td>
+<td align="justify">-0.05</td>
+<td align="justify">-0.02</td>
+<td align="justify">0.01</td>
+</tr>
+<tr>
+<td align="justify"><bold>cso3*comp3</bold></td>
+<td align="justify">0.08</td>
+<td align="justify">0.06</td>
+<td align="justify">0.08</td>
+<td align="justify">0.06</td>
+<td align="justify">0.03</td>
+<td align="justify">-0.02</td>
+<td align="justify">0.08</td>
+<td align="justify">0.07</td>
+</tr>
+<tr>
+<td align="left"><bold>same income type</bold></td>
+<td align="left"/>
+<td align="left"/>
+<td align="left">0.02</td>
+<td align="left">0.02</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left"><bold>same population type</bold></td>
+<td align="justify"/>
+<td align="justify"/>
+<td align="justify">-0.06</td>
+<td align="justify">-0.04</td>
+<td align="justify"/>
+<td align="justify"/>
+<td align="justify"/>
+<td align="justify"/>
+</tr>
+<tr>
+<td align="left"><bold>same geography type</bold></td>
+<td align="justify"/>
+<td align="justify"/>
+<td align="justify">-0.01</td>
+<td align="justify">-0.00</td>
+<td align="justify"/>
+<td align="justify"/>
+<td align="justify"/>
+<td align="justify"/>
+</tr>
+<tr>
+<td align="left"><bold>Income controls</bold></td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="justify">Yes</td>
+<td align="justify">Yes</td>
+<td align="justify">Yes</td>
+<td align="justify">Yes</td>
+</tr>
+<tr>
+<td align="left"><bold>Geographical controls</bold></td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="justify">Yes</td>
+<td align="justify">Yes</td>
+<td align="justify">Yes</td>
+<td align="justify">Yes</td>
+</tr>
+<tr>
+<td align="left"><bold>Population controls</bold></td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="justify">Yes</td>
+<td align="justify">Yes</td>
+<td align="justify">Yes</td>
+<td align="justify">Yes</td>
+</tr>
+<tr>
+<td align="left"><bold>Conflict fixed effects</bold></td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="justify">Yes</td>
+<td align="justify">Yes</td>
+</tr>
+<tr>
+<td align="left"><bold>R-squared</bold></td>
+<td align="justify">0</td>
+<td align="justify">0</td>
+<td align="justify">0</td>
+<td align="justify">0</td>
+<td align="justify">0.01</td>
+<td align="justify">0</td>
+<td align="justify">0.17</td>
+<td align="justify">0.05</td>
+</tr>
+<tr>
+<td align="left"><bold># of observations</bold></td>
+<td align="justify">77006</td>
+<td align="justify">77006</td>
+<td align="justify">77006</td>
+<td align="justify">77006</td>
+<td align="justify">77006</td>
+<td align="justify">77006</td>
+<td align="justify">77006</td>
+<td align="justify">77006</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t005fn001"><p>** significant at a 1 percent level,</p></fn>
+<fn id="t005fn002"><p>* significant at a 5 percent level</p></fn>
+<fn id="t005fn003"><p>Note: For each conflict pair, one conflict was taken as the pivot conflict. Standard errors are clustered for pivot conflicts. “CSO i” (“comp i”) denotes the dummy variable for CSO (company)-based distance between two conflicts being “i”.</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<p>Similar regression analyses were run to test how network distance between two conflicts impacts the probability of having equal EJ scores. <xref ref-type="table" rid="pone.0180494.t006">Table 6</xref> shows that the likelihood of two conflicts having equal EJ scores is significantly higher when they are connected through CSOs and company-based distance between them is one or two. Hence, being closer in the network through CSOs and companies complementarily increases the likelihood of equal EJ scores.</p>
+<table-wrap id="pone.0180494.t006" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0180494.t006</object-id>
+<label>Table 6</label> <caption><title>Probability that the EJ scores of two conflicts are equal.</title></caption>
+<alternatives>
+<graphic id="pone.0180494.t006g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0180494.t006" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="justify">(equal justice scores)</th>
+<th align="justify">Probit</th>
+<th align="justify">Probit</th>
+<th align="justify">Probit</th>
+<th align="justify">Probit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="justify"><bold>cso1</bold></td>
+<td align="justify">0.13<xref ref-type="table-fn" rid="t006fn001">**</xref></td>
+<td align="justify">0.13<xref ref-type="table-fn" rid="t006fn001">**</xref></td>
+<td align="justify">0.12<xref ref-type="table-fn" rid="t006fn002">*</xref></td>
+<td align="justify">0.10<xref ref-type="table-fn" rid="t006fn002">*</xref></td>
+</tr>
+<tr>
+<td align="justify"><bold>cso2</bold></td>
+<td align="justify">0.08</td>
+<td align="justify">0.07</td>
+<td align="justify">0.05</td>
+<td align="justify">0.02</td>
+</tr>
+<tr>
+<td align="justify"><bold>cso3</bold></td>
+<td align="justify">0.05</td>
+<td align="justify">0.04</td>
+<td align="justify">0.01</td>
+<td align="justify">-0.01</td>
+</tr>
+<tr>
+<td align="justify"><bold>comp1</bold></td>
+<td align="justify">-0.01</td>
+<td align="justify">-0.01</td>
+<td align="justify">-0.01</td>
+<td align="justify">-0.00</td>
+</tr>
+<tr>
+<td align="justify"><bold>comp2</bold></td>
+<td align="justify">0.01</td>
+<td align="justify">0.01</td>
+<td align="justify">0.01</td>
+<td align="justify">-0.00</td>
+</tr>
+<tr>
+<td align="justify"><bold>comp3</bold></td>
+<td align="justify">-0.05</td>
+<td align="justify">-0.06<xref ref-type="table-fn" rid="t006fn002">*</xref></td>
+<td align="justify">-0.05</td>
+<td align="justify">-0.04</td>
+</tr>
+<tr>
+<td align="justify"><bold>cso1*comp1</bold></td>
+<td align="justify">0.33<xref ref-type="table-fn" rid="t006fn002">*</xref></td>
+<td align="justify">0.33<xref ref-type="table-fn" rid="t006fn002">*</xref></td>
+<td align="justify">0.31</td>
+<td align="justify">0.25<xref ref-type="table-fn" rid="t006fn002">*</xref></td>
+</tr>
+<tr>
+<td align="justify"><bold>cso1*comp2</bold></td>
+<td align="justify">0.39<xref ref-type="table-fn" rid="t006fn002">*</xref></td>
+<td align="justify">0.39<xref ref-type="table-fn" rid="t006fn002">*</xref></td>
+<td align="justify">0.40<xref ref-type="table-fn" rid="t006fn001">**</xref></td>
+<td align="justify">0.29<xref ref-type="table-fn" rid="t006fn002">*</xref></td>
+</tr>
+<tr>
+<td align="justify"><bold>cso1*comp3</bold></td>
+<td align="justify">-0.52<xref ref-type="table-fn" rid="t006fn002">*</xref></td>
+<td align="justify">-0.51<xref ref-type="table-fn" rid="t006fn002">*</xref></td>
+<td align="justify">-0.52<xref ref-type="table-fn" rid="t006fn002">*</xref></td>
+<td align="justify">-0.68<xref ref-type="table-fn" rid="t006fn001">**</xref></td>
+</tr>
+<tr>
+<td align="justify"><bold>cso2*comp1</bold></td>
+<td align="justify">0.40</td>
+<td align="justify">0.41</td>
+<td align="justify">0.41</td>
+<td align="justify">0.42</td>
+</tr>
+<tr>
+<td align="justify"><bold>cso2*comp2</bold></td>
+<td align="justify">0.03</td>
+<td align="justify">0.04</td>
+<td align="justify">0.05</td>
+<td align="justify">-0.03</td>
+</tr>
+<tr>
+<td align="justify"><bold>cso2*comp3</bold></td>
+<td align="justify">0.11</td>
+<td align="justify">0.11</td>
+<td align="justify">0.11</td>
+<td align="justify">-0.01</td>
+</tr>
+<tr>
+<td align="justify"><bold>cso3*comp1</bold></td>
+<td align="justify">0.33</td>
+<td align="justify">0.33</td>
+<td align="justify">0.36</td>
+<td align="justify">0.17</td>
+</tr>
+<tr>
+<td align="justify"><bold>cso3*comp2</bold></td>
+<td align="justify">-0.13</td>
+<td align="justify">-0.13</td>
+<td align="justify">-0.14</td>
+<td align="justify">-0.20</td>
+</tr>
+<tr>
+<td align="justify"><bold>cso3*comp3</bold></td>
+<td align="justify">0.08</td>
+<td align="justify">-0.08</td>
+<td align="justify">-0.07</td>
+<td align="justify">-0.12</td>
+</tr>
+<tr>
+<td align="justify"><bold>same income type</bold></td>
+<td align="justify"/>
+<td align="justify">-0.05<xref ref-type="table-fn" rid="t006fn001">**</xref></td>
+<td align="justify"/>
+<td align="justify"/>
+</tr>
+<tr>
+<td align="justify"><bold>same population type</bold></td>
+<td align="justify"/>
+<td align="justify">0.02</td>
+<td align="justify"/>
+<td align="justify"/>
+</tr>
+<tr>
+<td align="justify"><bold>same geography type</bold></td>
+<td align="justify"/>
+<td align="justify">0.03</td>
+<td align="justify"/>
+<td align="justify"/>
+</tr>
+<tr>
+<td align="justify"><bold>Income controls</bold></td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="justify">Yes</td>
+<td align="justify">Yes</td>
+</tr>
+<tr>
+<td align="justify"><bold>Geographical controls</bold></td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="justify">Yes</td>
+<td align="justify">Yes</td>
+</tr>
+<tr>
+<td align="justify"><bold>Population controls</bold></td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="justify">Yes</td>
+<td align="justify">Yes</td>
+</tr>
+<tr>
+<td align="justify"><bold>Conflict fixed effects</bold></td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="justify">Yes</td>
+</tr>
+<tr>
+<td align="justify"><bold>R-squared</bold></td>
+<td align="justify">0</td>
+<td align="justify">0</td>
+<td align="justify">0.01</td>
+<td align="justify">0.08</td>
+</tr>
+<tr>
+<td align="justify"><bold># of observations</bold></td>
+<td align="justify">77006</td>
+<td align="justify">77006</td>
+<td align="justify">77000</td>
+<td align="justify">77000</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t006fn001"><p>** significant at a 1 percent level,</p></fn>
+<fn id="t006fn002"><p>* significant at a 5 percent level</p></fn>
+<fn id="t006fn003"><p>Note: For each conflict pair, one conflict was taken as the pivot conflict. Standard errors are clustered for pivot conflicts.</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<p>The fact that distance between two conflicts has a significant impact shows that network effects in environmental conflicts go beyond direct connections. Network effects are not only due to a CSO or a company common to both conflicts, the proximity of two conflicts in the network also matters. Experiences, strategies, and the information that CSOs and companies spread throughout the network via their connections are all influential. If an environmental conflict with a high justice score is connected to others through CSOs and companies, the positive experiences will spread out through these connections. Based on the results provided in <xref ref-type="table" rid="pone.0180494.t002">Table 2</xref>, it would also be better to connect conflicts that have high justice scores with other conflicts via central CSOs.</p>
+</sec>
+<sec id="sec005">
+<title>5. Synthesis and conclusions</title>
+<p>The social network concept has become popular in the scholarly literature on social movements in general and on environmental justice in particular. This paper drew on the tools of social network analysis and built on a collaborative work that brought together quantitative information on mining conflicts, aiming to innovatively demonstrate that an EJ movement has indeed taken root in the form of a global social network in relation to mining conflicts, and that these networking efforts not only have a symbolic value in civil society, but also play an important role in EJ outcomes.</p>
+<p>First, the analysis revealed that the greater the number of CSOs involved in a mining conflict, the more likely its outcome will be perceived as an EJ success. This coincides with empirical insights gained from case studies, which indicate that the size of a social movement actually matters in environmental resistance actions because large scale movements help achieve targeted objectives in several ways [<xref ref-type="bibr" rid="pone.0180494.ref052">52</xref>]. As Swain [<xref ref-type="bibr" rid="pone.0180494.ref067">67</xref>] notes, a social movement with massive support leads, above all, to the questioning of the legitimacy and representivity of the authorities and their policies. Obviously, this is not just about numbers, but about difference and plurality as well. Resistance movements that involve more CSOs are naturally more diverse, and given that EJ requires an understanding of the existence and importance of multiple perspectives, diversity—combined with mutual respect and solidarity—then serves to add strength to the movement. It incorporates “many different experiences people have in their environments; the cultures that informs those experiences and the various evaluations and reactions that emerge from them” [<xref ref-type="bibr" rid="pone.0180494.ref058">58</xref>, p. 125]. This finding also favors a network structure that is bottom-up, spontaneous and diverse over one single, centralized and formal organization. It indicates that grassroots movements may be successful in pursuing their own objectives, as indicated by Schlosberg [<xref ref-type="bibr" rid="pone.0180494.ref058">58</xref>]: There is power in grassroots movements, and hence, no particular need for institutionalized arrangements—more specifically, the organizing of the Big Ten.</p>
+<p>Second, the analysis showed that if a CSO is connected to central CSOs, the average perception of EJ success is likely to increase. This means that in addition to finding strength and diversity in numbers, it is important for local resistance movements to develop the network at multiple scales because jumping scales and engaging with central national and international actors provides leverage for local activists. This result is very much in line with what Rootes [<xref ref-type="bibr" rid="pone.0180494.ref032">32</xref>,<xref ref-type="bibr" rid="pone.0180494.ref056">56</xref>] and Sikor and Newell [<xref ref-type="bibr" rid="pone.0180494.ref024">24</xref>] argue: In cases where national environmental organizations are resource-rich, linkages between local environmental campaigns and national and transnational organizations are extremely important and useful. In a number of well-known EJ successes, communities involved in strong networks were able to communicate to society the relevance of preventing mining exploration on the grounds of environmental, cultural, or legal values. Rivera [<xref ref-type="bibr" rid="pone.0180494.ref068">68</xref>], for instance, talks about how local level diversity in post-dictatorship Chile made access easier for international agencies and thus boosted visibility. Working with an array of national and international partners ultimately made it possible to share strategies and access independent assessments [<xref ref-type="bibr" rid="pone.0180494.ref069">69</xref>]; however, because bottom-up access from communities to national EJOs depends heavily on awareness levels in a given community, this is not always easy. Similarly, national EJOs may not always have the means to connect to international organizations. In such settings, professional groups (e.g., teachers, students, lawyers) may play key roles in helping local communities or national organizations raise awareness and carry the struggle onto a higher scale [<xref ref-type="bibr" rid="pone.0180494.ref056">56</xref>].</p>
+<p>For local movements, the critical point is not to lose the grassroots while establishing links to higher levels. As Schlosberg [<xref ref-type="bibr" rid="pone.0180494.ref058">58</xref>] notes, when a movement is built, it starts from the bottom up, and there should be an awareness of the need to keep ownership in the hands of local participants. Moreover, networking at the national or international levels should not mean homogenizing local CSOs, but rather creating a platform for sharing relevant experiences and strategies that would strengthen them in their efforts to confront various issues. For example, innovative methods derived as a result of transnational networking might give social movements an initial strategic advantage vis-à-vis the national authorities.</p>
+<p>Third, the paper shows that as network distance between two conflicts increases (or decreases), the more likely they are to lead to different (or similar) EJ outcomes. The key network effect here is the inverse relationship between the distance of two conflicts in the social network and the likelihood of sharing the same level of success. This result not only detects network effects in EJ movements for the first time within the context of mining conflicts, but also reinforces previous research that demonstrates these effects in other spheres, such as finance or in the context of economic crises.</p>
+<p>What can we learn from this particular result? Can network analysis be used as an organization strategy to spread EJ success? While acknowledging diversity, difference and plurality, the results of this study expands on previous work by Schlosberg [<xref ref-type="bibr" rid="pone.0180494.ref058">58</xref>], who proposed that networks could be an alternative form of organizing that would remedy the limitations of the conventional model and free social movements from relying on more centralized organizations. The results of our analysis here offer insights into the kinds of bridges that can be built among diverse cases and the alliances that can be established across contexts and scales. Accordingly, it would be a strategic move on the part of successful CSOs to create links to other important conflicts and to disseminate information on how they achieved greater EJ success. Such insights underline the importance of highlighting achievements in EJ movements: publicizing and making the most of the successful cases so that they inspire other similar struggles. Overall, the message is clear: Network development should ultimately aim to achieve concrete gains that can be linked to the idea of success.</p>
+<p>Naturally, building network links should not be read as establishing formal mechanisms among different organizations. On the contrary, as underlined again by Schlosberg [<xref ref-type="bibr" rid="pone.0180494.ref058">58</xref>] and Rootes [<xref ref-type="bibr" rid="pone.0180494.ref056">56</xref>], effective networking should go beyond organizational forms and be seen as mobile arrangements that welcome dynamic, heterogeneous and informal ties, that remain silent unless needed. This kind of organizing would minimize efforts required to maintain institutional support mechanisms, while maximizingresiliency and the ability to adapt to diverse and changing local conditions. It would include improving communication capacities and developing information strings to share experiences. Activist trust is undoubtedly another essential component of networking here [<xref ref-type="bibr" rid="pone.0180494.ref070">70</xref>].</p>
+<p>In closing, the social network analysis presented in this paper is far from complete; it is based only on data reported by activists in relation to mining conflicts. Nonetheless, this visual representation exercise and discussion should be seen as a first step in showing the complex web of relationships among companies and resistance movements. From an EJ perspective, the commonalities in conflicts are so vast that the global village of social movements becomes quite small, and networks driven by decentralization, diversification and democratization seem to have the potential to create pathways that can change the power balance in favor of local communities.</p>
+</sec>
+<sec id="sec006">
+<title>Supporting information</title>
+<supplementary-material id="pone.0180494.s001" mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" position="float" xlink:href="info:doi/10.1371/journal.pone.0180494.s001" xlink:type="simple">
+<label>S1 File</label>
+<caption>
+<title>All relevant data used in the article.</title>
+<p>(XLSX)</p>
+</caption>
+</supplementary-material>
+</sec>
+</body>
+<back>
+<ack>
+<p>The work here was supported by the EJOLT project (Environmental Justice Organisations, Liabilities and Trade 2011–15; G.A. No. 266642) and the ENTITLE (European Network of Political Ecology) Initial Training Network (REA N° 289374) under the European Union’s 7th Framework Programme for research, technological development and demonstration. We would like to express our gratitude to Joan Martinez-Alier, Leah Temper and Daniela del Bene for EJAtlas moderation. Special thanks are also due to EJOLT partners and specific contributors along the different phases of the research. Special thanks go to Umut Kuzubaş, Mario Coscarello and the anonymous referees for their useful comments on earlier versions of the paper. The usual disclaimers apply.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0180494.ref001"><label>1</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Steinberger</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Krausmann</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Eisenmenger</surname> <given-names>N</given-names></name>. <article-title>Global patterns of materials use: A socioeconomic and geophysical analysis</article-title>. <source>Ecological Economics</source>. <year>2010</year>;<volume>69</volume>(<issue>5</issue>):<fpage>1148</fpage>–<lpage>1158</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.ecolecon.2009.12.009" xlink:type="simple">10.1016/j.ecolecon.2009.12.009</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref002"><label>2</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Giljum</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Dittrich</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Lieber</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Lutter</surname> <given-names>S</given-names></name>. <article-title>Global Patterns of Material Flows and their Socio-Economic and Environmental Implications: A MFA Study on All Countries World-Wide from 1980 to 2009</article-title>. <source>Resources</source>. <year>2014</year>;<volume>3</volume>(<issue>1</issue>):<fpage>319</fpage>–<lpage>339</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.3390/resources3010319" xlink:type="simple">10.3390/resources3010319</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref003"><label>3</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schaffartzik</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Mayer</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Eisenmenger</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Krausmann</surname> <given-names>F</given-names></name>. <article-title>Global patterns of metal extractivism, 1950–2010: Providing the bones for the industrial society's skeleton</article-title>. <source>Ecological Economics</source>. <year>2016</year>;<volume>122</volume>:<fpage>101</fpage>–<lpage>110</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.ecolecon.2015.12.007" xlink:type="simple">10.1016/j.ecolecon.2015.12.007</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref004"><label>4</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pegg</surname> <given-names>S</given-names></name>. <article-title>Mining and poverty reduction: Transforming rhetoric into reality</article-title>. <source>Journal of Cleaner Production</source>. <year>2006</year>;<volume>14</volume>(<issue>3–4</issue>):<fpage>376</fpage>–<lpage>387</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.jclepro.2004.06.006" xlink:type="simple">10.1016/j.jclepro.2004.06.006</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref005"><label>5</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Urkidi</surname> <given-names>L</given-names></name>. <article-title>A glocal environmental movement against gold mining</article-title>: <source>Pascua—Lama in Chile. Ecological Economics</source>. <year>2010</year>;<volume>70</volume>(<issue>2</issue>):<fpage>219</fpage>–<lpage>227</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.ecolecon.2010.05.004" xlink:type="simple">10.1016/j.ecolecon.2010.05.004</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref006"><label>6</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bebbington</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Williams</surname> <given-names>M</given-names></name>. <article-title>Water and mining conflicts in Peru</article-title>. <source><italic>Mt Res Dev</italic></source>. <year>2008</year>;<volume>28</volume>(<issue>3/4</issue>):<fpage>190</fpage>–<lpage>195</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1659/mrd.1039" xlink:type="simple">10.1659/mrd.1039</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref007"><label>7</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Martinez-Alier</surname> <given-names>J</given-names></name>. <article-title>Mining conflicts, environmental justice, and valuation</article-title>. <source>Journal of Hazardous Materials</source>. <year>2001</year>;<volume>86</volume>(<issue>1–3</issue>):<fpage>153</fpage>–<lpage>170</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/S0304-3894(01)00252-7" xlink:type="simple">10.1016/S0304-3894(01)00252-7</ext-link></comment> <object-id pub-id-type="pmid">11532364</object-id></mixed-citation></ref>
+<ref id="pone.0180494.ref008"><label>8</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bebbington</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Bury</surname> <given-names>J</given-names></name>. <article-title>Institutional challenges for mining and sustainability in Peru</article-title>. <source>Proceedings of the National Academy of Sciences</source>. <year>2009</year>;<volume>106</volume>(<issue>41</issue>):<fpage>17296</fpage>–<lpage>17301</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1073/pnas.0906057106" xlink:type="simple">10.1073/pnas.0906057106</ext-link></comment> <object-id pub-id-type="pmid">19805172</object-id></mixed-citation></ref>
+<ref id="pone.0180494.ref009"><label>9</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bebbington</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Humphreys Bebbington</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Bury</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Lingan</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Muñoz</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Scurrah</surname> <given-names>M</given-names></name>. <article-title>Mining and Social Movements: Struggles Over Livelihood and Rural Territorial Development in the Andes</article-title>. <source>World Development</source>. <year>2008</year>;<volume>36</volume>(<issue>12</issue>):<fpage>2888</fpage>–<lpage>2905</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.worlddev.2007.11.016" xlink:type="simple">10.1016/j.worlddev.2007.11.016</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref010"><label>10</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bridge</surname> <given-names>G</given-names></name>. <article-title>Contested terrain: Mining and the Environment</article-title>. <source>Annual Review of Environment and Resources</source>. <year>2004</year>;<volume>29</volume>(<issue>1</issue>):<fpage>205</fpage>–<lpage>259</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1146/annurev.energy.28.011503.163434" xlink:type="simple">10.1146/annurev.energy.28.011503.163434</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref011"><label>11</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bridge</surname> <given-names>G</given-names></name>. <article-title>Mapping the Bonanza: Geographies of Mining Investment in an Era of Neoliberal Reform</article-title>. <source>The Professional Geographer</source>. <year>2004</year>;<volume>56</volume>(<issue>3</issue>):<fpage>406</fpage>–<lpage>421</lpage>.</mixed-citation></ref>
+<ref id="pone.0180494.ref012"><label>12</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bebbington</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Hinojosa</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Bebbington</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Burneo</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Warnaars</surname> <given-names>X</given-names></name>. <article-title>Contention and Ambiguity: Mining and the Possibilities of Development</article-title>. <source>Development and Change</source>. <year>2008</year>;<volume>39</volume>(<issue>6</issue>):<fpage>887</fpage>–<lpage>914</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1111/j.1467-7660.2008.00517.x" xlink:type="simple">10.1111/j.1467-7660.2008.00517.x</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref013"><label>13</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Martinez-Alier</surname> <given-names>J</given-names></name>. <article-title>Mining conflicts, environmental justice, and valuation</article-title>. <source><italic>J Hazard Mater</italic></source>. <year>2001</year>;<volume>86</volume>(<issue>1–3</issue>):<fpage>153</fpage>–<lpage>170</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/S0304-3894(01)00252-7" xlink:type="simple">10.1016/S0304-3894(01)00252-7</ext-link></comment> <object-id pub-id-type="pmid">11532364</object-id></mixed-citation></ref>
+<ref id="pone.0180494.ref014"><label>14</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Avcı</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Adaman</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Özkaynak</surname> <given-names>B</given-names></name>. <article-title>Valuation languages in environmental conflicts: How stakeholders oppose or support gold mining at Mount Ida, Turkey</article-title>. <source>Ecological Economics</source>. <year>2010</year>;<volume>70</volume>(<issue>2</issue>):<fpage>228</fpage>–<lpage>238</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.ecolecon.2010.05.009" xlink:type="simple">10.1016/j.ecolecon.2010.05.009</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref015"><label>15</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Walter</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Martinez-Alier</surname> <given-names>J</given-names></name>. (2010). <article-title>How to be heard when nobody wants to listen: Community action against mining in Argentina</article-title>. <source>Canadian Journal of Development Studies/Revue canadienne d'études du développement</source>. <year>2010</year>;<volume>30</volume>(<issue>1–2</issue>): <fpage>281</fpage>–<lpage>301</lpage>.</mixed-citation></ref>
+<ref id="pone.0180494.ref016"><label>16</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Urkidi</surname> <given-names>L</given-names></name>. <article-title>The Defence of Community in the Anti-Mining Movement of Guatemala</article-title>. <source>Journal of Agrarian Change</source>. <year>2011</year>;<volume>11</volume>(<issue>4</issue>):<fpage>556</fpage>–<lpage>580</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1111/j.1471-0366.2011.00326.x" xlink:type="simple">10.1111/j.1471-0366.2011.00326.x</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref017"><label>17</label><mixed-citation publication-type="other" xlink:type="simple">Özkaynak B, Rodriguez-Labajos B, Arsel M, Avcı D, Carbonell MH, Chareyron B, et al. Mining conflicts around the world: Common grounds from an environmental justice perspective. EJOLT Report No. 7. 2012.</mixed-citation></ref>
+<ref id="pone.0180494.ref018"><label>18</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Velicu</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Kaika</surname> <given-names>M</given-names></name>. <article-title>Undoing environmental justice: Re-imagining equality in the Rosia Montana anti-mining movement</article-title>. <source>Geoforum</source>. <year>2015</year>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.geoforum.2015.10.012" xlink:type="simple">10.1016/j.geoforum.2015.10.012</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref019"><label>19</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Walter</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Urkidi</surname> <given-names>L</given-names></name>. <article-title>Community mining consultations in Latin America (2002–2012): The contested emergence of a hybrid institution for participation</article-title>. <source>Geoforum</source>. <year>2015</year>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.geoforum.2015.09.007" xlink:type="simple">10.1016/j.geoforum.2015.09.007</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref020"><label>20</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Avcı</surname> <given-names>D</given-names></name>. <article-title>Mining conflicts and transformative politics: A comparison of Intag (Ecuador) and Mount Ida (Turkey) environmental struggles</article-title>. <source>Geoforum</source>. <year>2015</year>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.geoforum.2015.07.013" xlink:type="simple">10.1016/j.geoforum.2015.07.013</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref021"><label>21</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bustos</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Folchi</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Fragkou</surname> <given-names>M</given-names></name>. <article-title>Coal mining on pastureland in Southern Chile; challenging recognition and participation as guarantees for environmental justice</article-title>. <source>Geoforum</source>. <year>2016</year>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.geoforum.2015.12.012" xlink:type="simple">10.1016/j.geoforum.2015.12.012</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref022"><label>22</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Temper</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Martinez-Alier</surname> <given-names>J</given-names></name>. <article-title>The god of the mountain and Godavarman: Net Present Value, indigenous territorial rights and sacredness in a bauxite mining conflict in India</article-title>. <source><italic>Ecol Econ</italic></source>. <year>2013</year>;<volume>96</volume>:<fpage>79</fpage>–<lpage>87</lpage>.</mixed-citation></ref>
+<ref id="pone.0180494.ref023"><label>23</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Urkidi</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Walter</surname> <given-names>M</given-names></name>. <article-title>Dimensions of environmental justice in anti-gold mining movements in Latin America</article-title>. <source><italic>Geoforum</italic></source>. <year>2011</year>;<volume>42</volume>(<issue>6</issue>):<fpage>683</fpage>–<lpage>695</lpage>.</mixed-citation></ref>
+<ref id="pone.0180494.ref024"><label>24</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sikor</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Newell</surname> <given-names>P</given-names></name>. <article-title>Globalizing environmental justice?</article-title>. <source>Geoforum</source>. <year>2014</year>;<volume>54</volume>:<fpage>151</fpage>–<lpage>157</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.geoforum.2014.04.009" xlink:type="simple">10.1016/j.geoforum.2014.04.009</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref025"><label>25</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Schlosberg</surname> <given-names>D</given-names></name>. <source>Defining environmental justice</source>. <publisher-loc>Oxford</publisher-loc>: <publisher-name>Oxford University Press</publisher-name>; <year>2007</year>.</mixed-citation></ref>
+<ref id="pone.0180494.ref026"><label>26</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bebbington</surname> <given-names>A.</given-names></name>, <name name-style="western"><surname>Humphreys Bebbington</surname> <given-names>D.</given-names></name>, <name name-style="western"><surname>Bury</surname> <given-names>J.</given-names></name>, <name name-style="western"><surname>Lingan</surname> <given-names>J.</given-names></name>, <name name-style="western"><surname>Muñoz</surname> <given-names>J.P.</given-names></name>, <name name-style="western"><surname>Scurrah</surname> <given-names>M.</given-names></name> <article-title>Mining and Social Movements: Struggles Over Livelihood and Rural Territorial Development in the Andes</article-title>. <source>World Dev</source>. <year>2008</year>;<volume>36</volume>, <fpage>2888</fpage>–<lpage>2905</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.worlddev.2007.11.016" xlink:type="simple">10.1016/j.worlddev.2007.11.016</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref027"><label>27</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sanyal</surname> <given-names>P</given-names></name>. <article-title>Capacity building through partnership: Intermediary nongovernmental organizations as local and global actors</article-title>. <source>Nonprofit and Voluntary Sector Quarterly</source>. <year>2006</year>;<volume>35</volume>(<issue>1</issue>), <fpage>66</fpage>–<lpage>82</lpage> 2006</mixed-citation></ref>
+<ref id="pone.0180494.ref028"><label>28</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Van der Heijden</surname> <given-names>H.</given-names></name> <article-title>Political opportunity structure and institutionalization of the environmental movement</article-title>. <source>Environmental Politics</source>. <year>1997</year>;<volume>6</volume>(<issue>4</issue>), <fpage>25</fpage>–<lpage>50</lpage></mixed-citation></ref>
+<ref id="pone.0180494.ref029"><label>29</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Banks</surname> <given-names>N.</given-names></name>, <name name-style="western"><surname>Hulme</surname> <given-names>D.</given-names></name>, <name name-style="western"><surname>Edwards</surname> <given-names>M.</given-names></name> <article-title>NGOs, states, and donors revisited: Still too close for comfort?</article-title> <source><italic>World Development</italic></source>. <year>2015</year>;<volume>66</volume>, <fpage>707</fpage>–<lpage>718</lpage>.</mixed-citation></ref>
+<ref id="pone.0180494.ref030"><label>30</label><mixed-citation publication-type="other" xlink:type="simple">Walter M. Political ecology of mining conflicts in Latin America an analysis of environmental justice movements and struggles over scales. 2014.</mixed-citation></ref>
+<ref id="pone.0180494.ref031"><label>31</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Brown</surname> <given-names>K</given-names></name>. <article-title>Global environmental change I: A social turn for resilience</article-title>. <source><italic>Prog Hum Geogr</italic></source>. <year>2014</year>;<volume>38</volume>(<issue>1</issue>):<fpage>107</fpage>–<lpage>117</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1177/0309132513498837" xlink:type="simple">10.1177/0309132513498837</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref032"><label>32</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rootes</surname> <given-names>C</given-names></name>. <article-title>Acting globally, thinking locally? Prospects for a global environmental movement</article-title>. <source>Environmental Politics</source>. <year>1999</year>;<volume>8</volume>(<issue>1</issue>):<fpage>290</fpage>–<lpage>310</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1080/09644019908414448" xlink:type="simple">10.1080/09644019908414448</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref033"><label>33</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Rootes</surname> <given-names>C.</given-names></name> <chapter-title>Acting locally: The character, contexts and significance of local environmental mobilizations</chapter-title>. In <name name-style="western"><surname>Rootes</surname> <given-names>C.</given-names></name> (Ed.) <source><italic>Acting Locally</italic>: <italic>Local environmental mobilizations and campaigns</italic></source>.<publisher-loc>London and New York</publisher-loc>: <publisher-name>Routledge</publisher-name>. <year>2008</year> pp.<fpage>2</fpage>–<lpage>21</lpage>.</mixed-citation></ref>
+<ref id="pone.0180494.ref034"><label>34</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>McAdam</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>McCarthy</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Zald</surname> <given-names>MN</given-names></name>. <source><italic>Comparative Perspectives on Social Movements</italic>: <italic>Political Opportunities</italic>, <italic>Mobilizing Structures</italic>, <italic>and Cultural Framings</italic></source>. <publisher-loc>Cambridge</publisher-loc>: <publisher-name>Cambridge University Press</publisher-name>; <year>1996</year>.</mixed-citation></ref>
+<ref id="pone.0180494.ref035"><label>35</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pellow</surname> <given-names>DN</given-names></name>. <article-title>Environmental Justice and The Political Process: Movements, Corporations, and the State</article-title>. <source><italic>Sociol Q</italic></source>. <year>2001</year>;<volume>42</volume>(<issue>1</issue>):<fpage>47</fpage>–<lpage>67</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1111/j.1533-8525.2001.tb02374.x" xlink:type="simple">10.1111/j.1533-8525.2001.tb02374.x</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref036"><label>36</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Diani</surname> <given-names>M</given-names></name>. <article-title>The Concept of Social Movement</article-title>. <source><italic>Sociol Rev</italic></source>. <year>1992</year>;<volume>40</volume>(<issue>1</issue>):<fpage>1</fpage>–<lpage>25</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1111/j.1467-954X.1992.tb02943.x" xlink:type="simple">10.1111/j.1467-954X.1992.tb02943.x</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref037"><label>37</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Diani</surname> <given-names>M</given-names></name>. <source><italic>Green Networks</italic>: <italic>A Structural Analysis of the Italian Environmental Movement</italic></source>. <publisher-loc>Edinburgh</publisher-loc>: <publisher-name>Edinburgh University Press</publisher-name>; <year>1995</year>.</mixed-citation></ref>
+<ref id="pone.0180494.ref038"><label>38</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ackland</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>O’Neil</surname> <given-names>M</given-names></name>. <article-title>Online collective identity: The case of the environmental movement</article-title>. <source>Social Networks</source>. <year>2011</year>;<volume>33</volume>(<issue>3</issue>):<fpage>177</fpage>–<lpage>190</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.socnet.2011.03.001" xlink:type="simple">10.1016/j.socnet.2011.03.001</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref039"><label>39</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ventresca</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Aleman</surname> <given-names>D</given-names></name>. <article-title>Evaluation of strategies to mitigate contagion spread using social network characteristics</article-title>. <source>Social Networks</source>. <year>2013</year>;<volume>35</volume>(<issue>1</issue>):<fpage>75</fpage>–<lpage>88</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.socnet.2013.01.002" xlink:type="simple">10.1016/j.socnet.2013.01.002</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref040"><label>40</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Albert</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Barabási</surname> <given-names>A</given-names></name>. <article-title>Statistical mechanics of complex networks</article-title>. <source>Reviews of Modern Physics</source>. <year>2002</year>;<volume>74</volume>(<issue>1</issue>):<fpage>47</fpage>–<lpage>97</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1103/RevModPhys.74.47" xlink:type="simple">10.1103/RevModPhys.74.47</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref041"><label>41</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Uddin</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Hossain</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Rasmussen</surname> <given-names>K</given-names></name>. <article-title>Network Effects on Scientific Collaborations</article-title>. <source>PLoS ONE</source>. <year>2013</year>;<volume>8</volume>(<issue>2</issue>):<fpage>e57546</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1371/journal.pone.0057546" xlink:type="simple">10.1371/journal.pone.0057546</ext-link></comment> <object-id pub-id-type="pmid">23469021</object-id></mixed-citation></ref>
+<ref id="pone.0180494.ref042"><label>42</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bian</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Huang</surname> <given-names>X</given-names></name>, <name name-style="western"><surname>Zhang</surname> <given-names>L</given-names></name>. <article-title>Information and favoritism: The network effect on wage income in China</article-title>. <source>Social Networks</source>. <year>2015</year>;<volume>40</volume>:<fpage>129</fpage>–<lpage>138</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.socnet.2014.09.003" xlink:type="simple">10.1016/j.socnet.2014.09.003</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref043"><label>43</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Vitali</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Glattfelder</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Battiston</surname> <given-names>S</given-names></name>. <article-title>The Network of Global Corporate Control</article-title>. <source>PLoS ONE</source>. <year>2011</year>;<volume>6</volume>(<issue>10</issue>):<fpage>e25995</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1371/journal.pone.0025995" xlink:type="simple">10.1371/journal.pone.0025995</ext-link></comment> <object-id pub-id-type="pmid">22046252</object-id></mixed-citation></ref>
+<ref id="pone.0180494.ref044"><label>44</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zhou</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Wu</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Xu</surname> <given-names>H</given-names></name>. <article-title>Structure and formation of top networks in international trade, 2001–2010</article-title>. <source>Social Networks</source>. <year>2016</year>;<volume>44</volume>:<fpage>9</fpage>–<lpage>21</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.socnet.2015.07.006" xlink:type="simple">10.1016/j.socnet.2015.07.006</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref045"><label>45</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Klimek</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Hausmann</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Thurner</surname> <given-names>S</given-names></name>. <article-title>Empirical Confirmation of Creative Destruction from World Trade Data</article-title>. <source>PLoS ONE</source>. <year>2012</year>;<volume>7</volume>(<issue>6</issue>):<fpage>e38924</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1371/journal.pone.0038924" xlink:type="simple">10.1371/journal.pone.0038924</ext-link></comment> <object-id pub-id-type="pmid">22719989</object-id></mixed-citation></ref>
+<ref id="pone.0180494.ref046"><label>46</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Haldane</surname> <given-names>AG</given-names></name>. <chapter-title>Rethinking the financial network</chapter-title>. <source>Speech delivered at the Financial Student Association</source>. <year>2009</year>.</mixed-citation></ref>
+<ref id="pone.0180494.ref047"><label>47</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Markose</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Giansante</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Shaghaghi</surname> <given-names>A</given-names></name>. <article-title>‘Too interconnected to fail’ financial network of US CDS market: Topological fragility and systemic risk</article-title>. <source>Journal of Economic Behavior &amp; Organization</source>. <year>2012</year>;<volume>83</volume>(<issue>3</issue>):<fpage>627</fpage>–<lpage>646</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.jebo.2012.05.016" xlink:type="simple">10.1016/j.jebo.2012.05.016</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref048"><label>48</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kaushik</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Battiston</surname> <given-names>S</given-names></name>. <article-title>Credit Default Swaps Drawup Networks: Too Interconnected to Be Stable?</article-title>. <source>PLoS ONE</source>. <year>2013</year>;<volume>8</volume>(<issue>7</issue>):<fpage>e61815</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1371/journal.pone.0061815" xlink:type="simple">10.1371/journal.pone.0061815</ext-link></comment> <object-id pub-id-type="pmid">23843931</object-id></mixed-citation></ref>
+<ref id="pone.0180494.ref049"><label>49</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Acemoglu</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Ozdaglar</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Tahbaz-Salehi</surname> <given-names>A</given-names></name>. <article-title>Systemic Risk and Stability in Financial Networks</article-title>. <source>American Economic Review</source>. <year>2015</year>;<volume>105</volume>(<issue>2</issue>):<fpage>564</fpage>–<lpage>608</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1257/aer.20130456" xlink:type="simple">10.1257/aer.20130456</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref050"><label>50</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>della Porta</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Diani</surname> <given-names>M</given-names></name>. <source><italic>Social Movements</italic>: <italic>An Introduction</italic></source>. <publisher-loc>Oxford</publisher-loc>: <publisher-name>Blackwell Publishing</publisher-name>; <year>1999</year>.</mixed-citation></ref>
+<ref id="pone.0180494.ref051"><label>51</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Giugni</surname> <given-names>MG</given-names></name>. <article-title>Was it Worth the Effort? The Outcomes and Consequences of Social Movements</article-title>. <source><italic>Annu Rev Sociol</italic></source>. <year>1998</year>;<volume>24</volume>(<issue>1</issue>):<fpage>371</fpage>–<lpage>393</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1146/annurev.soc.24.1.371" xlink:type="simple">10.1146/annurev.soc.24.1.371</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref052"><label>52</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>DeNardo</surname> <given-names>J</given-names></name>. <source>Power in Numbers: The Political Strategy of Protest and Rebellion</source>. <publisher-name>Princeton University Press</publisher-name>; <year>2014</year>.</mixed-citation></ref>
+<ref id="pone.0180494.ref053"><label>53</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Malinick</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Tindall</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Diani</surname> <given-names>M</given-names></name>. <article-title>Network centrality and social movement media coverage: A two-mode network analytic approach</article-title>. <source>Social Networks</source>. <year>2013</year>;<volume>35</volume>(<issue>2</issue>):<fpage>148</fpage>–<lpage>158</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.socnet.2011.10.005" xlink:type="simple">10.1016/j.socnet.2011.10.005</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref054"><label>54</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Diani</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>McAdam</surname> <given-names>D</given-names></name>. <source><italic>Social Movements and Networks</italic>: <italic>Relational Approaches to Collective Action</italic></source>. <publisher-loc>Oxford</publisher-loc>: <publisher-name>Oxford University Press</publisher-name>; <year>2003</year>.</mixed-citation></ref>
+<ref id="pone.0180494.ref055"><label>55</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Passy</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Giugni</surname> <given-names>M</given-names></name>. <article-title>Social Networks and individual preferences: explaining differential participation in social movements’</article-title>. <source><italic>Sociol Forum</italic></source>. <year>2001</year>;<volume>16</volume>(<issue>1</issue>):<fpage>123</fpage>–<lpage>153</lpage>.</mixed-citation></ref>
+<ref id="pone.0180494.ref056"><label>56</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rootes</surname> <given-names>C</given-names></name>. <article-title>Environmental movements: From the local to the global</article-title>. <source>Environmental Politics</source>. <year>1999</year>;<volume>8</volume>(<issue>1</issue>):<fpage>1</fpage>–<lpage>12</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1080/09644019908414435" xlink:type="simple">10.1080/09644019908414435</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref057"><label>57</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bosi</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Giugni</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Uba</surname> <given-names>K</given-names></name>. <article-title>The Consequences of Social Movements</article-title>. <source><italic>Mobilization An Int J</italic></source>. <year>2016</year>;<volume>21</volume>(<issue>4</issue>):<fpage>506</fpage>–<lpage>507</lpage>.</mixed-citation></ref>
+<ref id="pone.0180494.ref058"><label>58</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schlosberg</surname> <given-names>D</given-names></name>. <article-title>Networks and mobile arrangements: Organisational innovation in the US environmental justice movement</article-title>. <source>Environmental Politics</source>. <year>1999</year>;<volume>8</volume>(<issue>1</issue>):<fpage>122</fpage>–<lpage>148</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1080/09644019908414441" xlink:type="simple">10.1080/09644019908414441</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref059"><label>59</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Temper</surname> <given-names>L.</given-names></name>, <name name-style="western"><surname>del Bene</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Martinez-Alier</surname> <given-names>J</given-names></name>. <article-title>Mapping the frontiers and frontlines of global environmental justice: the EJAtlas</article-title>. <source><italic>Journal of Political Ecology</italic></source> <year>2015</year>;<volume>22</volume>:<fpage>255</fpage>–<lpage>78</lpage>.</mixed-citation></ref>
+<ref id="pone.0180494.ref060"><label>60</label><mixed-citation publication-type="other" xlink:type="simple">Özkaynak B, Rodriguez-Labajos B, Aydın CI, Yanez I, Garibay C. Towards environmental justice success in mining conflicts: An empirical investigation. EJOLT Report 14. 2015.</mixed-citation></ref>
+<ref id="pone.0180494.ref061"><label>61</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Franks</surname> <given-names>DM</given-names></name>, <name name-style="western"><surname>Davis</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Bebbington</surname> <given-names>AJ</given-names></name>, <name name-style="western"><surname>Saleem</surname> <given-names>HA</given-names></name>, <name name-style="western"><surname>Kemp</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Scurrah</surname> <given-names>M</given-names></name>. <article-title>Conflict translates environmental and social risk into business costs</article-title>. <source>Proceedings of the National Academy of Sciences</source>. <year>2014</year>;<volume>111</volume>(<issue>21</issue>):<fpage>7576</fpage>–<lpage>7581</lpage>.</mixed-citation></ref>
+<ref id="pone.0180494.ref062"><label>62</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Brin</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Page</surname> <given-names>L</given-names></name>. <article-title>The anatomy of a large-scale hypertextual Web search engine</article-title>. <source>Computer Networks and ISDN Systems</source>. <year>1998</year>;<volume>30</volume>(<issue>1–7</issue>):<fpage>107</fpage>–<lpage>117</lpage>.</mixed-citation></ref>
+<ref id="pone.0180494.ref063"><label>63</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Saltoglu</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Yenilmez</surname> <given-names>T</given-names></name>. <article-title>When does low interconnectivity cause systemic risk?</article-title>. <source>Quantitative Finance</source>. <year>2015</year>;<volume>15</volume>(<issue>12</issue>):<fpage>1933</fpage>–<lpage>1942</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1080/14697688.2015.1043331" xlink:type="simple">10.1080/14697688.2015.1043331</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref064"><label>64</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Banerjee</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Chandrasekhar</surname> <given-names>AG</given-names></name>, <name name-style="western"><surname>Duflo</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Jackson</surname> <given-names>MO</given-names></name>. <article-title>The Diffusion of Microfinance</article-title>. <source><italic>Science (80-)</italic></source>. <year>2013</year>;<volume>341</volume>(<issue>6144</issue>). <ext-link ext-link-type="uri" xlink:href="http://science.sciencemag.org/content/341/6144/1236498" xlink:type="simple">http://science.sciencemag.org/content/341/6144/1236498</ext-link>.</mixed-citation></ref>
+<ref id="pone.0180494.ref065"><label>65</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Leenders</surname> <given-names>R</given-names></name>. <article-title>Modeling social influence through network autocorrelation: constructing the weight matrix</article-title>. <source>Social Networks</source>. <year>2002</year>;<volume>24</volume>(<issue>1</issue>):<fpage>21</fpage>–<lpage>47</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/S0378-8733(01)00049-1" xlink:type="simple">10.1016/S0378-8733(01)00049-1</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref066"><label>66</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Snijders</surname> <given-names>TAB</given-names></name>, <name name-style="western"><surname>Pattison</surname> <given-names>PE</given-names></name>, <name name-style="western"><surname>Robins</surname> <given-names>GL</given-names></name>, <name name-style="western"><surname>Handcock</surname> <given-names>MS</given-names></name>. <article-title>New Specifications for Exponential Random Graph Models</article-title>. <source><italic>Sociol Methodol</italic></source>. <year>2006</year>;<volume>36</volume>(<issue>1</issue>):<fpage>99</fpage>–<lpage>153</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1111/j.1467-9531.2006.00176.x" xlink:type="simple">10.1111/j.1467-9531.2006.00176.x</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0180494.ref067"><label>67</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Swain</surname> <given-names>A</given-names></name>. <source>Struggle against the state</source>. <publisher-loc>Farnham, Surrey, England</publisher-loc>: <publisher-name>Ashgate</publisher-name>; <year>2010</year>. 49.</mixed-citation></ref>
+<ref id="pone.0180494.ref068"><label>68</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rivera</surname> <given-names>C</given-names></name>. <article-title>Environmental Conflicts and Transnational Defense Networks in Post-Dictatorship Chile</article-title>. <source>Revista de Ciencias Sociales</source>. <year>2016</year>;<volume>17</volume>(<issue>2</issue>):<fpage>231</fpage>–<lpage>246</lpage>.</mixed-citation></ref>
+<ref id="pone.0180494.ref069"><label>69</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wollenberg</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Colchester</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Mbugua</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Griffiths</surname> <given-names>T</given-names></name>. (2006). <article-title>Linking Social Movements: How International Networks can Better Support Community Action about Forests</article-title>. <source>International Forestry Review</source>. <year>2006</year>:<volume>8</volume>(<issue>2</issue>):<fpage>265</fpage>–<lpage>272</lpage>.</mixed-citation></ref>
+<ref id="pone.0180494.ref070"><label>70</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Delgado</surname> <given-names>A</given-names></name>. <article-title>Activist trust: the diffusion of green expertise in a Brazilian landscape</article-title>. <source>Public Understanding of Science</source>. <year>2009</year>;<volume>19</volume>(<issue>5</issue>):<fpage>562</fpage>–<lpage>577</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1177/0963662508098578" xlink:type="simple">10.1177/0963662508098578</ext-link></comment> <object-id pub-id-type="pmid">21553599</object-id></mixed-citation></ref>
+</ref-list>
+</back>
+</article>

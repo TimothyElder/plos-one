@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosone</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group><issn pub-type="epub">1932-6203</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="publisher-id">PONE-D-11-18495</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0029121</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Anatomy and physiology</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Mathematics</subject>
+          <subj-group>
+            <subject>Applied mathematics</subject>
+            <subj-group>
+              <subject>Finite element analysis</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Anatomy and physiology</subject>
+            <subj-group>
+              <subject>Musculoskeletal system</subject>
+              <subj-group>
+                <subject>Biomechanics</subject>
+                <subj-group>
+                  <subject>Bone and joint mechanics</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Oral medicine</subject>
+            <subj-group>
+              <subject>Dentistry</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Pediatrics</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Social and behavioral sciences</subject>
+          <subj-group>
+            <subject>Anthropology</subject>
+            <subj-group>
+              <subject>Biological anthropology</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Physiology</subject>
+          <subject>Pediatrics and Child Health</subject>
+          <subject>Mathematics</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>The Effect of Unerupted Permanent Tooth Crowns on the Distribution of Masticatory Stress in Children</article-title><alt-title alt-title-type="running-head">FEA of Unerupted Teeth in Children</alt-title></title-group><contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Hammond</surname>
+            <given-names>Ashley S.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Dumont</surname>
+            <given-names>Elizabeth R.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>McCarthy</surname>
+            <given-names>Robert C.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1"><label>1</label><addr-line>Department of Pathology and Anatomical Sciences, University of Missouri School of Medicine, Columbia, Missouri, United States of America</addr-line>       </aff><aff id="aff2"><label>2</label><addr-line>Department of Anthropology, Florida Atlantic University, Boca Raton, Florida, United States of America</addr-line>       </aff><aff id="aff3"><label>3</label><addr-line>Department of Organismal and Evolutionary Biology, University of Massachusetts-Amherst, Amherst, Massachusetts, United States of America</addr-line>       </aff><aff id="aff4"><label>4</label><addr-line>Department of Anthropology, University at Albany, Albany, New York, United States of America</addr-line>       </aff><contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>O'Rourke</surname>
+            <given-names>Dennis</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group><aff id="edit1">University of Utah, United States of America</aff><author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">ashammond@mail.mizzou.edu</email></corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: ASH. Performed the experiments: ASH. Analyzed the data: ASH ERD. Contributed reagents/materials/analysis tools: ASH ERD RCM. Wrote the paper: ASH ERD RCM.</p>
+        </fn>
+      <fn fn-type="conflict">
+        <p>The authors have declared that no competing interests exist.</p>
+      </fn></author-notes><pub-date pub-type="collection">
+        <year>2011</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>14</day>
+        <month>12</month>
+        <year>2011</year>
+      </pub-date><volume>6</volume><issue>12</issue><elocation-id>e29121</elocation-id><history>
+        <date date-type="received">
+          <day>19</day>
+          <month>9</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>21</day>
+          <month>11</month>
+          <year>2011</year>
+        </date>
+      </history><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2011</copyright-year><copyright-holder>Hammond et al</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><abstract>
+        <p>Human mothers wean their children from breast milk at an earlier developmental stage than do ape mothers, resulting in human children chewing solid and semi-solid foods using the deciduous dentition. Mechanical forces generated by chewing solid foods during the post-weaning period travel through not only the deciduous teeth, but also the enamel caps of the developing permanent teeth within the maxilla and mandible, which are not present in the adult face. The effects of mechanical stress propagating through these very stiff structures have yet to be examined. Based on a heuristic model, we predicted that the enamel of the embedded developing teeth would act to reduce stresses in the surrounding bony elements of the juvenile face. We tested this hypothesis by simulating occlusal loading in a finite element (FE) model of a child's cranium with a complete set of deciduous teeth and the first permanent molars embedded in the bony crypt in the maxilla. We modeled bone and enamel with appropriate material properties and assessed the effect of embedding high-stiffness enamel structures on stress distribution in the juvenile face. Against expectation, the presence of unerupted enamel caps does not affect the magnitude or location of stresses in the juvenile face. Our results do not support the hypothesis that the unerupted secondary teeth act to moderate stresses in the juvenile face.</p>
+      </abstract><funding-group><funding-statement>National Science Foundation Grant number DBI-0743460 to E.R. Dumont and I.R. Grosse supported teaching author ASH the methods to be employed in the study. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts>
+        <page-count count="6"/>
+      </counts></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Weaning, or the transition from breast milk to the habitual consumption of adult foods <xref ref-type="bibr" rid="pone.0029121-Dettwyler1">[1]</xref>, occurs at an earlier developmental stage in humans than in other primates. Chimpanzees and other great apes wean between three and seven years of age <xref ref-type="bibr" rid="pone.0029121-Dettwyler2">[2]</xref>, <xref ref-type="bibr" rid="pone.0029121-Kennedy1">[3]</xref>, which is coincident with eruption of the first permanent molar, the asymptotic conclusion of brain growth, and maturation of the digestive and masticatory systems <xref ref-type="bibr" rid="pone.0029121-Smith1">[4]</xref>–<xref ref-type="bibr" rid="pone.0029121-Kelley1">[7]</xref>. Modern humans wean earlier, ranging from about one year in industrialized countries to four years in some natural fertility populations <xref ref-type="bibr" rid="pone.0029121-Dettwyler2">[2]</xref>, <xref ref-type="bibr" rid="pone.0029121-Kennedy1">[3]</xref>, <xref ref-type="bibr" rid="pone.0029121-Sugarman1">[8]</xref>. Species-typical weaning in modern humans therefore occurs two to seven years prior to eruption of the permanent dentition <xref ref-type="bibr" rid="pone.0029121-Bogin1">[9]</xref> and numerous other markers of biological and digestive maturity that occur between six and eight years of age <xref ref-type="bibr" rid="pone.0029121-Smith1">[4]</xref>, <xref ref-type="bibr" rid="pone.0029121-Smith2">[5]</xref>, <xref ref-type="bibr" rid="pone.0029121-Cabana1">[10]</xref>, <xref ref-type="bibr" rid="pone.0029121-Caviness1">[11]</xref>. This means that human children primarily use their deciduous, not their permanent, dentition to masticate post-weaning childhood foods.</p>
+      <p>The overall configuration of the adult human skull allows it to generate high bite forces during chewing and to effectively dissipate masticatory forces <xref ref-type="bibr" rid="pone.0029121-Lieberman1">[12]</xref>–<xref ref-type="bibr" rid="pone.0029121-Wroe1">[17]</xref>. However, unlike adults, the facial skeleton of juveniles contains unerupted permanent teeth that could affect the distribution of stress in the face during feeding. The developing tooth caps are in approximately the same areas as bony trabecular struts in the adult maxilla and mandible <xref ref-type="bibr" rid="pone.0029121-Endo1">[18]</xref>–<xref ref-type="bibr" rid="pone.0029121-Manson1">[20]</xref>. Furthermore, the unerupted secondary teeth are located in tooth crypts that are in very close proximity to or touching the alveolar bone, particularly as the teeth approach adult dimensions. As teeth begin the eruption process, the bony crypts begin to fill with bone <xref ref-type="bibr" rid="pone.0029121-Wise1">[21]</xref>, further reducing the space around the developing teeth in the maxilla and mandible. Although the elastic modulus and Poisson's ratio of developing enamel and the tooth crypt itself are unknown, the enamel caps present during the first years of life are known to be substantially more mineralized than the surrounding bone <xref ref-type="bibr" rid="pone.0029121-Bhaskar1">[22]</xref>. Moreover, a recent study of a macaque mandible demonstrated that the presence or absence of air-filled crypts affects levels of strain within the mandibular symphysis <xref ref-type="bibr" rid="pone.0029121-Cobb1">[23]</xref>. One interesting functional hypothesis is that the permanent tooth caps embedded in the juvenile face act to moderate stress in the craniofacial region during mastication, allowing modern human children to process adult foods with their deciduous teeth at an earlier developmental stage than do apes.</p>
+      <p>Comparative biologists have only recently begun to explore how stress propagates through heterogeneous biological structures <xref ref-type="bibr" rid="pone.0029121-Wroe1">[17]</xref>, <xref ref-type="bibr" rid="pone.0029121-Strait1">[24]</xref>–<xref ref-type="bibr" rid="pone.0029121-Strait2">[26]</xref>. Enamel and bone differ in Poisson's ratio, a measure of a material's compressibility, and Young's modulus, a measure of elasticity. We predicted that the stiff enamel caps within the softer maxillary bone affect the distribution of stress in the juvenile face under masticatory loads. This prediction can be illustrated using a finite element analysis (FEA) of a simple geometric object. We assigned different material properties to the spherical centers of two identical models (<xref ref-type="fig" rid="pone-0029121-g001">Figure 1</xref>). In the homogeneous model (left), we assigned Young's modulus and Poisson's ratio values appropriate for bone to both the spherical center and surrounding block (9.10 GPa elastic modulus, 0.38 Poisson's ratio <xref ref-type="bibr" rid="pone.0029121-Peterson1">[27]</xref>). In the heterogeneous model (right), we assigned the same Young's modulus and Poisson's ratio to the surrounding block, and values appropriate for enamel to the spherical center (77.90 GPa elastic modulus, 0.33 Poisson's ratio <xref ref-type="bibr" rid="pone.0029121-Huang1">[28]</xref>). We then applied one Newton (N) of vertical force at the precise center of the inferior surface of both models, and constrained a node on the superior surfaces of the models in all directions to prevent rigid body motion. Von Mises stress values are far greater in the spherical center of the heterogeneous model, while average stresses for all tetrahedrals in the surrounding block are substantially lower. In this example, the presence of a stiff structure at the center of a more elastic block decreased the stress within the surrounding material.</p>
+      <fig id="pone-0029121-g001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0029121.g001</object-id>
+        <label>Figure 1</label>
+        <caption>
+          <title>Geometric abstraction.</title>
+          <p>Finite element analyses demonstrating the effect of a stiff object (the sphere) embedded within a less-stiff object on von Mises stress during loading. Side-views (a) and cross-sections (b,c) are presented for a model with a stiff center (heterogeneous) and an identical model with the material properties of cortical bone throughout (homogeneous). The solved models indicate a reduction in average von Mises stress in the outer bony shell in the homogeneous model, with increased von Mises stress found in the stiffer center relative to the homogenous model (d). Results are scaled from 0 to 2.0×10<sup>7</sup> Pa, with highest stresses indicated by white regions.</p>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0029121.g001" xlink:type="simple"/>
+      </fig>
+      <p>By extension of this simple model, we hypothesized that the presence of the developing permanent tooth caps serve to reduce stresses in the juvenile face during loading. To test this hypothesis, we assessed the pattern and magnitude of stress in two FE models of a juvenile human face differing only in material properties of the tooth crypts. We loaded the deciduous first incisor in one trial and the deciduous first molar in a second trial.</p>
+    </sec>
+    <sec id="s2" sec-type="materials|methods">
+      <title>Materials and Methods</title>
+      <p>We selected specimen 14 from the Bosma CT Collection (see <xref ref-type="bibr" rid="pone.0029121-Shapiro1">[29]</xref>) for model creation. It was important for this study to select a specimen older than the species-typical age at weaning (&gt;2.5 years of age) that possess (1) a complete set of deciduous teeth, (2) unerupted secondary teeth in an advanced stage of development, and (3) developing teeth that are large relative to the surrounding space in the tooth crypts. All unerupted teeth had well developed crowns with a high radio-opacity, indicating that they were highly mineralized. Based on dental development and eruption chronologies <xref ref-type="bibr" rid="pone.0029121-Ubelaker1">[30]</xref>–<xref ref-type="bibr" rid="pone.0029121-AlQahtani1">[33]</xref>, Bosma specimen 14 can be estimated to be four years of age. Bosma specimen 14 appeared normal in all regards, with no evidence of visible pathology. The CT series for this skull is composed of 95 axial slices in 1.5 mm increments, with a 512*512 resolution and 0.3105 pixel size.</p>
+      <p>The modeling techniques used for generating our finite element model have been described fully elsewhere <xref ref-type="bibr" rid="pone.0029121-Dumont1">[34]</xref>, <xref ref-type="bibr" rid="pone.0029121-Grosse1">[35]</xref>. Briefly, we used a series of three software tools to generate a finite element mesh from the CT scans. We used VGStudio MAX to segment the cranium and the developing permanent tooth caps, to segment and remove the mandible, and to generate surface models of the skull and tooth caps. We then imported the surface models into Geomagic Studio v. 9, a 3D shape-processing and reconstruction tool. Geomagic was used to fix minor segmentation errors and to smooth the model. We also deleted the nasal conchae to facilitate mesh generation, a common practice in testing finite element models of biological structures <xref ref-type="bibr" rid="pone.0029121-Dumont1">[34]</xref>, <xref ref-type="bibr" rid="pone.0029121-Wroe2">[36]</xref>, <xref ref-type="bibr" rid="pone.0029121-Strait3">[37]</xref>, as these thin bony elements are unlikely to be load-bearing. We then exported the surface model of the cranium and embedded enamel tooth caps as a binary stereolithography file to Strand7 (Release 2.3, Sydney, Australia), where we generated a solid mesh of 4-noded tetrahedral elements. The model was composed of 851,840 tetrahedrals, of which 68,933 tetrahedrals compose the segmented tooth caps.</p>
+      <p>We duplicated the model to yield two identical models. We then assigned different material properties to the two models using published values for primate maxillary cortical bone <xref ref-type="bibr" rid="pone.0029121-Peterson1">[27]</xref> and enamel <xref ref-type="bibr" rid="pone.0029121-Strait1">[24]</xref>, <xref ref-type="bibr" rid="pone.0029121-Huang1">[28]</xref>, <xref ref-type="bibr" rid="pone.0029121-Habelitz1">[38]</xref> (<xref ref-type="table" rid="pone-0029121-t001">Table 1</xref>). In both models, we assigned the visible deciduous tooth crowns the properties of enamel, and the remainder of the cranium the properties of maxillary cortical bone. In one model, hereafter called ‘heterogeneous’ model, we assigned the developing tooth caps the properties of enamel. In the second, ‘homogeneous’ model, we assigned the developing tooth caps the properties of cortical bone, thus producing a model where the maxilla and embedded tooth caps are modeled with the same material properties. To summarize, the homogeneous and heterogeneous models are identical in all respects (number of tetrahedrals, load magnitudes, points of loading, loading constraints) except the material properties of the unerupted secondary teeth. The terms homogeneous and heterogeneous used to describe these models only refer to this difference in the material properties of the unerupted teeth; neither of our models included complex, orthotropic material models. These models contain, at most, two isotropic material properties, and therefore do not model the full complexity of tissues in a developing skull, such as the soft tissues in the tooth crypts and alveoli. Following <xref ref-type="bibr" rid="pone.0029121-Strait1">[24]</xref>, we chose to model only two tissue properties in order to decrease the probability of error associated with modeling soft-tissue structures from a CT series obtained from a dry skull.</p>
+      <table-wrap id="pone-0029121-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0029121.t001</object-id><label>Table 1</label><caption>
+          <title>Model material properties<xref ref-type="table-fn" rid="nt101">*</xref>.</title>
+        </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0029121-t001-1" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0029121.t001" xlink:type="simple"/><table>
+          <colgroup span="1">
+            <col align="left" span="1"/>
+            <col align="center" span="1"/>
+            <col align="center" span="1"/>
+            <col align="center" span="1"/>
+            <col align="center" span="1"/>
+            <col align="center" span="1"/>
+          </colgroup>
+          <thead>
+            <tr>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="2" rowspan="1">Bone</td>
+              <td align="left" colspan="2" rowspan="1">Secondary Teeth</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Model</td>
+              <td align="left" colspan="1" rowspan="1">Total Load (N)</td>
+              <td align="left" colspan="1" rowspan="1">Modulus (GPa)</td>
+              <td align="left" colspan="1" rowspan="1">Poisson's Ratio</td>
+              <td align="left" colspan="1" rowspan="1">Modulus (GPa)</td>
+              <td align="left" colspan="1" rowspan="1">Poisson's Ratio</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Heterogeneous</td>
+              <td align="left" colspan="1" rowspan="1">350</td>
+              <td align="left" colspan="1" rowspan="1">9.1</td>
+              <td align="left" colspan="1" rowspan="1">0.38</td>
+              <td align="left" colspan="1" rowspan="1">77.9</td>
+              <td align="left" colspan="1" rowspan="1">0.33</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Homogeneous</td>
+              <td align="left" colspan="1" rowspan="1">350</td>
+              <td align="left" colspan="1" rowspan="1">9.1</td>
+              <td align="left" colspan="1" rowspan="1">0.38</td>
+              <td align="left" colspan="1" rowspan="1">9.1</td>
+              <td align="left" colspan="1" rowspan="1">0.38</td>
+            </tr>
+          </tbody>
+        </table></alternatives><table-wrap-foot>
+          <fn id="nt101">
+            <label/>
+            <p>*Values following <xref ref-type="bibr" rid="pone.0029121-Peterson1">[27]</xref>, <xref ref-type="bibr" rid="pone.0029121-Huang1">[28]</xref>.</p>
+          </fn>
+        </table-wrap-foot></table-wrap>
+      <p>There are little data on either bite force or masticatory muscle activity during chewing in children <xref ref-type="bibr" rid="pone.0029121-Rentes1">[39]</xref>–<xref ref-type="bibr" rid="pone.0029121-Castelo1">[42]</xref>. Therefore, we did not apply muscle forces to the FE models but instead fixed the models and applied forces to the teeth. We applied two loading regimes to each model. The first loaded the deciduous right upper central incisor (di<sup>1</sup>) and the second applied a load on the deciduous right upper first molar (dm<sup>1</sup>). For each trial we identified five nodes on either the di<sup>1</sup> or dm<sup>1</sup> and applied a load of 70 N in the Z-axis (perpendicular to the bony palate), for a 350-N total force per trial. We constrained the models against rigid body motion in x, y, and z axes at three nodes within each mandibular glenoid fossa, and derived a finite element solution using a linear static analysis.</p>
+      <p>The von Mises criterion for material failure, a calculation of maximum yield of materials under multiaxial loading via the principal stresses, is often used to express FE results when modeling elastic biological materials <xref ref-type="bibr" rid="pone.0029121-Dumont1">[34]</xref>, <xref ref-type="bibr" rid="pone.0029121-Dumont2">[43]</xref>. In order to compare regional variation in stress between the two models quantitatively, we measured von Mises stresses at seven identical nodes on the craniofacial region and eight identical nodes on the secondary tooth caps (<xref ref-type="table" rid="pone-0029121-t002">Table 2</xref>; <xref ref-type="fig" rid="pone-0029121-g002">Figure 2</xref>). As the results are presented in the same scale for all the models, the patterns and magnitudes of stress are comparable across models and loading regimes.</p>
+      <fig id="pone-0029121-g002" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0029121.g002</object-id>
+        <label>Figure 2</label>
+        <caption>
+          <title>Comparison of von Mises stress by landmark.</title>
+          <p>Von Mises stress values are shown for fifteen landmarks from the face and the embedded enamel caps (a). Heterogeneous and homogeneous models under the incisal loads (b) and molar loads (c) differ in von Mises stress calculated in the developing enamel caps, but not the face. Tooth cap images in (a) are not shown to scale.</p>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0029121.g002" xlink:type="simple"/>
+      </fig>
+      <table-wrap id="pone-0029121-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0029121.t002</object-id><label>Table 2</label><caption>
+          <title>Location of points sampled.</title>
+        </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0029121-t002-2" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0029121.t002" xlink:type="simple"/><table>
+          <colgroup span="1">
+            <col align="left" span="1"/>
+            <col align="center" span="1"/>
+            <col align="center" span="1"/>
+          </colgroup>
+          <thead>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Landmark</td>
+              <td align="left" colspan="1" rowspan="1">Tetrahedral</td>
+              <td align="left" colspan="1" rowspan="1">Location</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">1</td>
+              <td align="left" colspan="1" rowspan="1">214,332</td>
+              <td align="left" colspan="1" rowspan="1">most inferior and anterior point on right orbital margin (orbitale)</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">2</td>
+              <td align="left" colspan="1" rowspan="1">45,755</td>
+              <td align="left" colspan="1" rowspan="1">most inferior and anterior point onleft orbital margin (orbitale)</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">3</td>
+              <td align="left" colspan="1" rowspan="1">10,461</td>
+              <td align="left" colspan="1" rowspan="1">midline point at inferior free end of internasal suture (rhinion)</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">4</td>
+              <td align="left" colspan="1" rowspan="1">633,483</td>
+              <td align="left" colspan="1" rowspan="1">midline point on inferior nasal aperature (nasospinale)</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">5</td>
+              <td align="left" colspan="1" rowspan="1">76,954</td>
+              <td align="left" colspan="1" rowspan="1">midline point at inferior bony septum between maxillary incisors (alveolare)</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">6</td>
+              <td align="left" colspan="1" rowspan="1">34,492</td>
+              <td align="left" colspan="1" rowspan="1">midpoint between base of the right zygomatic arch and the buccal sideof right M<sup>2</sup></td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">7</td>
+              <td align="left" colspan="1" rowspan="1">233,634</td>
+              <td align="left" colspan="1" rowspan="1">midpoint between base of the left zygomatic arch and the buccal sideof left M<sup>2</sup></td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">8</td>
+              <td align="left" colspan="1" rowspan="1">796,604</td>
+              <td align="left" colspan="1" rowspan="1">superior center of the right permanent M<sup>2</sup> tooth cap</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">9</td>
+              <td align="left" colspan="1" rowspan="1">817,383</td>
+              <td align="left" colspan="1" rowspan="1">superior center of the left permanent M<sup>2</sup> tooth cap</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">10</td>
+              <td align="left" colspan="1" rowspan="1">795,808</td>
+              <td align="left" colspan="1" rowspan="1">inferior (occlusal) center of the right permanent M<sup>2</sup> tooth cap</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">11</td>
+              <td align="left" colspan="1" rowspan="1">812,817</td>
+              <td align="left" colspan="1" rowspan="1">inferior (occlusal) center of the left permanent M<sup>2</sup> tooth cap</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">12</td>
+              <td align="left" colspan="1" rowspan="1">790,006</td>
+              <td align="left" colspan="1" rowspan="1">most superior point on right labial surface of right I<sup>1</sup> tooth cap</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">13</td>
+              <td align="left" colspan="1" rowspan="1">851,886</td>
+              <td align="left" colspan="1" rowspan="1">most superior point on left labial surface of left I<sup>1</sup> tooth cap</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">14</td>
+              <td align="left" colspan="1" rowspan="1">794,686</td>
+              <td align="left" colspan="1" rowspan="1">most inferior point on right labial surface of right I<sup>1</sup> tooth cap</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">15</td>
+              <td align="left" colspan="1" rowspan="1">851,410</td>
+              <td align="left" colspan="1" rowspan="1">most inferior point on left labial surface of left I<sup>1</sup> tooth cap</td>
+            </tr>
+          </tbody>
+        </table></alternatives></table-wrap>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <p>Maximum and minimum von Mises stress values in the face were only &lt;1% and 3% lower in the heterogeneous model than the homogeneous model when we loaded the deciduous right central incisor (<xref ref-type="table" rid="pone-0029121-t003">Table 3</xref>). These small differences are mirrored by values of von Mises stress at seven landmarks on the surface of the face (<xref ref-type="fig" rid="pone-0029121-g002">Figures 2</xref>–<xref ref-type="fig" rid="pone-0029121-g003">3</xref>). Both models exhibit very similar patterns of stress on the external face and nearly identical von Mises stress values at each craniofacial landmark (see points 1–7 in <xref ref-type="fig" rid="pone-0029121-g002">Figure 2b</xref>). Von Mises stress values are, on average, 100% greater at embedded permanent tooth cap landmarks (points 8–15 in <xref ref-type="fig" rid="pone-0029121-g002">Figure 2b</xref>) in the heterogeneous model relative to the homogeneous model. Although the stiff, enamel-covered tooth caps embedded in the maxilla experience high stresses during loading, those stresses have little or no effect on average von Mises stresses on the surface of the face.</p>
+      <table-wrap id="pone-0029121-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0029121.t003</object-id><label>Table 3</label><caption>
+          <title>Landmark percent differences.</title>
+        </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0029121-t003-3" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0029121.t003" xlink:type="simple"/><table>
+          <colgroup span="1">
+            <col align="left" span="1"/>
+            <col align="center" span="1"/>
+            <col align="center" span="1"/>
+          </colgroup>
+          <thead>
+            <tr>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="2" rowspan="1">% Difference</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Landmark</td>
+              <td align="left" colspan="1" rowspan="1">Incisor Loading</td>
+              <td align="left" colspan="1" rowspan="1">Molar Loading</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">1</td>
+              <td align="left" colspan="1" rowspan="1">&lt;1%</td>
+              <td align="left" colspan="1" rowspan="1">5.1</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">2</td>
+              <td align="left" colspan="1" rowspan="1">&lt;1%</td>
+              <td align="left" colspan="1" rowspan="1">&lt;1%</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">3</td>
+              <td align="left" colspan="1" rowspan="1">1.6</td>
+              <td align="left" colspan="1" rowspan="1">&lt;1%</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">4</td>
+              <td align="left" colspan="1" rowspan="1">4.0</td>
+              <td align="left" colspan="1" rowspan="1">9.7</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">5</td>
+              <td align="left" colspan="1" rowspan="1">2.2</td>
+              <td align="left" colspan="1" rowspan="1">1.7</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">6</td>
+              <td align="left" colspan="1" rowspan="1">2.0</td>
+              <td align="left" colspan="1" rowspan="1">5.1</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">7</td>
+              <td align="left" colspan="1" rowspan="1">16.2</td>
+              <td align="left" colspan="1" rowspan="1">4.1</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">8</td>
+              <td align="left" colspan="1" rowspan="1">122.2</td>
+              <td align="left" colspan="1" rowspan="1">127.1</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">9</td>
+              <td align="left" colspan="1" rowspan="1">133.7</td>
+              <td align="left" colspan="1" rowspan="1">140.0</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">10</td>
+              <td align="left" colspan="1" rowspan="1">93.4</td>
+              <td align="left" colspan="1" rowspan="1">125.2</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">11</td>
+              <td align="left" colspan="1" rowspan="1">95.7</td>
+              <td align="left" colspan="1" rowspan="1">126.1</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">12</td>
+              <td align="left" colspan="1" rowspan="1">118.9</td>
+              <td align="left" colspan="1" rowspan="1">150.3</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">13</td>
+              <td align="left" colspan="1" rowspan="1">127.3</td>
+              <td align="left" colspan="1" rowspan="1">133.5</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">14</td>
+              <td align="left" colspan="1" rowspan="1">157.2</td>
+              <td align="left" colspan="1" rowspan="1">161.9</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">15</td>
+              <td align="left" colspan="1" rowspan="1">157.3</td>
+              <td align="left" colspan="1" rowspan="1">154.8</td>
+            </tr>
+          </tbody>
+        </table></alternatives><table-wrap-foot>
+          <fn id="nt102">
+            <label/>
+            <p>The percent difference (%) between von Mises stresses for 15 landmarks under deciduous incisor (di<sup>1</sup>) and molar (dm<sup>1</sup>) loading. Values represent the percentage difference in the heterogeneous model relative to the homogeneous model.</p>
+          </fn>
+        </table-wrap-foot></table-wrap>
+      <p>The heterogeneous and homogeneous models exhibited similar patterns of stress throughout the craniofacial region under the unilateral molar load (<xref ref-type="fig" rid="pone-0029121-g003">Figure 3</xref>). The highest stress values were localized at landmark 6 on the right maxilla, just superior to the site of load application (likely an artifact of the proximity of that point to the applied load, see <xref ref-type="fig" rid="pone-0029121-g002">Figure 2c</xref>). Average von Mises stress values in the embedded permanent tooth caps were greater in the heterogeneous model than to the homogeneous model, although von Mises stresses at the craniofacial landmarks were essentially unchanged (<xref ref-type="fig" rid="pone-0029121-g002">Figure 2c</xref>).</p>
+      <fig id="pone-0029121-g003" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0029121.g003</object-id>
+        <label>Figure 3</label>
+        <caption>
+          <title>Solved models with secondary tooth caps extracted for illustration.</title>
+          <p>Overall patterns of von Mises stress are similar between models within trials, but not between trials, suggesting bite location (e.g. incisor versus molar) has a greater effect on the pattern of von Mises stress than do the material properties of tooth caps.</p>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0029121.g003" xlink:type="simple"/>
+      </fig>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>We investigated the interaction between material properties and facial geometry in children, and predicted that the presence of unerupted secondary teeth in the maxilla would affect the magnitude and/or distribution of stress in the face during loading. Based on a heuristic model, we predicted that variation in material properties of the tissues within tooth crypts would reduce stress in the face. We found that assigning stiff material properties to the developing permanent tooth caps resulted in much higher von Mises stresses in the developing tooth caps when compared to the model in which the tooth caps were modeled as bone. However, the craniofacial skeleton was largely unresponsive to changes in the material properties of the tooth caps. The hypothesis that the presence of unerupted secondary teeth in the maxilla strengthens the facial skeleton by reducing facial stress is not supported by these FEA results. These results do support many previous studies <xref ref-type="bibr" rid="pone.0029121-Gross1">[44]</xref>, <xref ref-type="bibr" rid="pone.0029121-Wang1">[45]</xref> demonstrating that higher stresses are produced by loading the anteriorly-placed incisors than by loading the posterior dentition.</p>
+      <p>The hypothesis tested here assumes that children eat harder, more solid foods that have the potential to generate higher masticatory stress in the face during the post-weaning period. Bone and cartilage exhibit their highest levels of phenotypic plasticity during early development <xref ref-type="bibr" rid="pone.0029121-Ravosa1">[46]</xref>, <xref ref-type="bibr" rid="pone.0029121-Lieberman2">[47]</xref>, and the facial skeleton should be more responsive to masticatory loading in childhood than in adulthood. The extent of this plasticity is uncertain, however, since juvenile mandibles may be more strongly influenced by spatial demands associated with tooth size and position than with masticatory stress <italic>per se</italic> <xref ref-type="bibr" rid="pone.0029121-Cobb1">[23]</xref>, <xref ref-type="bibr" rid="pone.0029121-Daegling1">[48]</xref>. Moreover, Western weanling diets are often heavily prepared, requiring little oral manipulation by the child, and even hunter-gatherer children's diets are known to be higher in soft, ripe fruits and honey than are adult diets <xref ref-type="bibr" rid="pone.0029121-Kaplan1">[49]</xref>, <xref ref-type="bibr" rid="pone.0029121-Marlowe1">[50]</xref>. Although the fracture mechanics of weanling diets are essentially unknown, weanling foods are likely to require more force to process than the diets of like-aged juvenile apes, who subsist almost exclusively on breast milk. More data on the responsiveness of the facial skeleton to loading during different stages of growth and on the material properties of foods being consumed by juvenile anthropoid primates are needed to inform this debate.</p>
+      <p>It is optimal to validate FE models with <italic>in vivo</italic> experimental data to demonstrate that FE analyses produce realistic patterns of strain <xref ref-type="bibr" rid="pone.0029121-Dumont2">[43]</xref>, <xref ref-type="bibr" rid="pone.0029121-Marinescu1">[51]</xref>, <xref ref-type="bibr" rid="pone.0029121-Richmond1">[52]</xref>. Although we were not able to validate our model with in vivo strain data from human children, the broad topographic distribution of stress in our FE model is consistent with that seen in many other studies <xref ref-type="bibr" rid="pone.0029121-Wroe1">[17]</xref>, <xref ref-type="bibr" rid="pone.0029121-Strait1">[24]</xref>, <xref ref-type="bibr" rid="pone.0029121-Strait2">[26]</xref>, <xref ref-type="bibr" rid="pone.0029121-Gross1">[44]</xref>, <xref ref-type="bibr" rid="pone.0029121-Wang1">[45]</xref>, <xref ref-type="bibr" rid="pone.0029121-Kupczik2">[53]</xref>, <xref ref-type="bibr" rid="pone.0029121-Wroe3">[54]</xref>. A recent study on the juvenile macaque mandible <xref ref-type="bibr" rid="pone.0029121-Cobb1">[23]</xref> found generally high congruence between FE models with and without secondary tooth crypts modeled entirely as air, but found a notable increase in mandibular symphyseal strain when tooth crypts were present. Our findings, when considered alongside those results, indicate that an important next step for modeling this complex biological system should include the multiple material properties of other tissues present in the tooth crypt and alveolus.</p>
+    </sec>
+    <sec id="s5">
+      <title>Acknowledgments</title>
+      <p>We are sincerely grateful to Joan Richtsmeier for providing CT scans from the Bosma Collection, and to Daniel Lieberman, Janet Monge, and Tom Schoenemann for providing scan data during the course of this project. Sam Cobb, Frank Marlowe, Casey Holliday, Dave Strait, Paul Constantino, and Anne Delvaux provided helpful discussions, and we also thank Dennis O'Rourke and two anonymous reviewers for their valuable feedback on this manuscript. We also thank Ian Grosse, Sean Werle, Douglas Broadfield, and Robert Blanks for their contributions to the early development of this project.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0029121-Dettwyler1">
+        <label>1</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Dettwyler</surname><given-names>KA</given-names></name><name name-style="western"><surname>Fishman</surname><given-names>C</given-names></name></person-group>             <year>1992</year>             <article-title>Infant Feeding Practices and Growth.</article-title>             <source>Annu Rev Anthropol</source>             <volume>21</volume>             <fpage>171</fpage>             <lpage>204</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Dettwyler2">
+        <label>2</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Dettwyler</surname><given-names>KA</given-names></name></person-group>             <year>1995</year>             <article-title>A Time to Wean: The Hominid Blueprint for the Natural Age of Weaning in Modern Human Populations.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>Stuart-Macadam</surname><given-names>P</given-names></name><name name-style="western"><surname>Dettwyler</surname><given-names>KA</given-names></name></person-group>             <source>Breastfeeding: Biocultural Perspectives</source>             <publisher-loc>Hawthorne, NY</publisher-loc>             <publisher-name>Aldine Transactions</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Kennedy1">
+        <label>3</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kennedy</surname><given-names>GE</given-names></name></person-group>             <year>2005</year>             <article-title>From the ape's dilemma to the weanling's dilemma: early weaning and its evolutionary context.</article-title>             <source>J Hum Evol</source>             <volume>48</volume>             <fpage>123</fpage>             <lpage>145</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Smith1">
+        <label>4</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Smith</surname><given-names>BH</given-names></name></person-group>             <year>1991</year>             <article-title>Dental development and the evolution of life history in Hominidae.</article-title>             <source>Am J Phys Anthropol</source>             <volume>86</volume>             <fpage>157</fpage>             <lpage>174</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Smith2">
+        <label>5</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Smith</surname><given-names>BH</given-names></name></person-group>             <year>1992</year>             <article-title>Life history and the evolution of human maturation.</article-title>             <source>Evol Anth</source>             <volume>1</volume>             <fpage>134</fpage>             <lpage>142</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Smith3">
+        <label>6</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Smith</surname><given-names>BH</given-names></name><name name-style="western"><surname>Crummett</surname><given-names>TL</given-names></name><name name-style="western"><surname>Brandt</surname><given-names>KL</given-names></name></person-group>             <year>1994</year>             <article-title>Ages of eruption of primate teeth: A compendium for aging individuals and comparing life histories.</article-title>             <source>Yrbk Phys Anthropol</source>             <volume>37</volume>             <fpage>177</fpage>             <lpage>231</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Kelley1">
+        <label>7</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kelley</surname><given-names>J</given-names></name><name name-style="western"><surname>Schwartz</surname><given-names>GT</given-names></name></person-group>             <year>2010</year>             <article-title>Dental development and life history in living African and Asian apes.</article-title>             <source>Proc Natl Acad Sci USA</source>             <volume>107</volume>             <fpage>1035</fpage>             <lpage>1040</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Sugarman1">
+        <label>8</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Sugarman</surname><given-names>M</given-names></name><name name-style="western"><surname>Kendall-Tackett</surname><given-names>KA</given-names></name></person-group>             <year>1995</year>             <article-title>Weaning ages in a sample of American women who practice extended breastfeeding.</article-title>             <source>Clin Pediatr (Phila)</source>             <volume>34</volume>             <fpage>642</fpage>             <lpage>647</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Bogin1">
+        <label>9</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bogin</surname><given-names>B</given-names></name></person-group>             <year>1999</year>             <article-title>Patterns of Human Growth.</article-title>             <publisher-loc>New York</publisher-loc>             <publisher-name>Cambridge University Press</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Cabana1">
+        <label>10</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Cabana</surname><given-names>T</given-names></name><name name-style="western"><surname>Jolicoeur</surname><given-names>P</given-names></name><name name-style="western"><surname>Michaud</surname><given-names>J</given-names></name></person-group>             <year>1993</year>             <article-title>Prenatal and postnatal growth and allometry of stature, head circumference, and brain weight in Québec children.</article-title>             <source>Am J Hum Biol</source>             <volume>5</volume>             <fpage>93</fpage>             <lpage>99</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Caviness1">
+        <label>11</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Caviness</surname><given-names>VS</given-names><suffix>Jr</suffix></name><name name-style="western"><surname>Kennedy</surname><given-names>DN</given-names></name><name name-style="western"><surname>Richelme</surname><given-names>C</given-names></name><name name-style="western"><surname>Rademacher</surname><given-names>J</given-names></name><name name-style="western"><surname>Filipek</surname><given-names>PA</given-names></name></person-group>             <year>1996</year>             <article-title>The human brain age 7-11 years: a volumetric analysis based on magnetic resonance images.</article-title>             <source>Cereb Cortex</source>             <volume>6</volume>             <fpage>726</fpage>             <lpage>736</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Lieberman1">
+        <label>12</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lieberman</surname><given-names>DE</given-names></name></person-group>             <year>2008</year>             <article-title>Speculations about the selective basis for modern human craniofacial form.</article-title>             <source>Evol Anth</source>             <volume>17</volume>             <fpage>55</fpage>             <lpage>68</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Aiello1">
+        <label>13</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Aiello</surname><given-names>LC</given-names></name><name name-style="western"><surname>Montgomery</surname><given-names>C</given-names></name><name name-style="western"><surname>Dean</surname><given-names>C</given-names></name></person-group>             <year>1991</year>             <article-title>The natural history of deciduous tooth attrition in hominoids.</article-title>             <source>J Hum Evol</source>             <volume>21</volume>             <fpage>397</fpage>             <lpage>412</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Spencer1">
+        <label>14</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Spencer</surname><given-names>MA</given-names></name><name name-style="western"><surname>Demes</surname><given-names>B</given-names></name></person-group>             <year>1993</year>             <article-title>Biomechanical analysis of masticatory system configuration in Neandertals and Inuits.</article-title>             <source>Am J Phys Anthropol</source>             <volume>91</volume>             <fpage>1</fpage>             <lpage>20</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Lucas1">
+        <label>15</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lucas</surname><given-names>PW</given-names></name><name name-style="western"><surname>Constantino</surname><given-names>PJ</given-names></name><name name-style="western"><surname>Chalk</surname><given-names>J</given-names></name><name name-style="western"><surname>Ziscovici</surname><given-names>C</given-names></name><name name-style="western"><surname>Wright</surname><given-names>BW</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Indentation as a technique to assess the mechanical properties of fallback foods.</article-title>             <source>Am J Phys Anthropol</source>             <volume>140</volume>             <fpage>643</fpage>             <lpage>652</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Osborn1">
+        <label>16</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Osborn</surname><given-names>JW</given-names></name></person-group>             <year>1996</year>             <article-title>Features of human jaw design which maximize the bite force.</article-title>             <source>J Biomech</source>             <volume>29</volume>             <fpage>589</fpage>             <lpage>595</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Wroe1">
+        <label>17</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Wroe</surname><given-names>S</given-names></name><name name-style="western"><surname>Moreno</surname><given-names>K</given-names></name><name name-style="western"><surname>Clausen</surname><given-names>P</given-names></name><name name-style="western"><surname>McHenry</surname><given-names>C</given-names></name><name name-style="western"><surname>Curnoe</surname><given-names>D</given-names></name></person-group>             <year>2007</year>             <article-title>High-resolution three-dimensional computer simulation of hominid cranial mechanics.</article-title>             <source>Anat Rec</source>             <volume>290</volume>             <fpage>1248</fpage>             <lpage>1255</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Endo1">
+        <label>18</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Endo</surname><given-names>B</given-names></name></person-group>             <year>1966</year>             <article-title>Experimental studies on the mechanical significance of the form of the human facial skeleton.</article-title>             <source>J Faculty Sci Univ Tokyo</source>             <volume>III</volume>             <fpage>1</fpage>             <lpage>106</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Couly1">
+        <label>19</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Couly</surname><given-names>G</given-names></name></person-group>             <year>1975</year>             <article-title>Revue de stomatologie et de chirurgie maxillo-faciale.</article-title>             <source>Rev tromatol Chir Maxillofac</source>             <volume>76</volume>             <fpage>607</fpage>             <lpage>619</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Manson1">
+        <label>20</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Manson</surname><given-names>PN</given-names></name><name name-style="western"><surname>Hoopes</surname><given-names>JE</given-names></name><name name-style="western"><surname>Su</surname><given-names>CT</given-names></name></person-group>             <year>1980</year>             <article-title>Structural pillars of the facial skeleton: an approach to the management of Le Fort fractures.</article-title>             <source>Plast Reconstr Surg</source>             <volume>66</volume>             <fpage>54</fpage>             <lpage>62</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Wise1">
+        <label>21</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Wise</surname><given-names>GE</given-names></name><name name-style="western"><surname>Yao</surname><given-names>S</given-names></name><name name-style="western"><surname>Henk</surname><given-names>WG</given-names></name></person-group>             <year>2007</year>             <article-title>Bone formation as a potential motive force of tooth eruption in the rat molar.</article-title>             <source>Clin Anat</source>             <volume>20</volume>             <fpage>632</fpage>             <lpage>639</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Bhaskar1">
+        <label>22</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bhaskar</surname><given-names>SN</given-names></name></person-group>             <year>1976</year>             <article-title>Enamel. Orban's Oral histology and embryology.</article-title>             <publisher-loc>St. Louis</publisher-loc>             <publisher-name>The C. V. Mosby Company</publisher-name>             <fpage>45</fpage>             <lpage>104</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Cobb1">
+        <label>23</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Cobb</surname><given-names>SN</given-names></name><name name-style="western"><surname>Panagiotopoulou</surname><given-names>O</given-names></name></person-group>             <year>2011</year>             <article-title>Balancing the spatial demands of the developing dentition with the mechanical demands of the catarrhine mandibular symphysis.</article-title>             <source>J Anat</source>             <volume>218</volume>             <fpage>96</fpage>             <lpage>111</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Strait1">
+        <label>24</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Strait</surname><given-names>DS</given-names></name><name name-style="western"><surname>Weber</surname><given-names>GW</given-names></name><name name-style="western"><surname>Neubauer</surname><given-names>S</given-names></name><name name-style="western"><surname>Chalk</surname><given-names>J</given-names></name><name name-style="western"><surname>Richmond</surname><given-names>BG</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>The feeding biomechanics and dietary ecology of <italic>Australopithecus africanus</italic>.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>106</volume>             <fpage>2124</fpage>             <lpage>2129</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Kupczik1">
+        <label>25</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kupczik</surname><given-names>K</given-names></name><name name-style="western"><surname>Dobson</surname><given-names>CA</given-names></name><name name-style="western"><surname>Fagan</surname><given-names>MJ</given-names></name><name name-style="western"><surname>Crompton</surname><given-names>RH</given-names></name><name name-style="western"><surname>Oxnard</surname><given-names>CE</given-names></name><etal/></person-group>             <year>2007</year>             <article-title>Assessing mechanical function of the zygomatic region in macaques: validation and sensitivity testing of finite element models.</article-title>             <source>J Anat</source>             <volume>210</volume>             <fpage>41</fpage>             <lpage>53</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Strait2">
+        <label>26</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Strait</surname><given-names>DS</given-names></name><name name-style="western"><surname>Grosse</surname><given-names>IR</given-names></name><name name-style="western"><surname>Dechow</surname><given-names>PC</given-names></name><name name-style="western"><surname>Smith</surname><given-names>AL</given-names></name><name name-style="western"><surname>Wang</surname><given-names>Q</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>The structural rigidity of the cranium of <italic>Australopithecus africanus</italic>: implications for diet, dietary adaptations, and the allometry of feeding biomechanics.</article-title>             <source>Anat Rec</source>             <volume>293</volume>             <fpage>583</fpage>             <lpage>593</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Peterson1">
+        <label>27</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Peterson</surname><given-names>J</given-names></name><name name-style="western"><surname>Wang</surname><given-names>Q</given-names></name><name name-style="western"><surname>Dechow</surname><given-names>PC</given-names></name></person-group>             <year>2006</year>             <article-title>Material properties of the dentate maxilla.</article-title>             <source>Anat Rec A Discov Mol Cell Evol Biol</source>             <volume>288</volume>             <fpage>962</fpage>             <lpage>972</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Huang1">
+        <label>28</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Huang</surname><given-names>HM</given-names></name><name name-style="western"><surname>Tsai</surname><given-names>CY</given-names></name><name name-style="western"><surname>Lee</surname><given-names>HF</given-names></name><name name-style="western"><surname>Lin</surname><given-names>CT</given-names></name><name name-style="western"><surname>Yao</surname><given-names>WC</given-names></name><etal/></person-group>             <year>2006</year>             <article-title>Damping effects on the response of maxillary incisor subjected to a traumatic impact force: a nonlinear finite element analysis.</article-title>             <source>J Dent</source>             <volume>34</volume>             <fpage>261</fpage>             <lpage>268</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Shapiro1">
+        <label>29</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Shapiro</surname><given-names>D</given-names></name><name name-style="western"><surname>Richtsmeier</surname><given-names>JT</given-names></name></person-group>             <year>1997</year>             <article-title>Brief communication: a sample of pediatric skulls available for study.</article-title>             <source>Am J Phys Anthropol</source>             <volume>103</volume>             <fpage>415</fpage>             <lpage>416</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Ubelaker1">
+        <label>30</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Ubelaker</surname><given-names>DH</given-names></name></person-group>             <year>1989</year>             <article-title>Human skeletal remains: excavation, analysis, interpretation.</article-title>             <publisher-loc>Washington DC</publisher-loc>             <publisher-name>Taraxacum Inc</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Hillson1">
+        <label>31</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Hillson</surname><given-names>S</given-names></name></person-group>             <year>1996</year>             <article-title>Dental Anthropology.</article-title>             <publisher-loc>Cambridge, UK</publisher-loc>             <publisher-name>Cambridge University Press</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Liversidge1">
+        <label>32</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Liversidge</surname><given-names>HM</given-names></name></person-group>             <year>2009</year>             <article-title>Permanent tooth formation as a method of estimating age.</article-title>             <source>Front Oral Biol</source>             <volume>13</volume>             <fpage>153</fpage>             <lpage>157</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-AlQahtani1">
+        <label>33</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>AlQahtani</surname><given-names>SJ</given-names></name><name name-style="western"><surname>Hector</surname><given-names>MP</given-names></name><name name-style="western"><surname>Liversidge</surname><given-names>HM</given-names></name></person-group>             <year>2010</year>             <article-title>Brief communication: The London atlas of human tooth development and eruption.</article-title>             <source>Am J Phys Anthropol</source>             <volume>142</volume>             <fpage>481</fpage>             <lpage>490</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Dumont1">
+        <label>34</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Dumont</surname><given-names>ER</given-names></name><name name-style="western"><surname>Piccirillo</surname><given-names>J</given-names></name><name name-style="western"><surname>Grosse</surname><given-names>IR</given-names></name></person-group>             <year>2005</year>             <article-title>Finite-element analysis of biting behavior and bone stress in the facial skeletons of bats.</article-title>             <source>Anat Rec A Discov Mol Cell Evol Biol</source>             <volume>283</volume>             <fpage>319</fpage>             <lpage>330</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Grosse1">
+        <label>35</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Grosse</surname><given-names>IR</given-names></name><name name-style="western"><surname>Dumont</surname><given-names>ER</given-names></name><name name-style="western"><surname>Coletta</surname><given-names>C</given-names></name><name name-style="western"><surname>Tolleson</surname><given-names>A</given-names></name></person-group>             <year>2007</year>             <article-title>Techniques for modeling muscle-induced forces in finite element models of skeletal structures.</article-title>             <source>Anat Rec</source>             <volume>290</volume>             <fpage>1069</fpage>             <lpage>1088</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Wroe2">
+        <label>36</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Wroe</surname><given-names>S</given-names></name><name name-style="western"><surname>Ferrara</surname><given-names>TL</given-names></name><name name-style="western"><surname>McHenry</surname><given-names>CR</given-names></name><name name-style="western"><surname>Curnoe</surname><given-names>D</given-names></name><name name-style="western"><surname>Chamoli</surname><given-names>U</given-names></name></person-group>             <year>2010</year>             <article-title>The craniomandibular mechanics of being human.</article-title>             <source>Proceedings of the Royal Society B: Biological Sciences</source>             <volume>277</volume>             <fpage>3579</fpage>             <lpage>3586</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Strait3">
+        <label>37</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Strait</surname><given-names>DS</given-names></name><name name-style="western"><surname>Wang</surname><given-names>Q</given-names></name><name name-style="western"><surname>Dechow</surname><given-names>PC</given-names></name><name name-style="western"><surname>Ross</surname><given-names>CF</given-names></name><name name-style="western"><surname>Richmond</surname><given-names>BG</given-names></name><etal/></person-group>             <year>2005</year>             <article-title>Modeling elastic properties in finite-element analysis: How much precision is needed to produce an accurate model?</article-title>             <source>Anat Rec A Discov Mol Cell Evol Biol</source>             <volume>283A</volume>             <fpage>275</fpage>             <lpage>287</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Habelitz1">
+        <label>38</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Habelitz</surname><given-names>S</given-names></name><name name-style="western"><surname>Marshall</surname><given-names>SJ</given-names></name><name name-style="western"><surname>Marshall</surname><given-names>GW</given-names><suffix>Jr</suffix></name><name name-style="western"><surname>Balooch</surname><given-names>M</given-names></name></person-group>             <year>2001</year>             <article-title>Mechanical properties of human dental enamel on the nanometre scale.</article-title>             <source>Arch Oral Biol</source>             <volume>46</volume>             <fpage>173</fpage>             <lpage>183</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Rentes1">
+        <label>39</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Rentes</surname><given-names>AM</given-names></name><name name-style="western"><surname>Gaviao</surname><given-names>MB</given-names></name><name name-style="western"><surname>Amaral</surname><given-names>JR</given-names></name></person-group>             <year>2002</year>             <article-title>Bite force determination in children with primary dentition.</article-title>             <source>J Oral Rehabil</source>             <volume>29</volume>             <fpage>1174</fpage>             <lpage>1180</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Gaviao1">
+        <label>40</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Gaviao</surname><given-names>MB</given-names></name><name name-style="western"><surname>Raymundo</surname><given-names>VG</given-names></name><name name-style="western"><surname>Rentes</surname><given-names>AM</given-names></name></person-group>             <year>2007</year>             <article-title>Masticatory performance and bite force in children with primary dentition.</article-title>             <source>Braz Oral Res</source>             <volume>21</volume>             <fpage>146</fpage>             <lpage>152</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Kamegai1">
+        <label>41</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kamegai</surname><given-names>T</given-names></name><name name-style="western"><surname>Tatsuki</surname><given-names>T</given-names></name><name name-style="western"><surname>Nagano</surname><given-names>H</given-names></name><name name-style="western"><surname>Mitsuhashi</surname><given-names>H</given-names></name><name name-style="western"><surname>Kumeta</surname><given-names>J</given-names></name><etal/></person-group>             <year>2005</year>             <article-title>A determination of bite force in northern Japanese children.</article-title>             <source>Eur J Orthod</source>             <volume>27</volume>             <fpage>53</fpage>             <lpage>57</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Castelo1">
+        <label>42</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Castelo</surname><given-names>PM</given-names></name><name name-style="western"><surname>Gaviao</surname><given-names>MB</given-names></name><name name-style="western"><surname>Pereira</surname><given-names>LJ</given-names></name><name name-style="western"><surname>Bonjardim</surname><given-names>LR</given-names></name></person-group>             <year>2007</year>             <article-title>Masticatory muscle thickness, bite force, and occlusal contacts in young children with unilateral posterior crossbite.</article-title>             <source>Eur J Orthod</source>             <volume>29</volume>             <fpage>149</fpage>             <lpage>156</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Dumont2">
+        <label>43</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Dumont</surname><given-names>ER</given-names></name><name name-style="western"><surname>Grosse</surname><given-names>IR</given-names></name><name name-style="western"><surname>Slater</surname><given-names>GJ</given-names></name></person-group>             <year>2009</year>             <article-title>Requirements for comparing the performance of finite element models of biological structures.</article-title>             <source>J Theor Biol</source>             <volume>256</volume>             <fpage>96</fpage>             <lpage>103</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Gross1">
+        <label>44</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Gross</surname><given-names>MD</given-names></name><name name-style="western"><surname>Arbel</surname><given-names>G</given-names></name><name name-style="western"><surname>Hershkovitz</surname><given-names>I</given-names></name></person-group>             <year>2001</year>             <article-title>Three-dimensional finite element analysis of the facial skeleton on simulated occlusal loading.</article-title>             <source>J Oral Rehabil</source>             <volume>28</volume>             <fpage>684</fpage>             <lpage>694</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Wang1">
+        <label>45</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Wang</surname><given-names>Q</given-names></name><name name-style="western"><surname>Wright</surname><given-names>BW</given-names></name><name name-style="western"><surname>Smith</surname><given-names>A</given-names></name><name name-style="western"><surname>Chalk</surname><given-names>J</given-names></name><name name-style="western"><surname>Byron</surname><given-names>CD</given-names></name></person-group>             <year>2010</year>             <article-title>Mechanical impact of incisor loading on the primate midfacial skeleton and its relevance to human evolution.</article-title>             <source>Anat Rec</source>             <volume>293</volume>             <fpage>607</fpage>             <lpage>617</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Ravosa1">
+        <label>46</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Ravosa</surname><given-names>MJ</given-names></name><name name-style="western"><surname>Kunwar</surname><given-names>R</given-names></name><name name-style="western"><surname>Stock</surname><given-names>SR</given-names></name><name name-style="western"><surname>Stack</surname><given-names>MS</given-names></name></person-group>             <year>2007</year>             <article-title>Pushing the limit: masticatory stress and adaptive plasticity in mammalian craniomandibular joints.</article-title>             <source>J Exp Biol</source>             <volume>210</volume>             <fpage>628</fpage>             <lpage>641</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Lieberman2">
+        <label>47</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lieberman</surname><given-names>DE</given-names></name><name name-style="western"><surname>Krovitz</surname><given-names>GE</given-names></name><name name-style="western"><surname>Yates</surname><given-names>FW</given-names></name><name name-style="western"><surname>Devlin</surname><given-names>M</given-names></name><name name-style="western"><surname>St Claire</surname><given-names>M</given-names></name></person-group>             <year>2004</year>             <article-title>Effects of food processing on masticatory strain and craniofacial growth in a retrognathic face.</article-title>             <source>J Hum Evol</source>             <volume>46</volume>             <fpage>655</fpage>             <lpage>677</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Daegling1">
+        <label>48</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Daegling</surname><given-names>DJ</given-names></name><name name-style="western"><surname>Grine</surname><given-names>FE</given-names></name></person-group>             <year>1991</year>             <article-title>Compact bone distribution and biomechanics of early hominid mandibles.</article-title>             <source>Am J Phys Anthropol</source>             <volume>86</volume>             <fpage>321</fpage>             <lpage>339</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Kaplan1">
+        <label>49</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kaplan</surname><given-names>H</given-names></name><name name-style="western"><surname>Hill</surname><given-names>K</given-names></name><name name-style="western"><surname>Lancaster</surname><given-names>J</given-names></name><name name-style="western"><surname>Hurtado</surname><given-names>AM</given-names></name></person-group>             <year>2000</year>             <article-title>A theory of human life history evolution: Diet, intelligence, and longevity.</article-title>             <source>Evol Anth</source>             <volume>9</volume>             <fpage>156</fpage>             <lpage>185</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Marlowe1">
+        <label>50</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Marlowe</surname><given-names>FW</given-names></name></person-group>             <year>2003</year>             <article-title>A critical period for provisioning by Hadza men: Implications for pair bonding.</article-title>             <source>Evol Hum Behav</source>             <volume>24</volume>             <fpage>217</fpage>             <lpage>229</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Marinescu1">
+        <label>51</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Marinescu</surname><given-names>R</given-names></name><name name-style="western"><surname>Daegling</surname><given-names>DJ</given-names></name><name name-style="western"><surname>Rapoff</surname><given-names>AJ</given-names></name></person-group>             <year>2005</year>             <article-title>Finite-element modeling of the anthropoid mandible: The effects of altered boundary conditions.</article-title>             <source>Anat Rec A Discov Mol Cell Evol Biol</source>             <volume>283A</volume>             <fpage>300</fpage>             <lpage>309</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Richmond1">
+        <label>52</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Richmond</surname><given-names>BG</given-names></name><name name-style="western"><surname>Wright</surname><given-names>BW</given-names></name><name name-style="western"><surname>Grosse</surname><given-names>I</given-names></name><name name-style="western"><surname>Dechow</surname><given-names>PC</given-names></name><name name-style="western"><surname>Ross</surname><given-names>CF</given-names></name><etal/></person-group>             <year>2005</year>             <article-title>Finite element analysis in functional morphology.</article-title>             <source>Anat Rec A Discov Mol Cell Evol Biol</source>             <volume>283</volume>             <fpage>259</fpage>             <lpage>274</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Kupczik2">
+        <label>53</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kupczik</surname><given-names>K</given-names></name><name name-style="western"><surname>Dobson</surname><given-names>CA</given-names></name><name name-style="western"><surname>Crompton</surname><given-names>RH</given-names></name><name name-style="western"><surname>Phillips</surname><given-names>R</given-names></name><name name-style="western"><surname>Oxnard</surname><given-names>CE</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Masticatory loading and bone adaptation in the supraorbital torus of developing macaques.</article-title>             <source>Am J Phys Anthropol</source>             <volume>139</volume>             <fpage>193</fpage>             <lpage>203</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0029121-Wroe3">
+        <label>54</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Wroe</surname><given-names>S</given-names></name><name name-style="western"><surname>Ferrara</surname><given-names>TL</given-names></name><name name-style="western"><surname>McHenry</surname><given-names>CR</given-names></name><name name-style="western"><surname>Curnoe</surname><given-names>D</given-names></name><name name-style="western"><surname>Chamoli</surname><given-names>U</given-names></name></person-group>             <year>2010</year>             <article-title>The craniomandibular mechanics of being human.</article-title>             <source>Proc Biol Sci</source>             <volume>277</volume>             <fpage>3579</fpage>             <lpage>3586</lpage>          </element-citation>
+      </ref>
+    </ref-list>
+    
+  </back>
+</article>

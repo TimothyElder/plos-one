@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1d3 20150301//EN" "http://jats.nlm.nih.gov/publishing/1.1d3/JATS-journalpublishing1.dtd">
+<article article-type="research-article" dtd-version="1.1d3" xml:lang="en" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1371/journal.pone.0156041</article-id>
+<article-id pub-id-type="publisher-id">PONE-D-16-01080</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Physiology</subject><subj-group><subject>Immune physiology</subject><subj-group><subject>Cytokines</subject><subj-group><subject>Adipokines</subject><subj-group><subject>Adiponectin</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Physiology</subject><subj-group><subject>Immune physiology</subject><subj-group><subject>Cytokines</subject><subj-group><subject>Adipokines</subject><subj-group><subject>Adiponectin</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Immune system</subject><subj-group><subject>Innate immune system</subject><subj-group><subject>Cytokines</subject><subj-group><subject>Adipokines</subject><subj-group><subject>Adiponectin</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Immune system</subject><subj-group><subject>Innate immune system</subject><subj-group><subject>Cytokines</subject><subj-group><subject>Adipokines</subject><subj-group><subject>Adiponectin</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Developmental biology</subject><subj-group><subject>Molecular development</subject><subj-group><subject>Cytokines</subject><subj-group><subject>Adipokines</subject><subj-group><subject>Adiponectin</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Biochemistry</subject><subj-group><subject>Hormones</subject><subj-group><subject>Peptide hormones</subject><subj-group><subject>Adiponectin</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Physiology</subject><subj-group><subject>Physiological parameters</subject><subj-group><subject>Body weight</subject><subj-group><subject>Obesity</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Physiology</subject><subj-group><subject>Physiological parameters</subject><subj-group><subject>Body weight</subject><subj-group><subject>Obesity</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Biochemistry</subject><subj-group><subject>Lipids</subject><subj-group><subject>Fats</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Physical anthropology</subject><subj-group><subject>Anthropometry</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Physical anthropology</subject><subj-group><subject>Anthropometry</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Physiology</subject><subj-group><subject>Physiological parameters</subject><subj-group><subject>Body weight</subject><subj-group><subject>Body mass index</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Physiology</subject><subj-group><subject>Physiological parameters</subject><subj-group><subject>Body weight</subject><subj-group><subject>Body mass index</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Mathematical and statistical techniques</subject><subj-group><subject>Statistical methods</subject><subj-group><subject>Regression analysis</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Physical sciences</subject><subj-group><subject>Mathematics</subject><subj-group><subject>Statistics (mathematics)</subject><subj-group><subject>Statistical methods</subject><subj-group><subject>Regression analysis</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Pharmacology</subject><subj-group><subject>Drugs</subject><subj-group><subject>Antihypertensive drugs</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Body fluids</subject><subj-group><subject>Blood</subject><subj-group><subject>Blood plasma</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Body fluids</subject><subj-group><subject>Blood</subject><subj-group><subject>Blood plasma</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Physiology</subject><subj-group><subject>Body fluids</subject><subj-group><subject>Blood</subject><subj-group><subject>Blood plasma</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Physiology</subject><subj-group><subject>Body fluids</subject><subj-group><subject>Blood</subject><subj-group><subject>Blood plasma</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Hematology</subject><subj-group><subject>Blood</subject><subj-group><subject>Blood plasma</subject></subj-group></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Association of Anthropometric and Bioelectrical Impedance Analysis Measures of Adiposity with High Molecular Weight Adiponectin Concentration</article-title>
+<alt-title alt-title-type="running-head">Adiposity Measures and Plasma Adiponectin</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Zeng</surname>
+<given-names>Wei-Fang</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"/>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Li</surname>
+<given-names>Yan</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"/>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Sheng</surname>
+<given-names>Chang-Sheng</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"/>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Huang</surname>
+<given-names>Qi-Fang</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"/>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Kang</surname>
+<given-names>Yuan-Yuan</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"/>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Zhang</surname>
+<given-names>Lu</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"/>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Wang</surname>
+<given-names>Shuai</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"/>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Cheng</surname>
+<given-names>Yi-Bang</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"/>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Li</surname>
+<given-names>Fei-Ka</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"/>
+</contrib>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Wang</surname>
+<given-names>Ji-Guang</given-names>
+</name>
+<xref ref-type="corresp" rid="cor001">*</xref>
+<xref ref-type="aff" rid="aff001"/>
+</contrib>
+</contrib-group>
+<aff id="aff001"><addr-line>Centre for Epidemiological Studies and Clinical Trials, Shanghai Key Laboratory of Hypertension, The Shanghai Institute of Hypertension, Department of Hypertension, Ruijin Hospital, Shanghai Jiaotong University School of Medicine, Shanghai, China</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Li</surname>
+<given-names>Shengxu</given-names>
+</name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Tulane School of Public Health and Tropical Medicine, UNITED STATES</addr-line></aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<fn fn-type="con" id="contrib001">
+<p>Conceived and designed the experiments: JGW YL. Performed the experiments: WFZ. Analyzed the data: WFZ JGW. Contributed reagents/materials/analysis tools: WFZ. Wrote the paper: WFZ JGW. Participated in the field work: WFZ CSS QFH YYK LZ SW YBC FKL.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">jiguangwang@aim.com</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<day>26</day>
+<month>5</month>
+<year>2016</year>
+</pub-date>
+<pub-date pub-type="collection">
+<year>2016</year>
+</pub-date>
+<volume>11</volume>
+<issue>5</issue>
+<elocation-id>e0156041</elocation-id>
+<history>
+<date date-type="received">
+<day>9</day>
+<month>1</month>
+<year>2016</year>
+</date>
+<date date-type="accepted">
+<day>9</day>
+<month>5</month>
+<year>2016</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2016</copyright-year>
+<copyright-holder>Zeng et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0156041"/>
+<abstract>
+<sec id="sec001">
+<title>Objective</title>
+<p>To investigate the relationship between adiposity measures and plasma concentration of high molecular weight (HMW) adiponectin.</p>
+</sec>
+<sec id="sec002">
+<title>Methods</title>
+<p>In a Chinese sample (n = 1081), we performed measurements of anthropometry and bioelectrical impedance analysis (BIA). We defined overweight and obesity as a body mass index between 24 and 27.4 kg/m² and ≥ 27.5 kg/m², respectively, and central obesity as a waist circumference ≥ 90 cm in men and ≥ 80 cm in women. Plasma HMW adiponectin concentration was measured by the ELISA method.</p>
+</sec>
+<sec id="sec003">
+<title>Results</title>
+<p>Plasma HMW adiponectin concentration was significantly (<italic>P</italic> &lt; 0.0001) higher in women (n = 677, 2.47 μg/mL) than men (n = 404, 1.58 μg/mL) and correlated with advancing age in men (r = 0.28) and women (r = 0.29). In adjusted analyses, it was lower in the presence of overweight (n = 159, 1.26 μg/mL in men and n = 227, 2.15μg/mL in women) and obesity (n = 60, 1.31 μg/mL and n = 82, 2.10 μg/mL, respectively) than normal weight subjects (n = 185, 2.07μg/mL and n = 368, 2.94 μg/mL, respectively) and in the presence of central obesity (n = 106, 1.28 μg/mL and n = 331, 2.12 μg/mL, respectively) than subjects with a normal waist circumference (n = 298, 1.74 μg/mL and n = 346, 2.74 μg/mL, respectively). In multiple regression analyses stratified for gender, adjusted for confounders and considered separately each of the adiposity measures, all adiposity measures were significantly (r -0.18 to -0.31, <italic>P</italic> &lt; 0.001) associated with plasma HMW adiponectin concentration. However, in further stratified and adjusted regression analyses considered stepwise all adiposity measures, only waist-to-hip ratio was significantly (<italic>P</italic> &lt; 0.05) associated with plasma HMW adiponectin concentration in men (r = -0.10) and women (r = -0.15).</p>
+</sec>
+<sec id="sec004">
+<title>Conclusions</title>
+<p>Anthropometric measures of obesity, such as waist-to-hip ratio, but not BIA measures, are independently associated with plasma adiponectin concentration.</p>
+</sec>
+</abstract>
+<funding-group>
+<award-group id="award001">
+<funding-source>
+<institution-wrap>
+<institution-id institution-id-type="funder-id">http://dx.doi.org/10.13039/501100001809</institution-id>
+<institution>National Natural Science Foundation of China</institution>
+</institution-wrap>
+</funding-source>
+<award-id>81170245</award-id>
+</award-group>
+<award-group id="award002">
+<funding-source>
+<institution-wrap>
+<institution-id institution-id-type="funder-id">http://dx.doi.org/10.13039/501100001809</institution-id>
+<institution>National Natural Science Foundation of China</institution>
+</institution-wrap>
+</funding-source>
+<award-id>81270373</award-id>
+</award-group>
+<award-group id="award003">
+<funding-source>
+<institution-wrap>
+<institution-id institution-id-type="funder-id">http://dx.doi.org/10.13039/501100001809</institution-id>
+<institution>National Natural Science Foundation of China</institution>
+</institution-wrap>
+</funding-source>
+<award-id>81470533</award-id>
+</award-group>
+<funding-statement>The present study was financially supported by grants from the National Natural Science Foundation of China, grant number: 81170245, 81270373 and 81470533, <ext-link ext-link-type="uri" xlink:href="http://www.nsfc.gov.cn/" xlink:type="simple">http://www.nsfc.gov.cn/</ext-link>. JGW received the funding.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="2"/>
+<table-count count="4"/>
+<page-count count="10"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability">
+<meta-name>Data Availability</meta-name>
+<meta-value>All relevant data are within the paper and its Supporting Information files.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec005" sec-type="intro">
+<title>Introduction</title>
+<p>Adiponectin is mostly expressed in the adipose tissue [<xref ref-type="bibr" rid="pone.0156041.ref001">1</xref>], and secreted into the circulation as a trimer or hexamer or as a high molecular weight (HMW) form [<xref ref-type="bibr" rid="pone.0156041.ref002">2</xref>]. Adiponectin is primarily an insulin-sensitizer [<xref ref-type="bibr" rid="pone.0156041.ref003">3</xref>], but it also has been shown to have anti-inflammatory and anti-atherogenic properties [<xref ref-type="bibr" rid="pone.0156041.ref004">4</xref>]. The HMW adiponectin is the most bioactive form, and has been found to be associated with endothelial dysfunction [<xref ref-type="bibr" rid="pone.0156041.ref004">4</xref>], hyperinsulinemia [<xref ref-type="bibr" rid="pone.0156041.ref005">5</xref>], type 2 diabetes mellitus [<xref ref-type="bibr" rid="pone.0156041.ref005">5</xref>] and other metabolic disorders [<xref ref-type="bibr" rid="pone.0156041.ref006">6</xref>,<xref ref-type="bibr" rid="pone.0156041.ref007">7</xref>]. The secretion of adiponectin is powerfully inhibited by fat accumulation, especially visceral fat accumulation [<xref ref-type="bibr" rid="pone.0156041.ref008">8</xref>]. Adiponectin is closely related to obesity and recognized as a critical link between obesity and obesity-related diseases, such as hypertension [<xref ref-type="bibr" rid="pone.0156041.ref009">9</xref>,<xref ref-type="bibr" rid="pone.0156041.ref010">10</xref>], type 2 diabetes mellitus [<xref ref-type="bibr" rid="pone.0156041.ref011">11</xref>,<xref ref-type="bibr" rid="pone.0156041.ref012">12</xref>], and the metabolic syndrome [<xref ref-type="bibr" rid="pone.0156041.ref013">13</xref>,<xref ref-type="bibr" rid="pone.0156041.ref014">14</xref>].</p>
+<p>Obesity can be evaluated by the use of anthropometry, bioelectrical impedance analyses or computed tomography (CT) and magnetic resonance (MR) imaging [<xref ref-type="bibr" rid="pone.0156041.ref015">15</xref>]. Anthropometric measurements are the most often used method for the definition and classification of obesity in clinical practice and epidemiological settings. Body mass index, calculated as the body weight in kilograms divided by the body height in meters squared, is used to define overweight and obesity. Waist circumference or the ratio of waist-to-hip circumference is used to define central obesity or visceral obesity. These methods are useful, but often criticized for inaccuracy [<xref ref-type="bibr" rid="pone.0156041.ref016">16</xref>], especially when compared with the CT or MR imaging method [<xref ref-type="bibr" rid="pone.0156041.ref015">15</xref>]. However, the latter method has apparent limitations, for instance, cost. Devices that operate bioelectrical impedance analysis (BIA) technique are therefore developed and become popular in the evaluation of obesity, especially central obesity in the clinical setting and at home [<xref ref-type="bibr" rid="pone.0156041.ref017">17</xref>,<xref ref-type="bibr" rid="pone.0156041.ref018">18</xref>].</p>
+<p>In the present study, we investigated in a Chinese population sample associations of anthropometric and BIA measures of adiposity with plasma HMW adiponectin concentration.</p>
+</sec>
+<sec id="sec006" sec-type="materials|methods">
+<title>Materials and Methods</title>
+<sec id="sec007">
+<title>Study Population</title>
+<p>The present cross-sectional analysis was based on data of an ongoing population study on multiple cardiovascular risk factors in Shanghai, China [<xref ref-type="bibr" rid="pone.0156041.ref019">19</xref>–<xref ref-type="bibr" rid="pone.0156041.ref021">21</xref>]. The study subjects were recruited from a newly established residential area in the suburb of Shanghai, 30 kilometers from the city center. Most residents were immigrants from nearby villages since 2003 and previously doing farming or other agricultural work. The Ethics Committee of Ruijin Hospital, Shanghai Jiaotong University School of Medicine approved the study protocol. All subjects gave written informed consent.</p>
+<p>In the year 2009, we invited 1630 residents to take part in our study. Of those invited, 1192 (73.1%) participated. We excluded 111 subjects from the present analysis because they did not collect blood samples (n = 67) or anthropometric data (n = 70). Thus, the total number of subjects included in the present analysis was 1081.</p>
+</sec>
+<sec id="sec008">
+<title>Field Work</title>
+<p>One experienced physician administered a standardized questionnaire to collect information on medical history, lifestyle and use of medications. A trained technician performed anthropometric measurements. Body height was measured to the nearest 0.5 cm, and body weight with light indoor clothes and without shoes. Body mass index was calculated as the body weight in kilograms divided by the body height in meters squared. Waist and hip circumferences were measured to the nearest 0.5 cm at the narrowest part of the torso and the widest portion of the buttocks, respectively. Waist-to-hip ratio is the circumference of the waist divided by that of the hip. We performed BIA to measure body fat percentage, visceral fat percentage, and visceral-body fat ratio using the validated four-limb HBF359 device (Omron, Tokyo, Japan) [<xref ref-type="bibr" rid="pone.0156041.ref017">17</xref>]. We defined overweight and obesity as a body mass index between 24 and 27.4 kg/m² and ≥ 27.5 kg/m², respectively, and central obesity as a waist circumference of at least 90 cm in men and 80 cm in women.</p>
+</sec>
+<sec id="sec009">
+<title>Laboratory Methods</title>
+<p>Venous blood samples were drawn after overnight fasting for biochemical measurements. Plasma HMW adiponectin concentration was measured by the ELISA method (R&amp;D Systems, Inc., Minneapolis, MN). The within-assay and between-assay coefficients of variation were 5.0% and 7.3%, respectively. Plasma glucose concentration was measured by a clinical chemistry automatic analyzer (Hitachi 7600–020, Tokyo, Japan).</p>
+<p>Hypoadiponectinemia was defined as a plasma HMW adiponectin concentration within the gender-specific bottom decile. Diabetes mellitus was defined as a plasma glucose concentration of at least 7.0 mmol/L fasting or 11.1 mmol/L at any time, or as using antidiabetic agents. Prediabetes was defined as a fasting plasma glucose concentration in the range of 6.1 to 6.9 mmol/L.</p>
+</sec>
+<sec id="sec010">
+<title>Statistical Analysis</title>
+<p>For database management and statistical analysis, we used SAS software (version 9.13, SAS Institute, Cary, NC, USA). Means and proportions were compared with the Student <italic>t</italic>-test and Fisher’s exact test, respectively. For statistical analysis, plasma HMW adiponectin concentration was logarithmically transformed. We performed analyses of covariance for the comparison of plasma HMW-adiponectin concentration between various subgroups according to gender, age and obesity status and for the computation of adjusted mean values of plasma HMW-adiponectin concentration, while controlling for confounding factors. We performed multiple regression analyses to study associations of plasma HMW-adiponectin concentration with anthropometric and BIA measures of obesity in a full model with each of the adiposity measures considered separately and in a stepwise model with all adiposity measures considered simultaneously. We performed multiple logistic regression analyses to study associations between waist-to-hip ratio and hypoadiponectinemia.</p>
+</sec>
+</sec>
+<sec id="sec011" sec-type="results">
+<title>Results</title>
+<p>The 1081 participants included 404 (37.4%) men, and 96 (8.9%) diabetic and prediabetic patients, of whom 48 (4.4%) used antidiabetic drugs. Men and women differed significantly in all characteristics (<italic>P</italic> ≤ 0.03 for the significant characteristics) except for the prevalence of diabetes or prediabetes and the use of antihypertensive or antidiabetic drugs (<italic>P</italic> ≥ 0.21, <bold><xref ref-type="table" rid="pone.0156041.t001">Table 1</xref></bold>).</p>
+<table-wrap id="pone.0156041.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0156041.t001</object-id>
+<label>Table 1</label> <caption><title>Characteristics of the study population.</title></caption>
+<alternatives>
+<graphic id="pone.0156041.t001g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0156041.t001" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Characteristic</th>
+<th align="left">Men (n = 404)</th>
+<th align="left">Women (n = 677)</th>
+<th align="left"><italic>P</italic> value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><bold>Age, years</bold></td>
+<td align="left"><bold>56.7 ± 12.7</bold></td>
+<td align="left"><bold>54.2 ± 13.2</bold></td>
+<td align="left"><bold>0.004</bold></td>
+</tr>
+<tr>
+<td align="left"><bold>Body height, cm</bold></td>
+<td align="left"><bold>164.4 ± 6.4</bold></td>
+<td align="left"><bold>154.2 ± 6.0</bold></td>
+<td align="left"><bold>&lt; 0.001</bold></td>
+</tr>
+<tr>
+<td align="left"><bold>Body weight, kg</bold></td>
+<td align="left"><bold>65.8 ± 10.5</bold></td>
+<td align="left"><bold>56.6 ± 8.9</bold></td>
+<td align="left"><bold>&lt; 0.001</bold></td>
+</tr>
+<tr>
+<td align="left"><bold>Body mass index, kg/m</bold><sup><bold>2</bold></sup></td>
+<td align="left"><bold>24.3 ± 3.3</bold></td>
+<td align="left"><bold>23.8 ± 3.2</bold></td>
+<td align="left"><bold>0.011</bold></td>
+</tr>
+<tr>
+<td align="left"><bold>Body mass index ≥ 27.5 kg/m</bold><sup><bold>2</bold></sup><bold>, n (%)</bold></td>
+<td align="left"><bold>60 (14.9)</bold></td>
+<td align="left"><bold>82 (12.1)</bold></td>
+<td align="left"><bold>0.226</bold></td>
+</tr>
+<tr>
+<td align="left"><bold>Waist circumference, cm</bold></td>
+<td align="left"><bold>83.7 ± 8.9</bold></td>
+<td align="left"><bold>79.0 ± 8.6</bold></td>
+<td align="left"><bold>&lt; 0.001</bold></td>
+</tr>
+<tr>
+<td align="left"><bold>Waist circumference ≥ 90 cm in men and ≥ 80 cm in women, n (%)</bold></td>
+<td align="left"><bold>106 (26.2)</bold></td>
+<td align="left"><bold>331 (48.9)</bold></td>
+<td align="left"><bold>&lt; 0.001</bold></td>
+</tr>
+<tr>
+<td align="left"><bold>Hip circumference, cm</bold></td>
+<td align="left"><bold>93.8 ± 6.2</bold></td>
+<td align="left"><bold>92.9 ± 6.3</bold></td>
+<td align="left"><bold>0.017</bold></td>
+</tr>
+<tr>
+<td align="left"><bold>Waist-to-hip ratio</bold></td>
+<td align="left"><bold>0.89 ± 0.05</bold></td>
+<td align="left"><bold>0.85 ± 0.06</bold></td>
+<td align="left"><bold>&lt; 0.001</bold></td>
+</tr>
+<tr>
+<td align="left"><bold>Body fat percentage, %</bold></td>
+<td align="left"><bold>26.3 ± 4.7</bold></td>
+<td align="left"><bold>34.1 ± 4.8</bold></td>
+<td align="left"><bold>&lt; 0.001</bold></td>
+</tr>
+<tr>
+<td align="left"><bold>Visceral fat percentage, %</bold></td>
+<td align="left"><bold>11.3 ± 4.7</bold></td>
+<td align="left"><bold>7.1 ± 3.4</bold></td>
+<td align="left"><bold>&lt; 0.001</bold></td>
+</tr>
+<tr>
+<td align="left"><bold>Visceral-body fat ratio</bold></td>
+<td align="left"><bold>0.42 ± 0.14</bold></td>
+<td align="left"><bold>0.20 ± 0.08</bold></td>
+<td align="left"><bold>&lt; 0.001</bold></td>
+</tr>
+<tr>
+<td align="left"><bold>Hypertension, n (%)</bold></td>
+<td align="left"><bold>170 (42.1)</bold></td>
+<td align="left"><bold>238 (35.2)</bold></td>
+<td align="left"><bold>0.027</bold></td>
+</tr>
+<tr>
+<td align="left"><bold>Use of antihypertensive drugs, n (%)</bold></td>
+<td align="left"><bold>130 (32.2)</bold></td>
+<td align="left"><bold>193 (28.6)</bold></td>
+<td align="left"><bold>0.217</bold></td>
+</tr>
+<tr>
+<td align="left"><bold>Diabetes or prediabetes, n (%)</bold></td>
+<td align="left"><bold>38 (9.4)</bold></td>
+<td align="left"><bold>58 (8.6)</bold></td>
+<td align="left"><bold>0.659</bold></td>
+</tr>
+<tr>
+<td align="left"><bold>Use of antidiabetic drugs, n (%)</bold></td>
+<td align="left"><bold>17 (4.2)</bold></td>
+<td align="left"><bold>31 (4.6)</bold></td>
+<td align="left"><bold>0.879</bold></td>
+</tr>
+<tr>
+<td align="left"><bold>Current smoking, n (%)</bold></td>
+<td align="left"><bold>198 (49.0)</bold></td>
+<td align="left"><bold>3 (0.4)</bold></td>
+<td align="left"><bold>&lt; 0.001</bold></td>
+</tr>
+<tr>
+<td align="left"><bold>Alcohol intake, n (%)</bold></td>
+<td align="left"><bold>147 (36.4)</bold></td>
+<td align="left"><bold>9 (1.3)</bold></td>
+<td align="left"><bold>&lt; 0.001</bold></td>
+</tr>
+<tr>
+<td align="left"><bold>Plasma HMW adiponectin concentration, μg/mL</bold></td>
+<td align="left"><bold>1.58 (1.47–1.71)</bold></td>
+<td align="left"><bold>2.47 (2.33–2.61)</bold></td>
+<td align="left"><bold>&lt; 0.001</bold></td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t001fn001"><p>HMW: High molecular weight. Values are arithmetic (± standard deviation) or geometric mean (95% confidence interval) or number of subjects (%). For definitions of hypertension, diabetes mellitus and prediabetes, see <xref ref-type="sec" rid="sec006">Methods</xref>.</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<p>Plasma HMW adiponectin concentration was significantly (<italic>P</italic> &lt; 0.0001) higher in women than men (2.47 <italic>vs</italic> 1.58 μg/mL) and increased with advancing age in men (<italic>r</italic> = 0.28) as well as women (<italic>r</italic> = 0.29, <bold><xref ref-type="fig" rid="pone.0156041.g001">Fig 1</xref></bold>).</p>
+<fig id="pone.0156041.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0156041.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>Plasma high molecular weight (HMW) adiponectin concentration by gender and age.</title>
+<p>Open and closed symbols represent geometric mean of plasma HMW adiponectin concentration in men and women, respectively. Vertical lines denote 95% confidence intervals. The number of subjects for each subgroup is given alongside the symbols. <italic>P</italic> values for trend are given for men and women separately.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0156041.g001" xlink:type="simple"/>
+</fig>
+<p>In analyses stratified for gender and adjusted for age, current smoking and alcohol intake, the use of antihypertensive medication and the use of antidiabetic drugs, plasma HMW adiponectin concentration was lower in the presence of overweight (n = 159, 1.26 μg/mL in men and n = 227, 2.15 μg/mL in women) and obesity (n = 60, 1.31 μg/mL in men and n = 82, 2.10 μg/mL in women) than normal weight subjects (n = 185, 2.07 μg/mL in men and n = 368, 2.94 μg/mL in women) and in the presence of central obesity (n = 106, 1.28 μg/mL in men and n = 331, 2.12 μg/mL in women) than subjects with a normal waist circumference (n = 298, 1.74 μg/mL in men and n = 346, 2.74 μg/mL in women, <bold><xref ref-type="table" rid="pone.0156041.t002">Table 2</xref></bold>). Further stratification for age-subgroup (19–49, 50–59, 60–69, and 70–86 years) in men and women did not materially alter the results (<bold><xref ref-type="table" rid="pone.0156041.t002">Table 2</xref></bold>).</p>
+<table-wrap id="pone.0156041.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0156041.t002</object-id>
+<label>Table 2</label> <caption><title>Mean concentration of plasma high-molecular-weight (HMW) adiponectin by gender and obesity.</title></caption>
+<alternatives>
+<graphic id="pone.0156041.t002g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0156041.t002" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="justify" colspan="2" rowspan="3"/>
+<th align="center" colspan="5">Geometric mean concentration of plasma HMW adiponectin (95% confidence interval), μg/mL</th>
+</tr>
+<tr>
+<th align="center" colspan="3">Body mass index (kg/m<sup>2</sup>)</th>
+<th align="center" colspan="2">Waist circumference (cm)</th>
+</tr>
+<tr>
+<th align="left">&lt;24 (n = 553)</th>
+<th align="left">24–27.4 (n = 386)</th>
+<th align="left">≥27.5 (n = 142)</th>
+<th align="left">&lt;90 cm in men and &lt;80 cm in women (n = 644)</th>
+<th align="left">≥90 cm in men and ≥80 cm in women (n = 437)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><bold>Men</bold></td>
+<td align="left"/>
+<td align="left"><bold>n = 185</bold></td>
+<td align="left"><bold>n = 159</bold></td>
+<td align="left"><bold>n = 60</bold></td>
+<td align="left"><bold>n = 298</bold></td>
+<td align="left"><bold>n = 106</bold></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>27–49 years (n = 105)</bold></td>
+<td align="left"><bold>1.52 (1.22–1.91)</bold></td>
+<td align="left"><bold>1.13 (0.92–1.40)</bold></td>
+<td align="left"><bold>1.01(0.78–1.32)</bold><xref ref-type="table-fn" rid="t002fn004">***</xref></td>
+<td align="left"><bold>1.33 (1.13–1.56)</bold></td>
+<td align="left"><bold>1.09(0.88–1.37)</bold></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>50–59 years (n = 118)</bold></td>
+<td align="left"><bold>2.05 (1.69–2.49)</bold></td>
+<td align="left"><bold>1.11 (0.88–1.39)</bold><xref ref-type="table-fn" rid="t002fn002">*</xref></td>
+<td align="left"><bold>1.37(0.89–2.10)</bold></td>
+<td align="left"><bold>1.67 (1.41–1.98)</bold></td>
+<td align="left"><bold>1.22(0.92–1.62)</bold><xref ref-type="table-fn" rid="t002fn007"><sup>†††</sup></xref></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>60–69 years (n = 117)</bold></td>
+<td align="left"><bold>1.66 (1.33–2.07)</bold></td>
+<td align="left"><bold>1.23 (1.05–1.54)</bold></td>
+<td align="left"><bold>1.35(0.89–2.04)</bold></td>
+<td align="left"><bold>1.46 (1.25–1.71)</bold></td>
+<td align="left"><bold>1.30(0.89–1.72)</bold></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>70–86 years (n = 64)</bold></td>
+<td align="left"><bold>3.71 (2.94–4.68)</bold></td>
+<td align="left"><bold>2.06 (1.38–3.09)</bold><xref ref-type="table-fn" rid="t002fn003">**</xref></td>
+<td align="left"><bold>1.71(1.01–2.91)</bold><xref ref-type="table-fn" rid="t002fn003">**</xref></td>
+<td align="left"><bold>3.36 (2.76–4.10)</bold></td>
+<td align="left"><bold>1.77(1.12–2.81)</bold><xref ref-type="table-fn" rid="t002fn007"><sup>†††</sup></xref></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>All men (n = 404)</bold></td>
+<td align="left"><bold>2.07 (1.86–2.30)</bold></td>
+<td align="left"><bold>1.26 (1.12–1.41)</bold><xref ref-type="table-fn" rid="t002fn002">*</xref></td>
+<td align="left"><bold>1.31 (1.08–1.59)</bold><xref ref-type="table-fn" rid="t002fn002">*</xref></td>
+<td align="left"><bold>1.74 (1.59–1.90)</bold></td>
+<td align="left"><bold>1.28 (1.11–1.48)</bold><xref ref-type="table-fn" rid="t002fn005"><sup>†</sup></xref></td>
+</tr>
+<tr>
+<td align="left"><bold>Women</bold></td>
+<td align="left"/>
+<td align="left"><bold>n = 368</bold></td>
+<td align="left"><bold>n = 227</bold></td>
+<td align="left"><bold>n = 82</bold></td>
+<td align="left"><bold>n = 346</bold></td>
+<td align="left"><bold>n = 331</bold></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>19–49 years (n = 217)</bold></td>
+<td align="left"><bold>2.17 (1.92–2.45)</bold></td>
+<td align="left"><bold>1.68 (1.41–2.00)</bold><xref ref-type="table-fn" rid="t002fn004">***</xref></td>
+<td align="left"><bold>1.77 (1.39–2.25)</bold></td>
+<td align="left"><bold>2.12 (1.89–2.38)</bold></td>
+<td align="left"><bold>1.62 (1.36–1.92)</bold><xref ref-type="table-fn" rid="t002fn006"><sup>††</sup></xref></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>50–59 years (n = 230)</bold></td>
+<td align="left"><bold>2.88 (2.48–3.35)</bold></td>
+<td align="left"><bold>2.03 (1.77–2.33)</bold><xref ref-type="table-fn" rid="t002fn002">*</xref></td>
+<td align="left"><bold>2.06 (1.66–2.54)</bold><xref ref-type="table-fn" rid="t002fn003">**</xref></td>
+<td align="left"><bold>2.71 (2.37–3.11)</bold></td>
+<td align="left"><bold>2.00 (1.76–2.27)</bold><xref ref-type="table-fn" rid="t002fn006"><sup>††</sup></xref></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>60–69 years (n = 140)</bold></td>
+<td align="left"><bold>3.83 (3.12–4.71)</bold></td>
+<td align="left"><bold>2.67 (2.28–3.13)</bold><xref ref-type="table-fn" rid="t002fn003">**</xref></td>
+<td align="left"><bold>2.43 (1.96–3.00)</bold><xref ref-type="table-fn" rid="t002fn003">**</xref></td>
+<td align="left"><bold>3.61 (2.98–4.37)</bold></td>
+<td align="left"><bold>2.59 (2.25–2.97)</bold> <xref ref-type="table-fn" rid="t002fn006"><sup>††</sup></xref></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>70–84 years (n = 90)</bold></td>
+<td align="left"><bold>4.86 (3.90–6.01)</bold></td>
+<td align="left"><bold>3.57 (2.91–4.38)</bold></td>
+<td align="left"><bold>3.63 (2.85–4.63)</bold></td>
+<td align="left"><bold>4.23 (3.43–5.21)</bold></td>
+<td align="left"><bold>3.70 (3.13–4.60)</bold></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>All women (n = 677)</bold></td>
+<td align="left"><bold>2.94 (2.72–3.18)</bold></td>
+<td align="left"><bold>2.15 (1.98–2.33)</bold><xref ref-type="table-fn" rid="t002fn002">*</xref></td>
+<td align="left"><bold>2.10 (1.87–2.35)</bold><xref ref-type="table-fn" rid="t002fn002">*</xref></td>
+<td align="left"><bold>2.74 (2.53–2.97)</bold></td>
+<td align="left"><bold>2.12 (1.97–2.29)</bold><xref ref-type="table-fn" rid="t002fn005"><sup>†</sup></xref></td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t002fn001"><p>The analysis was adjusted for current smoking and alcohol intake, the use of antihypertensive medication and the use of antidiabetic drugs in gender- and age-subgroups and additionally for age in all men and women, respectively.</p></fn>
+<fn id="t002fn002"><p>*<italic>P</italic> &lt; 0.001</p></fn>
+<fn id="t002fn003"><p>**<italic>P</italic> &lt; 0.01 and</p></fn>
+<fn id="t002fn004"><p>***<italic>P</italic> &lt; 0.05 versus subjects with a body mass index &lt;24 kg/m².</p></fn>
+<fn id="t002fn005"><p><sup>†</sup><italic>P</italic> &lt; 0.001</p></fn>
+<fn id="t002fn006"><p><sup>††</sup><italic>P</italic> &lt; 0.01 and</p></fn>
+<fn id="t002fn007"><p><sup>†††</sup><italic>P</italic> &lt; 0.05 versus subjects with a waist circumference &lt;90 cm in men and &lt;80 cm in women.</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<p>In multiple regression analyses stratified for gender and adjusted for age, current smoking and alcohol intake, the use of antihypertensive medication and the use of antidiabetic drugs, we investigated the relationship between the closely correlated (r 0.43 to 0.98, <italic>P</italic> &lt; 0.001, <bold><xref ref-type="table" rid="pone.0156041.t003">Table 3</xref></bold>) anthropometric and BIA measures of adiposity and plasma adiponectin concentration. With each of the adiposity measures considered separately all these anthropometric and BIA measures were significantly (<italic>r</italic> -0.18 to -0.31, <italic>P</italic> &lt; 0.001) and negatively associated with plasma HMW adiponectin concentration in men as well as women (<bold><xref ref-type="table" rid="pone.0156041.t004">Table 4</xref></bold>). However, in further multiple stepwise regression analysis, only waist-to-hip ratio entered and stayed in the model (<italic>P</italic> &lt; 0.05) in men (<italic>r</italic> = -0.10) and women (<italic>r</italic> = -0.15, <bold><xref ref-type="table" rid="pone.0156041.t004">Table 4</xref></bold>).</p>
+<table-wrap id="pone.0156041.t003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0156041.t003</object-id>
+<label>Table 3</label> <caption><title>Pearson’s correlation coefficients between anthropometric and bioelectrical impedance analysis measures of adiposity.</title></caption>
+<alternatives>
+<graphic id="pone.0156041.t003g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0156041.t003" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center" colspan="2"/>
+<th align="center">Body mass index (kg/m<sup>2</sup>)</th>
+<th align="center">Waist circumference (cm)</th>
+<th align="center">Waist-to-hip ratio</th>
+<th align="center">Body fat percentage (%)</th>
+<th align="center">Visceral fat percentage (%)</th>
+<th align="center">Visceral-body fat ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><bold>Men</bold></td>
+<td align="left"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>Body weight (kg)</bold></td>
+<td align="center"><bold>0.88</bold></td>
+<td align="center"><bold>0.85</bold></td>
+<td align="center"><bold>0.53</bold></td>
+<td align="center"><bold>0.43</bold></td>
+<td align="center"><bold>0.84</bold></td>
+<td align="center"><bold>0.80</bold></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>Body mass index (kg/m</bold><sup><bold>2</bold></sup><bold>)</bold></td>
+<td align="center"/>
+<td align="center"><bold>0.85</bold></td>
+<td align="center"><bold>0.60</bold></td>
+<td align="center"><bold>0.55</bold></td>
+<td align="center"><bold>0.98</bold></td>
+<td align="center"><bold>0.91</bold></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>Waist circumference (cm)</bold></td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"><bold>0.83</bold></td>
+<td align="center"><bold>0.56</bold></td>
+<td align="center"><bold>0.83</bold></td>
+<td align="center"><bold>0.74</bold></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>Waist-to-hip ratio</bold></td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"><bold>0.53</bold></td>
+<td align="center"><bold>0.59</bold></td>
+<td align="center"><bold>0.48</bold></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>Body fat percentage (%)</bold></td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"><bold>0.55</bold></td>
+<td align="center"><bold>0.22</bold></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>Visceral fat percentage (%)</bold></td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"><bold>0.92</bold></td>
+</tr>
+<tr>
+<td align="left"><bold>Women</bold></td>
+<td align="left"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>Body weight (kg)</bold></td>
+<td align="center"><bold>0.90</bold></td>
+<td align="center"><bold>0.84</bold></td>
+<td align="center"><bold>0.44</bold></td>
+<td align="center"><bold>0.60</bold></td>
+<td align="center"><bold>0.84</bold></td>
+<td align="center"><bold>0.84</bold></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>Body mass index (kg/m</bold><sup><bold>2</bold></sup><bold>)</bold></td>
+<td align="center"/>
+<td align="center"><bold>0.85</bold></td>
+<td align="center"><bold>0.50</bold></td>
+<td align="center"><bold>0.71</bold></td>
+<td align="center"><bold>0.97</bold></td>
+<td align="center"><bold>0.96</bold></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>Waist circumference (cm)</bold></td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"><bold>0.77</bold></td>
+<td align="center"><bold>0.66</bold></td>
+<td align="center"><bold>0.83</bold></td>
+<td align="center"><bold>0.83</bold></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>Waist-to-hip ratio</bold></td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"><bold>0.44</bold></td>
+<td align="center"><bold>0.48</bold></td>
+<td align="center"><bold>0.47</bold></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>Body fat percentage (%)</bold></td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"><bold>0.73</bold></td>
+<td align="center"><bold>0.61</bold></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>Visceral fat percentage (%)</bold></td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"><bold>0.97</bold></td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t003fn001"><p><italic>P</italic> &lt; 0.001 for all correlation coefficients.</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<table-wrap id="pone.0156041.t004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0156041.t004</object-id>
+<label>Table 4</label> <caption><title>Association of plasma high-molecular weight adiponectin concentration with various adiposity measures by gender.</title></caption>
+<alternatives>
+<graphic id="pone.0156041.t004g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0156041.t004" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" colspan="2" rowspan="2"/>
+<th align="center" colspan="2">Men (n = 404)</th>
+<th align="center" colspan="2">Women (n = 677)</th>
+</tr>
+<tr>
+<th align="left">Considered separately<xref ref-type="table-fn" rid="t004fn002"><sup>#</sup></xref></th>
+<th align="left">Considered stepwise<xref ref-type="table-fn" rid="t004fn003"><sup>†</sup></xref></th>
+<th align="left">Considered separatedy<xref ref-type="table-fn" rid="t004fn002"><sup>#</sup></xref></th>
+<th align="justify">Considered stepwise <xref ref-type="table-fn" rid="t004fn003"><sup>†</sup></xref></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><bold>Anthropometric measurements</bold></td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>Body weight</bold></td>
+<td align="left"><bold>-0.29</bold><xref ref-type="table-fn" rid="t004fn004">*</xref></td>
+<td align="left"><bold>NS</bold></td>
+<td align="left"><bold>-0.20</bold><xref ref-type="table-fn" rid="t004fn004">*</xref></td>
+<td align="left"><bold>NS</bold></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>Body mass index</bold></td>
+<td align="left"><bold>-0.31</bold><xref ref-type="table-fn" rid="t004fn004">*</xref></td>
+<td align="left"><bold>NS</bold></td>
+<td align="left"><bold>-0.25</bold><xref ref-type="table-fn" rid="t004fn004">*</xref></td>
+<td align="left"><bold>NS</bold></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>Waist circumference</bold></td>
+<td align="left"><bold>-0.28</bold><xref ref-type="table-fn" rid="t004fn004">*</xref></td>
+<td align="left"><bold>NS</bold></td>
+<td align="left"><bold>-0.24</bold><xref ref-type="table-fn" rid="t004fn004">*</xref></td>
+<td align="left"><bold>NS</bold></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>Waist-to-hip ratio</bold></td>
+<td align="left"><bold>-0.26</bold><xref ref-type="table-fn" rid="t004fn004">*</xref></td>
+<td align="left"><bold>-0.10</bold><xref ref-type="table-fn" rid="t004fn005">**</xref></td>
+<td align="left"><bold>-0.26</bold><xref ref-type="table-fn" rid="t004fn004">*</xref></td>
+<td align="left"><bold>-0.15</bold><xref ref-type="table-fn" rid="t004fn004">*</xref></td>
+</tr>
+<tr>
+<td align="left"><bold>Bioelectrical impedance analysis measurements</bold></td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>Body fat percentage</bold></td>
+<td align="left"><bold>-0.18</bold><xref ref-type="table-fn" rid="t004fn004">*</xref></td>
+<td align="left"><bold>NS</bold></td>
+<td align="left"><bold>-0.21</bold><xref ref-type="table-fn" rid="t004fn004">*</xref></td>
+<td align="left"><bold>NS</bold></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>Visceral fat percentage</bold></td>
+<td align="left"><bold>-0.31</bold><xref ref-type="table-fn" rid="t004fn004">*</xref></td>
+<td align="left"><bold>NS</bold></td>
+<td align="left"><bold>-0.24</bold><xref ref-type="table-fn" rid="t004fn004">*</xref></td>
+<td align="left"><bold>NS</bold></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>Visceral-body fat ratio</bold></td>
+<td align="left"><bold>-0.29</bold><xref ref-type="table-fn" rid="t004fn004">*</xref></td>
+<td align="left"><bold>NS</bold></td>
+<td align="left"><bold>-0.25</bold><xref ref-type="table-fn" rid="t004fn004">*</xref></td>
+<td align="left"><bold>NS</bold></td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t004fn001"><p>Values are Pearson partial correlation coefficient generated in multiple regression analyses.</p></fn>
+<fn id="t004fn002"><p><sup><bold>#</bold></sup>Multiple regression analyses adjusted for age, current smoking and alcohol intake, the use of antihypertensive medication and the use of antidiabetic drugs and considered separately the measures of adiposity.</p></fn>
+<fn id="t004fn003"><p><sup><bold>†</bold></sup>Multiple regression analyses adjusted for age, current smoking and alcohol intake, the use of antihypertensive medication and the use of antidiabetic drugs and considered stepwise the measures of adiposity.</p></fn>
+<fn id="t004fn004"><p>*<italic>P</italic> &lt; 0.001</p></fn>
+<fn id="t004fn005"><p>**<italic>P</italic> &lt; 0.05.</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<p>In further analysis of covariance adjusted for age, current smoking and alcohol intake, the use of antihypertensive medication and the use of antidiabetic drugs, subjects were categorized according to gender and quartiles of waist-to-hip ratio, plasma HMW adiponectin concentration was 62.1% and 61.7% lower in the top versus bottom quartiles of waist-to-hip ratio in men and women, respectively (<italic>P</italic> &lt; 0.0001, <bold><xref ref-type="fig" rid="pone.0156041.g002">Fig 2</xref></bold>). In multiple logistic regression analyses adjusted for age, current smoking and alcohol intake, the use of antihypertensive medication and the use of antidiabetic drugs, the corresponding odds ratios of hypoadiponectinemia were 1.58 (95% CI 0.62–4.02) and 2.81 (95% CI 1.22–6.49), respectively.</p>
+<fig id="pone.0156041.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0156041.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>Plasma high molecular weight (HMW) adiponectin concentration by gender and quartile distributions of waist-to-hip ratio.</title>
+<p>Open and closed symbols represent geometric mean value of plasma HMW adiponectin concentration in men and women, respectively. Vertical lines denote 95% confidence intervals. <italic>P</italic> values for trend are given for men and women separately.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0156041.g002" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec012" sec-type="conclusions">
+<title>Discussion</title>
+<p>The key finding of our study is that waist-to-hip ratio, but not the BIA adiposity measure, is independently associated with plasma HMW adiponectin concentration, which is substantially lower in the presence of overweight, obesity or central obesity. A possible implication of our observation is that a simple measure of central obesity, waist-to-hip ratio, can be even more useful than the device-based BIA measure, in terms of the association with adiponectin concentration.</p>
+<p>Plasma adiponectin is a well-proven and recognized marker of adiposity [<xref ref-type="bibr" rid="pone.0156041.ref022">22</xref>]. Indeed, plasma adiponectin concentration was lower in the presence of obesity [<xref ref-type="bibr" rid="pone.0156041.ref023">23</xref>,<xref ref-type="bibr" rid="pone.0156041.ref024">24</xref>], irrespective of obesity pattern [<xref ref-type="bibr" rid="pone.0156041.ref023">23</xref>], study population, or whether it was measured as total or HMW form [<xref ref-type="bibr" rid="pone.0156041.ref024">24</xref>]. There is consensus that hypoadiponectinemia is mainly, if not solely, related to visceral obesity, as either effect or cause. Our cross-sectional study does not have the possibility to draw any conclusion on causality, but does support an independent relationship between plasma adiponectin concentration and visceral obesity. Nonetheless, using a Mendelian randomization approach, a recent study did not support a causal relationship between reduced circulating adiponectin levels and two obesity-related metabolic disorders, i.e., insulin sensitivity and type 2 diabetes mellitus.</p>
+<p>A surprising observation is that in multiple stepwise regression analyses, waist-to-hip ratio, but not the BIA visceral fat index, was significantly associated with plasma adiponectin concentration. This novel observation is not entirely understood. There are several speculative explanations. First, algorithms used in BIA devices involve many other factors in addition to the measured impedance values for the computation of visceral fat index. These multiple factors may increase random errors and decrease accuracy of measurement [<xref ref-type="bibr" rid="pone.0156041.ref017">17</xref>, <xref ref-type="bibr" rid="pone.0156041.ref025">25</xref>]. Second, the device-based indexes do not properly account for percutaneous fat, as waist-to-hip ratio does. The visceral-body fat ratio seemed to have quantitatively improved correlation with plasma adiponectin concentration, but was still far below waist-to-hip ratio, and was not statistically significant.</p>
+<p>It is also possible that the two-limb and four-limb BIA devices, though validated against the CT or MRI gold standard [<xref ref-type="bibr" rid="pone.0156041.ref017">17</xref>], are not sufficiently accurate in the measurement of central obesity. In attempt to improve accuracy of measurement, BIA devices with multiple local abdominal electrodes recently became available [<xref ref-type="bibr" rid="pone.0156041.ref025">25</xref>]. Whether these complex abdominal BIA devices would be better or do better than the limb BIA devices and anthropometric measurements remains to be elucidated.</p>
+<p>Our finding is actually in keeping with a recent study in 1056 adult Yup’ik people from 11 communities in Southwestern Alaska, USA [<xref ref-type="bibr" rid="pone.0156041.ref026">26</xref>]. Anthropometric and BIA measures of adiposity were correlated with various biomarkers of obesity and metabolism, including adiponectin. Multiple regression analyses were not performed in this Alaskan study. However, univariate analyses revealed that the correlation coefficients for anthropometric measurements, such as waist circumference (r = -0.43), were numerically greater than those for foot-to-foot BIA measures of adiposity, such as fat mass (r = -0.41) [<xref ref-type="bibr" rid="pone.0156041.ref026">26</xref>]. The investigators of the Alaskan study therefore concluded that waist circumference and other anthropometric measures were more closely correlated with obesity-related risk factors than BIA estimates of body composition, and that body composition in Yup’ik people could be accurately estimated from simple anthropometrics. The consistency between our finding and the results of the Alaskan study corroborates the use of simple anthropometric measures in the evaluation of adiposity.</p>
+<p>Our study should be interpreted within the context of its limitations. First, we chose a biochemical marker of obesity to compare anthropometric and BIA measurements. The observed inferiority of BIA obesity measures in association with plasma adiponectin concentration does not exclude diagnostic or prognostic values of BIA obesity measures for other metabolic disorders. Second, because the more professional BIA devices with multiple abdominal electrodes only became available recently [<xref ref-type="bibr" rid="pone.0156041.ref025">25</xref>], we used a four-limb device for BIA measurements. Third, because of missing data, we excluded from the present analysis approximately 10% of the study participants. This approach may be potentially a source of selection bias. However, we do not have a better alternative other than excluding the subject with missing data. Fourth, the participation rate of our study was 73.1%. There was therefore some possible selection bias.</p>
+<p>In conclusion, anthropometric measures of obesity, such as waist-to-hip ratio, but not BIA measures, obtained with a four-limb device, are independently associated with plasma adiponectin. In spite of the increasing interest in the use of simple or complex BIA devices for the evaluation of obesity, a simple anthropometric measure, such as waist-to-hip ratio, might still be useful or irreplaceable in a country with a vast number of visceral obese people, such as China.</p>
+</sec>
+<sec id="sec013">
+<title>Supporting Information</title>
+<supplementary-material id="pone.0156041.s001" position="float" xlink:href="info:doi/10.1371/journal.pone.0156041.s001" xlink:type="simple">
+<label>S1 File</label>
+<caption>
+<title>This file contains the participant-level data.</title>
+<p>(SAS7BDAT)</p>
+</caption>
+</supplementary-material>
+</sec>
+</body>
+<back>
+<ack>
+<p>The authors gratefully acknowledge the voluntary participation of all study subjects and the technical assistance of the physicians and nurses of Zhaoxiang Community Health Centre (Qingpu District, Shanghai) and the expert assistance of Jie Wang, Li Zheng, Wei-Zhong Zhang and Yi Zhou.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0156041.ref001"><label>1</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Scherer</surname> <given-names>PE</given-names></name>, <name name-style="western"><surname>Williams</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Fogliano</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Baldini</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Lodish</surname> <given-names>HF</given-names></name>. (<year>1995</year>) <article-title>A novel serum protein similar to C1q, produced exclusively in adipocytes</article-title>. <source>J Biol Chem</source> <volume>270</volume>: <fpage>26746</fpage>–<lpage>26749</lpage>. <object-id pub-id-type="pmid">7592907</object-id></mixed-citation></ref>
+<ref id="pone.0156041.ref002"><label>2</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Waki</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Yamauchi</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Kamon</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Ito</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Uchida</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Kita</surname> <given-names>S</given-names></name>, <etal>et al</etal>. (<year>2003</year>) <article-title>Impaired multimerization of human adiponectin mutants associated with diabetes. Molecular structure and multimer formation of adiponectin</article-title>. <source>J Biol Chem</source> <volume>278</volume>: <fpage>40352</fpage>–<lpage>40363</lpage>. <object-id pub-id-type="pmid">12878598</object-id></mixed-citation></ref>
+<ref id="pone.0156041.ref003"><label>3</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Stefan</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Vozarova</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Funahashi</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Matsuzawa</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Weyer</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Lindsay</surname> <given-names>RS</given-names></name>, <etal>et al</etal>. (<year>2002</year>) <article-title>Plasma adiponectin concentration is associated with skeletal muscle insulin receptor tyrosine phosphorylation, and low plasma concentration precedes a decrease in whole-body insulin sensitivity in humans</article-title>. <source>Diabetes</source> <volume>51</volume>: <fpage>1884</fpage>–<lpage>1888</lpage>. <object-id pub-id-type="pmid">12031977</object-id></mixed-citation></ref>
+<ref id="pone.0156041.ref004"><label>4</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Torigoe</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Matsui</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Ogawa</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Murakami</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Murakami</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Cheng</surname> <given-names>XW</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Impact of the high-molecular-weight form of adiponectin on endothelial function in healthy young men</article-title>. <source>Clin Endocrinol (Oxf)</source> <volume>67</volume>: <fpage>276</fpage>–<lpage>281</lpage>.</mixed-citation></ref>
+<ref id="pone.0156041.ref005"><label>5</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Basu</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Pajvani</surname> <given-names>UB</given-names></name>, <name name-style="western"><surname>Rizza</surname> <given-names>RA</given-names></name>, <name name-style="western"><surname>Scherer</surname> <given-names>PE</given-names></name>. (<year>2007</year>) <article-title>Selective downregulation of the high molecular weight form of adiponectin in hyperinsulinemia and in type 2 diabetes: differential regulation from nondiabetic subjects</article-title>. <source>Diabetes</source> <volume>56</volume>: <fpage>2174</fpage>–<lpage>2177</lpage>. <object-id pub-id-type="pmid">17513700</object-id></mixed-citation></ref>
+<ref id="pone.0156041.ref006"><label>6</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Maruyama</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Ishibashi</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Araki</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Koike</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Hirose</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Maruyama</surname> <given-names>T</given-names></name>. (<year>2009</year>) <article-title>HMW-adiponectin associates with triglyceride concentrations in type 1 diabetic patients</article-title>. <source>J Atheroscler Thromb</source> <volume>16</volume>: <fpage>207</fpage>–<lpage>216</lpage>. <object-id pub-id-type="pmid">19556717</object-id></mixed-citation></ref>
+<ref id="pone.0156041.ref007"><label>7</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Eglit</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Ringmets</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Lember</surname> <given-names>M</given-names></name>. (<year>2013</year>) <article-title>Obesity, high-molecular-weight (HMW) adiponectin, and metabolic risk factors: prevalence and gender-specific associations in Estonia</article-title>. <source>PLOS ONE</source> <volume>8</volume>: <fpage>e73273</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0073273" xlink:type="simple">10.1371/journal.pone.0073273</ext-link></comment> <object-id pub-id-type="pmid">24039900</object-id></mixed-citation></ref>
+<ref id="pone.0156041.ref008"><label>8</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Han</surname> <given-names>SH</given-names></name>, <name name-style="western"><surname>Quon</surname> <given-names>MJ</given-names></name>, <name name-style="western"><surname>Kim</surname> <given-names>JA</given-names></name>, <name name-style="western"><surname>Koh</surname> <given-names>KK</given-names></name>. (<year>2007</year>) <article-title>Adiponectin and cardiovascular disease: response to therapeutic interventions</article-title>. <source>J Am Coll Cardiol</source> <volume>49</volume>: <fpage>531</fpage>–<lpage>538</lpage>. <object-id pub-id-type="pmid">17276175</object-id></mixed-citation></ref>
+<ref id="pone.0156041.ref009"><label>9</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Iwashima</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Katsuya</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Ishikawa</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Ouchi</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Ohishi</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Sugimoto</surname> <given-names>K</given-names></name>, <etal>et al</etal>. (<year>2004</year>) <article-title>Hypoadiponectinemia is an independent risk factor for hypertension</article-title>. <source>Hypertension</source> <volume>43</volume>: <fpage>1318</fpage>–<lpage>1323</lpage>. <object-id pub-id-type="pmid">15123570</object-id></mixed-citation></ref>
+<ref id="pone.0156041.ref010"><label>10</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chow</surname> <given-names>WS</given-names></name>, <name name-style="western"><surname>Cheung</surname> <given-names>BM</given-names></name>, <name name-style="western"><surname>Tso</surname> <given-names>AW</given-names></name>, <name name-style="western"><surname>Xu</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Wat</surname> <given-names>NM</given-names></name>, <name name-style="western"><surname>Fong</surname> <given-names>CH</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Hypoadiponectinemia as a predictor for the development of hypertension: a 5-year prospective study</article-title>. <source>Hypertension</source> <volume>49</volume>: <fpage>1455</fpage>–<lpage>1461</lpage>. <object-id pub-id-type="pmid">17452504</object-id></mixed-citation></ref>
+<ref id="pone.0156041.ref011"><label>11</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Snijder</surname> <given-names>MB</given-names></name>, <name name-style="western"><surname>Heine</surname> <given-names>RJ</given-names></name>, <name name-style="western"><surname>Seidell</surname> <given-names>JC</given-names></name>, <name name-style="western"><surname>Bouter</surname> <given-names>LM</given-names></name>, <name name-style="western"><surname>Stehouwer</surname> <given-names>CD</given-names></name>, <name name-style="western"><surname>Nijpels</surname> <given-names>G</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Associations of adiponectin levels with incident impaired glucose metabolism and type 2 diabetes in older men and women: the Hoorn study</article-title>. <source>Diabetes Care</source> <volume>29</volume>: <fpage>2498</fpage>–<lpage>2503</lpage>. <object-id pub-id-type="pmid">17065691</object-id></mixed-citation></ref>
+<ref id="pone.0156041.ref012"><label>12</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Koenig</surname> <given-names>W</given-names></name>, <name name-style="western"><surname>Khuseyinova</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Baumert</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Meisinger</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Lowel</surname> <given-names>H</given-names></name>. (<year>2006</year>) <article-title>Serum concentrations of adiponectin and risk of type 2 diabetes mellitus and coronary heart disease in apparently healthy middle-aged men: results from the 18-year follow-up of a large cohort from southern Germany</article-title>. <source>J Am Coll Cardiol</source> <volume>48</volume>: <fpage>1369</fpage>–<lpage>1377</lpage>. <object-id pub-id-type="pmid">17010797</object-id></mixed-citation></ref>
+<ref id="pone.0156041.ref013"><label>13</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hirose</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Yamamoto</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Seino-Yoshihara</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Kawabe</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Saito</surname> <given-names>I</given-names></name>. (<year>2010</year>) <article-title>Serum high-molecular-weight adiponectin as a marker for the evaluation and care of subjects with metabolic syndrome and related disorders</article-title>. <source>J Atheroscler Thromb</source> <volume>17</volume>: <fpage>1201</fpage>–<lpage>1211</lpage>. <object-id pub-id-type="pmid">20948162</object-id></mixed-citation></ref>
+<ref id="pone.0156041.ref014"><label>14</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lara-Castro</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Luo</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Wallace</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Klein</surname> <given-names>RL</given-names></name>, <name name-style="western"><surname>Garvey</surname> <given-names>WT</given-names></name>. (<year>2006</year>) <article-title>Adiponectin multimeric complexes and the metabolic syndrome trait cluster</article-title>. <source>Diabetes</source> <volume>55</volume>: <fpage>249</fpage>–<lpage>259</lpage>. <object-id pub-id-type="pmid">16380500</object-id></mixed-citation></ref>
+<ref id="pone.0156041.ref015"><label>15</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Poonawalla</surname> <given-names>AH</given-names></name>, <name name-style="western"><surname>Sjoberg</surname> <given-names>BP</given-names></name>, <name name-style="western"><surname>Rehm</surname> <given-names>JL</given-names></name>, <name name-style="western"><surname>Hernando</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Hines</surname> <given-names>CD</given-names></name>, <name name-style="western"><surname>Irarrazaval</surname> <given-names>P</given-names></name>, <etal>et al</etal>. (<year>2013</year>) <article-title>Adipose tissue MRI for quantitative measurement of central obesity</article-title>. <source>J Magn Reson Imaging</source> <volume>37</volume>: <fpage>707</fpage>–<lpage>716</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/jmri.23846" xlink:type="simple">10.1002/jmri.23846</ext-link></comment> <object-id pub-id-type="pmid">23055365</object-id></mixed-citation></ref>
+<ref id="pone.0156041.ref016"><label>16</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dulloo</surname> <given-names>AG</given-names></name>, <name name-style="western"><surname>Jacquet</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Solinas</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Montani</surname> <given-names>JP</given-names></name>, <name name-style="western"><surname>Schutz</surname> <given-names>Y</given-names></name>. (<year>2010</year>) <article-title>Body composition phenotypes in pathways to obesity and the metabolic syndrome</article-title>. <source>Int J Obes (Lond)</source> <volume>34</volume>(<issue>Suppl 2</issue>): <fpage>S4</fpage>–<lpage>17</lpage>.</mixed-citation></ref>
+<ref id="pone.0156041.ref017"><label>17</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wang</surname> <given-names>JG</given-names></name>, <name name-style="western"><surname>Zhang</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>HE</given-names></name>, <name name-style="western"><surname>Li</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Cheng</surname> <given-names>XG</given-names></name>, <name name-style="western"><surname>Xu</surname> <given-names>L</given-names></name>, <etal>et al</etal>. (<year>2013</year>) <article-title>Comparison of two bioelectrical impedance analysis devices with dual energy X-ray absorptiometry and magnetic resonance imaging in the estimation of body composition</article-title>. <source>J Strength Cond Res</source> <volume>27</volume>: <fpage>236</fpage>–<lpage>243</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1519/JSC.0b013e31824f2040" xlink:type="simple">10.1519/JSC.0b013e31824f2040</ext-link></comment> <object-id pub-id-type="pmid">22344056</object-id></mixed-citation></ref>
+<ref id="pone.0156041.ref018"><label>18</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Unno</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Furusyo</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Mukae</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Koga</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Eiraku</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Hayashi</surname> <given-names>J</given-names></name>. (<year>2012</year>) <article-title>The utility of visceral fat level by bioelectrical impedance analysis in the screening of metabolic syndrome—the results of the Kyushu and Okinawa Population Study (KOPS)</article-title>. <source>J Atheroscler Thromb</source> <volume>19</volume>: <fpage>462</fpage>–<lpage>470</lpage>. <object-id pub-id-type="pmid">22659530</object-id></mixed-citation></ref>
+<ref id="pone.0156041.ref019"><label>19</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sheng</surname> <given-names>CS</given-names></name>, <name name-style="western"><surname>Hu</surname> <given-names>BC</given-names></name>, <name name-style="western"><surname>Fan</surname> <given-names>WX</given-names></name>, <name name-style="western"><surname>Zou</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Li</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>JG</given-names></name>. (<year>2011</year>) <article-title>Microalbuminuria in relation to the metabolic syndrome and its components in a Chinese population</article-title>. <source>Diabetol Metab Syndr</source> <volume>3</volume>: <fpage>6</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/1758-5996-3-6" xlink:type="simple">10.1186/1758-5996-3-6</ext-link></comment> <object-id pub-id-type="pmid">21470432</object-id></mixed-citation></ref>
+<ref id="pone.0156041.ref020"><label>20</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sheng</surname> <given-names>CS</given-names></name>, <name name-style="western"><surname>Liu</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Zou</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Huang</surname> <given-names>QF</given-names></name>, <name name-style="western"><surname>Li</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>JG</given-names></name>. (<year>2013</year>) <article-title>Albuminuria in relation to the single and combined effects of systolic and diastolic blood pressure in Chinese</article-title>. <source>Blood Press</source> <volume>22</volume>: <fpage>158</fpage>–<lpage>164</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.3109/08037051.2012.748998" xlink:type="simple">10.3109/08037051.2012.748998</ext-link></comment> <object-id pub-id-type="pmid">23244371</object-id></mixed-citation></ref>
+<ref id="pone.0156041.ref021"><label>21</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Huang</surname> <given-names>QF</given-names></name>, <name name-style="western"><surname>Sheng</surname> <given-names>CS</given-names></name>, <name name-style="western"><surname>Liu</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Li</surname> <given-names>FH</given-names></name>, <name name-style="western"><surname>Li</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>JG</given-names></name>. (<year>2013</year>) <article-title>Arterial stiffness and wave reflections in relation to plasma advanced glycation end products in a Chinese population</article-title>. <source>Am J Hypertens</source> <volume>26</volume>: <fpage>754</fpage>–<lpage>761</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/ajh/hpt014" xlink:type="simple">10.1093/ajh/hpt014</ext-link></comment> <object-id pub-id-type="pmid">23449605</object-id></mixed-citation></ref>
+<ref id="pone.0156041.ref022"><label>22</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Karmelic</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Lovric</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Bozina</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Ljubic</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Vogrinc</surname> <given-names>Z</given-names></name>, <name name-style="western"><surname>Bozina</surname> <given-names>N</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Adiponectin level and gene variability are obesity and metabolic syndrome markers in a young population</article-title>. <source>Arch Med Res</source> <volume>43</volume>: <fpage>145</fpage>–<lpage>153</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.arcmed.2012.02.004" xlink:type="simple">10.1016/j.arcmed.2012.02.004</ext-link></comment> <object-id pub-id-type="pmid">22374249</object-id></mixed-citation></ref>
+<ref id="pone.0156041.ref023"><label>23</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gavrila</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Chan</surname> <given-names>JL</given-names></name>, <name name-style="western"><surname>Yiannakouris</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Kontogianni</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Miller</surname> <given-names>LC</given-names></name>, <name name-style="western"><surname>Orlova</surname> <given-names>C</given-names></name>, <etal>et al</etal>. (<year>2003</year>) <article-title>Serum adiponectin levels are inversely associated with overall and central fat distribution but are not directly regulated by acute fasting or leptin administration in humans: cross-sectional and interventional studies</article-title>. <source>J Clin Endocrinol Metab</source> <volume>88</volume>: <fpage>4823</fpage>–<lpage>4831</lpage>. <object-id pub-id-type="pmid">14557461</object-id></mixed-citation></ref>
+<ref id="pone.0156041.ref024"><label>24</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Araki</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Dobashi</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Kubo</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Asayama</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Shirahata</surname> <given-names>A</given-names></name>. (<year>2006</year>) <article-title>High molecular weight, rather than total, adiponectin levels better reflect metabolic abnormalities associated with childhood obesity</article-title>. <source>J Clin Endocrinol Metab</source> <volume>91</volume>: <fpage>5113</fpage>–<lpage>5116</lpage>. <object-id pub-id-type="pmid">16984991</object-id></mixed-citation></ref>
+<ref id="pone.0156041.ref025"><label>25</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Browning</surname> <given-names>LM</given-names></name>, <name name-style="western"><surname>Mugridge</surname> <given-names>O</given-names></name>, <name name-style="western"><surname>Chatfield</surname> <given-names>MD</given-names></name>, <name name-style="western"><surname>Dixon</surname> <given-names>AK</given-names></name>, <name name-style="western"><surname>Aitken</surname> <given-names>SW</given-names></name>, <name name-style="western"><surname>Joubert</surname> <given-names>I</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Validity of a new abdominal bioelectrical impedance device to measure abdominal and visceral fat: comparison with MRI</article-title>. <source>Obesity (Silver Spring)</source> <volume>18</volume>: <fpage>2385</fpage>–<lpage>2391</lpage>.</mixed-citation></ref>
+<ref id="pone.0156041.ref026"><label>26</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bray</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Pomeroy</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Knowler</surname> <given-names>WC</given-names></name>, <name name-style="western"><surname>Bersamin</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Hopkins</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Brage</surname> <given-names>S</given-names></name>, <etal>et al</etal>. (<year>2013</year>) <article-title>Simple anthropometrics are more correlated with health variables than are estimates of body composition in Yup'ik people</article-title>. <source>Obesity (Silver Spring)</source> <volume>21</volume>: <fpage>E435</fpage>–<lpage>E438</lpage>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group>
+<journal-title>PLoS ONE</journal-title></journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-13-07617</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0067200</article-id>
+<article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Biology</subject><subj-group><subject>Computational biology</subject><subj-group><subject>Biological data management</subject></subj-group></subj-group><subj-group><subject>Ecology</subject><subj-group><subject>Physiological ecology</subject></subj-group></subj-group><subj-group><subject>Evolutionary biology</subject><subj-group><subject>Evolutionary ecology</subject></subj-group></subj-group><subj-group><subject>Zoology</subject><subj-group><subject>Mammalogy</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Computer science</subject><subj-group><subject>Information technology</subject><subj-group><subject>Databases</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Science policy</subject><subj-group><subject>Research assessment</subject><subj-group><subject>Research reporting guidelines</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Social and behavioral sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Biological anthropology</subject></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Beware of Primate Life History Data: A Plea for Data Standards and a Repository</article-title>
+<alt-title alt-title-type="running-head">Beware of Primate Life History Data</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Borries</surname><given-names>Carola</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Gordon</surname><given-names>Adam D.</given-names></name><xref ref-type="aff" rid="aff2"><sup>2</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Koenig</surname><given-names>Andreas</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+</contrib-group>
+<aff id="aff1"><label>1</label><addr-line>Department of Anthropology, Stony Brook University, SUNY, Stony Brook, New York, United States of America</addr-line></aff>
+<aff id="aff2"><label>2</label><addr-line>Department of Anthropology, University at Albany, SUNY, Albany, New York, United States of America</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Gursky-Doyen</surname><given-names>Sharon</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Texas A&amp;M University, United States of America</addr-line></aff>
+<author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">carola.borries@stonybrook.edu</email></corresp>
+<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn>
+<fn fn-type="con"><p>Conceived and designed the experiments: CB AK. Analyzed the data: CB ADG AK. Contributed reagents/materials/analysis tools: ADG AK. Wrote the paper: CB ADG AK.</p></fn>
+</author-notes>
+<pub-date pub-type="collection"><year>2013</year></pub-date>
+<pub-date pub-type="epub"><day>24</day><month>6</month><year>2013</year></pub-date>
+<volume>8</volume>
+<issue>6</issue>
+<elocation-id>e67200</elocation-id>
+<history>
+<date date-type="received"><day>19</day><month>2</month><year>2013</year></date>
+<date date-type="accepted"><day>16</day><month>5</month><year>2013</year></date>
+</history>
+<permissions>
+<copyright-year>2013</copyright-year>
+<copyright-holder>Borries et al</copyright-holder><license xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions>
+<abstract>
+<p>Life history variables such as the age at first reproduction and the interval between consecutive births are measures of investment in growth and reproduction in a particular population or species. As such they allow for meaningful comparisons of the speed of growth and reproduction between species and between larger taxa. Especially in primates such life history research has far reaching implications and has led for instance to the “grandmother hypothesis”. Other links have been proposed with respect to dietary adaptations: Because protein is essential for growth and one of the primary sources of protein, leaves, occurs much less seasonally than fruits, it has been predicted that folivorous primates should grow faster compared to frugivorous ones. However, when comparing folivorous Asian colobines with frugivorous Asian macaques we recently documented a longer, instead of a shorter gestation length in folivores while age at first reproduction and interbirth interval did not differ. This supports earlier findings for Malagasy lemurs in which all life history variables tested were significantly longer in folivores compared to frugivores. Wondering why these trends were not apparent sooner, we tried to reconstruct our results for Asian primates with data from four popular life history compilations. However, this attempt failed; even the basic, allometric relationship with adult female body mass that is typical for life history variables could not be recovered. This negative result hints at severe problems with data quality. Here we show that data quality can be improved significantly by standardizing the variables and by controlling for factors such as nutritional conditions or infant mortality. Ideally, in the future, revised primate life history data should be collated in a central database accessible to everybody. In the long run such an initiative should be expanded to include all mammalian species.</p>
+</abstract>
+<funding-group><funding-statement>AD Gordon was partially supported in the writing of this manuscript by a Hunt Postdoctoral Fellowship from The Wenner-Gren Foundation (<ext-link ext-link-type="uri" xlink:href="http://www.wennergren.org" xlink:type="simple">www.wennergren.org</ext-link>). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. No additional external funding was received for this study.</funding-statement></funding-group><counts><page-count count="12"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title>Primate Life History</title>
+<p>Mammalian life history is composed of a few key variables characterizing the speed of growth (e.g., gestation length, age at weaning, age at first reproduction), the speed of reproduction (e.g., litter size, interval between consecutive births), and the duration of reproduction (i.e., life span minus age at first reproduction) <xref ref-type="bibr" rid="pone.0067200-Stearns1">[1]</xref>. Especially in the Order Primates the study of life history has been an active research field for several decades now with implications reaching beyond “mere” evolution of life histories: for example, it provides the foundation for the reconstruction of life history values for extinct taxa <xref ref-type="bibr" rid="pone.0067200-Catlett1">[2]</xref>–<xref ref-type="bibr" rid="pone.0067200-Robson1">[4]</xref>, it helps explain dental development <xref ref-type="bibr" rid="pone.0067200-Godfrey1">[5]</xref>, <xref ref-type="bibr" rid="pone.0067200-Guthrie1">[6]</xref>, the genetic basis for the timing of birth <xref ref-type="bibr" rid="pone.0067200-Plunkett1">[7]</xref>, the evolution of non-maternal care <xref ref-type="bibr" rid="pone.0067200-Ross1">[8]</xref>, and it has led to the grandmother hypothesis <xref ref-type="bibr" rid="pone.0067200-Alvarez1">[9]</xref>. Primate life history research is also fundamental in identifying the peculiarities of our own species with its slow growth but fast reproductive rate and a very slow aging process <xref ref-type="bibr" rid="pone.0067200-Hill1">[10]</xref>, <xref ref-type="bibr" rid="pone.0067200-Hawkes1">[11]</xref>.</p>
+<p>Given this general importance of life history data and with the scientific ideals of transparency and repeatability in mind, one would assume that researchers have long since agreed upon life history definitions and are using reliable and accurate data stored in standardized repositories. However, while various databases exist, standards for data quality and specification are lacking. In the following we will show some of the consequences of this lack and argue that data specificity, particularly in the form of additional population-specific information (which we collectively refer to here as metadata), are needed for future progress in life history research. Essentially we call for a standardized database of highest possible quality – a new life history repository similar to GenBank®. Because the problems disclosed for primate life history data are not unique to this taxonomic group, a repository for all mammals seems necessary.</p>
+</sec><sec id="s2">
+<title>Existing Databases</title>
+<p>Past life history analyses either relied on data collected by the authors or compiled from the primary literature <xref ref-type="bibr" rid="pone.0067200-Godfrey1">[5]</xref>, <xref ref-type="bibr" rid="pone.0067200-Isler1">[12]</xref>, but mostly previously published compilations were used. For primates, a database for mammals (Ernest <xref ref-type="bibr" rid="pone.0067200-Ernest1">[13]</xref>) is frequently used (recently by <xref ref-type="bibr" rid="pone.0067200-Lyons1">[14]</xref>–<xref ref-type="bibr" rid="pone.0067200-Sibly1">[16]</xref>) or PanTHERIA <xref ref-type="bibr" rid="pone.0067200-Jones1">[17]</xref>, an extensive compilation also for mammals provides the foundation for many studies (for example <xref ref-type="bibr" rid="pone.0067200-Barton1">[18]</xref>–<xref ref-type="bibr" rid="pone.0067200-Dubman1">[23]</xref>). Furthermore, a life history compilation specifically for primates (Kappeler &amp; Pereira <xref ref-type="bibr" rid="pone.0067200-Kappeler1">[24]</xref>) has been used repeatedly <xref ref-type="bibr" rid="pone.0067200-Leigh1">[25]</xref>–<xref ref-type="bibr" rid="pone.0067200-Nakamichi1">[28]</xref>. Most recently, a new database went online that covers many aspects of nonhuman primate behavioral ecology (“All the World’s primates” Rowe &amp; Myers <xref ref-type="bibr" rid="pone.0067200-Rowe1">[29]</xref>). To our knowledge its life history data have not yet been used in a published analysis, but this will be just a matter of time <xref ref-type="bibr" rid="pone.0067200-Covert1">[30]</xref>.</p>
+<p>Generally, when using these compilations one proceeds from the assumption that the data are reliable and accurate (<italic>sensu</italic> Martin &amp; Bateson <xref ref-type="bibr" rid="pone.0067200-Martin1">[31]</xref>). However, some of the databases in use were compiled several decades ago <xref ref-type="bibr" rid="pone.0067200-Sacher1">[32]</xref>, <xref ref-type="bibr" rid="pone.0067200-Harvey1">[33]</xref> and newer, more accurate data have become available in the meantime. The difference between more recent and older life history values for the same species can be very large, up to twofold for example for gestation length.</p>
+<sec id="s2a">
+<title>Sources of Variation in Life History Measures</title>
+<p>There are a number of factors that can affect the values of life history variables for a given population and which can potentially obscure underlying biological patterns. Here we draw attention to two in particular: differences in the operational definition of how a life history variable is measured, and population-specific covariates that impact on life history.</p>
+</sec></sec><sec id="s3">
+<title>Variation in Measurement Definitions</title>
+<sec id="s3a">
+<title>Gestation length</title>
+<p>Within a given species, gestation length is perhaps the least variable life history trait <xref ref-type="bibr" rid="pone.0067200-Lee1">[34]</xref>, <xref ref-type="bibr" rid="pone.0067200-Martin2">[35]</xref> likely because its duration is shorter than most other traits, which reduces the magnitude of any kind of influence. Overall, it seems reasonable to assume gestation length to be a rather fixed value and, if measured accurately, new, more recent data for the same species should not differ by much. This is probably why fairly old compilations of gestation length are still in use today. For example, recent comparative studies <xref ref-type="bibr" rid="pone.0067200-Plunkett1">[7]</xref>, <xref ref-type="bibr" rid="pone.0067200-Dunsworth1">[36]</xref> used the values published in 1974 for 15 nonhuman primates by Sacher and Staffeldt <xref ref-type="bibr" rid="pone.0067200-Sacher1">[32]</xref>. However, when we compared this compilation with gestation lengths published more recently, only two of 15 were very similar while seven of 15 (47%) deviated by at least 10% (<italic>Hylobates</italic> spp.) and up to over 200% (<italic>Nycticebus</italic> spp.; <xref ref-type="table" rid="pone-0067200-t001">Table 1</xref>, <xref ref-type="fig" rid="pone-0067200-g001">Fig. 1</xref>). Although the two datasets were significantly correlated (Pearson’s <italic>r</italic> = 0.639, <italic>P</italic>&lt;0.02), the correlation coefficient was low considering that one of the leading methods textbooks suggests higher values: “… where measurement is straightforward, reliability should be well above 0.7″ (page 78 <xref ref-type="bibr" rid="pone.0067200-Martin1">[31]</xref>).</p>
+<fig id="pone-0067200-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0067200.g001</object-id><label>Figure 1</label><caption>
+<title>Gestation lengths for 15 nonhuman primates in 1974 and today.</title>
+<p>If past and present values were identical they would fall on the solid line (y = x). Points between the dotted lines indicate more recent values that are between 90% to 110% of the 1974 value. Data from <xref ref-type="table" rid="pone-0067200-t001">Table 1</xref>.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0067200.g001" position="float" xlink:type="simple"/></fig><table-wrap id="pone-0067200-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0067200.t001</object-id><label>Table 1</label><caption>
+<title>Gestation length [days] in nonhuman primates as provided in Sacher &amp; Staffeldt <xref ref-type="bibr" rid="pone.0067200-Sacher1">[32]</xref> compared to more recent values, for which conceptions were determined based on hormonal analysis or other physiological measures.</title>
+</caption><alternatives><graphic id="pone-0067200-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0067200.t001" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Species<xref ref-type="table-fn" rid="nt102">1</xref></td>
+<td align="left" rowspan="1" colspan="1">Sacher &amp; Staffeldt <xref ref-type="bibr" rid="pone.0067200-Sacher1">[32]</xref></td>
+<td align="left" rowspan="1" colspan="1">More recent value</td>
+<td align="left" rowspan="1" colspan="1">[More recent value] as proportion of [Sacher &amp; Staffeldt’s value]</td>
+<td align="left" rowspan="1" colspan="1">Reference(s) for more recent value</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Lemur catta</italic></td>
+<td align="left" rowspan="1" colspan="1">135</td>
+<td align="left" rowspan="1" colspan="1">135</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Evans1">[93]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Nycticebus coucang</italic></td>
+<td align="left" rowspan="1" colspan="1">90</td>
+<td align="left" rowspan="1" colspan="1">192</td>
+<td align="left" rowspan="1" colspan="1"><bold><underline>2.13</underline></bold></td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Izard1">[94]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Otolemur crassicaudatus</italic></td>
+<td align="left" rowspan="1" colspan="1">135</td>
+<td align="left" rowspan="1" colspan="1">136</td>
+<td align="left" rowspan="1" colspan="1">1.01</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Rasmussen1">[95]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Alouatta paliatta</italic></td>
+<td align="left" rowspan="1" colspan="1">139</td>
+<td align="left" rowspan="1" colspan="1">185</td>
+<td align="left" rowspan="1" colspan="1"><bold><underline>1.33</underline></bold></td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-vanBelle1">[96]</xref>, <xref ref-type="bibr" rid="pone.0067200-Glander1">[97]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Cebus capucinus</italic></td>
+<td align="left" rowspan="1" colspan="1">180</td>
+<td align="left" rowspan="1" colspan="1">158</td>
+<td align="left" rowspan="1" colspan="1"><bold><italic>0.88</italic></bold></td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Fedigan1">[98]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Ateles</italic> spp.<xref ref-type="table-fn" rid="nt103">2</xref></td>
+<td align="left" rowspan="1" colspan="1">140</td>
+<td align="left" rowspan="1" colspan="1">229</td>
+<td align="left" rowspan="1" colspan="1"><bold><underline>1.64</underline></bold></td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Eisenberg1">[99]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Callithrix geoffroyi</italic></td>
+<td align="left" rowspan="1" colspan="1">145</td>
+<td align="left" rowspan="1" colspan="1">149</td>
+<td align="left" rowspan="1" colspan="1">1.03</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Mustoe1">[100]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Macaca mulatta</italic><xref ref-type="table-fn" rid="nt104">3</xref></td>
+<td align="left" rowspan="1" colspan="1">170</td>
+<td align="left" rowspan="1" colspan="1">167</td>
+<td align="left" rowspan="1" colspan="1">0.98</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Silk2">[101]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Papio</italic> spp.<xref ref-type="table-fn" rid="nt103">2</xref></td>
+<td align="left" rowspan="1" colspan="1">180</td>
+<td align="left" rowspan="1" colspan="1">177</td>
+<td align="left" rowspan="1" colspan="1">0.98</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Beehner2">[88]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Chlorocebus pygerythrus</italic></td>
+<td align="left" rowspan="1" colspan="1">195</td>
+<td align="left" rowspan="1" colspan="1">163</td>
+<td align="left" rowspan="1" colspan="1"><bold><italic>0.84</italic></bold></td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Bramblett1">[102]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Trachypithecus obscurus</italic></td>
+<td align="left" rowspan="1" colspan="1">168</td>
+<td align="left" rowspan="1" colspan="1">205<xref ref-type="table-fn" rid="nt105">4</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold><underline>1.22</underline></bold></td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Lu1">[103]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Hylobates lar</italic></td>
+<td align="left" rowspan="1" colspan="1">210</td>
+<td align="left" rowspan="1" colspan="1">190</td>
+<td align="left" rowspan="1" colspan="1"><bold><italic>0.90</italic></bold></td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Barelli1">[104]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Pongo pygmaeus</italic></td>
+<td align="left" rowspan="1" colspan="1">270</td>
+<td align="left" rowspan="1" colspan="1">258</td>
+<td align="left" rowspan="1" colspan="1">0.96</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Czekala1">[105]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Pan troglodytes</italic></td>
+<td align="left" rowspan="1" colspan="1">230</td>
+<td align="left" rowspan="1" colspan="1">229</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Smith2">[106]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Gorilla gorilla</italic></td>
+<td align="left" rowspan="1" colspan="1">265</td>
+<td align="left" rowspan="1" colspan="1">255</td>
+<td align="left" rowspan="1" colspan="1">0.96</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Czekala1">[105]</xref></td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt101"><label/><p>A proportion of less than 1.0 indicates that – compared to Sacher &amp; Staffeldt <xref ref-type="bibr" rid="pone.0067200-Sacher1">[32]</xref> – gestation length is now considered to be shorter in the respective species. A value over 1.0 indicates the opposite. Bold, underlined = current value 1.1 or more; bold italic = current value 0.9 or less. Note also that since 1974 gestation length has been determined for many more than these 15 species.</p></fn><fn id="nt102"><label>1</label><p>Species names standardized according to Groves <xref ref-type="bibr" rid="pone.0067200-Groves1">[107]</xref>.</p></fn><fn id="nt103"><label>2</label><p>Identical values in Sacher &amp; Staffeldt <xref ref-type="bibr" rid="pone.0067200-Sacher1">[32]</xref> for two species.</p></fn><fn id="nt104"><label>3</label><p>The two values in Sacher &amp; Staffeldt <xref ref-type="bibr" rid="pone.0067200-Sacher1">[32]</xref> were averaged.</p></fn><fn id="nt105"><label>4</label><p>Value for a closely related species of similar body mass, wild <italic>Trachypithecus phayrei.</italic></p></fn></table-wrap-foot></table-wrap>
+<p>What might have caused these large differences? Gestation length <bold><italic><underline>is</underline></italic></bold> a straightforward measure, lasting from conception to parturition <xref ref-type="bibr" rid="pone.0067200-Cross1">[37]</xref>. The main problem seems to lie in how conceptions were determined <xref ref-type="bibr" rid="pone.0067200-Martin3">[38]</xref> and with it the onset of gestation. Using the patterning of mating behavior alone can be misleading, because female primates often continue to mate when pregnant <xref ref-type="bibr" rid="pone.0067200-Dixson1">[39]</xref>, <xref ref-type="bibr" rid="pone.0067200-Hrdy1">[40]</xref>, thus shortening the estimates for gestation length. Therefore, we selected only those more recent values (<xref ref-type="table" rid="pone-0067200-t001">Table 1</xref>) for which conceptions were determined hormonally. Alternatively, if mating behavior was used, additional information had to be considered such as menstruation or patterns of sexual swellings <xref ref-type="bibr" rid="pone.0067200-Silk1">[41]</xref>–<xref ref-type="bibr" rid="pone.0067200-Sommer1">[43]</xref>. These recent values are thus likely to be more accurate. Given improvements in measuring techniques such as non-invasive hormonal determination of conception and pregnancy <xref ref-type="bibr" rid="pone.0067200-Strier1">[44]</xref>, older databases may not provide the most accurate values. We will demonstrate below how such differences can greatly impact the outcome of comparative analyses.</p>
+</sec><sec id="s3b">
+<title>Interbirth Interval</title>
+<p>In addition to ultimate effects of mortality on maturation <xref ref-type="bibr" rid="pone.0067200-Michod1">[45]</xref>, <xref ref-type="bibr" rid="pone.0067200-Charlesworth1">[46]</xref>, infant death directly affects interbirth intervals. In most primates interbirth intervals are shorter after premature infant loss as a consequence of female reproductive physiology: suckling disrupts the release pattern of the gonadotrophin releasing hormone (GnRH) and of the luteinizing hormone (LH) so that the LH surge fails and ovulation does not occur <xref ref-type="bibr" rid="pone.0067200-McNeilly1">[47]</xref>. This suppressing effect stops when an infant dies; females resume cycling and conceive, resulting in a shorter interbirth interval after infant loss. To demonstrate the uniformity of this effect for primates, we collated examples (<xref ref-type="table" rid="pone-0067200-t002">Table 2</xref>) from all major primate radiations based on long-term studies of wild populations. We excluded annual breeders such as most strepsirrhines <xref ref-type="bibr" rid="pone.0067200-Koyama1">[48]</xref>, <xref ref-type="bibr" rid="pone.0067200-Kappeler2">[49]</xref> and species with postpartum conceptions such as callitrichines <xref ref-type="bibr" rid="pone.0067200-Hearn1">[50]</xref>, because in these taxa the interbirth interval is largely independent of infant mortality <xref ref-type="bibr" rid="pone.0067200-vanSchaik1">[51]</xref>, although exceptions seem to exist <xref ref-type="bibr" rid="pone.0067200-Pochron1">[52]</xref>.</p>
+<table-wrap id="pone-0067200-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0067200.t002</object-id><label>Table 2</label><caption>
+<title>The effect of premature infant loss on the subsequent interbirth interval (IBI) for example species from all major primate radiations in taxonomic order.</title>
+</caption><alternatives><graphic id="pone-0067200-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0067200.t002" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Species</td>
+<td align="left" rowspan="1" colspan="1">IBI infant lost [mos]</td>
+<td align="left" rowspan="1" colspan="1">IBI infant survived [mos]</td>
+<td align="left" rowspan="1" colspan="1">IBI infant survived as proportion of IBI infant lost</td>
+<td align="left" rowspan="1" colspan="1">Signif. level</td>
+<td align="left" rowspan="1" colspan="1">Reference(s)</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Alouatta seniculus</italic></td>
+<td align="left" rowspan="1" colspan="1">10.5 (?)</td>
+<td align="left" rowspan="1" colspan="1">17.0 (135)</td>
+<td align="left" rowspan="1" colspan="1">1.6</td>
+<td align="left" rowspan="1" colspan="1">nt</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Crockett1">[110]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Ateles geoffroyi</italic></td>
+<td align="left" rowspan="1" colspan="1">11.0 (3)</td>
+<td align="left" rowspan="1" colspan="1">32.8 (21)</td>
+<td align="left" rowspan="1" colspan="1">3.0</td>
+<td align="left" rowspan="1" colspan="1">**</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Fedigan2">[111]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Cebus capucinus</italic></td>
+<td align="left" rowspan="1" colspan="1">12.6 (?)</td>
+<td align="left" rowspan="1" colspan="1">27.0 (?)</td>
+<td align="left" rowspan="1" colspan="1">2.1</td>
+<td align="left" rowspan="1" colspan="1">***</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Fedigan3">[112]</xref>, total N = 74</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Sapajus nigritus</italic></td>
+<td align="left" rowspan="1" colspan="1">14.1 (17)</td>
+<td align="left" rowspan="1" colspan="1">20.4 (34)</td>
+<td align="left" rowspan="1" colspan="1">1.5</td>
+<td align="left" rowspan="1" colspan="1">***</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-RamirezLlorens1">[113]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Cercopithecus mitis</italic></td>
+<td align="left" rowspan="1" colspan="1">17.6 (53)</td>
+<td align="left" rowspan="1" colspan="1">30.7 (193)</td>
+<td align="left" rowspan="1" colspan="1">1.7</td>
+<td align="left" rowspan="1" colspan="1">***</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Cords1">[114]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Macaca fuscata</italic></td>
+<td align="left" rowspan="1" colspan="1">18.0 (6)</td>
+<td align="left" rowspan="1" colspan="1">26.9 (42)</td>
+<td align="left" rowspan="1" colspan="1">1.5</td>
+<td align="left" rowspan="1" colspan="1">*</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Takahata1">[115]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Papio anubis</italic></td>
+<td align="left" rowspan="1" colspan="1">6.9 (20)</td>
+<td align="left" rowspan="1" colspan="1">13.4 (61)</td>
+<td align="left" rowspan="1" colspan="1">1.9</td>
+<td align="left" rowspan="1" colspan="1">***</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Smuts1">[116]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Papio cynocephalus</italic></td>
+<td align="left" rowspan="1" colspan="1">15.0 (61)</td>
+<td align="left" rowspan="1" colspan="1">20.8 (269)</td>
+<td align="left" rowspan="1" colspan="1">1.4</td>
+<td align="left" rowspan="1" colspan="1">***</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Nguyen1">[54]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Theropithecus gelada</italic></td>
+<td align="left" rowspan="1" colspan="1">17.6 (11)</td>
+<td align="left" rowspan="1" colspan="1">28.4 (37)</td>
+<td align="left" rowspan="1" colspan="1">1.6</td>
+<td align="left" rowspan="1" colspan="1">***</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Roberts1">[117]</xref>; Beehner &amp; Bergman, pers. com.</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Procolobus tephrosceles</italic></td>
+<td align="left" rowspan="1" colspan="1">11.9 (11)</td>
+<td align="left" rowspan="1" colspan="1">27.5 (45)</td>
+<td align="left" rowspan="1" colspan="1">2.3</td>
+<td align="left" rowspan="1" colspan="1">nt</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Struhsaker2">[118]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Presbytis thomasi</italic></td>
+<td align="left" rowspan="1" colspan="1">17.7 (38)</td>
+<td align="left" rowspan="1" colspan="1">26.8 (28)</td>
+<td align="left" rowspan="1" colspan="1">1.5</td>
+<td align="left" rowspan="1" colspan="1">nt</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Wich1">[119]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Semnopithecus schistaceus</italic></td>
+<td align="left" rowspan="1" colspan="1">19.2 (16)</td>
+<td align="left" rowspan="1" colspan="1">32.4 (45)</td>
+<td align="left" rowspan="1" colspan="1">1.7</td>
+<td align="left" rowspan="1" colspan="1">***</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Koenig2">[120]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Trachypithecus poliocephalus</italic></td>
+<td align="left" rowspan="1" colspan="1">12.7 (4)</td>
+<td align="left" rowspan="1" colspan="1">25.0 (23)</td>
+<td align="left" rowspan="1" colspan="1">2.0</td>
+<td align="left" rowspan="1" colspan="1">**</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Jin1">[121]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Hylobates lar</italic></td>
+<td align="left" rowspan="1" colspan="1">26.4 (9)</td>
+<td align="left" rowspan="1" colspan="1">40.8 (22)</td>
+<td align="left" rowspan="1" colspan="1">1.6</td>
+<td align="left" rowspan="1" colspan="1">***</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Reichard1">[122]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Gorilla beringei</italic></td>
+<td align="left" rowspan="1" colspan="1">24.3 (35)</td>
+<td align="left" rowspan="1" colspan="1">48.1 (98)</td>
+<td align="left" rowspan="1" colspan="1">2.0</td>
+<td align="left" rowspan="1" colspan="1">**</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0067200-Robbins1">[123]</xref>; test for smaller N in Stewart et al. <xref ref-type="bibr" rid="pone.0067200-Stewart1">[124]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Pan troglodytes</italic></td>
+<td align="left" rowspan="1" colspan="1">26.6 (?)</td>
+<td align="left" rowspan="1" colspan="1">71.9 (?)</td>
+<td align="left" rowspan="1" colspan="1">2.7</td>
+<td align="left" rowspan="1" colspan="1">nt</td>
+<td align="left" rowspan="1" colspan="1">Mahale <xref ref-type="bibr" rid="pone.0067200-EmeryThompson1">[125]</xref>, total N = 174</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt106"><label/><p>Data for the same, wild population; annual breeders excluded; sample sizes in parentheses, per species the largest sample size was selected; species names according to Groves <xref ref-type="bibr" rid="pone.0067200-Groves1">[107]</xref> with the exception of <italic>Sapajus</italic> <xref ref-type="bibr" rid="pone.0067200-LynchAlfaro1">[108]</xref> and <italic>Procolobus</italic> <xref ref-type="bibr" rid="pone.0067200-Struhsaker1">[109]</xref>. Signif. level: difference was significant at * = <italic>P≤</italic>0.05, ** = <italic>P</italic>&lt;0.01, or *** = <italic>P</italic>&lt;0.001, nt = not tested.</p></fn></table-wrap-foot></table-wrap>
+<p>Ideally all infant deaths prior to the mothers’ subsequent conception should be considered because the age at infant death is often related to the length of the subsequent interbirth interval <xref ref-type="bibr" rid="pone.0067200-Borries1">[53]</xref>–<xref ref-type="bibr" rid="pone.0067200-Watts1">[55]</xref>. However, interbirth intervals are also reported in relation to a specific age of the infant at death, or until the females’ resumption of cycling, cessation of nipple contact, or subsequent parturition. Here we used the data on infant mortality and interbirth intervals as they were available in the primary literature without attempting to standardize further.</p>
+<p>Because it is easier to visualize, we calculated the proportion by which the mean interval after surviving infants is lengthened relative to the mean interval after early infant loss (<xref ref-type="table" rid="pone-0067200-t002">Table 2</xref>). This proportion ranged from 1.4 to 3.0 times longer if the infant survived and was related to the length of the interbirth interval for surviving infants (Pearson’s <italic>r</italic> = 0.502, <italic>P</italic>&lt;0.05) which itself is correlated with body mass <xref ref-type="bibr" rid="pone.0067200-Harvey1">[33]</xref>. The relationship improves if the potential outlier <italic>Ateles</italic> spp. is removed (Pearson’s <italic>r</italic> = 0.629, <italic>P</italic>&lt;0.02) but the correlation coefficient is low, indicating that additional factors may be important. Besides the age at infant death other influencing factors could include ecological conditions such as food availability acting on the likelihood to resume mating and to re-conceive <xref ref-type="bibr" rid="pone.0067200-Bronson1">[56]</xref>, <xref ref-type="bibr" rid="pone.0067200-Koenig1">[57]</xref>.</p>
+<p>Whenever the difference was tested within a population, the interbirth interval after infant loss was significantly shorter compared to the interbirth interval after surviving infants (<xref ref-type="table" rid="pone-0067200-t002">Table 2</xref>). The reason why we illustrate this well-known effect here again is because – as incomprehensible as it may sound – most existing life history compilations do not specify infant survival for interbirth intervals. It appears that most values used combine intervals after surviving infants with intervals after infant loss. Such confounding factors are particularly problematic for cross-species analyses because they are not unbiased errors that simply add noise that makes it more difficult to detect patterns (i.e., increased Type II error). Instead, systematic but variable bias in a single direction (such as interbirth intervals that are always less than or equal to the “real” interbirth intervals) can also produce spurious results which incorrectly identify significant relationships (i.e., increased Type I error).</p>
+</sec><sec id="s3c">
+<title>Population-Specific Covariates</title>
+<p>In addition to the issue of correctly (or at least consistently) measuring life history variables, factors such as nutrient availability are known to significantly influence life history values within a given species or population <xref ref-type="bibr" rid="pone.0067200-Asquith1">[58]</xref>, <xref ref-type="bibr" rid="pone.0067200-Hendrickx1">[59]</xref>. If more food is available, growth and maturation processes are accelerated, and the interbirth interval is shortened. To illustrate the magnitude of this effect we contrasted data for three cercopithecoid primates (<italic>Macaca fuscata</italic>, <italic>Papio cynocephalus</italic>, <italic>Semnopithecus</italic> spp.; <xref ref-type="table" rid="pone-0067200-t003">Table 3</xref>) for which the large sample sizes indicate reliable values (small random error <xref ref-type="bibr" rid="pone.0067200-Martin1">[31]</xref>).</p>
+<table-wrap id="pone-0067200-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0067200.t003</object-id><label>Table 3</label><caption>
+<title>Examples for the influence of nutrition on primate life history in three cercopithecoid primates.</title>
+</caption><alternatives><graphic id="pone-0067200-t003-3" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0067200.t003" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Species</td>
+<td align="left" rowspan="1" colspan="1">Variable</td>
+<td align="left" rowspan="1" colspan="1">Dimension</td>
+<td align="left" rowspan="1" colspan="1">Provis</td>
+<td align="left" rowspan="1" colspan="1">Wild</td>
+<td align="left" rowspan="1" colspan="1">Wild as proportion of Provis</td>
+<td align="left" rowspan="1" colspan="1">Signif. level</td>
+<td align="left" rowspan="1" colspan="1">Population and references</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Macaca fuscata</italic></td>
+<td align="left" rowspan="1" colspan="1">Gestation</td>
+<td align="left" rowspan="1" colspan="1">days</td>
+<td align="left" rowspan="1" colspan="1">176.3 (9)</td>
+<td align="left" rowspan="1" colspan="1">173.0 (17)</td>
+<td align="left" rowspan="1" colspan="1">0.98</td>
+<td align="left" rowspan="1" colspan="1">nt</td>
+<td align="left" rowspan="1" colspan="1">Japan Monkey Center <italic>versus</italic> Kinkazan <xref ref-type="bibr" rid="pone.0067200-Fujita1">[126]</xref>, <xref ref-type="bibr" rid="pone.0067200-Nigi1">[127]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Age at first reproduction</td>
+<td align="left" rowspan="1" colspan="1">months</td>
+<td align="left" rowspan="1" colspan="1">72.0 (23)</td>
+<td align="left" rowspan="1" colspan="1">110.4 (42)</td>
+<td align="left" rowspan="1" colspan="1">1.53</td>
+<td align="left" rowspan="1" colspan="1">nt</td>
+<td align="left" rowspan="1" colspan="1">Koshima <xref ref-type="bibr" rid="pone.0067200-Watanabe1">[128]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">birth rate</td>
+<td align="left" rowspan="1" colspan="1">infants/females*years</td>
+<td align="left" rowspan="1" colspan="1">0.62 (66)</td>
+<td align="left" rowspan="1" colspan="1">0.20 (31)</td>
+<td align="left" rowspan="1" colspan="1">0.32</td>
+<td align="left" rowspan="1" colspan="1">***</td>
+<td align="left" rowspan="1" colspan="1">Koshima <xref ref-type="bibr" rid="pone.0067200-Watanabe1">[128]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">IBI</td>
+<td align="left" rowspan="1" colspan="1">months</td>
+<td align="left" rowspan="1" colspan="1">17.5 (770)</td>
+<td align="left" rowspan="1" colspan="1">26.9 (42)</td>
+<td align="left" rowspan="1" colspan="1">1.54</td>
+<td align="left" rowspan="1" colspan="1">nt</td>
+<td align="left" rowspan="1" colspan="1">Arashiyama <italic>versus</italic> Yakushima <xref ref-type="bibr" rid="pone.0067200-Takahata1">[115]</xref>, <xref ref-type="bibr" rid="pone.0067200-Koyama2">[129]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Papio cynocephalus</italic></td>
+<td align="left" rowspan="1" colspan="1">Gestation</td>
+<td align="left" rowspan="1" colspan="1">days</td>
+<td align="left" rowspan="1" colspan="1">175 (&gt;50)</td>
+<td align="left" rowspan="1" colspan="1">177 (590)</td>
+<td align="left" rowspan="1" colspan="1">1.01</td>
+<td align="left" rowspan="1" colspan="1">nt</td>
+<td align="left" rowspan="1" colspan="1">Southwest Foundation <italic>versus</italic> Amboseli <xref ref-type="bibr" rid="pone.0067200-Beehner2">[88]</xref>, <xref ref-type="bibr" rid="pone.0067200-Kriewaldt1">[130]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Age at menarche</td>
+<td align="left" rowspan="1" colspan="1">months</td>
+<td align="left" rowspan="1" colspan="1">41.2 (14)</td>
+<td align="left" rowspan="1" colspan="1">56.0 (56)</td>
+<td align="left" rowspan="1" colspan="1">1.36</td>
+<td align="left" rowspan="1" colspan="1">***</td>
+<td align="left" rowspan="1" colspan="1">Amboseli <xref ref-type="bibr" rid="pone.0067200-Altmann1">[131]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">IBI</td>
+<td align="left" rowspan="1" colspan="1">months</td>
+<td align="left" rowspan="1" colspan="1">15.4 (?)</td>
+<td align="left" rowspan="1" colspan="1">21.7 (?)</td>
+<td align="left" rowspan="1" colspan="1">1.41</td>
+<td align="left" rowspan="1" colspan="1">nt</td>
+<td align="left" rowspan="1" colspan="1">Amboseli <xref ref-type="bibr" rid="pone.0067200-Altmann2">[132]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Semnopithecus</italic> spp.</td>
+<td align="left" rowspan="1" colspan="1">Gestation</td>
+<td align="left" rowspan="1" colspan="1">days</td>
+<td align="left" rowspan="1" colspan="1">200.3 (31)</td>
+<td align="left" rowspan="1" colspan="1">211.6 (7)</td>
+<td align="left" rowspan="1" colspan="1">1.06</td>
+<td align="left" rowspan="1" colspan="1">***</td>
+<td align="left" rowspan="1" colspan="1">Jodhpur <italic>versus</italic> Ramnagar <xref ref-type="bibr" rid="pone.0067200-Ziegler1">[133]</xref>, <xref ref-type="bibr" rid="pone.0067200-Borries3">[134]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Age at last nipple contact</td>
+<td align="left" rowspan="1" colspan="1">months</td>
+<td align="left" rowspan="1" colspan="1">12.8 (11)</td>
+<td align="left" rowspan="1" colspan="1">24.9 (23)</td>
+<td align="left" rowspan="1" colspan="1">1.95</td>
+<td align="left" rowspan="1" colspan="1">***</td>
+<td align="left" rowspan="1" colspan="1">Jodhpur <italic>versus</italic> Ramnagar <xref ref-type="bibr" rid="pone.0067200-Borries3">[134]</xref>, <xref ref-type="bibr" rid="pone.0067200-Rajpurohit1">[135]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Age at first reproduction</td>
+<td align="left" rowspan="1" colspan="1">months</td>
+<td align="left" rowspan="1" colspan="1">42.5 (12)</td>
+<td align="left" rowspan="1" colspan="1">80.4 (26)</td>
+<td align="left" rowspan="1" colspan="1">1.89</td>
+<td align="left" rowspan="1" colspan="1">***</td>
+<td align="left" rowspan="1" colspan="1">Jodhpur <italic>versus</italic> Ramnagar <xref ref-type="bibr" rid="pone.0067200-Sommer1">[43]</xref>, <xref ref-type="bibr" rid="pone.0067200-Borries3">[134]</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">IBI</td>
+<td align="left" rowspan="1" colspan="1">months</td>
+<td align="left" rowspan="1" colspan="1">17.2 (82)</td>
+<td align="left" rowspan="1" colspan="1">32.4 (45)</td>
+<td align="left" rowspan="1" colspan="1">1.88</td>
+<td align="left" rowspan="1" colspan="1">***</td>
+<td align="left" rowspan="1" colspan="1">Jodhpur <italic>versus</italic> Ramnagar <xref ref-type="bibr" rid="pone.0067200-Sommer1">[43]</xref>, <xref ref-type="bibr" rid="pone.0067200-Koenig2">[120]</xref></td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt107"><label/><p>Provis = either provisioned by people or with access to crops, a dumpster or in captivity; wild = no access to human-made food. Sample sizes in parentheses. IBI = interbirth interval after surviving infant. Signif. level: difference was significant at *** = <italic>P</italic>&lt;0.001, nt = not tested.</p></fn></table-wrap-foot></table-wrap>
+<p>In these examples, gestation length, as a measure of the growth rate of the fetus, was very similar (although not identical) in provisioned and wild populations. The other life history variables varied much more and consistently in relation to food availability. In Japanese macaques (<italic>Macaca fuscata)</italic>, age at first reproduction, and interbirth interval (as well as birth rate) were at least 1.5 times faster in provisioned populations. In a comparison of provisioned and unprovisioned groups of baboons (<italic>Papio cynocephalus</italic>) from the same population, age at menarche was 36% older and the interbirth interval 41% longer in unprovisioned groups. These effects were even stronger (almost double) between provisioned and wild Hanuman langurs (<italic>Semnopithecus</italic> spp.). Thus, clearly identifying and accounting for nutritional conditions should help to eliminate confounding effects in comparative studies (see more details below).</p>
+</sec><sec id="s3d">
+<title>Effects of Life History Measurement Variation: Does it Make Any Difference?</title>
+<p>The factors illustrated above are well established, but despite this fact, existing life history compilations only rarely provide information on provisioning or infant survival and if they do, the percentage of unspecified cases can be high. For example, of all 12,001 life history values listed for primates in the PanTHERIA database <xref ref-type="bibr" rid="pone.0067200-Jones1">[17]</xref>, 67% had no information on wild <italic>versus</italic> provisioned conditions and for 76% of the 462 interbirth interval entries, infant survival was not mentioned. Most compilations do not identify the specific conditions for a population. Consequently, to address issues such as the influence of nutrition, some studies used only data for captive animals <xref ref-type="bibr" rid="pone.0067200-Ross2">[60]</xref>, <xref ref-type="bibr" rid="pone.0067200-Leigh2">[61]</xref> or only for wild ones <xref ref-type="bibr" rid="pone.0067200-Navarrete1">[62]</xref> but the effects of infant survival on interbirth intervals (<xref ref-type="table" rid="pone-0067200-t002">Table 2</xref>) are rarely taken into consideration.</p>
+<p>Does it matter that outdated data are being compared or data collected for populations living under very different nutritional conditions and mortality schedules? Will results be different if analyses were based on data that also allow controlling for confounding factors? In the following we argue that data quality does indeed matter, because with existing compilations even the most basic relationships may not be recovered and that by controlling for nutrition and survival different trends and new insights can be disclosed.</p>
+</sec><sec id="s3e">
+<title>The Test: Comparing Life History Patterns in Asian Colobines and Asian Macaques</title>
+<p>To demonstrate potential effects of data quality and confounding factors on life history analyses we built upon our previous investigation of feeding adaptations and life history in Asian colobines and Asian macaques <xref ref-type="bibr" rid="pone.0067200-Borries2">[63]</xref>. In this analysis we compared these two taxa because they likely evolved under similar ecological conditions <xref ref-type="bibr" rid="pone.0067200-Delson1">[64]</xref>, <xref ref-type="bibr" rid="pone.0067200-Delson2">[65]</xref> and extant species have a similar body mass range <xref ref-type="bibr" rid="pone.0067200-Smith1">[66]</xref>, <xref ref-type="bibr" rid="pone.0067200-Gordon1">[67]</xref>, which is advantageous for cross-taxa comparisons <xref ref-type="bibr" rid="pone.0067200-Leigh3">[68]</xref>. It allowed us to explicitly investigate the difference relative to body mass using datasets in which results did not qualitatively differ regardless of whether or not we used comparative phylogenetic methods (discussed below). We had compiled all data from the original literature (selection criteria below).</p>
+<p>Because protein is essential for growth <xref ref-type="bibr" rid="pone.0067200-Elias1">[69]</xref> and primates mainly consume it as leaves which are less seasonal in abundance than e.g., fruits <xref ref-type="bibr" rid="pone.0067200-Janson1">[70]</xref> it has been predicted that folivorous primates should grow faster compared to frugivorous ones <xref ref-type="bibr" rid="pone.0067200-Leigh2">[61]</xref>. However, when comparing the folivorous colobines with the frugivorous macaques in our sample while controlling for body mass, we found a <bold><italic><underline>longer</underline></italic></bold>, instead of a shorter gestation length in folivores while age at first reproduction and interbirth interval did not differ <xref ref-type="bibr" rid="pone.0067200-Borries2">[63]</xref>. In Malagasy lemurs this trend was even more pronounced. In lemuriform folivores all life history variables examined were significantly <bold><italic><underline>longer</underline></italic></bold>, not shorter, compared to frugivores <xref ref-type="bibr" rid="pone.0067200-Godfrey2">[71]</xref>.</p>
+<p>Possible causes for slower or similar life histories in the folivorous taxa are discussed in the respective studies <xref ref-type="bibr" rid="pone.0067200-Borries2">[63]</xref>, <xref ref-type="bibr" rid="pone.0067200-Godfrey2">[71]</xref> and are not our focus here. Instead we will try to reconstruct our results for Asian colobines and macaques based on data from the other existing life history compilations mentioned above. Proceeding from the assumption that all databases are of comparable accuracy, we expect to find longer gestation lengths in the colobines but similar age at first reproduction and similar length of the interbirth interval in both taxa. The general allometric relationship between life history variables and adult female body mass <xref ref-type="bibr" rid="pone.0067200-Harvey2">[72]</xref>, <xref ref-type="bibr" rid="pone.0067200-Roff1">[73]</xref> will be considered in the analyses and will also be used as an indicator of data quality because every dataset should produce a tight correlation with log10 body mass.</p>
+</sec><sec id="s3f">
+<title>Data Selection and Setup</title>
+<p>In our previously published analysis we compiled data on gestation length, age at first reproduction, and interbirth interval from original publications <xref ref-type="bibr" rid="pone.0067200-Borries2">[63]</xref>. We included only gestation lengths for which the time of conception had been determined by hormonal analyses or in combination with additional signs such as menstruation or swelling patterns. For age at first reproduction no further specifications were available and we simply included the largest dataset. For interbirth intervals we selected those after a surviving offspring and identified the five (of 26) for which infant fate was not specified.</p>
+<p>If more than one value was available for a given species we selected the one based on the largest sample size and of best quality, deliberately ignoring intra-specific variation because it was not our focus. Some species could not be considered due to insufficient data quality or quantity (details in <xref ref-type="bibr" rid="pone.0067200-Borries2">[63]</xref>). We distinguished gross nutritional differences such that each species could be represented by up to two values per life history variable, one for free-ranging and provisioned or captive (provisioned/captive) and one for free-ranging and unprovisioned (wild/unprovisioned) populations. We performed the comparison in two steps: In the first step, we averaged the two values per species (if available) because the nutritional regime was not identified or was only incompletely identified in the other datasets. In the second step, we considered nutrition as a categorical variable to illustrate how it may change the outcome of the test. In an additional third step we restricted the analysis of interbirth intervals to include only those measured after surviving infants. Due to missing metadata this was not possible for the other compilations, and one dataset <xref ref-type="bibr" rid="pone.0067200-Ernest1">[13]</xref> only contained the inverse variable “litters/year”, which is similar but not identical to interbirth intervals <xref ref-type="bibr" rid="pone.0067200-NationalResearchCouncil1">[74]</xref>, and therefore was not used.</p>
+<p>Data for the same three life history variables (i.e., gestation length, age at first reproduction, and interbirth interval) were extracted for as many Asian colobine and macaque species as available from the four other published life history compilations mentioned above (PanTHERIA downloaded: November 2010; Ernest downloaded: August 2011; Kappeler &amp; Pereira; Rowe &amp; Myers downloaded: October 2011). Across datasets, sample sizes per variable and for both taxa combined ranged from 15 to 26 species with our dataset falling within that range (20 to 22 species per variable). Within each of these datasets, identical values for a given species were considered only once to control for potentially repeated inclusions of the same data if more than one secondary source had been used for the compilation. For example, 97% of the entries for primates in PanTHERIA were not from primary but from several secondary sources, and Ernest used only secondary sources. If multiple, <bold><italic><underline>different</underline></italic></bold> values per species were given, they were averaged. Thus, for this comparison, each species was represented by one value per variable per database. In addition, for PanTHERIA we excluded 12 gestations between 9–49 days in length, which must be errors because in both Asian colobines and macaques the shortest mean values are above 160 days <xref ref-type="bibr" rid="pone.0067200-Borries2">[63]</xref>.</p>
+<p>The dimensions were standardized to days (for gestation length), years (for age at first reproduction), or months (for interbirth interval) and then log10 transformed. Each dataset was tested separately with adult female body mass as log10 kg values <xref ref-type="bibr" rid="pone.0067200-Smith1">[66]</xref>, <xref ref-type="bibr" rid="pone.0067200-Gordon1">[67]</xref> as a covariate, and taxon (colobine <italic>versus</italic> macaque) as a categorical, independent variable using an analysis of covariance (ANCOVA) <xref ref-type="bibr" rid="pone.0067200-Quinn1">[75]</xref>. Additional analyses were performed on the Borries et al. dataset with nutrition (wild/unprovisioned <italic>versus</italic> provisioned/captive) and in case of interbirth intervals the analysis was rerun for only surviving infants.</p>
+<p>All analyses were repeated using phylogenetic generalized least squares (PGLS <xref ref-type="bibr" rid="pone.0067200-Martins1">[76]</xref>). This approach incorporates phylogenetic information into linear models to account for the statistical non-independence of residuals (e.g., sister species sharing a recent common ancestor are expected to be more similar to each other in all observations and in their deviation from general patterns than two species whose lineages diverged much longer ago). PGLS models allow for the estimation of Pagel’s lambda, a parameter which identifies the strength of a phylogenetic signal in a linear model <xref ref-type="bibr" rid="pone.0067200-Pagel1">[77]</xref>, <xref ref-type="bibr" rid="pone.0067200-Pagel2">[78]</xref>. A value of zero indicates a negligible phylogenetic signal (PGLS results are identical to those of non-phylogenetic linear models) and a value of one indicating that the data are patterned according to expectations based on the phylogenetic relationships of the species under study. The phylogenetic branching sequence and branch lengths used in this analysis were based on the consensus phylogeny (version 3) of the 10 kTrees Project <xref ref-type="bibr" rid="pone.0067200-Arnold1">[79]</xref>, modified following Meyer et al. <xref ref-type="bibr" rid="pone.0067200-Meyer1">[80]</xref> for the inclusion of <italic>Presbytis hosei</italic> and <italic>Presbytis thomasi</italic>. All analyses were conducted in R <xref ref-type="bibr" rid="pone.0067200-R1">[81]</xref> and phylogenetic analyses used the ‘caper’ package <xref ref-type="bibr" rid="pone.0067200-Orme1">[82]</xref>.</p>
+</sec><sec id="s3g">
+<title>Results Using Different Data Compilations</title>
+<p>Testing the effects of body mass and taxon on gestation length, PGLS results were identical to non-phylogenetic linear model results (lambda estimated as equal to zero) in all cases but one (Ernest for gestation length). In that case, neither the PGLS model nor the standard ANCOVA model were significant at alpha = 0.05 (<italic>P = </italic>0.636 and 0.349, respectively). When considering all five datasets, two of five models were significant and one revealed a trend (<xref ref-type="fig" rid="pone-0067200-g002">Fig. 2</xref>): with 91.2% the highest percentage of variance was accounted for by our dataset, while the second best model (Rowe &amp; Myers) accounted for 30.2% of the variance. The third model, which accounted for 26.1% of the variance (Kappeler &amp; Pereira) was a statistical trend (<italic>P = </italic>0.065). A significant body mass effect on gestation length was only documented in our dataset. Taxon had a significant effect in our dataset and there was a statistical trend in Rowe &amp; Myers (<italic>P = </italic>0.058). If nutrition was also considered (our dataset only), the significance level for body mass improved while nutrition itself produced a statistical trend (<italic>P = </italic>0.067) but the variance accounted for by the model improved only very little (from 91.2% to 92.7%).</p>
+<fig id="pone-0067200-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0067200.g002</object-id><label>Figure 2</label><caption>
+<title>Gestation length [log10 days] in relation to adult female body mass [log10 kg] for different databases.</title>
+<p>Linear model results and plots for Asian colobines (triangles, dashed lines) and Asian macaques (circles, sold lines); <italic>N</italic><sub>C</sub> = number of Asian colobine species; <italic>N</italic><sub>M</sub> = number of Asian macaque species; – = N/A; bold italic = <italic>P≤</italic>0.05; italic = 0.05&lt;<italic>P</italic>&lt;0.10. Lines only drawn for models with a body mass effect that is significant at alpha = 0.05. Where nutrition is included as an independent variable, filled symbols and bold lines stand for wild/unprovisioned whereas open symbols and non-bold lines stand for provisioned/captive. Body mass data from Smith &amp; Jungers <xref ref-type="bibr" rid="pone.0067200-Smith1">[66]</xref> and Gordon <xref ref-type="bibr" rid="pone.0067200-Gordon1">[67]</xref>.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0067200.g002" position="float" xlink:type="simple"/></fig>
+<p>Testing the effects of body mass and taxon on age at first reproduction, PGLS results were identical to non-phylogenetic models, none of the five models were significant, and only a small percentage of the variance was accounted for (up to 9.2%, <xref ref-type="fig" rid="pone-0067200-g003">Fig. 3</xref>). There was no body mass effect on age at first reproduction in any of the datasets, while taxon produced a trend twice (PanTHERIA with <italic>P = </italic>0.092 and Kappeler &amp; Pereira with <italic>P = </italic>0.090). In both cases age at first reproduction was older for macaques than for colobines. Once nutrition was also considered (our dataset only) the percentage of the variance accounted for improved from 0.3% to 41.7%, taxon produced a trend (<italic>P = </italic>0.091) with age at first reproduction older for macaques than for colobines, and body mass was significant as was the nutritional effect. In other words, only if the nutritional regime was considered did the result confirm the generally expected effect for body mass.</p>
+<fig id="pone-0067200-g003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0067200.g003</object-id><label>Figure 3</label><caption>
+<title>Age at first reproduction [log10 years] in relation to adult female body mass [log10 kg] for different databases.</title>
+<p>Symbols and abbreviations as in Fig. 2.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0067200.g003" position="float" xlink:type="simple"/></fig>
+<p>Testing the effects of body mass and taxon on interbirth intervals, PGLS results were again identical to non-phylogenetic linear model results. Only our model was significant, accounting for 24.3% of the variance (<xref ref-type="fig" rid="pone-0067200-g004">Fig. 4</xref>), the other models accounting for up to 8.6%. No significant body mass effect or taxon effect was found (besides a statistical trend for taxon in our dataset, <italic>P = </italic>0.072). Once nutrition was included (our dataset only) the variance accounted for improved from 24.3% to 65.1%. In the resulting model, body mass and nutritional effects both were significant while taxon was no longer a trend (<xref ref-type="fig" rid="pone-0067200-g004">Fig. 4</xref>). Using only interbirth intervals after surviving infants (i.e., reducing our dataset by 19.2% by excluding 5 of 26 values) did not alter the overall outcome, but the variance accounted for increased by 8.6 percentage points to 73.7%.</p>
+<fig id="pone-0067200-g004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0067200.g004</object-id><label>Figure 4</label><caption>
+<title>Interbirth interval, IBI [log10 months] in relation to adult female body mass [log10 kg] for different databases.</title>
+<p>Symbols and abbreviations as in Fig. 2. Note that dotted lines fall on top of the solid lines in the last two plots; i.e., the scaling relationships are very similar for Asian colobines and Asian macaques.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0067200.g004" position="float" xlink:type="simple"/></fig></sec><sec id="s3h">
+<title>When Sources of Variation are Ignored: Comparing Apples with Oranges</title>
+<p>These results reveal striking differences between the databases considered even for detecting a body mass effect. In mammals, life history variables and adult female body mass are so strongly correlated <xref ref-type="bibr" rid="pone.0067200-Stearns1">[1]</xref> that body mass is considered a life history related variable <xref ref-type="bibr" rid="pone.0067200-Skinner1">[83]</xref>. The effect is particularly well documented for gestation length <xref ref-type="bibr" rid="pone.0067200-Martin2">[35]</xref>, <xref ref-type="bibr" rid="pone.0067200-Kihlstroem1">[84]</xref>, <xref ref-type="bibr" rid="pone.0067200-Little1">[85]</xref> but also holds for the other variables <xref ref-type="bibr" rid="pone.0067200-Harvey3">[86]</xref>. In the two taxa compared here the range in adult female body mass was small (∼3–12 kg) relative to all extant primates (&lt;0.05 to &gt;70.0 kg <xref ref-type="bibr" rid="pone.0067200-Smith1">[66]</xref>), and to all extant mammals (&lt;0.002 to &gt;325 kg <xref ref-type="bibr" rid="pone.0067200-White1">[87]</xref>) thus reducing the probability of recovering an effect in our sample. Still it was recovered for all three life history variables based on our dataset although twice only after additional inclusion of nutritional effects. In contrast, body mass <bold><italic><underline>never</underline></italic></bold> had the expected positive relationship with life history variables in any of the analyses from the other databases and in several cases the relationship with body mass was negative. These patterns were robust regardless of whether or not phylogenetic information was considered due to the generally negligible phylogenetic signal present in the residuals of the linear models.</p>
+<p>The lack of a significant relationship between body mass and life history variables in most of the datasets considered here is exceedingly unlikely to reflect biological reality and, in our opinion, indicates severe problems with data quality. The body mass values used in this analysis cannot explain these phenomena as they were taken from the same sources <xref ref-type="bibr" rid="pone.0067200-Smith1">[66]</xref>, <xref ref-type="bibr" rid="pone.0067200-Gordon1">[67]</xref> and in each dataset the same species was assigned the same mean value.</p>
+<p>Overall, the high explanatory power in the Borries et al. dataset seems to be in part due to our use of metadata related to nutrition as well as data selection based on standardized definitions of the respective variables. If nutrition was not controlled for, two of the three life history variables had no significant relationship with adult female body mass. This suggests a strong masking effect of nutrition. And indeed, nutrition was a significant factor for all three variables in our dataset. It was smallest for gestation length where it improved the variance accounted for by only one and a half percentage points (from 91.2% to 92.7%). For age at first reproduction the variance accounted for increased from 0.3% to 41.7% and for interbirth interval from 24.3% to 65.1%. The smaller impact on gestation length could be related to its shorter duration compared to interbirth interval and especially age at first reproduction. Alternatively or in addition, it could support the assumption that nutrition might have a weaker effect on prenatal compared to postnatal growth <xref ref-type="bibr" rid="pone.0067200-Lee1">[34]</xref>.</p>
+<p>Furthermore, differences in variable definitions could be one of the key factors leading to discrepancies between different life history analyses. Of the three variables considered here, gestation length is the best example. Its definition is not questioned as it is the period from conception until birth. The main problem with gestation length derives from how it is measured. Especially in anthropoid primates, questionable data can result depending on how conceptions were determined <xref ref-type="bibr" rid="pone.0067200-Martin3">[38]</xref>. Ideally, they are determined hormonally. In addition, the value reported for gestation length can vary with infant viability. For example in wild baboons (<italic>Papio cynocephalus</italic> <xref ref-type="bibr" rid="pone.0067200-Silk1">[41]</xref>) gestation length ranged from 154 to 209 days, thus spanning 56 days. This range shrank to 20 days (164 to 183 days) if neonatal deaths and stillbirths were excluded. The effect was later confirmed for the population with a very large sample size (<italic>N</italic> = 590 <xref ref-type="bibr" rid="pone.0067200-Beehner2">[88]</xref>). Thus, while often difficult to apply in practice, using only standardized life history variables in comparative analyses should be an important goal for the future.</p>
+<p>Lastly, as illustrated in <xref ref-type="table" rid="pone-0067200-t002">Table 2</xref>, the interbirth interval is significantly influenced by infant mortality especially in non-annually breeding species characterized by a long lactational amenorrhea relative to gestation length <xref ref-type="bibr" rid="pone.0067200-vanSchaik2">[89]</xref>. Consequently, in case all interbirth intervals of a population are considered, the mean value will also reflect the local pattern of infant mortality. However, this is counterproductive because the variable should only capture the time it takes to raise an offspring until the next one is born.</p>
+<p>Without quality filters and clear variable definitions we risk comparing apples with oranges, or perhaps Red Delicious with Granny Smith – two fruits which are clearly both apples, and yet also quite distinct from each other. Similarly, small but clear differences in the definition of the life history variables compared are likely the reason why the agreement between the results from the different databases is so poor.</p>
+</sec></sec><sec id="s4">
+<title>Conclusions</title>
+<sec id="s4a">
+<title>We Need to Start Over!</title>
+<p>Thus, the answer to our initial question is “no”: the results for Asian colobines and macaques from our analysis <xref ref-type="bibr" rid="pone.0067200-Borries2">[63]</xref> could not be reproduced based on the other four datasets. Had we used any of the other existing datasets and not compiled our own, we would still be unaware that gestation length in Asian colobines is significantly longer than in Asian macaques. Furthermore, we would not be confident that interbirth intervals did not differ in the two taxa. These results contrast with the widely held belief that compared to Asian macaques, the more folivorous Asian colobines have a shorter interbirth interval in line with growth measures for captive primates <xref ref-type="bibr" rid="pone.0067200-Leigh2">[61]</xref>, although there is some weak support (a statistical trend) for the idea that colobines have a younger age at first reproduction than macaques. Overall, our present comparisons strongly indicate that there can be marked discrepancies in the results depending on which database was used. Based on standardized variables and by controlling for a few key factors, new insights were gained about life history and dietary adaptations <xref ref-type="bibr" rid="pone.0067200-Borries2">[63]</xref>. Together with similar trends discovered for strepsirrhines <xref ref-type="bibr" rid="pone.0067200-Godfrey2">[71]</xref> it is now likely that folivory does not facilitate growth as much as had been suggested previously.</p>
+<p>Perhaps even the general role assumed for protein intake with respect to primate growth needs to be reconsidered. A recent study on juvenile rhesus monkeys emphasized the importance of caloric over protein intake <xref ref-type="bibr" rid="pone.0067200-Terasawa1">[90]</xref>: Females kept on a low caloric-high protein (70%) diet reached menarche significantly later than those on a high caloric-low protein (19%) diet. The same effect is also described for humans in connection with juvenile obesity <xref ref-type="bibr" rid="pone.0067200-Bau1">[91]</xref>.</p>
+<p>More generally, at present we do not know if the results of other past life history analyses would hold if based on data that were cleaned-up in a way described here. Clearly this will also depend on the taxonomic level of analysis. Errors of the magnitude identified above might not matter (or matter less) when primate life histories are contrasted with those for rodents because the very large differences should make for strong signals. However, the taxonomic level at which data quality issues no longer have a noticeable effect on results can only be found by trial and error, by re-running analyses at various taxonomic levels and data accuracies. It could be that in the future key aspects at least of primate life history might have to be viewed very differently, with potentially far reaching consequences <xref ref-type="bibr" rid="pone.0067200-Leigh1">[25]</xref>, <xref ref-type="bibr" rid="pone.0067200-Hawkes2">[92]</xref>. It could also be that new directions recently taken in primate life history analysis will have to be revisited such as interpreting differences in the scaling with body mass between gestation length, weaning age and development time (i.e., gestation plus lactation) based on metabolic effects <xref ref-type="bibr" rid="pone.0067200-Dubman1">[23]</xref>.</p>
+</sec><sec id="s4b">
+<title>A New Life History Database</title>
+<p>In the past, few data for primate life history were available and compilations seem to have been built in a catch-as-catch-can fashion. Researchers were also mostly unaware of the magnitude of the influence that conditions such as nutrient availability could have. This is still reflected in the content of most of the existing compilations, which often build on one another such as the data from Ernest analyzed here which – with respect to primates – rely heavily on the Kappeler &amp; Pereira dataset. In the future, researchers might perhaps want to pay more attention to the quality of existing data, whether they meet the selection criteria required for the analysis planned. For example, if infant survival is not specified for interbirth intervals these data can likely not answer most of our questions. We can no longer unconditionally use what is published.</p>
+<p>That said, there is a tremendous amount of primate life history data currently available, much or most of it usable in comparative analyses given adequate associated metadata. Therefore we propose building a new, publicly available database. Such a database would specify variable definitions and methods of assessment; it would provide mean values with descriptive statistics, and include metadata on nutritional conditions, infant viability and the like. Many details still have to be worked out before we can reach a standardized level and certain criteria need to be developed with time and practice. For example, when considering nutritional regimes it could be that in the end we can only distinguish between two very basic regimes such as those we did in our current analysis: namely whether or not human-made food was ever consumed.</p>
+<p>Certainly there is also individual variation and there is variation between sites and between species, and such a database that recorded information at the population level would identify and preserve the differences. In addition it is also reasonable to identify a “best value” (central tendency) for every population (and condition) for use in comparative analyses. We need to locate and compile those values, have them proof-read and approved by the people who collected the data, and keep the compilation updated so that future research can be based on the best data currently available. Ideally, in the – hopefully not too far – future new data will automatically be included at the time of publication. Other disciplines already have comparable structures in place such as databases like GenBank® (<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/genbank" xlink:type="simple">http://www.ncbi.nlm.nih.gov/genbank</ext-link>) and standards for database variables like Darwin Core (<ext-link ext-link-type="uri" xlink:href="http://www.gbif.org" xlink:type="simple">http://www.gbif.org</ext-link>). Such a life history database is likely to save us all a lot of time in the future and will allow for new and true discoveries.</p>
+<p>As a final note: We used Asian primate taxa as example because it is the group we are most familiar with. Similar trends and issues as those raised here likely also hold for the other primate taxa and other animal orders and their databases. Try it out. The results might surprise you.</p>
+</sec></sec></body>
+<back>
+<ack>
+<p>We thank John Fleagle, Charles Janson, Peter Kappeler, Caroline Ross, and the Academic Editor Sharon Gursky-Doyen for their helpful comments on earlier versions of the manuscript. Special thanks to Jacinta Beehner and Thore Bergman for the permission to include unpublished data.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0067200-Stearns1"><label>1</label>
+<mixed-citation publication-type="other" xlink:type="simple">Stearns SC (1992) The evolution of life history. Oxford: Oxford University Press. 249 p.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Catlett1"><label>2</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Catlett</surname><given-names>KK</given-names></name>, <name name-style="western"><surname>Schwartz</surname><given-names>GT</given-names></name>, <name name-style="western"><surname>Godfrey</surname><given-names>LR</given-names></name>, <name name-style="western"><surname>Jungers</surname><given-names>WL</given-names></name> (<year>2010</year>) <article-title>“Life history space”: a multivariate analysis of life history variation in extant and extinct Malagasy lemurs</article-title>. <source>Am J Phys Anthropol</source> <volume>142</volume>: <fpage>391</fpage>–<lpage>404</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Schwartz1"><label>3</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schwartz</surname><given-names>GT</given-names></name>, <name name-style="western"><surname>Mahoney</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Godfrey</surname><given-names>LR</given-names></name>, <name name-style="western"><surname>Cuozzo</surname><given-names>FP</given-names></name>, <name name-style="western"><surname>Jungers</surname><given-names>WL</given-names></name>, <etal>et al</etal>. (<year>2005</year>) <article-title>Dental development in <italic>Megaladapis edwardsi</italic> (Primates, Lemuriformes): implications for understanding life history variation in subfossil lemurs</article-title>. <source>J Hum Evol</source> <volume>49</volume>: <fpage>702</fpage>–<lpage>721</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Robson1"><label>4</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Robson</surname><given-names>SL</given-names></name>, <name name-style="western"><surname>Wood</surname><given-names>BA</given-names></name> (<year>2008</year>) <article-title>Hominin life history: reconstruction and evolution</article-title>. <source>J Anat</source> <volume>212</volume>: <fpage>394</fpage>–<lpage>425</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Godfrey1"><label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Godfrey</surname><given-names>LR</given-names></name>, <name name-style="western"><surname>Samonds</surname><given-names>KE</given-names></name>, <name name-style="western"><surname>Jungers</surname><given-names>WL</given-names></name>, <name name-style="western"><surname>Sutherland</surname><given-names>MR</given-names></name> (<year>2001</year>) <article-title>Teeth, brains, and primate life histories</article-title>. <source>Am J Phys Anthropol</source> <volume>114</volume>: <fpage>192</fpage>–<lpage>214</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Guthrie1"><label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Guthrie</surname><given-names>EH</given-names></name>, <name name-style="western"><surname>Frost</surname><given-names>SR</given-names></name> (<year>2011</year>) <article-title>Pattern and pace of dental eruption in <italic>Tarsius</italic></article-title>. <source>Am J Phys Anthropol</source> <volume>145</volume>: <fpage>446</fpage>–<lpage>451</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Plunkett1"><label>7</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Plunkett</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Doniger</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Orabona</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Morgan</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Haataja</surname><given-names>R</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>An evolutionary genomic approach to identify genes involved in human birth timing</article-title>. <source>PLoS Genet</source> <volume>7</volume>: <fpage>e1001365</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Ross1"><label>8</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ross</surname><given-names>C</given-names></name>, <name name-style="western"><surname>MacLarnon</surname><given-names>AM</given-names></name> (<year>2000</year>) <article-title>The evolution of non-maternal care in anthropoid primates: a test of the hypotheses</article-title>. <source>Folia Primatol</source> <volume>71</volume>: <fpage>93</fpage>–<lpage>113</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Alvarez1"><label>9</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Alvarez</surname><given-names>HP</given-names></name> (<year>2000</year>) <article-title>Grandmother hypothesis and primate life history</article-title>. <source>Am J Phys Anthropol</source> <volume>113</volume>: <fpage>435</fpage>–<lpage>450</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Hill1"><label>10</label>
+<mixed-citation publication-type="other" xlink:type="simple">Hill K, Hurtado AM (1996) Ache life history: the ecology and demography of a foraging people; Hrdy SB, Borgerhoff Mulder M, editors. New York: Aldine de Gruyter. 561 p.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Hawkes1"><label>11</label>
+<mixed-citation publication-type="other" xlink:type="simple">Hawkes K, Paine RR, editors (2006) The evolution of human life history. Santa Fe: School of American Research Press. 505 p.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Isler1"><label>12</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Isler</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Kirk</surname><given-names>EC</given-names></name>, <name name-style="western"><surname>Miller</surname><given-names>JMA</given-names></name>, <name name-style="western"><surname>Albrecht</surname><given-names>GA</given-names></name>, <name name-style="western"><surname>Gelvin</surname><given-names>BR</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>Endocranial volumes of primate species: scaling analyses using a comprehensive and reliable data set</article-title>. <source>J Hum Evol</source> <volume>55</volume>: <fpage>967</fpage>–<lpage>978</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Ernest1"><label>13</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ernest</surname><given-names>SKM</given-names></name> (<year>2003</year>) <article-title>Life history characteristics of placental nonvolant mammals</article-title>. <source>Ecology</source> <volume>84</volume>: <fpage>3402</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Lyons1"><label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lyons</surname><given-names>SK</given-names></name>, <name name-style="western"><surname>Wagner</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Dzikiewicz</surname><given-names>K</given-names></name> (<year>2010</year>) <article-title>Ecological correlates of range shifts of Late Pleistocene mammals</article-title>. <source>Phil Trans R Soc Lond B</source> <volume>365</volume>: <fpage>3681</fpage>–<lpage>3693</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Turbill1"><label>15</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Turbill</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Bieber</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Ruf</surname><given-names>T</given-names></name> (<year>2011</year>) <article-title>Hibernation is associated with increased survival and the evolution of slow life histories among mammals</article-title>. <source>Proc R Soc Lond B</source> <volume>278</volume>: <fpage>3355</fpage>–<lpage>3363</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Sibly1"><label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sibly</surname><given-names>RM</given-names></name>, <name name-style="western"><surname>Brown</surname><given-names>JH</given-names></name> (<year>2007</year>) <article-title>Effects of body size and lifestyle on evolution of mammal life histories</article-title>. <source>Proc Natl Acad Sci USA</source> <volume>104</volume>: <fpage>17707</fpage>–<lpage>17712</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Jones1"><label>17</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jones</surname><given-names>KE</given-names></name>, <name name-style="western"><surname>Bielby</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Cardillo</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Fritz</surname><given-names>SA</given-names></name>, <name name-style="western"><surname>O’Dell</surname><given-names>J</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>PanTHERIA: a species-level database of life history, ecology, and geography of extant and recently extinct mammals</article-title>. <source>Ecology</source> <volume>90</volume>: <fpage>2648</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Barton1"><label>18</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Barton</surname><given-names>RA</given-names></name>, <name name-style="western"><surname>Capellini</surname><given-names>I</given-names></name> (<year>2011</year>) <article-title>Maternal investment, life histories, and the costs of brain growth in mammals</article-title>. <source>Proc Natl Acad Sci USA</source> <volume>108</volume>: <fpage>6169</fpage>–<lpage>6174</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Capellini1"><label>19</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Capellini</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Venditti</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Barton</surname><given-names>RA</given-names></name> (<year>2011</year>) <article-title>Placentation and maternal investment in mammals</article-title>. <source>Am Nat</source> <volume>177</volume>: <fpage>86</fpage>–<lpage>98</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Carbone1"><label>20</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Carbone</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Cowlishaw</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Isaac</surname><given-names>NJB</given-names></name>, <name name-style="western"><surname>Rowcliffe</surname><given-names>JM</given-names></name> (<year>2005</year>) <article-title>How far do animals go? Determinants of day range in mammals</article-title>. <source>Am Nat</source> <volume>165</volume>: <fpage>290</fpage>–<lpage>297</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Kamilar1"><label>21</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kamilar</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Bribiescas</surname><given-names>RG</given-names></name>, <name name-style="western"><surname>Bradley</surname><given-names>BJ</given-names></name> (<year>2010</year>) <article-title>Is group size related to longevity in mammals?</article-title> <source>Biol Lett</source> <volume>6</volume>: <fpage>736</fpage>–<lpage>739</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Bielby1"><label>22</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bielby</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Mace</surname><given-names>GM</given-names></name>, <name name-style="western"><surname>Bininda-Emonds</surname><given-names>ORP</given-names></name>, <name name-style="western"><surname>Cardillo</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Gittleman</surname><given-names>JL</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>The fast-slow continuum in mammalian life history: an empirical reevaluation</article-title>. <source>Am Nat</source> <volume>169</volume>: <fpage>748</fpage>–<lpage>757</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Dubman1"><label>23</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dubman</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Collard</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Mooers</surname><given-names>AO</given-names></name> (<year>2012</year>) <article-title>Evidence that gestation duration and lactation duration are coupled traits in primates</article-title>. <source>Biol Lett</source> <volume>8</volume>: <fpage>998</fpage>–<lpage>1001</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Kappeler1"><label>24</label>
+<mixed-citation publication-type="other" xlink:type="simple">Kappeler PM, Pereira ME, editors (2003) Primate life histories and socioecology. Chicago: University of Chicago Press. 395 p.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Leigh1"><label>25</label>
+<mixed-citation publication-type="other" xlink:type="simple">Leigh SR, Blomquist GE (2011) Life history. In: Campbell CJ, Fuentes A, MacKinnon KC, Bearder SK, Stumpf RM, editors. Primates in perspective. 2nd ed. New York: Oxford University Press. 418–428.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Barrickman1"><label>26</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Barrickman</surname><given-names>NL</given-names></name>, <name name-style="western"><surname>Bastian</surname><given-names>ML</given-names></name>, <name name-style="western"><surname>Isler</surname><given-names>K</given-names></name>, <name name-style="western"><surname>van Schaik</surname><given-names>CP</given-names></name> (<year>2008</year>) <article-title>Life history costs and benefits of encephalization: a comparative test using data from long-term studies of primates in the wild</article-title>. <source>J Hum Evol</source> <volume>54</volume>: <fpage>568</fpage>–<lpage>590</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Mumby1"><label>27</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mumby</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Vinicius</surname><given-names>L</given-names></name> (<year>2008</year>) <article-title>Primate growth in the slow lane: a study of inter-species variation in the growth constant <italic>A</italic>. Evol Biol</article-title>. <volume>35</volume>: <fpage>287</fpage>–<lpage>295</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Nakamichi1"><label>28</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nakamichi</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Yamada</surname><given-names>K</given-names></name> (<year>2009</year>) <article-title>Distribution of dorsal carriage among simians</article-title>. <source>Primates</source> <volume>50</volume>: <fpage>153</fpage>–<lpage>168</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Rowe1"><label>29</label>
+<mixed-citation publication-type="other" xlink:type="simple">Rowe N, Myers M (2011) All the World’s primates. 2011 ed: Primate Conservation, Inc.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Covert1"><label>30</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Covert</surname><given-names>HH</given-names></name> (<year>2012</year>) <article-title>A pictorial guide to living primates and much more</article-title>. <source>Evol Anthropol</source> <volume>21</volume>: <fpage>84</fpage>–<lpage>85</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Martin1"><label>31</label>
+<mixed-citation publication-type="other" xlink:type="simple">Martin P, Bateson P (2007) Measuring behaviour: an introductory guide. Cambridge: Cambridge University Press. 176 p.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Sacher1"><label>32</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sacher</surname><given-names>GA</given-names></name>, <name name-style="western"><surname>Staffeldt</surname><given-names>EF</given-names></name> (<year>1974</year>) <article-title>Relation of gestation time to brain weight for placental mammals: implications for the theory of vertebrate growth</article-title>. <source>Am Nat</source> <volume>108</volume>: <fpage>593</fpage>–<lpage>615</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Harvey1"><label>33</label>
+<mixed-citation publication-type="other" xlink:type="simple">Harvey PH, Martin RD, Clutton-Brock TH (1987) Life histories in comparative perspective. In: Smuts BB, Cheney DL, Seyfarth RM, Wrangham RW, Struhsaker TT, editors. Primate societies. Chicago: University of Chicago Press. 181–196.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Lee1"><label>34</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lee</surname><given-names>PC</given-names></name> (<year>2012</year>) <article-title>Growth and investment in hominin life history evolution: patterns, processes, and outcomes</article-title>. <source>Int J Primatol</source> <volume>33</volume>: <fpage>1309</fpage>–<lpage>1331</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Martin2"><label>35</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Martin</surname><given-names>RD</given-names></name> (<year>2007</year>) <article-title>The evolution of human reproduction: a primatological perspective</article-title>. <source>Yearb Phys Anthropol</source> <volume>134</volume>: <fpage>59</fpage>–<lpage>84</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Dunsworth1"><label>36</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dunsworth</surname><given-names>HM</given-names></name>, <name name-style="western"><surname>Warrener</surname><given-names>AG</given-names></name>, <name name-style="western"><surname>Deacon</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Ellison</surname><given-names>PT</given-names></name>, <name name-style="western"><surname>Pontzer</surname><given-names>H</given-names></name> (<year>2012</year>) <article-title>Metabolic hypothesis for human altriciality</article-title>. <source>Proc Natl Acad Sci USA</source> <volume>109</volume>: <fpage>15212</fpage>–<lpage>15216</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Cross1"><label>37</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cross</surname><given-names>JF</given-names></name>, <name name-style="western"><surname>Martin</surname><given-names>RD</given-names></name> (<year>1981</year>) <article-title>Calculation of gestation period and other reproductive parameters for primates</article-title>. <source>Dodo J Jersey Wildl Preserv Trust</source> <volume>18</volume>: <fpage>30</fpage>–<lpage>43</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Martin3"><label>38</label>
+<mixed-citation publication-type="other" xlink:type="simple">Martin RD (1992) Female cycles in relation to paternity in primate societies. In: Martin RD, Dixson AF, Wickings EJ, editors. Paternity in primates: genetic tests and theories. Basel: Karger. 238–274.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Dixson1"><label>39</label>
+<mixed-citation publication-type="other" xlink:type="simple">Dixson AF (1998) Primate sexuality: comparative studies of the prosimians, monkeys, apes, and human beings. Oxford: Oxford University Press.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Hrdy1"><label>40</label>
+<mixed-citation publication-type="other" xlink:type="simple">Hrdy SB, Whitten PL (1987) Patterning of sexual activity. In: Smuts BB, Cheney DL, Seyfarth RM, Wrangham RW, Struhsaker TT, editors. Primate societies. Chicago: University of Chicago Press. 370–384.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Silk1"><label>41</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Silk</surname><given-names>JB</given-names></name> (<year>1986</year>) <article-title>Eating for two: behavioral and environmental correlates of gestation length among free-ranging baboons (<italic>Papio cynocephalus</italic>)</article-title>. <source>Int J Primatol</source> <volume>7</volume>: <fpage>583</fpage>–<lpage>602</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Beehner1"><label>42</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Beehner</surname><given-names>JC</given-names></name>, <name name-style="western"><surname>Nguyen</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Wango</surname><given-names>EO</given-names></name>, <name name-style="western"><surname>Alberts</surname><given-names>SC</given-names></name>, <name name-style="western"><surname>Altmann</surname><given-names>J</given-names></name> (<year>2006</year>) <article-title>The endocrinology of pregnancy and fetal loss in wild baboons</article-title>. <source>Horm Behav</source> <volume>49</volume>: <fpage>688</fpage>–<lpage>699</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Sommer1"><label>43</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sommer</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Srivastava</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Borries</surname><given-names>C</given-names></name> (<year>1992</year>) <article-title>Cycles, sexuality, and conception in free-ranging langurs (<italic>Presbytis entellus</italic>)</article-title>. <source>Am J Primatol</source> <volume>28</volume>: <fpage>1</fpage>–<lpage>27</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Strier1"><label>44</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Strier</surname><given-names>KB</given-names></name>, <name name-style="western"><surname>Ziegler</surname><given-names>TE</given-names></name> (<year>2005</year>) <article-title>Advances in field-based studies of primate behavioral endocrinology</article-title>. <source>Am J Primatol</source> <volume>67</volume>: <fpage>1</fpage>–<lpage>4</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Michod1"><label>45</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Michod</surname><given-names>RE</given-names></name> (<year>1979</year>) <article-title>Evolution of life histories in response to age-specific mortality factors</article-title>. <source>Am Nat</source> <volume>113</volume>: <fpage>531</fpage>–<lpage>550</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Charlesworth1"><label>46</label>
+<mixed-citation publication-type="other" xlink:type="simple">Charlesworth B (1994) Evolution in age-structured populations. Cambridge: Cambridge University Press. 306 p.</mixed-citation>
+</ref>
+<ref id="pone.0067200-McNeilly1"><label>47</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>McNeilly</surname><given-names>AS</given-names></name>, <name name-style="western"><surname>Tay</surname><given-names>CCK</given-names></name>, <name name-style="western"><surname>Glasier</surname><given-names>A</given-names></name> (<year>2006</year>) <article-title>Physiological mechanisms underlying lactational amenorrhea</article-title>. <source>Ann NY Acad Sci</source> <volume>709</volume>: <fpage>145</fpage>–<lpage>155</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Koyama1"><label>48</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Koyama</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Nakamichi</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Oda</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Miyamoto</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Ichino</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2001</year>) <article-title>A ten-year summary of reproductive parameters for ring-tailed lemurs at Berenty, Madagascar</article-title>. <source>Primates</source> <volume>42</volume>: <fpage>1</fpage>–<lpage>14</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Kappeler2"><label>49</label>
+<mixed-citation publication-type="other" xlink:type="simple">Kappeler PM, Fichtel C (2012) A 15-year perspective on the social organization and life history of sifaka in Kirindy Forest. In: Kappeler PM, Watts DP, editors. Long-term field studies of primates. Berlin: Springer. 101–121.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Hearn1"><label>50</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hearn</surname><given-names>JP</given-names></name> (<year>1982</year>) <article-title>The reproductive physiology of the common marmoset <italic>Callithrix jacchus</italic> in captivity</article-title>. <source>Int Zoo Yb</source> <volume>22</volume>: <fpage>138</fpage>–<lpage>143</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-vanSchaik1"><label>51</label>
+<mixed-citation publication-type="other" xlink:type="simple">van Schaik CP (2000) Infanticide by male primates: the sexual selection hypothesis revisited. In: van Schaik CP, Janson CH, editors. Infanticide by males and its implications. Cambridge: Cambridge University Press. 27–60.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Pochron1"><label>52</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pochron</surname><given-names>ST</given-names></name>, <name name-style="western"><surname>Tucker</surname><given-names>WT</given-names></name>, <name name-style="western"><surname>Wright</surname><given-names>PC</given-names></name> (<year>2004</year>) <article-title>Demography, life history, and social structure in <italic>Propithecus diadema edwardsi</italic> from 1986–2000 in Ranomafana National Park, Madagascar</article-title>. <source>Am J Phys Anthropol</source> <volume>125</volume>: <fpage>61</fpage>–<lpage>72</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Borries1"><label>53</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Borries</surname><given-names>C</given-names></name> (<year>1997</year>) <article-title>Infanticide in seasonally breeding multimale groups of Hanuman langurs (<italic>Presbytis entellus</italic>) in Ramnagar (South Nepal)</article-title>. <source>Behav Ecol Sociobiol</source> <volume>41</volume>: <fpage>139</fpage>–<lpage>150</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Nguyen1"><label>54</label>
+<mixed-citation publication-type="other" xlink:type="simple">Nguyen N (2006) Endocrine correlates and fitness consequences of variation in the mother-infant relationship in wild baboons (<italic>Papio cynocephalus</italic>) in Amboseli, Kenya [Dissertation]. Princeton: Princeton University. 180 p.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Watts1"><label>55</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Watts</surname><given-names>DP</given-names></name> (<year>1989</year>) <article-title>Infanticide in Mountain gorillas: new cases and a reconsideration of the evidence</article-title>. <source>Ethology</source> <volume>81</volume>: <fpage>1</fpage>–<lpage>18</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Bronson1"><label>56</label>
+<mixed-citation publication-type="other" xlink:type="simple">Bronson FH (1989) Mammalian reproductive biology. Chicago: University of Chicago Press. 325 p.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Koenig1"><label>57</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Koenig</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Borries</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Chalise</surname><given-names>MK</given-names></name>, <name name-style="western"><surname>Winkler</surname><given-names>P</given-names></name> (<year>1997</year>) <article-title>Ecology, nutrition, and timing of reproductive events in an Asian primate, the Hanuman langur (<italic>Presbytis entellus</italic>)</article-title>. <source>J Zool</source> <volume>243</volume>: <fpage>215</fpage>–<lpage>235</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Asquith1"><label>58</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Asquith</surname><given-names>PJ</given-names></name> (<year>1989</year>) <article-title>Provisioning and the study of free-ranging primates: history, effects, and prospects</article-title>. <source>Yearb Phys Anthropol</source> <volume>32</volume>: <fpage>129</fpage>–<lpage>158</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Hendrickx1"><label>59</label>
+<mixed-citation publication-type="other" xlink:type="simple">Hendrickx AG, Dukelow WR (1995) Reproductive biology. In: Bennett BT, Abee CR, Henrickson R, editors. Nonhuman primates in biomedical research: biology and management. San Diego: Academic Press. 147–191.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Ross2"><label>60</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ross</surname><given-names>C</given-names></name> (<year>1992</year>) <article-title>Life history patterns and ecology of macaque species</article-title>. <source>Primates</source> <volume>33</volume>: <fpage>207</fpage>–<lpage>215</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Leigh2"><label>61</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Leigh</surname><given-names>SR</given-names></name> (<year>1994</year>) <article-title>Ontogenetic correlates of diet in anthropoid primates</article-title>. <source>Am J Phys Anthropol</source> <volume>94</volume>: <fpage>499</fpage>–<lpage>522</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Navarrete1"><label>62</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Navarrete</surname><given-names>A</given-names></name>, <name name-style="western"><surname>van Schaik</surname><given-names>CP</given-names></name>, <name name-style="western"><surname>Isler</surname><given-names>K</given-names></name> (<year>2011</year>) <article-title>Energetics and the evolution of human brain size</article-title>. <source>Nature</source> <volume>480</volume>: <fpage>91</fpage>–<lpage>93</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Borries2"><label>63</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Borries</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Lu</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Ossi-Lupo</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Larney</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Koenig</surname><given-names>A</given-names></name> (<year>2011</year>) <article-title>Primate life histories and dietary adaptations: a comparison of Asian colobines and macaques</article-title>. <source>Am J Phys Anthropol</source> <volume>144</volume>: <fpage>286</fpage>–<lpage>299</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Delson1"><label>64</label>
+<mixed-citation publication-type="other" xlink:type="simple">Delson E (1980) Fossil macaques, phyletic relationships and a scenario of development. In: Lindburg DG, editor. The macaques: studies in ecology, behavior and evolution. New York: van Nostrand Reinhold. 10–30.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Delson2"><label>65</label>
+<mixed-citation publication-type="other" xlink:type="simple">Delson E (1994) Evolutionary history of the colobine monkeys in paleoenvironmental perspective. In: Davies AG, Oates JF, editors. Colobine monkeys: their ecology, behaviour and evolution. Cambridge: Cambridge University Press. 11–43.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Smith1"><label>66</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Smith</surname><given-names>RJ</given-names></name>, <name name-style="western"><surname>Jungers</surname><given-names>WL</given-names></name> (<year>1997</year>) <article-title>Body mass in comparative primatology</article-title>. <source>J Hum Evol</source> <volume>32</volume>: <fpage>523</fpage>–<lpage>559</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Gordon1"><label>67</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gordon</surname><given-names>AD</given-names></name> (<year>2006</year>) <article-title>Scaling of size and dimorphism in primates II: Macroevolution</article-title>. <source>Int J Primatol</source> <volume>27</volume>: <fpage>63</fpage>–<lpage>105</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Leigh3"><label>68</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Leigh</surname><given-names>SR</given-names></name> (<year>1994</year>) <article-title>Relations between captive and noncaptive weights in anthropoid primates</article-title>. <source>Zoo Biol</source> <volume>13</volume>: <fpage>21</fpage>–<lpage>43</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Elias1"><label>69</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Elias</surname><given-names>MF</given-names></name>, <name name-style="western"><surname>Samonds</surname><given-names>KW</given-names></name> (<year>1977</year>) <article-title>Protein and calorie malnutrition in infant cebus monkeys: growth and behavioral development during deprivation and rehabilitation</article-title>. <source>Am J Clin Nutr</source> <volume>30</volume>: <fpage>355</fpage>–<lpage>366</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Janson1"><label>70</label>
+<mixed-citation publication-type="other" xlink:type="simple">Janson CH, van Schaik CP (1993) Ecological risk aversion in juvenile primates: slow and steady wins the race. In: Pereira ME, Fairbanks LA, editors. Juvenile primates: life history, development, and behavior. New York: Oxford University Press. 57–74.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Godfrey2"><label>71</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Godfrey</surname><given-names>LR</given-names></name>, <name name-style="western"><surname>Samonds</surname><given-names>KE</given-names></name>, <name name-style="western"><surname>Jungers</surname><given-names>WL</given-names></name>, <name name-style="western"><surname>Sutherland</surname><given-names>MR</given-names></name>, <name name-style="western"><surname>Irwin</surname><given-names>MT</given-names></name> (<year>2004</year>) <article-title>Ontogenetic correlates of diet in Malagasy lemurs</article-title>. <source>Am J Phys Anthropol</source> <volume>123</volume>: <fpage>250</fpage>–<lpage>276</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Harvey2"><label>72</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Harvey</surname><given-names>PH</given-names></name>, <name name-style="western"><surname>Clutton-Brock</surname><given-names>TH</given-names></name> (<year>1985</year>) <article-title>Life history variation in primates</article-title>. <source>Evolution</source> <volume>39</volume>: <fpage>559</fpage>–<lpage>581</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Roff1"><label>73</label>
+<mixed-citation publication-type="other" xlink:type="simple">Roff DA (1992) Life history evolution. Sunderland: Sinauer Associates, Inc. 527 p.</mixed-citation>
+</ref>
+<ref id="pone.0067200-NationalResearchCouncil1"><label>74</label>
+<mixed-citation publication-type="other" xlink:type="simple">National Research Council US (1981) Techniques for the study of primate population ecology. Washington, D.C.: National Academy Press. 233 p.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Quinn1"><label>75</label>
+<mixed-citation publication-type="other" xlink:type="simple">Quinn GP, Keough MJ (2002) Experimental design and data analysis for biologists. Cambridge: Cambridge University Press. 537 p.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Martins1"><label>76</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Martins</surname><given-names>EP</given-names></name>, <name name-style="western"><surname>Hansen</surname><given-names>TF</given-names></name> (<year>1997</year>) <article-title>Phylogenies and the comparative method: a general approach to incorporating phylogenetic information into the analysis of interspecific data</article-title>. <source>Am Nat</source> <volume>149</volume>: <fpage>646</fpage>–<lpage>667</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Pagel1"><label>77</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pagel</surname><given-names>M</given-names></name> (<year>1999</year>) <article-title>Inferring the historical patterns of biological evolution</article-title>. <source>Nature</source> <volume>401</volume>: <fpage>877</fpage>–<lpage>884</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Pagel2"><label>78</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pagel</surname><given-names>M</given-names></name> (<year>1997</year>) <article-title>Inferring evolutionary processes from phylogenies</article-title>. <source>Zool Scr</source> <volume>26</volume>: <fpage>331</fpage>–<lpage>348</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Arnold1"><label>79</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Arnold</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Matthews</surname><given-names>LJ</given-names></name>, <name name-style="western"><surname>Nunn</surname><given-names>CL</given-names></name> (<year>2010</year>) <article-title>The 10kTrees website: a new online resource for primate phylogeny</article-title>. <source>Evol Anthropol</source> <volume>19</volume>: <fpage>114</fpage>–<lpage>118</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Meyer1"><label>80</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Meyer</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Rinaldi</surname><given-names>ID</given-names></name>, <name name-style="western"><surname>Ramlee</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Perwitasari-Farajallah</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Hodges</surname><given-names>JK</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Mitochondrial phylogeny of leaf monkeys (genus <italic>Presbytis</italic>, Eschscholtz, 1821) with implications for taxonomy and conservation</article-title>. <source>Mol Phylogenet Evol</source> <volume>59</volume>: <fpage>311</fpage>–<lpage>319</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-R1"><label>81</label>
+<mixed-citation publication-type="other" xlink:type="simple">R Development Core Team (2012) A language and environment for statistical computing. Vienna: R foundation for statistical computing.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Orme1"><label>82</label>
+<mixed-citation publication-type="other" xlink:type="simple">Orme CDL, Freckleton RP, Thomas GH, Petzoldt T, Fritz SA, <etal>et al</etal>.. (2012) CAPER: Comparative analyses of phylogenetics and evolution in R. R package version 0.5.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Skinner1"><label>83</label>
+<mixed-citation publication-type="other" xlink:type="simple">Skinner MM, Wood B (2006) The evolution of modern human life history. In: Hawkes K, Paine RR, editors. The evolution of human life history. Santa Fe: School of American Research Press. 331–364.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Kihlstroem1"><label>84</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kihlstroem</surname><given-names>JE</given-names></name> (<year>1972</year>) <article-title>Period of gestation and body weight in some placental mammals</article-title>. <source>Comp Biochem Physiol A</source> <volume>43</volume>: <fpage>673</fpage>–<lpage>679</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Little1"><label>85</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Little</surname><given-names>BB</given-names></name> (<year>1989</year>) <article-title>Gestation length, metabolic rate, and body and brain weights in primates: epigenetic effects</article-title>. <source>Am J Phys Anthropol</source> <volume>80</volume>: <fpage>213</fpage>–<lpage>218</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Harvey3"><label>86</label>
+<mixed-citation publication-type="other" xlink:type="simple">Harvey PH, Promislow DEL, Read AF (1989) Causes and correlates of life history differences among mammals. In: Standen V, Foley RA, editors. Comparative socioecology: the behavioural ecology of humans and other mammals. Oxford: Blackwell Scientific Publications. 305–318.</mixed-citation>
+</ref>
+<ref id="pone.0067200-White1"><label>87</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>White</surname><given-names>CR</given-names></name>, <name name-style="western"><surname>Seymour</surname><given-names>RS</given-names></name> (<year>2003</year>) <article-title>Mammalian basal metabolic rate is proportional to body mass<sup>2/3</sup></article-title>. <source>Proc Natl Acad Sci USA</source> <volume>100</volume>: <fpage>4046</fpage>–<lpage>4049</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Beehner2"><label>88</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Beehner</surname><given-names>JC</given-names></name>, <name name-style="western"><surname>Onderdonk</surname><given-names>DA</given-names></name>, <name name-style="western"><surname>Alberts</surname><given-names>SC</given-names></name>, <name name-style="western"><surname>Altmann</surname><given-names>J</given-names></name> (<year>2006</year>) <article-title>The ecology of conception and pregnancy failure in wild baboons</article-title>. <source>Behav Ecol</source> <volume>17</volume>: <fpage>741</fpage>–<lpage>750</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-vanSchaik2"><label>89</label>
+<mixed-citation publication-type="other" xlink:type="simple">van Schaik CP (2000) Vulnerability to infanticide by males: patterns among mammals. In: van Schaik CP, Janson CH, editors. Infanticide by males and its implications. Cambridge: Cambridge University Press. 61–71.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Terasawa1"><label>90</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Terasawa</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Kurian</surname><given-names>JR</given-names></name>, <name name-style="western"><surname>Keen</surname><given-names>KL</given-names></name>, <name name-style="western"><surname>Shiel</surname><given-names>NA</given-names></name>, <name name-style="western"><surname>Colman</surname><given-names>RJ</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Body weight impact on puberty: effects of high-calorie diet on puberty onset in female rhesus monkeys</article-title>. <source>Endocrinology</source> <volume>153</volume>: <fpage>1696</fpage>–<lpage>1705</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Bau1"><label>91</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bau</surname><given-names>AM</given-names></name>, <name name-style="western"><surname>Ernert</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Schenk</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Wiegand</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Martus</surname><given-names>P</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Is there a further acceleration in the age at onset of menarche? A cross-sectional study of 1840 school children focusing on age and bodyweight at the onset of menarche</article-title>. <source>Eur J Endocrinol</source> <volume>160</volume>: <fpage>107</fpage>–<lpage>113</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Hawkes2"><label>92</label>
+<mixed-citation publication-type="other" xlink:type="simple">Hawkes K (2006) Life history theory and human evolution. In: Hawkes K, Paine RR, editors. The evolution of human life history. Santa Fe: School of American Research Press. 45–93.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Evans1"><label>93</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Evans</surname><given-names>CS</given-names></name>, <name name-style="western"><surname>Goy</surname><given-names>RW</given-names></name> (<year>1968</year>) <article-title>Social behaviour and reproductive cycles in captive ring-tailed lemurs (<italic>Lemur catta</italic>)</article-title>. <source>J Zool</source> <volume>156</volume>: <fpage>181</fpage>–<lpage>197</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Izard1"><label>94</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Izard</surname><given-names>MK</given-names></name>, <name name-style="western"><surname>Weisenseel</surname><given-names>KA</given-names></name>, <name name-style="western"><surname>Ange</surname><given-names>RL</given-names></name> (<year>1988</year>) <article-title>Reproduction in the slow loris (<italic>Nycticebus coucang</italic>)</article-title>. <source>Am J Primatol</source> <volume>16</volume>: <fpage>331</fpage>–<lpage>339</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Rasmussen1"><label>95</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rasmussen</surname><given-names>DT</given-names></name>, <name name-style="western"><surname>Izard</surname><given-names>MK</given-names></name> (<year>1988</year>) <article-title>Scaling growth and life history traits relative to body size, brain size, and metabolic rate in lorises and galagos (Lorisidae, Primates)</article-title>. <source>Am J Phys Anthropol</source> <volume>75</volume>: <fpage>357</fpage>–<lpage>367</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-vanBelle1"><label>96</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>van Belle</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Estrada</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Ziegler</surname><given-names>TE</given-names></name>, <name name-style="western"><surname>Strier</surname><given-names>KB</given-names></name> (<year>2009</year>) <article-title>Sexual behavior across ovarian cycles in wild black howler monkeys (<italic>Alouatta pigra</italic>): male mate guarding and female mate choice</article-title>. <source>Am J Primatol</source> <volume>71</volume>: <fpage>153</fpage>–<lpage>164</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Glander1"><label>97</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Glander</surname><given-names>KE</given-names></name> (<year>1980</year>) <article-title>Reproduction and population growth in free-ranging mantled howling monkeys</article-title>. <source>Am J Phys Anthropol</source> <volume>53</volume>: <fpage>25</fpage>–<lpage>36</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Fedigan1"><label>98</label>
+<mixed-citation publication-type="other" xlink:type="simple">Fedigan LM, Jack KM (2012) Tracking Neotropical monkeys in Santa Rosa: lessons from a regenerating Costa Rican dry forest. In: Kappeler PM, Watts DP, editors. Long-term field studies of primates. Berlin: Springer. 165–184.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Eisenberg1"><label>99</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Eisenberg</surname><given-names>JF</given-names></name> (<year>1973</year>) <article-title>Reproduction in two species of spider monkeys, <italic>Ateles fusciceps</italic> and <italic>Ateles geoffroyi</italic></article-title>. <source>J Mammal</source> <volume>54</volume>: <fpage>955</fpage>–<lpage>957</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Mustoe1"><label>100</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mustoe</surname><given-names>AC</given-names></name>, <name name-style="western"><surname>Birnie</surname><given-names>AK</given-names></name>, <name name-style="western"><surname>Korgan</surname><given-names>AC</given-names></name>, <name name-style="western"><surname>Santo</surname><given-names>JB</given-names></name>, <name name-style="western"><surname>French</surname><given-names>JA</given-names></name> (<year>2012</year>) <article-title>Natural variation in gestational cortisol is associated with patterns of growth in marmoset monkeys (<italic>Callithrix geoffroyi</italic>)</article-title>. <source>Gen Comp Endocrinol</source> <volume>175</volume>: <fpage>519</fpage>–<lpage>526</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Silk2"><label>101</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Silk</surname><given-names>JB</given-names></name>, <name name-style="western"><surname>Short</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Roberts</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Kusnitz</surname><given-names>J</given-names></name> (<year>1993</year>) <article-title>Gestation length in rhesus macaques (<italic>Macaca mulatta</italic>)</article-title>. <source>Int J Primatol</source> <volume>14</volume>: <fpage>95</fpage>–<lpage>104</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Bramblett1"><label>102</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bramblett</surname><given-names>CA</given-names></name>, <name name-style="western"><surname>Pejaver</surname><given-names>LD</given-names></name>, <name name-style="western"><surname>Drickman</surname><given-names>DJ</given-names></name> (<year>1975</year>) <article-title>Reproduction in captive vervet and Sykes’ monkeys</article-title>. <source>J Mammal</source> <volume>56</volume>: <fpage>940</fpage>–<lpage>946</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Lu1"><label>103</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lu</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Borries</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Czekala</surname><given-names>NM</given-names></name>, <name name-style="western"><surname>Beehner</surname><given-names>JC</given-names></name> (<year>2010</year>) <article-title>Reproductive characteristics of wild female Phayre’s leaf monkeys</article-title>. <source>Am J Primatol</source> <volume>72</volume>: <fpage>1073</fpage>–<lpage>1081</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Barelli1"><label>104</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Barelli</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Heistermann</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Boesch</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Reichard</surname><given-names>UH</given-names></name> (<year>2007</year>) <article-title>Sexual swellings in wild white-handed gibbon females (<italic>Hylobates lar</italic>) indicate the probability of ovulation</article-title>. <source>Horm Behav</source> <volume>51</volume>: <fpage>221</fpage>–<lpage>230</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Czekala1"><label>105</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Czekala</surname><given-names>NM</given-names></name>, <name name-style="western"><surname>Benirschke</surname><given-names>K</given-names></name>, <name name-style="western"><surname>McClure</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Lasley</surname><given-names>BL</given-names></name> (<year>1983</year>) <article-title>Urinary estrogen excretion during pregnancy in the gorilla (<italic>Gorilla gorilla</italic>), orangutan (<italic>Pongo pygmaeus</italic>) and the human (<italic>Homo sapiens</italic>)</article-title>. <source>Biol Reprod</source> <volume>28</volume>: <fpage>289</fpage>–<lpage>294</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Smith2"><label>106</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Smith</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Wickings</surname><given-names>EJ</given-names></name>, <name name-style="western"><surname>Bowman</surname><given-names>ME</given-names></name>, <name name-style="western"><surname>Belleoud</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Dubreuil</surname><given-names>G</given-names></name>, <etal>et al</etal>. (<year>1999</year>) <article-title>Corticotropin-releasing hormone in chimpanzee and gorilla pregnancies</article-title>. <source>J Clin Endocr Metab</source> <volume>84</volume>: <fpage>2820</fpage>–<lpage>2825</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Groves1"><label>107</label>
+<mixed-citation publication-type="other" xlink:type="simple">Groves C (2001) Primate taxonomy. Washington: Smithsonian Institution Press. 350 p.</mixed-citation>
+</ref>
+<ref id="pone.0067200-LynchAlfaro1"><label>108</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lynch Alfaro</surname><given-names>JW</given-names></name>, <name name-style="western"><surname>Boubli</surname><given-names>JP</given-names></name>, <name name-style="western"><surname>Olson</surname><given-names>LE</given-names></name>, <name name-style="western"><surname>di Fiore</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Wilson</surname><given-names>B</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Explosive Pleistocene range expansion leads to widespread Amazonian sympatry between robust and gracile capuchin monkeys</article-title>. <source>J Biogeogr</source> <volume>39</volume>: <fpage>272</fpage>–<lpage>288</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Struhsaker1"><label>109</label>
+<mixed-citation publication-type="other" xlink:type="simple">Struhsaker TT (2010) The red colobus monkeys: variation in demography, behavior, and ecology of endangered species. Oxford: Oxford University Press. 376 p.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Crockett1"><label>110</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Crockett</surname><given-names>CM</given-names></name>, <name name-style="western"><surname>Rudran</surname><given-names>R</given-names></name> (<year>1987</year>) <article-title>Red howler monkey birth data II: interannual, habitat, and sex comparisons</article-title>. <source>Am J Primatol</source> <volume>13</volume>: <fpage>369</fpage>–<lpage>384</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Fedigan2"><label>111</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fedigan</surname><given-names>LM</given-names></name>, <name name-style="western"><surname>Rose</surname><given-names>LM</given-names></name> (<year>1995</year>) <article-title>Interbirth interval variation in three sympatric species of Neotropical monkey</article-title>. <source>Am J Primatol</source> <volume>37</volume>: <fpage>9</fpage>–<lpage>24</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Fedigan3"><label>112</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fedigan</surname><given-names>LM</given-names></name>, <name name-style="western"><surname>Carnegie</surname><given-names>SD</given-names></name>, <name name-style="western"><surname>Jack</surname><given-names>KM</given-names></name> (<year>2008</year>) <article-title>Predictors of reproductive success in female white-faced capuchins (<italic>Cebus capucinus</italic>)</article-title>. <source>Am J Phys Anthropol</source> <volume>137</volume>: <fpage>82</fpage>–<lpage>90</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-RamirezLlorens1"><label>113</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ramirez-Llorens</surname><given-names>P</given-names></name>, <name name-style="western"><surname>di Bitetti</surname><given-names>MS</given-names></name>, <name name-style="western"><surname>Baldovino</surname><given-names>MC</given-names></name>, <name name-style="western"><surname>Janson</surname><given-names>CH</given-names></name> (<year>2008</year>) <article-title>Infanticide in black capuchin monkeys (<italic>Cebus apella nigritus</italic>) in Iguazu National Park, Argentina</article-title>. <source>Am J Primatol</source> <volume>70</volume>: <fpage>473</fpage>–<lpage>484</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Cords1"><label>114</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cords</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Chowdhury</surname><given-names>S</given-names></name> (<year>2010</year>) <article-title>Life history of <italic>Cercopithecus mitis stuhlmanni</italic> in the Kakamega Forest, Kenya</article-title>. <source>Int J Primatol</source> <volume>31</volume>: <fpage>433</fpage>–<lpage>455</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Takahata1"><label>115</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Takahata</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Suzuki</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Agetsuma</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Okayasu</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Sugiura</surname><given-names>H</given-names></name>, <etal>et al</etal>. (<year>1998</year>) <article-title>Reproduction of wild Japanese macaque females at Yakushima and Kinkazan Islands: a preliminary report</article-title>. <source>Primates</source> <volume>39</volume>: <fpage>339</fpage>–<lpage>349</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Smuts1"><label>116</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Smuts</surname><given-names>BB</given-names></name>, <name name-style="western"><surname>Nicolson</surname><given-names>N</given-names></name> (<year>1989</year>) <article-title>Reproduction in wild female olive baboons</article-title>. <source>Am J Primatol</source> <volume>19</volume>: <fpage>229</fpage>–<lpage>246</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Roberts1"><label>117</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Roberts</surname><given-names>EK</given-names></name>, <name name-style="western"><surname>Lu</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Bergman</surname><given-names>TJ</given-names></name>, <name name-style="western"><surname>Beehner</surname><given-names>JC</given-names></name> (<year>2012</year>) <article-title>A Bruce effect in wild geladas</article-title>. <source>Science</source> <volume>335</volume>: <fpage>1222</fpage>–<lpage>1225</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Struhsaker2"><label>118</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Struhsaker</surname><given-names>TT</given-names></name>, <name name-style="western"><surname>Pope</surname><given-names>TR</given-names></name> (<year>1991</year>) <article-title>Mating system and reproductive success: a comparison of two African forest monkeys (<italic>Colobus badius</italic> and <italic>Cercopithecus ascanius</italic>)</article-title>. <source>Behaviour</source> <volume>117</volume>: <fpage>182</fpage>–<lpage>205</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Wich1"><label>119</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wich</surname><given-names>SA</given-names></name>, <name name-style="western"><surname>Steenbeck</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Sterck</surname><given-names>EHM</given-names></name>, <name name-style="western"><surname>Korstjens</surname><given-names>AH</given-names></name>, <name name-style="western"><surname>Willems</surname><given-names>EP</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Demography and life history of Thomas langurs (<italic>Presbytis thomasi</italic>)</article-title>. <source>Am J Primatol</source> <volume>69</volume>: <fpage>641</fpage>–<lpage>651</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Koenig2"><label>120</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Koenig</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Borries</surname><given-names>C</given-names></name> (<year>2001</year>) <article-title>Socioecology of Hanuman langurs: the story of their success</article-title>. <source>Evol Anthropol</source> <volume>10</volume>: <fpage>122</fpage>–<lpage>137</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Jin1"><label>121</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jin</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Wang</surname><given-names>DZ</given-names></name>, <name name-style="western"><surname>Zhao</surname><given-names>Q</given-names></name>, <name name-style="western"><surname>Yin</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Qin</surname><given-names>D</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Reproductive parameters of wild <italic>Trachypithecus leucocephalus</italic>: seasonality, infant mortality and interbirth interval</article-title>. <source>Am J Primatol</source> <volume>71</volume>: <fpage>558</fpage>–<lpage>566</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Reichard1"><label>122</label>
+<mixed-citation publication-type="other" xlink:type="simple">Reichard UH, Ganpanakngan M, Barelli C (2012) White-handed gibbons of Khao Yai: social flexibility, complex reproductive strategies, and a slow life history. In: Kappeler PM, Watts DP, editors. Long-term field studies of primates. Berlin: Springer. 237–258.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Robbins1"><label>123</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Robbins</surname><given-names>AM</given-names></name>, <name name-style="western"><surname>Stoinski</surname><given-names>TS</given-names></name>, <name name-style="western"><surname>Fawcett</surname><given-names>KA</given-names></name>, <name name-style="western"><surname>Robbins</surname><given-names>MM</given-names></name> (<year>2009</year>) <article-title>Does dispersal cause reproductive delays in female mountain gorillas?</article-title> <source>Behaviour</source> <volume>146</volume>: <fpage>525</fpage>–<lpage>549</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Stewart1"><label>124</label>
+<mixed-citation publication-type="other" xlink:type="simple">Stewart KJ, Harcourt AH, Watts DP (1988) Determinants of fertility in wild gorillas and other primates. In: Diggory P, Potts M, Teper S, editors. Natural human fertility. London: MacMillan. 22–38.</mixed-citation>
+</ref>
+<ref id="pone.0067200-EmeryThompson1"><label>125</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Emery Thompson</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Jones</surname><given-names>JH</given-names></name>, <name name-style="western"><surname>Pusey</surname><given-names>AE</given-names></name>, <name name-style="western"><surname>Brewer-Marsden</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Goodall</surname><given-names>J</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Aging and fertility patterns in wild chimpanzees provide insights into the evolution of menopause</article-title>. <source>Curr Biol</source> <volume>17</volume>: <fpage>2150</fpage>–<lpage>2156</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Fujita1"><label>126</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fujita</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Sugiura</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Mitsunaga</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Shimizu</surname><given-names>K</given-names></name> (<year>2004</year>) <article-title>Hormone profiles and reproductive characteristics in wild female Japanese macaques (<italic>Macaca fuscata</italic>)</article-title>. <source>Am J Primatol</source> <volume>64</volume>: <fpage>367</fpage>–<lpage>375</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Nigi1"><label>127</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nigi</surname><given-names>H</given-names></name> (<year>1976</year>) <article-title>Some aspects related to conception of the Japanese monkey (<italic>Macaca fuscata</italic>)</article-title>. <source>Primates</source> <volume>17</volume>: <fpage>81</fpage>–<lpage>87</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Watanabe1"><label>128</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Watanabe</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Mori</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Kawai</surname><given-names>M</given-names></name> (<year>1992</year>) <article-title>Characteristic features of the reproduction of Koshima monkeys, <italic>Macaca fuscata fuscata</italic>: a summary of thirty-four years of observation</article-title>. <source>Primates</source> <volume>33</volume>: <fpage>1</fpage>–<lpage>32</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Koyama2"><label>129</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Koyama</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Takahata</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Huffman</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Norikoshi</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Suzuki</surname><given-names>H</given-names></name> (<year>1992</year>) <article-title>Reproductive parameters of female Japanese macaques: thirty years data from the Arashiyama troops, Japan</article-title>. <source>Primates</source> <volume>33</volume>: <fpage>33</fpage>–<lpage>47</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Kriewaldt1"><label>130</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kriewaldt</surname><given-names>FH</given-names></name>, <name name-style="western"><surname>Hendrickx</surname><given-names>AG</given-names></name> (<year>1968</year>) <article-title>Reproductive parameters of the baboon</article-title>. <source>Lab Anim Sci</source> <volume>18</volume>: <fpage>361</fpage>–<lpage>370</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Altmann1"><label>131</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Altmann</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Alberts</surname><given-names>SC</given-names></name> (<year>2005</year>) <article-title>Growth rates in a wild primate population: ecological influences and maternal effects</article-title>. <source>Behav Ecol Sociobiol</source> <volume>57</volume>: <fpage>490</fpage>–<lpage>501</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Altmann2"><label>132</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Altmann</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Alberts</surname><given-names>SC</given-names></name> (<year>2003</year>) <article-title>Variability in reproductive success viewed from a life-history perspective in baboons</article-title>. <source>Am J Hum Biol</source> <volume>15</volume>: <fpage>401</fpage>–<lpage>409</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Ziegler1"><label>133</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ziegler</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Hodges</surname><given-names>JK</given-names></name>, <name name-style="western"><surname>Winkler</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Heistermann</surname><given-names>M</given-names></name> (<year>2000</year>) <article-title>Hormonal correlates of reproductive seasonality in wild female Hanuman langurs (<italic>Presbytis entellus</italic>)</article-title>. <source>Am J Primatol</source> <volume>51</volume>: <fpage>119</fpage>–<lpage>134</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Borries3"><label>134</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Borries</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Koenig</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Winkler</surname><given-names>P</given-names></name> (<year>2001</year>) <article-title>Variation of life history traits and mating patterns in female langur monkeys (<italic>Semnopithecus entellus</italic>)</article-title>. <source>Behav Ecol Sociobiol</source> <volume>50</volume>: <fpage>391</fpage>–<lpage>402</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067200-Rajpurohit1"><label>135</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rajpurohit</surname><given-names>LS</given-names></name>, <name name-style="western"><surname>Mohnot</surname><given-names>SM</given-names></name> (<year>1991</year>) <article-title>The process of weaning in Hanuman langurs <italic>Presbytis entellus entellus</italic></article-title>. <source>Primates</source> <volume>32</volume>: <fpage>213</fpage>–<lpage>218</lpage>.</mixed-citation>
+</ref>
+</ref-list></back>
+</article>

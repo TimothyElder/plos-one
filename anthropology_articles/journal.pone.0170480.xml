@@ -1,0 +1,762 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1d3 20150301//EN" "http://jats.nlm.nih.gov/publishing/1.1d3/JATS-journalpublishing1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="1.1d3" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1371/journal.pone.0170480</article-id>
+<article-id pub-id-type="publisher-id">PONE-D-16-25009</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Pulmonology</subject><subj-group><subject>Chronic obstructive pulmonary disease</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Surgical and invasive medical procedures</subject><subj-group><subject>Cardiovascular procedures</subject><subj-group><subject>Angioplasty</subject><subj-group><subject>Coronary angioplasty</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Surgical and invasive medical procedures</subject><subj-group><subject>Digestive system procedures</subject><subj-group><subject>Colectomy</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Oncology</subject><subj-group><subject>Cancers and neoplasms</subject><subj-group><subject>Colorectal cancer</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Health care</subject><subj-group><subject>Health care facilities</subject><subj-group><subject>Hospitals</subject><subj-group><subject>Hospitalizations</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Cultural anthropology</subject><subj-group><subject>Geographic and national differences</subject><subj-group><subject>Geographic and national differences in health care</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Health care</subject><subj-group><subject>Geographic and national differences in health care</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Vascular medicine</subject><subj-group><subject>Coronary heart disease</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Cardiology</subject><subj-group><subject>Coronary heart disease</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Health care</subject><subj-group><subject>Health care policy</subject></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Applying spatio-temporal models to assess variations across health care areas and regions: Lessons from the decentralized Spanish National Health System</article-title>
+<alt-title alt-title-type="running-head">Applying spatio-temporal models to assess health care variations</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Librero</surname>
+<given-names>Julián</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<contrib-id authenticated="true" contrib-id-type="orcid">http://orcid.org/0000-0002-7797-4845</contrib-id>
+<name name-style="western">
+<surname>Ibañez</surname>
+<given-names>Berta</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Martínez-Lizaga</surname>
+<given-names>Natalia</given-names>
+</name>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Peiró</surname>
+<given-names>Salvador</given-names>
+</name>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+<xref ref-type="aff" rid="aff004"><sup>4</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Bernal-Delgado</surname>
+<given-names>Enrique</given-names>
+</name>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<collab>on behalf of the Spanish Atlas of Medical Practice Variation Research Group</collab>
+<xref ref-type="fn" rid="fn001"><sup>¶</sup></xref>
+</contrib>
+</contrib-group>
+<aff id="aff001"><label>1</label> <addr-line>Navarrabiomed—Fundación Miguel Servet, Pamplona, Spain</addr-line></aff>
+<aff id="aff002"><label>2</label> <addr-line>Red de Investigación en Servicios de Salud en Enfermedades Crónicas (REDISSEC), Bilbao, Spain</addr-line></aff>
+<aff id="aff003"><label>3</label> <addr-line>Instituto Aragonés de Ciencias de la Salud, IIS Aragón, Zaragoza, Spain</addr-line></aff>
+<aff id="aff004"><label>4</label> <addr-line>Centro Superior de Investigación en Salud Pública (CSISP-FISABIO), Valencia, Spain</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Faragher</surname>
+<given-names>Eric Brian</given-names>
+</name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Liverpool School of Tropical Medicine, UNITED KINGDOM</addr-line></aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<fn fn-type="con">
+<p><list list-type="simple"> <list-item><p><bold>Conceptualization:</bold> EB JL BI SP NM.</p></list-item> <list-item><p><bold>Data curation:</bold> NM JL.</p></list-item> <list-item><p><bold>Formal analysis:</bold> JL BI.</p></list-item> <list-item><p><bold>Funding acquisition:</bold> EB SP.</p></list-item> <list-item><p><bold>Investigation:</bold> JL BI EB NM SP.</p></list-item> <list-item><p><bold>Methodology:</bold> JL BI.</p></list-item> <list-item><p><bold>Project administration:</bold> EB SP.</p></list-item> <list-item><p><bold>Resources:</bold> EB SP.</p></list-item> <list-item><p><bold>Software:</bold> JL.</p></list-item> <list-item><p><bold>Supervision:</bold> BI NM.</p></list-item> <list-item><p><bold>Validation:</bold> JL BI.</p></list-item> <list-item><p><bold>Visualization:</bold> JL.</p></list-item> <list-item><p><bold>Writing – original draft:</bold> EB JL BI SP NM.</p></list-item> <list-item><p><bold>Writing – review &amp; editing:</bold> EB JL BI SP NM.</p></list-item></list>
+</p>
+</fn>
+<fn fn-type="other" id="fn001">
+<p>¶ Membership of the Spanish Atlas of Medical Practice Variation Research Group is provided in <xref ref-type="supplementary-material" rid="pone.0170480.s001">S1 File</xref>.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">berta.ibanez.beroiz@navarra.es</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<day>6</day>
+<month>2</month>
+<year>2017</year>
+</pub-date>
+<pub-date pub-type="collection">
+<year>2017</year>
+</pub-date>
+<volume>12</volume>
+<issue>2</issue>
+<elocation-id>e0170480</elocation-id>
+<history>
+<date date-type="received">
+<day>8</day>
+<month>7</month>
+<year>2016</year>
+</date>
+<date date-type="accepted">
+<day>5</day>
+<month>1</month>
+<year>2017</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2017</copyright-year>
+<copyright-holder>Librero et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0170480"/>
+<abstract>
+<sec id="sec001">
+<title>Objective</title>
+<p>To illustrate the ability of hierarchical Bayesian spatio-temporal models in capturing different geo-temporal structures in order to explain hospital risk variations using three different conditions: Percutaneous Coronary Intervention (PCI), Colectomy in Colorectal Cancer (CCC) and Chronic Obstructive Pulmonary Disease (COPD).</p>
+</sec>
+<sec id="sec002">
+<title>Research design</title>
+<p>This is an observational population-based spatio-temporal study, from 2002 to 2013, with a two-level geographical structure, Autonomous Communities (AC) and Health Care Areas (HA).</p>
+</sec>
+<sec id="sec003">
+<title>Setting</title>
+<p>The Spanish National Health System, a quasi-federal structure with 17 regional governments (AC) with full responsibility in planning and financing, and 203 HA providing hospital and primary care to a defined population.</p>
+</sec>
+<sec id="sec004">
+<title>Methods</title>
+<p>A poisson-log normal mixed model in the Bayesian framework was fitted using the INLA efficient estimation procedure.</p>
+</sec>
+<sec id="sec005">
+<title>Measures</title>
+<p>The spatio-temporal hospitalization relative risks, the evolution of their variation, and the relative contribution (fraction of variation) of each of the model components (AC, HA, year and interaction AC-year).</p>
+</sec>
+<sec id="sec006">
+<title>Results</title>
+<p>Following PCI-CCC-CODP order, the three conditions show differences in the initial hospitalization rates (from 4 to 21 per 10,000 person-years) and in their trends (upward, inverted V shape, downward). Most of the risk variation is captured by phenomena occurring at the HA level (fraction variance: 51.6, 54.7 and 56.9%). At AC level, the risk of PCI hospitalization follow a heterogeneous ascending dynamic (interaction AC-year: 17.7%), whereas in COPD the AC role is more homogenous and important (37%).</p>
+</sec>
+<sec id="sec007">
+<title>Conclusions</title>
+<p>In a system where the decisions loci are differentiated, the spatio-temporal modeling allows to assess the dynamic relative role of different levels of decision and their influence on health outcomes.</p>
+</sec>
+</abstract>
+<funding-group>
+<award-group id="award001">
+<funding-source>
+<institution-wrap>
+<institution-id institution-id-type="funder-id">http://dx.doi.org/10.13039/501100004587</institution-id>
+<institution>Instituto de Salud Carlos III</institution>
+</institution-wrap>
+</funding-source>
+<award-id>PI08/90255</award-id>
+<principal-award-recipient>
+<name name-style="western">
+<surname>Bernal-Delgado</surname>
+<given-names>Enrique</given-names>
+</name>
+</principal-award-recipient>
+</award-group>
+<award-group id="award002">
+<funding-source>
+<institution-wrap>
+<institution-id institution-id-type="funder-id">http://dx.doi.org/10.13039/501100004587</institution-id>
+<institution>Instituto de Salud Carlos III</institution>
+</institution-wrap>
+</funding-source>
+<award-id>PI10/00494</award-id>
+<principal-award-recipient>
+<name name-style="western">
+<surname>Bernal-Delgado</surname>
+<given-names>Enrique</given-names>
+</name>
+</principal-award-recipient>
+</award-group>
+<award-group id="award003">
+<funding-source>
+<institution-wrap>
+<institution-id institution-id-type="funder-id">http://dx.doi.org/10.13039/501100004587</institution-id>
+<institution>Instituto de Salud Carlos III</institution>
+</institution-wrap>
+</funding-source>
+<award-id>PI14/00786</award-id>
+<principal-award-recipient>
+<name name-style="western">
+<surname>Bernal-Delgado</surname>
+<given-names>Enrique</given-names>
+</name>
+</principal-award-recipient>
+</award-group>
+<award-group id="award004">
+<funding-source>
+<institution>Instituto de Salud Carlos III, Spanish Ministry of Health, co-financed by European Regional Development Fund</institution>
+</funding-source>
+<award-id>RD12/0001</award-id>
+<principal-award-recipient>
+<name name-style="western">
+<surname>Bernal-Delgado</surname>
+<given-names>Enrique</given-names>
+</name>
+</principal-award-recipient>
+</award-group>
+<funding-statement>This study is part of the Atlas of Medical Practice Variation in the Spanish National Health System research project, funded by the Instituto de Salud Carlos III (Grants PI08/90255, PI10/00494, PI14/00786), and the Spanish thematic network Red de Investigación en Servicios de Salud en Enfermedades Crónicas (REDISSEC, grant RD12/0001 from the Instituto de Salud Carlos III, Spanish Ministry of Health, co-financed by the European Regional Development Fund). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="5"/>
+<table-count count="2"/>
+<page-count count="12"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability">
+<meta-name>Data Availability</meta-name>
+<meta-value>All data files are available in <ext-link ext-link-type="uri" xlink:href="http://www.atlasvpm.org/articulos" xlink:type="simple">http://www.atlasvpm.org/articulos</ext-link> and <ext-link ext-link-type="uri" xlink:href="https://dx.doi.org/10.6084/m9.figshare.4585042" xlink:type="simple">https://dx.doi.org/10.6084/m9.figshare.4585042</ext-link>.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec008" sec-type="intro">
+<title>Introduction</title>
+<p>There is growing need for the assessment of health systems performance as a mean to improve their effectiveness, resilience and sustainability. Typically, the focus of performance analyses is put on country-average (at the most regional analyses) where measures talk about care provision, mainly, hospital care [<xref ref-type="bibr" rid="pone.0170480.ref001">1</xref>]. However, the study of variations in performance attributable to different decision levels is getting momentum [<xref ref-type="bibr" rid="pone.0170480.ref002">2</xref>–<xref ref-type="bibr" rid="pone.0170480.ref004">4</xref>] overtaken the classical country-average oriented approach present in international reporting and turning the emphasis into the analysis of variations at sub-country (e.g. regions) and sub-regional levels (e.g., health care areas).</p>
+<p>Classical methods for the study of geographic variations in health care performance assume: 1) independence between neighbouring areas (i.e., performance in area x does not depend on performance in area y); 2) independence across areas within a region (i.e., no existence of regional contextual phenomena affecting areas, differential across regions); 3) time-independence (i.e., performance in an area x in t, is independent of performance in t-1); and, 4) over the years, performance evolution is deemed homogeneous across areas or regions (i.e., time-dependent phenomena spread homogeneously). However, looking at how actually systems are organized and perform, it is hard to adopt those assumptions when estimating health system performance, particularly in decentralized systems. Such an assumption would imply to accept that, for example: a) differences in the standardized rate of percutaneous coronary interventions across areas are exclusively attributable to phenomena confined to the area, (i.e., omitting that all the areas might be served by the same catheterization laboratory); b), the epidemiology of coronary disease is not shared by neighbour areas; c) the adoption of new tech or the learning curves does not exist; or d) that there are no healthcare policies affecting similarly all the areas within a region [<xref ref-type="bibr" rid="pone.0170480.ref005">5</xref>–<xref ref-type="bibr" rid="pone.0170480.ref007">7</xref>].</p>
+<p>The Spanish National Health System (SNHS) is one of these quasi-federal decentralized systems [<xref ref-type="bibr" rid="pone.0170480.ref008">8</xref>,<xref ref-type="bibr" rid="pone.0170480.ref009">9</xref>], where 17 regional governments have full responsibility on policy-making, planning and financing at regional level, and in turn, each region is organized in health care areas (HA), the locus for hospital <italic>and primary care</italic> provision. Hence, regions build a second spatial grid, and it is of interest to assess their influence on the level and the dynamic of some health outcomes such as hospitalization risks.</p>
+<p>Using three different conditions, this paper shows the application of well known disease-mapping methodology to thoroughly describe spatio-temporal hospitalization risks, overcoming some of the aforementioned hindrances, while taking into consideration the spatiotemporal structure of the phenomena under study and different sources of variation: regional level (Autonomous Community, AC), health care areas (HA) level, and time phenomena that homogeneously occurs across regions (average behaviour) or unevenly across regions (interaction), over a period of time.</p>
+</sec>
+<sec id="sec009" sec-type="materials|methods">
+<title>Methods</title>
+<sec id="sec010">
+<title>Design</title>
+<p>This is a population-based spatio-temporal study with a two-level geographical structure; the first composed of the HA and the second of the AC.</p>
+</sec>
+<sec id="sec011">
+<title>Setting</title>
+<p>The Spanish National Health System (SNHS) is an almost universal system with a decentralized structure of 17 regional National Health Services administered by the 17 Autonomous Governments of the Spanish regions [<xref ref-type="bibr" rid="pone.0170480.ref008">8</xref>,<xref ref-type="bibr" rid="pone.0170480.ref009">9</xref>]. Regional services manages an extensive network of hospitals (about 75% of acute hospital beds in Spain), and specialized outpatient and primary healthcare centres. In 2013 the SNHS was organized into 203 HAs, geographical territories –50% of them between 80.000 and 263.000; median 159,000 inhabitants–served by one hospital that provides specialized inpatient and outpatient care to the residents in its area. The strong hierarchy (HAs are nested into AC) and the neat differentiation of roles between both geographic levels provide an empirical context wherein the properties of this kind of analysis can be safely assessed.</p>
+</sec>
+<sec id="sec012">
+<title>Main outcome measures</title>
+<p>Main outcome measures are the spatio-temporal hospitalization relative risks, the evolution of the variation, and the relative contribution (<italic>i</italic>.<italic>e</italic>., fraction of variation) of each of the model parameters in the explanation of the variation in hospitalization risks.</p>
+<p>For the purpose of this study, we evaluate the hospitalization risks for three selected conditions (Percutaneous Coronary Intervention (PCI), Colectomy in Colorectal Cancer (CCC) and Chronic Obstructive Pulmonary Disease (COPD)), in patients aged 20 and older, discharged from 2002 to 2013. The three selected conditions illustrate how spatio-temporal modeling may capture different geo-temporal structures in the explanation of hospitalization risk variation, as the relative importance of the spatial terms (both, HAs and AC), the average-trend, and the spatio-temporal interaction (see next section).</p>
+</sec>
+<sec id="sec013">
+<title>Statistical analysis</title>
+<p>To describe the data, age and sex-standardized rates per 10,000 person-years were obtained for each <italic>i-th</italic> HA and <italic>t-th</italic> year by each condition. Standardized Hospitalization ratios were also estimated for each condition using the ratio of observed (o<sub>it</sub>) to expected (e<sub>it</sub>) cases, were expected cases per HA and year were estimated by applying the rate for the whole region and period to the population at risk of each HA. Variability among HA was quantified using both the extremal quotient excluding areas outside the percentiles 5 and 95 and the Systematic Coefficient of Variation [<xref ref-type="bibr" rid="pone.0170480.ref010">10</xref>].</p>
+</sec>
+<sec id="sec014">
+<title>Spatio-temporal analysis</title>
+<p>Several methods to model spatio-temporal data structures have been developed in the last two decades within the disease mapping framework [<xref ref-type="bibr" rid="pone.0170480.ref011">11</xref>,<xref ref-type="bibr" rid="pone.0170480.ref012">12</xref>], and nowadays are being extensively used to describe the temporal evolution of geographical patterns of mortality risk or rates [<xref ref-type="bibr" rid="pone.0170480.ref013">13</xref>,<xref ref-type="bibr" rid="pone.0170480.ref014">14</xref>]. Whereas the most widely-used approach has been to fit spatio-temporal models formulated within a hierarchical Bayesian framework under the fully Bayes approach based on Markov Chain Monte Carlo (MCMC) methods [<xref ref-type="bibr" rid="pone.0170480.ref015">15</xref>,<xref ref-type="bibr" rid="pone.0170480.ref016">16</xref>], nowadays a novel technique called integrated nested Laplace approximations (INLA) has become an alternative estimation procedure, which overcome some of the limitations of the MCMC methods, such as the computation burden needed when tackling with high-dimension datasets [<xref ref-type="bibr" rid="pone.0170480.ref013">13</xref>,<xref ref-type="bibr" rid="pone.0170480.ref017">17</xref>,<xref ref-type="bibr" rid="pone.0170480.ref018">18</xref>].</p>
+<p>In this work a spatio-temporal model that accounts both for the spatial nested structured of dependence of the HA within the ACs and for the temporal dependence was fitted within the INLA framework. The model assumes that, conditional on the underlying relative risk <italic>r</italic><sub><italic>it</italic></sub>, the number of counts in each area and time period, o<sub>it</sub>, follows a Poisson distribution, namely,
+<disp-formula id="pone.0170480.e001">
+<alternatives>
+<graphic id="pone.0170480.e001g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0170480.e001" xlink:type="simple"/>
+<mml:math display="block" id="M1">
+<mml:msub><mml:mrow><mml:mi>o</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub><mml:mo>∼</mml:mo><mml:mi>P</mml:mi><mml:mi>o</mml:mi><mml:mi>i</mml:mi><mml:mi>s</mml:mi><mml:mi>s</mml:mi><mml:mi>o</mml:mi><mml:mi>n</mml:mi><mml:mspace width="0.25em"/><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mi>μ</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:msub><mml:mrow><mml:mi>e</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub><mml:msub><mml:mrow><mml:mi>r</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo>)</mml:mo><mml:mo>;</mml:mo><mml:mspace width="1em"/><mml:mi>l</mml:mi><mml:mi>o</mml:mi><mml:mi>g</mml:mi><mml:msub><mml:mrow><mml:mspace width="0.25em"/><mml:mi>μ</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mrow><mml:mrow><mml:mi mathvariant="normal">log</mml:mi></mml:mrow><mml:mspace width="0.25em"/><mml:mrow><mml:msub><mml:mrow><mml:mi>e</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mrow><mml:mo>+</mml:mo><mml:mrow><mml:mrow><mml:mi mathvariant="normal">log</mml:mi></mml:mrow><mml:mspace width="0.25em"/><mml:mrow><mml:msub><mml:mrow><mml:mi>r</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mrow>
+</mml:math>
+</alternatives>
+</disp-formula></p>
+<p>The log-risk is modeled taking into account the need of distinguishing between space (both in the AC and HA levels) and time components, and including interaction in space and time to allow each AC to have its own trajectory. More precisely, we assumed that
+<disp-formula id="pone.0170480.e002">
+<alternatives>
+<graphic id="pone.0170480.e002g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0170480.e002" xlink:type="simple"/>
+<mml:math display="block" id="M2">
+<mml:mrow><mml:mrow><mml:mi mathvariant="normal">log</mml:mi></mml:mrow><mml:mspace width="0.25em"/><mml:mrow><mml:msub><mml:mrow><mml:mi>r</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mi>β</mml:mi><mml:mo>+</mml:mo><mml:msub><mml:mrow><mml:mi>u</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>(</mml:mo><mml:mi>j</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mrow><mml:mi>v</mml:mi></mml:mrow><mml:mrow><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mrow><mml:mi>γ</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mrow><mml:mo>+</mml:mo><mml:msub><mml:mrow><mml:mi>δ</mml:mi></mml:mrow><mml:mrow><mml:mi>j</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub><mml:mo>,</mml:mo>
+</mml:math>
+</alternatives>
+</disp-formula>
+where <italic>β</italic> is an overall risk level, <italic>u</italic><sub><italic>i</italic>(<italic>j</italic>)</sub> represents the spatial level for the i-th HA area which belongs to the j-th AC region, <italic>v</italic><sub><italic>j</italic></sub> represents the spatial level for the j-th AC region, <italic>γ</italic><sub><italic>t</italic></sub> denotes temporal effects, and <italic>δ</italic><sub><italic>jt</italic></sub> are space-time interaction effects. Gaussian exchangeable distributions were assumed for the spatial random effects <bold><italic>u</italic></bold> and <bold><italic>v</italic></bold>, whereas for the temporal effect <bold><italic>γ</italic></bold>, a dynamic neighboring structure using a random walk of order 1, was used. That means that in space, each HA may have its own risk, but all HA within an AC region share a common spatial effect, whereas in time, each year has two neighbors, the previous point and the following one, except for the first and last year, which only depends on one. For the interaction term <italic>δ</italic>, we assume that the effects <bold><italic>v</italic></bold> and <bold><italic>γ</italic></bold> interact assuming an exchangeable distribution, <italic>δ</italic><sub><italic>jt</italic></sub> ∼ <italic>N</italic>(0,<italic>τ</italic><sub><italic>δ</italic></sub>), with <italic>τ</italic><sub><italic>δ</italic></sub> the precision parameter of the random effect. Minimally informative priors were specified on the log of the precision parameters, log(<italic>τ</italic>) ∼<italic>logGamma</italic>(1,0.0005). Calibration of the model was performed using the probability integral transform histogram [<xref ref-type="bibr" rid="pone.0170480.ref019">19</xref>]. The evolution of the variation was assessed using the estimation of risks variance in each year. Lastly, the relative contribution of each model component was assessed throughout the estimation of the fractions of variance. Sensitivity analyses were also conducted to determine the effect of observations with singular behavior on the different fractions of variation.</p>
+<p>In summary, the model we fitted allows to assess the heterogeneity in the regional dynamic of hospitalization risks. Other specifications could be adopted to assess related research questions. For comparative purposes, we also fitted an alternative model which incorporates the neighborhood structure in the estimation procedure. We visually compared their latent components and assessed the agreement between the results of both models using the Intraclass Correlation Coeficient (ICC) for the estimated relative risks. Details of the model and of the comparison study are given in <xref ref-type="supplementary-material" rid="pone.0170480.s002">S2 File</xref>).</p>
+<p>Codes of the statistical analyses are available at <ext-link ext-link-type="uri" xlink:href="https://dx.doi.org/10.6084/m9.figshare.4585042" xlink:type="simple">https://dx.doi.org/10.6084/m9.figshare.4585042</ext-link>. All analysis and graphs were performed in R, version 3.2.3, and models were implemented in this program via the library R-INLA, available on the website <ext-link ext-link-type="uri" xlink:href="http://www.r-inla.org/" xlink:type="simple">http://www.r-inla.org</ext-link>.</p>
+</sec>
+<sec id="sec015">
+<title>Sources of data</title>
+<p>We used data from the Atlas of Variations in Medical Practice in the SNHS (namely, “AtlasVPM”), a research project designed to inform Spanish decision-makers on unwarranted variations in health care performance (see <ext-link ext-link-type="uri" xlink:href="http://www://atlasvpm.org" xlink:type="simple">www://atlasvpm.org</ext-link>). The project build upon administrative data on hospital admissions, which provides clinical and socio-demographic information on all hospital discharges in the SNHS, including diagnoses and procedures, coded according to the International Classification of Diseases 9<sup>th</sup> revision Clinical Modification. Post-codes were used to allocate every admission to the Healthcare Area where the patient lives. Population data were extracted from the Spanish National Institute of Statistics’ Municipal Register of Inhabitants for each year. Datasets available at <ext-link ext-link-type="uri" xlink:href="http://www.atlasvpm.org/articulos" xlink:type="simple">http://www.atlasvpm.org/articulos</ext-link></p>
+</sec>
+<sec id="sec016">
+<title>Ethical aspects</title>
+<p>This study, observational in design, uses retrospective anonymized non-identifiable and non-traceable data, and was conducted in accordance with the amended Helsinki Declaration, the International Guidelines for Ethical Review of Epidemiological Studies, and Spanish laws on data protection and patients’ rights. The study was reviewed and approved by the Clinical Research Ethics Committee of Aragon (CEICA), who waived the need for written informed consent from the participants.</p>
+</sec>
+</sec>
+<sec id="sec017" sec-type="results">
+<title>Results</title>
+<p>The evolution of the population risk of hospitalization for each condition is shown in <xref ref-type="table" rid="pone.0170480.t001">Table 1</xref>. For CCC, the age and sex-standardized rates per 10,000 person-years keep around 4 along the whole period, whereas for COPD they declined from 21 to 15 and for PCI they rose from 8 to 13. Classical variation statistics show low and constant geographical variability in CCC, and high initial geographical variability that diminished in PCI and CODP.</p>
+<table-wrap id="pone.0170480.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0170480.t001</object-id>
+<label>Table 1</label> <caption><title>Number of cases, admission rates per 10,000 person-years and variation statistics for each condition and year.</title></caption>
+<alternatives>
+<graphic id="pone.0170480.t001g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0170480.t001" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left"/>
+<th align="right">2002</th>
+<th align="center">2003</th>
+<th align="right">2004</th>
+<th align="center">2005</th>
+<th align="right">2006</th>
+<th align="right">2007</th>
+<th align="right">2008</th>
+<th align="right">2009</th>
+<th align="center">2010</th>
+<th align="right">2011</th>
+<th align="right">2012</th>
+<th align="right">2013</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><bold>PCI</bold></td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="right">cases</td>
+<td align="right">27,566</td>
+<td align="center">31,919</td>
+<td align="right">35,837</td>
+<td align="center">39,621</td>
+<td align="right">42,696</td>
+<td align="right">45,317</td>
+<td align="right">44,656</td>
+<td align="right">48,184</td>
+<td align="center">51,695</td>
+<td align="right">49,935</td>
+<td align="right">51,033</td>
+<td align="right">53,372</td>
+</tr>
+<tr>
+<td align="right">rates</td>
+<td align="right">7.70</td>
+<td align="center">8.74</td>
+<td align="right">9.68</td>
+<td align="center">10.48</td>
+<td align="right">11.12</td>
+<td align="right">11.67</td>
+<td align="right">11.31</td>
+<td align="right">12.10</td>
+<td align="center">12.94</td>
+<td align="right">12.47</td>
+<td align="right">12.74</td>
+<td align="right">13.37</td>
+</tr>
+<tr>
+<td align="right">EQ<sub>5-95</sub></td>
+<td align="right">6.44</td>
+<td align="center">4.60</td>
+<td align="right">4.45</td>
+<td align="center">4.62</td>
+<td align="right">5.13</td>
+<td align="right">4.70</td>
+<td align="right">5.83</td>
+<td align="right">3.86</td>
+<td align="center">4.19</td>
+<td align="right">4.47</td>
+<td align="right">3.58</td>
+<td align="right">3.27</td>
+</tr>
+<tr>
+<td align="right">SCV</td>
+<td align="right">0.20</td>
+<td align="center">0.18</td>
+<td align="right">0.18</td>
+<td align="center">0.19</td>
+<td align="right">0.19</td>
+<td align="right">0.19</td>
+<td align="right">0.21</td>
+<td align="right">0.17</td>
+<td align="center">0.14</td>
+<td align="right">0.12</td>
+<td align="right">0.10</td>
+<td align="right">0.08</td>
+</tr>
+<tr>
+<td align="left"><bold>CCC</bold></td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="right">cases</td>
+<td align="right">14,990</td>
+<td align="center">16,055</td>
+<td align="right">16,652</td>
+<td align="center">17,258</td>
+<td align="right">17,773</td>
+<td align="right">18,673</td>
+<td align="right">19,217</td>
+<td align="right">20,311</td>
+<td align="center">17,153</td>
+<td align="right">17,347</td>
+<td align="right">16,797</td>
+<td align="right">16,973</td>
+</tr>
+<tr>
+<td align="right">rates</td>
+<td align="right">4.19</td>
+<td align="center">4.39</td>
+<td align="right">4.50</td>
+<td align="center">4.57</td>
+<td align="right">4.63</td>
+<td align="right">4.81</td>
+<td align="right">4.87</td>
+<td align="right">5.10</td>
+<td align="center">4.29</td>
+<td align="right">4.33</td>
+<td align="right">4.19</td>
+<td align="right">4.25</td>
+</tr>
+<tr>
+<td align="right">EQ<sub>5-95</sub></td>
+<td align="right">2.76</td>
+<td align="center">2.36</td>
+<td align="right">2.26</td>
+<td align="center">2.18</td>
+<td align="right">2.37</td>
+<td align="right">2.02</td>
+<td align="right">2.02</td>
+<td align="right">2.00</td>
+<td align="center">2.09</td>
+<td align="right">2.12</td>
+<td align="right">2.42</td>
+<td align="right">2.32</td>
+</tr>
+<tr>
+<td align="right">SCV</td>
+<td align="right">0.06</td>
+<td align="center">0.04</td>
+<td align="right">0.04</td>
+<td align="center">0.02</td>
+<td align="right">0.07</td>
+<td align="right">0.03</td>
+<td align="right">0.03</td>
+<td align="right">0.03</td>
+<td align="center">0.03</td>
+<td align="right">0.03</td>
+<td align="right">0.04</td>
+<td align="right">0.04</td>
+</tr>
+<tr>
+<td align="left"><bold>COPD</bold></td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="right">cases</td>
+<td align="right">75,084</td>
+<td align="center">77,935</td>
+<td align="right">72,333</td>
+<td align="center">80,081</td>
+<td align="right">68,667</td>
+<td align="right">77,255</td>
+<td align="right">72,698</td>
+<td align="right">71,012</td>
+<td align="center">64,625</td>
+<td align="right">65,373</td>
+<td align="right">65,005</td>
+<td align="right">61,393</td>
+</tr>
+<tr>
+<td align="right">rates</td>
+<td align="right">20.98</td>
+<td align="center">21.33</td>
+<td align="right">19.54</td>
+<td align="center">21.19</td>
+<td align="right">17.88</td>
+<td align="right">19.89</td>
+<td align="right">18.41</td>
+<td align="right">17.84</td>
+<td align="center">16.17</td>
+<td align="right">16.32</td>
+<td align="right">16.22</td>
+<td align="right">15.38</td>
+</tr>
+<tr>
+<td align="right">EQ<sub>5-95</sub></td>
+<td align="right">6.86</td>
+<td align="center">4.97</td>
+<td align="right">5.57</td>
+<td align="center">4.96</td>
+<td align="right">4.67</td>
+<td align="right">4.75</td>
+<td align="right">4.53</td>
+<td align="right">5.10</td>
+<td align="center">4.71</td>
+<td align="right">4.49</td>
+<td align="right">4.22</td>
+<td align="right">4.61</td>
+</tr>
+<tr>
+<td align="right">SCV</td>
+<td align="right">0.29</td>
+<td align="center">0.24</td>
+<td align="right">0.23</td>
+<td align="center">0.23</td>
+<td align="right">0.23</td>
+<td align="right">0.23</td>
+<td align="right">0.19</td>
+<td align="right">0.19</td>
+<td align="center">0.20</td>
+<td align="right">0.16</td>
+<td align="right">0.18</td>
+<td align="right">0.16</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t001fn001"><p><bold>PCI</bold>: Percutaneous Coronary Inervention; <bold>CCC</bold>: Colectomy in colorectal cancer; <bold>COPD</bold>: Chronic Obstructive Pulmonary Disease; <bold>EQ</bold><sub><bold>5-95</bold></sub>: Extremal Quotient; <bold>SCV:</bold> Systematic Coefficient of Variation.</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<p><xref ref-type="fig" rid="pone.0170480.g001">Fig 1</xref> shows the spatial component in the variation of hospitalization risks and the average time evolution of risks: AC (<italic>v</italic><sub><italic>j</italic></sub>), joint HA plus AC (<italic>u</italic><sub><italic>i</italic>(<italic>j</italic>)</sub> + <italic>v</italic><sub><italic>j</italic></sub>) level, and average time (<italic>γ</italic><sub><italic>t</italic></sub>), for each condition. In the upper row, unlike PCI and COPD, the homogeneity of risk ratios in CCC at AC level is noticeable, with only 6 out of 17 ACs with risk ratios slightly over or below 1. In the middle row, hospitalization risks show rather scattered patterns in PCI and COPD, less obvious in CCC. The joint observation suggests a higher contribution of HA fraction in the explanation of the three conditions, and a lower contribution of the AC fraction in CCC. With regard to time component, PCI and COPD exhibited opposite quasi-lineal trends; in turn, CCC shows an inverted-V shape with a time trend change in 2010. In average, the magnitude of variation in risks in the time component is lower (maximum range of risk values for exp(<italic>γ</italic><sub><italic>t</italic></sub>) between 0.76 to 1.20) than that observed in the spatial components (maximum range between 0.25 to 2.44).</p>
+<fig id="pone.0170480.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0170480.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>Hospitalization risk maps of the spatial region effect -upper row, exp(<italic>v</italic><sub><italic>j</italic></sub>)- and of the global spatial component -middle row, exp(<italic>v</italic><sub><italic>j</italic></sub> + <italic>u</italic><sub><italic>i</italic>(<italic>j</italic>)</sub>)- for Percutaneous Coronary Intervention (PCI; left), Colectomy in Colorectal Cancer (CCC; middle) and Chronic Obstructive Pulmonary Disease (COPD, right).</title>
+<p>At the bottom row, the average temporal trend exp (<italic>γ</italic><sub><italic>t</italic></sub>) (2002–2013).</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0170480.g001" xlink:type="simple"/>
+</fig>
+<p>In <xref ref-type="fig" rid="pone.0170480.g002">Fig 2</xref> (exp(<italic>v</italic><sub><italic>j</italic></sub> + <italic>γ</italic><sub><italic>t</italic></sub> + <italic>δ</italic><sub><italic>jt</italic></sub>)), a different evolution across ACs is observed. This finding points out to a heterogeneous regional behaviour of hospitalization risks beyond the average. While in CCC and COPD the trend shape is fairly homogenous in all ACs (COPD decreasing and CCC inverted-V), in the case of PCI the trend shape is observed to vary across ACs.</p>
+<fig id="pone.0170480.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0170480.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>Temporal trends for hospitalization risks—exp(<italic>v</italic><sub><italic>j</italic></sub> + <italic>γ</italic><sub><italic>t</italic></sub> + <italic>δ</italic><sub><italic>jt</italic></sub>)—in each of the 17 regions along 2002–2013 for Percutaneous Coronary Intervention (PCI; upper row), Colectomy in Colorectal Cancer (CCC; middle row) and Chronic Obstructive Pulmonary Disease (COPD; lower row).</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0170480.g002" xlink:type="simple"/>
+</fig>
+<p>In Figs <xref ref-type="fig" rid="pone.0170480.g003">3</xref> to <xref ref-type="fig" rid="pone.0170480.g005">5</xref>, global risk patterns including spatial (HA and AC) and temporal parameters (average trend and interaction term) are shown (exp(<italic>β</italic> + <italic>u</italic><sub><italic>i</italic>(<italic>j</italic>)</sub> + <italic>v</italic><sub><italic>j</italic></sub> + <italic>γ</italic><sub><italic>t</italic></sub> + <italic>δ</italic><sub><italic>jt</italic></sub>)) for each condition. For PCI (<xref ref-type="fig" rid="pone.0170480.g003">Fig 3</xref>), although green colours are predominant at the beginning of the period as a reflection of low and relatively homogeneous hospitalization risks, the pattern scatters at the middle of the period and it holds until the end of it. In accordance, variability in spatial risks (yearly risk variance) slightly grows up from the 0.068 in 2002 to the 0.113 in 2013 (data not shown). In the case of CCC (<xref ref-type="fig" rid="pone.0170480.g004">Fig 4</xref>), the inverted U-shape of the average trend is observed, with light green colours at the two extremes of the series, while the hospitalization risks appear less scattered than PCI, and an AC-wise pattern is observed in the central years of the series, pointing out to a more prominent effect of ACs at the moment. Variability for CCC risks practically holds between 2002 to 2008 (0.032 to 0.034, respectively), to sharply decrease to 0.018 by 2013. In COPD (<xref ref-type="fig" rid="pone.0170480.g005">Fig 5</xref>), in turn, a stronger AC-wise pattern with notable heterogeneity across HAs is observed the first years, diluting over time to converge to a green coloured map that reflects the decreasing average trend on hospitalization risks. The evolution of the risk variation for COPD is, therefore, drastically reduced along time, from 0.326 in 2002 to 0.098 in 2013.</p>
+<fig id="pone.0170480.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0170480.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>Space-time relative risk estimates (exp(<italic>β</italic> + <italic>u</italic><sub><italic>i</italic>(<italic>j</italic>)</sub> + <italic>v</italic><sub><italic>j</italic></sub> + <italic>γ</italic><sub><italic>t</italic></sub> + <italic>δ</italic><sub><italic>jt</italic></sub>)) for Percutaneous Coronary Intervention (PCI).</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0170480.g003" xlink:type="simple"/>
+</fig>
+<fig id="pone.0170480.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0170480.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title>Space-time relative risk estimates (exp(<italic>β</italic> + <italic>u</italic><sub><italic>i</italic>(<italic>j</italic>)</sub> + <italic>v</italic><sub><italic>j</italic></sub> + <italic>γ</italic><sub><italic>t</italic></sub> + <italic>δ</italic><sub><italic>jt</italic></sub>)) for Colectomy in Colorectal Cancer (CCC).</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0170480.g004" xlink:type="simple"/>
+</fig>
+<fig id="pone.0170480.g005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0170480.g005</object-id>
+<label>Fig 5</label>
+<caption>
+<title>Chronic Obstructive Pulmonary Disease (COPD) admissions along 2002–2013.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0170480.g005" xlink:type="simple"/>
+</fig>
+<p><xref ref-type="table" rid="pone.0170480.t002">Table 2</xref> shows the variance decomposition across the three conditions. Consistent with the observations in Figs <xref ref-type="fig" rid="pone.0170480.g001">1</xref> to <xref ref-type="fig" rid="pone.0170480.g005">5</xref>, most of the variation is captured by phenomena occurring at HA level (51.6% in PCI, 54.7% in colectomy, and 56.9% in COPD). Interestingly, the distribution of variance varies significantly across conditions. In PCI the spatio-temporal interaction (i.e., the different behaviour of ACs over time) explained a 17.7% of the variation, almost two-fold the explanation of CCC variance and almost 6 times that one for COPD, consistent with what it is observed in <xref ref-type="fig" rid="pone.0170480.g002">Fig 2</xref>. In COPD, the spatial effect at AC level implied a higher fraction of variation (37%). In CCC, the global temporal trend (i.e., average behaviour) showed a fairly higher impact in the explanation of variation, in accordance to its inverted-V shape, widespread observed across regions.</p>
+<table-wrap id="pone.0170480.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0170480.t002</object-id>
+<label>Table 2</label> <caption><title>Variance decomposition according to the model fitted per each condition (left hand side) and sensibility analysis excluding regions with singular behavior.</title></caption>
+<alternatives>
+<graphic id="pone.0170480.t002g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0170480.t002" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="justify"/>
+<th align="justify" colspan="3">With all regions</th>
+<th align="justify" colspan="2">Excluding singular values</th>
+</tr>
+<tr>
+<th align="justify"/>
+<th align="justify">PCI</th>
+<th align="justify">CCC</th>
+<th align="justify">COPD</th>
+<th align="justify">PCI<sub>(Cav, Mur)</sub></th>
+<th align="justify">COPD<sub>(Can)</sub></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="justify"><bold>Spatial HA </bold></td>
+<td align="justify">51.6%</td>
+<td align="justify">54.7%</td>
+<td align="justify">56.9%</td>
+<td align="justify">70.1%</td>
+<td align="justify">67.3%</td>
+</tr>
+<tr>
+<td align="justify"><bold>Spatial AC</bold></td>
+<td align="justify">28.6%</td>
+<td align="justify">26.6%</td>
+<td align="justify">37.0%</td>
+<td align="justify">12.4%</td>
+<td align="justify">25.3%</td>
+</tr>
+<tr>
+<td align="justify"><bold>Temporal </bold></td>
+<td align="justify">2.1%</td>
+<td align="justify">9.1%</td>
+<td align="justify">3.0%</td>
+<td align="justify">2.8%</td>
+<td align="justify">3.7%</td>
+</tr>
+<tr>
+<td align="justify"><bold>Spatio-temp</bold></td>
+<td align="justify">17.7%</td>
+<td align="justify">9. 6%</td>
+<td align="justify">3.1%</td>
+<td align="justify">14.7%</td>
+<td align="justify">3.7%</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t002fn001"><p><bold>PCI</bold>: Percutaneous Coronary Inervention; <bold>CCC</bold>: Colectomy in colorectal cancer; <bold>COPD</bold>: Chronic Obstructive Pulmonary Disease; <bold>PCI</bold><sub><bold>(Cav, Mur</bold></sub><bold>):</bold> PCI excluding the Comunidad Autónoma Vasca and Murcia Data, <bold>COPD</bold><sub><bold>(Can)</bold></sub>: COPD excluding the Canarias Data.</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<p>Once discarded the effect of ACs with singular behaviour (in <xref ref-type="fig" rid="pone.0170480.g002">Fig 2</xref>, Cav and Mur in PCI, and Can in COPD), most of the variation of PCI was shown at HA level (70.1%) holding a significant 14.7% when it comes to the spatio-temporal interaction. In the case of COPD, figures for the spatial fractions also changed, increasing the attribution to HA (from a 56.9% to a 67.3%) and reducing the AC attribution, from a 37% to a 25.3%.</p>
+<p>Results of the model including the neighbourhood structure in the estimation procedure are given in <xref ref-type="supplementary-material" rid="pone.0170480.s002">S2 File</xref>, and show a high degree of agreement with those derived from the model presented here.</p>
+</sec>
+<sec id="sec018" sec-type="conclusions">
+<title>Discussion</title>
+<p>This empirical exercise, meant to illustrate the use of disease mapping techniques in the assessment of spatio-temporal hospitalization risks in a decentralized and hierarchically organized health care system, has yielded two lessons for the application of this technique: a) the methodology is flexible and allows to model and elicit different sources of variation; b) the methodology allows eliciting differences across conditions; and, as consequence, in a system where the decisions <italic>loci</italic> are differentiated, it allows to analyse the different levels of decision.</p>
+<sec id="sec019">
+<title>The methodology is flexible and allows modelling different sources of variation</title>
+<p>First, the wide range of model specification structures offered within the spatio-temporal framework allows us to adapt to practically any research question we may formulate and any casuistic we may encounter in practice. It may include the presence of a hierarchical geographical structure, or other spatial structures of dependence such as vicinity. It also allows for different temporal structures, from linear or quadratic parametric formulas till more relaxed forms such as autoregressive or independent, as the used in this application. And furthermore, it allows specifying different trends for different geographical areas, by means of the interaction terms that, in turn, can have different specifications [<xref ref-type="bibr" rid="pone.0170480.ref019">19</xref>]. In our case of study, the focus was to assess the influence of regional level on the dynamic of the hospitalization risk pattern, attending to the nested structure of HAs within ACs, and the chosen specification has allowed us to easily capture this latent phenomenon. As we have shown in the <xref ref-type="supplementary-material" rid="pone.0170480.s002">S2 File</xref>, it is possible to adopt other widely used specifications that account for the spatial neighborhood structure, whose results, in general terms, highly agree with those derived from our model, and that can be used to assess related research questions.</p>
+<p>Second, the methodology is able to capture the presence of geographical areas (e.g., ACs) with trajectories that substantially differ from the global dynamic structure, as it is sensible to their presence, as can be seen when looking at the impact of including them in the estimation of fractions of variance (see comments to <xref ref-type="fig" rid="pone.0170480.g002">Fig 2</xref> and <xref ref-type="table" rid="pone.0170480.t002">Table 2</xref>).</p>
+</sec>
+<sec id="sec020">
+<title>The methodology allows eliciting differences across conditions and decision levels</title>
+<p>The selection of three conditions was meant to allow the different parameters in the model to play a differential role. While the HA-spatial term is expected to capture most of the variation in any of the conditions (fairly above 50%, even higher, excluding outlier ACs), the spatio-temporal interaction term is expected to behave differently across conditions.</p>
+<p>Our results show that this methodology has been sensitive to the different underlying phenomena for these three conditions in the period of study, 2002 to 2013. As a matter of examples: 1) as expected, a higher proportion of variation attributable to the interaction term has been observed in PCI, due to the uneven adoption of innovations (i.e., primary PCI) in the last decade; 2) a smaller proportion of variation attributed the AC (spatial plus interaction) has been observed in COPD, given that decisions on how to manage these patients are mainly taken at HA level and there have not been abrupt innovations on patients’ treatment along the period of study; and 3) the average-temporal trend have had a predominant participation in the explanation of CCC variation given the sharp adoption of endoscopic treatment in the late 2000’s, as a consequence of colorectal cancer screening programs.</p>
+</sec>
+<sec id="sec021">
+<title>Caveats for its application and interpretation</title>
+<p>In spite of the properties of this methodology, the statistical research devoted to identify those geographic areas with discrepant tendencies is still limited and not easily applicable to all practical contexts. Nevertheless, there are some promising approaches on cluster detection published in recent years [<xref ref-type="bibr" rid="pone.0170480.ref020">20</xref>,<xref ref-type="bibr" rid="pone.0170480.ref021">21</xref>].</p>
+<p>On the other hand, when interpreting fractions of variation, it should also be considered that this may be influenced by the number of units of analysis (in our case 203 HA <italic>vs</italic>. 17 AC and 12 years) and the number of parameters, and further, it is relative measure that does not allow comparisons in absolute terms. So, the relatively lower effect of the average-temporal trend observed in this paper, rather than a true low impact, might reflect that the estimated temporal effect <italic>γ</italic><sub><italic>t</italic></sub> barely varies as compared to the geographical variation in <italic>u</italic><sub><italic>i</italic>(<italic>j</italic>)</sub>.</p>
+<p>And finally, results are contextual-dependent. To assess generalizability of our results (in terms, for instance, of the relative effect of each parameter in the modelling of the spatio-temporal evolution of these three conditions), replications with local data should be conducted.</p>
+</sec>
+<sec id="sec022">
+<title>Conclusion</title>
+<p>In a system where the decisions loci are differentiated, the Bayesian spatio-temporal modeling enables the assessment of the role and dynamics of different levels of decision and their influence on health care events, such as hospital admissions.</p>
+</sec>
+</sec>
+<sec id="sec023">
+<title>Supporting information</title>
+<supplementary-material id="pone.0170480.s001" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" position="float" xlink:href="info:doi/10.1371/journal.pone.0170480.s001" xlink:type="simple">
+<label>S1 File</label>
+<caption>
+<title>Spanish Atlas of Medical Practice Variation Research Group.</title>
+<p>(DOCX)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0170480.s002" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" position="float" xlink:href="info:doi/10.1371/journal.pone.0170480.s002" xlink:type="simple">
+<label>S2 File</label>
+<caption>
+<title>Comparison study between the adopted model and other possible specification accounting for the neighborhood structure.</title>
+<p>(DOCX)</p>
+</caption>
+</supplementary-material>
+</sec>
+</body>
+<back>
+<ack>
+<p>This manuscript benefits from the scientific interaction within the Atlas VPM group (Spanish Atlas of Medical Practice Variation Research Group). Authors are grateful to Tomás Goicoa, Marta Blangiardo and Miguel Ángel Martinez for their support in different methodological aspects of the estimation procedure. Authors are also thankful to Healthcare and Data Authorities who allowed access to the data used in this study.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0170480.ref001"><label>1</label><mixed-citation publication-type="book" xlink:type="simple"><collab>OECD</collab>. <source>Health at a Glance 2015: OECD Indicators, 2015</source>, <publisher-name>OECD Publishing</publisher-name>, <publisher-loc>Paris</publisher-loc>.</mixed-citation></ref>
+<ref id="pone.0170480.ref002"><label>2</label><mixed-citation publication-type="book" xlink:type="simple"><collab>OECD</collab>. <source>Geographic Variations in Health Care: What Do We Know and What Can Be Done to Improve Health System Performance?, OECD Health Policy Studies</source>, <year>2014</year>, <publisher-name>OECD Publishing</publisher-name>, <publisher-loc>Paris</publisher-loc>.</mixed-citation></ref>
+<ref id="pone.0170480.ref003"><label>3</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bernal-Delgado</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Christiansen</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Bloor</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Mateus</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Yazbeck</surname> <given-names>AM</given-names></name>, <name name-style="western"><surname>Munck</surname> <given-names>J</given-names></name>, <etal>et al</etal>: <article-title>health care performance assessment in several European health systems</article-title>. <source>Eur J Public Health</source>. <year>2015</year> <month>Feb</month>;<volume>25</volume> <issue>Suppl 1</issue>:<fpage>3</fpage>–<lpage>7</lpage>.</mixed-citation></ref>
+<ref id="pone.0170480.ref004"><label>4</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Häkkinen</surname> <given-names>U</given-names></name>, <name name-style="western"><surname>Iversen</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Peltola</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Seppälä</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Malmivaara</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Belicza</surname> <given-names>E</given-names></name>, <etal>et al</etal>. <article-title>Health care performance comparison using a disease-based approach: the EuroHOPE project</article-title>. <source>Health Policy</source>, <volume>112</volume>(<issue>1</issue>), <fpage>100</fpage>–<lpage>109</lpage></mixed-citation></ref>
+<ref id="pone.0170480.ref005"><label>5</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mohan</surname> <given-names>A V</given-names></name>, <name name-style="western"><surname>Fazel</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Huang</surname> <given-names>PH</given-names></name>, <name name-style="western"><surname>Shen</surname> <given-names>YC</given-names></name>, <name name-style="western"><surname>Howard</surname> <given-names>D</given-names></name>. <article-title>Changes in geographic variation in the use of percutaneous coronary intervention for stable ischemic heart disease after publication of the Clinical Outcomes Utilizing Revascularization and Aggressive Drug Evaluation (COURAGE) trial</article-title>. <source>Circulation: Cardiovascular Quality and Outcomes</source> <year>2014</year>: <volume>7</volume>(<issue>1</issue>); <fpage>125</fpage>–<lpage>130</lpage>.</mixed-citation></ref>
+<ref id="pone.0170480.ref006"><label>6</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gillum</surname> <given-names>RF</given-names></name>, <name name-style="western"><surname>Mehari</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Curry</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Obisesan</surname> <given-names>TO</given-names></name>. <article-title>Racial and geographic variation in coronary heart disease mortality trends</article-title>. <source>BMC Public Health</source> <year>2012</year>, <volume>12</volume>(<issue>1</issue>), <fpage>1</fpage>.</mixed-citation></ref>
+<ref id="pone.0170480.ref007"><label>7</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>McPherson</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Wennberg</surname> <given-names>JE</given-names></name>, <name name-style="western"><surname>Hovind</surname> <given-names>OB</given-names></name>, <name name-style="western"><surname>Clifford</surname> <given-names>P</given-names></name>. <article-title>Small-area variations in the use of common surgical procedures: an international comparison of New England, England, and Norway</article-title>. <source>N Engl J Med</source> <year>1982</year> <month>Nov</month> <day>18</day>;<volume>307</volume>(<issue>21</issue>):<fpage>1310</fpage>–<lpage>4</lpage> <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1056/NEJM198211183072104" xlink:type="simple">10.1056/NEJM198211183072104</ext-link></comment> <object-id pub-id-type="pmid">7133068</object-id></mixed-citation></ref>
+<ref id="pone.0170480.ref008"><label>8</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Martin-Moreno</surname> <given-names>JM</given-names></name>, <name name-style="western"><surname>Alonso</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Claveria</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Gorgojo</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Peiró</surname> <given-names>S</given-names></name>. <article-title>Spain: a decentralised health system in constant flux</article-title>. <source>BMJ</source>. <year>2009</year>;<volume>338</volume>:<fpage>b1170</fpage> <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1136/bmj.b1170" xlink:type="simple">10.1136/bmj.b1170</ext-link></comment> <object-id pub-id-type="pmid">19332452</object-id></mixed-citation></ref>
+<ref id="pone.0170480.ref009"><label>9</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>García-Armesto</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Abadía-Taira</surname> <given-names>MB</given-names></name>, <name name-style="western"><surname>Durán</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Hernández-Quevedo</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Bernal-Delgado</surname> <given-names>E</given-names></name>. <article-title>Spain: Health system review</article-title>. <source>Health Systems inTransition</source>. <year>2010</year>; <volume>12</volume>(<issue>4</issue>):<fpage>1</fpage>–<lpage>295</lpage>. Available at: <ext-link ext-link-type="uri" xlink:href="http://www.euro.who.int/__data/assets/pdf_file/0004/128830/e94549.pdf" xlink:type="simple">http://www.euro.who.int/__data/assets/pdf_file/0004/128830/e94549.pdf</ext-link>. Accessed May 9, 2016.</mixed-citation></ref>
+<ref id="pone.0170480.ref010"><label>10</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ibáñez</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Librero</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Bernal-Delgado</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Peiró</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>González</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Martínez</surname> <given-names>N</given-names></name>, <etal>et al</etal>: <article-title>Is there much variation in variation? Revisiting small area statistics used in health services research</article-title>. <source>BMC Health Serv Res</source> <year>2009</year>, <volume>9</volume>:<fpage>60</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/1472-6963-9-60" xlink:type="simple">10.1186/1472-6963-9-60</ext-link></comment> <object-id pub-id-type="pmid">19341469</object-id></mixed-citation></ref>
+<ref id="pone.0170480.ref011"><label>11</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Waller</surname> <given-names>LA</given-names></name>, <name name-style="western"><surname>Carlin</surname> <given-names>BP</given-names></name>, <name name-style="western"><surname>Xia</surname> <given-names>H</given-names></name>, and <name name-style="western"><surname>Gelfand</surname> <given-names>AE</given-names></name>. <article-title>Hierarchical spatio-temporal mapping of disease rates</article-title>. <source>Journal of the American Statistical Association</source> <year>1997</year>; <volume>92</volume>: <fpage>607</fpage>–<lpage>617</lpage>.</mixed-citation></ref>
+<ref id="pone.0170480.ref012"><label>12</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Knorr-Held</surname> <given-names>L</given-names></name>. <article-title>Bayesian modeling of inseparable space-time variation in disease risk</article-title>. <source>Statistics in medicine</source>, <year>2000</year>; <volume>19</volume>:<fpage>2555</fpage>–<lpage>67</lpage> <object-id pub-id-type="pmid">10960871</object-id></mixed-citation></ref>
+<ref id="pone.0170480.ref013"><label>13</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schrödle</surname> <given-names>B.</given-names></name>, &amp; <name name-style="western"><surname>Held</surname> <given-names>L.</given-names></name> <article-title>Spatio‐temporal disease mapping using INLA</article-title>. <source>Environmetrics</source> <year>2011</year>; <volume>22</volume>(<issue>6</issue>): <fpage>725</fpage>–<lpage>734</lpage>.</mixed-citation></ref>
+<ref id="pone.0170480.ref014"><label>14</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ugarte</surname> <given-names>MD</given-names></name>, <name name-style="western"><surname>Adin</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Goicoa</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>López-Abente</surname> <given-names>G</given-names></name>. <article-title>Analyzing the evolution of young people's brain cancer mortality in Spanish provinces</article-title>. <source>Cancer epidemiology</source> <year>2015</year>; <volume>39</volume>(<issue>3</issue>), <fpage>480</fpage>–<lpage>485</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.canep.2015.03.013" xlink:type="simple">10.1016/j.canep.2015.03.013</ext-link></comment> <object-id pub-id-type="pmid">25907644</object-id></mixed-citation></ref>
+<ref id="pone.0170480.ref015"><label>15</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Richardson</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Abellan</surname> <given-names>JJ</given-names></name>, <name name-style="western"><surname>Best</surname> <given-names>N</given-names></name>. <article-title>Bayesian spatio-temporal analysis of joint patterns of male and female lung cancer risks in Yorkshire (UK)</article-title>. <source>Statistical Methods in Medical Research</source>, <year>2006</year>; <volume>15</volume>(<issue>4</issue>): <fpage>385</fpage>–<lpage>407</lpage>. <object-id pub-id-type="pmid">16886738</object-id></mixed-citation></ref>
+<ref id="pone.0170480.ref016"><label>16</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Martínez‐Beneito</surname> <given-names>MA</given-names></name>, <name name-style="western"><surname>López‐Quilez</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Botella‐Rocamora</surname> <given-names>P</given-names></name>. <article-title>An autoregressive approach to spatio‐temporal disease mapping</article-title>. <source>Statistics in medicine</source> <year>2008</year>; <volume>27</volume>(<issue>15</issue>), <fpage>2874</fpage>–<lpage>2889</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/sim.3103" xlink:type="simple">10.1002/sim.3103</ext-link></comment> <object-id pub-id-type="pmid">17979141</object-id></mixed-citation></ref>
+<ref id="pone.0170480.ref017"><label>17</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rue</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Martino</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Chopin</surname> <given-names>N</given-names></name>. <article-title>Approximate Bayesian inference for latent Gaussian models by using integrated nested Laplace approximations</article-title>. <source>J R Stat Soc Ser B: Stat Methodol</source> <year>2009</year>;<volume>71</volume>(<issue>2</issue>):<fpage>319</fpage>–<lpage>92</lpage>.</mixed-citation></ref>
+<ref id="pone.0170480.ref018"><label>18</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Blangiardo</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Cameletti</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Baio</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Rue</surname> <given-names>H</given-names></name>. <article-title>Spatial and spatio-temporal models with R-INLA</article-title>. <source>Spatial and spatio-temporal epidemiology</source>, <volume>7</volume>, <fpage>39</fpage>–<lpage>55</lpage>. <object-id pub-id-type="pmid">24377114</object-id></mixed-citation></ref>
+<ref id="pone.0170480.ref019"><label>19</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ugarte</surname> <given-names>MD</given-names></name>, <name name-style="western"><surname>Goicoa</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Ibanez</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Militino</surname> <given-names>AF</given-names></name>. <article-title>Evaluating the performance of spatio‐temporal Bayesian models in disease mapping</article-title>. <source>Environmetrics</source> <year>2009</year>, <volume>20</volume>(<issue>6</issue>), <fpage>647</fpage>–<lpage>665</lpage>.</mixed-citation></ref>
+<ref id="pone.0170480.ref020"><label>20</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lawson</surname> <given-names>AB</given-names></name>, <name name-style="western"><surname>Song</surname> <given-names>HR</given-names></name>, <name name-style="western"><surname>Cai</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Hossain</surname> <given-names>MM</given-names></name>, <name name-style="western"><surname>Huang</surname> <given-names>K</given-names></name> <article-title>Space–time latent component modeling of geo‐referenced health data</article-title>. <source>Statistics in medicine</source> <year>2010</year>; <volume>29</volume>(<issue>19</issue>), <fpage>2012</fpage>–<lpage>2027</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/sim.3917" xlink:type="simple">10.1002/sim.3917</ext-link></comment> <object-id pub-id-type="pmid">20683893</object-id></mixed-citation></ref>
+<ref id="pone.0170480.ref021"><label>21</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Anderson</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Lee</surname> <given-names>D</given-names></name> and <name name-style="western"><surname>Dean</surname> <given-names>N</given-names></name>. <article-title>Bayesian cluster detection via adjacency modelling</article-title>. <source>Spatial and Spatio-temporal Epidemiology</source> <year>2016</year>, <volume>16</volume>, <fpage>11</fpage>–<lpage>20</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.sste.2015.11.005" xlink:type="simple">10.1016/j.sste.2015.11.005</ext-link></comment> <object-id pub-id-type="pmid">26919751</object-id></mixed-citation></ref>
+</ref-list>
+</back>
+</article>

@@ -1,0 +1,631 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1d3 20150301//EN" "http://jats.nlm.nih.gov/publishing/1.1d3/JATS-journalpublishing1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="1.1d3" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-15-53677</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0165597</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Neuroscience</subject><subj-group><subject>Cognitive science</subject><subj-group><subject>Cognitive psychology</subject><subj-group><subject>Intelligence</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Psychology</subject><subj-group><subject>Cognitive psychology</subject><subj-group><subject>Intelligence</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Psychology</subject><subj-group><subject>Cognitive psychology</subject><subj-group><subject>Intelligence</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Earth sciences</subject><subj-group><subject>Geography</subject><subj-group><subject>Cartography</subject><subj-group><subject>Longitude</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Earth sciences</subject><subj-group><subject>Geography</subject><subj-group><subject>Cartography</subject><subj-group><subject>Latitude</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Computer and information sciences</subject><subj-group><subject>Data management</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Physical sciences</subject><subj-group><subject>Mathematics</subject><subj-group><subject>Probability theory</subject><subj-group><subject>Probability distribution</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Behavior</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Cultural anthropology</subject><subj-group><subject>Religion</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Sociology</subject><subj-group><subject>Religion</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Physical sciences</subject><subj-group><subject>Mathematics</subject><subj-group><subject>Probability theory</subject><subj-group><subject>Statistical distributions</subject><subj-group><subject>Distribution curves</subject></subj-group></subj-group></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Inferring Passenger Denial Behavior of Taxi Drivers from Large-Scale Taxi Traces</article-title>
+<alt-title alt-title-type="running-head">Inferring Passenger Denial Behavior of Taxi Drivers from Large-Scale Taxi Traces</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Zhang</surname> <given-names>Sihai</given-names></name>
+<xref ref-type="corresp" rid="cor001">*</xref>
+<xref ref-type="aff" rid="aff001"/>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Wang</surname> <given-names>Zhiyang</given-names></name>
+<xref ref-type="aff" rid="aff001"/>
+</contrib>
+</contrib-group>
+<aff id="aff001">
+<addr-line>Key Laboratory of Wireless-Optical Communications, Chinese Academy of Sciences, University of Science and Technology of China, Hefei, Anhui, 230017, China</addr-line>
+</aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Song</surname> <given-names>Houbing</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1">
+<addr-line>West Virginia University, UNITED STATES</addr-line>
+</aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<fn fn-type="con">
+<p><list list-type="simple">
+<list-item><p><bold>Conceptualization:</bold> SZ.</p></list-item>
+<list-item><p><bold>Formal analysis:</bold> SZ ZW.</p></list-item>
+<list-item><p><bold>Funding acquisition:</bold> SZ.</p></list-item>
+<list-item><p><bold>Methodology:</bold> SZ ZW.</p></list-item>
+<list-item><p><bold>Project administration:</bold> SZ.</p></list-item>
+<list-item><p><bold>Resources:</bold> SZ.</p></list-item>
+<list-item><p><bold>Software:</bold> ZW.</p></list-item>
+<list-item><p><bold>Supervision:</bold> SZ.</p></list-item>
+<list-item><p><bold>Validation:</bold> SZ ZW.</p></list-item>
+<list-item><p><bold>Visualization:</bold> ZW.</p></list-item>
+<list-item><p><bold>Writing – original draft:</bold> SZ ZW.</p></list-item>
+<list-item><p><bold>Writing – review &amp; editing:</bold> SZ.</p></list-item>
+</list></p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">shzhang@ustc.edu.cn</email></corresp>
+</author-notes>
+<pub-date pub-type="collection">
+<year>2016</year>
+</pub-date>
+<pub-date pub-type="epub">
+<day>3</day>
+<month>11</month>
+<year>2016</year>
+</pub-date>
+<volume>11</volume>
+<issue>11</issue>
+<elocation-id>e0165597</elocation-id>
+<history>
+<date date-type="received">
+<day>2</day>
+<month>4</month>
+<year>2016</year>
+</date>
+<date date-type="accepted">
+<day>16</day>
+<month>10</month>
+<year>2016</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2016</copyright-year>
+<copyright-holder>Zhang, Wang</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0165597"/>
+<abstract>
+<p>How to understand individual human actions is a fundamental question to modern science, which drives and incurs many social, technological, racial, religious and economic phenomena. Human dynamics tries to reveal the temporal pattern and internal mechanism of human actions in letter or electronic communications, from the perspective of continuous interactions among friends or acquaintances. For interactions between stranger to stranger, taxi industry provide fruitful phenomina and evidence to investigate the action decisions. In fact, one striking disturbing events commonly reported in taxi industry is passenger refusing or denial, whose reasons vary, including skin color, blind passenger, being a foreigner or too close destination, religion reasons and anti specific nationality, so that complaints about taxi passenger refusing have to be concerned and processed carefully by local governments. But more universal factors for this phenomena are of great significance, which might be fulfilled by big data research to obtain novel insights in this question. In this paper, we demonstrate the big data analytics application in revealing novel insights from massive taxi trace data, which, for the first time, validates the passengers denial in taxi industry and estimates the denial ratio in Beijing city. We first quantify the income differentiation facts among taxi drivers. Then we find out that choosing the drop-off places also contributes to the high income for taxi drivers, compared to the previous explanation of mobility intelligence. Moreover, we propose the pick-up, drop-off and grid diversity concepts and related diversity analysis suggest that, high income taxi drivers will deny passengers in some situations, so as to choose the passengers’ destination they prefer. Finally we design an estimation method for denial ratio and infer that high income taxi drivers will deny passengers with 8.52% likelihood in Beijing. Our work exhibits the power of big data analysis in revealing some dark side investigation.</p>
+</abstract>
+<funding-group>
+<award-group id="award001">
+<funding-source>
+<institution-wrap>
+<institution-id institution-id-type="funder-id">http://dx.doi.org/10.13039/501100001809</institution-id>
+<institution>National Natural Science Foundation of China</institution>
+</institution-wrap>
+</funding-source>
+<award-id>61461136002</award-id>
+<principal-award-recipient>
+<name name-style="western">
+<surname>Zhang</surname> <given-names>Sihai</given-names></name>
+</principal-award-recipient>
+</award-group>
+<award-group id="award002">
+<funding-source>
+<institution>Fundamental Research Funds for the Central Universities</institution>
+</funding-source>
+<principal-award-recipient>
+<name name-style="western">
+<surname>Zhang</surname> <given-names>Sihai</given-names></name>
+</principal-award-recipient>
+</award-group>
+<funding-statement>This work was supported by Natural Science Foundation of China (Grant No. 61461136002), Key Program of National Natural Science Foundation of China (Grant No. 61631018), the Fundamental Research Funds for the Central Universities, and Huawei Technology Innovative Research on Wireless Big Data. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="14"/>
+<table-count count="1"/>
+<page-count count="21"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability">
+<meta-name>Data Availability</meta-name>
+<meta-value>The data used for analysis are available from the Figshare online digital repository (DOI:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.6084/m9.figshare.4040436" xlink:type="simple">10.6084/m9.figshare.4040436</ext-link>; URL: <ext-link ext-link-type="uri" xlink:href="https://figshare.com/s/d078c15e354a948fcb50" xlink:type="simple">https://figshare.com/s/d078c15e354a948fcb50</ext-link>.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec001" sec-type="intro">
+<title>1 Introduction</title>
+<p>The deluge of data is revolutionizing our world. Properly collected and intelligently processed big data are able to provide significant insights in various application fields. For example, statistic inferences based on big data analytics have shown their powers in biology [<xref ref-type="bibr" rid="pone.0165597.ref001">1</xref>–<xref ref-type="bibr" rid="pone.0165597.ref003">3</xref>], medical science [<xref ref-type="bibr" rid="pone.0165597.ref004">4</xref>, <xref ref-type="bibr" rid="pone.0165597.ref005">5</xref>], sociology [<xref ref-type="bibr" rid="pone.0165597.ref006">6</xref>–<xref ref-type="bibr" rid="pone.0165597.ref008">8</xref>], geography [<xref ref-type="bibr" rid="pone.0165597.ref009">9</xref>], zoology [<xref ref-type="bibr" rid="pone.0165597.ref010">10</xref>], intelligent transportation [<xref ref-type="bibr" rid="pone.0165597.ref011">11</xref>, <xref ref-type="bibr" rid="pone.0165597.ref012">12</xref>], to name a few. Among all these, traffic behavior belongs to the scope of Cyber-Physical Systems(CPS), which aims to answer the questions from deeply intertwined physical and cyber components [<xref ref-type="bibr" rid="pone.0165597.ref013">13</xref>], and two examples are unsignalized intersections with heterogeneous urban traffic [<xref ref-type="bibr" rid="pone.0165597.ref014">14</xref>] and empirical investigation on driver behavior [<xref ref-type="bibr" rid="pone.0165597.ref015">15</xref>]. This paper provides a case study of big data analytics in the taxi industry. Since taxis bear a substantial amount of transportation burden and supply flexible ways of travelling in urban areas, investigation of the taxi industry is of particular interest to public administration. Researches in this area include safety and health assessments of taxi drivers [<xref ref-type="bibr" rid="pone.0165597.ref016">16</xref>][<xref ref-type="bibr" rid="pone.0165597.ref017">17</xref>], labor supply issues [<xref ref-type="bibr" rid="pone.0165597.ref018">18</xref>], choices of commuting modes [<xref ref-type="bibr" rid="pone.0165597.ref019">19</xref>], etc. However, these works often rely on simplified models and lack of supports from large-scale real data. In recent years, the development of modern information technologies has enabled the collection of large-scale trace data of taxis for the use of surveillance and management. They also provide abundant opportunities for big data research. Refuel events of taxi drivers are investigated in [<xref ref-type="bibr" rid="pone.0165597.ref020">20</xref>] so as to estimate citywide petrol consumptions. Malicious detour behaviors are recognized, which protects passengers from paying unjustified expenses [<xref ref-type="bibr" rid="pone.0165597.ref021">21</xref>].</p>
+<p>However, one striking disturbing events commonly reported in taxi industry is passenger refusing or denial, whose reasons vary, including skin color [<xref ref-type="bibr" rid="pone.0165597.ref022">22</xref>], blind passenger [<xref ref-type="bibr" rid="pone.0165597.ref023">23</xref>], being a foreigner or too close destination [<xref ref-type="bibr" rid="pone.0165597.ref024">24</xref>], religion reasons [<xref ref-type="bibr" rid="pone.0165597.ref025">25</xref>] and anti specific nationality [<xref ref-type="bibr" rid="pone.0165597.ref026">26</xref>], so that complaints about taxi passenger refusing have to be concerned and processed carefully by local governments. In addition, through analyzing trace data, one can also identify those experienced taxi drivers, learn their driving patterns, and improve the others’ driving qualities [<xref ref-type="bibr" rid="pone.0165597.ref027">27</xref>]. Data analysis is also able to help taxi drivers find their potential passengers in a more efficient way [<xref ref-type="bibr" rid="pone.0165597.ref028">28</xref>]. The experience and knowledge of high income taxi drivers are analyzed and minded, to reveal the inconspicuous service strategy [<xref ref-type="bibr" rid="pone.0165597.ref029">29</xref>, <xref ref-type="bibr" rid="pone.0165597.ref030">30</xref>], which is coined as Mobility Intelligence. These works imply that income differentiation exist in taxi drivers, and high income taxi drivers is explained to earn more income because they can choose proper waiting areas to pick up more passengers based on their intelligence. In this paper, we inspect this issue again, and focus on answering the following questions: (1) Will this preferential pick-up strategy surely increase taxi drivers’ income? (2) Are there any other factors that contribute to the high income of certain taxi drivers? The answers to the above two questions are No and Yes, respectively.</p>
+<p>Based on the complete trace information for taxis supplied by one Chinese Investigation Agency, we study the income differentiation, pick-up diversity, drop-off diversity and grid diversity in all taxi drivers. Our works are performed at both the individual and group levels. To ensure better statistics, the top 3,590 taxis with the largest number of served passengers are chosen as our data sample, each having more than 932 single trips and millions of GPS report records. We propose a bottom-up approach to investigate individual taxi driver’s pick-up behavior: (1) finding out the actual income of each taxi driver, (2) grouping taxi drivers into different income level with proposed diversity concepts, and (3) understanding the pick-up and drop-off patterns for each group. We filter out four groups of taxi drivers according to their pick-up and drop-off diversity, and each group comprising drivers with High income(525 drivers), Medium high(542 drivers), medium low(510 drivers) and low(516 drivers), respectively. We demonstrate that the four groups exhibit different pick-up and drop-off patterns and that the high income drivers exhibit passenger denial behaviors (e.g., they refuse passengers after knowing their destinations.).</p>
+<p>In summary, we have two important findings in this paper. (1) The so called mobility intelligence do not necessarily increase the income of taxi drivers, unless they choose the proper waiting areas. Here, high income and low income taxi drivers are two opposite examples. (2) High income taxi driver are exposed to deny passengers after knowing their destinations and the estimated denial rate of high income taxis is 8.52%.</p>
+</sec>
+<sec id="sec002" sec-type="materials|methods">
+<title>2 Materials and Methods</title>
+<sec id="sec003">
+<title>2.1 Data Description</title>
+<p>The data was collected from 12,657 taxis equipped with GPS devices during a period of two months (from November 1st to December 31st, 2012). The sampling interval ranges from 10 seconds to 60 seconds, depending on the settings of different taxis. There are totally around 2 billion rows of records. The data fields are described in <xref ref-type="table" rid="pone.0165597.t001">Table 1</xref>. Note that under the permissions of the taxi drivers, the data was collected by that Agency and allowed to be used in the authors’ scientific research. The data has been anonymized and contains no personal information.</p>
+<table-wrap id="pone.0165597.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0165597.t001</object-id>
+<label>Table 1</label>
+<caption>
+<title>Data Fields of Taxi Traces.</title>
+</caption>
+<alternatives>
+<graphic id="pone.0165597.t001g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0165597.t001" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Field</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">TAXI_ID</td>
+<td align="left">Unique ID of the taxis</td>
+</tr>
+<tr>
+<td align="left" rowspan="4">OPERATION STATUS</td>
+<td align="left">Status of the taxi.</td>
+</tr>
+<tr>
+<td align="left">0: vacant</td>
+</tr>
+<tr>
+<td align="left">1: occupied</td>
+</tr>
+<tr>
+<td align="left">2: others</td>
+</tr>
+<tr>
+<td align="left" rowspan="4">EVENT TRIGGER</td>
+<td align="left">Status transition of the taxi.</td>
+</tr>
+<tr>
+<td align="left">0: from occupied to vacant</td>
+</tr>
+<tr>
+<td align="left">1: from vacant to occupied</td>
+</tr>
+<tr>
+<td align="left">2: others</td>
+</tr>
+<tr>
+<td align="left">TIME STAMP</td>
+<td align="left">Time of the record(second)</td>
+</tr>
+<tr>
+<td align="left">LONGITUDE</td>
+<td align="left">Longitude of the taxi</td>
+</tr>
+<tr>
+<td align="left">LATITUDE</td>
+<td align="left">Latitude of the taxi</td>
+</tr>
+<tr>
+<td align="left">SPEED</td>
+<td align="left">Instant speed(kilometer/hour)(Range: [0, 255])</td>
+</tr>
+<tr>
+<td align="left" rowspan="2">ORIENTATION</td>
+<td align="left">Taxi facing clockwise orientation(degree)</td>
+</tr>
+<tr>
+<td align="left">Range: [0, 360], 0 stands for the north.</td>
+</tr>
+<tr>
+<td align="left" rowspan="3">GPS STATUS</td>
+<td align="left">status of the GPS device.</td>
+</tr>
+<tr>
+<td align="left">0: recorded GPS data is correct;</td>
+</tr>
+<tr>
+<td align="left">1: recorded GPS data is wrong</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="sec004">
+<title>2.2 Data Preprocessing</title>
+<p>In the collected raw data, some of the records contain errors. Hence, prior to data analysis we perform preprocessing as follows. First, we classify the records according to the TAXI_IDs and remove duplicated records associated with every TAXI_ID. Second, we move the TAXI IDs that associate with less than 500 records. Third, we remove erroneous records that have impossible speeds (beyond the range of [0, 120]), wrong locations (beyond the area of [115.4,117.6] in the east longitude and [39.4,41.1] in the north latitude) and wrong times (beyond the range from November 1st to December 31st, 2012). After these steps, we prepare a preliminary dataset containing 12,053 taxis.</p>
+<p>From the preliminary dataset, we further delete those TAXI_IDs satisfying both of the following conditions: (1) its daily gross income is always close to 0; (2) its average daily working time exceeds 12 hours. Notice that the daily gross income and the daily working time can both be estimated from the records, as we will show in Section 2.5 and Section 2.6, respectively. We believe that these taxis signed long-term contracts with their passengers, and are hence beyond the scope of our investigation. Then we have a refined dataset from 8,846 taxis for data analysis, which is called DATASET #1. Within the refined dataset, 3,590 taxis that work every day from November 1st to December 31st, 2012, are of particular interest to us and called DATASET #2.</p>
+</sec>
+<sec id="sec005">
+<title>2.3 Defining Trips of Passengers</title>
+<p>The status of a taxi changes from vacant to occupied when a passenger starts his/her trip, keeps to be occupied all along the trip, and changes from occupied to vacant when the trip ends. Therefore, from the dataset we find trips based on the following three conditions: (i) they start with EVENT TRIGGER = 1 (status changing from vacant to occupied); (ii) they end with EVENT TRIGGER = 0 (status changing from occupied to vacant); (iii) between the starting and the ending points, OPERATION STATUS = 1 (occupied). We extract a series of records for each trip containing TIME STAMP, LONGITUDE, LATITUDE, SPEED, ORIENTATION, and GPS STATUS. From these records, we are able to calculate the distance, income, and gas consumption of each trip.</p>
+</sec>
+<sec id="sec006">
+<title>2.4 Calculating Driving Distances</title>
+<p>Consider two points given by two consecutive records within a trip. Suppose that their longitudes are <italic>long</italic><sub>1</sub> and <italic>long</italic><sub>2</sub>, while latitudes are <italic>lat</italic><sub>1</sub> and <italic>lat</italic><sub>2</sub>. According to the spherical law of cosines, the distance <italic>d</italic> between the two points can be calculated based on haversine formula [<xref ref-type="bibr" rid="pone.0165597.ref031">31</xref>]:
+<disp-formula id="pone.0165597.e001"><alternatives><graphic id="pone.0165597.e001g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e001" xlink:type="simple"/><mml:math display="block" id="M1"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi>d</mml:mi> <mml:mo>=</mml:mo> <mml:msup><mml:mo form="prefix">cos</mml:mo> <mml:mrow><mml:mo>-</mml:mo> <mml:mn>1</mml:mn></mml:mrow></mml:msup> <mml:mrow><mml:mo>(</mml:mo> <mml:mo form="prefix">sin</mml:mo> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>l</mml:mi> <mml:mi>a</mml:mi> <mml:msub><mml:mi>t</mml:mi> <mml:mn>1</mml:mn></mml:msub> <mml:mo>)</mml:mo></mml:mrow> <mml:mo form="prefix">sin</mml:mo> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>l</mml:mi> <mml:mi>a</mml:mi> <mml:msub><mml:mi>t</mml:mi> <mml:mn>2</mml:mn></mml:msub> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>+</mml:mo> <mml:mo form="prefix">cos</mml:mo> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>l</mml:mi> <mml:mi>a</mml:mi> <mml:msub><mml:mi>t</mml:mi> <mml:mn>1</mml:mn></mml:msub> <mml:mo>)</mml:mo></mml:mrow> <mml:mo form="prefix">cos</mml:mo> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>l</mml:mi> <mml:mi>a</mml:mi> <mml:msub><mml:mi>t</mml:mi> <mml:mn>2</mml:mn></mml:msub> <mml:mo>)</mml:mo></mml:mrow> <mml:mo form="prefix">cos</mml:mo> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>l</mml:mi> <mml:mi>o</mml:mi> <mml:mi>n</mml:mi> <mml:msub><mml:mi>g</mml:mi> <mml:mn>1</mml:mn></mml:msub> <mml:mo>-</mml:mo> <mml:mi>l</mml:mi> <mml:mi>o</mml:mi> <mml:mi>n</mml:mi> <mml:msub><mml:mi>g</mml:mi> <mml:mn>2</mml:mn></mml:msub> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>)</mml:mo></mml:mrow> <mml:mi>R</mml:mi> <mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(1)</label></disp-formula>
+where <italic>R</italic> is the radius of the earth. We approximate the total distance of a trip by summing up the distances between all pairs of the consecutive points along the trip. As an example, <xref ref-type="fig" rid="pone.0165597.g001">Fig 1</xref> shows a route of a taxi and the way of calculating the driving distance.</p>
+<fig id="pone.0165597.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0165597.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>A route plotted by a taxi’s trace data.</title>
+<p>Each point denotes one reported GPS data with longitude and latitude information. The line segment between two consecutive points is approximately considered to be the actual driving route of the taxi. Note that <italic>d</italic><sub><italic>i</italic></sub> is the distance between two consecutive points calculated by above <xref ref-type="disp-formula" rid="pone.0165597.e001">Formula (1)</xref> in this subsection.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0165597.g001" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec007">
+<title>2.5 Estimating Incomes</title>
+<p>The taxi charge standards of Beijing in 2012 are as follows, based on which, we are able to calculate the charge of each trip, and hence estimate the gross income of each taxi driver.
+<list list-type="order"><list-item><p>Basic charge: 10 CNY for the first three kilometers, and 2 CNY for each additional kilometer during the day shift (5:00AM–22:59PM); 11 CNY for the first three kilometers, and 2.4 CNY for each additional kilometer during the night shift (11:00PM–4:59AM).</p></list-item> <list-item><p>Charge for low speed driving and waiting: when an occupied taxi runs under the speed of 12 kilometer/hour or stops due to traffic jams or traffic lights, the time will be accumulated and the charge is 0.4 CNY per minute during the day shift and 0.48 CNY per minute during the night shift.</p></list-item> <list-item><p>Charge for empty returning: when a trip exceeds 15 kilometers the passenger pays 50% extra fee, except that the line distance between the starting and the ending points is less than 2 kilometers.</p></list-item></list></p>
+<p>Next we estimate the net incomes. The expenses are composed of two parts: costs of gas consumptions and fees paying to taxi companies, including management fees and taxes. According to the regulations of the taxi companies, every taxi driver pays a fee of 8,290 CNY per month.</p>
+<p>As for the costs of gas consumptions, we use popular rough estimation that taxis will cost V liter gas per hundred kilometers, neglecting other factors such as road situation, traffic status, number of passengers, season shift and etc. According to our common knowledge, gas consumption for taxis are around 8 liter/100km. In addition, we tested three parameters to compare the difference of income estimation using different gas consumptions, as presented in <xref ref-type="fig" rid="pone.0165597.g002">Fig 2</xref>, and found that, different gas consumption parameters hardly had influence on the income grouping. So in this paper, V is considered as 8 liter/100km and used in the following related analysis.</p>
+<fig id="pone.0165597.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0165597.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>Daily Net Income comparison for different gas consumption = 6,7,8 liter/100km.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0165597.g002" xlink:type="simple"/>
+</fig>
+<p>This volume multiplying the gas price (7.81 CNY per liter in Beijing from November 1st to December 31st 2012), is the taxi’s cost of gas consumption at that day.</p>
+</sec>
+<sec id="sec008">
+<title>2.6 Calculating Working Times</title>
+<p>We define that a taxi is working by the following rules. First, if its OPERATION STATUS is 1(occupied), then the taxi is working. Second, if its OPERATION STATUS is 0 (vacant) but its instant speed is not 0 or its location is different from the one in the previous record, then we know that the taxi is driving towards somewhere. For the latter case, the taxi is still working though it does not carry any passenger. Based on these two rules, we can calculate the working time of every taxi in every day. <xref ref-type="fig" rid="pone.0165597.g003">Fig 3</xref> gives an example where the taxi is working in the periods with lengths <italic>t</italic><sub>1</sub>, <italic>t</italic><sub>2</sub> and <italic>t</italic><sub>3</sub>, all within the range from 0:00AM to 23:59PM, and the overall working time is <italic>t</italic><sub>1</sub> + <italic>t</italic><sub>2</sub> + <italic>t</italic><sub>3</sub>.</p>
+<fig id="pone.0165597.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0165597.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>The yellow periods of time denote the taxi’s working time, and we only take the time period in one day into account, so the part after <italic>t</italic>3 that passes 24 o’clock will not be cumulated into that day’s working time.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0165597.g003" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec009">
+<title>2.7 Separating Geographical Grids</title>
+<p>We divide the city of Beijing into adjacent grids with the size of 300<italic>m</italic> × 300<italic>m</italic>, not considering the existence of city roads, functional districts, forbidden areas, undeveloped regions, etc. Then we get 21,312 grids in total. Our focus is on the central area of the city (longitude within [116.198,116.7125] and latitude within [39.75,40.150]), containing Dongcheng, Xicheng, Haidian, Chaoyang, and Shunyi Districts. This central area contains 148 × 144 = 21,312 grids. We analyze the events of passenger pick-ups and drop-offs within these grids.</p>
+</sec>
+</sec>
+<sec id="sec010" sec-type="results">
+<title>3 Results</title>
+<p>Having the taxis’ daily net and gross incomes at hand, we plot their probability distribution functions (PDFs) in <xref ref-type="fig" rid="pone.0165597.g004">Fig 4</xref>. The two datasets, DATASET #2 (with 8,846 taxis) and DATASET #1 (with 3,590 taxis that work every day), have similar PDFs of both net and gross incomes. It is obvious that the daily incomes of the taxi drivers differ significantly. In the existing research, this phenomenon has been explained as the consequence of mobility intelligence, meaning that some taxi drivers deliberately choose their strategies to earn more profits. That is, according to their experiences, high income taxi drivers are often intelligent enough to choose proper areas to wait for and pick up more passengers.</p>
+<fig id="pone.0165597.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0165597.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title>The probability density distributions of taxis income in Beijing during Nov.- Dec. 2012.</title>
+<p>(a) The magenta curve illustrates the net income of all 8846 taxis, and the blue square curve illustrates that of the selected 3590 taxis which operate every day during two months. (b) The number of selected taxis in Low Income, Medium Low Income, Medium High Income and High Income are 525, 542, 510, and 516, respectively. (c) The average daily income of taxis in each group are, 532.387, 360.985, 139.124, and 51.7747 CNY, respectively. (d) The shift from Net Income to Gross Income (The red diamond curve) denotes the taxi daily cost, which is inferred to be 337.5 CNY for each Taxi.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0165597.g004" xlink:type="simple"/>
+</fig>
+<p>In this paper, we investigate the in-depth reason for the differentiation of incomes, and obtain several important results. In subsection 3.1, three main factors, working time, passenger load, distance per trip, are discussed, but verified not correlated with this income differentiation. In subsection 3.2, grid diversity analysis reveals that, high income taxis prefers both waiting for and dropping passengers in their preferred limited areas, compared to other three groups. In subsection 3.3, by confirming the negative answer for the correlation between pick-up grids and drop-off grids, the passenger denial behavior of high income taxi drivers are confirmed. In addition, we estimate that high income drivers in this dataset will deny 8.52% passenger in average.</p>
+<sec id="sec011">
+<title>3.1 Grouping Taxis by Incomes</title>
+<p>From DATASET #1, we arbitrarily pick four groups of taxis according to their daily gross incomes: High (from 460 to 800 CNY and with 516 taxis), Medium High (from 110 to 320 CNY and with 510 taxis), Medium Low (from 110 to 170 CNY and with 542 taxis), and Low (from 0 to 80 CNY and with 525 taxis). The average daily gross incomes of the four groups are 532.387, 360.985, 139.124, and 51.775 CNY, respectively.</p>
+<p>Intuitively, there are three main factors that cause the huge difference in the daily incomes of the taxis: working time, passenger load, and distance per trip. Below we investigate their impacts on the daily incomes through analyzing the collected data.
+<list list-type="order"><list-item><p>Working time. <xref ref-type="fig" rid="pone.0165597.g005">Fig 5</xref> demonstrates that the average daily working times of the four groups of taxis are very similar. A taxi (often with two drivers serving day and evening shifts, respectively), no matter its daily income is high, medium high, medium low, or low, works around 16-18 hours every day. Therefore, working time is not a determining factor of income.</p></list-item> <list-item><p>Passenger load. <xref ref-type="fig" rid="pone.0165597.g006">Fig 6</xref> shows the average daily passenger load of the four groups of taxis. In average, a high-income taxi serves around 33 passengers everyday, while a low-income taxi serves only around 12. For medium high- or medium low-income taxis, the numbers are 25 and 15, respectively. This result provides us a strong evidence that the income is positively correlated with the working efficiency.</p></list-item> <list-item><p>Distance per trip. Is a low-income taxi able to earn more money through driving more long-distance trips, though it serves less passengers everyday? Figs <xref ref-type="fig" rid="pone.0165597.g007">7</xref> and <xref ref-type="fig" rid="pone.0165597.g008">8</xref> gives a negative answer, shows that the average distances per trip are similar in, especially in the range of short distance (&lt;20 kilometers).</p></list-item></list></p>
+<fig id="pone.0165597.g005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0165597.g005</object-id>
+<label>Fig 5</label>
+<caption>
+<title/>
+<p>(a) This proportion statistics are based on the selected 3,590 taxis, among which, four income level taxi drivers are selected. (b) The proportions are taxi number, passenger number, of four income levels of taxi total number of taxis, total number of passengers served, total number of grids where drivers pick up and drop off the passengers. (c) The pick-up and drop-off grids covered by all these four income level taxis occupy about 41 and 54 percentage of all city grids, respectively.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0165597.g005" xlink:type="simple"/>
+</fig>
+<fig id="pone.0165597.g006" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0165597.g006</object-id>
+<label>Fig 6</label>
+<caption>
+<title>The average daily working time and served passengers of four groups of selected 3590 taxis.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0165597.g006" xlink:type="simple"/>
+</fig>
+<fig id="pone.0165597.g007" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0165597.g007</object-id>
+<label>Fig 7</label>
+<caption>
+<title>The probability distributions of the distance per trip.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0165597.g007" xlink:type="simple"/>
+</fig>
+<fig id="pone.0165597.g008" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0165597.g008</object-id>
+<label>Fig 8</label>
+<caption>
+<title>The probability distributions of the distance per trip shorter than 100km.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0165597.g008" xlink:type="simple"/>
+</fig>
+<p>The analysis on the dataset reveals that a high-income taxi has higher working efficiency than those in the other groups, which leads to extra profit. Now a natural question arises: what strategy does a high-income taxi adopt so that it is able to serve more passengers everyday? To answer this question, we proceed to investigate the pick-up and drop-off areas of the taxis.</p>
+</sec>
+<sec id="sec012">
+<title>3.2 Pick-up/Drop-off Diversity Analysis</title>
+<p>We define the following notations for further analysis. Let <inline-formula id="pone.0165597.e002"><alternatives><graphic id="pone.0165597.e002g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e002" xlink:type="simple"/><mml:math display="inline" id="M2"><mml:msubsup><mml:mi>V</mml:mi> <mml:mi>i</mml:mi> <mml:mi>p</mml:mi></mml:msubsup></mml:math></alternatives></inline-formula> be the number of grids where taxi <italic>i</italic> picked up passengers during the two months and <inline-formula id="pone.0165597.e003"><alternatives><graphic id="pone.0165597.e003g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e003" xlink:type="simple"/><mml:math display="inline" id="M3"><mml:msubsup><mml:mi>V</mml:mi> <mml:mi>i</mml:mi> <mml:mi>d</mml:mi></mml:msubsup></mml:math></alternatives></inline-formula> be the number of grids where taxi <italic>i</italic> dropped off passengers. Considering all passengers who were picked up in grid <italic>m</italic>, denote <inline-formula id="pone.0165597.e004"><alternatives><graphic id="pone.0165597.e004g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e004" xlink:type="simple"/><mml:math display="inline" id="M4"><mml:msubsup><mml:mi>V</mml:mi> <mml:mi>m</mml:mi> <mml:mi>g</mml:mi></mml:msubsup></mml:math></alternatives></inline-formula> as the number of grids where the drop-offs happened.</p>
+<p>Define <inline-formula id="pone.0165597.e005"><alternatives><graphic id="pone.0165597.e005g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e005" xlink:type="simple"/><mml:math display="inline" id="M5"><mml:msubsup><mml:mi>x</mml:mi> <mml:mi>i</mml:mi> <mml:mi>p</mml:mi></mml:msubsup></mml:math></alternatives></inline-formula> as the total number of taxi <italic>i</italic>’s pick-ups and <inline-formula id="pone.0165597.e006"><alternatives><graphic id="pone.0165597.e006g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e006" xlink:type="simple"/><mml:math display="inline" id="M6"><mml:msubsup><mml:mi>x</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>m</mml:mi></mml:mrow> <mml:mi>p</mml:mi></mml:msubsup></mml:math></alternatives></inline-formula> as the number of those pick-ups occurring in grid <italic>m</italic>. Apparently, <inline-formula id="pone.0165597.e007"><alternatives><graphic id="pone.0165597.e007g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e007" xlink:type="simple"/><mml:math display="inline" id="M7"><mml:mrow><mml:msubsup><mml:mi>x</mml:mi> <mml:mi>i</mml:mi> <mml:mi>p</mml:mi></mml:msubsup> <mml:mo>=</mml:mo> <mml:msub><mml:mo>∑</mml:mo> <mml:mi>m</mml:mi></mml:msub> <mml:msubsup><mml:mi>x</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>m</mml:mi></mml:mrow> <mml:mi>p</mml:mi></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula>. Therefore, <inline-formula id="pone.0165597.e008"><alternatives><graphic id="pone.0165597.e008g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e008" xlink:type="simple"/><mml:math display="inline" id="M8"><mml:mrow><mml:msubsup><mml:mi>p</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>m</mml:mi></mml:mrow> <mml:mi>p</mml:mi></mml:msubsup> <mml:mo>=</mml:mo> <mml:msubsup><mml:mi>x</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>m</mml:mi></mml:mrow> <mml:mi>p</mml:mi></mml:msubsup> <mml:mo>/</mml:mo> <mml:msubsup><mml:mi>x</mml:mi> <mml:mi>i</mml:mi> <mml:mi>p</mml:mi></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula> is the percentage that the pick-ups occurred in grid <italic>m</italic> for taxi <italic>i</italic>. Similarly, define <inline-formula id="pone.0165597.e009"><alternatives><graphic id="pone.0165597.e009g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e009" xlink:type="simple"/><mml:math display="inline" id="M9"><mml:msubsup><mml:mi>x</mml:mi> <mml:mi>i</mml:mi> <mml:mi>d</mml:mi></mml:msubsup></mml:math></alternatives></inline-formula> as the total number of taxi <italic>i</italic>’s drop-offs and <inline-formula id="pone.0165597.e010"><alternatives><graphic id="pone.0165597.e010g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e010" xlink:type="simple"/><mml:math display="inline" id="M10"><mml:msubsup><mml:mi>x</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>n</mml:mi></mml:mrow> <mml:mi>d</mml:mi></mml:msubsup></mml:math></alternatives></inline-formula> as the number of those drop-offs occurring in grid <italic>n</italic>. We have <inline-formula id="pone.0165597.e011"><alternatives><graphic id="pone.0165597.e011g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e011" xlink:type="simple"/><mml:math display="inline" id="M11"><mml:mrow><mml:msubsup><mml:mi>x</mml:mi> <mml:mi>i</mml:mi> <mml:mi>d</mml:mi></mml:msubsup> <mml:mo>=</mml:mo> <mml:msub><mml:mo>∑</mml:mo> <mml:mi>n</mml:mi></mml:msub> <mml:msubsup><mml:mi>x</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>n</mml:mi></mml:mrow> <mml:mi>d</mml:mi></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula> and define <inline-formula id="pone.0165597.e012"><alternatives><graphic id="pone.0165597.e012g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e012" xlink:type="simple"/><mml:math display="inline" id="M12"><mml:mrow><mml:msubsup><mml:mi>p</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>n</mml:mi></mml:mrow> <mml:mi>d</mml:mi></mml:msubsup> <mml:mo>=</mml:mo> <mml:msubsup><mml:mi>x</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>n</mml:mi></mml:mrow> <mml:mi>d</mml:mi></mml:msubsup> <mml:mo>/</mml:mo> <mml:msubsup><mml:mi>x</mml:mi> <mml:mi>i</mml:mi> <mml:mi>d</mml:mi></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula> as the percentage that the drop-offs occurred in grid <italic>n</italic> for taxi <italic>i</italic>.</p>
+<p>Define <inline-formula id="pone.0165597.e013"><alternatives><graphic id="pone.0165597.e013g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e013" xlink:type="simple"/><mml:math display="inline" id="M13"><mml:msubsup><mml:mi>y</mml:mi> <mml:mi>m</mml:mi> <mml:mi>g</mml:mi></mml:msubsup></mml:math></alternatives></inline-formula> as the total number of trips starting from grid <italic>m</italic> and <inline-formula id="pone.0165597.e014"><alternatives><graphic id="pone.0165597.e014g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e014" xlink:type="simple"/><mml:math display="inline" id="M14"><mml:msubsup><mml:mi>y</mml:mi> <mml:mrow><mml:mi>m</mml:mi> <mml:mi>n</mml:mi></mml:mrow> <mml:mi>g</mml:mi></mml:msubsup></mml:math></alternatives></inline-formula> as the total number of trips from grid <italic>m</italic> to <italic>n</italic>; <inline-formula id="pone.0165597.e015"><alternatives><graphic id="pone.0165597.e015g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e015" xlink:type="simple"/><mml:math display="inline" id="M15"><mml:mrow><mml:msubsup><mml:mi>y</mml:mi> <mml:mi>m</mml:mi> <mml:mi>g</mml:mi></mml:msubsup> <mml:mo>=</mml:mo> <mml:msub><mml:mo>∑</mml:mo> <mml:mi>n</mml:mi></mml:msub> <mml:msubsup><mml:mi>y</mml:mi> <mml:mrow><mml:mi>m</mml:mi> <mml:mi>n</mml:mi></mml:mrow> <mml:mi>g</mml:mi></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula>. Define <inline-formula id="pone.0165597.e016"><alternatives><graphic id="pone.0165597.e016g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e016" xlink:type="simple"/><mml:math display="inline" id="M16"><mml:msubsup><mml:mi>p</mml:mi> <mml:mrow><mml:mi>m</mml:mi> <mml:mi>n</mml:mi></mml:mrow> <mml:mi>g</mml:mi></mml:msubsup></mml:math></alternatives></inline-formula> as the percentage of the drop-offs in grid <italic>n</italic> among all the trips that start from grid <italic>m</italic>, namely, <inline-formula id="pone.0165597.e017"><alternatives><graphic id="pone.0165597.e017g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e017" xlink:type="simple"/><mml:math display="inline" id="M17"><mml:mrow><mml:msubsup><mml:mi>p</mml:mi> <mml:mrow><mml:mi>m</mml:mi> <mml:mi>n</mml:mi></mml:mrow> <mml:mi>g</mml:mi></mml:msubsup> <mml:mo>=</mml:mo> <mml:msubsup><mml:mi>y</mml:mi> <mml:mrow><mml:mi>m</mml:mi> <mml:mi>n</mml:mi></mml:mrow> <mml:mi>g</mml:mi></mml:msubsup> <mml:mo>/</mml:mo> <mml:msubsup><mml:mi>y</mml:mi> <mml:mi>m</mml:mi> <mml:mi>g</mml:mi></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula>.</p>
+<p>We further define two indices that quantify the diversities of pick-ups and drop-offs from the perspective of every taxi. The first one is the diversity that the pick-ups of taxi <italic>i</italic> occurred over all the grids:
+<disp-formula id="pone.0165597.e018"><alternatives><graphic id="pone.0165597.e018g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e018" xlink:type="simple"/><mml:math display="block" id="M18"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi>D</mml:mi> <mml:mi>i</mml:mi> <mml:msubsup><mml:mi>v</mml:mi> <mml:mi>i</mml:mi> <mml:mi>p</mml:mi></mml:msubsup> <mml:mo>=</mml:mo> <mml:mfrac><mml:mrow><mml:mo>-</mml:mo> <mml:msub><mml:mo>∑</mml:mo> <mml:mi>m</mml:mi></mml:msub> <mml:msubsup><mml:mi>p</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>m</mml:mi></mml:mrow> <mml:mi>p</mml:mi></mml:msubsup> <mml:mi>l</mml:mi> <mml:mi>o</mml:mi> <mml:mi>g</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:msubsup><mml:mi>p</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>m</mml:mi></mml:mrow> <mml:mi>p</mml:mi></mml:msubsup> <mml:mo>)</mml:mo></mml:mrow></mml:mrow> <mml:mrow><mml:mi>l</mml:mi> <mml:mi>o</mml:mi> <mml:mi>g</mml:mi> <mml:mo>(</mml:mo> <mml:msubsup><mml:mi>V</mml:mi> <mml:mi>i</mml:mi> <mml:mi>p</mml:mi></mml:msubsup> <mml:mo>)</mml:mo></mml:mrow></mml:mfrac> <mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives></disp-formula>
+Recall that <inline-formula id="pone.0165597.e019"><alternatives><graphic id="pone.0165597.e019g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e019" xlink:type="simple"/><mml:math display="inline" id="M19"><mml:mrow><mml:msubsup><mml:mi>p</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>m</mml:mi></mml:mrow> <mml:mi>p</mml:mi></mml:msubsup> <mml:mo>=</mml:mo> <mml:msubsup><mml:mi>x</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>m</mml:mi></mml:mrow> <mml:mi>p</mml:mi></mml:msubsup> <mml:mo>/</mml:mo> <mml:msubsup><mml:mi>x</mml:mi> <mml:mi>i</mml:mi> <mml:mi>p</mml:mi></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula> is the percentage that the pick-ups occurred in grid <italic>m</italic> for taxi <italic>i</italic>. Hence, the numerator <inline-formula id="pone.0165597.e020"><alternatives><graphic id="pone.0165597.e020g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e020" xlink:type="simple"/><mml:math display="inline" id="M20"><mml:mrow><mml:mo>-</mml:mo> <mml:msub><mml:mo>∑</mml:mo> <mml:mi>m</mml:mi></mml:msub> <mml:msubsup><mml:mi>p</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>m</mml:mi></mml:mrow> <mml:mi>p</mml:mi></mml:msubsup> <mml:mi>l</mml:mi> <mml:mi>o</mml:mi> <mml:mi>g</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:msubsup><mml:mi>p</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>m</mml:mi></mml:mrow> <mml:mi>p</mml:mi></mml:msubsup> <mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></alternatives></inline-formula> denotes the entropy of the pick-up grids; the entropy is further normalized by the denominator <inline-formula id="pone.0165597.e021"><alternatives><graphic id="pone.0165597.e021g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e021" xlink:type="simple"/><mml:math display="inline" id="M21"><mml:mrow><mml:mi>l</mml:mi> <mml:mi>o</mml:mi> <mml:mi>g</mml:mi> <mml:mo>(</mml:mo> <mml:msubsup><mml:mi>V</mml:mi> <mml:mi>i</mml:mi> <mml:mi>p</mml:mi></mml:msubsup> <mml:mo>)</mml:mo></mml:mrow></mml:math></alternatives></inline-formula> where <inline-formula id="pone.0165597.e022"><alternatives><graphic id="pone.0165597.e022g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e022" xlink:type="simple"/><mml:math display="inline" id="M22"><mml:msubsup><mml:mi>V</mml:mi> <mml:mi>i</mml:mi> <mml:mi>p</mml:mi></mml:msubsup></mml:math></alternatives></inline-formula> be the number of grids where taxi <italic>i</italic> picked up passengers. Observe that larger <inline-formula id="pone.0165597.e023"><alternatives><graphic id="pone.0165597.e023g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e023" xlink:type="simple"/><mml:math display="inline" id="M23"><mml:mrow><mml:mi>D</mml:mi> <mml:mi>i</mml:mi> <mml:msubsup><mml:mi>v</mml:mi> <mml:mi>i</mml:mi> <mml:mi>p</mml:mi></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula> means that the pick-up grids of taxi <italic>i</italic> are more diverse. Similarly, the second diversity characterizes the drop-offs of taxi <italic>i</italic> occurring over all the grids, as denoted by:
+<disp-formula id="pone.0165597.e024"><alternatives><graphic id="pone.0165597.e024g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e024" xlink:type="simple"/><mml:math display="block" id="M24"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi>D</mml:mi> <mml:mi>i</mml:mi> <mml:msubsup><mml:mi>v</mml:mi> <mml:mi>i</mml:mi> <mml:mi>d</mml:mi></mml:msubsup> <mml:mo>=</mml:mo> <mml:mfrac><mml:mrow><mml:mo>-</mml:mo> <mml:msub><mml:mo>∑</mml:mo> <mml:mi>n</mml:mi></mml:msub> <mml:msubsup><mml:mi>p</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>n</mml:mi></mml:mrow> <mml:mi>d</mml:mi></mml:msubsup> <mml:mi>l</mml:mi> <mml:mi>o</mml:mi> <mml:mi>g</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:msubsup><mml:mi>p</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>n</mml:mi></mml:mrow> <mml:mi>d</mml:mi></mml:msubsup> <mml:mo>)</mml:mo></mml:mrow></mml:mrow> <mml:mrow><mml:mi>l</mml:mi> <mml:mi>o</mml:mi> <mml:mi>g</mml:mi> <mml:mo>(</mml:mo> <mml:msubsup><mml:mi>V</mml:mi> <mml:mi>i</mml:mi> <mml:mi>d</mml:mi></mml:msubsup> <mml:mo>)</mml:mo></mml:mrow></mml:mfrac> <mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives></disp-formula>
+Larger <inline-formula id="pone.0165597.e025"><alternatives><graphic id="pone.0165597.e025g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e025" xlink:type="simple"/><mml:math display="inline" id="M25"><mml:mrow><mml:mi>D</mml:mi> <mml:mi>i</mml:mi> <mml:msubsup><mml:mi>v</mml:mi> <mml:mi>i</mml:mi> <mml:mi>d</mml:mi></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula> means that the drop-off grids of taxi <italic>i</italic> are more diverse.</p>
+<p>We define another variable that quantifies the diversity of drop-offs from the perspective of every pick-up grid:
+<disp-formula id="pone.0165597.e026"><alternatives><graphic id="pone.0165597.e026g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e026" xlink:type="simple"/><mml:math display="block" id="M26"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi>D</mml:mi> <mml:mi>i</mml:mi> <mml:msubsup><mml:mi>v</mml:mi> <mml:mi>m</mml:mi> <mml:mi>g</mml:mi></mml:msubsup> <mml:mo>=</mml:mo> <mml:mfrac><mml:mrow><mml:mo>-</mml:mo> <mml:msub><mml:mo>∑</mml:mo> <mml:mi>n</mml:mi></mml:msub> <mml:msubsup><mml:mi>p</mml:mi> <mml:mrow><mml:mi>m</mml:mi> <mml:mi>n</mml:mi></mml:mrow> <mml:mi>g</mml:mi></mml:msubsup> <mml:mi>l</mml:mi> <mml:mi>o</mml:mi> <mml:mi>g</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:msubsup><mml:mi>p</mml:mi> <mml:mrow><mml:mi>m</mml:mi> <mml:mi>n</mml:mi></mml:mrow> <mml:mi>g</mml:mi></mml:msubsup> <mml:mo>)</mml:mo></mml:mrow></mml:mrow> <mml:mrow><mml:mi>l</mml:mi> <mml:mi>o</mml:mi> <mml:mi>g</mml:mi> <mml:mo>(</mml:mo> <mml:msubsup><mml:mi>V</mml:mi> <mml:mi>m</mml:mi> <mml:mi>g</mml:mi></mml:msubsup> <mml:mo>)</mml:mo></mml:mrow></mml:mfrac> <mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives></disp-formula>
+Here <inline-formula id="pone.0165597.e027"><alternatives><graphic id="pone.0165597.e027g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e027" xlink:type="simple"/><mml:math display="inline" id="M27"><mml:msubsup><mml:mi>p</mml:mi> <mml:mrow><mml:mi>m</mml:mi> <mml:mi>n</mml:mi></mml:mrow> <mml:mi>g</mml:mi></mml:msubsup></mml:math></alternatives></inline-formula> is the percentage of the drop-offs in grid <italic>n</italic> among all the trips that start from grid <italic>m</italic> and <inline-formula id="pone.0165597.e028"><alternatives><graphic id="pone.0165597.e028g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e028" xlink:type="simple"/><mml:math display="inline" id="M28"><mml:msubsup><mml:mi>V</mml:mi> <mml:mi>m</mml:mi> <mml:mi>g</mml:mi></mml:msubsup></mml:math></alternatives></inline-formula> is the number of grids where the drop-offs happened. Larger <inline-formula id="pone.0165597.e029"><alternatives><graphic id="pone.0165597.e029g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e029" xlink:type="simple"/><mml:math display="inline" id="M29"><mml:mrow><mml:mi>D</mml:mi> <mml:mi>i</mml:mi> <mml:msubsup><mml:mi>v</mml:mi> <mml:mi>m</mml:mi> <mml:mi>g</mml:mi></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula> means that the drop-off grids of the trips from the pick-up grid <italic>m</italic> are more diverse.</p>
+<p>With particular note, when <inline-formula id="pone.0165597.e030"><alternatives><graphic id="pone.0165597.e030g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e030" xlink:type="simple"/><mml:math display="inline" id="M30"><mml:mrow><mml:msubsup><mml:mi>V</mml:mi> <mml:mi>i</mml:mi> <mml:mi>p</mml:mi></mml:msubsup> <mml:mo>=</mml:mo> <mml:mn>1</mml:mn></mml:mrow></mml:math></alternatives></inline-formula> (taxi <italic>i</italic> only picked up passengers from one grid) we let <inline-formula id="pone.0165597.e031"><alternatives><graphic id="pone.0165597.e031g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e031" xlink:type="simple"/><mml:math display="inline" id="M31"><mml:mrow><mml:mi>D</mml:mi> <mml:mi>i</mml:mi> <mml:msubsup><mml:mi>v</mml:mi> <mml:mi>i</mml:mi> <mml:mi>p</mml:mi></mml:msubsup> <mml:mo>=</mml:mo> <mml:mn>0</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>. Similar rule applies to <inline-formula id="pone.0165597.e032"><alternatives><graphic id="pone.0165597.e032g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e032" xlink:type="simple"/><mml:math display="inline" id="M32"><mml:mrow><mml:mi>D</mml:mi> <mml:mi>i</mml:mi> <mml:msubsup><mml:mi>v</mml:mi> <mml:mi>i</mml:mi> <mml:mi>d</mml:mi></mml:msubsup> <mml:mo>=</mml:mo> <mml:mn>0</mml:mn></mml:mrow></mml:math></alternatives></inline-formula> when <inline-formula id="pone.0165597.e033"><alternatives><graphic id="pone.0165597.e033g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e033" xlink:type="simple"/><mml:math display="inline" id="M33"><mml:mrow><mml:msubsup><mml:mi>V</mml:mi> <mml:mi>i</mml:mi> <mml:mi>d</mml:mi></mml:msubsup> <mml:mo>=</mml:mo> <mml:mn>1</mml:mn></mml:mrow></mml:math></alternatives></inline-formula> and <inline-formula id="pone.0165597.e034"><alternatives><graphic id="pone.0165597.e034g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e034" xlink:type="simple"/><mml:math display="inline" id="M34"><mml:mrow><mml:mi>D</mml:mi> <mml:mi>i</mml:mi> <mml:msubsup><mml:mi>v</mml:mi> <mml:mi>m</mml:mi> <mml:mi>g</mml:mi></mml:msubsup> <mml:mo>=</mml:mo> <mml:mn>0</mml:mn></mml:mrow></mml:math></alternatives></inline-formula> when <inline-formula id="pone.0165597.e035"><alternatives><graphic id="pone.0165597.e035g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e035" xlink:type="simple"/><mml:math display="inline" id="M35"><mml:mrow><mml:msubsup><mml:mi>V</mml:mi> <mml:mi>m</mml:mi> <mml:mi>g</mml:mi></mml:msubsup> <mml:mo>=</mml:mo> <mml:mn>1</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.</p>
+<p>For the four groups of taxis with different incomes, <xref ref-type="fig" rid="pone.0165597.g009">Fig 9</xref> shows their average pick-up and drop-off diversities. It is interesting to observe that the pick-up diversity of the high income taxis is around 0.44, which is significantly smaller than the medium high income taxis (0.80) and the medium low income taxis (0.81). For the low income taxis, this value is around 0.51. This fact shows that the two extreme groups, the high and low income taxis, prefer picking up passengers from less grids. More interestingly, the drop-off diversity of the high income taxis is around 0.50, which is not only significantly smaller than the medium high income taxis (0.81) and the medium low income taxis (0.79), but also far less than that of the low income taxis (0.79). Therefore, we can see that the high income taxis prefer dropping off passengers in less grids while the others do not.</p>
+<fig id="pone.0165597.g009" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0165597.g009</object-id>
+<label>Fig 9</label>
+<caption>
+<title>The pick-up and drop-off diversity of different income groups of taxis.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0165597.g009" xlink:type="simple"/>
+</fig>
+<p>These conclusions are further validated by Figs <xref ref-type="fig" rid="pone.0165597.g010">10</xref> and <xref ref-type="fig" rid="pone.0165597.g011">11</xref>. <xref ref-type="fig" rid="pone.0165597.g010">Fig 10</xref> shows the pick-up diversities of all the taxis versus the number of pick-up grids. Both high and low income taxis have small pick up diversities (centered at around 0.5), but the high income taxis have much larger numbers of pick-up grids than the low income taxis. It means that a high income taxi mainly picks up passengers from a limited number of grids, but works more efficiently than a low income taxi so that it is able to cover more grids. For the medium high and medium low income taxis, the pick up diversities are large (centered at around 0.95) and the medium high income taxis have slightly larger numbers of pick up grids than the medium low income taxis. <xref ref-type="fig" rid="pone.0165597.g011">Fig 11</xref> depicts the drop-off diversities of the four group of the taxis. For the medium high income, medium low income, and low income taxis, their pick-up diversities are all close to 1, while the numbers of drop-off grids explain the difference of their efficiencies and hence incomes. The high income taxis are very efficient so that their numbers of drop-off grids are as high as 1000. However, the majority of the drop-offs happened at a limited number of grids, which causes the low drop-off diversities (mainly between 0.45 and 0.75).</p>
+<fig id="pone.0165597.g010" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0165597.g010</object-id>
+<label>Fig 10</label>
+<caption>
+<title>The number of picking up grids <inline-formula id="pone.0165597.e036"><alternatives><graphic id="pone.0165597.e036g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e036" xlink:type="simple"/><mml:math display="inline" id="M36"><mml:msubsup><mml:mi>N</mml:mi> <mml:mi>i</mml:mi> <mml:mi>p</mml:mi></mml:msubsup></mml:math></alternatives></inline-formula> with respect to the pick-up diversity <inline-formula id="pone.0165597.e037"><alternatives><graphic id="pone.0165597.e037g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e037" xlink:type="simple"/><mml:math display="inline" id="M37"><mml:mrow><mml:mi>D</mml:mi> <mml:mi>i</mml:mi> <mml:msubsup><mml:mi>v</mml:mi> <mml:mi>i</mml:mi> <mml:mi>p</mml:mi></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula> of each taxi. Four clusters correspond to four income level taxis.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0165597.g010" xlink:type="simple"/>
+</fig>
+<fig id="pone.0165597.g011" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0165597.g011</object-id>
+<label>Fig 11</label>
+<caption>
+<title>The number of dropping off grids <inline-formula id="pone.0165597.e038"><alternatives><graphic id="pone.0165597.e038g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e038" xlink:type="simple"/><mml:math display="inline" id="M38"><mml:msubsup><mml:mi>N</mml:mi> <mml:mi>i</mml:mi> <mml:mi>d</mml:mi></mml:msubsup></mml:math></alternatives></inline-formula> with respect to the drop-off diversity <inline-formula id="pone.0165597.e039"><alternatives><graphic id="pone.0165597.e039g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e039" xlink:type="simple"/><mml:math display="inline" id="M39"><mml:mrow><mml:mi>D</mml:mi> <mml:mi>i</mml:mi> <mml:msubsup><mml:mi>v</mml:mi> <mml:mi>i</mml:mi> <mml:mi>d</mml:mi></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula> of each taxi.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0165597.g011" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec013">
+<title>3.3 Inferring Purposely Ignoring Passengers</title>
+<p>From the analysis above, we can learn two rules of thumb of earning more money.
+<list list-type="order"><list-item><p>Rule 1: waiting for passengers in a limited number of areas (very likely, popular areas such as stadiums, shopping malls, and night clubs).</p></list-item> <list-item><p>Rule 2: dropping off passengers also in a limited number of areas.</p></list-item></list></p>
+<p>Note that Rule 1 itself can not simply guarantee high income; contrarily, it may lead to low income. Also, these two rules seem to be confusing: though it is easy to choose the pick-up grids, tt seems difficult to choose the drop-off grids so as to earn more money. One may ask: are there any pick-up grids whose trips end in a limited number of drop-off grids and correspond to high profits? Below we give a negative answer from the data analysis.</p>
+<p>
+<xref ref-type="fig" rid="pone.0165597.g012">Fig 12</xref> presents the grid diversity of all pick-up grids. As we can see, most diversity are larger than 0.6, which means that the pick-up grids have quite low correlation with drop-off grids. Especially, the grids where high income taxis mainly pick up passengers mostly have the diversity in 0.6 ∼ 0.8.</p>
+<fig id="pone.0165597.g012" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0165597.g012</object-id>
+<label>Fig 12</label>
+<caption>
+<title>The number of dropping off grids <inline-formula id="pone.0165597.e040"><alternatives><graphic id="pone.0165597.e040g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e040" xlink:type="simple"/><mml:math display="inline" id="M40"><mml:msubsup><mml:mi>N</mml:mi> <mml:mi>m</mml:mi> <mml:mi>g</mml:mi></mml:msubsup></mml:math></alternatives></inline-formula> with respect to the diversity of each grid <inline-formula id="pone.0165597.e041"><alternatives><graphic id="pone.0165597.e041g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e041" xlink:type="simple"/><mml:math display="inline" id="M41"><mml:mrow><mml:mi>D</mml:mi> <mml:mi>i</mml:mi> <mml:msubsup><mml:mi>v</mml:mi> <mml:mi>m</mml:mi> <mml:mi>g</mml:mi></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula>, the black crosses represent each grid where pick-ups happen,totaling 12176, while the red asterisks represent the grids where high income taxis pick up more than 500 times, approximately 1 time per taxi, totaling 508.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0165597.g012" xlink:type="simple"/>
+</fig>
+<p>These observations immediately arrive at an unfortunate conclusion that a high income taxi sometimes purposely ignores some passengers while prefers the others so that its destinations are concentrated in a limited number of drop-off areas, where it can pick up the next passenger more easily.</p>
+<p>Below we propose an approach to estimate the rate of purposely ignoring passengers in the high income taxis. Assume that all the other taxis did not have such irregular behaviors—notice that this assumption undoubtedly leads to a conservative estimation.</p>
+<p>As we have analyzed above, there truly exists passenger selection, or passenger denial in other words, when high income taxis drivers pick up passengers. That is the exact reason for their drop off diversity differences from medium and low income taxis. In this section, we further proposed a method to estimate the approximate passenger denial rate.</p>
+<p>We assume that the drop-off grids caused by medium and low income taxis stand for the normal case which is of no passenger denial, thus the excessive amount of passengers that high income taxi drivers carry than other drivers, can be explained as the result of passenger denial. In other words, the existence of grids where high income taxis drop off more passengers means that, they reject some passengers whose destinations are not within their preferences.</p>
+<p>
+<xref ref-type="fig" rid="pone.0165597.g013">Fig 13</xref> presents the actual passenger amount carried by all high income and non-high income taxis in all grids, and the most busy 400 drop-off grids are also zoomed for details. So the denial rate can be estimated by:
+<disp-formula id="pone.0165597.e042"><alternatives><graphic id="pone.0165597.e042g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0165597.e042" xlink:type="simple"/><mml:math display="block" id="M42"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msub><mml:mi>R</mml:mi> <mml:mi>d</mml:mi></mml:msub> <mml:mo>=</mml:mo> <mml:mfrac><mml:mrow><mml:msubsup><mml:mo>∑</mml:mo> <mml:mrow><mml:mi>i</mml:mi> <mml:mo>=</mml:mo> <mml:mn>1</mml:mn></mml:mrow> <mml:mi>k</mml:mi></mml:msubsup> <mml:msub><mml:mi>H</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mo>-</mml:mo> <mml:mi>n</mml:mi> <mml:mi>o</mml:mi> <mml:mi>n</mml:mi> <mml:msub><mml:mi>H</mml:mi> <mml:mi>i</mml:mi></mml:msub></mml:mrow> <mml:mi>N</mml:mi></mml:mfrac></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives></disp-formula></p>
+<fig id="pone.0165597.g013" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0165597.g013</object-id>
+<label>Fig 13</label>
+<caption>
+<title>The drop-off distributions of high and non-high income taxis, the forepart is zoomed in to have a better view, from which we can see the non-high income taxis’ distribution is relatively more even.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0165597.g013" xlink:type="simple"/>
+</fig>
+<p>Here, suppose there are totaly <italic>k</italic> grids where the high income taxis drop off more passengers than non-high income taxis do. <italic>H</italic><sub><italic>i</italic></sub> is the number of drop-offs in grid <italic>i</italic> of high income taxis, similarly <italic>nonH</italic><sub><italic>i</italic></sub> is that of non-high income taxis. <italic>N</italic> is the total number of trips, or passengers, served in this situation. The difference value of high and non-high income taxis is plotted in <xref ref-type="fig" rid="pone.0165597.g014">Fig 14</xref>, the part below zero represents the passengers that high income drivers reject. Then we can calculate the denial rate of high income taxis is approximately 70288/825269 = 8.52%, where 70,288 passengers are estimated to be denied, in total 825,269 trips. According to the passenger loads in this case, the passenger percentage fulfilled by high income taxis is about 38.55%, so the estimated overall denial rate in all taxi drivers is about 3.28%.</p>
+<fig id="pone.0165597.g014" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0165597.g014</object-id>
+<label>Fig 14</label>
+<caption>
+<title>The difference value distribution between high and non-high income taxis, the blue part represents the passengers that the high income taxis refuse to take, and the red part is the high income’s preferential passengers, and obviously, the areas of these two parts are the same.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0165597.g014" xlink:type="simple"/>
+</fig>
+</sec>
+</sec>
+<sec id="sec014" sec-type="conclusions">
+<title>4 Discussion</title>
+<p>Through large-scale taxi trace data analysis, we confirm two facts that have been already revealed by previous work. First fact is income differentiation among taxi drivers. Second fact is, the mobility intelligence might be the reason for earning more money for taxi drivers. Those drivers who can choose proper pick-up areas will have more chances to serve possible passengers.</p>
+<p>As to the high income taxi drivers, we gain the novel insight that, mobility intelligence is just one possible reason for their high income, and passenger denial also plays crucial role. The passenger denial estimation method considers only the high income drivers, but the actual denial rate in real world is reported much higher, which we believe is because the denial also happens in the medium and low income taxi drivers. But due the data limitation, estimation to this part is hard to perform.</p>
+<p>Contrary to common belief, choosing pick-up areas does not necessarily lead to high income. Those examples of low income taxi drivers in this study illustrate that choosing wrong places is rather worse than randomly choosing, just as medium income taxi drivers do. Another interesting fruit obtained is that, it is believed that driving longer distance trip will bring higher income, but our results show that, the taxis drivers’ income do not have explicit correlation with the single trip’s distance.</p>
+<p>The grid size is an important parameter in our research, which will affect the conclusions. But 300m × 300m is small enough to demonstrate the difference of pick-up and drop-off diversity among different group of taxi drivers, although we also believe that smaller size will lead to the same results. We argue that the pick-up and drop-off diversity concept proposed in this paper can be used to effectively classify taxis into different income level or even moral level, which has vital importance and tremendous potential in real applications, for example, taxi driver recognition.</p>
+<p>We note that, all the computation tasks of this work need not consume huge computing time, which is helpful for building realtime diversity analytic system in the future. Suppose there are totally <italic>N</italic> gps records for <italic>M</italic> taxis, and the areas are divided into <italic>K</italic> × <italic>K</italic> square grids. Then for pick-up and drop-off diversity, the complexity is <italic>O</italic>(<italic>N</italic> × <italic>K</italic> × <italic>K</italic>), which is also the whole computation time complexity of this work, because other related computation operations, such as distance calculation, working time calculation, are all close to <italic>O</italic>(<italic>N</italic>) computation complexity.</p>
+<p>The mobility diversity concept proposed in this paper have broad and significant potential applications in almost all mobility related areas. First, this diversity concept can be utilized as features or metrics for learning or recognizing mobile objects’ behavior, when using clustering, classification and machine learning techniques. Second, this diversity evaluation framework can be extended to distinguish different types of mobile objects in many other location based areas. For example, such analysis on hotel booking records can help understand the customers more accurately. We are convinced that this concept and framework will have much more practical case studies in the future.</p>
+<p>Finally, fast developing information and communication technology can support the necessary data transmission and computation proposed in this paper. The coming 5G technology together with device-to-device(D2D) communications will enable the huge data collection and communications among vehicles and base stations or access points [<xref ref-type="bibr" rid="pone.0165597.ref032">32</xref>] and the reliable distributed and adaptive resource management for cognitive cloud vehicular networks can allow energy and computing-limited vehicle devices to utilize the available vehicle-to-infrastructure (V2I) WiFi connections for performing data offloading [<xref ref-type="bibr" rid="pone.0165597.ref033">33</xref>]. The wireless energy transfer can even enable the diversity computation in passive low-complexity devices such as sensors and wearable computing devices, if we want to analyze the location data generated or sensed from the above devices [<xref ref-type="bibr" rid="pone.0165597.ref034">34</xref>].</p>
+</sec>
+<sec id="sec015" sec-type="conclusions">
+<title>5 Conclusion</title>
+<p>This research belongs to human dynamics topic, focusing on the distrss phenomena and internal mechanism for stranger to stranger interactions, which exists widely in almost every social areas of living life. We take taxi industry as example, but our methodology and framework may also contribute in other fields, which need further research and verification.</p>
+<p>In summary, this paper has shown that leveraging large scale data set can enable simple or straightforward statistical inferring techniques to obtain significant insights on, in this case, taxi industry. The pick-up, drop-off and grid diversity concepts proposed and related diversity analysis done in this paper suggest that high income taxi drivers will deny passengers in some situations, so as to choose the passengers’ destination they prefer, which seems quite obvious to public, but has not been verified using realistic data set until our work. Thus, our work exhibits the power of big data analysis in revealing some dark side investigation for not only information system but also urban management and company regulations, which shed light for future investigation in other applications and domain.</p>
+</sec>
+</body>
+<back>
+<ack>
+<p>We are grateful to Dr. Qing Ling for helpful comments on the manuscript.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0165597.ref001">
+<label>1</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Liu</surname> <given-names>W</given-names></name>, <name name-style="western"><surname>Bai</surname> <given-names>X</given-names></name>, <name name-style="western"><surname>Liu</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>W</given-names></name>, <name name-style="western"><surname>Han</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>Q</given-names></name>, <etal>et al</etal>. <article-title>Topologically inferring pathway activity toward precise cancer classification via integrating genomic and metabolomic data: prostate cancer as a case</article-title>. <source>Scientific Reports</source>. <year>2015</year>;<volume>5</volume>:<fpage>13192</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/srep13192" xlink:type="simple">10.1038/srep13192</ext-link></comment> <object-id pub-id-type="pmid">26286638</object-id></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref002">
+<label>2</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Hart</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Sheftel</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Hausser</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Szekely</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Ben-Moshe</surname> <given-names>NB</given-names></name>, <name name-style="western"><surname>Korem</surname> <given-names>Y</given-names></name>, <etal>et al</etal>. <article-title>Inferring biological tasks using Pareto analysis of high-dimensional data</article-title>. <source>Nat Meth</source>. <year>2015</year>;<volume>12</volume>(<issue>3</issue>):<fpage>233</fpage>–<lpage>235</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nmeth.3254" xlink:type="simple">10.1038/nmeth.3254</ext-link></comment> <object-id pub-id-type="pmid">25622107</object-id></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref003">
+<label>3</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Meik</surname> <given-names>JM</given-names></name>, <name name-style="western"><surname>Streicher</surname> <given-names>JW</given-names></name>, <name name-style="western"><surname>Lawing</surname> <given-names>AM</given-names></name>, <name name-style="western"><surname>Flores-Villela</surname> <given-names>O</given-names></name>, <name name-style="western"><surname>Fujita</surname> <given-names>MK</given-names></name>. <article-title>Limitations of Climatic Data for Inferring Species Boundaries: Insights from Speckled Rattlesnakes</article-title>. <source>PLoS ONE</source>. <year>2015</year>;<volume>10</volume>(<issue>6</issue>):<fpage>e0131435</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0131435" xlink:type="simple">10.1371/journal.pone.0131435</ext-link></comment> <object-id pub-id-type="pmid">26107178</object-id></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref004">
+<label>4</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Jovanovik</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Bogojeska</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Trajanov</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Kocarev</surname> <given-names>L</given-names></name>. <article-title>Inferring Cuisine—Drug Interactions Using the Linked Data Approach</article-title>. <source>Scientific Reports</source>. <year>2015</year>;<volume>5</volume>:<fpage>9346</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/srep09346" xlink:type="simple">10.1038/srep09346</ext-link></comment> <object-id pub-id-type="pmid">25792182</object-id></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref005">
+<label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Wan</surname> <given-names>X</given-names></name>, <name name-style="western"><surname>Liu</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Cheung</surname> <given-names>WK</given-names></name>, <name name-style="western"><surname>Tong</surname> <given-names>T</given-names></name>. <article-title>Inferring Epidemic Network Topology from Surveillance Data</article-title>. <source>PLoS ONE</source>. <year>2014</year>;<volume>9</volume>(<issue>6</issue>):<fpage>e100661</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0100661" xlink:type="simple">10.1371/journal.pone.0100661</ext-link></comment> <object-id pub-id-type="pmid">24979215</object-id></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref006">
+<label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Palchykov</surname> <given-names>V</given-names></name>, <name name-style="western"><surname>Mitrović</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Jo</surname> <given-names>H-H</given-names></name>, <name name-style="western"><surname>Saramäki</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Pan</surname> <given-names>RK</given-names></name>. <article-title>Inferring human mobility using communication patterns</article-title>. <source>Scientific Reports</source>. <year>2014</year>;<volume>4</volume>:<fpage>6174</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/srep06174" xlink:type="simple">10.1038/srep06174</ext-link></comment> <object-id pub-id-type="pmid">25146347</object-id></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref007">
+<label>7</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Schiffels</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Durbin</surname> <given-names>R</given-names></name>. <article-title>Inferring human population size and separation history from multiple genome sequences</article-title>. <source>Nat Genet</source>. <year>2014</year>;<volume>46</volume>(<issue>8</issue>):<fpage>919</fpage>–<lpage>925</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/ng.3015" xlink:type="simple">10.1038/ng.3015</ext-link></comment> <object-id pub-id-type="pmid">24952747</object-id></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref008">
+<label>8</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Modalsli</surname> <given-names>J</given-names></name>. <article-title>Inequality in the very long run: inferring inequality from data on social groups</article-title>. <source>The Journal of Economic Inequality</source>. <year>2015</year>;<volume>13</volume>(<issue>2</issue>):<fpage>225</fpage>–<lpage>247</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s10888-014-9279-6" xlink:type="simple">10.1007/s10888-014-9279-6</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref009">
+<label>9</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Magierowski</surname> <given-names>RH</given-names></name>, <name name-style="western"><surname>Read</surname> <given-names>SM</given-names></name>, <name name-style="western"><surname>Carter</surname> <given-names>SJB</given-names></name>, <name name-style="western"><surname>Warfe</surname> <given-names>DM</given-names></name>, <name name-style="western"><surname>Cook</surname> <given-names>LS</given-names></name>, <name name-style="western"><surname>Lefroy</surname> <given-names>EC</given-names></name>, <etal>et al</etal>. <article-title>Inferring Landscape-Scale Land-Use Impacts on Rivers Using Data from Mesocosm Experiments and Artificial Neural Networks</article-title>. <source>PLoS ONE</source>. <year>2015</year>;<volume>10</volume>(<issue>3</issue>):<fpage>e0120901</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0120901" xlink:type="simple">10.1371/journal.pone.0120901</ext-link></comment> <object-id pub-id-type="pmid">25775245</object-id></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref010">
+<label>10</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Whitehead</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Jonsen</surname> <given-names>ID</given-names></name>. <article-title>Inferring Animal Densities from Tracking Data Using Markov Chains</article-title>. <source>PLoS ONE</source>. <year>2013</year>;<volume>8</volume>(<issue>4</issue>):<fpage>e60901</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0060901" xlink:type="simple">10.1371/journal.pone.0060901</ext-link></comment> <object-id pub-id-type="pmid">23630574</object-id></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref011">
+<label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Sun</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Yu</surname> <given-names>X</given-names></name>, <name name-style="western"><surname>Bie</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Song</surname> <given-names>H</given-names></name>. <article-title>Discovering time-dependent shortest path on traffic graph for drivers towards green driving</article-title>. <source>Journal of Network and Computer Applications</source>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.jnca.2015.10.018" xlink:type="simple">10.1016/j.jnca.2015.10.018</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref012">
+<label>12</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Sun</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Song</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Jara</surname> <given-names>AJ</given-names></name>, <name name-style="western"><surname>Bie</surname> <given-names>R</given-names></name>. <article-title>Internet of Things and Big Data Analytics for Smart and Connected Communities</article-title>. <source>IEEE Access</source>. <year>2016</year>;<volume>4</volume>:<fpage>766</fpage>–<lpage>773</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1109/ACCESS.2016.2529723" xlink:type="simple">10.1109/ACCESS.2016.2529723</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref013">
+<label>13</label>
+<mixed-citation publication-type="book" xlink:type="simple">
+<name name-style="western"><surname>Song</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Rawat</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Jeschke</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Brecher</surname> <given-names>C</given-names></name>. <source>Cyber-Physical Systems: Foundations, Principles and Applications</source>. <edition>1st ed</edition>. <publisher-loc>Massachusetts</publisher-loc>: <publisher-name>Academic Press</publisher-name>; <year>2016</year>.</mixed-citation>
+</ref>
+<ref id="pone.0165597.ref014">
+<label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Huang</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Wu</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>You</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Lv</surname> <given-names>Z</given-names></name>, <name name-style="western"><surname>Song</surname> <given-names>H</given-names></name>. <article-title>Cyclist Social Force Model at Unsignalized Intersections with Heterogeneous Traffic</article-title>. <source>IEEE Transactions on Industrial Informatics</source>. <year>2016</year>; <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1109/TII.2016.2597744" xlink:type="simple">10.1109/TII.2016.2597744</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref015">
+<label>15</label>
+<mixed-citation publication-type="other" xlink:type="simple">Song H, Smith BL. Empirical investigation of the impact of high-occupancy-toll operations on driver behavior. In Transportation Research Board 88th Annual Meeting; 2009 Jan 1–15; Washington DC, USA. 2002.</mixed-citation>
+</ref>
+<ref id="pone.0165597.ref016">
+<label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Chin</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Huang</surname> <given-names>H</given-names></name>. <article-title>Safety assessment of taxi drivers in singapore</article-title>. <source>Transportation Research Record</source>. <year>2009</year>;<volume>2114</volume>:<fpage>47</fpage>–<lpage>56</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.3141/2114-06" xlink:type="simple">10.3141/2114-06</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref017">
+<label>17</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Burgel</surname> <given-names>BJ</given-names></name>, <name name-style="western"><surname>Gillen</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>White</surname> <given-names>MC</given-names></name>. <article-title>Health and Safety Strategies of Urban Taxi Drivers</article-title>. <source>Journal of Urban Health: Bulletin of the New York Academy of Medicine</source>. <year>2012</year>;<volume>89</volume>(<issue>4</issue>):<fpage>717</fpage>–<lpage>722</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s11524-012-9685-7" xlink:type="simple">10.1007/s11524-012-9685-7</ext-link></comment> <object-id pub-id-type="pmid">22669644</object-id></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref018">
+<label>18</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Farber</surname> <given-names>HS</given-names></name>. <article-title>Reference-Dependent Preferences and Labor Supply: The Case of New York City Taxi Drivers</article-title>. <source>The American Economic Review</source>. <year>2008</year>;<volume>98</volume>(<issue>3</issue>):<fpage>1069</fpage>–<lpage>1082</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1257/aer.98.3.1069" xlink:type="simple">10.1257/aer.98.3.1069</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref019">
+<label>19</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Kamruzzaman</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Shatu</surname> <given-names>FM</given-names></name>, <name name-style="western"><surname>Hine</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Turrell</surname> <given-names>G</given-names></name>. <article-title>Commuting mode choice in transit oriented development: Disentangling the effects of competitive neighbourhoods, travel attitudes, and self-selection</article-title>. <source>Transport Policy</source>. <year>2015</year>;<volume>42</volume>:<fpage>187</fpage>–<lpage>196</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.tranpol.2015.06.003" xlink:type="simple">10.1016/j.tranpol.2015.06.003</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref020">
+<label>20</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Zhang</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Yuan</surname> <given-names>NJ</given-names></name>, <name name-style="western"><surname>Wilkie</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Zheng</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Xie</surname> <given-names>X</given-names></name>. <article-title>Sensing the pulse of urban refueling behavior: A perspective from taxi mobility</article-title>. <source>ACM Transactions on Intelligent Systems and Technology</source>. <year>2015</year>;<volume>6</volume>(<issue>3</issue>):<fpage>1</fpage>–<lpage>23</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1145/2644828" xlink:type="simple">10.1145/2644828</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref021">
+<label>21</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Liu</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Ni</surname> <given-names>LM</given-names></name>, <name name-style="western"><surname>Krishnan</surname> <given-names>R</given-names></name>. <article-title>Fraud Detection From Taxis’ Driving Behaviors</article-title>. <source>IEEE Transactions on Vehicular Technology</source>. <year>2014</year>;<volume>63</volume>(<issue>1</issue>):<fpage>464</fpage>–<lpage>472</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1109/TVT.2013.2272792" xlink:type="simple">10.1109/TVT.2013.2272792</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref022">
+<label>22</label>
+<mixed-citation publication-type="other" xlink:type="simple">Rivoli D, Marcius CR, Greene L. NYC taxi driver fined $25K for refusing ride to black family and picking up white women instead. New York Daily News [newspaper on the internet]. 2015 Aug 6[cited 2016 Oct 20]. <comment>Available from: <ext-link ext-link-type="uri" xlink:href="http://www.nydailynews.com/new-york/taxi-driver-fined-25k-refusing-ride-black-family-article-1.2317004" xlink:type="simple">http://www.nydailynews.com/new-york/taxi-driver-fined-25k-refusing-ride-black-family-article-1.2317004</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref023">
+<label>23</label>
+<mixed-citation publication-type="other" xlink:type="simple">The Canadian Press. Newfoundland Taxi Company Ordered To Pay For Refusing To Drive Blind Passenger, Dog. The Huffington Post [newspaper on the internet]. 2016 Feb 16[cited 2016 Oct 20]. <comment>Available from: <ext-link ext-link-type="uri" xlink:href="http://www.huffingtonpost.ca/2016/02/16/taxi-refuses-blind-passenger-dog_n_9245008.html" xlink:type="simple">http://www.huffingtonpost.ca/2016/02/16/taxi-refuses-blind-passenger-dog_n_9245008.html</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref024">
+<label>24</label>
+<mixed-citation publication-type="other" xlink:type="simple">Chung H. Taxi drivers to lose license for refusing passengers. The Korea Observer [newspaper on the internet]. 2015 Jan 28[cited 2016 Oct 20]. <comment>Available from: <ext-link ext-link-type="uri" xlink:href="http://www.koreaobserver.com/taxi-drivers-to-lose-license-for-refusing-passengers-25902/" xlink:type="simple">http://www.koreaobserver.com/taxi-drivers-to-lose-license-for-refusing-passengers-25902/</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref025">
+<label>25</label>
+<mixed-citation publication-type="other" xlink:type="simple">Glanfield E. Muslim taxi driver refuses to take disabled passenger with his guide dog’because it’s against his religion’. Daily Mail [newspaper on the internet]. 2016 Jul 4[cited 2016 Oct 20]. <comment>Available from: <ext-link ext-link-type="uri" xlink:href="http://www.dailymail.co.uk/news/article-3673685/Muslim-taxi-driver-refuses-disabled-passenger-guide-dog-s-against-religion.html" xlink:type="simple">http://www.dailymail.co.uk/news/article-3673685/Muslim-taxi-driver-refuses-disabled-passenger-guide-dog-s-against-religion.html</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref026">
+<label>26</label>
+<mixed-citation publication-type="other" xlink:type="simple">Taxi Association Cndemns’NO JAPANESE PASSENGERS’ Sign. Khaosod English [newspaper on the internet]. 2015 Jan 21[cited 2016 Oct 20]. <comment>Available from: <ext-link ext-link-type="uri" xlink:href="http://www.khaosodenglish.com/life/2015/01/21/1421819098/" xlink:type="simple">http://www.khaosodenglish.com/life/2015/01/21/1421819098/</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref027">
+<label>27</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Yuan</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Zheng</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Xie</surname> <given-names>X</given-names></name>, <name name-style="western"><surname>Sun</surname> <given-names>G</given-names></name>. <article-title>T-Drive: Enhancing Driving Directions with Taxi Drivers’ Intelligence</article-title>. <source>IEEE Transactions on Knowledge and Data Engineering</source>. <year>2013</year>;<volume>25</volume>(<issue>1</issue>):<fpage>220</fpage>–<lpage>232</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1109/TKDE.2011.200" xlink:type="simple">10.1109/TKDE.2011.200</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref028">
+<label>28</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Yuan</surname> <given-names>NJ</given-names></name>, <name name-style="western"><surname>Zheng</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Zhang</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Xie</surname> <given-names>X</given-names></name>. <article-title>T-Finder: A Recommender System for Finding Passengers and Vacant Taxis</article-title>. <source>IEEE Transactions on Knowledge and Data Engineering</source>. <year>2013</year>;<volume>25</volume>(<issue>10</issue>):<fpage>2390</fpage>–<lpage>2403</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1109/TKDE.2012.153" xlink:type="simple">10.1109/TKDE.2012.153</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref029">
+<label>29</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Zhang</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Sun</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Li</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Pan</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Li</surname> <given-names>S</given-names></name>, <etal>et al</etal>. <article-title>Understanding Taxi Service Strategies From Taxi GPS Traces</article-title>. <source>IEEE Transactions on Intelligent Transportation Systems</source>. <year>2015</year>;<volume>16</volume>(<issue>1</issue>):<fpage>123</fpage>–<lpage>135</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1109/TITS.2014.2328231" xlink:type="simple">10.1109/TITS.2014.2328231</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref030">
+<label>30</label>
+<mixed-citation publication-type="book" xlink:type="simple">
+<name name-style="western"><surname>Gao</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Xu</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Lu</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Liu</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Liu</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Qu</surname> <given-names>H</given-names></name>. <chapter-title>Visualization of taxi drivers’ income and mobility intelligence</chapter-title>. In: <name name-style="western"><surname>Bebis</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Boyle</surname> <given-names>R</given-names></name>, editors. <source>Advances in Visual Computing</source>. <publisher-loc>New York</publisher-loc>: <publisher-name>Springer Berlin Heidelberg</publisher-name>; <year>2012</year>. p. <fpage>275</fpage>–<lpage>284</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0165597.ref031">
+<label>31</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Goodwin</surname> <given-names>HB</given-names></name>. <article-title>The Haversine in Nautical Astronomy</article-title>. <source>US Naval Institute Proceedings</source>. <year>1910</year>;<volume>36</volume>(<issue>3</issue>):<fpage>735</fpage>–<lpage>746</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0165597.ref032">
+<label>32</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Mumtaz</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Huq</surname> <given-names>KMS</given-names></name>, <name name-style="western"><surname>Ashraf</surname> <given-names>MI</given-names></name>, <name name-style="western"><surname>Rodriguez</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Monteiro</surname> <given-names>V</given-names></name>, <name name-style="western"><surname>Politis</surname> <given-names>C</given-names></name>. <article-title>Cognitive vehicular communication for 5G</article-title>. <source>IEEE Communications Magazine</source>. <year>2015</year>;<volume>53</volume>(<issue>7</issue>):<fpage>109</fpage>–<lpage>117</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1109/MCOM.2015.7158273" xlink:type="simple">10.1109/MCOM.2015.7158273</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref033">
+<label>33</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Cordeschi</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Amendola</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Baccarelli</surname> <given-names>E</given-names></name>. <article-title>Reliable Adaptive Resource Management for Cognitive Cloud Vehicular Networks</article-title>. <source>IEEE Transactions on Vehicular Technology</source>. <year>2015</year>;<volume>64</volume>(<issue>6</issue>):<fpage>2528</fpage>–<lpage>2537</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1109/TVT.2014.2345767" xlink:type="simple">10.1109/TVT.2014.2345767</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0165597.ref034">
+<label>34</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>You</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Huang</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Chae</surname> <given-names>H</given-names></name>. <article-title>Energy Efficient Mobile Cloud Computing Powered by Wireless Energy Transfer</article-title>. <source>IEEE Journal on Selected Areas in Communications</source>. <year>2016</year>;<volume>34</volume>(<issue>5</issue>):<fpage>1757</fpage>–<lpage>1771</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1109/JSAC.2016.2545382" xlink:type="simple">10.1109/JSAC.2016.2545382</ext-link></comment></mixed-citation>
+</ref>
+</ref-list>
+</back>
+</article>

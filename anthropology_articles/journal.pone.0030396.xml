@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosone</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group><issn pub-type="epub">1932-6203</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="publisher-id">PONE-D-11-09631</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0030396</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Earth sciences</subject>
+          <subj-group>
+            <subject>Environmental sciences</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Mathematics</subject>
+          <subj-group>
+            <subject>Applied mathematics</subject>
+          </subj-group>
+          <subj-group>
+            <subject>Mathematical economics</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Science policy</subject>
+          <subj-group>
+            <subject>Science policy and economics</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Social and behavioral sciences</subject>
+          <subj-group>
+            <subject>Anthropology</subject>
+            <subj-group>
+              <subject>Economic anthropology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Economics</subject>
+            <subj-group>
+              <subject>Economic anthropology</subject>
+            </subj-group>
+            <subj-group>
+              <subject>Economic geography</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Geography</subject>
+            <subj-group>
+              <subject>Economic geography</subject>
+            </subj-group>
+            <subj-group>
+              <subject>Human geography</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Sociology</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Science Policy</subject>
+          <subject>Mathematics</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>Ecological Footprint Model Using the Support Vector Machine Technique</article-title><alt-title alt-title-type="running-head">Ecological Footprint Model</alt-title></title-group><contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Ma</surname>
+            <given-names>Haibo</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Chang</surname>
+            <given-names>Wenjuan</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Cui</surname>
+            <given-names>Guangbai</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1"><label>1</label><addr-line>College of Hydraulic &amp; Environmental Engineering, China Three Gorges University, Yichang, China</addr-line>       </aff><aff id="aff2"><label>2</label><addr-line>College of Hydrology and Water Resources, Hohai University, Nanjing,China</addr-line>       </aff><contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Szolnoki</surname>
+            <given-names>Attila</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group><aff id="edit1">Hungarian Academy of Sciences, Hungary</aff><author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">mahaibo29@163.com</email></corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: HM. Performed the experiments: WC. Analyzed the data: GC. Contributed reagents/materials/analysis tools: HM. Wrote the paper: HM. Design the ecological footprint model: HM.</p>
+        </fn>
+      <fn fn-type="conflict">
+        <p>The authors have declared that no competing interests exist.</p>
+      </fn></author-notes><pub-date pub-type="collection">
+        <year>2012</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>23</day>
+        <month>1</month>
+        <year>2012</year>
+      </pub-date><volume>7</volume><issue>1</issue><elocation-id>e30396</elocation-id><history>
+        <date date-type="received">
+          <day>27</day>
+          <month>5</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>15</day>
+          <month>12</month>
+          <year>2011</year>
+        </date>
+      </history><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2012</copyright-year><copyright-holder>Ma et al</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><abstract>
+        <p>The per capita ecological footprint (EF) is one of the most widely recognized measures of environmental sustainability. It aims to quantify the Earth's biological resources required to support human activity. In this paper, we summarize relevant previous literature, and present five factors that influence per capita EF. These factors are: National gross domestic product (GDP), urbanization (independent of economic development), distribution of income (measured by the Gini coefficient), export dependence (measured by the percentage of exports to total GDP), and service intensity (measured by the percentage of service to total GDP). A new ecological footprint model based on a support vector machine (SVM), which is a machine-learning method based on the structural risk minimization principle from statistical learning theory was conducted to calculate the per capita EF of 24 nations using data from 123 nations. The calculation accuracy was measured by average absolute error and average relative error. They were 0.004883 and 0.351078% respectively. Our results demonstrate that the EF model based on SVM has good calculation performance.</p>
+      </abstract><funding-group><funding-statement>The authors have no funding or support to report.</funding-statement></funding-group><counts>
+        <page-count count="5"/>
+      </counts></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>The ecological footprint (EF) approach was developed by Wackernagel and Rees <xref ref-type="bibr" rid="pone.0030396-Wackernagel1">[1]</xref>. It is calculated as the total area of bio-productive land and water required to continuously produce all resources consumed, and to assimilate all wastes generated by a defined population in a specific location <xref ref-type="bibr" rid="pone.0030396-Mostafa1">[2]</xref>. The EF approach provides a comprehensive unit of measurement that allows for comparisons of various types of consumption-based impacts <xref ref-type="bibr" rid="pone.0030396-Wackernagel2">[3]</xref>. Therefore, since its development the EF approach has become the most widely-used measure of environmental sustainability <xref ref-type="bibr" rid="pone.0030396-Binningsbo1">[4]</xref>.The EF approach aggregates typically complex resource use patterns into a single number <xref ref-type="bibr" rid="pone.0030396-Costanza1">[5]</xref>. The validity of the per capita EF, which traces the average amount of resources a person in a given country consumes, and the amount of waste they generate is confirmed by its significant correlation with important environmental impacts, for example, national emissions of ozone depleting substances, and nuclear power generation <xref ref-type="bibr" rid="pone.0030396-WRIWorld1">[6]</xref>.</p>
+      <p>There are six resources considered by the EF: crop and pasture lands for production of goods and food, built land for construction, forest for the production of wood products, fossil energy for carbon dioxide emissions from fuels, and fish for food production. All of these are measured in global hectares (ha). A global hectare represents a hectare of land with global average bio-productivity. Social scientists and policymakers can compare the per capita EF of various nations to the per capita ecological capacity that exists on earth. For example, in 1996 the per capita EF ranged from 0.35 hectares to more than 16 hectares, and the majority of the estimated per capita EFs were higher than the Earth's bio-capacity per capita <xref ref-type="bibr" rid="pone.0030396-Jorgenson1">[7]</xref>. According to McDonald and Patterson <xref ref-type="bibr" rid="pone.0030396-McDonald1">[8]</xref>, the global EF is at least 30% larger than the Earth's bio-capacity, illustrating the severity of resource overuse. EF figures can also be used as benchmarks for assessing sustainability at a national level, for example, nations with an EF at or below 1.8 hectares per capita have a global impact that could be replicated by other nations without threatening long-term sustainability <xref ref-type="bibr" rid="pone.0030396-Mostafa1">[2]</xref>.</p>
+      <p>Although the EF model has been used at various levels, including global <xref ref-type="bibr" rid="pone.0030396-Rice1">[9]</xref>, municipal <xref ref-type="bibr" rid="pone.0030396-Barrett1">[10]</xref>, national <xref ref-type="bibr" rid="pone.0030396-Rice1">[9]</xref>, city <xref ref-type="bibr" rid="pone.0030396-Li1">[11]</xref> and individual <xref ref-type="bibr" rid="pone.0030396-Crompton1">[12]</xref>, no previous studies have attempted to apply a support vector machine (SVM) to predict national EF. In this paper, we seek to fill this research gap by calculating the EF of 23 nations through the use of SVM techniques. The countries analyzed in this study are listed in the <xref ref-type="supplementary-material" rid="pone.0030396.s001">Appendix S1</xref>. More specially, the purpose of this research is twofold:</p>
+      <p>First, to determine the major factors influencing national EFs, and second, to build a SVM model based on these identified factors to calculate EF.</p>
+    </sec>
+    <sec id="s2" sec-type="materials|methods">
+      <title>Materials and Methods</title>
+      <sec id="s2a">
+        <title>Materials</title>
+        <p>Drawing on previous research, we found a wealth of evidence suggesting that a variety of factors influence EF. Cross-sectional analyses consistently show that national per capita ecological footprints are largely a function of gross domestic product (GDP) <xref ref-type="bibr" rid="pone.0030396-Jorgenson2">[13]</xref>, <xref ref-type="bibr" rid="pone.0030396-Jorgenson3">[14]</xref>, <xref ref-type="bibr" rid="pone.0030396-Jorgenson4">[15]</xref>. A negative relationship between per capita EF and export dependence (measured as the proportion of total GDP generated by exports) has also been identified <xref ref-type="bibr" rid="pone.0030396-Jorgenson4">[15]</xref>. According to Jorgenson and Burns <xref ref-type="bibr" rid="pone.0030396-Jorgenson5">[16]</xref>, nations with a greater intensity in the services sector experience higher increases in per capita EF.</p>
+        <p>Some evidence suggests that domestic income inequality is negatively related to the relative size of a nation's per capita EF <xref ref-type="bibr" rid="pone.0030396-Jorgenson5">[16]</xref>. Jorgenson (2003) found that urbanization has a positive impact on EF <xref ref-type="bibr" rid="pone.0030396-Jorgenson2">[13]</xref>. From the above, it can be seen that the factors that influence EF can be characterized as affluence (as measured by GDP), export dependence, service intensity, domestic income inequality, and urbanization.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Methodology</title>
+        <p>The SVM is a machine-learning method based on the structural risk minimization principle from statistical learning theory. It maps input data <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0030396.e001" xlink:type="simple"/></inline-formula> into a higher-dimensional feature space <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0030396.e002" xlink:type="simple"/></inline-formula> by non-linear mapping to yield and solve a linear regression problem in this feature space <xref ref-type="bibr" rid="pone.0030396-Liu1">[17]</xref>. The regression approximation addresses the problem of estimating a function based on a given set <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0030396.e003" xlink:type="simple"/></inline-formula>, where <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0030396.e004" xlink:type="simple"/></inline-formula> denotes the input vector, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0030396.e005" xlink:type="simple"/></inline-formula> denotes the output value, and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0030396.e006" xlink:type="simple"/></inline-formula> denotes the total number of data patterns. In SVM, the regression function is given as the following:<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0030396.e007" xlink:type="simple"/><label>(1)</label></disp-formula>Where <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0030396.e008" xlink:type="simple"/></inline-formula> is a scalar threshold, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0030396.e009" xlink:type="simple"/></inline-formula> is the weight vector, and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0030396.e010" xlink:type="simple"/></inline-formula> is the high-dimensional feature space that is nonlinearly mapped from the input space <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0030396.e011" xlink:type="simple"/></inline-formula>.</p>
+        <p>Support vector regression (SVR) performs linear regression in the high-dimensional feature space by e-insensitive loss. At the same time, to prevent over-fitting and thereby improving the generalization capability, the following regularized functional involving summation of the empirical risk and a complexity term <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0030396.e012" xlink:type="simple"/></inline-formula>, is minimized. The coefficients <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0030396.e013" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0030396.e014" xlink:type="simple"/></inline-formula> can be estimated by minimizing the regularized risk function:</p>
+        <p>Min <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0030396.e015" xlink:type="simple"/></inline-formula><disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0030396.e016" xlink:type="simple"/><label>(2)</label></disp-formula></p>
+        <p>The regression problem is transformed into the following constrained formation:<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0030396.e017" xlink:type="simple"/><label>(3)</label></disp-formula>Where the constant <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0030396.e018" xlink:type="simple"/></inline-formula> stands for the penalty degree of the sample with error exceeding <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0030396.e019" xlink:type="simple"/></inline-formula>. Two positive slack variables <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0030396.e020" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0030396.e021" xlink:type="simple"/></inline-formula> represent the distance from actual values to the corresponding boundary values of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0030396.e022" xlink:type="simple"/></inline-formula>.</p>
+        <p>A dual problem can then be derived by using the optimization method to maximize the function:<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0030396.e023" xlink:type="simple"/><label>(4)</label></disp-formula>Where <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0030396.e024" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0030396.e025" xlink:type="simple"/></inline-formula> are the Lagrange multiplier.</p>
+        <p>The SVM for function fitting obtained by using the above mentioned maximization function is then given by the following function:<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0030396.e026" xlink:type="simple"/><label>(5)</label></disp-formula>In Equation 5, sample points that appear with non-zero coefficients are the so-called support vectors. The kernel function <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0030396.e027" xlink:type="simple"/></inline-formula> satisfies Mercer's conditions and performs the non-linear mapping.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results and Discussion</title>
+      <sec id="s3a">
+        <title>Preliminary data analysis</title>
+        <p>In this study, per capita EF was taken from White <xref ref-type="bibr" rid="pone.0030396-White1">[18]</xref>, <xref ref-type="bibr" rid="pone.0030396-WWF1">[19]</xref>, the latest data on national level per capita EF, and GDP data were taken from the World Bank <xref ref-type="bibr" rid="pone.0030396-World1">[20]</xref>. To correct for excessive skewness, we use the natural logarithm transformation of GDP data. Export data as a percentage of total GDP were taken from the World Bank <xref ref-type="bibr" rid="pone.0030396-World1">[20]</xref> and used as a measure of export intensity and export dependence. Service data as a percentage of total GDP were taken from the World Bank <xref ref-type="bibr" rid="pone.0030396-World1">[20]</xref> and used as an indicator of service intensity. Domestic income inequality data were taken from the World Bank <xref ref-type="bibr" rid="pone.0030396-World1">[20]</xref> and are presented as GINI coefficients, which measure the distribution of income within countries. A GINI index score of zero suggests perfect equality, while an index score of 100 suggests perfect inequality. Urbanization data were taken from the World Bank <xref ref-type="bibr" rid="pone.0030396-World1">[20]</xref>, and are measured as the percentage of the total population living in cities, which represents a country's relative level of urbanization. Following Jorgenson and Burns <xref ref-type="bibr" rid="pone.0030396-Jorgenson5">[16]</xref>, we regress these data on per capita GDP and use the residuals as measures of urbanization to minimize collinearity.</p>
+        <p><xref ref-type="table" rid="pone-0030396-t001">Table 1</xref> provides descriptive statistics for all variables used in the analysis. The product moment correlations between variables are shown in the <xref ref-type="table" rid="pone-0030396-t002">Table 2</xref>. Although correlations do not prove causation, they can be used to generate hypotheses; therefore <xref ref-type="table" rid="pone-0030396-t002">Table 2</xref> is presented to highlight the correlations among the five variables used for analysis. It indicates that most of the correlations were significant and in the expected direction.</p>
+        <table-wrap id="pone-0030396-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0030396.t001</object-id><label>Table 1</label><caption>
+            <title>Descriptive statistics of all the variables used in this study(N = 123).</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0030396-t001-1" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0030396.t001" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Variable</td>
+                <td align="left" colspan="1" rowspan="1">Mean</td>
+                <td align="left" colspan="1" rowspan="1">SD</td>
+                <td align="left" colspan="1" rowspan="1">Minimum</td>
+                <td align="left" colspan="1" rowspan="1">Maximum</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">EF</td>
+                <td align="left" colspan="1" rowspan="1">2.436</td>
+                <td align="left" colspan="1" rowspan="1">1.9517</td>
+                <td align="left" colspan="1" rowspan="1">0.52</td>
+                <td align="left" colspan="1" rowspan="1">9.59</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GDP(ln)</td>
+                <td align="left" colspan="1" rowspan="1">7.618</td>
+                <td align="left" colspan="1" rowspan="1">1.6658</td>
+                <td align="left" colspan="1" rowspan="1">4.449</td>
+                <td align="left" colspan="1" rowspan="1">10.805</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Service (%)</td>
+                <td align="left" colspan="1" rowspan="1">54.066</td>
+                <td align="left" colspan="1" rowspan="1">13.003</td>
+                <td align="left" colspan="1" rowspan="1">20.542</td>
+                <td align="left" colspan="1" rowspan="1">78.53</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Export (%)</td>
+                <td align="left" colspan="1" rowspan="1">36.311</td>
+                <td align="left" colspan="1" rowspan="1">18.280</td>
+                <td align="left" colspan="1" rowspan="1">7.272</td>
+                <td align="left" colspan="1" rowspan="1">83.83</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Gini</td>
+                <td align="left" colspan="1" rowspan="1">38.931</td>
+                <td align="left" colspan="1" rowspan="1">10.040</td>
+                <td align="left" colspan="1" rowspan="1">19.5</td>
+                <td align="left" colspan="1" rowspan="1">62.9</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">urban</td>
+                <td align="left" colspan="1" rowspan="1">0.441</td>
+                <td align="left" colspan="1" rowspan="1">1.053</td>
+                <td align="left" colspan="1" rowspan="1">0.001</td>
+                <td align="left" colspan="1" rowspan="1">7.296</td>
+              </tr>
+            </tbody>
+          </table></alternatives><table-wrap-foot>
+            <fn id="nt101">
+              <label/>
+              <p>Note: EF = ecological footprint; GDP(ln) = gross domestic product(the natural logarithm transformation); service (%) = service as the percentage of GDP; export(%) = export as the percentage of GDP. Gini = national income disequilibrium; urban = urbanization level(residualized).</p>
+            </fn>
+          </table-wrap-foot></table-wrap>
+        <table-wrap id="pone-0030396-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0030396.t002</object-id><label>Table 2</label><caption>
+            <title>Product moment correlations matrix.</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0030396-t002-2" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0030396.t002" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">1</td>
+                <td align="left" colspan="1" rowspan="1">2</td>
+                <td align="left" colspan="1" rowspan="1">3</td>
+                <td align="left" colspan="1" rowspan="1">4</td>
+                <td align="left" colspan="1" rowspan="1">5</td>
+                <td align="left" colspan="1" rowspan="1">6</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">1.GDP(ln)</td>
+                <td align="left" colspan="1" rowspan="1">1</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">2.urban(residualized)</td>
+                <td align="left" colspan="1" rowspan="1">0.423<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">1</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">3.Service (%)</td>
+                <td align="left" colspan="1" rowspan="1">0.729<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">0.257<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">1</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">4.GINI</td>
+                <td align="left" colspan="1" rowspan="1">−0.394<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">−0.255<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">−0.241<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">1</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">5.Export(%)</td>
+                <td align="left" colspan="1" rowspan="1">0.284<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">0.304</td>
+                <td align="left" colspan="1" rowspan="1">0</td>
+                <td align="left" colspan="1" rowspan="1">−0.202<xref ref-type="table-fn" rid="nt103">*</xref></td>
+                <td align="left" colspan="1" rowspan="1">1</td>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">7.EF</td>
+                <td align="left" colspan="1" rowspan="1">0.860<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">0.347<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">0.613<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">−0.432<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">0.218<xref ref-type="table-fn" rid="nt103">*</xref></td>
+                <td align="left" colspan="1" rowspan="1">1</td>
+              </tr>
+            </tbody>
+          </table></alternatives><table-wrap-foot>
+            <fn id="nt102">
+              <label/>
+              <p>**correlation is significant at the level of 0.01 (2-tailed).</p>
+            </fn>
+            <fn id="nt103">
+              <label/>
+              <p>*correlation is significant at the level of 0.05(2-tailed).</p>
+            </fn>
+          </table-wrap-foot></table-wrap>
+      </sec>
+      <sec id="s3b">
+        <title>SVM analysis</title>
+        <p>We used data of 123 countries (shown in <xref ref-type="supplementary-material" rid="pone.0030396.s001">Appendix S1</xref>) to establish and test the SVM-based model. We used data of 99 countries (80% of the data) to establish the model, and 24 countries (20% of the data) to test the accuracy of the model. For the 24 countries used to test model accuracy, the calculations were conducted in alphabetical order; therefore the results are presented alphabetically. When the correct model was established, there was no need for further “training” or “test” data. The model only required five variables to calculate a nation's EF. In addition, the model was designed to achieve short calculation times. Therefore, compared to traditional EF techniques, the SVM technique was very easy to apply.</p>
+        <p>According to the method of Liu, Zhuang, and Liu <xref ref-type="bibr" rid="pone.0030396-Liu1">[17]</xref>, we used the particle swarm optimization technique to choose the optimal parameters for the SVM model. The optimal parameters are as follows: <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0030396.e028" xlink:type="simple"/></inline-formula>, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0030396.e029" xlink:type="simple"/></inline-formula>, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0030396.e030" xlink:type="simple"/></inline-formula>. The EF model was then determined by these three parameters and the data of 99 countries. Following this, we used the model to calculate the EF of the other 24 countries. Model accuracy was measured by absolute and relative error. The calculation performance is displayed in <xref ref-type="fig" rid="pone-0030396-g001">Figure 1</xref>. The calculation results are presented in <xref ref-type="table" rid="pone-0030396-t003">Table 3</xref>. <xref ref-type="fig" rid="pone-0030396-g001">Figure 1</xref> and <xref ref-type="table" rid="pone-0030396-t003">Table 3</xref> show that the EF model based on SVM can calculate EF perfectly. The average absolute error is 0.004883, and the average relative error is only 0.351078%. Therefore, we were successful in establishing an EF model, and we can use it to calculate the EF of any nation using only five nation-specific variables.</p>
+        <fig id="pone-0030396-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0030396.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>SVM calculation performance of per capita EF.</title>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0030396.g001" xlink:type="simple"/>
+        </fig>
+        <table-wrap id="pone-0030396-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0030396.t003</object-id><label>Table 3</label><caption>
+            <title>Calculation results by SVM.</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0030396-t003-3" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0030396.t003" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Country name</td>
+                <td align="left" colspan="1" rowspan="1">Traditional technique results</td>
+                <td align="left" colspan="1" rowspan="1">SVM model results</td>
+                <td align="left" colspan="1" rowspan="1">Absolute error</td>
+                <td align="left" colspan="1" rowspan="1">Relative error(%)</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">South Africa</td>
+                <td align="left" colspan="1" rowspan="1">2.29</td>
+                <td align="left" colspan="1" rowspan="1">2.2946</td>
+                <td align="left" colspan="1" rowspan="1">0.0046</td>
+                <td align="left" colspan="1" rowspan="1">0.200873</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Spain</td>
+                <td align="left" colspan="1" rowspan="1">5.36</td>
+                <td align="left" colspan="1" rowspan="1">5.3551</td>
+                <td align="left" colspan="1" rowspan="1">0.0049</td>
+                <td align="left" colspan="1" rowspan="1">0.09142</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Sri lank</td>
+                <td align="left" colspan="1" rowspan="1">1</td>
+                <td align="left" colspan="1" rowspan="1">1.0046</td>
+                <td align="left" colspan="1" rowspan="1">0.0046</td>
+                <td align="left" colspan="1" rowspan="1">0.46</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Sweden</td>
+                <td align="left" colspan="1" rowspan="1">6.07</td>
+                <td align="left" colspan="1" rowspan="1">6.0664</td>
+                <td align="left" colspan="1" rowspan="1">0.0036</td>
+                <td align="left" colspan="1" rowspan="1">0.05931</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Switzerland</td>
+                <td align="left" colspan="1" rowspan="1">5.15</td>
+                <td align="left" colspan="1" rowspan="1">5.1442</td>
+                <td align="left" colspan="1" rowspan="1">0.0058</td>
+                <td align="left" colspan="1" rowspan="1">0.11262</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Syria</td>
+                <td align="left" colspan="1" rowspan="1">1.73</td>
+                <td align="left" colspan="1" rowspan="1">1.7364</td>
+                <td align="left" colspan="1" rowspan="1">0.0064</td>
+                <td align="left" colspan="1" rowspan="1">0.369942</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Tajikistan</td>
+                <td align="left" colspan="1" rowspan="1">0.64</td>
+                <td align="left" colspan="1" rowspan="1">0.6442</td>
+                <td align="left" colspan="1" rowspan="1">0.0042</td>
+                <td align="left" colspan="1" rowspan="1">0.65625</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Tanzania</td>
+                <td align="left" colspan="1" rowspan="1">0.7</td>
+                <td align="left" colspan="1" rowspan="1">0.7069</td>
+                <td align="left" colspan="1" rowspan="1">0.0069</td>
+                <td align="left" colspan="1" rowspan="1">0.985714</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Thailand</td>
+                <td align="left" colspan="1" rowspan="1">1.38</td>
+                <td align="left" colspan="1" rowspan="1">1.3866</td>
+                <td align="left" colspan="1" rowspan="1">0.0066</td>
+                <td align="left" colspan="1" rowspan="1">0.478261</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Togo</td>
+                <td align="left" colspan="1" rowspan="1">0.87</td>
+                <td align="left" colspan="1" rowspan="1">0.8742</td>
+                <td align="left" colspan="1" rowspan="1">0.0042</td>
+                <td align="left" colspan="1" rowspan="1">0.482759</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Tunisa</td>
+                <td align="left" colspan="1" rowspan="1">1.54</td>
+                <td align="left" colspan="1" rowspan="1">1.5469</td>
+                <td align="left" colspan="1" rowspan="1">0.0069</td>
+                <td align="left" colspan="1" rowspan="1">0.448052</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Turkey</td>
+                <td align="left" colspan="1" rowspan="1">2.06</td>
+                <td align="left" colspan="1" rowspan="1">2.0629</td>
+                <td align="left" colspan="1" rowspan="1">0.0029</td>
+                <td align="left" colspan="1" rowspan="1">0.140777</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Turkmenistan</td>
+                <td align="left" colspan="1" rowspan="1">3.47</td>
+                <td align="left" colspan="1" rowspan="1">3.4666</td>
+                <td align="left" colspan="1" rowspan="1">0.0034</td>
+                <td align="left" colspan="1" rowspan="1">0.09798</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Uganda</td>
+                <td align="left" colspan="1" rowspan="1">1.08</td>
+                <td align="left" colspan="1" rowspan="1">1.0853</td>
+                <td align="left" colspan="1" rowspan="1">0.0053</td>
+                <td align="left" colspan="1" rowspan="1">0.490741</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Ukraine</td>
+                <td align="left" colspan="1" rowspan="1">3.19</td>
+                <td align="left" colspan="1" rowspan="1">3.1847</td>
+                <td align="left" colspan="1" rowspan="1">0.0053</td>
+                <td align="left" colspan="1" rowspan="1">0.16614</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">United kingdom</td>
+                <td align="left" colspan="1" rowspan="1">5.59</td>
+                <td align="left" colspan="1" rowspan="1">5.5842</td>
+                <td align="left" colspan="1" rowspan="1">0.0058</td>
+                <td align="left" colspan="1" rowspan="1">0.10376</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">United states</td>
+                <td align="left" colspan="1" rowspan="1">9.59</td>
+                <td align="left" colspan="1" rowspan="1">9.5843</td>
+                <td align="left" colspan="1" rowspan="1">0.0057</td>
+                <td align="left" colspan="1" rowspan="1">0.05944</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Uruguay</td>
+                <td align="left" colspan="1" rowspan="1">1.92</td>
+                <td align="left" colspan="1" rowspan="1">1.9231</td>
+                <td align="left" colspan="1" rowspan="1">0.0031</td>
+                <td align="left" colspan="1" rowspan="1">0.161458</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Uzbekistan</td>
+                <td align="left" colspan="1" rowspan="1">1.83</td>
+                <td align="left" colspan="1" rowspan="1">1.8346</td>
+                <td align="left" colspan="1" rowspan="1">0.0046</td>
+                <td align="left" colspan="1" rowspan="1">0.251366</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Venezuela</td>
+                <td align="left" colspan="1" rowspan="1">2.18</td>
+                <td align="left" colspan="1" rowspan="1">2.1832</td>
+                <td align="left" colspan="1" rowspan="1">0.0032</td>
+                <td align="left" colspan="1" rowspan="1">0.146789</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Vietnam</td>
+                <td align="left" colspan="1" rowspan="1">0.88</td>
+                <td align="left" colspan="1" rowspan="1">0.8846</td>
+                <td align="left" colspan="1" rowspan="1">0.0046</td>
+                <td align="left" colspan="1" rowspan="1">0.522727</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Yemen</td>
+                <td align="left" colspan="1" rowspan="1">0.85</td>
+                <td align="left" colspan="1" rowspan="1">0.8542</td>
+                <td align="left" colspan="1" rowspan="1">0.0042</td>
+                <td align="left" colspan="1" rowspan="1">0.494118</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Zambia</td>
+                <td align="left" colspan="1" rowspan="1">0.63</td>
+                <td align="left" colspan="1" rowspan="1">0.6354</td>
+                <td align="left" colspan="1" rowspan="1">0.0054</td>
+                <td align="left" colspan="1" rowspan="1">0.857143</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">zimbabwe</td>
+                <td align="left" colspan="1" rowspan="1">0.85</td>
+                <td align="left" colspan="1" rowspan="1">0.8550</td>
+                <td align="left" colspan="1" rowspan="1">0.005</td>
+                <td align="left" colspan="1" rowspan="1">0.588235</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">average</td>
+                <td align="left" colspan="1" rowspan="1">2.535417</td>
+                <td align="left" colspan="1" rowspan="1">2.537425</td>
+                <td align="left" colspan="1" rowspan="1">0.004883</td>
+                <td align="left" colspan="1" rowspan="1">0.351078</td>
+              </tr>
+            </tbody>
+          </table></alternatives></table-wrap>
+        <p>According to <xref ref-type="table" rid="pone-0030396-t002">Table 2</xref>, we can see that the product moment correlation between GDP (ln) and EF was 0.860. We constructed a least-squares regression model and obtained the following equation:<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0030396.e031" xlink:type="simple"/><label>(6)</label></disp-formula>The average absolute error from least-squares regression is 0.7620, and the average relative error is 44.66%. These are bigger than the errors derived from the EF model using the SVM technique with five variables. So, we can assume that the additional four variables are useful for the calculation of EF.</p>
+      </sec>
+      <sec id="s3c">
+        <title>Implications, limitations, and future research</title>
+        <p>Our results demonstrate that national level per capita EF is influenced by the nation's GDP, urbanization level, distribution of income (measured with the Gini coefficient), export dependency (as a percentage of total GDP), and service intensity (as a percentage of total GDP). Using these five variables, we established an SVM model to calculate EF. Compared with the traditional technique, the SVM model required less variables, and had a quicker calculation time. Therefore, the SVM technique is very easy to apply.</p>
+        <p>Despite the significant contributions of this study, it is subject to a number of limitations. First, this study used a cross-sectional rather than a longitudinal method. Much more emphasis was placed on observing national-level EFs than on observing changes in global EF. Much more emphasis should be placed on longitudinal research to focus on observing changes in EF behavior over time. Second, we only considered five factors that influenced per capita EF. In the future, we will explore other factors influencing per capita EF.</p>
+        <p>As a new approach to measuring sustainability, EF analysis has been more successful than others. Inevitably, the approach is not without its flaws <xref ref-type="bibr" rid="pone.0030396-Mcmanus1">[21]</xref>, <xref ref-type="bibr" rid="pone.0030396-Dietz1">[22]</xref>. However, its theory and application will be improved with continued study and with refinements the methodology used by organizations responsible for environmental reporting and management.</p>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Supporting Information</title>
+      <supplementary-material id="pone.0030396.s001" mimetype="application/msword" position="float" xlink:href="info:doi/10.1371/journal.pone.0030396.s001" xlink:type="simple">
+        <label>Appendix S1</label>
+        <caption>
+          <p>
+            <bold>Countries analyzed in the study.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We appreciate anonymous reviewers for useful suggestions and precious insight.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0030396-Wackernagel1">
+        <label>1</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Wackernagel</surname><given-names>M</given-names></name><name name-style="western"><surname>Rees</surname><given-names>W</given-names></name></person-group>             <year>1996</year>             <source>Our Ecological Footprint Reducing Human Impact on the Earth</source>             <publisher-name>New Society Publishers</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0030396-Mostafa1">
+        <label>2</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Mostafa</surname><given-names>MM</given-names></name></person-group>             <year>2010</year>             <article-title>A Bayesian approach to analyzing the ecological footprint of 140 nations.</article-title>             <source>Ecological Indicators</source>             <volume>10</volume>             <fpage>808</fpage>             <lpage>817</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0030396-Wackernagel2">
+        <label>3</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Wackernagel</surname><given-names>M</given-names></name><name name-style="western"><surname>Silverstein</surname><given-names>J</given-names></name></person-group>             <year>2000</year>             <article-title>Big things first: focusing on the scale imperative with the ecological footprint.</article-title>             <source>Ecological Economics</source>             <volume>32</volume>             <fpage>391</fpage>             <lpage>394</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0030396-Binningsbo1">
+        <label>4</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Binningsbo</surname><given-names>H</given-names></name><name name-style="western"><surname>de Soya</surname><given-names>I</given-names></name><name name-style="western"><surname>Gleditsch</surname><given-names>N</given-names></name></person-group>             <year>2007</year>             <article-title>Green giant or straw man? Environmental pressure and civil conflict.</article-title>             <source>Population and Environment</source>             <volume>28</volume>             <fpage>337</fpage>             <lpage>353</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0030396-Costanza1">
+        <label>5</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Costanza</surname><given-names>R</given-names></name></person-group>             <year>2000</year>             <article-title>The dynamics of the ecological footprint concept.</article-title>             <source>Ecological Economics</source>             <volume>32</volume>             <fpage>341</fpage>             <lpage>345</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0030396-WRIWorld1">
+        <label>6</label>
+        <element-citation publication-type="other" xlink:type="simple">             <collab xlink:type="simple">WRI(World Resources Institute)</collab>             <year>2000</year>             <source>World Resources 2000–2001: People and Ecosystems: The Fraying Web of Life</source>             <publisher-loc>New York</publisher-loc>          </element-citation>
+      </ref>
+      <ref id="pone.0030396-Jorgenson1">
+        <label>7</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Jorgenson</surname><given-names>AK</given-names></name></person-group>             <year>2006</year>             <article-title>Global warming and the neglected greenhouse gas: a cross-national study of the social causes of methane emissions intensity, 1995.</article-title>             <source>Social Forces</source>             <volume>84</volume>             <fpage>1777</fpage>             <lpage>1796</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0030396-McDonald1">
+        <label>8</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>McDonald</surname><given-names>GW</given-names></name><name name-style="western"><surname>Patterson</surname><given-names>MG</given-names></name></person-group>             <year>2004</year>             <article-title>Ecological footprints and interdependencies of New Zealand regions.</article-title>             <source>Ecological Economics</source>             <volume>50</volume>             <fpage>49</fpage>             <lpage>67</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0030396-Rice1">
+        <label>9</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Rice</surname><given-names>J</given-names></name></person-group>             <year>2007</year>             <article-title>Ecological unequal exchange: international trade and uneven utilization of environmental space in the world system.</article-title>             <source>Social Forces</source>             <volume>85</volume>             <fpage>1369</fpage>             <lpage>1392</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0030396-Barrett1">
+        <label>10</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Barrett</surname><given-names>J</given-names></name><name name-style="western"><surname>Scott</surname><given-names>A</given-names></name></person-group>             <year>2003</year>             <article-title>“The application of the ecological footprint”: a case of passenger transport in Merseyside.</article-title>             <source>Local Environment</source>             <volume>8</volume>             <fpage>167</fpage>             <lpage>183</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0030396-Li1">
+        <label>11</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Li</surname><given-names>XM</given-names></name><name name-style="western"><surname>Xiao</surname><given-names>RB</given-names></name><name name-style="western"><surname>Yuan</surname><given-names>SH</given-names></name><name name-style="western"><surname>Chen</surname><given-names>JA</given-names></name><name name-style="western"><surname>Zhou</surname><given-names>JX</given-names></name></person-group>             <year>2010</year>             <article-title>Urban total ecological footprint forecasting by using radial basis function neural network: A case study of Wuhan city, China.</article-title>             <source>Ecological Indicators</source>             <volume>10</volume>             <fpage>241</fpage>             <lpage>248</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0030396-Crompton1">
+        <label>12</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Crompton</surname><given-names>S</given-names></name><name name-style="western"><surname>Roy</surname><given-names>R</given-names></name><name name-style="western"><surname>Caird</surname><given-names>S</given-names></name></person-group>             <year>2002</year>             <article-title>Household ecological footprinting for active distance learning and challenge of personal lifestyles.</article-title>             <source>International Journal of Sustainability in Higher Education</source>             <volume>3</volume>             <fpage>313</fpage>             <lpage>323</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0030396-Jorgenson2">
+        <label>13</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Jorgenson</surname><given-names>A</given-names></name></person-group>             <year>2003</year>             <article-title>Consumption and environmental degradation: a cross-national analysis of the ecological footprint.</article-title>             <source>Social Problems</source>             <volume>50</volume>             <fpage>374</fpage>             <lpage>394</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0030396-Jorgenson3">
+        <label>14</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Jorgenson</surname><given-names>A</given-names></name></person-group>             <year>2004</year>             <article-title>Uneven processes and environmental degradation in the world economy.</article-title>             <source>Human Ecology Review</source>             <volume>11</volume>             <fpage>103</fpage>             <lpage>113</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0030396-Jorgenson4">
+        <label>15</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Jorgenson</surname><given-names>A</given-names></name></person-group>             <year>2005</year>             <article-title>Unpacking international power and the ecological footprints of nations: a quantitative cross-national study.</article-title>             <source>Sociological Perspectives</source>             <volume>48</volume>             <fpage>383</fpage>             <lpage>402</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0030396-Jorgenson5">
+        <label>16</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Jorgenson</surname><given-names>A</given-names></name><name name-style="western"><surname>Burns</surname><given-names>T</given-names></name></person-group>             <year>2007</year>             <article-title>The political–economic causes of change in the ecological footprints of nations, 1991–2001: a quantitative investigation.</article-title>             <source>Social Science Research</source>             <volume>36</volume>             <fpage>834</fpage>             <lpage>853</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0030396-Liu1">
+        <label>17</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Liu</surname><given-names>LX</given-names></name><name name-style="western"><surname>Zhuang</surname><given-names>YQ</given-names></name><name name-style="western"><surname>Liu</surname><given-names>XY</given-names></name></person-group>             <year>2011</year>             <article-title>Tax forecasting theory and model based on SVM optimized by PSO.</article-title>             <source>Expert Systems with Applications</source>             <volume>38</volume>             <fpage>116</fpage>             <lpage>120</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0030396-White1">
+        <label>18</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>White</surname><given-names>TJ</given-names></name></person-group>             <year>2007</year>             <article-title>Sharing resources: The global distribution of the Ecological Footprint.</article-title>             <source>Ecological Economics</source>             <volume>64</volume>             <fpage>402</fpage>             <lpage>410</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0030396-WWF1">
+        <label>19</label>
+        <element-citation publication-type="other" xlink:type="simple">             <collab xlink:type="simple">WWF International</collab>             <year>2006</year>             <comment>Living Planet Report, Avenue du Mont-Blanc CH-1196 Gland, Switzerland</comment>          </element-citation>
+      </ref>
+      <ref id="pone.0030396-World1">
+        <label>20</label>
+        <element-citation publication-type="other" xlink:type="simple">             <collab xlink:type="simple">World Bank</collab>             <year>2002</year>             <source>World Development Indicators</source>             <publisher-loc>Washington, DC</publisher-loc>          </element-citation>
+      </ref>
+      <ref id="pone.0030396-Mcmanus1">
+        <label>21</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Mcmanus</surname><given-names>Phil</given-names></name><name name-style="western"><surname>Haughton</surname><given-names>Graham</given-names></name></person-group>             <year>2006</year>             <article-title>Planning with Ecological Footprints: a sympathetic critique of theory and practice</article-title>             <volume>18</volume>             <fpage>113</fpage>             <lpage>127</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0030396-Dietz1">
+        <label>22</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Dietz</surname><given-names>Simon</given-names></name><name name-style="western"><surname>Neumayer</surname><given-names>Eric</given-names></name></person-group>             <year>2007</year>             <article-title>Weak and strong sustainability in the SEEA: Concepts and measurement</article-title>             <volume>61</volume>             <fpage>617</fpage>             <lpage>626</lpage>          </element-citation>
+      </ref>
+    </ref-list>
+    
+  </back>
+</article>

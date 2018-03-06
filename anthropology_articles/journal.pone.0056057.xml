@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="publisher-id">PONE-D-12-25272</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0056057</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Ecology</subject>
+            <subj-group>
+              <subject>Community ecology</subject>
+              <subj-group>
+                <subject>Community assembly</subject>
+                <subject>Community structure</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Earth sciences</subject>
+          <subj-group>
+            <subject>Geography</subject>
+            <subj-group>
+              <subject>Economic geography</subject>
+              <subject>Human geography</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Mathematics</subject>
+          <subj-group>
+            <subject>Applied mathematics</subject>
+            <subj-group>
+              <subject>Algorithms</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Social and behavioral sciences</subject>
+          <subj-group>
+            <subject>Anthropology</subject>
+          </subj-group>
+          <subj-group>
+            <subject>Sociology</subject>
+            <subj-group>
+              <subject>Computational sociology</subject>
+              <subject>Social networks</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Mathematics</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Place-Based Attributes Predict Community Membership in a Mobile Phone Communication Network</article-title>
+        <alt-title alt-title-type="running-head">Predicting Communities in a Mobile Phone Network</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Caughlin</surname>
+            <given-names>T. Trevor</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Ruktanonchai</surname>
+            <given-names>Nick</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Acevedo</surname>
+            <given-names>Miguel A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Lopiano</surname>
+            <given-names>Kenneth K.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Prosper</surname>
+            <given-names>Olivia</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Eagle</surname>
+            <given-names>Nathan</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Tatem</surname>
+            <given-names>Andrew J.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff7">
+            <sup>7</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff8">
+            <sup>8</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff9">
+            <sup>9</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Department of Biology, University of Florida, Gainesville, Florida, United States of America</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>School of Natural Resources and Conservation- Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, Florida, United States of America</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Department of Statistics, University of Florida, Gainesville, Florida, United States of America</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>Department of Mathematics, University of Florida, Gainesville, Florida, United States of America</addr-line>
+      </aff>
+      <aff id="aff5">
+        <label>5</label>
+        <addr-line>MIT Media Lab, Cambridge, Massachusetts, United States of America</addr-line>
+      </aff>
+      <aff id="aff6">
+        <label>6</label>
+        <addr-line>Santa Fe Institute, Santa Fe, New Mexico, United States of America</addr-line>
+      </aff>
+      <aff id="aff7">
+        <label>7</label>
+        <addr-line>Department of Geography, University of Florida, Gainesville, Florida, United States of America</addr-line>
+      </aff>
+      <aff id="aff8">
+        <label>8</label>
+        <addr-line>Emerging Pathogens Institute, University of Florida, Gainesville, Florida, United States of America</addr-line>
+      </aff>
+      <aff id="aff9">
+        <label>9</label>
+        <addr-line>Fogarty International Center, National Institutes of Health, Bethesda, Maryland, United States of America</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Sánchez</surname>
+            <given-names>Angel</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>Universidad Carlos III de Madrid, Spain</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">trevor.caughlin@gmail.com</email></corresp>
+        <fn fn-type="conflict">
+          <p>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: TTC NR MAA KKL OP AJT NE. Performed the experiments: TTC NR MAA KKL OP. Analyzed the data: TTC NR MAA KKL OP. Contributed reagents/materials/analysis tools: NE AT. Wrote the paper: TTC NR MAA OP KKL.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>22</day>
+        <month>2</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>8</volume>
+      <issue>2</issue>
+      <elocation-id>e56057</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>20</day>
+          <month>7</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>9</day>
+          <month>1</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Caughlin et al</copyright-holder>
+        <license xlink:type="simple">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Social networks can be organized into communities of closely connected nodes, a property known as modularity. Because diseases, information, and behaviors spread faster within communities than between communities, understanding modularity has broad implications for public policy, epidemiology and the social sciences. Explanations for community formation in social networks often incorporate the attributes of individual people, such as gender, ethnicity or shared activities. High modularity is also a property of large-scale social networks, where each node represents a population of individuals at a location, such as call flow between mobile phone towers. However, whether or not place-based attributes, including land cover and economic activity, can predict community membership for network nodes in large-scale networks remains unknown. We describe the pattern of modularity in a mobile phone communication network in the Dominican Republic, and use a linear discriminant analysis (LDA) to determine whether geographic context can explain community membership. Our results demonstrate that place-based attributes, including sugar cane production, urbanization, distance to the nearest airport, and wealth, correctly predicted community membership for over 70% of mobile phone towers. We observed a strongly positive correlation (r = 0.97) between the modularity score and the predictive ability of the LDA, suggesting that place-based attributes can accurately represent the processes driving modularity. In the absence of social network data, the methods we present can be used to predict community membership over large scales using solely place-based attributes.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>TTC, NR, MAA, KL, and OP were supported by the National Science Foundation (<ext-link ext-link-type="uri" xlink:href="http://www.nsf.gov/" xlink:type="simple">http://www.nsf.gov/</ext-link>) under grant 0801544 at the University of Florida. AJT is supported by grants from the Bill and Melinda Gates Foundation (<ext-link ext-link-type="uri" xlink:href="http://www.gatesfoundation.org/" xlink:type="simple">www.gatesfoundation.org/</ext-link>) under grants 49446 and OPP1032350). AJT also acknowledges funding support from the RAPIDD program of the Science &amp; Technology Directorate, Department of Homeland Security (<ext-link ext-link-type="uri" xlink:href="http://www.dhs.gov" xlink:type="simple">www.dhs.gov</ext-link>), and the Fogarty International Center, National Institutes of Health (<ext-link ext-link-type="uri" xlink:href="http://www.fic.nih.gov" xlink:type="simple">http://www.fic.nih.gov</ext-link>). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="9"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Social networks can be used to model many types of interactions between people, including friendship <xref ref-type="bibr" rid="pone.0056057-Eagle1">[1]</xref>, disease transmission <xref ref-type="bibr" rid="pone.0056057-Viboud1">[2]</xref>, and sexual contact <xref ref-type="bibr" rid="pone.0056057-Liljeros1">[3]</xref>. Because network analysis allows key properties of otherwise complex systems to be represented by simple metrics, the study of social networks has revolutionized our understanding of a range of fields, including behavioral psychology <xref ref-type="bibr" rid="pone.0056057-Eagle1">[1]</xref>, public health <xref ref-type="bibr" rid="pone.0056057-Liljeros1">[3]</xref>–<xref ref-type="bibr" rid="pone.0056057-Christakis1">[5]</xref>, and regional conflict <xref ref-type="bibr" rid="pone.0056057-Ratti1">[6]</xref>. One key property of social networks is modularity, the degree to which the network can be partitioned into communities of nodes with a relatively higher density of connections within the same community than between communities <xref ref-type="bibr" rid="pone.0056057-Newman1">[7]</xref>. Modularity structure results in higher rates of disease spread <xref ref-type="bibr" rid="pone.0056057-Viboud1">[2]</xref>, criminal activity <xref ref-type="bibr" rid="pone.0056057-Schaefer1">[8]</xref>, and movement <xref ref-type="bibr" rid="pone.0056057-Thiemann1">[9]</xref>, between nodes located in the same community. Consequently, understanding the processes that determine modularity in social networks is an important research goal.</p>
+      <p>For networks in which nodes represent individual people, general principles explaining community formation incorporate individual attributes. Homophily, the principle that similar individuals are more likely to interact, results in communities of individuals with similar attributes, such as ethnicity, gender, income, political views and more <xref ref-type="bibr" rid="pone.0056057-McPherson1">[10]</xref>, <xref ref-type="bibr" rid="pone.0056057-Bianconi1">[11]</xref>. Focus constraints, including shared activities, such as attending the same class at a university, may also lead to community formation <xref ref-type="bibr" rid="pone.0056057-Feld1">[12]</xref>–<xref ref-type="bibr" rid="pone.0056057-Kossinets1">[13]</xref>. Finally, spatial proximity, regardless of other shared activities or social attributes, may promote communities in social networks <xref ref-type="bibr" rid="pone.0056057-Takhteyev1">[14]</xref>–<xref ref-type="bibr" rid="pone.0056057-Expert1">[15]</xref>. A challenge remains in translating these general principles for community formation in networks of individual people to large-scale social networks, in which network nodes represent a population of people at a given location. Examples of edges and nodes in these large-scale social networks include human movement between regions, patient transfer between hospitals, and criminal offenses between census tracts <xref ref-type="bibr" rid="pone.0056057-Lomi1">[4]</xref>, <xref ref-type="bibr" rid="pone.0056057-Schaefer1">[8]</xref>–<xref ref-type="bibr" rid="pone.0056057-Thiemann1">[9]</xref>.</p>
+      <p>Quantifying the importance of principles like homophily or focus constraints for network structure requires data on attributes of each node in the network. In large-scale networks, defined by a population at a location, attributes are place-based, representing the economic, social and ecological characteristics that define the geographic context of a location. While high modularity has been described for several large-scale social networks <xref ref-type="bibr" rid="pone.0056057-Ratti1">[6]</xref>–<xref ref-type="bibr" rid="pone.0056057-Schaefer1">[8]</xref>, whether or not place-based attributes can explain community membership in these large-scale social networks remains unknown. Aggregating data on individual attributes to create place-based attributes could be problematic if the mixture of individuals at a given location is too heterogeneous to represent as a single group. Another major challenge in using place-based attributes to explain patterns of connectivity in large-scale social networks is that space could overwhelm the effects of place-based attributes <xref ref-type="bibr" rid="pone.0056057-Expert1">[15]</xref>. Resolving these uncertainties will require quantitative models to test whether various place-based attributes can explain module structure in large-scale social networks.</p>
+      <p>High modularity has been observed in large-scale social networks constructed from mobile phone communication between cell phone towers <xref ref-type="bibr" rid="pone.0056057-Ratti1">[6]</xref>, <xref ref-type="bibr" rid="pone.0056057-Takhteyev1">[14]</xref>. Because mobile phone communication is correlated with friendship networks <xref ref-type="bibr" rid="pone.0056057-Eagle1">[1]</xref> and human movement <xref ref-type="bibr" rid="pone.0056057-Tatem1">[16]</xref>–<xref ref-type="bibr" rid="pone.0056057-Yuan1">[17]</xref>, the ability to predict patterns, including modularity, in communication networks would have many useful applications in a great variety of fields. For example, mobile phone communication data could be used in epidemiology to model human movement between patches with high and low disease transmission risk <xref ref-type="bibr" rid="pone.0056057-LeMenach1">[18]</xref>–<xref ref-type="bibr" rid="pone.0056057-Bengtsson1">[19]</xref>. However, mobile phone towers are absent for many locations within countries or regions. Consequently, extrapolating communities formed by call flow connectivity across an entire region requires predicting community membership for areas without mobile phone towers. If geographic context of mobile phone towers can explain modularity, quantifying place-based attributes may enable regional predictions of community membership in areas with and without mobile phone towers.</p>
+      <p>Here, we quantified whether place-based attributes can predict community membership for a large-scale social network of communication between mobile phone towers in the Dominican Republic. While previous studies have shown that individual attributes can predict community membership in person-to-person social networks, our study goes further to ask whether place-based attributes can predict communities in this large-scale tower-to-tower social network. We assigned towers to communities using a modularity algorithm then applied a linear discriminant analysis (LDA) to evaluate whether a set of four place-based attributes, including urbanization, area used for sugar cane production, distance to nearest airport, and wealth, could correctly predict tower community membership.</p>
+    </sec>
+    <sec id="s2">
+      <title>Results</title>
+      <p>First, we determined community membership for each tower in the network (<xref ref-type="fig" rid="pone-0056057-g001">Figure 1</xref>). For 100 separate runs of the modularity algorithm used to detect communities within the DR communication network, the modularity score ranged from a minimum of 0.26 to a maximum of 0.52. The results for community membership of mobile phone towers from the run with the highest modularity (hereafter “top” run) can be seen in <xref ref-type="fig" rid="pone-0056057-g001">Figure 1</xref>. The modularity algorithm maximizes the modularity score based on both community membership and total number of communities in the data, and the community structure that maximized this modularity score contained 13 different communities. Results from the top 20 runs of the modularity algorithm suggest that the simulated annealing algorithm had reached a plateau of modularity scores, with very similar output for these top runs. The mean (±SD) of modularity score for the top 20 runs of the modularity algorithm was 0.52±0.002, and the mean number of communities generated by these top 20 runs was 10.9±1.65. The core communities in these top 20 runs were also qualitatively similar (<xref ref-type="supplementary-material" rid="pone.0056057.s001">Figure S1</xref>). Notable features of the community structure include the division of the capital city of Santo Domingo into two separate communities (represented by red and blue dots in <xref ref-type="fig" rid="pone-0056057-g001">Figure 1</xref>), as well as the close links between towers on the border between Haiti and the Dominican Republic with the western half of the capital city (blue dots). The 13 described communities from the top modularity run appear clustered in space, however a clustering algorithm based only on node locations produced a simpler geographic pattern (<xref ref-type="fig" rid="pone-0056057-g002">Figure 2</xref>) than revealed by the cell phone data (<xref ref-type="fig" rid="pone-0056057-g001">Figure 1a</xref>). Therefore, to better explain the call patterns and community memberships, we used a linear discriminant analysis (LDA) to relate community membership to the four place-based attributes (sugar cane production, distance to nearest airport, urbanization and wealth).</p>
+      <fig id="pone-0056057-g001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0056057.g001</object-id>
+        <label>Figure 1</label>
+        <caption>
+          <title>Community membership of 170 mobile phone towers in the Dominican Republic.</title>
+          <p>Each dot represents a mobile phone tower, and each color represents a unique community. The capital city, Santo Domingo, is located in the center of the southern coast, represented by the cluster of red and blue dots. Panel a (top) shows the result from the run of the modularity algorithm with the highest modularity score. Panel b (bottom) shows predicted community membership of mobile phone towers from the LDA using four place-based attributes for the modularity realization with the top modularity score.</p>
+        </caption>
+        <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0056057.g001" position="float" xlink:type="simple"/>
+      </fig>
+      <fig id="pone-0056057-g002" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0056057.g002</object-id>
+        <label>Figure 2</label>
+        <caption>
+          <title>Predicted communities from k-means clustering, based upon the spatial location of each tower (here, k = 12).</title>
+          <p>Each mobile phone tower is represented by a circle. The color of the circle indicates community membership.</p>
+        </caption>
+        <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0056057.g002" position="float" xlink:type="simple"/>
+      </fig>
+      <p>Towers varied in their place-based attributes (<xref ref-type="fig" rid="pone-0056057-g003">Figure 3</xref>, <xref ref-type="table" rid="pone-0056057-t001">Table 1</xref>). For the 100 runs of the LDA, correct predictions of tower community membership ranged from a minimum of 0.5%, corresponding to a modularity score of 0.26, to a maximum of 70.59%, corresponding to a modularity score of 0.51. Indeed, the predictive capability of each LDA model was strongly correlated with the modularity score (<xref ref-type="fig" rid="pone-0056057-g004">Figure 4</xref>; Pearson’s linear correlation coefficient r = 0.97). This result demonstrates that runs with higher modularity, presumably closer to the underlying “true” community structure, are better able to be explained by geographic context of towers than runs with low modularity indices.</p>
+      <fig id="pone-0056057-g003" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0056057.g003</object-id>
+        <label>Figure 3</label>
+        <caption>
+          <title>Two of the place-based attributes used in the LDA analysis predicting community membership in the Dominican Republic.</title>
+          <p>Panel a (top) displays sugar cane production and panel (b) displays urbanization. Area shown represents a 15 km radius around mobile phone towers.</p>
+        </caption>
+        <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0056057.g003" position="float" xlink:type="simple"/>
+      </fig>
+      <fig id="pone-0056057-g004" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0056057.g004</object-id>
+        <label>Figure 4</label>
+        <caption>
+          <title>Correlation between predictive power of LDA and modularity score for 100 runs of the modularity algorithm.</title>
+          <p>Modularity values closer to zero represent runs with fewer differences in connectivity between communities than within communities. Predictive power of LDA represents the percentage of towers with community membership correctly predicted.</p>
+        </caption>
+        <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0056057.g004" position="float" xlink:type="simple"/>
+      </fig>
+      <table-wrap id="pone-0056057-t001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0056057.t001</object-id>
+        <label>Table 1</label>
+        <caption>
+          <title>Characteristics of place-based attributes used to quantify geographic context.</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone-0056057-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0056057.t001" xlink:type="simple"/>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Place-based attribute</td>
+                <td align="left" rowspan="1" colspan="1">Spatial scale</td>
+                <td align="left" rowspan="1" colspan="1">Range</td>
+                <td align="left" rowspan="1" colspan="1">Mean±SD</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Land used for sugar cane production</td>
+                <td align="left" rowspan="1" colspan="1">15 km radius around tower</td>
+                <td align="left" rowspan="1" colspan="1">0–0.54</td>
+                <td align="left" rowspan="1" colspan="1">0.17±0.15</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Distance to nearest airport (km)</td>
+                <td align="left" rowspan="1" colspan="1">8 airports in country</td>
+                <td align="left" rowspan="1" colspan="1">1.4–125</td>
+                <td align="left" rowspan="1" colspan="1">20.45±17.96</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Urbanization</td>
+                <td align="left" rowspan="1" colspan="1">15 km radius around tower</td>
+                <td align="left" rowspan="1" colspan="1">0–0.96</td>
+                <td align="left" rowspan="1" colspan="1">0.58±0.32</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Wealth index</td>
+                <td align="left" rowspan="1" colspan="1">2nd level administrative unit (municipio)</td>
+                <td align="left" rowspan="1" colspan="1">0–0.62</td>
+                <td align="left" rowspan="1" colspan="1">0.45±0.15</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+      </table-wrap>
+      <p>In general, the LDA performed well in reconstructing the qualitative features of the communities in the Dominican Republic (<xref ref-type="fig" rid="pone-0056057-g001">Figure 1b</xref>). For instance, both the major cities on the island (Santo Domingo and Santiago) were correctly assigned to the appropriate communities by the LDA, and predictions included the distinctive separation between the east and west halves of Santo Domingo. The mobile phone towers that were incorrectly assigned to communities by the LDA tended to be located in outlying areas, such as the towers in the far west of the country near the border with Haiti.</p>
+      <p>Finally, we assessed the relative importance of our four place-based attributes on community structure in the LDA applied to the run with the highest modularity score. The first, second and third discriminant functions explained 44.1%, 40.3% and 12% of between group variance, respectively (<xref ref-type="table" rid="pone-0056057-t002">Table 2</xref>). Sugar cane land use had the largest coefficients in standardized discriminant functions one and two, followed by urbanization in discriminant function one and the wealth index in discriminant function two. The third discriminant function was dominated by the wealth index. Distance to the nearest airport did not appear to play an important role in the LDA, and was the least important predictor variable in all of the discriminant functions. Qualitatively similar results were observed for other high-ranking runs of the modularity algorithm.</p>
+      <table-wrap id="pone-0056057-t002" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0056057.t002</object-id>
+        <label>Table 2</label>
+        <caption>
+          <title>Output from a linear discriminant analysis for the realization of the modularity algorithm with the highest modularity score.</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone-0056057-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0056057.t002" xlink:type="simple"/>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td colspan="4" align="left" rowspan="1">Discriminant function</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Predictor</td>
+                <td align="left" rowspan="1" colspan="1">LD1</td>
+                <td align="left" rowspan="1" colspan="1">LD2</td>
+                <td align="left" rowspan="1" colspan="1">LD3</td>
+                <td align="left" rowspan="1" colspan="1">LD4</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Sugar cane</td>
+                <td align="left" rowspan="1" colspan="1">7.26</td>
+                <td align="left" rowspan="1" colspan="1">10.97</td>
+                <td align="left" rowspan="1" colspan="1">0.70</td>
+                <td align="left" rowspan="1" colspan="1">1.64</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Urbanization</td>
+                <td align="left" rowspan="1" colspan="1">4.27</td>
+                <td align="left" rowspan="1" colspan="1">−3.58</td>
+                <td align="left" rowspan="1" colspan="1">−4.12</td>
+                <td align="left" rowspan="1" colspan="1">−2.47</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Rich quintiles</td>
+                <td align="left" rowspan="1" colspan="1">1.61</td>
+                <td align="left" rowspan="1" colspan="1">−3.95</td>
+                <td align="left" rowspan="1" colspan="1">9.26</td>
+                <td align="left" rowspan="1" colspan="1">7.67</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Airport distance</td>
+                <td align="left" rowspan="1" colspan="1">0.04</td>
+                <td align="left" rowspan="1" colspan="1">−0.02</td>
+                <td align="left" rowspan="1" colspan="1">−0.04</td>
+                <td align="left" rowspan="1" colspan="1">0.06</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>Proportion of trace</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>0.44</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>0.40</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>0.12</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>0.04</bold>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+      </table-wrap>
+    </sec>
+    <sec id="s3">
+      <title>Discussion</title>
+      <p>We have demonstrated a close link between community membership and place-based attributes for a large-scale social network of mobile phone communication in the Dominican Republic. This link is evident in the high (&gt;70%) predictive capability of a linear discriminant analysis of community membership based on place-based attributes, and the strongly positive correlation between LDA predictive capability and modularity for 100 separate runs of the modularity algorithm. These results imply that community formation between locations in this mobile phone communication network is related to geographic context, including social structure, wealth distribution, economic production and land use. Consequently, place-based attributes could be used to predict community membership for locations that are not included in the network.</p>
+      <p>The general principles of homophily <xref ref-type="bibr" rid="pone.0056057-McPherson1">[10]</xref> and focus constraints <xref ref-type="bibr" rid="pone.0056057-Feld1">[12]</xref> have been shown to predict group membership in small-scale social networks. Whether groups of individuals similarly form bonds with other groups of individuals on much larger spatial scales remains an important unaddressed question, because general theories are required to understand the processes underlying community formation in large-scale social networks. In this study, we demonstrate that processes which cause community formation among individuals may also drive community formation in large-scale networks composed of groups of individuals. For example, homophily may explain why communication is higher between towers in the wealthy western half of Santo Domingo than between western towers and towers in the less wealthy, eastern half of the city. One group of towers which was not correctly assigned community membership by the LDA were the towers in the west of the country near the border with Haiti, which the modularity algorithm determined were in the same community as towers in Santo Domingo. This discrepancy could reflect a focus constraint between tower locations not captured by our set of place-based attributes, such as wealthy Dominican urbanites hiring Haitian laborers for housekeeping services.</p>
+      <p>The amount of land used for sugar cane cultivation was the most important predictor of community membership. Although sugar cane production is no longer a dominant economic activity in the Dominican Republic, the importance of sugar cane in determining community membership likely reflects deep, underlying differences in social structure between regions. These differences may be driven by the long-term social effects of class divisions arising from the mode of sugar cane cultivation in large plantations, compared to the country’s other main agricultural crops, which are produced by more egalitarian collectives of small farmers <xref ref-type="bibr" rid="pone.0056057-Schrank1">[20]</xref>. Here we have demonstrated that community structure can be predicted accurately using a choice of just four relevant place-based attributes to quantify geographic context. These represent only a fraction of the potential additional attributes that could be used to describe the location of nodes in large-scale networks, and the addition of a broader range of place-based attributes, including ethnicity, gender or health infrastructure, may further aid explanation of the underlying community patterns, and should be a focus of future research.</p>
+      <p>One challenge for future research is to incorporate both space and place-based attributes into quantitative models for community membership. Several previous studies have demonstrated that space plays an important role in determining patterns in large-scale social networks <xref ref-type="bibr" rid="pone.0056057-Schaefer1">[8]</xref>, <xref ref-type="bibr" rid="pone.0056057-Takhteyev1">[14]</xref>–<xref ref-type="bibr" rid="pone.0056057-Expert1">[15]</xref>. Expert (2011) has presented a method for modularity which removes the effect of space from community membership in the modularity algorithm <xref ref-type="bibr" rid="pone.0056057-Expert1">[15]</xref>. A disadvantage of this approach is that if the goal of analysis is to predict community membership, and space drives the pattern of modularity, removing space using the modularity algorithm eliminates an important element leading to community formation. In contrast, the method we present, using an LDA with place-based attributes can account for spatial autocorrelation due to the spatial distribution of predictor variables. Our method is unable to account for patterns in modularity which are the result of space alone, for example, if nearby towers are more likely to communicate, regardless of any shared social or economic attributes. However, results from a k-means clustering analysis classifying towers into 13 communities based solely on pairwise distance between towers, suggest that spatial proximity alone does not capture many features of the observed community structure (<xref ref-type="fig" rid="pone-0056057-g002">Figure 2</xref>). A method of analysis which simultaneously quantifies the effect of space and place-based attributes on community membership is an important goal for future research.</p>
+      <p>There are several limitations to the dataset used. First, although per capita mobile phone ownership in the Dominican Republic is relatively high <xref ref-type="bibr" rid="pone.0056057-Rutstein1">[21]</xref>, mobile phone use may be biased towards wealthier and working age individuals. Despite these heterogeneities in mobile phone ownership, the most extensive study of mobile phone ownership to date has found that every region, income and demographic bracket is represented in mobile phone datasets <xref ref-type="bibr" rid="pone.0056057-Wesolowski1">[22]</xref>. Additionally, the mobile phone network used comprised only 5% of market share in the Dominican Republic, meaning results may have limited generality if mobile phone coverage or call flow is very different for other in-country mobile phone companies. Finally, mobile phone towers are placed non-randomly, usually in places with high population density <xref ref-type="bibr" rid="pone.0056057-Wesolowski2">[23]</xref>, and geographic context of towers reflects this non-random placement; however, placement alone seems unlikely to explain many of the striking patterns we observed in the data, such as the division between the east and west halves of Santo Domingo. Despite these caveats, our findings show clear patterns that match with existing geographical knowledge on the Dominican Republic, and also demonstrate the application of a method for quantifying the influence of geographic context on modularity.</p>
+      <p>Because mobile phone communication networks are related to economic activity <xref ref-type="bibr" rid="pone.0056057-Yuan1">[17]</xref>, friendship <xref ref-type="bibr" rid="pone.0056057-Eagle1">[1]</xref>, and human mobility <xref ref-type="bibr" rid="pone.0056057-Tatem1">[16]</xref>–<xref ref-type="bibr" rid="pone.0056057-Bengtsson1">[19]</xref>, the ability to predict patterns of communication across regions has major implications for a range of fields, from epidemiology to political science. Our results suggest that place-based attributes related to social, economic and ecological context can predict community membership in mobile phone communication networks. Consequently, the potential to extrapolate community membership across wide regions not covered by mobile phone towers exists.</p>
+    </sec>
+    <sec id="s4" sec-type="methods">
+      <title>Methods</title>
+      <p>We used a dataset composed of the symmetrized number of calls between 177 mobile phone towers in the Dominican Republic. These data represent a single mobile phone company with 5% of Dominican mobile phone market share. The 57 million mobile phone communications in this dataset occurred between June 2007 and May 2008. For each call, the tower used by the phone initiating the call (the “origin” tower) and the tower used by the telephone receiving the call (the “destination” tower) were recorded. Over the entire study period, the mean call volume originating from each tower was 323655 (standard deviation 240468). For each pair of towers A and B, the number of calls originating from A calling phones serviced by B was known, as well as the number of calls originating from B to phones in A. In this dataset, these two values were not necessarily equal. Following previous analyses of country-wide mobile phone communication networks (4), we symmetrized calls going between a pair of towers by setting the number of calls from A going to B and the number of calls from B going to A equal to the lesser of the two values. Symmetrizing in this manner did not significantly affect the data; the mean discrepancy between the two values for pairs of towers was 3%. The total number of nodes in the network is 177 (the number of mobile phone towers) and the number of links between towers is 57286839. We excluded towers identified in the dataset as repeaters from analysis, because these towers are used to boost signals from other towers, rather than servicing a particular location. This network of towers covered much of the population of the Dominican Republic, and serviced a wide range of urbanization, wealth and land use (<xref ref-type="fig" rid="pone-0056057-g002">Figure 2</xref>, <xref ref-type="table" rid="pone-0056057-t001">Table 1</xref>).</p>
+      <p>We analyzed existing data from the mobile phone company, which originally had been collected for billing purposes, not for the purposes of this study. This mobile phone network was rendered anonymous by the mobile phone company before we accessed the data, making it impossible to identify individual mobile phone users. Additionally, the data were aggregated as the sum of calls from one tower to another, making it impossible to extract information on individuals from the dataset. The anonymity and aggregation of the data are strong safeguards maintaining the privacy of individual mobile phone users in the dataset.</p>
+      <p>We quantified community structure in the network using modularity maximization with a simulated annealing algorithm <xref ref-type="bibr" rid="pone.0056057-Good1">[25]</xref>. Previous research has shown that modularity maximization is a particularly effective approach for detecting communities in networks <xref ref-type="bibr" rid="pone.0056057-Newman1">[7]</xref> and modularity maximization has been successfully applied to several mobile phone communication networks <xref ref-type="bibr" rid="pone.0056057-Ratti1">[6]</xref>, <xref ref-type="bibr" rid="pone.0056057-Expert1">[15]</xref>. This algorithm determines the number of communities and node membership in communities by maximizing the difference in calls within a community and calls between communities. We used a weighted version of modularity, with a null model in which edges are placed at random, with the constraint that the degree of a vertex in the null model is equal to the degree of that same vertex in the real network <xref ref-type="bibr" rid="pone.0056057-Good1">[25]</xref>. The output of this algorithm is community membership of each node and modularity, an index representing the degree of clustering from 0 (modularity not significantly different than edges distributed at random) to 1. Determining the global maximum of the modularity function requires calculating the modularity score for all possible partitions of the network into communities. In fact, optimizing modularity is an NP-hard problem, meaning that optimization algorithms can only approximate the optimal modularity score <xref ref-type="bibr" rid="pone.0056057-Fortunato1">[24]</xref>–<xref ref-type="bibr" rid="pone.0056057-Brandes1">[26]</xref>. Furthermore, there may be many local optima in the modularity surface, arising from different partitions of the network into communities. To address this concern, we conducted 100 separate runs of the modularity optimization algorithm. For each run, we extracted the optimum modularity score and the community membership of each mobile phone tower.</p>
+      <p>We analyzed the process determining community formation in the call network by relating community membership to place-based attributes using a linear discriminant analysis (LDA). We selected four variables to use as predictors of community membership in the LDA: area occupied by urbanized land, area used for sugar cane production, distance to nearest airport and income at the second level administrative unit. Each of these variables represents an economic, social or ecological element of each tower’s landscape. Urbanization is central to many social processes in Latin America <xref ref-type="bibr" rid="pone.0056057-Aide1">[27]</xref>. We chose land cover used for sugar cane production as a place-based attribute because social networks in regions of the country with sugar cane plantations have fundamental differences, including higher social stratification and economic inequality, relative to social networks in regions with other forms of agriculture <xref ref-type="bibr" rid="pone.0056057-Schrank1">[20]</xref>. Both urbanization and sugar cane land cover were quantified from satellite imagery datasets <xref ref-type="bibr" rid="pone.0056057-Balk1">[28]</xref>–<xref ref-type="bibr" rid="pone.0056057-Center1">[30]</xref> using a 15 km radius around each tower (<xref ref-type="fig" rid="pone-0056057-g002">Figure 2</xref>), an area chosen as an appropriate scale to represent the maximum area that a signal from an individual mobile phone tower could occupy. We quantified distance from each tower to the nearest of 8 airports, because we anticipated the proximity to airports would reflect economic conditions related to international tourism, which is a major source of income for the Dominican Republic <xref ref-type="bibr" rid="pone.0056057-Padilla1">[31]</xref>. Finally, we measured income as the proportion of people in each second-level administrative unit belonging to the highest quintile of wealth, as measured by the Wealth Index developed by MEASURE DHS (<ext-link ext-link-type="uri" xlink:href="http://www.measuredhs.com" xlink:type="simple">www.measuredhs.com</ext-link>). Although the MEASURE DHS data contains many other predictor variables related to socioeconomic status, such as motorcycle ownership, poverty rates and presence of indoor plumbing, multicollinearity between socioeconomic variables limited the number of predictor variables we could include in the model. Consequently, we chose to use the Wealth Index, because this measure of wealth correlates much more strongly with socioeconomic status than most other measures, as measures such as self-reported income can be highly inaccurate, can change over the course of a year, and may not include all sources of income <xref ref-type="bibr" rid="pone.0056057-Rutstein1">[21]</xref>. Upon determining the proportion belonging to the highest quintile of wealth in each second-level administrative unit (“municipio”), we associated that proportion with every tower in each municipio. We chose to aggregate this proportion over municipios rather than aggregate over each tower because the MEASURE DHS data is weighted to be aggregated to the first level administrative unit. Our LDA analysis had two objectives: first, to quantify the predictive power of the LDA for community membership, and second, to analyze the relative explanatory power of our four predictor variables. We determined whether our place-based attributes were able to correctly predict community membership of towers by applying an LDA with leave-one-out cross-validation to all 100 realizations of the modularity algorithm. This approach provides a value of predictive capability linked to each modularity realization. Calculating a range of predictive capabilities linked to various levels of modularity has the benefit of enabling us to link the pattern described by the modularity algorithm with the process quantified by the LDA. If the LDA is accurately reflecting the processes which drive community membership, we would expect the predictive capability of the LDA to increase as the modularity index increases.</p>
+      <p>To evaluate which predictor variables were most important for determining community membership, we conducted an LDA using the realization of the modularity algorithm with the top modularity score. Repeating the analysis for other realizations revealed qualitatively similar results. Because the goal of analyzing the single LDA for the top modularity realization was explanation, rather than prediction, we included the full dataset in this analysis. To assess the relative importance of predictor variables, we examined the proportion of between group variance explained by each of the four discriminant functions and the coefficients of the standardized discriminant function.</p>
+    </sec>
+    <sec id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material id="pone.0056057.s001" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0056057.s001" position="float" xlink:type="simple">
+        <label>Figure S1</label>
+        <caption>
+          <p>The simulated annealing runs with the 20 highest modularity scores (Q &gt;.52, out of 100 total runs) were used to determine core communities. Core communities were defined as communities with at least 3 towers that appeared in every run, where each core tower was a member of the same community for all 20 runs. Towers that were not assigned to the same community throughout all 20 runs were termed non-core towers, and are represented as green open circles, while core communities are represented with filled circles, with colors corresponding to the communities in <xref ref-type="fig" rid="pone-0056057-g001">Figure 1</xref>.</p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0056057.s002" mimetype="video/quicktime" xlink:href="info:doi/10.1371/journal.pone.0056057.s002" position="float" xlink:type="simple">
+        <label>Video S1</label>
+        <caption>
+          <p>This brief video presents our methods and results in language appropriate for a general audience.</p>
+          <p>(MOV)</p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>T. Podkul, C. Osenberg, M. Schmink and T. Hladish provided helpful comments on the paper. S. Schill and the Nature Conservancy graciously provided access to the landcover dataset.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0056057-Eagle1">
+        <label>1</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Eagle</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Pentland</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Lazer</surname><given-names>D</given-names></name> (<year>2009</year>) <article-title>Inferring friendship network structure by using mobile phone data</article-title>. <source>Proceedings of the National Academy of Sciences</source> <volume>106</volume>: <fpage>15274</fpage>–<lpage>15278</lpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.0900282106" xlink:type="simple">10.1073/pnas.0900282106</ext-link></comment>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Viboud1">
+        <label>2</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Viboud</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Bjornstad</surname><given-names>ON</given-names></name>, <name name-style="western"><surname>Smith</surname><given-names>DL</given-names></name>, <name name-style="western"><surname>Simonsen</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Miller</surname><given-names>MA</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Synchrony, waves, and spatial hierarchies in the spread of influenza</article-title>. <source>Science</source> <volume>312</volume>: <fpage>447</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Liljeros1">
+        <label>3</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Liljeros</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Edling</surname><given-names>CR</given-names></name>, <name name-style="western"><surname>Amaral</surname><given-names>LA</given-names></name> (<year>2003</year>) <article-title>Sexual networks: implications for the transmission of sexually transmitted infections</article-title>. <source>Microbes and Infection</source> <volume>5</volume>: <fpage>189</fpage>–<lpage>196</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Lomi1">
+        <label>4</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lomi</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Pallotti</surname><given-names>F</given-names></name> (<year>2012</year>) <article-title>Relational collaboration among spatial multipoint competitors</article-title>. <source>Social Networks</source> <volume>34</volume>: <fpage>101</fpage>–<lpage>111</lpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.socnet.2010.10.005" xlink:type="simple">10.1016/j.socnet.2010.10.005</ext-link></comment>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Christakis1">
+        <label>5</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Christakis</surname><given-names>NA</given-names></name>, <name name-style="western"><surname>Fowler</surname><given-names>JH</given-names></name> (<year>2007</year>) <article-title>The spread of obesity in a large social network over 32 years</article-title>. <source>New England Journal of Medicine</source> <volume>357</volume>: <fpage>370</fpage>–<lpage>379</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Ratti1">
+        <label>6</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ratti</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Sobolevsky</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Calabrese</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Andris</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Reades</surname><given-names>J</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Redrawing the map of Great Britain from a network of human interactions</article-title>. <source>PLoS One</source> <volume>5</volume>: <fpage>e14248</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Newman1">
+        <label>7</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Newman</surname><given-names>MEJ</given-names></name> (<year>2006</year>) <article-title>Modularity and community structure in networks</article-title>. <source>Proceedings of the National Academy of Sciences</source> <volume>103</volume>: <fpage>8577</fpage>–<lpage>8582</lpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.0601602103" xlink:type="simple">10.1073/pnas.0601602103</ext-link></comment>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Schaefer1">
+        <label>8</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schaefer</surname><given-names>DR</given-names></name> (<year>2012</year>) <article-title>Youth co-offending networks: An investigation of social and spatial effects</article-title>. <source>Social Networks</source> <volume>34</volume>: <fpage>141</fpage>–<lpage>149</lpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.socnet.2011.02.001" xlink:type="simple">10.1016/j.socnet.2011.02.001</ext-link></comment>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Thiemann1">
+        <label>9</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Thiemann</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Theis</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Grady</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Brune</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Brockmann</surname><given-names>D</given-names></name> (<year>2010</year>) <article-title>The Structure of Borders in a Small World</article-title>. <source>PLoS ONE</source> <volume>5</volume>: <fpage>e15422</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0015422" xlink:type="simple">10.1371/journal.pone.0015422</ext-link></comment>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-McPherson1">
+        <label>10</label>
+        <mixed-citation publication-type="other" xlink:type="simple">McPherson M, Smith-Lovin L, Cook JM (2001) Birds of a feather: Homophily in social networks. Annual review of sociology: 415–444.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Bianconi1">
+        <label>11</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bianconi</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Pin</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Marsili</surname><given-names>M</given-names></name> (<year>2009</year>) <article-title>Assessing the Relevance of Node Features for Network Structure</article-title>. <source>PNAS</source> <volume>106</volume>: <fpage>11433</fpage>–<lpage>11438</lpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.0811511106" xlink:type="simple">10.1073/pnas.0811511106</ext-link></comment>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Feld1">
+        <label>12</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Feld</surname><given-names>SL</given-names></name> (<year>1981</year>) <article-title>The Focused Organization of Social Ties</article-title>. <source>American Journal of Sociology</source> <volume>86</volume>: <fpage>1015</fpage>–<lpage>1035</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Kossinets1">
+        <label>13</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kossinets</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Watts</surname><given-names>DJ</given-names></name> (<year>2006</year>) <article-title>Empirical analysis of an evolving social network</article-title>. <source>Science</source> <volume>311</volume>: <fpage>88</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Takhteyev1">
+        <label>14</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Takhteyev</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Gruzd</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Wellman</surname><given-names>B</given-names></name> (<year>2012</year>) <article-title>Geography of Twitter networks</article-title>. <source>Social Networks</source> <volume>34</volume>: <fpage>73</fpage>–<lpage>81</lpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.socnet.2011.05.006" xlink:type="simple">10.1016/j.socnet.2011.05.006</ext-link></comment>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Expert1">
+        <label>15</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Expert</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Evans</surname><given-names>TS</given-names></name>, <name name-style="western"><surname>Blondel</surname><given-names>VD</given-names></name>, <name name-style="western"><surname>Lambiotte</surname><given-names>R</given-names></name> (<year>2011</year>) <article-title>Uncovering space-independent communities in spatial networks</article-title>. <source>Proceedings of the National Academy of Sciences</source> <volume>108</volume>: <fpage>7663</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Tatem1">
+        <label>16</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tatem</surname><given-names>AJ</given-names></name>, <name name-style="western"><surname>Qiu</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Smith</surname><given-names>DL</given-names></name>, <name name-style="western"><surname>Sabot</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Ali</surname><given-names>AS</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>The use of mobile phone data for the estimation of the travel patterns and imported Plasmodium falciparum rates among Zanzibar residents</article-title>. <source>Malar J</source> <volume>8</volume>: <fpage>287</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Yuan1">
+        <label>17</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Yuan Y, Raubal M, Liu Y (2011) Correlating mobile phone usage and travel behavior-A case study of Harbin, China. Computers, Environment and Urban Systems.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-LeMenach1">
+        <label>18</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Le Menach A, Tatem AJ, Cohen JM, Hay SI, Randell H, <etal>et al</etal>.. (2011) Travel risk, malaria importation and malaria transmission in Zanzibar. Sci Rep 1. <italic>Nature</italic> website. Available: <comment><ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/srep00093" xlink:type="simple">http://dx.doi.org/10.1038/srep00093</ext-link></comment>. Accessed 2013 Jan 30.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Bengtsson1">
+        <label>19</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bengtsson</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Lu</surname><given-names>X</given-names></name>, <name name-style="western"><surname>Thorson</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Garfield</surname><given-names>R</given-names></name>, <name name-style="western"><surname>von Schreeb</surname><given-names>J</given-names></name> (<year>2011</year>) <article-title>Improved Response to Disasters and Outbreaks by Tracking Population Movements with Mobile Phone Network Data: A Post-Earthquake Geospatial Study in Haiti</article-title>. <source>PLoS Med</source> <volume>8</volume>: <fpage>e1001083</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pmed.1001083" xlink:type="simple">10.1371/journal.pmed.1001083</ext-link></comment>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Schrank1">
+        <label>20</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schrank</surname><given-names>A</given-names></name> (<year>2005</year>) <article-title>Entrepreneurship, Export Diversification, and Economic Reform: The Birth of a Developmental Community in the Dominican Republic</article-title>. <source>Comparative Politics</source> <volume>38</volume>: <fpage>43</fpage>–<lpage>62</lpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2307/20072912" xlink:type="simple">10.2307/20072912</ext-link></comment>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Rutstein1">
+        <label>21</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Rutstein S.O, Johnson K (2004). The DHS Wealth Index. MEASURE DHS+, Calverton MD, USA. DHS website. Available: <comment><ext-link ext-link-type="uri" xlink:href="http://www.measuredhs.com/pubs/pdf/CR6/CR6.pdf" xlink:type="simple">http://www.measuredhs.com/pubs/pdf/CR6/CR6.pdf</ext-link></comment>. Accessed 2013 Jan 30.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Wesolowski1">
+        <label>22</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wesolowski</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Eagle</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Noor</surname><given-names>AM</given-names></name>, <name name-style="western"><surname>Snow</surname><given-names>RW</given-names></name>, <name name-style="western"><surname>Buckee</surname><given-names>CO</given-names></name> (<year>2012</year>) <article-title>Heterogeneous Mobile Phone Ownership and Usage Patterns in Kenya</article-title>. <source>PLoS ONE</source> <volume>7</volume>: <fpage>e35319</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0035319" xlink:type="simple">10.1371/journal.pone.0035319</ext-link></comment>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Wesolowski2">
+        <label>23</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wesolowski</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Eagle</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Tatem</surname><given-names>AJ</given-names></name>, <name name-style="western"><surname>Smith</surname><given-names>DL</given-names></name>, <name name-style="western"><surname>Noor</surname><given-names>AM</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Quantifying the Impact of Human Mobility on Malaria</article-title>. <source>Science</source> <volume>338</volume>: <fpage>267</fpage>–<lpage>270</lpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/science.1223467" xlink:type="simple">10.1126/science.1223467</ext-link></comment>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Fortunato1">
+        <label>24</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fortunato</surname><given-names>S</given-names></name> (<year>2010</year>) <article-title>Community detection in graphs</article-title>. <source>Physics Reports</source> <volume>486</volume>: <fpage>75</fpage>–<lpage>174</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Good1">
+        <label>25</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Good BH, de Montjoye Y-A, Clauset A (2009) The performance of modularity maximization in practical contexts. arXiv:09100165. Arxiv website. Available: <comment><ext-link ext-link-type="uri" xlink:href="http://arxiv.org/abs/0910.0165" xlink:type="simple">http://arxiv.org/abs/0910.0165</ext-link></comment>. Accessed 2013 Jan 30.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Brandes1">
+        <label>26</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Brandes</surname><given-names>U</given-names></name>, <name name-style="western"><surname>Delling</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Gaertler</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Gorke</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Hoefer</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>On Modularity Clustering</article-title>. <source>Knowledge and Data Engineering, IEEE Transactions on</source> <volume>20</volume>: <fpage>172</fpage>–<lpage>188</lpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1109/TKDE.2007.190689" xlink:type="simple">10.1109/TKDE.2007.190689</ext-link></comment>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Aide1">
+        <label>27</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Aide</surname><given-names>TM</given-names></name>, <name name-style="western"><surname>Grau</surname><given-names>HR</given-names></name> (<year>2004</year>) <article-title>Globalization, Migration, and Latin American Ecosystems</article-title>. <source>Science(Washington)</source> <volume>305</volume>: <fpage>1915</fpage>–<lpage>1916</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Balk1">
+        <label>28</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Balk DL, Deichmann U, Yetman G, Pozzi F, Hay SI, <etal>et al</etal>.. (2006) Determining Global Population Distribution: Methods, Applications and Data. Global Mapping of Infectious Diseases: Methods, Examples and Emerging Applications. Academic Press, Vol. Volume 62. 119–156. Advances in Parasitology website. Available: <comment><ext-link ext-link-type="uri" xlink:href="http://www.sciencedirect.com/science/article/pii/S0065308X05620040" xlink:type="simple">http://www.sciencedirect.com/science/article/pii/S0065308X05620040</ext-link></comment>. Accessed 2013 Jan 30.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-TheNature1">
+        <label>29</label>
+        <mixed-citation publication-type="other" xlink:type="simple">The Nature Conservancy (2012) Conservation Information System, Caribbean Science Program, Vero Beach, FL.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Center1">
+        <label>30</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Center for International Earth Science Information Network (CIESIN), Columbia University; International Food Policy Research Institute (IFPRI); The World Bank; and Centro Internacional de Agricultura Tropical (CIAT). 2004. Global Rural-Urban Mapping Project, Version 1 (GRUMPv1): Urban Extents Grid. Palisades, NY: Socioeconomic Data and Applications Center (SEDAC), Columbia University. SEDAC website. Available: <comment><ext-link ext-link-type="uri" xlink:href="http://sedac.ciesin.columbia.edu/gpw" xlink:type="simple">http://sedac.ciesin.columbia.edu/gpw</ext-link></comment>. Accessed 2013 Jan 30.</mixed-citation>
+      </ref>
+      <ref id="pone.0056057-Padilla1">
+        <label>31</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Padilla M (2007) Caribbean pleasure industry: tourism, sexuality, and AIDS in the Dominican Republic. University of Chicago Press.</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

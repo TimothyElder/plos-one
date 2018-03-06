@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group>
+<journal-title>PLoS ONE</journal-title></journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-14-15039</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0107982</article-id>
+<article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Computer and information sciences</subject><subj-group><subject>Network analysis</subject><subj-group><subject>Social networks</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Social sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Cultural anthropology</subject><subj-group><subject>Cultural diversity</subject><subject>Religion</subject></subj-group></subj-group></subj-group><subj-group><subject>Archaeology</subject><subj-group><subject>Historical archaeology</subject></subj-group></subj-group><subj-group><subject>Linguistics</subject><subj-group><subject>Lexicography</subject></subj-group></subj-group><subj-group><subject>Sociology</subject></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Classic Maya Bloodletting and the Cultural Evolution of Religious Rituals: Quantifying Patterns of Variation in Hieroglyphic Texts</article-title>
+<alt-title alt-title-type="running-head">Classic Maya Bloodletting</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Munson</surname><given-names>Jessica</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Amati</surname><given-names>Viviana</given-names></name><xref ref-type="aff" rid="aff2"><sup>2</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Collard</surname><given-names>Mark</given-names></name><xref ref-type="aff" rid="aff3"><sup>3</sup></xref><xref ref-type="aff" rid="aff4"><sup>4</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Macri</surname><given-names>Martha J.</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref><xref ref-type="aff" rid="aff5"><sup>5</sup></xref></contrib>
+</contrib-group>
+<aff id="aff1"><label>1</label><addr-line>Department of Linguistics, University of California Davis, Davis, California, United States of America</addr-line></aff>
+<aff id="aff2"><label>2</label><addr-line>Department of Computer &amp; Information Science, University of Konstanz, Konstanz, Germany</addr-line></aff>
+<aff id="aff3"><label>3</label><addr-line>Human Evolutionary Studies Program and Department of Archaeology, Simon Fraser University, Burnaby, British Columbia, Canada</addr-line></aff>
+<aff id="aff4"><label>4</label><addr-line>Department of Archaeology, University of Aberdeen, St Mary’s Building, Aberdeen, Scotland, United Kingdom</addr-line></aff>
+<aff id="aff5"><label>5</label><addr-line>Department of Native American Studies, University of California Davis, Davis, California, United States of America</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Moreno</surname><given-names>Eduardo</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>University of Bern, Switzerland</addr-line></aff>
+<author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">jmunson@ucdavis.edu</email></corresp>
+<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn>
+<fn fn-type="con"><p>Conceived and designed the experiments: JM MJM MC. Performed the experiments: JM VA MJM. Analyzed the data: JM VA. Contributed reagents/materials/analysis tools: JM VA MJM. Contributed to the writing of the manuscript: JM VA MC MJM.</p></fn>
+</author-notes>
+<pub-date pub-type="collection"><year>2014</year></pub-date>
+<pub-date pub-type="epub"><day>25</day><month>9</month><year>2014</year></pub-date>
+<volume>9</volume>
+<issue>9</issue>
+<elocation-id>e107982</elocation-id>
+<history>
+<date date-type="received"><day>3</day><month>4</month><year>2014</year></date>
+<date date-type="accepted"><day>25</day><month>8</month><year>2014</year></date>
+</history>
+<permissions>
+<copyright-year>2014</copyright-year>
+<copyright-holder>Munson et al</copyright-holder><license xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions>
+<abstract>
+<p>Religious rituals that are painful or highly stressful are hypothesized to be costly signs of commitment essential for the evolution of complex society. Yet few studies have investigated how such extreme ritual practices were culturally transmitted in past societies. Here, we report the first study to analyze temporal and spatial variation in bloodletting rituals recorded in Classic Maya (ca. 250–900 CE) hieroglyphic texts. We also identify the sociopolitical contexts most closely associated with these ancient recorded rituals. Sampling an extensive record of 2,480 hieroglyphic texts, this study identifies every recorded instance of the logographic sign for the word <italic>ch’ahb’</italic> that is associated with ritual bloodletting. We show that documented rituals exhibit low frequency whose occurrence cannot be predicted by spatial location. Conversely, network ties better capture the distribution of bloodletting rituals across the southern Maya region. Our results indicate that bloodletting rituals by Maya nobles were not uniformly recorded, but were typically documented in association with antagonistic statements and may have signaled royal commitments among connected polities.</p>
+</abstract>
+<funding-group><funding-statement>The work was supported by the following: National Science Foundation, IBSS1328928 (MJM, JM); National Science Foundation, SBR9710961 (MJM); National Science Foundation, SBR9905357 (MJM); the National Endowment for the Humanities, RT21365-92, RT21608-94, PA22844-96 (MJM), Social Sciences and Humanities Research Council, Partnership Grant, grant ID 895-2011-1009 (MC). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts><page-count count="13"/></counts><custom-meta-group><custom-meta id="data-availability" xlink:type="simple"><meta-name>Data Availability</meta-name><meta-value>The authors confirm that all data underlying the findings are fully available without restriction. All relevant data are within the paper and its Supporting Information files.</meta-value></custom-meta></custom-meta-group></article-meta>
+</front>
+<body><sec id="s1">
+<title/>
+<disp-quote>
+<p><italic>No longer can evolutionists dismiss such works</italic> [of ritual sacrifice] <italic>as scholarly, but irrelevant, esoterica–explorations of the bizarre but insignificant elements of Precolumbian culture…we must address this ideological data base with the same interest that we would give to studies of settlement patterns, subsistence systems, or political institutions</italic> <xref ref-type="bibr" rid="pone.0107982-Demarest1">[1]</xref>.</p>
+</disp-quote></sec><sec id="s2">
+<title>Introduction</title>
+<p>Ritual acts of blood sacrifice are dominant themes in Pre-Columbian art and archaeology, and are an essential topic for understanding the development of early complex societies in Mesoamerica, as Arthur Demarest suggested over 30 years ago. Sociologists and anthropologists have long made similar arguments that intense rituals enhance social cohesion and promote cooperation for human society <xref ref-type="bibr" rid="pone.0107982-Rappaport1">[2]</xref>–<xref ref-type="bibr" rid="pone.0107982-Irons1">[4]</xref>. These so-called “costly ritual behaviors”–and the traces they leave in the archaeological and historical records–are therefore worthy subjects of scientific inquiry that require explanations derived from a unified theoretical framework <xref ref-type="bibr" rid="pone.0107982-Slingerland1">[5]</xref>. Although many scholars recognize that sacrificial rituals involving the dedication of human lives and blood to supernatural beings were essential to the religious foundation and political order of Mesoamerican societies <xref ref-type="bibr" rid="pone.0107982-Carrasco1">[6]</xref>–<xref ref-type="bibr" rid="pone.0107982-Schele1">[8]</xref>, cultural evolutionary explanations for these behaviors are not featured prominently due to earlier monolithic views of religious change <xref ref-type="bibr" rid="pone.0107982-Demarest1">[1]</xref>. Rather than assume that blood rituals form part of a universal Mesoamerican religion, we focus our attention on the distribution and spread of bloodletting rituals recorded in Classic Maya hieroglyphic texts. We examine this specific class of sacrificial practices because selected examples of Classic Maya bloodletting have been used to illustrate how these extravagant and costly displays increased the level of commitment to dominant ideology in past complex societies <xref ref-type="bibr" rid="pone.0107982-Henrich1">[9]</xref>, <xref ref-type="bibr" rid="pone.0107982-Atran1">[10]</xref>. With these considerations in mind, our aim is threefold: 1) to analyze the temporal and spatial variation of bloodletting rituals in the Maya hieroglyphic record, 2) to examine factors associated with the uneven distribution of these bloodletting records, and 3) to demonstrate how current cultural evolutionary models can provide key insights on the historical dynamics of past cultural practices.</p>
+<sec id="s2a">
+<title>Blood sacrifice in ancient Mesoamerica</title>
+<p>Abundant archaeological and historical evidence supports the prevalence of religious practices involving blood sacrifice throughout Mesoamerica before the arrival of the Spanish <xref ref-type="bibr" rid="pone.0107982-LpezLujn1">[11]</xref>–<xref ref-type="bibr" rid="pone.0107982-Tiesler1">[13]</xref>. These include a variety of ritual behaviors involving non-lethal forms of bloodletting and body piercings, as well as deadly practices of human and animal sacrifice, heart extraction, and decapitation. Among the most noted examples, Aztec human sacrifice stands out for its ritual violence and bloodshed. Performed in the religious precincts of Tenochitlan, ritual sacrifice was a primary instrument for social integration and political legitimacy that intersected with militaristic and marketplace practices, as well as with beliefs about the cosmological order <xref ref-type="bibr" rid="pone.0107982-Carrasco1">[6]</xref>. Although human sacrifice was arguably less common in ancient Maya society, physical evidence indicates that offerings of infant sacrifices and other rituals involving decapitation were important religious practices during the Classic period <xref ref-type="bibr" rid="pone.0107982-Houston1">[14]</xref>, <xref ref-type="bibr" rid="pone.0107982-Arden1">[15]</xref>. Scenes of personal bloodletting and mutilated captives further illustrate the range of sacrificial rituals within Classic Maya society <xref ref-type="bibr" rid="pone.0107982-Baudez1">[16]</xref>, <xref ref-type="bibr" rid="pone.0107982-Schele2">[17]</xref>. While material remains suggest sacrificial rites may have conferred political power for the ruling class <xref ref-type="bibr" rid="pone.0107982-Sugiyama1">[7]</xref>, bloodletting rituals were not the exclusive domain of elites. Ethnohistorical documents indicate these practices were pervasive among most social classes in Mesoamerica <xref ref-type="bibr" rid="pone.0107982-deAlarcn1">[18]</xref>. While blood sacrifice may represent a set of loosely shared religious beliefs for many ancient Mesoamerican people, the codes of conduct that regulated these and other cultural practices are dependent upon significant social and historical factors <xref ref-type="bibr" rid="pone.0107982-Inomata1">[19]</xref>. To avoid monolithic portrayals of these ritual practices, such specific details deserve greater analytic attention to understand the mechanisms and contexts in which blood rituals were practiced and spread through ancient Mesoamerican societies.</p>
+<p>Classic Maya bloodletting is a well-documented ancient ritual based on iconographic and epigraphic data as well as biological studies on the methods and risks associated with these practices <xref ref-type="bibr" rid="pone.0107982-Schele1">[8]</xref>, <xref ref-type="bibr" rid="pone.0107982-Joralemon1">[20]</xref>–<xref ref-type="bibr" rid="pone.0107982-Gronenmeyer1">[24]</xref>. Bloodletting rituals involved puncturing or perforating different body parts using a variety of instruments. Classic period iconographic and figurative representations show individuals piercing their tongue or penis to withdraw blood in acts of personal sacrifice (<xref ref-type="fig" rid="pone-0107982-g001">Figure 1</xref>). Sacrificial scenes found in Postclassic codices also include images of penis perforation and bloodletting from the ears, along with other representations of human sacrifice that have been associated with the Maya calendar <xref ref-type="bibr" rid="pone.0107982-Vail1">[25]</xref>. Some of the objects depicted in these bloodletting scenes include: bowls with lancets, stingray spines, obsidian and flint blades, bone awls, cord, and bark paper, many of which have also been recovered archaeologically (<xref ref-type="fig" rid="pone-0107982-g002">Figure 2</xref>). Ethnohistorical sources, including the <italic>Relación</italic> by Diego de Landa <xref ref-type="bibr" rid="pone.0107982-Landa1">[26]</xref> further corroborate these pictorial scenes of bloodletting:</p>
+<fig id="pone-0107982-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0107982.g001</object-id><label>Figure 1</label><caption>
+<title>Bloodletting scene from Yaxchilan Lintel 17.</title>
+<p>This image of Classic Maya bloodletting depicts a royal man using a stingray spine to pierce his penis and a noble woman pulling a thorny vine through her tongue in ritual acts of self-sacrifice. Drawing by Ian Graham <xref ref-type="bibr" rid="pone.0107982-Graham1">[81]</xref>, Yaxchilan, Lintel 17. © President and Fellows of Harvard University, Peabody Museum of Archaeology and Ethnology, 2004.15.6.5.16. Digital file #101240031.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0107982.g001" position="float" xlink:type="simple"/></fig><fig id="pone-0107982-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0107982.g002</object-id><label>Figure 2</label><caption>
+<title>Bowl containing instruments used in Classic Maya bloodletting rituals.</title>
+<p>From Yaxchilan Lintel 25. Detail of drawing by Ian Graham <xref ref-type="bibr" rid="pone.0107982-Graham1">[81]</xref>, Yaxchilan, Lintel 25, front edge. © President and Fellows of Harvard University, Peabody Museum of Archaeology and Ethnology, 2004.15.6.5.22. Digital file #101240034.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0107982.g002" position="float" xlink:type="simple"/></fig><disp-quote>
+<p>“They offered sacrifices of their own blood, sometimes cutting themselves around in pieces and they left them in this way as a sign. Other times they pierced their cheeks, at other times their lower lips. Sometimes they scarify certain parts of their bodies, at others they pierced their tongues in a slanting direction from side to side and passed bits of straw through the holes with horrible suffering, other slit the superfluous part of the virile member leaving it as they did their ears.” <xref ref-type="bibr" rid="pone.0107982-Tozzer1">[27]</xref></p>
+</disp-quote>
+<p>For the Classic period, images of bloodletting carved in stone monuments and painted on pottery illustrate elaborate and complex rituals performed by Maya royalty and supernatural figures. These scenes depict important dynastic rituals, which served various purposes associated with agricultural ceremonies, ancestor communication, metaphorical acts of procreation, as well as other royal obligations <xref ref-type="bibr" rid="pone.0107982-Schele1">[8]</xref>, <xref ref-type="bibr" rid="pone.0107982-Joralemon1">[20]</xref>, <xref ref-type="bibr" rid="pone.0107982-Stuart1">[21]</xref>, <xref ref-type="bibr" rid="pone.0107982-Looper1">[28]</xref>–<xref ref-type="bibr" rid="pone.0107982-Taube1">[31]</xref>. Although Maya bloodletting rituals can be included in a broader category of Mesoamerican religious practices, earlier studies overlook two key issues for the cultural evolution of religion: 1) the extent to which the frequency of these rituals varied through space and time and 2) the contexts and potential mechanisms that contributed to the spread of these ritual practices in Classic Maya society.</p>
+<p>Despite significant advances in the decipherment of Classic Maya writing over the last 40 years, incomplete and imprecise database records have hampered quantitative studies of the occurrence of these rituals in the historical record. Here we present evidence for ritual bloodletting drawn from the Maya Hieroglyphic Database (MHD), a unique set of digitized hieroglyphic records, in order to characterize the intensity and transmission of bloodletting rituals recorded on Maya stelae. These deciphered texts include detailed social and political information about Maya rulers, toponyms for important places and landscape features, as well as calendar dates referring to specific ritual events. In addition, many of these hieroglyphic inscriptions are found on stone monuments in the same location where they were originally placed. Unlike the colonial documentation of Aztec human sacrifice, Classic Maya hieroglyphic texts can be considered a unique example of “indigenous” written testimony <xref ref-type="bibr" rid="pone.0107982-Pennock1">[32]</xref>. Still, it is important to keep in mind that these data are not objective descriptions of historical events. Rather, they are reflections of how the Maya perceived, remembered, and chose to record selected aspects of their religious practice.</p>
+</sec><sec id="s2b">
+<title>Costly signals and religious behavior</title>
+<p>Social scientists have long speculated that intense rituals generate collective benefits that offset individual costs by reinforcing social bonds and promoting group solidarity <xref ref-type="bibr" rid="pone.0107982-Rappaport1">[2]</xref>, <xref ref-type="bibr" rid="pone.0107982-Durkheim1">[3]</xref>. Recent evolutionary approaches to religion formalize these ideas by offering possible models to interpret the spread of costly displays and their consequences for human society <xref ref-type="bibr" rid="pone.0107982-Bulbulia1">[33]</xref>, <xref ref-type="bibr" rid="pone.0107982-Norenzayan1">[34]</xref>. These approaches suggest that cooperation among large groups of genetically unrelated individuals can be facilitated by extravagant behaviors that reliably signal commitments to social groups and shared ideals. Hard-to-fake religious behaviors are argued to promote beliefs in moralizing supernatural agents by enhancing within-group interpersonal trust through low monitoring costs and by stabilizing prosocial norms <xref ref-type="bibr" rid="pone.0107982-Norenzayan1">[34]</xref>. For example, results from one recent study illustrate how both ritual performers and observers of a Hindu body-piercing ritual were more likely to make charitable donations to the local temple than performers of a low-ordeal ritual <xref ref-type="bibr" rid="pone.0107982-Xygalatas1">[35]</xref>. Increasingly, natural experiments and economic games demonstrate the behavioral impacts of costly rituals in contemporary religious populations <xref ref-type="bibr" rid="pone.0107982-Sosis1">[36]</xref>, <xref ref-type="bibr" rid="pone.0107982-Konvalinka1">[37]</xref>. However, we are not aware of any other study that addresses how such extravagant rituals varied over time or spread between different social groups in the past–essential information for assessing the significance of religion for cultural evolution.</p>
+<p>Using the framework of signaling theory <xref ref-type="bibr" rid="pone.0107982-BliegeBird1">[38]</xref>, inscribed stone monuments located in the central plazas of ancient Maya cities can be interpreted as important transmitters of cultural information. Fraser Neiman <xref ref-type="bibr" rid="pone.0107982-Neiman1">[39]</xref> originally introduced this evolutionary principle to Mesoamerican archaeology by arguing that Maya stelae constitute reliable, although wasteful, advertisements of a ruler’s ability to outcompete his political neighbors. In Neiman’s study, the construction of dated monuments was treated as a lavish investment of resources, which would have otherwise been used for bodily maintenance and reproduction. While the construction of monuments may involve costly displays of symbolic capital <xref ref-type="bibr" rid="pone.0107982-BliegeBird1">[38]</xref>, bloodletting may present significant health risks, including inflammation and pain, tissue necrosis, as well as reduced or impaired fertilization which impose real fitness costs <xref ref-type="bibr" rid="pone.0107982-Haines1">[23]</xref>, <xref ref-type="bibr" rid="pone.0107982-Wilson1">[40]</xref>. Some even propose that such practices of genital mutilation may have functioned as costly signals to counteract potential free-rider problems in times of war <xref ref-type="bibr" rid="pone.0107982-Sosis2">[41]</xref>. However, for the spread of ritual practices and religious beliefs, Henrich points out that such extreme costs are not necessarily required for effective cultural transmission <xref ref-type="bibr" rid="pone.0107982-Henrich1">[9]</xref>. Under the right circumstances, costly acts such as ritual bloodletting can be interpreted as “credibility enhancing displays” (CREDs) if they reliably signal an individual’s commitment or professed beliefs <xref ref-type="bibr" rid="pone.0107982-Henrich1">[9]</xref>, <xref ref-type="bibr" rid="pone.0107982-Atran1">[10]</xref>.</p>
+<p>The representation and recording of bloodletting rituals on public monuments sends powerful, if not conspicuous, messages about the status and role of Classic Maya rulers and their progeny. Despite the documented risks associated with bloodletting <xref ref-type="bibr" rid="pone.0107982-Haines1">[23]</xref>, ritual acts of blood sacrifice are traditionally regarded as a central duty for divine Maya kings. Current scholarship argues these were necessary rites of passage that legitimated an individual’s right to rule in Classic Maya society <xref ref-type="bibr" rid="pone.0107982-Stuart1">[21]</xref>, <xref ref-type="bibr" rid="pone.0107982-Houston2">[29]</xref>, <xref ref-type="bibr" rid="pone.0107982-Stuart2">[30]</xref>. In the words of David Stuart, “an important function of monumental art, through the evocation of bloodletting, [was] to express the legitimacy and the metaphysical validity of the office of divine king” <xref ref-type="bibr" rid="pone.0107982-Stuart1">[21]</xref>. Such conclusive statements appear compatible with the hypothesized function of CREDs presented in Henrich’s model <xref ref-type="bibr" rid="pone.0107982-Henrich1">[9]</xref>, as well as other signaling models in which displays serve to justify and perpetuate inequalities in power, prestige and access to resources <xref ref-type="bibr" rid="pone.0107982-Irons1">[4]</xref>, <xref ref-type="bibr" rid="pone.0107982-Cronk1">[42]</xref>. In this paper, we apply this signaling perspective to examine specific ritual information recorded on Maya hieroglyphic monuments and test current hypotheses about the function and spread of these ritual practices in relation to cultural evolutionary theories of religion.</p>
+</sec></sec><sec id="s3" sec-type="materials|methods">
+<title>Materials and Methods</title>
+<sec id="s3a">
+<title>Grapheme Sample</title>
+<p>The data used in this study derive from Classic Maya inscriptions recorded in the Maya Hieroglyphic Database <xref ref-type="bibr" rid="pone.0107982-Looper2">[43]</xref>. This comprehensive compilation and concordance of Maya texts currently contains 65,269 records from inscribed architectural elements (i.e., stelae, stairways, panels, and murals), portable vessels such as painted pottery, and small objects made of jadeite, shell, bone, and wood. Each record in the database represents a glyph block, which is a graphically defined unit of text composed of one or more graphemes, each of which is individually coded. A complete catalog of all graphemes used in the Classic Maya inscriptions has been published by Macri and Looper <xref ref-type="bibr" rid="pone.0107982-Macri1">[44]</xref>.</p>
+<p>In this study, hieroglyphic evidence for bloodletting is based on a grapheme labeled ZYC in the MHD <xref ref-type="bibr" rid="pone.0107982-Macri1">[44]</xref>. This logographic sign depicts a perforator or obsidian bloodletter, and occurs in two forms (<xref ref-type="fig" rid="pone-0107982-g003">Figure 3</xref>). Front and side views of the sign represent a three-dimensional object with a blade-like protuberance. In this form, the sign is usually depicted with an infixed circle and diagonal line which gives the appearance of an object that is polished or shiny, in this case probably obsidian. A less common variant of ZYC is the depiction of a bundled or wrapped bloodletter with feathered plumes attached to the instrument. Iconographically, both forms of the sign appear in scenes of ritual sacrifice and alongside other objects associated with bloodletting including stingray spines and strips of blood-stained paper (see <xref ref-type="fig" rid="pone-0107982-g002">Figure 2</xref>) <xref ref-type="bibr" rid="pone.0107982-Schele1">[8]</xref>, <xref ref-type="bibr" rid="pone.0107982-Joralemon1">[20]</xref>.</p>
+<fig id="pone-0107982-g003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0107982.g003</object-id><label>Figure 3</label><caption>
+<title>Detail of ZYC graphemes showing variants of the <italic>ch’ahb’</italic> bloodletting glyph.</title>
+<p>Drawing by Matthew G. Looper <xref ref-type="bibr" rid="pone.0107982-Macri1">[44]</xref>.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0107982.g003" position="float" xlink:type="simple"/></fig>
+<p>The ZYC grapheme is recorded a total of 89 times in the MHD. Of these, two examples are preceded by the phonetic complement <bold>ch’a</bold> (2G2) while <bold>b’a</bold> (XE1) appears beneath the perforator sign in 57 cases. For this reason, the current decipherment of the logograph is <italic>ch’ahb’</italic> <xref ref-type="bibr" rid="pone.0107982-Stuart3">[45]</xref>. Based on its lack of verbal affixation and its position within clauses in the hieroglyphic inscriptions, <italic>ch’ahb’</italic> is considered to be a noun. Words in the Greater Cholan and Yukatekan Mayan languages indicated by the <bold>ch’a-</bold> and <bold>b’a-</bold> phonetic complements on the perforator glyph ZYC are listed in <xref ref-type="table" rid="pone-0107982-t001">Table 1</xref>. In Ch’olan the word <italic>ch’ahb’</italic> means ‘penance,’ which is a term not inappropriate to the notion of autosacrifice. This word may be related to the Yukatekan word <italic>ch’ab’,</italic> ‘dripper/dropper’, which is a derivation from the verb root <italic>ch’a’,</italic> meaning ‘to drip’. The noun <italic>ch’ab’</italic> is formed by adding the instrumental suffix -V<italic>b’</italic> to the verb root. Examples of the root <italic>ch’aj</italic> can be found in all four Yukatekan languages: Yukatek, Itzaj, Mopan, and Lakantun (see <xref ref-type="table" rid="pone-0107982-t001">Table 1</xref>). The Yukatekan instrumental form in Yukatek, Itzaj, and Lakantun may be more precisely associated with sacrificial acts than the generalized Ch’olan term implies.</p>
+<table-wrap id="pone-0107982-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0107982.t001</object-id><label>Table 1</label><caption>
+<title>Mayan words and their definitions associated with the transcription of the ZYC grapheme <italic>ch’ahb’</italic> referring to bloodletting.</title>
+</caption><alternatives><graphic id="pone-0107982-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0107982.t001" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">MAYA WORD</td>
+<td align="left" rowspan="1" colspan="1">TRANSLATION</td>
+<td align="left" rowspan="1" colspan="1">LANGUAGE</td>
+<td align="left" rowspan="1" colspan="1">DICTIONARY</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4" align="left" rowspan="1"><bold><italic>ch'aj</italic></bold><bold> forms related to ‘fast’</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ch'ahb'</td>
+<td align="left" rowspan="1" colspan="1">fast (ayuno)</td>
+<td align="left" rowspan="1" colspan="1">proto-Cholan</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0107982-Kaufman1">[72]</xref> Kaufman (2003)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ch'ab'</td>
+<td align="left" rowspan="1" colspan="1">prayer</td>
+<td align="left" rowspan="1" colspan="1">Tzeltal</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0107982-Berlin1">[73]</xref> Berlin and Kaufman (1990∶6)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ch'ab'</td>
+<td align="left" rowspan="1" colspan="1">fast</td>
+<td align="left" rowspan="1" colspan="1">Colonial Tzotzil</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0107982-Laughlin1">[74]</xref> Laughlin (1988∶194)</td>
+</tr>
+<tr>
+<td colspan="4" align="left" rowspan="1"><bold><italic>ch’aj</italic></bold><bold> forms related to ‘drip’</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ch'ajb'a'</td>
+<td align="left" rowspan="1" colspan="1">lavar</td>
+<td align="left" rowspan="1" colspan="1">Mopan</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0107982-Hofling1">[75]</xref> Hofling (2011∶163)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ch'aj</td>
+<td align="left" rowspan="1" colspan="1">gotear</td>
+<td align="left" rowspan="1" colspan="1">Itzaj</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0107982-Hofling2">[76]</xref> Hofling (1997∶211)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ch'ajb'äl</td>
+<td align="left" rowspan="1" colspan="1">gotearlo</td>
+<td align="left" rowspan="1" colspan="1">Itzaj</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0107982-Hofling2">[76]</xref> Hofling (1997∶211)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ch'ajb'il</td>
+<td align="left" rowspan="1" colspan="1">goteado</td>
+<td align="left" rowspan="1" colspan="1">Itzaj</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0107982-Martin2">[54]</xref> Hofling (1997∶211)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ch'aj</td>
+<td align="left" rowspan="1" colspan="1">goto, caida de gotas</td>
+<td align="left" rowspan="1" colspan="1">Itzaj</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0107982-Martin2">[54]</xref> Hofling (1997∶211)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ch'ah</td>
+<td align="left" rowspan="1" colspan="1">gota de agua, orina, o otro licor; gota decualquier licor o resina de árbol</td>
+<td align="left" rowspan="1" colspan="1">Yukatek</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0107982-BarreraVsquez1">[77]</xref> Barrera Basquez et al. (1997∶121)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ch'ah</td>
+<td align="left" rowspan="1" colspan="1">drip</td>
+<td align="left" rowspan="1" colspan="1">Yukatek</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0107982-Bricker1">[78]</xref> Bricker (1998∶78)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ch'áah</td>
+<td align="left" rowspan="1" colspan="1">drop</td>
+<td align="left" rowspan="1" colspan="1">Yukatek</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0107982-Bricker1">[78]</xref> Bricker (1998∶78)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ach'uhr ch'ah e ha'</td>
+<td align="left" rowspan="1" colspan="1">water drips</td>
+<td align="left" rowspan="1" colspan="1">Chorti'</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0107982-Wisdom1">[79]</xref> Wisdom (1950)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ch'ab'j</td>
+<td align="left" rowspan="1" colspan="1">chapotear en el agua [splash in water]</td>
+<td align="left" rowspan="1" colspan="1">Chuj</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0107982-FelipeDiego1">[80]</xref> Felipe Diego (1998∶55)</td>
+</tr>
+<tr>
+<td colspan="4" align="left" rowspan="1"><bold>Instrumental forms based on </bold><bold><italic>ch'aj</italic></bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">sh ch'ahab'</td>
+<td align="left" rowspan="1" colspan="1">instr. eyedropper</td>
+<td align="left" rowspan="1" colspan="1">Yukatek</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0107982-Scholnick1">[56]</xref> Bricker (1998∶78)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ch'ajab'aar</td>
+<td align="left" rowspan="1" colspan="1">dropper</td>
+<td align="left" rowspan="1" colspan="1">Lakantun</td>
+<td align="left" rowspan="1" colspan="1">Hofling (personal communication)</td>
+</tr>
+<tr>
+<td colspan="4" align="left" rowspan="1"><bold><italic>ch'oj</italic></bold> <bold>forms related to ‘bloodletting’</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ch'oj</td>
+<td align="left" rowspan="1" colspan="1">to chisel, drip, engrave, perforate, pierce</td>
+<td align="left" rowspan="1" colspan="1">Colonial Tzotzil</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0107982-Schele3">[52]</xref> Laughlin (1988∶199)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ch'ojobil te'</td>
+<td align="left" rowspan="1" colspan="1">chisel [perforator; piercer]</td>
+<td align="left" rowspan="1" colspan="1">Colonial Tzotzil</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="bibr" rid="pone.0107982-Schele3">[52]</xref> Laughlin (1988∶19)</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p>References to bloodletting were identified from 2480 non-portable architectural features included in the MHD. To ensure spatial and temporal reliability, we restricted the sample to 72 sites in the southern Maya region (<xref ref-type="fig" rid="pone-0107982-g004">Figure 4</xref>) where hieroglyphic monuments were produced during the Classic period (08.12.0.0.0 to 10.3.0.0.0 in the Long Count calendar system; 278–889 CE using the Goodman-Martinéz-Thompson correlation coefficient). From these 909 attributed monuments we identified 89 examples of the <italic>ch’ahb’</italic> glyph, 69 of which appeared to be directly associated with bloodletting (<xref ref-type="supplementary-material" rid="pone.0107982.s001">Table S1</xref>). For the latter 69 examples, we collected additional historical and social network data describing the associated contexts in which bloodletting statements were recorded (<xref ref-type="supplementary-material" rid="pone.0107982.s002">Tables S2</xref> and <xref ref-type="supplementary-material" rid="pone.0107982.s003">S3</xref>). Geographic coordinates for all of the sites were obtained from the Electronic Atlas of Ancient Maya Sites <xref ref-type="bibr" rid="pone.0107982-Brown1">[46]</xref>.</p>
+<fig id="pone-0107982-g004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0107982.g004</object-id><label>Figure 4</label><caption>
+<title>Location and name of southern Maya lowland sites included in the study.</title>
+<p>Red dot indicates sites that record the <italic>ch’ahb’</italic> bloodletting glyph and black dot indicates sites where no reference to <italic>ch’ahb’</italic> bloodletting has been found. Size of red dot refers to the relative abundance of dated monuments that record bloodletting rituals.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0107982.g004" position="float" xlink:type="simple"/></fig></sec><sec id="s3b">
+<title>Spatial Analysis</title>
+<p>We evaluated the spatial distribution of bloodletting records using a set of statistics known as local indicators of spatial association (LISA) <xref ref-type="bibr" rid="pone.0107982-Anselin1">[47]</xref>. In contrast to global measures of spatial autocorrelation, LISA statistics identify where significant spatial patterning occurs by quantitatively characterizing patterns of spatial dependence at multiple scales. In particular, we used two complementary statistics to identify local spatial concentrations of bloodletting records.</p>
+<p>The first statistic, local Moran’s <italic>I<sub>i</sub></italic>, is an index of similarity between sites with target values like those displayed at adjacent locales <xref ref-type="bibr" rid="pone.0107982-Anselin1">[47]</xref>. Positive <italic>I<sub>i</sub></italic> scores indicate spatial clustering of similar values (i.e., either relatively high or low frequencies of <italic>ch’ahb’</italic>) while negative <italic>I<sub>i</sub></italic> scores represent clustering of dissimilar values (e.g., a site with relatively high frequency of bloodletting records surrounded by sites with no <italic>ch’ahb’</italic> inscriptions).</p>
+<p>The second statistic, Getis-Ord <italic>G<sub>i</sub>*</italic>, identifies spatial clusters of either high or low values by computing z-scores <xref ref-type="bibr" rid="pone.0107982-Getis1">[48]</xref>. For statistically significant positive z-scores, large scores indicate more intense clustering of high values. For statistically significant negative z-scores, small scores indicate intense clustering of low values.</p>
+</sec><sec id="s3c">
+<title>Social Networks</title>
+<p>We collected social network data describing specific sociopolitical relationships between sites to evaluate the related contexts and pathways in which bloodletting statements were recorded and spread. Ties between sites are based upon the appearance of foreign emblem glyphs and toponyms in hieroglyphic statements describing specific types of sociopolitical relations between Maya polities. Maya scholars generally agree that emblem glyphs refer to large political units, whether defined geographically or along kinship lines <xref ref-type="bibr" rid="pone.0107982-Stuart4">[49]</xref>. Emblem glyphs share a common structure in that they are composed of three elements: two constants, the glyphs <italic>k’uhul</italic> ‘divine’ or ‘holy’ and <italic>ajaw</italic> ‘lord’; and a third variable main sign of the particular kingdom or polity. Emblem glyphs usually follow the personal name of royal individuals mentioned in the texts and thus are generally understood as royal titles <xref ref-type="bibr" rid="pone.0107982-Martin1">[50]</xref>. However, the main sign can also appear in other contexts where it serves as a toponym or place name <xref ref-type="bibr" rid="pone.0107982-Tokovinine1">[51]</xref>. In some cases, these signs appear at sites other than the one to which they refer. It is generally agreed that in such instances, these “foreign” emblem glyphs indicate an interaction or relationship between the individual agent or local site and the one referenced in the text <xref ref-type="bibr" rid="pone.0107982-Schele3">[52]</xref>–<xref ref-type="bibr" rid="pone.0107982-Martin2">[54]</xref>. We use the presence of these local and non-local place names in the MHD to collect data on specific network ties.</p>
+<p>Network ties were assigned relational values based upon the semantic contexts of non-local place names and were previously classified by Munson and Macri <xref ref-type="bibr" rid="pone.0107982-Munson1">[55]</xref>, <xref ref-type="bibr" rid="pone.0107982-Scholnick1">[56]</xref>. Ties fall into one of seven defined themes: antagonistic, diplomatic, dynastic, subordinate, kin, neutral and unknown statements (see <xref ref-type="supplementary-material" rid="pone.0107982.s002">Tables S2</xref>). There are too few ties in these networks to adequately evaluate their individual contribution to the spread of bloodletting, so all relations are weighted equally and a binary matrix (i.e., 1 if there is at least one tie among a pair of sites and 0 otherwise) was computed from the condensed relational data table. This dichotomized network is composed of 113 unique ties among 48 sites; 24 sites do not record a foreign place-name glyph and are identified as isolates in the network. An attribute table recording the presence and absence of the <italic>ch’ahb’</italic> logograph was used to partition the nodes in the visualized network. These matrices were used in a QAP correlation procedure to assess the similarity between them and test for homophily <xref ref-type="bibr" rid="pone.0107982-Borgatti1">[57]</xref>, <xref ref-type="bibr" rid="pone.0107982-Borgatti2">[58]</xref>. Similarity was measured using a simple matching coefficient, which calculates the proportion of shared attributes in two dichotomous matrices <italic>i</italic> and <italic>j</italic>, and is defined by the equation:<disp-formula id="pone.0107982.e001"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0107982.e001" xlink:type="simple"/><label>(1)</label></disp-formula>where <italic>a</italic> is the number of dyads when <italic>i</italic> and <italic>j</italic> are both 1, <italic>b</italic> is the number of dyads where <italic>i</italic> is 1 and <italic>j</italic> is 0, <italic>c</italic> is the number of dyads where <italic>i</italic> is 0 and <italic>j</italic> is 1, and <italic>d</italic> is the number of dyads where both <italic>i</italic> and <italic>j</italic> are 0. The data were randomly permutated 10,000 times using the network and partition sizes to generate significance tests.</p>
+</sec><sec id="s3d">
+<title>Generalized Linear Mixed Model</title>
+<p>We used a generalized linear mixed model (GLMM) to investigate the effects of several predictor variables on the frequency of <italic>ch’ahb’</italic> bloodletting statements. Specifically, we are interested in the historical contexts in which bloodletting rituals were recorded, so we included the aforementioned sociopolitical themes as fixed effects in the model and standardized these variables to account for their different ranges. Given the characteristics of this dataset, an ordinary linear regression would be an inappropriate model choice because assumptions about the Normal error distribution and the relation between the dependent and independent variables are violated for dichotomous or count data. These assumptions can be relaxed using Generalized Linear Models (GLMs), which include the ordinary linear regression model as a special case. GLMs, such as logistic regression or Poisson regression, differ from ordinary linear regression models in that they can incorporate various error distributions as well as nonlinear relationships among the response and the explanatory variables using a link function. Another assumption of GLMs pertains to the independence of observations. In this case, multiple observations of <italic>ch’ahb’</italic> statements per time period and site introduces correlation among the observations. To account for this potential correlation problem, we added random coefficients to the model corresponding to time and spatial location. The resulting model is thus a Generalized Linear Mixed Model (GLMM).</p>
+<p>We now consider the specification of the model. When dealing with count data, two error distributions are plausible: the Poisson and the Negative Binomial distribution. The latter is particularly suitable for our data. In fact, a χ<sup>2</sup> goodness of fit test rejected the null hypothesis of the Poisson distribution (χ<sup>2</sup> = 45.6, df. = 3, p-value&lt;0.01). This is due to overdispersion in the dataset, i.e., the variance of the data is greater than the mean (Likelihood ratio test for overdispersion LR = 11.9, sig. &lt;0.01, parameter for overdispersion = 1.506). Consequently, we used a Negative Binomial mixed model. Because we are interested in the rate of <italic>ch’ahb’</italic> bloodletting statements with respect to the number of dated monuments at each site, we also introduced an offset variable in the linear predictor. Consequently, denoting fixed effects by <italic>x</italic>, random effects by <italic>z</italic>, and the variable related to the number of dated monuments by <italic>m<sub>i</sub></italic>, the linear predictor <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0107982.e002" xlink:type="simple"/></inline-formula> of the model can be specified by the following equation:<disp-formula id="pone.0107982.e003"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0107982.e003" xlink:type="simple"/><label>(2)</label></disp-formula>where <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0107982.e004" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0107982.e005" xlink:type="simple"/></inline-formula> are the parameters related to the fixed and random effects, respectively. A log-link function is used to relate the expected value of the response variable to the linear predictor.</p>
+</sec></sec><sec id="s4">
+<title>Results</title>
+<p>The relative frequency of bloodletting statements recorded on dated monuments varies markedly through space and time (<xref ref-type="fig" rid="pone-0107982-g004">Figures 4</xref> and <xref ref-type="fig" rid="pone-0107982-g005">5</xref>). The distribution of southern Maya sites with recorded bloodletting is shown in <xref ref-type="fig" rid="pone-0107982-g004">Figure 4</xref>. Clearly, <italic>ch’ahb’</italic> bloodletting statements were not recorded with equal frequency at all site locations. Despite numerous sites with dated monuments, references to bloodletting are noticeably sparse in the central Petén region except at Tikal and Naranjo. Bloodletting statements are more common at sites in the southeastern region and along the Usumacinta River. In particular, it is noteworthy that 42% of all documented bloodletting rituals were recorded at just two sites: Copan (n = 18) and Yaxchilan (n = 11).</p>
+<fig id="pone-0107982-g005" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0107982.g005</object-id><label>Figure 5</label><caption>
+<title>Relative frequency of dated monuments with <italic>ch’ahb’</italic> bloodletting glyph in each 20-year <italic>k’atun</italic> period.</title>
+<p>References to bloodletting rituals exceed 15% during two <italic>k’atun</italic> periods, 9.8.0.0.0 (593–613 CE) and 9.13.0.0.0 (692–712 CE).</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0107982.g005" position="float" xlink:type="simple"/></fig>
+<p>For much of the Classic period, <italic>ch’ahb’</italic> bloodletting statements occur at a low rate, but there are two phases when bloodletting references occur on more than 15% of all dated inscriptions. The chronological distribution of dated monuments sampled by the MHD is shown in <xref ref-type="fig" rid="pone-0107982-g006">Figure 6</xref>. Peak production in writing and construction of hieroglyphic monuments occurs during a 200-year period corresponding to the apogee of late Classic Maya civilization (ca. 600–800 CE). Variation in the total number of political statements recorded on these monuments follows this pattern <xref ref-type="bibr" rid="pone.0107982-Munson1">[55]</xref>. However, variation in the number of <italic>ch’ahb’</italic> bloodletting statements does not. This suggests that changes in the frequency of bloodletting records are not simply a function of increased monument production through time. This inference is supported by the exclusion of the time variable as a random effect in the model described below.</p>
+<fig id="pone-0107982-g006" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0107982.g006</object-id><label>Figure 6</label><caption>
+<title>Temporal distribution of dated monuments, political statements, and <italic>ch’ahb’</italic> bloodletting statements included in the study.</title>
+<p>X-axis is divided into 20-year increments known as <italic>k’atun</italic> periods in the Maya Long Count calendar system. Note the overall low frequency of <italic>ch’ahb’</italic> bloodletting statements in comparison to the number of dated monuments during each <italic>k’atun</italic> period.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0107982.g006" position="float" xlink:type="simple"/></fig>
+<p>To investigate the effects of these and other latent variables, we used a Negative Binomial mixed model to identify the sociopolitical contexts most closely associated with records of ritual bloodletting. We employed the same set of network themes used to construct the social network as predictor variables in this model. In light of recent research on the function of costly religious rituals and their role in cultural evolution <xref ref-type="bibr" rid="pone.0107982-Bulbulia1">[33]</xref>, <xref ref-type="bibr" rid="pone.0107982-Norenzayan2">[59]</xref> we are especially interested in the relationship between bloodletting and statements concerning antagonistic and dynastic affairs. A GLMM specified by a log link function and a Negative Binomial error distribution was used to estimate the main effects of each sociopolitical theme (<italic>x</italic>) on the total number of <italic>ch’ahb’</italic> bloodletting statements (<italic>y</italic>). In order to select the best model, we used a forward procedure (i.e., starting with the null model, then adding the theme variables and finally the random effects) and compared their resulting AIC values using a likelihood ratio test. <xref ref-type="table" rid="pone-0107982-t002">Table 2</xref> shows that the model with the lowest AIC value includes all of the sociopolitical variables as well as the random effect related to geographic location. The estimates for the model are reported in <xref ref-type="table" rid="pone-0107982-t003">Table 3</xref> and visualized in <xref ref-type="fig" rid="pone-0107982-g007">Figure 7</xref> together with their confidence intervals.</p>
+<fig id="pone-0107982-g007" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0107982.g007</object-id><label>Figure 7</label><caption>
+<title>Estimates for the negative binomial mixed model effects including the confidence intervals.</title>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0107982.g007" position="float" xlink:type="simple"/></fig><table-wrap id="pone-0107982-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0107982.t002</object-id><label>Table 2</label><caption>
+<title>Negative binomial mixed models including the fixed effects (<italic>β</italic>) and random effects (<italic>γ</italic>) with corresponding AIC values.</title>
+</caption><alternatives><graphic id="pone-0107982-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0107982.t002" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Model</td>
+<td align="left" rowspan="1" colspan="1">Model specification</td>
+<td align="left" rowspan="1" colspan="1">AIC</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0107982.e006" xlink:type="simple"/></inline-formula></td>
+<td align="left" rowspan="1" colspan="1">291.2</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">2</td>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0107982.e007" xlink:type="simple"/></inline-formula></td>
+<td align="left" rowspan="1" colspan="1">279.7**</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">3</td>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0107982.e008" xlink:type="simple"/></inline-formula></td>
+<td align="left" rowspan="1" colspan="1">272.1*</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">4</td>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0107982.e009" xlink:type="simple"/></inline-formula></td>
+<td align="left" rowspan="1" colspan="1">274.1</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt101"><label/><p>Sig. **0.001, *0.01.</p></fn><fn id="nt102"><label/><p>The offset variable (<italic>m<sub>i</sub></italic>) accounts for the number of dated monuments on which the observations were made. AIC values were tested using a Likelihood ratio test.</p></fn></table-wrap-foot></table-wrap><table-wrap id="pone-0107982-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0107982.t003</object-id><label>Table 3</label><caption>
+<title>Results of the Generalized Linear Mixed Model.</title>
+</caption><alternatives><graphic id="pone-0107982-t003-3" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0107982.t003" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">β</td>
+<td align="left" rowspan="1" colspan="1">s.e.(β)</td>
+<td align="left" rowspan="1" colspan="1">Exp.(β)</td>
+<td align="left" rowspan="1" colspan="1">CI Exp.(β) 2.5%</td>
+<td align="left" rowspan="1" colspan="1">CI Exp.(β) 97.5%</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Intercept</bold></td>
+<td align="left" rowspan="1" colspan="1">–3.37**</td>
+<td align="left" rowspan="1" colspan="1">0.34</td>
+<td align="left" rowspan="1" colspan="1">0.034</td>
+<td align="left" rowspan="1" colspan="1">0.018</td>
+<td align="left" rowspan="1" colspan="1">0.07</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Antagonistic</bold></td>
+<td align="left" rowspan="1" colspan="1">0.47**</td>
+<td align="left" rowspan="1" colspan="1">0.11</td>
+<td align="left" rowspan="1" colspan="1">1.61</td>
+<td align="left" rowspan="1" colspan="1">1.30</td>
+<td align="left" rowspan="1" colspan="1">1.98</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Diplomatic</bold></td>
+<td align="left" rowspan="1" colspan="1">–0.37*</td>
+<td align="left" rowspan="1" colspan="1">0.20</td>
+<td align="left" rowspan="1" colspan="1">0.69</td>
+<td align="left" rowspan="1" colspan="1">0.47</td>
+<td align="left" rowspan="1" colspan="1">1.01</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Dynastic</bold></td>
+<td align="left" rowspan="1" colspan="1">0.23</td>
+<td align="left" rowspan="1" colspan="1">0.14</td>
+<td align="left" rowspan="1" colspan="1">1.26</td>
+<td align="left" rowspan="1" colspan="1">0.95</td>
+<td align="left" rowspan="1" colspan="1">1.67</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Kinship</bold></td>
+<td align="left" rowspan="1" colspan="1">–0.06</td>
+<td align="left" rowspan="1" colspan="1">0.17</td>
+<td align="left" rowspan="1" colspan="1">0.94</td>
+<td align="left" rowspan="1" colspan="1">0.68</td>
+<td align="left" rowspan="1" colspan="1">1.31</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Subordinate</bold></td>
+<td align="left" rowspan="1" colspan="1">015</td>
+<td align="left" rowspan="1" colspan="1">0.14</td>
+<td align="left" rowspan="1" colspan="1">1.16</td>
+<td align="left" rowspan="1" colspan="1">0.88</td>
+<td align="left" rowspan="1" colspan="1">1.53</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt103"><label/><p>Random coefficient (γ<sub>0</sub>) Variance 0.6745, s.d. 0.8213.</p></fn><fn id="nt104"><label/><p>Sig. **&lt;0.01, *&lt;0.1.</p></fn><fn id="nt105"><label/><p>Estimate values greater than 1 indicate positive correlation between the sociopolitical variable and the dependent variable, <italic>ch’ahb’</italic>. Values less than 1 indicate a negative relationship. Model fitting indicates that antagonistic statements are the only significant variable associated with bloodletting records.</p></fn></table-wrap-foot></table-wrap>
+<p>Results indicate that antagonistic statements best predict the occurrence of <italic>ch’ahb’</italic> bloodletting records (<xref ref-type="table" rid="pone-0107982-t002">Table 2</xref>). A likelihood ratio test shows that only the coefficient related to the number of antagonistic statements is significantly different from 0. The parameter related to diplomatic statements is only weakly significant at the 0.1 level. It is interesting to observe that while antagonistic ties have a positive effect, diplomatic ties have a negative effect on the rate of <italic>ch’ahb’</italic> bloodletting statements. Concerning random effects, the model estimates show that there is no variation in the rate of <italic>ch’ahb’</italic> bloodletting statements with respect to time, while there is variation with respect to geographic location. We interpret this to mean that there are sites which show a higher rate of <italic>ch’ahb’</italic> bloodletting statements compared to others as can be observed in <xref ref-type="fig" rid="pone-0107982-g004">Figure 4</xref>.</p>
+<p>To investigate the processes responsible for the spread of bloodletting rituals we first tested a set of distance decay models for the spread of cultural traits using local spatial autocorrelation statistics. Inclusion of a random effect for spatial location in the model discussed above suggests that geography may have played a role in the diffusion of bloodletting. Previous studies indicate that Maya polities engaged in sociopolitical interactions at a range of spatial scales <xref ref-type="bibr" rid="pone.0107982-Scholnick1">[56]</xref>, <xref ref-type="bibr" rid="pone.0107982-Premo1">[60]</xref>, so we examined a series of lagged distances at 25-km intervals to determine whether bloodletting rituals exhibit similar spatial heterogeneity. For this we computed two measures of local spatial autocorrelation, Moran’s <italic>I</italic><sub>i</sub> and Getis-Ord <italic>G<sub>i</sub>*</italic>. The former is an index of similarity used to compare attribute values between neighboring sites <xref ref-type="bibr" rid="pone.0107982-Anselin1">[47]</xref>. In the present study, we are interested in sites with large positive <italic>I</italic><sub>i</sub> scores, which indicate positive local spatial autocorrelation between a target site and neighboring sites that display similar frequencies of bloodletting references. Getis-Ord <italic>G<sub>i</sub>*</italic> is a complementary measure that is used to identify spatial clusters of sites with relatively high and low attribute values <xref ref-type="bibr" rid="pone.0107982-Getis1">[48]</xref>. We employed Getis-Ord <italic>G<sub>i</sub>*</italic> as a relative measure of the total number of <italic>ch’ahb’</italic> bloodletting statements within a target site’s neighborhood and used it to identify local regions of autocorrelation containing relatively high or low quantities of bloodletting references. In both analyses, we used the relative frequency of <italic>ch’ahb’</italic> statements as a function of the total number of dated monuments at each site to ensure comparability of attribute values across the sample.</p>
+<p>Although previous studies indicate that Classic Maya sites within 75 km of each other are most likely to compete and hold similar social positions <xref ref-type="bibr" rid="pone.0107982-Neiman1">[39]</xref>, <xref ref-type="bibr" rid="pone.0107982-Scholnick1">[56]</xref>, sites that record the <italic>ch’ahb’</italic> bloodletting glyph do not display significant <italic>I</italic><sub>i</sub> scores at this distance (<xref ref-type="supplementary-material" rid="pone.0107982.s004">Table S4</xref>). Doubling the spatial lag to remove sampling effects due to small neighborhood sizes does not greatly alter this pattern. The results indicate that <italic>ch’ahb’</italic> bloodletting statements do not display spatial dependency at any geographic scale. However, a plot of standardized <italic>G<sub>i</sub>*</italic> scores reveals significant regional clusters of sites with low and high concentrations of <italic>ch’ahb’</italic> statements at a spatial lag of 150 km (<xref ref-type="fig" rid="pone-0107982-g008">Figure 8</xref>). Negative scores in the central Petén area define a large region where bloodletting rituals were rarely recorded. Significant positive scores in the southeastern area represent a small concentration of sites heavily invested in recording <italic>ch’ahb’</italic> statements. Combined, these results suggest that the spread of bloodletting rituals was not simply a consequence of Classic Maya royals copying their neighbors.</p>
+<fig id="pone-0107982-g008" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0107982.g008</object-id><label>Figure 8</label><caption>
+<title>Bubble graph of standardized <italic>G<sub>i</sub>*</italic> scores at a lag distance of 150 kilometers.</title>
+<p>Bubble area is proportional to |<italic>G<sub>i</sub>*</italic>|. Red bubbles represent positive <italic>G<sub>i</sub>*</italic> scores, where <italic>ch’ahb’</italic> bloodletting rituals are recorded. White bubbles represent negative <italic>G<sub>i</sub>*</italic> scores, where there are no bloodletting records. Sites labeled with ID number have significant <italic>G<sub>i</sub>*</italic> scores and correspond to the site names and IDs in <xref ref-type="fig" rid="pone-0107982-g004">Figure 4</xref>.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0107982.g008" position="float" xlink:type="simple"/></fig>
+<p>To determine what other mechanisms may be responsible for the spread of Classic Maya bloodletting, we investigated the impact of social ties on the occurrence of <italic>ch’ahb’</italic> statements. Homophily refers to the general principle that similarity promotes connection, which has profound implications for the transmission of cultural information in social networks <xref ref-type="bibr" rid="pone.0107982-McPherson1">[61]</xref>. It means that any attribute that depends on networks to spread will tend to be localized in social space and will result in a predictable network structure <xref ref-type="bibr" rid="pone.0107982-Rogers1">[62]</xref>. In a homophilous network, connections among sites that share some attribute ought to occur at a higher rate than among sites that do not share the attribute.</p>
+<p>For this study we are interested in whether sites that record bloodletting are more likely to also share a dyadic tie. Dyadic ties are based upon the appearance of place-name glyphs in hieroglyphic statements that describe social and political relations between Maya polities <xref ref-type="bibr" rid="pone.0107982-Munson1">[55]</xref>. <xref ref-type="fig" rid="pone-0107982-g009">Figure 9</xref> shows a graph of the network partitioned by the presence of <italic>ch’ahb’</italic> bloodletting statements. Results of the QAP correlation indicate a strong and positive relationship between network ties and bloodletting (<italic>s<sub>ij</sub></italic> = 0.909, p = 0.001). Sites that record bloodletting statements thus exhibit a strong tendency to have ties with like others. In addition, pairs of sites where <italic>ch’ahb’</italic> statements are not present are less likely to share a network tie. These findings support the existence of homophily in this dataset, and suggest that social and political ties among Classic Maya centers contributed to the transmission of these rituals. The existence of homophily, however, does not allow us to identify causality or differentiate between selection (where ties are created among sites that record bloodletting) and influence mechanisms (in which linked sites adopt bloodletting) in the spread of ritual bloodletting. Indeed, disambiguating these causal processes remains an extant challenge for social network analysis <xref ref-type="bibr" rid="pone.0107982-Shalizi1">[63]</xref>.</p>
+<fig id="pone-0107982-g009" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0107982.g009</object-id><label>Figure 9</label><caption>
+<title>Network graph showing the sociopolitical ties between sites partitioned by the presence of <italic>ch’ahb’</italic> bloodletting statements.</title>
+<p>Sites labeled in red indicate the presence of <italic>ch’ahb’</italic> (light pink indicates absence). The nodes are plotted using their geographic coordinates. Site IDs correspond to the names listed in <xref ref-type="fig" rid="pone-0107982-g004">Figure 4</xref>.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0107982.g009" position="float" xlink:type="simple"/></fig></sec><sec id="s5">
+<title>Discussion</title>
+<p>Ritual bloodletting is widely regarded as a central feature in the evolution of Classic Maya society <xref ref-type="bibr" rid="pone.0107982-Demarest1">[1]</xref>. This ancient ritual practice is also cited as a key example in more general discussions about the role of costly signals in the cultural evolution of religion <xref ref-type="bibr" rid="pone.0107982-Henrich1">[9]</xref>, <xref ref-type="bibr" rid="pone.0107982-Atran1">[10]</xref>. To assess these generalizations, we need to understand the specific mechanisms and contexts in which bloodletting occurred. This study provides the first systematic account of bloodletting rituals drawn from the Classic Maya hieroglyphic record, and demonstrates how important insights on the evolution of religious rituals can be gained from quantitative studies of the spatial and temporal occurrences of this glyph.</p>
+<p>Previous descriptions of Classic Maya bloodletting portray this ritual as a nearly ubiquitous act of self-sacrifice performed by Maya rulers. These ritual practices are considered to be essential–if not costly–rites of passage that signaled specific qualities of young royals as well as their commitments to their new role in Classic Maya society <xref ref-type="bibr" rid="pone.0107982-Stuart1">[21]</xref>, <xref ref-type="bibr" rid="pone.0107982-Houston2">[29]</xref>, <xref ref-type="bibr" rid="pone.0107982-Stuart2">[30]</xref>. The results of our study cast doubt on the widespread distribution of these dynastic rituals and suggest that bloodletting, as a costly signal, was much more restricted in Classic Maya society. In particular, the results of our model identify geographic location and antagonism as primary predictors for the occurrence of inscribed <italic>ch’ahb’</italic> glyphs on dated monuments. As discussed above, records of bloodletting are predominantly found at a small number of sites along the Usumacinta River and in the southeastern region of the Maya lowlands. Although the actual <italic>practice</italic> of bloodletting may have been more common than the inscriptions account for, this study captures only those unambiguous instances of recorded bloodletting rituals. The tradition of recording these costly displays underscores one proposed function of Maya hieroglyphic monuments as important transmitters of cultural information. We argue that the documentation of these rituals on public monuments can be interpreted as conspicuous messages about specific dynastic lineages. However, we did not find a universal relationship between <italic>ch’ahb’</italic> glyphs and dynastic statements referring to royal accession. Instead, we identified antagonistic statements about warfare and conflict to be the primary contexts in which bloodletting is mentioned. This finding is compatible with earlier interpretations of Classic Maya bloodletting that associate warfare and the capture of prisoners with autosacrifice <xref ref-type="bibr" rid="pone.0107982-Schele2">[17]</xref>. However, Demarest suggests that such related practices formed part of a larger set of dynastic rituals expected of proper Maya rulers <xref ref-type="bibr" rid="pone.0107982-Demarest1">[1]</xref>. Thus, we must also consider the possibility that antagonistic actions such as taking war captives represent another credible sign of a ruler’s power and dominance within Classic Maya society.</p>
+<p>An alternative explanation for the spatial distribution of <italic>ch’ahb’</italic> glyphs and their relationship with antagonistic statements relies explicitly on hypotheses derived from signaling theory. The costly signaling theory of religion predicts that collective actions such as warfare pose potential free-rider problems such that reliable signals promoting solidarity and within-group cooperation should be highly favored <xref ref-type="bibr" rid="pone.0107982-Irons1">[4]</xref>. Based on these ideas, Sosis and colleagues propose several hypotheses to explain cross-cultural differences in costly male rites including various types of scarification, piercing, and genital mutilation <xref ref-type="bibr" rid="pone.0107982-Sosis2">[41]</xref>. In particular, they hypothesize a positive link between warfare frequency and the costliness of male rites. Sosis et al. <xref ref-type="bibr" rid="pone.0107982-Sosis2">[41]</xref> posit a further relationship between specific types of warfare and the relative cost of these rituals: societies that engage in external warfare (i.e., conflicts with those outside their group) will require their males to bear more permanent marks than societies with only internal warfare (i.e., conflict that threatens the lives of individuals within the cultural group). Our model supports the first part of this hypothesis, but does not currently meet the more specific conditions of the second clause. Although we find a positive relationship between bloodletting and antagonistic statements, these declarations of war are generally directed towards rival polities and competing rulers within Maya society. Previous research on Maya warfare indicates this was an internal and personal affair–fought between ethnically and culturally similar antagonists who abided by mutually understood conventions <xref ref-type="bibr" rid="pone.0107982-Webster1">[64]</xref>. According to the costly ritual-warfare hypothesis, we would expect communities that engage in frequent internal warfare to resist rituals that result in permanent marks–such as bloodletting–which can signal group identity, due to the mobility of individuals across kin groups and consequent shifting of alliances <xref ref-type="bibr" rid="pone.0107982-Sosis2">[41]</xref>. Our results suggest a different situation: rival rulers appear to have proudly displayed the markings of bloodletting despite crosscutting network ties. Interestingly though, bloodletting records are predominantly found in two peripheral zones of the Maya lowlands where contact and conflict with non-Maya groups may have been common. If so, it is possible that bloodletting rituals and the documentation of these displays represented a sign of group membership in culturally diverse environments. However, this hypothesis will have to await future evaluation. Another point that raises doubt about the costly ritual-warfare hypothesis for Classic Maya bloodletting relates to the gender of ritual practitioners. The study conducted by Sosis and colleagues was limited to rituals performed exclusively by males <xref ref-type="bibr" rid="pone.0107982-Sosis2">[41]</xref>. At least a subset of bloodletting statements seem to refer to male initiation rites (<italic>yax ch’ahb’</italic> ‘first bloodletting’) <xref ref-type="bibr" rid="pone.0107982-Houston2">[29]</xref>, although we cannot be certain that all <italic>ch’ahb’</italic> statements refer only to male initiation rites. This study does not identify whether males or females were the main subjects of bloodletting statements, but we know that this ritual was not exclusive to male practitioners (see <xref ref-type="fig" rid="pone-0107982-g001">Figure 1</xref>). Thus, we must consider the diverse roles of ritual practitioners according to gender, age, and other variables in future studies of Classic Maya bloodletting.</p>
+<p>Beyond basic contextual clues about the conditions surrounding Classic Maya bloodletting, results of this study also allow us to evaluate possible pathways for the spread of this ritual practice. While the spatial distribution of bloodletting records is noteworthy, this pattern is not consistent with mechanisms of spatial diffusion. Instead, by measuring the social distance between sites we found that network ties are strongly correlated with bloodletting statements. In other words, sites where bloodletting was recorded are highly connected. Thus, bloodletting rituals seem to have spread through social network ties rather than a process of spatial diffusion. However, a basic pattern of homophily is not enough to distinguish whether selection processes or influence processes are primarily responsible for the transmission of cultural traits <xref ref-type="bibr" rid="pone.0107982-Shalizi1">[63]</xref>. Given the current dataset, a process of selection would create network ties among sites that share the cultural attribute of recording <italic>ch’ahb’</italic> glyphs, whereas a process of social contagion (also called influence) works in the opposite direction with sites adopting the cultural practice based on an existing network tie. There are few models capable of dealing with the problem of separating these transmission processes <xref ref-type="bibr" rid="pone.0107982-Steglich1">[65]</xref>, <xref ref-type="bibr" rid="pone.0107982-Snijders1">[66]</xref>. Moreover, these models are quite complex, requiring a specific set of data in which time plays a central role. Although the dataset used in this study is time-sensitive, it does not currently meet the requirements specified by these dynamic models. However, given the relatively low occurrence of <italic>ch’ahb’</italic> glyphs in the overall corpus of Maya hieroglyphic texts, it is unlikely that this single variable drove the formation of network ties. Rather, the spread of bloodletting appears to result from a form of social contagion between connected polities. Network ties between sites thus identify potential transmission pathways of bloodletting rituals that included kinship lines, marriage exchanges, subjugation, and political alliances between royal courts.</p>
+<p>Religious rituals that are painful or highly stressful are often considered to be costly signs of commitment that promoted cooperation, thereby contributing to the evolution of large-scale societies over the past 10,000 years <xref ref-type="bibr" rid="pone.0107982-Atran2">[67]</xref>–<xref ref-type="bibr" rid="pone.0107982-Bellah1">[70]</xref>. In general though these theories do not address how such extravagant displays varied over time and between different social groups in the past–historical information that is essential for studying the evolution of religion. This study demonstrates the first attempt to quantitatively analyze patterns of Classic Maya bloodletting recorded in hieroglyphic texts. Results of the present study illustrate the historical dynamics of these ancient rituals and offer clues to the variable contexts and consequences of religious rituals beyond samples drawn from contemporary Western societies. Moreover, this study highlights the need for archaeologists and historians to participate in debates about the evolutionary origins and cognitive science of religion <xref ref-type="bibr" rid="pone.0107982-Slingerland2">[71]</xref>.</p>
+</sec><sec id="s6">
+<title>Supporting Information</title>
+<supplementary-material id="pone.0107982.s001" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0107982.s001" position="float" xlink:type="simple"><label>Table S1</label><caption>
+<p><bold>Records of bloodletting included in the study.</bold></p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0107982.s002" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0107982.s002" position="float" xlink:type="simple"><label>Table S2</label><caption>
+<p><bold>Classification schema for building the social network using relational statements employing toponyms and emblem glyphs.</bold> The theme category represents seven different types of sociopolitical relationships identified and analyzed in this and previous studies <xref ref-type="bibr" rid="pone.0107982-Munson1">[55]</xref>, <xref ref-type="bibr" rid="pone.0107982-Scholnick1">[56]</xref>.</p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0107982.s003" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0107982.s003" position="float" xlink:type="simple"><label>Table S3</label><caption>
+<p><bold>Relative frequency of sociopolitical statements in MHD based on the number of dated monuments in each 20-year </bold><bold><italic>k’atun</italic></bold><bold> period.</bold></p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0107982.s004" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0107982.s004" position="float" xlink:type="simple"><label>Table S4</label><caption>
+<p><bold>Calculated </bold><bold><italic>I<sub>i</sub></italic></bold><bold> and </bold><bold><italic>G<sub>i</sub>*</italic></bold><bold> scores at all 25 km spatial lags. Significant values indicated in bold.</bold></p>
+<p>(DOCX)</p>
+</caption></supplementary-material></sec></body>
+<back>
+<ack>
+<p>The authors would like to thank Matthew Looper, Jonathan Scholnick, and two anonymous reviewers for their comments. We also recognize the senior organizers and participants in the Cultural Evolution of Religion Consortium at the University of British Columbia and Simon Fraser University. The Maya Hieroglyphic Database is available in beta-version from MJM.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0107982-Demarest1"><label>1</label>
+<mixed-citation publication-type="other" xlink:type="simple">Demarest AA (1984) Overview: Mesoamerican Human Sacrifice in Evolutionary Perspective. In: E. H Boone, editor editors. Ritual Human Sacrifice in Mesoamerica. Washington, D.C.: Dumbarton Oaks Research Library and Collection. 227–243.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Rappaport1"><label>2</label>
+<mixed-citation publication-type="other" xlink:type="simple">Rappaport RA (1999) Ritual and religion in the making of humanity. Cambridge: Cambridge University Press.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Durkheim1"><label>3</label>
+<mixed-citation publication-type="other" xlink:type="simple">Durkheim E (1965) The Elementary Forms of Religious Life. New York: Free Press.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Irons1"><label>4</label>
+<mixed-citation publication-type="other" xlink:type="simple">Irons W (2001) Religion as a hard-to-fake sign of commitment. In: R Nesse, editor editors. The evolution of commitment. New York: Russell Sage Foundation. 292–309.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Slingerland1"><label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Slingerland</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Bulbulia</surname><given-names>J</given-names></name> (<year>2011</year>) <article-title>Introductory essay: Evolutionary science and the study of religion</article-title>. <source>Religion</source> <volume>41</volume>: <fpage>307</fpage>–<lpage>328</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Carrasco1"><label>6</label>
+<mixed-citation publication-type="other" xlink:type="simple">Carrasco D (1999) City of Sacrifice: The Aztec Empire and the Role of Violence in Civilization. Boston: Beacon Press.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Sugiyama1"><label>7</label>
+<mixed-citation publication-type="other" xlink:type="simple">Sugiyama S (2005) Human Sacrifice, Militarism, and Rulership: Materialization of State Ideology at the Feathered Serpent Pyramid, Teotihuacan. Cambridge: Cambridge University Press.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Schele1"><label>8</label>
+<mixed-citation publication-type="other" xlink:type="simple">Schele L, Miller ME (1986) The Blood of Kings: Dynasty and Ritual in Maya Art. Fort Worth: Kimbell Art Museum.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Henrich1"><label>9</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Henrich</surname><given-names>J</given-names></name> (<year>2009</year>) <article-title>The evolution of costly displays, cooperation and religion</article-title>. <source>Evolution and Human Behavior</source> <volume>30</volume>: <fpage>244</fpage>–<lpage>260</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Atran1"><label>10</label>
+<mixed-citation publication-type="other" xlink:type="simple">Atran S (2002) In Gods We Trust: The Evolutionary Landscape of Religion. Oxford: Oxford University Press.</mixed-citation>
+</ref>
+<ref id="pone.0107982-LpezLujn1"><label>11</label>
+<mixed-citation publication-type="other" xlink:type="simple">López Luján L, Olivier G (2010) El sacrificio humano en la tradición religiosa mesoamericana. México, D.F.: Instituto Nacional de Antropología e Historia, Universidad Nacional Autónoma de México.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Boone1"><label>12</label>
+<mixed-citation publication-type="other" xlink:type="simple">Boone EH (1984) Ritual Human Sacrifice in Mesoamerica. Washington, D.C.: Dumbarton Oaks Research Library and Collection.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Tiesler1"><label>13</label>
+<mixed-citation publication-type="other" xlink:type="simple">Tiesler V, Cucina A (2007) New Perspectives on Human Sacrifice and Ritual Body Treatments in Ancient Maya Society. New York: Springer.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Houston1"><label>14</label>
+<mixed-citation publication-type="other" xlink:type="simple">Houston S, Scherer A (2010) La ofrenda máxima: el sacrificio humano en la parte central del área Maya. In: L. López Luján and G Olivier, editors. El sacrificio humano en la tradición religiosa Mesoamericana. México, D.F.: Instituto Nacional de Antropología e Historia, Universidad Nacional Autónoma de México. 169–193.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Arden1"><label>15</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Arden</surname><given-names>T</given-names></name> (<year>2011</year>) <article-title>Empowered Children in Classic Maya Sacrificial Rites</article-title>. <source>Childhood in the Past</source> <volume>4</volume>: <fpage>133</fpage>–<lpage>145</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Baudez1"><label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Baudez</surname><given-names>C-F</given-names></name> (<year>2007</year>) <article-title>Sacrificio y culto fálico en Yucatán</article-title>. <source>Mayab</source> <volume>19</volume>: <fpage>71</fpage>–<lpage>85</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Schele2"><label>17</label>
+<mixed-citation publication-type="other" xlink:type="simple">Schele L (1984) Human Sacrifice Among the Classic Maya. In: E. H Boone, editor editors. Ritual Human Sacrifice in Mesoamerica. Washington, D.C.: Dumbarton Oaks Research Library and Collection. 7–48.</mixed-citation>
+</ref>
+<ref id="pone.0107982-deAlarcn1"><label>18</label>
+<mixed-citation publication-type="other" xlink:type="simple">de Alarcón HR (1987) Treatise on the heathen superstitions that today live among the Indians native to this New Spain, 1629. Norman: University of Oklahoma Press.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Inomata1"><label>19</label>
+<mixed-citation publication-type="other" xlink:type="simple">Inomata T, Triadan D (2009) Culture and Practice of War in Maya Society. In: A. E Nielsen and W. H Walker, editors. Warfare in Cultural Context: Practice, Agency and the Archaeology of Violence. Tucson: The University of Arizona Press. 56–83.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Joralemon1"><label>20</label>
+<mixed-citation publication-type="other" xlink:type="simple">Joralemon D (1974) Ritual blood-sacrifice among the Ancient Maya: Part I. In: M. G. Robertson, editor editors. Primera Mesa Redonda de Palenque. Pebble Beach, CA: Robert Louis Stevenson School. 59–75.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Stuart1"><label>21</label>
+<mixed-citation publication-type="other" xlink:type="simple">Stuart D (1984) Royal Auto-Sacrifice among the Maya: A Study of Image and Meaning. RES: Anthropology and Aesthetics: 6–20.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Tiesler2"><label>22</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tiesler</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Cucina</surname><given-names>A</given-names></name> (<year>2006</year>) <article-title>Procedures in Human Heart Extraction and Ritual Meaning: A Taphonomic Assessment of Anthropogenic Marks in Classic Maya Skeletons</article-title>. <source>Latin American Antiquity</source> <volume>17</volume>: <fpage>493</fpage>–<lpage>510</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Haines1"><label>23</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Haines</surname><given-names>HR</given-names></name>, <name name-style="western"><surname>Willink</surname><given-names>PW</given-names></name>, <name name-style="western"><surname>Maxwell</surname><given-names>D</given-names></name> (<year>2008</year>) <article-title>Stingray spine use and Maya bloodletting rituals: A cautionary tale</article-title>. <source>Latin American Antiquity</source> <volume>19</volume>: <fpage>83</fpage>–<lpage>98</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Gronenmeyer1"><label>24</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gronenmeyer</surname><given-names>S</given-names></name> (<year>2003</year>) <article-title>Bloodletting and Vision Quest Among the Classic Maya: A Medical and Iconographic Reevaluation</article-title>. <source>Human Mosaic: A Journal of the Social Sciences</source> <volume>34</volume>: <fpage>5</fpage>–<lpage>14</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Vail1"><label>25</label>
+<mixed-citation publication-type="other" xlink:type="simple">Vail G, Hernández C (2007) Human Sacrifice in Late Postclassic Maya Iconography and Texts. In: V Tiesler and A Cucina, editors. New Perspectives on Human Sacrifice and Ritual Body Treatments in Ancient Maya Society. New York: Springer. 120–164.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Landa1"><label>26</label>
+<mixed-citation publication-type="other" xlink:type="simple">Landa Dd (1959) Relación de las coas de Yucatán. Mexico City: Editorial Porrúa.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Tozzer1"><label>27</label>
+<mixed-citation publication-type="other" xlink:type="simple">Tozzer A (1941) Landa's Relación de las Cosas de Yucatán: A Translation. Cambridge: Harvard University, Peabody Museum of Archaeology and Ethnology.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Looper1"><label>28</label>
+<mixed-citation publication-type="other" xlink:type="simple">Looper MG (2009) To Be Like Gods: Dance in Ancient Maya Civilization. Austin: University of Texas Press.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Houston2"><label>29</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Houston</surname><given-names>S</given-names></name> (<year>2009</year>) <article-title>A Splendid Predicament: Young Men in Classic Maya Society</article-title>. <source>Cambridge Archaeological Journal</source> <volume>19</volume>: <fpage>149</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Stuart2"><label>30</label>
+<mixed-citation publication-type="other" xlink:type="simple">Stuart D (2005) Ideology and Classic Maya Kingship. In: V. L Scarborough, editor editors. A Catalyst for Ideas: Anthropological Archaeology and the Legacy of Douglas W Schwartz. Santa Fe: School of American Research. 257–285.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Taube1"><label>31</label>
+<mixed-citation publication-type="other" xlink:type="simple">Taube KA, Saturno WA, Stuart D, Hurst H (2010) The Murals of San Bartolo, El Petén, Guatemala, Part 2: The West Wall. Barnardsville: Center for Ancient American Studies.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Pennock1"><label>32</label>
+<mixed-citation publication-type="other" xlink:type="simple">Pennock CD (2008) Bonds of Blood: Gender, Lifecycle and Sacrifice in Aztec Culture. Basingstoke: Palgrave Macmillan.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Bulbulia1"><label>33</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bulbulia</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Sosis</surname><given-names>R</given-names></name> (<year>2011</year>) <article-title>Signalling theory and the evolution of religious cooperation</article-title>. <source>Religion</source> <volume>41</volume>: <fpage>363</fpage>–<lpage>388</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Norenzayan1"><label>34</label>
+<mixed-citation publication-type="other" xlink:type="simple">Norenzayan A, Gervais WM (2012) The cultural evolution of religion. In: E Slingerland and M Collard, editors. Creating Consilience: Integrating science and the humanities. Oxford: Oxford University Press. 243–265.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Xygalatas1"><label>35</label>
+<mixed-citation publication-type="other" xlink:type="simple">Xygalatas D, Mitkidis P, Fischer R, Reddish P, Skewes J, et al.. (2013) Extreme Rituals Promote Prosociality. Psychological science.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Sosis1"><label>36</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sosis</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Ruffle</surname><given-names>BJ</given-names></name> (<year>2003</year>) <article-title>Religious ritual and cooperation: Testing for a relationship on Israeli religious and secular kibbutzim</article-title>. <source>Current Anthropology</source> <volume>44</volume>: <fpage>713</fpage>–<lpage>722</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Konvalinka1"><label>37</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Konvalinka</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Xygalatas</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Bulbulia</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Schjødt</surname><given-names>U</given-names></name>, <name name-style="western"><surname>Jegindø</surname><given-names>E-ME</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Synchronized arousal between performers and related spectators in a fire-walking ritual</article-title>. <source>Proceedings of the National Academy of Sciences of the United States of America</source> <volume>108</volume>: <fpage>8514</fpage>–<lpage>8519</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-BliegeBird1"><label>38</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bliege Bird</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Smith Eric</surname><given-names>A</given-names></name> (<year>2005</year>) <article-title>Signaling Theory, Strategic Interaction, and Symbolic Capital</article-title>. <source>Current Anthropology</source> <volume>36</volume>: <fpage>221</fpage>–<lpage>248</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Neiman1"><label>39</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Neiman</surname><given-names>FD</given-names></name> (<year>1997</year>) <article-title>Conspicuous consumption as wasteful advertising: a Darwinian perspective on spatial patterns in Classic Maya Terminal monument dates</article-title>. In: <source>Arlington, VA: Archaeological Papers of the American Anthropolgoical Association No</source> <name name-style="western"><surname>C. M</surname><given-names>Barton</given-names></name>, <name name-style="western"><surname>G. A</surname><given-names>Clark</given-names></name>, editors. Rediscovering Darwin: Evolutionary Theory in Archaeological Explanation. <volume>7</volume>: <fpage>267</fpage>–<lpage>290</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Wilson1"><label>40</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wilson</surname><given-names>CG</given-names></name> (<year>2008</year>) <article-title>Male genital mutilation: an adaptation to sexual conflict</article-title>. <source>Evolution and Human Behavior</source> <volume>29</volume>: <fpage>149</fpage>–<lpage>164</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Sosis2"><label>41</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sosis</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Kress</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Boster</surname><given-names>J</given-names></name> (<year>2007</year>) <article-title>Scars for war: evaluating alternative signaling explanations for cross-cultural variance in ritual costs</article-title>. <source>Evolution and Human Behavior</source> <volume>28</volume>: <fpage>234</fpage>–<lpage>247</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Cronk1"><label>42</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cronk</surname><given-names>L</given-names></name> (<year>1994</year>) <article-title>Evolutionary Theories of Morality and the Manipulative Use of Signals</article-title>. <source>Zygon</source> <volume>29</volume>: <fpage>81</fpage>–<lpage>101</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Looper2"><label>43</label>
+<mixed-citation publication-type="other" xlink:type="simple">Looper MG, Macri MJ (1991–2014) Maya Hieroglyphic Database. Beta version available at the Native American Language Center, University of California, Davis.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Macri1"><label>44</label>
+<mixed-citation publication-type="other" xlink:type="simple">Macri MJ, Looper MG (2003) The New Catalog of Maya Hieroglyphs: The Classic Period Inscriptions. Norman: University of Oklahoma Press.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Stuart3"><label>45</label>
+<mixed-citation publication-type="other" xlink:type="simple">Stuart D (1995) A Study of Maya Inscriptions. Department of Anthropology. Vanderbilt University.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Brown1"><label>46</label>
+<mixed-citation publication-type="other" xlink:type="simple">Brown CT, Witschey WRT (Accessed 27 Feb 2013) Electronic Atlas of Ancient Maya Sites. Mappable dataset via personal communication [<ext-link ext-link-type="uri" xlink:href="http://MayaGIS.smv.org" xlink:type="simple">http://MayaGIS.smv.org</ext-link>].</mixed-citation>
+</ref>
+<ref id="pone.0107982-Anselin1"><label>47</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Anselin</surname><given-names>L</given-names></name> (<year>1995</year>) <article-title>Local indicators of spatial autocorrelation–LISA</article-title>. <source>Geographical Analysis</source> <volume>27</volume>: <fpage>93</fpage>–<lpage>112</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Getis1"><label>48</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Getis</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Ord</surname><given-names>JK</given-names></name> (<year>1992</year>) <article-title>The analysis of spatial association by use of distance statistics</article-title>. <source>Geographical Analysis</source> <volume>24</volume>: <fpage>189</fpage>–<lpage>206</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Stuart4"><label>49</label>
+<mixed-citation publication-type="other" xlink:type="simple">Stuart D, Houston SD (1994) Classic Maya Place Names. Dumbarton Oaks: Studies in Pre-Columbian Art and Archaeology 33. Washington, D.C.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Martin1"><label>50</label>
+<mixed-citation publication-type="other" xlink:type="simple">Martin S, Grube N (2000) Chronicle of the Maya Kings and Queens: Deciphering the Dynasties of the Ancient Maya. London: Thames &amp; Hudson.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Tokovinine1"><label>51</label>
+<mixed-citation publication-type="other" xlink:type="simple">Tokovinine AA (2011) People from a Place: Re-Interpreting Classic Maya Emblem Glyphs. In: C Isendahl and B. L Persson, editors. Ecology, Power, and Religion in Maya Landscapes. Markt Schwaben, Germany: Verlag Anton Saurwein. 91–106.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Schele3"><label>52</label>
+<mixed-citation publication-type="other" xlink:type="simple">Schele L, Mathews P (1991) Royal visits and other intersite relationships among the Classic Maya. In: T. P Culbert, editor editors. Classic Maya Political History. Cambridge: Cambridge University Press. 226–252.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Marcus1"><label>53</label>
+<mixed-citation publication-type="other" xlink:type="simple">Marcus J (1976) Emblem and State in the Classic Maya Lowlands: An Epigraphic Approach to Territorial Organization. Washington, D.C.: Dumbarton Oaks.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Martin2"><label>54</label>
+<mixed-citation publication-type="other" xlink:type="simple">Martin S (2008) Chronicle of the Maya Kings and Queens: Deciphering the Dynasties of the Ancient Maya. London: Thames &amp; Hudson.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Munson1"><label>55</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Munson</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Macri</surname><given-names>MJ</given-names></name> (<year>2009</year>) <article-title>Sociopolitical network interactions: A case study of the Classic Maya</article-title>. <source>Journal of Anthropological Archaeology</source> <volume>28</volume>: <fpage>424</fpage>–<lpage>438</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Scholnick1"><label>56</label>
+<mixed-citation publication-type="other" xlink:type="simple">Scholnick J, Munson J, Macri MJ (2013) Positioning power in a multi-relational framework: A social network analysis of Classic Maya political rhetoric. In: C Knappett, editor editors. Network analysis in archaeology: New approaches to regional interaction. Oxford: Oxford University Press. 95–124.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Borgatti1"><label>57</label>
+<mixed-citation publication-type="other" xlink:type="simple">Borgatti SP, Everett MG, Johnson JC (2013) Analyzing Social Networks. Los Angeles: Sage.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Borgatti2"><label>58</label>
+<mixed-citation publication-type="other" xlink:type="simple">Borgatti S, Everett M, Freeman L (2002) UCINET for Windows: Software for Social Network Analysis. Harvard, MA: Analytic Technologies.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Norenzayan2"><label>59</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Norenzayan</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Shariff</surname><given-names>AF</given-names></name> (<year>2008</year>) <article-title>The origin and evolution of religious prosociality</article-title>. <source>Science</source> <volume>322</volume>: <fpage>58</fpage>–<lpage>62</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Premo1"><label>60</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Premo</surname><given-names>LS</given-names></name> (<year>2004</year>) <article-title>Local spatial autocorrelation statistics quantify multi-scale patterns in distributional data: an example from the Maya Lowlands</article-title>. <source>Journal of Archaeological Science</source> <volume>31</volume>: <fpage>855</fpage>–<lpage>866</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-McPherson1"><label>61</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>McPherson</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Smith-Lovin</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Cook</surname><given-names>JM</given-names></name> (<year>2001</year>) <article-title>Birds of a feather: Homophily in social networks</article-title>. <source>Annual Review of Sociology</source> <volume>27</volume>: <fpage>415</fpage>–<lpage>444</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Rogers1"><label>62</label>
+<mixed-citation publication-type="other" xlink:type="simple">Rogers EM (1995) Diffusion of Innovations. New York: Free Press.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Shalizi1"><label>63</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Shalizi</surname><given-names>CR</given-names></name>, <name name-style="western"><surname>Thomas</surname><given-names>AC</given-names></name> (<year>2011</year>) <article-title>Homophily and Contagion Are Generically Confounded in Observational Social Network Studies</article-title>. <source>Social Methods Res</source> <volume>40</volume>: <fpage>211</fpage>–<lpage>239</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Webster1"><label>64</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Webster</surname><given-names>D</given-names></name> (<year>2000</year>) <article-title>The Not So Peaceful Civilization: A Review of Maya War</article-title>. <source>Journal of World Prehistory</source> <volume>14</volume>: <fpage>65</fpage>–<lpage>119</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Steglich1"><label>65</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Steglich</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Snijders</surname><given-names>TAB</given-names></name>, <name name-style="western"><surname>Pearson</surname><given-names>M</given-names></name> (<year>2010</year>) <article-title>Dynamic Networks and Behavior: Separating Selection from Influence</article-title>. <source>Sociological Methodology</source> <volume>40</volume>: <fpage>329</fpage>–<lpage>393</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Snijders1"><label>66</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Snijders</surname><given-names>TAB</given-names></name>, <name name-style="western"><surname>van de Bunt</surname><given-names>GG</given-names></name>, <name name-style="western"><surname>Steglich</surname><given-names>CEG</given-names></name> (<year>2010</year>) <article-title>Introduction to stochastic actor-based models for network dynamics</article-title>. <source>Social Networks</source> <volume>32</volume>: <fpage>44</fpage>–<lpage>60</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Atran2"><label>67</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Atran</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Henrich</surname><given-names>J</given-names></name> (<year>2010</year>) <article-title>The Evolution of Religion: how Cognitive By-Products, Adaptive Learning Heuristics, Ritual Displays, and Group Competition Generate Deep Commitments to Prosocial Religions</article-title>. <source>Biological Theory</source> <volume>5</volume>: <fpage>18</fpage>–<lpage>30</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Boyd1"><label>68</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Boyd</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Richerson</surname><given-names>PJ</given-names></name> (<year>2009</year>) <article-title>Culture and the evolution of human cooperation</article-title>. <source>Philosophical transactions of the Royal Society of London Series B, Biological sciences</source> <volume>364</volume>: <fpage>3281</fpage>–<lpage>3288</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Norenzayan3"><label>69</label>
+<mixed-citation publication-type="other" xlink:type="simple">Norenzayan A (2013) Big Gods: How Religion Transformed Cooperation and Conflict. Princeton: Princeton University.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Bellah1"><label>70</label>
+<mixed-citation publication-type="other" xlink:type="simple">Bellah RN (2011) Religion in Human Evolution: From the Paleolithic to the Axial Age. Cambridge, Mass.: The Belknap Press of Harvard University Press.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Slingerland2"><label>71</label>
+<mixed-citation publication-type="other" xlink:type="simple">Slingerland E, Collard M (2011) Creating Consilience: Integrating the Sciences and the Humanities. Oxford: Oxford University Press.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Kaufman1"><label>72</label>
+<mixed-citation publication-type="other" xlink:type="simple">Kaufman T (2003) A Preliminary Mayan Etymological Dictionary.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Berlin1"><label>73</label>
+<mixed-citation publication-type="other" xlink:type="simple">Berlin B, Kaufman T (1990) Un diccionario básico de tzeltal de Tenejapa, Chiapas, Mexico. Procomith, A.C.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Laughlin1"><label>74</label>
+<mixed-citation publication-type="other" xlink:type="simple">Laughlin RM, Haviland JB (1988) The Great Tzotzil Dictionary of Santo Domingo Zinacantan, with Grammatical Analysis and Historical Commentary. Washington: The Smithsonian Institution Press.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Hofling1"><label>75</label>
+<mixed-citation publication-type="other" xlink:type="simple">Hofling CA (2011) Mopan Maya-Spanish-English Dictionary. Salt Lake City: University of Utah Press.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Hofling2"><label>76</label>
+<mixed-citation publication-type="other" xlink:type="simple">Hofling CA, Fernando Tesucúcan F (1997) Itzaj Maya-Spanish-English Dictionary. Salt Lake City: University of Utah Press.</mixed-citation>
+</ref>
+<ref id="pone.0107982-BarreraVsquez1"><label>77</label>
+<mixed-citation publication-type="other" xlink:type="simple">Barrera Vásquez A, Bastarrachea Man JR, Brito Sansores W, Vermont Salas R, Dzul Góngora D, et al.. (1980) Diccionario Maya Cordemex. Mérida, Yucatán: Ediciones Cordemex.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Bricker1"><label>78</label>
+<mixed-citation publication-type="other" xlink:type="simple">Bricker VR, Po'ot Yah E, Dzul de Po'ot O (1998) A Dictionary of the Maya Language as Spoken in Hocabá, Yucatán. Salt Lake City: University of Utah Press.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Wisdom1"><label>79</label>
+<mixed-citation publication-type="other" xlink:type="simple">Wisdom C (1950) Materials on the Chortí Language.</mixed-citation>
+</ref>
+<ref id="pone.0107982-FelipeDiego1"><label>80</label>
+<mixed-citation publication-type="other" xlink:type="simple">Felipe Diego M (1998) Diccionario Chuj. La Antigua, Guatemala: Proyecto Lingüístico Francisco Marroquín.</mixed-citation>
+</ref>
+<ref id="pone.0107982-Graham1"><label>81</label>
+<mixed-citation publication-type="other" xlink:type="simple">Graham I, von Euw E (1977) Corpus of Maya Hieroglyphic Inscriptions, Volume 3: Part 1: Yaxchilan. Cambridge: Harvard University Press.</mixed-citation>
+</ref>
+</ref-list></back>
+</article>

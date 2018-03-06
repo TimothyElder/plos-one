@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group>
+<journal-title>PLoS ONE</journal-title></journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-13-53962</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0099161</article-id>
+<article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Biology and life sciences</subject><subj-group><subject>Biotechnology</subject></subj-group><subj-group><subject>Computational biology</subject><subj-group><subject>Genome analysis</subject></subj-group></subj-group><subj-group><subject>Evolutionary biology</subject><subj-group><subject>Population genetics</subject><subj-group><subject>Genetic polymorphism</subject></subj-group></subj-group></subj-group><subj-group><subject>Genetics</subject><subj-group><subject>Genomics</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Medicine and health sciences</subject><subj-group><subject>Epidemiology</subject><subj-group><subject>Genetic epidemiology</subject></subj-group></subj-group><subj-group><subject>Health care</subject><subj-group><subject>Health care policy</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>People and places</subject><subj-group><subject>Demography</subject><subj-group><subject>Population minorities</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Social sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Cultural anthropology</subject><subj-group><subject>Ethnic differences</subject></subj-group></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Accuracy of Administratively-Assigned Ancestry for Diverse Populations in an Electronic Medical Record-Linked Biobank</article-title>
+<alt-title alt-title-type="running-head">Reported versus Genetic Ancestry in a Biobank</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Hall</surname><given-names>Jacob B.</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Dumitrescu</surname><given-names>Logan</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Dilks</surname><given-names>Holli H.</given-names></name><xref ref-type="aff" rid="aff2"><sup>2</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Crawford</surname><given-names>Dana C.</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Bush</surname><given-names>William S.</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+</contrib-group>
+<aff id="aff1"><label>1</label><addr-line>Center for Human Genetics Research, Vanderbilt University, Nashville, Tennessee, United States of America</addr-line></aff>
+<aff id="aff2"><label>2</label><addr-line>Vanderbilt Technologies for Advanced Genomics (VANTAGE), Vanderbilt University, Nashville, Tennessee, United States of America</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Brock</surname><given-names>Guy</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>University of Louisville, United States of America</addr-line></aff>
+<author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">william.s.bush@vanderbilt.edu</email></corresp>
+<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn>
+<fn fn-type="con"><p>Conceived and designed the experiments: LD WSB DCC. Performed the experiments: HHD. Analyzed the data: JBH WSB. Contributed reagents/materials/analysis tools: HHD DCC. Wrote the paper: JBH WSB LD HHD DCC.</p></fn>
+</author-notes>
+<pub-date pub-type="collection"><year>2014</year></pub-date>
+<pub-date pub-type="epub"><day>4</day><month>6</month><year>2014</year></pub-date>
+<volume>9</volume>
+<issue>6</issue>
+<elocation-id>e99161</elocation-id>
+<history>
+<date date-type="received"><day>12</day><month>1</month><year>2014</year></date>
+<date date-type="accepted"><day>12</day><month>5</month><year>2014</year></date>
+</history>
+<permissions>
+<copyright-year>2014</copyright-year>
+<copyright-holder>Hall et al</copyright-holder><license xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions>
+<abstract>
+<p>Recently, the development of biobanks linked to electronic medical records has presented new opportunities for genetic and epidemiological research. Studies based on these resources, however, present unique challenges, including the accurate assignment of individual-level population ancestry. In this work we examine the accuracy of administratively-assigned race in diverse populations by comparing assigned races to genetically-defined ancestry estimates. Using 220 ancestry informative markers, we generated principal components for patients in our dataset, which were used to cluster patients into groups based on genetic ancestry. Consistent with other studies, we find a strong overall agreement (Kappa  = 0.872) between genetic ancestry and assigned race, with higher rates of agreement for African-descent and European-descent assignments, and reduced agreement for Hispanic, East Asian-descent, and South Asian-descent assignments. These results suggest caution when selecting study samples of non-African and non-European backgrounds when administratively-assigned race from biobanks is used.</p>
+</abstract>
+<funding-group><funding-statement>The dataset used for the analyses described was obtained from Vanderbilt University Medical Center's BioVU, which is supported by institutional funding and by the Vanderbilt CTSA grant UL1 TR000445 from NCATS/NIH. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts><page-count count="6"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title>Introduction</title>
+<p>Hospital-based biobanks linked to electronic medical records (EMRs) are a growing and cost-effective way to ascertain large segments of a population for biomedical research studies. Genetic and clinical studies increasingly require larger numbers of samples to provide statistical power to discover genetic variation associated with complex human diseases; using existing surveyed clinical populations is a way to meet this demand quickly. Multiple studies have been published illustrating the basic utility of biobanks for validating existing association studies <xref ref-type="bibr" rid="pone.0099161-Ritchie1">[1]</xref>, performing phenome-wide association studies <xref ref-type="bibr" rid="pone.0099161-Denny1">[2]</xref>, <xref ref-type="bibr" rid="pone.0099161-Pendergrass1">[3]</xref>, and for identifying novel genetic associations within existing genotype-phenotype databases <xref ref-type="bibr" rid="pone.0099161-Denny2">[4]</xref>. The use of EMR-based biobanks for research purposes is expected to grow in the coming years <xref ref-type="bibr" rid="pone.0099161-Roden1">[5]</xref>, <xref ref-type="bibr" rid="pone.0099161-Wilke1">[6]</xref>.</p>
+<p>The Vanderbilt DNA biobank (BioVU) contains nearly 160,000 DNA samples linked to electronic medical records at Vanderbilt University and continues to accrue additional patient samples. DNA is extracted from discarded blood samples collected during routine patient care. EMR data is drawn from administrative databases and scrubbed of identifying information to generate a resource for researchers known as the Synthetic Derivative (SD) <xref ref-type="bibr" rid="pone.0099161-Ritchie1">[1]</xref>, <xref ref-type="bibr" rid="pone.0099161-Roden2">[7]</xref>. A subset of the SD population has linked DNA samples, forming the BioVU subset. Upon institutional approval of a BioVU project, samples with the phenotype of interest, based on data from the SD, can be accessed and genotyped. All genotype data generated using BioVU samples is then made available to Vanderbilt investigators for future studies. The BioVU design has the distinct advantage of rapid sample accrual for a variety of clinical traits present in the patient population; however, re-contacting participants for sample collection or validation of subject data is prohibited by both institutional policy and the de-identification process, limiting some applications of the data.</p>
+<p>With increased emphasis on the use of DNA biobanks, it is important to note the critical role of race in genetic association studies. A sample drawn from multiple underlying populations is subject to population stratification, where each population has a slightly different genetic architecture. If not properly accounted for, these differences in allele frequency can result in false associations. As such, it is common practice in genetic studies to correct for underlying population sub-structure by estimating global genetic ancestry for each sample <xref ref-type="bibr" rid="pone.0099161-Reich1">[8]</xref>. This is often accomplished by genotyping a set of ancestry informative markers (AIMs) which are evaluated using either principal components analysis (for a continuous estimate of ancestry group) <xref ref-type="bibr" rid="pone.0099161-Price1">[9]</xref> or cluster analysis (for a categorical ancestry assignment) <xref ref-type="bibr" rid="pone.0099161-Pritchard1">[10]</xref>. The individual measure of genetic ancestry is then used to stratify individuals or to include them as a covariate for adjustment in statistical analyses to avoid confounding.</p>
+<p>In lieu of genotyping AIMs, genetic studies sometimes use self-reported race as a covariate, either as a surrogate for genetic ancestry or to capture social and demographic components <xref ref-type="bibr" rid="pone.0099161-Gravlee1">[11]</xref>. The complex nature of the relationship between race and genetic ancestry has been extensively explored <xref ref-type="bibr" rid="pone.0099161-Bamshad1">[12]</xref>, and multiple studies have shown that self-reported race is generally reflective of an individual's genetic ancestry but does not account for population substructure <xref ref-type="bibr" rid="pone.0099161-Yaeger1">[13]</xref>, <xref ref-type="bibr" rid="pone.0099161-BarnholtzSloan1">[14]</xref>. While self-reported race is commonly collected in epidemiologic cohorts, many provider-based studies use third-party reported race rather than self-reported race. Studies of agreement between self and third-party race assignment have been conducted, but have conflicting results, showing varying levels of agreement<xref ref-type="bibr" rid="pone.0099161-Yaeger1">[13]</xref>–<xref ref-type="bibr" rid="pone.0099161-Moscou1">[16]</xref>.</p>
+<p>Dumitrescu et al. <xref ref-type="bibr" rid="pone.0099161-Dumitrescu1">[17]</xref> previously reported on the utility of using third-party reported race for African-descent and European-descent individuals within BioVU, citing a high concordance with genetic ancestry. However, third-party assignment of these racial categories may be influenced by subjective criteria for specific racial groups. This notion is supported by a study that reported high accuracy for distinguishing African American and European American individuals (positive predictive value 0.95 &amp; 0.94, respectively) using third-party reporting, but less accuracy for Hispanics and American Indians (positive predictive value 0.81 &amp; 0.50, respectively)<xref ref-type="bibr" rid="pone.0099161-Gomez1">[18]</xref>.</p>
+<p>The accuracy of third-party racial assignments is especially critical for biobank-based studies. Should an investigator seek to perform a genetic study within a diverse population, sample selection is likely dependent on the third-party racial assignment within the EMR. As a result, samples of a different ethnicity may be selected and genotyped, only to be excluded from analysis after ancestry is determined using genetic data, resulting in a waste of research funds. Additionally, genetic ancestry can influence some clinical decision-making processes, including automated decision support, which is being integrated into some EMRs <xref ref-type="bibr" rid="pone.0099161-Wright1">[19]</xref>, <xref ref-type="bibr" rid="pone.0099161-Terrell1">[20]</xref>. Before decision support rules are implemented that consider race in treatment decisions, it is important to characterize the accuracy of race within EMRs. In this work, we characterize how well administrative third-party race assignment within BioVU reflects ancestry estimated from genetic data.</p>
+</sec><sec id="s2" sec-type="methods">
+<title>Methods</title>
+<sec id="s2a">
+<title>Ethics Statement</title>
+<p>BioVU, Vanderbilt University's biobank, uses de-identified patient electronic medical records. This study is considered non-human subjects research by the Vanderbilt institutional review board.</p>
+</sec><sec id="s2b">
+<title>Sample Selection</title>
+<p>A total of 7,252 individuals were selected from BioVU, specifically to over-represent diverse populations and individuals with “unknown” administrative race assignments. Within the synthetic derivative (SD) and BioVU, race is administratively assigned to one of eight predefined categories: White (W), Black (B), Asian/Pacific (A), Native American (N), Indian (I), Hispanic (H), other (O), or unknown (U) (<xref ref-type="table" rid="pone-0099161-t001">Table 1</xref>). Based on communications with clinical personnel who regularly assign race codes, in practice, the Native American (American Indian) and Indian (South Asian) race codes are sometimes incorrectly used interchangeably. No individuals with “other” ethnicity were selected in this study. For this paper, we will refer to the predefined, administratively-assigned racial categories as Caucasian, African American, Asian/Pacific, Native American, Indian, and Hispanic (<xref ref-type="supplementary-material" rid="pone.0099161.s001">Table S1</xref>).</p>
+<table-wrap id="pone-0099161-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0099161.t001</object-id><label>Table 1</label><caption>
+<title>Distribution of administratively-assigned race.</title>
+</caption><alternatives><graphic id="pone-0099161-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0099161.t001" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Race</td>
+<td align="left" rowspan="1" colspan="1">Study Sample</td>
+<td align="left" rowspan="1" colspan="1">BioVU</td>
+<td align="left" rowspan="1" colspan="1">Synthetic Derivative</td>
+<td align="left" rowspan="1" colspan="1">Davidson Co.*</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Caucasian</td>
+<td align="left" rowspan="1" colspan="1">4,232 (58.4%)</td>
+<td align="left" rowspan="1" colspan="1">102,018 (64.4%)</td>
+<td align="left" rowspan="1" colspan="1">1,116,837 (51.6%)</td>
+<td align="left" rowspan="1" colspan="1">385,039 (61.4%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">African American</td>
+<td align="left" rowspan="1" colspan="1">1,094 (15.1%)</td>
+<td align="left" rowspan="1" colspan="1">14,223 (9.0%)</td>
+<td align="left" rowspan="1" colspan="1">191,246 (8.8%)</td>
+<td align="left" rowspan="1" colspan="1">173,730 (27.7%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Asian/Pacific</td>
+<td align="left" rowspan="1" colspan="1">228 (3.1%)</td>
+<td align="left" rowspan="1" colspan="1">1,380 (0.9%)</td>
+<td align="left" rowspan="1" colspan="1">14,449 (0.7%)</td>
+<td align="left" rowspan="1" colspan="1">15,083 (2.4%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Hispanic</td>
+<td align="left" rowspan="1" colspan="1">230 (3.2%)</td>
+<td align="left" rowspan="1" colspan="1">2,147 (1.3%)</td>
+<td align="left" rowspan="1" colspan="1">37,466 (1.7%)</td>
+<td align="left" rowspan="1" colspan="1">**</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Native American</td>
+<td align="left" rowspan="1" colspan="1">184 (2.5%)</td>
+<td align="left" rowspan="1" colspan="1">212 (0.1%)</td>
+<td align="left" rowspan="1" colspan="1">1,868 (0.1%)</td>
+<td align="left" rowspan="1" colspan="1">2,091 (0.3%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Indian</td>
+<td align="left" rowspan="1" colspan="1">7 (0.1%)</td>
+<td align="left" rowspan="1" colspan="1">1,711 (1.1%)</td>
+<td align="left" rowspan="1" colspan="1">20,613 (1.0%)</td>
+<td align="left" rowspan="1" colspan="1">4,338 (0.7%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Unknown</td>
+<td align="left" rowspan="1" colspan="1">1,277 (17.6%)</td>
+<td align="left" rowspan="1" colspan="1">36,696 (23.2%)</td>
+<td align="left" rowspan="1" colspan="1">781,074 (36.1%)</td>
+<td align="left" rowspan="1" colspan="1">46,400 (7.5%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Total</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>7</bold>,<bold>252 (100%)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>158</bold>,<bold>387 (100%)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>2</bold>,<bold>163</bold>,<bold>553 (100%)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>626</bold>,<bold>681 (100%)</bold></td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt101"><label/><p>Race categories listed are based on classification options originating from the SD. Our BioVU dataset contained no individuals labeled Other (O). Vanderbilt University Medical Center is located in Davidson County, TN. 2010 US census data is shown for Davidson County, Tennessee <xref ref-type="bibr" rid="pone.0099161-US1">[25]</xref>. * For Davidson County, “Asian/Pacific” includes Asian (Non-Indian), Native Hawaiian, and Pacific Islander individuals, “Native American” includes Native American (American Indian) and Alaskan Native individuals, “Indian” includes Asian Indian individuals, and “Unknown” includes ‘some other race’ and individuals who reported two or more races for the census. ** “Hispanic” is not listed a race in the US Census; rather, Hispanic-origin is indicated and is not exclusive to any racial category. For example, 25,156 individuals in Davidson County who self-identified as ‘White’ also self-identified, separately, as Hispanic. Within Davidson County, 9.8% of individuals indicated Hispanic origin.</p></fn></table-wrap-foot></table-wrap></sec><sec id="s2c">
+<title>Genotyping</title>
+<p>All 7,252 BioVU samples were genotyped using the Illumina VeraCode GoldenGate assay in the Center for Human Genetics Research (CHGR) DNA Resources Core at Vanderbilt University for 308 ancestry informative markers (AIMs) and scanned on the Illumina BeadXpress reader. AIMs genotypes were merged with existing data for 805 individuals from the International HapMap Project (Phase 3, Revision3, Build 36), including 165 CEU, 203 YRI, 137 CHB, 113 JPT, 101 GIH samples, and 86 MXL, as reference populations to assist in determining genetic ancestry (<xref ref-type="supplementary-material" rid="pone.0099161.s001">Table S1</xref>). The genetic data underwent quality control measures, including removal of 39 non-autosomal SNPs, 38 SNPs not also in the HapMap dataset, and 11 SNPs that were co-linear with principal component (PC) three and caused atypical clustering, leaving 220 SNPs for analysis (SNP list available upon request). Within the final merged dataset of 220 SNPs for 8,057 individuals, all SNPs had a minor allele frequency (MAF) greater than five percent. Of the BioVU samples in our dataset, 52% (4,192) were female.</p>
+</sec><sec id="s2d">
+<title>Genetic Ancestry Assignment</title>
+<p>We performed principal components analysis (PCA) for 220 SNPs using the EIGENSTRAT package <xref ref-type="bibr" rid="pone.0099161-Price1">[9]</xref> on the combined samples. Outlier removal was disabled for all EIGENSTRAT analyses. Consistent with published studies <xref ref-type="bibr" rid="pone.0099161-Price1">[9]</xref>, we generated the top ten principal components to estimate genetic ancestry based on genetic sharing of SNPs with HapMap samples of known continental origin. To assign genetic ancestry for each individual we performed model-based clustering, using the <italic>mclust</italic> <xref ref-type="bibr" rid="pone.0099161-Fraley1">[21]</xref> R package, to define and assign individuals to clusters using an ellipsoidal model with varying volume, shape, and orientation. We indicated that <italic>mclust</italic> should define five clusters in order to differentiate the five ancestry groups known to be present in the dataset (European-descent, African-descent, East Asian-descent, South Asian-descent, and Hispanic-descent). By plotting a 10 by 10 matrix of all pairs of PCs, colored by the defined clusters, we visually determined that PCs 1, 2, 3, 7, 9, and 10 optimally captured separation of the five clusters. These six PCs were used to perform clustering. Genetic variance within the European-descent cluster was captured in the unused principal components, and may reflect a bias toward European-descent components within this set of AIMs.</p>
+</sec><sec id="s2e">
+<title>Statistical Methods</title>
+<p>Administratively-assigned race was compared to cluster-based ancestry assignment (<xref ref-type="table" rid="pone-0099161-t002">Table 2</xref>) through contingency table analysis using STATA 12. Additionally, comparisons for HapMap cluster assignment is shown in <xref ref-type="supplementary-material" rid="pone.0099161.s002">Table S2</xref>. Agreement between these two classification methods was measured by Cohen's Kappa coefficient <xref ref-type="bibr" rid="pone.0099161-Wickens1">[22]</xref>, which takes into account the expected agreement of two ‘raters’ based on the distribution of categories within the dataset. In this context, administrative assignment is the first ‘rater’ and genetically determined ancestry is the second ‘rater’. Kappa is standardized on a scale from -1 to 1, where 1 indicates perfect agreement, 0 indicates agreement that would be expected by chance, and negative values indicate less agreement that would be expected by chance. Genetic ancestry categories are mutually exclusive, so an individual can only be assigned to one category, based on clustering from principal components analysis.</p>
+<table-wrap id="pone-0099161-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0099161.t002</object-id><label>Table 2</label><caption>
+<title>Percentages of each administratively-assigned race assigned to each genetic ancestry group.</title>
+</caption><alternatives><graphic id="pone-0099161-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0099161.t002" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td colspan="5" align="left" rowspan="1">Genetic Ancestry</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">European</td>
+<td align="left" rowspan="1" colspan="1">African</td>
+<td align="left" rowspan="1" colspan="1">East Asian</td>
+<td align="left" rowspan="1" colspan="1">Hispanic</td>
+<td align="left" rowspan="1" colspan="1">South Asian</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Administratively-Assigned Race</bold></td>
+<td align="left" rowspan="1" colspan="1">Caucasian</td>
+<td align="left" rowspan="1" colspan="1">4,174</td>
+<td align="left" rowspan="1" colspan="1">24</td>
+<td align="left" rowspan="1" colspan="1">8</td>
+<td align="left" rowspan="1" colspan="1">16</td>
+<td align="left" rowspan="1" colspan="1">10</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">(98.6%)</td>
+<td align="left" rowspan="1" colspan="1">(0.6%)</td>
+<td align="left" rowspan="1" colspan="1">(0.2%)</td>
+<td align="left" rowspan="1" colspan="1">(0.4%)</td>
+<td align="left" rowspan="1" colspan="1">(0.2%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">African American</td>
+<td align="left" rowspan="1" colspan="1">11</td>
+<td align="left" rowspan="1" colspan="1">1,080</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">3</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">(1.0%)</td>
+<td align="left" rowspan="1" colspan="1">(98.7%)</td>
+<td align="left" rowspan="1" colspan="1">(0.0%)</td>
+<td align="left" rowspan="1" colspan="1">(0.3%)</td>
+<td align="left" rowspan="1" colspan="1">(0.0%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Asian/Pacific</td>
+<td align="left" rowspan="1" colspan="1">9</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">182</td>
+<td align="left" rowspan="1" colspan="1">2</td>
+<td align="left" rowspan="1" colspan="1">35</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">(3.9%)</td>
+<td align="left" rowspan="1" colspan="1">(0.0%)</td>
+<td align="left" rowspan="1" colspan="1">(79.8%)</td>
+<td align="left" rowspan="1" colspan="1">(0.9%)</td>
+<td align="left" rowspan="1" colspan="1">(15.4%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Hispanic</td>
+<td align="left" rowspan="1" colspan="1">58</td>
+<td align="left" rowspan="1" colspan="1">8</td>
+<td align="left" rowspan="1" colspan="1">2</td>
+<td align="left" rowspan="1" colspan="1">154</td>
+<td align="left" rowspan="1" colspan="1">8</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">(25.2%)</td>
+<td align="left" rowspan="1" colspan="1">(3.5%)</td>
+<td align="left" rowspan="1" colspan="1">(0.8%)</td>
+<td align="left" rowspan="1" colspan="1">(67.0%)</td>
+<td align="left" rowspan="1" colspan="1">(3.5%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Native American</td>
+<td align="left" rowspan="1" colspan="1">90</td>
+<td align="left" rowspan="1" colspan="1">17</td>
+<td align="left" rowspan="1" colspan="1">18</td>
+<td align="left" rowspan="1" colspan="1">18</td>
+<td align="left" rowspan="1" colspan="1">41</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">(48.9%)</td>
+<td align="left" rowspan="1" colspan="1">(9.2%)</td>
+<td align="left" rowspan="1" colspan="1">(9.8%)</td>
+<td align="left" rowspan="1" colspan="1">(9.8%)</td>
+<td align="left" rowspan="1" colspan="1">(22.3%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Indian</td>
+<td align="left" rowspan="1" colspan="1">3</td>
+<td align="left" rowspan="1" colspan="1">2</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">2</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">(42.8%)</td>
+<td align="left" rowspan="1" colspan="1">(28.6%)</td>
+<td align="left" rowspan="1" colspan="1">(0.0%)</td>
+<td align="left" rowspan="1" colspan="1">(0.0%)</td>
+<td align="left" rowspan="1" colspan="1">(28.6%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Unknown</td>
+<td align="left" rowspan="1" colspan="1">1,126</td>
+<td align="left" rowspan="1" colspan="1">83</td>
+<td align="left" rowspan="1" colspan="1">26</td>
+<td align="left" rowspan="1" colspan="1">21</td>
+<td align="left" rowspan="1" colspan="1">21</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">(88.3%)</td>
+<td align="left" rowspan="1" colspan="1">(6.5%)</td>
+<td align="left" rowspan="1" colspan="1">(2.0%)</td>
+<td align="left" rowspan="1" colspan="1">(1.6%)</td>
+<td align="left" rowspan="1" colspan="1">(1.6%)</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt102"><label/><p>Percentages reflect the proportion of individuals assigned to a genetic ancestry cluster for given administratively-assigned race.</p></fn></table-wrap-foot></table-wrap></sec></sec><sec id="s3">
+<title>Results</title>
+<p>The distribution of administratively-assigned race across the sample used in this study, within BioVU, and within the entire synthetic derivative (SD)—as well as population-level counts for Davidson County Tennessee—are shown in <xref ref-type="table" rid="pone-0099161-t002">Table 2</xref>. Plotting PC 1 versus PC 2 (<xref ref-type="fig" rid="pone-0099161-g001">Figure 1A</xref>) shows differentiation between Caucasian, African American, and Asian/Pacific assigned individuals, with Hispanic, Native American, and Indian assigned individuals falling between the three foci. Results from the model-based clustering are shown in <xref ref-type="fig" rid="pone-0099161-g001">Figure 1B</xref>. Clusters for European-descent, African-descent, and East Asian-descent clusters are distinct. The South Asian-descent and Hispanic-descent clusters are less defined, due to their varying degrees of admixture. Our ability to make inferences about the accuracy of Native American and Indian codes is limited due to ambiguous use of these codes in clinical practice, limited availability of Native American HapMap reference populations, and small sample size within our dataset. Kappa (Κ) measures of agreement between third-party race assignment and estimated genetic ancestry are shown in <xref ref-type="table" rid="pone-0099161-t003">Table 3</xref> (more detailed information on Kappa statistics shown in <xref ref-type="supplementary-material" rid="pone.0099161.s003">Table S3</xref>). Over the entire dataset, agreement was reasonably high (Κ = 0.872), largely driven by European-descent (Κ = 0.906) and African-descent (Κ = 0.964) individuals. Less agreement was seen for East Asian-descent (Κ = 0.825) and Hispanic-descent (Κ = 0.718) individuals. We also assessed agreement between individuals with Native American (N) and Indian (I) racial codes and South Asian ancestry estimated by the Gujarati Indian reference samples (GIH) to examine the hypothesis that these codes predominantly represent South-Asian ancestry. This agreement (Κ = 0.284) was expectedly low, indicating that while they may be misappropriated in the clinical environment, it is not strongly in favor of South-Asian ancestry. Notably, when stratifying by sex, we observe similar Kappa agreement values for European and African-descent genetic ancestry groups. In other groups, females tend to have slightly higher Kappa values than males, with the largest difference in agreement by sex observed for individuals in the South Asian-descent genetic cluster. In addition to using Kappa statistics to measure agreement, agreement can be visualized as the percent of individuals with a given administratively-assigned race assigned to each of the five genetic ancestry clustering groups (<xref ref-type="table" rid="pone-0099161-t002">Table 2</xref>). We also examined the genetic ancestry of individuals with race status “unknown” to determine if some groups were more likely to be assigned this status than others (<xref ref-type="supplementary-material" rid="pone.0099161.s004">Table S4</xref>). The majority (88.2%) of samples with “unknown” race are genetically of European-descent, consistent with the overall representation of European-descent individuals in BioVU. African-descent individuals constitute 6.5% of the “unknown” individuals, while East Asian-descent, South Asian-descent, and Hispanic-descent individuals, each, constitute about 2%.</p>
+<fig id="pone-0099161-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0099161.g001</object-id><label>Figure 1</label><caption>
+<title>Comparison of administratively-assigned race and genetic ancestry, based on principal component analysis.</title>
+<p>A) All pairwise combinations of principle components (PCs) 1 through 3, by administratively assigned race. B) All pairwise combinations of PCs 1 through 3, by cluster assignments corresponding to genetic ancestry. Comparison of Frames 1A and1B indicate individuals with administratively assigned race different than their genetically defined ancestry cluster. For example, the East Asian-descent cluster (1B; blue) contains individuals with administratively-assigned race (1A) of Caucasian (green), Hispanic (purple), and Other (orange).</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0099161.g001" position="float" xlink:type="simple"/></fig><table-wrap id="pone-0099161-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0099161.t003</object-id><label>Table 3</label><caption>
+<title>Agreement between genetic and assigned ancestry.</title>
+</caption><alternatives><graphic id="pone-0099161-t003-3" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0099161.t003" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Genetic Ancestry</td>
+<td align="left" rowspan="1" colspan="1">Overall</td>
+<td align="left" rowspan="1" colspan="1">Male</td>
+<td align="left" rowspan="1" colspan="1">Female</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Overall</td>
+<td align="left" rowspan="1" colspan="1">0.872 (0.009)</td>
+<td align="left" rowspan="1" colspan="1">0.862 (0.015)</td>
+<td align="left" rowspan="1" colspan="1">0.876 (0.012)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">European-descent</td>
+<td align="left" rowspan="1" colspan="1">0.906 (0.013)</td>
+<td align="left" rowspan="1" colspan="1">0.906 (0.020)</td>
+<td align="left" rowspan="1" colspan="1">0.904 (0.017)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">African-descent</td>
+<td align="left" rowspan="1" colspan="1">0.964 (0.013)</td>
+<td align="left" rowspan="1" colspan="1">0.970 (0.020)</td>
+<td align="left" rowspan="1" colspan="1">0.960 (0.017)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">East Asian-descent</td>
+<td align="left" rowspan="1" colspan="1">0.825 (0.013)</td>
+<td align="left" rowspan="1" colspan="1">0.800 (0.020)</td>
+<td align="left" rowspan="1" colspan="1">0.836 (0.017)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Hispanic-descent</td>
+<td align="left" rowspan="1" colspan="1">0.718 (0.013)</td>
+<td align="left" rowspan="1" colspan="1">0.683 (0.020)</td>
+<td align="left" rowspan="1" colspan="1">0.738 (0.017)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">South Asian-descent</td>
+<td align="left" rowspan="1" colspan="1">0.284 (0.012)</td>
+<td align="left" rowspan="1" colspan="1">0.237 (0.018)</td>
+<td align="left" rowspan="1" colspan="1">0.318 (0.016)</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt103"><label/><p>Notation: Cohen's Kappa coefficient (standard error).</p></fn><fn id="nt104"><label/><p>South Asian-descent includes individuals with Native American and Indian race codes in BioVU.</p></fn><fn id="nt105"><label/><p>Samples with administratively-assigned race of “Unknown” were excluded from this analysis.</p></fn></table-wrap-foot></table-wrap></sec><sec id="s4">
+<title>Discussion</title>
+<p>Genetic and epidemiological studies routinely use self-reported race or genetic ancestry to adjust for confounding factors and/or to tailor genetic effects to specific population subgroups. Global genetic ancestry is often used to correct for population stratification in genetic analyses, because it roughly reflects differences in allele frequencies between continental populations. The social construct of race is often used to capture other demographic factors, such as access to care, dietary and environmental exposures, and socioeconomic status. Self-reported race has been shown to be highly correlated to genetic ancestry and is often used as a surrogate for continental ancestry. In many clinical datasets, self-reported ancestry is not available and various administrative procedures are used to assign race status. While it is unknown to what degree administratively-assigned race captures the various social and cultural aspects of an individual, in this work we show that it has only moderate agreement with genetic ancestry for certain populations. We observed strong agreement between administrative race assignment and genetically determined ancestry for European-descent and African-descent individuals; there was less agreement between assigned race and genetic ancestry for East Asian-descent, South Asian-descent, and Hispanic-descent individuals. Given this fact, investigators should use caution when using administratively-assigned race as a proxy for genetic ancestry, and expect some misappropriation of racial categories by third party assignment.</p>
+<p>Interestingly, East Asian-descent, South Asian-descent, and Hispanic-descent individuals all have slightly different agreement statistics by sex, with females tending to have slightly higher agreement between administrative assignment and genetic ancestry. Previous studies have reported subjective misclassification of Hispanic individuals by sex, causing non-Hispanic females to be classified as Hispanic because of adopted spousal surnames <xref ref-type="bibr" rid="pone.0099161-Swallen1">[23]</xref>. In our data the agreement is biased slightly in the opposite direction, with females having more accurate administratively-assigned race, based on genetic ancestry estimates. While somewhat unexpected, this could be because third-party assigners are more comfortable asking females, rather than males, questions about their race and ethnicity <xref ref-type="bibr" rid="pone.0099161-HasnainWynia1">[24]</xref>.</p>
+<p>Approximately 18% of the individuals in our dataset had an administratively-assigned race specified as “unknown” (<xref ref-type="table" rid="pone-0099161-t001">Table 1</xref>). The distribution of genetic ancestries within these samples was significantly different from the larger dataset, with more European-descent individuals than expected (results not shown). As a result, “unknown” race in BioVU should not be used as an indicator of minority population status—it is far more likely that individuals with “unknown” race are of European-descent.</p>
+<p>In conclusion, administratively assigned race is an accurate predictor of genetic ancestry for the ascertainment of European-descent and African-descent individuals, but is less accurate for other diverse populations. Investigators accessing Asian-descent or Hispanic-descent populations should expect a moderate number of samples to have administrative race labels inconsistent with genetic ancestry. When race is an important factor in a study, we recommend, when possible, that a low-cost genotyping array, such as a fixed content Illumina BeadChip (i.e. Illumina HumanCore array) be used to genotype ancestry-informative markers (AIMs) to determine genetic ethnicity.</p>
+</sec><sec id="s5">
+<title>Supporting Information</title>
+<supplementary-material id="pone.0099161.s001" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0099161.s001" position="float" xlink:type="simple"><label>Table S1</label><caption>
+<p><bold>Race/ethnicity terminology usage.</bold></p>
+<p>(DOC)</p>
+</caption></supplementary-material><supplementary-material id="pone.0099161.s002" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0099161.s002" position="float" xlink:type="simple"><label>Table S2</label><caption>
+<p><bold>Percentages of each administratively-assigned race assigned to each genetic ancestry based on PCA clustering group.</bold></p>
+<p>(DOC)</p>
+</caption></supplementary-material><supplementary-material id="pone.0099161.s003" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0099161.s003" position="float" xlink:type="simple"><label>Table S3</label><caption>
+<p><bold>Kappa agreement statistics, including percent agreement and expected agreement, by genetic ancestry, as determined by clustering.</bold></p>
+<p>(DOC)</p>
+</caption></supplementary-material><supplementary-material id="pone.0099161.s004" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0099161.s004" position="float" xlink:type="simple"><label>Table S4</label><caption>
+<p><bold>Genetic ancestry for samples with administratively-assigned race listed as 'unknown'</bold>.</p>
+<p>(DOC)</p>
+</caption></supplementary-material></sec></body>
+<back><ref-list>
+<title>References</title>
+<ref id="pone.0099161-Ritchie1"><label>1</label>
+<mixed-citation publication-type="other" xlink:type="simple">Ritchie MD, Denny JC, Crawford DC, Ramirez AH, Weiner JB, <etal>et al</etal>.. (2010) Robust replication of genotype-phenotype associations across multiple diseases in an electronic medical record. Am J Hum Genet <volume>86</volume>: : 560–572. Available: <ext-link ext-link-type="uri" xlink:href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2850440&amp;tool=pmcentrez&amp;rendertype=abstract" xlink:type="simple">http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2850440&amp;tool=pmcentrez&amp;rendertype=abstract</ext-link>. Accessed 2013 October 30.</mixed-citation>
+</ref>
+<ref id="pone.0099161-Denny1"><label>2</label>
+<mixed-citation publication-type="other" xlink:type="simple">Denny JC, Ritchie MD, Basford MA, Pulley JM, Bastarache L, <etal>et al</etal>.. (2010) PheWAS: demonstrating the feasibility of a phenome-wide scan to discover gene-disease associations. Bioinformatics <volume>26</volume>: : 1205–1210. Available: <ext-link ext-link-type="uri" xlink:href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2859132&amp;tool=pmcentrez&amp;rendertype=abstract" xlink:type="simple">http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2859132&amp;tool=pmcentrez&amp;rendertype=abstract</ext-link>. Accessed 2013 June 7.</mixed-citation>
+</ref>
+<ref id="pone.0099161-Pendergrass1"><label>3</label>
+<mixed-citation publication-type="other" xlink:type="simple">Pendergrass SA, Brown-Gentry K, Dudek SM, Torstenson ES, Ambite JL, <etal>et al</etal>.. (2011) The use of phenome-wide association studies (PheWAS) for exploration of novel genotype-phenotype relationships and pleiotropy discovery. Genet Epidemiol 35: 410–422. Available: <ext-link ext-link-type="uri" xlink:href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3116446&amp;tool=pmcentrez&amp;rendertype=abstract" xlink:type="simple">http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3116446&amp;tool=pmcentrez&amp;rendertype=abstract</ext-link>. Accessed 2013 May 26.</mixed-citation>
+</ref>
+<ref id="pone.0099161-Denny2"><label>4</label>
+<mixed-citation publication-type="other" xlink:type="simple">Denny JC, Crawford DC, Ritchie MD, Bielinski SJ, Basford MA, <etal>et al</etal>.. (2011) Variants near FOXE1 are associated with hypothyroidism and other thyroid conditions: using electronic medical records for genome- and phenome-wide studies. Am J Hum Genet <volume>89</volume>: : 529–542. Available: <ext-link ext-link-type="uri" xlink:href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3188836&amp;tool=pmcentrez&amp;rendertype=abstract" xlink:type="simple">http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3188836&amp;tool=pmcentrez&amp;rendertype=abstract</ext-link>. Accessed 2013 October 30.</mixed-citation>
+</ref>
+<ref id="pone.0099161-Roden1"><label>5</label>
+<mixed-citation publication-type="other" xlink:type="simple">Roden DM, Xu H, Denny JC, Wilke RA (2012) Electronic medical records as a tool in clinical pharmacology: opportunities and challenges. Clin Pharmacol Ther <volume>91</volume>: : 1083–1086. Available: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/22534870" xlink:type="simple">http://www.ncbi.nlm.nih.gov/pubmed/22534870</ext-link>. Accessed 2013 October 30.</mixed-citation>
+</ref>
+<ref id="pone.0099161-Wilke1"><label>6</label>
+<mixed-citation publication-type="other" xlink:type="simple">Wilke RA, Xu H, Denny JC, Roden DM, Krauss RM, <etal>et al</etal>.. (2011) The emerging role of electronic medical records in pharmacogenomics. Clin Pharmacol Ther <volume>89</volume>: : 379–386. Available: <ext-link ext-link-type="uri" xlink:href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3204342&amp;tool=pmcentrez&amp;rendertype=abstract" xlink:type="simple">http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3204342&amp;tool=pmcentrez&amp;rendertype=abstract</ext-link>. Accessed 2013 October 30.</mixed-citation>
+</ref>
+<ref id="pone.0099161-Roden2"><label>7</label>
+<mixed-citation publication-type="other" xlink:type="simple">Roden DM, Pulley JM, Basford MA, Bernard GR, Clayton EW, <etal>et al</etal>.. (2008) Development of a large-scale de-identified DNA biobank to enable personalized medicine. Clin Pharmacol Ther <volume>84</volume>: : 362–369. Available: <ext-link ext-link-type="uri" xlink:href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3763939&amp;tool=pmcentrez&amp;rendertype=abstract" xlink:type="simple">http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3763939&amp;tool=pmcentrez&amp;rendertype=abstract</ext-link>. Accessed 30 October 2013.</mixed-citation>
+</ref>
+<ref id="pone.0099161-Reich1"><label>8</label>
+<mixed-citation publication-type="other" xlink:type="simple">Reich D, Price AL, Patterson N (2008) Principal component analysis of genetic data. Nat Genet <volume>40</volume>: : 491–492. Available: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/ng0508-491" xlink:type="simple">http://dx.doi.org/10.1038/ng0508-491</ext-link> Accessed 2013 October 30.</mixed-citation>
+</ref>
+<ref id="pone.0099161-Price1"><label>9</label>
+<mixed-citation publication-type="other" xlink:type="simple">Price AL, Patterson NJ, Plenge RM, Weinblatt ME, Shadick NA, <etal>et al</etal>.. (2006) Principal components analysis corrects for stratification in genome-wide association studies. Nat Genet <volume>38</volume>: : 904–909. Available: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/16862161" xlink:type="simple">http://www.ncbi.nlm.nih.gov/pubmed/16862161</ext-link>. Accessed 2013 October 30.</mixed-citation>
+</ref>
+<ref id="pone.0099161-Pritchard1"><label>10</label>
+<mixed-citation publication-type="other" xlink:type="simple">Pritchard JK, Stephens M, Donnelly P (2000) Inference of population structure using multilocus genotype data. Genetics <volume>155</volume>: : 945–959. Available: <ext-link ext-link-type="uri" xlink:href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=1461096&amp;tool=pmcentrez&amp;rendertype=abstract" xlink:type="simple">http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=1461096&amp;tool=pmcentrez&amp;rendertype=abstract</ext-link>. Accessed 2013 October 30.</mixed-citation>
+</ref>
+<ref id="pone.0099161-Gravlee1"><label>11</label>
+<mixed-citation publication-type="other" xlink:type="simple">Gravlee CC, Non AL, Mulligan CJ (2009) Genetic ancestry, social classification, and racial inequalities in blood pressure in Southeastern Puerto Rico. PLoS One <volume>4</volume>: : e6821. Available: <ext-link ext-link-type="uri" xlink:href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2731885&amp;tool=pmcentrez&amp;rendertype=abstract" xlink:type="simple">http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2731885&amp;tool=pmcentrez&amp;rendertype=abstract</ext-link>. Accessed 2013 October 30.</mixed-citation>
+</ref>
+<ref id="pone.0099161-Bamshad1"><label>12</label>
+<mixed-citation publication-type="other" xlink:type="simple">Bamshad M, Wooding S, Salisbury BA, Stephens JC (2004) Deconstructing the relationship between genetics and race. Nat Rev Genet <volume>5</volume>: : 598–609. Available: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nrg1401" xlink:type="simple">http://dx.doi.org/10.1038/nrg1401</ext-link> Accessed 2014 March 26.</mixed-citation>
+</ref>
+<ref id="pone.0099161-Yaeger1"><label>13</label>
+<mixed-citation publication-type="other" xlink:type="simple">Yaeger R, Avila-Bront A, Abdul K, Nolan PC, Grann VR, <etal>et al</etal>.. (2008) Comparing genetic ancestry and self-described race in african americans born in the United States and in Africa. Cancer Epidemiol Biomarkers Prev <volume>17</volume>: : 1329–1338. Available: <ext-link ext-link-type="uri" xlink:href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2507870&amp;tool=pmcentrez&amp;rendertype=abstract" xlink:type="simple">http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2507870&amp;tool=pmcentrez&amp;rendertype=abstract</ext-link>. Accessed 2014 April 2.</mixed-citation>
+</ref>
+<ref id="pone.0099161-BarnholtzSloan1"><label>14</label>
+<mixed-citation publication-type="other" xlink:type="simple">Barnholtz-Sloan JS, Chakraborty R, Sellers TA, Schwartz AG (2005) Examining population stratification via individual ancestry estimates versus self-reported race. Cancer Epidemiol Biomarkers Prev <volume>14</volume>: : 1545–1551. Available: <ext-link ext-link-type="uri" xlink:href="http://cebp.aacrjournals.org/content/14/6/1545.long" xlink:type="simple">http://cebp.aacrjournals.org/content/14/6/1545.long</ext-link>. Accessed 2014 April 2.</mixed-citation>
+</ref>
+<ref id="pone.0099161-Kressin1"><label>15</label>
+<mixed-citation publication-type="other" xlink:type="simple">Kressin NR, Chang B-H, Hendricks A, Kazis LE (2003) Agreement between administrative data and patients' self-reports of race/ethnicity. Am J Public Health <volume>93</volume>: : 1734–1739. Available: <ext-link ext-link-type="uri" xlink:href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=1448042&amp;tool=pmcentrez&amp;rendertype=abstract" xlink:type="simple">http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=1448042&amp;tool=pmcentrez&amp;rendertype=abstract</ext-link>. Accessed 2013 October 30.</mixed-citation>
+</ref>
+<ref id="pone.0099161-Moscou1"><label>16</label>
+<mixed-citation publication-type="other" xlink:type="simple">Moscou S, Anderson MR, Kaplan JB, Valencia L (2003) Validity of racial/ethnic classifications in medical records data: an exploratory study. Am J Public Health <volume>93</volume>: : 1084–1086. Available: <ext-link ext-link-type="uri" xlink:href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=1447913&amp;tool=pmcentrez&amp;rendertype=abstract" xlink:type="simple">http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=1447913&amp;tool=pmcentrez&amp;rendertype=abstract</ext-link>. Accessed 2013 October 30.</mixed-citation>
+</ref>
+<ref id="pone.0099161-Dumitrescu1"><label>17</label>
+<mixed-citation publication-type="other" xlink:type="simple">Dumitrescu L, Ritchie MD, Brown-Gentry K, Pulley JM, Basford M, <etal>et al</etal>.. (2010) Assessing the accuracy of observer-reported ancestry in a biorepository linked to electronic medical records. Genet Med <volume>12</volume>: : 648–650. Available: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/GIM.0b013e3181efe2df" xlink:type="simple">http://dx.doi.org/10.1097/GIM.0b013e3181efe2df</ext-link> Accessed 2014 March 27.</mixed-citation>
+</ref>
+<ref id="pone.0099161-Gomez1"><label>18</label>
+<mixed-citation publication-type="other" xlink:type="simple">Gomez SL, Kelsey JL, Glaser SL, Lee MM, Sidney S (2005) Inconsistencies between self-reported ethnicity and ethnicity recorded in a health maintenance organization. Ann Epidemiol <volume>15</volume>: : 71–79. Available: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/15571996" xlink:type="simple">http://www.ncbi.nlm.nih.gov/pubmed/15571996</ext-link>. Accessed 2013 October 30.</mixed-citation>
+</ref>
+<ref id="pone.0099161-Wright1"><label>19</label>
+<mixed-citation publication-type="other" xlink:type="simple">Wright A, Sittig DF, Ash JS, Sharma S, Pang JE, <etal>et al</etal>.. (n.d.) Clinical decision support capabilities of commercially-available clinical information systems. J Am Med Inform Assoc <volume>16</volume>: : 637–644. Available: <ext-link ext-link-type="uri" xlink:href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2744714&amp;tool=pmcentrez&amp;rendertype=abstract" xlink:type="simple">http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2744714&amp;tool=pmcentrez&amp;rendertype=abstract</ext-link>. Accessed 2013 October 30.</mixed-citation>
+</ref>
+<ref id="pone.0099161-Terrell1"><label>20</label>
+<mixed-citation publication-type="other" xlink:type="simple">Terrell KM, Perkins AJ, Dexter PR, Hui SL, Callahan CM, <etal>et al</etal>.. (2009) Computerized decision support to reduce potentially inappropriate prescribing to older emergency department patients: a randomized, controlled trial. J Am Geriatr Soc <volume>57</volume>: : 1388–1394. Available: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19549022" xlink:type="simple">http://www.ncbi.nlm.nih.gov/pubmed/19549022</ext-link>. Accessed 2013 October 30.</mixed-citation>
+</ref>
+<ref id="pone.0099161-Fraley1"><label>21</label>
+<mixed-citation publication-type="other" xlink:type="simple">Fraley C, Raftery AE (2006) MCLUST Version 3: An R Package for Normal Mixture Modeling and Model-Based Clustering. Available: <ext-link ext-link-type="uri" xlink:href="http://oai.dtic.mil/oai/oai?verb=getRecord&amp;metadataPrefix=html&amp;identifier=ADA456562" xlink:type="simple">http://oai.dtic.mil/oai/oai?verb=getRecord&amp;metadataPrefix=html&amp;identifier=ADA456562</ext-link>. Accessed 2013 October 31.</mixed-citation>
+</ref>
+<ref id="pone.0099161-Wickens1"><label>22</label>
+<mixed-citation publication-type="other" xlink:type="simple">Wickens TD (1989) Multiway contingency table analysis for the social sciences. Psychology Press.</mixed-citation>
+</ref>
+<ref id="pone.0099161-Swallen1"><label>23</label>
+<mixed-citation publication-type="other" xlink:type="simple">Swallen KC, West DW, Stewart SL, Glaser SL, Horn-Ross PL (1997) Predictors of misclassification of Hispanic ethnicity in a population-based cancer registry. Ann Epidemiol <volume>7</volume>: : 200–206. Available: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/9141643" xlink:type="simple">http://www.ncbi.nlm.nih.gov/pubmed/9141643</ext-link>. Accessed 2013 October 31.</mixed-citation>
+</ref>
+<ref id="pone.0099161-HasnainWynia1"><label>24</label>
+<mixed-citation publication-type="other" xlink:type="simple">Hasnain-Wynia R, Baker DW (2006) Obtaining data on patient race, ethnicity, and primary language in health care organizations: current challenges and proposed solutions. Health Serv Res <volume>41</volume>: : 1501–1518. Available: <ext-link ext-link-type="uri" xlink:href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=1797091&amp;tool=pmcentrez&amp;rendertype=abstract" xlink:type="simple">http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=1797091&amp;tool=pmcentrez&amp;rendertype=abstract</ext-link>. Accessed 2014 April 15.</mixed-citation>
+</ref>
+<ref id="pone.0099161-US1"><label>25</label>
+<mixed-citation publication-type="other" xlink:type="simple">U.S. Census Bureau (2010) Profile of general population and housing characteristics: 2010 demographic profile data for Davidson County, Tennessee. Available: <ext-link ext-link-type="uri" xlink:href="http://factfinder2.census.gov/faces/tableservices/jsf/pages/productview.xhtml?src=bkmk" xlink:type="simple">http://factfinder2.census.gov/faces/tableservices/jsf/pages/productview.xhtml?src=bkmk</ext-link>.</mixed-citation>
+</ref>
+</ref-list></back>
+</article>

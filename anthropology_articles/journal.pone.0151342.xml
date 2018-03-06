@@ -1,0 +1,1332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article article-type="research-article" dtd-version="3.0" xml:lang="en" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1371/journal.pone.0151342</article-id>
+<article-id pub-id-type="publisher-id">PONE-D-15-29674</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Economics</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Sociology</subject><subj-group><subject>Social research</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Computer and information sciences</subject><subj-group><subject>Network analysis</subject><subj-group><subject>Centrality</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Health care</subject><subj-group><subject>Health education and awareness</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Economics</subject><subj-group><subject>Finance</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Health care</subject><subj-group><subject>Health care policy</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Cultural anthropology</subject><subj-group><subject>Religion</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Sociology</subject><subj-group><subject>Religion</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Engineering and technology</subject><subj-group><subject>Equipment</subject><subj-group><subject>Weapons</subject><subj-group><subject>Landmines</subject></subj-group></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Mining Social Entrepreneurship Strategies Using Topic Modeling</article-title>
+<alt-title alt-title-type="running-head">Social Entrepreneurship Using Topic Modeling</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes" equal-contrib="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Chandra</surname>
+<given-names>Yanto</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+<contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Jiang</surname>
+<given-names>Li Crystal</given-names>
+</name>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+</contrib>
+<contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Wang</surname>
+<given-names>Cheng-Jun</given-names>
+</name>
+<xref ref-type="aff" rid="aff004"><sup>4</sup></xref>
+<xref ref-type="aff" rid="aff005"><sup>5</sup></xref>
+</contrib>
+</contrib-group>
+<aff id="aff001"><label>1</label> <addr-line>Department of Public Policy, City University of Hong Kong, Hong Kong, China</addr-line></aff>
+<aff id="aff002"><label>2</label> <addr-line>Department of Management, City University of Hong Kong, Hong Kong, China</addr-line></aff>
+<aff id="aff003"><label>3</label> <addr-line>Department of Media and Communications, City University of Hong Kong, Hong Kong, China</addr-line></aff>
+<aff id="aff004"><label>4</label> <addr-line>Computational Communication Collaboratory, School of Journalism and Communication, Nanjing University, Nanjing, China</addr-line></aff>
+<aff id="aff005"><label>5</label> <addr-line>Web Mining Lab, Department of Media and Communication, City University of Hong Kong, Hong Kong, China</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>van Rijnsoever</surname>
+<given-names>Frank</given-names>
+</name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Utrecht University, NETHERLANDS</addr-line></aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<fn fn-type="con" id="contrib001">
+<p>Conceived and designed the experiments: YC LCJ CJW. Analyzed the data: CJW YC LCJ. Contributed reagents/materials/analysis tools: YC LCJ CJW. Wrote the paper: YC.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">ychandra@cityu.edu.hk</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<day>21</day>
+<month>3</month>
+<year>2016</year>
+</pub-date>
+<pub-date pub-type="collection">
+<year>2016</year>
+</pub-date>
+<volume>11</volume>
+<issue>3</issue>
+<elocation-id>e0151342</elocation-id>
+<history>
+<date date-type="received">
+<day>14</day>
+<month>7</month>
+<year>2015</year>
+</date>
+<date date-type="accepted">
+<day>16</day>
+<month>2</month>
+<year>2016</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2016</copyright-year>
+<copyright-holder>Chandra et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0151342"/>
+<abstract>
+<p>Despite the burgeoning research on social entrepreneurship (SE), SE strategies remain poorly understood. Drawing on extant research on the social activism and social change, empowerment and SE models, we explore, classify and validate the strategies used by 2,334 social entrepreneurs affiliated with the world’s largest SE support organization, Ashoka. The results of the topic modeling of the social entrepreneurs’ strategy profiles reveal that they employed a total of 39 change-making strategies that vary across <italic>resources (material versus symbolic strategies)</italic>, <italic>specificity (general versus specific strategies)</italic>, and <italic>mode of participation (mass versus elite participation strategies)</italic>; they also vary across fields of practice and time. Finally, we identify six meta-SE strategies―a reduction from the 39 strategies―and identify <italic>four new meta-SE strategies</italic> (i.e., <italic>system reform</italic>, <italic>physical capital development</italic>, <italic>evidence-based practices</italic>, <italic>and prototyping)</italic> that have been overlooked in prior SE research. Our findings extend and deepen the research into SE strategies and offer a comprehensive model of SE strategies that advances theory, practice and policy making.</p>
+</abstract>
+<funding-group>
+<funding-statement>This work was supported by City University of Hong Kong DRSS 019 &amp; 020/2013 to Yanto Chandra and City University of Hong Kong Internal Grant A/C 9610292 to Li Crystal Jiang. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="6"/>
+<table-count count="5"/>
+<page-count count="28"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability">
+<meta-name>Data Availability</meta-name>
+<meta-value>All data are available in the Dataverse: <ext-link ext-link-type="uri" xlink:href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ATFL9A" xlink:type="simple">https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ATFL9A</ext-link>. The DOI number for the dataset is: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.7910/DVN/ATFL9A" xlink:type="simple">http://dx.doi.org/10.7910/DVN/ATFL9A</ext-link>. The R codes are made available in Github, as follows: <ext-link ext-link-type="uri" xlink:href="https://github.com/chengjun/datajournalism/tree/gh-pages/ashoka" xlink:type="simple">https://github.com/chengjun/datajournalism/tree/gh-pages/ashoka</ext-link>.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec001" sec-type="intro">
+<title>Introduction</title>
+<p>The United Nations Millennium Development Goals (MDGs)—which range from halving extreme poverty and halting the spread of HIV/AIDS to providing universal primary education—have galvanized efforts from leaders and civil society organizations around the world to search for and develop better social intervention strategies. Although enormous progress has been made to date, unfinished tasks remain concerning the fulfillment of the Millennium Development Goals and the establishment of greater momentum to achieve the post-2015 agenda of a world of prosperity, equity, freedom, dignity and peace [<xref ref-type="bibr" rid="pone.0151342.ref001">1</xref>]. Among the most influential actors who have and will continue to play key roles in the attainment of the goals are social entrepreneurs: <italic>entrepreneurial leaders who use the tools and logics commonly used by business entrepreneurs to achieve social goals</italic>. Muhammad Yunus and his Grameen Bank’s collateral-free loans that alleviate poverty and the founder of APOPO (an acronym for Anti-Persoonsmijnen Ontmijnende Product Ontwikkeling: "Anti-Personnel Landmines Detection Product Development" in English) and his Hero Rats that detect landmines and tuberculosis are just two examples of a new movement that is engendering a sea change in the <italic>way</italic> society’s toughest problems are solved, people and institutions are shaped, and new goods and services are delivered to the public.</p>
+<p>Despite the burgeoning literature on social entrepreneurship (SE) since the 1980s, very little research has examined the ways in which social entrepreneurs, as a global community-of-practice, create value to benefit the broader society. Importantly, there is a theoretical and empirical gap between theories on social entrepreneurship and what social entrepreneurs actually do, i.e., their <italic>strategies</italic> to solve society’s tough problems [<xref ref-type="bibr" rid="pone.0151342.ref002">2</xref>–<xref ref-type="bibr" rid="pone.0151342.ref005">5</xref>]. Our extensive review of the SE literature reveals that SE researchers have predominantly sought to explain social value creation from three perspectives: <italic>organizational</italic> [<xref ref-type="bibr" rid="pone.0151342.ref006">6</xref>–<xref ref-type="bibr" rid="pone.0151342.ref009">9</xref>], <italic>motivational</italic> [<xref ref-type="bibr" rid="pone.0151342.ref010">10</xref>,<xref ref-type="bibr" rid="pone.0151342.ref011">11</xref>], and <italic>political</italic> [<xref ref-type="bibr" rid="pone.0151342.ref012">12</xref>]. These studies complement the larger body of literature that attempts to define and achieve a <italic>conceptual</italic> breakthrough in the opaque field of SE [<xref ref-type="bibr" rid="pone.0151342.ref002">2</xref>,<xref ref-type="bibr" rid="pone.0151342.ref004">4</xref>,<xref ref-type="bibr" rid="pone.0151342.ref013">13</xref>,<xref ref-type="bibr" rid="pone.0151342.ref014">14</xref>]. While such research has significantly advanced our understanding of SE, it has largely overlooked the diverse approaches and strategies that social entrepreneurs have employed to achieve a social purpose. As Santos [<xref ref-type="bibr" rid="pone.0151342.ref003">3</xref>] notes, “the central unit of analysis for social entrepreneurs may be <italic>the solution</italic> and its underlying business model, <italic>not the organization</italic>” (p. 346). He notes that much can be gained by understanding that various models and strategies have been developed when the main driver is value creation. The primary argument here is that <italic>solutions and strategies</italic> are the most critical but least understood elements of SE. Although business strategy—the means to achieve outcomes—is a mature field in business management [<xref ref-type="bibr" rid="pone.0151342.ref015">15</xref>–<xref ref-type="bibr" rid="pone.0151342.ref017">17</xref>], we know very little about strategy in the context of SE, particularly what <italic>social entrepreneurship strategy</italic> means to self-identified social entrepreneurs. Moreover, prior research tends to be confined to small <italic>n</italic> studies and conceptual papers [<xref ref-type="bibr" rid="pone.0151342.ref009">9</xref>,<xref ref-type="bibr" rid="pone.0151342.ref018">18</xref>–<xref ref-type="bibr" rid="pone.0151342.ref021">21</xref>], which means that prior studies have focused on a small, static, and potentially restricted set of observations of reality. Although a few scholars have begun to study the phenomenon using larger datasets [<xref ref-type="bibr" rid="pone.0151342.ref022">22</xref>], these studies are quite limited, and little is yet known about what strategies social entrepreneurs employ to solve social problems.</p>
+<p>A clear understanding of the nature and types of strategies employed by social entrepreneurs is critical for three primary reasons. First, it can help us model the diverse and widely used strategies of social entrepreneurs worldwide and to understand their dynamics over time. This work can spur research that tests hypotheses and assumptions to further advance SE theories and models. Second, research on SE strategies can offer useful insights for SE practitioners, social entrepreneurs and policy makers by identifying gaps and best practices. Finally, given the large range of strategies being studied, all of which are in published textual form, we can apply topic modeling―a new method from computer science and machine learning―to SE strategies, which can offer methodological advancements in SE, management and organizational research. This process is a methodological breakthrough in the SE field and in social science more broadly because it has been transferred from computer science and other scientific fields. To this end, we investigate two questions in this article: <italic>What are the major social entrepreneurship strategies employed today</italic>? <italic>How have these strategies changed over time</italic>?</p>
+<p>This article contributes to SE strategy research in several ways. First, it synthesizes the social activism and change, empowerment, and SE streams of literature and identifies three key dimensions (resources: <italic>material versus symbolic strategies;</italic> specificity: <italic>general versus specific strategies;</italic> and mode of participation: <italic>mass versus elite participation strategies</italic>) as the foundation for understanding SE strategies. Second, using topic modeling, this article models and validates 39 distinct SE strategies that social entrepreneurs have used to pursue sustainable solutions to healthcare, environmental, social, political and economic problems along three key dimensions derived from the literature: <italic>the nature of the resources used</italic>, <italic>the specificity of the strategy</italic>, <italic>and the mode of participation</italic>. Third, using human coders, we reduce the 39 distinct SE strategies into six meta-strategies. In doing so, we offer <italic>four new meta-SE strategies</italic> that have not been identified in prior research. Finally, the study offers methodological innovation by showcasing the use of topic modeling to unpack and validate the diversity and dynamics of SE strategies associated with the practices of 2,334 social entrepreneurs supported by Ashoka, a nonprofit organization that selects and offers financial and technical support to the most impactful social entrepreneurs around the globe. In essence, this study opens up a new line of inquiry on SE strategies.</p>
+</sec>
+<sec id="sec002" sec-type="materials|methods">
+<title>Materials and Methods</title>
+<sec id="sec003">
+<title>Ethics statement</title>
+<p>This research was approved by the Human Subjects Ethics Sub-Committee of the Ethical Review Board of the City University of Hong Kong on June 16, 2015 (Reference Number: 2-2-201506_03). This Committee ensures that the research contained herein poses no threats or risks to human subjects. The Committee agrees that the data were analyzed anonymously and reported anonymously because this research focuses on aggregate patterns of strategies used by social entrepreneurs and not those used by specific social entrepreneurs. The data are available in the Dataverse: <ext-link ext-link-type="uri" xlink:href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ATFL9A" xlink:type="simple">https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ATFL9A</ext-link>. The DOI number for the dataset is <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.7910/DVN/ATFL9A" xlink:type="simple">http://dx.doi.org/10.7910/DVN/ATFL9A</ext-link>. The R codes for the study are available at <ext-link ext-link-type="uri" xlink:href="https://github.com/chengjun/datajournalism/tree/gh-pages/ashoka" xlink:type="simple">https://github.com/chengjun/datajournalism/tree/gh-pages/ashoka</ext-link>. The individuals described in this manuscript have given written informed consent (as outlined in the PLOS consent form) to publish their case details. Any questions or queries regarding the data and R codes can be directed to the corresponding author.</p>
+</sec>
+<sec id="sec004">
+<title>Analytical approach</title>
+<p>Before we conducted the data mining, we reviewed three streams of literature or models on how social leaders solve social problems: the social activism and change model [<xref ref-type="bibr" rid="pone.0151342.ref023">23</xref>,<xref ref-type="bibr" rid="pone.0151342.ref024">24</xref>] the empowerment model [<xref ref-type="bibr" rid="pone.0151342.ref003">3</xref>,<xref ref-type="bibr" rid="pone.0151342.ref025">25</xref>], and the resource- and capital-model of SE [<xref ref-type="bibr" rid="pone.0151342.ref022">22</xref>,<xref ref-type="bibr" rid="pone.0151342.ref026">26</xref>]. We used these models as an <italic>initial</italic> framework to synthesize the diverse SE strategies used over the past three decades. They encompass three dimensions: 1) the nature of the resources used; 2) the specificity of the strategies employed; and 3) empowerment practices. The nature of the resources used refers two types of resources―tangible/material (e.g., monetary assistance to start a micro business) and intangible/symbolic (e.g., creativity in education, awareness building on health issues). The specificity of the strategies employed refers to specific vs. general strategies or the degree to which an SE strategy is employed to address a specific social problem. For example, “healthcare treatment” is a specific strategy in healthcare, and “fair trade” is a specific strategy used in economic development; in contrast, general, broader strategies can be applied across two or more types of social problems such as “education,” which is a strategy that addresses poverty, healthcare, the environment, human rights and civic engagement problems. Empowerment practices can be viewed as both specific and general SE approaches; empowerment can be a specific strategy (e.g., equipping autistic individuals with computer programming skills) or a general strategy (e.g., developing self-efficacy and legal rights awareness for the low-income population, ex-felons, single mothers or immigrant groups).</p>
+<p>There are at least two reasons behind the use of the three dimensions to test the emerging 39 strategies. First, there is general agreement that social entrepreneurs often face <italic>“resource constraints”</italic> [<xref ref-type="bibr" rid="pone.0151342.ref008">8</xref>, <xref ref-type="bibr" rid="pone.0151342.ref026">26</xref>–<xref ref-type="bibr" rid="pone.0151342.ref028">28</xref>]. If a social entrepreneur does not have the resources to enact social change, how will he/she change the world? In other words, will he/she use more material or symbolic resources? Yunus’ Grameen Bank relies on <italic>“changing the mindsets</italic>, <italic>lifestyle and habits of the poor”</italic> through the <italic>16 Principles of the Grameen Bank</italic>, which every member needs to follow. However, anecdotal stories such as this and many others are insufficient to develop robust theory. The literature in entrepreneurship and social activism suggests that <italic>symbolic action</italic> is a very important strategy for entrepreneurs and activists [<xref ref-type="bibr" rid="pone.0151342.ref029">29</xref>–<xref ref-type="bibr" rid="pone.0151342.ref031">31</xref>] to acquire resources and achieve goals. However, the relative importance of symbolic and material strategies has yet to be tested in the social entrepreneurship literature.</p>
+<p>Second, there is a need to deeply understand the types of strategies that social entrepreneurs <italic>generally</italic> use (generalizable across all fields of work) and those that are <italic>field specific</italic> (e.g., healthcare, human rights), and whether such strategies involve <italic>high</italic> (involving the masses) or <italic>low participatory modes</italic> (involving a few powerful elites). By identifying these dimensions of strategies and the content of the strategies (which will be demonstrated below), we will be able to enrich the <italic>conceptual cornerstone</italic> of social entrepreneurship behavior as well as provide contributions to the <italic>definitional debate</italic> on social entrepreneurship [<xref ref-type="bibr" rid="pone.0151342.ref013">13</xref>,<xref ref-type="bibr" rid="pone.0151342.ref014">14</xref>]. A clear conceptualization of general versus field-specific strategies, material versus symbolic strategies, and mass versus elite participatory strategies is also critical for practical purposes. For policy makers and social investors, such a categorization of strategies will allow them to better support social enterprises by focusing on the important strategies [<xref ref-type="bibr" rid="pone.0151342.ref027">27</xref>, <xref ref-type="bibr" rid="pone.0151342.ref032">32</xref>]. For social entrepreneurs, this approach will help them invest in the relevant strategies to achieve higher performance.</p>
+<p>One could, in principle, evaluate all SE strategies manually using a pencil and paper, but this evaluation process would fail when processing massive amounts of data from SE strategies. In the next section, we discuss the methods and data that we used to study the SE strategies of self-identified and selected and supported social entrepreneurs.</p>
+</sec>
+<sec id="sec005">
+<title>Data: Strategy profiles of Ashoka Fellows</title>
+<p>The legitimization and recent development of SE practices are largely due to a successful, worldwide SE support organization, Ashoka, which was founded in 1980 in Washington, D.C. to promote social entrepreneurship. Ashoka identifies and invests in leading or promising social entrepreneurs and helps them achieve maximum social impact. Ashoka also helps engage communities of entrepreneurs to promote social change and has created an infrastructure for SEs to access financing and business, academic and social change networks. Ashoka is much larger than the Schwab Foundation and Echoing Green, which reported approximately 300 and 600 fellows (past and present), respectively. Ashoka is the largest SE support organization worldwide and has more international fellows than any other such SE support organizations. It allows us to study social entrepreneurs using an extremely diverse database that spans geographic boundaries.</p>
+<p>To date, Ashoka has supported over 3,000 social entrepreneurs―the engines of social change in the 70+ countries in which Ashoka operates. Known as Ashoka Fellows, these social entrepreneurs are <italic>among the world’s most powerful</italic> agents for change, but they first must pass Ashoka’s strict selection process, which is anchored by five criteria: novelty of the idea or strategy, creativity, entrepreneurial quality, social impact of the idea or strategy, and ethical fiber of the social entrepreneurs (see Ashoka.org/support/criteria). Ashoka offers concrete <italic>strategy profiles</italic> (e.g., <ext-link ext-link-type="uri" xlink:href="https://www.ashoka.org/fellow/jamila-abass" xlink:type="simple">https://www.ashoka.org/fellow/jamila-abass</ext-link>) that describe the details of the SE strategies that have been used by its 3,000+ social entrepreneurs since 1982. Each strategy profile describes, in detail, the social entrepreneur’s strategy to achieve the desired social goals and is part of the public profile of each social entrepreneur supported by Ashoka (see <xref ref-type="fig" rid="pone.0151342.g001">Fig 1</xref>). Thus, Ashoka provides a natural laboratory to study SE strategies that cut across geographic boundaries, problem types, and time.</p>
+<fig id="pone.0151342.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0151342.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>A sample screenshot of a profile page and the strategy profile of an Ashoka Fellow.</title>
+<p>Each sub-section in the Ashoka Profile (e.g., The Strategy) can be read fully by clicking the “Read More” link. A full display of the “strategy text” is shown on the right-hand side of the Ashoka Profile. Our analysis focuses on the “strategy text.”</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0151342.g001" xlink:type="simple"/>
+</fig>
+<p>As noted earlier, our primary data of interest are the strategy profiles/texts of a pool of 2,334 Ashoka Fellows. Ashoka categorized the Fellows into six fields: civic engagement, economic development, environment, healthcare, human rights, and learning/education. Their profiles, which are available on Ashoka’s website [<xref ref-type="bibr" rid="pone.0151342.ref033">33</xref>], provide a comprehensive description of the SE projects, including organization and sectors, target populations, the focal problem, the strategy used to address the problem, an overview of the project’s activities, detailed descriptions of the innovative ideas and approaches, and the Fellows’ personal biographies (see <xref ref-type="fig" rid="pone.0151342.g001">Fig 1</xref> for the biography and strategy profile of one Ashoka social entrepreneur). The individuals described in this manuscript have given written informed consent (as outlined in the PLOS consent form) to publish their case details. Our study focused on the texts that describe the 2,334 entrepreneurs’ strategies (hereafter “<italic>strategy texts</italic>”).</p>
+</sec>
+<sec id="sec006">
+<title>Data preparation</title>
+<p>A total of 2,334 profiles of Ashoka Fellows were collected in July 2013. These HTML files were collected and pre-processed in several steps to create a profile corpus for text mining. First, we parsed the raw files using the BeautifulSoup package in Python, which is a library used to pull data out of HTML and XML files [<xref ref-type="bibr" rid="pone.0151342.ref034">34</xref>]. Second, we removed all HTML elements, stop words in English, numbers and punctuation characters and converted all of the text to lowercase. As mentioned previously, because we predominantly focused on the strategies used by social entrepreneurs, we decontextualized the strategy texts by removing the names of the entrepreneurs, their locations, and their organizations. Finally, using the <italic>tm</italic> package in R [<xref ref-type="bibr" rid="pone.0151342.ref035">35</xref>], we converted the strategy texts to a document-term matrix (DTM) to facilitate topic modeling. The DTM was weighted using term frequency–inverse document frequency (TF-IDF), whereby if we have a collection of N documents, the <italic>frequency</italic> of term t in document d is denoted as TF(t, d). Usually, TF(t, d) is calculated as the raw frequency of term t in document d, which is represented as f(t, d), or TF(t, d) = f(t, d). If the term t occurs in n<sub>t</sub> of N documents, the inverse document frequency of term t is denoted as IDF = log(N/n<sub>t</sub>). Thus, TF-IDF is calculated as TF-IDF = TF*IDF [<xref ref-type="bibr" rid="pone.0151342.ref036">36</xref>]. For the sake of feature selection, only the terms with TF-IDF larger than the median were analyzed. Further details of the research design of this study are shown in <xref ref-type="fig" rid="pone.0151342.g002">Fig 2</xref>.</p>
+<fig id="pone.0151342.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0151342.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>Design of the empirical study.</title>
+<p>DTM = document-term matrix; TF-IDF = term frequency–inverse document frequency; SPM = strategy person matrix; SYM = strategy-year matrix; tm = text mining package in R; Topicmodels = topic modeling package in R; igraph = network modeling package in R.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0151342.g002" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec007">
+<title>Topic modeling using Latent Dirichlet allocation</title>
+<p>We then developed topic models to identify social entrepreneurs' key strategies using the Latent Dirichlet Allocation model or LDA [<xref ref-type="bibr" rid="pone.0151342.ref037">37</xref>]. LDA is a generative model that infers unobserved meanings from a large set of observations. LDA is perhaps the most common topic model currently in use for automatic topic discovery; other topic models (e.g., correlated topic models) are generally extensions of LDA [<xref ref-type="bibr" rid="pone.0151342.ref038">38</xref>]. Topic models assume that each document contains a mixture of topics [<xref ref-type="bibr" rid="pone.0151342.ref039">39</xref>,<xref ref-type="bibr" rid="pone.0151342.ref040">40</xref>]. Topics are considered latent/unobserved variables that stand between the documents and terms. It is considered impossible to directly assess the relationships between topics and documents and between topics and terms. What can be directly observed is the distribution of terms over documents, which is known as the document term matrix (DTM). Topic models algorithmically identify the best set of latent variables (topics) that can best explain the observed distribution of terms in the documents. The DTM is further decomposed into two matrices—a term-topic matrix (TTM) and a topic-document matrix (TDM) [<xref ref-type="bibr" rid="pone.0151342.ref040">40</xref>]. The topics identified by the modeling are expressed probabilistically. Basically, certain terms and their associated documents are more likely to be associated with one topic than another. Each document can be assigned to a primary topic that demonstrates the highest topic-document probability and can then be linked to other topics with declining probabilities.</p>
+<p>For example, assume K topics are in D documents, and each topic is denoted with Φ1:K. Each topic Φk is a distribution of fixed words in the given documents. Each document contains one or more topics. The topic proportion in the document is denoted as θd. For example, the <italic>k</italic><sup>th</sup> topic's proportion in document d is θd, k. Let w<sub>d, n</sub> denote the n<sup>th</sup> term in document d. Further, topic models assign topics to a document and its terms. For example, the topic assigned to document d is denoted as <italic>z</italic><sub>d</sub>, and the topic assigned to the n<sup>th</sup> term in document d is denoted as <italic>z</italic><sub>d,n</sub>. According to Blei et al. [<xref ref-type="bibr" rid="pone.0151342.ref037">37</xref>], the joint distribution of <italic>β</italic><sub>1:k</sub>,<italic>θ</italic><sub>1:D</sub>, <italic>z</italic><sub>1:D</sub> and w<sub>d, n</sub> plus the generative process for LDA can be expressed as:
+<disp-formula id="pone.0151342.e001">
+<alternatives>
+<graphic id="pone.0151342.e001g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0151342.e001" xlink:type="simple"/>
+<mml:math display="block" id="M1">
+<mml:mrow><mml:mi>p</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:msub><mml:mi>φ</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mo>:</mml:mo><mml:mtext>K</mml:mtext></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mspace width="0.15em"/><mml:msub><mml:mi>θ</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mo>:</mml:mo><mml:mi>D</mml:mi></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mrow><mml:mtext>z</mml:mtext></mml:mrow><mml:mrow><mml:mn>1</mml:mn><mml:mo>:</mml:mo><mml:mi>D</mml:mi></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mspace width="0.15em"/><mml:msub><mml:mi>w</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mo>:</mml:mo><mml:mtext>D</mml:mtext></mml:mrow></mml:msub><mml:mo stretchy="false">)</mml:mo><mml:mo>=</mml:mo><mml:munderover><mml:mo stretchy="false">∏</mml:mo><mml:mrow><mml:mtext>i</mml:mtext><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>K</mml:mi></mml:munderover><mml:mrow><mml:mi>p</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:msub><mml:mi>φ</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mo stretchy="false">)</mml:mo><mml:munderover><mml:mo stretchy="false">∏</mml:mo><mml:mrow><mml:mi>d</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>D</mml:mi></mml:munderover><mml:mrow><mml:mi>p</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:msub><mml:mi>θ</mml:mi><mml:mi>d</mml:mi></mml:msub><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:msubsup><mml:mo stretchy="false">∏</mml:mo><mml:mrow><mml:mi>n</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>N</mml:mi></mml:msubsup><mml:mrow><mml:mi>p</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:msub><mml:mi>z</mml:mi><mml:mrow><mml:mi>d</mml:mi><mml:mo>,</mml:mo><mml:mi>n</mml:mi></mml:mrow></mml:msub><mml:mo>|</mml:mo><mml:msub><mml:mi>θ</mml:mi><mml:mi>d</mml:mi></mml:msub><mml:mo stretchy="false">)</mml:mo><mml:mi>p</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:msub><mml:mi>w</mml:mi><mml:mrow><mml:mi>d</mml:mi><mml:mo>,</mml:mo><mml:mi>n</mml:mi></mml:mrow></mml:msub><mml:mo>|</mml:mo><mml:msub><mml:mi>φ</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mo>:</mml:mo><mml:mi>K</mml:mi></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>z</mml:mi><mml:mrow><mml:mi>d</mml:mi><mml:mo>,</mml:mo><mml:mi>n</mml:mi></mml:mrow></mml:msub><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo stretchy="false">)</mml:mo><mml:mo>.</mml:mo></mml:mrow>
+</mml:math>
+</alternatives>
+<label>(1)</label>
+</disp-formula></p>
+<p>Note that<italic>Φ</italic><sub>1:k</sub>,<italic>θ</italic><sub>1:D</sub>, and <italic>z</italic><sub>1:D</sub> are latent, unobservable variables. Thus, the computational challenge of LDA is to compute the conditional distribution of <italic>Φ</italic><sub>1:k</sub>,<italic>θ</italic><sub>1:D</sub> and <italic>z</italic><sub>1:D</sub> given the observable specific words in the documents w<sub>d, n</sub>. Accordingly, the posterior distribution of LDA can be expressed as:
+<disp-formula id="pone.0151342.e002">
+<alternatives>
+<graphic id="pone.0151342.e002g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0151342.e002" xlink:type="simple"/>
+<mml:math display="block" id="M2">
+<mml:mrow><mml:mi>p</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mo>:</mml:mo><mml:mtext>K</mml:mtext></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mspace width="0.15em"/><mml:msub><mml:mi>θ</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mo>:</mml:mo><mml:mi>D</mml:mi></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mrow><mml:mtext>z</mml:mtext></mml:mrow><mml:mrow><mml:mn>1</mml:mn><mml:mo>:</mml:mo><mml:mi>D</mml:mi></mml:mrow></mml:msub><mml:mspace width="0.15em"/><mml:mo stretchy="false">|</mml:mo><mml:mspace width="0.15em"/><mml:msub><mml:mi>w</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mo>:</mml:mo><mml:mtext>D</mml:mtext></mml:mrow></mml:msub><mml:mo stretchy="false">)</mml:mo><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mi>p</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mo>:</mml:mo><mml:mtext>K</mml:mtext></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mspace width="0.15em"/><mml:msub><mml:mi>θ</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mo>:</mml:mo><mml:mi>D</mml:mi></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mrow><mml:mtext>z</mml:mtext></mml:mrow><mml:mrow><mml:mn>1</mml:mn><mml:mo>:</mml:mo><mml:mi>D</mml:mi></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mspace width="0.15em"/><mml:msub><mml:mi>w</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mo>:</mml:mo><mml:mtext>D</mml:mtext></mml:mrow></mml:msub><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mrow><mml:mi>p</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:msub><mml:mi>w</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mo>:</mml:mo><mml:mtext>D</mml:mtext></mml:mrow></mml:msub><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mfrac><mml:mspace width="0.15em"/><mml:mo>.</mml:mo></mml:mrow>
+</mml:math>
+</alternatives>
+<label>(2)</label>
+</disp-formula></p>
+<p>Because the number of possible topic structures is exponentially large, it is impossible to compute the posterior of LDA [<xref ref-type="bibr" rid="pone.0151342.ref037">37</xref>,<xref ref-type="bibr" rid="pone.0151342.ref039">39</xref>]. However, topic models aim to develop efficient algorithms to approximate the posterior of LDA. There are two categories of algorithms: sampling-based algorithms and variational algorithms [<xref ref-type="bibr" rid="pone.0151342.ref039">39</xref>]. In our analysis, we primarily use the Gibbs sampling method, which is the most commonly used sampling-based algorithm in topic models. Using the Gibbs sampling method, we can build a Markov chain for the sequence of random variables (see <xref ref-type="disp-formula" rid="pone.0151342.e001">Eq 1</xref>). The sampling algorithm is applied to the chain to sample from the limited distribution, and it approximates the posterior (see <xref ref-type="disp-formula" rid="pone.0151342.e002">Eq 2</xref>) [<xref ref-type="bibr" rid="pone.0151342.ref039">39</xref>].</p>
+<p>We employed the <italic>topicmodels</italic> package in R [<xref ref-type="bibr" rid="pone.0151342.ref041">41</xref>] to model the strategy texts. The tm package was also extensively employed for text preprocessing and converting the corpus to the document-term matrix [<xref ref-type="bibr" rid="pone.0151342.ref035">35</xref>]. In our analysis, we treated each sentence in the strategy text as a unique document because the strategy texts normally describe multiple strategies used by each entrepreneur. Following Blei et al.’s [<xref ref-type="bibr" rid="pone.0151342.ref037">37</xref>] guidelines, we specified a number of models with topic numbers ranging from 5–50 (with an interval of 5) and selected the model with the lowest perplexity as the final model. Perplexity is defined as
+<disp-formula id="pone.0151342.e003">
+<alternatives>
+<graphic id="pone.0151342.e003g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0151342.e003" xlink:type="simple"/>
+<mml:math display="block" id="M3">
+<mml:mrow><mml:mo>−</mml:mo><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mi>n</mml:mi></mml:mrow></mml:msubsup><mml:mfrac><mml:mrow><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mi>n</mml:mi></mml:mrow></mml:mfrac><mml:mspace width="0.15em"/><mml:msub><mml:mrow><mml:mi>l</mml:mi><mml:mi>o</mml:mi><mml:mi>g</mml:mi></mml:mrow><mml:mrow><mml:mi>n</mml:mi></mml:mrow></mml:msub><mml:mspace width="0.25em"/><mml:mi>q</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:msub><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>)</mml:mo></mml:mrow></mml:mrow>
+</mml:math>
+</alternatives>
+</disp-formula>
+where <italic>q</italic> is the model, <italic>x</italic><sub><italic>i</italic></sub> is the <italic>i</italic><sup><italic>th</italic></sup> document and <italic>n</italic> is the number of documents in the corpus [<xref ref-type="bibr" rid="pone.0151342.ref037">37</xref>].</p>
+<p>Before we perform topic modelling analysis, we read a sample of 100 randomly selected strategy texts and agreed that the Fellows often used more than one strategy. Therefore, we decided to treat each sentence in the strategy text as a unique document and ran the analysis for 2,334 strategy profiles on the sentence level. We first performed the analysis on all of the strategy texts, and we then ran separate topic models for the six primary fields as defined by Ashoka (i.e., economic development, healthcare, civic engagement, environment, human rights, education). As mentioned above, the TTM assigned certain terms to each topic with higher probabilities. When the strategy topics mapping was finalized, we merged the data from the document attributes (e.g., the Ashoka Fellows’ names and the fellowship-award year) to create a strategy-person matrix (SPM) as well as a strategy-year matrix (SYM). SPM described the strategies co-adopted by the same person, while SYM reflected the strategies co-adopted within a particular year. The two matrices were later used to describe the adoption of strategies across entrepreneurs and over time.</p>
+</sec>
+</sec>
+<sec id="sec008" sec-type="results">
+<title>Results</title>
+<p>We collected 2,334 strategy profiles for each Ashoka Fellow from 1982 to 2013. The distribution of the Ashoka Fellows across geographic regions and fields of practice, along with their years of appointment, is shown in <xref ref-type="table" rid="pone.0151342.t001">Table 1</xref>. We also offer an interactive visualization that depicts the distribution of the Ashoka Fellows on a global map. The visualization is provided at <ext-link ext-link-type="uri" xlink:href="http://computational-communication.com/globe/ashoka.html" xlink:type="simple">http://computational-communication.com/globe/ashoka.html</ext-link>.</p>
+<table-wrap id="pone.0151342.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0151342.t001</object-id>
+<label>Table 1</label> <caption><title>Descriptive statistics of all Ashoka Fellows in the current study.</title></caption>
+<alternatives>
+<graphic id="pone.0151342.t001g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0151342.t001" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">General description</th>
+<th align="left"># of Ashoka Fellows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Total number of collected postings</td>
+<td align="center">2334</td>
+</tr>
+<tr>
+<td align="left" colspan="2"><bold><italic>Length of posting on strategy</italic></bold></td>
+</tr>
+<tr>
+<td align="left">    Average length</td>
+<td align="center">642</td>
+</tr>
+<tr>
+<td align="left">    Minimum length</td>
+<td align="center">59</td>
+</tr>
+<tr>
+<td align="left">    Maximum length</td>
+<td align="center">2044</td>
+</tr>
+<tr>
+<td align="left">    Standard deviation of length</td>
+<td align="center">287</td>
+</tr>
+<tr>
+<td align="left" colspan="2"><bold><italic>Fellows per region</italic></bold></td>
+</tr>
+<tr>
+<td align="left">    Asia</td>
+<td align="center">690 (29.6%)</td>
+</tr>
+<tr>
+<td align="left">    South America</td>
+<td align="center">571 (24.4%)</td>
+</tr>
+<tr>
+<td align="left">    North America</td>
+<td align="center">361 (15.4%)</td>
+</tr>
+<tr>
+<td align="left">    Africa</td>
+<td align="center">322 (13.8%)</td>
+</tr>
+<tr>
+<td align="left">    Europe</td>
+<td align="center">315 (13.5%)</td>
+</tr>
+<tr>
+<td align="left">    MENA (Middle East and North Africa)</td>
+<td align="center">60 (2.6%)</td>
+</tr>
+<tr>
+<td align="left">    Global</td>
+<td align="center">15 (0.7%)</td>
+</tr>
+<tr>
+<td align="left" colspan="2"><bold><italic>Field of work</italic></bold></td>
+</tr>
+<tr>
+<td align="left">    Civic Engagement</td>
+<td align="left">422 (18.1%)</td>
+</tr>
+<tr>
+<td align="left">    Economic Development</td>
+<td align="left">461 (19.7%)</td>
+</tr>
+<tr>
+<td align="left">    Environment</td>
+<td align="left">282 (12.1%)</td>
+</tr>
+<tr>
+<td align="left">    Healthcare</td>
+<td align="left">351 (15.1%)</td>
+</tr>
+<tr>
+<td align="left">    Human Rights</td>
+<td align="left">450 (19.2%)</td>
+</tr>
+<tr>
+<td align="left">    Leaning/Education</td>
+<td align="left">368 (15.8%)</td>
+</tr>
+<tr>
+<td align="left" colspan="2"><bold><italic>Year of joining Ashoka</italic></bold></td>
+</tr>
+<tr>
+<td align="left">    1982<bold>–</bold>1990</td>
+<td align="left">164 (7.1%)</td>
+</tr>
+<tr>
+<td align="left">    1991<bold>–</bold>2000</td>
+<td align="left">681 (29.1%)</td>
+</tr>
+<tr>
+<td align="left">    2001<bold>–</bold>2010</td>
+<td align="left">1347 (57.7%)</td>
+</tr>
+<tr>
+<td align="left">    2011<bold>–</bold>2013</td>
+<td align="left">142 (6.1%)</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>The number of new Fellows per year increased exponentially and reached its peak between 2001 and 2010; in addition, the distribution of fields of practice defined by Ashoka (e.g., the environment, healthcare, civic engagement, human rights, economic development, and education) is rather balanced. Asia and South America are home to the largest number of Fellows. The length of the strategy profiles ranges from 59 to 2,044 words (<italic>M</italic> = 642, <italic>SD</italic> = 287).</p>
+<p>The topic modelling analysis in R <italic>initially</italic> generated 170 emergent categories of strategy topics across all of Ashoka’s six fields of practice (i.e., the Environment, Civic Engagement, Learning/Education, Human Rights, Health, and Economic Development fields). These six fields of practice were <italic>pre-classified</italic> by Ashoka in their selection and display of Fellows on their website. This pre-classification process is common among SE support organizations; for instance, Echoing Green pre-classified its Fellows into 8 fields of practice (i.e., Arts &amp; Culture, Civil &amp; Human Rights, Education, Environment, Food &amp; Agriculture, Health &amp; Healthcare, Poverty Alleviation &amp; Economic Development, and Public Service &amp; Civic Engagement; see <ext-link ext-link-type="uri" xlink:href="http://www.echoinggreen.org/fellows" xlink:type="simple">http://www.echoinggreen.org/fellows</ext-link>), while the Schwab Foundation pre-classified its Fellows into 28 fields of practice that are similar to those of Ashoka and Echoing Green, albeit more “detailed” (e.g., Crime Prevention, Disabilities, Microfinance to Waste Management; see <ext-link ext-link-type="uri" xlink:href="http://www.schwabfound.org/entrepreneurs" xlink:type="simple">http://www.schwabfound.org/entrepreneurs</ext-link>). The initial 170 categories of strategy topics consist of the following: The Environment field generated 20 categories of strategies, while Civic Engagement, Learning/Education, Human Rights, Health, and Economic Development generated 30 categories each. For simplicity, we will call the categories of strategies “<italic>topics”</italic>. The categorization was performed based on the best perplexity measure for each of the fields, which are 1578.29 for the Environment, 1737.31 for Civic Engagement, 1460.23 for Learning/Education, 1657.82 for Human Rights, 1576.52 for Health, and 1739.52 for Economic Development (see the formula of perplexity in the <xref ref-type="sec" rid="sec002">Methods</xref> section above). Next, the three authors independently created labels for the 170 topics <italic>manually</italic> using a spreadsheet containing a matrix of the “terms” (or “words” that were automatically generated by the LDA algorithms) on the column side of the spreadsheet for the topic numbers (e.g., topic #1, #2,… #170) and on the row side of the spreadsheet for all of the topics. The LDA algorithms pulled together highly relevant “words” on a row so that when read horizontally, they reflect a topic; hence, different words on different rows reflect different potential “topics”. In the topic labelling process, each of three coders independently gave a <italic>label</italic> to each row of the <italic>topic number</italic> so that each topic has a <italic>meaningful label</italic> that best represents all of the terms that belong to it. As an illustration, taken from our dataset, the five important “words” <italic>environment</italic>, <italic>conservation</italic>, <italic>awareness</italic>, <italic>education</italic>, and <italic>efforts</italic> were labelled as “<italic>enhancing environmental awareness</italic>.” However, this LDA-based topic classification output and labelling process was only a <italic>starting point</italic> in our analysis; it was followed by a combination of <italic>human interpretation</italic> and <italic>further quantitative validation</italic>. This procedure followed Quinn et al. [<xref ref-type="bibr" rid="pone.0151342.ref042">42</xref>], who state that a <italic>“topic model…requires user input after the initial quantitative analysis is completed…the user must spend more time interpreting and validating the results ex-post”</italic> (p.225).</p>
+<p>Next, due to the overlapping of many of the topic labels developed through the LDA outputs, the three authors discussed reducing the topic labels. After four rounds of intensive meetings, the authors reached a <italic>consensus</italic> to reduce the overall 170 topic labels to <italic>70</italic> in relation to each of Ashoka’s six fields of practice. The results of this reduction process are as follows: The Environment (7 topics), Civic Engagement (13 topics), Learning/Education (11 topics), Human Rights (11 topics), Health (15 topics), and Economic Development (13 topics). Based on these coding outputs, we noticed that there were still some overlaps among the topic labels in terms of their meaning. We subsequently <italic>collapsed</italic> topics with overlapping themes or content, resulting in a total of <italic>39 topics</italic> that cut across the Environment, Civic Engagement, Education, Human Rights, Health, and Economic Development. At this stage, we were satisfied that each of the topic labels was unique and non-overlapping. Our approach in combining human coding and automated text analysis followed similar suggestions made by various scholars (see [<xref ref-type="bibr" rid="pone.0151342.ref042">42</xref>–<xref ref-type="bibr" rid="pone.0151342.ref044">44</xref>]).</p>
+<p>We list the 39 most common strategy topics, their distribution across all strategy profiles and the top five terms from each strategy. As shown in <xref ref-type="table" rid="pone.0151342.t002">Table 2</xref>, a few strategies are dominant, as shown by their weight as a percentage of the total strategy topics identified using topic modeling. The top seven strategies involved the following: (1) engaging with vulnerable groups (13.9%); (2) training/educating (10.3%); (3) forming partnerships (9.5%); (4) engaging with the community (6.7%); (5) scaling up/replicating projects across the community/region (6.6%); (6) networking/sharing ideas and resources (5.1%); and (7) providing resource support (4.5%).</p>
+<table-wrap id="pone.0151342.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0151342.t002</object-id>
+<label>Table 2</label> <caption><title>The 39 strategy topics and top 5 words in each strategy.</title></caption>
+<alternatives>
+<graphic id="pone.0151342.t002g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0151342.t002" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Topics</th>
+<th align="left">%</th>
+<th align="left">Top 5 words</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">active participation</td>
+<td align="left">3.1</td>
+<td align="left">activity, participation, events, participate, meetings</td>
+</tr>
+<tr>
+<td align="left">awareness building</td>
+<td align="left">2.2</td>
+<td align="left">public, awareness, issues, media, attention</td>
+</tr>
+<tr>
+<td align="left">build facilities</td>
+<td align="left">1.2</td>
+<td align="left">services, center, based, created, together</td>
+</tr>
+<tr>
+<td align="left">collective action</td>
+<td align="left">0.8</td>
+<td align="left">issues, together, problems, needs, communities</td>
+</tr>
+<tr>
+<td align="left"><bold>community engagement</bold></td>
+<td align="left">6.7</td>
+<td align="left">community, development, members, create, involved</td>
+</tr>
+<tr>
+<td align="left">community support</td>
+<td align="left">0.8</td>
+<td align="left">group, support, organization, efforts, among</td>
+</tr>
+<tr>
+<td align="left">conduct research</td>
+<td align="left">1.4</td>
+<td align="left">development, research, practices, international, project</td>
+</tr>
+<tr>
+<td align="left">diversified methods</td>
+<td align="left">1.4</td>
+<td align="left">many, different, approach, methodology, research</td>
+</tr>
+<tr>
+<td align="left"><bold>engage vulnerable groups</bold></td>
+<td align="left">13.9</td>
+<td align="left">children, women, families, help, youth</td>
+</tr>
+<tr>
+<td align="left">fair trade</td>
+<td align="left">0.7</td>
+<td align="left">create, industry, trade, sustainable, fair</td>
+</tr>
+<tr>
+<td align="left">government support</td>
+<td align="left">1.5</td>
+<td align="left">government, funding, local, state, national</td>
+</tr>
+<tr>
+<td align="left">ICT</td>
+<td align="left">1.5</td>
+<td align="left">information, online, access, internet, tools</td>
+</tr>
+<tr>
+<td align="left">ICT/mobile therapy</td>
+<td align="left">0.6</td>
+<td align="left">therapy, mobile, used, develop, time</td>
+</tr>
+<tr>
+<td align="left">information-based practices</td>
+<td align="left">0.6</td>
+<td align="left">information, support, practices, another, providing</td>
+</tr>
+<tr>
+<td align="left">involve companies</td>
+<td align="left">0.8</td>
+<td align="left">project, companies, used, example, company</td>
+</tr>
+<tr>
+<td align="left">learning experiences</td>
+<td align="left">0.7</td>
+<td align="left">learning, experience, process, environment, classroom</td>
+</tr>
+<tr>
+<td align="left">legal enforcement</td>
+<td align="left">0.8</td>
+<td align="left">legal, cases, system, court, victims</td>
+</tr>
+<tr>
+<td align="left">life skills training</td>
+<td align="left">0.7</td>
+<td align="left">skills, learn, life, world, build</td>
+</tr>
+<tr>
+<td align="left">loans &amp; financial support</td>
+<td align="left">1.5</td>
+<td align="left">bank, support, loans, provide, fund</td>
+</tr>
+<tr>
+<td align="left">marketing/distribution</td>
+<td align="left">0.7</td>
+<td align="left">products, market, markets, quality, marketing</td>
+</tr>
+<tr>
+<td align="left">media advocacy</td>
+<td align="left">1.6</td>
+<td align="left">radio, media, news, content, created</td>
+</tr>
+<tr>
+<td align="left"><bold>networking/sharing</bold></td>
+<td align="left">5.1</td>
+<td align="left">network, organizations, ideas, share, practices</td>
+</tr>
+<tr>
+<td align="left"><bold>partnership</bold></td>
+<td align="left">9.5</td>
+<td align="left">groups, community, organizations, network, partners</td>
+</tr>
+<tr>
+<td align="left">piloting &amp; initiatives</td>
+<td align="left">2.2</td>
+<td align="left">first, project, program, open, began</td>
+</tr>
+<tr>
+<td align="left">policy making</td>
+<td align="left">3.6</td>
+<td align="left">government, public, policy, change, efforts</td>
+</tr>
+<tr>
+<td align="left">prevention</td>
+<td align="left">0.6</td>
+<td align="left">aids, drug, prevention, living, rehabilitation</td>
+</tr>
+<tr>
+<td align="left">protect vulnerable groups</td>
+<td align="left">0.8</td>
+<td align="left">people, disabled, young, disabilities, many</td>
+</tr>
+<tr>
+<td align="left">provide treatment</td>
+<td align="left">1.2</td>
+<td align="left">provide, healthcare, treatment, patients, cancer</td>
+</tr>
+<tr>
+<td align="left">public advocacy</td>
+<td align="left">0.8</td>
+<td align="left">national, international, level, policy, campaign</td>
+</tr>
+<tr>
+<td align="left">reform systems</td>
+<td align="left">1.3</td>
+<td align="left">education, system, health, ministry, create</td>
+</tr>
+<tr>
+<td align="left">religious leaders</td>
+<td align="left">0.8</td>
+<td align="left">community, members, youth, leaders, religious</td>
+</tr>
+<tr>
+<td align="left"><bold>resource support</bold></td>
+<td align="left">4.5</td>
+<td align="left">support, provide, services, funding, resources</td>
+</tr>
+<tr>
+<td align="left"><bold>scaling up/replication</bold></td>
+<td align="left">6.6</td>
+<td align="left">model, spread, plans, throughout, country</td>
+</tr>
+<tr>
+<td align="left">small business</td>
+<td align="left">0.7</td>
+<td align="left">business, small, businesses, entrepreneurs, company</td>
+</tr>
+<tr>
+<td align="left">sustainable practice</td>
+<td align="left">4.4</td>
+<td align="left">sustainable, forest, water, organic, farmers</td>
+</tr>
+<tr>
+<td align="left">train the trainers</td>
+<td align="left">1.4</td>
+<td align="left">training, teachers, teaching, programs, methods</td>
+</tr>
+<tr>
+<td align="left"><bold>training/education</bold></td>
+<td align="left">10.3</td>
+<td align="left">training, program, education, students, school</td>
+</tr>
+<tr>
+<td align="left">use existing resources</td>
+<td align="left">1.4</td>
+<td align="left">resources, available, land, water, used</td>
+</tr>
+<tr>
+<td align="left">volunteering</td>
+<td align="left">1.4</td>
+<td align="left">volunteers, members, service, help, staff</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>We probed deeper and examined the importance or density of the 39 strategy topics across the six fields of practice using topic modeling. As <xref ref-type="table" rid="pone.0151342.t003">Table 3</xref> shows, each field of practice emphasizes different strategies. For instance, in economic development, the top three strategies are partnership formation (29%), training/education (8.35%) and the provision of loans and financial support (8.25%), while the environmental field’s top three strategies are creating sustainable practices (33.32%), community engagement (26.64%), and training/education (13.34%). For further details, see <xref ref-type="table" rid="pone.0151342.t003">Table 3</xref>.</p>
+<table-wrap id="pone.0151342.t003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0151342.t003</object-id>
+<label>Table 3</label> <caption><title>The 39 strategy topics and the strategy topic density across fields.</title></caption>
+<alternatives>
+<graphic id="pone.0151342.t003g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0151342.t003" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left">Civic Engagement</th>
+<th align="left">Economic Development</th>
+<th align="left">Environment</th>
+<th align="left">Health</th>
+<th align="left">Human Rights</th>
+<th align="left">Learning/ Education</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">active participation</td>
+<td align="left"><bold>7.99%</bold></td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">4.34%</td>
+<td align="left">3.69%</td>
+</tr>
+<tr>
+<td align="left">awareness building</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">6.70%</td>
+<td align="left">4.34%</td>
+<td align="left">4.36%</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">build facilities</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left"><bold>8.66%</bold></td>
+<td align="left">—</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">collective action</td>
+<td align="left">4.03%</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">community engagement</td>
+<td align="left"><bold>8.02%</bold></td>
+<td align="left">4.15%</td>
+<td align="left"><bold>26.64%</bold></td>
+<td align="left">0.00%</td>
+<td align="left">4.34%</td>
+<td align="left">3.70%</td>
+</tr>
+<tr>
+<td align="left">community support</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">4.35%</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">conduct research</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">4.35%</td>
+<td align="left">4.32%</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">diversified methods</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left"><bold>7.38%</bold></td>
+</tr>
+<tr>
+<td align="left">engage vulnerable groups</td>
+<td align="left"><bold>12.00%</bold></td>
+<td align="left"><bold>8.34%</bold></td>
+<td align="left">0.00%</td>
+<td align="left"><bold>8.71%</bold></td>
+<td align="left"><bold>21.69%</bold></td>
+<td align="left"><bold>25.96%</bold></td>
+</tr>
+<tr>
+<td align="left">fair trade</td>
+<td align="left">—</td>
+<td align="left">4.17%</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">government support</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">4.35%</td>
+<td align="left">3.72%</td>
+</tr>
+<tr>
+<td align="left">ICT</td>
+<td align="left">4.01%</td>
+<td align="left">4.15%</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">ICT/mobile therapy</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">4.32%</td>
+<td align="left">—</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">information-based practices</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">4.33%</td>
+<td align="left">—</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">involve companies</td>
+<td align="left">3.98%</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">learning experiences</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">3.69%</td>
+</tr>
+<tr>
+<td align="left">legal enforcement</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">4.40%</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">life skills training</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">3.70%</td>
+</tr>
+<tr>
+<td align="left">loans &amp; financial support</td>
+<td align="left">—</td>
+<td align="left"><bold>8.28%</bold></td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">marketing/distribution</td>
+<td align="left">—</td>
+<td align="left">4.14%</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">media advocacy</td>
+<td align="left"><bold>7.99%</bold></td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">networking/sharing</td>
+<td align="left"><bold>11.98%</bold></td>
+<td align="left">4.16%</td>
+<td align="left">—</td>
+<td align="left"><bold>8.67%</bold></td>
+<td align="left">—</td>
+<td align="left">3.68%</td>
+</tr>
+<tr>
+<td align="left">partnership</td>
+<td align="left">4.01%</td>
+<td align="left"><bold>29.34%</bold></td>
+<td align="left">6.62%</td>
+<td align="left">8.63%</td>
+<td align="left"><bold>8.68%</bold></td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">piloting &amp; initiatives</td>
+<td align="left">—</td>
+<td align="left">4.16%</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">4.33%</td>
+<td align="left">3.69%</td>
+</tr>
+<tr>
+<td align="left">policy making</td>
+<td align="left">4.01%</td>
+<td align="left">4.13%</td>
+<td align="left"><bold>6.69%</bold></td>
+<td align="left">4.39%</td>
+<td align="left">—</td>
+<td align="left">3.71%</td>
+</tr>
+<tr>
+<td align="left">prevention</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">4.36%</td>
+<td align="left">—</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">protect vulnerable groups</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">4.39%</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">provide treatment</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">8.67%</td>
+<td align="left">—</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">public advocacy</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">4.37%</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">reform systems</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">4.40%</td>
+<td align="left">—</td>
+<td align="left">3.72%</td>
+</tr>
+<tr>
+<td align="left">religious leaders</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">4.35%</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">resource support</td>
+<td align="left">7.98%</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">4.34%</td>
+<td align="left">8.65%</td>
+<td align="left">3.72%</td>
+</tr>
+<tr>
+<td align="left">scaling up/replication</td>
+<td align="left">8.01%</td>
+<td align="left">4.13%</td>
+<td align="left">6.69%</td>
+<td align="left">4.39%</td>
+<td align="left">4.38%</td>
+<td align="left"><bold>11.13%</bold></td>
+</tr>
+<tr>
+<td align="left">small business</td>
+<td align="left">—</td>
+<td align="left">4.21%</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">sustainable practice</td>
+<td align="left">—</td>
+<td align="left">4.14%</td>
+<td align="left"><bold>33.32%</bold></td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">train the trainers</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left"><bold>7.44%</bold></td>
+</tr>
+<tr>
+<td align="left">training/education</td>
+<td align="left"><bold>12.01%</bold></td>
+<td align="left"><bold>8.35%</bold></td>
+<td align="left"><bold>13.34%</bold></td>
+<td align="left"><bold>8.76%</bold></td>
+<td align="left"><bold>8.71%</bold></td>
+<td align="left"><bold>11.07%</bold></td>
+</tr>
+<tr>
+<td align="left">use existing resources</td>
+<td align="left">—</td>
+<td align="left">4.15%</td>
+<td align="left">—</td>
+<td align="left">4.34%</td>
+<td align="left">—</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="left">volunteering</td>
+<td align="left">4.00%</td>
+<td align="left">—</td>
+<td align="left">—</td>
+<td align="left">4.34%</td>
+<td align="left">—</td>
+<td align="left">—</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>To better understand the evolution of the importance of the different SE strategies over time, we plotted the <italic>topic score</italic> of each of the 39 strategy topics across 31 years, i.e., 1982 to 2013 (see <xref ref-type="fig" rid="pone.0151342.g003">Fig 3</xref>), using the raw score of all topics in the strategy-year matrix (SYM). The graphs demonstrate the relative importance and the increasing/decreasing trend for each of the 39 strategies, although the weight (or importance) of a few of the strategies remains close to what it was in 1982. Among the top strategies that show increasing trends are “engaging vulnerable groups,” “training/education”, “forming partnerships,” “community engagement” and “scaling up/replication of the social venture.” There were some spikes in the weight of certain strategies in the early years, such as an emphasis on “diversified methods” and “learning experiences” (important in the education field), “providing treatment,” “Information Communication Technology/mobile therapy in medical care,” and “information-based practices” (important in the healthcare field). The graphs also reveal the growing trend of “involving companies” in the project as a strategy (important in the economic development, healthcare, and education fields).</p>
+<fig id="pone.0151342.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0151342.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>The dynamics of the 39 strategies (or strategy topics) over time (1982–2013).</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0151342.g003" xlink:type="simple"/>
+</fig>
+<p>Drawing on the synthesis of the three strands of literature on social change above, we used three dimensions as a starting point to develop and validate a classification of social entrepreneurship strategies: 1) <italic>the nature of the resources used</italic> (material vs. symbolic focus); 2<italic>) the specificity of the approach</italic> (general vs. specific strategies); and 3) <italic>the mode of empowerment/influence</italic> (high participatory forms of action or mass influence vs. low participatory forms of action or elite influence). The three authors and three coders (i.e., two PhD students specializing in SE and a top undergraduate student who had recently completed a semester-long SE course) separately classified the 39 strategy topics produced from the earlier analysis along the three theoretical dimensions (i.e., material vs. symbolic strategies; general vs. specific strategies; and mass vs. elite participatory strategies). The two groups of coders coded the texts separately and then met and discussed their classifications. They were able to come to a consensus on the classifications at the end of the second meeting. The classifications by the two groups of coders (researchers and students) yielded very similar results, except for a few strategies that appear to be classifiable into more than one strategy category (e.g., prevention (healthcare), partnership, and government support). Specifically, the two groups of coders used a large whiteboard and drew a 2 x 2 x 2 matrix consisting of <italic>Material</italic> and <italic>Symbolic</italic> focus on the row side and <italic>Mass</italic> vs. <italic>Elite Influence</italic> under <italic>General strategies</italic> as well as <italic>Mass</italic> vs. <italic>Elite Influence</italic> under the <italic>Field-specific strategies</italic> on the column side. They then wrote down the 39 strategy topics one by one in the cells of the matrix and allowed each topic to be moved from one cell to another cell(s) as necessary. We started by asking, “is strategy topic X a material or symbolic strategy?”, and then we asked, “is it a mass or elite influence strategy?”; subsequently, we asked more precisely, “is it a general or field-specific strategy?” This process was performed iteratively until all of the topics were assigned; we allowed a topic to occupy more than one cell or category if the topic logically fit under two cells, which greatly enhanced the interpretation process and the assignment of strategy topics to relevant cells in the matrix. For instance, based on our manual reading of the strategy texts, “fair trade” practices always involve <italic>material</italic> (e.g., monetary or agriculture-related assistance) and <italic>symbolic</italic> (e.g., raising awareness of farmers’ rights) strategies, yet such practices are likely to be considered a form of <italic>mass influence</italic> (e.g., involving many farmers and rural communities) and a <italic>field-specific</italic> type of strategy commonly found in the <italic>economic development</italic> field. Thus, “fair trade” practices were classified in two separate cells (see the upper and lower third column of <xref ref-type="table" rid="pone.0151342.t004">Table 4</xref>). Some strategies, such as <italic>legal enforcement and engaging with religious leaders</italic>, are essentially <italic>symbolic</italic>, rely on <italic>elite influence</italic> and are <italic>field specific</italic> in the <italic>human rights</italic> sector and were therefore classified in only one cell (see the bottom right cell of <xref ref-type="table" rid="pone.0151342.t004">Table 4</xref>). The more <italic>general strategies</italic> (the four cells on the left in <xref ref-type="table" rid="pone.0151342.t004">Table 4</xref>) are perhaps more interesting and important, as they cut across the fields of practice. We will use the classification of the 39 strategies along the 3 social change dimensions for the subsequent analysis and will validate them quantitatively (to be described next). The results of the human-based classification of the strategy topics along the three theoretical dimensions are presented in <xref ref-type="table" rid="pone.0151342.t004">Table 4</xref>.</p>
+<table-wrap id="pone.0151342.t004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0151342.t004</object-id>
+<label>Table 4</label> <caption><title>A classification of validated social entrepreneurship strategies.</title></caption>
+<alternatives>
+<graphic id="pone.0151342.t004g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0151342.t004" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="2"/>
+<th align="center" colspan="2">General strategies</th>
+<th align="center" colspan="2">Specific strategies</th>
+</tr>
+<tr>
+<th align="center">Mass influence (direct)</th>
+<th align="center">Elite influence (indirect)</th>
+<th align="center">Mass influence (direct)</th>
+<th align="center">Elite influence (indirect)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><bold>Material focus</bold></td>
+<td align="left">Community engagement, ICT/mobile therapy, Information-based practices, Build facilities</td>
+<td align="left">Partnership, Resource support, Government support</td>
+<td align="left">Sustainable practices (environment &amp; econ), Fair trade (econ), Small business (econ), Loans &amp; financial support (econ), Marketing/distribution (econ), Use existing resources (econ &amp; health), Prevention (health), Provide treatment (healthcare)</td>
+<td align="left">Involve companies (civic), Marketing distribution (econ)</td>
+</tr>
+<tr>
+<td align="left"><bold>Symbolic focus</bold></td>
+<td align="left">Community engagement, Training/education, Volunteering, Piloting &amp; initiatives, Engage vulnerable groups, Active participation, Networking/sharing, Collective action, Scaling up/replication</td>
+<td align="left">Partnership, Policy making, Piloting &amp; initiative, Media advocacy, Reform system, Government support, Scaling/replication</td>
+<td align="left">Awareness building (env), Sustainable practices (environment &amp; econ), Fair trade (econ), Use existing resources (econ &amp; healthcare), Life-skill training (edu), Learning experiences (edu), Public advocacy (human rights), Prevention (healthcare)</td>
+<td align="left">Diversified methods (edu), Train the trainers (edu), Legal enforcement (human rights), Conduct research (human rights), Religious leaders (human rights)</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>This strategy matrix was based on the strategies described in Tables <xref ref-type="table" rid="pone.0151342.t002">2</xref> and <xref ref-type="table" rid="pone.0151342.t003">3</xref> and Figs <xref ref-type="fig" rid="pone.0151342.g003">3</xref> and <xref ref-type="fig" rid="pone.0151342.g004">4</xref>, which were re-classified using human coders and validated using network analysis.</p>
+<fig id="pone.0151342.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0151342.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title>The co-adoption networks of the 39 social entrepreneurship strategies.</title>
+<p>The size of the vertex (node) is based on degree centrality (a larger node means a higher frequency of use of that strategy); strategies that are strongly co-adopted by Fellows have thicker edges (lines); and the colors represent different clusters of similar strategies. The network is plotted using the <italic>igraph</italic> package in R.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0151342.g004" xlink:type="simple"/>
+</fig>
+<p>Strategies may involve the use of resources with a <italic>material</italic> or <italic>symbolic</italic> focus or both. The former includes, for example, “building facilities,” “using ICT/mobile technologies,” “providing sustainable energy,” “providing loans and financial support,” and “providing treatment” (e.g., medicine), while the latter includes “training/education”, “engaging vulnerable groups,” “relying on volunteers,” “enhancing the importance of fairness through fair trade,” providing reasons for “sustainable practices” and “legal enforcement of specific issues.” The entire list of the material- and symbolic-focused strategies is shown in <xref ref-type="table" rid="pone.0151342.t004">Table 4</xref>.</p>
+<p>Some strategies denote a <italic>general</italic> type of solution that is applicable to more than one field (see “general strategies” in <xref ref-type="table" rid="pone.0151342.t004">Table 4</xref>), while other strategies are <italic>field-specific</italic> (see “specific strategies” in <xref ref-type="table" rid="pone.0151342.t004">Table 4</xref>). These general strategies include “engaging with vulnerable groups,” “forming partnerships,” “networking/sharing,” and “community engagement.” Some field-specific strategies include “sustainable practices” (environment), “diversified methods” and “train the trainers” (education), “loans &amp; financial support,” “marketing/distribution” (economic development), “active participation” (civic engagement), “building facilities,” “providing treatment” (healthcare), and “legal enforcement” and “public advocacy” (human rights).</p>
+<p>Strategies that emphasize empowerment through low participatory forms of action or <italic>elite influence</italic> rely on the power, resources and influence of key institutions in the society to enact change, such as engaging with companies, leaders in the government, and religious leaders, while “empowerment through <italic>mass influence</italic>/participation” strategies rely on more direct engagement with the masses to tackle social problems. As shown in <xref ref-type="table" rid="pone.0151342.t004">Table 4</xref>, empowerment through elite influence includes the following strategies: “involving companies,” “forming partnerships with marketing experts,” “engaging experts to train the trainers,” “using leading research centers to provide objective views,” “engaging religious leaders to influence the public”, “partnering with government agencies and policy makers,” and “media advocacy.” The entire list of the elite and mass influence strategies is presented in <xref ref-type="table" rid="pone.0151342.t004">Table 4</xref>.</p>
+<sec id="sec009">
+<title>Validation of the social entrepreneurship strategy framework</title>
+<sec id="sec010">
+<title>The face validity of the 39 social entrepreneurship strategies</title>
+<p>As a first step in ensuring the face validity of the classification of the 39 SE strategies, each of the three authors conducted a manual reading of 20 randomly selected Ashoka Fellows’ strategy profiles (60 non-overlapping profiles in total) to interpret whether the strategies from each profile fit with the classification. The results offered a good interpretation of the SE strategies within the framework. We provided two examples to depict a re-interpretation of the strategy profiles in relation to their classification. An Ashoka Fellow and the founder of APOPO (Anti-Personnel Landmines Detection Product Development, a Belgian social enterprise, <ext-link ext-link-type="uri" xlink:href="http://www.ashoka.org/Fellow/" xlink:type="simple">www.ashoka.org/Fellow/</ext-link>), helps communities in Tanzania, Mozambique, Angola, Thailand and Cambodia detect landmines and tuberculosis using giant pouched rats. APOPO’s strategies include <italic>building facilities</italic> for giant rats (mass influence and material focus) and <italic>training/educating the local people</italic> (mass influence and symbolic focus) as well as healthcare-specific strategies such as <italic>using existing local resources</italic>, <italic>conducting research</italic> (mass influence and material focus and elite influence and symbolic focus, respectively) and <italic>prevention</italic> (mass influence and material focus). Another Ashoka Fellow, and the founder of Yayasan Prasasti Perdamaian (<ext-link ext-link-type="uri" xlink:href="http://www.ashoka.org/Fellow/" xlink:type="simple">www.ashoka.org/Fellow/</ext-link>), offers culinary skills and stock ownership to help ex-terrorists reintegrate into society. His strategies include <italic>building facilities</italic> such as restaurants and bakeries, <italic>training/educating</italic> ex-terrorists (mass influence with material and symbolic focus), and <italic>lobbying policy makers</italic> and <italic>media advocacy</italic> (elite influence and symbolic focus). Specifically, he uses <italic>small business</italic> and <italic>life-skills training</italic> in culinary skills and running restaurants (mass influence with material and symbolic focus). In recent years, he also <italic>engages companies</italic> through partnerships with large firms (elite influence and material focus). This qualitative interpretation helps to ensure that the classification offers a logical categorization of the strategies and can be used to assist readers and the general public in understanding the strategies. An edited version of the strategy text showing the SE strategies used by one of the Ashoka Fellows who is the founder of APOPO (highlighted in brackets and shown in gray)—using manual reading—is shown below.</p>
+<disp-quote>
+<p>The founder of APOPO was finally convinced about the need for cheaper technologies when he analyzed the landmine problem in Africa in 1995….He set out to develop cheaper, more efficient technologies that <underline><italic>relied on locally available resources</italic></underline> (using existing local resources) in places plagued by the problem of landmines. Starting in an old rented laboratory in Belgium, he trained rats to detect explosives in minute amounts….In partnership with Antwerp University and Sokoine University of Agriculture (SUA), <underline><italic>he relocated his laboratory to Tanzania in East Africa</italic> (building facilities)</underline>. He <underline><italic>set up a world-class training facility in Morogoro</italic> (building facilities)</underline> 190 kilometers west of Dar-es-Salaam, Tanzania's main urban center….He has forged a <underline><italic>partnership with the Tanzania People’s Defense Forces</italic></underline> (partnership) to supply him with deactivated landmines for the <underline><italic>training program</italic> (training local people)</underline>. Sokoine University of Agriculture provided him with the <underline><italic>space to build his training facility</italic> (building facilities;</underline> partnership<underline>),</underline> over 24 hectares of land to use as a training minefield and support through its <underline><italic>rodent research center</italic> (building facilities; conducting research)</underline>. Taken together, his team has developed the <underline><italic>most varied landmine detection testing facility in the world</italic> (building facilities)</underline>. His choice of rat, particularly the African Giant Pouched Rat, is based on its advantages over other species. This <underline><italic>rat species is endemic to sub-Saharan Africa</italic></underline> (using existing local resources). Its vast spread in the region and its relatively long lifespan guarantees <underline><italic>a sustainable supply of rats</italic></underline> (using existing local resources) for the demining program. Weighing between 0.8 and 2.8 kilograms, their light weight enables them to navigate through minefields without setting off active landmines. In comparison to mine detection dogs, rats are much cheaper (using existing local resources)—total costs, including staff salaries, range from $3,000 to $5,000 to train a rat for mine detection. …The <underline><italic>rats are trained by local staff</italic> (training local people)</underline> to differentiate between the smell of explosives and other smells by rewarding them every time the correct sample is identified. Demining work is conducted by teams of human trainers <underline>(training local people)</underline>, their rats, and scientists. …He is working closely with the Geneva International Center for Humanitarian Demining (partnership) to use the document as the accreditation standard for the technology. Before being officially allowed to work as mine detectors, the rats have to pass a licensing test. The <underline><italic>rat detection technology</italic></underline> (prevention work) has so far been very successful. He has been contracted by the Mozambique government <underline><italic>to clear minefields</italic></underline> (prevention work). He hopes to apply a similar approach to other fields. He <underline><italic>is in the research phase of using rats to diagnose tuberculosis</italic></underline> (conducting research)….He is also looking into more effective technologies in the environmental field to <underline><italic>detect pollutants and toxins</italic></underline> (prevention work), <underline><italic>provide container and parcel checks at customs</italic>, <italic>assist in border and aviation security</italic></underline> (prevention work), and <underline><italic>engage in rescue operations to search for victims under rubble after natural or manmade disasters</italic></underline>.</p>
+</disp-quote>
+<p>Above and beyond the face validity check, we conducted further robustness tests to quantitatively validate the above framework, which we discuss in the next section.</p>
+</sec>
+<sec id="sec011">
+<title>General and specific social entrepreneurship strategies</title>
+<p>Assuming that the 39 strategy topics were correctly categorized into the classifications described above (i.e., <italic>material</italic> vs. <italic>symbolic focus; general</italic> vs. <italic>field-specific strategies</italic>; <italic>high participatory forms of action or mass influence</italic> vs. <italic>low participatory forms of action or elite influence</italic>), we expected that our confidence in the classification would be manifested in the robustness test results. As discussed using the strategy profiles of the two Ashoka Fellows above, each Fellow typically uses two or more strategies, and a particular strategy can be adopted by multiple social entrepreneurs. <italic>General strategies</italic> tend to be more applicable across various social problems and fields of practice; thus, as one may expect, they should be “more popular” (more prevalent) than <italic>field-specific strategies</italic>. In other words, if the classification of the general strategies (vis-à-vis field-specific strategies) is correct, these general strategies should have been adopted by a greater number of Fellows than the field-specific strategies, thus rendering the general strategies <italic>more central</italic> and more widely used compared with the highly specialized field-specific strategies.</p>
+<p>To test this prediction, we used a network analysis based on the logic of <italic>strategy co-adoption</italic> [<xref ref-type="bibr" rid="pone.0151342.ref045">45</xref>] to visualize the relationships between the strategies. The <italic>igraph</italic> package in R was used to construct and analyze the co-adoption network of strategies [<xref ref-type="bibr" rid="pone.0151342.ref046">46</xref>]. The <italic>strategy co-adoption</italic>, presented in the Strategy-Person Matrix (SPM), was defined as the frequency with which two strategies were adopted simultaneously by the same Fellow. If a Fellow uses two or more strategies, the nodes (which represent strategies) are connected by a line (see <xref ref-type="fig" rid="pone.0151342.g004">Fig 4</xref>), but if only one strategy is adopted by a Fellow, then such nodes will have no links. The more fellows there are who co-adopt strategies, the thicker the connecting line will be between the two strategies. Additionally, the more important a strategy is, the larger the node is (i.e., degree centrality; see [<xref ref-type="bibr" rid="pone.0151342.ref047">47</xref>]. We used community detection algorithms—the fast, “greedy” modularity optimization algorithm and the walktrap method—to identify local clusters of strategies [<xref ref-type="bibr" rid="pone.0151342.ref048">48</xref>,<xref ref-type="bibr" rid="pone.0151342.ref049">49</xref>]. In addition, we calculated and compared the average topic scores across general and field-specific strategies as another measure of the “popularity” of strategies.</p>
+<p>We plotted the 39 strategy co-adoption networks by showing (1) the closely connected communities that emerged based on the strength of local connections and (2) the degree centrality (see <xref ref-type="fig" rid="pone.0151342.g004">Fig 4</xref>). The communities are highlighted by the node clusters with similar colors. The degree centrality is shown by the “size” of the nodes (larger nodes mean higher centrality). The edges or lines represent the strength of co-adoption (thicker lines between two strategies mean that the Fellows strongly co-adopted the two strategies). As shown in <xref ref-type="fig" rid="pone.0151342.g004">Fig 4</xref>, field-specific strategies tend to be located at network peripheries and have relatively smaller nodes (lower degree centrality), which imply a lower importance of such strategies compared with the general strategies that are located at the center and have larger nodes. These strategies include the “fair trade,” “loans &amp; financial assistance,” “small business,” and “marketing and distribution” strategies from the Economic Development field, which are located at the periphery (northeast) of the network with lower centrality. The “prevention,” “information-based practices,” “provide treatment,” “ICT/mobile therapy,” and “build facilities” strategies from the healthcare field are also positioned at the periphery (northwest) of the network with low centrality. Specific strategies from the learning/education, human rights and civil engagement fields also appear at the periphery of the network and have small nodes.</p>
+<p>Conversely, the general strategies are clustered in the center of the network and have larger nodes (higher degree centrality). This difference is statistically significant: general strategies have more links to other strategies than field-specific strategies, <italic>t</italic>(15.6) = 3.09, <italic>p</italic> &lt; 0.001, and general strategies yield higher topic scores, <italic>t</italic>(13.6) = 2.29, <italic>p</italic> &lt; 0.05 (see <xref ref-type="fig" rid="pone.0151342.g005">Fig 5</xref>, panels A and B, for boxplots of degree centrality and topic scores). Thus, general strategies are more important strategies and tend to be co-adopted by more Fellows. These general strategies include “training/education,” “scaling up/replication,” “partnership,” “engage with vulnerable groups,” “resource support,” “networking/sharing,” “community engagement,” “active participation,” and “policy making.” Thus, the network properties offer support to the above expectation that general strategies are used more often (i.e., are more popular) than field-specific strategies in the strategy co-adoption network of social entrepreneurs; thus, our classification clearly separates the general strategies from the specific strategies. In other words, in solving complex social problems, social entrepreneurs use multiple general and field-specific strategies.</p>
+<fig id="pone.0151342.g005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0151342.g005</object-id>
+<label>Fig 5</label>
+<caption>
+<title>Robustness check of three dimensions of social entrepreneurship strategies.</title>
+<p>The box plots of the three dimensions of strategies—general versus specific, material versus symbolic, and mass versus elite participation—are shown based on their degree centrality and topic score.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0151342.g005" xlink:type="simple"/>
+</fig>
+<p>Importantly, the network analysis of strategies in the classification shows strong “reproduction” of six distinct community clusters—which almost perfectly matches the six fields of practice used by Ashoka to classify the Ashoka Fellows. Had the strategies been misclassified, they would not have “loaded” or “clustered” to reproduce the six fields of practice. To better visualize how the 39 strategies are clustered into the six fields of practice, we repeated the network analysis and plotted another graph (see <xref ref-type="fig" rid="pone.0151342.g006">Fig 6</xref>) with the presence of each distinct practice field marked by uniquely colored clusters.</p>
+<fig id="pone.0151342.g006" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0151342.g006</object-id>
+<label>Fig 6</label>
+<caption>
+<title>The clustering of the 39 social entrepreneurship strategies into the 6 fields of practice.</title>
+<p>The size of the vertex (node) is based on degree centrality. Strategies that are strongly co-adopted by a Fellow will have thicker edges (lines). The colors represent different clusters of similar strategies: there are six clusters of strategies in six unique node colors (blue, green, dark red, bright red, purple, yellow). The most central nodes are also in purple. The network is plotted using <italic>igraph</italic> in R.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0151342.g006" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec012">
+<title>Symbolic and material social entrepreneurship strategies</title>
+<p>When social entrepreneurs are said to create system-wide change, how and what exactly are they changing―the material or the symbolic world? In other words, which is the more influential strategy, the material or the symbolic strategy? The literature sheds some light on this question. Bornstein [<xref ref-type="bibr" rid="pone.0151342.ref050">50</xref>] notes that in creating systemic change, leading change makers focus on “shifting behavior patterns and perceptions” (p. 2), which implies the use of symbolic strategies. A closer look at two of the world’s most celebrated social entrepreneurs (and Noble Prize winners) Wangari Maathai, founder of the Green Belt Movement in Kenya [<xref ref-type="bibr" rid="pone.0151342.ref051">51</xref>,<xref ref-type="bibr" rid="pone.0151342.ref052">52</xref>], and Muhammad Yunus, founder of Grameen Bank in Bangladesh [<xref ref-type="bibr" rid="pone.0151342.ref053">53</xref>], reveals that women’s empowerment, environmental conservation and poverty eradication do not focus on money or tangible resources. Rather, the core aim of these strategies is to <italic>change the public’s mindset</italic>, <italic>behaviors</italic>, <italic>lifestyles and perceptions</italic>—the “symbolic” strategies—and the material strategies are expected to naturally follow. Grameen Bank’s success appears to rely on its micro-loans (a material strategy), but an in-depth look at the core of its strategy reveals the prominence of the Four Principles of Grameen―Discipline, Unity, Courage, and Hard Work―and the 16 Principles of “you shall and you shall not’ as the cornerstone of the mindset-, behavior-, and perception-changing strategies that are needed to alleviate poverty. The BRAC (Bangladesh Rural Advancement Committee), another highly successful micro-finance program that combats poverty in Bangladesh and across Asia, also employs the 17 Principles (e.g., we shall adopt family planning, we shall send our children to school, we shall try to be clean and always drink clean water). These principles are also “symbolic” strategies, without which the recipients of these micro-loans could end up using the proceeds for personal consumption or other personal gains, which would reduce the efficacy of Grameen’s and the BRAC’s poverty alleviation strategies.</p>
+<p>Moreover, the literature notes that social entrepreneurs base their actions on quasi-universal principles or “orders of worth” to justify their beliefs, opinions and actions [<xref ref-type="bibr" rid="pone.0151342.ref022">22</xref>,<xref ref-type="bibr" rid="pone.0151342.ref054">54</xref>]: inspiration, the domestic world, fame, civic society, the market world and the industrial world. Of these principles, only the market and industrial worlds are “material” in nature; the rest are “symbolic.” Therefore, we expected that outstanding social entrepreneurs such as the Ashoka Fellows would focus on the symbolic world (the “why and how”) to a larger extent and that the material world strategy (the “what”) would naturally follow. A strong symbolic strategy can still work to achieve a social entrepreneur’s goals even with weak/little material resources because it can attract resources, investors and followers. However, the reverse may not hold true.</p>
+<p>Therefore, if our findings on the classification of the symbolic strategies (vis-à-vis material strategies) are correct, the symbolic strategies should have been adopted by a greater number of Fellows, thus making these strategies more central, more widely used, and ultimately more popular than the material strategies. As the co-adoption network shows (<xref ref-type="fig" rid="pone.0151342.g004">Fig 4</xref>), the <italic>symbolic strategies</italic> tend to cluster in the middle of the network and thus have more linkages (higher degrees of centrality) than the <italic>material</italic> strategies, <italic>t</italic>(22.9) = 2.09, <italic>p</italic> &lt; 0.05; furthermore, the t-test yielded marginally higher topic scores, <italic>t</italic>(26.1) = 1.86, <italic>p</italic> = 0.07 (see <xref ref-type="fig" rid="pone.0151342.g005">Fig 5</xref>, panels C and D, for boxplots of degree centrality and topic scores). This evidence suggests that social entrepreneurs tend to adopt more <italic>symbolic strategies</italic> than material strategies.</p>
+</sec>
+<sec id="sec013">
+<title>Elite and mass influence social entrepreneurship strategies</title>
+<p>To test the prominence of low participatory forms of action or elite influence strategies vs. high participatory forms of action or mass influence strategies, we created a boxplot to visualize the degree of centrality of the two strategies. As shown in panel E of <xref ref-type="fig" rid="pone.0151342.g005">Fig 5</xref>, the degrees of centrality of the elite and mass influence strategies are not significantly different: <italic>t</italic>(22.8) = 0.0067, <italic>p</italic> = 0.946. This result suggests that both strategies are equally important on an aggregate basis when the time dimension is excluded. We also tested to see whether the use of elite vs. mass influence strategies relates to timing issues. The strategy text of the Ashoka Fellows describes each social entrepreneur’s strategies in chronological order, from the earliest to the most recent strategies used. Thus, we analyzed the strategy sentences chronologically and explored the relationship between the chronological numbering of sentences and mass/elite influence strategies identified in each sentence. The results, shown in panel F of <xref ref-type="fig" rid="pone.0151342.g005">Fig 5</xref>, indicate that elite-influenced strategies, on average, have a significantly smaller sequential number than mass-influenced strategies, <italic>t</italic>(3480.9) = 48.89, <italic>p</italic> &lt; 0.001, which indicates that social entrepreneurs are more likely to adopt elite-influenced strategies in the earlier stages of their initiatives.</p>
+</sec>
+<sec id="sec014">
+<title>Toward a meta-social entrepreneurship strategy</title>
+<p>To further refine our “initial SE strategy framework” into several primary concepts/constructs, the three authors independently coded the 39 strategy topics to obtain more general concepts. In doing so, two of the authors sat together and read each of the 39 strategy topics with the actual printed materials of the Fellows’ strategy texts at hand for reference. Then, strategy topics with similar meaning were collapsed manually until we did not see any clear overlap among the strategy topics. In performing the coding aggregation, we cycled among the 39 strategy topics and the relevant literature [<xref ref-type="bibr" rid="pone.0151342.ref055">55</xref>,<xref ref-type="bibr" rid="pone.0151342.ref056">56</xref>], thus transitioning from “inductive” to “abductive” research, where data and theory are considered together [<xref ref-type="bibr" rid="pone.0151342.ref057">57</xref>]. The third actor acted as a “devil’s advocate” to challenge and question the interpretation of each coding aggregation—as per Gioa et al. [<xref ref-type="bibr" rid="pone.0151342.ref055">55</xref>]. Thus, in essence, we started with an <italic>initial</italic> topic modeling analysis of 170 topics, gave labels to each of the 170 topics, <italic>collapsed</italic> them to 70 topics at the first stage of aggregation, finally reduced them to form the 39 strategy topics at the first-level coding and subsequently validated them qualitatively and quantitatively; finally, we used manual coding to identify more meaningful strategic themes grounded in the literature. After three iterations and discussions, we reached a consensus on six fundamental meta-SE strategies, as illustrated in <xref ref-type="table" rid="pone.0151342.t005">Table 5</xref>.</p>
+<table-wrap id="pone.0151342.t005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0151342.t005</object-id>
+<label>Table 5</label> <caption><title>A meta-social entrepreneurship strategy.</title></caption>
+<alternatives>
+<graphic id="pone.0151342.t005g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0151342.t005" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Social entrepreneuring strategies (from topic modeling)</th>
+<th align="left">Meta social entrepreneurship strategies (using human coding)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">training/education</td>
+<td align="left">Individual empowerment</td>
+</tr>
+<tr>
+<td align="left">provide treatment</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">awareness building</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">diversified methods</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">learning experiences</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">life skills training</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">media advocacy</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">prevention</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">religious leaders</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">protect vulnerable groups</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">collective action</td>
+<td align="left">Collective action</td>
+</tr>
+<tr>
+<td align="left">community engagement</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">active participation</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">community support</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">engage vulnerable groups</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">involve companies</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">networking/sharing</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">partnership</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">volunteering</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">reform systems</td>
+<td align="left">Reform the system</td>
+</tr>
+<tr>
+<td align="left">policy making</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">public advocacy</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">government support</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">legal enforcement</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">train the trainers</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">build facilities</td>
+<td align="left">Build physical capital</td>
+</tr>
+<tr>
+<td align="left">ICT</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">ICT/mobile therapy</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">loans &amp; financial support</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">marketing/distribution</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">resource support</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">scaling up/replication</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">use existing resources</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">small business</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">fair trade</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">sustainable practice</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">conduct research</td>
+<td align="left">Evidence-based practices</td>
+</tr>
+<tr>
+<td align="left">information-based practices</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">piloting/initiatives</td>
+<td align="left">Prototyping</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>Our six distilled SE strategies, shown in <xref ref-type="table" rid="pone.0151342.t005">Table 5</xref>, are <italic>individual empowerment</italic>, <italic>collective action</italic>, <italic>system reform</italic>, <italic>physical capital development</italic>, <italic>evidence-based practices</italic>, and <italic>prototyping</italic>. <italic>Individual empowerment</italic>, <italic>collective action</italic>, and <italic>physical capital development</italic> appear to be the three most utilized grand strategies (associated with the highest number of strategy topics). These are followed by <italic>system reform</italic>, <italic>evidence-based practices</italic>, and <italic>prototyping</italic> as the next three most employed strategies. Of these, four SE strategies have not been explored or identified in prior SE research: <italic>system reform</italic>, <italic>physical capital development</italic>, <italic>evidence-based practices</italic>, <italic>and prototyping</italic>. Each of the six meta-strategies can be viewed as a tool to create social change at various levels—family, community, provincial, regional, national, and global levels. <italic>Individual empowerment</italic> aims to enhance individuals and communities (as target beneficiaries by, for example, using technical skills training and the influence of religious leaders to encourage and develop positive behavior and awareness-building to enhance individuals’ knowledge of their civil rights). <italic>Collective action</italic>, such as engaging with the community, local companies and volunteers, uses the power of collectives, which in turn strengthens individual and group empowerment. <italic>Reforming the system</italic> by exerting effort to change or enhance public awareness of powerful and resourceful actors/institutions can lead to positive change. For instance, community efforts to reform a system enhance individual empowerment because collective action brings people together to work effectively, which in turn, strengthens the “players’” sense of empowerment and can simultaneously improve the larger system or tackle a problem. <italic>Building physical capital</italic> enables actors to turn resource deficiencies into resource capacities—for instance, by using ICT/mobile technologies to deliver healthcare information to those deprived of medical access in rural areas, building schools and community centers to educate and help organize marginalized groups of people, and providing micro-loans to those denied access to conventional banking services. <italic>Evidence-based practices</italic> require using evidence and facts to examine social problems and devise solutions; they also serve as a mechanism to build the trust and integrity of a group, which in turn supports the group’s efforts to pursue a solution. <italic>Prototyping</italic> involves creating pilot schemes and models prior to launching a solution on a larger scale.</p>
+</sec>
+</sec>
+</sec>
+<sec id="sec015" sec-type="conclusions">
+<title>Discussion</title>
+<p>This article describes the findings from a data exploration and validation that spans 30 years of diverse SE strategies used by 2,334 social entrepreneurs affiliated with the global SE support organization Ashoka across 60 countries. Using three strands of social change literature—the social activism and change model, the empowerment model, and the resource- and capital-based model of SE—that describe how social leaders and entrepreneurs solve social problems as the study’s foundation, we distilled three initial dimensions of the nature of strategizing with a purpose as the raison d’etre of SE: <italic>the nature of the resources used (i</italic>.<italic>e</italic>., <italic>tangible or symbolic)</italic>,<italic>the specificity of the approach (i</italic>.<italic>e</italic>., <italic>general or specific)</italic>, and <italic>the mode of participation (high participatory forms of action or mass influence or low participatory forms of action or elite influence)</italic>. Our results first suggest that <italic>social entrepreneurs rarely adopt a single strategy</italic> but instead combine two or more strategies for their strategic plans. Second, the diverse strategies can be reduced into 39 SE strategies and fitted into a framework that depicts the <italic>tangibility/symbolism</italic>, <italic>specificity/generality</italic>, <italic>and elite/mass participation</italic> of the strategies (see <xref ref-type="table" rid="pone.0151342.t004">Table 4</xref> and <xref ref-type="fig" rid="pone.0151342.g004">Fig 4</xref>). We also show that the strategies vary in importance (i.e., density) across time and fields of practice (see Figs <xref ref-type="fig" rid="pone.0151342.g003">3</xref> and <xref ref-type="fig" rid="pone.0151342.g006">6</xref>). Some of the most popular strategies in recent years include <italic>building facilities</italic>, <italic>using ICT/mobile technologies</italic>, <italic>providing loans and financial support</italic>, <italic>encouraging training/education</italic>, <italic>engaging in partnerships with companies</italic>, <italic>promoting sustainable practices</italic>, <italic>enforcing legal remedies</italic>, <italic>engaging with religious and civic leaders for the cause</italic>, and <italic>advocating through the media</italic> (see <xref ref-type="fig" rid="pone.0151342.g003">Fig 3</xref>). Our validation tests—using manual reading, network analysis of strategy co-adoption and t-tests—of the SE strategy types revealed the consistency and robustness of the classifications. Finally, we further reduced the 39 strategy topics into six types of SE strategies: <italic>individual empowerment</italic>, <italic>collective action</italic>, <italic>system reform</italic>, <italic>physical capital development</italic>, <italic>evidence-based practices</italic>, and <italic>prototyping</italic>. These represent the distilled categories of SE strategies.</p>
+<p>Although our findings require further testing and exploration, they fill an empirical and theoretical gap regarding what social entrepreneurs actually do [<xref ref-type="bibr" rid="pone.0151342.ref002">2</xref>,<xref ref-type="bibr" rid="pone.0151342.ref004">4</xref>,<xref ref-type="bibr" rid="pone.0151342.ref005">5</xref>]. The SE research has focused on the organizational [<xref ref-type="bibr" rid="pone.0151342.ref006">6</xref>–<xref ref-type="bibr" rid="pone.0151342.ref009">9</xref>], motivational [<xref ref-type="bibr" rid="pone.0151342.ref010">10</xref>,<xref ref-type="bibr" rid="pone.0151342.ref011">11</xref>], political [<xref ref-type="bibr" rid="pone.0151342.ref012">12</xref>] and definitional [<xref ref-type="bibr" rid="pone.0151342.ref013">13</xref>,<xref ref-type="bibr" rid="pone.0151342.ref014">14</xref>] aspects of social entrepreneurship, but the diversity and key patterns in SE strategies are overlooked. We offer theoretically derived SE strategies associated with the social change, social activism, SE and empowerment literature and extend social entrepreneurship research. Specifically, the 39 SE strategies that we extracted can be mapped into three dimensions—using tangible or symbolic resources, general or specific strategies, and high participatory forms of action or mass influence vs. low participatory forms of action or elite influence. We then further classified these 39 strategies into six meta-SE strategies. Our findings extend and enrich prior exemplary studies on the various models of social activism and change [<xref ref-type="bibr" rid="pone.0151342.ref023">23</xref>,<xref ref-type="bibr" rid="pone.0151342.ref024">24</xref>,<xref ref-type="bibr" rid="pone.0151342.ref058">58</xref>], empowerment [<xref ref-type="bibr" rid="pone.0151342.ref003">3</xref>,<xref ref-type="bibr" rid="pone.0151342.ref025">25</xref>] and SE [<xref ref-type="bibr" rid="pone.0151342.ref022">22</xref>,<xref ref-type="bibr" rid="pone.0151342.ref026">26</xref>] by introducing <italic>four</italic> new and important <italic>meta-SE strategies</italic> that have been overlooked in prior research: <italic>system reform</italic>, <italic>physical capital development</italic>, <italic>evidence-based practices</italic>, <italic>and prototyping</italic>.</p>
+<p>In the literature on social activism, particularly in the research on corporate social activism (i.e., activism against for-profit organizations), scholars [<xref ref-type="bibr" rid="pone.0151342.ref023">23</xref>] suggest that reformative activists are more likely to focus on reinstitutionalization than deinstitutionalization, to work with proactive firms, to challenge laggard firms and to mobilize more people (high participatory strategy), while radical activists focus on deinstitutionalization rather than reinstitutionalization and use material damage tactics. While their insights are interesting, Den Hond and De Bakker’s [<xref ref-type="bibr" rid="pone.0151342.ref023">23</xref>] piece is theoretical and lacks (large-scale) evidence. Bornstein [<xref ref-type="bibr" rid="pone.0151342.ref050">50</xref>] is among the first who uses the word “reform”–albeit as a passing reference–and provides an illustration of how a doctor named Vera Cordeiro “redefine[d] healthcare in Brazil” (p.130), where she changed the norm by providing care to poor children after they are discharged from public hospitals. The arguments above resonate well and converge with one of our four new meta-strategies called “<italic>system reform</italic>.” In essence, system reform is the core of what social activists do. When activists mobilize people, build coalitions with powerful elites, or use costly tactics (e.g., chaining themselves to railway tracks to get their voices heard), they seek to eventually reform the system. Our study provides empirical support with a large N to the presence of <italic>system reform</italic> as a strategy in social entrepreneurship, which has previously been reported in the social activism but not in the social entrepreneurship literature. What makes social entrepreneurship different from social activism, as in the example of Vera Cordeiro above [<xref ref-type="bibr" rid="pone.0151342.ref050">50</xref>] and the Ashoka Fellows who are the founders of APOPO and Yayasan Prasasti Perdamaian, is that social entrepreneurs create system reform differently from social activists. While social entrepreneurs rely on <italic>innovation</italic>, <italic>trade and free will</italic> to create social change, social activists (especially radical activists) largely rely on <italic>non-trade</italic> and <italic>coercive power</italic> to enact social change.</p>
+<p>Zahra et al. [<xref ref-type="bibr" rid="pone.0151342.ref059">59</xref>] discuss the theoretical concept of “social engineers” who recognize “systemic problems with existing social structures and address them by introducing a revolutionary change” (p. 519). Zahra and colleagues [<xref ref-type="bibr" rid="pone.0151342.ref059">59</xref>] use the concept of “social engineers” as a process and outcome of SE, whereby social engineers are theorized to be creating a larger scale impact compared with the other two types in their typology (i.e., social bricoleurs and social constructionists). The <italic>system reform</italic> meta-strategy found in our study has some resemblance with Zahra and colleagues’ terminology of “social reform” (p.527). However, despite this resemblance, our strategy offers additional insights into the new concept of system reform, which consists of several dimensions (see <xref ref-type="table" rid="pone.0151342.t005">Table 5</xref>) beyond Zahra’s generic “social reform”. More importantly, we offer empirical evidence using large-scale data of the existence of different types of system reform meta-strategies that consist of changing the social system/structure and the policies, conducting public advocacy, seeking government support, conducting legal enforcement and training the trainers. Therefore, our findings complement and extend Zahra et al.’s [<xref ref-type="bibr" rid="pone.0151342.ref059">59</xref>] research.</p>
+<p>Mair, Batillana and Cardenas [<xref ref-type="bibr" rid="pone.0151342.ref022">22</xref>] suggest that social entrepreneurship models consist of four types of capital: political, human, economic and social capital. However, their study is limited to a relatively small sample of social entrepreneurs. Meyskens and colleagues’ [<xref ref-type="bibr" rid="pone.0151342.ref026">26</xref>] study on the resources and social value creation of 70 social entrepreneurs demonstrates the key resources used in social enterprises: organizations, financial capital, partnerships, innovativeness, and knowledge transferability. The social entrepreneurship strategies proposed by the scholars [<xref ref-type="bibr" rid="pone.0151342.ref022">22</xref>, <xref ref-type="bibr" rid="pone.0151342.ref026">26</xref>] described above predominantly focus on the <italic>sources of the resources</italic> that social entrepreneurs use to create social change. Our new meta-strategy called <italic>“physical capital development”</italic> extends their research by suggesting that building physical capital is a common strategy to enact social change. For instance, in the case of the founder of APOPO, an Ashoka Fellow, developing a local infrastructure of <italic>laboratories</italic> to train African rats is a key element in his success performing landmine detection work. In the case of the founder of Yayasan Prasasti Perdamaian, another Ashoka Fellow, the development of <italic>beefsteak restaurants</italic> and other culinary businesses is central to his strategy of reintegrating former religious terrorists into society. In fact, the <italic>scale and scope of the physical capital</italic> is a good proxy to measure the success and social impact of these social entrepreneurs.</p>
+<p><italic>“Evidence-based practices</italic>” are a large part of what medical workers, psychologists, social workers, educators, and social policy analysts do in their daily work. Evidence-based practices, inspired by “evidence-based medicine,” refer to <italic>the use of the best available evidence</italic> to make decisions and solve problems [<xref ref-type="bibr" rid="pone.0151342.ref060">60</xref>]. For example, doctors and nurses rely on whatever actual evidence of cure is available in performing medical procedures or treatments. The use of evidence makes it easier for others to replicate and generalize such practices and allows for a trail of evidence that can be used to reveal the “truth” when malpractice occurs. Although evidence-based practices have their critics and supporters, such practices prevail and gain wide acceptance in social and organizational practices, including in business school education and in large companies [<xref ref-type="bibr" rid="pone.0151342.ref061">61</xref>]. In social entrepreneurship, there is a growing need to <italic>measure and monitor the performance</italic> of social enterprises as a way of enhancing their social and economic impact [<xref ref-type="bibr" rid="pone.0151342.ref027">27</xref>,<xref ref-type="bibr" rid="pone.0151342.ref062">62</xref>,<xref ref-type="bibr" rid="pone.0151342.ref063">63</xref>]. Such measurements are often required by funders so they can ascertain how well their money is spent and by social entrepreneurs to build their “theory of change,” i.e., how inputs translate into outputs. Thus, because social enterprises need to monitor their own performance, they inherently rely on evidence (at time t) to make better decisions (at time t+1). Prior research has not reported findings on <italic>evidence-based practices</italic> in social entrepreneurship. Our study offers empirical support with a large N for the importance of evidence-based practices as one of the new meta-strategies in social entrepreneurship.</p>
+<p>Anecdotal stories show that social entrepreneurs experiment and <italic>prototype</italic> social solutions before they are scaled up to larger geographic regions or to the target beneficiaries [<xref ref-type="bibr" rid="pone.0151342.ref064">64</xref>]. Prototyping plays several roles in social entrepreneurship. First, it helps social entrepreneurs <italic>reduce uncertainty</italic> and provides <italic>learning opportunities</italic> to develop better intervention programs [<xref ref-type="bibr" rid="pone.0151342.ref028">28</xref>,<xref ref-type="bibr" rid="pone.0151342.ref065">65</xref>]. Second, it provides <italic>signals</italic> or <italic>“evidence”</italic> of the efficacy of a social enterprise’s solutions that in turn can be used to attract partners and funders [<xref ref-type="bibr" rid="pone.0151342.ref028">28</xref>]. However, these findings are based on small N studies. Our study offers a large-scale empirical validation of the importance of prototyping as a meta-strategy in social entrepreneurship.</p>
+<p>Given that our strategies were derived from Ashoka Fellows’ strategy profiles, we offer a much more diverse “toolbox” of strategies than any previous SE study. By examining the local challenges and resource availability faced by each social entrepreneur along with their chosen strategies and strategic positioning, we can better understand the diversity of SE strategies and their effectiveness in certain situations. It is therefore important that we capture the diverse strategies used in our framework through the meta-strategies. To our knowledge, this study represents the first effort to systematically explore, classify, and validate SE strategies using a very large data set.</p>
+<p>This article offers methodological innovation to research in the social entrepreneurship, strategic management, organizational science, and cognate fields. Specifically, it offers a novel approach (i.e., topic modeling) to extract latent dimensions of strategy data from a pool of data using machine-learning methods. In particular, it offers ways to efficiently analyze the dynamics and importance of strategy at a highly granular, temporal and field-specific level and examines how the strategies interact with one another. We demonstrate the efficacy of using topic modeling and network analysis as novel techniques to build and validate an SE taxonomy. Finally, the classification that we developed and validated in this study provides guidance to current and future social entrepreneurs regarding the strategies that have been successfully used by social entrepreneurs worldwide to effect impactful social change. It allows future change makers to replicate best practices from Ashoka’s social entrepreneurs and identify new social innovation opportunities, and it provides advice to policy makers and SE organizations, including nonprofits and NGOs, on how to better support social enterprises. Given the trends among NGOs to experiment with, spin off, or rebrand parts of or entire organizations according to the SE model, our findings offer insight into the range of SE strategies that they can adopt to achieve their goals. Our classification framework and meta-strategies also offer a “progress check” for policy makers and organizations such as the United Nations on workable SE strategies and ways to map the gaps to achieve certain national, regional and global social agendas. For Ashoka, as the “mother ship” of all Fellows, our findings can help the organization map strategies, pinpoint gaps, extend and/or tweak strategies and offer suggestions to further develop future Fellows. In the words of Drayton and Budinich [<xref ref-type="bibr" rid="pone.0151342.ref066">66</xref>], we are witnessing “a scale of [social] change not seen since the Industrial Revolution” (p. 58). This study has taken the first step in charting and understanding the actual strategies that thousands of elite change makers from 60 countries have employed over the past 30 years to help improve the human condition.</p>
+<sec id="sec016">
+<title>Limitations and future research agenda</title>
+<p>This study’s findings must be considered in light of its limitations. First, we did not study the differences between the strategies of successful versus less successful social entrepreneurs or those who were selected as Fellows or not. Our aim was not to identify predictors for such performance differences but to explore, classify, and validate the strategies used by social change agents selected by Ashoka. Future research may compare and contrast the strategies and SE environments of Fellows who failed versus those who succeeded in Ashoka, Echoing Green, Schwab and other SE support organizations. Second, this study focuses only on “strategy texts” but could be extended to other forms of corporate communication materials (e.g., websites, mission statements, recordings of meetings, blogs, and mobile conversations such as tweets and newspaper articles). We also assume that Ashoka has performed its due diligence to ensure the quality and validity of its Fellows’ strategy profiles described on its website. Third, our LDA model is sensitive to the values of the hyper-parameter of the Bayesian priors such that the results of the strategy dimensions extracted could be affected. We concur with Quinn and colleagues [<xref ref-type="bibr" rid="pone.0151342.ref042">42</xref>], who suggest that a “topic model requires more user input <italic>after</italic> the initial quantitative analysis is completed…users must spend more time interpreting and validating the results <italic>ex-post</italic>” (p. 225) and that LDA or other automated text analysis “is and should not replace other [human coding] method[s]” (p.225). The <italic>sensitivity</italic> of the hyper-parameter of the Bayesian priors in LDA could influence the results in terms of the <italic>number of dimensions or topics extracted</italic>. Therefore, based on our experience and reflecting the best practices developed by scholars before us [<xref ref-type="bibr" rid="pone.0151342.ref042">42</xref>–<xref ref-type="bibr" rid="pone.0151342.ref044">44</xref>], the LDA-generated topics are best served as <italic>initial</italic> outputs only, and they should be complemented using human interpreters via human-based coding and subsequent quantitative validation. LDA or other automated text mining methods and human coding can be used together to “powerful effect” that “build on and reinforce each other” [<xref ref-type="bibr" rid="pone.0151342.ref044">44</xref>] (p. 15–16). This aspect is perhaps the most critical point about using LDA for future scholars. We adhered to the best practices in performing the topic modeling analysis described above and acknowledged that the LDA approach has its own the strengths and limitations that can be complemented using other approaches, including human coding. Fourth, we did not examine social impact measures or the strategies’ impact on the specific goals that the social entrepreneurs aimed to solve. Fifth, we do not analyze the most frequent or infrequent words used in the word distributions of the strategy texts; doing so could offer additional insights from a linguistics perspective. Finally, future research can explore the uniqueness of each social enterprise’s strategies and compare the strategies across social enterprises. These limitations, if explored, could offer rich avenues for further research.</p>
+</sec>
+</sec>
+</body>
+<back>
+<ref-list>
+<title>References</title>
+<ref id="pone.0151342.ref001"><label>1</label><mixed-citation publication-type="other" xlink:type="simple">United Nations. Realizing the future we want for all: report to the secretary-general. UN System Task Team on the Post-2015. UN Development Agenda;2012.</mixed-citation></ref>
+<ref id="pone.0151342.ref002"><label>2</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Alvord</surname> <given-names>SH</given-names></name>. <article-title>Social entrepreneurship and societal transformation: an exploratory study</article-title>. <source>J Appl Behav Sci</source>. <year>2004</year>;<volume>40</volume>: <fpage>260</fpage>–<lpage>282</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref003"><label>3</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Santos</surname> <given-names>FM</given-names></name>. <article-title>A positive theory of social entrepreneurship</article-title>. <source>J Bus Ethics</source>. <year>2012</year>;<volume>111</volume>: <fpage>335</fpage>–<lpage>351</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref004"><label>4</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Weerawardena</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Mort</surname> <given-names>GS</given-names></name>. <article-title>Investigating social entrepreneurship: a multidimensional model</article-title>. <source>J World Bus</source>. <year>2006</year>;<volume>41</volume>: <fpage>21</fpage>–<lpage>35</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref005"><label>5</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Waddock</surname> <given-names>SA</given-names></name>, <name name-style="western"><surname>Post</surname> <given-names>JE</given-names></name>. <article-title>Social entrepreneurs and catalytic change</article-title>. <source>Public Admin Rev</source>. <year>1991</year>;<volume>51</volume>: <fpage>393</fpage>–<lpage>401</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref006"><label>6</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Corner</surname> <given-names>PD</given-names></name>, <name name-style="western"><surname>Ho</surname> <given-names>M</given-names></name>. <article-title>How opportunities develop in social entrepreneurship</article-title>. <source>Entrep Theory Pract</source>. <year>2010</year>;<volume>34</volume>: <fpage>635</fpage>–<lpage>659</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref007"><label>7</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Moss</surname> <given-names>TW</given-names></name>, <name name-style="western"><surname>Short</surname> <given-names>JC</given-names></name>, <name name-style="western"><surname>Payne</surname> <given-names>GT</given-names></name>, <name name-style="western"><surname>Lumpkin</surname> <given-names>GT</given-names></name>. <article-title>Dual identities in social ventures: an exploratory study</article-title>. <source>Entrep Theory Pract</source>. <year>2011</year>;<volume>35</volume>: <fpage>805</fpage>–<lpage>830</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref008"><label>8</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Desa</surname> <given-names>G</given-names></name>. <article-title>Resource mobilization in International social entrepreneurship: bricolage as a mechanism of institutional transformation</article-title>. <source>Entrep Theory Pract</source>. <year>2012</year>;<volume>36</volume>: <fpage>727</fpage>–<lpage>751</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref009"><label>9</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pache</surname> <given-names>A-</given-names></name>, <name name-style="western"><surname>Santos</surname> <given-names>F</given-names></name>. <article-title>Inside the Hybrid Organization: Selective Coupling as a Response to Competing Institutional Logics</article-title>. <source>Acad Manag J</source>. <year>2013</year>;<volume>56</volume>: <fpage>972</fpage>–<lpage>1001</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref010"><label>10</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Miller</surname> <given-names>TL</given-names></name>, <name name-style="western"><surname>Grimes</surname> <given-names>MG</given-names></name>, <name name-style="western"><surname>Mcmullen</surname> <given-names>JS</given-names></name>, <name name-style="western"><surname>Vogus</surname> <given-names>TJ</given-names></name>. <article-title>Venturing for others with heart and head: how compassion encourages social entrepreneurship</article-title>. <source>Acad Manag Rev</source>. <year>2012</year>;<volume>37</volume>: <fpage>616</fpage>–<lpage>640</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref011"><label>11</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yiu</surname> <given-names>DW</given-names></name>, <name name-style="western"><surname>Wan</surname> <given-names>WP</given-names></name>, <name name-style="western"><surname>Ng</surname> <given-names>FW</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>X</given-names></name>, <name name-style="western"><surname>Su</surname> <given-names>J</given-names></name>. <article-title>Sentimental drivers of social entrepreneurship: a study of China’s Guangcai (Glorious) Program</article-title>. <source>Manag Organ Rev</source>. <year>2014</year>;<volume>10</volume>: <fpage>55</fpage>–<lpage>80</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref012"><label>12</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dey</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Steyaert</surname> <given-names>C</given-names></name>. <article-title>The politics of narrating social entrepreneurship</article-title>. <source>J Enterprising Communities People Places Glob Econ</source>. <year>2010</year>;<volume>4</volume>: <fpage>85</fpage>–<lpage>108</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref013"><label>13</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dacin</surname> <given-names>PA</given-names></name>, <name name-style="western"><surname>Dacin</surname> <given-names>MT</given-names></name>, <name name-style="western"><surname>Matear</surname> <given-names>M</given-names></name>. <article-title>Social entrepreneurship: why we don’t need a new theory and how we move forward from here</article-title>. <source>Acad Manag Perspect</source>. <year>2010</year>;<volume>24</volume>: <fpage>37</fpage>–<lpage>58</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref014"><label>14</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Choi</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Majumdar</surname> <given-names>S</given-names></name>. <article-title>Social entrepreneurship as an essentially contested concept: opening a new avenue for systematic future research</article-title>. <source>J Bus Venturing</source>. <year>2014</year>;<volume>29</volume>: <fpage>363</fpage>–<lpage>376</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref015"><label>15</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Porter</surname> <given-names>M</given-names></name>. <article-title>What is strategy?</article-title> <source>Harvard Business Review</source>. <year>1996</year>.</mixed-citation></ref>
+<ref id="pone.0151342.ref016"><label>16</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Miller</surname> <given-names>A</given-names></name>. <article-title>A taxonomy of technological settings, with related strategies and performance Levels</article-title>. <source>Strat Mgmt J</source>. <year>1988</year>;<volume>9</volume>: <fpage>239</fpage>–<lpage>254</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref017"><label>17</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Morrison</surname> <given-names>AJ</given-names></name>, <name name-style="western"><surname>Roth</surname> <given-names>K</given-names></name>. <article-title>A taxonomy of business-level strategies in global industries</article-title>. <source>Strat Mgmt J</source>. <year>1992</year>;<volume>13</volume>: <fpage>399</fpage>–<lpage>418</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref018"><label>18</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Austin</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Stevenson</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Wei-Skillern</surname> <given-names>J</given-names></name>. <article-title>Social and commercial entrepreneurship: same, different, or both?</article-title> <source>Ent Theory &amp; Pract</source>. <year>2006</year>;<volume>30</volume>: <fpage>1</fpage>–<lpage>22</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref019"><label>19</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Battilana</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Dorado</surname> <given-names>S</given-names></name>. <article-title>Building sustainable hybrid organizations: the case of commercial microfinance organizations</article-title>. <source>Acad Manag J</source>. <year>2010</year>;<volume>53</volume>: <fpage>1419</fpage>–<lpage>1440</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref020"><label>20</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mair</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Marti</surname> <given-names>I</given-names></name>. <article-title>Entrepreneurship in and around institutional voids: a case study from Bangladesh</article-title>. <source>J Bus Venturing</source>. <year>2009</year>;<volume>24</volume>: <fpage>419</fpage>–<lpage>435</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref021"><label>21</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yunus</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Moingeon</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Lehmann-Ortega</surname> <given-names>L</given-names></name>. <article-title>Building social business models: lessons from the grameen experience</article-title>. <source>Long Range Plan</source>. <year>2010</year>;<volume>43</volume>: <fpage>308</fpage>–<lpage>325</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref022"><label>22</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mair</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Battilana</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Cardenas</surname> <given-names>J</given-names></name>. <article-title>Organizing for society: a typology of social entrepreneuring models</article-title>. <source>J Bus Ethics</source>. <year>2012</year>;<volume>111</volume>: <fpage>353</fpage>–<lpage>373</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref023"><label>23</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Den Hond</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>De Bakker</surname> <given-names>FGA</given-names></name>. <article-title>Ideologically motivated activism: how activist groups influence corporate social change activities</article-title>. <source>Acad Manag Rev</source>. <year>2007</year>;<volume>32</volume>: <fpage>901</fpage>–<lpage>924</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref024"><label>24</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Chetkovich</surname> <given-names>CA</given-names></name>, <name name-style="western"><surname>Kunreuther</surname> <given-names>F</given-names></name>. <source>From the ground up: grassroots organizations making Social change</source>. <publisher-loc>Ithaca</publisher-loc>: <publisher-name>Cornell University Press</publisher-name>; <year>2006</year>. p. <fpage>205</fpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref025"><label>25</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zimmerman</surname> <given-names>MA</given-names></name>, <name name-style="western"><surname>Warschausky</surname> <given-names>S</given-names></name>. <article-title>Empowerment theory for rehabilitation research: conceptual and methodological issues</article-title>. <source>Rehabil Psychol</source>. <year>1998</year>;<volume>43</volume>: <fpage>3</fpage>–<lpage>16</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref026"><label>26</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Meyskens</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Robb-Post</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Stamp</surname> <given-names>JA</given-names></name>, <name name-style="western"><surname>Carsrud</surname> <given-names>AL</given-names></name>, <name name-style="western"><surname>Reynolds</surname> <given-names>PD</given-names></name>. <article-title>Social ventures from a resource-based perspective: an exploratory study assessing global Ashoka fellows</article-title>. <source>Entrep: Theory Practice</source>. <year>2010</year>;<volume>34</volume>: <fpage>661</fpage>–<lpage>680</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref027"><label>27</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Chandra</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Wong</surname> <given-names>L</given-names></name>. <source>Social entrepreneurship in the Greater China: policy and cases</source>. <publisher-loc>London</publisher-loc>: <publisher-name>Routledge</publisher-name>; <year>2016</year> (forthcoming).</mixed-citation></ref>
+<ref id="pone.0151342.ref028"><label>28</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Chandra</surname> <given-names>Y</given-names></name>. <chapter-title>The entrepreneurship process in high performing hybrid organizations: insights from Diamond Cab</chapter-title>. In: <name name-style="western"><surname>Chandra</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Wong</surname> <given-names>L</given-names></name>, editors. <source>Social entrepreneurship in the Greater China: policy and cases</source>. <publisher-loc>London</publisher-loc>: <publisher-name>Routledge</publisher-name>; <year>2016</year> (forthcoming).</mixed-citation></ref>
+<ref id="pone.0151342.ref029"><label>29</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zott</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Huy</surname> <given-names>QN</given-names></name>. <article-title>How entrepreneurs use symbolic management to acquire resources</article-title>. <source>Admin Sci Q</source>. <year>2007</year>;<volume>52</volume>: <fpage>70</fpage>–<lpage>105</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref030"><label>30</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Aldrich</surname> <given-names>HE</given-names></name>, <name name-style="western"><surname>Fiol</surname> <given-names>CM</given-names></name>. <article-title>Fools rush in? The institutional context of industry creation</article-title>. <source>Acad Manag Rev</source>. <year>1994</year>;<volume>19</volume>: <fpage>645</fpage>–<lpage>670</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref031"><label>31</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Higgins</surname> <given-names>MC</given-names></name>, <name name-style="western"><surname>Gulati</surname> <given-names>R</given-names></name>. <article-title>Getting off to a good start: the effects of upper echelon affiliations on underwriter prestige</article-title>. <source>Organ Sci</source>. <year>2003</year>;<volume>14</volume>: <fpage>244</fpage>–<lpage>263</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref032"><label>32</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Terjesen</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Bosma</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Stam</surname> <given-names>E</given-names></name>. <article-title>Advancing public policy for high-growth, female, and social entrepreneurs</article-title>. <source>Public Admin Rev</source>. <year>2015</year>. in press. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/puar.12472" xlink:type="simple">10.1111/puar.12472</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0151342.ref033"><label>33</label><mixed-citation publication-type="other" xlink:type="simple">Ashoka Fellows. Available at: <ext-link ext-link-type="uri" xlink:href="http://www.ashoka.org/Fellows" xlink:type="simple">www.ashoka.org/Fellows</ext-link>. Accessed 1 January 2013.</mixed-citation></ref>
+<ref id="pone.0151342.ref034"><label>34</label><mixed-citation publication-type="other" xlink:type="simple">Richardson L, Beautiful Soup. 2012. Available at: <ext-link ext-link-type="uri" xlink:href="http://www.crummy.com/software/BeautifulSoup/" xlink:type="simple">http://www.crummy.com/software/BeautifulSoup/</ext-link>. Accesed on 10 August 2013.</mixed-citation></ref>
+<ref id="pone.0151342.ref035"><label>35</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Feinerer</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Hornik</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Meyer</surname> <given-names>D</given-names></name>. <article-title>Text mining infrastructure in RJ stat</article-title>. <source>Softw</source>. <year>2008</year>;<volume>5</volume>: <fpage>1</fpage>–<lpage>22</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref036"><label>36</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Manning</surname> <given-names>CD</given-names></name>, <name name-style="western"><surname>Schütze</surname> <given-names>H</given-names></name>. <source>Foundations of statistical natural language processing</source>. <publisher-loc>Cambridge, MA</publisher-loc>: <publisher-name>MIT Press</publisher-name>; <year>1999</year>. pp. <fpage>1</fpage>–<lpage>680</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref037"><label>37</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Blei</surname> <given-names>DM</given-names></name>, <name name-style="western"><surname>Ng</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Jordan</surname> <given-names>MI</given-names></name>. <article-title>Latent dirichlet allocation</article-title>. <source>J Mach Learn Res</source>. <year>2003</year>;<volume>3</volume>: <fpage>993</fpage>–<lpage>1022</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref038"><label>38</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Blei</surname> <given-names>DM</given-names></name>, <name name-style="western"><surname>Lafferty</surname> <given-names>JD</given-names></name>. <article-title>Correction: a correlated topic model of science</article-title>. <source>Ann Appl Stat</source>. <year>2007</year>;<volume>1</volume>: <fpage>634</fpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref039"><label>39</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Blei</surname> <given-names>DM</given-names></name>. <article-title>Probabilistic topic models</article-title>. <source>Commun ACM</source>. <year>2012</year>;<volume>55</volume>: <fpage>55</fpage>–<lpage>65</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref040"><label>40</label><mixed-citation publication-type="book" xlink:type="simple"><collab>University of Colorado Institute of Cognitive Science Series</collab>. <chapter-title>Probabilistic topic models</chapter-title>. <name name-style="western"><surname>Landauer</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>McNamara</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Dennis</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Kintsch</surname> <given-names>W</given-names></name>, editors. In: <source>Handbook of latent semantic analysis</source>. <publisher-loc>New York</publisher-loc>: <publisher-name>Psychology Press</publisher-name>; <year>2007</year>. pp. <fpage>424</fpage>–<lpage>440</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref041"><label>41</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Grün</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Hornik</surname> <given-names>K</given-names></name>. <article-title>Topicmodels: an R package for fitting Topic models</article-title>. <source>J Stat Softw</source>. <year>2011</year>;<volume>40</volume>: <fpage>1</fpage>–<lpage>30</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref042"><label>42</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Quinn</surname> <given-names>KM</given-names></name>, <name name-style="western"><surname>Monroe</surname> <given-names>BL</given-names></name>, <name name-style="western"><surname>Colaresi</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Crespin</surname> <given-names>MH</given-names></name>, <name name-style="western"><surname>Radev</surname> <given-names>DR</given-names></name>. <article-title>How to analyze political attention with minimal assumptions and costs</article-title>. <source>Am J Polit Sci</source>. <year>2010</year>;<volume>54</volume>: <fpage>209</fpage>–<lpage>228</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref043"><label>43</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Grimmer</surname> <given-names>J</given-names></name>. <article-title>A Bayesian hierarchical topic model for political texts: measuring expressed agendas in senate press releases</article-title>. <source>Polit Anal</source>. <year>2010</year>;<volume>18</volume>: <fpage>1</fpage>–<lpage>35</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref044"><label>44</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fariss</surname> <given-names>CJ</given-names></name>, <name name-style="western"><surname>Linder</surname> <given-names>FJ</given-names></name>, <name name-style="western"><surname>Jones</surname> <given-names>ZM</given-names></name>, <name name-style="western"><surname>Crabtree</surname> <given-names>CD</given-names></name>, <name name-style="western"><surname>Biek</surname> <given-names>MA</given-names></name>, <name name-style="western"><surname>Ross</surname> <given-names>AS</given-names></name>, <etal>et al</etal>. <article-title>Human rights texts: converting human rights primary source documents into data</article-title>. <source>PLOS ONE</source>. <year>2015</year>;<volume>10</volume>: <fpage>e0138935</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0138935" xlink:type="simple">10.1371/journal.pone.0138935</ext-link></comment> <object-id pub-id-type="pmid">26418817</object-id></mixed-citation></ref>
+<ref id="pone.0151342.ref045"><label>45</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Small</surname> <given-names>H</given-names></name>. <article-title>Co-citation in the scientific literature: a new measure of the relationship between two documents</article-title>. <source>J Am Soc Inf Sci</source>. <year>1973</year>;<volume>24</volume>: <fpage>265</fpage>–<lpage>269</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref046"><label>46</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Csárdi</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Nepusz</surname> <given-names>T</given-names></name>. <article-title>The igraph software package for complex network research</article-title>. <source>InterJournal Complex Systems</source>. <year>2006</year>;<volume>1695</volume>: <fpage>1</fpage>–<lpage>9</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref047"><label>47</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Borgatti</surname> <given-names>SP</given-names></name>, <name name-style="western"><surname>Everett</surname> <given-names>MG</given-names></name>, <name name-style="western"><surname>Johnson</surname> <given-names>JC</given-names></name>. <source>Analyzing social networks</source>. <publisher-loc>Thousand Oaks, CA</publisher-loc>: <publisher-name>SAGE Publications</publisher-name>; <year>2013</year>. pp. <fpage>1</fpage>–<lpage>304</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref048"><label>48</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Clauset</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Newman</surname> <given-names>MEJ</given-names></name>, <name name-style="western"><surname>Moore</surname> <given-names>C</given-names></name>. <article-title>Finding community structure in very large networks</article-title>. <source>Phys Rev E Stat Nonlin Soft Matter Phys</source>. <year>2004</year>;<volume>70</volume>: <fpage>066111</fpage>. <object-id pub-id-type="pmid">15697438</object-id></mixed-citation></ref>
+<ref id="pone.0151342.ref049"><label>49</label><mixed-citation publication-type="other" xlink:type="simple">Pons P, Latapy M. Computing communities in large networks using random walks. In: Yolum P, Gungor T, Gurgen F, Ozturan C, editors. Computer and information sciences—ISCIS 2005: 20th International Symposium. Berlin Heidelberg: Springer; 2005. p. 974.</mixed-citation></ref>
+<ref id="pone.0151342.ref050"><label>50</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Bornstein</surname> <given-names>D</given-names></name>. <chapter-title>How to change the world: social entrepreneurs and the power of new ideas</chapter-title>. <edition>Updated edition</edition>. <publisher-loc>Oxford</publisher-loc>: <publisher-name>Oxford University Press</publisher-name>; <year>2007</year>.</mixed-citation></ref>
+<ref id="pone.0151342.ref051"><label>51</label><mixed-citation publication-type="other" xlink:type="simple">Maathai W. The greenbelt movement. 2015. Available at: <ext-link ext-link-type="uri" xlink:href="http://www.greenbeltmovement.org/wangari-maathai" xlink:type="simple">http://www.greenbeltmovement.org/wangari-maathai</ext-link>. Accessed 22 May 2015.</mixed-citation></ref>
+<ref id="pone.0151342.ref052"><label>52</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Maathai</surname> <given-names>W</given-names></name>. <source>The Green Belt Movement: sharing the approach and the experience</source>. <publisher-loc>New York</publisher-loc>: <publisher-name>Lantern Books Publishing House</publisher-name>; <year>2004</year>. p. <fpage>117</fpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref053"><label>53</label><mixed-citation publication-type="other" xlink:type="simple">Bank G. [About us]. Available at: <ext-link ext-link-type="uri" xlink:href="http://www.grameen-info.org" xlink:type="simple">http://www.grameen-info.org</ext-link>. Accessed 22 May 2015.</mixed-citation></ref>
+<ref id="pone.0151342.ref054"><label>54</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Boltanski</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Thévenot</surname> <given-names>LO</given-names></name>. <source>Justification: economies of worth</source>. <publisher-loc>Princeton, NJ</publisher-loc>: <publisher-name>Princeton University Press</publisher-name>; <year>2006</year>. pp. <fpage>1</fpage>–<lpage>389</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref055"><label>55</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gioia</surname> <given-names>DA</given-names></name>, <name name-style="western"><surname>Corley</surname> <given-names>KG</given-names></name>, <name name-style="western"><surname>Hamilton</surname> <given-names>AL</given-names></name>. <article-title>Seeking Qualitative rigor in inductive research: notes on the Gioia methodology</article-title>. <source>Organ Res Methods</source>. <year>2013</year>;<volume>16</volume>: <fpage>15</fpage>–<lpage>31</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref056"><label>56</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nag</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Gioia</surname> <given-names>DA</given-names></name>. <article-title>From common to uncommon knowledge: foundations of firm-specific use of knowledge as a resource</article-title>. <source>Acad Manag J</source>. <year>2012</year>;<volume>55</volume>: <fpage>421</fpage>–<lpage>457</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref057"><label>57</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Alvesson</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Kärreman</surname> <given-names>D</given-names></name>. <article-title>Constructing mystery: empirical matters in theory development</article-title>. <source>Acad Manag Rev</source>. <year>2007</year>;<volume>32</volume>: <fpage>1265</fpage>–<lpage>1281</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref058"><label>58</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kerlin</surname> <given-names>JA</given-names></name>. <article-title>A comparative analysis of the global emergence of Social Enterprise</article-title>. <source>Voluntas Int J Volunt Nonprofit Organ</source>. <year>2010</year>;<volume>21</volume>: <fpage>162</fpage>–<lpage>179</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref059"><label>59</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zahra</surname> <given-names>SA</given-names></name>, <name name-style="western"><surname>Gedajlovic</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Neubaum</surname> <given-names>DO</given-names></name>, <name name-style="western"><surname>Shulman</surname> <given-names>JM</given-names></name>. <article-title>A typology of social entrepreneurs: motives, search processes and ethical challenges</article-title>. <source>J Bus Venturing</source>. <year>2009</year>;<volume>24</volume>: <fpage>519</fpage>–<lpage>532</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref060"><label>60</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sackett</surname> <given-names>DL</given-names></name>, <name name-style="western"><surname>Rosenberg</surname> <given-names>WMC</given-names></name>, <name name-style="western"><surname>Gray</surname> <given-names>JAM</given-names></name>, <name name-style="western"><surname>Haynes</surname> <given-names>RB</given-names></name>, <name name-style="western"><surname>Richardson</surname> <given-names>WS</given-names></name>. <article-title>Evidence based medicine: what it is and what it isn't</article-title>. <source>BMJ</source>. <year>1996</year>;<volume>312</volume>: <fpage>71</fpage>–<lpage>72</lpage>. <object-id pub-id-type="pmid">8555924</object-id></mixed-citation></ref>
+<ref id="pone.0151342.ref061"><label>61</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rousseau</surname> <given-names>DM</given-names></name>. <article-title>Is there such a thing as “evidence-based management”?</article-title> <source>Acad Manag Rev</source>. <year>2006</year>;<volume>31</volume>: <fpage>256</fpage>–<lpage>269</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref062"><label>62</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Holt</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Littlewood</surname> <given-names>D</given-names></name>. <article-title>Identifying, mapping, and monitoring the impact of hybrid firms</article-title>. <source>Calif Manag Rev</source>. <year>2015</year>;<volume>57</volume>: <fpage>107</fpage>–<lpage>125</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref063"><label>63</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ebrahim</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Rangan</surname> <given-names>VK</given-names></name>. <article-title>What impact? A framework for measuring the scale and scope of social performance</article-title>. <source>Calif Manag Rev</source>. <year>2014</year>;<volume>56</volume>: <fpage>118</fpage>–<lpage>141</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref064"><label>64</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sonne</surname> <given-names>L</given-names></name>. <article-title>Innovative initiatives supporting inclusive innovation in India: social business incubation and micro venture capital</article-title>. <source>Technol Forecasting Soc Change</source>. <year>2012</year>;<volume>79</volume>: <fpage>638</fpage>–<lpage>647</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref065"><label>65</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hillgren</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Seravalli</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Emilson</surname> <given-names>A</given-names></name>. <article-title>Prototyping and infrastructuring in design for social innovation</article-title>. <source>Codesign</source>. <year>2011</year>;<volume>7</volume>: <fpage>169</fpage>–<lpage>183</lpage>.</mixed-citation></ref>
+<ref id="pone.0151342.ref066"><label>66</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Drayton</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Budinich</surname> <given-names>V</given-names></name>. <article-title>A new alliance for global change</article-title>. <source>Harv Bus Rev</source>. <year>2010</year>;<volume>88</volume>: <fpage>54</fpage>–<lpage>64</lpage>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

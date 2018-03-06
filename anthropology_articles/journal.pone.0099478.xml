@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group>
+<journal-title>PLoS ONE</journal-title></journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-13-37896</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0099478</article-id>
+<article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Biology and life sciences</subject><subj-group><subject>Neuroscience</subject><subj-group><subject>Cognitive science</subject><subj-group><subject>Cognitive psychology</subject><subj-group><subject>Intelligence</subject><subj-group><subject>Human intelligence</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group><subject>Psychology</subject><subj-group><subject>Behavior</subject><subj-group><subject>Human performance</subject></subj-group></subj-group><subj-group><subject>Developmental psychology</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Medicine and health sciences</subject><subj-group><subject>Health care</subject><subj-group><subject>Socioeconomic aspects of health</subject></subj-group></subj-group><subj-group><subject>Epidemiology</subject><subj-group><subject>Social epidemiology</subject></subj-group></subj-group><subj-group><subject>Mental health and psychiatry</subject></subj-group><subj-group><subject>Pediatrics</subject><subj-group><subject>Adolescent medicine</subject><subject>Child development</subject></subj-group></subj-group><subj-group><subject>Public and occupational health</subject><subj-group><subject>Behavioral and social aspects of health</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Social sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Cultural anthropology</subject></subj-group></subj-group><subj-group><subject>Economics</subject><subj-group><subject>Human capital</subject><subj-group><subject>Economics of training and education</subject></subj-group></subj-group></subj-group><subj-group><subject>Sociology</subject><subj-group><subject>Culture</subject><subject>Social research</subject></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Screen Media Usage, Sleep Time and Academic Performance in Adolescents: Clustering a Self-Organizing Maps Analysis</article-title>
+<alt-title alt-title-type="running-head">Screen Media Usage, Sleep and Academic Performance</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Peiró-Velert</surname><given-names>Carmen</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Valencia-Peris</surname><given-names>Alexandra</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>González</surname><given-names>Luis M.</given-names></name><xref ref-type="aff" rid="aff2"><sup>2</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>García-Massó</surname><given-names>Xavier</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Serra-Añó</surname><given-names>Pilar</given-names></name><xref ref-type="aff" rid="aff3"><sup>3</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Devís-Devís</surname><given-names>José</given-names></name><xref ref-type="aff" rid="aff2"><sup>2</sup></xref><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+</contrib-group>
+<aff id="aff1"><label>1</label><addr-line>Departament de Didàctica de l’Expressió Musical, Plàstica i Corporal, Universitat de València, Valencia, Spain</addr-line></aff>
+<aff id="aff2"><label>2</label><addr-line>Departament d’Educació Física i Esportiva, Universitat de València, Valencia, Spain</addr-line></aff>
+<aff id="aff3"><label>3</label><addr-line>Departament de Fisioteràpia, Universitat de València, Valencia, Spain</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Dasgupta</surname><given-names>Kaberi</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>McGill University, Canada</addr-line></aff>
+<author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">jose.devis@uv.es</email></corresp>
+<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn>
+<fn fn-type="con"><p>Conceived and designed the experiments: CPV AVP JDD. Performed the experiments: CPV AVP JDD. Analyzed the data: CPV AVP LMG XGM JDD. Contributed reagents/materials/analysis tools: CPV AVP LMG XGM PSA JDD. Wrote the paper: CPV AVP LMG PSA JDD.</p></fn>
+</author-notes>
+<pub-date pub-type="collection"><year>2014</year></pub-date>
+<pub-date pub-type="epub"><day>18</day><month>6</month><year>2014</year></pub-date>
+<volume>9</volume>
+<issue>6</issue>
+<elocation-id>e99478</elocation-id>
+<history>
+<date date-type="received"><day>4</day><month>9</month><year>2013</year></date>
+<date date-type="accepted"><day>15</day><month>5</month><year>2014</year></date>
+</history>
+<permissions>
+<copyright-year>2014</copyright-year>
+<copyright-holder>Peiró-Velert et al</copyright-holder><license xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions>
+<abstract>
+<p>Screen media usage, sleep time and socio-demographic features are related to adolescents' academic performance, but interrelations are little explored. This paper describes these interrelations and behavioral profiles clustered in low and high academic performance. A nationally representative sample of 3,095 Spanish adolescents, aged 12 to 18, was surveyed on 15 variables linked to the purpose of the study. A Self-Organizing Maps analysis established non-linear interrelationships among these variables and identified behavior patterns in subsequent cluster analyses. Topological interrelationships established from the 15 emerging maps indicated that boys used more passive videogames and computers for playing than girls, who tended to use mobile phones to communicate with others. Adolescents with the highest academic performance were the youngest. They slept more and spent less time using sedentary screen media when compared to those with the lowest performance, and they also showed topological relationships with higher socioeconomic status adolescents. Cluster 1 grouped boys who spent more than 5.5 hours daily using sedentary screen media. Their academic performance was low and they slept an average of 8 hours daily. Cluster 2 gathered girls with an excellent academic performance, who slept nearly 9 hours per day, and devoted less time daily to sedentary screen media. Academic performance was directly related to sleep time and socioeconomic status, but inversely related to overall sedentary screen media usage. Profiles from the two clusters were strongly differentiated by gender, age, sedentary screen media usage, sleep time and academic achievement. Girls with the highest academic results had a medium socioeconomic status in Cluster 2. Findings may contribute to establishing recommendations about the timing and duration of screen media usage in adolescents and appropriate sleep time needed to successfully meet the demands of school academics and to improve interventions targeting to affect behavioral change.</p>
+</abstract>
+<funding-group><funding-statement>Funding for this research (EDU2009-13664) was provided by the Ministry of Science and Innovation (Spain). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts><page-count count="9"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title>Introduction</title>
+<p>The influence of screen media usage (SMU) on children and adolescents' lifestyles has received growing attention during the last decade due to the potential health consequences. Particularly, screen-related sedentary behaviors have been associated to energy imbalances that increase the risk of overweight and obesity, together with metabolic and cardiovascular diseases among children and adolescents <xref ref-type="bibr" rid="pone.0099478-Crespo1">[1]</xref>–<xref ref-type="bibr" rid="pone.0099478-MartnezGmez1">[3]</xref>. Furthermore, it has been suggested that SMU reduces time spent in physical activity <xref ref-type="bibr" rid="pone.0099478-Bercedo1">[4]</xref>, although some studies and meta-analyses provide weak or no evidence toward a ‘competing hypothesis’ <xref ref-type="bibr" rid="pone.0099478-Borraccino1">[5]</xref>, <xref ref-type="bibr" rid="pone.0099478-Marshall1">[6]</xref>. Others consider it dependent on the day of the week and the type of media used <xref ref-type="bibr" rid="pone.0099478-DevsDevs1">[7]</xref>, <xref ref-type="bibr" rid="pone.0099478-SerranoSanchez1">[8]</xref>.</p>
+<p>Research has also shown that SMU interferes with academic activities, such as studying and reading books, hence having negative consequences on academic performance <xref ref-type="bibr" rid="pone.0099478-GarcaContinente1">[9]</xref>–<xref ref-type="bibr" rid="pone.0099478-Hancox1">[12]</xref>. However, other studies have found positive consequences <xref ref-type="bibr" rid="pone.0099478-Bowers1">[13]</xref> or consequences that differ according to the type of media used <xref ref-type="bibr" rid="pone.0099478-Hofferth1">[14]</xref>, <xref ref-type="bibr" rid="pone.0099478-Jackson1">[15]</xref>. In addition, age, gender and socioeconomic status (SES) are associated to SMU and academic performance, but there is no agreement as to which gender is more at risk <xref ref-type="bibr" rid="pone.0099478-GarcaContinente1">[9]</xref>, <xref ref-type="bibr" rid="pone.0099478-Mle1">[10]</xref>, <xref ref-type="bibr" rid="pone.0099478-Hofferth1">[14]</xref>, <xref ref-type="bibr" rid="pone.0099478-Jackson1">[15]</xref>.</p>
+<p>Recent reviews have identified a positive association between SMU and sleep problems or insufficient sleep time <xref ref-type="bibr" rid="pone.0099478-Cain1">[16]</xref>, <xref ref-type="bibr" rid="pone.0099478-Costigan1">[17]</xref>. Particularly, delayed bedtime and shorter sleep time appear as the most consistent results associated with excessive media use <xref ref-type="bibr" rid="pone.0099478-Cain1">[16]</xref>. Nevertheless, evidence on SMU interference with sleep is contradictory; depending on the type of media that is used <xref ref-type="bibr" rid="pone.0099478-Chen1">[18]</xref>. For instance, in a recent study, adolescents who watched TV four or more hours per day were more likely to show sufficient sleep; while those who played video-computer games, or used the computer for something different than school work, two or more hours per day, were more unlikely to show sufficient sleep <xref ref-type="bibr" rid="pone.0099478-Foti1">[19]</xref>. Insufficient sleep has also been positively related to poor academic performance <xref ref-type="bibr" rid="pone.0099478-National1">[20]</xref>, <xref ref-type="bibr" rid="pone.0099478-Li1">[21]</xref>. In a recent meta-analysis, sleep duration and school performance were directly associated with having a stronger effect on younger students than on older students. This was also found true to a larger effect in studies that surveyed more boys as opposed to studies that included more girls <xref ref-type="bibr" rid="pone.0099478-Dewald1">[22]</xref>. Nevertheless, the interrelationship of SMU, particularly regarding sedentary media, and sleep and academic performance is not a common research issue despite the presupposed potential associations between these variables. Among the few, Dworak et al.'s study <xref ref-type="bibr" rid="pone.0099478-Dworak1">[23]</xref> supports the hypothesis of the negative influence sedentary screen media has on children's sleep, memory and learning. Particularly, TV and computer game exposure affects children's sleep and deteriorates verbal cognitive performance.</p>
+<p>The scarcity of studies with a focus on these interrelationships could be due to the limitations of traditional statistical analyses. These analyses establish linear relationships among variables, but in a real world scenario most of the relationships are non-linear. Moreover, traditional statistics reduce their power when the number of variables to be interrelated increases. Therefore, new non-linear statistical analyses are needed to investigate the relationship among different SMU, sleep time, academic performance and socio-demographic characteristics. Self-Organizing Maps (SOM) analysis allows establishing non-linear relationship among a great number of variables. Variables are plotted on maps that improve the visualization and interpretation of these results. Kohonen <xref ref-type="bibr" rid="pone.0099478-Kohonen1">[24]</xref> introduced this method of analysis and since then, more than 5,000 studies have employed this analysis, or a modified version of it, in a wide range of disciplines such as engineering, medicine, biology and economics <xref ref-type="bibr" rid="pone.0099478-Oja1">[25]</xref>.</p>
+<p>The purpose of this cross-sectional study is twofold. Firstly, it describes the relationship among SMU (TV/video/DVD, computer, videogames, mobile), sleep time, academic achievement and socio-demographic characteristics of a youth sample (age, gender and SES) through a SOM analysis. Secondly, it clusters adolescents in order to identify groups of young people with different behavioral profiles from SOM output. Clusters with high and low academic performance are of particular interest in this paper due to the potential impact they receive from SMU, sleep time and socio-demographic variables.</p>
+</sec><sec id="s2" sec-type="materials|methods">
+<title>Materials and Methods</title>
+<sec id="s2a">
+<title>Ethics statement</title>
+<p>Materials and procedures were approved by the individual schools, the school districts and the Ethics Committee of the University of Valencia. Written informed consent forms were obtained from parents or participants 18 years of age.</p>
+</sec><sec id="s2b">
+<title>Participants</title>
+<p>A sample of 3,095 Spanish students, aged 12 to 18, participated in this study as part of a wider project designed to assess physical activity, SMU and other psychosocial variables. It represents 65.7% of response rate from the 4,585 adolescents invited to participate in the study. Three thousand and six adolescents responded to the whole questionnaire, one item had 2.5% of no answer and the rest of items had a less than 1.5% of no answer. In obtaining the sample, a multistage stratified sampling procedure was used after dividing the Spanish territory into six areas, as performed in previous studies <xref ref-type="bibr" rid="pone.0099478-Serra1">[26]</xref>. Initially, a randomized sample of ZIP codes from each area was considered as the primary unit of sampling. Public and private schools, the second unit of sampling, were randomly selected among those that offered all educative levels under study and accepted voluntarily to participate. Those schools that refused to participate (3 private and 1 public schools) or did not accomplish the criteria of educative levels were replaced by the first school of the official list of previous ZIP. Adolescents, as ultimate unit of sampling, were selected following proportional quotas by gender and academic course. The field work for data gathering was developed during the Fall of 2010.</p>
+</sec><sec id="s2c">
+<title>Variables and Instruments</title>
+<p>The Adolescent Sedentary Activity Questionnaire (ASAQ) <xref ref-type="bibr" rid="pone.0099478-Hardy2">[27]</xref> was employed in this study. It is a self-reported instrument to assess the amount of time adolescents spend on daily sedentary behaviors. An intraclass correlation coefficient range of 0.76–0.90 showed an acceptable reliability <xref ref-type="bibr" rid="pone.0099478-Hardy2">[27]</xref> and a correspondence with accelerometer-determined sedentary time in adolescent girls showed good validity plus test-retest reliability <xref ref-type="bibr" rid="pone.0099478-Hardy3">[28]</xref>. Only the sedentary SMU variables from ASAQ were used for the purposes of this study and updated variables on mobile use and passive videogames were added. The Family Affluence Scale II <xref ref-type="bibr" rid="pone.0099478-Currie1">[29]</xref> was used to measure adolescents' SES. Sleep hours, including a siesta or nap, active videogames usage and age, were questions also included in the study. Responses were recorded as continuous variables and are as follows: a) TV/video/DVD viewing; b) computer for playing; c) computer for communicating; d) computer for doing homework; e) overall computer use (b+c+d); f) passive videogames; g) active videogames; h) mobile for communicating; i) mobile for playing; j) overall sedentary screen media (a+e+f); k) sleep time; l) SES and m) age.</p>
+<p>The categorical variables were gender and adolescent academic achievement or performance in the previous academic year, grouped in four categories (1 = more than three failed subjects; 2 = between one and three failed subjects; 3 = no failed subjects and average grades; 4 = no failed subjects and high grades). Categories 1 and 2 correspond to students with poor achievement and are likely to have problems to pass the course. Categories 3 and 4 consist of students with good and excellent achievements that allow them to successfully pass the course.</p>
+</sec><sec id="s2d">
+<title>Data analysis and procedure</title>
+<p>SOM was applied to this study in order to classify adolescents and establish reciprocal links or topological relationships among the considered variables. Therefore, it allowed to group students according to their academic achievement, age, gender, SES, sleep time and SMU. Moreover, SOM also helped to visually analyze the magnitude of every variable. It is an innovative non-linear modeling data analysis, particularly suitable when data are numerous and the equation model that explains the relationships between variables is unknown, as in this study. SOM uses competitive non-supervised neuronal network algorithms <xref ref-type="bibr" rid="pone.0099478-Haykin1">[30]</xref>. The term competitive means that, when a neuron wins a case, a training of that neuron (and those nearby) occurs, but not of outlying neurons. They are non-supervised because, instead of defining a target variable, all variables are included as input variables.</p>
+<p>Matlab R2008a (Mathworks Inc., Inc, USA) was used for data analysis. This software is a high-level language and interactive environment for numerical computation, visualization, and programming. SOM toolbox (2.0 beta version) for Matlab <xref ref-type="bibr" rid="pone.0099478-Vesanto1">[31]</xref> was also employed. This toolbox enabled the performance of different sorts of training to generate the SOM and allowed different visualizations of the results (e.g. u-matrix, component planes). The procedure started with the building of a lattice, composed by nodes or neurons (understood as a mathematical term) with an appropriate size, depending on the input data employed. In order to obtain the final lattice size, the toolbox employed made the calculus in two steps. Firstly, it made an approach of the total size of neurons using the following equation, 5 * sqrt(n). Secondly, the software adjusted the value according to the maps rectangular shape and neurons hexagonal form, resulting in a lattice size of 27×10. Once the lattice size was established, the SOM was initialized by assigning a weight vector to each neuron. Amidst the different types of initializations, we used randomized and linear ones. The first type occurs when the weight vectors are initialized with small random values. The second type happens when the weight vectors are initialized in an orderly fashion along the linear subspace spanned by the two principal eigenvectors of the input data set. Prior to the lattice training, data input was normalized [0…1].</p>
+<p>During the training, each neuron competed against the others for every case or participant. The word ‘training’ in this context referred to the set of processes by which the initial weights assigned to the neurons changed, as new cases were added to the analysis. These changes in the weights finished when acquiring a final value representing, with the lowest possible error, all subjects contained in each neuron. The assignation of a case or participant was performed by comparing its value to the value of each neuron from the lattice. The winner neuron was the one that presented the minor Euclidean distance with the participant's values. Once the participant was assigned to the winner neuron, an adaptive process started in which the winner neuron and its neighboring weights were modified and simultaneously organized topographically (i.e. ordering and convergence phases). The neurons nearest the winner neuron exhibit the largest transformations in their values, while the farthest neurons exhibit smaller transformations. This depends on the neighborhood function employed and it is worthy to point out that the adaptation of these weights at the beginning of the learning process was larger than at the end.</p>
+<p>1,600 maps were generated in our study as a result of combining two initialization systems (random and linear initialization), two types of training (sequential and batch training), four neighboring functions (Gaussian, cut Gaussian, Epanechicov and Bubble) and 100 initializations. The maps generated in our work showed two types of errors: quantization and topographic. The quantization error expressed how accurate was the value assigned to the neuron regarding the values of each participant who had been included in that neuron. Although adolescents who were included in a neuron had similar values, they were never exactly equal. Consequently, the value assigned to the neuron represented all subjects in a generic way. As the value of the neuron might not be exactly equal to the value of each of the participants, an error emerged.</p>
+<p>The topographic error represented the accuracy with which neurons were distributed in the maps. A priori, the process was designed so that the neuron value had similar values to adjacent neurons and different from those in more distant neurons. The process tried to distribute each neuron in the best way. In some cases, the position was performed with greater success and therefore the map showed lower topographical error. Maps can be selected by any of these two criteria (i.e. quantization error or topographical error). In our study, we selected the map that showed the best performance in both parameters, since both errors were important for the interpretation of the results. To ensure that the importance of both errors appeared equally, we decided to multiply both <xref ref-type="bibr" rid="pone.0099478-MartnGuerrero1">[32]</xref>.</p>
+<p>Eventually, a cluster analysis was performed to establish patterns or profiles among the large groups of participants' responses to different academic performances beyond the small neurons from the SOM <xref ref-type="bibr" rid="pone.0099478-Kiang1">[33]</xref>, <xref ref-type="bibr" rid="pone.0099478-Vesanto2">[34]</xref>. Therefore, a <italic>K</italic>-means method was employed to execute larger cluster divisions, choosing the number of clusters that showed a smaller error. The algorithm k-means is an iterative method to minimize the sum of the square cases belonging to each cluster. Given an initial number of K clusters, this method assigns the cases to each cluster (to the one of Euclidean closer distance). Once assigned the centroid of the cluster, it is calculated as a means of the cases and it assigns again the cases to the centroid. This process is repeated since the problem converges.</p>
+<p>Neuronal weights were used for inferential statistical analysis after SOM analysis and cluster identification. Non-parametric analyses were applied since neuronal weight values from the variables under study did not accomplish normality and homoscedasticity assumptions. In particular, Spearman correlations were established between all variables. 95% confidence intervals were presented for correlations in <xref ref-type="table" rid="pone-0099478-t001">Table 1</xref>, and for descriptive data of the different clusters in <xref ref-type="supplementary-material" rid="pone.0099478.s001">Table S1</xref>.</p>
+<table-wrap id="pone-0099478-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0099478.t001</object-id><label>Table 1</label><caption>
+<title>Spearman correlations between quantitative variables.</title>
+</caption><alternatives><graphic id="pone-0099478-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0099478.t001" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Age</td>
+<td align="left" rowspan="1" colspan="1">Academic achievement</td>
+<td align="left" rowspan="1" colspan="1">Sleep time</td>
+<td align="left" rowspan="1" colspan="1">TV/vide/DVD</td>
+<td align="left" rowspan="1" colspan="1">Computer playing</td>
+<td align="left" rowspan="1" colspan="1">Computer communicating</td>
+<td align="left" rowspan="1" colspan="1">Computer for doing homework</td>
+<td align="left" rowspan="1" colspan="1">Overall computer use</td>
+<td align="left" rowspan="1" colspan="1">Passive videogames</td>
+<td align="left" rowspan="1" colspan="1">Active videogames</td>
+<td align="left" rowspan="1" colspan="1">Mobile for communicating</td>
+<td align="left" rowspan="1" colspan="1">Mobile for playing</td>
+<td align="left" rowspan="1" colspan="1">Overall sedentary screen media usage</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Age</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Academic achievement</td>
+<td align="left" rowspan="1" colspan="1">−0.61</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">(−0.69, −0.52)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Sleep time</td>
+<td align="left" rowspan="1" colspan="1">−0.97</td>
+<td align="left" rowspan="1" colspan="1">0.55</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">(−0.98, −0.96)</td>
+<td align="left" rowspan="1" colspan="1">(0.45,0.64)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">TV/video/DVD</td>
+<td align="left" rowspan="1" colspan="1">−0.16</td>
+<td align="left" rowspan="1" colspan="1">−0.5</td>
+<td align="left" rowspan="1" colspan="1">0.15</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">(−0.29, −0.03)</td>
+<td align="left" rowspan="1" colspan="1">(−0.59, −0.39)</td>
+<td align="left" rowspan="1" colspan="1">(0.02,0.28)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Computer playing</td>
+<td align="left" rowspan="1" colspan="1">−0.19</td>
+<td align="left" rowspan="1" colspan="1">−0.46</td>
+<td align="left" rowspan="1" colspan="1">0.20</td>
+<td align="left" rowspan="1" colspan="1">0.61</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">(−0.31, −0.06)</td>
+<td align="left" rowspan="1" colspan="1">(−0.56, −0.35)</td>
+<td align="left" rowspan="1" colspan="1">(0.07,0.32)</td>
+<td align="left" rowspan="1" colspan="1">(0.52,0.69)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Computer communicating</td>
+<td align="left" rowspan="1" colspan="1">0.4</td>
+<td align="left" rowspan="1" colspan="1">−0.39</td>
+<td align="left" rowspan="1" colspan="1">−0.46</td>
+<td align="left" rowspan="1" colspan="1">0.45</td>
+<td align="left" rowspan="1" colspan="1">0.03</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">(0.28,0.51)</td>
+<td align="left" rowspan="1" colspan="1">(−0.50, −0.27)</td>
+<td align="left" rowspan="1" colspan="1">(−0.56, −0.35)</td>
+<td align="left" rowspan="1" colspan="1">(0.34,0.55)</td>
+<td align="left" rowspan="1" colspan="1">(−0.10,0.16)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Computer for doing homework</td>
+<td align="left" rowspan="1" colspan="1">0.31</td>
+<td align="left" rowspan="1" colspan="1">−0.37</td>
+<td align="left" rowspan="1" colspan="1">−0.38</td>
+<td align="left" rowspan="1" colspan="1">0.47</td>
+<td align="left" rowspan="1" colspan="1">0.22</td>
+<td align="left" rowspan="1" colspan="1">0.91</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">(0.19,0.42)</td>
+<td align="left" rowspan="1" colspan="1">(−0.48, −0.25)</td>
+<td align="left" rowspan="1" colspan="1">(−0.49, −0.26)</td>
+<td align="left" rowspan="1" colspan="1">(0.36,0.57)</td>
+<td align="left" rowspan="1" colspan="1">(0.09,0.34)</td>
+<td align="left" rowspan="1" colspan="1">(0.88,0.93)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Overall computer use</td>
+<td align="left" rowspan="1" colspan="1">0.26</td>
+<td align="left" rowspan="1" colspan="1">−0.48</td>
+<td align="left" rowspan="1" colspan="1">−0.33</td>
+<td align="left" rowspan="1" colspan="1">0.61</td>
+<td align="left" rowspan="1" colspan="1">0.44</td>
+<td align="left" rowspan="1" colspan="1">0.88</td>
+<td align="left" rowspan="1" colspan="1">0.91</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">(0.13,0.38)</td>
+<td align="left" rowspan="1" colspan="1">(−0.58, −0.37)</td>
+<td align="left" rowspan="1" colspan="1">(−0.44, −0.21)</td>
+<td align="left" rowspan="1" colspan="1">(0.52,0.69)</td>
+<td align="left" rowspan="1" colspan="1">(0.33,0.54)</td>
+<td align="left" rowspan="1" colspan="1">(0.85,0.91)</td>
+<td align="left" rowspan="1" colspan="1">(0.88,0.93)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Passive videogames</td>
+<td align="left" rowspan="1" colspan="1">−0.25</td>
+<td align="left" rowspan="1" colspan="1">−0.35</td>
+<td align="left" rowspan="1" colspan="1">0.28</td>
+<td align="left" rowspan="1" colspan="1">0.44</td>
+<td align="left" rowspan="1" colspan="1">0.92</td>
+<td align="left" rowspan="1" colspan="1">−0.26</td>
+<td align="left" rowspan="1" colspan="1">−0.07</td>
+<td align="left" rowspan="1" colspan="1">0.14</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">(−0.37, −0.12)</td>
+<td align="left" rowspan="1" colspan="1">(−0.46, −0.23)</td>
+<td align="left" rowspan="1" colspan="1">(0.15,0.40)</td>
+<td align="left" rowspan="1" colspan="1">(0.33,0.54)</td>
+<td align="left" rowspan="1" colspan="1">(0.90,0.94)</td>
+<td align="left" rowspan="1" colspan="1">(−0.38, −0.13)</td>
+<td align="left" rowspan="1" colspan="1">(−0.20,0.06)</td>
+<td align="left" rowspan="1" colspan="1">(0.01,0.27)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Active videogames</td>
+<td align="left" rowspan="1" colspan="1">−0.73</td>
+<td align="left" rowspan="1" colspan="1">0.05</td>
+<td align="left" rowspan="1" colspan="1">0.71</td>
+<td align="left" rowspan="1" colspan="1">0.52</td>
+<td align="left" rowspan="1" colspan="1">0.74</td>
+<td align="left" rowspan="1" colspan="1">−0.28</td>
+<td align="left" rowspan="1" colspan="1">−0.07</td>
+<td align="left" rowspan="1" colspan="1">0.06</td>
+<td align="left" rowspan="1" colspan="1">0.77</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">(−0.79, −0.66)</td>
+<td align="left" rowspan="1" colspan="1">(−0.08,0.18)</td>
+<td align="left" rowspan="1" colspan="1">(0.64,0.77)</td>
+<td align="left" rowspan="1" colspan="1">(0.42,0.61)</td>
+<td align="left" rowspan="1" colspan="1">(0.67,0.79)</td>
+<td align="left" rowspan="1" colspan="1">(−0.40, −0.15)</td>
+<td align="left" rowspan="1" colspan="1">(−0.20,0.06)</td>
+<td align="left" rowspan="1" colspan="1">(−0.07,0.19)</td>
+<td align="left" rowspan="1" colspan="1">(0.71,0.82)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mobile for communicating</td>
+<td align="left" rowspan="1" colspan="1">0.57</td>
+<td align="left" rowspan="1" colspan="1">−0.25</td>
+<td align="left" rowspan="1" colspan="1">−0.61</td>
+<td align="left" rowspan="1" colspan="1">0.1</td>
+<td align="left" rowspan="1" colspan="1">−0.49</td>
+<td align="left" rowspan="1" colspan="1">0.78</td>
+<td align="left" rowspan="1" colspan="1">0.56</td>
+<td align="left" rowspan="1" colspan="1">0.47</td>
+<td align="left" rowspan="1" colspan="1">−0.69</td>
+<td align="left" rowspan="1" colspan="1">−0.69</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">(0.47,0.65)</td>
+<td align="left" rowspan="1" colspan="1">(−0.37, −0.12)</td>
+<td align="left" rowspan="1" colspan="1">(−0.69, −0.52)</td>
+<td align="left" rowspan="1" colspan="1">(−0.03,0.23)</td>
+<td align="left" rowspan="1" colspan="1">(−0.58, −0.38)</td>
+<td align="left" rowspan="1" colspan="1">(0.72,0.83)</td>
+<td align="left" rowspan="1" colspan="1">(0.46,0.64)</td>
+<td align="left" rowspan="1" colspan="1">(0.36,0.57)</td>
+<td align="left" rowspan="1" colspan="1">(−0.75, −0.61)</td>
+<td align="left" rowspan="1" colspan="1">(−0.75, −0.61)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mobile for playing</td>
+<td align="left" rowspan="1" colspan="1">−0.12</td>
+<td align="left" rowspan="1" colspan="1">−0.5</td>
+<td align="left" rowspan="1" colspan="1">0.15</td>
+<td align="left" rowspan="1" colspan="1">0.69</td>
+<td align="left" rowspan="1" colspan="1">0.81</td>
+<td align="left" rowspan="1" colspan="1">0.05</td>
+<td align="left" rowspan="1" colspan="1">0.18</td>
+<td align="left" rowspan="1" colspan="1">0.34</td>
+<td align="left" rowspan="1" colspan="1">0.75</td>
+<td align="left" rowspan="1" colspan="1">0.59</td>
+<td align="left" rowspan="1" colspan="1">−0.31</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">(−0.25,0.01)</td>
+<td align="left" rowspan="1" colspan="1">(−0.59, −0.39)</td>
+<td align="left" rowspan="1" colspan="1">(0.02,0.28)</td>
+<td align="left" rowspan="1" colspan="1">(0.61,0.75)</td>
+<td align="left" rowspan="1" colspan="1">(0.76,0.85)</td>
+<td align="left" rowspan="1" colspan="1">(−0.08,0.18)</td>
+<td align="left" rowspan="1" colspan="1">(0.05,0.31)</td>
+<td align="left" rowspan="1" colspan="1">(0.22,0.45)</td>
+<td align="left" rowspan="1" colspan="1">(0.69,0.80)</td>
+<td align="left" rowspan="1" colspan="1">(0.50,0.67)</td>
+<td align="left" rowspan="1" colspan="1">(−0.42, −0.19)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Overall sedentary screen media usage</td>
+<td align="left" rowspan="1" colspan="1">0.01</td>
+<td align="left" rowspan="1" colspan="1">−0.55</td>
+<td align="left" rowspan="1" colspan="1">−0.05</td>
+<td align="left" rowspan="1" colspan="1">0.89</td>
+<td align="left" rowspan="1" colspan="1">0.71</td>
+<td align="left" rowspan="1" colspan="1">0.6</td>
+<td align="left" rowspan="1" colspan="1">0.68</td>
+<td align="left" rowspan="1" colspan="1">0.84</td>
+<td align="left" rowspan="1" colspan="1">0.49</td>
+<td align="left" rowspan="1" colspan="1">0.45</td>
+<td align="left" rowspan="1" colspan="1">0.15</td>
+<td align="left" rowspan="1" colspan="1">0.66</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">(−0.12,0.14)</td>
+<td align="left" rowspan="1" colspan="1">(−0.64, −0.45)</td>
+<td align="left" rowspan="1" colspan="1">(−0.18,0.08)</td>
+<td align="left" rowspan="1" colspan="1">(0.86,0.91)</td>
+<td align="left" rowspan="1" colspan="1">(0.64,0.77)</td>
+<td align="left" rowspan="1" colspan="1">(0.51,0.68)</td>
+<td align="left" rowspan="1" colspan="1">(0.60,0.75)</td>
+<td align="left" rowspan="1" colspan="1">(0.80,0.88)</td>
+<td align="left" rowspan="1" colspan="1">(0.38,0.58)</td>
+<td align="left" rowspan="1" colspan="1">(0.34,0.55)</td>
+<td align="left" rowspan="1" colspan="1">(0.02,0.28)</td>
+<td align="left" rowspan="1" colspan="1">(0.58,0.73)</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt101"><label/><p>Data are correlations coefficients (95%CI).</p></fn></table-wrap-foot></table-wrap></sec></sec><sec id="s3">
+<title>Results</title>
+<p>As a result of the SOM analysis, a final group of 15 maps corresponding to the 15 variables of our study emerged (see <xref ref-type="fig" rid="pone-0099478-g001">Figure 1</xref>). The visualization of the maps as a whole permitted establishing reciprocal links or topological relationships among them. In particular, gender relationships were easy to visualize because boys were located in the north zone of the maps and girls in the south zone (see the longitudinal side axis of the gender map). According to this, boys used passive videogames and computers for playing to a greater extent than their female counterparts, while girls, more often than boys, used mobile phones to communicate with other people. Other relationships indicated that the more time adolescents used their computer (for any reason), the more time they watched TV/videos/DVDs and played with their mobile phones. Moreover, the oldest adolescents spent less time sleeping and playing with active videogames than their younger counterparts. Finally, the adolescents with the highest academic performance were the youngest and spent more time sleeping and less time using the overall sedentary screen media as compared to those with the lowest academic performance. Moreover, adolescents with higher SES showed direct topological relationship to those having a higher academic performance.</p>
+<fig id="pone-0099478-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0099478.g001</object-id><label>Figure 1</label><caption>
+<title>Component planes, hits and target clusters.</title>
+<p>Hits map can be seen in the right bottom corner. Empty cells show a lack of cases and greener cells indicate a large number of adolescents accumulated in them. Thicker lines separate the different calculated clusters. Numbers 1 and 2 designate target zones or clusters with low and high academic achievements, respectively. Numbers in red (3–8) refer to quantitatively-analyzed clusters with results presented in <xref ref-type="supplementary-material" rid="pone.0099478.s001">Table S1</xref> in supplementary data section. The fifteen variables included in the analysis appear from the top to the bottom rows and from the left to the right columns. Black outlined squares in each component plane are drawn to facilitate positions of Clusters 1 and 2. Gender variable is coded as Male =  1 and Female  = 2; Rectangles on the right of each component map indicate the lower (bluish) and higher (reddish) values of each variable. The values in the bottom section of the socioeconomic status and academic achievement variables represent a low socioeconomic status and poor academic achievement. On the contrary, the values at the top of the colored rectangle show a high socioeconomic level and a good academic performance. The rest of the variables are expressed in hours. In order to understand the maps it is important to note that participants included in each neuron (hexagon) are the same in every component plane.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0099478.g001" position="float" xlink:type="simple"/></fig>
+<p>Clustering from the SOM outcomes resulted in nine areas or clusters (see <xref ref-type="fig" rid="pone-0099478-g001">Figure 1</xref>, bottom right corner), but only eight were considered because one of them had no subjects in it. Two target clusters, named Cluster 1 and 2, which corresponded to the lower and higher academic performance of both male and female adolescents (see squares indicated in <xref ref-type="fig" rid="pone-0099478-g001">Figure 1</xref>), were explored in more detail due to the potential impact caused by SMU, sleep time and socio-demographic features. These clusters gathered 27.2% of the participants from the whole sample and were chosen to identify the particular patterns featured by these groups of adolescents. Descriptive statistics of each cluster are in <xref ref-type="supplementary-material" rid="pone.0099478.s001">Table S1</xref>.</p>
+<p>Cluster 1 was composed of a group of 307 boys, approximately 10% of the sample, with an average age of 15 and a medium SES level. These adolescents spent more than five and a half hours per day using overall sedentary screen media. Their academic performance was low and they slept an average of 8 hours per day. Some participants from this cluster (those grouped in the upper left neuron) used the computer for multi-purpose activities for more than three hours per day (overall computer use), but more hours were used to communicate with people or play (2 hours and a half) than to do their homework (only 15 minutes per day). Besides, it can be observed that participants from this cluster played passive videogames around 30 minutes per day and watched TV/videos/DVDs for more than two hours per day. Regarding the use of the mobile phone, they spent most of their time playing and, occasionally, communicating with others.</p>
+<p>The profiles in Cluster 2 showed 537 adolescent girls, 17.3% of the sample, around 13 years old and with a medium SES, whose overall sedentary SMU was much lower than the time consumed by adolescents from the previous cluster. These girls showed an excellent academic performance, a greater sleep time (nearly 9 hours), and less time per day devoted to overall sedentary screen media (two hours and twenty minutes). In fact, they spent very little time watching TV/videos/DVDs, using the computer for playing and using mobile phones to communicate with others.</p>
+<p>Regarding non-parametric analysis, Spearman correlations showed a moderate relationship between academic performance and sleep time (r = 0.55), age (r = −0.61) and overall sedentary SMU (r = −0.55). Significant relationships were also found between academic performance and every screen media used (r = −0.25 to −0.50) except active videogames (see <xref ref-type="table" rid="pone-0099478-t001">Table 1</xref>). Correlations between other variables are included in <xref ref-type="table" rid="pone-0099478-t001">Table 1</xref>.</p>
+<p>Concerning the analysis of clusters comparison, significant differences were observed among most of them in all dependent variables (see <xref ref-type="supplementary-material" rid="pone.0099478.s001">Table S1</xref>). According to the main purpose of this study, the interest was focused on academic performance and overall sedentary SMU. As it is observed in <xref ref-type="fig" rid="pone-0099478-g002">Figure 2</xref>, academic performance showed significant differences among all clusters except between Cluster 4 and Cluster 6. Overall sedentary SMU revealed higher values of time for Cluster 1 and lower values for Cluster 2. Descriptive data and confidence intervals can be found in the supplementary material (<xref ref-type="supplementary-material" rid="pone.0099478.s001">Table S1</xref>).</p>
+<fig id="pone-0099478-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0099478.g002</object-id><label>Figure 2</label><caption>
+<title>Descriptive statistics for academic performance and overall sedentary SMU variables.</title>
+<p>Columns represent the mean and error bars represent 95% confidence intervals.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0099478.g002" position="float" xlink:type="simple"/></fig></sec><sec id="s4">
+<title>Discussion</title>
+<p>This is one of the few studies that explores the interrelationships among a wide number of SMU, sleep time and academic performance in adolescents <xref ref-type="bibr" rid="pone.0099478-Dworak1">[23]</xref>. Findings, through visualization of maps from SOM analysis, show a gender differentiation in some SMU. This can be observed, in particular, regarding the purposes of certain media usage. Boys consume more passive videogames, including using computer and mobile phone for playing, while girls use mobile phone more than boys for communicating with others. Age may also affect sleep time and active SMU as the oldest adolescents spend less time sleeping and playing with active videogames than their younger counterparts. Despite cultural and school system differences, the study results on these issues seem to confirm international trends <xref ref-type="bibr" rid="pone.0099478-GarcaContinente1">[9]</xref>, <xref ref-type="bibr" rid="pone.0099478-Hofferth1">[14]</xref>, <xref ref-type="bibr" rid="pone.0099478-Cain1">[16]</xref>, <xref ref-type="bibr" rid="pone.0099478-Subrahmanyam1">[35]</xref>.</p>
+<p>This study also shows a direct relationship or topological link between overall computer use and TV/video/DVD watching, and mobile phone playing. Furthermore, academic performance is directly related to sleep time and inversely related to overall sedentary SMU among the students who participated in this study.</p>
+<p>These results are similar to those carried out in Europe and North America and point out consistently that boys spend more time on the computer and playing videogames than girls <xref ref-type="bibr" rid="pone.0099478-SerranoSanchez1">[8]</xref>, <xref ref-type="bibr" rid="pone.0099478-GarcaContinente1">[9]</xref>, <xref ref-type="bibr" rid="pone.0099478-Subrahmanyam1">[35]</xref>–<xref ref-type="bibr" rid="pone.0099478-ReyLpez1">[38]</xref>. Girls' higher use of mobile phone for communicating with others is also similar to the North American CHIC study that reports talking on the phone as the primary activity for female adolescents <xref ref-type="bibr" rid="pone.0099478-Bradley1">[39]</xref>. This is akin to Australian findings where girls devote twice the time to general social activities compared to boys <xref ref-type="bibr" rid="pone.0099478-Hardy4">[40]</xref>. Due to the novel contribution of this study in distinguishing the different purposes of mobile phone use (for communicating and playing), our result regarding the direct relationship between overall computer use and mobile phone use for playing becomes difficult to link to existing literature. Only a direct relationship between overall computer/videogame use and overall mobile phone use is found in a previous Spanish study <xref ref-type="bibr" rid="pone.0099478-DevsDevs2">[37]</xref>.</p>
+<p>Findings from the present study concerning the direct relationship between overall computer use and TV/video/DVD watching are discordant with those reported in the literature, which indicate that children who use computers may view less TV than nonusers <xref ref-type="bibr" rid="pone.0099478-Subrahmanyam1">[35]</xref> and the presence of a computer in adolescents' bedrooms reduces the amount of TV watched <xref ref-type="bibr" rid="pone.0099478-ReyLpez1">[38]</xref>. Nevertheless, the present study indicates the possibility of finding adolescents who spend a lot of time at the computer and watching TV, and both behaviors do not compete with each other. This is likely to happen due to a more interactive character of computer use compared to TV watching. It also occurs in studies that provide weak or no evidence of a competing hypothesis between SMU and physical activity <xref ref-type="bibr" rid="pone.0099478-Biddle1">[36]</xref>.</p>
+<p>Contrary to the previous discordant data, in this study the decrease in reported sleep time depending on age is a consistent finding in literature, as several meta-analysis throughout the human lifespan and studies on children and adolescents demonstrate <xref ref-type="bibr" rid="pone.0099478-Yang1">[41]</xref>, <xref ref-type="bibr" rid="pone.0099478-Ohayon1">[42]</xref>. Active videogame playing, a recent variable in the study of SMU among adolescents, also decreases with age in accordance with a recent Canadian study with students from grades 10 and 11 <xref ref-type="bibr" rid="pone.0099478-OLoughlin1">[43]</xref>.</p>
+<p>Regarding academic performance, overall sedentary SMU is indirectly related to it, either because screen time displaces homework and learning <xref ref-type="bibr" rid="pone.0099478-Mle1">[10]</xref>, <xref ref-type="bibr" rid="pone.0099478-Hancox1">[12]</xref>, or because it involves intermediate processes that negatively affect academic performance <xref ref-type="bibr" rid="pone.0099478-Sharif1">[11]</xref>. However, contradictory results emerge concerning computer use. According to a review on the issue and a recent North American study <xref ref-type="bibr" rid="pone.0099478-Bowers1">[13]</xref>, <xref ref-type="bibr" rid="pone.0099478-Subrahmanyam1">[35]</xref>, computer use, even for fun and moderate levels of playing games, is positively related to cross-sectional reading and mathematics, and academic achievement or performance. More agreement is found in literature regarding the direct relationship between sleep time and academic achievement in adolescents or between insufficient sleep time and poor academic performance from different countries <xref ref-type="bibr" rid="pone.0099478-Sharif1">[11]</xref>, <xref ref-type="bibr" rid="pone.0099478-National1">[20]</xref>–<xref ref-type="bibr" rid="pone.0099478-Dewald1">[22]</xref>, <xref ref-type="bibr" rid="pone.0099478-Yang1">[41]</xref>. This study also contributes to confirming this international trend, by employing a new methodology, and to informing new profiles unknown so far. In fact, the maps of sleep time and academic performance show a direct topological link and, both of them, an indirect relationship with the age map. A direct relationship was also observed between SES and academic performance, although slightly weaker than in the aforementioned variables. This result confirms the relevance of SES in previous international studies <xref ref-type="bibr" rid="pone.0099478-Sirin1">[44]</xref>, <xref ref-type="bibr" rid="pone.0099478-Tandon1">[45]</xref> as well as in the recent Spanish results from the Programme for International Student Assessment reported by the OECD <xref ref-type="bibr" rid="pone.0099478-Cordero1">[46]</xref>.</p>
+<p>Cluster analysis developed from the SOM outcomes resulted in eight groups of adolescents. For the purpose of this study, two adolescents' profiles (Cluster 1 and 2) were considered as target groups. Cluster 1 features adolescents with the lowest academic performance (i.e. students with and average score of 2 points and difficulties in passing the course) and Cluster 2 represents adolescents with the highest academic performance (i.e. students with an average score of more than 3 points and likely to pass the course with high grades). The two profiles are strongly differentiated by gender, age, sedentary SMU and sleep time. Cluster 1's profile also encompasses the highest use of sedentary screen media, less sleep time compared to girls in Cluster 2, a medium SES and their being the eldest of the sample. The results in Möβle et al. <xref ref-type="bibr" rid="pone.0099478-Mle1">[10]</xref> suggest that boys are a group at risk of achieving poor academic performance due to the negative effects extensive use of electronic media has on them, together with being better equipped with screen media devices than girls are and possessing a preference for violent media content. Assuming that other significant variables may affect poor academic achievement, an excessive consumption of these screen media and a lack of proper sleep time may certainly contribute to explaining the effects on school-related achievements. Delineation of this profile should attract a change in strategies aimed to reduce potential school leavers.</p>
+<p>Conversely, Cluster 2 achieves the highest academic performance and is comprised of younger girls, with a medium SES, who sleep more time and spend half the amount of time on sedentary SMU than adolescents in Cluster 1. Although they spend an average of two hours and twenty minutes daily on those media and, therefore, exceed the AAP recommendation <xref ref-type="bibr" rid="pone.0099478-American1">[47]</xref>, they are closer to reaching the two hours maximum. This group of girls also uses mobile phones for communicating with others less often than the rest of the girls in the whole sample. Contrary to previous studies <xref ref-type="bibr" rid="pone.0099478-Bradley1">[39]</xref>, <xref ref-type="bibr" rid="pone.0099478-Hardy4">[40]</xref>, this result reveals that speaking on the phone and communication are not their main social activities. Moreover, adolescent girls in this cluster reported sleeping one hour more than the boys in Cluster 1, thus supporting other studies that indicate that girls consistently sleep longer than boys <xref ref-type="bibr" rid="pone.0099478-Blair1">[48]</xref>.</p>
+<p>SES does not emerge as a crucial variable in these two clusters as it does in the overall SOM outcomes. However, it should be mentioned that Cluster 2 has a less homogeneous SES than Cluster 1. A visualization of both SES and academic performance maps indicate that adolescent girls with higher SES obtain the highest academic results.</p>
+<p>Some potential weaknesses of this study need to be considered. First, this study used retrospective self-reported data from adolescents that may raise some concern about the reliability and accuracy of the data. However, as far as the ASAQ is concerned, it has been previously proven reliable and valid <xref ref-type="bibr" rid="pone.0099478-Hardy2">[27]</xref>, <xref ref-type="bibr" rid="pone.0099478-Lubans1">[49]</xref> and has subsequently been used in several studies from different countries <xref ref-type="bibr" rid="pone.0099478-Gonzlez1">[50]</xref>–<xref ref-type="bibr" rid="pone.0099478-Morley1">[52]</xref>. In a similar vein, the Family Affluence Scale II is an improved version of a previous instrument <xref ref-type="bibr" rid="pone.0099478-Currie1">[29]</xref> and it has been used in adolescent samples of international studies <xref ref-type="bibr" rid="pone.0099478-Borraccino1">[5]</xref>, <xref ref-type="bibr" rid="pone.0099478-VonRueden1">[53]</xref>.</p>
+<p>Second, this cross-sectional study presents a description of a situation at a certain moment in adolescents' lives. Therefore, it precludes causal inferences on the associations among their SMU, sleep time, academic performance and some socio-demographic variables and limits the possibility to determine changes over time in all these variables.</p>
+<p>Third, the usage of a SOM analysis establishes topological links among variables, while most of the research on these issues commonly employs linear relationships. Therefore, comparisons to other studies should be done with caution. Finally, other interpretations of SOM analysis are also possible. Key zones have been chosen for this paper consistent with the focus of our study (i.e. academic achievement), however other research interests could lead authors to outline different analysis zones and proceed subsequently with the same protocol as followed for this article. For instance, if we set our aim on SES, two zones with the lowest SES values appear just below zone 1 and above zone 2, and on the opposite side, the two highest SES zones. Cluster analysis would assist researchers in defining these zones and establishing new profiles. Indeed, the concision required in academic articles advises against developing a complete analysis and, consequently, these other issues should be approached in future works.</p>
+<p>Despite the aforementioned limitations, the study shows some strength for obtaining descriptive information such as its low cost and high feasibility with a large sample of adolescents, as well as the usage of an innovative non-linear analysis of the data. Results from the present study highlight some variations affecting the academic performance of Spanish adolescents due to their socio-demographic characteristics, sleep time and time devoted to SMU. These findings are useful, not only for exploratory purposes, but also for information on behavior patterns that may contribute to establishing recommendations about the timing and duration of the SMU in adolescents and the appropriate sleep time needed to meet school academic demands successfully. In addition, these findings may contribute to improving interventions targeted to affect behavior change and increase academic performance. Particularly, knowledge about Cluster 2 on girls' highest academic performance and about Cluster 1 on boys' poorest academic achievement sheds some light towards understanding and changing adolescent profiles in future intervention studies.</p>
+</sec><sec id="s5">
+<title>Supporting Information</title>
+<supplementary-material id="pone.0099478.s001" mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" xlink:href="info:doi/10.1371/journal.pone.0099478.s001" position="float" xlink:type="simple"><label>Table S1</label><caption>
+<p><bold>Descriptive statistics of the different clusters.</bold></p>
+<p>(XLSX)</p>
+</caption></supplementary-material></sec></body>
+<back>
+<ack>
+<p>We express our sincere thanks to the research collaborators and all the schools and adolescents involved in this study.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0099478-Crespo1"><label>1</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Crespo</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Smit</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Troiano</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Bartlett</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Macera</surname><given-names>C</given-names></name>, <etal>et al</etal>. (<year>2001</year>) <article-title>Television watching, energy intake and obesity in US children</article-title>. <source>Arch Pediatr Adolesc Med</source> <volume>155</volume>: <fpage>360</fpage>–<lpage>5</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Hardy1"><label>2</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hardy</surname><given-names>LL</given-names></name>, <name name-style="western"><surname>Denney-Wilson</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Thrift</surname><given-names>AP</given-names></name>, <name name-style="western"><surname>Okely</surname><given-names>AD</given-names></name>, <name name-style="western"><surname>Baur</surname><given-names>LA</given-names></name> (<year>2010</year>) <article-title>Screen time and metabolic risk factors among adolescents</article-title>. <source>Arch Pediatr Adolesc Med</source> <volume>164</volume>: <fpage>643</fpage>–<lpage>9</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-MartnezGmez1"><label>3</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Martínez-Gómez</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Ortega</surname><given-names>FB</given-names></name>, <name name-style="western"><surname>Ruiz</surname><given-names>JR</given-names></name>, <name name-style="western"><surname>Vicente-Rodríguez</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Veiga</surname><given-names>OL</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Excessive sedentary time and low cardiorespiratory fitness in European adolescents: the HELENA study</article-title>. <source>Arch Dis Child</source> <volume>96</volume>: <fpage>240</fpage>–<lpage>6</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Bercedo1"><label>4</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bercedo</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Redondo</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Pelayo</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Gómez</surname><given-names>Z</given-names></name>, <name name-style="western"><surname>Hernández</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2005</year>) <article-title>Consumo de los medios de comunicación en los adolescentes [Mass media consumption in adolescence]</article-title>. <source>An Pediatr</source> <volume>63</volume>: <fpage>516</fpage>–<lpage>25</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Borraccino1"><label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Borraccino</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Lemma</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Iannotti</surname><given-names>RJ</given-names></name>, <name name-style="western"><surname>Zambon</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Dalmasso</surname><given-names>P</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Socioeconomic effects on meeting physical activity guidelines: comparisons among 32 countries</article-title>. <source>Med Sci Sports Exerc</source> <volume>41</volume>: <fpage>749</fpage>–<lpage>56</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Marshall1"><label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Marshall</surname><given-names>SJ</given-names></name>, <name name-style="western"><surname>Biddle</surname><given-names>SJ</given-names></name>, <name name-style="western"><surname>Gorely</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Cameron</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Murdey</surname><given-names>I</given-names></name> (<year>2004</year>) <article-title>Relationships between media use, body fatness and physical activity in children and youth: a meta-analysis</article-title>. <source>Int J Obes Relat Metab Disord</source> <volume>28</volume>: <fpage>1238</fpage>–<lpage>46</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-DevsDevs1"><label>7</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Devís-Devís</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Peiró-Velert</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Beltrán-Carrillo</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Tomás</surname><given-names>JM</given-names></name> (<year>2012</year>) <article-title>Brief report: Association between socio-demographic factors, screen media usage and physical activity by type of day in Spanish adolescents</article-title>. <source>J Adolescence</source> <volume>35</volume>: <fpage>213</fpage>–<lpage>18</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-SerranoSanchez1"><label>8</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Serrano-Sanchez</surname><given-names>JA</given-names></name>, <name name-style="western"><surname>Martí-Trujillo</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Lera-Navarro</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Dorado-García</surname><given-names>C</given-names></name>, <name name-style="western"><surname>González-Henriquez</surname><given-names>JJ</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Associations between screen time and physical activity among Spanish adolescents</article-title>. <source>PLoS ONE 6</source> <volume>(9)</volume>: <fpage>e24453</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-GarcaContinente1"><label>9</label>
+<mixed-citation publication-type="other" xlink:type="simple">García-Continente X, Pérez-Giménez A, Espelt A, Nebot M (2013) Factors associated with media use among adolescents: a multilevel approach. Eur J Public Health. doi: 10.1093/eurpub/ckt013.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Mle1"><label>10</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Möβle</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Kleimann</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Rehbein</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Pfeiffer</surname><given-names>C</given-names></name> (<year>2010</year>) <article-title>Media use and school achievement–boys at risk?</article-title> <source>Brit J Dev Psychol</source> <volume>28</volume>: <fpage>699</fpage>–<lpage>725</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Sharif1"><label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sharif</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Wills</surname><given-names>TA</given-names></name>, <name name-style="western"><surname>Sargent</surname><given-names>JD</given-names></name> (<year>2010</year>) <article-title>Effect of visual media use on school performance: A prospective study</article-title>. <source>J Adolesc Health</source> <volume>46</volume>: <fpage>52</fpage>–<lpage>61</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Hancox1"><label>12</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hancox</surname><given-names>RJ</given-names></name>, <name name-style="western"><surname>Milne</surname><given-names>BJ</given-names></name>, <name name-style="western"><surname>Poulton</surname><given-names>R</given-names></name> (<year>2005</year>) <article-title>Association of television viewing during childhood with poor educational achievement</article-title>. <source>Arch Pediatr Adolesc Med</source> <volume>159</volume>: <fpage>614</fpage>–<lpage>8</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Bowers1"><label>13</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bowers</surname><given-names>AJ</given-names></name>, <name name-style="western"><surname>Berland</surname><given-names>M</given-names></name> (<year>2013</year>) <article-title>Does recreational computer use affect high school achievement?</article-title> <source>Educ Technol Res Dev</source> <volume>61</volume>: <fpage>51</fpage>–<lpage>69</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Hofferth1"><label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hofferth</surname><given-names>SL</given-names></name>, <name name-style="western"><surname>Moon</surname><given-names>UJ</given-names></name> (<year>2012</year>) <article-title>Electronic Play, Study, Communication, and Adolescent Achievement, 2003–2008</article-title>. <source>J Res Adolesc</source> <volume>22</volume>: <fpage>215</fpage>–<lpage>24</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Jackson1"><label>15</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jackson</surname><given-names>LA</given-names></name>, <name name-style="western"><surname>von Eye</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Witt</surname><given-names>EA</given-names></name>, <name name-style="western"><surname>Zhao</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Fitzgerald</surname><given-names>HE</given-names></name> (<year>2011</year>) <article-title>A longitudinal study of the effects of Internet use and video game playing on academic performance and the roles of gender, race and income in these relationships</article-title>. <source>Comput Hum Behav</source> <volume>27</volume>: <fpage>228</fpage>–<lpage>39</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Cain1"><label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cain</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Gradisar</surname><given-names>M</given-names></name> (<year>2010</year>) <article-title>Electronic media use and sleep in school-aged children and adolescents</article-title>. <source>Sleep Med</source> <volume>11</volume>: <fpage>735</fpage>–<lpage>42</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Costigan1"><label>17</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Costigan</surname><given-names>SA</given-names></name>, <name name-style="western"><surname>Barnett</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Potnikoff</surname><given-names>RC</given-names></name>, <name name-style="western"><surname>Lubans</surname><given-names>DR</given-names></name> (<year>2013</year>) <article-title>The Health Indicators Associated With Screen-Based Sedentary Behavior Among Adolescent Girls: A Systematic Review</article-title>. <source>J Adolescent Health</source> <volume>52</volume>: <fpage>382</fpage>–<lpage>92</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Chen1"><label>18</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chen</surname><given-names>MY</given-names></name>, <name name-style="western"><surname>Wang</surname><given-names>EK</given-names></name>, <name name-style="western"><surname>Jeng</surname><given-names>YJ</given-names></name> (<year>2006</year>) <article-title>Adequate sleep among adolescents is positively associated with health status and health-related behaviors</article-title>. <source>BMC Public Health</source> <volume>6</volume>: <fpage>59</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Foti1"><label>19</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Foti</surname><given-names>KE</given-names></name>, <name name-style="western"><surname>Eaton</surname><given-names>DK</given-names></name>, <name name-style="western"><surname>Lowry</surname><given-names>R</given-names></name>, <name name-style="western"><surname>McKnight-Ely</surname><given-names>LR</given-names></name> (<year>2011</year>) <article-title>Sufficient sleep, physical activity, and sedentary behaviors</article-title>. <source>Am J Prev Med</source> <volume>41</volume>: <fpage>596</fpage>–<lpage>602</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-National1"><label>20</label>
+<mixed-citation publication-type="other" xlink:type="simple">National Sleep Foundation (2006) Sleep in America poll 2006. Teens and sleep National Sleep Foundation Web site. Available: <ext-link ext-link-type="uri" xlink:href="http://sleepfoundation.org/sleep-polls-data/sleep-in-america-poll/2006-teens-and-sleep" xlink:type="simple">http://sleepfoundation.org/sleep-polls-data/sleep-in-america-poll/2006-teens-and-sleep</ext-link> Accessed 2013 Mar 8.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Li1"><label>21</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Li</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Arguelles</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Jiang</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Chen</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Jin</surname><given-names>X</given-names></name>, <etal>et al</etal>. (<year>2013</year>) <article-title>Sleep, School Performance, and a School-Based Intervention among School-Aged Children: A Sleep Series Study in China</article-title>. <source>PLoS ONE</source> <volume>8(7)</volume>: <fpage>e67928</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0067928" xlink:type="simple">10.1371/journal.pone.0067928</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0099478-Dewald1"><label>22</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dewald</surname><given-names>JF</given-names></name>, <name name-style="western"><surname>Meijer</surname><given-names>AM</given-names></name>, <name name-style="western"><surname>Oort</surname><given-names>FJ</given-names></name>, <name name-style="western"><surname>Kerkhof</surname><given-names>GA</given-names></name>, <name name-style="western"><surname>Bögels</surname><given-names>SM</given-names></name> (<year>2010</year>) <article-title>The influence of sleep quality, sleep duration and sleepiness on school performance in children and adolescents: a meta-analytic review</article-title>. <source>Sleep Med Rev</source> <volume>14</volume>: <fpage>179</fpage>–<lpage>89</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Dworak1"><label>23</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dworak</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Schierl</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Bruns</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Struder</surname><given-names>HK</given-names></name> (<year>2007</year>) <article-title>Impact of singular excessive computer game and television exposure on sleep patterns and memory performance of school-aged children</article-title>. <source>Pediatrics</source> <volume>120</volume>: <fpage>978</fpage>–<lpage>85</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Kohonen1"><label>24</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kohonen</surname><given-names>T</given-names></name> (<year>1982</year>) <article-title>Self-organized formation of topologically correct feature maps</article-title>. <source>Biol Cybern</source> <volume>43</volume>: <fpage>59</fpage>–<lpage>69</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Oja1"><label>25</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Oja</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Kaski</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Kohonen</surname><given-names>T</given-names></name> (<year>2003</year>) <article-title>Bibliography of Self-Organizing Map (SOM) papers: 1998–2001 Addendum</article-title>. <source>Neural Comput Surv</source> <volume>3</volume>: <fpage>1</fpage>–<lpage>156</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Serra1"><label>26</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Serra</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Ribas</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Aranceta</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Pérez</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Saavedra</surname><given-names>P</given-names></name>, <etal>et al</etal>. (<year>2003</year>) <article-title>Obesidad infantil y juvenil en España. Resultados del Estudio en Kid (1998-2000) [Infant and youth obesity in Spain. Results of en Kid Study]</article-title>. <source>Med Clínica</source> <volume>121</volume>: <fpage>725</fpage>–<lpage>32</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Hardy2"><label>27</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hardy</surname><given-names>LL</given-names></name>, <name name-style="western"><surname>Booth</surname><given-names>ML</given-names></name>, <name name-style="western"><surname>Okely</surname><given-names>AD</given-names></name> (<year>2007</year>) <article-title>The reliability of the Adolescent Sedentary Activity Questionnaire (ASAQ)</article-title>. <source>Prev Med</source> <volume>45</volume>: <fpage>71</fpage>–<lpage>4</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Hardy3"><label>28</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hardy</surname><given-names>LL</given-names></name>, <name name-style="western"><surname>Bass</surname><given-names>SL</given-names></name>, <name name-style="western"><surname>Booth</surname><given-names>ML</given-names></name> (<year>2007</year>) <article-title>Changes in sedentary behavior among adolescent girls: a 2.5-year prospective cohort study</article-title>. <source>J Adolescent Health</source> <volume>40</volume>: <fpage>158</fpage>–<lpage>165</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Currie1"><label>29</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Currie</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Molcho</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Boyce</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Holstein</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Torsheim</surname><given-names>T</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>Researching health inequalities in adolescents: the development of the Health Behaviour in School-Aged Children (HBSC) Family Affluence Scale</article-title>. <source>Soc Sci Med</source> <volume>66</volume>: <fpage>1429</fpage>–<lpage>36</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Haykin1"><label>30</label>
+<mixed-citation publication-type="other" xlink:type="simple">Haykin S (1994) Neural Networks: A Comprehensive Foundation. MacMillan Publishing Company.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Vesanto1"><label>31</label>
+<mixed-citation publication-type="other" xlink:type="simple">Vesanto J, Himberg J, Alhoniemi E, Parhankangas J (2000) SOM toolbox for MATLAB 5. Tech. rep., Helsinki University of Technology.</mixed-citation>
+</ref>
+<ref id="pone.0099478-MartnGuerrero1"><label>32</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Martín-Guerrero</surname><given-names>JD</given-names></name>, <name name-style="western"><surname>Marcelli</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Soria-Olivas</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Marí</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Martínez-Martínez</surname><given-names>JM</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Self-Organising Maps: A new way to screen the level of satisfaction of dialysis patients</article-title>. <source>Expert Syst Appl</source> <volume>39</volume>: <fpage>8793</fpage>–<lpage>8</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Kiang1"><label>33</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kiang</surname><given-names>MY</given-names></name> (<year>2001</year>) <article-title>Extending the Kohonen self-organizing map networks for clustering analysis</article-title>. <source>Comput Stat Data An</source> <volume>38</volume>: <fpage>161</fpage>–<lpage>80</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Vesanto2"><label>34</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Vesanto</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Alhoniemi</surname><given-names>E</given-names></name> (<year>2000</year>) <article-title>Clustering of the self-organizing map</article-title>. <source>IEEE T Neural Networ</source> <volume>11</volume>: <fpage>586</fpage>–<lpage>600</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Subrahmanyam1"><label>35</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Subrahmanyam</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Greenfield</surname><given-names>PM</given-names></name>, <name name-style="western"><surname>Kraut</surname><given-names>RE</given-names></name>, <name name-style="western"><surname>Gross</surname><given-names>EF</given-names></name> (<year>2001</year>) <article-title>The impact of computer use on children's and adolescents' development</article-title>. <source>Appl Dev Psychol</source> <volume>22</volume>: <fpage>7</fpage>–<lpage>30</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Biddle1"><label>36</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Biddle</surname><given-names>SJH</given-names></name>, <name name-style="western"><surname>Marshall</surname><given-names>SJ</given-names></name>, <name name-style="western"><surname>Gorely</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Cameron</surname><given-names>N</given-names></name> (<year>2009</year>) <article-title>Temporal and environmental patterns of sedentary and active behaviors during adolescents' leisure time</article-title>. <source>Int J Behav Med</source> <volume>16</volume>: <fpage>278</fpage>–<lpage>86</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-DevsDevs2"><label>37</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Devís-Devís</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Peiró-Velert</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Beltrán-Carrillo</surname><given-names>VJ</given-names></name>, <name name-style="western"><surname>Tomás</surname><given-names>JM</given-names></name> (<year>2009</year>) <article-title>Screen media time usage of 12–16 year-old Spanish school adolescents: effects of personal and socioeconomic factors, season and type of day</article-title>. <source>J Adolesc</source> <volume>32</volume>: <fpage>213</fpage>–<lpage>31</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-ReyLpez1"><label>38</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rey-López</surname><given-names>JP</given-names></name>, <name name-style="western"><surname>Vicente-Rodriguez</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Ortega</surname><given-names>FB</given-names></name>, <name name-style="western"><surname>Ruiz, JR, Martínez-Gómez</surname><given-names>D</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Sedentary patterns and media availability in European adolescents: The HELENA Study</article-title>. <source>Prev Med</source> <volume>51</volume>: <fpage>50</fpage>–<lpage>55</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Bradley1"><label>39</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bradley</surname><given-names>C</given-names></name>, <name name-style="western"><surname>McMurray</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Harrell</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Deng</surname><given-names>S</given-names></name> (<year>2000</year>) <article-title>Changes in common activities of 3rd through 10th graders: the CHIC study</article-title>. <source>Med Sci Sports Exerc</source> <volume>32</volume>: <fpage>2071</fpage>–<lpage>8</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Hardy4"><label>40</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hardy</surname><given-names>LL</given-names></name>, <name name-style="western"><surname>Dobbins</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Booth</surname><given-names>ML</given-names></name>, <name name-style="western"><surname>Denney-Wilson</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Okely</surname><given-names>AD</given-names></name> (<year>2006</year>) <article-title>Sedentary behaviours among Australian adolescents</article-title>. <source>Aust N Z J Public Health</source> <volume>30</volume>: <fpage>534</fpage>–<lpage>40</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Yang1"><label>41</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yang</surname><given-names>CK</given-names></name>, <name name-style="western"><surname>Kim</surname><given-names>JK</given-names></name>, <name name-style="western"><surname>Patel</surname><given-names>SR</given-names></name>, <name name-style="western"><surname>Lee</surname><given-names>JH</given-names></name> (<year>2005</year>) <article-title>Age-related changes in sleep/wake patterns among Korean teenagers</article-title>. <source>Pediatrics</source> <volume>115</volume>: <fpage>250</fpage>–<lpage>6</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Ohayon1"><label>42</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ohayon</surname><given-names>MM</given-names></name>, <name name-style="western"><surname>Carskadon</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Guilleminault</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Vitiello</surname><given-names>MV</given-names></name> (<year>2004</year>) <article-title>Meta-analysis of quantitative sleep parameters from childhood to old age in healthy individuals: developing normative sleep values across the human lifespan</article-title>. <source>Sleep</source> <volume>27</volume>: <fpage>1255</fpage>–<lpage>73</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-OLoughlin1"><label>43</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>O’Loughlin</surname><given-names>EK</given-names></name>, <name name-style="western"><surname>Dugas</surname><given-names>EN</given-names></name>, <name name-style="western"><surname>Sabiston</surname><given-names>CM</given-names></name>, <name name-style="western"><surname>O’Loughlin</surname><given-names>JL</given-names></name> (<year>2012</year>) <article-title>Prevalence and correlates of exergaming in youth</article-title>. <source>Pediatrics</source> <volume>130</volume>: <fpage>806</fpage>–<lpage>14</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Sirin1"><label>44</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sirin</surname><given-names>SR</given-names></name> (<year>2005</year>) <article-title>Socioeconomic status and academic achievement: A meta-analytic review of research 1990–2000</article-title>. <source>Rev Educ Res</source> <volume>75</volume>: <fpage>417</fpage>–<lpage>53</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Tandon1"><label>45</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tandon</surname><given-names>PS</given-names></name>, <name name-style="western"><surname>Zhou</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Sallis</surname><given-names>JF</given-names></name>, <name name-style="western"><surname>Cain</surname><given-names>KL</given-names></name>, <name name-style="western"><surname>Frank</surname><given-names>LD</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Home environment relationships with children's physical activity, sedentary time, and screen time by socioeconomic status</article-title>. <source>Int J Behav Nutr Phy</source> <volume>9</volume>: <fpage>88</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Cordero1"><label>46</label>
+<mixed-citation publication-type="other" xlink:type="simple">Cordero JM, Crespo E, Pedraja F (2013) Rendimiento Educativo y determinantes según Pisa. Una revisión de la Literatura en España [Educational performance and determinants according to PISA. A review of literature in Spain]. Rev Educ. Doi: 10.4438/1988-592X-RE-2011-362-161.</mixed-citation>
+</ref>
+<ref id="pone.0099478-American1"><label>47</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><collab xlink:type="simple">American Association of Pediatrics</collab> (<year>2001</year>) <article-title>Children, Adolescents, and Television</article-title>. <source>Pediatrics</source> <volume>107</volume>: <fpage>423</fpage>–<lpage>6</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Blair1"><label>48</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Blair</surname><given-names>PS</given-names></name>, <name name-style="western"><surname>Humphreys</surname><given-names>JS</given-names></name>, <name name-style="western"><surname>Gringras</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Taheri</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Scott</surname><given-names>N</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Childhood sleep duration and associated demographic characteristics in an English cohort</article-title>. <source>Sleep</source> <volume>35</volume>: <fpage>353</fpage>–<lpage>60</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Lubans1"><label>49</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lubans</surname><given-names>DR</given-names></name>, <name name-style="western"><surname>Hesketh</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Cliff</surname><given-names>DP</given-names></name>, <name name-style="western"><surname>Barnett</surname><given-names>LM</given-names></name>, <name name-style="western"><surname>Salmon</surname><given-names>J</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>A systematic review of the validity and reliability of sedentary behaviour measures used with children and adolescents</article-title>. <source>Obes Rev</source> <volume>12</volume>: <fpage>781</fpage>–<lpage>99</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Gonzlez1"><label>50</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>González</surname><given-names>LM</given-names></name>, <name name-style="western"><surname>Peiró-Velert</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Devís-Devís</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Valencia-Peris</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Pérez-Gimeno</surname><given-names>E</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Comparison of physical activity and sedentary behaviours between young haemophilia A patients and healthy adolescents</article-title>. <source>Haemophilia</source> <volume>17</volume>: <fpage>676</fpage>–<lpage>82</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Hardy5"><label>51</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hardy</surname><given-names>LL</given-names></name>, <name name-style="western"><surname>Dobbins</surname><given-names>TA</given-names></name>, <name name-style="western"><surname>Denney-Wilson</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Okely</surname><given-names>AD</given-names></name>, <name name-style="western"><surname>Booth</surname><given-names>ML</given-names></name> (<year>2009</year>) <article-title>Sedentariness, small-screen recreation, and fitness in youth</article-title>. <source>Am J Prev Med</source> <volume>36</volume>: <fpage>120</fpage>–<lpage>25</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-Morley1"><label>52</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Morley</surname><given-names>BC</given-names></name>, <name name-style="western"><surname>Scully</surname><given-names>ML</given-names></name>, <name name-style="western"><surname>Niven</surname><given-names>PHM</given-names></name>, <name name-style="western"><surname>Okely</surname><given-names>AD</given-names></name>, <name name-style="western"><surname>Baur</surname><given-names>LA</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>What factors are associated with excess body weight in Australian secondary school students?</article-title> <source>Med J Australia</source> <volume>196</volume>: <fpage>189</fpage>–<lpage>92</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0099478-VonRueden1"><label>53</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Von Rueden</surname><given-names>U</given-names></name>, <name name-style="western"><surname>Gosch</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Raimil</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Bisegger</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Raven-Sieberer</surname><given-names>U</given-names></name> (<year>2006</year>) <article-title>The European KIDSCREEN group. Socioeconomic determinants of health related quality of life in childhood and adolescence: results from a European study</article-title>. <source>J Epidemiol Community Health</source> <volume>60</volume>: <fpage>130</fpage>–<lpage>5</lpage>.</mixed-citation>
+</ref>
+</ref-list></back>
+</article>

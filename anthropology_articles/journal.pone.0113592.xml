@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group>
+<journal-title>PLoS ONE</journal-title></journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-14-02557</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0113592</article-id>
+<article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Computer and information sciences</subject><subj-group><subject>Computing methods</subject><subj-group><subject>Fuzzy logic</subject></subj-group></subj-group><subj-group><subject>Geoinformatics</subject><subj-group><subject>Spatial analysis</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Earth sciences</subject><subj-group><subject>Geography</subject><subj-group><subject>Human geography</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Medicine and health sciences</subject><subj-group><subject>Epidemiology</subject><subj-group><subject>Economic epidemiology</subject><subject>Epidemiological methods and statistics</subject><subject>Spatial epidemiology</subject></subj-group></subj-group><subj-group><subject>Health care</subject><subj-group><subject>Environmental health</subject><subject>Health care policy</subject><subject>Socioeconomic aspects of health</subject></subj-group></subj-group><subj-group><subject>Pediatrics</subject><subj-group><subject>Child development</subject><subject>Child health</subject></subj-group></subj-group><subj-group><subject>Public and occupational health</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Science policy</subject><subj-group><subject>Science policy and economics</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Social sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Cultural anthropology</subject><subj-group><subject>Geographic and national differences</subject></subj-group></subj-group></subj-group><subj-group><subject>Political science</subject><subj-group><subject>Public policy</subject><subj-group><subject>Poverty reduction</subject></subj-group></subj-group></subj-group><subj-group><subject>Sociology</subject><subj-group><subject>Social discrimination</subject></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Local Modelling Techniques for Assessing Micro-Level Impacts of Risk Factors in Complex Data: Understanding Health and Socioeconomic Inequalities in Childhood Educational Attainments</article-title>
+<alt-title alt-title-type="running-head">Micro-Level Impacts of Risk Factors in Complex Data</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Zhou</surname><given-names>Shang-Ming</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref><xref ref-type="fn" rid="fn1"><sup>¶</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Lyons</surname><given-names>Ronan A.</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Bodger</surname><given-names>Owen G.</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>John</surname><given-names>Ann</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Brunt</surname><given-names>Huw</given-names></name><xref ref-type="aff" rid="aff2"><sup>2</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Jones</surname><given-names>Kerina</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Gravenor</surname><given-names>Mike B.</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref><xref ref-type="fn" rid="fn1"><sup>¶</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Brophy</surname><given-names>Sinead</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref><xref ref-type="fn" rid="fn1"><sup>¶</sup></xref></contrib>
+</contrib-group>
+<aff id="aff1"><label>1</label><addr-line>Institute of Life Science, College of Medicine, Swansea University, Swansea, United Kingdom</addr-line></aff>
+<aff id="aff2"><label>2</label><addr-line>Public Health Wales, Temple of Peace and Health, Cathays Park, Cardiff, United Kingdom</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Carpenter</surname><given-names>David O.</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Institute for Health &amp; the Environment, United States of America</addr-line></aff>
+<author-notes>
+<fn id="fn1" fn-type="other"><p>¶ SMZ, MBG, and SB are joint lead authors on this work.</p></fn>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">s.zhou@swansea.ac.uk</email></corresp>
+<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn>
+<fn fn-type="con"><p>Conceived and designed the experiments: SMZ SB MBG. Performed the experiments: SMZ MBG. Analyzed the data: SMZ MBG OGB RAL SB AJ HB KJ. Contributed reagents/materials/analysis tools: RAL SMZ MBG SB. Wrote the paper: SMZ MBG SB.</p></fn>
+</author-notes>
+<pub-date pub-type="collection"><year>2014</year></pub-date>
+<pub-date pub-type="epub"><day>19</day><month>11</month><year>2014</year></pub-date>
+<volume>9</volume>
+<issue>11</issue>
+<elocation-id>e113592</elocation-id>
+<history>
+<date date-type="received"><day>17</day><month>1</month><year>2014</year></date>
+<date date-type="accepted"><day>29</day><month>10</month><year>2014</year></date>
+</history>
+<permissions>
+<copyright-year>2014</copyright-year>
+<copyright-holder>Zhou et al</copyright-holder><license xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions>
+<abstract>
+<p>Although inequalities in health and socioeconomic status have an important influence on childhood educational performance, the interactions between these multiple factors relating to variation in educational outcomes at <italic>micro-level</italic> is unknown, and how to evaluate the many possible interactions of these factors is not well established. This paper aims to examine multi-dimensional deprivation factors and their impact on childhood educational outcomes at micro-level, focusing on geographic areas having widely different disparity patterns, in which each area is characterised by six deprivation domains (<italic>Income</italic>, <italic>Health</italic>, <italic>Geographical Access to Services</italic>, <italic>Housing</italic>, <italic>Physical Environment</italic>, and <italic>Community Safety</italic>). Traditional health statistical studies tend to use one global model to describe the whole population for <italic>macro-analysis</italic>. In this paper, we combine linked educational and deprivation data across small areas (median population of 1500), then use a <italic>local modelling</italic> technique, the Takagi-Sugeno fuzzy system, to predict area educational outcomes at ages 7 and 11. We define two new metrics, “<italic>Micro-impact of Domain</italic>” and “<italic>Contribution of Domain</italic>”, to quantify the variations of local impacts of multidimensional factors on educational outcomes across small areas. The two metrics highlight differing priorities. Our study reveals complex multi-way interactions between the deprivation domains, which could not be provided by traditional health statistical methods based on single global model. We demonstrate that although <italic>Income</italic> has an expected central role, all domains contribute, and in some areas <italic>Health</italic>, <italic>Environment</italic>, <italic>Access to Services</italic>, <italic>Housing</italic> and <italic>Community Safety</italic> each could be the dominant factor. Thus the relative importance of health and socioeconomic factors varies considerably for different areas, depending on the levels of each of the other factors, and therefore each component of deprivation must be considered as part of a wider system. Childhood educational achievement could benefit from policies and intervention strategies that are tailored to the local geographic areas' profiles.</p>
+</abstract>
+<funding-group><funding-statement>The work was undertaken with the support of The Centre for the Development and Evaluation of Complex Interventions for Public Health Improvement (DECIPHer), a UKCRC Public Health Research Centre of Excellence. Joint funding (MR/KO232331/1) from the British Heart Foundation, Cancer Research UK, Economic and Social Research Council, Medical Research Council, the Welsh Government and the Wellcome Trust, under the auspices of the UK Clinical Research Collaboration, is gratefully acknowledged. This research was also supported by the Farr Institute of Health Informatics Research. The Farr Institute is funded by a consortium of ten UK research organizations (MR/K006525/1): Arthritis Research UK, the British Heart Foundation, Cancer Research UK, the Economic and Social Research Council, the Engineering and Physical Sciences Research Council, the Medical Research Council, the National Institute of Health Research, the National Institute for Social Care and Health Research (Welsh Government), and the Chief Scientist Office (Scottish Government Health Directorates). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts><page-count count="14"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title>Introduction</title>
+<p>Increasing evidence shows that childhood health and socioeconomic inequalities have strong impact on educational attainments <xref ref-type="bibr" rid="pone.0113592-Webber1">[1]</xref>–<xref ref-type="bibr" rid="pone.0113592-Acheson1">[7]</xref>. It is often the case, however, that existing studies focus on the impact of <italic>either</italic> health <italic>or</italic> socioeconomic status, and research results are often obtained at a <italic>macro-level</italic>, whereas the subtle analysis of risk factor interactions at a <italic>micro-level</italic> across different subgroups is much less understood in epidemiological and public health studies. Such considerations might reveal more complex relationships and provide important insights for targeted policy development and intervention. However, currently few statistical analytics methods and modelling techniques can fulfil the tasks of conducting subtle analysis of risk factor interactions at the <italic>micro-level</italic> while maintaining the <italic>macro-level</italic> system performance.</p>
+<p>This paper offers a local modelling technique, the Takagi-Sugeno (TS) fuzzy system <xref ref-type="bibr" rid="pone.0113592-Takagi1">[8]</xref> for characterising subtle relationships between independent variables (inputs) and the dependent variable (output) across different local data regions while constructing a global system model. As a popular modelling technique, TS fuzzy models have gained successful applications in many areas <xref ref-type="bibr" rid="pone.0113592-Chadli1">[9]</xref>–<xref ref-type="bibr" rid="pone.0113592-Precup1">[11]</xref>, but few studies have examined the roles of TS fuzzy models in characterising subtle relationships between inputs and output across local data regions. There are a number of challenges in applying TS fuzzy models to local characterisation of data space. First, the number of TS fuzzy rules (corresponding to local linear models) increases exponentially along with the growth of the number of independent variables (the <italic>curse of dimensionality</italic>). In order to tackle this challenge, Zhou et al proposed a method of constructing compact TS model <xref ref-type="bibr" rid="pone.0113592-Zhou1">[12]</xref>, in which the redundant local linear models (LLMs) are removed, and only important ones are used in the final model. Second, currently there are no effective analytic tools for TS fuzzy models to quantitatively assess the impacts of input variables on output across different local data regions. To this end, this paper proposes two new metrics: One is called “<italic>Micro-impact of Domain</italic>” (<italic>MiD</italic>) to assess the expected impact of changes in an input variable on outcome at a micro-level by fusing the coefficients of dominated LLM and all other LLMs in a given data sub-region. We further propose a second metric: “<italic>Contribution of Domain</italic>” (CoD) to assess the gross contribution of each domain at the corresponding sub-region.</p>
+<p>Using the two new metrics we aim to provide new insights into the complex relationships between health and socioeconomic status, and educational attainments at the small area level based on data linked across routine databases. The significance of research on area-based effects lies in the need to focus public health and socioeconomic promotion initiatives on the broader characteristics of places where disadvantaged people live <xref ref-type="bibr" rid="pone.0113592-Popham1">[13]</xref>–<xref ref-type="bibr" rid="pone.0113592-Blanc1">[20]</xref>. Understanding how drivers such as poor health, poor housing, poor local environment, unstable communities and poor public service support, interact to create a cycle of decline and underachievement is vital to identify the most appropriate policy responses.</p>
+</sec><sec id="s2" sec-type="materials|methods">
+<title>Materials and Methods</title>
+<sec id="s2a">
+<title>Indices of childhood deprivation</title>
+<p>We performed a cross-sectional study linking routine data from the Welsh Child Index for Multiple Deprivation (WCIMD) <xref ref-type="bibr" rid="pone.0113592-Welsh1">[21]</xref> with data from the UK National Pupil Database (NPD) <xref ref-type="bibr" rid="pone.0113592-Administrative1">[22]</xref>. In the UK, a considerable amount of data is produced at the so-called Lower Super Output Area (LSOA) level. LSOAs have a median population of approximately 1500 people, and were created by the UK Office for National Statistics as permanent census geographies, taking into account population size, proximity, and social homogeneity <xref ref-type="bibr" rid="pone.0113592-UK1">[23]</xref>.</p>
+<p>A variety of indices of area level deprivation have been created for LSOAs, by governments in different parts of the UK. The WCIMD was designed specifically for childhood policy development as part of the Neighbourhood Statistics programme in England and Wales, UK <xref ref-type="bibr" rid="pone.0113592-Welsh1">[21]</xref>. The WCIMD is based on seven separate domains of deprivation: <italic>Income</italic>, <italic>Health</italic>, <italic>Access (Geographic) to Services</italic>, <italic>Housing</italic>, <italic>Physical Environment</italic>, <italic>Community Safety</italic> and <italic>Education</italic> (<italic>including skills and training</italic>) at the LSOA level <xref ref-type="bibr" rid="pone.0113592-Welsh1">[21]</xref>. The indicators for each domain are based on comprehensive and robust criteria, and are regularly updated. The 2008 recently revised version of WCIMD <xref ref-type="bibr" rid="pone.0113592-Welsh2">[24]</xref><xref ref-type="bibr" rid="pone.0113592-Welsh3">[25]</xref> is calculated for each of the 1896 LSOAs across Wales. Each domain of the index is scored on a scale of 0 to 100 (highest level of deprivation) and is itself a composite variable. For example: <italic>Income</italic> captures the proportion of children living in households with income below a defined threshold or claiming benefits relating to low incomes. <italic>Health</italic> measures the degree to which children are deprived of good health, as determined by the area prevalence of limiting long-term illness and low birth weight. <italic>Housing</italic> captures deprivation though lack of central heating and indicators of overcrowding. <italic>Environment</italic> represents physical environmental risk factors that may impact quality of life, including air quality, air emissions, flood risk and proximity to waste disposal and industrial sites. <italic>Access</italic> represents deprivation resulting from difficulties in accessing a range of necessary services (average travel time to primary care centres, schools, libraries, leisure facilities). <italic>Community</italic> represents safety, based on police recorded crime, numbers of youth and adult offenders and incidents of fire. Since our target outcome variable is educational achievement, which is itself a component of the seventh WCIMD domain, we excluded the <italic>Education</italic> component of WCIMD from our analysis.</p>
+<p>Simple investigation of the data may reveal that some of the domains (e.g. <italic>Access</italic> and <italic>Environment</italic>) are not strongly associated with educational attainment. However, in practice, the indicators used to define the two deprivation indices can potentially have direct or indirect impact on educational performances. For example, long distances to schools and transport nodes could worsen educational performances for children from poor family backgrounds. The <italic>Environment</italic> indicators, such as air quality, can significantly affect child's health, then impact educational performance indirectly. This is particularly true for children with existing poor health conditions. Substantial evidence has shown the adverse effects of exposure to ambient air pollutants on the development of lung function, and aggravation of asthma <xref ref-type="bibr" rid="pone.0113592-Schwartz1">[26]</xref>. These effects may only be apparent at certain local regions, and also in combination (interaction) with other deprivation domains. Such subtle local effects, that are missed at the global level and that may exist across and between all deprivation domains, are the motivation and target of our study.</p>
+</sec><sec id="s2b">
+<title>Educational under-attainment rates</title>
+<p>The UK NPD <xref ref-type="bibr" rid="pone.0113592-Administrative1">[22]</xref> matches information from the Pupil Level Annual School Census (PLASC) with records on key stage (KS) educational attainment. We focused on educational attainment at KS1 (age 6–7) and KS2 (age 10–11). Categorisation is based on whether a pupil attains an expected level of attainment for all three core subjects: <italic>Mathematics</italic>, <italic>Science</italic>, and <italic>English</italic> or <italic>Welsh</italic> (depending on first language). Here, we defined the overall <italic>education under-attainment rate</italic> (EUR) at the LSOA level as a proportion, being the total number of children achieving lower than expected levels (KS1 and KS2) divided by the total number of child assessments made during the same period represented by the WCIMD indices. Education data at the LSOA level was collected from anonymised individual records, and linked to deprivation indices, using the <italic>SAIL (Secure Anonymised Information Linkage)</italic> databank <xref ref-type="bibr" rid="pone.0113592-Lyons1">[27]</xref><xref ref-type="bibr" rid="pone.0113592-Ford1">[28]</xref> (<xref ref-type="fig" rid="pone-0113592-g001">Figure 1</xref>).</p>
+<fig id="pone-0113592-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0113592.g001</object-id><label>Figure 1</label><caption>
+<title>Linkage of data from Welsh Child Index of Multiple Deprivation with educational outcomes (under-attainment rate) at Lower Super Output Area level via Secure Anonymised Information Linkage (SAIL) databank.</title>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0113592.g001" position="float" xlink:type="simple"/></fig></sec><sec id="s2c">
+<title>TS fuzzy modelling framework</title>
+<p>This study is based on a local modelling technique, the TS fuzzy rule system <xref ref-type="bibr" rid="pone.0113592-Takagi1">[8]</xref> and a recently developed tool suited for detection of complex interactions in epidemiological data <xref ref-type="bibr" rid="pone.0113592-Zhou1">[12]</xref>.</p>
+<p>Different from the traditional health statistics for macro analyses, the TS fuzzy system decomposes the whole data space into individual regions, a local linear model (LLM) is fitted in every region, with the overall system output given as a global model which is obtained by fusing the submodels. Specifically, a TS fuzzy model is expressed as follows:<disp-formula id="pone.0113592.e001"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0113592.e001" xlink:type="simple"/><label>(1)</label></disp-formula>where, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0113592.e002" xlink:type="simple"/></inline-formula>, <italic>y<sub>i</sub></italic> is the output variable of the <italic>i</italic>th rule, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0113592.e003" xlink:type="simple"/></inline-formula> is a fuzzy set of the <italic>j</italic>th domain in the <italic>i</italic>th rule, and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0113592.e004" xlink:type="simple"/></inline-formula> are consequent coefficients of the <italic>i</italic>th rule. An overall output <italic>y</italic> is produced by fusing together these <italic>LLMs</italic> <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0113592.e005" xlink:type="simple"/></inline-formula> as<disp-formula id="pone.0113592.e006"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0113592.e006" xlink:type="simple"/><label>(2)</label></disp-formula>where<disp-formula id="pone.0113592.e007"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0113592.e007" xlink:type="simple"/><label>(3)</label></disp-formula>is the normalized firing strength of the <italic>i</italic>th rule, and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0113592.e008" xlink:type="simple"/></inline-formula> is usually defined by<disp-formula id="pone.0113592.e009"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0113592.e009" xlink:type="simple"/><label>(4)</label></disp-formula>in which the <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0113592.e010" xlink:type="simple"/></inline-formula>is the membership function of the fuzzy set <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0113592.e011" xlink:type="simple"/></inline-formula>. The overall fused system model (2) is also called the <italic>global</italic> model. The coefficients determine the size and direction of the effects in the local fuzzy region. For example, for the 6 deprivation domains, if each is categorized into regions “high” and “low”, there would be 64 ( = 2<sup>6</sup>) sub-regions representing all combinations of each domain. The overall system output is obtained by fusing the outputs of all these submodels. The output is a predicted (fitted) education under-attainment rate for each LSOA (geographic area).</p>
+<p>In essence, we might say “<italic>if all deprivation levels are ‘low’, then use Rule (LLM) 1</italic>”. But in practice we wish to utilise our continuous data for deprivation, and might not be able to confidently classify each deprivation level as ‘low’. Therefore the specific LSOA prediction is obtained as a weighted average of <italic>all</italic> LLMs with the weights determined by how closely the specific LSOA fits into each sub-region characterised by fuzzy sets. The complexity of the model is reduced, by fitting local simple models to partitions of the data space, a <italic>micro characterizations of input space</italic> <xref ref-type="bibr" rid="pone.0113592-Zhou2">[29]</xref><xref ref-type="bibr" rid="pone.0113592-Zhou3">[30]</xref>. In practice, one may tend to find a dominant rule for each sub-region. In this manner, TS rule modelling technique offers a novel way of revealing the subtle relationships between independent variables (inputs, the domains of deprivation) and dependent variable (output, the education under attainment rate) across very many small geographic regions.</p>
+<p>Although the method is appealing, a cost is the “curse of dimensionality” whereby for many variables or sub-regions, there may be a large number of LLMs, which can lead to over-fitting and poor out-of-sample performance. Zhou et al have developed a method to identify a parsimonious set of rules that capture the key interactions between the variables whilst avoiding such over-fitting <xref ref-type="bibr" rid="pone.0113592-Zhou1">[12]</xref>.</p>
+</sec><sec id="s2d">
+<title>Output metrics for the TS model</title>
+<p>In this paper we propose two new metrics to quantitatively assess how the impacts of domain factors on outcome vary across these local regions at micro-level.</p>
+<sec id="s2d1">
+<title>1. MiD: micro-impact of domain</title>
+<p>First note that in a TS fuzzy system, each LLM describes the relationship between domain factors and outcome in a certain data sub-region. The coefficients of these LLMs represent, for each deprivation domain, the rates and directions of expected change of the conditional mean of the outcome (e.g. education under-attainment rate) with respect to each deprivation domain. To make a prediction for a specific LSOA, the coefficients across all LLM are fused with the weights determined by how well the LSOA fits to each LLM data space region. These averaged coefficients are unique to each LSOA and give an indication of how the educational achievement would be expected to change given changes in deprivation scores. We denote this metric by the term “<italic>Micro-impact of Domain</italic>” (<italic>MiD</italic>) at the given sample point.</p>
+<p>Specifically, given an LLM <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0113592.e012" xlink:type="simple"/></inline-formula>, the slope coefficient vector <italic>E</italic> = (<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0113592.e013" xlink:type="simple"/></inline-formula>)<italic><sup>T</sup></italic> is be normalized into a unitary vector:<disp-formula id="pone.0113592.e014"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0113592.e014" xlink:type="simple"/><label>(5)</label></disp-formula>Then given an input (e.g. vector of WCIMD deprivation scores) <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0113592.e015" xlink:type="simple"/></inline-formula>, the overall influence of the <italic>j</italic><sup>th</sup> domain on output at the point <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0113592.e016" xlink:type="simple"/></inline-formula> is defined as<disp-formula id="pone.0113592.e017"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0113592.e017" xlink:type="simple"/><label>(6)</label></disp-formula>Hence the <italic>MiD</italic> defines <italic>the overall expected change in the output (e.g. education under-attainment rate)</italic>, <italic>on average</italic>, <italic>for a one-unit change in the j<sup>th</sup> domain at the point </italic><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0113592.e018" xlink:type="simple"/></inline-formula><italic>, while holding all the other domains fixed</italic>. It gives the size and direction of the effect that the <italic>j<sup>th</sup></italic> domain is having on the output at the point <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0113592.e019" xlink:type="simple"/></inline-formula>. Note that <italic>x</italic> represents a general variable, while <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0113592.e020" xlink:type="simple"/></inline-formula> denotes the values of <italic>x</italic> at a specific point.</p>
+</sec><sec id="s2d2">
+<title>2. CoD: contribution of domain</title>
+<p>The MiD coefficient represents the slope of the relationship between deprivation and education, hence a standardised effect size for a given change in deprivation. In practice, domain scores for certain LSOAs may differ widely in magnitude, and potential changes in deprivation score via policy intervention may also differ widely, hence the absolute change in educational score needs to take this into account. The “<italic>Contribution of Domain</italic>” (CoD) is defined as the product of the MiD and the actual domain value.</p>
+<p>Specifically, given an input sample, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0113592.e021" xlink:type="simple"/></inline-formula>, the overall influence of the <italic>j<sup>th</sup></italic> domain on <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0113592.e022" xlink:type="simple"/></inline-formula> is defined as<disp-formula id="pone.0113592.e023"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0113592.e023" xlink:type="simple"/><label>(7)</label></disp-formula></p>
+</sec></sec><sec id="s2e">
+<title>Fitting the TS model</title>
+<p>First, given the 1896 LSOA samples across Wales, a 9-fold cross validation scheme was used to evaluate the performance of the TS model. In each data partition, 1400 samples were used for training, 200 samples for validation, and 296 samples for testing. The 1400 training samples were used to fit the initial TS model with inputs representing the various indices of deprivation: <italic>income</italic> (<italic>x<sub>1</sub></italic>), <italic>health</italic> (<italic>x<sub>2</sub></italic>), <italic>access to services</italic> (<italic>x<sub>3</sub></italic>), <italic>housing</italic> (<italic>x<sub>4</sub></italic>), <italic>physical environment</italic> (<italic>x<sub>5</sub></italic>), <italic>community safety</italic> (<italic>x<sub>6</sub></italic>) and one output: <italic>education educational under-attainment rate</italic> (<italic>y</italic>). In this study, each of the deprivation domains was characterised into ‘low’ <italic>non-deprived</italic> scores and ‘high’ <italic>highly deprived</italic> categories. Since such classification has uncertainty associated with it, fuzzy sets were used to characterise these linguistic terms. First, the fuzzy c-means unsupervised clustering algorithm <xref ref-type="bibr" rid="pone.0113592-Bezdek1">[31]</xref> was used to partition input space. By projecting the multi-dimensional prototypes on the input variable space <xref ref-type="bibr" rid="pone.0113592-Zhou4">[32]</xref>, the membership functions of fuzzy sets were generated with the core cut-off points shown in the <xref ref-type="table" rid="pone-0113592-t001">Table 1</xref>. In this way, this initial TS model consists of 64 rules representing all combinations of each domain in partitioning the input space. Then the validation data set was used to select the important rules and remove the redundant ones in the interest of constructing compact model using the <italic>ω</italic>-index of TS fuzzy rules proposed in <xref ref-type="bibr" rid="pone.0113592-Zhou1">[12]</xref>. The generalisation performance of the constructed compact TS model was evaluated by applying to the testing data set. Then the most compact TS model with good global prediction performance was used to analyse the micro-impacts of deprivation domains on educational under-attainment rate across different data sub-regions. All models were implemented in Matlab, and code is available upon request from the corresponding author.</p>
+<table-wrap id="pone-0113592-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0113592.t001</object-id><label>Table 1</label><caption>
+<title>Core cut-off points for fuzzy sets to characterise “non-deprived” and “highly deprived” scores.</title>
+</caption><alternatives><graphic id="pone-0113592-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0113592.t001" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Input variables</italic></td>
+<td align="left" rowspan="1" colspan="1"><italic>Non-deprived core scores</italic></td>
+<td align="left" rowspan="1" colspan="1"><italic>Highly deprived core scores</italic></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Income</td>
+<td align="left" rowspan="1" colspan="1">[0, 11.71]</td>
+<td align="left" rowspan="1" colspan="1">[36.56, 100]</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Health</td>
+<td align="left" rowspan="1" colspan="1">[0, 13.14]</td>
+<td align="left" rowspan="1" colspan="1">[35.2, 100]</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Access</td>
+<td align="left" rowspan="1" colspan="1">[0, 14.66]</td>
+<td align="left" rowspan="1" colspan="1">[26.05, 100]</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Housing</td>
+<td align="left" rowspan="1" colspan="1">[0, 14.77]</td>
+<td align="left" rowspan="1" colspan="1">[31.77, 100]</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Environment</td>
+<td align="left" rowspan="1" colspan="1">[0, 18.80]</td>
+<td align="left" rowspan="1" colspan="1">[25.91, 100]</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Community</td>
+<td align="left" rowspan="1" colspan="1">[0, 12.24]</td>
+<td align="left" rowspan="1" colspan="1">[36.63, 100]</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap></sec><sec id="s2f">
+<title>Ethics</title>
+<p>The data used in this study was collected via national databases held in the <italic>SAIL (Secure Anonymised Information Linkage)</italic> databank <xref ref-type="bibr" rid="pone.0113592-Lyons1">[27]</xref><xref ref-type="bibr" rid="pone.0113592-Ford1">[28]</xref>. No ethical review was required because the SAIL databank holds the data which has been anonymised and granted with the permission of relevant Caldicott Guardian/Data Protection Officer <xref ref-type="bibr" rid="pone.0113592-Ford2">[33]</xref>, however, approval to proceed with the study was given by the Information Governance Review Panel <xref ref-type="bibr" rid="pone.0113592-Ford1">[28]</xref>.</p>
+</sec></sec><sec id="s3">
+<title>Results</title>
+<p>There were 196,770 KS1 and KS2 childhood records for Wales during the relevant WCIMD period. The number of children with KS 1 or KS2 records in this study between 2005 and 2007 can be found in <xref ref-type="supplementary-material" rid="pone.0113592.s002">Table S1</xref> of Data Supplement. <xref ref-type="fig" rid="pone-0113592-g002">Figure 2</xref> depicts the educational under-attainment rate (EUR) across each of the 1896 LSOAs in Wales. The overall percentage failing to achieve the education target was 22.7%, with considerable geographical heterogeneity. The pair-wise linear correlation coefficients for all domains: <italic>Income</italic>, <italic>Health</italic>, <italic>Access</italic>, <italic>Housing</italic>, <italic>Environment</italic> and <italic>Community</italic>, can be found in <xref ref-type="supplementary-material" rid="pone.0113592.s003">Table S2</xref> of Data Supplement. Fuzzy sets with the core cut-off points shown in the <xref ref-type="table" rid="pone-0113592-t001">Table 1</xref> were used to characterise the ‘low’ <italic>non-deprived</italic> scores and ‘high’ <italic>highly deprived</italic> categories. Uncertainty emerges for the areas whose deprivation scores lie between the cut-offs. For example, an LSOA with income deprivation score below 11.71 should belong, with high certainty, to the <italic>non-deprived</italic> category on <italic>Income</italic>, and one with deprivation score above 36.56 to the <italic>highly deprived</italic> category. In contrast an LSOA with income deprivation scores of 30 would have the membership of the <italic>non-deprived</italic> category with a “degree” (representing uncertainty) of 0.29 and at the same time, a degree of 0.84 belonging to the <italic>highly-deprived</italic> category. So in decision making about such areas, both high and low deprivation on <italic>Income</italic> (with their associated “<italic>if-then</italic>” rules) will contribute significantly, with the <italic>weights</italic> of each calculated from the degree of membership.</p>
+<fig id="pone-0113592-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0113592.g002</object-id><label>Figure 2</label><caption>
+<title>Educational under-attainment rates (EUR) in each LSOA across Wales.</title>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0113592.g002" position="float" xlink:type="simple"/></fig>
+<p>Using sub-regions of the data space based on the two sets of each of the 6 deprivation domains results in 64 rules (LLMs), and a risk of redundancy and over fitting of the data. Application of our recently developed algorithm <xref ref-type="bibr" rid="pone.0113592-Zhou1">[12]</xref> resulted in a compact, and parsimonious TS model. The 9 fold cross validation scheme showed an overall root-mean-squared-error (RMSE) of 0.0888 (95% confidence interval: [0.0845, 0.0931]). The best compact TS model had only 8 important rules (note that this is fewer than found in <xref ref-type="bibr" rid="pone.0113592-Zhou1">[12]</xref> as we are now using an updated version of the WIMCS data set). Taken together, these were sufficient to provide an accurate prediction of the education under-attainment rate in all LSOAs (generalization performance on testing data set with RMSE of 0.0842, see <xref ref-type="supplementary-material" rid="pone.0113592.s001">Figure S1</xref> of Data Supplement). This means that the whole population of children attending the KS1 and KS2 across Wales can be grouped into 8 different clusters with similar characteristics in each cluster according to their combinations of deprivation domains of the WCIMD, and each cluster is dominated by an LLM.</p>
+<p>The input conditions for each rule are outlined in <xref ref-type="table" rid="pone-0113592-t002">Table 2</xref>, and the coefficients of each of the 8 local linear models are given in <xref ref-type="fig" rid="pone-0113592-g003">Figure 3</xref>, while <xref ref-type="fig" rid="pone-0113592-g004">Figure 4</xref> depicts the 95% confidence intervals (CIs) of these coefficients. The colours in <xref ref-type="fig" rid="pone-0113592-g003">Figure 3</xref> are used to differentiate these LLMs and the corresponding clusters of LSOAs revealed in <xref ref-type="fig" rid="pone-0113592-g005">Figure 5</xref>. It can be seen that based on the given WCIMD training dataset, some coefficients of the LLMs have the negative values. These negative values represent the “unexpected” conclusion that education scores tend to <italic>improve</italic> with increased deprivation of corresponding domain, and tend to have wide confidence intervals associated with them. Hence although these trends are present in certain sub-regions of the data, evidence for such an effect is not very strong. The 95% CIs in <xref ref-type="fig" rid="pone-0113592-g004">Figure 4</xref> show the range of plausible values that can act as estimates for the coefficients of each deprivation score in each LLM. <italic>Income</italic> domain in the LLMs <italic>W<sub>1</sub></italic> and <italic>W<sub>6</sub></italic> is clearly statistically significantly different from zero. The CIs for the domains of <italic>Access</italic> in <italic>W<sub>2</sub></italic>, <italic>Environment</italic> in <italic>W<sub>3</sub></italic>, <italic>Health</italic> in <italic>W<sub>6</sub></italic>, and <italic>Housing</italic> in <italic>W<sub>7</sub></italic> all also indicate statistical significance. We note that even small coefficients can make considerable contributions to the predicted education failure rate in local areas of high deprivation. This is because the expected education failure rate is obtained from the product of the coefficient and the deprivation score. This is part of the rationale for the choice of the CoD metric as a key output.</p>
+<fig id="pone-0113592-g003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0113592.g003</object-id><label>Figure 3</label><caption>
+<title>The coefficients of the eight local linear models in the parsimonious constructed compact TS system model.</title>
+<p>The rules are coded as <italic>W<sub>1</sub></italic> to <italic>W<sub>8</sub></italic> (see <xref ref-type="table" rid="pone-0113592-t002">Table 2</xref>). Note that individual LSOAs have predicted values that are weighted averages of these 8 models, with the weights determined by the uncertainty of membership of the sub-regions.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0113592.g003" position="float" xlink:type="simple"/></fig><fig id="pone-0113592-g004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0113592.g004</object-id><label>Figure 4</label><caption>
+<title>Properties of the coefficients of the eight selected “parsimonious” local linear models (LLMs).</title>
+<p>Green square represents point estimate, and “x” marks upper and lower 95% confidence intervals. (<italic>IN- Income; HE- Health; AC- Access to Services; HO – Housing; EN – Physical Environment; CO- Community Safety</italic>).</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0113592.g004" position="float" xlink:type="simple"/></fig><fig id="pone-0113592-g005" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0113592.g005</object-id><label>Figure 5</label><caption>
+<title>Map of Wales showing Lower Super Output Areas (LSOAs) coded according to the dominant rule at each LSOA that represents the relationship between deprivation domains and education under-attainment rate.</title>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0113592.g005" position="float" xlink:type="simple"/></fig><table-wrap id="pone-0113592-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0113592.t002</object-id><label>Table 2</label><caption>
+<title>The eight most important “<italic>if-then</italic>” input components of the rules (<italic>W<sub>1</sub>∼W<sub>8</sub></italic>) for the final TS fuzzy model.</title>
+</caption><alternatives><graphic id="pone-0113592-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0113592.t002" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Rule ID</td>
+<td align="left" rowspan="1" colspan="1">Access</td>
+<td align="left" rowspan="1" colspan="1">Community</td>
+<td align="left" rowspan="1" colspan="1">Environment</td>
+<td align="left" rowspan="1" colspan="1">Health</td>
+<td align="left" rowspan="1" colspan="1">Housing</td>
+<td align="left" rowspan="1" colspan="1">Income</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>W<sub>1</sub></italic></td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>W<sub>2</sub></italic></td>
+<td align="left" rowspan="1" colspan="1">D</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>W<sub>3</sub></italic></td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">D</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>W<sub>4</sub></italic></td>
+<td align="left" rowspan="1" colspan="1">D</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">D</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>W<sub>5</sub></italic></td>
+<td align="left" rowspan="1" colspan="1">D</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">D</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>W<sub>6</sub></italic></td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">D</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">D</td>
+<td align="left" rowspan="1" colspan="1">D</td>
+<td align="left" rowspan="1" colspan="1">D</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>W<sub>7</sub></italic></td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">D</td>
+<td align="left" rowspan="1" colspan="1">D</td>
+<td align="left" rowspan="1" colspan="1">D</td>
+<td align="left" rowspan="1" colspan="1">D</td>
+<td align="left" rowspan="1" colspan="1">D</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>W<sub>8</sub></italic></td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">D</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">D</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">D</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt101"><label/><p>(These rules are selected from the 64 possible Local Linear Models according to our algorithm <xref ref-type="bibr" rid="pone.0113592-Zhou1">[12]</xref>. D = high deprivation, - = non-deprived).</p></fn></table-wrap-foot></table-wrap>
+<p>As indicated above, each data sub-region has one dominating LLM while the rest of other LLMs play minor roles in prediction for the samples in this sub-region. Summarising the LLMs in the whole data space, <xref ref-type="table" rid="pone-0113592-t003">Table 3</xref> shows the values of mean, minimum and maximum of the LLMs' coefficients and corresponding 95% CIs. The <xref ref-type="table" rid="pone-0113592-t003">Table 3</xref> indicated that in overall, the <italic>Income</italic> and <italic>Housing</italic> domains are statistically significant, as might be expected, <italic>Income</italic> was the most influential domain.</p>
+<table-wrap id="pone-0113592-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0113592.t003</object-id><label>Table 3</label><caption>
+<title>Summary of coefficients of the local linear models in the constructed TS system model.</title>
+</caption><alternatives><graphic id="pone-0113592-t003-3" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0113592.t003" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Variable</italic></td>
+<td align="left" rowspan="1" colspan="1"><italic>Baseline</italic></td>
+<td align="left" rowspan="1" colspan="1"><italic>Access score</italic></td>
+<td align="left" rowspan="1" colspan="1"><italic>Community score</italic></td>
+<td align="left" rowspan="1" colspan="1"><italic>Environment score</italic></td>
+<td align="left" rowspan="1" colspan="1"><italic>Health score</italic></td>
+<td align="left" rowspan="1" colspan="1"><italic>Housing score</italic></td>
+<td align="left" rowspan="1" colspan="1"><italic>Income score</italic></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Minimum</td>
+<td align="left" rowspan="1" colspan="1">7.09</td>
+<td align="left" rowspan="1" colspan="1">−0.47</td>
+<td align="left" rowspan="1" colspan="1">−0.55</td>
+<td align="left" rowspan="1" colspan="1">−0.26</td>
+<td align="left" rowspan="1" colspan="1">−0.14</td>
+<td align="left" rowspan="1" colspan="1">−0.00</td>
+<td align="left" rowspan="1" colspan="1">0.06</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Maximum</td>
+<td align="left" rowspan="1" colspan="1">30.88</td>
+<td align="left" rowspan="1" colspan="1">0.60</td>
+<td align="left" rowspan="1" colspan="1">0.42</td>
+<td align="left" rowspan="1" colspan="1">0.28</td>
+<td align="left" rowspan="1" colspan="1">0.56</td>
+<td align="left" rowspan="1" colspan="1">0.22</td>
+<td align="left" rowspan="1" colspan="1">0.7</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mean</td>
+<td align="left" rowspan="1" colspan="1">16.31</td>
+<td align="left" rowspan="1" colspan="1">0.03</td>
+<td align="left" rowspan="1" colspan="1">0.04</td>
+<td align="left" rowspan="1" colspan="1">−0.06</td>
+<td align="left" rowspan="1" colspan="1">0.10</td>
+<td align="left" rowspan="1" colspan="1">0.12</td>
+<td align="left" rowspan="1" colspan="1">0.30</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">95%CI</td>
+<td align="left" rowspan="1" colspan="1">[9.96, 22.66]</td>
+<td align="left" rowspan="1" colspan="1">[−0.25, 0.31]</td>
+<td align="left" rowspan="1" colspan="1">[−0.21, 0.29]</td>
+<td align="left" rowspan="1" colspan="1">[−0.20, 0.07]</td>
+<td align="left" rowspan="1" colspan="1">[−0.10, 0.29]</td>
+<td align="left" rowspan="1" colspan="1">[0.06, 0.19]</td>
+<td align="left" rowspan="1" colspan="1">[0.10, 0.51]</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p>To further interpret these LLMs, the input conditions from <xref ref-type="table" rid="pone-0113592-t002">Table 2</xref> (the “<italic>if</italic>” component of the rules) can be combined with the coefficients from <xref ref-type="fig" rid="pone-0113592-g003">Figure 3</xref> (the “<italic>then</italic>” component of the rules) to illustrate the extremely complicated interactions that emerge from the data mining. The effects of all individual deprivation domains were strongly dependent on the categories of all other domains in determining educational outcomes. This means that generalisations about the effect of any deprivation index to a local level could have poor performance if the other factors are not properly taken into account.</p>
+<p>There are several outputs from the model that are of interest. First, a simple indicator that can be used to classify each LSOA is the “dominant rule”. <xref ref-type="fig" rid="pone-0113592-g005">Figure 5</xref> shows the distribution of these 8 types of relationship across Wales revealed by the 8 LLMs in <xref ref-type="fig" rid="pone-0113592-g003">Figure 3</xref> (colours used in these two Figures to represent the LLMs and corresponding LSOAs are consistent). Several interesting patterns emerge. The urban and rural areas of Wales are naturally marked by the size of the LSOA, with very small LSOAs found in the north and south coastal cities, as well as the South Wales industrial valleys. If we concentrate instead on the remaining rural areas, there remains a general north-west (NW) to south-east (SE) divide, with the NW characterised by rule 4 (green) in which the relationship between education under attainment and deprivation is strongly influenced by <italic>Health</italic>, with a contribution from <italic>Environment</italic> but a surprisingly small role for <italic>Income</italic>. While in the SE rule 2 dominates (red) in which <italic>Income</italic> plays a much more central role, along with <italic>Community</italic> and, to a lesser extent, <italic>Health</italic>.</p>
+<p>Recall however, that the fitted value for each LSOA is a weighted average of all 8 rules (LLMs). Hence the need for the proposed metrics to reveal the unique local picture. The MiD values across all LSOAs are illustrated in <xref ref-type="fig" rid="pone-0113592-g006">Figure 6</xref>, in which a positive MiD indicates higher levels of deprivation are associated with higher education failure rates. <xref ref-type="fig" rid="pone-0113592-g007">Figure 7</xref> shows the domain factor for each LSOA that has the strongest MiD across Wales. Moreover, <xref ref-type="fig" rid="pone-0113592-g008">Figure 8</xref> illustrates the geographical trends of the CoD for each LSOA. The number of observations here are large. Based on our knowledge concerning specific LSOAs, we provide some case studies highlighting the insights from the new model and metrics.</p>
+<fig id="pone-0113592-g006" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0113592.g006</object-id><label>Figure 6</label><caption>
+<title>Variations in Micro-impact of Domain (MiD).</title>
+<p>Overall rates and directions of expected changes in education under attainment rate, for unit change in domain deprivation score.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0113592.g006" position="float" xlink:type="simple"/></fig><fig id="pone-0113592-g007" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0113592.g007</object-id><label>Figure 7</label><caption>
+<title>Highlighting key domains having strong association with educational performance (defined by largest MiD) across Wales.</title>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0113592.g007" position="float" xlink:type="simple"/></fig><fig id="pone-0113592-g008" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0113592.g008</object-id><label>Figure 8</label><caption>
+<title>Variations in Contribution of Domain (CoD).</title>
+<p>These values represent a product of the observed WCIMD deprivation scores, and the domain coefficient scores (MiD values) in each LSOA, and represents the contribution of each type of deprivation domain to the expected education under-attainment rate in each LSOA.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0113592.g008" position="float" xlink:type="simple"/></fig>
+<p><italic>Case Study 1:</italic> Affluent area, with only poor access to services. For this region, the dominant rule is <italic>W<sub>2</sub></italic>, which suggests that in terms of the MiD metric the domain factors - <italic>Community</italic>, <italic>Income</italic> and <italic>Health</italic> have strong associations with educational outcomes (highest coefficients in <xref ref-type="fig" rid="pone-0113592-g003">Figure 3</xref>). However, for this area, all these domains are already at extremely low deprivation levels, making them unlikely targets for improvement. In contrast, the CoD metric shows that <italic>Access</italic> is overall the most important determinant of under-attainment performance (&gt;33% contribution to the predicted educational under-attainment score), and should be the key target. This case study represents a “straightforward” situation, in which the most important target domain is simply the standout value from the WCIMD data. Here, all deprivation scores are very low, apart from <italic>Access</italic>. Despite the obvious main conclusion, the MiD values highlight higher than expected roles for certain domains (<italic>Income</italic>, <italic>Community</italic> and <italic>Health</italic>, reflected in high MiD coefficients, and moderate CoD scores).</p>
+<p><italic>Case Study 2:</italic> Area with poor access to services, and moderate levels of deprivation for other domains. This is another area for which the dominant rule is <italic>W<sub>2</sub></italic>, and might be expected to have similar problems to the Case Study 1. It is in fact the next most deprived area in their region for <italic>Access</italic> (98<sup>th</sup> percentile). However, despite <italic>Access</italic> being the standout value in the raw WCIMD data, this time a simple interpretation does not hold. Since there are moderate deprivation levels for <italic>Health</italic> (37<sup>th</sup> percentile), and MiD coefficients show that the effect of <italic>Health</italic> in this region to be highest, then <italic>Health</italic> is classified as by far the most important target in the area.</p>
+<p><italic>Case Study 3:</italic> Deprived area, with especially poor income, health and community safety domains (but good access to services). The dominant rule is <italic>W<sub>6</sub></italic> (also with significant weighting from <italic>W<sub>7</sub></italic>), which implies an expected impact (according to MiD) from <italic>Access</italic>, <italic>Income</italic> and <italic>Health</italic>. However, due to the great disparity between high deprivation on the <italic>Income</italic> (94<sup>th</sup> percentile) and good <italic>Access</italic> (39<sup>th</sup> percentile), then in the CoD metric the <italic>Income</italic> domain (and to a lesser extent <italic>Health</italic>) dominates and is highlighted as the key priority.</p>
+<p><italic>Case Study 4:</italic> Area of moderate deprivation across all domains. Here, the dominant local model is <italic>W<sub>1</sub></italic> (although with significant contribution from several other models). According to the MiD metric, <italic>Income</italic>, <italic>Community</italic> and <italic>Housing</italic> are expected to have the strongest relationship with educational outcome. Both metrics suggests that <italic>Income</italic> is the target domain, having the strongest coefficient (MiD) value and with a CoD value contributing 67% to the expected under-attainment rate.</p>
+<p>The last two Case Studies focus on <italic>Housing</italic> and <italic>Environment</italic>. Although these factors tend to have a smaller role than the other domains, it is not difficult to identify cases in which they play important roles. <italic>Case Study 5</italic> represents an LSOA with generally very low deprivation (<italic>Income</italic>, <italic>Health</italic>, <italic>Community</italic>), but with roughly average levels of <italic>Housing</italic>, <italic>Environment</italic> and <italic>Access</italic>. This area is dominated by rule <italic>W<sub>3</sub></italic> (though with significant contributions from the other rules). In terms of MiD coefficient, <italic>Income</italic> appears to have the strongest correlation with educational performance. However, due to the very low WCIMD values for <italic>Income</italic>, the largest component of under-attainment, CoD value, is <italic>Housing</italic>.</p>
+<p><italic>Case Study 6</italic> represents a set of rural areas, which are very affluent, yet have high deprivation scores at the <italic>Environment</italic> and <italic>Access</italic> domains. They are described predominately by rule <italic>W<sub>4</sub></italic>, which suggests a strongest coefficient (MiD) for <italic>Health</italic>. However, the CoD value shows that the greatest deprivation contribution to under-attainment comes from the <italic>Environment</italic> domain.</p>
+<p>We note that these examples are not easily generalized. There is a role for all aspects of deprivation, including <italic>Environment</italic>, <italic>Housing</italic>, <italic>Access</italic> and <italic>Community</italic>, in addition to the factors of <italic>Income</italic> and <italic>Health</italic> that are usually focused on. The importance in a given region is not simply revealed by the deprivation scores alone, and consequently there are very many different spatial patterns that can be found in the data, and contrasting effects found across areas that initially appear quite similar. A need for area-based interpretation is clear.</p>
+<p>Our investigations so far suggest that, although in our modelling each LSOA is considered as independent one from another, regional characteristics (urban, rural, industrial areas, etc.) can play important roles in explaining the variations of spatial patterns. For rural areas with scattered population, such as those dominated by rule <italic>W<sub>2</sub></italic>, <italic>Access to Services</italic> emerges as a key domain for improving educational performance. Areas, such as the ex-coalfields in South Wales Valleys, have the key priority in the domains of <italic>Income</italic> and <italic>Health</italic>. An extension of the approach to formally include spatial statistics would be a potential area of future research.</p>
+</sec><sec id="s4">
+<title>Discussion</title>
+<p>On first encounter, the algorithm for fitting the TS model can appear complicated. However it is little more than a trick for finding sub-regions of the multidimensional data space that are distinct, and can then be well described by a small set of simple models (LLMs). Then for a specific area, one uses an average of these models that reflects how well the area ‘belongs’ to the sub region of the data. Using if-then rules and local modelling technique, we suggest that the TS model offers greater transparency than fitting interactions and complex non-linear terms in, for example, regression models, because we are always dealing with a simple model in a relevant data space, rather than a complex model that tries to capture all the subtleties at once.</p>
+<p>A statistical interaction can be defined as a relationship in which the influence of a variable on an outcome measure is dependent on the value of other (interacting) variables. In the fitting of a TS system, if there is a requirement for several LLMs this, by definition, represents interaction (or non-linearity) in the data. It means that the coefficients for a certain variable will be different (specified by a different LLM) across different regions of the data space. Hence, this approach is natural for revealing complex interactions between variables, while remaining fairly easy to interpret at the local level, where the effects are approximately linear.</p>
+<p>As a comparison to our data mining approach, a standard linear regression analysis finds that <italic>Access</italic> and <italic>Community</italic> are not statistically significantly associated (at the 5% level) with educational attainment (in univariate analysis) and the majority of two-way interactions were not significant (see <xref ref-type="supplementary-material" rid="pone.0113592.s004">Table S3</xref> and <xref ref-type="supplementary-material" rid="pone.0113592.s005">Table S4</xref> of Data Supplement). Some of the complexity of the data can indeed be recovered from the presence of several significant multi-way interactions, however we argue that these models are much more difficult to interpret than the straightforward “<italic>if-then</italic>” linear models presented here. Nevertheless, this study has some potential limitations. First our data mining approach adopted in this study involves higher computing overhead for the purpose of constructing a parsimonious model. Moreover designing the fuzzy sets for linguistic terms needs skills and additional efforts for appropriate generation of hyper-parameter values via a trial-and-error approach.</p>
+<p>To put some of these findings in context, the World Health Organization (WHO) has promoted the importance of early area-based interventions in health and educational attainment worldwide <xref ref-type="bibr" rid="pone.0113592-World1">[34]</xref>, leading to community-based initiatives to improve developmental outcomes among socio-economically disadvantaged children <xref ref-type="bibr" rid="pone.0113592-Kelaher1">[35]</xref>–<xref ref-type="bibr" rid="pone.0113592-Whitworth1">[37]</xref>. These initiatives reflect the WHO's principles of the Health for All (HFA) <xref ref-type="bibr" rid="pone.0113592-World1">[34]</xref>. For example, the Best Start project in Australia aims to improve the overall health, development, learning and wellbeing of Victoria's young children and their families in some of the most socially disadvantaged communities through local partnerships and improved service co-ordination <xref ref-type="bibr" rid="pone.0113592-Best1">[38]</xref>. After several years, the findings suggest that improvements in access to services in disadvantaged areas can be achieved by area-based interventions, such as optimising the use of existing resources, and that the potential health benefits of area-based interventions might be better assessed by examining steps along the pathway between intervention and outcome <xref ref-type="bibr" rid="pone.0113592-Kelaher1">[35]</xref><xref ref-type="bibr" rid="pone.0113592-Victorian1">[39]</xref>. In the UK, improving education and skills is one of the five priority goals of the National Strategy for Neighbourhood Renewal and the New Deals for Communities Programme. This area-based approach has led to initiatives such as Sure Start, Excellence in Cities, Education Action Zones and Aim Higher which target education. The New Deals for Communities is unique in relation to previous initiatives by addressing not only education but the <italic>other factors</italic> that might impede progress in educational performance <xref ref-type="bibr" rid="pone.0113592-Whitworth1">[37]</xref>. More specifically, it picks highly deprived neighbourhoods to tackle place based issues (crime, community, housing, physical environment) in order to address people based outcomes (education, health and worklessness) using school and community interventions. The findings of our study offer data mining evidence suggesting that a combined approach of tackling place based issues and educational attainment may be more effective than simply focusing on education alone.</p>
+<p>In intervention evaluation, a general theme is that rigorous program evaluation is needed to determine which interventions will work most effectively and to spend scarce resources wisely <xref ref-type="bibr" rid="pone.0113592-Wynn1">[40]</xref>. However, evaluation of complex intervention is often difficult. For example, a review looking at housing improvements and health effects <xref ref-type="bibr" rid="pone.0113592-Thomson1">[41]</xref> found a large number of methodological difficulties in the before and after comparisons, especially in the response and follow-up rates among deprived communities and there is a lack of evidence on health gains that result in investment in housing. Thus, while this study suggests that tackling place and income barriers will improve children's education, there is currently a lack of evidence from intervention studies to confirm this. The scope of future evaluations must be carefully tailored and techniques must be properly selected to generate accurate information for policy makers.</p>
+</sec><sec id="s5">
+<title>Conclusions</title>
+<p>Complex interactions are notoriously difficult to detect and interpret within a standard statistical regression framework. This paper provided a local modelling method that relies on sets of simple linear models, and proposed two new metrics, <italic>MiD</italic> and <italic>CoD</italic>, to quantify the variations of local level impacts of multidimensional factors on educational outcomes. This study revealed some intriguing findings to bolster the scanty evidence base around the complex inter-relationship between different domains of health and socio-economic status and educational achievement. The results are consistent with a growing literature on the importance of place characteristics on individual outcomes. The findings imply that a broad range of policies may have influence in reducing inequalities in educational achievement and that interventions tailored to fit in with local characteristic would help to increase their effectiveness. It is now important to exploit the opportunities posed by natural experiments where substantial changes are made to the distribution of deprivation domains as a result of planned or serendipitous circumstances. Such longitudinal effects would serve to validate predictions of the data mining models, and aid in the assessment of causality.</p>
+</sec><sec id="s6">
+<title>Supporting Information</title>
+<supplementary-material id="pone.0113592.s001" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0113592.s001" position="float" xlink:type="simple"><label>Figure S1</label><caption>
+<p><bold>The prediction by the constructed TS model (circles) vs observed child educational under-attainment rates (points) at testing LSOAs.</bold> A random sample of 50 LSOAs from the testing sample are shown here, to aid in clarity.</p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0113592.s002" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0113592.s002" position="float" xlink:type="simple"><label>Table S1</label><caption>
+<p><bold>Number of children with Key Stage 1 or 2 records in study, between 2005 and 2007.</bold></p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0113592.s003" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0113592.s003" position="float" xlink:type="simple"><label>Table S2</label><caption>
+<p><bold>Pair-wise linear correlation coefficients for all domains.</bold> Note that negative association is common, and few of the domain scores are highly correlated.</p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0113592.s004" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0113592.s004" position="float" xlink:type="simple"><label>Table S3</label><caption>
+<p><bold>Results of linear regression applied to the same dataset.</bold></p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0113592.s005" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0113592.s005" position="float" xlink:type="simple"><label>Table S4</label><caption>
+<p><bold>Linear regression with all pairwise interactions.</bold></p>
+<p>(DOCX)</p>
+</caption></supplementary-material></sec></body>
+<back><ref-list>
+<title>References</title>
+<ref id="pone.0113592-Webber1"><label>1</label>
+<mixed-citation publication-type="book" xlink:type="simple">Webber R, Butler T (2005) Classifying pupils by where they live: how well do these predict variations in their GCSE results? CASA Working Paper No. 99. London: UCL.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Brownell1"><label>2</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Brownell</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Roos</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Fransoo</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Roos</surname><given-names>LL</given-names></name>, <name name-style="western"><surname>Guevremont</surname><given-names>A</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Is the class half empty? A population-based perspective on socioeconomic status and educational outcomes</article-title>. <source>IRPP Choices</source> <volume>12</volume>: <fpage>1</fpage>–<lpage>30</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Currie1"><label>3</label>
+<mixed-citation publication-type="other" xlink:type="simple">Currie J (2007) Healthy, wealthy, and wise: is there a causal relationship between child health and human capital development. Workshop on The Long-run Impact of Early Life Events, December 13–14, Ford School of Public Policy, Weill Hall, Ann Arbor, MI, USA.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Black1"><label>4</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Black</surname><given-names>SE</given-names></name>, <name name-style="western"><surname>Devereux</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Salvanes</surname><given-names>KG</given-names></name> (<year>2007</year>) <article-title>From the cradle to the labor market? The effect of birth weight on adult outcomes</article-title>. <source>Quarterly Journal of Economics</source> <volume>122</volume>: <fpage>409</fpage>–<lpage>439</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Malacova1"><label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Malacova</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Li</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Blair</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Leonard</surname><given-names>H</given-names></name>, <name name-style="western"><surname>de Klerk</surname><given-names>N</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>Association of birth outcomes and maternal, school, and neighborhood characteristics with subsequent numeracy achievement</article-title>. <source>American Journal of Epidemiology</source> <volume>168</volume>: <fpage>21</fpage>–<lpage>29</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Schools1"><label>6</label>
+<mixed-citation publication-type="other" xlink:type="simple">Schools Analysis and Research Division (2009) Deprivation and Education: The evidence on pupils in England, foundation stage to Key Stage 4. March 2009, Department for Children, Schools and Families, <ext-link ext-link-type="uri" xlink:href="http://www.education.gov.uk/publications/eOrderingDownload/DCSF-RTP-09-01.pdf" xlink:type="simple">http://www.education.gov.uk/publications/eOrderingDownload/DCSF-RTP-09-01.pdf</ext-link> (accessed 29 Feb 2012).</mixed-citation>
+</ref>
+<ref id="pone.0113592-Acheson1"><label>7</label>
+<mixed-citation publication-type="other" xlink:type="simple">Acheson D (Chairman) Independent Inquiry into Inequalities in Health Report. The Stationery Office, UK. <ext-link ext-link-type="uri" xlink:href="http://www.archive.official-documents.co.uk/document/doh/ih/ih.htm" xlink:type="simple">http://www.archive.official-documents.co.uk/document/doh/ih/ih.htm</ext-link> (Accessed date: 9 April 2011)</mixed-citation>
+</ref>
+<ref id="pone.0113592-Takagi1"><label>8</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Takagi</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Sugeno</surname><given-names>M</given-names></name> (<year>1985</year>) <article-title>Fuzzy identification of systems and its applications to modeling and control</article-title>. <source>IEEE Transactions on System, Man and Cybernetics</source> <volume>15</volume>: <fpage>116</fpage>–<lpage>132</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Chadli1"><label>9</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chadli</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Borne</surname><given-names>P</given-names></name> (<year>2012</year>) <article-title>Multiple models approach in automation: Takagi-Sugeno fuzzy systems, Wiley</article-title>.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Juang1"><label>10</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Juang</surname><given-names>CF</given-names></name>, <name name-style="western"><surname>Chen</surname><given-names>GC</given-names></name> (<year>2012</year>) <article-title>A TS fuzzy system learned through a support vector machine in principal component space for real- time object detection</article-title>. <source>IEEE Transactions on Industrial Electronics</source> <volume>59</volume>: <fpage>3309</fpage>–<lpage>3320</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Precup1"><label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Precup</surname><given-names>RE</given-names></name>, <name name-style="western"><surname>Hellendoorn</surname><given-names>H</given-names></name> (<year>2011</year>) <article-title>A survey on industrial applications of fuzzy control</article-title>. <source>Computers in Industry</source> <volume>62</volume>: <fpage>213</fpage>–<lpage>226</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Zhou1"><label>12</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zhou</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Lyons</surname><given-names>RA</given-names></name>, <name name-style="western"><surname>Brophy</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Gravenor</surname><given-names>MB</given-names></name> (<year>2012</year>) <article-title>Constructing compact Takagi-Sugeno rule systems: identification of complex interactions in epidemiological data</article-title>. <source>PLoS ONE</source> <volume>7</volume>: <fpage>e51468</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Popham1"><label>13</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Popham</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Dibben</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Bambra</surname><given-names>C</given-names></name> (<year>2013</year>) <article-title>Are health inequalities really not the smallest in the Nordic welfare states? A comparison of mortality inequality in 37 countries</article-title>. <source>Journal of Epidemiology &amp; Community Health</source> <volume>67</volume>: <fpage>412</fpage>–<lpage>418</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Dibben1"><label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dibben</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Popham</surname><given-names>F</given-names></name> (<year>2013</year>) <article-title>Are health inequalities evident at all ages? An ecological study of English mortality records</article-title>. <source>European Journal of Public Health</source> <volume>23</volume>: <fpage>39</fpage>–<lpage>45</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Ngo1"><label>15</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ngo</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Paquet</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Howard</surname><given-names>NJ</given-names></name>, <name name-style="western"><surname>Coffee</surname><given-names>NT</given-names></name>, <name name-style="western"><surname>Adams</surname><given-names>RA</given-names></name>, <etal>et al</etal>. (<year>2014</year>) <article-title>Area-Level Socioeconomic Characteristics, Prevalence and Trajectories of Cardiometabolic Risk</article-title>. <source>International Journal of Environmental Research and Public Health</source> <volume>11</volume>: <fpage>830</fpage>–<lpage>848</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Ngo2"><label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ngo</surname><given-names>AD</given-names></name>, <name name-style="western"><surname>Paquet</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Howard</surname><given-names>NJ</given-names></name>, <name name-style="western"><surname>Coffee</surname><given-names>NT</given-names></name>, <name name-style="western"><surname>Adams</surname><given-names>R</given-names></name>, <etal>et al</etal>. (<year>2013</year>) <article-title>Area-level Socioeconomic Characteristics and Incidence of Metabolic Syndrome: A Prospective Cohort Study</article-title>. <source>BMC Public Health</source> <fpage>13</fpage>–<lpage>681</lpage> Accessed at: biomedcentral.com/1471-2458/13/681.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Davey1"><label>17</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Davey</surname><given-names>SG</given-names></name>, <name name-style="western"><surname>Hart</surname><given-names>CL</given-names></name>, <name name-style="western"><surname>Watt</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Hole</surname><given-names>DJ</given-names></name>, <name name-style="western"><surname>Hawthorne</surname><given-names>VM</given-names></name> (<year>1998</year>) <article-title>Individual social class, area-based deprivation, cardiovascular disease risk factors, and mortality: the Renfrew and Paisley Study</article-title>. <source>Journal of Epidemiology and Community Health</source> <volume>52</volume>: <fpage>399</fpage>–<lpage>405</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Picciotto1"><label>18</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Picciotto</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Forastiere</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Stafoggia</surname><given-names>M</given-names></name>, <name name-style="western"><surname>D'Ippoliti</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Ancona</surname><given-names>C</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Associations of area based deprivation status and individual educational attainment with incidence, treatment, and prognosis of first coronary event in Rome, Italy,</article-title>. <source>J Epidemiol Community Health</source> <volume>60</volume>: <fpage>37</fpage>–<lpage>43</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Steenland1"><label>19</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Steenland</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Henley</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Calle</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Thun</surname><given-names>M</given-names></name> (<year>2004</year>) <article-title>Individual- and area-level socioeconomic status variables as predictors of mortality in a cohort of 179,383 persons</article-title>. <source>American Journal of Epidemiology</source> <volume>159</volume>: <fpage>1047</fpage>–<lpage>1056</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Blanc1"><label>20</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Blanc</surname><given-names>PD</given-names></name>, <name name-style="western"><surname>Yen</surname><given-names>IH</given-names></name>, <name name-style="western"><surname>Chen</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Katz</surname><given-names>PP</given-names></name>, <name name-style="western"><surname>Earnest</surname><given-names>G</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Area-level socio-economic status and health status among adults with asthma and rhinitis,</article-title>. <source>Eur Respir J</source> <volume>27</volume>: <fpage>85</fpage>–<lpage>94</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Welsh1"><label>21</label>
+<mixed-citation publication-type="other" xlink:type="simple">Welsh Statistical Directorate. Welsh Index of Multiple Deprivation 2008, Technical Report, Welsh Assembly Government.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Administrative1"><label>22</label>
+<mixed-citation publication-type="other" xlink:type="simple">Administrative Data Liaison Service. National Pupil Database (NPD), <ext-link ext-link-type="uri" xlink:href="http://www.adls.ac.uk/department-for-education/dcsf-npd/?detail" xlink:type="simple">http://www.adls.ac.uk/department-for-education/dcsf-npd/?detail</ext-link> (accessed 10 Sept 2010).</mixed-citation>
+</ref>
+<ref id="pone.0113592-UK1"><label>23</label>
+<mixed-citation publication-type="other" xlink:type="simple">UK Office for National Statistics. Super Output Areas, <ext-link ext-link-type="uri" xlink:href="http://www.ons.gov.uk/ons/guide-method/geography/beginner-s-guide/census/super-output-areas-soas-/index.html" xlink:type="simple">http://www.ons.gov.uk/ons/guide-method/geography/beginner-s-guide/census/super-output-areas-soas-/index.html</ext-link> (accessed 10 Sept 2010).</mixed-citation>
+</ref>
+<ref id="pone.0113592-Welsh2"><label>24</label>
+<mixed-citation publication-type="other" xlink:type="simple">Welsh Assembly Government. Welsh Index of Multiple Deprivation 2008, Summary Report (<ext-link ext-link-type="uri" xlink:href="http://wales.gov.uk/docs/statistics/2011/111220wimdsummaryreviseden.pdf" xlink:type="simple">http://wales.gov.uk/docs/statistics/2011/111220wimdsummaryreviseden.pdf</ext-link>) (accessed 29 Feb 2012).</mixed-citation>
+</ref>
+<ref id="pone.0113592-Welsh3"><label>25</label>
+<mixed-citation publication-type="other" xlink:type="simple">Welsh Assembly Government. Analysis of the correction to the Welsh Index of Multiple Deprivation 2008 (<ext-link ext-link-type="uri" xlink:href="http://wales.gov.uk/docs/statistics/2012/120628wimdincomeanalysisen.pdf" xlink:type="simple">http://wales.gov.uk/docs/statistics/2012/120628wimdincomeanalysisen.pdf</ext-link>) (accessed 16 November 2012).</mixed-citation>
+</ref>
+<ref id="pone.0113592-Schwartz1"><label>26</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schwartz</surname><given-names>J</given-names></name> (<year>2004</year>) <article-title>Air Pollution and Children's Health</article-title>. <source>Pediatrics</source> <volume>13</volume>: <fpage>1037</fpage>–<lpage>1043</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Lyons1"><label>27</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lyons</surname><given-names>RA</given-names></name>, <name name-style="western"><surname>Jones</surname><given-names>KH</given-names></name>, <name name-style="western"><surname>John</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Brooks</surname><given-names>CJ</given-names></name>, <name name-style="western"><surname>Verplancke</surname><given-names>JP</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>The SAIL databank: linking multiple health and social care datasets</article-title>. <source>BMC Medical Informatics and Decision Making</source> <volume>9</volume> <comment>(doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/1472-6947-9-3" xlink:type="simple">10.1186/1472-6947-9-3</ext-link>)</comment></mixed-citation>
+</ref>
+<ref id="pone.0113592-Ford1"><label>28</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ford</surname><given-names>DV</given-names></name>, <name name-style="western"><surname>Jones</surname><given-names>KH</given-names></name>, <name name-style="western"><surname>Verplancke</surname><given-names>JP</given-names></name>, <name name-style="western"><surname>John</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Brown</surname><given-names>G</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>The SAIL databank: building a national architecture for e-health research and evaluation</article-title>. <source>BMC Health Services Research</source> <volume>9</volume> <comment>(doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/1472-6963-9-157" xlink:type="simple">10.1186/1472-6963-9-157</ext-link>)</comment></mixed-citation>
+</ref>
+<ref id="pone.0113592-Zhou2"><label>29</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zhou</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Gan</surname><given-names>JQ</given-names></name> (<year>2008</year>) <article-title>Low-level interpretability and high-level interpretability: a unified view of interpretable fuzzy system modelling from data</article-title>. <source>Fuzzy Sets and Systems</source> <volume>159</volume>: <fpage>3091</fpage>–<lpage>3131</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Zhou3"><label>30</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zhou</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Gan</surname><given-names>JQ</given-names></name> (<year>2009</year>) <article-title>Extracting Takagi-Sugeno fuzzy rules with interpretable submodels via regularization of linguistic modifiers</article-title>. <source>IEEE Transactions on Knowledge and Data Engineering</source> <volume>21</volume>: <fpage>1191</fpage>–<lpage>1204</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Bezdek1"><label>31</label>
+<mixed-citation publication-type="book" xlink:type="simple">Bezdek JC (1981) Pattern Recognition with Fuzzy Objective Function Algorithms. Plenum Press.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Zhou4"><label>32</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zhou</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Gan</surname><given-names>JQ</given-names></name> (<year>2006</year>) <article-title>Constructing accurate and parsimonious fuzzy models with distinguishable fuzzy sets based on an entropy measure</article-title>. <source>Fuzzy Sets and Systems</source> <volume>157</volume>: <fpage>1057</fpage>–<lpage>1074</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Ford2"><label>33</label>
+<mixed-citation publication-type="other" xlink:type="simple">Ford DV, Jones KH, Verplancke JP, <etal>et al</etal>., Data Anonymisation Policy and Process (DAPP). HIRU project document, Swansea University.</mixed-citation>
+</ref>
+<ref id="pone.0113592-World1"><label>34</label>
+<mixed-citation publication-type="book" xlink:type="simple">World Health Organisation (1998) Health21- Health for All in the 21st Century. Geneva: World Health Organisation; 1998.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Kelaher1"><label>35</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kelaher</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Dunt</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Feldman</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Nolan</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Raban</surname><given-names>B</given-names></name> (<year>2009</year>) <article-title>The effects of an area-based intervention on the uptake of maternal and child health assessments in Australia: A community trial</article-title>. <source>BMC Health Serv Res</source> <volume>9</volume>: <fpage>53</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Abbema1"><label>36</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Abbema</surname><given-names>EA</given-names></name>, <name name-style="western"><surname>van Assema</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Kok</surname><given-names>GJ</given-names></name>, <name name-style="western"><surname>De Leeuw</surname><given-names>E</given-names></name>, <name name-style="western"><surname>De Vries</surname><given-names>NK</given-names></name> (<year>2004</year>) <article-title>Effect evaluation of a comprehensive community intervention aimed at reducing socioeconomic health inequalities in the Netherlands</article-title>. <source>Health Promot Int</source> <volume>19</volume>: <fpage>141</fpage>–<lpage>156</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Whitworth1"><label>37</label>
+<mixed-citation publication-type="other" xlink:type="simple">Whitworth A, Wilkinson K, McLennan D, Noble M, Anttila C. Raising educational attainment in deprived areas: the challenges of geography and residential mobility for area-based initiatives. Evidence from the New Deal for Communities Programme. Department for Communities and Local Government 2009.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Best1"><label>38</label>
+<mixed-citation publication-type="other" xlink:type="simple">Best Start atlas-children 0–8 year in Victoria: <ext-link ext-link-type="uri" xlink:href="http://www.education.vic.gov.au/ecsmanagement/beststart/#eval" xlink:type="simple">http://www.education.vic.gov.au/ecsmanagement/beststart/#eval</ext-link> (accessed 29 Feb 2012).</mixed-citation>
+</ref>
+<ref id="pone.0113592-Victorian1"><label>39</label>
+<mixed-citation publication-type="book" xlink:type="simple">Victorian Auditor-general (2007) Giving Victorian children the best start in life. Melbourne: Victorian Government Printer 2007.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Wynn1"><label>40</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wynn</surname><given-names>BO</given-names></name>, <name name-style="western"><surname>Dutta</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Nelson</surname><given-names>MI</given-names></name> (<year>2005</year>) <article-title>Challenges in program evaluation of health interventions in developing countries, Report, RAND Center for Domestic and International Health Security</article-title>.</mixed-citation>
+</ref>
+<ref id="pone.0113592-Thomson1"><label>41</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Thomson</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Petticrew</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Morrison</surname><given-names>D</given-names></name> (<year>2001</year>) <article-title>Health effects of housing improvement: systematic review of intervention studies</article-title>. <source>BMJ</source> <volume>323</volume>: <fpage>187</fpage>–<lpage>90</lpage>.</mixed-citation>
+</ref>
+</ref-list></back>
+</article>

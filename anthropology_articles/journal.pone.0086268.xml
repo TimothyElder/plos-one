@@ -1,0 +1,1313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group>
+<journal-title>PLoS ONE</journal-title></journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-13-07653</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0086268</article-id>
+<article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Biology</subject><subj-group><subject>Computational biology</subject><subj-group><subject>Natural language processing</subject></subj-group></subj-group><subj-group><subject>Neuroscience</subject><subj-group><subject>Neurolinguistics</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Computer science</subject><subj-group><subject>Natural language processing</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Social and behavioral sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Linguistic anthropology</subject></subj-group></subj-group><subj-group><subject>Communications</subject><subj-group><subject>Sign language</subject></subj-group></subj-group><subj-group><subject>Linguistics</subject><subj-group><subject>Computational linguistics</subject><subject>Natural language</subject><subject>Psycholinguistics</subject><subject>Sociolinguistics</subject></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Discriminant Features and Temporal Structure of Nonmanuals in American Sign Language</article-title>
+<alt-title alt-title-type="running-head">Features and Temporal Structure of Nonmanuals</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Benitez-Quiroz</surname><given-names>C. Fabian</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Gökgöz</surname><given-names>Kadir</given-names></name><xref ref-type="aff" rid="aff2"><sup>2</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Wilbur</surname><given-names>Ronnie B.</given-names></name><xref ref-type="aff" rid="aff2"><sup>2</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Martinez</surname><given-names>Aleix M.</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+</contrib-group>
+<aff id="aff1"><label>1</label><addr-line>The Ohio State University, Columbus, Ohio, United States of America</addr-line></aff>
+<aff id="aff2"><label>2</label><addr-line>Purdue University, West Lafayette, Indiana, United States of America</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Stamatakis</surname><given-names>Emmanuel Andreas</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>University Of Cambridge, United Kingdom</addr-line></aff>
+<author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">martinez.158@osu.edu</email></corresp>
+<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn>
+<fn fn-type="con"><p>Conceived and designed the experiments: CFBQ KG RBW AMM. Performed the experiments: CFBQ. Analyzed the data: CFBQ KG RBW AMM. Wrote the paper: CFBQ KG RBW AMM. Defined the idea of the paper, database, model and analysis: AMM RBW. Manually annotated the video sequences using the linguistic model: RBW KG. Derived the computational analysis: CFBQ AMM. Implemented the algorithms and performed the computational analysis: CFBQ.</p></fn>
+</author-notes>
+<pub-date pub-type="collection"><year>2014</year></pub-date>
+<pub-date pub-type="epub"><day>6</day><month>2</month><year>2014</year></pub-date>
+<volume>9</volume>
+<issue>2</issue>
+<elocation-id>e86268</elocation-id>
+<history>
+<date date-type="received"><day>20</day><month>2</month><year>2013</year></date>
+<date date-type="accepted"><day>12</day><month>12</month><year>2013</year></date>
+</history>
+<permissions>
+<copyright-year>2014</copyright-year>
+<copyright-holder>Benitez-Quiroz et al</copyright-holder><license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions>
+<abstract>
+<p>To fully define the grammar of American Sign Language (ASL), a linguistic model of its nonmanuals needs to be constructed. While significant progress has been made to understand the features defining ASL manuals, after years of research, much still needs to be done to uncover the discriminant nonmanual components. The major barrier to achieving this goal is the difficulty in correlating facial features and linguistic features, especially since these correlations may be temporally defined. For example, a facial feature (e.g., head moves down) occurring at the end of the movement of another facial feature (e.g., brows moves up), may specify a Hypothetical conditional, but only if this time relationship is maintained. In other instances, the single occurrence of a movement (e.g., brows move up) can be indicative of the same grammatical construction. In the present paper, we introduce a linguistic–computational approach to efficiently carry out this analysis. First, a linguistic model of the face is used to manually annotate a very large set of 2,347 videos of ASL nonmanuals (including tens of thousands of frames). Second, a computational approach is used to determine which features of the linguistic model are more informative of the grammatical rules under study. We used the proposed approach to study five types of sentences – Hypothetical conditionals, Yes/no questions, Wh-questions, Wh-questions postposed, and Assertions – plus their polarities – positive and negative. Our results verify several components of the standard model of ASL nonmanuals and, most importantly, identify several previously unreported features and their temporal relationship. Notably, our results uncovered a complex interaction between head position and mouth shape. These findings define some temporal structures of ASL nonmanuals not previously detected by other approaches.</p>
+</abstract>
+<funding-group><funding-statement>This work is supported by National Institutes of Health grants R21 DC011081 and R01 EY 020834. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts><page-count count="17"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title>Introduction</title>
+<p>Uncovering the grammar of sign languages is of fundamental importance in linguistics, cognitive science, education and engineering. Sign languages provide a window for the study of what formal, highly abstract and minimally required properties constitute human linguistic knowledge <xref ref-type="bibr" rid="pone.0086268-Chomsky1">[1]</xref>–<xref ref-type="bibr" rid="pone.0086268-Berwick1">[3]</xref> <italic>e.g.</italic>, what is it about the human language system that makes it surface freely and in a full-fledged manner in the manual-visual modality when input from the oral-aural modality is not available <xref ref-type="bibr" rid="pone.0086268-Sandler1">[4]</xref>. Similarly, understanding how sign languages encode grammatical rules, which are thought to be rooted in the overall human cognitive capacity but which until recently were formally defined based mostly on spoken languages, allows researchers to generalize discoveries in the cognitive sciences <xref ref-type="bibr" rid="pone.0086268-Messing1">[5]</xref>. Additionally, the teaching of sign languages will be much facilitated once we know more about how the grammar is encoded in its manual and nonmanual components in sign production at the clausal level. In sign language research, nonmanuals refer to linguistically-controlled uses of the face, head, and body other than the hands (see <xref ref-type="bibr" rid="pone.0086268-Pfau1">[6]</xref> for a recent review).</p>
+<p>The sign language literature has made it clear that although affective and linguistic expressions may co-occur, they are nonetheless easily distinguished by their articulation onsets and offsets with respect to the signs made on the hands, with linguistic expressions tightly coordinated with the syntactic constituents that they relate to <xref ref-type="bibr" rid="pone.0086268-Pfau1">[6]</xref>–<xref ref-type="bibr" rid="pone.0086268-Wilbur5">[18]</xref>. Similarly, there are clear distinctions between the nonmanual expressions and positions used by signers as compared to those employed by sign-naive hearing people in conjunction with speaking <italic>e.g.</italic>, <xref ref-type="bibr" rid="pone.0086268-Wilbur5">[18]</xref>. It has been difficult to determine which facial expressions are associated with specific grammatical functions due to the fact that any given articulation could have meaning by itself or could enter into combination with other articulations to provide an unrelated meaning. The reason for this is related to the number of articulators (<italic>e.g.</italic>, head, brows, eye lids, eye gaze, nose, mouth, cheeks, chin, shoulders), the options available to each (for example, the head can turn left/right, nod up/down, or tilt left/right side), and the multiple combinations in which they interact.. Thus, sorting through all the possibilities and testing each for what may be subtle differences in meaning is a complex problem with many variables. While it is well known how the handshape, hand movement and palm orientation form the fundamental building blocks of the manual component of the sign <xref ref-type="bibr" rid="pone.0086268-Stokoe1">[19]</xref>–<xref ref-type="bibr" rid="pone.0086268-Sandler2">[23]</xref>, it is still unclear how head movements and facial configurations are structured and used in sign languages. Some progress has been made describing the nonmanual contribution based on, mostly, but not exclusively <xref ref-type="bibr" rid="pone.0086268-Pfau1">[6]</xref>, <xref ref-type="bibr" rid="pone.0086268-Neidle1">[10]</xref>, <xref ref-type="bibr" rid="pone.0086268-Weast1">[13]</xref>, <xref ref-type="bibr" rid="pone.0086268-Makarolu1">[24]</xref>, painstaking and slow annotation tools <xref ref-type="bibr" rid="pone.0086268-Sandler1">[4]</xref>, <xref ref-type="bibr" rid="pone.0086268-Pfau1">[6]</xref>, <xref ref-type="bibr" rid="pone.0086268-Dachkovsky1">[9]</xref>, <xref ref-type="bibr" rid="pone.0086268-Veinberg1">[11]</xref>, <xref ref-type="bibr" rid="pone.0086268-Watson1">[12]</xref>, <xref ref-type="bibr" rid="pone.0086268-Wilbur3">[16]</xref>, <xref ref-type="bibr" rid="pone.0086268-Wilbur6">[25]</xref>–<xref ref-type="bibr" rid="pone.0086268-Churng1">[27]</xref>, but there is still much to be discovered about nonmanuals, especially with the help of more efficient research tools and procedures that are instrumentally-based and ideally automatic <xref ref-type="bibr" rid="pone.0086268-Kelly1">[28]</xref>–<xref ref-type="bibr" rid="pone.0086268-Gotardo1">[32]</xref>. The development of computational approaches that can assist with this process will be of great benefit to linguistic analysis.</p>
+<p>To better understand the need of computational tools for the linguistic analysis of nonmanuals, let us review their use in sign languages. The nonmanuals used in sign languages serve a variety of functions similar to those performed by intonation or word order changes in a spoken language like English. For example, to make a question from the English statement “Sarah is having a party this weekend,” the intonation pattern can be changed from falling at the end to rising at the end “Sarah is having a party this weekend?” (an echo question) or the word order can be changed to give “Is Sarah having a party this weekend?” (a yes/no question). To make similar questions, American Sign Language (ASL), like some spoken languages, does not use the option of changing the word order but instead adds nonmanual markers. In this example, the nonmanual marker is that of a “Yes/no question.” Such a marker is used to denote questions that can be readily answered with a simple “yes” or “no.” This is in contrast, for instance, to “Wh-questions” which start with a “wh”-word (or historical variant “h”) such as “which,” “when,” “how,” etc; in ASL Wh-questions are made with both the addition of nonmanual markers and optional word order changes. But each of these markers, for “Yes/no question” or “Wh-question,” may consist of multiple articulations, the most prominent being the position of the eyebrows, but with secondary articulations that may turn out to have their own meanings which combine with the primary meaning, or that may have emphasizer effects on the primary meaning, or that may be signer-specific, or even accidental and irrelevant <xref ref-type="bibr" rid="pone.0086268-Watson1">[12]</xref>. When these functions are combined with the possible articulations and efforts to generalize to signer-independent patterns, the problem quickly becomes intractable.</p>
+<p>To identify nonmanual markers, sign language researchers will typically manually annotate head movements and facial expression changes observed in a large number of video sequences. Tools such as ELAN <xref ref-type="bibr" rid="pone.0086268-Brugman1">[33]</xref> have been specifically designed for this purpose, <xref ref-type="fig" rid="pone-0086268-g001">Fig. 1</xref>. ELAN allows visual observation of the starting and ending frame of the video sequence for each of these manual annotations. Furthermore, ELAN is a powerful tool that allows extracting data depending on the tiers, signed sentences, type of clauses or references over an interval of time among others. However, the aforementioned tool is not designed to perform statistical analysis and pattern recognition algorithms over the previously manually marked data. For this reason, analysis about the annotations is typically performed through a careful visual analysis to identify co-occurring nonmanuals and grammatical markers in large numbers of video sequences.</p>
+<fig id="pone-0086268-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0086268.g001</object-id><label>Figure 1</label><caption>
+<title>ELAN is a computer software that allows users to view synchronized videos simultaneously and frame by frame (top of figure), facilitating manual annotations (bottom half).</title>
+<p>Our manual annotations specify where the sentence starts and ends, where each word (or concept) starts and ends, plus the shape and configural features used to uncover the linguistic model (see text).</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0086268.g001" position="float" xlink:type="simple"/></fig>
+<p>To date, research in ASL has identified that Hypothetical conditionals, Yes/no questions and Wh-questions are marked primarily by nonmanuals and secondarily by optional signs (<italic>e.g.</italic>, for conditionals, a sign with the meaning ‘if’ may be used but is not required) <xref ref-type="bibr" rid="pone.0086268-Baker1">[34]</xref>. It has also been hypothesized that Wh-questions which have word order changed with the Wh-word moved to the end (“postposed”) could involve other distinct nonmanuals than those than those used in ordinary Wh-question <xref ref-type="bibr" rid="pone.0086268-Churng2">[35]</xref>–<xref ref-type="bibr" rid="pone.0086268-Abner1">[37]</xref>. Moreover, polarity (<italic>i.e.</italic>, positive versus negative) seems to be marked with nonmanuals; there is no regular sign for indicating positive polarity as this is the default interpretation in all languages, and negative signs for negative polarity are optional if the nonmanual for negation is present <xref ref-type="bibr" rid="pone.0086268-Neidle1">[10]</xref>, <xref ref-type="bibr" rid="pone.0086268-Veinberg1">[11]</xref>, <xref ref-type="bibr" rid="pone.0086268-Pfau2">[38]</xref>. Due to the slowness of the standard approach used by linguists, it is difficult to verify to what extent these results hold over a larger number of video sequences or signers. Thus, it is unclear whether these are the only (required) nonmanuals used in these sentence types.</p>
+<p>The present paper describes a linguistic-computational approach to <italic>automatically</italic> finding discriminant nonmanual features from a set of annotated videos. This approach involves two steps: first the procedure is validated by comparing the results with known discriminative features, that is, those already identified by sign language linguists, and then additional discriminative features and temporal structures are provided to linguists for further investigation and interpretation. This means that some features are known at the outset, but most are uncovered by the computational algorithms defined in the present paper. Taken together, these discriminant features and temporal structures comprise an expanded linguistic model of the nonmanuals under study. To achieve this goal, videos are annotated using a linguistic/articulated model of the face. Then, a computer algorithm automatically identifies facial articulations that correlate with a grammatical marker but do not co-occur elsewhere. The algorithm finds single nonmanual markers, such as a single facial component (<italic>e.g.</italic>, brows up), and first-order co-occurrences (i.e., temporal structure), as, for example, one facial or head articulation occurring before another (<italic>e.g.</italic>, head turns right <italic>before</italic> brows move up). Note that the term “discriminant” goes beyond a characterization of the nonmanual. While characterization defines the production of a nonmanual, discriminant features are those produced during one grammatical construction (e.g., wh-question) but absent elsewhere. This proposed approach will thus be used to test the hypothesis that nonmanual markers discriminate among the following nine classes of sentences: Hypothetical conditionals, Yes/no questions, Wh-questions, Wh-questions postposed, Assertions and their polarities (positive and negative).</p>
+<p>This proposed approach not only validates some known nonmanuals but, most importantly, identifies a large variety of previously unsuspected nonmanual markers for each of the nine sentence types of ASL considered in the present paper. For example, as expected, our results show a systematic relationship between eyebrow position and grammatical constructions. As predicted by previous literature, ‘brows move up’ is prominent in Hypothetical conditionals (89.1%) and Yes/no questions (92.3%). Similarly, ‘brows move down’ occurs systematically in Wh-questions (89.5%) and Wh-questions with the Wh-sign postposed (99.2%). However, our results reveal a complex interaction between head position and mouth shape that has not been previously reported in the literature. This finding is extremely relevant because it shows how co-articulations of facial components are employed as grammatical constructions and hence emphasizes the importance of complex interaction of nonmanual markers in sign language.</p>
+<p>The results summarized in the preceding paragraph would have been difficult to attain using a visual analysis of manual annotations. In contrast, the proposed computational approach can search for all possible first-order feature relationships and calculate which consistently co-occur in a given grammatical construct but rarely happen elsewhere. The approach and algorithms described in this paper have been incorporated into ELAN and can hence be readily used by other researchers to replicate and expand on the results reported herein.</p>
+</sec><sec id="s2" sec-type="methods">
+<title>Methodology</title>
+<p>We investigate the role of nonmanuals in five (5) types of sentences: Hypothetical conditionals, Yes/no questions, Wh-questions, Wh-questions postposed and Assertions; in addition we consider their polarities: positive and negative. This yields a total of 9 classes because Yes/no-questions are neutral, meaning they cannot be associated with a specific polarity (although this does occur in some other languages, <italic>e.g.</italic>, spoken English and Turkish Sign Language both allow negative Yes/no questions <xref ref-type="bibr" rid="pone.0086268-Romero1">[39]</xref>, <xref ref-type="bibr" rid="pone.0086268-Gkgz1">[40]</xref>).</p>
+<sec id="s2a">
+<title>Database</title>
+<p>We recorded fifteen (15) Deaf native users of ASL signing more than <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e001" xlink:type="simple"/></inline-formula> distinct sentences each <xref ref-type="bibr" rid="pone.0086268-Wilbur7">[41]</xref>. Each of these sentences corresponds to the 9 classes (<xref ref-type="supplementary-material" rid="pone.0086268.s001">Appendix S1</xref>) defined above (<italic>i.e.</italic>, Hypothetical conditionals, Yes/no questions, Wh-questions, Wh-questions postposed, Assertions, and their polarities), for a total of <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e002" xlink:type="simple"/></inline-formula> video sequences, although for variety of targets, not every signer produced exactly the same set of stimuli to incorporate variability in the data. This data variability is key to find generalizations of the model. For instance, we wish to see if the same discriminant temporal correlates are found in similar linguistic structures even when the productions differ; see <xref ref-type="supplementary-material" rid="pone.0086268.s001">Appendix S1</xref> for lists of stimuli. It should be noted that signers were asked to replicate a series of sentences after watching video recordings of them. In this case, signers do not replicate the sentence (or group of sentences) exactly as in the video, but its meaning. Subject variability is expect and is indeed present in the collected dataset as was made clear after a careful analysis of each video sequence. Note that our goal is to use data with sufficient variability to allow us to recover the computational model of nonmanuals. This model can be put into test in subsequent field studies.</p>
+<p>The signers were recorded using two high quality Sony DCR-VX2100 cameras. These cameras are equipped with 3 1/3″ CCDs for fast capture of color images in our studio conditions. All human subjects signed a consent form, granting permission for the use of their video sequences in research and the replication of these in scientific articles. The research and consent forms were approved by the IRB boards at The Ohio State University and Purdue University.</p>
+<p>The first camera recorded the upper-body (including the head) of the signer. The second camera captured a close-up of the face. This second camera provides high-quality video of the nonmanuals, <xref ref-type="fig" rid="pone-0086268-g002">Fig. 2</xref>. Watching both videos together, the sign language researchers manually labeled each video sequence as belonging to one of the five types of sentences listed in <xref ref-type="supplementary-material" rid="pone.0086268.s001">Appendix S1</xref> and to one of their polarities. The sentences we consider are in Tables S1–S4 in <xref ref-type="supplementary-material" rid="pone.0086268.s001">Appendix S1</xref> and the sentences signed by each one of the 15 participants in our database are in Table S5 in <xref ref-type="supplementary-material" rid="pone.0086268.s001">Appendix S1</xref>. These sentences correspond to 506 Hypothetical conditionals, 350 Wh-questions, 124 Wh-questions postposed, 313 Yes/no-questions, and 1,054 Assertions.</p>
+<fig id="pone-0086268-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0086268.g002</object-id><label>Figure 2</label><caption>
+<title>Samples of a video sequence of a native ASL signer signing “If #Sarah have a party tomorrow”.</title>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0086268.g002" position="float" xlink:type="simple"/></fig>
+<p>For consistency check, the annotations of each recorded sentence were visually validated by a native Deaf ASL signer and an experienced sign language researcher who were members of the American Sign Language Linguistics Laboratory at Purdue University. In particular, we made sure all video clips in the database correctly expressed its target sentence and that it was clearly visible and understood. Video clips not passing this test were eliminated from the database.</p>
+<p>The video clips and manual annotations described in this section will be made publicly available to those wishing to extend on the results reported herein.</p>
+</sec><sec id="s2b">
+<title>Manual annotations</title>
+<p>Research in face perception has demonstrated that facial expressions are coded and recognized by the cognitive system using configural <xref ref-type="bibr" rid="pone.0086268-Neth1">[42]</xref> and shape <xref ref-type="bibr" rid="pone.0086268-Neth2">[43]</xref> features. Configural refers to second-order changes. First-order changes code for the ordering of features (<italic>e.g.</italic>, nose on top of the mouth), while second-order specify between-feature distances. Shape features means that facial features are in a specified position (<italic>e.g.</italic>, the curvature of the mouth). These descriptions are correlated with facial movement that may also be defined using other coding systems <xref ref-type="bibr" rid="pone.0086268-deVos1">[44]</xref>.</p>
+<p>Similarly, sign language research has shown that such options as brow position, closed/open mouth and flat/round lips, teeth showing, and head turns are potential building blocks of nonmanual markers <xref ref-type="bibr" rid="pone.0086268-Wilbur5">[18]</xref>, <xref ref-type="bibr" rid="pone.0086268-Braem1">[45]</xref>. We thus used fifteen (15) configural and shape feature positions corresponding to each of these nonmanual building blocks to annotate facial expressions in the video sequences of our database. These fifteen labels are summarized in <xref ref-type="table" rid="pone-0086268-t001">Table 1</xref> and <xref ref-type="fig" rid="pone-0086268-g003">Fig. 3</xref>.</p>
+<fig id="pone-0086268-g003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0086268.g003</object-id><label>Figure 3</label><caption>
+<title>The configural and shape positions used to define each of the nonmanuals in sentences of ASL.</title>
+<p>In <bold>A</bold> we show a neutral face. A neutral face is defined as one without expression where all facial muscles are relaxed (except for the eyelids which are open). <bold>B</bold> We consider two configural positions for the eyebrows (up and down). <bold>C</bold> Blinks are marked by closing the eyelids. <bold>D</bold> The mouth can be open or closed. <bold>E</bold> We also annotate mouth shape where appropriate (flat, round and other). <bold>F</bold> When there is teeth showing, we consider three distinct positions – closed (top and bottom teeth touching), open (not touching), touching lips (where the top teeth are over the lower lip or the bottom teeth touch the upper lip). <bold>G</bold>–<bold>I</bold> We also consider the three possible rotations of the head – turns, tilts and forward/backward movements.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0086268.g003" position="float" xlink:type="simple"/></fig><table-wrap id="pone-0086268-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0086268.t001</object-id><label>Table 1</label><caption>
+<title>Features of the model and their entry sets.</title>
+</caption><alternatives><graphic id="pone-0086268-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0086268.t001" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Feature</td>
+<td align="left" rowspan="1" colspan="1">Categories</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Brows move</td>
+<td align="left" rowspan="1" colspan="1">{Up, Down}</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Blinks</td>
+<td align="left" rowspan="1" colspan="1">{Blink}</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mouth</td>
+<td align="left" rowspan="1" colspan="1">{Open, Closed}</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mouth shape</td>
+<td align="left" rowspan="1" colspan="1">{Round, Flat, Other}</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Teeth</td>
+<td align="left" rowspan="1" colspan="1">{Closed, Open, Touch lip}</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head turns</td>
+<td align="left" rowspan="1" colspan="1">{Left, Right}</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head tilts</td>
+<td align="left" rowspan="1" colspan="1">{Left, Right}</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head moves</td>
+<td align="left" rowspan="1" colspan="1">{Up, Down}</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p>All video clips are displayed with the ELAN <xref ref-type="bibr" rid="pone.0086268-Brugman1">[33]</xref> software. A benefit of the ELAN software is that video sequences can be displayed frame by frame in synch with a time cursor so that the desired location for an event can be identified. A sign language expert can then manually annotate the configural and shape positions described above. This means that each annotation specifies where a configural or shape position starts and ends. An example of such a manual annotation is shown in <xref ref-type="fig" rid="pone-0086268-g001">Fig. 1</xref>. The manual annotations were reviewed by the two Purdue co-authors and, if necessary, changes were made until there was agreement in the coding.</p>
+<p>The qualitative manual annotations described above must then be quantified in order to determine the most <italic>discriminative</italic> facial features. A possible solution is to treat a feature as a time varying function, where each category has some numerical value <xref ref-type="bibr" rid="pone.0086268-Kelly1">[28]</xref>, <xref ref-type="bibr" rid="pone.0086268-Porikli1">[46]</xref>. The problem with this approach is that the sentences need to be aligned, that is, they must be shrunk or expanded to a canonical length. This would diminish or overemphasize some feature categories, especially those that expand a shorter time interval. Moreover, this approach would not model sequences of events, <italic>e.g.</italic>, headshakes, left to right turns, etc. We resolve these problems using Allen's Temporal Logic (ATL).</p>
+</sec><sec id="s2c">
+<title>Temporal logic description</title>
+<p>ATL is a framework that allows us to analyze relative temporal information, such as <italic>event A happens before event B</italic> <xref ref-type="bibr" rid="pone.0086268-Allen1">[47]</xref>. Here, any two time events are related by a set of symmetric, mutually exclusive binary relations, called propositions. In our modeling, we employ the following set of propositions: <italic>before</italic>, <italic>meets</italic>, <italic>overlaps</italic>, <italic>equals</italic>, <italic>starts</italic>, <italic>during</italic> and <italic>finishes</italic>. To show the use of the above defined propositions, consider the examples in <xref ref-type="fig" rid="pone-0086268-g004">Fig. 4</xref>. In this figure, we have two events, <italic>A</italic> and <italic>B</italic>. <italic>A</italic> is said to be <italic>before B</italic>, when <italic>A</italic> happens disjointly before <italic>B</italic>, <xref ref-type="fig" rid="pone-0086268-g004">Fig. 4.<bold>A</bold></xref>. For example, <italic>A</italic> could be head turns right and <italic>B</italic> head turns left. Here, we would write <italic>head turns right before head turns left</italic>. This could be the case when a subject is signing a negative statement with negation marked with a headshake.</p>
+<fig id="pone-0086268-g004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0086268.g004</object-id><label>Figure 4</label><caption>
+<title>Visual representation of the propositions used in our coding.</title>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0086268.g004" position="float" xlink:type="simple"/></fig>
+<p>In the case that <italic>A</italic> happens immediately before <italic>B</italic>, then <italic>A</italic> is said to <italic>meet B</italic>, <xref ref-type="fig" rid="pone-0086268-g004">Fig. 4.<bold>B</bold></xref>. Note that the difference between <italic>before</italic> and <italic>meets</italic> is that <italic>before</italic> requires a non-empty time interval between both events. For example, when nodding, the head moves up and down without a visual pause, which could be written as, <italic>A meets B</italic>. Obviously, in practice, two events involving different articulations would only perfectly follow one another by chance. To accommodate for small natural variabilities (<italic>e.g.</italic>, those due to data acquisition or small variations of the natural human movement between different subjects), we define <italic>meets</italic> as <italic>B</italic> occurring after a very brief interval <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e003" xlink:type="simple"/></inline-formula> after <italic>A</italic>. The value of <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e004" xlink:type="simple"/></inline-formula> will be estimated using cross-validation in learning. In cross-validation, we divide the training data into two or more sets; use all but one of those sets for training while using the left out set for testing values of <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e005" xlink:type="simple"/></inline-formula>, with <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e006" xlink:type="simple"/></inline-formula> small. This is repeated multiple times to determine the value of the parameter yielding better generalizations. This is a common practice in pattern recognition where a learning algorithm uses a training set to come up with a representation that accurately represents some observations or discriminates between observations belonging to different categories (classes). A testing set is then used to determine whether the learned representation is capable of discriminating previously unseen examples into the correct class.</p>
+<p><italic>A</italic> is said to <italic>overlap B</italic> when <italic>A</italic> starts before <italic>B</italic> and <italic>A</italic> finishes during <italic>B</italic>, <xref ref-type="fig" rid="pone-0086268-g004">Fig. 4.<bold>C</bold></xref>. In contrast, <italic>equals</italic> means that both events, <italic>A</italic> and <italic>B</italic>, share the same time interval, <xref ref-type="fig" rid="pone-0086268-g004">Fig. 4.<bold>D</bold></xref>. This proposition is useful to denote single featural events, <italic>e.g.</italic>, to indicate that the brows move up once, as in Yes/no questions <xref ref-type="bibr" rid="pone.0086268-Baker1">[34]</xref>. Although this may seem redundant at first, this notation allows us to consider single actions without changing notation or the algorithm.</p>
+<p>When both events start at the same time but <italic>A</italic> finishes before <italic>B</italic>, then <italic>A</italic> is said to <italic>start</italic> with <italic>B</italic>, <xref ref-type="fig" rid="pone-0086268-g004">Fig. 4.<bold>E</bold></xref>. Similarly, when events <italic>A</italic> and <italic>B</italic> finish at the same time but <italic>A</italic> starts after <italic>B</italic>, then <italic>A</italic> is said to <italic>finish</italic> at <italic>B</italic>, <xref ref-type="fig" rid="pone-0086268-g004">Fig. 4.<bold>F</bold></xref>. Finally, <italic>during</italic> means that <italic>A</italic>'s time interval happens within <italic>B</italic>'s time interval, <xref ref-type="fig" rid="pone-0086268-g005">Fig. 5.<bold>G</bold></xref>.</p>
+<fig id="pone-0086268-g005" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0086268.g005</object-id><label>Figure 5</label><caption>
+<title>A diagram describing facial feature movements/positions and the gloss for the sentence “#BRAD-IXi COOK FISH ON GRILL IXi.”</title>
+<p>For clarity, here, we have listed the events and their time intervals in order of occurrence. The top row specifies the first event, with subsequent rows listing later occurring events. The bottom row summarizes the time interval of each signed concept. This visualization facilitates the coding of the events using the propositions in <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e007" xlink:type="simple"/></inline-formula>. For example, for the figure above, it is easy to see that <italic>head moves up</italic> occurs <italic>during</italic> event <italic>brows move up</italic>, which can be compactly expressed as <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e008" xlink:type="simple"/></inline-formula>head moves up, brows move up).</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0086268.g005" position="float" xlink:type="simple"/></fig>
+<p><xref ref-type="fig" rid="pone-0086268-g005">Fig. 5</xref> shows an equivalent time diagram for the manual annotation previously illustrated in <xref ref-type="fig" rid="pone-0086268-g001">Fig. 1</xref> for the sentence “#BRAD-IXi COOK FISH ON GRILL IXi,” (<italic>i.e.</italic>, “Brad is cooking/cooks fish on the grill”). The resulting coding using ATL relations is shown in <xref ref-type="table" rid="pone-0086268-t002">Table 2</xref>.</p>
+<table-wrap id="pone-0086268-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0086268.t002</object-id><label>Table 2</label><caption>
+<title>Temporal relations for the events in <xref ref-type="fig" rid="pone-0086268-g005">Fig. 5</xref>.</title>
+</caption><alternatives><graphic id="pone-0086268-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0086268.t002" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Event</td>
+<td align="left" rowspan="1" colspan="1">Before</td>
+<td align="left" rowspan="1" colspan="1">Meets</td>
+<td align="left" rowspan="1" colspan="1">Overlaps</td>
+<td align="left" rowspan="1" colspan="1">Equal</td>
+<td align="left" rowspan="1" colspan="1">During</td>
+<td align="left" rowspan="1" colspan="1">Starts</td>
+<td align="left" rowspan="1" colspan="1">Finishes</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Brows move up</td>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e009" xlink:type="simple"/></inline-formula> Blink, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e010" xlink:type="simple"/></inline-formula> Blink, Head turns left, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e011" xlink:type="simple"/></inline-formula> Head moves up</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">Head moves down, Head tilts left</td>
+<td align="left" rowspan="1" colspan="1">Brows move up</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e012" xlink:type="simple"/></inline-formula> Head moves up</td>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e013" xlink:type="simple"/></inline-formula> Blink, Head tilts left, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e014" xlink:type="simple"/></inline-formula> Blink, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e015" xlink:type="simple"/></inline-formula> Blink, Head turns left, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e016" xlink:type="simple"/></inline-formula> Head moves up</td>
+<td align="left" rowspan="1" colspan="1">Head moves down</td>
+<td align="left" rowspan="1" colspan="1">Head turns right</td>
+<td align="left" rowspan="1" colspan="1">1st Head moves up</td>
+<td align="left" rowspan="1" colspan="1">Brows move up</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e017" xlink:type="simple"/></inline-formula> Blink</td>
+<td align="left" rowspan="1" colspan="1">Head moves down, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e018" xlink:type="simple"/></inline-formula> Blink, Head tilts left, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e019" xlink:type="simple"/></inline-formula> Blink, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e020" xlink:type="simple"/></inline-formula> Blink, Head turns left, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e021" xlink:type="simple"/></inline-formula> Head moves up</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">Head turns right</td>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e022" xlink:type="simple"/></inline-formula> Blink</td>
+<td align="left" rowspan="1" colspan="1">Brows move up, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e023" xlink:type="simple"/></inline-formula> Head moves up</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head turns right</td>
+<td align="left" rowspan="1" colspan="1">Head tilts left, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e024" xlink:type="simple"/></inline-formula> Blink, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e025" xlink:type="simple"/></inline-formula> Blink, Head turns left, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e026" xlink:type="simple"/></inline-formula> Head moves up</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">Head moves down, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e027" xlink:type="simple"/></inline-formula> Blink</td>
+<td align="left" rowspan="1" colspan="1">Head turns right</td>
+<td align="left" rowspan="1" colspan="1">Brows move up</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head moves down</td>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e028" xlink:type="simple"/></inline-formula> Blink, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e029" xlink:type="simple"/></inline-formula> Blink, Head turns left, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e030" xlink:type="simple"/></inline-formula> Head moves up</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">Head tilts left</td>
+<td align="left" rowspan="1" colspan="1">Head moves down</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e031" xlink:type="simple"/></inline-formula> Blink</td>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e032" xlink:type="simple"/></inline-formula> Blink, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e033" xlink:type="simple"/></inline-formula> Blink, Head turns left, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e034" xlink:type="simple"/></inline-formula> Head moves up</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">Head tilts left</td>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e035" xlink:type="simple"/></inline-formula> Blink</td>
+<td align="left" rowspan="1" colspan="1">Brows move up, Head moves down,</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head tilts left</td>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e036" xlink:type="simple"/></inline-formula> Blink, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e037" xlink:type="simple"/></inline-formula> Blink, Head turns left, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e038" xlink:type="simple"/></inline-formula> Head moves up</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">Head tilts left</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e039" xlink:type="simple"/></inline-formula> Blink</td>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e040" xlink:type="simple"/></inline-formula> Blink, Head turns left, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e041" xlink:type="simple"/></inline-formula> Head moves up</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">3rd Blink</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e042" xlink:type="simple"/></inline-formula> Blink</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">Head turns left, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e043" xlink:type="simple"/></inline-formula> Head moves up</td>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e044" xlink:type="simple"/></inline-formula> Blink</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head turns left</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">Head turns left</td>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e045" xlink:type="simple"/></inline-formula> Head moves up</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e046" xlink:type="simple"/></inline-formula> Head moves up</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e047" xlink:type="simple"/></inline-formula> Head moves up</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt101"><label/><p>It is important to note in the table above that the temporal information is encoded in the description of the ATL using the propositions in <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e048" xlink:type="simple"/></inline-formula>. The temporal information is hence intrinsically coded in this table.</p></fn></table-wrap-foot></table-wrap>
+<p>In summary, the Allen's Temporal Logic defined above is composed of a set of binary propositions. Formally, we denote this set as <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e049" xlink:type="simple"/></inline-formula>{before, meets, overlaps, starts, during, finishes}. The set <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e050" xlink:type="simple"/></inline-formula> operates over the time interval defined by the set of events <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e051" xlink:type="simple"/></inline-formula>. Therefore, an ATL can be formally denoted as ATL(<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e052" xlink:type="simple"/></inline-formula>, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e053" xlink:type="simple"/></inline-formula>). In this notation, any two events <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e054" xlink:type="simple"/></inline-formula> are related using one of the propositions in <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e055" xlink:type="simple"/></inline-formula>, <italic>e.g.</italic>, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e056" xlink:type="simple"/></inline-formula> specifies that event <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e057" xlink:type="simple"/></inline-formula> happened before event <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e058" xlink:type="simple"/></inline-formula>.</p>
+<p>The 17 feature categories (<xref ref-type="table" rid="pone-0086268-t001">Table 1</xref>) form a set of <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e059" xlink:type="simple"/></inline-formula> possible ATL first-order relations. We eliminated relations that cannot co-occur due to their mutually exclusive nature, (<italic>e.g.</italic>, brows move up <italic>equals</italic> brows move down) giving a total <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e060" xlink:type="simple"/></inline-formula> feasible relations.</p>
+<p>It is also important to encode the number of consecutive occurrences for a given ATL relation. This might be important for some discriminant features, <italic>e.g.</italic>, while a single headshake may not carry any grammatical meaning, multiple headshakes can be a marker of negation or Wh-questions <xref ref-type="bibr" rid="pone.0086268-Watson1">[12]</xref>. To correctly represent this information, we encode the relative frequency of each occurrence in a histogram, which displays the number of times that a given event happens.</p>
+<p>Formally, we represent a sentence as <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e061" xlink:type="simple"/></inline-formula>, where <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e062" xlink:type="simple"/></inline-formula> is the number of times that the first-order relation <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e063" xlink:type="simple"/></inline-formula> repeats in a sentence. For instance, if a sentence includes four eye blinks, the feature vector <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e064" xlink:type="simple"/></inline-formula> will have a value of <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e065" xlink:type="simple"/></inline-formula> in the position <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e066" xlink:type="simple"/></inline-formula>; where we have used <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e067" xlink:type="simple"/></inline-formula> to indicate that this is the feature used to code for blinks. <xref ref-type="fig" rid="pone-0086268-g006">Fig. 6</xref> shows the histogram for the example previously shown in <xref ref-type="table" rid="pone-0086268-t002">Table 2</xref> and <xref ref-type="fig" rid="pone-0086268-g005">Fig. 5</xref>.</p>
+<fig id="pone-0086268-g006" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0086268.g006</object-id><label>Figure 6</label><caption>
+<title>Visual representation of the ATL feature vector<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e068" xlink:type="simple"/></inline-formula>.</title>
+<p>The dark blue color indicates a low number of occurrences for an event, while a dark orange color indicates a high number of repetitions. This figure is the histogram corresponding to the example in <xref ref-type="fig" rid="pone-0086268-g005">Fig. 5</xref>. The feature vector entries (<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e069" xlink:type="simple"/></inline-formula>) are read from left to right (<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e070" xlink:type="simple"/></inline-formula>).</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0086268.g006" position="float" xlink:type="simple"/></fig></sec><sec id="s2d">
+<title>Discriminant analysis</title>
+<p>The histogram representation of the ALT described thus far provides a convenient numerical representation of the nonmanual events we wish to study. To determine the time relations that best discriminate a grammatical structure from the rest (<italic>e.g.</italic>, Yes/no-questions versus the others), we need to use a feature extraction algorithm that uncovers the features or combinations of them that best <italic>discriminate</italic> between sentence types. In pattern recognition, such approaches are called discriminant analysis <xref ref-type="bibr" rid="pone.0086268-Martinez1">[48]</xref>. When the number of samples (relative to the number of features) is small, as is the case in the present study, Regularized Linear Discriminant Analysis (RLDA) is a possible algorithm to use <xref ref-type="bibr" rid="pone.0086268-Friedman1">[49]</xref>. RLDA adds a regularizing factor to the metrics being computed, preventing singularities even when the number of samples is small or when the underlying metric cannot be fully estimated <xref ref-type="bibr" rid="pone.0086268-Zhu1">[50]</xref>. Also, RLDA has a single parameter to estimate, making it very efficient and easy to work with <xref ref-type="bibr" rid="pone.0086268-Friedman1">[49]</xref>.</p>
+<p>Formally, RLDA finds the projection vector <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e071" xlink:type="simple"/></inline-formula> that best separates (in the least-square sense) two classes by maximizing the ratio between the class means to the average variance of these classes. Consider the case where <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e072" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e073" xlink:type="simple"/></inline-formula> represent class 1 and 2, respectively. And, let the sample sets be <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e074" xlink:type="simple"/></inline-formula>, where <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e075" xlink:type="simple"/></inline-formula> specifies the class and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e076" xlink:type="simple"/></inline-formula> the number of samples belonging to it. The discriminant hyperplane separating the samples of these two classes is defined by its normal vector, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e077" xlink:type="simple"/></inline-formula>. This vector is given by, <disp-formula id="pone.0086268.e078"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0086268.e078" xlink:type="simple"/><label>(1)</label></disp-formula>where <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e079" xlink:type="simple"/></inline-formula> are the sample class means, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e080" xlink:type="simple"/></inline-formula> is the sample within-class scatter matrix, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e081" xlink:type="simple"/></inline-formula> is the regularizing parameter that is found using cross-validation, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e082" xlink:type="simple"/></inline-formula> is the identity matrix and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e083" xlink:type="simple"/></inline-formula> specifies the 2-norm (euclidean) measure. Recall that the regularizing parameter is used to ensure the above equation has a robust solution when the number of samples is small (<italic>i.e.</italic>, even if the within-class scatter matrix is singular).</p>
+<p>Solving for (1) yields, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e084" xlink:type="simple"/></inline-formula>.</p>
+<p>An ATL relation is hence defined as <italic>discriminative</italic> if its corresponding absolute magnitude in <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e085" xlink:type="simple"/></inline-formula> is larger than the others <italic>i.e.</italic>, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e086" xlink:type="simple"/></inline-formula>. To rank their relative importance, each element of the vector <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e087" xlink:type="simple"/></inline-formula> is normalized with respect to its largest attained value, <italic>i.e.</italic>, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e088" xlink:type="simple"/></inline-formula> with elements <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e089" xlink:type="simple"/></inline-formula>, with <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e090" xlink:type="simple"/></inline-formula> meaning the worst possible feature and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e091" xlink:type="simple"/></inline-formula> meaning the most important one, and where <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e092" xlink:type="simple"/></inline-formula>, and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e093" xlink:type="simple"/></inline-formula>.</p>
+<p>Our <italic>hypothesis</italic> is that nonmanual markers can be used to discriminate among the nine classes of sentences described above. More specifically, we hypothesize that first-order temporal relations of facial movements are sufficient to code for such grammatical structure. To test this hypothesis, we use all the video sequences in our database except one to find the discriminant facial features (as described in the Methods section) and test whether the resulting model correctly classifies the left out sentence. This approached is known as Leave-One-Sentence-Out (LOSO) test.</p>
+<p>Classification of the left out (test) sample <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e094" xlink:type="simple"/></inline-formula> is done using the nearest-mean classifier. The nearest-mean classifier assigns to <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e095" xlink:type="simple"/></inline-formula> the class label <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e096" xlink:type="simple"/></inline-formula> of the nearest class mean <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e097" xlink:type="simple"/></inline-formula>, <italic>i.e.</italic>, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e098" xlink:type="simple"/></inline-formula>. If we have <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e099" xlink:type="simple"/></inline-formula> sample signed sentences, there are <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e100" xlink:type="simple"/></inline-formula> possible sentences we can leave out in the LOSO approach. In LOSO, we try all these <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e101" xlink:type="simple"/></inline-formula> possibilities and then compute the mean classification accuracy. We also estimate the expected <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e102" xlink:type="simple"/></inline-formula> by averaging the <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e103" xlink:type="simple"/></inline-formula> vectors generated from all LOSO iterations. Note that we only compute the classification accuracy for the features that provide the largest <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e104" xlink:type="simple"/></inline-formula>, since this value is correlated with discriminability.</p>
+<p>In addition to the above, we included the commonly used sensitivity index d′ to measure the distance between signal and noise for the most discriminative features. Here, d′ measures the performance of a single feature in isolation and, hence, does not provide information on co-occurring features or their temporal structures.</p>
+</sec></sec><sec id="s3">
+<title>Results</title>
+<sec id="s3a">
+<title>Experiment 1: Constructions discriminant features</title>
+<p>First, we wish to determine the nonmanuals that best discriminate each structure, <italic>i.e.</italic>, the discriminant features. To achieve this, we run a one-versus-all experiment. This means that, for each class (<italic>e.g.</italic>, Wh-questions), we use the linguistic-computational approach described in the Methods section to find the discriminant features that are common to that class but are not descriptive of the other classes.</p>
+<p>The resulting discriminant features need to distinguish between the grammatical structures under study. These features are those providing the highest classification accuracies in the LOSO test described above. They are in <xref ref-type="table" rid="pone-0086268-t003">Tables 3</xref>–<xref ref-type="table" rid="pone-0086268-t004"/><xref ref-type="table" rid="pone-0086268-t005"/><xref ref-type="table" rid="pone-0086268-t006"/><xref ref-type="table" rid="pone-0086268-t007">7</xref>. The two columns in these tables labeled “% Activation” specify the characterization of the nonmanuals, i.e., the number of times the nonmanual is employed to marked a grammatical construction.</p>
+<table-wrap id="pone-0086268-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0086268.t003</object-id><label>Table 3</label><caption>
+<title>Discriminant features for Hypothetical conditionals.</title>
+</caption><alternatives><graphic id="pone-0086268-t003-3" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0086268.t003" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">ATL relation</td>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e105" xlink:type="simple"/></inline-formula></td>
+<td align="left" rowspan="1" colspan="1">% Activation in Conditionals</td>
+<td align="left" rowspan="1" colspan="1">% Activation in Others</td>
+<td align="left" rowspan="1" colspan="1">d′</td>
+<td align="left" rowspan="1" colspan="1">% Classification in Conditionals</td>
+<td align="left" rowspan="1" colspan="1">% Classification in Others</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Brows move up</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">89.1</td>
+<td align="left" rowspan="1" colspan="1">54</td>
+<td align="left" rowspan="1" colspan="1">1.13</td>
+<td align="left" rowspan="1" colspan="1">89.1</td>
+<td align="left" rowspan="1" colspan="1">46</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head moves down <italic>finishes</italic> brows move up</td>
+<td align="left" rowspan="1" colspan="1">0.78</td>
+<td align="left" rowspan="1" colspan="1">19</td>
+<td align="left" rowspan="1" colspan="1">2.3</td>
+<td align="left" rowspan="1" colspan="1">1.12</td>
+<td align="left" rowspan="1" colspan="1">19</td>
+<td align="left" rowspan="1" colspan="1">97.6</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head turns left <italic>during</italic> brows move up</td>
+<td align="left" rowspan="1" colspan="1">0.67</td>
+<td align="left" rowspan="1" colspan="1">50.4</td>
+<td align="left" rowspan="1" colspan="1">13.6</td>
+<td align="left" rowspan="1" colspan="1">1.11</td>
+<td align="left" rowspan="1" colspan="1">50.4</td>
+<td align="left" rowspan="1" colspan="1">85.2</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Brows move up <italic>equals</italic> head moves down</td>
+<td align="left" rowspan="1" colspan="1">0.65</td>
+<td align="left" rowspan="1" colspan="1">18</td>
+<td align="left" rowspan="1" colspan="1">2</td>
+<td align="left" rowspan="1" colspan="1">1.14</td>
+<td align="left" rowspan="1" colspan="1">18</td>
+<td align="left" rowspan="1" colspan="1">97.9</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Teeth touch lip <italic>during</italic> brows moves up</td>
+<td align="left" rowspan="1" colspan="1">0.64</td>
+<td align="left" rowspan="1" colspan="1">41.3</td>
+<td align="left" rowspan="1" colspan="1">6.4</td>
+<td align="left" rowspan="1" colspan="1">1.31</td>
+<td align="left" rowspan="1" colspan="1">41.3</td>
+<td align="left" rowspan="1" colspan="1">93.7</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mouth shape other <italic>equals</italic> mouth open</td>
+<td align="left" rowspan="1" colspan="1">0.58</td>
+<td align="left" rowspan="1" colspan="1">69</td>
+<td align="left" rowspan="1" colspan="1">53</td>
+<td align="left" rowspan="1" colspan="1">0.42</td>
+<td align="left" rowspan="1" colspan="1">34.4</td>
+<td align="left" rowspan="1" colspan="1">77.2</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Teeth open</td>
+<td align="left" rowspan="1" colspan="1">0.56</td>
+<td align="left" rowspan="1" colspan="1">92.1</td>
+<td align="left" rowspan="1" colspan="1">84.4</td>
+<td align="left" rowspan="1" colspan="1">0.40</td>
+<td align="left" rowspan="1" colspan="1">61.2</td>
+<td align="left" rowspan="1" colspan="1">68</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mouth open <italic>equals</italic> brows move up</td>
+<td align="left" rowspan="1" colspan="1">0.55</td>
+<td align="left" rowspan="1" colspan="1">11.5</td>
+<td align="left" rowspan="1" colspan="1">2.5</td>
+<td align="left" rowspan="1" colspan="1">0.76</td>
+<td align="left" rowspan="1" colspan="1">11.5</td>
+<td align="left" rowspan="1" colspan="1">97.6</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Teeth touch lip <italic>during</italic> mouth open</td>
+<td align="left" rowspan="1" colspan="1">0.54</td>
+<td align="left" rowspan="1" colspan="1">37.2</td>
+<td align="left" rowspan="1" colspan="1">13.9</td>
+<td align="left" rowspan="1" colspan="1">0.76</td>
+<td align="left" rowspan="1" colspan="1">37.2</td>
+<td align="left" rowspan="1" colspan="1">87.7</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head turns right</td>
+<td align="left" rowspan="1" colspan="1">0.53</td>
+<td align="left" rowspan="1" colspan="1">87</td>
+<td align="left" rowspan="1" colspan="1">77.1</td>
+<td align="left" rowspan="1" colspan="1">0.38</td>
+<td align="left" rowspan="1" colspan="1">73.9</td>
+<td align="left" rowspan="1" colspan="1">30.9</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap><table-wrap id="pone-0086268-t004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0086268.t004</object-id><label>Table 4</label><caption>
+<title>Discriminant features for Wh-questions.</title>
+</caption><alternatives><graphic id="pone-0086268-t004-4" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0086268.t004" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">ATL relation</td>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e106" xlink:type="simple"/></inline-formula></td>
+<td align="left" rowspan="1" colspan="1">% Activation in Wh questions</td>
+<td align="left" rowspan="1" colspan="1">% Activation in Others</td>
+<td align="left" rowspan="1" colspan="1">d′</td>
+<td align="left" rowspan="1" colspan="1">% Classification in Wh questions</td>
+<td align="left" rowspan="1" colspan="1">% Classification in Others</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Brows move up</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">10.6</td>
+<td align="left" rowspan="1" colspan="1">70.5</td>
+<td align="left" rowspan="1" colspan="1">1.79</td>
+<td align="left" rowspan="1" colspan="1">89.4</td>
+<td align="left" rowspan="1" colspan="1">73.6</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Brows move down</td>
+<td align="left" rowspan="1" colspan="1">0.99</td>
+<td align="left" rowspan="1" colspan="1">89.4</td>
+<td align="left" rowspan="1" colspan="1">23.2</td>
+<td align="left" rowspan="1" colspan="1">1.98</td>
+<td align="left" rowspan="1" colspan="1">89.4</td>
+<td align="left" rowspan="1" colspan="1">62.4</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mouth shape round <italic>starts</italic> brows move down</td>
+<td align="left" rowspan="1" colspan="1">0.7</td>
+<td align="left" rowspan="1" colspan="1">43.1</td>
+<td align="left" rowspan="1" colspan="1">0.5</td>
+<td align="left" rowspan="1" colspan="1">2.44</td>
+<td align="left" rowspan="1" colspan="1">43.1</td>
+<td align="left" rowspan="1" colspan="1">99.3</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mouth shape flat</td>
+<td align="left" rowspan="1" colspan="1">0.63</td>
+<td align="left" rowspan="1" colspan="1">67.1</td>
+<td align="left" rowspan="1" colspan="1">92.4</td>
+<td align="left" rowspan="1" colspan="1">0.99</td>
+<td align="left" rowspan="1" colspan="1">67.4</td>
+<td align="left" rowspan="1" colspan="1">62.7</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mouth shape round</td>
+<td align="left" rowspan="1" colspan="1">0.56</td>
+<td align="left" rowspan="1" colspan="1">82.9</td>
+<td align="left" rowspan="1" colspan="1">46.7</td>
+<td align="left" rowspan="1" colspan="1">1.03</td>
+<td align="left" rowspan="1" colspan="1">40.9</td>
+<td align="left" rowspan="1" colspan="1">71.4</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head turns right <italic>starts</italic> brows move down</td>
+<td align="left" rowspan="1" colspan="1">0.53</td>
+<td align="left" rowspan="1" colspan="1">32</td>
+<td align="left" rowspan="1" colspan="1">3.3</td>
+<td align="left" rowspan="1" colspan="1">1.38</td>
+<td align="left" rowspan="1" colspan="1">32</td>
+<td align="left" rowspan="1" colspan="1">96.2</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap><table-wrap id="pone-0086268-t005" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0086268.t005</object-id><label>Table 5</label><caption>
+<title>Discriminant features for Wh-questions postposed.</title>
+</caption><alternatives><graphic id="pone-0086268-t005-5" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0086268.t005" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">ATL relation</td>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e107" xlink:type="simple"/></inline-formula></td>
+<td align="left" rowspan="1" colspan="1">% Activation in Wh questions postposed</td>
+<td align="left" rowspan="1" colspan="1">% Activation in Others</td>
+<td align="left" rowspan="1" colspan="1">d′</td>
+<td align="left" rowspan="1" colspan="1">% Classification in Wh questions postposed</td>
+<td align="left" rowspan="1" colspan="1">% Classification in Others</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Brows move down</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">99.2</td>
+<td align="left" rowspan="1" colspan="1">29.4</td>
+<td align="left" rowspan="1" colspan="1">2.95</td>
+<td align="left" rowspan="1" colspan="1">99.2</td>
+<td align="left" rowspan="1" colspan="1">64.7</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mouth shape other <italic>overlaps</italic> brows move down</td>
+<td align="left" rowspan="1" colspan="1">0.68</td>
+<td align="left" rowspan="1" colspan="1">43.5</td>
+<td align="left" rowspan="1" colspan="1">4.9</td>
+<td align="left" rowspan="1" colspan="1">1.50</td>
+<td align="left" rowspan="1" colspan="1">43.5</td>
+<td align="left" rowspan="1" colspan="1">94.6</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Brows move down <italic>finishes</italic> mouth open</td>
+<td align="left" rowspan="1" colspan="1">0.59</td>
+<td align="left" rowspan="1" colspan="1">21.8</td>
+<td align="left" rowspan="1" colspan="1">4</td>
+<td align="left" rowspan="1" colspan="1">0.97</td>
+<td align="left" rowspan="1" colspan="1">21.8</td>
+<td align="left" rowspan="1" colspan="1">95.4</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Blink <italic>overlaps</italic> brows move down</td>
+<td align="left" rowspan="1" colspan="1">0.54</td>
+<td align="left" rowspan="1" colspan="1">16.9</td>
+<td align="left" rowspan="1" colspan="1">2.5</td>
+<td align="left" rowspan="1" colspan="1">1.01</td>
+<td align="left" rowspan="1" colspan="1">16.9</td>
+<td align="left" rowspan="1" colspan="1">97.8</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mouth shape round <italic>during</italic> brows move down</td>
+<td align="left" rowspan="1" colspan="1">0.5</td>
+<td align="left" rowspan="1" colspan="1">61.3</td>
+<td align="left" rowspan="1" colspan="1">9.5</td>
+<td align="left" rowspan="1" colspan="1">1.6</td>
+<td align="left" rowspan="1" colspan="1">61.3</td>
+<td align="left" rowspan="1" colspan="1">87.2</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Brows move up <italic>meets</italic> brows move down</td>
+<td align="left" rowspan="1" colspan="1">0.49</td>
+<td align="left" rowspan="1" colspan="1">37.1</td>
+<td align="left" rowspan="1" colspan="1">5.1</td>
+<td align="left" rowspan="1" colspan="1">1.30</td>
+<td align="left" rowspan="1" colspan="1">37.1</td>
+<td align="left" rowspan="1" colspan="1">94.8</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap><table-wrap id="pone-0086268-t006" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0086268.t006</object-id><label>Table 6</label><caption>
+<title>Discriminant features for Yes/no-questions.</title>
+</caption><alternatives><graphic id="pone-0086268-t006-6" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0086268.t006" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">ATL relation</td>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e108" xlink:type="simple"/></inline-formula></td>
+<td align="left" rowspan="1" colspan="1">% Activation in Yes/no questions</td>
+<td align="left" rowspan="1" colspan="1">% Activation in Others</td>
+<td align="left" rowspan="1" colspan="1">d′</td>
+<td align="left" rowspan="1" colspan="1">% Classification in Yes/no questions</td>
+<td align="left" rowspan="1" colspan="1">% Classification in Others</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Brows move down</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">6.1</td>
+<td align="left" rowspan="1" colspan="1">37.3</td>
+<td align="left" rowspan="1" colspan="1">1.22</td>
+<td align="left" rowspan="1" colspan="1">93.9</td>
+<td align="left" rowspan="1" colspan="1">58.6</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Brows move up</td>
+<td align="left" rowspan="1" colspan="1">0.81</td>
+<td align="left" rowspan="1" colspan="1">92.3</td>
+<td align="left" rowspan="1" colspan="1">56.8</td>
+<td align="left" rowspan="1" colspan="1">1.26</td>
+<td align="left" rowspan="1" colspan="1">92.3</td>
+<td align="left" rowspan="1" colspan="1">46.8</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head moves down <italic>starts</italic> brows move up</td>
+<td align="left" rowspan="1" colspan="1">0.71</td>
+<td align="left" rowspan="1" colspan="1">35.5</td>
+<td align="left" rowspan="1" colspan="1">7.9</td>
+<td align="left" rowspan="1" colspan="1">1.04</td>
+<td align="left" rowspan="1" colspan="1">35.4</td>
+<td align="left" rowspan="1" colspan="1">93.3</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mouth shape flat <italic>finishes</italic> brows move up</td>
+<td align="left" rowspan="1" colspan="1">0.55</td>
+<td align="left" rowspan="1" colspan="1">32.9</td>
+<td align="left" rowspan="1" colspan="1">3.4</td>
+<td align="left" rowspan="1" colspan="1">1.38</td>
+<td align="left" rowspan="1" colspan="1">32.9</td>
+<td align="left" rowspan="1" colspan="1">97.2</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Brows move up <italic>before</italic> brows move down</td>
+<td align="left" rowspan="1" colspan="1">0.52</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">10.8</td>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e109" xlink:type="simple"/></inline-formula></td>
+<td align="left" rowspan="1" colspan="1">100</td>
+<td align="left" rowspan="1" colspan="1">18.5</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Brows move up <italic>equals</italic> mouth shape flat</td>
+<td align="left" rowspan="1" colspan="1">0.51</td>
+<td align="left" rowspan="1" colspan="1">30.7</td>
+<td align="left" rowspan="1" colspan="1">3.9</td>
+<td align="left" rowspan="1" colspan="1">1.26</td>
+<td align="left" rowspan="1" colspan="1">30.6</td>
+<td align="left" rowspan="1" colspan="1">96.5</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap><table-wrap id="pone-0086268-t007" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0086268.t007</object-id><label>Table 7</label><caption>
+<title>Discriminant features for Assertions.</title>
+</caption><alternatives><graphic id="pone-0086268-t007-7" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0086268.t007" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">ATL relation</td>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e110" xlink:type="simple"/></inline-formula></td>
+<td align="left" rowspan="1" colspan="1">% Activation in Assertions</td>
+<td align="left" rowspan="1" colspan="1">% Activation in Others</td>
+<td align="left" rowspan="1" colspan="1">d′</td>
+<td align="left" rowspan="1" colspan="1">% Classification in Assertions</td>
+<td align="left" rowspan="1" colspan="1">% Classification in Others</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Brows move down</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">17.1</td>
+<td align="left" rowspan="1" colspan="1">46.2</td>
+<td align="left" rowspan="1" colspan="1">0.85</td>
+<td align="left" rowspan="1" colspan="1">82.9</td>
+<td align="left" rowspan="1" colspan="1">55.9</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mouth shape round</td>
+<td align="left" rowspan="1" colspan="1">0.61</td>
+<td align="left" rowspan="1" colspan="1">39.9</td>
+<td align="left" rowspan="1" colspan="1">61.9</td>
+<td align="left" rowspan="1" colspan="1">0.56</td>
+<td align="left" rowspan="1" colspan="1">62.6</td>
+<td align="left" rowspan="1" colspan="1">63.3</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Teeth close <italic>during</italic> brows move up</td>
+<td align="left" rowspan="1" colspan="1">0.56</td>
+<td align="left" rowspan="1" colspan="1">20.1</td>
+<td align="left" rowspan="1" colspan="1">37</td>
+<td align="left" rowspan="1" colspan="1">0.50</td>
+<td align="left" rowspan="1" colspan="1">82.6</td>
+<td align="left" rowspan="1" colspan="1">28.8</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Brows move up</td>
+<td align="left" rowspan="1" colspan="1">0.48</td>
+<td align="left" rowspan="1" colspan="1">56.8</td>
+<td align="left" rowspan="1" colspan="1">65.4</td>
+<td align="left" rowspan="1" colspan="1">0.22</td>
+<td align="left" rowspan="1" colspan="1">43.2</td>
+<td align="left" rowspan="1" colspan="1">61.7</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mouth shape round <italic>during</italic> brows move down</td>
+<td align="left" rowspan="1" colspan="1">0.46</td>
+<td align="left" rowspan="1" colspan="1">3.2</td>
+<td align="left" rowspan="1" colspan="1">19.6</td>
+<td align="left" rowspan="1" colspan="1">0.99</td>
+<td align="left" rowspan="1" colspan="1">96.8</td>
+<td align="left" rowspan="1" colspan="1">27.6</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p>In <xref ref-type="table" rid="pone-0086268-t003">Tables 3</xref>–<xref ref-type="table" rid="pone-0086268-t004"/><xref ref-type="table" rid="pone-0086268-t005"/><xref ref-type="table" rid="pone-0086268-t006"/><xref ref-type="table" rid="pone-0086268-t007">7</xref> we also specify the classification accuracy of each of the discriminant features found with the proposed approach. To do this we use the following approach. Each discriminant feature <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e111" xlink:type="simple"/></inline-formula> defines a one-dimensional feature space <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e112" xlink:type="simple"/></inline-formula> with its corresponding basis vector <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e113" xlink:type="simple"/></inline-formula>. We project all vectors <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e114" xlink:type="simple"/></inline-formula> onto <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e115" xlink:type="simple"/></inline-formula>, <italic>i.e.</italic>, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e116" xlink:type="simple"/></inline-formula>. We then use RLDA to learn the hyperplane <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e117" xlink:type="simple"/></inline-formula> that best separates the samples of our two classes. Note that Linear discriminant analysis and RLDA provide the Bayes optimal solution when we have only two classes with equal variances <xref ref-type="bibr" rid="pone.0086268-Martinez1">[48]</xref>. Once this hyperplane has been determined, we compute the percentage of samples belonging to class 1 (<italic>i.e.</italic>, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e118" xlink:type="simple"/></inline-formula>) that are on one side of <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e119" xlink:type="simple"/></inline-formula> and the percentage of samples of class 2 (<italic>i.e.</italic>, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e120" xlink:type="simple"/></inline-formula>) that are on the other side. These two numbers provide the percentage of classification accuracies listed in the last two columns in <xref ref-type="table" rid="pone-0086268-t003">Tables 3</xref>–<xref ref-type="table" rid="pone-0086268-t004"/><xref ref-type="table" rid="pone-0086268-t005"/><xref ref-type="table" rid="pone-0086268-t006"/><xref ref-type="table" rid="pone-0086268-t007">7</xref>.</p>
+<p>The numbers in these last two columns (labeled “% Classification”) specify how many of our sentences can be correctly classified using each single feature <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e121" xlink:type="simple"/></inline-formula>. This refers to how <italic>discriminant</italic> the feature is. Some discriminant features will of course be more common and, hence, will successfully discriminate more samples of <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e122" xlink:type="simple"/></inline-formula> than others, with <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e123" xlink:type="simple"/></inline-formula>. For example, “Head moves down <italic>finishes</italic> brows move up” in <xref ref-type="table" rid="pone-0086268-t003">Table 3</xref> is not a common nonmanual marker for Hypothetical conditionals (only used in 19% of Hypothetical conditionals), but it is almost never used elsewhere (2.3% of other sentences). This makes it a very efficient, robust stand-alone nonmanual to indicate a sentence is <italic>not</italic> a Hypothetical conditional (with classification accuracy at 97.6%). In comparison, “Brows move up” is a better nonmanual marker of conditionals (since 89.1% of our Hypothetical conditionals are successfully classified with it), but is also employed elsewhere (46.3% of other sentences are also classified as Hypothetical conditionals if one were to use only this feature). Thus, this second nonmanual is not as robust as the previous one. As expected, the result of averaging the last two columns in <xref ref-type="table" rid="pone-0086268-t003">Tables 3</xref>–<xref ref-type="table" rid="pone-0086268-t004"/><xref ref-type="table" rid="pone-0086268-t005"/><xref ref-type="table" rid="pone-0086268-t006"/><xref ref-type="table" rid="pone-0086268-t007">7</xref> are highly correlated with d′. This is because both methods of analysis assume the data is Normally distributed. This correlation however is stronger for the single feature case, since d′ cannot account for temporal structure.</p>
+<p>Additionally, we tested for the statistical significance of our results. This was done by comparing our results with those given by a randomization of the class labels. That is, we compare the results obtained with the proposed approach to the results one observes when the class labels for each of the samples <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e124" xlink:type="simple"/></inline-formula> are assigned to a random class (rather than their true class label <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e125" xlink:type="simple"/></inline-formula>). The randomization was repeated <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e126" xlink:type="simple"/></inline-formula> times, yielding a total of <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e127" xlink:type="simple"/></inline-formula> classification results. These results specify the probability of obtaining the classification accuracies by chance. A <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e128" xlink:type="simple"/></inline-formula>-test of these revealed that our method performed significantly better than chance with the following <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e129" xlink:type="simple"/></inline-formula> values: <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e130" xlink:type="simple"/></inline-formula> for Hypothetical conditionals, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e131" xlink:type="simple"/></inline-formula> for Wh-question, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e132" xlink:type="simple"/></inline-formula> for Wh-questions postposed, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e133" xlink:type="simple"/></inline-formula> for Yes/no questions and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e134" xlink:type="simple"/></inline-formula> for Assertions.</p>
+<p>Let us now describe the results of this study in detail for each of the 5 classes under consideration.</p>
+<sec id="s3a1">
+<title>Hypothetical Conditionals</title>
+<p>With respect to the Hypothetical conditionals (<xref ref-type="table" rid="pone-0086268-t003">Table 3</xref>), the high percentage of “brows move up” is expected from the literature <xref ref-type="bibr" rid="pone.0086268-Wilbur3">[16]</xref>, <xref ref-type="bibr" rid="pone.0086268-Wilbur5">[18]</xref>, <xref ref-type="bibr" rid="pone.0086268-Baker1">[34]</xref>, <xref ref-type="bibr" rid="pone.0086268-BakerShenk1">[51]</xref>, <xref ref-type="bibr" rid="pone.0086268-Liddell1">[52]</xref>, as the conditional clause is routinely marked by raised brows. However, within the conditional clause, individual signs may require another facial posture that interferes with raised brows <xref ref-type="bibr" rid="pone.0086268-Weast1">[13]</xref>, and therefore not every sign in a Hypothetical conditional will have raised brows marked on it, thereby accounting for the less than 100% occurrence. For example, a facial expression that could interfere with the marking of conditional might be that of surprise, which involves brows up, head back, and eyes wide open. Furthermore, within the structures that are not Hypothetical conditionals (fourth column <xref ref-type="table" rid="pone-0086268-t003">Table 3</xref>), there are Yes/no questions and topics in Assertions, which also are routinely marked by raised brows. Thus, 54% of the non-Hypothetical conditionals also show “brows move up.”</p>
+<p>Most notably, <xref ref-type="table" rid="pone-0086268-t003">Table 3</xref> provides novel (and some unexpected) results concerning the behavior of the head, and the mouth and teeth. For instance “head moves down <italic>finishes</italic> brows move up” in 19% of the Hypothetical conditionals suggests a head thrust at the end of the conditional clause <xref ref-type="bibr" rid="pone.0086268-Liddell2">[53]</xref> and/or a prosodic reset <xref ref-type="bibr" rid="pone.0086268-Churng1">[27]</xref>, <xref ref-type="bibr" rid="pone.0086268-Churng2">[35]</xref>, <xref ref-type="bibr" rid="pone.0086268-Churng3">[36]</xref> prior to the onset of the clause following the Hypothetical conditional clause.</p>
+<p>Another frequent head behavior is “head turns left <italic>during</italic> brows move up,” which may reflect the establishment of a space to the left of the signer at head level to mark clauses containing content that is uncertain, hypothetical, or otherwise irrealis. The use of space for linguistic pragmatic functions has been recently reported for Catalan Sign Language (LSC) <xref ref-type="bibr" rid="pone.0086268-Barbera1">[54]</xref> and for Austrian Sign Language (OGS) <xref ref-type="bibr" rid="pone.0086268-Lackner1">[55]</xref>. Most relevant to the “head turns left <italic>during</italic> brows move up” in Hypothetical conditionals is Lackner's observation of the signers' reference to a “mental” space or “space of thoughts,” which may be coded by pointing, gazing up, or moving the chin up.</p>
+<p>An additional head behavior, “head turns right,” raises another possible interpretation for “head turns left” in conditionals. As will be discussed in the Polarity section below, “head turns right <italic>during</italic> brows move up” occurs very frequently in clauses containing negation (negative polarity), as part of the negative headshake (right-left-right sequences <xref ref-type="bibr" rid="pone.0086268-Bahan1">[56]</xref>). Thus, the frequent occurrence (50.4%) of “head turns left <italic>during</italic> brows move up” in Hypothetical conditionals is highly associated with negation.</p>
+<p>Both Hypothetical conditionals and non-Hypotheticals have a high occurrence of “teeth open” in <xref ref-type="table" rid="pone-0086268-t003">Table 3</xref>. For the Hypothetical conditionals, this is likely related to the frequent articulation of the word “if” when the sign IF is produced. This suggestion is strengthened by the more frequent occurrence of “teeth touch lip <italic>during</italic> brows move up” and “teeth touch lip <italic>during</italic> mouth open” in Hypothetical conditionals than in non-Hypotheticals – <italic>i.e.</italic>, the (upper) teeth touch the (bottom) lip at the end of the articulation of “if.” In contrast, the high frequency of “teeth open” in non-Hypotheticals is not accompanied by high occurrence of “teeth touch lip <italic>during</italic> brows move up” and “teeth touch lip <italic>during</italic> mouth open.” Instead, “teeth open” is the result of the inclusion of lexical items such as FISH in the stimuli. As reported in <xref ref-type="bibr" rid="pone.0086268-Nadolske1">[57]</xref>, nouns in ASL and other sign languages are much more likely to be accompanied by mouthing of the surrounding spoken language word than other word categories (<italic>e.g.</italic>, pronouns, verbs). Thus, it is not unusual that a noun sign like FISH would be accompanied by the articulation of “fish” or at least the first part of it that involves articulation of “f” or “fi.” <xref ref-type="fig" rid="pone-0086268-g007">Fig. 7</xref> illustrates this in a sequence of mouth positions in one Wh-question produced by one of the ASL signers in our database.</p>
+<fig id="pone-0086268-g007" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0086268.g007</object-id><label>Figure 7</label><caption>
+<title>Mouth positions for the sentence “WHO COOK FISH ON #GRILL.”</title>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0086268.g007" position="float" xlink:type="simple"/></fig></sec><sec id="s3a2">
+<title>Wh-Questions</title>
+<p>From <xref ref-type="table" rid="pone-0086268-t004">Table 4</xref>, we see that Wh-questions are separated from other constructions by both “brows move up” and “brows move down,” but in different ways. “Brows move down” is a well-known discriminant feature for Wh-questions in ASL <xref ref-type="bibr" rid="pone.0086268-Neidle1">[10]</xref>, <xref ref-type="bibr" rid="pone.0086268-BakerShenk1">[51]</xref> and occurs in 89.4% of the Wh-questions in our sample. The occurrence of “brows move down” in 23.2% of the other constructions is likely related to the occurrence in those constructions of Wh-questions with the Wh-sign postposed (discussed separately in connection with <xref ref-type="table" rid="pone-0086268-t005">Table 5</xref>). This is diminished when the downward movement of the brows is preceded by the head turning right</p>
+<p>In contrast, “brows move up” occurs in few Wh-questions (10.6%) but is very frequent in other constructions (70.5%), which includes the Hypothetical conditionals discussed above and Yes/no questions (discussed below), both of which are associated with raised brows. “Brow move up” may also be associated with some occurrences of Wh-questions with Wh-sign postposed. This allows for very high classification rates of Wh-questions and other constructions even when they are using this single feature.</p>
+<p>The remaining discriminative cue is “mouth shape round <italic>starts</italic> brows move down,” which occurs frequently in Wh-questions (43.1%) but not in other constructions (0.5%). This cue is likely associated with the presence of mouthing of “who” at the beginning of some Wh-questions. This is also the case for “mouth shape round.”</p>
+<p>From the results in <xref ref-type="table" rid="pone-0086268-t004">Table 4</xref>, we can thus identify a primary cue “brows move down” and a secondary cue “mouth shape round <italic>starts</italic> brows move down” for Wh-questions.</p>
+</sec><sec id="s3a3">
+<title>Wh-Questions postposed</title>
+<p>A “Wh-question postposed” is one in which the Wh-word has been produced at the end of the question instead of at the beginning (described as “focus questions” in <xref ref-type="bibr" rid="pone.0086268-Churng1">[27]</xref>). This placement of the Wh-word has the effect of allowing the main clause to be treated either as part of the question or as an Assertion followed by a question <xref ref-type="bibr" rid="pone.0086268-Neidle2">[58]</xref>. As a result, “brows move down” may cover the entire question or only the final Wh-word; either way, “brows move down” is a distinctive marker; <xref ref-type="table" rid="pone-0086268-t005">Table 5</xref>. The occurrence of “brows move down” in other constructions is due to the inclusion of regular Wh-questions discussed above. When the signs preceding the postposed Wh-sign are treated as separate from the question at the end, we see very frequent (37.1%) “brows move up <italic>meets</italic> brows move down,” with the brows up on the non-question part and the brows down on the Wh-word. This “brows up <italic>meets</italic> brows down” pattern in ASL Wh-questions postposed is noted in <xref ref-type="bibr" rid="pone.0086268-Watson1">[12]</xref> and discussed with respect to the presuppositional nature of the material preceding the postposed Wh-word in <xref ref-type="bibr" rid="pone.0086268-Abner1">[37]</xref>.</p>
+<p>The mouth is also active in relation to “brows move down,” with “mouth shape round <italic>during</italic> brows move down” occurring in 61.3% of the Wh-questions postposed, as compared to only 9.5% in other constructions. Again, it is likely due to mouthing of “who,” which occurs frequently in Wh-questions postposed and also in regular Wh-questions which are included in the comparison constructions. “Mouth shape other <italic>overlaps</italic> with brows move down” frequently (43.5%) in Wh-questions postposed, and may be related to mouthing of other Wh-words, such as “which,” “why,” and “where.” Note the classification rate, for Wh-questions postposed and others is 94% when combining the features.</p>
+<p>One articulation in Wh-questions postposed that did not show up in other constructions is the occurrence of blinks. “Blink <italic>overlaps</italic> brows move down” occurred in 16.9% of these as compared to only 2.5% in other constructions. Periodic blinks, the kind that are associated with eye-wetting, are well-known as a marker of the end of intonational phrases and syntactic constituents in ASL <xref ref-type="bibr" rid="pone.0086268-Wilbur1">[14]</xref>. But if these blinks were just periodic blinks, they would occur after the brows move down ends. The fact that we see blinks overlapping with brows move down implies that they are deliberate blinks – slower and longer in duration. Deliberate blinks are associated with prominence on a sign <xref ref-type="bibr" rid="pone.0086268-Wilbur1">[14]</xref>. If the blink ended at the same time as the brows move down, we would also know that the blink occurred on the last sign in the clause. The fact that blinks overlap with brows down means that the blink is located on a sign <italic>inside</italic> the clause. This supports the suggestion that they are deliberate blinks, which are used to emphasize a sign, because signs in final position in a clause are already emphasized/stressed <xref ref-type="bibr" rid="pone.0086268-Wilbur1">[14]</xref> and therefore would not need a deliberate blink as a marker.</p>
+</sec><sec id="s3a4">
+<title>Yes/no Questions</title>
+<p>Yes/no questions are distinguished primarily by “brows move up,” although this cue also occurs frequently in other constructions, which include Hypothetical conditionals (<xref ref-type="table" rid="pone-0086268-t006">Table 6</xref>) and Assertions with marked topics. “Brows move up” and “brows move down” achieve very high classification accuracies for Yes/no questions – over 92%.</p>
+<p>Note that, as expected, “brows move up <italic>before</italic> brows move down” does not occur in Yes/no questions, since the brow raise is expected to span the entire question <xref ref-type="bibr" rid="pone.0086268-BakerShenk1">[51]</xref>. In contrast, “brows move up <italic>before</italic> brows move down” does occur in other constructions, namely those in which a Topic or Hypothetical conditional clause (brows up) precedes a Wh-question.</p>
+<p>“Head moves up <italic>starts</italic> brows move up” occurs in 33.5% of Yes/no questions but only 6.9% of other constructions. Half of the Yes/no questions are preceded by a topic; according to <xref ref-type="bibr" rid="pone.0086268-Aarons2">[59]</xref>, two of the three possible topic markings involve head up. It is also claimed in <xref ref-type="bibr" rid="pone.0086268-BakerShenk1">[51]</xref> that head tilts forward with raised eyebrows in Yes/no questions. However, head behavior can also function parallel to body lean behavior, with tilt forward suggesting inclusion of the addressee and tilt back indicating exclusion of the addressee <xref ref-type="bibr" rid="pone.0086268-Wilbur5">[18]</xref>.</p>
+<p>“Mouth shape flat <italic>finishes</italic> brows move up” occurs in 32.9% of the Yes/no questions as compared to only 3.4% of the other constructions, with a clear classification accuracy for the latter (97.2%). This is a truly surprising result which undoubtedly suggests further investigations in this direction as, to our knowledge, no function for flat mouth in ASL has been assigned in the existing literature. Since it spans the full duration of brows up (“brows move up <italic>equals</italic> mouth shape flat,” 30.7%) and ends when the brows up ends, these results suggest that this is a question mouth marker, although the issue is then raised as to why it is only not more frequent.</p>
+</sec><sec id="s3a5">
+<title>Assertions</title>
+<p>Assertions have been traditionally viewed as not marked by specific nonmanuals, leaving the articulators free to reflect ones that accompany nonmanually marked lexical signs as well as to reflect the signer's emotional status. The cues identified as distinctive in <xref ref-type="table" rid="pone-0086268-t007">Table 7</xref> are notable for their relative absence in Assertions as compared to the other constructions. With respect to “brows move up,” the occurrence in Assertions is most likely due to the presence of topics with raised brows <xref ref-type="bibr" rid="pone.0086268-Aarons2">[59]</xref> prior to the Assertion itself.</p>
+</sec></sec><sec id="s3b">
+<title>Experiment 2: Polarity discriminant features</title>
+<p>The study of polarity follows the same procedure described above. The discriminant features selected by the LOSO approach are given in <xref ref-type="table" rid="pone-0086268-t008">Tables 8</xref>–<xref ref-type="table" rid="pone-0086268-t009"/><xref ref-type="table" rid="pone-0086268-t010"/><xref ref-type="table" rid="pone-0086268-t011">11</xref>. These are the results for each of the four classes with polarity, <italic>i.e.</italic>, Hypothetical conditionals, Wh-questions, Wh-questions postposed and Assertions.</p>
+<table-wrap id="pone-0086268-t008" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0086268.t008</object-id><label>Table 8</label><caption>
+<title>Discriminant features for polarity in Hypothetical conditionals.</title>
+</caption><alternatives><graphic id="pone-0086268-t008-8" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0086268.t008" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">ATL relation</td>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e135" xlink:type="simple"/></inline-formula></td>
+<td align="left" rowspan="1" colspan="1">% Activation in Positives</td>
+<td align="left" rowspan="1" colspan="1">% Activation in Negatives</td>
+<td align="left" rowspan="1" colspan="1">d′</td>
+<td align="left" rowspan="1" colspan="1">% Classification in Positives</td>
+<td align="left" rowspan="1" colspan="1">% Classification in Negatives</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head turns left <italic>before</italic> head turns right</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">8.3</td>
+<td align="left" rowspan="1" colspan="1">31.5</td>
+<td align="left" rowspan="1" colspan="1">0.9</td>
+<td align="left" rowspan="1" colspan="1">91.7</td>
+<td align="left" rowspan="1" colspan="1">31.5</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head turns left <italic>meets</italic> head turns right</td>
+<td align="left" rowspan="1" colspan="1">0.94</td>
+<td align="left" rowspan="1" colspan="1">16.6</td>
+<td align="left" rowspan="1" colspan="1">70.8</td>
+<td align="left" rowspan="1" colspan="1">1.5</td>
+<td align="left" rowspan="1" colspan="1">83.4</td>
+<td align="left" rowspan="1" colspan="1">70.8</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head turns right <italic>before</italic> head turns left</td>
+<td align="left" rowspan="1" colspan="1">0.59</td>
+<td align="left" rowspan="1" colspan="1">7.9</td>
+<td align="left" rowspan="1" colspan="1">27.8</td>
+<td align="left" rowspan="1" colspan="1">0.8</td>
+<td align="left" rowspan="1" colspan="1">92.1</td>
+<td align="left" rowspan="1" colspan="1">27.8</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head turns right <italic>during</italic> brows move up</td>
+<td align="left" rowspan="1" colspan="1">0.53</td>
+<td align="left" rowspan="1" colspan="1">32.4</td>
+<td align="left" rowspan="1" colspan="1">66.7</td>
+<td align="left" rowspan="1" colspan="1">0.9</td>
+<td align="left" rowspan="1" colspan="1">67.6</td>
+<td align="left" rowspan="1" colspan="1">66.7</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head turns right <italic>overlaps</italic> mouth shape other</td>
+<td align="left" rowspan="1" colspan="1">0.51</td>
+<td align="left" rowspan="1" colspan="1">17.9</td>
+<td align="left" rowspan="1" colspan="1">46.3</td>
+<td align="left" rowspan="1" colspan="1">0.8</td>
+<td align="left" rowspan="1" colspan="1">82.1</td>
+<td align="left" rowspan="1" colspan="1">46.3</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap><table-wrap id="pone-0086268-t009" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0086268.t009</object-id><label>Table 9</label><caption>
+<title>Discriminant features for polarity in Wh-questions.</title>
+</caption><alternatives><graphic id="pone-0086268-t009-9" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0086268.t009" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">ATL relation</td>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e136" xlink:type="simple"/></inline-formula></td>
+<td align="left" rowspan="1" colspan="1">% Activation in Positives</td>
+<td align="left" rowspan="1" colspan="1">% Activation in Negatives</td>
+<td align="left" rowspan="1" colspan="1">d′</td>
+<td align="left" rowspan="1" colspan="1">% Classification in Positives</td>
+<td align="left" rowspan="1" colspan="1">% Classification in Negatives</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mouth closed <italic>meets</italic> teeth open</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">9.8</td>
+<td align="left" rowspan="1" colspan="1">30.8</td>
+<td align="left" rowspan="1" colspan="1">0.8</td>
+<td align="left" rowspan="1" colspan="1">90.2</td>
+<td align="left" rowspan="1" colspan="1">30.8</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Teeth touch lip</td>
+<td align="left" rowspan="1" colspan="1">0.89</td>
+<td align="left" rowspan="1" colspan="1">25.2</td>
+<td align="left" rowspan="1" colspan="1">6.7</td>
+<td align="left" rowspan="1" colspan="1">0.8</td>
+<td align="left" rowspan="1" colspan="1">25.2</td>
+<td align="left" rowspan="1" colspan="1">93.3</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mouth shape other <italic>before</italic> head moves down</td>
+<td align="left" rowspan="1" colspan="1">0.85</td>
+<td align="left" rowspan="1" colspan="1">26.8</td>
+<td align="left" rowspan="1" colspan="1">13.5</td>
+<td align="left" rowspan="1" colspan="1">0.5</td>
+<td align="left" rowspan="1" colspan="1">26.8</td>
+<td align="left" rowspan="1" colspan="1">86.5</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mouth open <italic>starts</italic> brows move down</td>
+<td align="left" rowspan="1" colspan="1">0.82</td>
+<td align="left" rowspan="1" colspan="1">37.0</td>
+<td align="left" rowspan="1" colspan="1">26.0</td>
+<td align="left" rowspan="1" colspan="1">0.3</td>
+<td align="left" rowspan="1" colspan="1">37.0</td>
+<td align="left" rowspan="1" colspan="1">74.0</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Teeth open <italic>during</italic> brows move down</td>
+<td align="left" rowspan="1" colspan="1">0.82</td>
+<td align="left" rowspan="1" colspan="1">39.8</td>
+<td align="left" rowspan="1" colspan="1">63.5</td>
+<td align="left" rowspan="1" colspan="1">0.6</td>
+<td align="left" rowspan="1" colspan="1">60.2</td>
+<td align="left" rowspan="1" colspan="1">63.5</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Blink</td>
+<td align="left" rowspan="1" colspan="1">0.76</td>
+<td align="left" rowspan="1" colspan="1">69.5</td>
+<td align="left" rowspan="1" colspan="1">76.9</td>
+<td align="left" rowspan="1" colspan="1">0.2</td>
+<td align="left" rowspan="1" colspan="1">76.8</td>
+<td align="left" rowspan="1" colspan="1">46.2</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Brows move down <italic>starts</italic> mouth open</td>
+<td align="left" rowspan="1" colspan="1">0.74</td>
+<td align="left" rowspan="1" colspan="1">8.1</td>
+<td align="left" rowspan="1" colspan="1">15.4</td>
+<td align="left" rowspan="1" colspan="1">0.4</td>
+<td align="left" rowspan="1" colspan="1">91.9</td>
+<td align="left" rowspan="1" colspan="1">15.4</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Teeth open <italic>overlaps</italic> head turns right</td>
+<td align="left" rowspan="1" colspan="1">0.74</td>
+<td align="left" rowspan="1" colspan="1">11.0</td>
+<td align="left" rowspan="1" colspan="1">30.8</td>
+<td align="left" rowspan="1" colspan="1">0.7</td>
+<td align="left" rowspan="1" colspan="1">89.0</td>
+<td align="left" rowspan="1" colspan="1">30.8</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap><table-wrap id="pone-0086268-t010" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0086268.t010</object-id><label>Table 10</label><caption>
+<title>Discriminant features for polarity in Wh-questions postposed.</title>
+</caption><alternatives><graphic id="pone-0086268-t010-10" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0086268.t010" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">ATL relation</td>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e137" xlink:type="simple"/></inline-formula></td>
+<td align="left" rowspan="1" colspan="1">% Activation in Positives</td>
+<td align="left" rowspan="1" colspan="1">% Activation in Negatives</td>
+<td align="left" rowspan="1" colspan="1">d′</td>
+<td align="left" rowspan="1" colspan="1">% Classification in Positives</td>
+<td align="left" rowspan="1" colspan="1">% Classification in Negatives</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mouth shape other <italic>before</italic> mouth shape other</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">77.2</td>
+<td align="left" rowspan="1" colspan="1">96.9</td>
+<td align="left" rowspan="1" colspan="1">1.1</td>
+<td align="left" rowspan="1" colspan="1">94.6</td>
+<td align="left" rowspan="1" colspan="1">75</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mouth open</td>
+<td align="left" rowspan="1" colspan="1">0.87</td>
+<td align="left" rowspan="1" colspan="1">37</td>
+<td align="left" rowspan="1" colspan="1">75</td>
+<td align="left" rowspan="1" colspan="1">1.0</td>
+<td align="left" rowspan="1" colspan="1">91.3</td>
+<td align="left" rowspan="1" colspan="1">53.1</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head turns left <italic>during</italic> brows move down</td>
+<td align="left" rowspan="1" colspan="1">0.87</td>
+<td align="left" rowspan="1" colspan="1">46.7</td>
+<td align="left" rowspan="1" colspan="1">96.9</td>
+<td align="left" rowspan="1" colspan="1">1.9</td>
+<td align="left" rowspan="1" colspan="1">94.6</td>
+<td align="left" rowspan="1" colspan="1">65.6</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mouth open <italic>before</italic> mouth open</td>
+<td align="left" rowspan="1" colspan="1">0.84</td>
+<td align="left" rowspan="1" colspan="1">63</td>
+<td align="left" rowspan="1" colspan="1">90.6</td>
+<td align="left" rowspan="1" colspan="1">1.0</td>
+<td align="left" rowspan="1" colspan="1">89.1</td>
+<td align="left" rowspan="1" colspan="1">71.9</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head moves down <italic>during</italic> brows move down</td>
+<td align="left" rowspan="1" colspan="1">0.84</td>
+<td align="left" rowspan="1" colspan="1">45.7</td>
+<td align="left" rowspan="1" colspan="1">75</td>
+<td align="left" rowspan="1" colspan="1">0.8</td>
+<td align="left" rowspan="1" colspan="1">54.3</td>
+<td align="left" rowspan="1" colspan="1">75</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head turns left <italic>before</italic> mouth closed</td>
+<td align="left" rowspan="1" colspan="1">0.83</td>
+<td align="left" rowspan="1" colspan="1">28.3</td>
+<td align="left" rowspan="1" colspan="1">71.9</td>
+<td align="left" rowspan="1" colspan="1">1.2</td>
+<td align="left" rowspan="1" colspan="1">90.2</td>
+<td align="left" rowspan="1" colspan="1">43.8</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head turns left <italic>during</italic> mouth shape flat</td>
+<td align="left" rowspan="1" colspan="1">0.78</td>
+<td align="left" rowspan="1" colspan="1">3.3</td>
+<td align="left" rowspan="1" colspan="1">37.5</td>
+<td align="left" rowspan="1" colspan="1">1.5</td>
+<td align="left" rowspan="1" colspan="1">96.7</td>
+<td align="left" rowspan="1" colspan="1">37.5</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head tilts right <italic>during</italic> brows move down</td>
+<td align="left" rowspan="1" colspan="1">0.77</td>
+<td align="left" rowspan="1" colspan="1">13</td>
+<td align="left" rowspan="1" colspan="1">59.4</td>
+<td align="left" rowspan="1" colspan="1">1.4</td>
+<td align="left" rowspan="1" colspan="1">87</td>
+<td align="left" rowspan="1" colspan="1">59.4</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head turns left <italic>overlaps</italic> teeth open</td>
+<td align="left" rowspan="1" colspan="1">0.75</td>
+<td align="left" rowspan="1" colspan="1">15.2</td>
+<td align="left" rowspan="1" colspan="1">53.1</td>
+<td align="left" rowspan="1" colspan="1">1.1</td>
+<td align="left" rowspan="1" colspan="1">84.8</td>
+<td align="left" rowspan="1" colspan="1">53.1</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap><table-wrap id="pone-0086268-t011" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0086268.t011</object-id><label>Table 11</label><caption>
+<title>Discriminant features for polarity in Assertions.</title>
+</caption><alternatives><graphic id="pone-0086268-t011-11" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0086268.t011" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">ATL relation</td>
+<td align="left" rowspan="1" colspan="1"><inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e138" xlink:type="simple"/></inline-formula></td>
+<td align="left" rowspan="1" colspan="1">% Activation in Positives</td>
+<td align="left" rowspan="1" colspan="1">% Activation in Negatives</td>
+<td align="left" rowspan="1" colspan="1">d′</td>
+<td align="left" rowspan="1" colspan="1">% Classification in Positives</td>
+<td align="left" rowspan="1" colspan="1">% Classification in Negatives</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head turns left <italic>before</italic> head turns right</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">8.6</td>
+<td align="left" rowspan="1" colspan="1">44.7</td>
+<td align="left" rowspan="1" colspan="1">1.2</td>
+<td align="left" rowspan="1" colspan="1">91.4</td>
+<td align="left" rowspan="1" colspan="1">44.7</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head turns right <italic>before</italic> head turns left</td>
+<td align="left" rowspan="1" colspan="1">0.97</td>
+<td align="left" rowspan="1" colspan="1">10</td>
+<td align="left" rowspan="1" colspan="1">43.6</td>
+<td align="left" rowspan="1" colspan="1">1.1</td>
+<td align="left" rowspan="1" colspan="1">90</td>
+<td align="left" rowspan="1" colspan="1">43.6</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head turns right</td>
+<td align="left" rowspan="1" colspan="1">0.97</td>
+<td align="left" rowspan="1" colspan="1">62.4</td>
+<td align="left" rowspan="1" colspan="1">97.2</td>
+<td align="left" rowspan="1" colspan="1">1.6</td>
+<td align="left" rowspan="1" colspan="1">96</td>
+<td align="left" rowspan="1" colspan="1">68.9</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head tilts left <italic>overlaps</italic> head turns left</td>
+<td align="left" rowspan="1" colspan="1">0.68</td>
+<td align="left" rowspan="1" colspan="1">4.8</td>
+<td align="left" rowspan="1" colspan="1">21.9</td>
+<td align="left" rowspan="1" colspan="1">0.9</td>
+<td align="left" rowspan="1" colspan="1">95.2</td>
+<td align="left" rowspan="1" colspan="1">21.9</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head turns left</td>
+<td align="left" rowspan="1" colspan="1">0.61</td>
+<td align="left" rowspan="1" colspan="1">71.1</td>
+<td align="left" rowspan="1" colspan="1">97.8</td>
+<td align="left" rowspan="1" colspan="1">1.5</td>
+<td align="left" rowspan="1" colspan="1">96</td>
+<td align="left" rowspan="1" colspan="1">69.7</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Brows move up <italic>before</italic> head turns right</td>
+<td align="left" rowspan="1" colspan="1">0.52</td>
+<td align="left" rowspan="1" colspan="1">1.6</td>
+<td align="left" rowspan="1" colspan="1">20.8</td>
+<td align="left" rowspan="1" colspan="1">1.3</td>
+<td align="left" rowspan="1" colspan="1">98.4</td>
+<td align="left" rowspan="1" colspan="1">20.8</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Head turns right <italic>meets</italic> head turns left</td>
+<td align="left" rowspan="1" colspan="1">0.51</td>
+<td align="left" rowspan="1" colspan="1">13.9</td>
+<td align="left" rowspan="1" colspan="1">69.7</td>
+<td align="left" rowspan="1" colspan="1">1.6</td>
+<td align="left" rowspan="1" colspan="1">98.4</td>
+<td align="left" rowspan="1" colspan="1">48.6</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p>Here, we also performed the statistical significant analysis described in Experiment 1 section. All our results were again statistically significant with: <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e139" xlink:type="simple"/></inline-formula> for Hypothetical conditionals, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e140" xlink:type="simple"/></inline-formula> for Wh-questions, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e141" xlink:type="simple"/></inline-formula> for Wh-questions postposed and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e142" xlink:type="simple"/></inline-formula> for Assertions.</p>
+<p>Let us look at each of these results in more detail.</p>
+<sec id="s3b1">
+<title>Hypothetical Conditionals</title>
+<p>From <xref ref-type="table" rid="pone-0086268-t008">Table 8</xref>, we see that all notable features for polarity in Hypothetical conditionals are associated with head turns and are more frequent in negatives than in positives. This is an expected finding as negatives are generally marked by headshakes in ASL <xref ref-type="bibr" rid="pone.0086268-Neidle1">[10]</xref>, <xref ref-type="bibr" rid="pone.0086268-Veinberg1">[11]</xref>, <xref ref-type="bibr" rid="pone.0086268-Pfau2">[38]</xref> and many other sign languages <xref ref-type="bibr" rid="pone.0086268-Geraci1">[60]</xref>–<xref ref-type="bibr" rid="pone.0086268-Hrastinski1">[62]</xref>. As discussed earlier, “brows move up” is associated with Hypothetical conditionals, and the occurrence of “brows move up” with negative Hypothetical conditional head turns suggesting that both conditionality and negation can be distinctly shown simultaneously without interfering with each other <xref ref-type="bibr" rid="pone.0086268-Wilbur2">[15]</xref>.</p>
+<p>When we dig into the details of the temporal behavior of head turns, we identify linguistic interactions that have not been available to impressionistic analysis so far. We believe this is an improvement our algorithm has made possible for sign language research. In this sense, the findings with the ordering and the relation of head turns alert us to two previously unrealized findings about negative polarity in ASL.</p>
+<p>The first finding is that the defining relation for negative polarity is “a head turn <italic>meets</italic> the opposite head turn” which kinematically correlates to a fast paced headshake. That the defining relation is “meets” rather than a head turn preference on either side of the relation is proved when we compare <xref ref-type="table" rid="pone-0086268-t008">Table 8</xref> with <xref ref-type="table" rid="pone-0086268-t011">Table 11</xref>. In <xref ref-type="table" rid="pone-0086268-t008">Table 8</xref>, what gives us the fast paced headshake is the “head turns left <italic>meets</italic> head turns right” discriminant feature. On the other hand, what gives us the fast paced headshake in <xref ref-type="table" rid="pone-0086268-t011">Table 11</xref> is the “head turns right <italic>meets</italic> head turns left” discriminant feature. The commonality turns out to be the abstract linguistic relation “a head turn <italic>meets</italic> the opposite head turn.” The kinematic realization of this abstract linguistic property is a fast paced headshake.</p>
+<p>The second finding is that we can generalize that negation normally begins with “head turns right.” Because this does not always occur, we state the general nonmanual marking as “a head turn <italic>meets</italic> the opposite head turn.” There is a widespread linguistic assumption that Assertions are the most basic, simplest clause type, and this is where we see the negative headshake start with “head turns right.”</p>
+<p>When we look at the combination of Hypothetical conditional and negation, we are no longer looking at the simplest situation. Instead, the conditional contains the negation as part of its clause, and we expect the conditional marking to begin before the negation marking. In the case of constructions discriminant features for Hypothetical conditional, we determined that “head turns left <italic>during</italic> brows move up” is the discriminant feature for conditionals. As we will see in discriminant features for polarity in assertions, the primary indicator of fast paced negative headshake “head turns right <italic>meets</italic> head turns left” in Assertions, the most basic clause, starts with head turn to the right. In Hypothetical conditionals, the “head turns left” dominates the negative, and the fast paced negative headshake is modified to start on the left, yielding “head turns left <italic>meets</italic> head turns right”, the most active nonmanual marker in negative Hypothetical conditions (<xref ref-type="table" rid="pone-0086268-t008">Table 8</xref>).</p>
+<p>In addition to these two findings we also need to note that the headshakes reflected by “head turns right/left <italic>before</italic> head turns left/right,” with a short pause between the two, rarely occur in positive Hypothetical conditionals (7.9% and 8.3%), leading to <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0086268.e143" xlink:type="simple"/></inline-formula> and 92.1% classification accuracy from the single feature of pausing alone. This observation supports our contention that assimilated “head turns left” starts the marking of negation and fast paced meeting of “head turns right” continues the marking. Without the “head turns right” as the second half of the fast paced negative headshake in positive conditionals, there is no purpose to the brief pause that separates the fast paced headshake from the rest of the head turns. Therefore, brief pauses between head turns highlights the separation of the fast paced negative headshake from the rest of the headshakes in negative conditionals. There is no need for these pauses in positive conditionals as the only head turns present are related to conditionality.</p>
+<p>Beyond the results above, our results further highlight the role of the mouth in nonmanuals. Note the frequency of “mouth shape other” (meaning, not round or flat) during (overlapping with) “head turns right” in a large number of negative Hypothetical conditionals.</p>
+<p>As we noted above, the fast paced “head turns left <italic>meets</italic> head turns right” gives us a strong cue for differentiating negative polarity from positive polarity in the conditional sentences. When this result is evaluated with “head turns right <italic>overlaps</italic> mouth shape other,” we come up with the pattern in <xref ref-type="fig" rid="pone-0086268-g008">Figure 8</xref> where “mouth shape other” overlaps with the second half of the headshake. This temporal relation gives us another interesting and novel finding in that “mouth shape other” temporally occurs after the onset of negation as marked by the first head turn to left. Although the involvement of the mouth for negation in ASL had been detected in previous research <xref ref-type="bibr" rid="pone.0086268-Veinberg1">[11]</xref>, given the technology of the time, back then it was only possible to report the timing relation between the headshake and the hand movement, but not the exact temporal relation between the two nonmanual markers headshake and mouth position.</p>
+<fig id="pone-0086268-g008" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0086268.g008</object-id><label>Figure 8</label><caption>
+<title>Computational model of polarity in Hypothetical conditionals.</title>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0086268.g008" position="float" xlink:type="simple"/></fig>
+<p>Next, note that the percentage of “mouth shape other” (46.3% vs. 17.9%) is strong enough not to be associated with a combined effect of lexical mouth-shapes of random signs in negative sentences. The contrast in discriminant percentages indicates that the mouth is actively involved in the expression of negation in ASL. This finding (82.1% and 46.3%, respectively) is consistent with results reported in <xref ref-type="bibr" rid="pone.0086268-Veinberg1">[11]</xref>. In their study, negative sentences were compared to positive controls; headshakes were not always present in negatives, and whether or not headshakes were present, there was involvement of the mouth and/or chin in 96.5% of the negative productions. Furthermore, they noted that the most frequent combinations of nonmanual markings for negatives involved eyes (squished or closed) and a mouth position (corners of mouth down, mouth stretched, mouth tightly closed, chin contracted). These mouth positions are included in our coding of “mouth shape other.”</p>
+<p>The fact that “mouth shape other” is not as frequent as headshake is another interesting finding. There are two ways to interpret this finding. First, although “mouth shape other” is present for almost half of the negative sentences, it could be a redundant or secondary prosodic cue, similar to the findings in <xref ref-type="bibr" rid="pone.0086268-Brentari2">[63]</xref> where the non-dominant hand is considered a secondary cue with respect to the primary cue of change in the mouth area tension. Therefore, “mouth shape other” would not need to occur as frequently as headshake. In this sense, headshake alone would be a sufficient prosodic cue for introducing negative polarity in conditionals. Second, the presence of “mouth shape other” could be a primary cue parallel to headshake. However, the combined semantic effect of headshake and “mouth shape other” may be more emphatic than the headshake alone. Therefore, the combination would only occur in situations where emphasis needs to be cued while headshake is more persistently present as the primary negative cue. Both of these possibilities need to be tested. The first one may be tested through prosodic perception studies while the second possibility may be tested with a semantic interpretation study. The upshot of the contribution of the current study is that the algorithm used in this study makes it possible for us to voice these two possibilities due to the temporal and distributional accuracy that we attain.</p>
+</sec><sec id="s3b2">
+<title>Wh-questions</title>
+<p>The discriminant features that distinguish negative and positive polarity in Wh-questions are more varied than those of Hypothetical conditionals and seem to be less clearly reflective of general negative marking. That is, they generally do not indicate head turns. Instead, a number of the features relate to mouth and teeth positions. In addition, there is no clear pattern of occurrence such as that seen with Hypothetical conditionals, where strong markings were seen for negatives as compared to positives. Here, sometimes a mouth or teeth feature is more prevalent in negatives and sometimes the reverse is true. This suggests that while Wh-questions can be clearly marked by brows down, when Wh-questions are negative, nonmanuals alone may not be able to carry both semantic functions. Such a conclusion is in keeping with two other observations in the literature. One is that both Wh-marking and negation use headshakes; the negative headshake is somewhat larger and slower <xref ref-type="bibr" rid="pone.0086268-Watson1">[12]</xref>. The other is that whereas Yes/no questions rarely are marked by a manual sign and rely primarily on the brows up nonmanual marking, Wh-questions are most frequently accompanied by a manual Wh-sign. There are some notable examples where a Wh-question can occur without a Wh-sign, for example MANY “how many,” COLOR “what color” <xref ref-type="bibr" rid="pone.0086268-LilloMartin1">[64]</xref>. But reliance on Wh-signs means that nonmanuals may not be systematically recruited to carry the full load of semantic marking by themselves. These results suggest that when negative and Wh-questions interact, nonmanuals like the mouth become more important.</p>
+<p>Moreover, the current results define several interesting interactions in Wh-questions and polarity. “Brows move down <italic>starts</italic> mouth open” is highly classificatory (91.9%) for positive Wh-questions by its absence. While “brows move down” is clearly related to Wh-questions, mouth open could be related to some of the Wh-words being mouthed (<italic>e.g.</italic>, who, what, which, when, why, etc.) and given the higher occurrence in negatives, possibly also ‘not.’ Another mouth cue with a high classification value (89%) for positives by its absence, “teeth open overlaps head turns right,” is almost three times more prevalent in negatives than in positives. Similarly, “mouth closed <italic>meets</italic> teeth open” is twice as prevalent in negatives as in positives and has a high classification value – its absence from positives yields correct classification 90.2% of the time despite its rare occurrence in Wh-questions in general. When such negative evidence (9.8%) is combined with positive evidence (30.8%), we may thus suggest that “mouth closed <italic>meets</italic> teeth open” is a candidate to discriminate between negative and positive polarity in Wh-questions. The computational model of this interaction is given in <xref ref-type="fig" rid="pone-0086268-g009">Figure 9</xref>.</p>
+<fig id="pone-0086268-g009" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0086268.g009</object-id><label>Figure 9</label><caption>
+<title>Computational model of positive versus negative polarity in Wh-questions.</title>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0086268.g009" position="float" xlink:type="simple"/></fig>
+<p>As we have discussed in the section above regarding negative conditionals, there is evidence of “mouth closed” as a marker of negation. The fact that it meets “teeth open” 30.8% of the time suggests that this cue may be interrupted by some lexical interference (mouthing of English words) tucked into the flow of prosody due to certain lexical items.</p>
+<p>Another mouth feature that has a high classification value for negative Wh-questions is “teeth touch lip,” which occurs in 25.2% of positives versus only 6.7% of negatives. This is likely the result of three of the positive Wh-questions containing signs that can be accompanied by mouthing of English words beginning with ‘f’ (fish, forks, finish).</p>
+</sec><sec id="s3b3">
+<title>Wh-questions postposed</title>
+<p>In contrast to regular Wh-questions, there is a clearer pattern to negative marking for Wh-questions postposed, with discriminant features all occurring more frequently in the negatives than in the positives. This pattern seems to support the argument above concerning regular Wh-questions. The basic difference between Wh-questions with and without Wh-sign postposing is that when the Wh-sign occurs at the end of the question, the material that occurs before the Wh-sign does not have to be covered by Wh-marking. As discussed in discriminant features for polarity in Wh-questions, the material prior to the Wh-sign can sometimes be considered an Assertion, meaning that Wh-marking and negation marking would not come into conflict. Hence, <xref ref-type="table" rid="pone-0086268-t010">Table 10</xref> reflects features of negation on non-Wh-marked signs. This means that the nonmanuals can carry negation clearly, as seen by the prevalence of head turns among the discriminant features. This suggests a fundamental linguistic difference between Wh-questions and Wh-questions postposed which confirms previous research <xref ref-type="bibr" rid="pone.0086268-Abner1">[37]</xref>.</p>
+<p>Like regular Wh-questions, we see increased prominence of mouth and teeth positions which will require further research to explain, such as the interaction of mouth gestures with mouthing the English words when certain signs are produced <xref ref-type="bibr" rid="pone.0086268-Nadolske1">[57]</xref>. Once again, this is an important, novel finding, reinforcing the previously overlooked suggestion of a more relevant mouth role in polarity <xref ref-type="bibr" rid="pone.0086268-Veinberg1">[11]</xref>.</p>
+</sec><sec id="s3b4">
+<title>Assertions</title>
+<p>The results for polarity marking of Assertions also show clear nonmanual marking of negation, as all discriminant features occur more often in negatives than in positives. The primary cue in all discriminant features is head turn, reflecting negative headshakes. The only other discriminant cue is “brows move up,” which occurs before “head turns right;” this is the result of those Assertions that begin with a topic or are preceded by a conditional clause, both of which are marked with brows up, followed by a negative Assertion marked with headshake.</p>
+<p>In sum, with the exception of Wh-questions, the marking of negative polarity is clear on the constructions included in this study, and Wh-questions themselves are known to differ from the other constructions in needing a manual Wh-sign most of the time. The surprises in the data are related to mouth and teeth positions, which seem to gain prominence as nonmanual marking becomes more complex when multiple semantic functions are expressed simultaneously.</p>
+</sec></sec></sec><sec id="s4">
+<title>Discussion</title>
+<p>Uncovering the discriminant features of the linguistic model governing nonmanuals in sign languages has proven to be an extremely hard problem. The present paper shows how this can be resolved using a linguistic-computational approach. In this approach a linguistic representation of the face is first obtained. A computational approach is then employed to determine the combination of these features consistently observed in each class but not with others. The resulting linguistic model proves to be able to discriminate between nine different classes of sentences – Hypothetical conditionals, Wh-questions, Wh-questions postposed and Assertions in their two polarities and Yes/no questions in positive polarity.</p>
+<p>The analyses described above strongly suggest that there are discriminant features that can be used to separate conditionals from non-conditionals, Yes/no questions from non-Yes/no-questions, Wh-questions and Wh-questions with postposed Wh-signs from non-Wh-questions, and Assertions from non-Assertions. In addition, for each of these except Yes/no questions which do not form negative in ASL, the discriminant features separate the negative structures from their positive counterparts. From the model (<xref ref-type="table" rid="pone-0086268-t003">Tables 3</xref>–<xref ref-type="table" rid="pone-0086268-t004"/><xref ref-type="table" rid="pone-0086268-t005"/><xref ref-type="table" rid="pone-0086268-t006"/><xref ref-type="table" rid="pone-0086268-t007"/><xref ref-type="table" rid="pone-0086268-t008"/><xref ref-type="table" rid="pone-0086268-t009"/><xref ref-type="table" rid="pone-0086268-t010"/><xref ref-type="table" rid="pone-0086268-t011">11</xref>), the results indicate that some features are more relevant to accomplishing these distinctions than others. For example, blinks do not play a role in making these structural distinctions, nor was it expected that they would, as their function is more closely related to the marking of constituent structure (syntactic phrases) and the intonational phrasing that surrounds them <xref ref-type="bibr" rid="pone.0086268-Wilbur1">[14]</xref>. Similarly, head tilts and head movements up and down appear to play no major role, leaving open the question of what their functions might be. Clearly the relevant features identified by these analyses are the head turns, brow positions, and mouth and teeth features. The results for brow position confirm our expectations, both for “brows move up” and “brows move down.”</p>
+<p>In addition, the algorithm gives temporal relations that are striking with respect to head turns, where there are both expected and important novel results. The use of multiple head turns as headshakes has been well-documented for ASL and other sign languages as a major nonmanual marker of negation <xref ref-type="bibr" rid="pone.0086268-Neidle1">[10]</xref>, <xref ref-type="bibr" rid="pone.0086268-Veinberg1">[11]</xref>, <xref ref-type="bibr" rid="pone.0086268-Pfau2">[38]</xref>, <xref ref-type="bibr" rid="pone.0086268-Geraci1">[60]</xref>, <xref ref-type="bibr" rid="pone.0086268-Hrastinski1">[62]</xref>. However, our findings with respect to temporal relations need to be emphasized because, as mentioned, although we know what makes a headshake, until now we did not have the means to quantitatively measure the temporal make-up of the interaction of the components of a headshake. In other words, the results of the present study suggest that not all temporal sequences of head turns left/right plus head turns right/left are the same. In negative conditionals and Assertions, negative polarity is most strongly cued when these meet one another, <italic>i.e.</italic>, a faster paced headshake.</p>
+<p>This opens a new venue for the study of headshakes. For instance, with regard to negative head turns it will be important to determine whether all negative headshakes are faster under all conditions across multiple sign languages. This possibility is raised in observations on Austrian Sign Language <xref ref-type="bibr" rid="pone.0086268-Lackner1">[55]</xref> concerning faster headshakes on negatives that follow regular speed headshakes on conditionals. The analysis can also be expanded to investigate if there are quantitative differences between languages that use headshake as a primary nonmanual cue such as ASL as compared to those that use negation as a secondary cue in addition to a different major nonmanual marker, such as Turkish Sign Language <xref ref-type="bibr" rid="pone.0086268-Gkgz2">[65]</xref>. We also expect that these two novel findings for ASL will urge researchers of other sign languages to quantitatively investigate the nature of headshake since the surface cue, <italic>i.e.</italic>, headshake, may very well be instantiated in more than one articulatory combination given the left and right directions of articulation, as well as temporal possibilities; a priori there is no reason to expect other sign languages which employ “headshake” as the major nonmanual cue to behave the same way as ASL does. On the big picture, this path also opens up an exciting agenda, both for ASL and cross-linguistic research, for quantitatively detecting nuances in the behavior of certain nonmanual markers which look the same on the surface even to the eye of an experienced sign language annotator.</p>
+<p>In addition to the insights about negation reported here, the approach presented in the present work also revealed that head turn left is a discriminant feature in conditionals. Again, work on Austrian Sign Language <xref ref-type="bibr" rid="pone.0086268-Lackner1">[55]</xref> is relevant for furthering research on this finding, noting that signers who are talking about things they think or wonder about use a higher, right side space. Conditionals are just such a possibility, as they indicate not fact but possibility, a hypothetical thought, possibly placed on the right for Austrian Sign Language. Comparing our findings with these in <xref ref-type="bibr" rid="pone.0086268-Lackner1">[55]</xref> opens up a research domain for further investigating crosslinguistic similarities and differences with the use space for conditionals.</p>
+<p>Lastly, the results also highlight the important role that the mouth and teeth play in negation. It is noted in <xref ref-type="bibr" rid="pone.0086268-Veinberg1">[11]</xref> that the most frequent combinations of nonmanual markings for negatives involved eyes (squished or closed) and a mouth position (corners of mouth down, mouth stretched, mouth tightly closed, chin contracted). These mouth positions are included in our coding of “mouth shape other,” which shows up as a discriminant feature overlapping with head turns in negatives. As we discuss above, the involvement of the mouth and teeth suggests importance of investigations in wider linguistic context to tease apart the possible secondary cue of “mouth shape other” from a possible interpretation of it as having a primary but emphatic function. Thus, these findings allow us to set up future studies by identifying the relevant variables that need to be controlled.</p>
+<p>As a final note, it should be noted that the methodology described herein (and the implementation of the computational approach in Elan) will most probably find applications beyond the studies of sign language. Elan is a generic tool used in several disciplines and the statstistical analysis described in the present paper is equally valid in these studies.</p>
+</sec><sec id="s5">
+<title>Supporting Information</title>
+<supplementary-material id="pone.0086268.s001" xlink:href="info:doi/10.1371/journal.pone.0086268.s001" mimetype="application/x-tex" position="float" xlink:type="simple"><label>Appendix S1</label><caption>
+<p><bold>Supporting Tables S1–S5.</bold></p>
+<p>(TEX)</p>
+</caption></supplementary-material></sec></body>
+<back><ref-list>
+<title>References</title>
+<ref id="pone.0086268-Chomsky1"><label>1</label>
+<mixed-citation publication-type="book" xlink:type="simple">Chomsky N (1995) The minimalist program. MIT press.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Fitch1"><label>2</label>
+<mixed-citation publication-type="book" xlink:type="simple">Fitch WT (2010) The evolution of language. Cambridge University Press.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Berwick1"><label>3</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Berwick</surname><given-names>RC</given-names></name>, <name name-style="western"><surname>Pietroski</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Yankama</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Chomsky</surname><given-names>N</given-names></name> (<year>2011</year>) <article-title>Poverty of the stimulus revisited</article-title>. <source>Cognitive Science</source> <volume>35</volume>: <fpage>1207</fpage>–<lpage>1242</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Sandler1"><label>4</label>
+<mixed-citation publication-type="book" xlink:type="simple">Sandler W, Lillo-Martin D (2006) Sign Language and Linguistic Universals. Cambridge University Press.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Messing1"><label>5</label>
+<mixed-citation publication-type="book" xlink:type="simple">Messing LS, Campbell R (1999) Gesture, speech, and sign. Oxford University Press.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Pfau1"><label>6</label>
+<mixed-citation publication-type="book" xlink:type="simple">Pfau R, Quer J (2010) Nonmanuals: Their prosodic and grammatical roles. In: Brentari D, editor, Sign Languages. A Cambridge Language Survey, Cambridge University Press. pp. 381–402.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Anderson1"><label>7</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Anderson</surname><given-names>DE</given-names></name>, <name name-style="western"><surname>Reilly</surname><given-names>JS</given-names></name> (<year>1998</year>) <article-title>PAH! the acquisition of adverbials in ASL</article-title>. <source>Sign Language &amp; Linguistics</source> <volume>1</volume> (<issue>2</issue>) <fpage>117</fpage>–<lpage>142</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Coulter1"><label>8</label>
+<mixed-citation publication-type="other" xlink:type="simple">Coulter G (1978) Raised eyebrows and wrinkled noses: The grammatical function of facial expression in relative clauses and related constructions. In: Proceedings of the second National Symposium on Sign Language Research and Teaching. Coronado, CA.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Dachkovsky1"><label>9</label>
+<mixed-citation publication-type="other" xlink:type="simple">Dachkovsky S (2008) Facial expression as intonation in Israeli Sign Language: The case of neutral and counterfactual conditionals. In: Quer J, editor, Signs of the time, Signum.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Neidle1"><label>10</label>
+<mixed-citation publication-type="book" xlink:type="simple">Neidle C, Kegl J, MacLaughlin D, Lee R, Bahan B (2000) The Syntax of American Sign Language: Functional Categories and Hierarchical Structure. MIT Press.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Veinberg1"><label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Veinberg</surname><given-names>SC</given-names></name>, <name name-style="western"><surname>Wilbur</surname><given-names>RB</given-names></name> (<year>1990</year>) <article-title>A linguistic analysis of the negative headshake in American Sign Language</article-title>. <source>Sign Language Studies</source> <volume>68</volume>: <fpage>217</fpage>–<lpage>244</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Watson1"><label>12</label>
+<mixed-citation publication-type="other" xlink:type="simple">Watson K (2010) Content question non-manual marking NMM in ASL. Master's thesis, Purdue University, West Lafayette, IN.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Weast1"><label>13</label>
+<mixed-citation publication-type="other" xlink:type="simple">Weast T (2008) Questions in American Sign Language: A quantitative analysis of raised and lowered eyebrows. Ph.D. thesis, University of Texas at Arlington, Arlington, TX.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Wilbur1"><label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wilbur</surname><given-names>RB</given-names></name> (<year>1994</year>) <article-title>Eyeblinks and ASL phrase structure</article-title>. <source>Sign Language Studies</source> <volume>84</volume>: <fpage>221</fpage>–<lpage>240</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Wilbur2"><label>15</label>
+<mixed-citation publication-type="book" xlink:type="simple">Wilbur RB (2000) Phonological and prosodic layering of non-manuals in American Sign Language. In: Lane H, Emmorey K, editors, The signs of language revisited: Festschrift for Ursula Bellugi and Edward Klima,, Lawrence Erlbaum. p. 213241.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Wilbur3"><label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wilbur</surname><given-names>RB</given-names></name> (<year>2011</year>) <article-title>Nonmanuals, semantic operators, domain marking, and the solution to two outstanding puzzles in ASL</article-title>. <source>Sign Language &amp; Linguistics</source> <volume>14</volume>: <fpage>148</fpage>–<lpage>178</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Wilbur4"><label>17</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wilbur</surname><given-names>RB</given-names></name>, <name name-style="western"><surname>Patschke</surname><given-names>C</given-names></name> (<year>1998</year>) <article-title>Body leans and the marking of contrast in ASL</article-title>. <source>Journal of Pragmatics</source> <volume>30</volume>: <fpage>275303</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Wilbur5"><label>18</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wilbur</surname><given-names>RB</given-names></name>, <name name-style="western"><surname>Patschke</surname><given-names>C</given-names></name> (<year>1999</year>) <article-title>Syntactic correlates of brow raise in ASL</article-title>. <source>Sign Language &amp; Linguistics</source> <volume>2</volume>: <fpage>3</fpage>–<lpage>40</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Stokoe1"><label>19</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Stokoe</surname><given-names>WC</given-names></name> (<year>1960</year>) <article-title>Sign language structure: an outline of the visual communication systems of the American deaf</article-title>. <source>Studies in Linguistics: Occasional Papers</source> <volume>8</volume>: <fpage>7</fpage>–<lpage>78</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Stokoe2"><label>20</label>
+<mixed-citation publication-type="book" xlink:type="simple">Stokoe WC, Casterline D, Croneberg C (1965) A Dictionary of American Sign Language on Linguistic Principles. Gallaudet College Press.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Battison1"><label>21</label>
+<mixed-citation publication-type="book" xlink:type="simple">Battison R (1978) Lexical Borrowing in American Sign Language. Linstok Press.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Brentari1"><label>22</label>
+<mixed-citation publication-type="book" xlink:type="simple">Brentari D (1998) Prosodic Model of Sign Language Phonology. Mit Press.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Sandler2"><label>23</label>
+<mixed-citation publication-type="book" xlink:type="simple">Sandler W (1989) Phonological Representation of the Sign: Lineatity and Non-Linearity in American Sign Language. Mouton De Gruyter.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Makarolu1"><label>24</label>
+<mixed-citation publication-type="other" xlink:type="simple">Makaroğlu B (2012) Questions in Turkish Sign Language: Linguistic Analysis of Eyebrows. Master's thesis, Ankara University.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Wilbur6"><label>25</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wilbur</surname><given-names>RB</given-names></name> (<year>2009</year>) <article-title>Effects of varying rate of signing on ASL manual signs and nonmanual markers</article-title>. <source>Language and Speech</source> <volume>52</volume>: <fpage>245285</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Aarons1"><label>26</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Aarons</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Bahan</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Kegl</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Neidle</surname><given-names>C</given-names></name> (<year>1992</year>) <article-title>Clausal structure and a tier for grammatical marking in ASL</article-title>. <source>Nordic Journal of Linguistics</source> <volume>15</volume>: <fpage>103142</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Churng1"><label>27</label>
+<mixed-citation publication-type="other" xlink:type="simple">Churng S (2006) Synchronizing modalities: A model for synchronization of gesture and speech as evidenced by American Sign Language. In: Proceedings of the 25th West Coast Conference on Formal Linguistics. Somerville, MA, pp. 114–122.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Kelly1"><label>28</label>
+<mixed-citation publication-type="other" xlink:type="simple">Kelly D, Reilly Delannoy J, Mc Donald J, Markham C (2009) A framework for continuous multimodal sign language recognition. In: Proceedings of the 2009 International Conference on Multimodal Interfaces. pp. 351–358.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Loeding1"><label>29</label>
+<mixed-citation publication-type="other" xlink:type="simple">Loeding BL, Sarkar S, Parashar A, Karshmer AI (2004) Progress in automated computer recognition of sign language. In: Proceedings of 9th International Conference on Computers Helping People with Special Needs (ICCHP). pp. 1079–1087.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Ding1"><label>30</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ding</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Martinez</surname><given-names>AM</given-names></name> (<year>2010</year>) <article-title>Features versus context: An approach for precise and detailed detection and delineation of faces and facial features</article-title>. <source>IEEE Trans on Pattern Analysis and Machine Intelligence</source> <volume>32</volume>: <fpage>2022</fpage>–<lpage>2038</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Pitsikalis1"><label>31</label>
+<mixed-citation publication-type="other" xlink:type="simple">Pitsikalis V, Theodorakis S, Vogler C, Maragos P (2011) Advances in phonetics-based sub-unit modeling for transcription alignment and sign language recognition. In: Proccedings of Computer Vision and Pattern Recognition Workshops (CVPRW). pp. 1–6.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Gotardo1"><label>32</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gotardo</surname><given-names>PFU</given-names></name>, <name name-style="western"><surname>Martinez</surname><given-names>AM</given-names></name> (<year>2011</year>) <article-title>Computing smooth time trajectories for camera and deformable shape in structure from motion with occlusion</article-title>. <source>IEEE Trans on Pattern Analysis and Machine Intelligence</source> <volume>33</volume>: <fpage>2051</fpage>–<lpage>2065</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Brugman1"><label>33</label>
+<mixed-citation publication-type="other" xlink:type="simple">Brugman H, Russel A, Nijmegen X (2004) Annotating multi-media/multimodal resources with ELAN. In: Proceedings of International Conference on Language Resources and Evaluation. pp. 2065–2068.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Baker1"><label>34</label>
+<mixed-citation publication-type="book" xlink:type="simple">Baker C, Padden C (1978) Focusing on the nonmanual components of ASL. In: Siple P, editor, Understanding Language Through Sign Language Research, Academic Press. pp. 27–57.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Churng2"><label>35</label>
+<mixed-citation publication-type="other" xlink:type="simple">Churng S (2009) Syntax and Prosody in American Sign Language: The Nonmanual Prosodic Consequences of Multiple Wh-Questions. Master's thesis, University of Washington, Seatle, WA.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Churng3"><label>36</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Churng</surname><given-names>S</given-names></name> (<year>2011</year>) <article-title>Syntax and prosodic consequences in ASL evidence from multiple Wh-questions</article-title>. <source>Sign Language &amp; Linguistics</source> <volume>14</volume>: <fpage>9</fpage>–<lpage>48</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Abner1"><label>37</label>
+<mixed-citation publication-type="other" xlink:type="simple">Abner N (2010) Wh-words that go bump on the right. In: Proceedings of the 28th West Coast Conference on Formal Linguistics. Somerville, MA, pp. 24–32.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Pfau2"><label>38</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pfau</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Quer</surname><given-names>J</given-names></name> (<year>2002</year>) <article-title>V-to-neg raising and negative concord in three sign languages</article-title>. <source>Rivista di Grammatica Generativa</source> <volume>27</volume>: <fpage>73</fpage>–<lpage>86</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Romero1"><label>39</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Romero</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Han</surname><given-names>CH</given-names></name> (<year>2004</year>) <article-title>On negative Yes/no questions</article-title>. <source>Linguistics and Philosophy</source> <volume>27</volume> (<issue>5</issue>) <fpage>609</fpage>–<lpage>658</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Gkgz1"><label>40</label>
+<mixed-citation publication-type="other" xlink:type="simple">Gökgöz K, Wilbur RB (in preparation) On the availability of verb movement in TID: evidence from interpreting negation in yes/no questions. In: Proceedings of Formal and Experimental Advances in Sign Language Theory 2012.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Wilbur7"><label>41</label>
+<mixed-citation publication-type="other" xlink:type="simple">Wilbur RB, Gökgöz K, Shay R, Martinez AM (2011) Mechanics and issues in making ASL databases available. In: Proceedings Workshop on Sign Language Corpora in North America. Washington DC.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Neth1"><label>42</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Neth</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Martinez</surname><given-names>AM</given-names></name> (<year>2009</year>) <article-title>Emotion perception in emotionless face images suggests a norm-based representation</article-title>. <source>Journal of Vision</source> <volume>9</volume>: <fpage>1</fpage>–<lpage>11</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Neth2"><label>43</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Neth</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Martinez</surname><given-names>AM</given-names></name> (<year>2010</year>) <article-title>A computational shape-based model of anger and sadness justifies a configural representation of faces</article-title>. <source>Vision Research</source> <volume>50</volume>: <fpage>1693</fpage>–<lpage>1711</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086268-deVos1"><label>44</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>de Vos</surname><given-names>C</given-names></name>, <name name-style="western"><surname>van der Kooij</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Crasborn</surname><given-names>O</given-names></name> (<year>2009</year>) <article-title>Mixed signals: Combining linguistic and affective functions of eyebrows in questions in Sign Language of the Netherlands</article-title>. <source>Languag</source> <volume>52</volume>: <fpage>315</fpage>–<lpage>339</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Braem1"><label>45</label>
+<mixed-citation publication-type="book" xlink:type="simple">Braem PB, Sutton-Spence R, editors(2001) The Hands Are the Head of the Mouth: The Mouth As Articulator in Sign Languages. Signum.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Porikli1"><label>46</label>
+<mixed-citation publication-type="other" xlink:type="simple">Porikli F, Haga T (2004) Event detection by eigenvector decomposition using object and frame features. In: Proceedings of Computer Vision and Pattern Recognition Workshop, (CVPRW). Washington, D.C.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Allen1"><label>47</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Allen</surname><given-names>JF</given-names></name> (<year>1984</year>) <article-title>Towards a general model of action and time</article-title>. <source>Artificial Intelligence</source> <volume>23</volume>: <fpage>123</fpage>–<lpage>154</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Martinez1"><label>48</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Martinez</surname><given-names>AM</given-names></name>, <name name-style="western"><surname>Zhu</surname><given-names>M</given-names></name> (<year>2005</year>) <article-title>Where are linear feature extraction methods applicable</article-title>. <source>IEEE Trans on Pattern Analysis and Machine Intelligence</source> <volume>27</volume>: <fpage>1934</fpage>–<lpage>1944</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Friedman1"><label>49</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Friedman</surname><given-names>JH</given-names></name> (<year>1989</year>) <article-title>Regularized discriminant analysis</article-title>. <source>Journal of The American Statistical Association</source> <volume>84</volume>: <fpage>165</fpage>–<lpage>175</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Zhu1"><label>50</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zhu</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Martinez</surname><given-names>AM</given-names></name> (<year>2008</year>) <article-title>Using the information embedded in the testing sample to break the limits caused by the small sample size in microarray-based classification</article-title>. <source>BMC Bioinformatics</source> <volume>9</volume>: <fpage>280</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086268-BakerShenk1"><label>51</label>
+<mixed-citation publication-type="other" xlink:type="simple">Baker-Shenk C (1983) A micro-analysis of the nonmanual component of questions in American Sign Language. Ph.D. thesis, University of California, Berkeley, CA.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Liddell1"><label>52</label>
+<mixed-citation publication-type="book" xlink:type="simple">Liddell S (1980) American Sign Language Syntax. Mouton De Gruyter.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Liddell2"><label>53</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Liddell</surname><given-names>S</given-names></name> (<year>1986</year>) <article-title>Head thrust in asl conditional marking</article-title>. <source>Sign Language Studies</source> <volume>52</volume>: <fpage>243</fpage>–<lpage>363</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Barbera1"><label>54</label>
+<mixed-citation publication-type="other" xlink:type="simple">Barbera G (2012) The meaning of space in Catalan Sign Language (LSC): Reference, specificity and structure in signed discourse. Ph.D. thesis, Universitat Pompeu Fabra, Barcelona, Spain.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Lackner1"><label>55</label>
+<mixed-citation publication-type="other" xlink:type="simple">Lackner A (2012) Coding modality in Austrian Sign Language. Submitted.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Bahan1"><label>56</label>
+<mixed-citation publication-type="other" xlink:type="simple">Bahan B (1996) Nonmanual Realization of Agreement in American Sign Language. Ph.D. thesis, Boston University, Boston, MA.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Nadolske1"><label>57</label>
+<mixed-citation publication-type="book" xlink:type="simple">Nadolske M, Rosenstock R (2007) Occurrence of mouthings in ASL: A preliminary study. In: Perniss P, Pfau R, Steinbach M, editors, Visible Variation: Comparative Studies on Sign Language Structure, Mouton De Gruyter. pp. 35–61.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Neidle2"><label>58</label>
+<mixed-citation publication-type="book" xlink:type="simple">Neidle C, MacLaughlin D (2002) The distribution of functional projections in ASL: Evidence from overt expressions of syntactic features. In: Cinque G, editor, Functional Structure in the DP and IP: The Cartography of Syntactic Structures, Oxford University Press, volume 1. pp. 195–224.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Aarons2"><label>59</label>
+<mixed-citation publication-type="other" xlink:type="simple">Aarons D (1994) Aspects of the syntax of American Sign Language. Ph.D. thesis, Boston University, Boston, MA.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Geraci1"><label>60</label>
+<mixed-citation publication-type="other" xlink:type="simple">Geraci C (2005) Negation in LIS (Italian Sign Language). In: Proceedings of North East Linguistic Society. pp. 217–229.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Zeshan1"><label>61</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zeshan</surname><given-names>U</given-names></name> (<year>2004</year>) <article-title>Hand, head, and face: Negative constructions in sign languages</article-title>. <source>Linguistic Typology</source> <volume>8</volume>: <fpage>1</fpage>–<lpage>58</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Hrastinski1"><label>62</label>
+<mixed-citation publication-type="other" xlink:type="simple">Hrastinski I (2010) Negative structures in Croatian Sign Language. Master's thesis, Purdue University, West Lafayette, IN.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Brentari2"><label>63</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Brentari</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Crossley</surname><given-names>L</given-names></name> (<year>2002</year>) <article-title>Prosody on the hands and face</article-title>. <source>Sign Language &amp; Linguistics</source> <volume>5</volume> (<issue>2</issue>) <fpage>105</fpage>–<lpage>130</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086268-LilloMartin1"><label>64</label>
+<mixed-citation publication-type="other" xlink:type="simple">Lillo-Martin D, Fischer S (1992) Overt and covert Wh-questions in ASL. In: Proceedings of 5<sup>th</sup> Theoretical Issues in Sign Language Research Conference. Salamanca, Spain.</mixed-citation>
+</ref>
+<ref id="pone.0086268-Gkgz2"><label>65</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gökgöz</surname><given-names>K</given-names></name> (<year>2011</year>) <article-title>Negation in Turkish Sign Language: The syntax of nonmanual markers</article-title>. <source>Sign Language &amp; Linguistics</source> <volume>14:1</volume>: <fpage>49</fpage>–<lpage>75</lpage>.</mixed-citation>
+</ref>
+</ref-list></back>
+</article>

@@ -1,0 +1,1989 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group>
+<journal-title>PLoS ONE</journal-title></journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-13-51081</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0091510</article-id>
+<article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Mathematics</subject><subj-group><subject>Statistics</subject><subj-group><subject>Confidence intervals</subject><subject>Statistical methods</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Social and behavioral sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Cultural anthropology</subject><subj-group><subject>Ethnic groups</subject></subj-group></subj-group><subj-group><subject>Social anthropology</subject></subj-group></subj-group><subj-group><subject>Archaeology</subject><subj-group><subject>Ethnoarchaeology</subject></subj-group></subj-group><subj-group><subject>Psychology</subject><subj-group><subject>Social psychology</subject></subj-group></subj-group><subj-group><subject>Sociology</subject><subj-group><subject>Social networks</subject></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Modeling Group Size and Scalar Stress by Logistic Regression from an Archaeological Perspective</article-title>
+<alt-title alt-title-type="running-head">Predictive Model of Scalar Stress for Archaeology</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Alberti</surname><given-names>Gianmarco</given-names></name><xref ref-type="aff" rid="aff1"/><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+</contrib-group>
+<aff id="aff1"><addr-line>Independent Researcher, Catania, Italy</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Sánchez</surname><given-names>Angel</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Universidad Carlos III de Madrid, Spain</addr-line></aff>
+<author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">gianmarcoalberti@tin.it</email></corresp>
+<fn fn-type="conflict"><p>The author has declared that no competing interests exist.</p></fn>
+<fn fn-type="con"><p>Conceived and designed the experiments: GA. Analyzed the data: GA. Wrote the paper: GA. Evaluated the results: GA.</p></fn>
+</author-notes>
+<pub-date pub-type="collection"><year>2014</year></pub-date>
+<pub-date pub-type="epub"><day>13</day><month>3</month><year>2014</year></pub-date>
+<volume>9</volume>
+<issue>3</issue>
+<elocation-id>e91510</elocation-id>
+<history>
+<date date-type="received"><day>4</day><month>12</month><year>2013</year></date>
+<date date-type="accepted"><day>12</day><month>2</month><year>2014</year></date>
+</history>
+<permissions>
+<copyright-year>2014</copyright-year>
+<copyright-holder>Gianmarco Alberti</copyright-holder><license xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions>
+<abstract>
+<p>Johnson’s scalar stress theory, describing the mechanics of (and the remedies to) the increase in in-group conflictuality that parallels the increase in groups’ size, provides scholars with a useful theoretical framework for the understanding of different aspects of the material culture of past communities (i.e., social organization, communal food consumption, ceramic style, architecture and settlement layout). Due to its relevance in archaeology and anthropology, the article aims at proposing a predictive model of critical level of scalar stress on the basis of community size. Drawing upon Johnson’s theory and on Dunbar’s findings on the cognitive constrains to human group size, a model is built by means of Logistic Regression on the basis of the data on colony fissioning among the Hutterites of North America. On the grounds of the theoretical framework sketched in the first part of the article, the absence or presence of colony fissioning is considered expression of not critical vs. critical level of scalar stress for the sake of the model building. The model, which is also tested against a sample of archaeological and ethnographic cases: a) confirms the existence of a significant relationship between critical scalar stress and group size, setting the issue on firmer statistical grounds; b) allows calculating the intercept and slope of the logistic regression model, which can be used in any time to estimate the probability that a community experienced a critical level of scalar stress; c) allows locating a critical scalar stress threshold at community size 127 (95% CI: 122–132), while the maximum probability of critical scale stress is predicted at size 158 (95% CI: 147–170). The model ultimately provides grounds to assess, for the sake of any further archaeological/anthropological interpretation, the probability that a group reached a hot spot of size development critical for its internal cohesion.</p>
+</abstract>
+<funding-group><funding-statement>The author has no support or funding to report.</funding-statement></funding-group><counts><page-count count="15"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title>Introduction</title>
+<p>In anthropological and archaeological literature considerable attention is paid to the relationship between human groups size and different aspects of past material culture and social organization. Unlike previous works focusing on the connection between size and complexity (overview in <xref ref-type="bibr" rid="pone.0091510-Feinman1">[1]</xref>, <xref ref-type="bibr" rid="pone.0091510-Feinman2">[2]</xref>), R. Rappaport and G. Johnson firstly and explicitly stressed the existence of limits to groups size due to communication strains, as Bandy notes <xref ref-type="bibr" rid="pone.0091510-Bandy1">[3]</xref>. On the grounds of different ethnographic case studies, they termed by <italic>irritation coefficient</italic> <xref ref-type="bibr" rid="pone.0091510-Rappaport1">[4]</xref> and <italic>scalar stress</italic> <xref ref-type="bibr" rid="pone.0091510-Johnson1">[5]</xref>, <xref ref-type="bibr" rid="pone.0091510-Johnson2">[6]</xref> the increase in in-group conflictuality that parallels the increase in groups’ size. Johnson extensively elaborated on the issue and on its numerical aspects, and framed the phenomenon in terms of groups’ decision-making. Simply put, given that daily interactions in human groups are based on communications between individuals, and that communication can be conceived as an information flow, a group arrives at a consensual decision by means of a face-to-face flow of information. This geometrically increases as the number of individuals increases, becoming unmanageable beyond a certain threshold. Further, to Johnson, human groups may address scale-related issues by either fission or group reorganization, which will be reviewed later in this work.</p>
+<p>From an anthropological standpoint, a number of scholars have further underscored the existence of a group-size threshold, supporting Johnson’s notion of scalar stress. In his study of early village societies in the Bolivia’s Titicaca Basin, Bandy <xref ref-type="bibr" rid="pone.0091510-Bandy1">[3]</xref> notes that among the Siuai (New Guinea) village fissioning depends on the frequency of quarrelling, while Fry <xref ref-type="bibr" rid="pone.0091510-Fry1">[7]</xref>, <xref ref-type="bibr" rid="pone.0091510-Fry2">[8]</xref> underscores that conflicts, though managed without violence, are widespread among small-size nomadic groups. Holmberg <xref ref-type="bibr" rid="pone.0091510-Holmberg1">[9]</xref>, for example, notes that among the Siriono, hunter-gatherers of eastern Bolivia, in-group conflicts occur between all types of people, relatives and nonrelatives. Groups may fission when tensions between individuals become intense. Among the Yanomama, South American Indians, Chagnon <xref ref-type="bibr" rid="pone.0091510-Chagnon1">[10]</xref> notes that intravillage conflicts arise when the number of inhabitants rises above 200. By the same token, Bowser <xref ref-type="bibr" rid="pone.0091510-Bowser1">[11]</xref> stresses that in the Ecuadorian community of Conambo (about 200 people living in 25 households) conflicts often break up for different causes such as, e.g., marriage requests, fight between young men for jealousy, rights of new families to move into the community.</p>
+<p>From an archaeological perspective, even though scalar stress theory has been criticized (e.g., <xref ref-type="bibr" rid="pone.0091510-Duff1">[12]</xref>) for overlooking the contribution of agency <xref ref-type="bibr" rid="pone.0091510-Dobres1">[13]</xref>, <xref ref-type="bibr" rid="pone.0091510-Robb1">[14]</xref> in the process of social organization, and acknowledging the fact that indicators of scalar stress can be difficult to identify archaeologically <xref ref-type="bibr" rid="pone.0091510-Parkinson1">[15]</xref>, Johnson’s findings continue to provide scholars with a useful theoretical framework for the understanding of many aspects of the life and material culture of past communities, like social organization <xref ref-type="bibr" rid="pone.0091510-Friesen1">[16]</xref>–<xref ref-type="bibr" rid="pone.0091510-Rakita1">[19]</xref>, stylistic display <xref ref-type="bibr" rid="pone.0091510-Parkinson1">[15]</xref>, <xref ref-type="bibr" rid="pone.0091510-Hegmon1">[20]</xref>–<xref ref-type="bibr" rid="pone.0091510-Nelson1">[22]</xref>, communal food consumption <xref ref-type="bibr" rid="pone.0091510-Potter1">[23]</xref>–<xref ref-type="bibr" rid="pone.0091510-Twiss1">[25]</xref>, architecture and settlement layout <xref ref-type="bibr" rid="pone.0091510-Bandy1">[3]</xref>, <xref ref-type="bibr" rid="pone.0091510-Friesen1">[16]</xref>, <xref ref-type="bibr" rid="pone.0091510-Hegmon1">[20]</xref>, <xref ref-type="bibr" rid="pone.0091510-Lee1">[24]</xref>, <xref ref-type="bibr" rid="pone.0091510-Bernardini1">[26]</xref>–<xref ref-type="bibr" rid="pone.0091510-Byrd2">[33]</xref>. As Ames <xref ref-type="bibr" rid="pone.0091510-Ames1">[17]</xref> notes, scalar stress is considered one of the proximate causes of the origin and development of social inequality and complexity, since it allows leadership to emerge to ameliorate scale-related social problems (see also <xref ref-type="bibr" rid="pone.0091510-Friesen1">[16]</xref>, <xref ref-type="bibr" rid="pone.0091510-LeeLyman1">[18]</xref>). Hegmon <xref ref-type="bibr" rid="pone.0091510-Hegmon1">[20]</xref>, <xref ref-type="bibr" rid="pone.0091510-Hegmon2">[21]</xref> locates a connection between scalar stress and ceramic style, arguing that the latter, as vehicle of social identity, may ameliorate scale-related issues by promoting the communication flow between socially distant individuals. By the same token, Nelson et al. <xref ref-type="bibr" rid="pone.0091510-Nelson1">[22]</xref> underscore the relevance of style in consensual decision making for its ability to promote a sense of sameness among interacting individuals and to enhance group cohesion. As for feasting, Lee <xref ref-type="bibr" rid="pone.0091510-Lee1">[24]</xref>, for instance, underscores the connection between large structures at the Neolithic settlement of Jiangzhai (China) and material remains related to shared food consumption, considering both as critical for the community’s cohesion. As far as architecture and settlement layout is concerned, Adler and Wilshusen <xref ref-type="bibr" rid="pone.0091510-Adler3">[30]</xref>, <xref ref-type="bibr" rid="pone.0091510-Adler4">[34]</xref> have located a connection between scale-related social issues and the use of structures for the integration of individuals above the household level, which they termed integrative facilities. These are places where scalar stress-reduction practices are put to work in the context of information control and decision-making. As the scholars underscore, expanding a Johnson’s idea <xref ref-type="bibr" rid="pone.0091510-Johnson1">[5]</xref> and building upon Rappaport <xref ref-type="bibr" rid="pone.0091510-Rappaport2">[35]</xref> and Turner’s <xref ref-type="bibr" rid="pone.0091510-Turner1">[36]</xref> view of ritual, inasmuch rituals can be conceived as sequences of redundant and invariant acts, they can ameliorate scalar stress by promoting an effective communication flow and by fostering in-group consensus and cohesion. Drawing upon Adler and Wilshusen’s findings, integrative facilities aimed at counteracting divisive social forces, integrating people at different levels, and promoting social bonds, have been identified by scholars working in different cultural and chronological horizons (see also <xref ref-type="bibr" rid="pone.0091510-Hayden1">[37]</xref> for an overview), like Sicily <xref ref-type="bibr" rid="pone.0091510-Alberti1">[38]</xref>, Neolithic Greece <xref ref-type="bibr" rid="pone.0091510-Souvatzi1">[39]</xref>, Anatolia <xref ref-type="bibr" rid="pone.0091510-Dring1">[40]</xref>, Near East <xref ref-type="bibr" rid="pone.0091510-Byrd1">[32]</xref>, <xref ref-type="bibr" rid="pone.0091510-Stordeur1">[41]</xref>–<xref ref-type="bibr" rid="pone.0091510-Finlayson1">[43]</xref>, China <xref ref-type="bibr" rid="pone.0091510-Lee1">[24]</xref>, Mongolian Steppe <xref ref-type="bibr" rid="pone.0091510-Houle1">[27]</xref>, pre-contact North <xref ref-type="bibr" rid="pone.0091510-Bernardini1">[26]</xref>, <xref ref-type="bibr" rid="pone.0091510-Adler1">[28]</xref>, <xref ref-type="bibr" rid="pone.0091510-Adler2">[29]</xref>, <xref ref-type="bibr" rid="pone.0091510-Hayden1">[37]</xref>, <xref ref-type="bibr" rid="pone.0091510-Hockett1">[44]</xref> and South America <xref ref-type="bibr" rid="pone.0091510-Bandy1">[3]</xref>, <xref ref-type="bibr" rid="pone.0091510-Bandy2">[31]</xref> (<xref ref-type="fig" rid="pone-0091510-g001">Fig. 1</xref>).</p>
+<fig id="pone-0091510-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0091510.g001</object-id><label>Figure 1</label><caption>
+<title>Example of integrative facility at the Middle Bronze Age settlement at Lipari (north-eastern Sicily, Italy).</title>
+<p><bold>A</bold>) Main excavation areas (dark grey), trenches (black), limits of MBA occupation (dotted line). <bold>B–C</bold>) Layout of the southern (<bold>B</bold>) and northern (<bold>C</bold>) sector of the settlement. In evidence (larger label) the oversized polygonal structure (Gamma 12) possibly used as integrative facility according to Alberti’s analysis <xref ref-type="bibr" rid="pone.0091510-Alberti1">[38]</xref> (A–C drawing by the Author after <xref ref-type="bibr" rid="pone.0091510-BernabBrea1">[101]</xref>).</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0091510.g001" position="float" xlink:type="simple"/></fig><sec id="s1a">
+<title>Aim of the Study</title>
+<p>Given the importance of Johnson’s theory of scalar stress for the understanding of many aspects of past communities’ organization and material culture, this work aims at building a predictive model <xref ref-type="bibr" rid="pone.0091510-Verhagen1">[45]</xref>, <xref ref-type="bibr" rid="pone.0091510-Westcott1">[46]</xref> of scalar stress that can be put to work when estimates of settlement population are available. A predictive model can prove useful when one wishes to predict the probability that a settlement experienced scale-related issues, i.e. it was past the aforementioned communication-strain threshold, therefore experiencing critical scalar stress. A predictive model would so provide a framework for a better understanding and interpretation of evidences like integrative facilities or other material remains of possible integrative nature. Acknowledging that fact that the estimation of a site’s population on archaeological grounds is a thorny problem (e.g., <xref ref-type="bibr" rid="pone.0091510-Hassan1">[47]</xref>, <xref ref-type="bibr" rid="pone.0091510-Schacht1">[48]</xref>–<xref ref-type="bibr" rid="pone.0091510-Pori1">[52]</xref>) and that this could condition the application of the model to archaeological case, as a matter of fact archaeologists are often in the position to arrive at an estimate of the number of residents (e.g., <xref ref-type="bibr" rid="pone.0091510-Bandy1">[3]</xref>, <xref ref-type="bibr" rid="pone.0091510-Lee1">[24]</xref>, <xref ref-type="bibr" rid="pone.0091510-Bernardini1">[26]</xref>, <xref ref-type="bibr" rid="pone.0091510-Dring1">[40]</xref>, <xref ref-type="bibr" rid="pone.0091510-Hill1">[53]</xref>, <xref ref-type="bibr" rid="pone.0091510-Withelaw1">[54]</xref>–<xref ref-type="bibr" rid="pone.0091510-Peterson1">[56]</xref>). This makes feasible the use of the proposed model. If population size can be estimated beforehand, e.g. by probabilistic sampling <xref ref-type="bibr" rid="pone.0091510-Hill1">[53]</xref>, survey data <xref ref-type="bibr" rid="pone.0091510-Bandy1">[3]</xref>, projection of the exposed residential area <xref ref-type="bibr" rid="pone.0091510-Lee1">[24]</xref>, <xref ref-type="bibr" rid="pone.0091510-Shelach1">[55]</xref>, <xref ref-type="bibr" rid="pone.0091510-Peterson1">[56]</xref> or other approaches (e.g., <xref ref-type="bibr" rid="pone.0091510-Hally1">[57]</xref>, <xref ref-type="bibr" rid="pone.0091510-Pori2">[58]</xref>), then the model can provide the basis to predict the probability of experiencing critical scalar stress, allowing expecting the presence of evidence of integrative mechanisms (e.g., integrative facilities) and hence possibly tailoring the researches on field. If evidences pointing to mechanisms of possible integrative nature are documented, the predicted probability returned by the model can provide grounds for evaluating if a critical level of communication stress was reached and could therefore account for such evidences.</p>
+<p>It must be stressed at the outset that while the practices put to work by groups to counteract stress represent interesting fields of inquiry, they are beyond the scope of this study, which rather focuses on building a predictive model of scalar stress. Although at a descriptive level, many types of human responses to scale-related issues are reported both earlier and later on in this article, such as fission, hierarchization, development of integrative mechanisms, stylistic display, and communal consumption, none of which I intend to directly address.</p>
+<p>The goal of the study is achieved by the following steps, which make up the remainder of this article. First, I review the Johnson’s theory of scalar stress, highlighting its cognitive bases and numerical aspects. Also, I put his theory in relation with the Dunbar’s model of cognitive limits to group size <xref ref-type="bibr" rid="pone.0091510-Dunbar1">[59]</xref>; this is done for two reasons: (a) because this model is germane to the Johnson’s scalar stress perspective (e.g., <xref ref-type="bibr" rid="pone.0091510-Feinman1">[1]</xref>), and (b) because Dunbar’s model allows translating (so to say) Johnson’s theory in terms of sheer number of individuals rather than decision-making units. After, a predictive model for scalar stress is built by means of logistic regression <xref ref-type="bibr" rid="pone.0091510-Peng1">[60]</xref>–<xref ref-type="bibr" rid="pone.0091510-Agresti1">[62]</xref> on the basis of the data derived from the Olsen’s study <xref ref-type="bibr" rid="pone.0091510-Olsen1">[63]</xref> of the cycles of community fission among the Hutterites of North America <xref ref-type="bibr" rid="pone.0091510-Peter1">[64]</xref>–<xref ref-type="bibr" rid="pone.0091510-Janzen1">[66]</xref>, which can be considered <xref ref-type="bibr" rid="pone.0091510-Dunbar1">[59]</xref>, <xref ref-type="bibr" rid="pone.0091510-Gladwell1">[67]</xref>–<xref ref-type="bibr" rid="pone.0091510-Dunbar3">[69]</xref> evidence of the constrains put to group size by human cognitive limits. The model is then discussed and tested against both archaeological and ethnographical data.</p>
+</sec><sec id="s1b">
+<title>Theoretical Framework</title>
+<p>To Johnson <xref ref-type="bibr" rid="pone.0091510-Johnson1">[5]</xref>, there seems to exist a threshold in groups’ size above which communication flow becomes unmanageable. In locating around 6 that threshold, he relied upon previous studies <xref ref-type="bibr" rid="pone.0091510-Hackman1">[70]</xref>–<xref ref-type="bibr" rid="pone.0091510-Ziller1">[72]</xref> in cognitive psychology and small-group dynamics (overview in <xref ref-type="bibr" rid="pone.0091510-Forsyth1">[73]</xref>, <xref ref-type="bibr" rid="pone.0091510-Levine1">[74]</xref>, <xref ref-type="bibr" rid="pone.0091510-McGrath1">[75]</xref>). These have pointed out that during decision-making, the quality of task solution increases with group size because larger groups have higher probability that someone will have pieces of information essential to the problem’s solution <xref ref-type="bibr" rid="pone.0091510-Cummings1">[76]</xref>. Nonetheless, as group’s size increases, the quality of the decision drops fast <xref ref-type="bibr" rid="pone.0091510-Ziller1">[72]</xref>, <xref ref-type="bibr" rid="pone.0091510-Manners1">[77]</xref>. Members see larger groups as too large for an effective task performance, having too much competition, disunity, disagreement <xref ref-type="bibr" rid="pone.0091510-Hackman1">[70]</xref>, <xref ref-type="bibr" rid="pone.0091510-Hare1">[71]</xref> and communicative difficulties that create stress on individuals <xref ref-type="bibr" rid="pone.0091510-Slater1">[78]</xref>. As size increases, groups tend to form sub-groups, which lead to a drop of overall cohesion <xref ref-type="bibr" rid="pone.0091510-Hackman1">[70]</xref>, <xref ref-type="bibr" rid="pone.0091510-Thomas1">[79]</xref> and cooperative consensus since larger groups are more likely to contain noncooperative individuals <xref ref-type="bibr" rid="pone.0091510-Bonacich1">[80]</xref>.</p>
+<p>In Johnson’s view, one option to mitigate scalar stress is by fissioning into smaller groups in order to reduce the number of decision-making units. He considered this option a common response to scalar stress, unless intervening factors do not discourage group fission. In this respect, Bowser <xref ref-type="bibr" rid="pone.0091510-Bowser1">[11]</xref> and Bandy <xref ref-type="bibr" rid="pone.0091510-Bandy1">[3]</xref>, for instance, have underscored that fission has downsides in terms of economic and social costs, and that factors like high levels of external conflicts, investment in nonportable capital, and high population density constrain fissioning. On the grounds of the ethnographic data, Johnson <xref ref-type="bibr" rid="pone.0091510-Johnson1">[5]</xref>, <xref ref-type="bibr" rid="pone.0091510-Johnson2">[6]</xref> argued that a way to reduce scalar stress without fissioning is to reorganize decision-making structure into sequential hierarchies, that is by grouping individuals into a smaller number of more inclusive decision-making units in such a way that their number would still centred round 6. In this scheme, the decision-making flow would move bottom up, involving consensual decisions at each step. Remarkably, Reynolds <xref ref-type="bibr" rid="pone.0091510-Reynolds1">[81]</xref> has formally showed that nested levels of decision can speed up problems’ solution by their ability to partition the problem into sub-problems that can further solved each at every different organizational level, so supporting Johnson’s findings.</p>
+<p>It has to be noted that scale-related issues do not mechanically dictate the types and forms of human behaviour, since Johnson’s decision-making reshaping can be thought of as occurring under specific conditions. It could be considered the middle stage between fission and the emergence of non-consensual (i.e., hierarchical) decision-making bodies. As stressed by Lee Lyman <xref ref-type="bibr" rid="pone.0091510-LeeLyman1">[18]</xref>, group fissioning could be the immediate choice for aggregates experiencing scale-related issue but, when the landscape fills in or mobility is otherwise limited, sequential hierarchies would then evolve, eventually followed by a more vertical decision-making organization when the sequential one proves unable to further reduce scalar stress. In this respect, in fact, the number of sequential decision-making units cannot grow larger indefinitely since consensus must be reached at a greater number of operational levels, as noted by Johnson <xref ref-type="bibr" rid="pone.0091510-Johnson1">[5]</xref>. Other factors may shape the response to scale-related issues, as the ones highlighted by Friesen <xref ref-type="bibr" rid="pone.0091510-Friesen1">[16]</xref> who argues that the development of sequential hierarchies as remedy to scalar stress can be favoured by a lack of economic and resource conditions that could allow formal leaders to emerge.</p>
+<p>Evolutionary psychologist R. Dunbar <xref ref-type="bibr" rid="pone.0091510-Dunbar1">[59]</xref>, <xref ref-type="bibr" rid="pone.0091510-Dunbar2">[68]</xref>, <xref ref-type="bibr" rid="pone.0091510-Dunbar3">[69]</xref> has also located cognitive limits to groups’ size from a <italic>social channel capacity</italic> <xref ref-type="bibr" rid="pone.0091510-Gladwell1">[67]</xref> perspective or, in other words, from the standpoint of the limits of human brain ability to handle social networks of increasing size. This turns out to be germane, in my opinion, to the Johnson’s view of face-to-face information flow in decision-making context. While the first model refers to the number of decision-makers, the second can be conceptualized as working at the level of absolute population size. This link will become apparent later on, when I will describe the Hutterite data on which the proposed model is based. Dunbar’s findings predict that the average size of human groups, where cohesion is maintained without complicated rules and regulations, should be centred around 150, with 100 and 230 as minimum and maximum figures. He has found that this threshold recursively occurs in examples of human aggregates from archaeology and history as, for instance, among the Hutterites, an Anabaptist group settled in North America in the 1800s and organized into agricultural colonies grouped into three endogamous subsets (Lehrerleut, Schmiedenleut and Dariulsleut). Hutterite colonies usually fission at a population threshold that Olsen <xref ref-type="bibr" rid="pone.0091510-Olsen1">[63]</xref> locates somewhere between 150 and 175 persons. In this respect, Gladwell <xref ref-type="bibr" rid="pone.0091510-Gladwell1">[67]</xref> interestingly reports the opinion of a leader of one of such colonies who noted that when size increases <italic>people become strangers to one another</italic>, whereas <italic>in smaller groups people are a lot closer.</italic> He notes that <italic>they’re knit together, which is very important if you want to be effective and successful at community life</italic>, and goes on saying that if a colony grows too large <italic>you don’t have enough things in common, and then you start to become strangers and that close-knit fellowship starts to get lost</italic>.</p>
+<p>While it is true that <italic>many human groups exceed</italic> the Dunbar’s threshold <xref ref-type="bibr" rid="pone.0091510-deRuiter1">[82]</xref>, it is worth noting that his model does leave room for that possibility, provided that groups find a way to counteract the divisive forces that increase with increasing group size <xref ref-type="bibr" rid="pone.0091510-Hamilton1">[83]</xref>, as Johnson has pointed out. In this respect, Carneiro <xref ref-type="bibr" rid="pone.0091510-Carneiro1">[84]</xref> (see also <xref ref-type="bibr" rid="pone.0091510-Johnson1">[5]</xref>) contrasts the case of the Yanomama villages (fissioning when size rises above 200) to that of the Kayapò (whose villages reach 600/800 inhabitants), arguing that what accounts for the difference is the organization of the second into nested social segments. The latter, in line with Johnson’s model of sequential hierarchies, allow reducing the load of information processed by each segment, relieving <italic>the social system of the need to process loads of information that would exceed individuals’ cognitive capacities</italic>, as Dubreuil puts it <xref ref-type="bibr" rid="pone.0091510-Dubreuil1">[85]</xref>.</p>
+<p>Dunbar’s findings are compatible with both earlier and later studies pointing to the existence of limits to the number of subjects that can be integrated in a relational network <xref ref-type="bibr" rid="pone.0091510-Bernard1">[86]</xref>–<xref ref-type="bibr" rid="pone.0091510-Hill2">[88]</xref>. It is worthy of note that, from an anthropological and archaeological perspective, Kosse <xref ref-type="bibr" rid="pone.0091510-Kosse1">[89]</xref>, <xref ref-type="bibr" rid="pone.0091510-Kosse2">[90]</xref> has also argued that, due to limits of long-term memory, a first critical threshold for the load of information flow in one-to-one relations should occur at group size somewhere between 100 and 200, and that above that size groups are expected to develop integrative mechanisms to maintain cohesion. As put by Dunbar <xref ref-type="bibr" rid="pone.0091510-Dunbar2">[68]</xref>, what constrains group size is not just a matter of memory, but the limited ability to manipulate increasing amount of information. In fact, as Gladwell <xref ref-type="bibr" rid="pone.0091510-Gladwell1">[67]</xref> stresses, being a group means that <italic>you have to understand the personal dynamics of the group, juggle different personalities, keep people happy, manage demands on your time and attention</italic>; as consequence, <italic>even a relatively small increase in the size of a group […] creates a significant additional social and intellectual burden</italic>.</p>
+</sec></sec><sec id="s2" sec-type="materials|methods">
+<title>Materials and Methods</title>
+<p>For the purposes of this study, logistic regression is used to build a predictive model for scalar stress on the basis of population size. To put it in a nutshell, and referring the readers to the literature previously quoted for an in-deep treatment of the topic, logistic regression is a statistical technique that finds use also in archaeology (e.g., <xref ref-type="bibr" rid="pone.0091510-Warren1">[91]</xref>, <xref ref-type="bibr" rid="pone.0091510-Pori3">[92]</xref>) and allows estimating the probability that a particular outcome of a dependent nominal variable <italic>y</italic> will occur based on information from one (or more) explanatory variable <italic>x</italic>. It is analogous to linear regression, except that the dependent variable is nominal, not a measurement. The technique ultimately finds the equation that best predicts the probability <italic>p</italic> of getting a particular value of <italic>y</italic>, with <italic>p</italic> taking values from 0 to 1. The general form of the logistic regression model is:<disp-formula id="pone.0091510.e001"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0091510.e001" xlink:type="simple"/></disp-formula></p>
+<p>Unlike the least-squares method used in linear regression, logistic regression finds the intercept (<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0091510.e002" xlink:type="simple"/></inline-formula>) and slope (<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0091510.e003" xlink:type="simple"/></inline-formula>) of the best-fitting equation by means of the maximum-likelihood method, which is a computer-intensive technique that finds <italic>the values of the parameters under which you would be most likely to get the observed results</italic> <xref ref-type="bibr" rid="pone.0091510-McDonald1">[61]</xref> (see also <xref ref-type="bibr" rid="pone.0091510-Pampel1">[93]</xref>). Once logistic regression has been ran, and the intercept and slope have been found, one is in the position to derive the probability of the outcome of <italic>y</italic> by plugging those two parameters and any known value(s) of <italic>x</italic> into the logistic regression model.</p>
+<p>To determine the degree to which the model fits, the following steps must be taken <xref ref-type="bibr" rid="pone.0091510-Peng1">[60]</xref>, <xref ref-type="bibr" rid="pone.0091510-Rumsey1">[94]</xref>: a) verify the results of the chi-square goodness-of-fit test, and conclude that the model fits if the associated <italic>p</italic> value is greater than 0.05 (i.e., there is no significant difference between what the model predicts and what the analyst observes in the data); b) check the significance of the intercept and slope; c) check the association between concordant pairs, i.e. <italic>the proportion of times the data and the model actually agree with each other</italic> <xref ref-type="bibr" rid="pone.0091510-Rumsey1">[94]</xref>. Additionally, a classification table (reporting the overall percentage of correctly classified cases) is usually also reported in order to assess the classificatory power of the model (e.g., <xref ref-type="bibr" rid="pone.0091510-Pori3">[92]</xref>).</p>
+<p>As previously noted, the model here proposed has been built drawing upon the data derived from the study by Olsen <xref ref-type="bibr" rid="pone.0091510-Olsen1">[63]</xref>, which reports the size of the Lehrerleut and Schmiedenleut colonies both at and after fissioning (<xref ref-type="table" rid="pone-0091510-t001">Table 1</xref>).</p>
+<table-wrap id="pone-0091510-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0091510.t001</object-id><label>Table 1</label><caption>
+<title>Data about the size of the Hutterites’ colonies at and after fissioning (derived from Olsen <xref ref-type="bibr" rid="pone.0091510-Olsen1">[63]</xref>), used to build the Logistic Regression model object of this article.</title>
+</caption><alternatives><graphic id="pone-0091510-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0091510.t001" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">n of indiv</td>
+<td align="left" rowspan="1" colspan="1">at/after fissioning</td>
+<td align="left" rowspan="1" colspan="1">endog. subset</td>
+<td align="left" rowspan="1" colspan="1">n of indiv</td>
+<td align="left" rowspan="1" colspan="1">at/after fissioning</td>
+<td align="left" rowspan="1" colspan="1">endog. subset</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">196</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">92</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">197</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">88</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">180</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">103</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">170</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">85</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">188</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">78</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">176</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">72</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">161</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">86</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">165</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">86</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">150</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">92</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">131</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">94</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">152</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">96</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">136</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">75</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">179</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">99</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">182</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">91</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">186</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">69</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">187</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">133</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">187</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">105</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">171</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">84</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">155</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">72</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">174</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">70</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">190</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">79</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">147</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">45</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">173</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">79</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">202</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">78</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">179</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">71</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">142</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">66</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">136</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">80</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">163</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">84</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">190</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">77</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">185</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">88</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">189</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">72</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">140</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">78</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">157</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">80</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">142</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">90</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">154</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">70</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">155</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">66</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">124</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">89</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">133</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">87</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">157</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">86</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">153</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">75</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">209</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">63</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">137</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">68</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">154</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">68</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">164</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">68</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">207</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">94</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">150</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">93</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">165</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">93</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">135</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">94</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">127</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">79</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">125</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">76</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">84</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">69</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">94</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">78</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">102</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">82</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">108</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">91</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">71</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">74</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">111</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">68</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">79</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">75</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">79</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">61</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">74</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">82</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">102</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">81</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">95</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">87</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">92</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">92</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">73</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">70</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">99</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">70</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">82</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">79</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">87</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">78</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">87</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">81</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">94</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">73</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">91</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">69</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">86</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">64</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">69</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">79</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">121</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">75</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">88</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">251</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">99</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">208</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">108</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Lehrerleut</td>
+<td align="left" rowspan="1" colspan="1">185</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">212</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">87</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">197</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">84</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">128</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">57</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">143</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">83</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">177</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">82</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">130</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">103</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">169</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">100</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">202</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">91</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">155</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">54</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">169</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">86</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">183</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">73</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">204</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">107</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">181</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">84</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">172</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">89</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">164</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">83</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">141</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">107</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">133</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">102</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">188</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">102</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">165</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">106</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">158</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">82</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">172</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">72</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">174</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">84</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">141</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">76</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">203</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">80</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">187</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">65</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">136</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">120</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">151</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">77</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">110</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">64</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">142</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">64</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">145</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">74</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">104</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">69</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">159</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">100</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">144</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">77</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">162</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">82</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">191</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">48</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">162</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">105</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">145</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">97</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">180</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">76</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">188</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">79</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">172</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">100</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">209</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">69</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">208</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">67</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">161</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">94</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">133</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">91</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">160</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">81</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">145</td>
+<td align="left" rowspan="1" colspan="1">at fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">82</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">108</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">82</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">48</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">71</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">164</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">62</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">87</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">84</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">86</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">74</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">65</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">102</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">118</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">70</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">90</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">83</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">74</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">58</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">36</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">94</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">106</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">80</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">74</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">119</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">127</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">106</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">58</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">81</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">107</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">86</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">76</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">50</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">93</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">54</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">95</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">50</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">73</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">88</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">69</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">56</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">107</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">86</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">81</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">77</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">81</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">86</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">52</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">76</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">123</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">81</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">89</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1">64</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">101</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">68</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">117</td>
+<td align="left" rowspan="1" colspan="1">after fissioning</td>
+<td align="left" rowspan="1" colspan="1">Schmiedenleut</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p>For the purposes of this study, the data for the two groups have been lumped together since the size distribution of the Lehrerleut colonies at fissioning does not significantly differ from that of the Schmiedenleut colonies. The same holds true for the size distribution of the colonies after fissioning (<xref ref-type="fig" rid="pone-0091510-g002">Fig. 2</xref>). The overall sample size is equal to 297 observations.</p>
+<fig id="pone-0091510-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0091510.g002</object-id><label>Figure 2</label><caption>
+<title>Size of the Hutterite colonies (belonging to two different endogamous subsets) at and after fissioning.</title>
+<p>Notched boxplots show the distribution of the size values (in terms of number of individuals), which are also represented by jittered dots. Overlapping of notches indicates a not significant difference at about 95% confidence <xref ref-type="bibr" rid="pone.0091510-McGill1">[102]</xref>. Data derived from Olsen <xref ref-type="bibr" rid="pone.0091510-Olsen1">[63]</xref>.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0091510.g002" position="float" xlink:type="simple"/></fig>
+<p>It has been noted that the fissioning event among Hutterites can be conceived as an example of limits to group size due to cognitive constrains. It has been also noted that the Hutterite case allows linking the Johnson’s model of scalar stress, which is framed in terms of decision-making units, to the Dunbar’s model of cognitive limits to human network sizes, which is framed in terms of sheer population size. This link seems empirically supported by the following evidence, which requires preliminarily, yet concisely, summarizing the Hutterites’ decision-making organization. This is based on baptized married males and is arranged into nested levels, remarkably resembling those of the Johnson’s model previously described. A congregation of all baptized married men votes on major colony policies and selects the members of a council, which in turn is made up of five to seven men selected to serve in an executive capacity <xref ref-type="bibr" rid="pone.0091510-Peter1">[64]</xref>, <xref ref-type="bibr" rid="pone.0091510-Hostetler1">[95]</xref> and whose decisions are brought before the congregation for approval <xref ref-type="bibr" rid="pone.0091510-Satterlee1">[65]</xref>. If we measure the size of Hutterites colonies in terms of basal decision-making units (i.e., adult married males) rather than in terms of sheer population size, it turns out that the number of adult males at fissioning is well above the Johnson’s threshold (Lehrerleut: mean 16.4, SD 2.2; Schmiedenleut: mean 16.5, SD 2.9), while is remarkably close to it when no fission is needed (Lehrerleut: mean 8.3, SD 1.5; Schmiedenleut: mean 8.2, SD 2.0) (<xref ref-type="fig" rid="pone-0091510-g003">Fig. 3</xref>). It must be noted that the link between Johnson’s and Dunbar’s models is particularly important in archaeological perspective since, while groups’ decision-making units can be difficult to identify on material bases alone, the sheer population size (or its order of magnitude) could be relatively easier to estimate, although some inherent difficulties (to which reference has been made earlier) should be borne in mind. Before proceeding, it must be stressed that the link discussed above is not meant to suggest that Hutterites’ decision-making organization must be representative of all other human groups and cultures or, by the same token, that that specific link between population size and the number of decision-making units must be universal. Rather, on the one hand, the previous preliminary analysis is aimed at linking by means of an empirical evidence Johnson’s and Dunbar’s models, which are framed, as already stressed, in two different terms (i.e., decision-making units and sheer population number respectively). On the other hand, once the aforementioned link between the two theories has been empirically assessed, it will be the sheer number of individuals that will matter for the sake of the model proposed by this study, not the number of decision-making units.</p>
+<fig id="pone-0091510-g003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0091510.g003</object-id><label>Figure 3</label><caption>
+<title>Distribution of the size of the Hutterites colonies at and after fissioning, expressed in terms of both sheer population size and decision-making units.</title>
+<p>Decision-making units correspond to baptized married males. The latter figures are calculated dividing the number of individuals at each colony (after Olsen) by the average Hutterite family size (8.16) as derived from the data by Janzen and Stanton <xref ref-type="bibr" rid="pone.0091510-Janzen1">[66]</xref>.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0091510.g003" position="float" xlink:type="simple"/></fig>
+<p>In the logistic regression model, the community size has been entered as the independent variable <italic>x</italic>. On the grounds of the theoretical framework previously sketched, the absence or presence of fissioning events for each Hutterite colony has been considered expression of the absence or presence of a critical (i.e., unmanageable) level of scalar stress, that is of that <italic>increased tension and decreased social control</italic> <xref ref-type="bibr" rid="pone.0091510-Olsen1">[63]</xref> and of those <italic>disruptive</italic> and <italic>antagonistic forces</italic> that <italic>increase with increasing group size</italic> <xref ref-type="bibr" rid="pone.0091510-Hamilton1">[83]</xref>. Therefore, a nominal variable with two levels, i.e. not critical/critical scalar stress, has been entered in the model as the dependent variable <italic>y</italic>.</p>
+<p>Before proceeding, it has to be made clear why using logistic regression instead of simply hypothesizing the existence of scalar stress on the basis of a theoretical threshold derived from Durbar’s studies. Provided the fact that the use of Dunbar’s figures to devise a workable threshold would be complicated since a point estimate (150) as well as a range (100–230) is available, in my opinion what calls for the technique used in this study is the need to derive the probability that a group experienced a critical level of scalar stress rather than simply working out a “yes/no” response of the type one would get using a simple threshold as baseline for judgment. Instead, Olsen’s Hutterites dataset and logistic regression allow working out a model that can provide a continuum scale of probability that can be more flexible than straightjacketing the whole process into a binary response. Since elaborating further on this issue entails delving into the core of this study’s results, I prefer to provide some more comments later on.</p>
+</sec><sec id="s3">
+<title>Results and Discussion</title>
+<p>Logistic regression indicates that there is a significant relationship between the absence/presence of critical scalar stress and community size. The model adequately fits the data, as the goodness-of-fit test (<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0091510.e004" xlink:type="simple"/></inline-formula> = 132.6, <italic>df</italic> = 124, <italic>p</italic> = 0.28), the percentage of concordant pairs (99.5) and the Somers’ D measure of association (0.99) indicate. The intercept (<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0091510.e005" xlink:type="simple"/></inline-formula>) and slope (<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0091510.e006" xlink:type="simple"/></inline-formula>), both statistically significant, are equal to −18.636 (Z = −5.96, <italic>p</italic>&lt;0.001; standard error = 3.127, 95% conf. int. =  −24.764, −12.507) and 0.147 (Z = 5.98, <italic>p</italic>&lt;0.001; standard error = 0.025, 95% conf. int. = 0.098, 0.196) respectively, and can be plugged into the regression model equation previously reported in order to get the probability value for any community size at hand (a script to accomplish this in the free R statistical environment <xref ref-type="bibr" rid="pone.0091510-R1">[96]</xref> is available from this author upon request or from <ext-link ext-link-type="uri" xlink:href="https://independent.academia.edu/GianmarcoAlberti" xlink:type="simple">https://independent.academia.edu/GianmarcoAlberti</ext-link>). The model has a very good classificatory power (at 0.5 cutoff value), as reported in <xref ref-type="table" rid="pone-0091510-t002">Table 2</xref>, which shows the percentages of correctly classified cases. The overall percentage is equal to 98%. That cutoff value is the optimal one for future classifications since it corresponds to the point that yields an approximately equal proportion between sensitivity (i.e., percentage of correctly classified cases of critical scalar stress) and specificity (i.e., percentage of correctly classified cases of not critical scalar stress) <xref ref-type="bibr" rid="pone.0091510-Peng1">[60]</xref> (<xref ref-type="fig" rid="pone-0091510-g004">Fig. 4</xref>).</p>
+<fig id="pone-0091510-g004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0091510.g004</object-id><label>Figure 4</label><caption>
+<title>Optimal cutoff on Logistic Regression probabilities.</title>
+<p>Plot of sensitivity (percentage of correctly classified cases of critical scalar stress) and specificity (percentage of correctly classified cases of not critical scalar stress) versus community size. Reference line: intersection point at which there is a balance between sensitivity and specificity; it corresponds to the optimal cutoff on logistic regression probabilities (community size 127 = <italic>p</italic> 0.50). See also <xref ref-type="table" rid="pone-0091510-t002">Table 2</xref>.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0091510.g004" position="float" xlink:type="simple"/></fig><table-wrap id="pone-0091510-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0091510.t002</object-id><label>Table 2</label><caption>
+<title>Classification table reporting the overall percentage of correctly classified cases (0.5 cutoff value), and showing the very good classificatory power of the Logistic Regression model (see also <xref ref-type="fig" rid="pone-0091510-g004">Fig. 4</xref>).</title>
+</caption><alternatives><graphic id="pone-0091510-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0091510.t002" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">from/to</td>
+<td align="left" rowspan="1" colspan="1">not critical scalar stress</td>
+<td align="left" rowspan="1" colspan="1">critical scalar stress</td>
+<td align="left" rowspan="1" colspan="1">Total</td>
+<td align="left" rowspan="1" colspan="1">% correct</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>not critical scalar stress</bold></td>
+<td align="left" rowspan="1" colspan="1">129</td>
+<td align="left" rowspan="1" colspan="1">2</td>
+<td align="left" rowspan="1" colspan="1">131</td>
+<td align="left" rowspan="1" colspan="1">98.5% (specificity)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>critical scalar stress</bold></td>
+<td align="left" rowspan="1" colspan="1">2</td>
+<td align="left" rowspan="1" colspan="1">64</td>
+<td align="left" rowspan="1" colspan="1">66</td>
+<td align="left" rowspan="1" colspan="1">96.9% (sensibility)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Total</bold></td>
+<td align="left" rowspan="1" colspan="1">131</td>
+<td align="left" rowspan="1" colspan="1">66</td>
+<td align="left" rowspan="1" colspan="1">197</td>
+<td align="left" rowspan="1" colspan="1">97.9%</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p>As apparent from the logistic regression plot (<xref ref-type="fig" rid="pone-0091510-g005">Fig. 5A</xref>), the model indicates that lower probabilities of experiencing a critical level of scalar stress are associated with smaller group sizes and higher probabilities with larger group sizes. The analysis allows pinpointing the size above which scalar stress can be considered critical: the point where the probability begins to change from low to high (i.e., <italic>p</italic> = 0.50) is at size 126.9 (95% Confidence Interval: 121.9–131.9) (<xref ref-type="fig" rid="pone-0091510-g005">Fig. 5B</xref>). The maximum probability (i.e., <italic>p</italic> = 0.99) of critical scalar stress is reached at size 158.2 (95% CI: 146.6–169.8) as apparent from <xref ref-type="table" rid="pone-0091510-t003">Table 3</xref>, which also shows the 95% confidence intervals for group size at increasing probability levels of critical scalar stress.</p>
+<fig id="pone-0091510-g005" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0091510.g005</object-id><label>Figure 5</label><caption>
+<title>Logistic Regression model.</title>
+<p><bold>A</bold>) Best fitting logistic curve (plus 95% confidence band) for the critical level of scalar stress as derived from Olsen’s Hutterite fissioning data. Vertical axis: probability of experiencing not critical/critical scalar stress; horizontal axis: community size in terms of sheer number of individuals. Lower probabilities of experiencing a critical level of scalar stress are associated with smaller community sizes and higher probabilities with larger community sizes. <bold>B</bold>) Scalar stress (<italic>sensu</italic> Johnson) chart plus critical threshold as derived by the logistic regression model. Black line: scalar stress as function of number of individuals; it is equal to (n<sup>2</sup>−n)/2, where n is the number of interacting subjects. Vertical lines: in green, group size threshold at which the probability of critical scalar stress begins to change from low to high (i.e., <italic>p</italic> = 0.50; mid-point: 126.9; 95% confidence interval: 121.9–131.9); in red, group size threshold at which the probability of critical scalar stress reaches its maximum (i.e., <italic>p</italic> = 0.99; mid-point: 158.2; 95% confidence interval: 146.6–169.8). See also <xref ref-type="table" rid="pone-0091510-t003">Table 3</xref>. The gradient in the shaded area is meant to visually represent the increase in probability between the two thresholds.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0091510.g005" position="float" xlink:type="simple"/></fig><table-wrap id="pone-0091510-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0091510.t003</object-id><label>Table 3</label><caption>
+<title>Mid-point and 95% confidence limits for community size at increasing probability levels of critical scalar stress, as estimated by the Logistic Regression model.</title>
+</caption><alternatives><graphic id="pone-0091510-t003-3" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0091510.t003" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Probability of critical scalar stress</td>
+<td align="left" rowspan="1" colspan="1">n. of individ. (i.e., community size)</td>
+<td align="left" rowspan="1" colspan="1">95% Lower Conf. Limit</td>
+<td align="left" rowspan="1" colspan="1">95% Upper Conf. Limit</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">0.10</td>
+<td align="left" rowspan="1" colspan="1">111.9</td>
+<td align="left" rowspan="1" colspan="1">105.1</td>
+<td align="left" rowspan="1" colspan="1">118.82</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">0.30</td>
+<td align="left" rowspan="1" colspan="1">121.1</td>
+<td align="left" rowspan="1" colspan="1">115.8</td>
+<td align="left" rowspan="1" colspan="1">126.4</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">0.50</td>
+<td align="left" rowspan="1" colspan="1">126.9</td>
+<td align="left" rowspan="1" colspan="1">121.9</td>
+<td align="left" rowspan="1" colspan="1">131.9</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">0.70</td>
+<td align="left" rowspan="1" colspan="1">132.7</td>
+<td align="left" rowspan="1" colspan="1">127.3</td>
+<td align="left" rowspan="1" colspan="1">138.1</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">0.90</td>
+<td align="left" rowspan="1" colspan="1">141.9</td>
+<td align="left" rowspan="1" colspan="1">134.8</td>
+<td align="left" rowspan="1" colspan="1">148.9</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">0.99</td>
+<td align="left" rowspan="1" colspan="1">158.2</td>
+<td align="left" rowspan="1" colspan="1">146.6</td>
+<td align="left" rowspan="1" colspan="1">169.8</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p>The predictive power of the model turns out to be very good when it is put to work on a sample of archaeological and ethnographic cases, as what follows indicates. It is expected that evidences of fissioning events or of use of integrative facilities occur in those cases for which the logistic regression model predicts a high probability of a critical level of scalar stress on the basis of population size. For the sake of model testing, the population size of the following archaeological settlements is taken into account: a) Chiamamaya, Cerro Choncaya and Sonaji, dating to the Formative Period of Bolivia’s Titicaca Basin (about 1000-800 BC), which experienced fissioning processes during the local Chiripa phase <xref ref-type="bibr" rid="pone.0091510-Bandy1">[3]</xref>; b) Broken K pueblo in US (about 1150–1280 AD) <xref ref-type="bibr" rid="pone.0091510-Hill1">[53]</xref>, which is featured by the presence of structures (i.e., kivas) with socially integrative functions <xref ref-type="bibr" rid="pone.0091510-Adler2">[29]</xref>, <xref ref-type="bibr" rid="pone.0091510-Schachner1">[97]</xref>; c) Middle Bronze Age Lipari (northeastern Sicily, Italy; about 1460-1250 BC) that is featured by the presence of an oversized structure (hut Gamma 12) likely to have been used as integrative facility, as a host of evidences (i.e., artefacts inventory, faunal data, size, and layout) would suggest <xref ref-type="bibr" rid="pone.0091510-Alberti1">[38]</xref> (see the aforementioned <xref ref-type="fig" rid="pone-0091510-g001">Fig. 1</xref>); d) Neolithic Jiangzhai (China; about 5000-4000 BC), where five oversized integrative facilities were built during the middle stage of the village development <xref ref-type="bibr" rid="pone.0091510-Lee1">[24]</xref>; e) sixteenth-century King site in northern Georgia (US), where an oversized structure is likely to have been used as meeting house for households’ representatives in the context of decision-making <xref ref-type="bibr" rid="pone.0091510-Hally1">[57]</xref>. For the same purpose, I also take into account the ethnographic sample collected by Adler and Wilshusen <xref ref-type="bibr" rid="pone.0091510-Adler3">[30]</xref>, <xref ref-type="bibr" rid="pone.0091510-Adler4">[34]</xref>, consisting of villages whose population size has been estimated and where integrative facilities are documented.</p>
+<p><xref ref-type="table" rid="pone-0091510-t004">Table 4</xref> reports the probability and 95% confidence limits (which can be calculated by the aforementioned R script) of experiencing critical scalar stress as predicted by the logistic regression model. It is apparent that the fissioning events located by Bandy in the Titicaca’s Basin villages are coupled with the highest probability figures. The same holds true for Broken K pueblo and the King site. As for Lipari, the village size estimate allows predicting between 0.88 and 0.99 probability of experiencing critical scalar stress. The cases of Titicaca’s Basin and Jiangzhai turn out to be particularly intriguing because they offer the opportunity to test if the absence of integrative facilities was coupled with a low level of critical scalar stress, i.e. with a population size below the critical level pinpointed by the proposed model. It is apparent that the Jiangzhai’s early and late phases have the lowest probability of critical scalar stress, while the highest probability is predicted for the middle phase. Remarkably, the construction and use of the integrative facilities trace back to the very phase (namely, the middle) for which the highest probability of critical scalar stress is predicted. Both the preceding and subsequent phase, featured by lower population figures, did lack integrative structures. Incidentally, this provides support to Lee’s <xref ref-type="bibr" rid="pone.0091510-Lee1">[24]</xref> hypothesis about the correlation between high population density and the construction of large non-domestic buildings during that particular phase. The Jiangzhai case is remarkably consistent with the Titicaca’s Basin scenario as portrayed by Bandy. Not only, as stressed above, the logistic regression model returns the highest probability of scalar stress for the Titicaca’s sites considered, but, as Bandy stresses, fissioning events (expression of critical level of scalar stress) in his study area were coupled with a lack of integrative structures and mechanisms. Remarkably, when the latter were created, they put an end to the fissioning processes or, as Bandy puts it, <italic>had the effect to obviating the need of fissioning</italic> <xref ref-type="bibr" rid="pone.0091510-Bandy1">[3]</xref>. While a similar cross-check of the model would be desirable also on ethnographical grounds (and could be object of future works), I believe that the Chinese and Titicaca cases, as diverse as they are in chronological and cultural settings, could represent a promising, yet small, supporting evidence of the goodness of the proposed model.</p>
+<table-wrap id="pone-0091510-t004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0091510.t004</object-id><label>Table 4</label><caption>
+<title>Probability and 95% confidence limits of experiencing critical scalar stress for a sample of archaeological (1–9) and ethnographic cases (10–29), as predicted by the Logistic Regression model.</title>
+</caption><alternatives><graphic id="pone-0091510-t004-4" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0091510.t004" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">archaeological/ethnographic cases</td>
+<td align="left" rowspan="1" colspan="1">n. of indiv.(i.e., community size)</td>
+<td align="left" rowspan="1" colspan="1">Probability of criticalscalar stress</td>
+<td align="left" rowspan="1" colspan="1">95% LowerConf. Limit</td>
+<td align="left" rowspan="1" colspan="1">95% UpperConf. Limit</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">Chiaramaya</td>
+<td align="left" rowspan="1" colspan="1">186</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">0.99</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">2</td>
+<td align="left" rowspan="1" colspan="1">Cerro Choncaya</td>
+<td align="left" rowspan="1" colspan="1">157</td>
+<td align="left" rowspan="1" colspan="1">0.99</td>
+<td align="left" rowspan="1" colspan="1">0.94</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">3</td>
+<td align="left" rowspan="1" colspan="1">Sonaji</td>
+<td align="left" rowspan="1" colspan="1">277</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">4</td>
+<td align="left" rowspan="1" colspan="1">Broken K</td>
+<td align="left" rowspan="1" colspan="1">182</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">0.99</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">5</td>
+<td align="left" rowspan="1" colspan="1">Lipari</td>
+<td align="left" rowspan="1" colspan="1">150</td>
+<td align="left" rowspan="1" colspan="1">0.97</td>
+<td align="left" rowspan="1" colspan="1">0.88</td>
+<td align="left" rowspan="1" colspan="1">0.99</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">6</td>
+<td align="left" rowspan="1" colspan="1">Jiangzhai I early</td>
+<td align="left" rowspan="1" colspan="1">105</td>
+<td align="left" rowspan="1" colspan="1">0.04</td>
+<td align="left" rowspan="1" colspan="1">0.01</td>
+<td align="left" rowspan="1" colspan="1">0.12</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">7</td>
+<td align="left" rowspan="1" colspan="1">Jiangzhai I middle</td>
+<td align="left" rowspan="1" colspan="1">255</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">8</td>
+<td align="left" rowspan="1" colspan="1">Jiangzhai I late</td>
+<td align="left" rowspan="1" colspan="1">71</td>
+<td align="left" rowspan="1" colspan="1">0.00</td>
+<td align="left" rowspan="1" colspan="1">0.00</td>
+<td align="left" rowspan="1" colspan="1">0.00</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">9</td>
+<td align="left" rowspan="1" colspan="1">King</td>
+<td align="left" rowspan="1" colspan="1">235</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">10</td>
+<td align="left" rowspan="1" colspan="1">Arapesh</td>
+<td align="left" rowspan="1" colspan="1">250</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">11</td>
+<td align="left" rowspan="1" colspan="1">Baktman</td>
+<td align="left" rowspan="1" colspan="1">250</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">12</td>
+<td align="left" rowspan="1" colspan="1">Bororo</td>
+<td align="left" rowspan="1" colspan="1">200</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">13</td>
+<td align="left" rowspan="1" colspan="1">Dogon</td>
+<td align="left" rowspan="1" colspan="1">210</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">14</td>
+<td align="left" rowspan="1" colspan="1">Elema</td>
+<td align="left" rowspan="1" colspan="1">500</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">15</td>
+<td align="left" rowspan="1" colspan="1">Etoro</td>
+<td align="left" rowspan="1" colspan="1">75</td>
+<td align="left" rowspan="1" colspan="1">0.00</td>
+<td align="left" rowspan="1" colspan="1">0.00</td>
+<td align="left" rowspan="1" colspan="1">0.01</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">16</td>
+<td align="left" rowspan="1" colspan="1">Fang</td>
+<td align="left" rowspan="1" colspan="1">250</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">17</td>
+<td align="left" rowspan="1" colspan="1">Great Basin</td>
+<td align="left" rowspan="1" colspan="1">75</td>
+<td align="left" rowspan="1" colspan="1">0.00</td>
+<td align="left" rowspan="1" colspan="1">0.00</td>
+<td align="left" rowspan="1" colspan="1">0.01</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">18</td>
+<td align="left" rowspan="1" colspan="1">Kiwai</td>
+<td align="left" rowspan="1" colspan="1">250</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">19</td>
+<td align="left" rowspan="1" colspan="1">Maidu</td>
+<td align="left" rowspan="1" colspan="1">175</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">0.99</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">20</td>
+<td align="left" rowspan="1" colspan="1">Mandan</td>
+<td align="left" rowspan="1" colspan="1">320</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">21</td>
+<td align="left" rowspan="1" colspan="1">Mundurucu</td>
+<td align="left" rowspan="1" colspan="1">200</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">22</td>
+<td align="left" rowspan="1" colspan="1">N. Pomo</td>
+<td align="left" rowspan="1" colspan="1">150</td>
+<td align="left" rowspan="1" colspan="1">0.97</td>
+<td align="left" rowspan="1" colspan="1">0.89</td>
+<td align="left" rowspan="1" colspan="1">0.99</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">23</td>
+<td align="left" rowspan="1" colspan="1">New Ireland</td>
+<td align="left" rowspan="1" colspan="1">220</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">24</td>
+<td align="left" rowspan="1" colspan="1">Orokaiva</td>
+<td align="left" rowspan="1" colspan="1">150</td>
+<td align="left" rowspan="1" colspan="1">0.97</td>
+<td align="left" rowspan="1" colspan="1">0.88</td>
+<td align="left" rowspan="1" colspan="1">0.99</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">25</td>
+<td align="left" rowspan="1" colspan="1">Tareumiut</td>
+<td align="left" rowspan="1" colspan="1">100</td>
+<td align="left" rowspan="1" colspan="1">0.02</td>
+<td align="left" rowspan="1" colspan="1">0.00</td>
+<td align="left" rowspan="1" colspan="1">0.08</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">26</td>
+<td align="left" rowspan="1" colspan="1">Tipirape</td>
+<td align="left" rowspan="1" colspan="1">200</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">27</td>
+<td align="left" rowspan="1" colspan="1">Wogeo</td>
+<td align="left" rowspan="1" colspan="1">100</td>
+<td align="left" rowspan="1" colspan="1">0.02</td>
+<td align="left" rowspan="1" colspan="1">0.00</td>
+<td align="left" rowspan="1" colspan="1">0.08</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">28</td>
+<td align="left" rowspan="1" colspan="1">Yuman</td>
+<td align="left" rowspan="1" colspan="1">150</td>
+<td align="left" rowspan="1" colspan="1">0.97</td>
+<td align="left" rowspan="1" colspan="1">0.89</td>
+<td align="left" rowspan="1" colspan="1">0.99</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">29</td>
+<td align="left" rowspan="1" colspan="1">Yurok</td>
+<td align="left" rowspan="1" colspan="1">200</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+<td align="left" rowspan="1" colspan="1">1.00</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p>The results of the analysis of the ethnographic sample quite closely mirror those deriving from the archaeological cases. It is apparent that structures for social integration feature those villages having the highest probability of experiencing critical scalar stress. The few exceptions (<xref ref-type="table" rid="pone-0091510-t004">Table 4</xref>, nos 15, 17, 25, 27) can be accounted for by problems in deriving exact estimates for some community sizes, leading to conservative figures <xref ref-type="bibr" rid="pone.0091510-Adler4">[34]</xref>. It is worthy of note that the communities to which reference has been made in the introduction of this study (namely, Yanomama and Conambo), and for which scholars have stressed the existence of conflicts and tensions, leading to either fissioning events <xref ref-type="bibr" rid="pone.0091510-Chagnon1">[10]</xref> or practices of social integration <xref ref-type="bibr" rid="pone.0091510-Bowser1">[11]</xref>, <xref ref-type="bibr" rid="pone.0091510-Bowser2">[98]</xref>, have size well past the threshold located by the logistic regression model.</p>
+<p>As for the latter aspect, namely the size of the cases (both archaeological and ethnographical) on which the model has been put to work, it must be noted that while a certain degree of variability in community size exists, and while extreme cases are documented, a number of instances are nonetheless close to the threshold derived by logistic regression (i.e., 127). By inspecting <xref ref-type="table" rid="pone-0091510-t004">Table 4</xref> (nos 1, 2, 4, 5, 6, 18, 21, 24, 27), it is possible to see that a number of community sizes approach logistic regression’s critical threshold both from below and above (e.g., 100, 105, 150, 182). While a discussion of the scenarios that open up at various community sizes (e.g., 105 vs. 120 vs. 127 vs. 155), in terms of the probability returned by the logistic regression, is provided in the next section of this paragraph, to understand the progression of the probability across the critical thresholds it can be useful to keep in mind that 127 is the community size at which the probability of critical scalar stress begins to change from low to high, i.e. where <italic>p</italic> = 0.50. As community size becomes progressively smaller than 127, <italic>p</italic> progressively decreases as well. By the same token, as the former increases, the latter progressively increases above 0.50, until it saturates (i.e., it reaches 0.99) at community size 158.</p>
+<p>To comment further, yet concisely, on the issue previously touched upon (namely, why using logistic regression instead of a simple threshold derived from Dunbar’s findings), it should be apparent how probability figures prove to be a more flexible means to assess the degree to which a group was likely to experience critical scalar stress. For instance, by using as baseline the Dunbar’s range to which reference has been made earlier in this work, a community of size 120 could be thought of as experiencing a critical level of scalar stress since its size is past the lower hinge of the Dunbar’s threshold. Yet, the proposed model allows estimating a low probability (<italic>p</italic> = 0.27; 95% CI: 0.14–0.45). As a case in point, see for example the earliest phase of Jiangzhai. Without logistic regression, its population size (105) would be thought of as generating a critical level of scalar stress, whereas the model indicates that the opposite is true (<italic>p</italic> = 0.04; 95% CI: 0.01–0.13). By the same token, suppose we have two groups of size 127 and 155 respectively, for which (using the simple aforementioned threshold) we would conclude that both experienced scalar stress. Instead, the logistic regression model allows indicating a more nuanced scenario, indicating that the first is about the threshold of critical scalar stress (<italic>p</italic> = 0.50; 95% CI: 0.33–0.68) while the second has a higher probability (<italic>p</italic> = 0.98; 95% CI: 0.93–0.99). These examples should underscore the utility of the logistic regression approach versus the use of a theoretically derived threshold.</p>
+<p>Moving toward the end of this study, one may wonder why the model here proposed, based on the Hutterites’ data, should have a more general validity, i.e. being cross-culturally valid. I believe it is because the cognitive constrains to groups’ size highlighted by Jonson and Dunbar, even from two slightly different perspectives, are inherent to humans. In this respect, and more importantly, a number of studies have tested the implications of Dunbar’s findings for human groups on the grounds of a body of data encompassing not only hunter-gatherers and small-scale horticulturalists, but also Neolithic groups, ancient and modern military organizations, modern agricultural groups (among which the Hutterites), modern corporations and business organizations <xref ref-type="bibr" rid="pone.0091510-Dunbar1">[59]</xref>, <xref ref-type="bibr" rid="pone.0091510-Dunbar2">[68]</xref>, <xref ref-type="bibr" rid="pone.0091510-Hill2">[88]</xref>, <xref ref-type="bibr" rid="pone.0091510-Roberts1">[99]</xref>, up to modern on-line social networks <xref ref-type="bibr" rid="pone.0091510-Gonalves1">[87]</xref>, pointing that functional limits to groups size are likely to apply universally <xref ref-type="bibr" rid="pone.0091510-Dunbar1">[59]</xref>, <xref ref-type="bibr" rid="pone.0091510-Hill2">[88]</xref>. The cases-study discussed in this work, spanning a variety of archaeological and ethnographic contexts, from New to Old World, from Neolithic China to pre-contact America, are consistent with that scenario, would point to a broader validity of the theory of cognitive constrains to groups size, and may hopefully come as a significant addition to the existing case studies.</p>
+<p>Overall, it is apparent that, by its ability to devise probability figures, the model proposed can allow expecting (or not) the presence of evidences of integrative mechanisms when group size is known beforehand, so providing the possibility to tailor the researches on field. On the other hand, when group size is known and there is evidence of mechanisms liable to be interpreted as socially integrative, the model allows evaluating (in terms of probability) whether or not critical levels of scalar stress could have been present and could possibly account for the integrative nature of such evidences, or if other explanations are needed instead. In a sense, the model ultimately provides grounds to assess the probability that a group reached a <italic>hot spot</italic> <xref ref-type="bibr" rid="pone.0091510-Bernardini1">[26]</xref> of size development that was critical for its internal cohesion, and which would had required those <italic>formal methods of minimizing stress and maximizing interaction</italic> <xref ref-type="bibr" rid="pone.0091510-Means1">[100]</xref> to which references have been made earlier in this study (i.e., fissioning, places and mechanisms for social integration, rituals, stylistic displays, shared food consumption) and that are all amenable to further archaeological investigations.</p>
+</sec><sec id="s4">
+<title>Conclusions</title>
+<p>This study has attempted to devise a predictive model of scalar stress on the basis of population size, drawing upon Johnson’s theory of scale-related social issues and on Dunbar’s theory of cognitive constrains to human groups size. The latter has enabled to re-express Johnson’s findings, which are couched in terms of decision-making units, in terms of sheer population size instead.</p>
+<p>A logistic regression model has been build relying upon Olsen’s data on the Hutterites’ communities size at and after fissioning, which have been considered expression of critical level of scalar stress in the light of the theoretical framework sketched at the beginning of this work. The model, on the one hand, has confirmed the existence of a significant relationship between critical scalar stress and group size, setting the issue in firmer numerical and statistical grounds. Further, the analysis allowed pinpointing a critical scalar stress threshold at size 127, with 95% confidence interval between 122 and 132. This threshold represents the size at which the probability of experiencing critical scalar stress changes from low to high (i.e., <italic>p</italic> = 0.50); the latter attains its maximum (i.e., <italic>p</italic> = 0.99) at population size 158 (95% confidence interval: 147–170). When experiencing critical level of scalar stress, the community organization must change. A number of human responses are available, such as splitting, decision-making reshaping, cohesion-building practices (e.g., food consumption, stylistic display), use of integrative facilities, or even leadership development, which are all contingent and context-specific and which have been reviewed in the first part of this study.</p>
+<p>Notably, the model proved good when tested against a sample of archaeological and ethnographic cases, overall indicating (and formally confirming) that fissioning events and integrative facilities are coupled with high probabilities of critical level of scalar stress. On the other hand, and more importantly from a practical standpoint, the analysis allowed deriving the intercept and slope of the logistic regression model, which can be plugged into the regression equation by anyone who is interested in estimating, for the sake of any further archaeological/anthropological explanation, the probability for a community of experiencing critical level of scalar stress. It must be acknowledged that two achievements of the present study could be amenable to future investigations, as stressed by the reviewers of this work. While, earlier in this study, promising evidence has been discussed pointing to a connection between low levels of scalar stress and the absence of integrative facilities, it would be interesting to broaden the ethnographical and archaeological data in order to provide additional supporting evidences. In particular, emphasis could be placed on multiphase archaeological settlements in a way similar to what has been done in this study in relation to the evidence from the Jiangzhai village. Finally, another future avenue of inquiry could be to feed additional datasets into logistic regression in order to check whether the intercept and slope change significantly across them. This would be an interesting addition to the present study and could be accomplished provided that rich (i.e., of adequate size) and detailed datasets, similar to the Olsen’s one used in this study, could be available or located in literature.</p>
+</sec></body>
+<back>
+<ack>
+<p>I wish to express my sincere thanks to the Editor, Professor Angel Sánchez, for the rapidity of the peer-reviewing process, and to the two anonymous reviewers (one of which chose to eventually disclose his identity, Marko Porčić of the University of Belgrade, Department of Archaeology), for the several insightful, constructive, and stimulating comments on an earlier version of the manuscript provided during several rounds of peer review. Their criticisms and suggestions allowed me to greatly improve the quality of the article and to make many of my points clearer. Last, but not least, I am pleased to acknowledge the stimulating discussions and exchange of ideas with the members and contributors of the Talk Stats Forum (<ext-link ext-link-type="uri" xlink:href="http://www.talkstats.com/index.php" xlink:type="simple">http://www.talkstats.com/index.php</ext-link>) on many aspects of statistics and of the use of R.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0091510-Feinman1"><label>1</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Feinman</surname><given-names>GM</given-names></name> (<year>2010</year>) <article-title>Size, Complexity, and Organizational Variation: A Comparative Approach</article-title>. <source>Cross-Cultural Research</source> <volume>45</volume>: <fpage>37</fpage>–<lpage>58</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Feinman2"><label>2</label>
+<mixed-citation publication-type="other" xlink:type="simple">Feinman G (2013) The Emergence of Social Complexity. Why More Than Population Size Matters. In: Carballo DM, editor. Cooperation &amp; Collective Action Archaeological Perspectives. Boulder: University Press of Colorado. pp. 35–56.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Bandy1"><label>3</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bandy</surname><given-names>MS</given-names></name> (<year>2004</year>) <article-title>Fissioning, Scalar Stress, and Social Evolution in Early Village Societies</article-title>. <source>American Anthropologist</source> <volume>106</volume>: <fpage>322</fpage>–<lpage>333</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Rappaport1"><label>4</label>
+<mixed-citation publication-type="other" xlink:type="simple">Rappaport RA (1968) Pigs for the Ancestors: Rituals in the Ecology of a New Guinea People.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Johnson1"><label>5</label>
+<mixed-citation publication-type="other" xlink:type="simple">Johnson GA (1982) Organizational Structure and Scalar Stress. In: Renfrew C, Rowlands MJ, Segraves BA, editors. Theory and explanation in archaeology. New York: Academic Press. pp. 389–421.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Johnson2"><label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Johnson</surname><given-names>GA</given-names></name> (<year>1983</year>) <article-title>Decision-making and pastoral nomad group size</article-title>. <source>Human Ecology</source> <volume>11</volume>: <fpage>175</fpage>–<lpage>199</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Fry1"><label>7</label>
+<mixed-citation publication-type="other" xlink:type="simple">Fry DP (2007) Beyond War. The Human Potential for Peace. Oxford: Oxford University Press.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Fry2"><label>8</label>
+<mixed-citation publication-type="other" xlink:type="simple">Fry DP (2011) Human Nature: The Nomadic Forager Model. In: Sussman RW, Cloninger CR, editors. Origins of Altruism and Cooperation. New York-Boston-Dordrecht-London-Moschow: Springer. pp. 227–248.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Holmberg1"><label>9</label>
+<mixed-citation publication-type="other" xlink:type="simple">Holmberg AR (1950) Nomads of the Long Bow. The Siriono of Eastern Bolivia. Washington: United States Government Printing Office.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Chagnon1"><label>10</label>
+<mixed-citation publication-type="other" xlink:type="simple">Chagnon NA (1980) Mate competition, favoring close kin, and village fissioning among the Yanomama Indians. In: Chagnon NA, Irons W, editors. Evolutinary Biology and Human Social Behavior: an Anthropological Perspective. Duxbury. pp. 86–131.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Bowser1"><label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bowser</surname><given-names>BJ</given-names></name> (<year>2000</year>) <article-title>From Pottery to Politics: An Ethnoarchaeological Study of Political Factionalism, Ethnicity, and Domestic Pottery Style in the Ecuadorian Amazon</article-title>. <source>Journal of Archaeological Method and Theory</source> <volume>7</volume>: <fpage>219</fpage>–<lpage>248</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Duff1"><label>12</label>
+<mixed-citation publication-type="other" xlink:type="simple">Duff AI (2002) Western Pueblo identities: Regional Interaction, Migration, and Transformation. Tucson: University of Arizona Press.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Dobres1"><label>13</label>
+<mixed-citation publication-type="other" xlink:type="simple">Dobres MA, Robb JE (2000) Agency in Archaeology. London-New York: Routledge-Taylor &amp; Francis Group.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Robb1"><label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Robb</surname><given-names>J</given-names></name> (<year>2010</year>) <article-title>Beyond agency</article-title>. <source>World Archaeology</source> <volume>42</volume>: <fpage>493</fpage>–<lpage>520</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Parkinson1"><label>15</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Parkinson</surname><given-names>WA</given-names></name> (<year>2006</year>) <article-title>Tribal boundaries: Stylistic variability and social boundary maintenance during the transition to the Copper Age on the Great Hungarian Plain</article-title>. <source>Journal of Anthropological Archaeology</source> <volume>25</volume>: <fpage>33</fpage>–<lpage>58</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Friesen1"><label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Friesen</surname><given-names>TM</given-names></name> (<year>1999</year>) <article-title>Resource Structure, Scalar Stress, and the Development of Inuit Social Organization</article-title>. <source>World Archaeology</source> <volume>31</volume>: <fpage>21</fpage>–<lpage>37</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Ames1"><label>17</label>
+<mixed-citation publication-type="other" xlink:type="simple">Ames KM (2009) The Archaeology of Rank. In: Bentley RA, Maschner HDG, Chippindale C, editors. Handbook of Archaeological Theories. Plymouth: Altamira Press. pp. 487–513.</mixed-citation>
+</ref>
+<ref id="pone.0091510-LeeLyman1"><label>18</label>
+<mixed-citation publication-type="other" xlink:type="simple">Lee Lyman R (2009) Prehistory of the Oregon Coast. The Effects of Excavation Strategies and Assemblage Size on Archaeological Inquiry. Walnut Creek: Left Coast Press.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Rakita1"><label>19</label>
+<mixed-citation publication-type="other" xlink:type="simple">Rakita GFM (2009) Ancestors and elites: emergent complexity and ritual practices in the Casas Grandes polity. Plymouth: Altamira Press.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Hegmon1"><label>20</label>
+<mixed-citation publication-type="other" xlink:type="simple">Hegmon M (1989) The Styles of Integration: Ceramic Styles and Pueblo I Integrative Architecture in Southwest Colorado. In: Lipe WD, Hegmon M, editors. The Architecture of Social Integration in Prehistoric Pueblos. Cortez: Crow Canyon Archaeological Center. pp. 125–142.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Hegmon2"><label>21</label>
+<mixed-citation publication-type="other" xlink:type="simple">Hegmon M (1995) The Social Dynamics of Pottery Style in the Early Puebloan Southwest. Cortez: Crow Canyon Archaeological Center.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Nelson1"><label>22</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nelson</surname><given-names>MC</given-names></name>, <name name-style="western"><surname>Hegmon</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Kulow</surname><given-names>SR</given-names></name>, <name name-style="western"><surname>Peeples</surname><given-names>AM</given-names></name>, <name name-style="western"><surname>Kintigh</surname><given-names>KW</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Resisting diversity: a long-term archaeological study</article-title>. <source>Ecology and Society</source> <volume>16</volume>: <fpage>25</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Potter1"><label>23</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Potter</surname><given-names>JM</given-names></name> (<year>1997</year>) <article-title>Communal Ritual and Faunal Remains: An Example from the Dolores Anasazi</article-title>. <source>Journal of Field Archaeology</source> <volume>24</volume>: <fpage>353</fpage>–<lpage>364</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Lee1"><label>24</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lee</surname><given-names>YK</given-names></name> (<year>2007</year>) <article-title>Centripetal settlement and segmentary social formation of the Banpo tradition</article-title>. <source>Journal of Anthropological Archaeology</source> <volume>26</volume>: <fpage>630</fpage>–<lpage>675</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Twiss1"><label>25</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Twiss</surname><given-names>KC</given-names></name> (<year>2008</year>) <article-title>Transformations in an early agricultural society: Feasting in the southern Levantine Pre-Pottery Neolithic</article-title>. <source>Journal of Anthropological Archaeology</source> <volume>27</volume>: <fpage>418</fpage>–<lpage>442</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Bernardini1"><label>26</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bernardini</surname><given-names>W</given-names></name> (<year>1996</year>) <article-title>Transitions in Social Organization: A Predictive Model from Southwestern Archaeology</article-title>. <source>Journal of Anthropological Archaeology</source> <volume>15</volume>: <fpage>372</fpage>–<lpage>402</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Houle1"><label>27</label>
+<mixed-citation publication-type="other" xlink:type="simple">Houle JL (2009) Socially Integrative Facilities and the Emergence of Societal Complexity on the Mongolian Steppe. Monuments, Metals, and Mobility. In: Hanks BK, Linduff KM, editors. Social Complexity in Prehistoric Eurasia. Cambridge: Cambridge University Press. pp. 358–377.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Adler1"><label>28</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Adler</surname><given-names>MA</given-names></name> (<year>1993</year>) <article-title>Why Is a Kiva? New Interpretations of Prehistoric Social Integrative Architecture in the Northern Rio Grande Region of New Mexico</article-title>. <source>Journal of Anthropological Research</source> <volume>49</volume>: <fpage>319</fpage>–<lpage>346</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Adler2"><label>29</label>
+<mixed-citation publication-type="other" xlink:type="simple">Adler MA (2002) Building Consensus: Tribes, Architecture, and Typology in the American Southwest. In: Parkinson WA, editor. The Archaeology of Tribal Societies. Ann Arbor, Michigan: International Monographs in Prehistory. pp. 155–173.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Adler3"><label>30</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Adler</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Wilshusen</surname><given-names>RH</given-names></name> (<year>1990</year>) <article-title>Large-Scale Integrative Facilities in Tribal Societies: Cross-Cultural and Southwestern US Examples</article-title>. <source>World Archaeology</source> <volume>22</volume>: <fpage>133</fpage>–<lpage>146</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Bandy2"><label>31</label>
+<mixed-citation publication-type="other" xlink:type="simple">Bandy MS (2006) Early Village Society in the Formative Period in the Southern Lake Titicaca Basin. In: Isbell WH, Silverman H, editors. Andean Archaeology III. New York: Springer. pp. 210–236.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Byrd1"><label>32</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Byrd</surname><given-names>BF</given-names></name> (<year>1994</year>) <article-title>Public and Private, Domestic and Corporate: The Emergence of the Southwest Asian Village</article-title>. <source>American Antiquity</source> <volume>59</volume>: <fpage>639</fpage>–<lpage>666</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Byrd2"><label>33</label>
+<mixed-citation publication-type="other" xlink:type="simple">Byrd BF (2002) Households in Transition. Neolithic Social Organization within Southwest Asia. In: Kuijt I, editor. Life in Neolithic Farming Communities Social Organization, Identity, and Differentiation. New York-Boston-Dordrecht-London-Moschow: Kluwer Academic Publishers. pp. 63–98.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Adler4"><label>34</label>
+<mixed-citation publication-type="other" xlink:type="simple">Adler MA (1989) Ritual Facilities and Social Integration in Nonranked Societies. In: Lipe WD, Hegmon M, editors. The Architecture of Social Integration in Prehistoric Pueblos. Cortez: Crow Canyon Archaeological Center. pp. 35–52.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Rappaport2"><label>35</label>
+<mixed-citation publication-type="other" xlink:type="simple">Rappaport RA (1979) Ecology, Meaning and Religion. Berkeley: North Atlantic Books.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Turner1"><label>36</label>
+<mixed-citation publication-type="other" xlink:type="simple">Turner V (1969) The Ritual Process. Chicago: Aldine Publishing.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Hayden1"><label>37</label>
+<mixed-citation publication-type="other" xlink:type="simple">Hayden B, Adams R (2004) Ritual Structures in Transegalitarian Communities. In: Prentiss WC, Kuijt I, editors. Complex Hunter-Gatherers Evolution and Organization of Prehistoric Communities on the Plateau of Northwestern North America. Salt Lake City: The University of Utah Press. pp. 84–102.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Alberti1"><label>38</label>
+<mixed-citation publication-type="other" xlink:type="simple">Alberti G (2012) Social Organization and Community Practices. Analysis for a reconstruction of the social framework of the Aeolian communities during the Middle Bronze Age. [PhD Dissertation]: University of Udine.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Souvatzi1"><label>39</label>
+<mixed-citation publication-type="other" xlink:type="simple">Souvatzi SG (2008) A Social Archaeology of Households in Neolithic Greece. New York: Cambridge University Press.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Dring1"><label>40</label>
+<mixed-citation publication-type="other" xlink:type="simple">Düring BS (2006) Constructing Communities. Clustered Neighbourhood Settlements of the Central Anatolian Neolithic ca 8500–5500 Cal. BC. Leiden: Nederlands Instituut voor het Nabije Oosten.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Stordeur1"><label>41</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Stordeur</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Brenet</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Der Aprahamian</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Roux</surname><given-names>JC</given-names></name> (<year>2000</year>) <article-title>Les bâtiments communautaires de Jerf el Ahmar et Mureybet Horizon PPNA (Syrie)</article-title>. <source>Paléorient</source> <volume>26</volume>: <fpage>29</fpage>–<lpage>44</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Rosemberg1"><label>42</label>
+<mixed-citation publication-type="other" xlink:type="simple">Rosemberg M, Wedding RW (2002) Hallan Cemi and Early Village Organization in Eastern Anatolia. In: Kuijt I, editor. Life in Neolithic Farming Communities Social Organization, Identity, and Differentiation. New York-Boston-Dordrecht-London-Moschow: Kluwer Academic Publishers. pp. 39–61.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Finlayson1"><label>43</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Finlayson</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Mithen</surname><given-names>SJ</given-names></name>, <name name-style="western"><surname>Najjar</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Smith</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Maričević</surname><given-names>D</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Architecture, sedentism, and social complexity at Pre-Pottery Neolithic A WF16, Southern Jordan</article-title>. <source>Proceedings of the National Academy of Sciences of the United States of America</source> <volume>108</volume>: <fpage>8183</fpage>–<lpage>8188</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Hockett1"><label>44</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hockett</surname><given-names>BS</given-names></name> (<year>1998</year>) <article-title>Sociopolitical Meaning of Faunal Remains from Baker Village</article-title>. <source>American Antiquity</source> <volume>63</volume>: <fpage>289</fpage>–<lpage>302</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Verhagen1"><label>45</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Verhagen</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Whitley</surname><given-names>TG</given-names></name> (<year>2012</year>) <article-title>Integrating Archaeological Theory and Predictive Modeling: a Live Report from the Scene</article-title>. <source>Journal of Archaeological Method and Theory</source> <volume>19</volume>: <fpage>49</fpage>–<lpage>100</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Westcott1"><label>46</label>
+<mixed-citation publication-type="other" xlink:type="simple">Westcott KL, Brandon RJ, editors (2000) Practical Applications of GIS for Archaeologists. A Predictive Modeling Kit. London: Taylor&amp;Francis.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Hassan1"><label>47</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hassan</surname><given-names>FA</given-names></name> (<year>1978</year>) <article-title>Demographic Archaeology</article-title>. <source>Advances in Archaeological Method and Theory</source> <volume>1</volume>: <fpage>49</fpage>–<lpage>103</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Schacht1"><label>48</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schacht</surname><given-names>RM</given-names></name> (<year>1981</year>) <article-title>Estimating Past Population Trend</article-title>. <source>Annual Review of Anthropology</source> <volume>10</volume>: <fpage>119</fpage>–<lpage>140</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Brown1"><label>49</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Brown</surname><given-names>BM</given-names></name> (<year>1987</year>) <article-title>Population Estimation From Floor Area: a Restudy of “Naroll’s Constant”</article-title>. <source>Cross-Cultural Research</source> <volume>21</volume>: <fpage>1</fpage>–<lpage>49</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Cameron1"><label>50</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cameron</surname><given-names>CM</given-names></name> (<year>1999</year>) <article-title>Room Size, Organization of Construction, and Archaeological Interpretation in the Puebloan Southwest</article-title>. <source>Journal of Anthropological Archaeology</source> <volume>18</volume>: <fpage>201</fpage>–<lpage>239</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Chamberlain1"><label>51</label>
+<mixed-citation publication-type="other" xlink:type="simple">Chamberlain A (2006) Demography in archaeology. Cambridge: Cambridge University Press.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Pori1"><label>52</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Porčić</surname><given-names>M</given-names></name> (<year>2011</year>) <article-title>Effects of Residential Mobility on the Ratio of Average House Floor Area to Average Household Size: Implications for Demographic Reconstructions in Archaeology</article-title>. <source>Cross-Cultural Research</source> <volume>46</volume>: <fpage>72</fpage>–<lpage>86</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Hill1"><label>53</label>
+<mixed-citation publication-type="other" xlink:type="simple">Hill JN (1970) Broken K Pueblo. Prehistoric Social Organisation in the American Southwest. Tucson: The University of Arizona Press.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Withelaw1"><label>54</label>
+<mixed-citation publication-type="other" xlink:type="simple">Withelaw T (2004) Estimating the population of Neopalatial Knossos. In: Cadogan G, Hatzaki E, Vasilakis A, editors. Knossos: Palace, City, State: British School at Athens. pp. 147–158.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Shelach1"><label>55</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Shelach</surname><given-names>G</given-names></name> (<year>2006</year>) <article-title>Economic adaptation, community structure, and sharing strategies of households at early sedentary communities in northeast China</article-title>. <source>Journal of Anthropological Archaeology</source> <volume>25</volume>: <fpage>318</fpage>–<lpage>345</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Peterson1"><label>56</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Peterson</surname><given-names>CE</given-names></name>, <name name-style="western"><surname>Shelach</surname><given-names>G</given-names></name> (<year>2012</year>) <article-title>Jiangzhai: Social and economic organization of a Middle Neolithic Chinese village</article-title>. <source>Journal of Anthropological Archaeology</source> <volume>31</volume>: <fpage>265</fpage>–<lpage>301</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Hally1"><label>57</label>
+<mixed-citation publication-type="other" xlink:type="simple">Hally DJ (2008) King: The Social Archaeology of a Late Mississippian Town in Northwestern Georgia. Tuscaloosa: The University of Alabama Press.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Pori2"><label>58</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Porčić</surname><given-names>M</given-names></name> (<year>2011</year>) <article-title>An exercise in archaeological demography: estimating the population size of Late Neolithic settlements in the Central Balkans</article-title>. <source>Documenta Praehistorica</source> <volume>XXXVIII</volume>: <fpage>323</fpage>–<lpage>332</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Dunbar1"><label>59</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dunbar</surname><given-names>RIM</given-names></name> (<year>1993</year>) <article-title>Coevolution of neocortical size, group size and language in humans</article-title>. <source>Behavioral and Brain Sciences</source> <volume>16</volume>: <fpage>681</fpage>–<lpage>735</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Peng1"><label>60</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Peng</surname><given-names>C-YJ</given-names></name>, <name name-style="western"><surname>So</surname><given-names>T-SH</given-names></name> (<year>2002</year>) <article-title>Logistic Regression Analysis and Reporting. A Primer</article-title>. <source>Understanding Statistics</source> <volume>1</volume>: <fpage>31</fpage>–<lpage>70</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-McDonald1"><label>61</label>
+<mixed-citation publication-type="other" xlink:type="simple">McDonald JH (2008) Handbook of Biological Statistics. Baltimore (Maryland): Sparky House Publishing.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Agresti1"><label>62</label>
+<mixed-citation publication-type="other" xlink:type="simple">Agresti A (2002) Categorical Data Analysis. Hokoben (New Jersey): John Wiley &amp; Sons.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Olsen1"><label>63</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Olsen</surname><given-names>CL</given-names></name> (<year>1987</year>) <article-title>The Demography of Colony Fission from 1878–1970 Among the Hutterites of North America</article-title>. <source>American Anthropologist</source> <volume>89</volume>: <fpage>823</fpage>–<lpage>837</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Peter1"><label>64</label>
+<mixed-citation publication-type="other" xlink:type="simple">Peter KA (1987) The Dynamics of Hutterite Society. An Analytical Approach. Edmonton: The University of Alberta Press.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Satterlee1"><label>65</label>
+<mixed-citation publication-type="book" xlink:type="simple">Satterlee JL (1993) The Hutterites. A Study in Cultural Diversity. Brookings: Agricultural Experiment Station, South Dakota University. 16 p.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Janzen1"><label>66</label>
+<mixed-citation publication-type="other" xlink:type="simple">Janzen R, Stanton M (2010) The Hutterites in North America. Baltimore (Maryland): The John Hopkins Univeristy Press.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Gladwell1"><label>67</label>
+<mixed-citation publication-type="other" xlink:type="simple">Gladwell M (2000) The Tipping Point. How Little Things Can Make a Big Difference. Boston-New York-London: Little, Brown and Company.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Dunbar2"><label>68</label>
+<mixed-citation publication-type="other" xlink:type="simple">Dunbar RIM (2002) The Social Brain Hypothesis. In: Cacioppo JT, Berntson GG, Adolphs R, Carter CS, Davidson RJ <etal>et al</etal>.., editors. Foundations In Social Neuroscience. Cambridge-London: Massachusetts Institute of Technology. pp. 69–87.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Dunbar3"><label>69</label>
+<mixed-citation publication-type="other" xlink:type="simple">Dunbar RIM (2010) How Many Friends Does One Person Need? Dunbar’s Number and Other Evolutionary Quirks. Cambridge, Massachusetts: Harvard University Press.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Hackman1"><label>70</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hackman</surname><given-names>JR</given-names></name>, <name name-style="western"><surname>Vidmar</surname><given-names>N</given-names></name> (<year>1970</year>) <article-title>Effects of Size and Task Type on Group Performance and Member Reactions</article-title>. <source>Sociometry</source> <volume>33</volume>: <fpage>37</fpage>–<lpage>54</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Hare1"><label>71</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hare</surname><given-names>AP</given-names></name> (<year>1952</year>) <article-title>A Study of Interaction and Consensus in Different Sized Groups</article-title>. <source>American Sociological Review</source> <volume>17</volume>: <fpage>261</fpage>–<lpage>267</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Ziller1"><label>72</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ziller</surname><given-names>RC</given-names></name> (<year>1957</year>) <article-title>Group Size: A Determinant of the Quality and Stability of Group Decisions</article-title>. <source>Sociometry</source> <volume>20</volume>: <fpage>165</fpage>–<lpage>173</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Forsyth1"><label>73</label>
+<mixed-citation publication-type="other" xlink:type="simple">Forsyth DR (2009) Group Dynamics. Belmont: Wadsworth-Cengace Learning.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Levine1"><label>74</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Levine</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Moreland</surname><given-names>RL</given-names></name> (<year>1990</year>) <article-title>Progress in Small Gropus Research</article-title>. <source>Annual Review of Psychology</source> <volume>41</volume>: <fpage>585</fpage>–<lpage>634</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-McGrath1"><label>75</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>McGrath</surname><given-names>JE</given-names></name>, <name name-style="western"><surname>Kravitz</surname><given-names>DA</given-names></name> (<year>1982</year>) <article-title>Group Research</article-title>. <source>Annual Review of Psychology</source> <volume>33</volume>: <fpage>195</fpage>–<lpage>230</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Cummings1"><label>76</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cummings</surname><given-names>LL</given-names></name>, <name name-style="western"><surname>Huber</surname><given-names>GP</given-names></name>, <name name-style="western"><surname>Arendt</surname><given-names>E</given-names></name> (<year>1974</year>) <article-title>Effects of Size and Spatial Group on Arrangements Decision Making</article-title>. <source>The Academy of Management Journal</source> <volume>17</volume>: <fpage>460</fpage>–<lpage>475</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Manners1"><label>77</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Manners</surname><given-names>GE</given-names></name> (<year>1975</year>) <article-title>Another Look at Group Size, Problem Solving, and Member Consensus</article-title>. <source>The Academy of Management Journal</source> <volume>18</volume>: <fpage>715</fpage>–<lpage>724</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Slater1"><label>78</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Slater</surname><given-names>PE</given-names></name> (<year>1958</year>) <article-title>Contrasting Correlates of Group Size</article-title>. <source>Sociometry</source> <volume>21</volume>: <fpage>129</fpage>–<lpage>139</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Thomas1"><label>79</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Thomas</surname><given-names>EJ</given-names></name>, <name name-style="western"><surname>Fink</surname><given-names>CF</given-names></name> (<year>1963</year>) <article-title>Effects of Group Size</article-title>. <source>Psychological Bulletin</source> <volume>60</volume>: <fpage>371</fpage>–<lpage>384</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Bonacich1"><label>80</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bonacich</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Shure</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Kahan</surname><given-names>JP</given-names></name>, <name name-style="western"><surname>Meeker</surname><given-names>RJ</given-names></name> (<year>1976</year>) <article-title>Cooperation and Group Size in the N-Person Prisoners’ Dilemma</article-title>. <source>Journal of Conflict Resolution</source> <volume>20</volume>: <fpage>687</fpage>–<lpage>706</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Reynolds1"><label>81</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Reynolds</surname><given-names>RG</given-names></name> (<year>1984</year>) <article-title>Model of Hierarchical Decision Systems</article-title>. <source>Journal of Anthropological Archaeology</source> <volume>3</volume>: <fpage>159</fpage>–<lpage>189</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-deRuiter1"><label>82</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>de Ruiter</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Weston</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Lyon</surname><given-names>SM</given-names></name> (<year>2011</year>) <article-title>Dunbar’s Number: Group Size and Brain Physiology in Humans Reexamined</article-title>. <source>American Anthropologist</source> <volume>113</volume>: <fpage>557</fpage>–<lpage>568</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Hamilton1"><label>83</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hamilton</surname><given-names>MJ</given-names></name>, <name name-style="western"><surname>Milne</surname><given-names>BT</given-names></name>, <name name-style="western"><surname>Walker</surname><given-names>RS</given-names></name>, <name name-style="western"><surname>Burger</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Brown</surname><given-names>JH</given-names></name> (<year>2007</year>) <article-title>The complex structure of hunter!gatherer social networks</article-title>. <source>Proceedings of the Royal Society B</source> <volume>274</volume>: <fpage>2195</fpage>–<lpage>2202</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Carneiro1"><label>84</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Carneiro</surname><given-names>RL</given-names></name> (<year>2000</year>) <article-title>The transition from quantity to quality: A neglected causal mechanism in accounting for social evolution</article-title>. <source>Proceedings of the National Academy of Sciences of the United States of America</source> <volume>97</volume>: <fpage>12926</fpage>–<lpage>12931</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Dubreuil1"><label>85</label>
+<mixed-citation publication-type="other" xlink:type="simple">Dubreuil B (2010) Human Evolution and the Origins of Hierarchies. The State of Nature. New York: Cambridge University Press.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Bernard1"><label>86</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bernard</surname><given-names>HR</given-names></name>, <name name-style="western"><surname>Killworth</surname><given-names>PD</given-names></name> (<year>1984</year>) <article-title>On the Social Structure of an Ocean-Going Research Vessel and Other Important Things</article-title>. <source>Social Science Research</source> <volume>2</volume>: <fpage>145</fpage>–<lpage>184</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Gonalves1"><label>87</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gonçalves</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Perra</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Vespignani</surname><given-names>A</given-names></name> (<year>2011</year>) <article-title>Modeling Users’ Activity on Twitter Networks: Validation of Dunbar’s Number</article-title>. <source>PloS one</source> <volume>6</volume>: <fpage>e22656</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Hill2"><label>88</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hill</surname><given-names>RA</given-names></name>, <name name-style="western"><surname>Dunbar</surname><given-names>RIM</given-names></name> (<year>2003</year>) <article-title>Social network size in humans</article-title>. <source>Human Nature</source> <volume>14</volume>: <fpage>53</fpage>–<lpage>72</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Kosse1"><label>89</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kosse</surname><given-names>K</given-names></name> (<year>1990</year>) <article-title>Group Size and Societal Complexity: Thresholds in Long-Term Memory</article-title>. <source>Journal of Anthropological Archaeology</source> <volume>9</volume>: <fpage>275</fpage>–<lpage>303</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Kosse2"><label>90</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kosse</surname><given-names>K</given-names></name> (<year>2001</year>) <article-title>Some Regularities in Human Group Formation and the Evolution of Societal Complexity</article-title>. <source>Complexity</source> <volume>61</volume>: <fpage>60</fpage>–<lpage>64</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Warren1"><label>91</label>
+<mixed-citation publication-type="other" xlink:type="simple">Warren RE, Asch DL (2000) A Predictive Model of Archaeological Site Location in the Eastern Prairie Peninsula. In: Westcott KL, Brandon JC, editors. Practical Applocations of GIS for Archaeologists A Predictive Modeling Kit. London: Taylor &amp; Francis. pp. 6–36.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Pori3"><label>92</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Porčić</surname><given-names>M</given-names></name> (<year>2010</year>) <article-title>House Floor Area as a Correlate of Marital Residence Pattern: A Logistic Regression Approach</article-title>. <source>Cross-Cultural Research</source> <volume>44</volume>: <fpage>405</fpage>–<lpage>424</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Pampel1"><label>93</label>
+<mixed-citation publication-type="other" xlink:type="simple">Pampel FC (2000) Logistic Regression. A Primer. Thousand Oaks: SAGE University.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Rumsey1"><label>94</label>
+<mixed-citation publication-type="other" xlink:type="simple">Rumsey D (2009) Statistics II. Hoboken: Wiley Publishing, Inc.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Hostetler1"><label>95</label>
+<mixed-citation publication-type="other" xlink:type="simple">Hostetler JA (1997) Hutterite Society. Baltimore: Johns Hopkins University Press.</mixed-citation>
+</ref>
+<ref id="pone.0091510-R1"><label>96</label>
+<mixed-citation publication-type="other" xlink:type="simple">R Core Team (2013) R: A language and environment for statistical computing. Vienna: R Foundation for Statistical Computing.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Schachner1"><label>97</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schachner</surname><given-names>G</given-names></name> (<year>2001</year>) <article-title>Ritual Control and Transformation in Middle-Range Societies: An Example from the American Southwest</article-title>. <source>Journal of Anthropological Archaeology</source> <volume>20</volume>: <fpage>168</fpage>–<lpage>194</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Bowser2"><label>98</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bowser</surname><given-names>BJ</given-names></name>, <name name-style="western"><surname>Patton</surname><given-names>JQ</given-names></name> (<year>2004</year>) <article-title>Domestic Spaces as Public Places: An Ethnoarchaeological Case Study of Houses, Gender, and Politics in the Ecuadorian Amazon</article-title>. <source>Journal of Archaeological Method and Theory</source> <volume>11</volume>: <fpage>157</fpage>–<lpage>181</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Roberts1"><label>99</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Roberts</surname><given-names>SGB</given-names></name>, <name name-style="western"><surname>Dunbar</surname><given-names>RIM</given-names></name>, <name name-style="western"><surname>Pollet</surname><given-names>TV</given-names></name>, <name name-style="western"><surname>Kuppens</surname><given-names>T</given-names></name> (<year>2009</year>) <article-title>Exploring variation in active network size: Constraints and ego characteristics</article-title>. <source>Social Networks</source> <volume>31</volume>: <fpage>138</fpage>–<lpage>146</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0091510-Means1"><label>100</label>
+<mixed-citation publication-type="other" xlink:type="simple">Means BK (2007) Circular Villages of the Monongahela Tradition. Tuscaloosa: University Alabama Press.</mixed-citation>
+</ref>
+<ref id="pone.0091510-BernabBrea1"><label>101</label>
+<mixed-citation publication-type="other" xlink:type="simple">Bernabò Brea L, Cavalier M (1980) Meligunìs Lipàra IV: L’acropoli di Lipari nella preistoria. Atlante Palermo: Flaccovio.</mixed-citation>
+</ref>
+<ref id="pone.0091510-McGill1"><label>102</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>McGill</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Tukey</surname><given-names>JW</given-names></name>, <name name-style="western"><surname>Larsen</surname><given-names>WA</given-names></name> (<year>1978</year>) <article-title>Variations of Box Plots</article-title>. <source>The American Statistician</source> <volume>32</volume>: <fpage>12</fpage>–<lpage>16</lpage>.</mixed-citation>
+</ref>
+</ref-list></back>
+</article>

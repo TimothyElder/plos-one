@@ -1,0 +1,1014 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article article-type="research-article" dtd-version="3.0" xml:lang="en" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS Genet</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosgen</journal-id>
+<journal-title-group>
+<journal-title>PLOS Genetics</journal-title>
+</journal-title-group>
+<issn pub-type="ppub">1553-7390</issn>
+<issn pub-type="epub">1553-7404</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PGENETICS-D-15-02092</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pgen.1005972</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3"><subject>Physical sciences</subject><subj-group><subject>Materials science</subject><subj-group><subject>Materials by attribute</subject><subj-group><subject>Contaminants</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Paleontology</subject><subj-group><subject>Paleogenetics</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Earth sciences</subject><subj-group><subject>Paleontology</subject><subj-group><subject>Paleogenetics</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>People and places</subject><subj-group><subject>Demography</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Paleoanthropology</subject><subj-group><subject>Hominids</subject><subj-group><subject>Hominins</subject><subj-group><subject>Neanderthals</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Paleontology</subject><subj-group><subject>Paleoanthropology</subject><subj-group><subject>Hominids</subject><subj-group><subject>Hominins</subject><subj-group><subject>Neanderthals</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Earth sciences</subject><subj-group><subject>Paleontology</subject><subj-group><subject>Paleoanthropology</subject><subj-group><subject>Hominids</subject><subj-group><subject>Hominins</subject><subj-group><subject>Neanderthals</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Physical anthropology</subject><subj-group><subject>Paleoanthropology</subject><subj-group><subject>Hominids</subject><subj-group><subject>Hominins</subject><subj-group><subject>Neanderthals</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Physical anthropology</subject><subj-group><subject>Paleoanthropology</subject><subj-group><subject>Hominids</subject><subj-group><subject>Hominins</subject><subj-group><subject>Neanderthals</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Genetics</subject><subj-group><subject>DNA</subject><subj-group><subject>Ancient DNA</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Biochemistry</subject><subj-group><subject>Nucleic acids</subject><subj-group><subject>DNA</subject><subj-group><subject>Ancient DNA</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Paleontology</subject><subj-group><subject>Paleogenetics</subject><subj-group><subject>Ancient DNA</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Earth sciences</subject><subj-group><subject>Paleontology</subject><subj-group><subject>Paleogenetics</subject><subj-group><subject>Ancient DNA</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Computational biology</subject><subj-group><subject>Genome analysis</subject><subj-group><subject>Genomic libraries</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Genetics</subject><subj-group><subject>Genomics</subject><subj-group><subject>Genome analysis</subject><subj-group><subject>Genomic libraries</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Molecular biology</subject><subj-group><subject>Molecular biology techniques</subject><subj-group><subject>Sequencing techniques</subject><subj-group><subject>Genome sequencing</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Molecular biology techniques</subject><subj-group><subject>Sequencing techniques</subject><subj-group><subject>Genome sequencing</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Molecular biology</subject><subj-group><subject>Molecular biology techniques</subject><subj-group><subject>Sequencing techniques</subject><subj-group><subject>DNA sequencing</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Molecular biology techniques</subject><subj-group><subject>Sequencing techniques</subject><subj-group><subject>DNA sequencing</subject></subj-group></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Joint Estimation of Contamination, Error and Demography for Nuclear DNA from Ancient Humans</article-title>
+<alt-title alt-title-type="running-head">Estimating Contamination and Demography from Ancient DNA</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes" equal-contrib="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Racimo</surname> <given-names>Fernando</given-names></name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+<contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Renaud</surname> <given-names>Gabriel</given-names></name>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Slatkin</surname> <given-names>Montgomery</given-names></name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+</contrib-group>
+<aff id="aff001">
+<label>1</label>
+<addr-line>Department of Integrative Biology, University of California, Berkeley, Berkeley, California, United States of America</addr-line>
+</aff>
+<aff id="aff002">
+<label>2</label>
+<addr-line>Department of Evolutionary Genetics, Max Planck Institute for Evolutionary Anthropology, Leipzig, Germany</addr-line>
+</aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Akey</surname> <given-names>Joshua M.</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1">
+<addr-line>University of Washington, UNITED STATES</addr-line>
+</aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<fn fn-type="con" id="contrib001">
+<p>Conceived and designed the experiments: FR GR MS. Performed the experiments: FR GR. Analyzed the data: FR GR. Contributed reagents/materials/analysis tools: FR GR MS. Wrote the paper: FR GR MS.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">fernandoracimo@gmail.com</email></corresp>
+</author-notes>
+<pub-date pub-type="collection">
+<month>4</month>
+<year>2016</year>
+</pub-date>
+<pub-date pub-type="epub">
+<day>6</day>
+<month>4</month>
+<year>2016</year>
+</pub-date>
+<volume>12</volume>
+<issue>4</issue>
+<elocation-id>e1005972</elocation-id>
+<history>
+<date date-type="received">
+<day>19</day>
+<month>8</month>
+<year>2015</year>
+</date>
+<date date-type="accepted">
+<day>11</day>
+<month>3</month>
+<year>2016</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2016</copyright-year>
+<copyright-holder>Racimo et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pgen.1005972"/>
+<abstract>
+<p>When sequencing an ancient DNA sample from a hominin fossil, DNA from present-day humans involved in excavation and extraction will be sequenced along with the endogenous material. This type of contamination is problematic for downstream analyses as it will introduce a bias towards the population of the contaminating individual(s). Quantifying the extent of contamination is a crucial step as it allows researchers to account for possible biases that may arise in downstream genetic analyses. Here, we present an MCMC algorithm to co-estimate the contamination rate, sequencing error rate and demographic parameters—including drift times and admixture rates—for an ancient nuclear genome obtained from human remains, when the putative contaminating DNA comes from present-day humans. We assume we have a large panel representing the putative contaminant population (e.g. European, East Asian or African). The method is implemented in a C++ program called ‘Demographic Inference with Contamination and Error’ (DICE). We applied it to simulations and genome data from ancient Neanderthals and modern humans. With reasonable levels of genome sequence coverage (&gt;3X), we find we can recover accurate estimates of all these parameters, even when the contamination rate is as high as 50%.</p>
+</abstract>
+<abstract abstract-type="summary">
+<title>Author Summary</title>
+<p>When extracting and sequencing ancient DNA from human remains, a recurrent problem is the presence of DNA from the paleontologists, archaeologists or geneticists that may have handled the fossil. If a DNA library is highly contaminated, this will introduce biases in downstream analyses, so it is important to determine the amount of extraneous DNA. Different methods exist for this purpose, but few are applicable to the nuclear genome, and none of them can extract reliable genomic information from highly contaminated samples. Thus, samples with high rates of contamination are usually discarded. Here, we present a method to jointly estimate contamination and error rates, along with demographic parameters, like drift times and admixture rates. Our method can serve to uncover important details about the evolutionary history of archaic and early modern humans from ancient DNA samples, even if those samples are highly contaminated.</p>
+</abstract>
+<funding-group>
+<funding-statement>This work was supported by the US National Institutes of Health grant to MS (R01-GM40282). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="7"/>
+<table-count count="2"/>
+<page-count count="27"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability">
+<meta-name>Data Availability</meta-name>
+<meta-value>All the source code for the method is available in GitHub: <ext-link ext-link-type="uri" xlink:href="https://github.com/grenaud/dice" xlink:type="simple">https://github.com/grenaud/dice</ext-link>.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec001" sec-type="intro">
+<title>Introduction</title>
+<p>When sequencing a human genome using ancient DNA (aDNA) recovered from fossils, a common practice is to assess the amount of present-day human contamination in a sequencing library [<xref ref-type="bibr" rid="pgen.1005972.ref001">1</xref>, <xref ref-type="bibr" rid="pgen.1005972.ref002">2</xref>, <xref ref-type="bibr" rid="pgen.1005972.ref003">3</xref>, <xref ref-type="bibr" rid="pgen.1005972.ref004">4</xref>, <xref ref-type="bibr" rid="pgen.1005972.ref005">5</xref>, <xref ref-type="bibr" rid="pgen.1005972.ref006">6</xref>]. Several methods exist to obtain a contamination estimate. First, one can look at ‘diagnostic positions’ in the mitochondrial genome at which a particular archaic population may be known to differ from all present-day humans. Then, one counts how many aDNA fragments support the present-day human base at those positions. This is the most popular technique and has been routinely deployed in the sequencing of Neanderthal genomes [<xref ref-type="bibr" rid="pgen.1005972.ref007">7</xref>, <xref ref-type="bibr" rid="pgen.1005972.ref001">1</xref>]. However, contamination levels of the mitochondrial genome may sometimes differ drastically from those of the nuclear genome [<xref ref-type="bibr" rid="pgen.1005972.ref008">8</xref>, <xref ref-type="bibr" rid="pgen.1005972.ref009">9</xref>].</p>
+<p>A second technique involves assessing whether the sample was male or female using the number of fragments that map to the X and the Y chromosomes. After determining the biological sex, the proportion of reads that are non-concordant with the sex of the archaic individual are used to estimate contamination from individuals of the opposite sex (e.g. Y-chr reads in an archaic female genome are indicative of male contamination) [<xref ref-type="bibr" rid="pgen.1005972.ref008">8</xref>, <xref ref-type="bibr" rid="pgen.1005972.ref001">1</xref>, <xref ref-type="bibr" rid="pgen.1005972.ref010">10</xref>, <xref ref-type="bibr" rid="pgen.1005972.ref004">4</xref>]. Another method uses a maximum-likelihood approach to estimate contamination, but is only applicable to single-copy chromosomes, like the X chromosome in individuals known <italic>a priori</italic> to be male [<xref ref-type="bibr" rid="pgen.1005972.ref011">11</xref>, <xref ref-type="bibr" rid="pgen.1005972.ref012">12</xref>]. Finally, one last technique involves using a maximum-likelihood approach to co-estimate the amount of contamination, sequencing error and heterozygosity in the entire autosomal nuclear genome [<xref ref-type="bibr" rid="pgen.1005972.ref001">1</xref>, <xref ref-type="bibr" rid="pgen.1005972.ref003">3</xref>], using an optimization algorithm such as L-BFGS-B [<xref ref-type="bibr" rid="pgen.1005972.ref013">13</xref>].</p>
+<p>Afterwards, if the aDNA library shows low levels of present-day human contamination (&lt; ∼2%), demographic analyses are performed on the sequences while ignoring the contamination. If the library is highly contaminated, it is usually treated as unusable and discarded. Neither of these outcomes is optimal: contaminating fragments may affect downstream analyses, while discarding the library as a whole may waste precious genomic data that could provide important demographic insights.</p>
+<p>One way to address this problem was proposed by skoglund et al. [<xref ref-type="bibr" rid="pgen.1005972.ref014">14</xref>], who developed a statistical framework to separate contaminant from endogenous DNA fragments by using the patterns of chemical deamination characteristic of ancient DNA. The method produces a score which reflects the odds that a particular fragment is endogenous or not, based on these chemical patterns. This approach is effective at isolating truly endogenous fragments from contaminant fragments, but at the cost of potentially discarding some fragments that may not have chemical damage and still be endogenous. This becomes more problematic the younger the ancient DNA sample is, because younger samples will tend to have a higher proportion of non-deaminated ancient DNA, and so the method will lead users to discard a larger fraction of endogenous material.</p>
+<p>Instead of (or in addition to) attempting to separate the two type of fragments before performing a demographic analysis, one could incorporate the uncertainty stemming from the contaminant fragments into a probabilistic inference framework. Such an approach has already been implemented in the analysis of a haploid mtDNA archaic genome [<xref ref-type="bibr" rid="pgen.1005972.ref015">15</xref>]. However, mtDNA represents a single gene genealogy, and, so far, no equivalent method has been developed for the analysis of the nuclear genome, which contains the richest amount of population genetic information. Here, we present a method to co-estimate the contamination rate, per-base error rate and a simple demography for an autosomal nuclear genome of an ancient hominin. We assume we have a large panel representing the putative contaminant population, for example, European, Asian or African 1000 Genomes data [<xref ref-type="bibr" rid="pgen.1005972.ref016">16</xref>]. The method uses a Bayesian framework to obtain posterior estimates of all parameters of interest, including population-size-scaled divergence times and admixture rates.</p>
+</sec>
+<sec id="sec002" sec-type="materials|methods">
+<title>Methods</title>
+<sec id="sec003">
+<title>Basic framework for estimation of error and contamination</title>
+<p>We will first describe the probabilistic structure of our inference framework. We begin by defining the following parameters:</p>
+<list list-type="bullet">
+<list-item>
+<p><italic>r</italic><sub><italic>c</italic></sub>: contamination rate in the ancient DNA sample coming from the contaminant population</p>
+</list-item>
+<list-item>
+<p><italic>ϵ</italic>: error rate, i.e. probability of observing a derived allele when the true allele is ancestral, or vice versa.</p>
+</list-item>
+<list-item>
+<p><italic>i</italic>: number of chromosomes that contain the derived allele at a particular site in the ancient individual (<italic>i</italic> = 0, 1 <italic>or</italic> 2)</p>
+</list-item>
+<list-item>
+<p><italic>d</italic><sub><italic>j</italic></sub>: number of derived fragments observed at site <italic>j</italic></p>
+</list-item>
+<list-item>
+<p><bold>d</bold>: vector of <italic>d</italic><sub><italic>j</italic></sub> counts for all sites <italic>j</italic> = {1, …, <italic>N</italic>} in a genome</p>
+</list-item>
+<list-item>
+<p><italic>a</italic><sub><italic>j</italic></sub>: number of ancestral fragments observed at site <italic>j</italic></p>
+</list-item>
+<list-item>
+<p><bold>a</bold>: vector of <italic>a</italic><sub><italic>j</italic></sub> counts for all sites <italic>j</italic> = {1, …, <italic>N</italic>} in a genome</p>
+</list-item>
+<list-item>
+<p><italic>w</italic><sub><italic>j</italic></sub>: known frequency of a derived allele in a candidate contaminant panel at site <italic>j</italic> (0 ≤ <italic>w</italic><sub><italic>j</italic></sub> ≤ 1)</p>
+</list-item>
+<list-item>
+<p><bold>w</bold>: vector of <italic>w</italic><sub><italic>j</italic></sub> frequencies for all sites <italic>j</italic> = {1, …, <italic>N</italic>} in a genome</p>
+</list-item>
+<list-item>
+<p><italic>K</italic>: number of informative SNPs used as input</p>
+</list-item>
+<list-item>
+<p><italic>θ</italic>: population-scaled mutation rate. <italic>θ</italic> = 4<italic>N</italic><sub><italic>e</italic></sub> <italic>μ</italic>, where <italic>N</italic><sub><italic>e</italic></sub> is the effective population size and <italic>μ</italic> is the per-generation mutation rate.</p>
+</list-item>
+</list>
+<p>We are interested in computing the probability of the data given the contamination rate, the error rate, the derived allele frequencies from the putative contaminant population (<bold>w</bold>) and a set of demographic parameters (<bold>Ω</bold>). We will use only sites that are segregating in the contaminant panel and we will assume that we observe only ancestral or derived alleles at every site (i.e. we ignore triallelic sites). In some of the analyses below, we will also assume that we have additional data (<bold>O</bold>) from present-day populations that may be related to the population to which the sample belongs. The nature of the data in <bold>O</bold> will be explained below, and will vary in each of the different cases we describe. The parameters contained in <bold>Ω</bold> may simply be the population-scaled times separating the contaminant population and the sample from their common ancestral population. However, <bold>Ω</bold> may include additional parameters, such as the admixture rate—if any—between the contaminant and the sample population. The number of parameters we can include in <bold>Ω</bold> will depend on the nature of the data in <bold>O</bold>.</p>
+<p>For all models we will describe, the probability of the data can be defined as:
+<disp-formula id="pgen.1005972.e001"><alternatives><graphic id="pgen.1005972.e001g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pgen.1005972.e001" xlink:type="simple"/><mml:math display="block" id="M1"><mml:mrow><mml:mi>P</mml:mi> <mml:mrow><mml:mo>[</mml:mo> <mml:mspace width="4pt"/><mml:mi mathvariant="bold">a</mml:mi> <mml:mo>,</mml:mo> <mml:mspace width="4pt"/><mml:mi mathvariant="bold">d</mml:mi> <mml:mspace width="4pt"/><mml:mo>|</mml:mo> <mml:mspace width="4pt"/><mml:msub><mml:mi>r</mml:mi> <mml:mi>C</mml:mi></mml:msub> <mml:mo>,</mml:mo> <mml:mi>ϵ</mml:mi> <mml:mo>,</mml:mo> <mml:mi mathvariant="bold">w</mml:mi> <mml:mo>,</mml:mo> <mml:mo>Ω</mml:mo> <mml:mo>,</mml:mo> <mml:mi mathvariant="bold">O</mml:mi> <mml:mo>]</mml:mo></mml:mrow> <mml:mo>=</mml:mo> <mml:munderover><mml:mo>∏</mml:mo> <mml:mrow><mml:mi>j</mml:mi> <mml:mo>=</mml:mo> <mml:mn>1</mml:mn></mml:mrow> <mml:mi>K</mml:mi></mml:munderover> <mml:mi>P</mml:mi> <mml:mrow><mml:mo>[</mml:mo> <mml:msub><mml:mi>a</mml:mi> <mml:mi>j</mml:mi></mml:msub> <mml:mo>,</mml:mo> <mml:msub><mml:mi>d</mml:mi> <mml:mi>j</mml:mi></mml:msub> <mml:mo>|</mml:mo> <mml:msub><mml:mi>r</mml:mi> <mml:mi>C</mml:mi></mml:msub> <mml:mo>,</mml:mo> <mml:mi>ϵ</mml:mi> <mml:mo>,</mml:mo> <mml:msub><mml:mi>w</mml:mi> <mml:mi>j</mml:mi></mml:msub> <mml:mo>,</mml:mo> <mml:mo>Ω</mml:mo> <mml:mo>,</mml:mo> <mml:mi mathvariant="bold">O</mml:mi> <mml:mo>]</mml:mo></mml:mrow></mml:mrow></mml:math></alternatives> <label>(1)</label></disp-formula>
+where
+<disp-formula id="pgen.1005972.e002"><alternatives><graphic id="pgen.1005972.e002g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pgen.1005972.e002" xlink:type="simple"/><mml:math display="block" id="M2"><mml:mrow><mml:mi>P</mml:mi> <mml:mrow><mml:mo>[</mml:mo> <mml:msub><mml:mi>a</mml:mi> <mml:mi>j</mml:mi></mml:msub> <mml:mo>,</mml:mo> <mml:msub><mml:mi>d</mml:mi> <mml:mi>j</mml:mi></mml:msub> <mml:mo>|</mml:mo> <mml:msub><mml:mi>r</mml:mi> <mml:mi>C</mml:mi></mml:msub> <mml:mo>,</mml:mo> <mml:mi>ϵ</mml:mi> <mml:mo>,</mml:mo> <mml:msub><mml:mi>w</mml:mi> <mml:mi>j</mml:mi></mml:msub> <mml:mo>,</mml:mo> <mml:mo>Ω</mml:mo> <mml:mo>,</mml:mo> <mml:mi mathvariant="bold">O</mml:mi> <mml:mo>]</mml:mo></mml:mrow> <mml:mo>=</mml:mo> <mml:munderover><mml:mo>∑</mml:mo> <mml:mrow><mml:mi>i</mml:mi> <mml:mo>=</mml:mo> <mml:mn>0</mml:mn></mml:mrow> <mml:mn>2</mml:mn></mml:munderover> <mml:mi>P</mml:mi> <mml:mrow><mml:mo>[</mml:mo> <mml:msub><mml:mi>a</mml:mi> <mml:mi>j</mml:mi></mml:msub> <mml:mo>,</mml:mo> <mml:msub><mml:mi>d</mml:mi> <mml:mi>j</mml:mi></mml:msub> <mml:mspace width="4pt"/><mml:mo>|</mml:mo> <mml:mspace width="4pt"/><mml:mi>i</mml:mi> <mml:mo>,</mml:mo> <mml:msub><mml:mi>r</mml:mi> <mml:mi>C</mml:mi></mml:msub> <mml:mo>,</mml:mo> <mml:mi>ϵ</mml:mi> <mml:mo>,</mml:mo> <mml:msub><mml:mi>w</mml:mi> <mml:mi>j</mml:mi></mml:msub> <mml:mo>]</mml:mo></mml:mrow> <mml:mi>P</mml:mi> <mml:mrow><mml:mo>[</mml:mo> <mml:mi>i</mml:mi> <mml:mspace width="4pt"/><mml:mo>|</mml:mo> <mml:mo>Ω</mml:mo> <mml:mo>,</mml:mo> <mml:mi mathvariant="bold">O</mml:mi> <mml:mo>]</mml:mo></mml:mrow></mml:mrow></mml:math></alternatives> <label>(2)</label></disp-formula>
+Here, <italic>i</italic> is the true (unknown) genotype of the ancient sample, and <italic>P</italic>[<italic>i</italic> |Ω, <bold>O</bold>] is the probability of genotype <italic>i</italic> given the demographic parameters and the data.</p>
+<p>We focus now on computation on the likelihood for one site <italic>j</italic> in the genome. In the following, we abuse notation and drop the subscript <italic>j</italic>. Given the true genotype of the ancient individual, the number of derived and ancestral fragments at a particular site follows a binomial distribution that depends on the genotype, the error rate and the rate of contamination [<xref ref-type="bibr" rid="pgen.1005972.ref001">1</xref>, <xref ref-type="bibr" rid="pgen.1005972.ref003">3</xref>]:
+<disp-formula id="pgen.1005972.e003"><alternatives><graphic id="pgen.1005972.e003g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pgen.1005972.e003" xlink:type="simple"/><mml:math display="block" id="M3"><mml:mrow><mml:mi>P</mml:mi> <mml:mrow><mml:mo>[</mml:mo> <mml:mi>a</mml:mi> <mml:mo>,</mml:mo> <mml:mi>d</mml:mi> <mml:mo>|</mml:mo> <mml:mi>i</mml:mi> <mml:mo>,</mml:mo> <mml:msub><mml:mi>r</mml:mi> <mml:mi>C</mml:mi></mml:msub> <mml:mo>,</mml:mo> <mml:mi>ϵ</mml:mi> <mml:mo>,</mml:mo> <mml:mi>w</mml:mi> <mml:mo>]</mml:mo></mml:mrow> <mml:mo>=</mml:mo> <mml:mfenced close=")" open="(" separators=""><mml:mfrac linethickness="0pt"><mml:mrow><mml:mi>a</mml:mi> <mml:mo>+</mml:mo> <mml:mi>d</mml:mi></mml:mrow> <mml:mi>d</mml:mi></mml:mfrac></mml:mfenced> <mml:msubsup><mml:mi>q</mml:mi> <mml:mrow><mml:mi>i</mml:mi></mml:mrow> <mml:mi>d</mml:mi></mml:msubsup> <mml:msup><mml:mrow><mml:mo>(</mml:mo> <mml:mn>1</mml:mn> <mml:mo>-</mml:mo> <mml:msub><mml:mi>q</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mo>)</mml:mo></mml:mrow> <mml:mi>a</mml:mi></mml:msup></mml:mrow></mml:math></alternatives> <label>(3)</label></disp-formula>
+where
+<disp-formula id="pgen.1005972.e004"><alternatives><graphic id="pgen.1005972.e004g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pgen.1005972.e004" xlink:type="simple"/><mml:math display="block" id="M4"><mml:mrow><mml:msub><mml:mi>q</mml:mi> <mml:mn>2</mml:mn></mml:msub> <mml:mo>=</mml:mo> <mml:msub><mml:mi>r</mml:mi> <mml:mi>C</mml:mi></mml:msub> <mml:mfenced close=")" open="(" separators=""><mml:mi>w</mml:mi> <mml:mo>(</mml:mo> <mml:mn>1</mml:mn> <mml:mo>-</mml:mo> <mml:mi>ϵ</mml:mi> <mml:mo>)</mml:mo> <mml:mo>+</mml:mo> <mml:mo>(</mml:mo> <mml:mn>1</mml:mn> <mml:mo>-</mml:mo> <mml:mi>w</mml:mi> <mml:mo>)</mml:mo> <mml:mi>ϵ</mml:mi></mml:mfenced> <mml:mo>+</mml:mo> <mml:mrow><mml:mo>(</mml:mo> <mml:mn>1</mml:mn> <mml:mo>-</mml:mo> <mml:msub><mml:mi>r</mml:mi> <mml:mi>C</mml:mi></mml:msub> <mml:mo>)</mml:mo></mml:mrow> <mml:mrow><mml:mo>(</mml:mo> <mml:mn>1</mml:mn> <mml:mo>-</mml:mo> <mml:mi>ϵ</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></alternatives> <label>(4)</label></disp-formula> <disp-formula id="pgen.1005972.e005"><alternatives><graphic id="pgen.1005972.e005g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pgen.1005972.e005" xlink:type="simple"/><mml:math display="block" id="M5"><mml:mrow><mml:msub><mml:mi>q</mml:mi> <mml:mn>1</mml:mn></mml:msub> <mml:mo>=</mml:mo> <mml:msub><mml:mi>r</mml:mi> <mml:mi>C</mml:mi></mml:msub> <mml:mfenced close=")" open="(" separators=""><mml:mi>w</mml:mi> <mml:mo>(</mml:mo> <mml:mn>1</mml:mn> <mml:mo>-</mml:mo> <mml:mi>ϵ</mml:mi> <mml:mo>)</mml:mo> <mml:mo>+</mml:mo> <mml:mo>(</mml:mo> <mml:mn>1</mml:mn> <mml:mo>-</mml:mo> <mml:mi>w</mml:mi> <mml:mo>)</mml:mo> <mml:mi>ϵ</mml:mi></mml:mfenced> <mml:mo>+</mml:mo> <mml:mrow><mml:mo>(</mml:mo> <mml:mn>1</mml:mn> <mml:mo>-</mml:mo> <mml:msub><mml:mi>r</mml:mi> <mml:mi>C</mml:mi></mml:msub> <mml:mo>)</mml:mo></mml:mrow> <mml:mfenced close=")" open="(" separators=""><mml:mo>(</mml:mo> <mml:mn>1</mml:mn> <mml:mo>-</mml:mo> <mml:mi>ϵ</mml:mi> <mml:mo>)</mml:mo> <mml:mo>/</mml:mo> <mml:mn>2</mml:mn> <mml:mo>+</mml:mo> <mml:mi>ϵ</mml:mi> <mml:mo>/</mml:mo> <mml:mn>2</mml:mn></mml:mfenced></mml:mrow></mml:math></alternatives> <label>(5)</label></disp-formula> <disp-formula id="pgen.1005972.e006"><alternatives><graphic id="pgen.1005972.e006g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pgen.1005972.e006" xlink:type="simple"/><mml:math display="block" id="M6"><mml:mrow><mml:msub><mml:mi>q</mml:mi> <mml:mn>0</mml:mn></mml:msub> <mml:mo>=</mml:mo> <mml:msub><mml:mi>r</mml:mi> <mml:mi>C</mml:mi></mml:msub> <mml:mfenced close=")" open="(" separators=""><mml:mi>w</mml:mi> <mml:mo>(</mml:mo> <mml:mn>1</mml:mn> <mml:mo>-</mml:mo> <mml:mi>ϵ</mml:mi> <mml:mo>)</mml:mo> <mml:mo>+</mml:mo> <mml:mo>(</mml:mo> <mml:mn>1</mml:mn> <mml:mo>-</mml:mo> <mml:mi>w</mml:mi> <mml:mo>)</mml:mo> <mml:mi>ϵ</mml:mi></mml:mfenced> <mml:mo>+</mml:mo> <mml:mrow><mml:mo>(</mml:mo> <mml:mn>1</mml:mn> <mml:mo>-</mml:mo> <mml:msub><mml:mi>r</mml:mi> <mml:mi>C</mml:mi></mml:msub> <mml:mo>)</mml:mo></mml:mrow> <mml:mi>ϵ</mml:mi></mml:mrow></mml:math></alternatives> <label>(6)</label></disp-formula></p>
+<p>In the sections below, we will turn to the more complicated part of the model, which is obtaining the probability <italic>P</italic>[<italic>i</italic>|<bold>Ω</bold>, <bold>O</bold>] for a genotype in the ancient sample, given particular demographic parameters and additional data available. We will do this in different ways, depending on the kind of data we have at hand.</p>
+</sec>
+<sec id="sec004">
+<title>Diffusion-based likelihood for neutral drift separating two populations</title>
+<p>First, we will work with the case in which <bold>O</bold> = <bold>y</bold>, where <bold>y</bold> is a vector of frequencies <italic>y</italic><sub><italic>j</italic></sub> from an “anchor” population that may be closely related to the population of the ancient DNA sample. An example of this scenario would be the sequencing of a Neanderthal sample that is suspected to have contamination from present-day humans, from which many genomes are available.</p>
+<p>For all analyses below, we restrict to sites where 0 &lt; <italic>y</italic><sub><italic>j</italic></sub> &lt; 1. Note that it is entirely possible (but not required) that <bold>y</bold> = <bold>w</bold>, meaning that, aside from the ancient DNA sample, the only additional data we have are the frequencies of the derived allele in the putative contaminant population, which we can use as the anchor population too. However, it is also possible to use a contaminant panel that is different from the anchor population (<xref ref-type="fig" rid="pgen.1005972.g001">Fig 1A</xref>). We will assume we have sequenced a large number of individuals from a panel of the contaminant population (for example, The 1000 Genomes Project panel) and that the panel is large enough such that the sampling variance is approximately 0. In other words, the frequency we observe in the contaminant panel will be assumed to be equal to the population frequency in the entire contaminant population. In this case, <bold>Ω</bold> = {<italic>τ</italic><sub><bold>C</bold></sub>, <italic>τ</italic><sub><bold>A</bold></sub>}, where <italic>τ</italic><sub><italic>A</italic></sub> and <italic>τ</italic><sub><italic>C</italic></sub> are defined as follows:</p>
+<list list-type="simple">
+<list-item>
+<p><italic>τ</italic><sub><italic>A</italic></sub>: drift time (i.e. time in generations scaled by twice the haploid effective population size) separating the population to which the ancient individual belongs from the ancestor of both populations</p>
+</list-item>
+<list-item>
+<p><italic>τ</italic><sub><italic>C</italic></sub>: drift time separating the anchor population from the ancestor of both populations</p>
+</list-item>
+</list>
+<fig id="pgen.1005972.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pgen.1005972.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title/>
+<p>A) Schematic of two-population modeling framework: at each site, derived and ancestral fragments (a, d) are binomially sampled from the true genotype of the archaic individual, with some amount of contamination and error. In turn, the true genotype depends on a demographic model, which can include the contaminant population. B) Schematic of three-population modeling framework, incorporating admixture between the archaic population and one of two anchor populations.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.g001" xlink:type="simple"/>
+</fig>
+<p>We need to calculate the conditional probabilities <italic>P</italic>[<italic>i</italic>|<bold>Ω</bold>, <bold>O</bold>] = <bold>P</bold>[<bold>i</bold>|<bold>y</bold>, <italic>τ</italic><sub><bold>C</bold></sub>, <italic>τ</italic><sub><bold>A</bold></sub>] for all three possibilities for the genotype in the ancient individual: <italic>i</italic> = 0, 1 or 2. To obtain these expressions, we rely on Wright-Fisher diffusion theory (reviewed in Ewens [<xref ref-type="bibr" rid="pgen.1005972.ref017">17</xref>]), especially focusing on the two-population site-frequency spectrum (SFS) [<xref ref-type="bibr" rid="pgen.1005972.ref018">18</xref>]. The full derivations can be found in the <xref ref-type="supplementary-material" rid="pgen.1005972.s033">S1 Text</xref>, and lead to the following formulas:
+<disp-formula id="pgen.1005972.e007"><alternatives><graphic id="pgen.1005972.e007g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pgen.1005972.e007" xlink:type="simple"/><mml:math display="block" id="M7"><mml:mrow><mml:mi>P</mml:mi> <mml:mrow><mml:mo>[</mml:mo> <mml:mspace width="4pt"/><mml:mi>i</mml:mi> <mml:mo>=</mml:mo> <mml:mn>0</mml:mn> <mml:mspace width="4pt"/><mml:mo>|</mml:mo> <mml:mspace width="4pt"/><mml:mi>y</mml:mi> <mml:mo>,</mml:mo> <mml:msub><mml:mi>τ</mml:mi> <mml:mi>C</mml:mi></mml:msub> <mml:mo>,</mml:mo> <mml:msub><mml:mi>τ</mml:mi> <mml:mi>A</mml:mi></mml:msub> <mml:mspace width="4pt"/><mml:mo>]</mml:mo></mml:mrow> <mml:mo>=</mml:mo> <mml:mn>1</mml:mn> <mml:mo>-</mml:mo> <mml:mi>y</mml:mi> <mml:mo>*</mml:mo> <mml:msup><mml:mi>e</mml:mi> <mml:mrow><mml:mo>-</mml:mo> <mml:msub><mml:mi>τ</mml:mi> <mml:mi>C</mml:mi></mml:msub></mml:mrow></mml:msup> <mml:mo>-</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mn>2</mml:mn></mml:mfrac> <mml:mo>*</mml:mo> <mml:mi>y</mml:mi> <mml:mo>*</mml:mo> <mml:msup><mml:mi>e</mml:mi> <mml:mrow><mml:mo>-</mml:mo> <mml:msub><mml:mi>τ</mml:mi> <mml:mi>A</mml:mi></mml:msub> <mml:mo>-</mml:mo> <mml:msub><mml:mi>τ</mml:mi> <mml:mi>C</mml:mi></mml:msub></mml:mrow></mml:msup> <mml:mo>+</mml:mo> <mml:mi>y</mml:mi> <mml:mfenced close=")" open="(" separators=""><mml:mi>y</mml:mi> <mml:mo>-</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mn>2</mml:mn></mml:mfrac></mml:mfenced> <mml:msup><mml:mi>e</mml:mi> <mml:mrow><mml:mo>-</mml:mo> <mml:msub><mml:mi>τ</mml:mi> <mml:mi>A</mml:mi></mml:msub> <mml:mo>-</mml:mo> <mml:mn>3</mml:mn> <mml:msub><mml:mi>τ</mml:mi> <mml:mi>C</mml:mi></mml:msub></mml:mrow></mml:msup></mml:mrow></mml:math></alternatives> <label>(7)</label></disp-formula> <disp-formula id="pgen.1005972.e008"><alternatives><graphic id="pgen.1005972.e008g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pgen.1005972.e008" xlink:type="simple"/><mml:math display="block" id="M8"><mml:mrow><mml:mi>P</mml:mi> <mml:mrow><mml:mo>[</mml:mo> <mml:mspace width="4pt"/><mml:mi>i</mml:mi> <mml:mo>=</mml:mo> <mml:mn>1</mml:mn> <mml:mspace width="4pt"/><mml:mo>|</mml:mo> <mml:mspace width="4pt"/><mml:mi>y</mml:mi> <mml:mo>,</mml:mo> <mml:msub><mml:mi>τ</mml:mi> <mml:mi>C</mml:mi></mml:msub> <mml:mo>,</mml:mo> <mml:msub><mml:mi>τ</mml:mi> <mml:mi>A</mml:mi></mml:msub> <mml:mspace width="4pt"/><mml:mo>]</mml:mo></mml:mrow> <mml:mo>=</mml:mo> <mml:mi>y</mml:mi> <mml:mo>*</mml:mo> <mml:msup><mml:mi>e</mml:mi> <mml:mrow><mml:mo>-</mml:mo> <mml:msub><mml:mi>τ</mml:mi> <mml:mi>A</mml:mi></mml:msub> <mml:mo>-</mml:mo> <mml:msub><mml:mi>τ</mml:mi> <mml:mi>C</mml:mi></mml:msub></mml:mrow></mml:msup> <mml:mo>+</mml:mo> <mml:mi>y</mml:mi> <mml:mfenced close=")" open="(" separators=""><mml:mn>1</mml:mn> <mml:mo>-</mml:mo> <mml:mn>2</mml:mn> <mml:mi>y</mml:mi></mml:mfenced> <mml:msup><mml:mi>e</mml:mi> <mml:mrow><mml:mo>-</mml:mo> <mml:msub><mml:mi>τ</mml:mi> <mml:mi>A</mml:mi></mml:msub> <mml:mo>-</mml:mo> <mml:mn>3</mml:mn> <mml:msub><mml:mi>τ</mml:mi> <mml:mi>C</mml:mi></mml:msub></mml:mrow></mml:msup></mml:mrow></mml:math></alternatives> <label>(8)</label></disp-formula> <disp-formula id="pgen.1005972.e009"><alternatives><graphic id="pgen.1005972.e009g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pgen.1005972.e009" xlink:type="simple"/><mml:math display="block" id="M9"><mml:mrow><mml:mi>P</mml:mi> <mml:mrow><mml:mo>[</mml:mo> <mml:mspace width="4pt"/><mml:mi>i</mml:mi> <mml:mo>=</mml:mo> <mml:mn>2</mml:mn> <mml:mspace width="4pt"/><mml:mo>|</mml:mo> <mml:mspace width="4pt"/><mml:mi>y</mml:mi> <mml:mo>,</mml:mo> <mml:msub><mml:mi>τ</mml:mi> <mml:mi>C</mml:mi></mml:msub> <mml:mo>,</mml:mo> <mml:msub><mml:mi>τ</mml:mi> <mml:mi>A</mml:mi></mml:msub> <mml:mspace width="4pt"/><mml:mo>]</mml:mo></mml:mrow> <mml:mo>=</mml:mo> <mml:mi>y</mml:mi> <mml:mo>*</mml:mo> <mml:msup><mml:mi>e</mml:mi> <mml:mrow><mml:mo>-</mml:mo> <mml:msub><mml:mi>τ</mml:mi> <mml:mi>C</mml:mi></mml:msub></mml:mrow></mml:msup> <mml:mo>-</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mn>2</mml:mn></mml:mfrac> <mml:mo>*</mml:mo> <mml:mi>y</mml:mi> <mml:mo>*</mml:mo> <mml:msup><mml:mi>e</mml:mi> <mml:mrow><mml:mo>-</mml:mo> <mml:msub><mml:mi>τ</mml:mi> <mml:mi>A</mml:mi></mml:msub> <mml:mo>-</mml:mo> <mml:msub><mml:mi>τ</mml:mi> <mml:mi>C</mml:mi></mml:msub></mml:mrow></mml:msup> <mml:mo>+</mml:mo> <mml:mi>y</mml:mi> <mml:mfenced close=")" open="(" separators=""><mml:mi>y</mml:mi> <mml:mo>-</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mn>2</mml:mn></mml:mfrac></mml:mfenced> <mml:msup><mml:mi>e</mml:mi> <mml:mrow><mml:mo>-</mml:mo> <mml:msub><mml:mi>τ</mml:mi> <mml:mi>A</mml:mi></mml:msub> <mml:mo>-</mml:mo> <mml:mn>3</mml:mn> <mml:msub><mml:mi>τ</mml:mi> <mml:mi>C</mml:mi></mml:msub></mml:mrow></mml:msup></mml:mrow></mml:math></alternatives> <label>(9)</label></disp-formula></p>
+<p>We generated 10,000 neutral simulations using msms [<xref ref-type="bibr" rid="pgen.1005972.ref019">19</xref>] for different choices of <italic>τ</italic><sub><italic>C</italic></sub> and <italic>τ</italic><sub><italic>A</italic></sub> (with <italic>θ</italic> = 20 in each simulation) to verify our analytic expressions were correct (<xref ref-type="fig" rid="pgen.1005972.g002">Fig 2</xref>). The probability does not depend on <italic>θ</italic>, so the choice of this value is arbitrary.</p>
+<fig id="pgen.1005972.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pgen.1005972.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>Comparison of analytic solutions to <italic>P</italic>[<italic>i</italic>|<italic>y</italic>, <italic>τ</italic><sub><italic>C</italic></sub>, <italic>τ</italic><sub><italic>A</italic></sub>] and simulations under neutrality from msms, for different choices of <italic>τ</italic><sub><italic>A</italic></sub> and <italic>τ</italic><sub><italic>C</italic></sub>.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.g002" xlink:type="simple"/>
+</fig>
+<p>The above probabilities allows us to finally obtain <italic>P</italic>[<italic>i</italic> | <italic>y</italic><sub><italic>j</italic></sub>, <bold>Ω</bold>, <bold>O</bold>].</p>
+</sec>
+<sec id="sec005">
+<title>Estimating drift and admixture in a three-population model</title>
+<p>Although the above method gives accurate results for a simple demographic scenario, it does not incorporate the possibility of admixture from the ancient sample to the contaminant population. This is important, as the signal of contamination may mimic the pattern of recent admixture. We will assume that, in addition to the ancient DNA sample, we also have the following data, which constitute <bold>O</bold>:</p>
+<list list-type="order">
+<list-item>
+<p>A large panel from a population suspected to be the contaminant in the ancient DNA sample. The sample frequencies from this panel will be labeled <bold>w</bold>, as before.</p>
+</list-item>
+<list-item>
+<p>Two panels of genomes from two “anchor” populations that may be related to the ancient DNA sample. One of these populations—called population Y—may (but need not) be the same population as the contaminant and may (but need not) have received admixture from the ancient population (<xref ref-type="fig" rid="pgen.1005972.g001">Fig 1B</xref>). The sample frequencies for this population will be labeled as <bold>y</bold>. The other population—called Z—will have sample frequencies labeled <bold>z</bold>. We will assume the drift times separating these two populations are known (parameters <italic>τ</italic><sub><italic>Y</italic></sub> and <italic>τ</italic><sub><italic>Z</italic></sub> in <xref ref-type="fig" rid="pgen.1005972.g001">Fig 1B</xref>). This is a reasonable assumption as these parameters can be accurately estimated without the need of using an ancient outgroup sample, as long as admixture is not extremely high.</p>
+</list-item>
+</list>
+<p>We can then estimate the remaining drift parameters, the error and contamination rates and the admixture time (<italic>β</italic>) and rate (<italic>α</italic>) between the archaic population and modern population <italic>Y</italic>. The diffusion solution for this three-population scenario with admixture is very difficult to obtain analytically. Instead, we use a numerical approximation, implemented in the program ∂a∂i [<xref ref-type="bibr" rid="pgen.1005972.ref020">20</xref>].</p>
+</sec>
+<sec id="sec006">
+<title>Markov Chain Monte Carlo method for inference</title>
+<p>We incorporated the likelihood functions defined above into a Markov Chain Monte Carlo (MCMC) inference method, to obtain posterior probability distributions for the contamination rate, the sequencing error rate, the drift times and the admixture rate. Our program—which we called ‘DICE’—is coded in C++ and is freely available at: <ext-link ext-link-type="uri" xlink:href="http://grenaud.github.io/dice/" xlink:type="simple">http://grenaud.github.io/dice/</ext-link>. We assumed uniform prior distributions for all parameters, and the boundaries of these distributions can be modified by the user.</p>
+<p>For the starting chain at step 0, an initial set of parameters <italic>X</italic><sub>0</sub> = {<italic>r</italic><sub><italic>C</italic></sub><sub>0</sub>, <italic>ϵ</italic><sub>0</sub>, <italic>Ω</italic><sub>0</sub>} is sampled randomly from their prior distributions. At step <italic>k</italic>, a new set of values for step <italic>k</italic> + 1 is proposed by drawing values for each of the parameters from normal distributions. The mean of each of those distributions is the value for each parameter at state <italic>X</italic><sub><italic>k</italic></sub> and the standard deviation is the difference between the upper and lower boundary of the prior, divided by a constant that can be increased or decreased to achieve a desired rate of acceptance of new states [<xref ref-type="bibr" rid="pgen.1005972.ref021">21</xref>]. By default, this constant is equal to 1,000 for all parameters. The new state is accepted with probability:
+<disp-formula id="pgen.1005972.e010"><alternatives><graphic id="pgen.1005972.e010g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pgen.1005972.e010" xlink:type="simple"/><mml:math display="block" id="M10"><mml:mrow><mml:mi>P</mml:mi> <mml:mrow><mml:mo>[</mml:mo> <mml:mi>a</mml:mi> <mml:mi>c</mml:mi> <mml:mi>c</mml:mi> <mml:mi>e</mml:mi> <mml:mi>p</mml:mi> <mml:mi>t</mml:mi> <mml:mo>]</mml:mo></mml:mrow> <mml:mo>=</mml:mo> <mml:mi>m</mml:mi> <mml:mi>i</mml:mi> <mml:mi>n</mml:mi> <mml:mfenced close=")" open="(" separators=""><mml:mn>1</mml:mn> <mml:mo>,</mml:mo> <mml:mfrac><mml:mrow><mml:mi>P</mml:mi> <mml:mo>[</mml:mo> <mml:mi mathvariant="bold">a</mml:mi> <mml:mo>,</mml:mo> <mml:mi mathvariant="bold">d</mml:mi> <mml:mspace width="4pt"/><mml:mo>|</mml:mo> <mml:mspace width="4pt"/><mml:msub><mml:mi>X</mml:mi> <mml:mrow><mml:mi>k</mml:mi> <mml:mo>+</mml:mo> <mml:mn>1</mml:mn></mml:mrow></mml:msub> <mml:mo>]</mml:mo></mml:mrow> <mml:mrow><mml:mi>P</mml:mi> <mml:mo>[</mml:mo> <mml:mi mathvariant="bold">a</mml:mi> <mml:mo>,</mml:mo> <mml:mi mathvariant="bold">d</mml:mi> <mml:mspace width="4pt"/><mml:mo>|</mml:mo> <mml:mspace width="4pt"/><mml:msub><mml:mi>X</mml:mi> <mml:mi>k</mml:mi></mml:msub> <mml:mo>]</mml:mo></mml:mrow></mml:mfrac></mml:mfenced></mml:mrow></mml:math></alternatives> <label>(10)</label></disp-formula>
+where <italic>P</italic>[<bold>a</bold>, <bold>d</bold> | <italic>X</italic><sub><italic>k</italic></sub>] is the likelihood defined in <xref ref-type="disp-formula" rid="pgen.1005972.e001">Eq 1</xref>.</p>
+<p>Unless otherwise stated below, we ran the MCMC chain for 100,000 steps in all analyses, with a burn-in period of 40,000 and sampling every 100 steps. The sampled values were then used to construct posterior distributions for each parameter.</p>
+</sec>
+<sec id="sec007">
+<title>Multiple error rates and ancestral state misidentification</title>
+<p>Fu et al. [<xref ref-type="bibr" rid="pgen.1005972.ref005">5</xref>] showed that, when estimating contamination, ancient DNA data can be better fit by a two-error model than a single-error model. In that study, the authors co-estimate the two genome-wide error rates along with the proportion of the data that is affected by each rate. Therefore, we also included this error model as an option that the user can choose to incorporate when running our program.</p>
+<p>Furthermore, we developed an alternative error estimation method that allows the user to flag transition polymorphisms, which are more likely to have occurred due to cytosine deamination in ancient DNA. These sites are therefore likely to be subject to different error rates than those common in present-day sequencing data [<xref ref-type="bibr" rid="pgen.1005972.ref022">22</xref>, <xref ref-type="bibr" rid="pgen.1005972.ref023">23</xref>]. Our program can then estimate two error rates separately: one for transitions and one for transversions. Finally, we incorporated an option to include an ancestral state misidentification (ASM) parameter, which should serve to correct for mispolarization of alleles [<xref ref-type="bibr" rid="pgen.1005972.ref024">24</xref>].</p>
+</sec>
+<sec id="sec008">
+<title>BAM file functionality</title>
+<p>The standard input for DICE is a file containing counts of particular ancestral/derived base combinations and SNP frequencies (see README file online). As an additional feature, we also developed a module for the user to directly input a BAM file and a file containing population allele frequencies for the anchor and contaminant panels, rather than the standard input. The user can either choose to convert the BAM file to native DICE format using a program provided with the software package and then run the program, or run it directly on the BAM file. In the latter case, instead of calculating genome-wide error parameters, the program will calculate error parameters specific to each sequenced fragment, based on mapping qualities, base qualities and estimated deamination rates at each site (see <xref ref-type="supplementary-material" rid="pgen.1005972.s034">S2 Text</xref>).</p>
+</sec>
+</sec>
+<sec id="sec009" sec-type="results">
+<title>Results</title>
+<sec id="sec010">
+<title>Two-population method</title>
+<sec id="sec011">
+<title>Simulations</title>
+<p>We first used DICE to obtain posterior distributions from simulated data, under the two-population inference framework. We simulated two populations (i.e. an archaic and a modern human population) with constant population size that split a number of generations ago. For each demographic scenario tested, we generated 20,000 independent replicates (theta = 1) in <italic>ms</italic> [<xref ref-type="bibr" rid="pgen.1005972.ref025">25</xref>], making sure each simulation had at least one usable SNP. In general, this yielded ∼80,000 usable SNPs in total. We then proceeded to sample derived and ancestral allele counts using the same binomial sampling model we use in our inference framework, under different sequencing coverage and contamination conditions. In all simulations, the contaminant panel was the same as the anchor population panel. We then applied our method to the combined set of ∼80,000 SNPs.</p>
+<p>In Figs <xref ref-type="fig" rid="pgen.1005972.g003">3</xref> and <xref ref-type="fig" rid="pgen.1005972.g004">4</xref>, we show parameter estimation results from various demographic and contamination scenarios for a low-coverage (3X) and a high-coverage (30X) archaic genome, respectively, with low sequencing error (0.1%), and a contaminant/anchor population panel of 100 haploid genomes. In both cases, the method accurately estimates the error rate, the contamination rate and the drift parameters. All parameters are also accurately estimated for the same scenarios even if the sequencing error rate is high (10%) (<xref ref-type="supplementary-material" rid="pgen.1005972.s005">S1 Fig</xref>).</p>
+<fig id="pgen.1005972.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pgen.1005972.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>Estimation of parameters for a low-coverage ancient DNA genome (3X) with low sequencing error (0.1%), no admixture and a large anchor population panel (100 haploid genomes).</title>
+<p>Error bars represent 95% posterior intervals.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.g003" xlink:type="simple"/>
+</fig>
+<fig id="pgen.1005972.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pgen.1005972.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title>Estimation of parameters for a high-coverage ancient DNA genome (30X) with low sequencing error (0.1%), no admixture and a large anchor population panel (100 haploid genomes).</title>
+<p>Error bars represent 95% posterior intervals.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.g004" xlink:type="simple"/>
+</fig>
+<p>In Figs <xref ref-type="fig" rid="pgen.1005972.g005">5</xref>, <xref ref-type="supplementary-material" rid="pgen.1005972.s006">S2</xref>, <xref ref-type="supplementary-material" rid="pgen.1005972.s007">S3</xref> and <xref ref-type="supplementary-material" rid="pgen.1005972.s008">S4</xref>, we show how well the method does at estimating parameters over a wide range of contamination and drift scenarios, by displaying the absolute difference between simulated parameters and their corresponding posterior modes. So long as coverage is high (for example, 5X or 30X), the contamination and anchor drift parameters are accurately estimated even at 75% contamination. The method performs well even if the drift times on both sides of the tree are as small as ≈0.001 or as large as ≈5, but starts becoming inaccurate when contamination is extremely high. In general, the contamination rate and anchor drifts are easier to determine than the drift corresponding to the ancient population.</p>
+<fig id="pgen.1005972.g005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pgen.1005972.g005</object-id>
+<label>Fig 5</label>
+<caption>
+<title>We tested the performance of the two-population method under a variety of drift and contamination scenarios for a sample of very low (0.5X) or very high (30X) coverage.</title>
+<p>We found that we needed more sites with coverage &gt;0 (≈1.6 million) to obtain accurate estimates from the low coverage sample. The MCMC chain was also run for a longer time (1 million steps). A) Absolute difference between the estimated and the simulated contamination rate for a 0.5X genome. B) Absolute difference between the estimated and estimated and the simulated contamination rate for a 30X genome. C) Absolute difference between the estimated and the simulated anchor drift for a 0.5X genome. D) Absolute difference between the estimated and the simulated anchor drift for a 30X genome. In all simulations, the anchor drift was set to be equal to the ancient sample drift.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.g005" xlink:type="simple"/>
+</fig>
+<p>We find that for samples of very low coverage (0.5X, 1X, 1.5X) we require a larger number of sites to obtain accurate estimates (<xref ref-type="supplementary-material" rid="pgen.1005972.s009">S5</xref>, <xref ref-type="supplementary-material" rid="pgen.1005972.s010">S6</xref> and <xref ref-type="supplementary-material" rid="pgen.1005972.s011">S7</xref> Figs). For example, for a sample of 0.5X coverage, we tried different numbers of independent replicate simulations and found that at 800,000 replicates, we obtained approximately 1.6 million valid SNPs for inference, which was enough to reach reasonable levels of accuracy (<xref ref-type="supplementary-material" rid="pgen.1005972.s018">S14 Fig</xref>). We note that this number of SNPs is approximately the same as what is available, for example, in the low-coverage (0.5X) Mezmaiskaya Neanderthal genome [<xref ref-type="bibr" rid="pgen.1005972.ref004">4</xref>], which contains about 1.55 million valid sites with coverage ≥1, and which we analyze below. We also observed that the MCMC chain in some of these simulations needed a longer time to converge than when testing samples of higher coverage, especially when contamination is very high, and so in this set of simulations, we ran it for 1 million steps instead of 100,000, with a burn-in of 940,000 steps and sampling every 100 steps. Finally, we note that our failure to recover the true parameters under low coverage in a single MCMC run is partly due to the chain failing to converge. Indeed, when we run the MCMC 10 times and recover the estimates from the chain with the highest posterior probability, we are able to obtain increased accuracy relative to the single run, especially when the drift parameters are extremely low and when the contamination rate is extremely high (<xref ref-type="supplementary-material" rid="pgen.1005972.s012">S8</xref>, <xref ref-type="supplementary-material" rid="pgen.1005972.s013">S9</xref> and <xref ref-type="supplementary-material" rid="pgen.1005972.s014">S10</xref> Figs).</p>
+<p>Finally, we tested the method on simulations in a more realistic scenario, in which we generated ancient and contaminant fragments based on empirical fragment sizes and then mapped them to a simulated reference genome using BWA [<xref ref-type="bibr" rid="pgen.1005972.ref026">26</xref>] with default parameters. We produced DNA sequences from the output of msms [<xref ref-type="bibr" rid="pgen.1005972.ref019">19</xref>] via seq-gen v.1.3.3 [<xref ref-type="bibr" rid="pgen.1005972.ref027">27</xref>] with the HKY substitution model [<xref ref-type="bibr" rid="pgen.1005972.ref028">28</xref>]. This allows for multiple substitutions to occur at the same site since the split from chimpanzee (which could cause ASM). We then simulated ancient DNA fragments that had a fragment size distribution emulating empirical distributions. Contaminant fragments were also sampled from the contaminant population. We used the deamination rates from the single-stranded library from the Loschbour ancient individual [<xref ref-type="bibr" rid="pgen.1005972.ref029">29</xref>] (∼8% at the 5’ end and ∼34% at the 3’ end with a residual deamination rate of ∼1% along the whole fragment) to artificially deaminate the ancient fragments. We simulated sequencing errors on both the ancient and contaminant fragments using empirical sequencing error rates from a PhiX library (Illumina Corp.) sequenced at the Max Planck Institute for Evolutionary Anthropology on an Illumina HiSeq, basecalled using freeIbis [<xref ref-type="bibr" rid="pgen.1005972.ref030">30</xref>]. With the same empirical PhiX dataset distribution, we generated quality scores for each nucleotide. Fragments were mapped back to a random individual from the contaminant panel. <xref ref-type="fig" rid="pgen.1005972.g006">Fig 6</xref> shows DICE’s performance on this scenario with different error models. In all cases, we find that the parameters are estimated with high accuracy. As expected, the ts/tv model infers a higher error rate at transitions, due to the additional errors introduced by deamination on the ends of the ancient fragments.</p>
+<fig id="pgen.1005972.g006" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pgen.1005972.g006</object-id>
+<label>Fig 6</label>
+<caption>
+<title>Estimation of parameters for a high-coverage ancient DNA genome (30X) simulated under a realistic scenario in which fragments from the ancient and contaminant genome were generated and then mapped to a reference genome.</title>
+<p>We allowed for multiple substitutions at the same site after the split from chimp, as well as sequencing errors and post-mortem deamination errors at the ends of the fragments. The five panels show results from inferring parameters under five different error rate models. Top-left: single-error model. Top-right: two-error model [<xref ref-type="bibr" rid="pgen.1005972.ref005">5</xref>]. Middle-left: model with separate errors for transitions (ts) and tranversions (tv). Middle-right: single-error model with an ancestral state misidentification parameter. Bottom-left: Model in which errors were inferred individually at each site, using base and mapping qualities obtained from the simulated BAM file. Error bars represent 95% posterior intervals.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.g006" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec012">
+<title>Performance under violations of model assumptions</title>
+<p>We evaluated the consequences of different violations of model assumptions. We started by observing the effects of using a small modern human panel. <xref ref-type="supplementary-material" rid="pgen.1005972.s016">S12 Fig</xref> shows results for cases in which the contaminant/anchor panel is made up of only 20 haploid genomes. In this case, all parameters are estimated accurately, with only a slight bias towards overestimating the drift parameters, presumably because the low sampling of individuals acts as a population bottleneck, artificially increasing the drift time parameters estimated.</p>
+<p>Additionally, we simulated a scenario in which only a single human contaminated the sample. That is, rather than drawing contaminant fragments from a panel of individuals, we randomly picked a set of two chromosomes at each unlinked site and only drew contaminant fragments from those two chromosomes. <xref ref-type="supplementary-material" rid="pgen.1005972.s017">S13 Fig</xref> shows that inference is robust to this scenario, unless the contamination rate is very high (25%). In that case, the drift of the archaic genome is substantially under-estimated, but the error, contamination and anchor drift parameters only show slight inaccuracies in the estimate.</p>
+<p>We then investigated the effect of admixture in the anchor/contaminant population from the archaic population, occurring after their divergence, which we did not account for in the simple, two-population model (<xref ref-type="supplementary-material" rid="pgen.1005972.s015">S11 Fig</xref>). In this case, the error and the contamination rates are accurately estimated, but both drift times are underestimated. This is to be expected, as admixture will tend to homogenize allele frequencies and thereby reduce the apparent drift separating the two populations.</p>
+</sec>
+<sec id="sec013">
+<title>Identifying the contaminant population</title>
+<p>We sought to see whether we would use our method to identify the contaminant population, from among a set of candidate contaminants (for example, different present-day human panels). Because our MCMC samples are samples from the posterior distribution of the parameters and not the marginal likelihood of the data over the entire parameter space, we cannot perform proper Bayesian model selection. Instead, we used the posterior mode as a heuristic statistic that may suggest which panel is most likely to have contaminated the sample. We validated this choice of statistic using simulations under a variety of demographic scenarios (<xref ref-type="supplementary-material" rid="pgen.1005972.s019">S15 Fig</xref>). We simulated 5-population trees of varying drift times. The outgroup was chosen to be the ancient population and the rest were chosen to be the present-day human populations (A, B, C and D). One of the populations (A) was the true contaminant. To add another layer of complexity, we also allowed for admixture (at 0%, 5% and 50% rate) from the ancient population to the ancestral population of A and B. We then ran our MCMC method four times on each of these demographic scenarios, using D as the anchor and different panels as the putative contaminant in each run.</p>
+<p>
+<xref ref-type="supplementary-material" rid="pgen.1005972.s020">S16 Fig</xref> shows that the highest posterior mode always corresponds to the run that uses the true contaminant (A), and that the mode decreases the farther the tested contaminant is from the true contaminant in the tree. Additionally, <xref ref-type="supplementary-material" rid="pgen.1005972.s021">S17</xref>, <xref ref-type="supplementary-material" rid="pgen.1005972.s022">S18</xref> and <xref ref-type="supplementary-material" rid="pgen.1005972.s023">S19</xref> Figs show the effect of misspecifying the contaminant panel for different admixture scenarios. The error rate and the anchor drift time are correctly estimated, even when the candidate contaminant is highly diverged from the true contaminant, while the other two parameters are more sensitive to misspecification. In general, the correct candidate contaminant produces the highest posterior probability and yields the best parameter estimates.</p>
+</sec>
+<sec id="sec014">
+<title>Empirical data</title>
+<p>We first applied our method to published ancient DNA data from a high-coverage genome (52X) from Denisova cave in Siberia (the Altai Neanderthal) [<xref ref-type="bibr" rid="pgen.1005972.ref004">4</xref>], and visually ensured that the chain had converged. The demographic, error and contamination estimates are shown in <xref ref-type="table" rid="pgen.1005972.t001">Table 1</xref>. We used the African (AFR) 1000 Genomes Phase 3 panel [<xref ref-type="bibr" rid="pgen.1005972.ref016">16</xref>] as the anchor population. The drift times estimated for both samples are consistent with the known demographic history of Neanderthals and modern humans, and the contamination rates largely agree with previous estimates (see <xref ref-type="sec" rid="sec018">Discussion</xref> below).</p>
+<table-wrap id="pgen.1005972.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pgen.1005972.t001</object-id>
+<label>Table 1</label>
+<caption>
+<title>Posterior modes of parameter estimates under the two-population inference framework for the Altai Neanderthal autosomal genome.</title> <p>We used different 1000G populations as candidate contaminants. Africans were the anchor population in all cases, so the modern human drift is with respect to Africans. Values in parentheses are 95% posterior quantiles.</p>
+</caption>
+<alternatives>
+<graphic id="pgen.1005972.t001g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.t001" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Contaminant panel</th>
+<th align="left">Anchor panel</th>
+<th align="left">Error rate</th>
+<th align="left">Contamination rate</th>
+<th align="left">Modern human drift</th>
+<th align="left">Neanderthal drift</th>
+<th align="left">Log-posterior mode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">EUR</td>
+<td align="left">AFR</td>
+<td align="left">0.12%<break/>(0.119%–0.12%)</td>
+<td align="left">0.952%<break/>(0.949%–0.956%)</td>
+<td align="left">0.414<break/>(0.411–0.414)</td>
+<td align="left">2.497<break/>(2.49–2.504)</td>
+<td align="char" char=".">-6476175.868</td>
+</tr>
+<tr>
+<td align="left">AMR</td>
+<td align="left">AFR</td>
+<td align="left">0.118%<break/>(0.118%–0.118%)</td>
+<td align="left">0.964%<break/>(0.963%–0.967%)</td>
+<td align="left">0.414<break/>(0.411–0.414)</td>
+<td align="left">2.499<break/>(2.494–2.506)</td>
+<td align="char" char=".">-6484270.973</td>
+</tr>
+<tr>
+<td align="left">SAS</td>
+<td align="left">AFR</td>
+<td align="left">0.12%<break/>(0.12%–0.121%)</td>
+<td align="left">0.95%<break/>(0.946%–0.951%)</td>
+<td align="left">0.411<break/>(0.411–0.414)</td>
+<td align="left">2.496<break/>(2.493–2.5)</td>
+<td align="char" char=".">-6489357.978</td>
+</tr>
+<tr>
+<td align="left">EAS</td>
+<td align="left">AFR</td>
+<td align="left">0.13%<break/>(0.129%–0.13%)</td>
+<td align="left">0.888%<break/>(0.888%–0.891%)</td>
+<td align="left">0.414<break/>(0.412–0.414)</td>
+<td align="left">2.493<break/>(2.488–2.493)</td>
+<td align="char" char=".">-6521082.384</td>
+</tr>
+<tr>
+<td align="left">AFR</td>
+<td align="left">AFR</td>
+<td align="left">0.112%<break/>(0.111%–0.112%)</td>
+<td align="left">0.969%<break/>(0.966%–0.973%)</td>
+<td align="left">0.412<break/>(0.41–0.413)</td>
+<td align="left">2.495<break/>(2.495–2.504)</td>
+<td align="char" char=".">-6574080.092</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>We ran our method with different putative contaminant panels: Africans (AFR), East Asians (EAS), Native Americans (AMR), Europeans (EUR), South Asians (SAS). For the Altai sample, we observe a contamination rate of ∼1% and an error rate of ∼0.1%, regardless of which panel we use. Furthermore, the drift on the Neanderthal side of the tree seems to be 6 times as large as the drift on the modern human side of the tree, reflecting the smaller effective population size of Neanderthals after their divergence. The EUR panel is the one with the highest posterior mode (<xref ref-type="table" rid="pgen.1005972.t001">Table 1</xref>).</p>
+<p>We then tested a variety of ancient DNA nuclear genome sequences at different levels of coverage, obtained via different methods (shotgun sequencing and SNP capture) and from different hominin groups (modern humans and Neanderthals). We used AFR as the anchor panel and either AFR (<xref ref-type="supplementary-material" rid="pgen.1005972.s001">S1 Table</xref>) or EUR (<xref ref-type="supplementary-material" rid="pgen.1005972.s002">S2 Table</xref>) as the contaminant panel. For samples of high and medium average coverage, the MCMC converges to reasonable values for all parameters. For example, we estimate the ancient population drift parameter (<italic>τ</italic><sub><italic>A</italic></sub>) to be larger in Neanderthals than in various modern humans sampled across Eurasia, as the effective population size of the former was smaller and their split time to Africans was larger. Of note is a sample from Haak et al. [<xref ref-type="bibr" rid="pgen.1005972.ref031">31</xref>] (I0104) which appears to have 14.75% contamination when using Europeans as the contaminant source, but no contamination (0%) when using Africans as the source. This could suggest this sample has elevated levels of European-specific contamination, or that its demographic history may include complex admixture events that are not properly captured by our simple demographic model.</p>
+<p>For samples of very low coverage, we observe a failure of some of the parameters to properly converge, as the MCMC seems to get stuck in the boundaries of parameter space. We tested different boundaries and the problem remains. This appears to be less of a problem when using AFR as the putative contaminant panel than when using EUR as the putative contaminant panel, presumably because of the larger amount of SNPs that may be informative for inference. In the former case, we only observe this problem when samples are at lower than ∼0.5X coverage. In the latter case, we observe the problem for samples at lower than ∼3X coverage.</p>
+<p>For example, the low-coverage Neanderthal genome (0.5X) from Mezmaiskaya Cave in Western Russia [<xref ref-type="bibr" rid="pgen.1005972.ref004">4</xref>] seems to converge to parameters within the prior boundaries when using AFR as the contaminant panel but the ancient population drift gets stuck in the upper limit of parameter space when any of the other panels are used as contaminants (<xref ref-type="supplementary-material" rid="pgen.1005972.s003">S3 Table</xref>). Regardless of which contaminant panel is used, there is good agreement with the modern human drift parameter obtained when using the Altai Neanderthal genome. However, we note that when using non-African populations as the contaminants, we obtain a higher (∼5%) contamination rate in the Mezmaiskaya Neanderthal than in the Altai Neanderthal. It is currently unclear to us whether this is due to the MCMC failing to properly converge or to a real feature of the data.</p>
+<p>We sought to determine the robustness of our results to different levels of GC content. We did this because we initially hypothesized that endogenous DNA might be preserved at lower rates when GC content is low, leading to the presence of proportionally more contaminant DNA. We partitioned the Altai Neanderthal genome into three different regions of low (0%–30%), medium (31%–69%) and high (70%–100%) GC content, using the ‘GC content’ track downloaded from the UCSC genome browser [<xref ref-type="bibr" rid="pgen.1005972.ref032">32</xref>]. We then used the two-population method to infer contamination, error and drift parameters, using Africans as the anchor population and Europeans as the contaminant population (<xref ref-type="supplementary-material" rid="pgen.1005972.s024">S20 Fig</xref>). We observe that contamination rates are higher in low-GC regions than in medium-GC regions (Welch one-sided t-test on the posterior samples, P &lt; 2.2e-16), which in turn have higher contamination rates than high-GC regions (P &lt; 2.2e-16). The opposite trend occurs in the error estimates, while the drift parameters are largely unaffected. However, we find that the differences we observe across GC levels are almost entirely eliminated by removing CpG sites from the input dataset (<xref ref-type="supplementary-material" rid="pgen.1005972.s024">S20 Fig</xref>), as CpG sites are known to have higher mutation rates than the rest of the genome. For this reason, we recommend filtering them out when testing for contamination on ancient DNA datasets, which is what was done in Tables <xref ref-type="table" rid="pgen.1005972.t001">1</xref> and <xref ref-type="supplementary-material" rid="pgen.1005972.s007">S3</xref>.</p>
+<p>Finally, we tested a present-day Yoruba genome (HGDP00936) sequenced to high coverage [<xref ref-type="bibr" rid="pgen.1005972.ref004">4</xref>], which should not contain any contamination. Indeed, when applying our method, we find this to be the case (<xref ref-type="supplementary-material" rid="pgen.1005972.s025">S21 Fig</xref>). We infer 0% contamination, regardless of whether we use EUR or AFR as the candidate contaminant. Furthermore, the anchor drift time is very close to 0 when using AFR as the anchor population (as the sample belongs to that same population), while it is non-zero (= 0.22) when using EUR, which is consistent with the drift time separating Europeans from the ancestor of Europeans and their closest African sister populations [<xref ref-type="bibr" rid="pgen.1005972.ref033">33</xref>].</p>
+</sec>
+</sec>
+<sec id="sec015">
+<title>Three-population method</title>
+<sec id="sec016">
+<title>Simulations</title>
+<p>We applied our three-population method to estimate both drift times and admixture rates. We simulated a high-coverage (30X) archaic human genome under various demographic and contamination scenarios. Each of the two anchor population panels contained 20 haploid genomes. The admixture time was 0.08 drift units ago, which under a constant population size of 2N = 20,000 would be equivalent to 1,600 generations ago. When running our inference program, we set the admixture time prior boundaries to be between 0.06 and 0.1 drift units ago.</p>
+<p>We find that the admixture time is inaccurately estimated under this implementation—likely due to lack of information in the site-frequency spectrum—so we do not show estimates for that parameter below. For admixture rates of 0%, 5% or 20%, the error and contamination parameters are estimated accurately in all cases (<xref ref-type="supplementary-material" rid="pgen.1005972.s026">S22</xref>, <xref ref-type="supplementary-material" rid="pgen.1005972.s027">S23</xref> and <xref ref-type="supplementary-material" rid="pgen.1005972.s028">S24</xref> Figs, respectively). The method is less accurate when estimating the demographic parameters, especially the admixture rate which is sometimes under-estimated. Importantly though, the accuracy of the contamination rate estimates are not affected by incorrect estimation of the demographic parameters.</p>
+<p>We also tested what would happen if the admixture time was simulated to be recent: 0.005 drift units ago, or 100 generations ago under a constant population size of 2N = 20,000. When estimating parameters, we set the prior for the admixture time to be between 0 and 0.01 drift units ago. In this last case, we observe that the drift times and the admixture rate (20%) are more accurately estimated than when the admixture event is ancient (<xref ref-type="fig" rid="pgen.1005972.g007">Fig 7</xref>).</p>
+<fig id="pgen.1005972.g007" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pgen.1005972.g007</object-id>
+<label>Fig 7</label>
+<caption>
+<title>Estimation of error, contamination and demographic parameters in various three-population demographic scenarios, where the admixture rate is 20% and the admixture time was recent (0.005 drift units ago).</title>
+<p>The prior used for the admixture time was uniform over [0, 0.01]. Error bars represent 95% posterior intervals.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.g007" xlink:type="simple"/>
+</fig>
+<p>As before, we also verified that the posterior mode was a good proxy to identify the true contaminant (A), when running the MCMC using different contaminant panels (A, B, C and D). In all cases, we used D as the unadmixed anchor panel and B as the admixed anchor panel. Results are shown in <xref ref-type="supplementary-material" rid="pgen.1005972.s029">S25 Fig</xref> for all the demographic scenarios from <xref ref-type="supplementary-material" rid="pgen.1005972.s019">S15 Fig</xref>. Again, we observe that the true contaminant (A) is always the one that corresponds to the highest posterior probability, though we again caution that because we do not have the marginal probabilities, we cannot formally perform model selection to favor a particular panel. Furthermore,the admixture rate from the ancient population into the ancestors of A and B is robustly estimated unless the true contaminant (A) is highly diverged from the candidate contaminant (<xref ref-type="supplementary-material" rid="pgen.1005972.s030">S26</xref>, <xref ref-type="supplementary-material" rid="pgen.1005972.s031">S27</xref> and <xref ref-type="supplementary-material" rid="pgen.1005972.s032">S28</xref> Figs, for admixture rates of 0%, 5% and 50%, respectively).</p>
+</sec>
+<sec id="sec017">
+<title>Empirical data</title>
+<p>We also applied the three-population inference framework to the high-coverage Altai Neanderthal genome. We first estimated the two drift times specific to Europeans and Africans after the split from each other (<italic>τ</italic><sub><italic>Y</italic></sub> and <italic>τ</italic><sub><italic>Z</italic></sub>, respectively), using ∂a∂i and the L-BFGS-B likelihood optimization algorithm [<xref ref-type="bibr" rid="pgen.1005972.ref013">13</xref>], but without using the archaic genome (<italic>τ</italic><sub><italic>Afr</italic></sub> = 0.009, <italic>τ</italic><sub><italic>Eur</italic></sub> = 0.255). Then, we used our MCMC method to estimate the rest of the drift times, the archaic admixture rate and the contamination and error parameters in the Neanderthal genome. We set the admixture time prior boundaries to be between 0.06 and 0.1 drift units ago, which is a realistic time frame given knowledge about modern human—Neanderthal cohabitation in Eurasia [<xref ref-type="bibr" rid="pgen.1005972.ref034">34</xref>]. The error rate and contamination rates we obtain are similar to those obtained under the two-population method, and we estimate an admixture rate from Neanderthals into modern humans of 1.72% for the choice of contaminant panel with the highest posterior mode—which is again EUR (<xref ref-type="table" rid="pgen.1005972.t002">Table 2</xref>).</p>
+<table-wrap id="pgen.1005972.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pgen.1005972.t002</object-id>
+<label>Table 2</label>
+<caption>
+<title>Posterior modes of parameter estimates under the three-population inference framework for the Altai Neanderthal autosomal genome.</title>
+<p>We used different 1000G populations as candidate contaminants. In all cases, Africans were the unadmixed anchor population and Europeans were the admixed anchor population. The ancestral human drift refers to the drift in the modern human branch before the split of Europeans and Africans. The post-split European-specific and African-specific drifts were estimated separately without the archaic genome (<italic>τ</italic><sub><italic>Afr</italic></sub> = 0.009, <italic>τ</italic><sub><italic>Eur</italic></sub> = 0.255).</p>
+</caption>
+<alternatives>
+<graphic id="pgen.1005972.t002g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.t002" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Contaminant panel</th>
+<th align="left">Unadmixed anchor panel</th>
+<th align="left">Admixed anchor panel</th>
+<th align="left">Error rate</th>
+<th align="left">Contamination rate</th>
+<th align="left">Ancestral human drift</th>
+<th align="left">Neanderthal drift</th>
+<th align="left">Admixture rate</th>
+<th align="left">Log-posterior mode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">EUR</td>
+<td align="left">AFR</td>
+<td align="left">EUR</td>
+<td align="left">0.119%<break/>(0.119%–0.12%)</td>
+<td align="left">0.967%<break/>(0.954%–0.967%)</td>
+<td align="left">0.411<break/>(0.405–0.414)</td>
+<td align="left">2.669<break/>(2.656–2.689)</td>
+<td align="left">1.72%<break/>(1.682%–1.805%)</td>
+<td align="char" char=".">-7452958.125</td>
+</tr>
+<tr>
+<td align="left">AMR</td>
+<td align="left">AFR</td>
+<td align="left">EUR</td>
+<td align="left">0.119%<break/>(0.118%–0.12%)</td>
+<td align="left">0.967%<break/>(0.962%–0.974%)</td>
+<td align="left">0.407<break/>(0.402–0.412)</td>
+<td align="left">2.677<break/>(2.651–2.708)</td>
+<td align="left">1.661%<break/>(1.618%–1.696%)</td>
+<td align="char" char=".">-7461041.325</td>
+</tr>
+<tr>
+<td align="left">SAS</td>
+<td align="left">AFR</td>
+<td align="left">EUR</td>
+<td align="left">0.122%<break/>(0.122%–0.123%)</td>
+<td align="left">0.95%<break/>(0.944%–0.955%)</td>
+<td align="left">0.399<break/>(0.398–0.406)</td>
+<td align="left">2.682<break/>(2.677–2.695)</td>
+<td align="left">1.469%<break/>(1.422%–1.48%)</td>
+<td align="char" char=".">-7465214.726</td>
+</tr>
+<tr>
+<td align="left">EAS</td>
+<td align="left">AFR</td>
+<td align="left">EUR</td>
+<td align="left">0.13%<break/>(0.129%–0.132%)</td>
+<td align="left">0.896%<break/>(0.884%–0.903%)</td>
+<td align="left">0.421<break/>(0.413–0.428)</td>
+<td align="left">2.702<break/>(2.658–2.706)</td>
+<td align="left">2.388%<break/>(2.009%–2.447%)</td>
+<td align="char" char=".">-7509504.053</td>
+</tr>
+<tr>
+<td align="left">AFR</td>
+<td align="left">AFR</td>
+<td align="left">EUR</td>
+<td align="left">0.117%<break/>(0.117%–0.119%)</td>
+<td align="left">0.957%<break/>(0.945%–0.964%)</td>
+<td align="left">0.409<break/>(0.409–0.418)</td>
+<td align="left">2.681<break/>(2.66–2.702)</td>
+<td align="left">1.837%<break/>(1.766%–1.961%)</td>
+<td align="char" char=".">-7554080.773</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>We also applied the method to the low-coverage Mezmaiskaya Neanderthal genome. As before, we are able to reach convergence for all parameters (including the admixture rate) with the exception of the Neanderthal drift, which gets stuck in the upper boundary of parameter space (<xref ref-type="supplementary-material" rid="pgen.1005972.s004">S4 Table</xref>).</p>
+</sec>
+</sec>
+</sec>
+<sec id="sec018" sec-type="conclusions">
+<title>Discussion</title>
+<p>We have developed a new method to jointly infer demographic parameters, along with contamination and error rates, when analyzing an ancient DNA sample. The method can be deployed using a C++ program (DICE) that is easy to use and freely downloadable. We therefore expect it to be highly applicable in the field of paleogenomics, allowing researchers to derive useful information from previously unusable (highly contaminated) samples, including archaic humans like Neanderthals, as well as ancient modern humans.</p>
+<p>Applications to simulations show that the error and contamination parameters are estimated with high accuracy, and that demographic parameters can also be estimated accurately so long as enough information (e.g. a large panel of modern humans) is available. The drift time estimates reflect how much genetic drift has acted to differentiate the archaic and modern populations since the split from their common ancestral population, and can be converted to divergence times in generations if an accurate history of population size changes is also available (for example, via methods like PSMC, [<xref ref-type="bibr" rid="pgen.1005972.ref035">35</xref>]). Although we cannot perform proper model testing, we found via extensive simulations that the posterior mode of an MCMC run was a robust heuristic statistic to help detect which panel was most likely to have contaminated the sample. We caution, however, that the fact that a particular panel yields a higher posterior mode than another is no guarantee that it is a better fit to the data for demographic scenarios that may be different from the ones we simulated.</p>
+<p>We also applied our method to empirical data, specifically to two Neanderthal genomes at high and low coverage, a present-day high-coverage Yoruba genome, and several ancient genome sequences of varying degrees of coverage, some obtained via shotgun-sequencing and some via SNP capture. For the high-coverage Yoruba genome, we infer no contamination, as would be expected from a modern-day sample, and drift times indicating the Yoruba sample indeed belongs to an African population.</p>
+<p>The contamination and sequencing error estimates we obtained for the Altai Neanderthal are roughly in accordance with previous estimates [<xref ref-type="bibr" rid="pgen.1005972.ref004">4</xref>]. The drift times we obtain under the three-population model for the African population (<italic>τ</italic><sub><italic>C</italic></sub> + <italic>τ</italic><sub><italic>Afr</italic></sub>) are approximately 0.411 + 0.009 = 0.42 drift units. The geometric mean of the history of population sizes from the PSMC results in Prüfer et al. [<xref ref-type="bibr" rid="pgen.1005972.ref004">4</xref>] give roughly that <italic>N</italic><sub><italic>e</italic></sub> ≈ 21,818 since the African population size history started differing from that of Neanderthals, assuming a mutation rate of 1.25 * 10<sup>−8</sup> per bp per generation. If we assume a generation time of 29 years, and use our drift time in the equation relating divergence time in generations to drift time (<italic>t</italic>/(2<italic>N</italic><sub><italic>e</italic></sub>)≈<italic>τ</italic>), this gives an approximate human-Neanderthal population divergence time of 531,486 years. This number roughly agrees with the most recent estimates obtained via other methods [<xref ref-type="bibr" rid="pgen.1005972.ref004">4</xref>]. Additionally, the Neanderthal-specific drift time is approximately 6.5 times as large as the modern human drift time, which is expected as Neanderthals had much smaller population sizes than modern humans [<xref ref-type="bibr" rid="pgen.1005972.ref036">36</xref>, <xref ref-type="bibr" rid="pgen.1005972.ref004">4</xref>]. The admixture rate from archaic to modern humans that we estimate is 1.72%, which is consistent with the rate estimate obtained via methods that do not jointly model contamination (1.5–2.1%) [<xref ref-type="bibr" rid="pgen.1005972.ref004">4</xref>]. In the case of the Altai Neanderthal, we observe that the sample was probably contaminated by one or more individuals with European ancestry.</p>
+<p>When testing modern human and Neanderthal ancient genomes of lower coverage than the Altai Neanderthal, we obtain reasonable parameter estimates for samples of medium to high-coverage. However, we run into problems in estimation when the samples are of low coverage. For these reasons, and from our simulation results, we recommend that our method should be used on nuclear genomes with &gt;3X coverage. The method may converge under certain conditions at coverages as low as 0.5X (for example, in the case of the Mezmaiskaya genome under the two-population model when using AFR as the anchor and contaminant panel), but, in such cases, we caution the user to check convergence is achieved before drawing any conclusions from the estimates. For SNP capture data, we obtain reliable estimates for samples with a minimum coverage of 500,000 sites that are polymorphic in the anchor panel.</p>
+<p>The demographic models used in our approach are simple, involving no more than three populations and a single admixture event. This is partly due to limitations of known theory about the diffusion-based likelihood of an arbitrarily complex demography for the 2-D site-frequency spectrum—in the case of the two-population method—and to the inability of ∂a∂i [<xref ref-type="bibr" rid="pgen.1005972.ref020">20</xref>] to handle more than 3 populations at a time. In recent years, several studies have made advances in the development of methods to compute the likelihood of an SFS for larger numbers of populations using coalescent theory [<xref ref-type="bibr" rid="pgen.1005972.ref037">37</xref>, <xref ref-type="bibr" rid="pgen.1005972.ref038">38</xref>, <xref ref-type="bibr" rid="pgen.1005972.ref039">39</xref>], with multiple population size changes and admixture events. We hope that some of these techniques could be incorporated in future versions of our inference framework.</p>
+</sec>
+<sec id="sec019">
+<title>Supporting Information</title>
+<supplementary-material id="pgen.1005972.s001" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s001" xlink:type="simple">
+<label>S1 Table</label>
+<caption>
+<title>We applied the two-population method to ancient Neanderthal and modern human genomes ranging from 52X to 0.054X coverage.</title>
+<p>We tested both shotgun-sequencing data and SNP capture data. We used AFR as both the anchor panel and the putative contaminant panel. Samples are sorted by decreasing mean coverage. We define Convergence to be true (T) if all the parameters stably converged in a region of parameter space that does not include the upper parameter boundary. Otherwise Convergence is false (F). A line separates the two Convergence classes. SNPs = number of SNPs overlapping with anchor panel. Observations = total number of base observations analyzed. SC = SNP capture. SS = shotgun sequencing. HG = hunter-gatherer. LBK = Linear Pottery culture. MN = Middle Neolithic. LN = Late Neolithic. NEA = Neanderthal. MH = Modern Human. LogPos = Log-posterior mode. Reported Cov. = Mean read coverage reported in corresponding study. For SNP capture, this is the mean coverage of the targeted SNPs.</p>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s002" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s002" xlink:type="simple">
+<label>S2 Table</label>
+<caption>
+<title>We applied the two-population method to ancient Neanderthal and modern human genomes ranging from 52X to 0.054X coverage.</title>
+<p>We tested both shotgun-sequencing data and SNP capture data. We used AFR as the anchor panel and EUR as the putative contaminant panel. Samples are sorted by decreasing mean coverage. We define Convergence to be true (T) if all the parameters stably converged in a region of parameter space that does not include the upper parameter boundary. Otherwise Convergence is false (F). A line separates the two Convergence classes. SNPs = number of SNPs overlapping with anchor panel. Observations = total number of base observations analyzed. SC = SNP capture. SS = shotgun sequencing. HG = hunter-gatherer. LBK = Linear Pottery culture. MN = Middle Neolithic. LN = Late Neolithic. NEA = Neanderthal. MH = Modern Human. LogPos = Log-posterior mode. Reported Cov. = Mean read coverage reported in corresponding study. For SNP capture, this is the mean coverage of the targeted SNPs.</p>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s003" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s003" xlink:type="simple">
+<label>S3 Table</label>
+<caption>
+<title>Posterior modes of parameter estimates under the two-population inference framework for the Mezmaiskaya Neanderthal autosomal genome.</title>
+<p>We used different 1000G populations as candidate contaminants. AFR were the anchor population in all cases, so the modern human drift is with respect to Africans. Values in parentheses are 95% posterior quantiles. Except when using AFR as the contaminant, the Neanderthal drift parameter gets stuck at the upper boundary (5 drift units) of parameter space.</p>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s004" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s004" xlink:type="simple">
+<label>S4 Table</label>
+<caption>
+<title>Posterior modes of parameter estimates under the three-population inference framework for the Mezmaiskaya Neanderthal autosomal genome.</title>
+<p>We used different 1000G populations as candidate contaminants. In all cases, Africans were the unadmixed anchor population and Europeans were the admixed anchor population. The ancestral human drift refers to the drift in the modern human branch before the split of Europeans and Africans. The post-split European-specific and African-specific drifts were estimated separately without the archaic genome (<italic>τ</italic><sub><italic>Afr</italic></sub> = 0.009, <italic>τ</italic><sub><italic>Eur</italic></sub> = 0.255). In all cases, the Neanderthal drift parameter gets stuck at the upper boundary (5 drift units) of parameter space.</p>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s005" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s005" xlink:type="simple">
+<label>S1 Fig</label>
+<caption>
+<title>Estimation of parameters for a high-coverage ancient DNA genome (30X) with high sequencing error (10%), no admixture and a large anchor population panel (100 haploid genomes).</title>
+<p>Error bars represent 95% posterior intervals.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s006" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s006" xlink:type="simple">
+<label>S2 Fig</label>
+<caption>
+<title>Absolute difference between estimated and simulated contamination rates for a variety of anchor drift and contamination scenarios, for different levels of coverage.</title>
+<p>In all simulations, the anchor drift was set to be equal to the ancient sample drift. A) 0.5X coverage (800,000 simulations). B) 1.5X coverage (200,000 simulations). C) 5X coverage (200,000 simulations). D) 30X coverage (200,000 simulations). The number of sites with coverage &gt; 0 is denoted at the top of each panel.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s007" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s007" xlink:type="simple">
+<label>S3 Fig</label>
+<caption>
+<title>Absolute difference between estimated and simulated anchor drifts for a variety of anchor drift and contamination scenarios, for different levels of coverage.</title>
+<p>In all simulations, the anchor drift was set to be equal to the ancient sample drift. A) 0.5X coverage (800,000 simulations). B) 1.5X coverage (200,000 simulations). C) 5X coverage (200,000 simulations). D) 30X coverage (200,000 simulations). The number of sites with coverage &gt; 0 is denoted at the top of each panel.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s008" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s008" xlink:type="simple">
+<label>S4 Fig</label>
+<caption>
+<title>Absolute difference between estimated and simulated ancient sample drifts for a variety of anchor drift and contamination scenarios, for different levels of coverage.</title>
+<p>In all simulations, the anchor drift was set to be equal to the ancient sample drift. A) 0.5X coverage (800,000 simulations). B) 1.5X coverage (200,000 simulations). C) 5X coverage (200,000 simulations). D) 30X coverage (200,000 simulations). The number of sites with coverage &gt; 0 is denoted at the top of each panel.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s009" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s009" xlink:type="simple">
+<label>S5 Fig</label>
+<caption>
+<title>Absolute difference between estimated and simulated contamination rates for a variety of anchor drift and contamination scenarios, when coverage is low (0.5X, 1X or 1.5X).</title>
+<p>Here, we used a large number of sites and run the MCMC chain for 1 million steps. In all simulations, the anchor drift was set to be equal to the ancient sample drift. A) 0.5X coverage (800,000 simulations). B) 1X coverage (400,000 simulations). C) 1.5X coverage (200,000 simulations). The number of sites with coverage &gt; 0 is denoted at the top of each panel.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s010" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s010" xlink:type="simple">
+<label>S6 Fig</label>
+<caption>
+<title>Absolute difference between estimated and simulated anchor drifts for a variety of anchor drift and contamination scenarios, when coverage is low (0.5X, 1X or 1.5X).</title>
+<p>Here, we used a large number of sites and run the MCMC chain for 1 million steps. In all simulations, the anchor drift was set to be equal to the ancient sample drift. A) 0.5X coverage (800,000 simulations). B) 1X coverage (400,000 simulations). C) 1.5X coverage (200,000 simulations). The number of sites with coverage &gt; 0 is denoted at the top of each panel.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s011" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s011" xlink:type="simple">
+<label>S7 Fig</label>
+<caption>
+<title>Absolute difference between estimated and simulated ancient sample drifts for a variety of anchor drift and contamination scenarios, when coverage is low (0.5X, 1X or 1.5X).</title>
+<p>Here, we used a large number of sites and run the MCMC chain for 1 million steps. In all simulations, the anchor drift was set to be equal to the ancient sample drift. A) 0.5X coverage (800,000 simulations). B) 1X coverage (400,000 simulations). C) 1.5X coverage (200,000 simulations). The number of sites with coverage &gt; 0 is denoted at the top of each panel.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s012" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s012" xlink:type="simple">
+<label>S8 Fig</label>
+<caption>
+<title>Absolute difference between estimated and simulated contamination rates for a variety of anchor drift and contamination scenarios, when coverage is low (0.5X, 1X or 1.5X).</title>
+<p>We used a large number of sites and run 10 MCMC chains for 1 million steps each. To ensure convergence, we then selected the chain with the highest posterior probability, and here show estimates from that chain. In all simulations, the anchor drift was set to be equal to the ancient sample drift. A) 0.5X coverage (800,000 simulations). B) 1X coverage (400,000 simulations). C) 1.5X coverage (200,000 simulations). The number of sites with coverage &gt; 0 is denoted at the top of each panel.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s013" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s013" xlink:type="simple">
+<label>S9 Fig</label>
+<caption>
+<title>Absolute difference between estimated and simulated anchor drifts for a variety of anchor drift and contamination scenarios, when coverage is low (0.5X, 1X or 1.5X).</title>
+<p>We used a large number of sites and run 10 MCMC chains for 1 million steps each. To ensure convergence, we then selected the chain with the highest posterior probability, and here show estimates from that chain. In all simulations, the anchor drift was set to be equal to the ancient sample drift. A) 0.5X coverage (800,000 simulations). B) 1X coverage (400,000 simulations). C) 1.5X coverage (200,000 simulations). The number of sites with coverage &gt; 0 is denoted at the top of each panel.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s014" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s014" xlink:type="simple">
+<label>S10 Fig</label>
+<caption>
+<title>Absolute difference between estimated and simulated ancient sample drifts for a variety of anchor drift and contamination scenarios, when coverage is low (0.5X, 1X or 1.5X).</title>
+<p>We used a large number of sites and run 10 MCMC chains for 1 million steps each. To ensure convergence, we then selected the chain with the highest posterior probability, and here show estimates from that chain. In all simulations, the anchor drift was set to be equal to the ancient sample drift. A) 0.5X coverage (800,000 simulations). B) 1X coverage (400,000 simulations). C) 1.5X coverage (200,000 simulations). The number of sites with coverage &gt; 0 is denoted at the top of each panel.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s015" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s015" xlink:type="simple">
+<label>S11 Fig</label>
+<caption>
+<title>Estimation of parameters for a high-coverage ancient DNA genome (30X) with low sequencing error (0.1%), a large anchor population panel (100 haploid genomes) and admixture in the anchor population from the archaic population (5%), using the two-population inference framework, which does not model admixture.</title>
+<p>Error bars represent 95% posterior intervals.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s016" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s016" xlink:type="simple">
+<label>S12 Fig</label>
+<caption>
+<title>Estimation of parameters for a high-coverage ancient DNA genome (30X) with low sequencing error (0.1%), no admixture and a small anchor population panel (20 haploid genomes).</title>
+<p>Error bars represent 95% posterior intervals.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s017" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s017" xlink:type="simple">
+<label>S13 Fig</label>
+<caption>
+<title>Estimation of parameters for a high-coverage ancient DNA genome (30X), when the contaminant fragments are exclusively drawn from a single diploid individual from the contaminant panel.</title>
+<p>Error bars represent 95% posterior intervals.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s018" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s018" xlink:type="simple">
+<label>S14 Fig</label>
+<caption>
+<title>Estimation of parameters for an ancient DNA genome of very low coverage (0.5X) with low sequencing error (0.1%) and a large anchor population panel (100 haploid genomes).</title>
+<p>Note that unlike the rest of the simulations, the number of SNPs used in this case was approximately 1.6 million instead of 80,000, and the MCMC chain was run for 1 million steps instead of 100,000. Using a lower number of SNPs or running the chain for a shorter time resulted in inaccurate inferences. Error bars represent 95% posterior intervals.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s019" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s019" xlink:type="simple">
+<label>S15 Fig</label>
+<caption>
+<title>Three demographic models used to test the method when the contaminant is misspecified.</title>
+<p>When testing the two-population method, we set panel A as the true contaminant and panel D as the anchor. When testing the three-population method, we set panel A as the true contaminant, panel D as the unadmixed anchor and panel B as the admixed anchor. The numbers on the branches represent the drift parameters. The parameter <italic>α</italic> represents the admixture rate from the ancient population into the ancestor of A and B.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s020" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s020" xlink:type="simple">
+<label>S16 Fig</label>
+<caption>
+<title>When testing different putative contaminants, the highest mode of the posterior likelihoods from the MCMC under the two-population model corresponds to the true contaminant (panel A).</title>
+<p>The y-axis shows the difference between the log-posterior for contaminant panel A and the log-posterior for different candidate contaminant panels (A, B, C, D), so low values correspond to high posterior probabilities for each of the candidates. We added a 1 to the difference to be able to plot the difference on a logarithmic scale. The three panels contain results for three admixture scenarios (from left to right: admixture rate of 0%, 5% and 50%) and each panel shows the difference under different contamination rates and demographic models (the population relationships of panels A, B, C and D can be found in <xref ref-type="supplementary-material" rid="pgen.1005972.s019">S15 Fig</xref>).</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s021" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s021" xlink:type="simple">
+<label>S17 Fig</label>
+<caption>
+<title>Parameters estimates under the two-population model using different putative contaminants, when the true contaminant is panel A.</title>
+<p>Each row of panels represents a different set of drift parameters, keeping the contamination rate fixed at 25% and the error rate at 0.1%. In this case, the admixture rate from the ancient population to the ancestor of A and B was kept at 0%. The anchor panel used was panel D (the population relationships of panels A, B, C and D can be found in <xref ref-type="supplementary-material" rid="pgen.1005972.s019">S15 Fig</xref>).</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s022" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s022" xlink:type="simple">
+<label>S18 Fig</label>
+<caption>
+<title>Parameters estimates under the two-population model using different putative contaminants, when the true contaminant is panel A.</title>
+<p>Each row of panels represents a different set of drift parameters, keeping the contamination rate fixed at 25% and the error rate at 0.1%. In this case, the admixture rate from the ancient population to the ancestor of A and B was kept at 5%. The anchor panel used was panel D (the population relationships of panels A, B, C and D can be found in <xref ref-type="supplementary-material" rid="pgen.1005972.s019">S15 Fig</xref>).</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s023" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s023" xlink:type="simple">
+<label>S19 Fig</label>
+<caption>
+<title>Parameters estimates under the two-population model using different putative contaminants, when the true contaminant is panel A.</title>
+<p>Each row of panels represents a different set of drift parameters, keeping the contamination rate fixed at 25% and the error rate at 0.1%. In this case, the admixture rate from the ancient population to the ancestor of A and B was kept at 50%. The anchor panel used was panel D (the population relationships of panels A, B, C and D can be found in <xref ref-type="supplementary-material" rid="pgen.1005972.s019">S15 Fig</xref>).</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s024" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s024" xlink:type="simple">
+<label>S20 Fig</label>
+<caption>
+<title>Estimation of parameters for the Altai Neanderthal genome across different GC levels using the two-population model, while keeping (black) or removing (red) CpG sites from the input dataset.</title>
+<p>Error bars represent 95% posterior intervals.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s025" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s025" xlink:type="simple">
+<label>S21 Fig</label>
+<caption>
+<title>We tested one of the Yoruba genomes from prüfer et al. [<xref ref-type="bibr" rid="pgen.1005972.ref004">4</xref>] and obtain an estimate of 0% contamination, regardless of whether we use Europeans or Africans as the candidate contaminant.</title>
+<p>The anchor drift time is close to 0 when using Africans as the anchor population, as the sample belongs to that same population, while it is non-zero (= 0.22) when using Europeans. Error bars represent 95% posterior intervals.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s026" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s026" xlink:type="simple">
+<label>S22 Fig</label>
+<caption>
+<title>Estimation of error, contamination and demographic parameters in various three-population demographic scenarios, where the admixture rate is 0%.</title>
+<p>The prior used for the admixture time was uniform over [0.06, 0.1]. Error bars represent 95% posterior intervals.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s027" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s027" xlink:type="simple">
+<label>S23 Fig</label>
+<caption>
+<title>Estimation of error, contamination and demographic parameters in various three-population demographic scenarios, where the admixture rate is 5% and the admixture time is ancient (0.08 drift units ago).</title>
+<p>The prior used for the admixture time was uniform over [0.06, 0.1]. Error bars represent 95% posterior intervals.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s028" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s028" xlink:type="simple">
+<label>S24 Fig</label>
+<caption>
+<title>Estimation of error, contamination and demographic parameters in various three-population demographic scenarios, where the admixture rate is 20% and the admixture time is ancient (0.08 drift units ago).</title>
+<p>The prior used for the admixture time was uniform over [0.06, 0.1]. Error bars represent 95% posterior intervals.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s029" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s029" xlink:type="simple">
+<label>S25 Fig</label>
+<caption>
+<title>When testing different putative contaminants, the highest mode of the posterior likelihoods from the MCMC under the three-population model corresponds to the true contaminant (panel A).</title>
+<p>The y-axis shows the difference between the log-posterior for contaminant panel A and the log-posterior for different candidate contaminant panels (A, B, C, D), so low values correspond to high posterior probabilities for each of the candidates. We added a 1 to the difference to be able to plot the difference on a logarithmic scale. The three panels contain results for three admixture scenarios (from left to right: admixture rate of 0%, 5% and 50%) and each panel shows the difference under different contamination rates and demographic models (see <xref ref-type="supplementary-material" rid="pgen.1005972.s019">S15 Fig</xref>).</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s030" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s030" xlink:type="simple">
+<label>S26 Fig</label>
+<caption>
+<title>Parameters estimates under the three-population model using different putative contaminants, when the true contaminant is panel A.</title>
+<p>Each row of panels represents a different set of drift parameters, keeping the contamination rate fixed at 25% and the error rate at 0.1%. In this case, the admixture rate from the ancient population to the ancestor of A and B was kept at 0%. The unadmixed anchor panel used was panel D and the admixed anchor panel was panel B (see <xref ref-type="supplementary-material" rid="pgen.1005972.s019">S15 Fig</xref>).</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s031" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s031" xlink:type="simple">
+<label>S27 Fig</label>
+<caption>
+<title>Parameters estimates under the three-population model using different putative contaminants, when the true contaminant is panel A.</title>
+<p>Each row of panels represents a different set of drift parameters, keeping the contamination rate fixed at 25% and the error rate at 0.1%. In this case, the admixture rate from the ancient population to the ancestor of A and B was kept at 5%. The unadmixed anchor panel used was panel D and the admixed anchor panel was panel B (see <xref ref-type="supplementary-material" rid="pgen.1005972.s019">S15 Fig</xref>).</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s032" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s032" xlink:type="simple">
+<label>S28 Fig</label>
+<caption>
+<title>Parameters estimates under the three-population model using different putative contaminants, when the true contaminant is panel A.</title>
+<p>Each row of panels represents a different set of drift parameters, keeping the contamination rate fixed at 25% and the error rate at 0.1%. In this case, the admixture rate from the ancient population to the ancestor of A and B was kept at 50%. The unadmixed anchor panel used was panel D and the admixed anchor panel was panel B (see <xref ref-type="supplementary-material" rid="pgen.1005972.s019">S15 Fig</xref>).</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s033" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s033" xlink:type="simple">
+<label>S1 Text</label>
+<caption>
+<title>Genotype probabilities conditional on a demography.</title>
+<p>Derivation of formulas to obtain the probabilities of particular genotype states given a demographic history and an anchor population allele frequency, using diffusion theory.</p>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pgen.1005972.s034" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pgen.1005972.s034" xlink:type="simple">
+<label>S2 Text</label>
+<caption>
+<title>Probabilistic inference using BAM files.</title>
+<p>Explanation of methodology for inferring fragment-specific error parameters in the optional BAM mode of DICE.</p>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+</sec>
+</body>
+<back>
+<ack>
+<p>We thank Kelley Harris, Philip Johnson, Graham Coop, Nicolas Duforet-Frebourg, Joshua Schraiber, Sergi Castellano, Christoph Theunert, Janet Kelso, Rasmus Nielsen and members of the Slatkin and Nielsen labs for helpful advice and discussions.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pgen.1005972.ref001">
+<label>1</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Green</surname> <given-names>R. E.</given-names></name>, <name name-style="western"><surname>Krause</surname> <given-names>J.</given-names></name>, <name name-style="western"><surname>Briggs</surname> <given-names>A. W.</given-names></name>, <name name-style="western"><surname>Maricic</surname> <given-names>T.</given-names></name>, <name name-style="western"><surname>Stenzel</surname> <given-names>U.</given-names></name>, <name name-style="western"><surname>Kircher</surname> <given-names>M.</given-names></name>, <name name-style="western"><surname>Patterson</surname> <given-names>N.</given-names></name>, <name name-style="western"><surname>Li</surname> <given-names>H.</given-names></name>, <name name-style="western"><surname>Zhai</surname> <given-names>W.</given-names></name>, <name name-style="western"><surname>Fritz</surname> <given-names>M. H.-Y.</given-names></name>, <etal>et al</etal>., <article-title>A draft sequence of the Neandertal genome</article-title>, <source>Science</source> <volume>328</volume> (<year>2010</year>) <fpage>710</fpage>–<lpage>722</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/science.1188021" xlink:type="simple">10.1126/science.1188021</ext-link></comment> <object-id pub-id-type="pmid">20448178</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref002">
+<label>2</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Reich</surname> <given-names>D.</given-names></name>, <name name-style="western"><surname>Green</surname> <given-names>R. E.</given-names></name>, <name name-style="western"><surname>Kircher</surname> <given-names>M.</given-names></name>, <name name-style="western"><surname>Krause</surname> <given-names>J.</given-names></name>, <name name-style="western"><surname>Patterson</surname> <given-names>N.</given-names></name>, <name name-style="western"><surname>Durand</surname> <given-names>E. Y.</given-names></name>, <name name-style="western"><surname>Viola</surname> <given-names>B.</given-names></name>, <name name-style="western"><surname>Briggs</surname> <given-names>A. W.</given-names></name>, <name name-style="western"><surname>Stenzel</surname> <given-names>U.</given-names></name>, <name name-style="western"><surname>Johnson</surname> <given-names>P. L.</given-names></name>, <etal>et al</etal>., <article-title>Genetic history of an archaic hominin group from Denisova Cave in Siberia</article-title>, <source>Nature</source> <volume>468</volume> (<year>2010</year>) <fpage>1053</fpage>–<lpage>1060</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nature09710" xlink:type="simple">10.1038/nature09710</ext-link></comment> <object-id pub-id-type="pmid">21179161</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref003">
+<label>3</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Meyer</surname> <given-names>M.</given-names></name>, <name name-style="western"><surname>Kircher</surname> <given-names>M.</given-names></name>, <name name-style="western"><surname>Gansauge</surname> <given-names>M.-T.</given-names></name>, <name name-style="western"><surname>Li</surname> <given-names>H.</given-names></name>, <name name-style="western"><surname>Racimo</surname> <given-names>F.</given-names></name>, <name name-style="western"><surname>Mallick</surname> <given-names>S.</given-names></name>, <name name-style="western"><surname>Schraiber</surname> <given-names>J. G.</given-names></name>, <name name-style="western"><surname>Jay</surname> <given-names>F.</given-names></name>, <name name-style="western"><surname>Prüfer</surname> <given-names>K.</given-names></name>, <name name-style="western"><surname>de Filippo</surname> <given-names>C.</given-names></name>, <etal>et al</etal>., <article-title>A high-coverage genome sequence from an archaic Denisovan individual</article-title>, <source>Science</source> <volume>338</volume> (<year>2012</year>) <fpage>222</fpage>–<lpage>226</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/science.1224344" xlink:type="simple">10.1126/science.1224344</ext-link></comment> <object-id pub-id-type="pmid">22936568</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref004">
+<label>4</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Prüfer</surname> <given-names>K.</given-names></name>, <name name-style="western"><surname>Racimo</surname> <given-names>F.</given-names></name>, <name name-style="western"><surname>Patterson</surname> <given-names>N.</given-names></name>, <name name-style="western"><surname>Jay</surname> <given-names>F.</given-names></name>, <name name-style="western"><surname>Sankararaman</surname> <given-names>S.</given-names></name>, <name name-style="western"><surname>Sawyer</surname> <given-names>S.</given-names></name>, <name name-style="western"><surname>Heinze</surname> <given-names>A.</given-names></name>, <name name-style="western"><surname>Renaud</surname> <given-names>G.</given-names></name>, <name name-style="western"><surname>Sudmant</surname> <given-names>P. H.</given-names></name>, <name name-style="western"><surname>de Filippo</surname> <given-names>C.</given-names></name>, <etal>et al</etal>., <article-title>The complete genome sequence of a neanderthal from the altai mountains</article-title>, <source>Nature</source> <volume>505</volume> (<year>2014</year>) <fpage>43</fpage>–<lpage>49</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nature12886" xlink:type="simple">10.1038/nature12886</ext-link></comment> <object-id pub-id-type="pmid">24352235</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref005">
+<label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Fu</surname> <given-names>Q.</given-names></name>, <name name-style="western"><surname>Li</surname> <given-names>H.</given-names></name>, <name name-style="western"><surname>Moorjani</surname> <given-names>P.</given-names></name>, <name name-style="western"><surname>Jay</surname> <given-names>F.</given-names></name>, <name name-style="western"><surname>Slepchenko</surname> <given-names>S. M.</given-names></name>, <name name-style="western"><surname>Bondarev</surname> <given-names>A. A.</given-names></name>, <name name-style="western"><surname>Johnson</surname> <given-names>P. L.</given-names></name>, <name name-style="western"><surname>Aximu-Petri</surname> <given-names>A.</given-names></name>, <name name-style="western"><surname>Prüfer</surname> <given-names>K.</given-names></name>, <name name-style="western"><surname>de Filippo</surname> <given-names>C.</given-names></name>, <etal>et al</etal>., <article-title>Genome sequence of a 45,000-year-old modern human from western Siberia</article-title>, <source>Nature</source> <volume>514</volume> (<year>2014</year>) <fpage>445</fpage>–<lpage>449</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nature13810" xlink:type="simple">10.1038/nature13810</ext-link></comment> <object-id pub-id-type="pmid">25341783</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref006">
+<label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Seguin-Orlando</surname> <given-names>A.</given-names></name>, <name name-style="western"><surname>Korneliussen</surname> <given-names>T. S.</given-names></name>, <name name-style="western"><surname>Sikora</surname> <given-names>M.</given-names></name>, <name name-style="western"><surname>Malaspinas</surname> <given-names>A.-S.</given-names></name>, <name name-style="western"><surname>Manica</surname> <given-names>A.</given-names></name>, <name name-style="western"><surname>Moltke</surname> <given-names>I.</given-names></name>, <name name-style="western"><surname>Albrechtsen</surname> <given-names>A.</given-names></name>, <name name-style="western"><surname>Ko</surname> <given-names>A.</given-names></name>, <name name-style="western"><surname>Margaryan</surname> <given-names>A.</given-names></name>, <name name-style="western"><surname>Moiseyev</surname> <given-names>V.</given-names></name>, <etal>et al</etal>., <article-title>Genomic structure in Europeans dating back at least 36,200 years</article-title>, <source>Science</source> <volume>346</volume> (<year>2014</year>) <fpage>1113</fpage>–<lpage>1118</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/science.aaa0114" xlink:type="simple">10.1126/science.aaa0114</ext-link></comment> <object-id pub-id-type="pmid">25378462</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref007">
+<label>7</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Green</surname> <given-names>R. E.</given-names></name>, <name name-style="western"><surname>Malaspinas</surname> <given-names>A.-S.</given-names></name>, <name name-style="western"><surname>Krause</surname> <given-names>J.</given-names></name>, <name name-style="western"><surname>Briggs</surname> <given-names>A. W.</given-names></name>, <name name-style="western"><surname>Johnson</surname> <given-names>P. L.</given-names></name>, <name name-style="western"><surname>Uhler</surname> <given-names>C.</given-names></name>, <name name-style="western"><surname>Meyer</surname> <given-names>M.</given-names></name>, <name name-style="western"><surname>Good</surname> <given-names>J. M.</given-names></name>, <name name-style="western"><surname>Maricic</surname> <given-names>T.</given-names></name>, <name name-style="western"><surname>Stenzel</surname> <given-names>U.</given-names></name>, <etal>et al</etal>., <article-title>A complete Neandertal mitochondrial genome sequence determined by high-throughput sequencing</article-title>, <source>Cell</source> <volume>134</volume> (<year>2008</year>) <fpage>416</fpage>–<lpage>426</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.cell.2008.06.021" xlink:type="simple">10.1016/j.cell.2008.06.021</ext-link></comment> <object-id pub-id-type="pmid">18692465</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref008">
+<label>8</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Green</surname> <given-names>R. E.</given-names></name>, <name name-style="western"><surname>Briggs</surname> <given-names>A. W.</given-names></name>, <name name-style="western"><surname>Krause</surname> <given-names>J.</given-names></name>, <name name-style="western"><surname>Prüfer</surname> <given-names>K.</given-names></name>, <name name-style="western"><surname>Burbano</surname> <given-names>H. A.</given-names></name>, <name name-style="western"><surname>Siebauer</surname> <given-names>M.</given-names></name>, <name name-style="western"><surname>Lachmann</surname> <given-names>M.</given-names></name>, <name name-style="western"><surname>Pääbo</surname> <given-names>S.</given-names></name>, <article-title>The Neandertal genome and ancient DNA authenticity</article-title>, <source>The EMBO journal</source> <volume>28</volume> (<year>2009</year>) <fpage>2494</fpage>–<lpage>2502</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/emboj.2009.222" xlink:type="simple">10.1038/emboj.2009.222</ext-link></comment> <object-id pub-id-type="pmid">19661919</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref009">
+<label>9</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Sawyer</surname> <given-names>S.</given-names></name>, <name name-style="western"><surname>Renaud</surname> <given-names>G.</given-names></name>, <name name-style="western"><surname>Viola</surname> <given-names>B.</given-names></name>, <name name-style="western"><surname>Hublin</surname> <given-names>J.-J.</given-names></name>, <name name-style="western"><surname>Gansauge</surname> <given-names>M.-T.</given-names></name>, <name name-style="western"><surname>Shunkov</surname> <given-names>M. V.</given-names></name>, <name name-style="western"><surname>Derevianko</surname> <given-names>A. P.</given-names></name>, <name name-style="western"><surname>Prüfer</surname> <given-names>K.</given-names></name>, <name name-style="western"><surname>Kelso</surname> <given-names>J.</given-names></name>, <name name-style="western"><surname>Pääbo</surname> <given-names>S.</given-names></name>, <article-title>Nuclear and mitochondrial dna sequences from two denisovan individuals</article-title>, <source>Proceedings of the National Academy of Sciences</source> <volume>112</volume> (<year>2015</year>) <fpage>15696</fpage>–<lpage>15700</lpage>.</mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref010">
+<label>10</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Skoglund</surname> <given-names>P.</given-names></name>, <name name-style="western"><surname>Storå</surname> <given-names>J.</given-names></name>, <name name-style="western"><surname>Götherström</surname> <given-names>A.</given-names></name>, <name name-style="western"><surname>Jakobsson</surname> <given-names>M.</given-names></name>, <article-title>Accurate sex identification of ancient human remains using DNA shotgun sequencing</article-title>, <source>Journal of Archaeological Science</source> <volume>40</volume> (<year>2013</year>) <fpage>4477</fpage>–<lpage>4482</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.jas.2013.07.004" xlink:type="simple">10.1016/j.jas.2013.07.004</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref011">
+<label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Rasmussen</surname> <given-names>M.</given-names></name>, <name name-style="western"><surname>Guo</surname> <given-names>X.</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>Y.</given-names></name>, <name name-style="western"><surname>Lohmueller</surname> <given-names>K. E.</given-names></name>, <name name-style="western"><surname>Rasmussen</surname> <given-names>S.</given-names></name>, <name name-style="western"><surname>Albrechtsen</surname> <given-names>A.</given-names></name>, <name name-style="western"><surname>Skotte</surname> <given-names>L.</given-names></name>, <name name-style="western"><surname>Lindgreen</surname> <given-names>S.</given-names></name>, <name name-style="western"><surname>Metspalu</surname> <given-names>M.</given-names></name>, <name name-style="western"><surname>Jombart</surname> <given-names>T.</given-names></name>, <etal>et al</etal>., <article-title>An aboriginal australian genome reveals separate human dispersals into asia</article-title>, <source>Science</source> <volume>334</volume> (<year>2011</year>) <fpage>94</fpage>–<lpage>98</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/science.1211177" xlink:type="simple">10.1126/science.1211177</ext-link></comment> <object-id pub-id-type="pmid">21940856</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref012">
+<label>12</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Korneliussen</surname> <given-names>T. S.</given-names></name>, <name name-style="western"><surname>Albrechtsen</surname> <given-names>A.</given-names></name>, <name name-style="western"><surname>Nielsen</surname> <given-names>R.</given-names></name>, <article-title>ANGSD: analysis of next generation sequencing data</article-title>, <source>BMC Bioinformatics</source> <volume>15</volume> (<year>2014</year>) <fpage>356</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/s12859-014-0356-4" xlink:type="simple">10.1186/s12859-014-0356-4</ext-link></comment> <object-id pub-id-type="pmid">25420514</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref013">
+<label>13</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Byrd</surname> <given-names>R. H.</given-names></name>, <name name-style="western"><surname>Lu</surname> <given-names>P.</given-names></name>, <name name-style="western"><surname>Nocedal</surname> <given-names>J.</given-names></name>, <name name-style="western"><surname>Zhu</surname> <given-names>C.</given-names></name>, <article-title>A limited memory algorithm for bound constrained optimization</article-title>, <source>SIAM Journal on Scientific Computing</source> <volume>16</volume> (<year>1995</year>) <fpage>1190</fpage>–<lpage>1208</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1137/0916069" xlink:type="simple">10.1137/0916069</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref014">
+<label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Skoglund</surname> <given-names>P.</given-names></name>, <name name-style="western"><surname>Northoff</surname> <given-names>B. H.</given-names></name>, <name name-style="western"><surname>Shunkov</surname> <given-names>M. V.</given-names></name>, <name name-style="western"><surname>Derevianko</surname> <given-names>A. P.</given-names></name>, <name name-style="western"><surname>Pääbo</surname> <given-names>S.</given-names></name>, <name name-style="western"><surname>Krause</surname> <given-names>J.</given-names></name>, <name name-style="western"><surname>Jakobsson</surname> <given-names>M.</given-names></name>, <article-title>Separating endogenous ancient DNA from modern day contamination in a Siberian Neandertal</article-title>, <source>Proceedings of the National Academy of Sciences</source> <volume>111</volume> (<year>2014</year>) <fpage>2229</fpage>–<lpage>2234</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.1318934111" xlink:type="simple">10.1073/pnas.1318934111</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref015">
+<label>15</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Renaud</surname> <given-names>G.</given-names></name>, <name name-style="western"><surname>Slon</surname> <given-names>V.</given-names></name>, <name name-style="western"><surname>Duggan</surname> <given-names>A. T.</given-names></name>, <name name-style="western"><surname>Kelso</surname> <given-names>J.</given-names></name>, <article-title>Schmutzi: estimation of contamination and endogenous mitochondrial consensus calling for ancient dna</article-title>, <source>Genome biology</source> <volume>16</volume> (<year>2015</year>) <fpage>1</fpage>–<lpage>18</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/s13059-015-0776-0" xlink:type="simple">10.1186/s13059-015-0776-0</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref016">
+<label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<collab>G. P. Consortium</collab>, <etal>et al</etal>., <article-title>A global reference for human genetic variation</article-title>, <source>Nature</source> <volume>526</volume> (<year>2015</year>) <fpage>68</fpage>–<lpage>74</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nature15393" xlink:type="simple">10.1038/nature15393</ext-link></comment> <object-id pub-id-type="pmid">26432245</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref017">
+<label>17</label>
+<mixed-citation publication-type="book" xlink:type="simple">
+<name name-style="western"><surname>Ewens</surname> <given-names>W. J.</given-names></name>, <source>Mathematical Population Genetics 1: I. Theoretical Introduction</source>, <volume>volume 27</volume>, <publisher-name>Springer Science &amp; Business Media</publisher-name>, <year>2004</year>.</mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref018">
+<label>18</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Chen</surname> <given-names>H.</given-names></name>, <name name-style="western"><surname>Green</surname> <given-names>R. E.</given-names></name>, <name name-style="western"><surname>Pääbo</surname> <given-names>S.</given-names></name>, <name name-style="western"><surname>Slatkin</surname> <given-names>M.</given-names></name>, <article-title>The joint allele-frequency spectrum in closely related species</article-title>, <source>Genetics</source> <volume>177</volume> (<year>2007</year>) <fpage>387</fpage>–<lpage>398</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1534/genetics.107.070730" xlink:type="simple">10.1534/genetics.107.070730</ext-link></comment> <object-id pub-id-type="pmid">17603120</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref019">
+<label>19</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Ewing</surname> <given-names>G.</given-names></name>, <name name-style="western"><surname>Hermisson</surname> <given-names>J.</given-names></name>, <article-title>MSMS: a coalescent simulation program including recombination, demographic structure and selection at a single locus</article-title>, <source>Bioinformatics</source> <volume>26</volume> (<year>2010</year>) <fpage>2064</fpage>–<lpage>2065</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/bioinformatics/btq322" xlink:type="simple">10.1093/bioinformatics/btq322</ext-link></comment> <object-id pub-id-type="pmid">20591904</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref020">
+<label>20</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Gutenkunst</surname> <given-names>R. N.</given-names></name>, <name name-style="western"><surname>Hernandez</surname> <given-names>R. D.</given-names></name>, <name name-style="western"><surname>Williamson</surname> <given-names>S. H.</given-names></name>, <name name-style="western"><surname>Bustamante</surname> <given-names>C. D.</given-names></name>, <article-title>Inferring the joint demographic history of multiple populations from multidimensional SNP frequency data</article-title>, <source>PLoS Genetics</source> <volume>5</volume> (<year>2009</year>) <fpage>e1000695</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pgen.1000695" xlink:type="simple">10.1371/journal.pgen.1000695</ext-link></comment> <object-id pub-id-type="pmid">19851460</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref021">
+<label>21</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Roberts</surname> <given-names>G. O.</given-names></name>, <name name-style="western"><surname>Gelman</surname> <given-names>A.</given-names></name>, <name name-style="western"><surname>Gilks</surname> <given-names>W. R.</given-names></name>, <etal>et al</etal>., <article-title>Weak convergence and optimal scaling of random walk Metropolis algorithms</article-title>, <source>The Annals of Applied Probability</source> <volume>7</volume> (<year>1997</year>) <fpage>110</fpage>–<lpage>120</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1214/aoap/1034625254" xlink:type="simple">10.1214/aoap/1034625254</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref022">
+<label>22</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Hofreiter</surname> <given-names>M.</given-names></name>, <name name-style="western"><surname>Jaenicke</surname> <given-names>V.</given-names></name>, <name name-style="western"><surname>Serre</surname> <given-names>D.</given-names></name>, <name name-style="western"><surname>von Haeseler</surname> <given-names>A.</given-names></name>, <name name-style="western"><surname>Pääbo</surname> <given-names>S.</given-names></name>, <article-title>Dna sequences from multiple amplifications reveal artifacts induced by cytosine deamination in ancient dna</article-title>, <source>Nucleic acids research</source> <volume>29</volume> (<year>2001</year>) <fpage>4793</fpage>–<lpage>4799</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/nar/29.23.4793" xlink:type="simple">10.1093/nar/29.23.4793</ext-link></comment> <object-id pub-id-type="pmid">11726688</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref023">
+<label>23</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Briggs</surname> <given-names>A. W.</given-names></name>, <name name-style="western"><surname>Stenzel</surname> <given-names>U.</given-names></name>, <name name-style="western"><surname>Meyer</surname> <given-names>M.</given-names></name>, <name name-style="western"><surname>Krause</surname> <given-names>J.</given-names></name>, <name name-style="western"><surname>Kircher</surname> <given-names>M.</given-names></name>, <name name-style="western"><surname>Pääbo</surname> <given-names>S.</given-names></name>, <article-title>Removal of deaminated cytosines and detection of in vivo methylation in ancient dna</article-title>, <source>Nucleic acids research</source> <volume>38</volume> (<year>2010</year>) <fpage>e87</fpage>–<lpage>e87</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/nar/gkp1163" xlink:type="simple">10.1093/nar/gkp1163</ext-link></comment> <object-id pub-id-type="pmid">20028723</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref024">
+<label>24</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Hernandez</surname> <given-names>R. D.</given-names></name>, <name name-style="western"><surname>Williamson</surname> <given-names>S. H.</given-names></name>, <name name-style="western"><surname>Bustamante</surname> <given-names>C. D.</given-names></name>, <article-title>Context dependence, ancestral misidentification, and spurious signatures of natural selection</article-title>, <source>Molecular Biology and Evolution</source> <volume>24</volume> (<year>2007</year>) <fpage>1792</fpage>–<lpage>1800</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/molbev/msm108" xlink:type="simple">10.1093/molbev/msm108</ext-link></comment> <object-id pub-id-type="pmid">17545186</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref025">
+<label>25</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Hudson</surname> <given-names>R. R.</given-names></name>, <article-title>Generating samples under a wright–fisher neutral model of genetic variation</article-title>, <source>Bioinformatics</source> <volume>18</volume> (<year>2002</year>) <fpage>337</fpage>–<lpage>338</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/bioinformatics/18.2.337" xlink:type="simple">10.1093/bioinformatics/18.2.337</ext-link></comment> <object-id pub-id-type="pmid">11847089</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref026">
+<label>26</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Li</surname> <given-names>H.</given-names></name>, <name name-style="western"><surname>Durbin</surname> <given-names>R.</given-names></name>, <article-title>Fast and accurate short read alignment with burrows–wheeler transform</article-title>, <source>Bioinformatics</source> <volume>25</volume> (<year>2009</year>) <fpage>1754</fpage>–<lpage>1760</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/bioinformatics/btp324" xlink:type="simple">10.1093/bioinformatics/btp324</ext-link></comment> <object-id pub-id-type="pmid">19451168</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref027">
+<label>27</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Rambaut</surname> <given-names>A.</given-names></name>, <name name-style="western"><surname>Grass</surname> <given-names>N. C.</given-names></name>, <article-title>Seq-gen: an application for the monte carlo simulation of dna sequence evolution along phylogenetic trees</article-title>, <source>Computer applications in the biosciences: CABIOS</source> <volume>13</volume> (<year>1997</year>) <fpage>235</fpage>–<lpage>238</lpage>. <object-id pub-id-type="pmid">9183526</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref028">
+<label>28</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Hasegawa</surname> <given-names>M.</given-names></name>, <name name-style="western"><surname>Kishino</surname> <given-names>H.</given-names></name>, <name name-style="western"><surname>Yano</surname> <given-names>T.-a.</given-names></name>, <article-title>Dating of the human-ape splitting by a molecular clock of mitochondrial dna</article-title>, <source>Journal of molecular evolution</source> <volume>22</volume> (<year>1985</year>) <fpage>160</fpage>–<lpage>174</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/BF02101694" xlink:type="simple">10.1007/BF02101694</ext-link></comment> <object-id pub-id-type="pmid">3934395</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref029">
+<label>29</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Lazaridis</surname> <given-names>I.</given-names></name>, <name name-style="western"><surname>Patterson</surname> <given-names>N.</given-names></name>, <name name-style="western"><surname>Mittnik</surname> <given-names>A.</given-names></name>, <name name-style="western"><surname>Renaud</surname> <given-names>G.</given-names></name>, <name name-style="western"><surname>Mallick</surname> <given-names>S.</given-names></name>, <name name-style="western"><surname>Kirsanow</surname> <given-names>K.</given-names></name>, <name name-style="western"><surname>Sudmant</surname> <given-names>P. H.</given-names></name>, <name name-style="western"><surname>Schraiber</surname> <given-names>J. G.</given-names></name>, <name name-style="western"><surname>Castellano</surname> <given-names>S.</given-names></name>, <etal>et al</etal>., <article-title>Ancient human genomes suggest three ancestral populations for present-day Europeans</article-title>, <source>Nature</source> <volume>513</volume> (<year>2014</year>) <fpage>409</fpage>–<lpage>413</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nature13673" xlink:type="simple">10.1038/nature13673</ext-link></comment> <object-id pub-id-type="pmid">25230663</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref030">
+<label>30</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Renaud</surname> <given-names>G.</given-names></name>, <name name-style="western"><surname>Kircher</surname> <given-names>M.</given-names></name>, <name name-style="western"><surname>Stenzel</surname> <given-names>U.</given-names></name>, <name name-style="western"><surname>Kelso</surname> <given-names>J.</given-names></name>, <article-title>freeibis: an efficient basecaller with calibrated quality scores for illumina sequencers</article-title>, <source>Bioinformatics</source> <volume>29</volume> (<year>2013</year>) <fpage>1208</fpage>–<lpage>1209</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/bioinformatics/btt117" xlink:type="simple">10.1093/bioinformatics/btt117</ext-link></comment> <object-id pub-id-type="pmid">23471300</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref031">
+<label>31</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Haak</surname> <given-names>W.</given-names></name>, <name name-style="western"><surname>Lazaridis</surname> <given-names>I.</given-names></name>, <name name-style="western"><surname>Patterson</surname> <given-names>N.</given-names></name>, <name name-style="western"><surname>Rohland</surname> <given-names>N.</given-names></name>, <name name-style="western"><surname>Mallick</surname> <given-names>S.</given-names></name>, <name name-style="western"><surname>Llamas</surname> <given-names>B.</given-names></name>, <name name-style="western"><surname>Brandt</surname> <given-names>G.</given-names></name>, <name name-style="western"><surname>Nordenfelt</surname> <given-names>S.</given-names></name>, <name name-style="western"><surname>Harney</surname> <given-names>E.</given-names></name>, <name name-style="western"><surname>Stewardson</surname> <given-names>K.</given-names></name>, <etal>et al</etal>., <article-title>Massive migration from the steppe was a source for indo-european languages in europe</article-title>, <source>Nature</source> (<year>2015</year>). <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nature14317" xlink:type="simple">10.1038/nature14317</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref032">
+<label>32</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Rosenbloom</surname> <given-names>K. R.</given-names></name>, <name name-style="western"><surname>Armstrong</surname> <given-names>J.</given-names></name>, <name name-style="western"><surname>Barber</surname> <given-names>G. P.</given-names></name>, <name name-style="western"><surname>Casper</surname> <given-names>J.</given-names></name>, <name name-style="western"><surname>Clawson</surname> <given-names>H.</given-names></name>, <name name-style="western"><surname>Diekhans</surname> <given-names>M.</given-names></name>, <name name-style="western"><surname>Dreszer</surname> <given-names>T. R.</given-names></name>, <name name-style="western"><surname>Fujita</surname> <given-names>P. A.</given-names></name>, <name name-style="western"><surname>Guruvadoo</surname> <given-names>L.</given-names></name>, <name name-style="western"><surname>Haeussler</surname> <given-names>M.</given-names></name>, <etal>et al</etal>., <article-title>The ucsc genome browser database: 2015 update</article-title>, <source>Nucleic acids research</source> <volume>43</volume> (<year>2015</year>) <fpage>D670</fpage>–<lpage>D681</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/nar/gku1177" xlink:type="simple">10.1093/nar/gku1177</ext-link></comment> <object-id pub-id-type="pmid">25428374</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref033">
+<label>33</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Lipson</surname> <given-names>M.</given-names></name>, <name name-style="western"><surname>Loh</surname> <given-names>P.-R.</given-names></name>, <name name-style="western"><surname>Levin</surname> <given-names>A.</given-names></name>, <name name-style="western"><surname>Reich</surname> <given-names>D.</given-names></name>, <name name-style="western"><surname>Patterson</surname> <given-names>N.</given-names></name>, <name name-style="western"><surname>Berger</surname> <given-names>B.</given-names></name>, <article-title>Efficient moment-based inference of admixture parameters and sources of gene flow</article-title>, <source>Molecular biology and evolution</source> <volume>30</volume> (<year>2013</year>) <fpage>1788</fpage>–<lpage>1802</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/molbev/mst099" xlink:type="simple">10.1093/molbev/mst099</ext-link></comment> <object-id pub-id-type="pmid">23709261</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref034">
+<label>34</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Higham</surname> <given-names>T.</given-names></name>, <name name-style="western"><surname>Douka</surname> <given-names>K.</given-names></name>, <name name-style="western"><surname>Wood</surname> <given-names>R.</given-names></name>, <name name-style="western"><surname>Ramsey</surname> <given-names>C. B.</given-names></name>, <name name-style="western"><surname>Brock</surname> <given-names>F.</given-names></name>, <name name-style="western"><surname>Basell</surname> <given-names>L.</given-names></name>, <name name-style="western"><surname>Camps</surname> <given-names>M.</given-names></name>, <name name-style="western"><surname>Arrizabalaga</surname> <given-names>A.</given-names></name>, <name name-style="western"><surname>Baena</surname> <given-names>J.</given-names></name>, <name name-style="western"><surname>Barroso-Ruíz</surname> <given-names>C.</given-names></name>, <etal>et al</etal>., <article-title>The timing and spatiotemporal patterning of Neanderthal disappearance</article-title>, <source>Nature</source> <volume>512</volume> (<year>2014</year>) <fpage>306</fpage>–<lpage>309</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nature13621" xlink:type="simple">10.1038/nature13621</ext-link></comment> <object-id pub-id-type="pmid">25143113</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref035">
+<label>35</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Li</surname> <given-names>H.</given-names></name>, <name name-style="western"><surname>Durbin</surname> <given-names>R.</given-names></name>, <article-title>Inference of human population history from individual whole-genome sequences</article-title>, <source>Nature</source> <volume>475</volume> (<year>2011</year>) <fpage>493</fpage>–<lpage>496</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nature10231" xlink:type="simple">10.1038/nature10231</ext-link></comment> <object-id pub-id-type="pmid">21753753</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref036">
+<label>36</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Castellano</surname> <given-names>S.</given-names></name>, <name name-style="western"><surname>Parra</surname> <given-names>G.</given-names></name>, <name name-style="western"><surname>Sánchez-Quinto</surname> <given-names>F. A.</given-names></name>, <name name-style="western"><surname>Racimo</surname> <given-names>F.</given-names></name>, <name name-style="western"><surname>Kuhlwilm</surname> <given-names>M.</given-names></name>, <name name-style="western"><surname>Kircher</surname> <given-names>M.</given-names></name>, <name name-style="western"><surname>Sawyer</surname> <given-names>S.</given-names></name>, <name name-style="western"><surname>Fu</surname> <given-names>Q.</given-names></name>, <name name-style="western"><surname>Heinze</surname> <given-names>A.</given-names></name>, <name name-style="western"><surname>Nickel</surname> <given-names>B.</given-names></name>, <etal>et al</etal>., <article-title>Patterns of coding variation in the complete exomes of three Neandertals</article-title>, <source>Proceedings of the National Academy of Sciences</source> <volume>111</volume> (<year>2014</year>) <fpage>6666</fpage>–<lpage>6671</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.1405138111" xlink:type="simple">10.1073/pnas.1405138111</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref037">
+<label>37</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Chen</surname> <given-names>H.</given-names></name>, <article-title>The joint allele frequency spectrum of multiple populations: a coalescent theory approach</article-title>, <source>Theoretical Population Biology</source> <volume>81</volume> (<year>2012</year>) <fpage>179</fpage>–<lpage>195</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.tpb.2011.11.004" xlink:type="simple">10.1016/j.tpb.2011.11.004</ext-link></comment> <object-id pub-id-type="pmid">22155588</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref038">
+<label>38</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Jewett</surname> <given-names>E. M.</given-names></name>, <name name-style="western"><surname>Rosenberg</surname> <given-names>N. A.</given-names></name>, <article-title>Theory and applications of a deterministic approximation to the coalescent model</article-title>, <source>Theoretical Population Biology</source> <volume>93</volume> (<year>2014</year>) <fpage>14</fpage>–<lpage>29</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.tpb.2013.12.007" xlink:type="simple">10.1016/j.tpb.2013.12.007</ext-link></comment> <object-id pub-id-type="pmid">24412419</object-id></mixed-citation>
+</ref>
+<ref id="pgen.1005972.ref039">
+<label>39</label>
+<mixed-citation publication-type="other" xlink:type="simple">J. A. Kamm, J. Terhorst, Y. S. Song, Efficient computation of the joint sample frequency spectra for multiple populations, arXiv preprint arXiv:1503.01133 (2015).</mixed-citation>
+</ref>
+</ref-list>
+</back>
+</article>

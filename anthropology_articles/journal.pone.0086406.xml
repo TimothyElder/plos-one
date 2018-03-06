@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group>
+<journal-title>PLoS ONE</journal-title></journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-13-29550</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0086406</article-id>
+<article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Biology</subject><subj-group><subject>Computational biology</subject><subj-group><subject>Ecosystem modeling</subject><subject>Evolutionary modeling</subject></subj-group></subj-group><subj-group><subject>Ecology</subject><subj-group><subject>Ecological metrics</subject><subj-group><subject>Carrying capacity</subject><subject>Population growth</subject><subject>Population size</subject></subj-group></subj-group><subj-group><subject>Ecosystems</subject><subj-group><subject>Ecosystem modeling</subject></subj-group></subj-group><subj-group><subject>Population ecology</subject><subject>Theoretical ecology</subject></subj-group></subj-group><subj-group><subject>Evolutionary biology</subject><subj-group><subject>Evolutionary processes</subject><subj-group><subject>Adaptation</subject><subject>Emergence</subject><subject>Evolutionary selection</subject><subject>Natural selection</subject></subj-group></subj-group><subj-group><subject>Behavioral ecology</subject></subj-group></subj-group><subj-group><subject>Population biology</subject><subj-group><subject>Population metrics</subject><subj-group><subject>Population size</subject></subj-group></subj-group><subj-group><subject>Population dynamics</subject><subject>Population ecology</subject><subject>Population modeling</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Computer science</subject><subj-group><subject>Computer modeling</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Social and behavioral sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Biological anthropology</subject></subj-group></subj-group><subj-group><subject>Archaeology</subject></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>High Selection Pressure Promotes Increase in Cumulative Adaptive Culture</article-title>
+<alt-title alt-title-type="running-head">Selection Promotes Cumulative Adaptive Culture</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Vegvari</surname><given-names>Carolin</given-names></name><xref ref-type="aff" rid="aff1"/><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Foley</surname><given-names>Robert A.</given-names></name><xref ref-type="aff" rid="aff1"/></contrib>
+</contrib-group>
+<aff id="aff1"><addr-line>Leverhulme Centre for Human Evolutionary Studies, Department of Archaeology and Anthropology, University of Cambridge, Cambridge, United Kingdom</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Allaby</surname><given-names>Robin</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>University of Warwick, United Kingdom</addr-line></aff>
+<author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">cv275@cam.ac.uk</email></corresp>
+<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn>
+<fn fn-type="con"><p>Conceived and designed the experiments: CV RAF. Performed the experiments: CV. Analyzed the data: CV. Wrote the paper: CV.</p></fn>
+</author-notes>
+<pub-date pub-type="collection"><year>2014</year></pub-date>
+<pub-date pub-type="epub"><day>29</day><month>1</month><year>2014</year></pub-date>
+<volume>9</volume>
+<issue>1</issue>
+<elocation-id>e86406</elocation-id>
+<history>
+<date date-type="received"><day>18</day><month>7</month><year>2013</year></date>
+<date date-type="accepted"><day>13</day><month>12</month><year>2013</year></date>
+</history>
+<permissions>
+<copyright-year>2014</copyright-year>
+<copyright-holder>Vegvari, Foley</copyright-holder><license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions>
+<abstract>
+<p>The evolution of cumulative adaptive culture has received widespread interest in recent years, especially the factors promoting its occurrence. Current evolutionary models suggest that an increase in population size may lead to an increase in cultural complexity via a higher rate of cultural transmission and innovation. However, relatively little attention has been paid to the role of natural selection in the evolution of cultural complexity. Here we use an agent-based simulation model to demonstrate that high selection pressure in the form of resource pressure promotes the accumulation of adaptive culture in spite of small population sizes and high innovation costs. We argue that the interaction of demography and selection is important, and that neither can be considered in isolation. We predict that an increase in cultural complexity is most likely to occur under conditions of population pressure relative to resource availability. Our model may help to explain why culture change can occur without major environmental change. We suggest that understanding the interaction between shifting selective pressures and demography is essential for explaining the evolution of cultural complexity.</p>
+</abstract>
+<funding-group><funding-statement>These authors have no support or funding to report.</funding-statement></funding-group><counts><page-count count="8"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title>Introduction</title>
+<p>Our capacity for cumulative adaptive culture is an essential aspect of modern human behavioural adaptations. The essence of cumulative culture is that elements are added, and this leads to greater complexity. Cultural complexity has been variously defined <xref ref-type="bibr" rid="pone.0086406-Murdock1">[1]</xref>, <xref ref-type="bibr" rid="pone.0086406-Oswalt1">[2]</xref>, <xref ref-type="bibr" rid="pone.0086406-McGuire1">[3]</xref>, <xref ref-type="bibr" rid="pone.0086406-Keeley1">[4]</xref>, and can comprise both local changes in the scale of cultural items, and the general trends over time leading to living humans <xref ref-type="bibr" rid="pone.0086406-McBrearty1">[5]</xref>, <xref ref-type="bibr" rid="pone.0086406-Henshilwood1">[6]</xref>. In this paper we use the number of added traits as a proxy for cultural complexity; this might match best to technological and material complexity, but is not necessarily confined to it. In the archaeological record, we observe that technological complexity has not increased continuously, and extant human societies differ in the complexity of their technological systems. For example, early occurrences of more complex material cultural adaptations in South Africa during the Middle Stone Age seem to have been short-lived and followed by societies with comparatively less complex material culture <xref ref-type="bibr" rid="pone.0086406-Jacobs1">[7]</xref>. In the ethnographic record, societies range in their technological complexity, from the basic tool kit of the Tasmanians to state societies with a tool kit that in its entirety can no longer be produced or handled by a single individual <xref ref-type="bibr" rid="pone.0086406-Oswalt1">[2]</xref>, <xref ref-type="bibr" rid="pone.0086406-Jones1">[8]</xref>.</p>
+<p>Given the general human capacity for cumulative culture <xref ref-type="bibr" rid="pone.0086406-Herrman1">[9]</xref>, <xref ref-type="bibr" rid="pone.0086406-Dean1">[10]</xref>, the obvious question is: Why are some human cultures more complex than others? Factors that have been proposed to affect the level of cultural complexity of a population are risk <xref ref-type="bibr" rid="pone.0086406-Read1">[11]</xref>, population size and connectivity <xref ref-type="bibr" rid="pone.0086406-Shennan1">[12]</xref>, <xref ref-type="bibr" rid="pone.0086406-Henrich1">[13]</xref>, <xref ref-type="bibr" rid="pone.0086406-Powell1">[14]</xref>, <xref ref-type="bibr" rid="pone.0086406-Kline1">[15]</xref>, <xref ref-type="bibr" rid="pone.0086406-Pradhan1">[16]</xref>, and the relative costs and benefits of innovating and maintaining cultural traits <xref ref-type="bibr" rid="pone.0086406-Ugan1">[17]</xref>, <xref ref-type="bibr" rid="pone.0086406-Bettinger1">[18]</xref>, <xref ref-type="bibr" rid="pone.0086406-Rendell1">[19]</xref>. Recent studies have emphasised the role of population size and social connectivity in promoting adaptive culture <xref ref-type="bibr" rid="pone.0086406-Shennan1">[12]</xref>, <xref ref-type="bibr" rid="pone.0086406-Henrich1">[13]</xref>, <xref ref-type="bibr" rid="pone.0086406-Powell1">[14]</xref>, <xref ref-type="bibr" rid="pone.0086406-Kline1">[15]</xref>, <xref ref-type="bibr" rid="pone.0086406-Lycett1">[20]</xref>. However, the empirical evidence for this relationship is contentious <xref ref-type="bibr" rid="pone.0086406-Read1">[11]</xref>, <xref ref-type="bibr" rid="pone.0086406-Read2">[21]</xref>.</p>
+<p>The role of selection in the evolution of cumulative adaptive culture has been assumed but not well-explored, even though selection, by definition, should be a major driving force in the evolution of adaptive traits <xref ref-type="bibr" rid="pone.0086406-Darwin1">[22]</xref>, <xref ref-type="bibr" rid="pone.0086406-Mesoudi1">[23]</xref>. Our aim in this paper is to investigate the relative importance of natural selection and demography and their interaction in the evolution of cumulative adaptive culture. For this purpose, we use a spatially explicit agent-based simulation model that focuses on subsistence-related cultural traits.</p>
+<p>We use this kind of model because it allows us to explicitly model human-environment interactions and human adaptations at the behavioural level. We focus on subsistence-related traits because their adaptive value is evident and the fitness benefits that they confer are relatively easy to assess. As a measure for cumulative adaptive culture we use the number of cultural traits per individual. This means we measure complexity as the size of a trait list. A cultural trait may correspond to a techno-unit, a tool, a specified piece of knowledge or behaviour, or the ability to achieve a goal in a given domain.</p>
+<p>We expect that stronger selection pressure leads to an accelerated increase in the number of adaptive cultural traits. Selection is strong if the fitness gains associated with higher cultural complexity are high, this means the reproductive success of individuals with more traits is higher. The effect of selection can be overwhelmed by random drift. Selection is more likely to influence outcomes in larger populations, drift in smaller populations. We predict that even small or isolated populations should accumulate adaptive culture fast if selection is strong enough. Large and well-connected populations under high selection pressure should display the highest rates of increase in cumulative adaptive culture.</p>
+<p>Contrarily, if the innovation of new cultural traits is expensive the accumulation of adaptive traits should proceed more slowly or be prevented. Innovation may be costly because individuals have to spend time and energy innovating that they could otherwise spend on different activities <xref ref-type="bibr" rid="pone.0086406-Rendell1">[19]</xref>, <xref ref-type="bibr" rid="pone.0086406-Rendell2">[24]</xref>. The evolution of cumulative adaptive culture should also be slowed down by learning costs because cultural traits may be conceptually difficult and learning involves a lot of effort <xref ref-type="bibr" rid="pone.0086406-Mesoudi2">[25]</xref>.</p>
+<p>We distinguish between two types of innovation; the first are innovations of independent cultural traits that enable individuals to exploit a new resource; the second are innovations which represent modifications of existing traits and make individuals more efficient at exploiting a resource which has already been part of their subsistence spectrum before (see <xref ref-type="bibr" rid="pone.0086406-Kandler1">[26]</xref> for a similar distinction between different types of innovation).</p>
+<p>The possibility of both types of innovation occurring within the same population may give rise to population fluctuations <xref ref-type="bibr" rid="pone.0086406-Ghirlanda1">[27]</xref>, <xref ref-type="bibr" rid="pone.0086406-Ghirlanda2">[28]</xref>. The reason is that independent innovations increase the equilibrium population size by shifting it towards the absolute carrying capacity of a habitat (determined by the sum of all potentially exploitable resources <xref ref-type="bibr" rid="pone.0086406-Read3">[29]</xref>). At the same time improvements in the ability of individuals to extract resources may not necessarily lead to population growth and even lead to population decline. Thus, the dynamics of cultural transmission and innovation by themselves may be major determinants of demographic transitions in the absence of environmental change. This may help to explain why cultural transitions in the archaeological record may or may not coincide closely with changes in environmental conditions <xref ref-type="bibr" rid="pone.0086406-Jacobs1">[7]</xref>, <xref ref-type="bibr" rid="pone.0086406-MarinArroyo1">[30]</xref>, <xref ref-type="bibr" rid="pone.0086406-Maher1">[31]</xref>. We tested the above hypotheses with our model. The results indicate that natural selection is a non-negligible force in the evolution of cultural complexity.</p>
+</sec><sec id="s2" sec-type="methods">
+<title>Methods</title>
+<p><italic>(For a full model description according to the ODD standard protocol for agent-based models</italic> <xref ref-type="bibr" rid="pone.0086406-Grimm1">[32]</xref>, <italic>see <xref ref-type="supplementary-material" rid="pone.0086406.s022">Text S1</xref>. See <xref ref-type="supplementary-material" rid="pone.0086406.s004">Figure S4</xref>. See <xref ref-type="supplementary-material" rid="pone.0086406.s021">Table S17</xref> for an overview of the model parameters and the values used in the simulations. Please email the corresponding author for source code and data files.)</italic></p>
+<p>We propose an agent-based simulation model in which the behaviour and combined characteristics of low-level entities, agents as representations of human individuals, give rise to observable properties on higher organisational levels. Each individual is a member of a group, and all groups together constitute the total population. For simplicity groups are not internally structured in this set of analyses, but since individuals are born into their parents' group and form part of a family unit, the concept of groups in the model is close to that of hunter-gatherer bands or units composed of several bands <xref ref-type="bibr" rid="pone.0086406-Lee1">[33]</xref>.</p>
+<p>As we are interested in modelling human-environment interactions that can lead to subsistence-related selection pressure, we consider our model population within a simple environmental framework (a two-dimensional grid of 10×10 squares). We use a fixed area for a hunter-gatherer group until it reaches carrying capacity, so population size translates into population density in the simulation. Individuals can invent or learn cultural traits that enable them to consume specific environmental resources. There are ten environmental resources, and individuals can acquire up to ten traits. Individuals only learn or innovate if they sense that they are under resource pressure, this means if they cannot meet their resource requirements.</p>
+<p>Individuals that have reached a minimum age of 15 years can reproduce sexually, if they find a partner and if they have a minimum energy score to pass on enough energy to the new-born individual. This means that the reproductive rate is linked to resource availability (see <xref ref-type="supplementary-material" rid="pone.0086406.s022">Text S1</xref> for details.) Offspring initially learn their cultural traits from their parents (see SI for details). The error rate during copying a trait is 5%; this means that with a probability of 5% the learner copies a trait value that is either one unit higher or one unit lower than the trait value of the cultural model. Higher trait values correspond to higher skill levels (see below). In addition, individuals can learn from other group members, and members of neighbouring groups, depending on model parameters. To be conservative, we specify that an individual can only invent a new trait, if he/she has reached the maximum skill level at the trait that precedes the new trait in the trait list (this corresponds to a notion of experience). The invention of a new trait comes at a cost that is subtracted from the individual's energy score.</p>
+<p>The amount of a resource that an individual can extract from the environment depends on the individual's skill with the corresponding cultural trait, and is calculated as follows:<disp-formula id="pone.0086406.e001"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0086406.e001" xlink:type="simple"/></disp-formula>The basic rate is the resource-specific consumption rate if the cultural trait variant has a value of one. The selection differential is a key model parameter that determines the level of resource pressure and thereby the intensity of selection. It is defined as the increase in the resource extraction rate per one unit increase in the skill level at a particular cultural trait. Individuals can only consume resources for which they have a trait and cannot accumulate more than 50 resource units. They attempt to consume at least as many resource units as necessary to meet their minimum energy requirement at each time step (five resource units). Groups under resource pressure can migrate to another location and/or fission (see <xref ref-type="supplementary-material" rid="pone.0086406.s022">Text S1</xref> for details).</p>
+<p>Using the model outlined above we examined the effects of resource availability, social interactions between neighboring groups, selection intensity, and innovation and learning costs on the number of cultural traits per individual. Higher resource availability increases the population size. Individuals could either only interact with other individuals from within their own group (only learn from or find partners in their own square) or in addition with individuals from neighbouring squares (Moore neighborhood). Selection intensity was determined by the selection differential.</p>
+<p>We used Bonferroni-corrected Wilcoxon rank sum tests on the end values of ten independent simulation runs to compare the average number of cultural traits per individual, mean group size and the level of competition among individuals in different populations. Competition was measured as the percentage of individuals in the total population that could not meet their minimum resource requirements.</p>
+</sec><sec id="s3">
+<title>Results</title>
+<p>In populations with isolated groups increased selection pressure had a linear effect on cultural complexity. If the amount of resources stayed the same, higher selection pressure led to a higher number of cultural traits per individual compared to lower selection pressure (<xref ref-type="fig" rid="pone-0086406-g001">Fig. 1a</xref>). In isolated groups higher selection differentials were also associated with higher competition levels (<xref ref-type="supplementary-material" rid="pone.0086406.s001">Figure S1</xref>, <xref ref-type="supplementary-material" rid="pone.0086406.s018">Table S14</xref>). In contrast, if groups were not isolated, but individuals could interact with individuals from neighboring groups, selection pressure had a non-linear effect on cultural complexity. Stronger selection pressure only increased the number of traits per individual up to a point (selection differential 0.5). Beyond this point (selection differential 1.0) the number of cultural traits did not increase further and even declined (<xref ref-type="fig" rid="pone-0086406-g001">Fig. 1b</xref>; <xref ref-type="supplementary-material" rid="pone.0086406.s005">Table S1</xref>).</p>
+<fig id="pone-0086406-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0086406.g001</object-id><label>Figure 1</label><caption>
+<title>Effect of selection pressure, group size, interaction between groups and learning costs on the mean number of cultural traits per individual.</title>
+<p>a, b: no learning costs; c, d: learning costs 1 energy unit per learning event; a, c: isolated groups; b, d: interaction between neighboring groups. Legend indicates number of resource units per square. Results are grouped according to selection differential (x-axis). a, b: Higher selection pressure can increase the number of traits per individual up to a certain point (selection differential 0.5), but can lead to a decrease if it is too high (1.0). Higher resource availability significantly increases trait number for isolated groups and for interacting groups with intermediate selection differentials. Interacting groups always have a higher trait number than isolated groups. c, d: Learning costs can significantly decrease the number of traits per individual. If there are learning costs higher selection pressure always increases trait number (see text for details).</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0086406.g001" position="float" xlink:type="simple"/></fig>
+<p>The effect of higher resource availability and concomitant larger group sizes (<xref ref-type="supplementary-material" rid="pone.0086406.s002">Figure S2</xref>, <xref ref-type="supplementary-material" rid="pone.0086406.s009">Table S5</xref>, <xref ref-type="supplementary-material" rid="pone.0086406.s010">Table S6</xref>) on the number of cultural traits was always significant for populations with isolated groups except for selection differential 0.01, for which small differences were not significant (<xref ref-type="supplementary-material" rid="pone.0086406.s006">Table S2</xref>). This may be explained by the increased importance of drift in small populations.</p>
+<p>For populations with interacting groups, resource availability only significantly affected group sizes and trait numbers at selection differentials 0.1 and 0.5. Population sizes at very low (0.01) or very high (1.0) selection differentials were similar to each other, and lower than for intermediate selection differentials (0.1, 0.5) (<xref ref-type="table" rid="pone-0086406-t001">Table 1</xref>). Connected groups always evolved significantly more cultural traits per individual and displayed higher competition levels than isolated groups (<xref ref-type="supplementary-material" rid="pone.0086406.s007">Table S3</xref>, <xref ref-type="supplementary-material" rid="pone.0086406.s019">Table S15</xref>, <xref ref-type="supplementary-material" rid="pone.0086406.s020">Table S16</xref>).</p>
+<table-wrap id="pone-0086406-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0086406.t001</object-id><label>Table 1</label><caption>
+<title>Mean number of cultural traits ± standard deviation and mean group sizes in populations with isolated or interacting groups, with different selection differentials and resource availabilities.</title>
+</caption><alternatives><graphic id="pone-0086406-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0086406.t001" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td colspan="2" align="left" rowspan="1">Isolated groups</td>
+<td colspan="2" align="left" rowspan="1">Interacting groups</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Resource values</td>
+<td align="left" rowspan="1" colspan="1">Group size</td>
+<td align="left" rowspan="1" colspan="1">No. traits</td>
+<td align="left" rowspan="1" colspan="1">Group size</td>
+<td align="left" rowspan="1" colspan="1">No. traits</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="5" align="left" rowspan="1">Selection differential 0.01</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">50</td>
+<td align="left" rowspan="1" colspan="1">12.4±2.530</td>
+<td align="left" rowspan="1" colspan="1">1.58±0.297</td>
+<td align="left" rowspan="1" colspan="1">39.1±5.940</td>
+<td align="left" rowspan="1" colspan="1">3.50±0.514</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">100</td>
+<td align="left" rowspan="1" colspan="1">30.6±2.293</td>
+<td align="left" rowspan="1" colspan="1">1.78±0.088</td>
+<td align="left" rowspan="1" colspan="1">71.5±8.450</td>
+<td align="left" rowspan="1" colspan="1">3.27±0.413</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">500</td>
+<td align="left" rowspan="1" colspan="1">197.3±3.108</td>
+<td align="left" rowspan="1" colspan="1">2.09±0.044</td>
+<td align="left" rowspan="1" colspan="1">333.2±4.929</td>
+<td align="left" rowspan="1" colspan="1">3.04±0.103</td>
+</tr>
+<tr>
+<td colspan="5" align="left" rowspan="1">Selection differential 0.1</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">50</td>
+<td align="left" rowspan="1" colspan="1">17.7±1.770</td>
+<td align="left" rowspan="1" colspan="1">1.97±0.102</td>
+<td align="left" rowspan="1" colspan="1">45.1±3.728</td>
+<td align="left" rowspan="1" colspan="1">4.07±0.303</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">100</td>
+<td align="left" rowspan="1" colspan="1">38.8±2.198</td>
+<td align="left" rowspan="1" colspan="1">2.01±0.075</td>
+<td align="left" rowspan="1" colspan="1">88.4±3.325</td>
+<td align="left" rowspan="1" colspan="1">4.01±0.107</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">500</td>
+<td align="left" rowspan="1" colspan="1">267.8±11.805</td>
+<td align="left" rowspan="1" colspan="1">2.90±0.072</td>
+<td align="left" rowspan="1" colspan="1">489.3±48.303</td>
+<td align="left" rowspan="1" colspan="1">4.61±0.455</td>
+</tr>
+<tr>
+<td colspan="5" align="left" rowspan="1">Selection differential 0.5</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">50</td>
+<td align="left" rowspan="1" colspan="1">24.5±3.396</td>
+<td align="left" rowspan="1" colspan="1">3.19±0.492</td>
+<td align="left" rowspan="1" colspan="1">62.6±12.204</td>
+<td align="left" rowspan="1" colspan="1">6.95±0.626</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">100</td>
+<td align="left" rowspan="1" colspan="1">56.3±4.132</td>
+<td align="left" rowspan="1" colspan="1">3.77±0.247</td>
+<td align="left" rowspan="1" colspan="1">168.5±9.581</td>
+<td align="left" rowspan="1" colspan="1">7.95±0.478</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">500</td>
+<td align="left" rowspan="1" colspan="1">291.6±9.523</td>
+<td align="left" rowspan="1" colspan="1">4.34±0.167</td>
+<td align="left" rowspan="1" colspan="1">789.5±92.558</td>
+<td align="left" rowspan="1" colspan="1">8.16±0.620</td>
+</tr>
+<tr>
+<td colspan="5" align="left" rowspan="1">Selection differential 1.0</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">50</td>
+<td align="left" rowspan="1" colspan="1">17.2±4.774</td>
+<td align="left" rowspan="1" colspan="1">2.72±0.798</td>
+<td align="left" rowspan="1" colspan="1">41.0±3.810</td>
+<td align="left" rowspan="1" colspan="1">6.86±0.440</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">100</td>
+<td align="left" rowspan="1" colspan="1">41.4±4.871</td>
+<td align="left" rowspan="1" colspan="1">3.79±0.470</td>
+<td align="left" rowspan="1" colspan="1">75.3±8.378</td>
+<td align="left" rowspan="1" colspan="1">7.29±0.656</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">500</td>
+<td align="left" rowspan="1" colspan="1">224.0±10.626</td>
+<td align="left" rowspan="1" colspan="1">4.62±0.209</td>
+<td align="left" rowspan="1" colspan="1">347.1±28.510</td>
+<td align="left" rowspan="1" colspan="1">7.16±0.424</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt101"><label/><p>Maximum energy score of individuals was capped at 50. Cost of inventing a new trait was 10.</p></fn></table-wrap-foot></table-wrap>
+<p>The effect of higher selection differentials on cultural trait number is partly due to higher mean group sizes if individuals consume more resources. However, in some cases populations with no significant differences in size evolved more cultural traits if they were exposed to stronger selection pressure. For example, in populations with interacting groups mean group sizes do not differ significantly for selection differentials 0.01 and 1.0, but the numbers of traits per individual is significantly higher for selection differential 1.0 (<xref ref-type="table" rid="pone-0086406-t001">Table 1</xref>, <xref ref-type="supplementary-material" rid="pone.0086406.s007">Table S3</xref>, <xref ref-type="supplementary-material" rid="pone.0086406.s008">Table S4</xref>). Similarly, populations with isolated groups at resource levels 50 and 100 and selection differentials 0.1 and 1.0 do not differ significantly in size, but the populations with selection differential 1.0 have a significantly higher number of cultural traits per individual. Populations with large interacting groups under high selection pressure evolve the highest number of cultural traits, as predicted.</p>
+<p>High innovation costs can significantly reduce the number of cultural traits per individual, especially in populations with isolated groups in which new inventions cannot readily spread (<xref ref-type="fig" rid="pone-0086406-g002">Fig. 2</xref>; <xref ref-type="supplementary-material" rid="pone.0086406.s011">Table S7</xref>, <xref ref-type="supplementary-material" rid="pone.0086406.s012">Table S8</xref>, <xref ref-type="supplementary-material" rid="pone.0086406.s013">Table S9</xref>). Learning costs significantly reduced the number of cultural traits in large interacting populations (<xref ref-type="fig" rid="pone-0086406-g001">Fig. 1c, d</xref>; <xref ref-type="supplementary-material" rid="pone.0086406.s014">Table S10</xref>, <xref ref-type="supplementary-material" rid="pone.0086406.s015">Table S11</xref>, <xref ref-type="supplementary-material" rid="pone.0086406.s016">Table S12</xref>, <xref ref-type="supplementary-material" rid="pone.0086406.s017">Table S13</xref>). In populations with isolated groups, the effect of learning costs on the number of cultural traits were only significant for high resource availabilities and if the selection differential was not too high (1.0). In small groups random drift may have been more important than cost-benefit ratios.</p>
+<fig id="pone-0086406-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0086406.g002</object-id><label>Figure 2</label><caption>
+<title>Effect of innovation costs on number of cultural traits per individual. Higher innovation costs can significantly reduce the number of cultural traits per individual, especially in isolated groups with low selection differentials. Maximum energy score of individuals capped at 50.</title>
+<p>a, d: inventing a new trait costs 10 energy units; b, e: inventing a new trait costs 20 energy units; c, f: inventing a new trait costs: 40 energy units. Upper row: isolated groups, lower row: individuals could learn from or choose partners from neighboring groups; error bars indicate standard deviation; results were compared using Wilcoxon rank sum tests (see <xref ref-type="supplementary-material" rid="pone.0086406.s011">Table S7</xref>); legend shows max resource value per square.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0086406.g002" position="float" xlink:type="simple"/></fig>
+<p>Unlike the case where learning was cost-free, populations with interacting groups under very high selection pressure developed a significantly higher number of cultural traits per individual if there was a cost attached to learning. They also had a higher number of cultural traits than populations under lower selection pressure. This may indicate that the additional pressure imposed by learning costs in combination with high benefits (high increase in consumption rate per increase in trait value) compensating for the expenses can drive the evolution of adaptive cultural traits.</p>
+<p>We recorded the population growth trajectories for all simulations. For each parameter combination we plotted the mean value of ten runs against time. In many cases we found stable population oscillations or episodes of halted growth superimposed on the overall growth curve (<xref ref-type="supplementary-material" rid="pone.0086406.s003">Figure S3</xref>). The turning points in each curve correspond to the innovation and spread of a new cultural trait.</p>
+</sec><sec id="s4">
+<title>Discussion</title>
+<p>In this study, we investigated the relative importance of population size, interaction between groups and natural selection on the rate of evolution of cumulative adaptive culture. We found that high selection pressure can increase cumulative adaptive culture in populations of various sizes and interaction frequencies. Populations of similar size evolved a higher level of cumulative adaptive culture under higher selection pressure. This supports the hypothesis that selection plays a major role in human cultural evolution. If correct, we expect the later Pleistocene expansion of cultural complexity to have been partly driven by selection.</p>
+<p>Selection pressure in our model corresponds to population pressure. Keeley <xref ref-type="bibr" rid="pone.0086406-Keeley1">[4]</xref> defined population pressure as the ratio of population density to the density of available resources. Thus, population pressure can be understood as a form of environmental risk. In a survey of 94 ethnographic hunter-gatherer groups, Keeley found a strong positive correlation between population pressure and socioeconomic complexity, which can be understood as a manifestation of cumulative adaptive culture. Other factors, including population density on its own, did not correlate significantly with socioeconomic complexity, and so he argued that population pressure is a necessary and sufficient condition for socioeconomic complexity.</p>
+<p>Two different mechanisms are commonly considered to increase population pressure. One is population growth, and the other a relative decline in environmental resources. It follows that population pressure can occur in poor as well as in rich environments, even though we expect population pressure to be much lower in regions of low resource density compared to high resource density <xref ref-type="bibr" rid="pone.0086406-Read3">[29]</xref>. There is a third way of increasing population pressure: if a sufficient number of individuals within a population increase their efficiency at an adaptive cultural trait, inter-individual competition and population pressure may increase too. This process is called intensification <xref ref-type="bibr" rid="pone.0086406-Boserup1">[34]</xref>, <xref ref-type="bibr" rid="pone.0086406-Wilkinson1">[35]</xref>, <xref ref-type="bibr" rid="pone.0086406-Beaton1">[36]</xref>, <xref ref-type="bibr" rid="pone.0086406-Fitzhugh1">[37]</xref>. Our model does not discriminate between these possibilities, but our primary point is that ecological pressure will strongly influence changes in cultural complexity.</p>
+<p>In our model increased skill at a cultural trait that leads to a higher per-capita resource extraction rate causes more rapid resource depletion. Populations with isolated groups under higher selection pressure generally had higher levels of competition and more cultural traits than populations under lower selection pressure. In interacting populations competition and trait number declined again if selection differentials were very high. A possible explanation is that cultural group selection is weakened by inter-group transmission. Alternatively, excessive resource pressure may cause a reduction in population size that simultaneously reduces competition and the number of potential innovators. The rate of innovation may also be affected by relative fitness gains <xref ref-type="bibr" rid="pone.0086406-Flannery1">[38]</xref>, <xref ref-type="bibr" rid="pone.0086406-Clark1">[39]</xref>. If inventing a new trait leads to relatively smaller fitness gains than improving the efficiency at a pre-existing trait, there is little advantage to innovating independent traits. Consequently, the accumulation of adaptive traits should proceed more slowly. It seems, therefore, that population pressure and population size can interact to increase or decrease the rate of change of cumulative adaptive culture.</p>
+<p>The equilibrium population size in a given environment depends in part on the ability of a population to exploit the resources within this environment. Thus, the equilibrium size of a population does not necessarily coincide with the absolute carrying capacity, determined by the sum of all environmental resources, but is usually smaller <xref ref-type="bibr" rid="pone.0086406-Read3">[29]</xref>. Consequently, the distinction between technological improvements that allow individuals to exploit the same resource more efficiently and independent innovations that broaden the subsistence base matters. Only the latter lead to intensive population growth and higher population densities by shifting the equilibrium population size toward the environmental carrying capacity <xref ref-type="bibr" rid="pone.0086406-Read3">[29]</xref>, <xref ref-type="bibr" rid="pone.0086406-Boserup1">[34]</xref>, <xref ref-type="bibr" rid="pone.0086406-Beaton1">[36]</xref>. This is what we see in the population growth trajectories (<xref ref-type="supplementary-material" rid="pone.0086406.s003">Figure S3</xref>): Innovation of a new trait is followed by exponential population growth that slows down as the new equilibrium population size is reached. This process resembles sequential phases of logistic growth. In populations close to their equilibrium size resource pressure on individuals is high. Consequently, individuals are under pressure to broaden their resource base.</p>
+<p>The process of resource intensification in our model closely resembles a “broad spectrum revolution” <xref ref-type="bibr" rid="pone.0086406-Flannery1">[38]</xref> and has been associated with population pressure and accelerated increases in cultural complexity in various periods of prehistory. Examples include the South African Middle Stone Age <xref ref-type="bibr" rid="pone.0086406-Clark1">[39]</xref>, the Upper Palaeolithic in Europe and the Near East <xref ref-type="bibr" rid="pone.0086406-Stiner1">[40]</xref>, <xref ref-type="bibr" rid="pone.0086406-Stiner2">[41]</xref>, <xref ref-type="bibr" rid="pone.0086406-Shea1">[42]</xref>, microlithic innovations in South Asia during the Late Pleistocene <xref ref-type="bibr" rid="pone.0086406-Petraglia1">[43]</xref>, and culture change in the Epipalaeolithic leading up to the transition to agriculture <xref ref-type="bibr" rid="pone.0086406-Munro1">[44]</xref>, <xref ref-type="bibr" rid="pone.0086406-Stutz1">[45]</xref>.</p>
+<p>High innovation costs can reduce the level of cumulative adaptive culture. In particular we found that small and isolated populations evolve fewer cultural traits, if the relative fitness gains associated with a new trait are small or the costs are high. If populations are very small and neither the potential fitness gains nor the innovation costs are too high, drift may be a more important driving force of cultural evolution. High relative fitness gains can outweigh high innovation costs. Similarly, increasing the population size or interaction rate can counteract high innovation costs, because of the higher number of potential innovators and the higher rate of cultural diffusion.</p>
+<p>The amount of cumulative adaptive culture of a population also depends on the number of previously acquired traits, and the relative costs of maintaining technological traits should have a noticeable effect on cumulative adaptive culture <xref ref-type="bibr" rid="pone.0086406-Read2">[21]</xref>, <xref ref-type="bibr" rid="pone.0086406-Mesoudi2">[25]</xref>. We can assume that cultural learning, which is necessary for preserving technological skills in a population, is not entirely cost-free, as it takes time and energy. Still, acquiring skills and knowledge by social learning should be more efficient than inventing new skills or technologies by oneself <xref ref-type="bibr" rid="pone.0086406-Rendell1">[19]</xref>, <xref ref-type="bibr" rid="pone.0086406-Rendell2">[24]</xref>, <xref ref-type="bibr" rid="pone.0086406-Boyd1">[46]</xref>.</p>
+<p>In our experiments learning costs reduced the level of cumulative adaptive culture of large or connected populations and those under moderately high resource pressure (selection differential 0.5). In small populations drift may have been a more important factor, although learning costs (1 resource unit) were never very high. Surprisingly, populations with very high selection pressure (selection differential 1.0) and interacting groups evolved a significantly higher number of cultural traits if they had to pay a learning cost than if they did not. These results indicate that whether or not adaptive cultural traits will be preserved in a population may depend on relative costs and benefits, as would be expected from behavioural ecology models <xref ref-type="bibr" rid="pone.0086406-Bird1">[47]</xref>. As a consequence, a loss of cumulative culture may not necessarily happen by chance or be maladaptive. Rather, expensive traits may disappear from the cultural repertoire of a population, if the costs of preserving them exceed the returns <xref ref-type="bibr" rid="pone.0086406-Read1">[11]</xref>, <xref ref-type="bibr" rid="pone.0086406-Read2">[21]</xref>, <xref ref-type="bibr" rid="pone.0086406-Clark1">[39]</xref>, <xref ref-type="bibr" rid="pone.0086406-Stutz1">[45]</xref>.</p>
+<p>In many areas of human prehistory the question, what came first, a major cultural innovation or a population expansion, is hitherto unresolved. For example, it is not clear if more complex technological traditions of the African MSA, such as the Still Bay or the Howieson's Poort tradition, were the cause of subsequent population expansions and migrations, or if population growth preceded and perhaps stimulated these cultural innovations <xref ref-type="bibr" rid="pone.0086406-Jacobs1">[7]</xref>. It has also been suggested that both the Still Bay and the Howieson's Poort tradition were reactions to environmental deterioration and ensuing higher population pressure <xref ref-type="bibr" rid="pone.0086406-Deacon1">[48]</xref>, <xref ref-type="bibr" rid="pone.0086406-Ambrose1">[49]</xref>, <xref ref-type="bibr" rid="pone.0086406-McCall1">[50]</xref>, <xref ref-type="bibr" rid="pone.0086406-McCall2">[51]</xref>.</p>
+<p>In our simulations we found a feedback between population dynamics and adaptive cultural evolution that can give rise to population oscillations overlying a general growth trend. Populations expand rapidly following the invention of a new trait, but then come to a halt or even decline during periods of intensified resource exploitation. Population oscillations in our model arise from inherent characteristics of the socio-cultural system and are not induced by external disturbances. Thus, cultural systems may develop their own internal dynamics within their ecological context. In order to explain the complex cultural dynamics of human populations we need to understand the interplay between demographic factors and shifting selective pressures, because they do not occur in isolation from each other. By developing models that explicitly incorporate selection on a behavioural level we suggest we can better integrate the development of the extraordinary human capacity for culture and cultural change with the biological evolution of the species.</p>
+</sec><sec id="s5">
+<title>Supporting Information</title>
+<supplementary-material id="pone.0086406.s001" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0086406.s001" position="float" xlink:type="simple"><label>Figure S1</label><caption>
+<p><bold>Effect of selection pressure, group size and between-group interaction on competition level.</bold> Competition was measured as the fraction of individuals in the total population that cannot meet their resource requirements. Higher selection pressure increases competition up to a point (selection differential 0.5), but beyond this point decreases competition (1.0). The maximum energy score of individuals was capped at 50. a: isolated groups, b: individuals could learn from or choose partners from neighboring groups; results are grouped according to selection differential (x-axis); legend shows max resource value per square.</p>
+<p>(TIF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0086406.s002" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0086406.s002" position="float" xlink:type="simple"><label>Figure S2</label><caption>
+<p><bold>Effect of selection pressure, resource availability and between-group interaction on mean group size.</bold> Maximum energy score of individuals capped at 50. Higher resource availability allows for higher group sizes. Higher selection differential allows for faster population growth but limits population size if it is too high. a: isolated groups, b: individuals could learn from or choose partners from neighboring groups; results are grouped according to selection differential (x-axis); legend shows max resource value per square.</p>
+<p>(TIF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0086406.s003" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0086406.s003" position="float" xlink:type="simple"><label>Figure S3</label><caption>
+<p><bold>Examples for population oscillations under varying selection pressure and resource availability.</bold> Graphs show mean population sizes of ten independent runs. Turning points in the growth trajectory of populations correspond to the innovation of cultural traits that increase the equilibrium population size shifting it towards the absolute environmental carrying capacity. Max energy score of individuals capped at 50. Neighboring groups were in contact. a) resource level: 50, selection differential (measure for selection pressure) 0.01, innovation cost: 10; b) resource level 500, selection differential 0.1, innovation cost 10; c) resource level 50, selection differential 0.01, innovation cost: 20; d) resource level: 500, selection differential: 0.01, innovation cost: 20; e) resource level: 500, selection differential: 0.1; innovation cost: 20; f) resource level: 100, selection differential: 0.1, innovation cost: 40.</p>
+<p>(TIF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0086406.s004" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0086406.s004" position="float" xlink:type="simple"><label>Figure S4</label><caption>
+<p><bold>Process overview and scheduling.</bold> Colour code: pink – processes involving resources, purple – randomisation, blue – individual processes that occur at every time step, green – individual processes that occur conditionally, orange – group process, red – data recording and analysis. E: individual's stored energy, Erep: minimum energy required for reproduction. See text for details. * Only once at model initialisation for time-independent resource distributions.</p>
+<p>(TIF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0086406.s005" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0086406.s005" position="float" xlink:type="simple"><label>Table S1</label><caption>
+<p><bold>Results table Wilcoxon-rank-sum test comparison of number of cultural traits per individual for different selection differentials (measure for selection pressure).</bold> Max energy per individual capped at 50. Innovation cost 10 resource units. Bonferroni-correction factor 6 (number of pair-wise tests). Significant results are marked with asterisks. * significant at 0.05; ** significant at 0.01.</p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0086406.s006" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0086406.s006" position="float" xlink:type="simple"><label>Table S2</label><caption>
+<p><bold>Results table Wilcoxon-rank-sum test comparison of number of cultural traits per individual for different resource availabilities.</bold> Max energy per individual capped at 50. Innovation cost 10 resource units; selection differentials (measure for selection pressure); Bonferroni-correction factor 3 (number of pair-wise tests). Significant results are marked with asterisks. *significant at 0.05; ** significant at 0.01.</p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0086406.s007" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0086406.s007" position="float" xlink:type="simple"><label>Table S3</label><caption>
+<p><bold>Results table Wilcoxon-rank-sum test comparison of number of cultural traits per individual for populations with isolated or interacting groups at different selection differentials and resource levels.</bold></p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0086406.s008" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0086406.s008" position="float" xlink:type="simple"><label>Table S4</label><caption>
+<p><bold>Results table Wilcoxon-rank-sum test comparison of mean group size for different selection differentials (measure for selection pressure).</bold> Max energy per individual capped at 50. Innovation cost 10 resource units. Bonferroni-correction factor 6 (number of tests). Significant results are marked with asterisks. * significant at 0.05; ** significant at 0.01.</p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0086406.s009" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0086406.s009" position="float" xlink:type="simple"><label>Table S5</label><caption>
+<p><bold>Results table Wilcoxon-rank-sum test comparison of mean group size for different resource availabilities.</bold> Max energy per individual capped at 50. Innovation cost 10 resource units; selection differentials (measure for selection pressure); Bonferroni-correction factor 3 (number of pair-wise tests). Significant results are marked with asterisks. *significant at 0.05; ** significant at 0.01.</p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0086406.s010" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0086406.s010" position="float" xlink:type="simple"><label>Table S6</label><caption>
+<p><bold>Results table Wilcoxon-rank-sum test comparison of mean group size for populations with isolated or interacting groups at different selection differentials and resource levels.</bold></p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0086406.s011" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0086406.s011" position="float" xlink:type="simple"><label>Table S7</label><caption>
+<p><bold>Results table Wilcoxon-rank-sum test comparison of number of cultural traits per individual in populations with max energy per individual capped at 50 and different innovation costs.</bold> Selection differentials (measure for selection pressure). Significant results are marked with asterisks. *significant at 0.05; ** significant at 0.01.</p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0086406.s012" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0086406.s012" position="float" xlink:type="simple"><label>Table S8</label><caption>
+<p><bold>Mean number of cultural traits and mean group sizes ± standard deviation in populations with isolated or interacting groups, with different selection differentials and resource availabilities.</bold> Maximum energy score of individuals was capped at 50. Cost of inventing a new trait was 20.</p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0086406.s013" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0086406.s013" position="float" xlink:type="simple"><label>Table S9</label><caption>
+<p><bold>Mean number of cultural traits and mean group sizes ± standard deviation in populations with isolated or interacting groups, with different selection differentials and resource availabilities.</bold> Maximum energy score of individuals was capped at 50. Cost of inventing a new trait was 40.</p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0086406.s014" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0086406.s014" position="float" xlink:type="simple"><label>Table S10</label><caption>
+<p><bold>Mean number of cultural traits and mean group sizes ± standard deviation in populations with isolated and interacting groups, with different selection differentials and resource availabilities.</bold> Max energy value capped at 50. Cost of inventing a new trait 10 energy units. Learning costs 1 energy unit.</p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0086406.s015" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0086406.s015" position="float" xlink:type="simple"><label>Table S11</label><caption>
+<p><bold>Results table Wilcoxon-rank-sum test comparison of the number of cultural traits per individual in populations with learning costs (1 resource unit) and without learning costs.</bold> Max energy score per individual capped at 50. Innovation costs 10 resource units. Selection differentials (measure for selection pressure). Significant results are marked with asterisks. *significant at 0.05; ** significant at 0.01.</p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0086406.s016" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0086406.s016" position="float" xlink:type="simple"><label>Table S12</label><caption>
+<p><bold>Results table Wilcoxon-rank-sum test comparison of number of cultural traits per individual for different selection differentials (measure for selection pressure), if each learning event costs 1 resource unit.</bold> Max energy score per individual capped at 50. Innovation cost 10 resource units. Bonferroni-correction factor 6 (number of pair-wise tests). Significant results are marked with asterisks. * significant at 0.05; ** significant at 0.01.</p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0086406.s017" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0086406.s017" position="float" xlink:type="simple"><label>Table S13</label><caption>
+<p><bold>Results table Wilcoxon-rank-sum test comparison of mean group size in populations with learning costs (1 resource unit) and without learning costs.</bold> Max energy score per individual capped at 50. Innovation costs 10 resource units. Selection differentials (measure for selection pressure). Significant results are marked with asterisks. *significant at 0.05; ** significant at 0.01.</p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0086406.s018" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0086406.s018" position="float" xlink:type="simple"><label>Table S14</label><caption>
+<p><bold>Results table Wilcoxon-rank-sum test comparison of total competition for different selection differentials; max energy per individual capped at 50.</bold> Innovation cost 10 resource units. Bonferroni-correction factor 6 (number of pair-wise tests). Significant results are marked with asterisks. * significant at 0.05; ** significant at 0.01.</p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0086406.s019" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0086406.s019" position="float" xlink:type="simple"><label>Table S15</label><caption>
+<p><bold>Comparison of total competition within a population across different resource levels, keeping selection differential and interaction regime constant.</bold> Max energy per individual capped at 50 energy units. Innovation cost 10 energy units. Pairwise Wilcoxon-rank-sum tests, Bonferroni-correction factor 3 (number of pairwise tests). Significant results are marked with asterisks. * significant at 0.05; ** significant at 0.01.</p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0086406.s020" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0086406.s020" position="float" xlink:type="simple"><label>Table S16</label><caption>
+<p><bold>Comparison of total competition in a population across different interaction regimes, keeping resource level and selection differential constant.</bold> Max energy per individual capped at 50 energy units. Innovation cost 10 energy units. Pairwise Wilcoxon-rank-sum tests. Significant results are marked with asterisks. * significant at 0.05; ** significant at 0.01.</p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0086406.s021" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0086406.s021" position="float" xlink:type="simple"><label>Table S17</label><caption>
+<p><bold>Model parameters and used values overview.</bold> * 1 corresponds to within-group searches only, 2 includes groups within the Moore neighbourhood, culture radius and reproductive radius were always varied together.</p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0086406.s022" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0086406.s022" position="float" xlink:type="simple"><label>Text S1</label><caption>
+<p><bold>ODD (overview, design concepts and details) model description.</bold></p>
+<p>(DOCX)</p>
+</caption></supplementary-material></sec></body>
+<back><ref-list>
+<title>References</title>
+<ref id="pone.0086406-Murdock1"><label>1</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Murdock</surname><given-names>GP</given-names></name>, <name name-style="western"><surname>Provost</surname><given-names>C</given-names></name> (<year>1973</year>) <article-title>Measurement of cultural complexity</article-title>. <source>Ethnology</source> <volume>12</volume>: <fpage>379</fpage>–<lpage>392</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Oswalt1"><label>2</label>
+<mixed-citation publication-type="book" xlink:type="simple">Oswalt WH (1976) An anthropological analysis of food-getting technology. New York: Wiley.</mixed-citation>
+</ref>
+<ref id="pone.0086406-McGuire1"><label>3</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>McGuire</surname><given-names>RH</given-names></name> (<year>1983</year>) <article-title>Breaking down cultural complexity: inequality and heterogeneity</article-title>. <source>J Archaeol Meth Th</source> <volume>6</volume>: <fpage>91</fpage>–<lpage>142</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Keeley1"><label>4</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Keeley</surname><given-names>LH</given-names></name> (<year>1988</year>) <article-title>Hunter-gatherer economic complexity and “population pressure”: a cross-cultural analysis</article-title>. <source>J Anthropol Archaeol</source> <volume>7</volume>: <fpage>373</fpage>–<lpage>411</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-McBrearty1"><label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>McBrearty</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Brooks</surname><given-names>AS</given-names></name> (<year>2000</year>) <article-title>The revolution that wasn't: a new interpretation of the origin of modern human behavior</article-title>. <source>J Hum Evol</source> <volume>39</volume>: <fpage>453</fpage>–<lpage>563</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Henshilwood1"><label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Henshilwood</surname><given-names>CS</given-names></name>, <name name-style="western"><surname>Marean</surname><given-names>CW</given-names></name> (<year>2003</year>) <article-title>The origin of modern human behaviour: critique of the models and their test implications</article-title>. <source>Curr Anthropol</source> <volume>44</volume>: <fpage>627</fpage>–<lpage>651</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Jacobs1"><label>7</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jacobs</surname><given-names>Z</given-names></name>, <name name-style="western"><surname>Roberts</surname><given-names>RG</given-names></name>, <name name-style="western"><surname>Galbraith</surname><given-names>RF</given-names></name>, <name name-style="western"><surname>Deacon</surname><given-names>HJ</given-names></name>, <name name-style="western"><surname>Grün</surname><given-names>R</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>Ages for the Middle Stone Age of southern Africa: implications for human behavior and dispersal</article-title>. <source>Science</source> <volume>322</volume>: <fpage>733</fpage>–<lpage>735</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Jones1"><label>8</label>
+<mixed-citation publication-type="book" xlink:type="simple">Jones R (1977) The Tasmanian paradox. In: Wright RVS, editor. Stone tools as cultural markers: change, evolution and complexity. Prehistory and material culture series 12. Canberra: Australian Institute of Aboriginal Studies.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Herrman1"><label>9</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Herrman</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Call</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Hernández-Lloreda</surname><given-names>MV</given-names></name>, <name name-style="western"><surname>Hare</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Tomasello</surname><given-names>M</given-names></name> (<year>2007</year>) <article-title>Humans have evolved specialised skills for social cognition: the cultural intelligence hypothesis</article-title>. <source>Science</source> <volume>317</volume>: <fpage>1360</fpage>–<lpage>1366</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Dean1"><label>10</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dean</surname><given-names>LG</given-names></name>, <name name-style="western"><surname>Rendal</surname><given-names>KL</given-names></name>, <name name-style="western"><surname>Shapiro</surname><given-names>SJ</given-names></name>, <name name-style="western"><surname>Thierry</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Laland</surname><given-names>KN</given-names></name> (<year>2012</year>) <article-title>Identification of the social and cognitive processes underlying human cumulative culture</article-title>. <source>Science</source> <volume>335</volume>: <fpage>1114</fpage>–<lpage>1118</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Read1"><label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Read</surname><given-names>DW</given-names></name> (<year>2008</year>) <article-title>An interaction model for resource implement complexity based on risk and number of annual moves</article-title>. <source>Am Antiquity</source> <volume>73</volume>: <fpage>599</fpage>–<lpage>625</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Shennan1"><label>12</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Shennan</surname><given-names>S</given-names></name> (<year>2001</year>) <article-title>Demography and cultural innovation: a model and its implications for modern human culture</article-title>. <source>Camb Archaeol J</source> <volume>11</volume>: <fpage>5</fpage>–<lpage>16</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Henrich1"><label>13</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Henrich</surname><given-names>J</given-names></name> (<year>2004</year>) <article-title>Demography and cultural evolution: how adaptive cultural processes can produce maladaptive losses: the Tasmanian case</article-title>. <source>Am Antiquity</source> <volume>69</volume>: <fpage>197</fpage>–<lpage>214</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Powell1"><label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Powell</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Shennan</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Thomas</surname><given-names>MG</given-names></name> (<year>2009</year>) <article-title>Late Pleistocene demography and the appearance of modern human behavior</article-title>. <source>Science</source> <volume>324</volume>: <fpage>1298</fpage>–<lpage>1301</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Kline1"><label>15</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kline</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Boyd</surname><given-names>R</given-names></name> (<year>2010</year>) <article-title>Population size predicts technological complexity in Oceania</article-title>. <source>P Roy Soc Lond B Bio</source> <volume>277</volume>: <fpage>2559</fpage>–<lpage>2564</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Pradhan1"><label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pradhan</surname><given-names>GR</given-names></name>, <name name-style="western"><surname>Tennie</surname><given-names>C</given-names></name>, <name name-style="western"><surname>van Schaik</surname><given-names>CP</given-names></name> (<year>2012</year>) <article-title>Social organization and the evolution of cumulative technology in apes and hominins</article-title>. <source>J Hum Evol</source> <volume>63</volume>: <fpage>180</fpage>–<lpage>190</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Ugan1"><label>17</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ugan</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Bright</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Rogers</surname><given-names>A</given-names></name> (<year>2003</year>) <article-title>When is technology worth the trouble?</article-title> <source>J Archaeol Sci</source> <volume>30</volume>: <fpage>1315</fpage>–<lpage>1329</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Bettinger1"><label>18</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bettinger</surname><given-names>RL</given-names></name>, <name name-style="western"><surname>Winterhalder</surname><given-names>B</given-names></name>, <name name-style="western"><surname>McElreath</surname><given-names>R</given-names></name> (<year>2006</year>) <article-title>A simple model of technological intensification</article-title>. <source>J Archaeol Sc</source> <volume>33</volume>: <fpage>38</fpage>–<lpage>545</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Rendell1"><label>19</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rendell</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Boyd</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Cownden</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Enquist</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Eriksson</surname><given-names>K</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Why copy others? Insights from the social learning strategies tournament</article-title>. <source>Science</source> <volume>328</volume>: <fpage>208</fpage>–<lpage>213</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Lycett1"><label>20</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lycett</surname><given-names>SJ</given-names></name>, <name name-style="western"><surname>Norton</surname><given-names>CJ</given-names></name> (<year>2010</year>) <article-title>A demographic model for Palaeolithic demographic evolution: the case of East Asia and the Movius line</article-title>. <source>Quatern Int</source> <volume>211</volume>: <fpage>55</fpage>–<lpage>56</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Read2"><label>21</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Read</surname><given-names>DW</given-names></name> (<year>2006</year>) <article-title>Tasmanian knowledge and skill: maladaptive imitation or adequate technology?</article-title> <source>Am Antiquity</source> <volume>71</volume>: <fpage>164</fpage>–<lpage>184</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Darwin1"><label>22</label>
+<mixed-citation publication-type="book" xlink:type="simple">Darwin CR (1859) On the Origin of Species by Means of Natural Selection. London: John Murray, London.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Mesoudi1"><label>23</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mesoudi</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Whiten</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Laland</surname><given-names>KN</given-names></name> (<year>2004</year>) <article-title>Is human cultural evolution Darwinian? Evidence reviewed from the perspective of The origin of species</article-title>. <source>Evolution</source> <volume>58</volume>: <fpage>1</fpage>–<lpage>11</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Rendell2"><label>24</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rendell</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Boyd</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Enquist</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Feldman</surname><given-names>MW</given-names></name>, <name name-style="western"><surname>Fogarty</surname><given-names>L</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>How copying affects the amount, evenness and persistence of cultural knowledge: insights from the social learning strategies tournament</article-title>. <source>Philos T Roy Soc B</source> <volume>366</volume>: <fpage>1118</fpage>–<lpage>1128</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Mesoudi2"><label>25</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mesoudi</surname><given-names>A</given-names></name> (<year>2011</year>) <article-title>Variable cultural acquisition costs constrain cumulative cultural evolution</article-title>. <source>PLOS ONE</source> <volume>6</volume>: <fpage>e18239</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Kandler1"><label>26</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kandler</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Laland</surname><given-names>KN</given-names></name> (<year>2009</year>) <article-title>An investigation of the relationship between innovation and cultural diversity</article-title>. <source>Theor Popul Biol</source> <volume>76</volume>: <fpage>59</fpage>–<lpage>67</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Ghirlanda1"><label>27</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ghirlanda</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Enquist</surname><given-names>M</given-names></name> (<year>2007</year>) <article-title>Cumulative culture and explosive demographic transitions</article-title>. <source>Qual Quant</source> <volume>41</volume>: <fpage>591</fpage>–<lpage>600</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Ghirlanda2"><label>28</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ghirlanda</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Enquist</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Perc</surname><given-names>M</given-names></name> (<year>2010</year>) <article-title>Sustainability of culture-driven population dynamics</article-title>. <source>Theor Popul Biol</source> <volume>77</volume>: <fpage>181</fpage>–<lpage>188</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Read3"><label>29</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Read</surname><given-names>DW</given-names></name>, <name name-style="western"><surname>LeBlanc</surname><given-names>SA</given-names></name> (<year>2003</year>) <article-title>Population growth, carrying capacity, and conflict</article-title>. <source>Curr Anthropol</source> <volume>44</volume>: <fpage>59</fpage>–<lpage>76</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-MarinArroyo1"><label>30</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Marin-Arroyo</surname><given-names>AB</given-names></name> (<year>2009</year>) <article-title>Economic adaptations during the Late Glacial in northern Spain: a simulation approach</article-title>. <source>Bef Farm</source> <volume>2</volume>: <fpage>1</fpage>–<lpage>18</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Maher1"><label>31</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Maher</surname><given-names>LA</given-names></name>, <name name-style="western"><surname>Banning</surname><given-names>EB</given-names></name>, <name name-style="western"><surname>Chazan</surname><given-names>M</given-names></name> (<year>2011</year>) <article-title>Oasis or mirage? Assessing the role of abrupt climate change in the prehistory of the southern Levant</article-title>. <source>Camb Archaeol J</source> <volume>21</volume>: <fpage>1</fpage>–<lpage>29</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Grimm1"><label>32</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Grimm</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Berger</surname><given-names>U</given-names></name>, <name name-style="western"><surname>Bastiansen</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Eliassen</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Ginot</surname><given-names>V</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>A standard protocol for describing individual-based and agent-based models</article-title>. <source>Ecol Model</source> <volume>198</volume>: <fpage>115</fpage>–<lpage>126</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Lee1"><label>33</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lee</surname><given-names>RB</given-names></name>, <name name-style="western"><surname>DeVore</surname><given-names>I</given-names></name> (<year>1968</year>) <article-title>Man the Hunter (Aldine, Chicago)</article-title>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Boserup1"><label>34</label>
+<mixed-citation publication-type="book" xlink:type="simple">Boserup E (1965) Conditions of Agricultural Growth: The Economics of Agrarian Change under Population Pressure. Chicago: Aldine.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Wilkinson1"><label>35</label>
+<mixed-citation publication-type="book" xlink:type="simple">Wilkinson RG (1973) Poverty and Progress: An Ecological Model of Economic Development. London: Methuen.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Beaton1"><label>36</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Beaton</surname><given-names>JM</given-names></name> (<year>1991</year>) <article-title>Extensification and intensification in central Californian prehistory</article-title>. <source>Antiquity</source> <volume>65</volume>: <fpage>946</fpage>–<lpage>952</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Fitzhugh1"><label>37</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fitzhugh</surname><given-names>B</given-names></name> (<year>2001</year>) <article-title>Risk and invention in human technological evolution</article-title>. <source>J Anthropol Archaeol</source> <volume>20</volume>: <fpage>125</fpage>–<lpage>167</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Flannery1"><label>38</label>
+<mixed-citation publication-type="book" xlink:type="simple">Flannery KV (1969) Origins and ecological effects of early domestication in Iran and the Near East. In: The domestication and exploitation of plants and animals. Ucko PJ, Dimbelby GW, editors. Chicago: Aldine. pp. 73–100.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Clark1"><label>39</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Clark</surname><given-names>JL</given-names></name> (<year>2011</year>) <article-title>The evolution of human culture during the later Pleistocene: using fauna to test models on the emergence and nature of “modern” human behavior</article-title>. <source>J Anthropol Archaeol</source> <volume>30</volume>: <fpage>273</fpage>–<lpage>291</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Stiner1"><label>40</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Stiner</surname><given-names>MC</given-names></name>, <name name-style="western"><surname>Munro</surname><given-names>ND</given-names></name>, <name name-style="western"><surname>Surovell</surname><given-names>TA</given-names></name>, <name name-style="western"><surname>Tchernov</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Bar-Yosef</surname><given-names>O</given-names></name> (<year>1999</year>) <article-title>Palaeolithic population growth pulses evidenced by small animal exploitation</article-title>. <source>Science</source> <volume>283</volume>: <fpage>190</fpage>–<lpage>194</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Stiner2"><label>41</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Stiner</surname><given-names>MC</given-names></name>, <name name-style="western"><surname>Kuhn</surname><given-names>SL</given-names></name> (<year>2006</year>) <article-title>Changes in the “connectedness” and resilience of Paleolithic societies in Mediterranean ecosystems</article-title>. <source>Hum Ecol</source> <volume>34</volume>: <fpage>693</fpage>–<lpage>712</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Shea1"><label>42</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Shea</surname><given-names>JJ</given-names></name> (<year>2007</year>) <article-title>Bahavioral differences between Middle and Upper Palaeolithic Homo sapiens in the East Mediterranean Levant</article-title>. <source>J Anthropol Res</source> <volume>63</volume>: <fpage>449</fpage>–<lpage>488</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Petraglia1"><label>43</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Petraglia</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Clakson</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Boivin</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Haslam</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Korisettar</surname><given-names>R</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Population increase and environmental deterioration correspond with microlithic innovations in South Asia ca. 35.000 years ago</article-title>. <source>P Natl Acad Sci USA</source> <volume>106</volume>: <fpage>12261</fpage>–<lpage>12266</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Munro1"><label>44</label>
+<mixed-citation publication-type="book" xlink:type="simple">Munro N (2009) Epipaleolithic subsistence intensification in the southern Levant: the faunal evidence. In: The evolution of hominin diets: Integrating approaches to the study of Palaeolithic subsistence. Hublin J-J, Richards MP, editors. Dordrecht: Springer. pp. 141–155.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Stutz1"><label>45</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Stutz</surname><given-names>AJ</given-names></name>, <name name-style="western"><surname>Munro</surname><given-names>ND</given-names></name>, <name name-style="western"><surname>Bar-Oz</surname><given-names>G</given-names></name> (<year>2009</year>) <article-title>Increasing the resolution of the Broad Spectrum Revolution in the Southern Levantine Epipalaeolithic</article-title>. <source>J Hum Evol</source> <volume>56</volume>: <fpage>294</fpage>–<lpage>306</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Boyd1"><label>46</label>
+<mixed-citation publication-type="book" xlink:type="simple">Boyd R, Richerson P (2005) The origin and evolution of cultures. Oxford: Oxford University Press.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Bird1"><label>47</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bird</surname><given-names>DW</given-names></name>, <name name-style="western"><surname>O'Connell</surname><given-names>JF</given-names></name> (<year>2006</year>) <article-title>Bavioral ecology and archaeology</article-title>. <source>J Archaeol Res</source> <volume>14</volume>: <fpage>143</fpage>–<lpage>188</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Deacon1"><label>48</label>
+<mixed-citation publication-type="book" xlink:type="simple">Deacon HJ (1989) Late Pleistocene palaeoecology and archaeology in the southern Cape, South Africa. In: The human revolution: Behavioral and biological perspectives on the origins of modern humans. Mellars P, Stringer C, editors. Princeton: Princeton University Press. pp. 104–117.</mixed-citation>
+</ref>
+<ref id="pone.0086406-Ambrose1"><label>49</label>
+<mixed-citation publication-type="book" xlink:type="simple">Ambrose SH, Lorenz KG (1990) Social and ecological models for the Middle Stone Age in southern Africa. In: The emergence of modern humans. Mellars P, editor. Edinburgh: Edinburgh University Press. pp. 3–33.</mixed-citation>
+</ref>
+<ref id="pone.0086406-McCall1"><label>50</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>McCall</surname><given-names>GS</given-names></name> (<year>2006</year>) <article-title>Multivariate perspectives on change and continuity in the Middle Stone Age lithics from Klasies River Mouth, South Africa</article-title>. <source>J Hum Evol</source> <volume>51</volume>: <fpage>429</fpage>–<lpage>439</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0086406-McCall2"><label>51</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>McCall</surname><given-names>GS</given-names></name> (<year>2007</year>) <article-title>Behavioral ecological models of lithic technological change during the later Middle Stone Age of South Africa</article-title>. <source>J Archaeol Sci</source> <volume>34</volume>: <fpage>1738</fpage>–<lpage>1751</lpage>.</mixed-citation>
+</ref>
+</ref-list></back>
+</article>

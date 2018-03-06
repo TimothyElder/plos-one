@@ -1,0 +1,684 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1d3 20150301//EN" "http://jats.nlm.nih.gov/publishing/1.1d3/JATS-journalpublishing1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="1.1d3" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-17-04874</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0190917</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Microbiology</subject><subj-group><subject>Medical microbiology</subject><subj-group><subject>Microbial pathogens</subject><subj-group><subject>Viral pathogens</subject><subj-group><subject>Immunodeficiency viruses</subject><subj-group><subject>HIV</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Pathology and laboratory medicine</subject><subj-group><subject>Pathogens</subject><subj-group><subject>Microbial pathogens</subject><subj-group><subject>Viral pathogens</subject><subj-group><subject>Immunodeficiency viruses</subject><subj-group><subject>HIV</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Organisms</subject><subj-group><subject>Viruses</subject><subj-group><subject>Viral pathogens</subject><subj-group><subject>Immunodeficiency viruses</subject><subj-group><subject>HIV</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Organisms</subject><subj-group><subject>Viruses</subject><subj-group><subject>Immunodeficiency viruses</subject><subj-group><subject>HIV</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Organisms</subject><subj-group><subject>Viruses</subject><subj-group><subject>RNA viruses</subject><subj-group><subject>Retroviruses</subject><subj-group><subject>Lentivirus</subject><subj-group><subject>HIV</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Microbiology</subject><subj-group><subject>Medical microbiology</subject><subj-group><subject>Microbial pathogens</subject><subj-group><subject>Viral pathogens</subject><subj-group><subject>Retroviruses</subject><subj-group><subject>Lentivirus</subject><subj-group><subject>HIV</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Pathology and laboratory medicine</subject><subj-group><subject>Pathogens</subject><subj-group><subject>Microbial pathogens</subject><subj-group><subject>Viral pathogens</subject><subj-group><subject>Retroviruses</subject><subj-group><subject>Lentivirus</subject><subj-group><subject>HIV</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Organisms</subject><subj-group><subject>Viruses</subject><subj-group><subject>Viral pathogens</subject><subj-group><subject>Retroviruses</subject><subj-group><subject>Lentivirus</subject><subj-group><subject>HIV</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Women's health</subject><subj-group><subject>Obstetrics and gynecology</subject><subj-group><subject>Contraception</subject><subj-group><subject>Female contraception</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Pharmacology</subject><subj-group><subject>Drugs</subject><subj-group><subject>Contraceptives</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Biotechnology</subject><subj-group><subject>Medical devices and equipment</subject><subj-group><subject>Contraceptives</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Medical devices and equipment</subject><subj-group><subject>Contraceptives</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Public and occupational health</subject><subj-group><subject>Preventive medicine</subject><subj-group><subject>HIV prevention</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>People and places</subject><subj-group><subject>Geographical locations</subject><subj-group><subject>Asia</subject><subj-group><subject>Bangladesh</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Epidemiology</subject><subj-group><subject>HIV epidemiology</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>People and places</subject><subj-group><subject>Population groupings</subject><subj-group><subject>Age groups</subject><subj-group><subject>Children</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>People and places</subject><subj-group><subject>Population groupings</subject><subj-group><subject>Families</subject><subj-group><subject>Children</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Cultural anthropology</subject><subj-group><subject>Religion</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Sociology</subject><subj-group><subject>Religion</subject></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Joint modeling of correlated binary outcomes: The case of contraceptive use and HIV knowledge in Bangladesh</article-title>
+<alt-title alt-title-type="running-head">Joint modeling of correlated binary outcomes</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Fang</surname> <given-names>Di</given-names></name>
+<role content-type="http://credit.casrai.org/">Conceptualization</role>
+<role content-type="http://credit.casrai.org/">Data curation</role>
+<role content-type="http://credit.casrai.org/">Formal analysis</role>
+<role content-type="http://credit.casrai.org/">Methodology</role>
+<role content-type="http://credit.casrai.org/">Validation</role>
+<role content-type="http://credit.casrai.org/">Writing – original draft</role>
+<role content-type="http://credit.casrai.org/">Writing – review &amp; editing</role>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Sun</surname> <given-names>Renyuan</given-names></name>
+<role content-type="http://credit.casrai.org/">Data curation</role>
+<role content-type="http://credit.casrai.org/">Formal analysis</role>
+<role content-type="http://credit.casrai.org/">Methodology</role>
+<role content-type="http://credit.casrai.org/">Validation</role>
+<role content-type="http://credit.casrai.org/">Writing – original draft</role>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<contrib-id authenticated="true" contrib-id-type="orcid">http://orcid.org/0000-0001-9072-1714</contrib-id>
+<name name-style="western">
+<surname>Wilson</surname> <given-names>Jeffrey R.</given-names></name>
+<role content-type="http://credit.casrai.org/">Formal analysis</role>
+<role content-type="http://credit.casrai.org/">Methodology</role>
+<role content-type="http://credit.casrai.org/">Writing – review &amp; editing</role>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+</contrib-group>
+<aff id="aff001">
+<label>1</label>
+<addr-line>Department of Agricultural Economics and Agribusiness, University of Arkansas, Fayetteville, AR, United States of America</addr-line>
+</aff>
+<aff id="aff002">
+<label>2</label>
+<addr-line>School of Mathematical and Statistical Science, Arizona State University, Tempe, AZ, United States of America</addr-line>
+</aff>
+<aff id="aff003">
+<label>3</label>
+<addr-line>Department of Economics, Arizona State University, Tempe, AZ, United States of America</addr-line>
+</aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Puebla</surname> <given-names>Iratxe</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1">
+<addr-line>Public Library of Science, UNITED KINGDOM</addr-line>
+</aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">jeffrey.wilson@asu.edu</email></corresp>
+</author-notes>
+<pub-date pub-type="collection">
+<year>2018</year>
+</pub-date>
+<pub-date pub-type="epub">
+<day>19</day>
+<month>1</month>
+<year>2018</year>
+</pub-date>
+<volume>13</volume>
+<issue>1</issue>
+<elocation-id>e0190917</elocation-id>
+<history>
+<date date-type="received">
+<day>6</day>
+<month>2</month>
+<year>2017</year>
+</date>
+<date date-type="accepted">
+<day>23</day>
+<month>12</month>
+<year>2017</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2018</copyright-year>
+<copyright-holder>Fang et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0190917"/>
+<abstract>
+<p>Recent advances in statistical methods enable the study of correlation among outcomes through joint modeling, thereby addressing spillover effects. By joint modeling, we refer to simultaneously analyzing two or more different response variables emanating from the same individual. Using the 2011 Bangladesh Demographic and Health Survey, we jointly address spillover effects between contraceptive use (CUC) and knowledge of HIV and other sexually transmitted diseases. Jointly modeling these two outcomes is appropriate because certain types of contraceptive use contribute to the prevention of HIV and STDs and the knowledge and awareness of HIV and STDs typically lead to protection during sexual intercourse. In particular, we compared the differences as they pertained to the interpretive advantage of modeling the spillover effects of joint modeling HIV and CUC as opposed to addressing them separately. We also identified risk factors that determine contraceptive use and knowledge of HIV and STDs among women in Bangladesh. We found that by jointly modeling the correlation between HIV knowledge and contraceptive use, the importance of education decreased. The HIV prevention program had a spillover effect on CUC: what seemed to be impacted by education can be partially contributed to one’s exposure to HIV knowledge. The joint model revealed a less significant impact of covariates as opposed to both separate models and standard models. Additionally, we found a spillover effect that would have otherwise been undiscovered if we did not jointly model. These findings further suggested that the simultaneous impact of correlated outcomes can be adequately addressed for the commonality between different responses and deflate, which is otherwise overestimated when examined separately.</p>
+</abstract>
+<funding-group>
+<award-group id="award001">
+<funding-source>
+<institution-wrap>
+<institution-id institution-id-type="funder-id">http://dx.doi.org/10.13039/100000002</institution-id>
+<institution>National Institutes of Health</institution>
+</institution-wrap>
+</funding-source>
+<award-id>NHS0007</award-id>
+<principal-award-recipient>
+<contrib-id authenticated="true" contrib-id-type="orcid">http://orcid.org/0000-0001-9072-1714</contrib-id>
+<name name-style="western">
+<surname>Wilson</surname> <given-names>Jeffrey R.</given-names></name>
+</principal-award-recipient>
+</award-group>
+<funding-statement>The authors appreciate support from the National Institute of Health Alzheimer’s Consortium Fellowship Grant (Grant No. NHS0007).</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="0"/>
+<table-count count="2"/>
+<page-count count="9"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability">
+<meta-name>Data Availability</meta-name>
+<meta-value>Data are available at the Democratic and Health Surveys Program. Interested researchers must register for a DHS account to access the Bangladesh data (as well as a number of other data sets) at <ext-link ext-link-type="uri" xlink:href="https://www.dhsprogram.com/data/" xlink:type="simple">https://www.dhsprogram.com/data/</ext-link> Information for the data set is listed here: Investigators: NIPORT Year: 2011 Title: Bangladesh Demographic Health Survey 2011 Producer: NIPORT, Mitra &amp; Associates, ICF International Place Published: Calverton, MD Original Release Date: 2013 The authors confirm that others would be able to access these data in the same manner as the authors and that the authors did not have any special access privileges that others would not have.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec001" sec-type="intro">
+<title>Introduction</title>
+<p>Current Contraceptive Use (CUC) is highly encouraged by the Bangladesh government as a means of reducing fertility rates over the long term [<xref ref-type="bibr" rid="pone.0190917.ref001">1</xref>, <xref ref-type="bibr" rid="pone.0190917.ref002">2</xref>]. Presently, approximately 61% of married women in Bangladesh currently use some form of contraceptive [<xref ref-type="bibr" rid="pone.0190917.ref001">1</xref>]. Notably, the birth control pill is by far the most widely used method (27%), followed by injectable (11%), condoms (6%), and female sterilization (5%) [<xref ref-type="bibr" rid="pone.0190917.ref003">3</xref>]. Furthermore, contraceptive use varies by age and place of residence, with higher usage in urban areas. To illustrate, the use of condoms in urban areas is 10%, versus rural areas, which is 4% [<xref ref-type="bibr" rid="pone.0190917.ref003">3</xref>]. Additionally, the use of condoms increases with education level and wealth quintile, while the use of injectable declines as household income increases [<xref ref-type="bibr" rid="pone.0190917.ref004">4</xref>].</p>
+<p>A natural by-product of contraceptive use, particularly condom use is the reduction of human immunodeficiency virus (HIV). Accordingly, HIV prevention programs focus on two important aspects of behavior: limiting the number of sexual partners and promoting the use of condoms [<xref ref-type="bibr" rid="pone.0190917.ref003">3</xref>]. The awareness of HIV among ever-married women varies by age and marital status, with older women and women who are divorced, separated, or widowed less likely to know about HIV [<xref ref-type="bibr" rid="pone.0190917.ref001">1</xref>]. Knowledge of HIV prevention methods among both women and men is higher in urban areas over rural areas, among those with the highest level of education, and among those from the wealthiest households [<xref ref-type="bibr" rid="pone.0190917.ref003">3</xref>]. Even though the prevalence of HIV is low in Bangladesh (less than 1%), the country is particularly vulnerable to an HIV epidemic due to poverty, overpopulation, and gender inequality [<xref ref-type="bibr" rid="pone.0190917.ref003">3</xref>]. In light of this, the Bangladesh government and many other developing countries are calling for an in-depth study of both preventions of HIV and control of fertility rate [<xref ref-type="bibr" rid="pone.0190917.ref001">1</xref>].</p>
+<p>Most studies ignore the interdependency between these two correlated outcomes and treat them as separate events, which has the tendency to lead to false policy recommendations due to the obvious connection between the two events [<xref ref-type="bibr" rid="pone.0190917.ref005">5</xref>–<xref ref-type="bibr" rid="pone.0190917.ref008">8</xref>]. Therefore, a systematic study of both HIV prevention and contraceptive use is crucial to account for the overlapping effects from one event to the other, while also exploring the underlying driving factors [<xref ref-type="bibr" rid="pone.0190917.ref008">8</xref>–<xref ref-type="bibr" rid="pone.0190917.ref011">11</xref>]. Thus, to conduct our study, we did two sets of models: modeling HIV knowledge and CUC separately in two hierarchical logistic regression models and jointly model both CUC and HIV knowledge. Each of these hierarchical logistic regressions addresses intra-class correlation. The motivation for a hierarchical logistic regression model is to address the random effect due to the 600 regions in Bangladesh. The joint modeling addresses the correlation of the two responses with the same set of covariates. Together, our research contributes to the practice of epidemiology by addressing a gap in the use of reliable statistical techniques that analyze the correlation of two binary outcomes at the same time, as well as the correlation resulting from similar administrative areas as the effectiveness of contraceptive use and HIV prevention is examined in Bangladesh.</p>
+<p>The remainder of this paper is composed as follows: we first provided a review of joint modeling and concentrated on two binary outcomes, HIV and CUC. We used the 2011 Bangladesh Demographic and Health Survey data as a means to address CUC and HIV knowledge jointly. We provided a clear evaluation of the advantage of joint modeling, as opposed to separate modeling through a comparative study of the coefficients in both model estimates from separately modeling and joint modeling. The last section discusses the results and concludes the paper.</p>
+</sec>
+<sec id="sec002" sec-type="materials|methods">
+<title>Materials and methods</title>
+<p>Joint modeling is not a common approach, but it has recently garnered the attention of applied statisticians and data analysts [<xref ref-type="bibr" rid="pone.0190917.ref008">8</xref>–<xref ref-type="bibr" rid="pone.0190917.ref012">12</xref>]. Previous works on the joint modeling of correlated outcomes have largely focused on continuous outcomes or a mixture of continuous and discrete outcomes [<xref ref-type="bibr" rid="pone.0190917.ref005">5</xref>–<xref ref-type="bibr" rid="pone.0190917.ref010">10</xref>]. For example, Dunson [<xref ref-type="bibr" rid="pone.0190917.ref010">10</xref>] proposed a Bayesian approach for joint modeling binary and continuous subunit-specific outcomes and illustrated this approach with a developmental toxicity data example. Liang et al. [<xref ref-type="bibr" rid="pone.0190917.ref008">8</xref>] proposed the joint modeling and analysis of longitudinal data with informative observation times via latent variables. Additionally, Song et al. [<xref ref-type="bibr" rid="pone.0190917.ref005">5</xref>] investigated joint models for a time-to-event and a longitudinal response through a likelihood-based approach that requires only the assumption that the random effects have a smooth density. In light of these other studies, joint modeling is not a novel approach in statistics; however, reporting joint modeling of two correlated binary outcomes is somewhat rare. One exception to this rarity is the study of Ghebremichael [<xref ref-type="bibr" rid="pone.0190917.ref009">9</xref>], which identified risk factors for two binary outcomes, HSV-2 and HIV-1 infections, using a joint response model that also accommodated the interdependence between the two infections. Ghebremichael justified the advantage of a joint model using a simulation study, which showed that estimates from the joint model, as opposed to those from individual models, revealed true parameters [<xref ref-type="bibr" rid="pone.0190917.ref009">9</xref>]. We followed Ghebremichael [<xref ref-type="bibr" rid="pone.0190917.ref009">9</xref>] in applying a similar method. In addition, we accounted for the possible intra-class correlation that one typically sees in hierarchical data. In particular, we modeled two correlated responses: HIV and CUC. Each response was taken from the same subject, thus causing correlation. We further accounted for the inherent hierarchical structure because subjects are nested within enumeration areas (EAs) and can be correlated. Our method is built on joint modeling of two binary responses with a conditional distribution of underlying latent normal variables [<xref ref-type="bibr" rid="pone.0190917.ref011">11</xref>–<xref ref-type="bibr" rid="pone.0190917.ref014">14</xref>].</p>
+<sec id="sec003">
+<title>Data</title>
+<p>We used data obtained from the 2011 Bangladesh Demographic and Health Survey (BDHS). It is the sixth national-level demographic and health survey on maternal and child health in Bangladesh [<xref ref-type="bibr" rid="pone.0190917.ref001">1</xref>]. There are seven administrative divisions in Bangladesh: Barisal, Chittagong, Dhaka, Khulna, Rajshahi, Rangpur, and Sylhet. The survey data delineated a national representation of the entire population living in non-institutional dwelling units in Bangladesh [<xref ref-type="bibr" rid="pone.0190917.ref001">1</xref>]. The primary sampling unit consisted of enumeration areas (EAs). Each EA had an average of about 100 households and there were about 600 EAs. These EAs were selected with the probability proportional to size. There were 207 clusters in urban areas and 393 in rural areas. The survey data consisted of 16,186 ever-married women, ages 12 to 49, on a hierarchical structure.</p>
+<p>The two binary responses were whether the woman a) used contraceptives or b) used a contraceptive. The covariates related to demographic status included current age, age at first marriage, the number of living children, education, religion, and place of residence. The covariates also included the living condition of the household, such as whether the household had a radio (Radio) and television (Television), as well as the family wealth index (Wealth Index). <xref ref-type="table" rid="pone.0190917.t001">Table 1</xref> provides the descriptive statistics of these covariates. Notably, some covariates such as education and wealth index were measured on an ordinal scale. Furthermore, there were four educational categories: no education, primary school, secondary school, and higher education and above. For each household, there was an index number to measure family income ranging from poorest, poorer, middle, richer, and richest.</p>
+<table-wrap id="pone.0190917.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0190917.t001</object-id>
+<label>Table 1</label>
+<caption>
+<title>Summary statistics of the sample.</title>
+</caption>
+<alternatives>
+<graphic id="pone.0190917.t001g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0190917.t001" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Variable</th>
+<th align="left">Code</th>
+<th align="left">Level</th>
+<th align="left">Frequency</th>
+<th align="left">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="2">CUC</td>
+<td align="left">0</td>
+<td align="left">no</td>
+<td align="left">6507</td>
+<td align="left">40.21</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">yes</td>
+<td align="left">9677</td>
+<td align="left">59.79</td>
+</tr>
+<tr>
+<td align="left" rowspan="2">HIV</td>
+<td align="left">0</td>
+<td align="left">no</td>
+<td align="left">4772</td>
+<td align="left">29.5</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">yes</td>
+<td align="left">11412</td>
+<td align="left">71.5</td>
+</tr>
+<tr>
+<td align="left" rowspan="2">Radio</td>
+<td align="left">0</td>
+<td align="left">no</td>
+<td align="left">14743</td>
+<td align="left">91.08</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">yes</td>
+<td align="left">1443</td>
+<td align="left">8.92</td>
+</tr>
+<tr>
+<td align="left" rowspan="2">TV</td>
+<td align="left">0</td>
+<td align="left">no</td>
+<td align="left">8790</td>
+<td align="left">54.31</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">yes</td>
+<td align="left">7396</td>
+<td align="left">45.69</td>
+</tr>
+<tr>
+<td align="left" rowspan="4">Education</td>
+<td align="left">0</td>
+<td align="left">no education</td>
+<td align="left">4416</td>
+<td align="left">27.29</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">primary</td>
+<td align="left">4903</td>
+<td align="left">30.29</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">secondary</td>
+<td align="left">5604</td>
+<td align="left">34.62</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">higher</td>
+<td align="left">1263</td>
+<td align="left">7.8</td>
+</tr>
+<tr>
+<td align="left" rowspan="2">Religion</td>
+<td align="left">1</td>
+<td align="left">Islam</td>
+<td align="left">14323</td>
+<td align="left">88.5</td>
+</tr>
+<tr>
+<td align="left">0</td>
+<td align="left">other</td>
+<td align="left">1861</td>
+<td align="left">11.5</td>
+</tr>
+<tr>
+<td align="left" rowspan="3">Place of Residence</td>
+<td align="left">1</td>
+<td align="left">small city</td>
+<td align="left">1840</td>
+<td align="left">11.37</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">town</td>
+<td align="left">3835</td>
+<td align="left">23.7</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">countryside</td>
+<td align="left">10509</td>
+<td align="left">64.93</td>
+</tr>
+<tr>
+<td align="left" rowspan="5">Wealth Index</td>
+<td align="left">1</td>
+<td align="left">poorest</td>
+<td align="left">2865</td>
+<td align="left">17.7</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">poorer</td>
+<td align="left">3012</td>
+<td align="left">18.61</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">middle</td>
+<td align="left">3093</td>
+<td align="left">19.11</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">richer</td>
+<td align="left">3403</td>
+<td align="left">21.03</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">richest</td>
+<td align="left">3811</td>
+<td align="left">23.55</td>
+</tr>
+<tr>
+<td align="left" rowspan="7">Divisions</td>
+<td align="left" rowspan="7"/>
+<td align="left">Barisal</td>
+<td align="left">1852</td>
+<td align="left">11.44</td>
+</tr>
+<tr>
+<td align="left">Chittagong</td>
+<td align="left">2579</td>
+<td align="left">15.94</td>
+</tr>
+<tr>
+<td align="left">Dhaka</td>
+<td align="left">2807</td>
+<td align="left">17.34</td>
+</tr>
+<tr>
+<td align="left">Khulna</td>
+<td align="left">2413</td>
+<td align="left">14.91</td>
+</tr>
+<tr>
+<td align="left">Rajshahi</td>
+<td align="left">2376</td>
+<td align="left">14.68</td>
+</tr>
+<tr>
+<td align="left">Rangpur</td>
+<td align="left">2289</td>
+<td align="left">14.14</td>
+</tr>
+<tr>
+<td align="left">Sylhet</td>
+<td align="left">1868</td>
+<td align="left">11.54</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"><bold>Mean</bold></td>
+<td align="left"><bold>Std. Dev</bold>.</td>
+<td align="left"><bold>Min</bold></td>
+<td align="left"><bold>Max</bold></td>
+</tr>
+<tr>
+<td align="left">Age</td>
+<td align="left">31.42</td>
+<td align="left">9.19</td>
+<td align="left">13</td>
+<td align="left">49</td>
+</tr>
+<tr>
+<td align="left">Num of Children</td>
+<td align="left">2.4</td>
+<td align="left">1.59</td>
+<td align="left">0</td>
+<td align="left">10</td>
+</tr>
+<tr>
+<td align="left">Age at Marriage</td>
+<td align="left">15.65</td>
+<td align="left">2.94</td>
+<td align="left">10</td>
+<td align="left">48</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>The average age of the women in the survey was 31 years old, with the mean age of the first marriage at 15 years old. On average, each woman had between two and three children, and about 60% of the women used contraceptives. Notably, religion played an important part in the respondents’ beliefs, with 90% of the sample being Muslim. Geographically, approximately 65% of respondents lived in rural areas, as compared to 35% who lived in urban areas. Specifically, education was lacking among Bangladesh women because only 8% had received higher education, as compared to 27% who had never received any education. Regarding living conditions, approximately 46% of households had a television at home, but only 9% of them had a radio. Based on the Wealth Index, 17.70% of the population fell into the poorest category, 18.61% were classified as poorer, 19.11% were defined as middle class, 21.03% were classified as richer, and 23.55% were defined as richest.</p>
+</sec>
+<sec id="sec004">
+<title>Statistical analysis</title>
+<p>Let <italic>Y</italic><sub><italic>ij</italic></sub> be a binary random variable and take the values of one or zero that denotes the <italic>i</italic><sup><italic>th</italic></sup> outcome (i = 1, 2) of the <italic>i</italic><sup><italic>th</italic></sup> (j = 1, 2, …, n = 16,186) subject, with i = 1 for contraceptive use and i = 2 for knowledge of HIV. The two binary outcomes give rise to a bivariate binary response vector <inline-formula id="pone.0190917.e001"><alternatives><graphic id="pone.0190917.e001g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0190917.e001" xlink:type="simple"/><mml:math display="inline" id="M1"><mml:mrow><mml:mi>Y</mml:mi> <mml:mo>=</mml:mo> <mml:mo>(</mml:mo> <mml:mtable><mml:mtr><mml:mtd><mml:msub><mml:mi>Y</mml:mi> <mml:mrow><mml:mn>1</mml:mn> <mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mtd></mml:mtr> <mml:mtr><mml:mtd><mml:msub><mml:mi>Y</mml:mi> <mml:mrow><mml:mn>2</mml:mn> <mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mtd></mml:mtr></mml:mtable> <mml:mo>)</mml:mo></mml:mrow></mml:math></alternatives></inline-formula> with a corresponding data matrix of covariates (<italic>X</italic><sub>1<italic>j</italic></sub>, <italic>X</italic><sub>2<italic>j</italic></sub>) where <italic>X</italic><sub>1<italic>j</italic></sub> = (1, <italic>X</italic><sub><italic>ij</italic>1</sub>, … <italic>X</italic><sub><italic>ijp</italic></sub>) and corresponding vectors of regression coefficients (<italic>β</italic><sub>1</sub>, <italic>β</italic><sub>2</sub>). <italic>Z</italic><sub>1</sub> is the matrix of random effects with corresponding coefficients <italic>γ</italic>. Covariates included number of children (Num of Children), age at first marriage (Age at Marriage), current age (Age), radio (Radio), television (Television), educational levels (Education), religious belief (Religion) and family wealth index (Wealth Index). Each woman has two outcomes (HIV or CUC), and since condom use and other HIV education overlap, these outcomes are correlated.</p>
+<p>We fitted joint hierarchical logistic regression models with shared random effects that accounted for the correlation due to clusters and divisions. The shared random intercept accounted for the correlation between the two responses of the same individual. This random intercept captures the unobserved factors specific to each individual that may influence both contraceptive use and HIV knowledge [<xref ref-type="bibr" rid="pone.0190917.ref015">15</xref>, <xref ref-type="bibr" rid="pone.0190917.ref016">16</xref>]. Thus, considering the additional random intercept we presented the joint model as:
+<disp-formula id="pone.0190917.e002"><alternatives><graphic id="pone.0190917.e002g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0190917.e002" xlink:type="simple"/><mml:math display="block" id="M2"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi>l</mml:mi> <mml:mi>o</mml:mi> <mml:mi>g</mml:mi> <mml:mi>i</mml:mi> <mml:mi>t</mml:mi> <mml:mrow><mml:mo>[</mml:mo> <mml:msub><mml:mi>P</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mo>|</mml:mo> <mml:msub><mml:mi>X</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>j</mml:mi></mml:mrow></mml:msub> <mml:mo>,</mml:mo> <mml:msub><mml:mi>β</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mo>,</mml:mo> <mml:msub><mml:mi>u</mml:mi> <mml:mi>j</mml:mi></mml:msub> <mml:mo>]</mml:mo></mml:mrow> <mml:mo>=</mml:mo> <mml:msub><mml:mi>I</mml:mi> <mml:mrow><mml:mn>1</mml:mn> <mml:mi>j</mml:mi></mml:mrow></mml:msub> <mml:mrow><mml:mo>(</mml:mo></mml:mrow> <mml:msub><mml:mi>β</mml:mi> <mml:mn>0</mml:mn></mml:msub> <mml:mo>+</mml:mo> <mml:msub><mml:mi>β</mml:mi> <mml:mn>1</mml:mn></mml:msub> <mml:msub><mml:mi>X</mml:mi> <mml:mrow><mml:mn>1</mml:mn> <mml:mi>j</mml:mi> <mml:mi>k</mml:mi></mml:mrow></mml:msub> <mml:mo>+</mml:mo> <mml:mo>…</mml:mo> <mml:msub><mml:mi>β</mml:mi> <mml:mi>p</mml:mi></mml:msub> <mml:msub><mml:mi>X</mml:mi> <mml:mrow><mml:mi>p</mml:mi> <mml:mi>j</mml:mi> <mml:mi>k</mml:mi></mml:mrow></mml:msub> <mml:mo>+</mml:mo> <mml:mi>γ</mml:mi> <mml:msub><mml:mn>0</mml:mn> <mml:mrow><mml:mi>c</mml:mi> <mml:mi>l</mml:mi> <mml:mi>u</mml:mi></mml:mrow></mml:msub> <mml:mo>+</mml:mo> <mml:mi>γ</mml:mi> <mml:msub><mml:mn>1</mml:mn> <mml:mrow><mml:mi>c</mml:mi> <mml:mi>l</mml:mi> <mml:mi>u</mml:mi></mml:mrow></mml:msub> <mml:msub><mml:mi>Z</mml:mi> <mml:mrow><mml:mi>j</mml:mi> <mml:mi>k</mml:mi></mml:mrow></mml:msub> <mml:mo>+</mml:mo></mml:mrow></mml:mtd></mml:mtr> <mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi>γ</mml:mi> <mml:msub><mml:mn>0</mml:mn> <mml:mrow><mml:mi>d</mml:mi> <mml:mi>i</mml:mi> <mml:mi>v</mml:mi></mml:mrow></mml:msub> <mml:mo>+</mml:mo> <mml:mi>γ</mml:mi> <mml:msub><mml:mn>1</mml:mn> <mml:mrow><mml:mi>d</mml:mi> <mml:mi>i</mml:mi> <mml:mi>v</mml:mi></mml:mrow></mml:msub> <mml:msub><mml:mi>Z</mml:mi> <mml:mrow><mml:msup><mml:mi>j</mml:mi> <mml:mo>′</mml:mo></mml:msup> <mml:msup><mml:mi>k</mml:mi> <mml:mo>′</mml:mo></mml:msup></mml:mrow></mml:msub> <mml:mrow><mml:mo>)</mml:mo> <mml:mo>+</mml:mo> <mml:msub><mml:mi>I</mml:mi> <mml:mrow><mml:mn>2</mml:mn> <mml:mi>j</mml:mi></mml:mrow></mml:msub> <mml:mo>(</mml:mo></mml:mrow> <mml:msub><mml:mi>β</mml:mi> <mml:mn>0</mml:mn></mml:msub> <mml:mo>+</mml:mo> <mml:msub><mml:mi>β</mml:mi> <mml:mn>1</mml:mn></mml:msub> <mml:msub><mml:mi>X</mml:mi> <mml:mrow><mml:mn>1</mml:mn> <mml:mi>j</mml:mi> <mml:mi>k</mml:mi></mml:mrow></mml:msub> <mml:mo>+</mml:mo> <mml:mo>…</mml:mo> <mml:msub><mml:mi>β</mml:mi> <mml:mi>p</mml:mi></mml:msub> <mml:msub><mml:mi>X</mml:mi> <mml:mrow><mml:mi>p</mml:mi> <mml:mi>j</mml:mi> <mml:mi>k</mml:mi></mml:mrow></mml:msub> <mml:mo>+</mml:mo></mml:mrow></mml:mtd></mml:mtr> <mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi>γ</mml:mi> <mml:msub><mml:mn>0</mml:mn> <mml:mrow><mml:mi>c</mml:mi> <mml:mi>l</mml:mi> <mml:mi>u</mml:mi></mml:mrow></mml:msub> <mml:mo>+</mml:mo> <mml:mi>γ</mml:mi> <mml:msub><mml:mn>1</mml:mn> <mml:mrow><mml:mi>c</mml:mi> <mml:mi>l</mml:mi> <mml:mi>u</mml:mi></mml:mrow></mml:msub> <mml:msub><mml:mi>Z</mml:mi> <mml:mrow><mml:mi>j</mml:mi> <mml:mi>k</mml:mi></mml:mrow></mml:msub> <mml:mo>+</mml:mo> <mml:mi>γ</mml:mi> <mml:msub><mml:mn>0</mml:mn> <mml:mrow><mml:mi>d</mml:mi> <mml:mi>i</mml:mi> <mml:mi>v</mml:mi></mml:mrow></mml:msub> <mml:mo>+</mml:mo> <mml:mi>γ</mml:mi> <mml:msub><mml:mn>1</mml:mn> <mml:mrow><mml:mi>d</mml:mi> <mml:mi>i</mml:mi> <mml:mi>v</mml:mi></mml:mrow></mml:msub> <mml:msub><mml:mi>Z</mml:mi> <mml:mrow><mml:msup><mml:mi>j</mml:mi> <mml:mo>′</mml:mo></mml:msup> <mml:msup><mml:mi>k</mml:mi> <mml:mo>′</mml:mo></mml:msup></mml:mrow></mml:msub> <mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mtd></mml:mtr></mml:mtable> <mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(1)</label></disp-formula>
+where <italic>I</italic><sub><italic>ij</italic></sub> is the indicator function for outcome i, <italic>u</italic><sub><italic>j</italic></sub> are the random intercepts assumed to be normally distributed with mean zero and variance <inline-formula id="pone.0190917.e003"><alternatives><graphic id="pone.0190917.e003g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0190917.e003" xlink:type="simple"/><mml:math display="inline" id="M3"><mml:msubsup><mml:mi>σ</mml:mi> <mml:mrow><mml:mi>u</mml:mi></mml:mrow> <mml:mn>2</mml:mn></mml:msubsup></mml:math></alternatives></inline-formula> and <italic>P</italic><sub><italic>i</italic></sub> represents <italic>P</italic><sub><italic>CUC</italic></sub> when i = 1 and <italic>P</italic><sub><italic>HIV</italic></sub> when i = 2. These estimators are consistent and asymptotically normally distributed. We assume that there are unobserved latent factors that provide random effects between HIV and CUC by the same subject. As such, the two outcomes are correlated within each subject. We account for this through a shared random intercept: this random intercept is meant to capture the unobserved factor within each subject and may have an influence on the responses. Conditioned on the shared random intercept, the joint responses of a woman are assumed independent. Through conditional independence assumption, one can obtain the likelihood function of the joint responses [<xref ref-type="bibr" rid="pone.0190917.ref009">9</xref>]. Following Ghebremichael [<xref ref-type="bibr" rid="pone.0190917.ref009">9</xref>], We used a maximum likelihood approach to obtain estimates of the regression parameters and the covariance parameters. As the integrals do not have closed-form, we used an approximation based on Gaussian quadrature, as found to be consistent and asymptotically normally distributed by [<xref ref-type="bibr" rid="pone.0190917.ref009">9</xref>].</p>
+</sec>
+</sec>
+<sec id="sec005">
+<title>Results and conclusion</title>
+<p>As discussed, we fitted two sets of models: separate models and a joint model. In the separate models, we used a hierarchical logistic regression. To validate that there were indeed variation within individual, cluster (EA), and division, we first performed a Hosmer and Lemeshow test within each level and our test results suggested a hierarchical structure. The over-dispersion of variance due to the Hosmer and Lemeshow test value is χ<sup>2</sup> = 87.859 (p-value &lt; 0.001), indicating that multi-level logistic model is needed. Therefore, we fitted a three-level hierarchical logistic regression with random intercepts and random slopes to address these issues of intraclass correlation. We found that the variance at division (var(division) <inline-formula id="pone.0190917.e004"><alternatives><graphic id="pone.0190917.e004g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0190917.e004" xlink:type="simple"/><mml:math display="inline" id="M4"><mml:mrow><mml:msubsup><mml:mi>σ</mml:mi> <mml:mrow><mml:mi>d</mml:mi> <mml:mi>i</mml:mi> <mml:mi>v</mml:mi></mml:mrow> <mml:mn>2</mml:mn></mml:msubsup> <mml:mo>=</mml:mo> <mml:mn>0</mml:mn></mml:mrow></mml:math></alternatives></inline-formula> with p &lt; 0.0001) and the variance at cluster (var(cluster(division))<inline-formula id="pone.0190917.e005"><alternatives><graphic id="pone.0190917.e005g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0190917.e005" xlink:type="simple"/><mml:math display="inline" id="M5"><mml:mrow><mml:msubsup><mml:mi>σ</mml:mi> <mml:mrow><mml:mi>c</mml:mi> <mml:mi>l</mml:mi> <mml:mi>u</mml:mi> <mml:mo>(</mml:mo> <mml:mi>d</mml:mi> <mml:mi>i</mml:mi> <mml:mi>v</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mn>2</mml:mn></mml:msubsup> <mml:mo>=</mml:mo> <mml:mn>0</mml:mn></mml:mrow></mml:math></alternatives></inline-formula> with p = 0.0125) are both significantly different from zero. Therefore, our model assumed that the random effects <italic>γ</italic><sub>0<sub><italic>clu</italic></sub></sub> and <italic>γ</italic><sub>0<sub><italic>div</italic></sub></sub> each represents a random sample from a normal distribution with variance of 0.050 for clusters and 0.204 for divisions, respectively. We presented results in <xref ref-type="table" rid="pone.0190917.t002">Table 2</xref> with the odds ratio of the parameter estimates.</p>
+<table-wrap id="pone.0190917.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0190917.t002</object-id>
+<label>Table 2</label>
+<caption>
+<title>Results for three-level hierarchical models and joint model.</title>
+</caption>
+<alternatives>
+<graphic id="pone.0190917.t002g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0190917.t002" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left" colspan="4">Contraceptive Use</th>
+<th align="left" colspan="4">HIV Knowledge</th>
+</tr>
+<tr>
+<th align="left">Variable</th>
+<th align="left" colspan="2">Joint Model</th>
+<th align="left" colspan="2">Three-Level</th>
+<th align="left" colspan="2">Joint Model</th>
+<th align="left" colspan="2">Three-Level</th>
+</tr>
+<tr>
+<th align="left"/>
+<th align="left"><italic>Odds Ratio</italic></th>
+<th align="left"><italic>p-value</italic></th>
+<th align="left"><italic>Odds Ratio</italic></th>
+<th align="left"><italic>p-value</italic></th>
+<th align="left"><italic>Odds Ratio</italic></th>
+<th align="left"><italic>p-value</italic></th>
+<th align="left"><italic>Odds Ratio</italic></th>
+<th align="left"><italic>p-value</italic></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Intercept</td>
+<td align="char" char=".">1.60</td>
+<td align="char" char=".">&lt;0.001</td>
+<td align="char" char=".">2.53</td>
+<td align="char" char=".">&lt;0.001</td>
+<td align="char" char=".">1.73</td>
+<td align="char" char=".">&lt;0.001</td>
+<td align="char" char=".">0.33</td>
+<td align="char" char=".">&lt;0.001</td>
+</tr>
+<tr>
+<td align="left">Age</td>
+<td align="char" char=".">0.99</td>
+<td align="char" char=".">&lt;0.001</td>
+<td align="char" char=".">0.94</td>
+<td align="char" char=".">&lt;0.001</td>
+<td align="char" char=".">1.00</td>
+<td align="char" char=".">0.002</td>
+<td align="char" char=".">0.99</td>
+<td align="char" char=".">0.004</td>
+</tr>
+<tr>
+<td align="left">Age at marriage</td>
+<td align="char" char=".">1.01</td>
+<td align="char" char=".">&lt;0.001</td>
+<td align="char" char=".">1.03</td>
+<td align="char" char=".">&lt;0.001</td>
+<td align="char" char=".">1.00</td>
+<td align="char" char=".">0.016</td>
+<td align="char" char=".">1.03</td>
+<td align="char" char=".">0.002</td>
+</tr>
+<tr>
+<td align="left">Children</td>
+<td align="char" char=".">1.10</td>
+<td align="char" char=".">&lt;0.001</td>
+<td align="char" char=".">1.55</td>
+<td align="char" char=".">&lt;0.001</td>
+<td align="char" char=".">0.98</td>
+<td align="char" char=".">&lt;0.001</td>
+<td align="char" char=".">0.92</td>
+<td align="char" char=".">&lt;0.001</td>
+</tr>
+<tr>
+<td align="left">Radio</td>
+<td align="char" char=".">1.00</td>
+<td align="char" char=".">0.825</td>
+<td align="char" char=".">1.03</td>
+<td align="char" char=".">0.628</td>
+<td align="char" char=".">1.03</td>
+<td align="char" char=".">0.005</td>
+<td align="char" char=".">1.26</td>
+<td align="char" char=".">0.003</td>
+</tr>
+<tr>
+<td align="left">Television</td>
+<td align="char" char=".">1.03</td>
+<td align="char" char=".">0.005</td>
+<td align="char" char=".">1.14</td>
+<td align="char" char=".">0.01</td>
+<td align="char" char=".">1.10</td>
+<td align="char" char=".">&lt;0.001</td>
+<td align="char" char=".">1.90</td>
+<td align="char" char=".">&lt;0.001</td>
+</tr>
+<tr>
+<td align="left">Education</td>
+<td align="char" char=".">1.03</td>
+<td align="char" char=".">0.045</td>
+<td align="char" char=".">1.12</td>
+<td align="char" char=".">&lt;0.001</td>
+<td align="char" char=".">1.16</td>
+<td align="char" char=".">&lt;0.001</td>
+<td align="char" char=".">2.68</td>
+<td align="char" char=".">&lt;0.001</td>
+</tr>
+<tr>
+<td align="left">Religion</td>
+<td align="char" char=".">0.91</td>
+<td align="char" char=".">&lt;0.001</td>
+<td align="char" char=".">0.66</td>
+<td align="char" char=".">&lt;0.001</td>
+<td align="char" char=".">1.02</td>
+<td align="char" char=".">0.016</td>
+<td align="char" char=".">1.10</td>
+<td align="char" char=".">0.206</td>
+</tr>
+<tr>
+<td align="left">Urban</td>
+<td align="char" char=".">1.05</td>
+<td align="char" char=".">&lt;0.001</td>
+<td align="char" char=".">1.28</td>
+<td align="char" char=".">&lt;0.001</td>
+<td align="char" char=".">1.04</td>
+<td align="char" char=".">&lt;0.001</td>
+<td align="char" char=".">1.73</td>
+<td align="char" char=".">&lt;0.001</td>
+</tr>
+<tr>
+<td align="left">Wealth index</td>
+<td align="char" char=".">0.99</td>
+<td align="char" char=".">0.142</td>
+<td align="char" char=".">0.99</td>
+<td align="char" char=".">0.621</td>
+<td align="char" char=".">1.05</td>
+<td align="char" char=".">&lt;0.001</td>
+<td align="char" char=".">1.26</td>
+<td align="char" char=".">&lt;0.001</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>We found that social demographic factors such as age, age at marriage, number of children, and education are statistically significant in influencing contraceptive use. More specifically, we observed that older women were less likely to use contraceptives, women who got married late are more likely to use contraceptives, and contraceptive methods were more likely to be employed as the number of children increased. Furthermore, as a woman’s education level increased, she was more likely to use contraceptive methods. Regarding living conditions, we found that having a television increased the likelihood of using contraceptive; however, having a radio did not. We did not find household wealth to be a significant factor for CUC, even though education and living conditions can be related to wealth. This may be the result of the fact that contraceptive use was a common practice that applied to the wealthy and the poor together; therefore, the financial status did not play an important part. Islam was the major belief in Bangladesh. As the literature shows, being Muslim reduces one’s likelihood of using contraceptives [<xref ref-type="bibr" rid="pone.0190917.ref017">17</xref>], a congruence that appeared in our results.</p>
+<p>We found similar driving factors for HIV knowledge as those obtained for CUC. Older women and women who got married early are less likely to have knowledge about HIV. The more children one had, the more likely she had knowledge of HIV. Education played a paramount role in the likelihood of HIV knowledge. Urban women were more likely to have knowledge of HIV than rural women were. In addition, women who had radio and TV at home were more likely to have HIV knowledge. Unlike CUC, HIV was positively driven by the household wealth: wealthier families were more likely to have HIV knowledge than less wealthy families. These findings shed light on the crucial importance of education and media on HIV prevention. Furthermore, religion did not play an important part in HIV knowledge.</p>
+<p>The results regarding CUC from a separate hierarchical logistic regression model revealed that estimates obtained for age, age at marriage, children, TV, education, religion, and urban were found to be significant with the same incremental impact. Estimates obtained for radio and wealth index were insignificant, as in the case of the joint model. Additionally, we found that CUC had a strong divisional random effect. Rajshahi had the largest differential random effects on contraceptive methods, followed by Rangpur.</p>
+<p>As for HIV knowledge, we found the same incremental significance for all covariates, except age at marriage, as in separate models. In the separate model, women who got married late were less likely to have HIV knowledge. However, the estimate from the joint model told the opposing story: women who got married late were more likely to have HIV knowledge. Estimates from the joint model made intuitive sense because women in Bangladesh tend to marry young, which consequently deprived them the opportunity for HIV education. Moreover, women from less wealthy families were less likely to have TV or radio, which limits their exposure to media about HIV. These women were the ones who got married early. The distinction, which depends on the correlation through the shared random effects, between these two approaches is crucial: when we failed to address the correlation between CUC and HIV, it led to an overestimation of the relation between the covariates and the outcomes (<xref ref-type="table" rid="pone.0190917.t002">Table 2</xref>).</p>
+<p>Ignoring the random effects of division and EA would underestimate the effect of education. For example, if we had modeled CUC without any adjustment for divisional and EA random effects, one may conclude that education will likely increase CUC by likelihood for 0.067. However, using a model that accounted for the variation in different geographic divisions and sampling units (EA), the magnitude of education on CUC increased to 0.128, which translates to an increase in likelihood. More importantly, after taking into account the correlation between HIV knowledge and contraceptive use, the importance of education decreases to 0.033. This means that the HIV prevention program has a spillover effect on CUC, and what seems to be an impact from education can be partially contributed to one’s exposure to HIV knowledge. As for modeling the HIV knowledge, we also observed estimates that joint models revealed as smaller values in magnitude compared to separate models and standard models. These findings substantiated the need for jointly modeling two correlated outcomes. By so doing, we accounted for the variation between two outcomes and deflated the otherwise overestimated parameters from separate models.</p>
+</sec>
+<sec id="sec006" sec-type="conclusions">
+<title>Discussion</title>
+<p>Family planning policy in Bangladesh has made great strides in the past four decades through the increased contraceptive use. Still, while HIV prevalence is low in Bangladesh, it presents a steadily increasing trend. The emergence of a generalized HIV epidemic would be a disaster that poverty-stricken Bangladesh could not afford [<xref ref-type="bibr" rid="pone.0190917.ref003">3</xref>]. Interested in addressing both events more efficiently, we fitted a series of statistical models using the BDHS2011 data. Consistent with previous research, we found that age at marriage was negatively associated with contraceptive use but positively associated with the knowledge of HIV. Women who were older, had a higher educational level, and had more children are more exposed to contraceptive use and HIV knowledge. Religious beliefs decreased the likelihood of using contraceptive methods but increased the knowledge of HIV. We found radio ownership, as an agent of media, to be significant in influencing HIV knowledge but not contraceptive use. Moreover, financial status had no significant impact on contraceptive use, unlike in the case of HIV knowledge. These two findings showed that contraceptive use was relatively well acknowledged and practiced regardless of the household income and social status. On the other hand, HIV knowledge was still novel to some people. Therefore, education, social media, and social status often correlated with education and were important in promoting HIV knowledge.</p>
+<p>The prevalence rates of contraceptive use and knowledge about HIV in Bangladesh were 90% and 70%, respectively, indicating a likelihood of overlap between these two events. Thus, we used a joint response model that accommodated the interdependence between contraceptive use and knowledge about AIDS. Our findings contributed to the understanding that joint models deflate parameters that are otherwise overestimated in separate models. We found that the strength of the relationship was higher in absolute values from separate models, causing false interpretations of the attributes in the magnitude. To correctly translate the importance of certain covariates, a researcher should take into account the correlated outcomes caused by common covariates. In this case, after accounting for the correlation between CUC and HIV knowledge in simultaneous estimation, we found strengths of the relationship to be smaller than those in separate models did.</p>
+<p>The implication regarding public health is straightforward: when we have two social programs that aim to have a similar impact, a positive spillover effect from one to the other exists. By treating them independently, we may put too much emphasis on the covariates. For example, treating the two events separately, we may recommend a budget increase to put girls in school. Alternatively, if we included the interdependency of the programs, we will realize that the importance of education on CUC is actually compensated by the education on HIV.</p>
+<p>Many developing countries have substantial geographic variations in contraceptive use, although the factors driving these variations are not always understood. Previous studies showed that variations in contraceptive use typically remained after accounting for individual and household factors. We found that both CUC and HIV knowledge varied within enumeration areas and across divisions, causing cluster effects to be significant. This indicated that policies should be tailored to cater to specific geo-social differences. Although we did not analyze the specific driving factors that contribute to geographical variations, our joint model showed that they were the same contextual factors that drive both CUC and HIV knowledge. Future research should look into community-level cultural beliefs, the availability of health services, the physical characteristics of the area, macroeconomic factors, and the presence of transport routes in order to explain the variations in geographical difference for CUC and HIV knowledge.</p>
+</sec>
+</body>
+<back>
+<ack>
+<p>The authors appreciate support from the National Institute of Health Alzheimer’s Consortium Fellowship Grant (Grant No. NHS0007).</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0190917.ref001">
+<label>1</label>
+<mixed-citation publication-type="other" xlink:type="simple">Demographic Health survey BDHS. NIPORT, Dhaka, Bangladesh (2013).</mixed-citation>
+</ref>
+<ref id="pone.0190917.ref002">
+<label>2</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Khan</surname> <given-names>HA</given-names></name>. <article-title>A hierarchical model of contraceptive use in urban and rural Bangladesh</article-title>. <source>Contraception</source>. <year>1997</year>, <volume>55</volume>: <fpage>91</fpage>–<lpage>96</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/S0010-7824(96)00278-8" xlink:type="simple">10.1016/S0010-7824(96)00278-8</ext-link></comment> <object-id pub-id-type="pmid">9071518</object-id></mixed-citation>
+</ref>
+<ref id="pone.0190917.ref003">
+<label>3</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Azim</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Khan</surname> <given-names>SI</given-names></name>, <name name-style="western"><surname>Haseen</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Huq</surname> <given-names>NL</given-names></name>, <name name-style="western"><surname>Henning</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Pervez</surname> <given-names>MM</given-names></name>, <name name-style="western"><surname>Chowdhury</surname> <given-names>ME</given-names></name>, <name name-style="western"><surname>Sarafian</surname> <given-names>I</given-names></name>. <article-title>HIV and AIDS in Bangladesh</article-title>. <source>Journal of Health, Population and Nutrition</source> <year>2008</year>, <fpage>311</fpage>–<lpage>324</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0190917.ref004">
+<label>4</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Khan</surname> <given-names>HR</given-names></name>, <name name-style="western"><surname>Shaw</surname> <given-names>E</given-names></name>. <article-title>Multilevel logistic regression analysis applied to binary contraceptive prevalence data</article-title>. <source>Journal of Data Science</source> <year>2011</year>, <volume>9</volume> <fpage>93</fpage>–<lpage>110</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0190917.ref005">
+<label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Song</surname> <given-names>X</given-names></name>, <name name-style="western"><surname>Davidian</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Tsiatis</surname> <given-names>AA</given-names></name>. <article-title>A Semiparametric likelihood approach to joint modeling of longitudinal and time-to-event data</article-title>. <source>Biometrics</source> <year>2002</year>, <volume>58</volume> <fpage>742</fpage>–<lpage>753</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1111/j.0006-341X.2002.00742.x" xlink:type="simple">10.1111/j.0006-341X.2002.00742.x</ext-link></comment> <object-id pub-id-type="pmid">12495128</object-id></mixed-citation>
+</ref>
+<ref id="pone.0190917.ref006">
+<label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Guo</surname> <given-names>X</given-names></name>, <name name-style="western"><surname>Carlin</surname> <given-names>BP</given-names></name>. <article-title>Separate and joint modeling of longitudinal and event time data using standard computer packages</article-title>. <source>The American Statistician</source> <year>2004</year> <volume>58</volume>:<fpage>16</fpage>–<lpage>24</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1198/0003130042854" xlink:type="simple">10.1198/0003130042854</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0190917.ref007">
+<label>7</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Hubbard</surname> <given-names>RA</given-names></name>, <name name-style="western"><surname>Inoue</surname> <given-names>LY</given-names></name>, <name name-style="western"><surname>Diehr</surname> <given-names>P</given-names></name>. <article-title>Joint modeling of self-rated health and changes in physical functioning</article-title>. <source>Journal of the American Statistical Association</source> <year>2009</year>, <volume>104</volume>: <fpage>912</fpage>–<lpage>928</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1198/jasa.2009.ap08423" xlink:type="simple">10.1198/jasa.2009.ap08423</ext-link></comment> <object-id pub-id-type="pmid">20151036</object-id></mixed-citation>
+</ref>
+<ref id="pone.0190917.ref008">
+<label>8</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Liang</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Lu</surname> <given-names>W</given-names></name>, <name name-style="western"><surname>Ying</surname> <given-names>Z</given-names></name>. <article-title>Joint modeling and analysis of longitudinal data with informative observation times</article-title>. <source>Biometrics</source> <year>2009</year>, <volume>65</volume> <fpage>377</fpage>–<lpage>384</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1111/j.1541-0420.2008.01104.x" xlink:type="simple">10.1111/j.1541-0420.2008.01104.x</ext-link></comment> <object-id pub-id-type="pmid">18759841</object-id></mixed-citation>
+</ref>
+<ref id="pone.0190917.ref009">
+<label>9</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Ghebremichael</surname> <given-names>M</given-names></name>. <article-title>Joint modeling of correlated binary outcomes: HIV-1 and HSV-2 co-infection</article-title>. <source>Journal of Applied Statistics</source> <year>2015</year>, <volume>42</volume>: <fpage>2180</fpage>–<lpage>2191</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1080/02664763.2015.1022138" xlink:type="simple">10.1080/02664763.2015.1022138</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0190917.ref010">
+<label>10</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Dunson</surname> <given-names>DB</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>Z</given-names></name>, <name name-style="western"><surname>Harry</surname> <given-names>JA</given-names></name>. <article-title>Bayesian approach for joint modeling of cluster size and subunit-specific outcomes</article-title>. <source>Biometrics</source> <year>2003</year>, <volume>59</volume>: <fpage>521</fpage>–<lpage>530</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1111/1541-0420.00062" xlink:type="simple">10.1111/1541-0420.00062</ext-link></comment> <object-id pub-id-type="pmid">14601753</object-id></mixed-citation>
+</ref>
+<ref id="pone.0190917.ref011">
+<label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Irimata</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Wilson</surname> <given-names>JR</given-names></name>. <article-title>Multiple intraclass correlations for higher-level nested logistic regression</article-title>. <source>Journal of Applied Statistics</source> <year>2017</year>, Accepted.</mixed-citation>
+</ref>
+<ref id="pone.0190917.ref012">
+<label>12</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Gueorguieva</surname> <given-names>RV</given-names></name>, <name name-style="western"><surname>Agresti</surname> <given-names>A</given-names></name>. <article-title>A correlated probit model for joint modeling of clustered binary and continuous responses</article-title>. <source>Journal of the American Statistical Association</source> <year>2001</year>, <volume>96</volume>: <fpage>1102</fpage>–<lpage>1112</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1198/016214501753208762" xlink:type="simple">10.1198/016214501753208762</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0190917.ref013">
+<label>13</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Wong</surname> <given-names>GY</given-names></name>, <name name-style="western"><surname>Mason</surname> <given-names>WM</given-names></name>. <article-title>The hierarchical logistic regression model for multilevel analysis</article-title>. <source>Journal of the American Statistical Association</source> <year>1985</year>, <volume>80</volume> <fpage>513</fpage>–<lpage>524</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1080/01621459.1985.10478148" xlink:type="simple">10.1080/01621459.1985.10478148</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0190917.ref014">
+<label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Zhu</surname> <given-names>M</given-names></name>. <article-title>Analyzing Multilevel models with the GLIMMIX procedure</article-title>. <source>SAS Institute Inc. SAS</source> <year>2014</year>, <fpage>026</fpage>–<lpage>2014</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0190917.ref015">
+<label>15</label>
+<mixed-citation publication-type="other" xlink:type="simple">Gardiner, JC. Joint modeling of mixed outcomes in health services research. SAS Global Forum Paper 435-2013.</mixed-citation>
+</ref>
+<ref id="pone.0190917.ref016">
+<label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Hu</surname> <given-names>FB</given-names></name>, <name name-style="western"><surname>Goldberg</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Hedeker</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Flay</surname> <given-names>BR</given-names></name>, <name name-style="western"><surname>Pentz</surname> <given-names>MA</given-names></name>. <article-title>Comparison of population-averaged and subject-specific approaches for analyzing repeated binary outcomes</article-title>. <source>American Journal Epidemiology</source> <year>1998</year>, <volume>147</volume>: <fpage>694</fpage>–<lpage>703</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1093/oxfordjournals.aje.a009511" xlink:type="simple">10.1093/oxfordjournals.aje.a009511</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0190917.ref017">
+<label>17</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Stephenson</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Baschieri</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Clements</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Hennink</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Madise</surname> <given-names>N</given-names></name>. <article-title>Contextual influences on modern contraceptive use in sub-Saharan Africa</article-title>. <source>Am J Public Health</source> <year>2007</year> <month>Jul</month>: <volume>97</volume>(<issue>7</issue>):<fpage>1233</fpage>–<lpage>40</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.2105/AJPH.2005.071522" xlink:type="simple">10.2105/AJPH.2005.071522</ext-link></comment> <object-id pub-id-type="pmid">17538071</object-id></mixed-citation>
+</ref>
+</ref-list>
+</back>
+</article>

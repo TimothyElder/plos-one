@@ -1,0 +1,2037 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group>
+<journal-title>PLoS ONE</journal-title></journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-13-33726</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0084897</article-id>
+<article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Engineering</subject><subj-group><subject>Signal processing</subject><subj-group><subject>Data mining</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Mathematics</subject><subj-group><subject>Applied mathematics</subject><subj-group><subject>Algorithms</subject></subj-group></subj-group><subj-group><subject>Statistics</subject><subj-group><subject>Biostatistics</subject><subject>Statistical methods</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Medicine</subject><subj-group><subject>Cardiovascular</subject><subj-group><subject>Hypertension</subject></subj-group></subj-group><subj-group><subject>Non-clinical medicine</subject><subj-group><subject>Health care policy</subject><subj-group><subject>Health risk analysis</subject></subj-group></subj-group></subj-group><subj-group><subject>Nutrition</subject><subj-group><subject>Obesity</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Social and behavioral sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Anthropometry</subject></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>A Comparison of the Predictive Power of Anthropometric Indices for Hypertension and Hypotension Risk</article-title>
+<alt-title alt-title-type="running-head">Predictor for Hypertension and Hypotension Risk</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Lee</surname><given-names>Bum Ju</given-names></name><xref ref-type="aff" rid="aff1"/></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Kim</surname><given-names>Jong Yeol</given-names></name><xref ref-type="aff" rid="aff1"/><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+</contrib-group>
+<aff id="aff1"><addr-line>Medical Research Division, Korea Institute of Oriental Medicine, Yuseong-gu, Deajeon, Republic of Korea</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Zhu</surname><given-names>Zhiming</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Daping Hospital, Third Military Medical University, China</addr-line></aff>
+<author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">ssmed@kiom.re.kr</email></corresp>
+<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn>
+<fn fn-type="con"><p>Conceived and designed the experiments: BJL. Performed the experiments: BJL. Analyzed the data: BJL JYK. Contributed reagents/materials/analysis tools: JYK. Wrote the paper: BJL.</p></fn>
+</author-notes>
+<pub-date pub-type="collection"><year>2014</year></pub-date>
+<pub-date pub-type="epub"><day>23</day><month>1</month><year>2014</year></pub-date>
+<volume>9</volume>
+<issue>1</issue>
+<elocation-id>e84897</elocation-id>
+<history>
+<date date-type="received"><day>16</day><month>8</month><year>2013</year></date>
+<date date-type="accepted"><day>19</day><month>11</month><year>2013</year></date>
+</history>
+<permissions>
+<copyright-year>2014</copyright-year>
+<copyright-holder>Lee, Kim</copyright-holder><license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions>
+<abstract><sec>
+<title>Background and Aims</title>
+<p>It is commonly accepted that body fat distribution is associated with hypertension, but the strongest anthropometric indicator of the risk of hypertension is still controversial. Furthermore, no studies on the association of hypotension with anthropometric indices have been reported. The objectives of the present study were to determine the best predictors of hypertension and hypotension among various anthropometric indices and to assess the use of combined indices as a method of improving the predictive power in adult Korean women and men.</p>
+</sec><sec>
+<title>Methods</title>
+<p>For 12789 subjects 21–85 years of age, we assessed 41 anthropometric indices using statistical analyses and data mining techniques to determine their ability to discriminate between hypertension and normotension as well as between hypotension and normotension. We evaluated the predictive power of combined indices using two machine learning algorithms and two variable subset selection techniques.</p>
+</sec><sec>
+<title>Results</title>
+<p>The best indicator for predicting hypertension was rib circumference in both women (p = &lt;0.0001; OR = 1.813; AUC = 0.669) and men (p = &lt;0.0001; OR = 1.601; AUC = 0.627); for hypotension, the strongest predictor was chest circumference in women (p = &lt;0.0001; OR = 0.541; AUC = 0.657) and neck circumference in men (p = &lt;0.0001; OR = 0.522; AUC = 0.672). In experiments using combined indices, the areas under the receiver operating characteristic curves (AUC) for the prediction of hypertension risk in women and men were 0.721 and 0.652, respectively, according to the logistic regression with wrapper-based variable selection; for hypotension, the corresponding values were 0.675 in women and 0.737 in men, according to the naïve Bayes with wrapper-based variable selection.</p>
+</sec><sec>
+<title>Conclusions</title>
+<p>The best indicators of the risk of hypertension and the risk of hypotension may differ. The use of combined indices seems to slightly improve the predictive power for both hypertension and hypotension.</p>
+</sec></abstract>
+<funding-group><funding-statement>This research was supported by the National Research Foundation of Korea (NRF), funded by the Ministry of Science, ICT &amp; Future Planning (No.2006-2005173). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts><page-count count="11"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title>Introduction</title>
+<p>Along with the prevalence of obesity, high blood pressure is a common health issue in both women and men worldwide and has become a major disease in Korea <xref ref-type="bibr" rid="pone.0084897-Kim1">[1]</xref>–<xref ref-type="bibr" rid="pone.0084897-Jo1">[4]</xref>. Obesity is related to serious health problems such as hypertension <xref ref-type="bibr" rid="pone.0084897-Okosun1">[5]</xref>, <xref ref-type="bibr" rid="pone.0084897-Janssen1">[6]</xref>, ischemic stroke <xref ref-type="bibr" rid="pone.0084897-Hu1">[7]</xref>, cardiovascular disease <xref ref-type="bibr" rid="pone.0084897-Dalton1">[8]</xref>–<xref ref-type="bibr" rid="pone.0084897-Wildman1">[10]</xref>, type 2 diabetes <xref ref-type="bibr" rid="pone.0084897-Okosun1">[5]</xref>, <xref ref-type="bibr" rid="pone.0084897-Balkau1">[9]</xref>, <xref ref-type="bibr" rid="pone.0084897-Lee1">[11]</xref>, metabolic syndrome <xref ref-type="bibr" rid="pone.0084897-Janssen1">[6]</xref>, <xref ref-type="bibr" rid="pone.0084897-Alberti1">[12]</xref>, sleep apnea <xref ref-type="bibr" rid="pone.0084897-Grunstein1">[13]</xref>, and dyslipidemia <xref ref-type="bibr" rid="pone.0084897-Janssen1">[6]</xref>, <xref ref-type="bibr" rid="pone.0084897-Wildman1">[10]</xref>. Anthropometry is an easy, economical, effective, and reliable method that is useful as an initial screening tool for hypertension <xref ref-type="bibr" rid="pone.0084897-Silva1">[14]</xref>, <xref ref-type="bibr" rid="pone.0084897-SanchezViveros1">[15]</xref>. Various anthropometric indices that describe obesity and body fat distribution have been developed; these include the body mass index (BMI), waist circumference (WC), the waist-to-hip ratio (WHR), and the waist-to-height ratio (WHtR).</p>
+<p>Over the past few decades, the direct association between hypertension and anthropometric indices has been studied in many ethnic groups and countries, and attempts have been made to identify the best indicator of the risk of hypertension. However, the best predictor of hypertension (that is, the index with the strongest association with hypertension) differed among studies. For instance, several studies reported that the best single indicator of the risk of hypertension was BMI in Japanese women <xref ref-type="bibr" rid="pone.0084897-Sakurai1">[16]</xref>, Japanese men and women <xref ref-type="bibr" rid="pone.0084897-Oda1">[17]</xref>, and elderly Cuban women <xref ref-type="bibr" rid="pone.0084897-RodriguesBarbosa1">[18]</xref>. Some studies of Netherlands Antilles women and men <xref ref-type="bibr" rid="pone.0084897-Grievink1">[19]</xref>, Italian men and women <xref ref-type="bibr" rid="pone.0084897-Guagnano1">[20]</xref>, Greek men and women <xref ref-type="bibr" rid="pone.0084897-Panagiotakos1">[21]</xref>, Taiwanese women <xref ref-type="bibr" rid="pone.0084897-Tseng1">[22]</xref>, and Japanese men <xref ref-type="bibr" rid="pone.0084897-Sakurai1">[16]</xref> suggested that WC was the strongest predictor. Meanwhile, other studies provided evidence that in elderly men in Barbados <xref ref-type="bibr" rid="pone.0084897-RodriguesBarbosa1">[18]</xref>, Taiwanese men <xref ref-type="bibr" rid="pone.0084897-Tseng1">[22]</xref>, and Korean men and women <xref ref-type="bibr" rid="pone.0084897-Park1">[23]</xref>, WHtR was the best predictor of the risk of hypertension, whereas other studies demonstrated that WHR was the best predictor for Argentine men and women <xref ref-type="bibr" rid="pone.0084897-Feldstein1">[24]</xref> and Australian indigenous men and women <xref ref-type="bibr" rid="pone.0084897-Li1">[25]</xref>. Some studies suggested that two or more indices, for example, BMI and WC in elderly Mexican men and women <xref ref-type="bibr" rid="pone.0084897-SanchezViveros1">[15]</xref> and Croatian men and women <xref ref-type="bibr" rid="pone.0084897-Uhernik1">[26]</xref> and BMI, WC, and WHtR in Brazilian men and women <xref ref-type="bibr" rid="pone.0084897-Silva1">[14]</xref>, were the best predictors. Therefore, among the anthropometric indices studied, the best predictor of the risk of hypertension remains controversial because of potential confounding factors including place of residence (rural or urban), ethnic group, gender, and economic status <xref ref-type="bibr" rid="pone.0084897-Kim2">[2]</xref>, <xref ref-type="bibr" rid="pone.0084897-Sakurai1">[16]</xref>, <xref ref-type="bibr" rid="pone.0084897-RodriguesBarbosa1">[18]</xref>. Furthermore, despite the fact that many studies of the association between hypertension and anthropometric indices have been performed, no studies have examined the association between hypotension and anthropometric indices or analyzed the predictive power of anthropometric indices for the risk of hypotension.</p>
+<p>The purpose of the present study was to determine (1) which index is the strongest indicator for predicting the risk of hypertension and hypotension among various anthropometric indices in Korean people and (2) whether combined indices show better predictive power. To answer these questions, we examined the association of various anthropometric indices with hypertension and hypotension, assessed the predictive power of individual indices, and evaluated whether the use of combined indices can improve the predictive power for hypertension and hypotension compared with the use of individual indices. Unlike previous studies, which considered only a few indices as candidate predictors for the risk of hypertension, we considered a total of 41 indices measured in eight precise positions in the body or calculated as the ratio of the difference between two indices.</p>
+</sec><sec id="s2" sec-type="materials|methods">
+<title>Materials and Methods</title>
+<sec id="s2a">
+<title>Data collection</title>
+<p>This cross-sectional study examined the association between blood pressure status and anthropometric indices. All the data analyzed in the present study were obtained from the Korean Health and Genome Epidemiology study database (KHGES). Written informed consent was obtained from all participants, and the Korea Institute of Oriental Medicine (KIOM) Institutional Review Board approved the study.</p>
+<p>The data for female and male groups were considered separately because human body shape differs according to gender. For the diagnosis of hypertension, the criteria of the World Health Organization [WHO] <xref ref-type="bibr" rid="pone.0084897-World1">[27]</xref> were used. For the diagnosis of normotension, we used the criteria given in the 2013 European Society of Hypertension-European Society of Cardiology Guidelines for the management of arterial hypertension <xref ref-type="bibr" rid="pone.0084897-Mancia1">[28]</xref>, the 2003 European Society of Hypertension-European Society of Cardiology guidelines for the management of arterial hypertension <xref ref-type="bibr" rid="pone.0084897-European1">[29]</xref>, and data from several previous studies <xref ref-type="bibr" rid="pone.0084897-Mbanya1">[30]</xref>–<xref ref-type="bibr" rid="pone.0084897-Blann1">[35]</xref>. The criteria of the National Heart, Lung, and Blood Institute <xref ref-type="bibr" rid="pone.0084897-National1">[36]</xref> were used for the diagnosis of hypotension. In detail, the guidelines of reports <xref ref-type="bibr" rid="pone.0084897-Mancia1">[28]</xref> and <xref ref-type="bibr" rid="pone.0084897-European1">[29]</xref> and previous studies <xref ref-type="bibr" rid="pone.0084897-Mbanya1">[30]</xref>–<xref ref-type="bibr" rid="pone.0084897-Blann1">[35]</xref> suggested that hypertension is defined as SBP ≥140 mmHg and/or DBP ≥90 mmHg, and normotension (precisely, Optimal, Normal and High normal) was defined as SBP &lt;140 and/or DBP &lt;90. The previous study <xref ref-type="bibr" rid="pone.0084897-National1">[36]</xref> reported that hypotension was defined as SBP &lt;90 and/or DBP &lt;60. Therefore, in the present study, hypertension was defined as systolic blood pressure (SBP) ≥140 mmHg and/or diastolic blood pressure (DBP) ≥90 mmHg or physician-diagnosed hypertension. Normotension was defined as SBP ranging from 90–139 mmHg and DBP ranging from 60–89 mmHg, and hypotension was defined as SBP &lt;90 mmHg and/or DBP &lt;60 mmHg. If the participants had been diagnosed with hypertension in the past but were fully recovered, they were defined as normotensive participants. Ultimately, a total of 12789 subjects (7330 women and 5459 men) aged 21–85 years participated in this study. Of the women, 5627 were normotensive, 1703 had hypertension, and 344 had hypotension; of the men, 3777 were normotensive, 1580 had hypertension, and 102 had hypotension.</p>
+<p>Demographic data for all of the subjects were documented. The anthropometric indices were measured by well-trained technicians or observers using standardized protocols with the subject in lightweight clothing without shoes. Body weight and height were measured to the nearest 0.1 kg and 0.1 cm, respectively (LG-150; G Tech International Co., Ltd., Uijeongbu), and body circumferences were measured using non-elastic tape in 8 detailed positions: forehead, neck, axilla, chest, rib, waist, pelvis, and hip. After measuring weight, height, and the circumferences of 8 specific areas, we computed BMI, the circumference ratios between 2 positions, and the ratios between waist circumference and height or weight <xref ref-type="bibr" rid="pone.0084897-Lee1">[11]</xref>, <xref ref-type="bibr" rid="pone.0084897-Jang1">[37]</xref>. The baseline characteristics of the subjects and brief descriptions of the anthropometric indices used in the study are presented in <xref ref-type="table" rid="pone-0084897-t001">Table 1</xref>.</p>
+<table-wrap id="pone-0084897-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0084897.t001</object-id><label>Table 1</label><caption>
+<title>Baseline characteristics and brief descriptions of the anthropometric indices used in this study.</title>
+</caption><alternatives><graphic id="pone-0084897-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0084897.t001" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td colspan="3" align="left" rowspan="1">Women</td>
+<td colspan="3" align="left" rowspan="1">Men</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Index</td>
+<td align="left" rowspan="1" colspan="1">Normotension</td>
+<td align="left" rowspan="1" colspan="1">Hypertension</td>
+<td align="left" rowspan="1" colspan="1">Hypotension</td>
+<td align="left" rowspan="1" colspan="1">Normotension</td>
+<td align="left" rowspan="1" colspan="1">Hypertension</td>
+<td align="left" rowspan="1" colspan="1">Hypotension</td>
+<td align="left" rowspan="1" colspan="1">Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Subjects</td>
+<td align="left" rowspan="1" colspan="1">5627</td>
+<td align="left" rowspan="1" colspan="1">1703</td>
+<td align="left" rowspan="1" colspan="1">344</td>
+<td align="left" rowspan="1" colspan="1">3777</td>
+<td align="left" rowspan="1" colspan="1">1580</td>
+<td align="left" rowspan="1" colspan="1">102</td>
+<td align="left" rowspan="1" colspan="1">Number of subjects</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">High BP</td>
+<td align="left" rowspan="1" colspan="1">113.6 (11.51)</td>
+<td align="left" rowspan="1" colspan="1">138.1 (15.55)</td>
+<td align="left" rowspan="1" colspan="1">95.54 (11.33)</td>
+<td align="left" rowspan="1" colspan="1">116.2 (10.68)</td>
+<td align="left" rowspan="1" colspan="1">137.1 (14.31)</td>
+<td align="left" rowspan="1" colspan="1">100.2 (11.71)</td>
+<td align="left" rowspan="1" colspan="1">High blood pressure</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Low BP</td>
+<td align="left" rowspan="1" colspan="1">74 (7.355)</td>
+<td align="left" rowspan="1" colspan="1">88.07 (9.882)</td>
+<td align="left" rowspan="1" colspan="1">56.19 (4.611)</td>
+<td align="left" rowspan="1" colspan="1">76.09 (7.054)</td>
+<td align="left" rowspan="1" colspan="1">90.29 (9.639)</td>
+<td align="left" rowspan="1" colspan="1">55.79 (4.457)</td>
+<td align="left" rowspan="1" colspan="1">Low blood pressure</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Height</td>
+<td align="left" rowspan="1" colspan="1">156.3 (6.146)</td>
+<td align="left" rowspan="1" colspan="1">154.4 (6.054)</td>
+<td align="left" rowspan="1" colspan="1">156.7 (6.132)</td>
+<td align="left" rowspan="1" colspan="1">168.5 (6.3208)</td>
+<td align="left" rowspan="1" colspan="1">168.2 (6.385)</td>
+<td align="left" rowspan="1" colspan="1">168.7 (8.015)</td>
+<td align="left" rowspan="1" colspan="1">Height</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Weight</td>
+<td align="left" rowspan="1" colspan="1">57.49 (8.173)</td>
+<td align="left" rowspan="1" colspan="1">59.52 (9.137)</td>
+<td align="left" rowspan="1" colspan="1">53.86 (6.686)</td>
+<td align="left" rowspan="1" colspan="1">68.25 (9.9321)</td>
+<td align="left" rowspan="1" colspan="1">71.08 (10.95)</td>
+<td align="left" rowspan="1" colspan="1">63.67 (10.26)</td>
+<td align="left" rowspan="1" colspan="1">Weight</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">BMI</td>
+<td align="left" rowspan="1" colspan="1">23.55 (3.28)</td>
+<td align="left" rowspan="1" colspan="1">24.93 (3.413)</td>
+<td align="left" rowspan="1" colspan="1">21.98 (2.754)</td>
+<td align="left" rowspan="1" colspan="1">23.98 (2.9149)</td>
+<td align="left" rowspan="1" colspan="1">25.07 (3.14)</td>
+<td align="left" rowspan="1" colspan="1">22.31 (2.784)</td>
+<td align="left" rowspan="1" colspan="1">Body mass index</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Age</td>
+<td align="left" rowspan="1" colspan="1">51.17 (13.79)</td>
+<td align="left" rowspan="1" colspan="1">59.22 (11.46)</td>
+<td align="left" rowspan="1" colspan="1">46.51 (15.81)</td>
+<td align="left" rowspan="1" colspan="1">52.65 (14.05)</td>
+<td align="left" rowspan="1" colspan="1">54.7 (12.82)</td>
+<td align="left" rowspan="1" colspan="1">51.27 (19.63)</td>
+<td align="left" rowspan="1" colspan="1">Age</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ForeheadC</td>
+<td align="left" rowspan="1" colspan="1">54.95 (1.731)</td>
+<td align="left" rowspan="1" colspan="1">55.05 (1.782)</td>
+<td align="left" rowspan="1" colspan="1">54.57 (1.648)</td>
+<td align="left" rowspan="1" colspan="1">56.78 (1.737)</td>
+<td align="left" rowspan="1" colspan="1">57.14 (1.888)</td>
+<td align="left" rowspan="1" colspan="1">56.09 (1.566)</td>
+<td align="left" rowspan="1" colspan="1">Forehead circumference</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">NeckC</td>
+<td align="left" rowspan="1" colspan="1">33.04 (2.118)</td>
+<td align="left" rowspan="1" colspan="1">34.18 (2.27)</td>
+<td align="left" rowspan="1" colspan="1">32.14 (1.993)</td>
+<td align="left" rowspan="1" colspan="1">37.46 (2.319)</td>
+<td align="left" rowspan="1" colspan="1">38.49 (2.628)</td>
+<td align="left" rowspan="1" colspan="1">36.06 (2.239)</td>
+<td align="left" rowspan="1" colspan="1">Neck circumference</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">AxillaryC</td>
+<td align="left" rowspan="1" colspan="1">87.16 (5.997)</td>
+<td align="left" rowspan="1" colspan="1">90.1 (6.334)</td>
+<td align="left" rowspan="1" colspan="1">83.98 (5.691)</td>
+<td align="left" rowspan="1" colspan="1">95.14 (5.932)</td>
+<td align="left" rowspan="1" colspan="1">97.43 (6.479)</td>
+<td align="left" rowspan="1" colspan="1">92.68 (5.611)</td>
+<td align="left" rowspan="1" colspan="1">Axillary circumference</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ChestC</td>
+<td align="left" rowspan="1" colspan="1">89.64 (7.727)</td>
+<td align="left" rowspan="1" colspan="1">93.71 (8.107)</td>
+<td align="left" rowspan="1" colspan="1">85.37 (7.13)</td>
+<td align="left" rowspan="1" colspan="1">93.23 (6.246)</td>
+<td align="left" rowspan="1" colspan="1">95.86 (6.848)</td>
+<td align="left" rowspan="1" colspan="1">90.02 (6.4)</td>
+<td align="left" rowspan="1" colspan="1">Chest circumference</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">RibC</td>
+<td align="left" rowspan="1" colspan="1">78.66 (7.869)</td>
+<td align="left" rowspan="1" colspan="1">83.52 (8.184)</td>
+<td align="left" rowspan="1" colspan="1">75.04 (7.165)</td>
+<td align="left" rowspan="1" colspan="1">87.03 (6.557)</td>
+<td align="left" rowspan="1" colspan="1">90.11 (6.862)</td>
+<td align="left" rowspan="1" colspan="1">83.63 (7.127)</td>
+<td align="left" rowspan="1" colspan="1">Rib circumference</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">WaistC</td>
+<td align="left" rowspan="1" colspan="1">82.95 (8.982)</td>
+<td align="left" rowspan="1" colspan="1">87.94 (9.295)</td>
+<td align="left" rowspan="1" colspan="1">78.49 (8.005)</td>
+<td align="left" rowspan="1" colspan="1">86.17 (7.984)</td>
+<td align="left" rowspan="1" colspan="1">89.7 (8.23)</td>
+<td align="left" rowspan="1" colspan="1">82.04 (8.365)</td>
+<td align="left" rowspan="1" colspan="1">Waist circumference (WC)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">PelvicC</td>
+<td align="left" rowspan="1" colspan="1">89.75 (7.095)</td>
+<td align="left" rowspan="1" colspan="1">93.09 (7.435)</td>
+<td align="left" rowspan="1" colspan="1">86.58 (6.653)</td>
+<td align="left" rowspan="1" colspan="1">90.64 (6.145)</td>
+<td align="left" rowspan="1" colspan="1">92.88 (6.718)</td>
+<td align="left" rowspan="1" colspan="1">88.11 (6.494)</td>
+<td align="left" rowspan="1" colspan="1">Pelvic circumference</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">HipC</td>
+<td align="left" rowspan="1" colspan="1">92.61 (5.844)</td>
+<td align="left" rowspan="1" colspan="1">94.46 (6.502)</td>
+<td align="left" rowspan="1" colspan="1">90.55 (5.157)</td>
+<td align="left" rowspan="1" colspan="1">93.17 (5.65)</td>
+<td align="left" rowspan="1" colspan="1">94.96 (6.348)</td>
+<td align="left" rowspan="1" colspan="1">91.75 (5.979)</td>
+<td align="left" rowspan="1" colspan="1">Hip circumference</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Forehead_Hip</td>
+<td align="left" rowspan="1" colspan="1">0.595 (0.037)</td>
+<td align="left" rowspan="1" colspan="1">0.585 (0.038)</td>
+<td align="left" rowspan="1" colspan="1">0.604 (0.034)</td>
+<td align="left" rowspan="1" colspan="1">0.611 (0.033)</td>
+<td align="left" rowspan="1" colspan="1">0.604 (0.034)</td>
+<td align="left" rowspan="1" colspan="1">0.614 (0.036)</td>
+<td align="left" rowspan="1" colspan="1">Forehead-to-hip circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Neck_Hip</td>
+<td align="left" rowspan="1" colspan="1">0.357 (0.022)</td>
+<td align="left" rowspan="1" colspan="1">0.363 (0.023)</td>
+<td align="left" rowspan="1" colspan="1">0.356 (0.02)</td>
+<td align="left" rowspan="1" colspan="1">0.403 (0.021)</td>
+<td align="left" rowspan="1" colspan="1">0.406 (0.023)</td>
+<td align="left" rowspan="1" colspan="1">0.394 (0.022)</td>
+<td align="left" rowspan="1" colspan="1">Neck-to-hip circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Axillary_Hip</td>
+<td align="left" rowspan="1" colspan="1">0.942 (0.047)</td>
+<td align="left" rowspan="1" colspan="1">0.955 (0.047)</td>
+<td align="left" rowspan="1" colspan="1">0.928 (0.05)</td>
+<td align="left" rowspan="1" colspan="1">1.022 (0.045)</td>
+<td align="left" rowspan="1" colspan="1">1.027 (0.046)</td>
+<td align="left" rowspan="1" colspan="1">1.011 (0.043)</td>
+<td align="left" rowspan="1" colspan="1">Axillary-to-hip circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chest_Hip</td>
+<td align="left" rowspan="1" colspan="1">0.968 (0.059)</td>
+<td align="left" rowspan="1" colspan="1">0.992 (0.059)</td>
+<td align="left" rowspan="1" colspan="1">0.943 (0.059)</td>
+<td align="left" rowspan="1" colspan="1">1.001 (0.047)</td>
+<td align="left" rowspan="1" colspan="1">1.01 (0.047)</td>
+<td align="left" rowspan="1" colspan="1">0.982 (0.049)</td>
+<td align="left" rowspan="1" colspan="1">Chest-to-hip circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Rib_Hip</td>
+<td align="left" rowspan="1" colspan="1">0.849 (0.063)</td>
+<td align="left" rowspan="1" colspan="1">0.884 (0.061)</td>
+<td align="left" rowspan="1" colspan="1">0.828 (0.06)</td>
+<td align="left" rowspan="1" colspan="1">0.935 (0.052)</td>
+<td align="left" rowspan="1" colspan="1">0.949 (0.048)</td>
+<td align="left" rowspan="1" colspan="1">0.912 (0.056)</td>
+<td align="left" rowspan="1" colspan="1">Rib-to-hip circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Waist_Hip</td>
+<td align="left" rowspan="1" colspan="1">0.895 (0.07)</td>
+<td align="left" rowspan="1" colspan="1">0.931 (0.07)</td>
+<td align="left" rowspan="1" colspan="1">0.866 (0.065)</td>
+<td align="left" rowspan="1" colspan="1">0.924 (0.059)</td>
+<td align="left" rowspan="1" colspan="1">0.944 (0.054)</td>
+<td align="left" rowspan="1" colspan="1">0.894 (0.063)</td>
+<td align="left" rowspan="1" colspan="1">Waist-to-hip circumference ratio (WHR)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Pelvic_Hip</td>
+<td align="left" rowspan="1" colspan="1">0.969 (0.043)</td>
+<td align="left" rowspan="1" colspan="1">0.986 (0.04)</td>
+<td align="left" rowspan="1" colspan="1">0.956 (0.047)</td>
+<td align="left" rowspan="1" colspan="1">0.973 (0.041)</td>
+<td align="left" rowspan="1" colspan="1">0.978 (0.038)</td>
+<td align="left" rowspan="1" colspan="1">0.961 (0.046)</td>
+<td align="left" rowspan="1" colspan="1">Pelvic-to-hip circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Forehead_Pelvic</td>
+<td align="left" rowspan="1" colspan="1">0.616 (0.049)</td>
+<td align="left" rowspan="1" colspan="1">0.595 (0.046)</td>
+<td align="left" rowspan="1" colspan="1">0.634 (0.047)</td>
+<td align="left" rowspan="1" colspan="1">0.629 (0.041)</td>
+<td align="left" rowspan="1" colspan="1">0.618 (0.041)</td>
+<td align="left" rowspan="1" colspan="1">0.64 (0.045)</td>
+<td align="left" rowspan="1" colspan="1">Forehead-to-pelvic circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Neck_Pelvic</td>
+<td align="left" rowspan="1" colspan="1">0.369 (0.025)</td>
+<td align="left" rowspan="1" colspan="1">0.368 (0.025)</td>
+<td align="left" rowspan="1" colspan="1">0.372 (0.025)</td>
+<td align="left" rowspan="1" colspan="1">0.414 (0.025)</td>
+<td align="left" rowspan="1" colspan="1">0.415 (0.026)</td>
+<td align="left" rowspan="1" colspan="1">0.41 (0.025)</td>
+<td align="left" rowspan="1" colspan="1">Neck-to-pelvic circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Axillary_Pelvic</td>
+<td align="left" rowspan="1" colspan="1">0.973 (0.05)</td>
+<td align="left" rowspan="1" colspan="1">0.97 (0.049)</td>
+<td align="left" rowspan="1" colspan="1">0.972 (0.053)</td>
+<td align="left" rowspan="1" colspan="1">1.051 (0.056)</td>
+<td align="left" rowspan="1" colspan="1">1.051 (0.056)</td>
+<td align="left" rowspan="1" colspan="1">1.055 (0.058)</td>
+<td align="left" rowspan="1" colspan="1">Axillary-to-pelvic circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chest_Pelvic</td>
+<td align="left" rowspan="1" colspan="1">1 (0.053)</td>
+<td align="left" rowspan="1" colspan="1">1.007 (0.052)</td>
+<td align="left" rowspan="1" colspan="1">0.987 (0.053)</td>
+<td align="left" rowspan="1" colspan="1">1.03 (0.051)</td>
+<td align="left" rowspan="1" colspan="1">1.033 (0.052)</td>
+<td align="left" rowspan="1" colspan="1">1.023 (0.05)</td>
+<td align="left" rowspan="1" colspan="1">Chest-to-pelvic circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Rib_Pelvic</td>
+<td align="left" rowspan="1" colspan="1">0.876 (0.054)</td>
+<td align="left" rowspan="1" colspan="1">0.897 (0.053)</td>
+<td align="left" rowspan="1" colspan="1">0.867 (0.057)</td>
+<td align="left" rowspan="1" colspan="1">0.961 (0.05)</td>
+<td align="left" rowspan="1" colspan="1">0.971 (0.049)</td>
+<td align="left" rowspan="1" colspan="1">0.95 (0.052)</td>
+<td align="left" rowspan="1" colspan="1">Rib-to-pelvic circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Waist_Pelvic</td>
+<td align="left" rowspan="1" colspan="1">0.923 (0.055)</td>
+<td align="left" rowspan="1" colspan="1">0.944 (0.055)</td>
+<td align="left" rowspan="1" colspan="1">0.906 (0.049)</td>
+<td align="left" rowspan="1" colspan="1">0.95 (0.05)</td>
+<td align="left" rowspan="1" colspan="1">0.965 (0.047)</td>
+<td align="left" rowspan="1" colspan="1">0.93 (0.054)</td>
+<td align="left" rowspan="1" colspan="1">Waist-to-pelvic circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Forehead_Waist</td>
+<td align="left" rowspan="1" colspan="1">0.67 (0.073)</td>
+<td align="left" rowspan="1" colspan="1">0.633 (0.067)</td>
+<td align="left" rowspan="1" colspan="1">0.702 (0.067)</td>
+<td align="left" rowspan="1" colspan="1">0.664 (0.059)</td>
+<td align="left" rowspan="1" colspan="1">0.642 (0.054)</td>
+<td align="left" rowspan="1" colspan="1">0.69 (0.067)</td>
+<td align="left" rowspan="1" colspan="1">Forehead-to-waist circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Neck_Waist</td>
+<td align="left" rowspan="1" colspan="1">0.401 (0.034)</td>
+<td align="left" rowspan="1" colspan="1">0.391 (0.033)</td>
+<td align="left" rowspan="1" colspan="1">0.412 (0.033)</td>
+<td align="left" rowspan="1" colspan="1">0.437 (0.03)</td>
+<td align="left" rowspan="1" colspan="1">0.431 (0.029)</td>
+<td align="left" rowspan="1" colspan="1">0.443 (0.033)</td>
+<td align="left" rowspan="1" colspan="1">Neck-to-waist circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Axillary_Waist</td>
+<td align="left" rowspan="1" colspan="1">1.057 (0.071)</td>
+<td align="left" rowspan="1" colspan="1">1.03 (0.069)</td>
+<td align="left" rowspan="1" colspan="1">1.075 (0.07)</td>
+<td align="left" rowspan="1" colspan="1">1.109 (0.07)</td>
+<td align="left" rowspan="1" colspan="1">1.09 (0.065)</td>
+<td align="left" rowspan="1" colspan="1">1.136 (0.076)</td>
+<td align="left" rowspan="1" colspan="1">Axillary-to-waist circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chest_Waist</td>
+<td align="left" rowspan="1" colspan="1">1.085 (0.065)</td>
+<td align="left" rowspan="1" colspan="1">1.069 (0.062)</td>
+<td align="left" rowspan="1" colspan="1">1.092 (0.068)</td>
+<td align="left" rowspan="1" colspan="1">1.086 (0.06)</td>
+<td align="left" rowspan="1" colspan="1">1.072 (0.057)</td>
+<td align="left" rowspan="1" colspan="1">1.102 (0.065)</td>
+<td align="left" rowspan="1" colspan="1">Chest-to-waist circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Rib_Waist</td>
+<td align="left" rowspan="1" colspan="1">0.951 (0.054)</td>
+<td align="left" rowspan="1" colspan="1">0.952 (0.05)</td>
+<td align="left" rowspan="1" colspan="1">0.959 (0.059)</td>
+<td align="left" rowspan="1" colspan="1">1.013 (0.05)</td>
+<td align="left" rowspan="1" colspan="1">1.007 (0.047)</td>
+<td align="left" rowspan="1" colspan="1">1.022 (0.052)</td>
+<td align="left" rowspan="1" colspan="1">Rib-to-waist circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Forehead_Rib</td>
+<td align="left" rowspan="1" colspan="1">0.705 (0.07)</td>
+<td align="left" rowspan="1" colspan="1">0.665 (0.064)</td>
+<td align="left" rowspan="1" colspan="1">0.734 (0.066)</td>
+<td align="left" rowspan="1" colspan="1">0.656 (0.047)</td>
+<td align="left" rowspan="1" colspan="1">0.637 (0.045)</td>
+<td align="left" rowspan="1" colspan="1">0.675 (0.056)</td>
+<td align="left" rowspan="1" colspan="1">Forehead-to-rib circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Neck_Rib</td>
+<td align="left" rowspan="1" colspan="1">0.422 (0.031)</td>
+<td align="left" rowspan="1" colspan="1">0.412 (0.03)</td>
+<td align="left" rowspan="1" colspan="1">0.43 (0.029)</td>
+<td align="left" rowspan="1" colspan="1">0.431 (0.024)</td>
+<td align="left" rowspan="1" colspan="1">0.428 (0.024)</td>
+<td align="left" rowspan="1" colspan="1">0.433 (0.027)</td>
+<td align="left" rowspan="1" colspan="1">Neck-to-rib circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Axillary_Rib</td>
+<td align="left" rowspan="1" colspan="1">1.113 (0.061)</td>
+<td align="left" rowspan="1" colspan="1">1.083 (0.058)</td>
+<td align="left" rowspan="1" colspan="1">1.124 (0.061)</td>
+<td align="left" rowspan="1" colspan="1">1.095 (0.051)</td>
+<td align="left" rowspan="1" colspan="1">1.083 (0.048)</td>
+<td align="left" rowspan="1" colspan="1">1.111 (0.056)</td>
+<td align="left" rowspan="1" colspan="1">Axillary-to-rib circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chest_Rib</td>
+<td align="left" rowspan="1" colspan="1">1.142 (0.052)</td>
+<td align="left" rowspan="1" colspan="1">1.124 (0.05)</td>
+<td align="left" rowspan="1" colspan="1">1.14 (0.055)</td>
+<td align="left" rowspan="1" colspan="1">1.072 (0.039)</td>
+<td align="left" rowspan="1" colspan="1">1.065 (0.038)</td>
+<td align="left" rowspan="1" colspan="1">1.078 (0.04)</td>
+<td align="left" rowspan="1" colspan="1">Chest-to-rib circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Forehead_Chest</td>
+<td align="left" rowspan="1" colspan="1">0.617 (0.053)</td>
+<td align="left" rowspan="1" colspan="1">0.591 (0.05)</td>
+<td align="left" rowspan="1" colspan="1">0.643 (0.05)</td>
+<td align="left" rowspan="1" colspan="1">0.611 (0.037)</td>
+<td align="left" rowspan="1" colspan="1">0.599 (0.038)</td>
+<td align="left" rowspan="1" colspan="1">0.626 (0.043)</td>
+<td align="left" rowspan="1" colspan="1">Forehead-to-chest circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Neck_Chest</td>
+<td align="left" rowspan="1" colspan="1">0.37 (0.024)</td>
+<td align="left" rowspan="1" colspan="1">0.366 (0.025)</td>
+<td align="left" rowspan="1" colspan="1">0.378 (0.024)</td>
+<td align="left" rowspan="1" colspan="1">0.402 (0.02)</td>
+<td align="left" rowspan="1" colspan="1">0.402 (0.023)</td>
+<td align="left" rowspan="1" colspan="1">0.401 (0.024)</td>
+<td align="left" rowspan="1" colspan="1">Neck-to-chest circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Axillary_Chest</td>
+<td align="left" rowspan="1" colspan="1">0.974 (0.038)</td>
+<td align="left" rowspan="1" colspan="1">0.963 (0.037)</td>
+<td align="left" rowspan="1" colspan="1">0.986 (0.036)</td>
+<td align="left" rowspan="1" colspan="1">1.021 (0.026)</td>
+<td align="left" rowspan="1" colspan="1">1.017 (0.028)</td>
+<td align="left" rowspan="1" colspan="1">1.031 (0.033)</td>
+<td align="left" rowspan="1" colspan="1">Axillary-to-chest circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Forehead_Axillary</td>
+<td align="left" rowspan="1" colspan="1">0.633 (0.043)</td>
+<td align="left" rowspan="1" colspan="1">0.614 (0.041)</td>
+<td align="left" rowspan="1" colspan="1">0.652 (0.041)</td>
+<td align="left" rowspan="1" colspan="1">0.599 (0.033)</td>
+<td align="left" rowspan="1" colspan="1">0.589 (0.035)</td>
+<td align="left" rowspan="1" colspan="1">0.608 (0.034)</td>
+<td align="left" rowspan="1" colspan="1">Forehead-to-axillary circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Neck_Axillary</td>
+<td align="left" rowspan="1" colspan="1">0.38 (0.02)</td>
+<td align="left" rowspan="1" colspan="1">0.38 (0.021)</td>
+<td align="left" rowspan="1" colspan="1">0.384 (0.02)</td>
+<td align="left" rowspan="1" colspan="1">0.394 (0.02)</td>
+<td align="left" rowspan="1" colspan="1">0.396 (0.022)</td>
+<td align="left" rowspan="1" colspan="1">0.39 (0.02)</td>
+<td align="left" rowspan="1" colspan="1">Neck-to-axillary circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Forehead_Neck</td>
+<td align="left" rowspan="1" colspan="1">1.669 (0.099)</td>
+<td align="left" rowspan="1" colspan="1">1.616 (0.096)</td>
+<td align="left" rowspan="1" colspan="1">1.703 (0.09)</td>
+<td align="left" rowspan="1" colspan="1">1.52 (0.08)</td>
+<td align="left" rowspan="1" colspan="1">1.49 (0.086)</td>
+<td align="left" rowspan="1" colspan="1">1.56 (0.086)</td>
+<td align="left" rowspan="1" colspan="1">Forehead-to-neck circumference ratio</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">WHtR</td>
+<td align="left" rowspan="1" colspan="1">0.368 (0.05)</td>
+<td align="left" rowspan="1" colspan="1">0.385 (0.054)</td>
+<td align="left" rowspan="1" colspan="1">0.344 (0.041)</td>
+<td align="left" rowspan="1" colspan="1">0.404 (0.052)</td>
+<td align="left" rowspan="1" colspan="1">0.422 (0.057)</td>
+<td align="left" rowspan="1" colspan="1">0.376 (0.052)</td>
+<td align="left" rowspan="1" colspan="1">Waist-to-height circumference ratio</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt101"><label/><p>The data are expressed as the mean (standard deviation).</p></fn></table-wrap-foot></table-wrap></sec><sec id="s2b">
+<title>Data analysis and experimental configuration</title>
+<p>All the statistical analyses and the prediction experiments were conducted in SPSS 19 for Windows (SPSS Inc., Chicago, IL, USA) and Weka (the Waikato Environment for Knowledge Analysis data mining tool). In the statistical analyses of the individual indices, binary logistic regression (LR) was used to assess statistically significant differences between normotension and hypertension as well as between normotension and hypotension in both women and men after a standardization transformation was applied to the data. To analyze the predictive power of individual indices, binary logistic regression and naive Bayes algorithm (NB) were used to determine which index had better predictive power and produced more reliable results.</p>
+<p>To compare the predictive power of combined indices, we used four prediction methods using two machine learning algorithms and two variable selection techniques to obtain more predictive power, to discover the optimal combined indices, to decrease the complexity of the model, and to produce more trustworthy results. Correlation-based feature subset selection (CFS) is a filter approach <xref ref-type="bibr" rid="pone.0084897-Saeys1">[38]</xref>; each of the two machine learning algorithms constructs prediction models using selected indices after the indices are selected once with the CFS technique. The wrapper-based approach employs specific machine learning algorithms in the variable selection process and attempts to find the optimal variable set for machine learning used in the experiment <xref ref-type="bibr" rid="pone.0084897-Chen1">[39]</xref>. The four methods are as follows: naïve Bayes with CFS (NB-CFS method), logistic regression with CFS (LR-CFS method), naïve Bayes with wrapper (NB-wrapper method), and logistic regression with wrapper (LR-wrapper method). With regard to the search method, the greedy stepwise (backward search) method was used in all the experiments.</p>
+<p>The area under the receiver operating characteristic curve (AUC) is generally used to assess discrimination power in the medical and biological fields. Therefore, we used the AUC as the primary criterion for the comparison of predictive power. In addition, we report the sensitivity, 1-specificity, and F-measure to provide a more detailed analysis of the prediction results for the combined indices. All the tests in the analysis of predictive power were performed using 10-fold cross validation.</p>
+</sec></sec><sec id="s3">
+<title>Results</title>
+<sec id="s3a">
+<title>Comparison of hypertension and normotension</title>
+<p><xref ref-type="table" rid="pone-0084897-t002">Table 2</xref> presents the results of the statistical analysis and the comparison of the predictive power of individual anthropometric indices for hypertension and normotension. The best indicator of the risk of hypertension is RibC in both women (p = &lt;0.0001; OR = 1.813; AUC = 0.669) and men (p = &lt;0.0001; OR = 1.601; AUC = 0.627). Age is a more important predictor in women (p = &lt;0.0001; OR = 1.931; AUC = 0.666) than in men (p = &lt;0.0001; OR = 1.163; AUC = 0.532). In women, WaistC (called WC, p = &lt;0.0001; OR = 1.728; AUC = 0.654), Rib_Hip (p = &lt;0.0001; OR = 1.753; AUC = 0.656), and Forehead_Rib (p = &lt;0.0001; OR = 0.536; AUC = 0.665) are useful predictors. In men, WaistC (p = &lt;0.0001; OR = 1.560; AUC = 0.621), NeckC (p = &lt;0.0001; OR = 1.527; AUC = 0.617), and Forehead_Rib (p = &lt;0.0001; OR = 0.654; AUC = 0.614) are helpful indicators. Generally, when comparing hypertension with normotension, the predictive power and statistical significances of the anthropometric indices are better in women than in men.</p>
+<table-wrap id="pone-0084897-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0084897.t002</object-id><label>Table 2</label><caption>
+<title>Statistical analysis of normotension vs. hypertension in women and men.</title>
+</caption><alternatives><graphic id="pone-0084897-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0084897.t002" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td colspan="4" align="left" rowspan="1">Women</td>
+<td colspan="4" align="left" rowspan="1">Men</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Index</td>
+<td align="left" rowspan="1" colspan="1">P</td>
+<td align="left" rowspan="1" colspan="1">OR</td>
+<td align="left" rowspan="1" colspan="1">AUC (LR)</td>
+<td align="left" rowspan="1" colspan="1">AUC (NB)</td>
+<td align="left" rowspan="1" colspan="1">P</td>
+<td align="left" rowspan="1" colspan="1">OR</td>
+<td align="left" rowspan="1" colspan="1">AUC (LR)</td>
+<td align="left" rowspan="1" colspan="1">AUC (NB)</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Height</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.735</td>
+<td align="left" rowspan="1" colspan="1">0.587</td>
+<td align="left" rowspan="1" colspan="1">0.587</td>
+<td align="left" rowspan="1" colspan="1">0.0569</td>
+<td align="left" rowspan="1" colspan="1">0.944</td>
+<td align="left" rowspan="1" colspan="1">0.514</td>
+<td align="left" rowspan="1" colspan="1">0.507</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Weight</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.264</td>
+<td align="left" rowspan="1" colspan="1">0.567</td>
+<td align="left" rowspan="1" colspan="1">0.568</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.314</td>
+<td align="left" rowspan="1" colspan="1">0.575</td>
+<td align="left" rowspan="1" colspan="1">0.574</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">BMI</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.494</td>
+<td align="left" rowspan="1" colspan="1">0.621</td>
+<td align="left" rowspan="1" colspan="1">0.621</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.437</td>
+<td align="left" rowspan="1" colspan="1">0.601</td>
+<td align="left" rowspan="1" colspan="1">0.6</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Age</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.931</td>
+<td align="left" rowspan="1" colspan="1">0.666</td>
+<td align="left" rowspan="1" colspan="1">0.665</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.163</td>
+<td align="left" rowspan="1" colspan="1">0.532</td>
+<td align="left" rowspan="1" colspan="1">0.524</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ForeheadC</td>
+<td align="left" rowspan="1" colspan="1">0.0511</td>
+<td align="left" rowspan="1" colspan="1">1.055</td>
+<td align="left" rowspan="1" colspan="1">0.514</td>
+<td align="left" rowspan="1" colspan="1">0.507</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.22</td>
+<td align="left" rowspan="1" colspan="1">0.555</td>
+<td align="left" rowspan="1" colspan="1">0.553</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">NeckC</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.676</td>
+<td align="left" rowspan="1" colspan="1">0.645</td>
+<td align="left" rowspan="1" colspan="1">0.645</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.527</td>
+<td align="left" rowspan="1" colspan="1">0.617</td>
+<td align="left" rowspan="1" colspan="1">0.617</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">AxillaryC</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.609</td>
+<td align="left" rowspan="1" colspan="1">0.636</td>
+<td align="left" rowspan="1" colspan="1">0.635</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.459</td>
+<td align="left" rowspan="1" colspan="1">0.604</td>
+<td align="left" rowspan="1" colspan="1">0.604</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ChestC</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.67</td>
+<td align="left" rowspan="1" colspan="1">0.646</td>
+<td align="left" rowspan="1" colspan="1">0.646</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.504</td>
+<td align="left" rowspan="1" colspan="1">0.61</td>
+<td align="left" rowspan="1" colspan="1">0.609</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">RibC</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.813</td>
+<td align="left" rowspan="1" colspan="1">0.669</td>
+<td align="left" rowspan="1" colspan="1">0.669</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.601</td>
+<td align="left" rowspan="1" colspan="1">0.627</td>
+<td align="left" rowspan="1" colspan="1">0.627</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">WaistC</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.728</td>
+<td align="left" rowspan="1" colspan="1">0.654</td>
+<td align="left" rowspan="1" colspan="1">0.654</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.56</td>
+<td align="left" rowspan="1" colspan="1">0.621</td>
+<td align="left" rowspan="1" colspan="1">0.621</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">PelvicC</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.582</td>
+<td align="left" rowspan="1" colspan="1">0.63</td>
+<td align="left" rowspan="1" colspan="1">0.63</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.427</td>
+<td align="left" rowspan="1" colspan="1">0.595</td>
+<td align="left" rowspan="1" colspan="1">0.593</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">HipC</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.349</td>
+<td align="left" rowspan="1" colspan="1">0.582</td>
+<td align="left" rowspan="1" colspan="1">0.578</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.356</td>
+<td align="left" rowspan="1" colspan="1">0.582</td>
+<td align="left" rowspan="1" colspan="1">0.58</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Forehead_Hip</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.753</td>
+<td align="left" rowspan="1" colspan="1">0.578</td>
+<td align="left" rowspan="1" colspan="1">0.576</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.796</td>
+<td align="left" rowspan="1" colspan="1">0.563</td>
+<td align="left" rowspan="1" colspan="1">0.561</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Neck_Hip</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.264</td>
+<td align="left" rowspan="1" colspan="1">0.566</td>
+<td align="left" rowspan="1" colspan="1">0.562</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.167</td>
+<td align="left" rowspan="1" colspan="1">0.547</td>
+<td align="left" rowspan="1" colspan="1">0.544</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Axillary_Hip</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.313</td>
+<td align="left" rowspan="1" colspan="1">0.577</td>
+<td align="left" rowspan="1" colspan="1">0.577</td>
+<td align="left" rowspan="1" colspan="1">0.0003</td>
+<td align="left" rowspan="1" colspan="1">1.116</td>
+<td align="left" rowspan="1" colspan="1">0.532</td>
+<td align="left" rowspan="1" colspan="1">0.528</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chest_Hip</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.512</td>
+<td align="left" rowspan="1" colspan="1">0.617</td>
+<td align="left" rowspan="1" colspan="1">0.615</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.21</td>
+<td align="left" rowspan="1" colspan="1">0.553</td>
+<td align="left" rowspan="1" colspan="1">0.555</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Rib_Hip</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.753</td>
+<td align="left" rowspan="1" colspan="1">0.656</td>
+<td align="left" rowspan="1" colspan="1">0.655</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.342</td>
+<td align="left" rowspan="1" colspan="1">0.581</td>
+<td align="left" rowspan="1" colspan="1">0.581</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Waist_Hip</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.669</td>
+<td align="left" rowspan="1" colspan="1">0.641</td>
+<td align="left" rowspan="1" colspan="1">0.641</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.42</td>
+<td align="left" rowspan="1" colspan="1">0.597</td>
+<td align="left" rowspan="1" colspan="1">0.597</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Pelvic_Hip</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.507</td>
+<td align="left" rowspan="1" colspan="1">0.608</td>
+<td align="left" rowspan="1" colspan="1">0.605</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.137</td>
+<td align="left" rowspan="1" colspan="1">0.528</td>
+<td align="left" rowspan="1" colspan="1">0.522</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Forehead_Pelvic</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.633</td>
+<td align="left" rowspan="1" colspan="1">0.624</td>
+<td align="left" rowspan="1" colspan="1">0.623</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.755</td>
+<td align="left" rowspan="1" colspan="1">0.574</td>
+<td align="left" rowspan="1" colspan="1">0.572</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Neck_Pelvic</td>
+<td align="left" rowspan="1" colspan="1">0.1672</td>
+<td align="left" rowspan="1" colspan="1">0.962</td>
+<td align="left" rowspan="1" colspan="1">0.507</td>
+<td align="left" rowspan="1" colspan="1">0.503</td>
+<td align="left" rowspan="1" colspan="1">0.1233</td>
+<td align="left" rowspan="1" colspan="1">1.047</td>
+<td align="left" rowspan="1" colspan="1">0.51</td>
+<td align="left" rowspan="1" colspan="1">0.514</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Axillary_Pelvic</td>
+<td align="left" rowspan="1" colspan="1">0.0158</td>
+<td align="left" rowspan="1" colspan="1">0.935</td>
+<td align="left" rowspan="1" colspan="1">0.516</td>
+<td align="left" rowspan="1" colspan="1">0.512</td>
+<td align="left" rowspan="1" colspan="1">0.6892</td>
+<td align="left" rowspan="1" colspan="1">0.988</td>
+<td align="left" rowspan="1" colspan="1">0.498</td>
+<td align="left" rowspan="1" colspan="1">0.478</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chest_Pelvic</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.159</td>
+<td align="left" rowspan="1" colspan="1">0.545</td>
+<td align="left" rowspan="1" colspan="1">0.544</td>
+<td align="left" rowspan="1" colspan="1">0.0221</td>
+<td align="left" rowspan="1" colspan="1">1.071</td>
+<td align="left" rowspan="1" colspan="1">0.521</td>
+<td align="left" rowspan="1" colspan="1">0.519</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Rib_Pelvic</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.468</td>
+<td align="left" rowspan="1" colspan="1">0.613</td>
+<td align="left" rowspan="1" colspan="1">0.613</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.226</td>
+<td align="left" rowspan="1" colspan="1">0.56</td>
+<td align="left" rowspan="1" colspan="1">0.56</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Waist_Pelvic</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.468</td>
+<td align="left" rowspan="1" colspan="1">0.608</td>
+<td align="left" rowspan="1" colspan="1">0.607</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.37</td>
+<td align="left" rowspan="1" colspan="1">0.594</td>
+<td align="left" rowspan="1" colspan="1">0.592</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Forehead_Waist</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.569</td>
+<td align="left" rowspan="1" colspan="1">0.65</td>
+<td align="left" rowspan="1" colspan="1">0.65</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.66</td>
+<td align="left" rowspan="1" colspan="1">0.611</td>
+<td align="left" rowspan="1" colspan="1">0.609</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Neck_Waist</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.741</td>
+<td align="left" rowspan="1" colspan="1">0.585</td>
+<td align="left" rowspan="1" colspan="1">0.584</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.813</td>
+<td align="left" rowspan="1" colspan="1">0.549</td>
+<td align="left" rowspan="1" colspan="1">0.549</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Axillary_Waist</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.679</td>
+<td align="left" rowspan="1" colspan="1">0.607</td>
+<td align="left" rowspan="1" colspan="1">0.607</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.758</td>
+<td align="left" rowspan="1" colspan="1">0.575</td>
+<td align="left" rowspan="1" colspan="1">0.571</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chest_Waist</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.782</td>
+<td align="left" rowspan="1" colspan="1">0.565</td>
+<td align="left" rowspan="1" colspan="1">0.564</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.788</td>
+<td align="left" rowspan="1" colspan="1">0.565</td>
+<td align="left" rowspan="1" colspan="1">0.563</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Rib_Waist</td>
+<td align="left" rowspan="1" colspan="1">0.4669</td>
+<td align="left" rowspan="1" colspan="1">1.02</td>
+<td align="left" rowspan="1" colspan="1">0.503</td>
+<td align="left" rowspan="1" colspan="1">0.524</td>
+<td align="left" rowspan="1" colspan="1">0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.889</td>
+<td align="left" rowspan="1" colspan="1">0.531</td>
+<td align="left" rowspan="1" colspan="1">0.527</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Forehead_Rib</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.536</td>
+<td align="left" rowspan="1" colspan="1">0.665</td>
+<td align="left" rowspan="1" colspan="1">0.664</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.654</td>
+<td align="left" rowspan="1" colspan="1">0.614</td>
+<td align="left" rowspan="1" colspan="1">0.612</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Neck_Rib</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.699</td>
+<td align="left" rowspan="1" colspan="1">0.598</td>
+<td align="left" rowspan="1" colspan="1">0.594</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.869</td>
+<td align="left" rowspan="1" colspan="1">0.533</td>
+<td align="left" rowspan="1" colspan="1">0.528</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Axillary_Rib</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.602</td>
+<td align="left" rowspan="1" colspan="1">0.641</td>
+<td align="left" rowspan="1" colspan="1">0.641</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.779</td>
+<td align="left" rowspan="1" colspan="1">0.571</td>
+<td align="left" rowspan="1" colspan="1">0.568</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chest_Rib</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.704</td>
+<td align="left" rowspan="1" colspan="1">0.6</td>
+<td align="left" rowspan="1" colspan="1">0.599</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.813</td>
+<td align="left" rowspan="1" colspan="1">0.561</td>
+<td align="left" rowspan="1" colspan="1">0.558</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Forehead_Chest</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.593</td>
+<td align="left" rowspan="1" colspan="1">0.642</td>
+<td align="left" rowspan="1" colspan="1">0.642</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.703</td>
+<td align="left" rowspan="1" colspan="1">0.597</td>
+<td align="left" rowspan="1" colspan="1">0.597</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Neck_Chest</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.854</td>
+<td align="left" rowspan="1" colspan="1">0.542</td>
+<td align="left" rowspan="1" colspan="1">0.541</td>
+<td align="left" rowspan="1" colspan="1">0.5794</td>
+<td align="left" rowspan="1" colspan="1">0.984</td>
+<td align="left" rowspan="1" colspan="1">0.484</td>
+<td align="left" rowspan="1" colspan="1">0.525</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Axillary_Chest</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.737</td>
+<td align="left" rowspan="1" colspan="1">0.588</td>
+<td align="left" rowspan="1" colspan="1">0.588</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.857</td>
+<td align="left" rowspan="1" colspan="1">0.544</td>
+<td align="left" rowspan="1" colspan="1">0.543</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Forehead_Axillary</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.621</td>
+<td align="left" rowspan="1" colspan="1">0.63</td>
+<td align="left" rowspan="1" colspan="1">0.629</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.732</td>
+<td align="left" rowspan="1" colspan="1">0.588</td>
+<td align="left" rowspan="1" colspan="1">0.585</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Neck_Axillary</td>
+<td align="left" rowspan="1" colspan="1">0.3817</td>
+<td align="left" rowspan="1" colspan="1">1.024</td>
+<td align="left" rowspan="1" colspan="1">0.503</td>
+<td align="left" rowspan="1" colspan="1">0.501</td>
+<td align="left" rowspan="1" colspan="1">0.0238</td>
+<td align="left" rowspan="1" colspan="1">1.07</td>
+<td align="left" rowspan="1" colspan="1">0.517</td>
+<td align="left" rowspan="1" colspan="1">0.517</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Forehead_Neck</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.577</td>
+<td align="left" rowspan="1" colspan="1">0.65</td>
+<td align="left" rowspan="1" colspan="1">0.649</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.687</td>
+<td align="left" rowspan="1" colspan="1">0.609</td>
+<td align="left" rowspan="1" colspan="1">0.608</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">WHtR</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.39</td>
+<td align="left" rowspan="1" colspan="1">0.597</td>
+<td align="left" rowspan="1" colspan="1">0.597</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.381</td>
+<td align="left" rowspan="1" colspan="1">0.59</td>
+<td align="left" rowspan="1" colspan="1">0.588</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt102"><label/><p>The AUC values were calculated using 10-fold cross validation. OR: odds ratios; AUC: area under the receiver operating characteristic curve; LR: logistic regression; NB: naïve Bayes.</p></fn></table-wrap-foot></table-wrap></sec><sec id="s3b">
+<title>Comparison of hypotension and normotension</title>
+<p><xref ref-type="table" rid="pone-0084897-t003">Table 3</xref> lists the results of the statistical analysis and the predictive power of individual indices comparing hypotension with normotension. The strongest predictor in women is ChestC (p = &lt;0.0001; OR = 0.541; AUC = 0.657); however, the best indicator in men is NeckC (p = &lt;0.0001; OR = 0.522; AUC = 0.672). BMI, WaistC, and WHtR are useful indicators in both women (p = &lt;0.0001; OR = 0.573; AUC = 0.64, p = &lt;0.0001; OR = 0.582; AUC = 0.648, p = &lt;0.0001; OR = 0.573; AUC = 0.639, respectively) and men (p = &lt;0.0001; OR = 0.545; AUC = 0.654, p = &lt;0.0001; OR = 0.593; AUC = 0.646, p = &lt;0.0001; OR = 0.566; AUC = 0.645, respectively). In addition, AxillaryC is a beneficial indicator in women (p = &lt;0.0001; OR = 0.56; AUC = 0.651), and Waist_Hip (called WHR) is a useful predictor in men (p = &lt;0.0001; OR = 0.594; AUC = 0.647).</p>
+<table-wrap id="pone-0084897-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0084897.t003</object-id><label>Table 3</label><caption>
+<title>Statistical analysis of normotension and hypotension in women and men.</title>
+</caption><alternatives><graphic id="pone-0084897-t003-3" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0084897.t003" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td colspan="4" align="left" rowspan="1">Women</td>
+<td colspan="4" align="left" rowspan="1">Men</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Index</td>
+<td align="left" rowspan="1" colspan="1">p</td>
+<td align="left" rowspan="1" colspan="1">OR</td>
+<td align="left" rowspan="1" colspan="1">AUC (LR)</td>
+<td align="left" rowspan="1" colspan="1">AUC (NB)</td>
+<td align="left" rowspan="1" colspan="1">P</td>
+<td align="left" rowspan="1" colspan="1">OR</td>
+<td align="left" rowspan="1" colspan="1">AUC (LR)</td>
+<td align="left" rowspan="1" colspan="1">AUC (NB)</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Height</td>
+<td align="left" rowspan="1" colspan="1">0.2874</td>
+<td align="left" rowspan="1" colspan="1">1.061</td>
+<td align="left" rowspan="1" colspan="1">0.5</td>
+<td align="left" rowspan="1" colspan="1">0.494</td>
+<td align="left" rowspan="1" colspan="1">0.8001</td>
+<td align="left" rowspan="1" colspan="1">1.026</td>
+<td align="left" rowspan="1" colspan="1">0.448</td>
+<td align="left" rowspan="1" colspan="1">0.556</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Weight</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.602</td>
+<td align="left" rowspan="1" colspan="1">0.629</td>
+<td align="left" rowspan="1" colspan="1">0.624</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.61</td>
+<td align="left" rowspan="1" colspan="1">0.627</td>
+<td align="left" rowspan="1" colspan="1">0.626</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">BMI</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.573</td>
+<td align="left" rowspan="1" colspan="1">0.64</td>
+<td align="left" rowspan="1" colspan="1">0.637</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.545</td>
+<td align="left" rowspan="1" colspan="1">0.654</td>
+<td align="left" rowspan="1" colspan="1">0.653</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Age</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.72</td>
+<td align="left" rowspan="1" colspan="1">0.583</td>
+<td align="left" rowspan="1" colspan="1">0.575</td>
+<td align="left" rowspan="1" colspan="1">0.3340</td>
+<td align="left" rowspan="1" colspan="1">0.909</td>
+<td align="left" rowspan="1" colspan="1">0.489</td>
+<td align="left" rowspan="1" colspan="1">0.685</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ForeheadC</td>
+<td align="left" rowspan="1" colspan="1">0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.803</td>
+<td align="left" rowspan="1" colspan="1">0.561</td>
+<td align="left" rowspan="1" colspan="1">0.558</td>
+<td align="left" rowspan="1" colspan="1">0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.667</td>
+<td align="left" rowspan="1" colspan="1">0.627</td>
+<td align="left" rowspan="1" colspan="1">0.622</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">NeckC</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.625</td>
+<td align="left" rowspan="1" colspan="1">0.629</td>
+<td align="left" rowspan="1" colspan="1">0.628</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.522</td>
+<td align="left" rowspan="1" colspan="1">0.672</td>
+<td align="left" rowspan="1" colspan="1">0.669</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">AxillaryC</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.56</td>
+<td align="left" rowspan="1" colspan="1">0.651</td>
+<td align="left" rowspan="1" colspan="1">0.65</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.652</td>
+<td align="left" rowspan="1" colspan="1">0.612</td>
+<td align="left" rowspan="1" colspan="1">0.608</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ChestC</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.541</td>
+<td align="left" rowspan="1" colspan="1">0.657</td>
+<td align="left" rowspan="1" colspan="1">0.657</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.585</td>
+<td align="left" rowspan="1" colspan="1">0.634</td>
+<td align="left" rowspan="1" colspan="1">0.633</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">RibC</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.596</td>
+<td align="left" rowspan="1" colspan="1">0.629</td>
+<td align="left" rowspan="1" colspan="1">0.628</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.589</td>
+<td align="left" rowspan="1" colspan="1">0.636</td>
+<td align="left" rowspan="1" colspan="1">0.634</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">WaistC</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.582</td>
+<td align="left" rowspan="1" colspan="1">0.648</td>
+<td align="left" rowspan="1" colspan="1">0.647</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.593</td>
+<td align="left" rowspan="1" colspan="1">0.646</td>
+<td align="left" rowspan="1" colspan="1">0.646</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">PelvicC</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.62</td>
+<td align="left" rowspan="1" colspan="1">0.635</td>
+<td align="left" rowspan="1" colspan="1">0.635</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.659</td>
+<td align="left" rowspan="1" colspan="1">0.623</td>
+<td align="left" rowspan="1" colspan="1">0.621</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">HipC</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.683</td>
+<td align="left" rowspan="1" colspan="1">0.6</td>
+<td align="left" rowspan="1" colspan="1">0.596</td>
+<td align="left" rowspan="1" colspan="1">0.0125</td>
+<td align="left" rowspan="1" colspan="1">0.774</td>
+<td align="left" rowspan="1" colspan="1">0.568</td>
+<td align="left" rowspan="1" colspan="1">0.558</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Forehead_Hip</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.275</td>
+<td align="left" rowspan="1" colspan="1">0.57</td>
+<td align="left" rowspan="1" colspan="1">0.562</td>
+<td align="left" rowspan="1" colspan="1">0.4004</td>
+<td align="left" rowspan="1" colspan="1">1.087</td>
+<td align="left" rowspan="1" colspan="1">0.507</td>
+<td align="left" rowspan="1" colspan="1">0.476</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Neck_Hip</td>
+<td align="left" rowspan="1" colspan="1">0.1307</td>
+<td align="left" rowspan="1" colspan="1">0.918</td>
+<td align="left" rowspan="1" colspan="1">0.526</td>
+<td align="left" rowspan="1" colspan="1">0.53</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.651</td>
+<td align="left" rowspan="1" colspan="1">0.617</td>
+<td align="left" rowspan="1" colspan="1">0.615</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Axillary_Hip</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.74</td>
+<td align="left" rowspan="1" colspan="1">0.589</td>
+<td align="left" rowspan="1" colspan="1">0.586</td>
+<td align="left" rowspan="1" colspan="1">0.0180</td>
+<td align="left" rowspan="1" colspan="1">0.788</td>
+<td align="left" rowspan="1" colspan="1">0.563</td>
+<td align="left" rowspan="1" colspan="1">0.552</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chest_Hip</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.639</td>
+<td align="left" rowspan="1" colspan="1">0.624</td>
+<td align="left" rowspan="1" colspan="1">0.623</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.66</td>
+<td align="left" rowspan="1" colspan="1">0.61</td>
+<td align="left" rowspan="1" colspan="1">0.613</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Rib_Hip</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.706</td>
+<td align="left" rowspan="1" colspan="1">0.597</td>
+<td align="left" rowspan="1" colspan="1">0.596</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.652</td>
+<td align="left" rowspan="1" colspan="1">0.62</td>
+<td align="left" rowspan="1" colspan="1">0.615</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Waist_Hip</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.653</td>
+<td align="left" rowspan="1" colspan="1">0.626</td>
+<td align="left" rowspan="1" colspan="1">0.625</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.594</td>
+<td align="left" rowspan="1" colspan="1">0.647</td>
+<td align="left" rowspan="1" colspan="1">0.643</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Pelvic_Hip</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.745</td>
+<td align="left" rowspan="1" colspan="1">0.592</td>
+<td align="left" rowspan="1" colspan="1">0.587</td>
+<td align="left" rowspan="1" colspan="1">0.0030</td>
+<td align="left" rowspan="1" colspan="1">0.76</td>
+<td align="left" rowspan="1" colspan="1">0.561</td>
+<td align="left" rowspan="1" colspan="1">0.54</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Forehead_Pelvic</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.409</td>
+<td align="left" rowspan="1" colspan="1">0.605</td>
+<td align="left" rowspan="1" colspan="1">0.606</td>
+<td align="left" rowspan="1" colspan="1">0.0106</td>
+<td align="left" rowspan="1" colspan="1">1.274</td>
+<td align="left" rowspan="1" colspan="1">0.57</td>
+<td align="left" rowspan="1" colspan="1">0.566</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Neck_Pelvic</td>
+<td align="left" rowspan="1" colspan="1">0.0308</td>
+<td align="left" rowspan="1" colspan="1">1.122</td>
+<td align="left" rowspan="1" colspan="1">0.531</td>
+<td align="left" rowspan="1" colspan="1">0.519</td>
+<td align="left" rowspan="1" colspan="1">0.0920</td>
+<td align="left" rowspan="1" colspan="1">0.838</td>
+<td align="left" rowspan="1" colspan="1">0.535</td>
+<td align="left" rowspan="1" colspan="1">0.514</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Axillary_Pelvic</td>
+<td align="left" rowspan="1" colspan="1">0.6595</td>
+<td align="left" rowspan="1" colspan="1">0.976</td>
+<td align="left" rowspan="1" colspan="1">0.495</td>
+<td align="left" rowspan="1" colspan="1">0.508</td>
+<td align="left" rowspan="1" colspan="1">0.5924</td>
+<td align="left" rowspan="1" colspan="1">1.055</td>
+<td align="left" rowspan="1" colspan="1">0.52</td>
+<td align="left" rowspan="1" colspan="1">0.467</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chest_Pelvic</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.784</td>
+<td align="left" rowspan="1" colspan="1">0.572</td>
+<td align="left" rowspan="1" colspan="1">0.569</td>
+<td align="left" rowspan="1" colspan="1">0.1966</td>
+<td align="left" rowspan="1" colspan="1">0.876</td>
+<td align="left" rowspan="1" colspan="1">0.508</td>
+<td align="left" rowspan="1" colspan="1">0.47</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Rib_Pelvic</td>
+<td align="left" rowspan="1" colspan="1">0.0018</td>
+<td align="left" rowspan="1" colspan="1">0.836</td>
+<td align="left" rowspan="1" colspan="1">0.55</td>
+<td align="left" rowspan="1" colspan="1">0.542</td>
+<td align="left" rowspan="1" colspan="1">0.0234</td>
+<td align="left" rowspan="1" colspan="1">0.793</td>
+<td align="left" rowspan="1" colspan="1">0.544</td>
+<td align="left" rowspan="1" colspan="1">0.529</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Waist_Pelvic</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.722</td>
+<td align="left" rowspan="1" colspan="1">0.595</td>
+<td align="left" rowspan="1" colspan="1">0.599</td>
+<td align="left" rowspan="1" colspan="1">0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.676</td>
+<td align="left" rowspan="1" colspan="1">0.598</td>
+<td align="left" rowspan="1" colspan="1">0.594</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Forehead_Waist</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.524</td>
+<td align="left" rowspan="1" colspan="1">0.632</td>
+<td align="left" rowspan="1" colspan="1">0.629</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.505</td>
+<td align="left" rowspan="1" colspan="1">0.62</td>
+<td align="left" rowspan="1" colspan="1">0.617</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Neck_Waist</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.349</td>
+<td align="left" rowspan="1" colspan="1">0.594</td>
+<td align="left" rowspan="1" colspan="1">0.588</td>
+<td align="left" rowspan="1" colspan="1">0.0599</td>
+<td align="left" rowspan="1" colspan="1">1.195</td>
+<td align="left" rowspan="1" colspan="1">0.536</td>
+<td align="left" rowspan="1" colspan="1">0.504</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Axillary_Waist</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.29</td>
+<td align="left" rowspan="1" colspan="1">0.575</td>
+<td align="left" rowspan="1" colspan="1">0.572</td>
+<td align="left" rowspan="1" colspan="1">0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.443</td>
+<td align="left" rowspan="1" colspan="1">0.605</td>
+<td align="left" rowspan="1" colspan="1">0.6</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chest_Waist</td>
+<td align="left" rowspan="1" colspan="1">0.0674</td>
+<td align="left" rowspan="1" colspan="1">1.106</td>
+<td align="left" rowspan="1" colspan="1">0.528</td>
+<td align="left" rowspan="1" colspan="1">0.514</td>
+<td align="left" rowspan="1" colspan="1">0.0068</td>
+<td align="left" rowspan="1" colspan="1">1.297</td>
+<td align="left" rowspan="1" colspan="1">0.579</td>
+<td align="left" rowspan="1" colspan="1">0.567</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Rib_Waist</td>
+<td align="left" rowspan="1" colspan="1">0.0089</td>
+<td align="left" rowspan="1" colspan="1">1.152</td>
+<td align="left" rowspan="1" colspan="1">0.533</td>
+<td align="left" rowspan="1" colspan="1">0.532</td>
+<td align="left" rowspan="1" colspan="1">0.0579</td>
+<td align="left" rowspan="1" colspan="1">1.197</td>
+<td align="left" rowspan="1" colspan="1">0.544</td>
+<td align="left" rowspan="1" colspan="1">0.552</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Forehead_Rib</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.496</td>
+<td align="left" rowspan="1" colspan="1">0.612</td>
+<td align="left" rowspan="1" colspan="1">0.611</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.458</td>
+<td align="left" rowspan="1" colspan="1">0.603</td>
+<td align="left" rowspan="1" colspan="1">0.603</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Neck_Rib</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.282</td>
+<td align="left" rowspan="1" colspan="1">0.569</td>
+<td align="left" rowspan="1" colspan="1">0.562</td>
+<td align="left" rowspan="1" colspan="1">0.6280</td>
+<td align="left" rowspan="1" colspan="1">1.049</td>
+<td align="left" rowspan="1" colspan="1">0.461</td>
+<td align="left" rowspan="1" colspan="1">0.518</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Axillary_Rib</td>
+<td align="left" rowspan="1" colspan="1">0.0011</td>
+<td align="left" rowspan="1" colspan="1">1.198</td>
+<td align="left" rowspan="1" colspan="1">0.543</td>
+<td align="left" rowspan="1" colspan="1">0.543</td>
+<td align="left" rowspan="1" colspan="1">0.0016</td>
+<td align="left" rowspan="1" colspan="1">1.33</td>
+<td align="left" rowspan="1" colspan="1">0.58</td>
+<td align="left" rowspan="1" colspan="1">0.572</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chest_Rib</td>
+<td align="left" rowspan="1" colspan="1">0.5219</td>
+<td align="left" rowspan="1" colspan="1">0.965</td>
+<td align="left" rowspan="1" colspan="1">0.495</td>
+<td align="left" rowspan="1" colspan="1">0.511</td>
+<td align="left" rowspan="1" colspan="1">0.1224</td>
+<td align="left" rowspan="1" colspan="1">1.158</td>
+<td align="left" rowspan="1" colspan="1">0.546</td>
+<td align="left" rowspan="1" colspan="1">0.53</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Forehead_Chest</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.621</td>
+<td align="left" rowspan="1" colspan="1">0.638</td>
+<td align="left" rowspan="1" colspan="1">0.637</td>
+<td align="left" rowspan="1" colspan="1">0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.444</td>
+<td align="left" rowspan="1" colspan="1">0.595</td>
+<td align="left" rowspan="1" colspan="1">0.581</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Neck_Chest</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.353</td>
+<td align="left" rowspan="1" colspan="1">0.592</td>
+<td align="left" rowspan="1" colspan="1">0.587</td>
+<td align="left" rowspan="1" colspan="1">0.6022</td>
+<td align="left" rowspan="1" colspan="1">0.949</td>
+<td align="left" rowspan="1" colspan="1">0.482</td>
+<td align="left" rowspan="1" colspan="1">0.546</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Axillary_Chest</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.329</td>
+<td align="left" rowspan="1" colspan="1">0.585</td>
+<td align="left" rowspan="1" colspan="1">0.583</td>
+<td align="left" rowspan="1" colspan="1">0.0002</td>
+<td align="left" rowspan="1" colspan="1">1.413</td>
+<td align="left" rowspan="1" colspan="1">0.577</td>
+<td align="left" rowspan="1" colspan="1">0.564</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Forehead_Axillary</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.546</td>
+<td align="left" rowspan="1" colspan="1">0.628</td>
+<td align="left" rowspan="1" colspan="1">0.622</td>
+<td align="left" rowspan="1" colspan="1">0.0084</td>
+<td align="left" rowspan="1" colspan="1">1.292</td>
+<td align="left" rowspan="1" colspan="1">0.578</td>
+<td align="left" rowspan="1" colspan="1">0.569</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Neck_Axillary</td>
+<td align="left" rowspan="1" colspan="1">0.0003</td>
+<td align="left" rowspan="1" colspan="1">1.209</td>
+<td align="left" rowspan="1" colspan="1">0.559</td>
+<td align="left" rowspan="1" colspan="1">0.553</td>
+<td align="left" rowspan="1" colspan="1">0.0260</td>
+<td align="left" rowspan="1" colspan="1">0.793</td>
+<td align="left" rowspan="1" colspan="1">0.556</td>
+<td align="left" rowspan="1" colspan="1">0.533</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Forehead_Neck</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.409</td>
+<td align="left" rowspan="1" colspan="1">0.602</td>
+<td align="left" rowspan="1" colspan="1">0.603</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">1.63</td>
+<td align="left" rowspan="1" colspan="1">0.633</td>
+<td align="left" rowspan="1" colspan="1">0.628</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">WHtR</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.573</td>
+<td align="left" rowspan="1" colspan="1">0.639</td>
+<td align="left" rowspan="1" colspan="1">0.634</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.566</td>
+<td align="left" rowspan="1" colspan="1">0.645</td>
+<td align="left" rowspan="1" colspan="1">0.644</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt103"><label/><p>The AUC values were calculated using 10-fold cross validation. OR: odds ratios; AUC: area under the receiver operating characteristic curve; LR: logistic regression; NB: naïve Bayes.</p></fn></table-wrap-foot></table-wrap>
+<p>Age has a lower ability to discriminate between hypotension and normotension than between hypertension and normotension. In men, the AUC values for age determined by NB and LR were very different (i.e., the AUC for age by NB is the highest in men), although there was not a statistically significant difference between the ages of the hypotensive and normotensive groups (p = 0.334; OR = 0.909). This phenomenon is due to the difference in the intrinsic characteristics of the NB and LR algorithms. Thus, we can consider the use of another machine learning algorithm to obtain a model with better predictive power or better classification accuracy that is more suitable for the features of the data sets that are used in the experiment.</p>
+</sec><sec id="s3c">
+<title>Predictive power of combined indices</title>
+<p><xref ref-type="fig" rid="pone-0084897-g001">Figures 1</xref> and <xref ref-type="fig" rid="pone-0084897-g002">2</xref> present the predictive power of combined indices for normotension versus hypertension and normotension versus hypotension. For predicting normotension versus hypertension, all four prediction methods had greater predictive power in women than in men, and the LR-wrapper method showed the highest predictive power in both women (AUC = 0.721) and men (AUC = 0.652). The models using combined indices showed slight improvements in the AUCs (0.052 in women and of 0.025 in men) compared with the single best predictor (i.e., RibC) among the individual indices.</p>
+<fig id="pone-0084897-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0084897.g001</object-id><label>Figure 1</label><caption>
+<title>AUC values for normotension versus hypertension using combined indices in women and men.</title>
+<p>The AUC values were calculated using 10-fold cross validation. AUC: area under the receiver operating characteristic curve; LR: logistic regression; NB: naïve Bayes; CFS: correlation-based feature selection; wrapper: wrapper-based variable selection.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0084897.g001" position="float" xlink:type="simple"/></fig><fig id="pone-0084897-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0084897.g002</object-id><label>Figure 2</label><caption>
+<title>AUC values for normotension versus hypotension using combined indices in women and men.</title>
+<p>The AUC values were calculated using 10-fold cross validation. AUC: area under the receiver operating characteristic curve; LR: logistic regression; NB: naïve Bayes; CFS: correlation-based feature selection; wrapper: wrapper-based variable selection.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0084897.g002" position="float" xlink:type="simple"/></fig>
+<p>For normotension versus hypotension, the predictive power of the indices was greater in men than in women, in contrast to the prediction of normotension versus hypertension. Of the four methods, the NB-wrapper method had the highest prediction performance in both women (AUC = 0.675) and men (AUC = 0.737). Compared with the best individual predictors (i.e., ChestC in women and NeckC in men), small improvements in the AUCs (approximately 0.018 in women and 0.065 in men) were observed in the models with combinations of indices.</p>
+<p><xref ref-type="table" rid="pone-0084897-t004">Table 4</xref> shows the detailed results of the prediction experiments using combined indices, including sensitivity, 1-specificity, and F-measure results. <xref ref-type="table" rid="pone-0084897-t005">Table 5</xref> lists the indices selected by the CFS and wrapper-based variable selection methods and the two machine learning algorithms. For instance, for predicting normotension versus hypertension, the model constructed using the LR-wrapper method for women included 12 indices (Height, Weight, BMI, Age, ChestC, Forehead_Hip, Waist_Hip, Chest_Pelvic, Waist_Pelvic, Axillary_Waist, Forehead_Rib, and Neck_Axillary) and showed that the sensitivities for normotension and hypertension were 0.969 and 0.109, respectively. The indices selected using the four methods differed according to the characteristics of the variable selection techniques and the two machine learning algorithms. Our results indicate that the model constructed by the LR-wrapper method was better than the other methods for predicting hypertension versus normotension in both men and women, whereas the model built with the NB-wrapper method was superior to the other methods for predicting hypotension versus normotension.</p>
+<table-wrap id="pone-0084897-t004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0084897.t004</object-id><label>Table 4</label><caption>
+<title>Detailed results of prediction experiments using combined indices.</title>
+</caption><alternatives><graphic id="pone-0084897-t004-4" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0084897.t004" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td colspan="3" align="left" rowspan="1">Normotension vs. hypertension</td>
+<td colspan="3" align="left" rowspan="1">Normotension vs. hypotension</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Gender</td>
+<td align="left" rowspan="1" colspan="1">Method</td>
+<td align="left" rowspan="1" colspan="1">Class</td>
+<td align="left" rowspan="1" colspan="1">Sens.</td>
+<td align="left" rowspan="1" colspan="1">1-spe.</td>
+<td align="left" rowspan="1" colspan="1">F-mea.</td>
+<td align="left" rowspan="1" colspan="1">Sens.</td>
+<td align="left" rowspan="1" colspan="1">1-spe.</td>
+<td align="left" rowspan="1" colspan="1">F-mea.</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Women</td>
+<td align="left" rowspan="1" colspan="1">NB-CFS</td>
+<td align="left" rowspan="1" colspan="1">Normotension</td>
+<td align="left" rowspan="1" colspan="1">0.726</td>
+<td align="left" rowspan="1" colspan="1">0.452</td>
+<td align="left" rowspan="1" colspan="1">0.78</td>
+<td align="left" rowspan="1" colspan="1">0.78</td>
+<td align="left" rowspan="1" colspan="1">0.576</td>
+<td align="left" rowspan="1" colspan="1">0.86</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Hypertension</td>
+<td align="left" rowspan="1" colspan="1">0.548</td>
+<td align="left" rowspan="1" colspan="1">0.274</td>
+<td align="left" rowspan="1" colspan="1">0.447</td>
+<td align="left" rowspan="1" colspan="1">0.424</td>
+<td align="left" rowspan="1" colspan="1">0.22</td>
+<td align="left" rowspan="1" colspan="1">0.169</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">LR-CFS</td>
+<td align="left" rowspan="1" colspan="1">Normotension</td>
+<td align="left" rowspan="1" colspan="1">0.967</td>
+<td align="left" rowspan="1" colspan="1">0.908</td>
+<td align="left" rowspan="1" colspan="1">0.863</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">0.97</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Hypertension</td>
+<td align="left" rowspan="1" colspan="1">0.092</td>
+<td align="left" rowspan="1" colspan="1">0.033</td>
+<td align="left" rowspan="1" colspan="1">0.153</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">NB-wrapper</td>
+<td align="left" rowspan="1" colspan="1">Normotension</td>
+<td align="left" rowspan="1" colspan="1">0.889</td>
+<td align="left" rowspan="1" colspan="1">0.696</td>
+<td align="left" rowspan="1" colspan="1">0.847</td>
+<td align="left" rowspan="1" colspan="1">0.955</td>
+<td align="left" rowspan="1" colspan="1">0.852</td>
+<td align="left" rowspan="1" colspan="1">0.951</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Hypertension</td>
+<td align="left" rowspan="1" colspan="1">0.304</td>
+<td align="left" rowspan="1" colspan="1">0.111</td>
+<td align="left" rowspan="1" colspan="1">0.363</td>
+<td align="left" rowspan="1" colspan="1">0.148</td>
+<td align="left" rowspan="1" colspan="1">0.045</td>
+<td align="left" rowspan="1" colspan="1">0.157</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">LR-wrapper</td>
+<td align="left" rowspan="1" colspan="1">Normotension</td>
+<td align="left" rowspan="1" colspan="1">0.969</td>
+<td align="left" rowspan="1" colspan="1">0.891</td>
+<td align="left" rowspan="1" colspan="1">0.866</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">0.97</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Hypertension</td>
+<td align="left" rowspan="1" colspan="1">0.109</td>
+<td align="left" rowspan="1" colspan="1">0.031</td>
+<td align="left" rowspan="1" colspan="1">0.18</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Men</td>
+<td align="left" rowspan="1" colspan="1">NB-CFS</td>
+<td align="left" rowspan="1" colspan="1">Normotension</td>
+<td align="left" rowspan="1" colspan="1">0.704</td>
+<td align="left" rowspan="1" colspan="1">0.521</td>
+<td align="left" rowspan="1" colspan="1">0.733</td>
+<td align="left" rowspan="1" colspan="1">0.949</td>
+<td align="left" rowspan="1" colspan="1">0.853</td>
+<td align="left" rowspan="1" colspan="1">0.963</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Hypertension</td>
+<td align="left" rowspan="1" colspan="1">0.479</td>
+<td align="left" rowspan="1" colspan="1">0.296</td>
+<td align="left" rowspan="1" colspan="1">0.438</td>
+<td align="left" rowspan="1" colspan="1">0.147</td>
+<td align="left" rowspan="1" colspan="1">0.051</td>
+<td align="left" rowspan="1" colspan="1">0.097</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">LR-CFS</td>
+<td align="left" rowspan="1" colspan="1">Normotension</td>
+<td align="left" rowspan="1" colspan="1">0.968</td>
+<td align="left" rowspan="1" colspan="1">0.915</td>
+<td align="left" rowspan="1" colspan="1">0.824</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">0.987</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Hypertension</td>
+<td align="left" rowspan="1" colspan="1">0.085</td>
+<td align="left" rowspan="1" colspan="1">0.032</td>
+<td align="left" rowspan="1" colspan="1">0.146</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">NB-wrapper</td>
+<td align="left" rowspan="1" colspan="1">Normotension</td>
+<td align="left" rowspan="1" colspan="1">0.796</td>
+<td align="left" rowspan="1" colspan="1">0.613</td>
+<td align="left" rowspan="1" colspan="1">0.776</td>
+<td align="left" rowspan="1" colspan="1">0.998</td>
+<td align="left" rowspan="1" colspan="1">0.971</td>
+<td align="left" rowspan="1" colspan="1">0.986</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Hypertension</td>
+<td align="left" rowspan="1" colspan="1">0.387</td>
+<td align="left" rowspan="1" colspan="1">0.204</td>
+<td align="left" rowspan="1" colspan="1">0.413</td>
+<td align="left" rowspan="1" colspan="1">0.029</td>
+<td align="left" rowspan="1" colspan="1">0.002</td>
+<td align="left" rowspan="1" colspan="1">0.053</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">LR-wrapper</td>
+<td align="left" rowspan="1" colspan="1">Normotension</td>
+<td align="left" rowspan="1" colspan="1">0.964</td>
+<td align="left" rowspan="1" colspan="1">0.885</td>
+<td align="left" rowspan="1" colspan="1">0.826</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">0.987</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Hypertension</td>
+<td align="left" rowspan="1" colspan="1">0.115</td>
+<td align="left" rowspan="1" colspan="1">0.036</td>
+<td align="left" rowspan="1" colspan="1">0.192</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt104"><label/><p>The results were calculated using 10-fold cross validation. LR: logistic regression; NB: naïve Bayes; CFS: correlation based feature selection; wrapper: wrapper-based variable selection; Sens.: sensitivity; 1-spe.: 1-specificity; F-mea.: F-measure.</p></fn></table-wrap-foot></table-wrap><table-wrap id="pone-0084897-t005" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0084897.t005</object-id><label>Table 5</label><caption>
+<title>Selected indices based on the CFS and wrapper-based variable selection techniques.</title>
+</caption><alternatives><graphic id="pone-0084897-t005-5" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0084897.t005" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Gender</td>
+<td align="left" rowspan="1" colspan="1">Class</td>
+<td align="left" rowspan="1" colspan="1">Method</td>
+<td align="left" rowspan="1" colspan="1">Num.</td>
+<td align="left" rowspan="1" colspan="1">Selected indices</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Women</td>
+<td align="left" rowspan="1" colspan="1">Normotension vs. Hypertension</td>
+<td align="left" rowspan="1" colspan="1">CFS</td>
+<td align="left" rowspan="1" colspan="1">15</td>
+<td align="left" rowspan="1" colspan="1">Height, Age, NeckC, AxillaryC, RibC, WaistC, PelvicC, Rib_Hip, Waist_Hip, Pelvic_Hip, Rib_Pelvic, Axillary_Rib, Chest_Rib, Axillary_Chest, Forehead_Neck</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">NB-wrapper</td>
+<td align="left" rowspan="1" colspan="1">9</td>
+<td align="left" rowspan="1" colspan="1">Height, Age, ForeheadC, NeckC, HipC, Axillary_Hip, Axillary_Pelvic, Chest_Pelvic, Chest_Rib</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">LR-wrapper</td>
+<td align="left" rowspan="1" colspan="1">12</td>
+<td align="left" rowspan="1" colspan="1">Height, Weight, BMI, Age, ChestC, Forehead_Hip, Waist_Hip, Chest_Pelvic, Waist_Pelvic, Axillary_Waist, Forehead_Rib, Neck_Axillary</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Normotension vs. Hypotension</td>
+<td align="left" rowspan="1" colspan="1">CFS</td>
+<td align="left" rowspan="1" colspan="1">18</td>
+<td align="left" rowspan="1" colspan="1">Weight, BMI, Age, ForeheadC, NeckC, AxillaryC, WaistC, PelvicC, Forehead_Hip, Axillary_Hip, Chest_Hip, Waist_Hip, Pelvic_Hip, Chest_Pelvic, Rib_Waist, Neck_Rib, Forehead_Chest, Axillary_Chest</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">NB-wrapper</td>
+<td align="left" rowspan="1" colspan="1">9</td>
+<td align="left" rowspan="1" colspan="1">Weight, Age, ForeheadC, NeckC, AxillaryC, Chest_Hip, Pelvic_Hip, Waist_Pelvic, Rib_Waist</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">LR-wrapper</td>
+<td align="left" rowspan="1" colspan="1">12</td>
+<td align="left" rowspan="1" colspan="1">Weight, Age, ForeheadC, Axillary_Hip, Rib_Hip, Axillary_Waist, Rib_Waist, Forehead_Rib, Neck_Rib, Chest_Rib, Forehead_Axillary, Neck_Axillary</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Men</td>
+<td align="left" rowspan="1" colspan="1">Normotension vs. Hypertension</td>
+<td align="left" rowspan="1" colspan="1">CFS</td>
+<td align="left" rowspan="1" colspan="1">18</td>
+<td align="left" rowspan="1" colspan="1">Age, ForeheadC, NeckC, AxillaryC, ChestC, RibC, WaistC, PelvicC, HipC, Rib_Hip, Waist_Hip, Rib_Pelvic, Waist_Pelvic, Chest_Waist, Forehead_Rib, Chest_Rib, Axillary_Chest, Forehead_Neck</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">NB-wrapper</td>
+<td align="left" rowspan="1" colspan="1">15</td>
+<td align="left" rowspan="1" colspan="1">Height, Age, ForeheadC, NeckC, AxillaryC, HipC, Rib_Hip, Pelvic_Hip, Neck_Pelvic, Waist_Pelvic, Chest_Waist, Chest_Rib, Neck_Chest, Axillary_Chest, Forehead_Neck</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">LR-wrapper</td>
+<td align="left" rowspan="1" colspan="1">19</td>
+<td align="left" rowspan="1" colspan="1">Height, ForeheadC, NeckC, AxillaryC, RibC, PelvicC, Forehead_Hip, Chest_Hip, Rib_Hip, Pelvic_Hip, Forehead_Waist, Axillary_Waist, Rib_Waist, Neck_Rib, Axillary_Rib, Chest_Rib, Forehead_Axillary, Forehead_Neck, WHtR</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Normotension vs. Hypotension</td>
+<td align="left" rowspan="1" colspan="1">CFS</td>
+<td align="left" rowspan="1" colspan="1">10</td>
+<td align="left" rowspan="1" colspan="1">Weight, Age, ForeheadC, NeckC, RibC, PelvicC, Neck_Hip, Waist_Hip, Pelvic_Hip, Waist_Pelvic</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">NB-wrapper</td>
+<td align="left" rowspan="1" colspan="1">7</td>
+<td align="left" rowspan="1" colspan="1">Height, BMI, Age, ForeheadC, Neck_Hip, Axillary_Hip, Axillary_Chest</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">LR-wrapper</td>
+<td align="left" rowspan="1" colspan="1">13</td>
+<td align="left" rowspan="1" colspan="1">BMI, ForeheadC, RibC, HipC, Forehead_Hip, Axillary_Pelvic, Rib_Pelvic, Waist_Pelvic, Rib_Waist, Axillary_Chest, Forehead_Axillary, Neck_Axillary, Forehead_Neck</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap></sec></sec><sec id="s4">
+<title>Discussion</title>
+<p>Numerous epidemiologic studies support an association between obesity and blood pressure, and many studies have focused not only on the association between hypertension and anthropometric indices but also on identifying the best indicator of hypertension among anthropometric indices. The strongest association or the best predictor of the risk of hypertension can differ according to residence area (rural or urban) <xref ref-type="bibr" rid="pone.0084897-Kim2">[2]</xref>, gender <xref ref-type="bibr" rid="pone.0084897-Sakurai1">[16]</xref>, <xref ref-type="bibr" rid="pone.0084897-RodriguesBarbosa1">[18]</xref>, cultural group <xref ref-type="bibr" rid="pone.0084897-RodriguesBarbosa1">[18]</xref>, and country or ethnic group. Specifically, studies have stated that BMI is the strongest indicator of hypertension in Japanese women <xref ref-type="bibr" rid="pone.0084897-Sakurai1">[16]</xref>, Japanese men and women <xref ref-type="bibr" rid="pone.0084897-Oda1">[17]</xref>, elderly Cuban women <xref ref-type="bibr" rid="pone.0084897-RodriguesBarbosa1">[18]</xref>, and Indian men and women <xref ref-type="bibr" rid="pone.0084897-Gupta1">[40]</xref>. For example, through analyses using AUC values and odds ratios, Gupta and Kapoor <xref ref-type="bibr" rid="pone.0084897-Gupta1">[40]</xref> documented that an elevated BMI was the strongest indicator of having hypertension in a North Indian population, while many studies have suggested that WC is the best predictor in elderly women from Barbados <xref ref-type="bibr" rid="pone.0084897-RodriguesBarbosa1">[18]</xref>, elderly Cuban men <xref ref-type="bibr" rid="pone.0084897-RodriguesBarbosa1">[18]</xref>, Netherlands Antilles women and men <xref ref-type="bibr" rid="pone.0084897-Grievink1">[19]</xref>, Italian men and women <xref ref-type="bibr" rid="pone.0084897-Guagnano1">[20]</xref>, Brazilian women <xref ref-type="bibr" rid="pone.0084897-Olinto1">[41]</xref>, Indian men and women <xref ref-type="bibr" rid="pone.0084897-Nahar1">[42]</xref>, Greek men and women <xref ref-type="bibr" rid="pone.0084897-Panagiotakos1">[21]</xref>, Taiwanese women <xref ref-type="bibr" rid="pone.0084897-Tseng1">[22]</xref>, and Japanese men <xref ref-type="bibr" rid="pone.0084897-Sakurai1">[16]</xref>. In studies of elderly men from Barbados <xref ref-type="bibr" rid="pone.0084897-RodriguesBarbosa1">[18]</xref>, Iraqi men and women <xref ref-type="bibr" rid="pone.0084897-Mansour1">[43]</xref>, and Taiwanese men <xref ref-type="bibr" rid="pone.0084897-Tseng1">[22]</xref>, WHtR was the strongest predictor of hypertension. For instance, Ashwell and colleagues <xref ref-type="bibr" rid="pone.0084897-Ashwell1">[44]</xref> documented that the predictive power of WHtR for hypertension risk was better than that of BMI and WC in both men and women based on a meta-analysis of 18 studies of men and 19 studies of women from various countries. WHR is the best predictor in Argentine men and women <xref ref-type="bibr" rid="pone.0084897-Feldstein1">[24]</xref> and Australian indigenous men and women <xref ref-type="bibr" rid="pone.0084897-Li1">[25]</xref>. For example, a study by Li and McDermott <xref ref-type="bibr" rid="pone.0084897-Li1">[25]</xref> suggested that BMI was the poorest predictor of hypertension in Australian indigenous men and women, whereas WHR was the strongest predictor among several indices. Other studies documented that both BMI and WC are the strongest indicators in elderly Mexican men and women <xref ref-type="bibr" rid="pone.0084897-SanchezViveros1">[15]</xref> and Croatian men and women <xref ref-type="bibr" rid="pone.0084897-Uhernik1">[26]</xref> and that BMI, WC, and WHtR are the best predictors in Brazilian men and women <xref ref-type="bibr" rid="pone.0084897-Silva1">[14]</xref>. In Brazilian men and women <xref ref-type="bibr" rid="pone.0084897-Fuchs1">[45]</xref> and in Chinese men and women in Hong Kong <xref ref-type="bibr" rid="pone.0084897-Ko2">[46]</xref>, both WHtR and WHR are the strongest predictors of the risk of hypertension. In Korea, hypertension is common and represents a major public health problem <xref ref-type="bibr" rid="pone.0084897-Kim3">[3]</xref>, <xref ref-type="bibr" rid="pone.0084897-Jo1">[4]</xref>, <xref ref-type="bibr" rid="pone.0084897-Park1">[23]</xref>. A number of studies have been performed to measure the association of hypertension with anthropometric indices and to determine the best predictor of the risk of hypertension in both women and men. A study by Kim and colleagues <xref ref-type="bibr" rid="pone.0084897-Kim3">[3]</xref> reported that hypertension is associated with BMI, family history of hypertension, alcohol intake, and place of residence (rural or urban), and a study by Jo and colleagues <xref ref-type="bibr" rid="pone.0084897-Jo1">[4]</xref> stated that BMI and WC are associated with hypertension in Korean men and women. Park and colleagues <xref ref-type="bibr" rid="pone.0084897-Park1">[23]</xref> suggested that WHtR is a better predictor of hypertension than WC and BMI. Our results differ from those of previous studies conducted in Korea. The reason for this is that previous studies only examined the association or predictive power of a few indices, whereas we used various indices measured in specific areas of the body (i.e., RibC, AxillaryC, and NeckC, the best predictors of hypertension or hypotension in our study, were not used in previous studies).</p>
+<p>Jo and colleagues <xref ref-type="bibr" rid="pone.0084897-Jo1">[4]</xref> showed that the association between age and hypertension is stronger in Korean women than in Korean men, although age was significantly associated with hypertension in both sexes. Our results agree with those of Jo and colleagues <xref ref-type="bibr" rid="pone.0084897-Jo1">[4]</xref>; our data indicate that the association between age and hypertension is higher in women than in men and that the predictive power of age for hypertension is stronger in women than in men. Previously, the association of isolated systolic hypertension (ISH) with anthropometric indices in both Korean men and women was identified by two studies <xref ref-type="bibr" rid="pone.0084897-Kim1">[1]</xref>, <xref ref-type="bibr" rid="pone.0084897-Kim2">[2]</xref> that stated that increasing age, BMI, and WHR are associated with ISH risk. However, one study suggested that geographical differences (urban versus rural area of residence) were not associated with ISH <xref ref-type="bibr" rid="pone.0084897-Kim1">[1]</xref>, whereas another study argued that the prevalence of ISH differed in rural and urban areas; thus, different results related to hypertension in rural and urban areas have been obtained <xref ref-type="bibr" rid="pone.0084897-Kim2">[2]</xref>. Unfortunately, our study does not contribute to the understanding of geographical differences in hypertension because we did not consider residence area in our data analysis.</p>
+<p>The results of several previous studies conducted in other countries corroborate our finding of an association of NeckC and ChestC with blood pressure. In studies on the association of NeckC with blood pressure <xref ref-type="bibr" rid="pone.0084897-BenNoun1">[47]</xref>–<xref ref-type="bibr" rid="pone.0084897-Laakso1">[53]</xref>, Ben-Noun and Laor <xref ref-type="bibr" rid="pone.0084897-BenNoun1">[47]</xref>, <xref ref-type="bibr" rid="pone.0084897-BenNoun2">[48]</xref> reported that NeckC is positively correlated with diastolic and systolic blood pressure and that it is correlated with WaistC and Waist_Hip in Israeli men and women. The authors argued that changes in NeckC induce changes in diastolic and systolic blood pressure. In Chinese men and women <xref ref-type="bibr" rid="pone.0084897-Zhou1">[49]</xref>, Zhou and colleagues demonstrated that NeckC is positively correlated with diastolic and systolic blood pressure, total cholesterol, and triglyceride levels and showed that it independently contributes to the identification of cardiometabolic syndrome beyond BMI, WaistC, and Waist_Hip indices, although the predictive power of NeckC was relatively lower than those of the other indices. They argued that NeckC is a more efficient and reliable anthropometric index than WaistC because WaistC is affected by stomach contents, respiratory movements, and clothing. In Argentine women and men <xref ref-type="bibr" rid="pone.0084897-Alfie1">[50]</xref>, Alfie and colleagues presented evidence that neck obesity is associated with an increase in the prevalence of hypertension and showed that NeckC is a valuable index for discriminating hypertension and normotension. Furthermore, they indicated that NeckC was particularly helpful in distinguishing between hypertensive and normotensive individuals with normal abdominal measurements obtained by the WaistC index. In the Framingham Heart Study <xref ref-type="bibr" rid="pone.0084897-Preis1">[51]</xref>, Preis and colleagues studied the association of NeckC with cardiometabolic risk factors such as blood pressure, triglycerides, fasting plasma glucose, insulin, proinsulin, and cholesterol and showed that NeckC is positively associated with diastolic blood pressure in men and positively associated with systolic blood pressure in both men and women. In Brazilian women <xref ref-type="bibr" rid="pone.0084897-Tibana1">[52]</xref>, Tibana and colleagues suggested that women with NeckC ≥35 cm had higher values of systolic blood pressure, glycated hemoglobin, and glucose compared with women with NeckC &lt;35 cm and argued that women with higher NeckC tend to have higher cardiovascular risk factors. A study by Laakso and colleagues <xref ref-type="bibr" rid="pone.0084897-Laakso1">[53]</xref> tested the association of NeckC with WaistC, BMI, and Waist_Hip as well as with hypertension, lipid disorders, glucose intolerance, and hyperinsulinemia in Finnish men and women. The authors concluded that BMI, Waist_Hip, and WaistC correlated strongly with NeckC; the odds ratios for hypertension in the highest quintile of NeckC compared with the lowest quintile were 2.94 in women and 3.21 in men after adjustment of BMI in logistic regression.</p>
+<p>In studies on the association of ChestC or breast circumference and blood pressure <xref ref-type="bibr" rid="pone.0084897-Seidell1">[54]</xref>–<xref ref-type="bibr" rid="pone.0084897-Badaruddoza1">[57]</xref> in European women in the Netherlands, Poland, Sweden, and Italy <xref ref-type="bibr" rid="pone.0084897-Seidell1">[54]</xref>, Seidell and colleagues documented that breast circumference and WaistC indices were positively correlated with diastolic blood pressure in women aged 38 years, while circumference ratios such as WHR, waist–to-thigh, and breast-to-hip were not associated with diastolic blood pressure. These authors suggested that the breast circumference index is strongly associated with metabolic risk indicated by diastolic blood pressure and by total cholesterol, HDL cholesterol, triglyceride, and insulin levels in women. In Chinese twins 7–12 years of age <xref ref-type="bibr" rid="pone.0084897-Wang1">[55]</xref>, Wang and colleagues found significant correlations of systolic and diastolic blood pressures with ChestC, weight, height, subscapular skin-fold and BMI and argued that blood pressure is less strongly associated with inherited factors than with environmental factors. Yao and colleagues <xref ref-type="bibr" rid="pone.0084897-Yao1">[56]</xref> examined predictions of coronary heart disease mortality based on many anthropometric indices of white middle-aged railroad employees in the United States and found that systolic blood pressure was significantly correlated with ChestC and BMI. This study also indicated that the ratio of ChestC to biacromial diameter was significantly associated with coronary heart disease mortality. In Indian adults <xref ref-type="bibr" rid="pone.0084897-Badaruddoza1">[57]</xref>, Badaruddoza and Kumar studied the association of blood pressure with anthropometric indices in parent and child generations based on 1096 subjects comprising 350 families. The authors showed that ChestC, WaistC, arm circumference, calf circumference, weight, head length, biceps skinfold, triceps skinfold, and subscapular skinfold were significantly correlated with blood pressure in both parent and child generations; further, they found that the general household environment for several anthropometric measurements was one of the critical determinants of systolic and diastolic blood pressures and mean arterial blood pressure. However, despite the results of the present study and of other studies, we think that the reproducibility of chest, rib, and neck circumference measurements should be addressed and that additional studies on the possible association of neck, chest, and rib circumferences with blood pressure should be conducted in different countries and ethnic groups.</p>
+<p>Although numerous studies of the possible association between blood pressure and anthropometric indices have been conducted in many countries and ethnic groups, no published studies have addressed possible anthropometric predictors of hypotension. Low diastolic pressure (i.e., hypotension) is a risk factor for dementia and Alzheimer's disease <xref ref-type="bibr" rid="pone.0084897-Verghese1">[58]</xref>, <xref ref-type="bibr" rid="pone.0084897-Kennelly1">[59]</xref>. Verghese and colleagues <xref ref-type="bibr" rid="pone.0084897-Verghese1">[58]</xref> stated that old people with continuously low blood pressure are at higher risk for dementia. Similar results supporting an association between low diastolic blood pressure or hypotension in later life with dementia and Alzheimer's disease were summarized in a recent review by Kennelly and colleagues <xref ref-type="bibr" rid="pone.0084897-Kennelly1">[59]</xref>. Our findings show that many anthropometric indices such as BMI, NeckC, WHtR, and WaistC indices are associated with hypotension in Korean women and men; furthermore, analysis of the predictive power of the indices showed that the best predictors of hypotension and hypertension may differ.</p>
+<p>Based on the odds ratios and p-values observed in this study, many of the individual indices that were measured showed statistically significant differences between individuals with hypertension or hypotension and those with normotension. However, it is difficult to achieve good predictive power for hypotension versus normotension in individual or combined indices because of the lack of normotensive samples in this study. In empirical applications in many research fields, a class imbalance problem (imbalanced data set) frequently occurs due to the presence of a large number of samples or subjects in one class and few samples in the other class <xref ref-type="bibr" rid="pone.0084897-Oommen1">[60]</xref>. For example, with regard to medical diagnoses, subjects with a given disease are usually rarer than normal subjects <xref ref-type="bibr" rid="pone.0084897-Tang1">[61]</xref>, <xref ref-type="bibr" rid="pone.0084897-Lin1">[62]</xref>. The class imbalance problem is a significant drawback for prediction performance in most standard machine learning algorithms, including binary logistic regression, because most traditional classification algorithms are designed with equal sample sizes of negative and positive classes <xref ref-type="bibr" rid="pone.0084897-Wasikowski1">[63]</xref>, <xref ref-type="bibr" rid="pone.0084897-He1">[64]</xref> and are based on a hypothesis of a truly equivalent cost for incorrect predictions in each class for the maximal number of correct classified samples <xref ref-type="bibr" rid="pone.0084897-Lin1">[62]</xref>. In reality, unusual and rare samples are notably more difficult to predict than typical and large samples <xref ref-type="bibr" rid="pone.0084897-Lin1">[62]</xref>, <xref ref-type="bibr" rid="pone.0084897-Weiss1">[65]</xref>. In our data, a problem of this nature arose. For instance, although the normotensive sample of men was very large (3777), there were very few men with hypotension in our sample (102). Therefore, as shown in <xref ref-type="table" rid="pone-0084897-t004">Table 4</xref>, the sensitivity values for normotension showed good predictive power but the sensitivity values for hypotension were very poor. Several research fields, including data mining, statistics, medical science, and machine learning, have attempted to solve the class imbalance problem using under- and over-sampling, synthetic sampling, and cost-sensitive learning <xref ref-type="bibr" rid="pone.0084897-Weiss1">[65]</xref>. However, in the present study, we used original data that have characteristics typical of data in the epidemiological and medical fields; we did not apply any sampling methods and focused on the reliability of the predictive power of individual indices and combined indices using two machine learning algorithms and 10-fold cross-validation.</p>
+<p>The limitations of the present study include the inability to make causal inferences about the associations between hypotension and hypertension and anthropometric indices because the study is cross-sectional. The nature of cross-sectional studies precludes conclusions about cause–effect relationships. In addition, the number of men with hypotension was very small compared with the number of men with hypertension, which may result in a class imbalance problem for classifications or predictions. Finally, although prediction methods that use several anthropometric indices slightly improve predictive power for blood pressure status, from a practical point of view these methods have several weaknesses, such as the increase of the number of body measurements needed and the increased time required for the calculation of the ratio of two anthropometric indices. As a result, methods that use combined anthropometric indices require more human resources, better control of the measured data, and additional time for measurement, calculation, and management.</p>
+</sec><sec id="s5">
+<title>Conclusion</title>
+<p>High blood pressure, which is a major health problem worldwide, is associated with adiposity and body fat distribution. Until now, studies have focused on the association between anthropometry and hypertension but not on the possible associations between anthropometric indicators and hypotension. In this study, we examined the association between anthropometric indicators and hypertension and hypotension in Korean adults and compared the predictive power of each individual index using binary logistic regression and naive Bayes. In addition, we used combined indices to achieve better predictive power with 4 prediction methods. Our findings suggest that the best predictors of hypertension and hypotension risk may differ. In both women and men, RibC seems to be the best predictor of hypertension, whereas the strongest indicators of hypotension appear to be ChestC in women and NeckC in men. The use of combined indices appears to slightly improve the predictive power of anthropometry for both hypertension and hypotension. Our findings provide additional information that may help develop a better initial screening tool for hypertension and hypotension. To our knowledge, this is the first report of an association between anthropometric indicators and hypotension that includes a comparison of the predictive power of various indices for hypertension and hypotension.</p>
+</sec></body>
+<back><ref-list>
+<title>References</title>
+<ref id="pone.0084897-Kim1"><label>1</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kim</surname><given-names>JA</given-names></name>, <name name-style="western"><surname>Kim</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Choi</surname><given-names>YS</given-names></name>, <name name-style="western"><surname>Yoon</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Lee</surname><given-names>JS</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>The prevalence and risk factors associated with isolated untreated systolic hypertension in Korea: the Korean National Health and Nutrition Survey 2001</article-title>. <source>J Hum Hypertens</source> <volume>21</volume>: <fpage>107</fpage>–<lpage>113</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Kim2"><label>2</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kim</surname><given-names>BG</given-names></name>, <name name-style="western"><surname>Park</surname><given-names>JT</given-names></name>, <name name-style="western"><surname>Ahn</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Kimm</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Shin</surname><given-names>C</given-names></name> (<year>2005</year>) <article-title>Geographical difference in the prevalence of isolated systolic hypertension in middle-aged men and women in Korea: the Korean Health and Genome Study</article-title>. <source>J Hum Hypertens</source> <volume>19</volume>: <fpage>877</fpage>–<lpage>883</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Kim3"><label>3</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kim</surname><given-names>JS</given-names></name>, <name name-style="western"><surname>Jones</surname><given-names>DW</given-names></name>, <name name-style="western"><surname>Kim</surname><given-names>SJ</given-names></name>, <name name-style="western"><surname>Hong</surname><given-names>YP</given-names></name> (<year>1994</year>) <article-title>Hypertension in Korea: a national survey</article-title>. <source>Am J Prev Med</source> <volume>10</volume>: <fpage>200</fpage>–<lpage>204</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Jo1"><label>4</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jo</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Ahn</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Lee</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Shin</surname><given-names>KR</given-names></name>, <name name-style="western"><surname>Lee</surname><given-names>HK</given-names></name>, <etal>et al</etal>. (<year>2001</year>) <article-title>Prevalence, awareness, treatment, control and risk factors of hypertension in Korea: the Ansan study</article-title>. <source>J Hypertens</source> <volume>19</volume>: <fpage>1523</fpage>–<lpage>1532</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Okosun1"><label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Okosun</surname><given-names>IS</given-names></name>, <name name-style="western"><surname>Cooper</surname><given-names>RS</given-names></name>, <name name-style="western"><surname>Rotimi</surname><given-names>CN</given-names></name>, <name name-style="western"><surname>Osotimehin</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Forrester</surname><given-names>T</given-names></name> (<year>1998</year>) <article-title>Association of waist circumference with risk of hypertension and type 2 diabetes in Nigerians, Jamaicans, and African-Americans</article-title>. <source>Diabetes Care</source> <volume>21</volume>: <fpage>1836</fpage>–<lpage>1842</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Janssen1"><label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Janssen</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Katzmarzyk</surname><given-names>PT</given-names></name>, <name name-style="western"><surname>Ross</surname><given-names>R</given-names></name> (<year>2004</year>) <article-title>Waist circumference and not body mass index explains obesity-related health risk</article-title>. <source>Am J Clin Nutr</source> <volume>79</volume>: <fpage>379</fpage>–<lpage>384</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Hu1"><label>7</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hu</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Tuomilehto</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Silventoinen</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Sarti</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Männistö</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Body mass index, waist circumference, and waist-hip ratio on the risk of total and type-specific stroke</article-title>. <source>Arch Intern Med</source> <volume>167</volume>: <fpage>1420</fpage>–<lpage>1427</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Dalton1"><label>8</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dalton</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Cameron</surname><given-names>AJ</given-names></name>, <name name-style="western"><surname>Zimmet</surname><given-names>PZ</given-names></name>, <name name-style="western"><surname>Shaw</surname><given-names>JE</given-names></name>, <name name-style="western"><surname>Jolley</surname><given-names>D</given-names></name>, <etal>et al</etal>. (<year>2003</year>) <article-title>Waist circumference, waist-hip ratio and body mass index and their correlation with cardiovascular disease risk factors in Australian adults</article-title>. <source>J Intern Med</source> <volume>254</volume>: <fpage>555</fpage>–<lpage>563</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Balkau1"><label>9</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Balkau</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Deanfield</surname><given-names>JE</given-names></name>, <name name-style="western"><surname>Després</surname><given-names>JP</given-names></name>, <name name-style="western"><surname>Bassand</surname><given-names>JP</given-names></name>, <name name-style="western"><surname>Fox</surname><given-names>KA</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>International Day for the Evaluation of Abdominal Obesity (IDEA): a study of waist circumference, cardiovascular disease, and diabetes mellitus in 168,000 primary care patients in 63 countries</article-title>. <source>Circulation</source> <volume>116</volume>: <fpage>1942</fpage>–<lpage>1951</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Wildman1"><label>10</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wildman</surname><given-names>RP</given-names></name>, <name name-style="western"><surname>Gu</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Reynolds</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Duan</surname><given-names>X</given-names></name>, <name name-style="western"><surname>Wu</surname><given-names>X</given-names></name>, <etal>et al</etal>. (<year>2005</year>) <article-title>Are waist circumference and body mass index independently associated with cardiovascular disease risk in Chinese adults?</article-title> <source>Am J Clin Nutr</source> <volume>82</volume>: <fpage>1195</fpage>–<lpage>1202</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Lee1"><label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lee</surname><given-names>BJ</given-names></name>, <name name-style="western"><surname>Ku</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Nam</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Pham</surname><given-names>DD</given-names></name>, <name name-style="western"><surname>Kim</surname><given-names>JY</given-names></name> (<year>2013</year>) <article-title>Prediction of fasting plasma glucose status using anthropometric measures for diagnosing type 2 diabetes</article-title>. <source>IEEE Journal of Biomedical and Health Informatics</source> <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1109/JBHI.2013.2264509,Inpress" xlink:type="simple">10.1109/JBHI.2013.2264509, In press</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0084897-Alberti1"><label>12</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Alberti</surname><given-names>KG</given-names></name>, <name name-style="western"><surname>Zimmet</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Shaw</surname><given-names>J</given-names></name> (<year>2005</year>) <collab xlink:type="simple">IDF Epidemiology Task Force Consensus Group</collab> (<year>2005</year>) <article-title>The metabolic syndrome-a new worldwide definition</article-title>. <source>Lancet</source> <volume>366</volume>: <fpage>1059</fpage>–<lpage>1062</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Grunstein1"><label>13</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Grunstein</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Wilcox</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Yang</surname><given-names>TS</given-names></name>, <name name-style="western"><surname>Gould</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Hedner</surname><given-names>J</given-names></name> (<year>1993</year>) <article-title>Snoring and sleep apnoea in men: association with central obesity and hypertension</article-title>. <source>Int J Obes Relat Metab Disord</source> <volume>17</volume>: <fpage>533</fpage>–<lpage>540</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Silva1"><label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Silva</surname><given-names>DA</given-names></name>, <name name-style="western"><surname>Petroski</surname><given-names>EL</given-names></name>, <name name-style="western"><surname>Peres</surname><given-names>MA</given-names></name> (<year>2013</year>) <article-title>Accuracy and measures of association of anthropometric indexes of obesity to identify the presence of hypertension in adults: a population-based study in Southern Brazil</article-title>. <source>Eur J Nutr</source> <volume>52</volume>: <fpage>237</fpage>–<lpage>246</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-SanchezViveros1"><label>15</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sanchez-Viveros</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Barquera</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Medina-Solis</surname><given-names>CE</given-names></name>, <name name-style="western"><surname>Velzquez-Alva</surname><given-names>MC</given-names></name>, <name name-style="western"><surname>Valdez</surname><given-names>R</given-names></name> (<year>2008</year>) <article-title>Association between diabetes mellitus and hypertension with anthropometric indicators in older adults: results of the Mexican Health Survey, 2000</article-title>. <source>J Nutr Health Aging</source> <volume>12</volume>: <fpage>327</fpage>–<lpage>333</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Sakurai1"><label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sakurai</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Miura</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Takamura</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Ota</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Ishizaki</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Gender differences in the association between anthropometric indices of obesity and blood pressure in Japanese</article-title>. <source>Hypertens Res</source> <volume>29</volume>: <fpage>75</fpage>–<lpage>80</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Oda1"><label>17</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Oda</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Kawai</surname><given-names>R</given-names></name> (<year>2010</year>) <article-title>Body mass index is more strongly associated with hypertension than waist circumference in apparently healthy Japanese men and women</article-title>. <source>Acta Diabetol</source> <volume>47</volume>: <fpage>309</fpage>–<lpage>313</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-RodriguesBarbosa1"><label>18</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rodrigues Barbosa</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Balduino Munaretti</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Da Silva Coqueiro</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Ferreti Borgatto</surname><given-names>A</given-names></name> (<year>2011</year>) <article-title>Anthropometric indexes of obesity and hypertension in elderly from Cuba and Barbados</article-title>. <source>J Nutr Health Aging</source> <volume>15</volume>: <fpage>17</fpage>–<lpage>21</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Grievink1"><label>19</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Grievink</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Alberts</surname><given-names>JF</given-names></name>, <name name-style="western"><surname>O'Niel</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Gerstenbluth</surname><given-names>I</given-names></name> (<year>2004</year>) <article-title>Waist circumference as a measurement of obesity in the Netherlands Antilles; associations with hypertension and diabetes mellitus</article-title>. <source>Eur J Clin Nutr</source> <volume>58</volume>: <fpage>1159</fpage>–<lpage>1165</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Guagnano1"><label>20</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Guagnano</surname><given-names>MT</given-names></name>, <name name-style="western"><surname>Ballone</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Colagrande</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Della Vecchia</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Manigrasso</surname><given-names>MR</given-names></name>, <etal>et al</etal>. (<year>2001</year>) <article-title>Large waist circumference and risk of hypertension</article-title>. <source>Int J Obes Relat Metab Disord</source> <volume>25</volume>: <fpage>1360</fpage>–<lpage>1364</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Panagiotakos1"><label>21</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Panagiotakos</surname><given-names>DB</given-names></name>, <name name-style="western"><surname>Chrysohoou</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Pitsavos</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Skoumas</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Lentzas</surname><given-names>Y</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Hierarchical analysis of anthropometric indices in the prediction of 5-year incidence of hypertension in apparently healthy adults: the ATTICA study</article-title>. <source>Atherosclerosis</source> <volume>206</volume>: <fpage>314</fpage>–<lpage>320</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Tseng1"><label>22</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tseng</surname><given-names>CH</given-names></name>, <name name-style="western"><surname>Chong</surname><given-names>CK</given-names></name>, <name name-style="western"><surname>Chan</surname><given-names>TT</given-names></name>, <name name-style="western"><surname>Bai</surname><given-names>CH</given-names></name>, <name name-style="western"><surname>You</surname><given-names>SL</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Optimal anthropometric factor cutoffs for hyperglycemia, hypertension and dyslipidemia for the Taiwanese population</article-title>. <source>Atherosclerosis</source> <volume>210</volume>: <fpage>585</fpage>–<lpage>589</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Park1"><label>23</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Park</surname><given-names>SH</given-names></name>, <name name-style="western"><surname>Choi</surname><given-names>SJ</given-names></name>, <name name-style="western"><surname>Lee</surname><given-names>KS</given-names></name>, <name name-style="western"><surname>Park</surname><given-names>HY</given-names></name> (<year>2009</year>) <article-title>Waist circumference and waist-to-height ratio as predictors of cardiovascular disease risk in Korean adults</article-title>. <source>Circ J</source> <volume>73</volume>: <fpage>1643</fpage>–<lpage>1650</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Feldstein1"><label>24</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Feldstein</surname><given-names>CA</given-names></name>, <name name-style="western"><surname>Akopian</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Olivieri</surname><given-names>AO</given-names></name>, <name name-style="western"><surname>Kramer</surname><given-names>AP</given-names></name>, <name name-style="western"><surname>Nasi</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2005</year>) <article-title>A comparison of body mass index and waist-to-hip ratio as indicators of hypertension risk in an urban Argentine population: a hospital-based study</article-title>. <source>Nutr Metab Cardiovasc Dis</source> <volume>15</volume>: <fpage>310</fpage>–<lpage>315</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Li1"><label>25</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Li</surname><given-names>M</given-names></name>, <name name-style="western"><surname>McDermott</surname><given-names>RA</given-names></name> (<year>2010</year>) <article-title>Using anthropometric indices to predict cardio-metabolic risk factors in Australian indigenous populations</article-title>. <source>Diabetes Res Clin Pract</source> <volume>87</volume>: <fpage>401</fpage>–<lpage>406</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Uhernik1"><label>26</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Uhernik</surname><given-names>AI</given-names></name>, <name name-style="western"><surname>Milanović</surname><given-names>SM</given-names></name> (<year>2009</year>) <article-title>Anthropometric indices of obesity and hypertension in different age and gender groups of Croatian population</article-title>. <source>Coll Antropol</source> <volume>33</volume>: <fpage>75</fpage>–<lpage>80</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-World1"><label>27</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><collab xlink:type="simple">World Health Organization</collab> (<year>1999</year>) <article-title>International Society of Hypertension guidelines for the management of hypertension. Guidelines Subcommittee</article-title>. <source>J Hypertens</source> <volume>6</volume>: <fpage>66</fpage>–<lpage>71</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Mancia1"><label>28</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mancia</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Fagard</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Narkiewicz</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Redón</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Zanchetti</surname><given-names>A</given-names></name>, <etal>et al</etal>. (<year>2013</year>) <article-title>2013 ESH/ESC Guidelines for the management of arterial hypertension: The Task Force for the management of arterial hypertension of the European Society of Hypertension (ESH) and of the European Society of Cardiology (ESC)</article-title>. <source>J Hypertens</source> <volume>31</volume>: <fpage>1281</fpage>–<lpage>1357</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-European1"><label>29</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><collab xlink:type="simple">European Society of Hypertension-European Society of Cardiology Guidelines Committee</collab> (<year>2003</year>) <article-title>2003 European Society of Hypertension-European Society of Cardiology guidelines for the management of arterial hypertension</article-title>. <source>J Hypertens</source> <volume>21</volume>: <fpage>1011</fpage>–<lpage>1053</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Mbanya1"><label>30</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mbanya</surname><given-names>JC</given-names></name>, <name name-style="western"><surname>Minkoulou</surname><given-names>EM</given-names></name>, <name name-style="western"><surname>Salah</surname><given-names>JN</given-names></name>, <name name-style="western"><surname>Balkau</surname><given-names>B</given-names></name> (<year>1998</year>) <article-title>The prevalence of hypertension in rural and urban Cameroon</article-title>. <source>Int J Epidemiol</source> <volume>27</volume>: <fpage>181</fpage>–<lpage>185</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Iso1"><label>31</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Iso</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Naito</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Sato</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Kitamura</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Okamura</surname><given-names>T</given-names></name>, <etal>et al</etal>. (<year>2001</year>) <article-title>Serum triglycerides and risk of coronary heart disease among Japanese men and women</article-title>. <source>Am J Epidemiol</source> <volume>153</volume>: <fpage>490</fpage>–<lpage>499</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Shinozaki1"><label>32</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Shinozaki</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Suzuki</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Ikebuchi</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Hara</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Harano</surname><given-names>Y</given-names></name> (<year>1996</year>) <article-title>Demonstration of insulin resistance in coronary artery disease documented with angiography</article-title>. <source>Diabetes Care</source> <volume>19</volume>: <fpage>1</fpage>–<lpage>7</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Ko1"><label>33</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ko</surname><given-names>GT</given-names></name>, <name name-style="western"><surname>Chan</surname><given-names>JC</given-names></name>, <name name-style="western"><surname>Woo</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Lau</surname><given-names>EM</given-names></name>, <name name-style="western"><surname>Yeung</surname><given-names>VT</given-names></name>, <etal>et al</etal>. (<year>1997</year>) <article-title>The effect of age on cardiovascular risk factors in Chinese women</article-title>. <source>Int J Cardiol</source> <volume>61</volume>: <fpage>221</fpage>–<lpage>227</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Selby1"><label>34</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Selby</surname><given-names>JV</given-names></name>, <name name-style="western"><surname>Friedman</surname><given-names>GD</given-names></name>, <name name-style="western"><surname>Quesenberry</surname><given-names>CP</given-names><suffix>Jr</suffix></name> (<year>1989</year>) <article-title>Precursors of essential hypertension: The role of body fat distribution pattern</article-title>. <source>Am J Epidemiol</source> <volume>129</volume>: <fpage>43</fpage>–<lpage>53</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Blann1"><label>35</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Blann</surname><given-names>AD</given-names></name>, <name name-style="western"><surname>Tse</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Maxwell</surname><given-names>SJ</given-names></name>, <name name-style="western"><surname>Waite</surname><given-names>MA</given-names></name> (<year>1994</year>) <article-title>Increased levels of the soluble adhesion molecule E-selectin in essential hypertension</article-title>. <source>J Hypertens</source> <volume>12</volume>: <fpage>925</fpage>–<lpage>928</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-National1"><label>36</label>
+<mixed-citation publication-type="other" xlink:type="simple">National Heart, Lung, and Blood Institute. What Is Hypotension? Available: <ext-link ext-link-type="uri" xlink:href="http://www.nhlbi.nih.gov/health/health-topics/topics/hyp/" xlink:type="simple">http://www.nhlbi.nih.gov/health/health-topics/topics/hyp/</ext-link>. Accessed 2013 Jul 5.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Jang1"><label>37</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jang</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Kim</surname><given-names>JY</given-names></name>, <name name-style="western"><surname>Lee</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Kim</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Baek</surname><given-names>Y</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>A Study on the Reliability of Sasang Constitutional Body Trunk Measurement</article-title>. <source>Evid Based Complement Alternat Med</source> <volume>2012</volume>: <fpage>604842</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Saeys1"><label>38</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Saeys</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Inza</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Larrañaga</surname><given-names>P</given-names></name> (<year>2007</year>) <article-title>A review of feature selection techniques in bioinformatics</article-title>. <source>Bioinformatics</source> <volume>23</volume>: <fpage>2507</fpage>–<lpage>2517</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Chen1"><label>39</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chen</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Ribeiro</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Vieira</surname><given-names>AS</given-names></name>, <name name-style="western"><surname>Duarte</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Neves</surname><given-names>JC</given-names></name> (<year>2011</year>) <article-title>A genetic algorithm-based approach to cost-sensitive bankruptcy prediction</article-title>. <source>Expert Syst Appl</source> <volume>38</volume>: <fpage>12939</fpage>–<lpage>12945</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Gupta1"><label>40</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gupta</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Kapoor</surname><given-names>S</given-names></name> (<year>2012</year>) <article-title>Optimal cut-off values of anthropometric markers to predict hypertension in North Indian population</article-title>. <source>Community Health</source> <volume>37</volume>: <fpage>441</fpage>–<lpage>447</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Olinto1"><label>41</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Olinto</surname><given-names>MT</given-names></name>, <name name-style="western"><surname>Nacul</surname><given-names>LC</given-names></name>, <name name-style="western"><surname>Gigante</surname><given-names>DP</given-names></name>, <name name-style="western"><surname>Costa</surname><given-names>JS</given-names></name>, <name name-style="western"><surname>Menezes</surname><given-names>AM</given-names></name>, <etal>et al</etal>. (<year>2004</year>) <article-title>Waist circumference as a determinant of hypertension and diabetes in Brazilian women: a population-based study</article-title>. <source>Public Health Nutr</source> <volume>7</volume>: <fpage>629</fpage>–<lpage>635</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Nahar1"><label>42</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nahar</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Dubey</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Joshi</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Phadnis</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Sharma</surname><given-names>VK</given-names></name> (<year>2012</year>) <article-title>Association of anthropometric indices of obesity with diabetes, hypertension and dyslipidemia: a study from central India</article-title>. <source>Indian Journal of Medical Specialities</source> <volume>3</volume>: <fpage>6</fpage>–<lpage>11</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Mansour1"><label>43</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mansour</surname><given-names>AA</given-names></name>, <name name-style="western"><surname>Al-Jazairi</surname><given-names>MI</given-names></name> (<year>2007</year>) <article-title>Cut-off values for anthropometric variables that confer increased risk of type 2 diabetes mellitus and hypertension in Iraq</article-title>. <source>Arch Med Res</source> <volume>38</volume>: <fpage>253</fpage>–<lpage>258</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Ashwell1"><label>44</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ashwell</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Gunn</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Gibson</surname><given-names>S</given-names></name> (<year>2012</year>) <article-title>Waist-to-height ratio is a better screening tool than waist circumference and BMI for adult cardiometabolic risk factors: systematic review and meta-analysis</article-title>. <source>Obes Rev</source> <volume>13</volume>: <fpage>275</fpage>–<lpage>286</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Fuchs1"><label>45</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fuchs</surname><given-names>FD</given-names></name>, <name name-style="western"><surname>Gus</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Moreira</surname><given-names>LB</given-names></name>, <name name-style="western"><surname>Moraes</surname><given-names>RS</given-names></name>, <name name-style="western"><surname>Wiehe</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2005</year>) <article-title>Anthropometric indices and the incidence of hypertension: a comparative analysis</article-title>. <source>Obes Res</source> <volume>13</volume>: <fpage>1515</fpage>–<lpage>1517</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Ko2"><label>46</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ko</surname><given-names>GT</given-names></name>, <name name-style="western"><surname>Chan</surname><given-names>JC</given-names></name>, <name name-style="western"><surname>Cockram</surname><given-names>CS</given-names></name>, <name name-style="western"><surname>Woo</surname><given-names>J</given-names></name> (<year>1999</year>) <article-title>Prediction of hypertension, diabetes, dyslipidaemia or albuminuria using simple anthropometric indexes in Hong Kong Chinese</article-title>. <source>Int J Obes Relat Metab Disord</source> <volume>23</volume>: <fpage>1136</fpage>–<lpage>1142</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-BenNoun1"><label>47</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ben-Noun</surname><given-names>LL</given-names></name>, <name name-style="western"><surname>Laor</surname><given-names>A</given-names></name> (<year>2004</year>) <article-title>Relationship between changes in neck circumference and changes in blood pressure</article-title>. <source>Am J Hypertens</source> <volume>17</volume>: <fpage>409</fpage>–<lpage>414</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-BenNoun2"><label>48</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ben-Noun</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Laor</surname><given-names>A</given-names></name> (<year>2003</year>) <article-title>Relationship of neck circumference to cardiovascular risk factors</article-title>. <source>Obes Res</source> <volume>11</volume>: <fpage>226</fpage>–<lpage>231</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Zhou1"><label>49</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zhou</surname><given-names>JY</given-names></name>, <name name-style="western"><surname>Ge</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Zhu</surname><given-names>MF</given-names></name>, <name name-style="western"><surname>Wang</surname><given-names>LJ</given-names></name>, <name name-style="western"><surname>Chen</surname><given-names>L</given-names></name>, <etal>et al</etal>. (<year>2013</year>) <article-title>Neck circumference as an independent predictive contributor to cardio-metabolic syndrome</article-title>. <source>Cardiovasc Diabetol</source> <volume>12</volume> <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/1475-2840-12-76" xlink:type="simple">10.1186/1475-2840-12-76</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0084897-Alfie1"><label>50</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Alfie</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Díaz</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Páez</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Cufaro</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Rodriguez</surname><given-names>P</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Relationship between neck circumference and hypertension in the National Registry on Hypertension (the RENATA study)</article-title>. <source>Rev Argent Cardiol</source> <volume>80</volume>: <fpage>275</fpage>–<lpage>279</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Preis1"><label>51</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Preis</surname><given-names>SR</given-names></name>, <name name-style="western"><surname>Massaro</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Hoffmann</surname><given-names>U</given-names></name>, <name name-style="western"><surname>D'Agostino</surname><given-names>RB</given-names><suffix>Sr</suffix></name>, <name name-style="western"><surname>Levy</surname><given-names>D</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Neck circumference as a novel measure of cardiometabolic risk: the Framingham Heart study</article-title>. <source>J Clin Endocrinol Metab</source> <volume>95</volume>: <fpage>3701</fpage>–<lpage>3710</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Tibana1"><label>52</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tibana</surname><given-names>RA</given-names></name>, <name name-style="western"><surname>Teixeira</surname><given-names>TG</given-names></name>, <name name-style="western"><surname>Farias</surname><given-names>DL</given-names></name>, <name name-style="western"><surname>Silva Ade</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Madrid</surname><given-names>B</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Relation of neck circumference and relative muscle strength and cardiovascular risk factors in sedentary women</article-title>. <source>Einstein (Sao Paulo)</source> <volume>10</volume>: <fpage>329</fpage>–<lpage>334</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Laakso1"><label>53</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Laakso</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Matilainen</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Keinänen-Kiukaanniemi</surname><given-names>S</given-names></name> (<year>2002</year>) <article-title>Association of neck circumference with insulin resistance-related factors</article-title>. <source>Int J Obes Relat Metab Disord</source> <volume>26</volume>: <fpage>873</fpage>–<lpage>875</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Seidell1"><label>54</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Seidell</surname><given-names>JC</given-names></name>, <name name-style="western"><surname>Cigolini</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Charzewska</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Ellsinger</surname><given-names>BM</given-names></name>, <name name-style="western"><surname>di Biase</surname><given-names>G</given-names></name> (<year>1990</year>) <article-title>Fat distribution in European women: a comparison of anthropometric measurements in relation to cardiovascular risk factors</article-title>. <source>Int J Epidemiol</source> <volume>19</volume>: <fpage>303</fpage>–<lpage>308</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Wang1"><label>55</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wang</surname><given-names>ZQ</given-names></name>, <name name-style="western"><surname>Ouyang</surname><given-names>Z</given-names></name>, <name name-style="western"><surname>Wang</surname><given-names>DM</given-names></name>, <name name-style="western"><surname>Tang</surname><given-names>XL</given-names></name> (<year>1990</year>) <article-title>Heritability of blood pressure in 7- to 12-year-old Chinese twins, with special reference to body size effects</article-title>. <source>Genet Epidemiol</source> <volume>7</volume>: <fpage>447</fpage>–<lpage>452</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Yao1"><label>56</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yao</surname><given-names>CH</given-names></name>, <name name-style="western"><surname>Slattery</surname><given-names>ML</given-names></name>, <name name-style="western"><surname>Jacobs</surname><given-names>DR</given-names><suffix>Jr</suffix></name>, <name name-style="western"><surname>Folsom</surname><given-names>AR</given-names></name>, <name name-style="western"><surname>Nelson</surname><given-names>ET</given-names></name> (<year>1991</year>) <article-title>Anthropometric predictors of coronary heart disease and total mortality: findings from the US Railroad Study</article-title>. <source>Am J Epidemiol</source> <volume>134</volume>: <fpage>1278</fpage>–<lpage>1289</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Badaruddoza1"><label>57</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Badaruddoza, Kumar</surname><given-names>R</given-names></name> (<year>2009</year>) <article-title>Cardiovascular risk factor and familial aggregation of blood pressure with respect to anthropometric variables in a scheduled caste population in Punjab, a North Indian state. Anthropol Anz. 67(2):111–119.58. Verghese J, Lipton RB, Hall CB, Kuslansky G, Katz MJ (2003) Low blood pressure and the risk of dementia in very old individuals</article-title>. <source>Neurology</source> <volume>61</volume>: <fpage>1667</fpage>–<lpage>1672</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Verghese1"><label>58</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Verghese</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Lipton</surname><given-names>RB</given-names></name>, <name name-style="western"><surname>Hall</surname><given-names>CB</given-names></name>, <name name-style="western"><surname>Kuslansky</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Katz</surname><given-names>MJ</given-names></name> (<year>2003</year>) <article-title>Low blood pressure and the risk of dementia in very old individuals</article-title>. <source>Neurology</source> <volume>61</volume>: <fpage>1667</fpage>–<lpage>1672</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Kennelly1"><label>59</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kennelly</surname><given-names>SP</given-names></name>, <name name-style="western"><surname>Lawlor</surname><given-names>BA</given-names></name>, <name name-style="western"><surname>Kenny</surname><given-names>RA</given-names></name> (<year>2009</year>) <article-title>Blood pressure and the risk for dementia—A double edged sword</article-title>. <source>Ageing Res Rev</source> <volume>8</volume>: <fpage>61</fpage>–<lpage>70</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Oommen1"><label>60</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Oommen</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Baise</surname><given-names>LG</given-names></name>, <name name-style="western"><surname>Vogel</surname><given-names>RM</given-names></name> (<year>2011</year>) <article-title>Sampling Bias and Class Imbalance in Maximum-likelihood Logistic Regression</article-title>. <source>Math Geosci</source> <volume>43</volume>: <fpage>99</fpage>–<lpage>120</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Tang1"><label>61</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tang</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Zhang</surname><given-names>YQ</given-names></name>, <name name-style="western"><surname>Chawla</surname><given-names>NV</given-names></name>, <name name-style="western"><surname>Krasser</surname><given-names>S</given-names></name> (<year>2009</year>) <article-title>SVMs modeling for highly imbalanced classification</article-title>. <source>IEEE Trans Syst Man Cybern B Cybern</source> <volume>39</volume>: <fpage>281</fpage>–<lpage>288</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Lin1"><label>62</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lin</surname><given-names>WJ</given-names></name>, <name name-style="western"><surname>Chen</surname><given-names>JJ</given-names></name> (<year>2013</year>) <article-title>Class-imbalanced classifiers for high-dimensional data</article-title>. <source>Brief Bioinform</source> <volume>14</volume>: <fpage>13</fpage>–<lpage>26</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Wasikowski1"><label>63</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wasikowski</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Chen</surname><given-names>X</given-names></name> (<year>2010</year>) <article-title>Combating the Small Sample Class Imbalance Problem Using Feature Selection</article-title>. <source>IEEE Trans Knowl Data Eng</source> <volume>22</volume>: <fpage>1388</fpage>–<lpage>1400</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-He1"><label>64</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>He</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Garcia</surname><given-names>EA</given-names></name> (<year>2009</year>) <article-title>Learning from Imbalanced Data</article-title>. <source>IEEE Trans Knowl Data Eng</source> <volume>21</volume>: <fpage>1263</fpage>–<lpage>1284</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0084897-Weiss1"><label>65</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Weiss</surname><given-names>GM</given-names></name> (<year>2004</year>) <article-title>Mining with rarity: a unifying framework</article-title>. <source>SIGKDD Explor</source> <volume>6</volume>: <fpage>7</fpage>–<lpage>19</lpage>.</mixed-citation>
+</ref>
+</ref-list></back>
+</article>

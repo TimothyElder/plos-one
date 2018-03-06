@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group>
+<journal-title>PLoS ONE</journal-title></journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-12-16327</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0085292</article-id>
+<article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Biology</subject><subj-group><subject>Anatomy and physiology</subject><subj-group><subject>Reproductive system</subject><subj-group><subject>Reproductive physiology</subject><subject>Sexual reproduction</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Medicine</subject><subj-group><subject>Anatomy and physiology</subject><subj-group><subject>Reproductive system</subject><subj-group><subject>Reproductive physiology</subject><subject>Sexual reproduction</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Social and behavioral sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Biological anthropology</subject></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>The Case of Moulay Ismael - Fact or Fancy?</article-title>
+<alt-title alt-title-type="running-head">The Case of Moulay Ismael - Fact or Fancy?</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Oberzaucher</surname><given-names>Elisabeth</given-names></name><xref ref-type="aff" rid="aff1"/><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Grammer</surname><given-names>Karl</given-names></name><xref ref-type="aff" rid="aff1"/></contrib>
+</contrib-group>
+<aff id="aff1"><addr-line>Department of Anthropology, University of Vienna, Vienna, Austria</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Szolnoki</surname><given-names>Attila</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Hungarian Academy of Sciences, Hungary</addr-line></aff>
+<author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">elisabeth.oberzaucher@univie.ac.at</email></corresp>
+<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn>
+<fn fn-type="con"><p>Conceived and designed the experiments: EO . Performed the experiments: KG. Analyzed the data: EO. Contributed reagents/materials/analysis tools: KG. Wrote the paper: EO.</p></fn>
+</author-notes>
+<pub-date pub-type="collection"><year>2014</year></pub-date>
+<pub-date pub-type="epub"><day>14</day><month>2</month><year>2014</year></pub-date>
+<volume>9</volume>
+<issue>2</issue>
+<elocation-id>e85292</elocation-id>
+<history>
+<date date-type="received"><day>29</day><month>5</month><year>2012</year></date>
+<date date-type="accepted"><day>3</day><month>12</month><year>2013</year></date>
+</history>
+<permissions>
+<copyright-year>2014</copyright-year>
+<copyright-holder>Oberzaucher, Grammer</copyright-holder><license xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions>
+<abstract>
+<p>Textbooks on evolutionary psychology and biology cite the case of the Sharifian Emperor of Morocco, Moulay Ismael the Bloodthirsty (1672–1727) who was supposed to have sired 888 children. This example for male reproduction has been challenged and led to a still unresolved discussion. The scientific debate is shaped by assumptions about reproductive constraints which cannot be tested directly—and the figures used are sometimes arbitrary. Therefore we developed a computer simulation which tests how many copulations per day were necessary to reach the reported reproductive outcome. We based our calculations on a report dating 1704, thus computing whether it was possible to have 600 sons in a reproductive timespan of 32 years. The algorithm is based on three different models of conception and different social and biological constraints. In the first model we used a random mating pool with unrestricted access to females. In the second model we used a restricted harem pool. The results indicate that Moulay Ismael could have achieved this high reproductive success. A comparison of the three conception models highlights the necessity to consider female sexual habits when assessing fertility across the cycle. We also show that the harem size needed is far smaller than the reported numbers.</p>
+</abstract>
+<funding-group><funding-statement>The authors have no support or funding to report.</funding-statement></funding-group><counts><page-count count="5"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title>Introduction</title>
+<p>The scientific discussion about the case of the Sharifian Emperor of Morocco, Moulay Ismael the Bloodthirsty (1672–1727), who is reported to have sired 888 children in the Guinness Book of Records, is still ongoing. Recent findings on the genetic legacy of Genghis Khan and his male relatives show impressively how vast the distribution of genes of powerful males can be: About 8% of todays' Asian male population dates back to this family <xref ref-type="bibr" rid="pone.0085292-Zerjal1">[1]</xref>. Einon <xref ref-type="bibr" rid="pone.0085292-Einon1">[2]</xref> claimed that it is unlikely that Moulay Ismael could have had that many offspring, based on several factors potentially affecting reproduction: Ovulation frequency combined with sperm survival (resulting in women being fertile only 12.5% of the time), female infertility (8%), conception likelihood (58%), and prenatal mortality (15–20%). Contrarily, Gould <xref ref-type="bibr" rid="pone.0085292-Gould1">[3]</xref> states that Einon's assumptions are unrealistic insofar, as some assumptions were not correct: First, Einon inaccurately used Moulay's duration of reign as life span, but also the biological parameters were flawed: Sperm survival is about twice as long as Einon posed <xref ref-type="bibr" rid="pone.0085292-France1">[4]</xref>, and fertility of cycles in women between 25 and 39 is as high as 93–98% <xref ref-type="bibr" rid="pone.0085292-Harlow1">[5]</xref>. The likelihood of foetal loss is highest in the first 14 days of pregnancy <xref ref-type="bibr" rid="pone.0085292-GarciaEnguidanos1">[6]</xref>, after the first 14 days of pregnancy (which corresponds to the data basis of Jöchle) is around 5% <xref ref-type="bibr" rid="pone.0085292-NyboAndersen1">[7]</xref>, child mortality until the age of two around 20% <xref ref-type="bibr" rid="pone.0085292-Stanton1">[8]</xref>, <xref ref-type="bibr" rid="pone.0085292-Lee1">[9]</xref>, <xref ref-type="bibr" rid="pone.0085292-Rttimann1">[10]</xref>. To complete the picture, sperm aging and decline of sperm vitality have to be taken into account <xref ref-type="bibr" rid="pone.0085292-Freund1">[11]</xref>, <xref ref-type="bibr" rid="pone.0085292-Kidd1">[12]</xref>.</p>
+<p>One problem lies in the historical facts. Fortunately, there is a report by Dominique Busnot <xref ref-type="bibr" rid="pone.0085292-Busnot1">[13]</xref>, a French diplomat, who was in Morocco in 1704, 1708 and 1712. We decided to use his report in the year 1704 as the data source for our calculations, as it provides figures not only about the number of offspring, but also about reproductive timespan. Moulay became emperor in 1672 at age 25 and was thus 57 when Busnot first visited Morocco. In 1704 Busnot reports Moulay to have 600 sons from four wives and 500 concubines. Daughters by his four wives were allowed to live, whereas daughters born by his concubines were suffocated by the midwifes at birth. This results in approximately 1171 children from 500 women in a reproductive time span of 32 years (25–57). Note that we neglect the reproduction before his becoming emperor, as he most likely did not have a comparable harem then. Moulay Ismael took extreme measures to ensure paternity security, which is partially responsible for his sobriquet “the bloodthirsty”. Any suspicion of adultery was severely punished: The women were either strangled by himself, or their breasts were cut off, or their teeth were torn out. This applied even to former concubines who had already left the harem - which they had to when reaching the age of 30. Men who merely looked at one of his wives or concubines were punished by death penalty <xref ref-type="bibr" rid="pone.0085292-Busnot1">[13]</xref>.</p>
+<p>As this report of Busnot appears to be the only reliable source of information available, we focus on the reproductive data of the 1704 report, rather than estimating his life-time reproductive success. Since Moulay died in 1727 it is likely that those numbers could have been substantially larger.</p>
+<p>Calculations of reproductive effort have to include a number of interacting variables, and thus cannot be done sequentially, but have to take the dynamic nature of a reproduction pool into account. Thus, we decided to model Moulay Ismael's reproductive efforts in a computer simulation.</p>
+<p>There are two conception models that are widely used to assess the conception likelihood across the female cycle: The Wilcox-Weinberg model <xref ref-type="bibr" rid="pone.0085292-Weinberg1">[14]</xref> and the Barrett-Marshall <xref ref-type="bibr" rid="pone.0085292-Barrett1">[15]</xref> model. Both models are based on data from couples participating in longitudinal studies. The former participated in a general medical study, whereas the latter used the temperature method for birth control. In both cases the women had born at least one child before participation. The conception model by Jöchle <xref ref-type="bibr" rid="pone.0085292-Jchle1">[16]</xref> differs greatly from those two, not only regarding the nature of the data, but in the distribution of conception likelihood over the cycle. Jöchle's model is based on data from German soldiers' wives during the two world wars, who had intercourse with their husbands only when they were transferred from one front to the other, and on conceptions resulting from rape. Jöchle concluded from this data that under specific conditions induced ovulation might happen in humans: Rare sexual intercourse and strong emotional arousal <xref ref-type="bibr" rid="pone.0085292-Jchle1">[16]</xref>. It is likely that these conditions would have held true for the concubines of Moulay Ismael. Sperm potency seems to be unaffected by frequent intercourse <xref ref-type="bibr" rid="pone.0085292-Zhou1">[17]</xref>.</p>
+</sec><sec id="s2" sec-type="methods">
+<title>Methods</title>
+<p>We used Python for the development of the simulation. The source code is available as <xref ref-type="supplementary-material" rid="pone.0085292.s001">Script S1</xref>. For both simulations we used the following three models as a basis: a) the Wilcox-Weinberg Model of Conception <xref ref-type="bibr" rid="pone.0085292-Weinberg1">[14]</xref>, which integrates observational data with the survival rate of sperm and the viability of the cycle, b) the conception likelihood of Jöchle <xref ref-type="bibr" rid="pone.0085292-Jchle1">[16]</xref>, and the Barrett-Marshall model <xref ref-type="bibr" rid="pone.0085292-Barrett1">[15]</xref>. These basic models were integrated in our simulation, in which we incorporated potential constraints (<xref ref-type="fig" rid="pone-0085292-g001">Fig. 1</xref>).</p>
+<fig id="pone-0085292-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0085292.g001</object-id><label>Figure 1</label><caption>
+<title>This figure illustrates the setup of the simulation—circles indicate factors negatively affecting reproductive success, rectangles indicate factors increasing reproductive success.</title>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0085292.g001" position="float" xlink:type="simple"/></fig>
+<p>The breeding pool consists of 504 women (500 concubines plus 4 wives), the cycle day was assigned randomly in the first simulation, in the second we allowed for 50% synchronisation, i.e. 50% of the women would cycle simultaneously. This value was chosen completely arbitrarily for the purpose of investigating whether this would have an effect at all. Cycle synchronization is still much disputed <xref ref-type="bibr" rid="pone.0085292-Strassmann1">[18]</xref>, <xref ref-type="bibr" rid="pone.0085292-Zhengwei1">[19]</xref>, <xref ref-type="bibr" rid="pone.0085292-Ziomkiewicz1">[20]</xref>. Cultural norms stand for the copulation taboo during menstruation, i.e. five days of the period of the female cycle with lowest fertility <xref ref-type="bibr" rid="pone.0085292-Chiazze1">[21]</xref>. The mucus test allows to detect ovulation ±4 days with an accuracy of 97% <xref ref-type="bibr" rid="pone.0085292-Fehring1">[22]</xref>, but as it is unknown whether it was practiced in Morocco at that time, we chose to base our simulation on behavioural data: Ovulatory faces are perceived as most attractive in a forced choice task at 60% <xref ref-type="bibr" rid="pone.0085292-Oberzaucher1">[23]</xref>, which aligns well with other studies on attractiveness over the female cycle <xref ref-type="bibr" rid="pone.0085292-LawSmith1">[24]</xref>, <xref ref-type="bibr" rid="pone.0085292-Roberts1">[25]</xref>. Another advantage is that we do not need to assume detailed knowledge about fertility and menstrual cycle, but base our calculations on mere increased sexual attraction in the most fertile period. Copulation leads to conception depending on the viability of sperm, with a decrease of 1.52% per year <xref ref-type="bibr" rid="pone.0085292-Freund1">[11]</xref>, <xref ref-type="bibr" rid="pone.0085292-Kidd1">[12]</xref>, fertility of the female's cycle <xref ref-type="bibr" rid="pone.0085292-Harlow1">[5]</xref>, and on the cycle day <xref ref-type="bibr" rid="pone.0085292-Weinberg1">[14]</xref>, <xref ref-type="bibr" rid="pone.0085292-Barrett1">[15]</xref>, <xref ref-type="bibr" rid="pone.0085292-Jchle1">[16]</xref>. Taking all these constraints into account, we calculate the conception probability leading to fertilisation as detected through observation, i.e. absence of monthly bleeding. Once fertilisation has been detected (after day 14 of pregnancy), foetal loss <xref ref-type="bibr" rid="pone.0085292-NyboAndersen1">[7]</xref> and offspring survival rate <xref ref-type="bibr" rid="pone.0085292-Stanton1">[8]</xref>, <xref ref-type="bibr" rid="pone.0085292-Lee1">[9]</xref>, <xref ref-type="bibr" rid="pone.0085292-Rttimann1">[10]</xref> again reduce the number of offspring.</p>
+<p>In the first model we calculated how many copulations per day would be necessary to reach 1171 offspring in 32 years, and how the constraints delineated above modulate this number. In the second model we calculated the number of offspring reached in the reproductive period of 32 years and how the variables affect this number. For these models we calculated 200 iterations.</p>
+<p>We reran the simulations four times, once with ovulation detection and without sperm ageing, once without ovulation detection and sperm ageing, once with both, ovulation detection and sperm ageing, and once with sperm ageing and without ovulation detection.</p>
+<p>Lastly, we calculated how the harem size affects the calculations. Based on the restrictions used in model number one, we calculated the number of offspring for harem sizes between 1 and 200. Pregnant women were removed from the reproductive pool for a period of 18 months, allowing for pregnancy and lactation <xref ref-type="bibr" rid="pone.0085292-Sharman1">[26]</xref>.</p>
+</sec><sec id="s3">
+<title>Results</title>
+<sec id="s3a">
+<title>How many copulations a day must a man have?</title>
+<p>In the first step we simulated random access to the harem pool and calculated the number of copulations per day which were necessary to reach the given number of children. In subsequent steps we added constraints to the model to investigate their effect on the reproductive effort needed.</p>
+<p>The constraints we used were religious taboos (no copulations for five days each cycle during menstruation), the possibility of ovulation detection (with an accuracy of 0.6, and foetal and child mortality. If copulations happened completely random, 1.97 (Wilcox), 0.83 (Jöchle) or 2.30 (Barrett-Marshall) copulations per day would have lead to a reproductive success of 1171 offspring. Cultural norms and ovulation detection decrease the required number of copulations substantially, while foetal loss and child mortality increase it. Taking all constraints into account leads to an average of 1.43 (Wilcox), 0.83 (Jöchle) or 1.63 (Barrett-Marshall) copulations per day. (see <xref ref-type="table" rid="pone-0085292-t001">Table 1</xref>) All constraints used in the model have a significant effect on the required reproductive effort (t-test, p&lt;0.001).</p>
+<table-wrap id="pone-0085292-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0085292.t001</object-id><label>Table 1</label><caption>
+<title>Model I: Copulations per Day required reaching 1171 offspring.</title>
+</caption><alternatives><graphic id="pone-0085292-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0085292.t001" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Wilcox</td>
+<td align="left" rowspan="1" colspan="1">Jöchle</td>
+<td align="left" rowspan="1" colspan="1">Barrett-Marshall</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Constraints</td>
+<td align="left" rowspan="1" colspan="1">Copulations per Day (min-max)</td>
+<td align="left" rowspan="1" colspan="1">Copulations per Day (min-max)</td>
+<td align="left" rowspan="1" colspan="1">Copulations per Day (min-max)</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Random</td>
+<td align="left" rowspan="1" colspan="1">1.97 (1.83–2.13)</td>
+<td align="left" rowspan="1" colspan="1">0.83 (0.78–0.88)</td>
+<td align="left" rowspan="1" colspan="1">2.30 (2.14–2.45)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Cultural Norms</td>
+<td align="left" rowspan="1" colspan="1">1.59 (1.50–1.75)</td>
+<td align="left" rowspan="1" colspan="1">0.75 (0.70–0.80)</td>
+<td align="left" rowspan="1" colspan="1">1.87 (1.76–1.99)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ovulation Detection</td>
+<td align="left" rowspan="1" colspan="1">1.27 (1.19–1.37)</td>
+<td align="left" rowspan="1" colspan="1">0.68 (0.64–0.73)</td>
+<td align="left" rowspan="1" colspan="1">1.44 (1.35–1.55)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Foetal Loss</td>
+<td align="left" rowspan="1" colspan="1">2.08 (1.94–2.22)</td>
+<td align="left" rowspan="1" colspan="1">0.87 (0.81–0.93)</td>
+<td align="left" rowspan="1" colspan="1">2.43 (2.27–2.62)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Child Mortality</td>
+<td align="left" rowspan="1" colspan="1">2.46 (2.30–2.66)</td>
+<td align="left" rowspan="1" colspan="1">1.03 (0.96–1.10)</td>
+<td align="left" rowspan="1" colspan="1">2.87 (2.71–3.06)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">All Constraints</td>
+<td align="left" rowspan="1" colspan="1">1.43 (1.33–1.52)</td>
+<td align="left" rowspan="1" colspan="1">0.83 (0.78–0.88)</td>
+<td align="left" rowspan="1" colspan="1">1.63 (1.53–1.73)</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt101"><label/><p>200 simulations were iterated until 1171 children were reached. Female cycle day was randomly assigned.</p></fn></table-wrap-foot></table-wrap></sec><sec id="s3b">
+<title>How many children can one man have?</title>
+<p>In the second model we calculated the number of children which could be sired given one copulation a day throughout the reproductive period of 32 years. First, we calculated the number of offspring when copulating on a random basis. Then we calculated the effect of intervening variables. Besides the constraints of model one we included the possibility of ovulation synchronisation and the emergence of love and favouritism. In this simulation calculations with all three models indicate that the number of offspring could have been reached. Results indicate that with only one copulation per day, Moulay could have succeeded in siring the fabled number of offspring only when calculations are made based on the Jöchle model. In the simulation based on the Wilcox-Weinberg model Moulay it depends very much on the constraints included in the simulation, whether 1171 offspring can be achieved or not. Especially when taking into account the decrease of sperm quality with age, ovulation detection becomes crucial for reproductive outcome. The results based on the Barett-Marshall model indicate that it was impossible to achieve the reported number of offspring without ovulation detection given only one copulation per day. (<xref ref-type="table" rid="pone-0085292-t002">Table 2</xref>).</p>
+<table-wrap id="pone-0085292-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0085292.t002</object-id><label>Table 2</label><caption>
+<title>Model II: Number of Children/Reproductive Span based on one copulation per day.</title>
+</caption><alternatives><graphic id="pone-0085292-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0085292.t002" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Wilcox</td>
+<td align="left" rowspan="1" colspan="1">Jöchle</td>
+<td align="left" rowspan="1" colspan="1">Barrett-Marshall</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Constraints</td>
+<td align="left" rowspan="1" colspan="1">Number of children (min-max)</td>
+<td align="left" rowspan="1" colspan="1">Number of children (min-max)</td>
+<td align="left" rowspan="1" colspan="1">Number of children (min-max)</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">No Constraints</td>
+<td align="left" rowspan="1" colspan="1">583 (520–629)</td>
+<td align="left" rowspan="1" colspan="1">1380 (1309–1460)</td>
+<td align="left" rowspan="1" colspan="1">502 (452–556)</td>
+</tr>
+<tr>
+<td colspan="4" align="left" rowspan="1">Basic Constraints: Cultural Norms, Ovulation Detection, Foetal Loss &amp; Child Mortality</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Basic Constraints Only</td>
+<td align="left" rowspan="1" colspan="1">802 (748–858)</td>
+<td align="left" rowspan="1" colspan="1">1387 (1315–1460)</td>
+<td align="left" rowspan="1" colspan="1">713 (665–765)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ovulation Sync.</td>
+<td align="left" rowspan="1" colspan="1">735 (686–780)</td>
+<td align="left" rowspan="1" colspan="1">1323 (1249–1381)</td>
+<td align="left" rowspan="1" colspan="1">650 (608–691)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Moulay Falls in Love</td>
+<td align="left" rowspan="1" colspan="1">556 (515–604)</td>
+<td align="left" rowspan="1" colspan="1">903 (851–955)</td>
+<td align="left" rowspan="1" colspan="1">491 (451–525)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Favourites</td>
+<td align="left" rowspan="1" colspan="1">805 (753–854)</td>
+<td align="left" rowspan="1" colspan="1">1386 (1309–1460)</td>
+<td align="left" rowspan="1" colspan="1">704 (649–754)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">All Constraints</td>
+<td align="left" rowspan="1" colspan="1">535 (496–589)</td>
+<td align="left" rowspan="1" colspan="1">892 (830–946)</td>
+<td align="left" rowspan="1" colspan="1">467 (424–506)</td>
+</tr>
+<tr>
+<td colspan="4" align="left" rowspan="1">Basic Constraints: Cultural Norms, Fetal Loss &amp; Child Mortality</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Basic Constraints Only</td>
+<td align="left" rowspan="1" colspan="1">556 (502–625)</td>
+<td align="left" rowspan="1" colspan="1">1164 (1088–1220)</td>
+<td align="left" rowspan="1" colspan="1">475 (445–514)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ovulation Sync.</td>
+<td align="left" rowspan="1" colspan="1">555 (504–609)</td>
+<td align="left" rowspan="1" colspan="1">1159 (1100–1226)</td>
+<td align="left" rowspan="1" colspan="1">477 (439–523)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Love</td>
+<td align="left" rowspan="1" colspan="1">445 (408–487)</td>
+<td align="left" rowspan="1" colspan="1">815 (771–855)</td>
+<td align="left" rowspan="1" colspan="1">390 (343–422)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Favourites</td>
+<td align="left" rowspan="1" colspan="1">552 (511–599)</td>
+<td align="left" rowspan="1" colspan="1">1164 (1097–1233)</td>
+<td align="left" rowspan="1" colspan="1">479 (438–523)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">All Constraints</td>
+<td align="left" rowspan="1" colspan="1">446 (405–499)</td>
+<td align="left" rowspan="1" colspan="1">826 (773–883)</td>
+<td align="left" rowspan="1" colspan="1">392 (350–440)</td>
+</tr>
+<tr>
+<td colspan="4" align="left" rowspan="1">Basic Constraints: Cultural Norms, Ovulation Detection, Sperm Aging, Fetal Loss &amp; Child Mortality</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Sperm Aging Only</td>
+<td align="left" rowspan="1" colspan="1">450 (398–497)</td>
+<td align="left" rowspan="1" colspan="1">1060 (994–1119)</td>
+<td align="left" rowspan="1" colspan="1">385 (342–432)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Basic Constraints Only</td>
+<td align="left" rowspan="1" colspan="1">617 (565–659)</td>
+<td align="left" rowspan="1" colspan="1">1066 (989–1134)</td>
+<td align="left" rowspan="1" colspan="1">547 (492–600)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ovulation Sync.</td>
+<td align="left" rowspan="1" colspan="1">569 (526–604)</td>
+<td align="left" rowspan="1" colspan="1">1014 (946–1087)</td>
+<td align="left" rowspan="1" colspan="1">499 (449–542)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Love</td>
+<td align="left" rowspan="1" colspan="1">437 (396–478)</td>
+<td align="left" rowspan="1" colspan="1">717 (672–768)</td>
+<td align="left" rowspan="1" colspan="1">386 (339–422)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Favourites</td>
+<td align="left" rowspan="1" colspan="1">620 (557–659)</td>
+<td align="left" rowspan="1" colspan="1">1060 (997–1127)</td>
+<td align="left" rowspan="1" colspan="1">540 (480–591)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">All Constraints</td>
+<td align="left" rowspan="1" colspan="1">424 (391–459)</td>
+<td align="left" rowspan="1" colspan="1">708 (657–759)</td>
+<td align="left" rowspan="1" colspan="1">367 (324–401)</td>
+</tr>
+<tr>
+<td colspan="4" align="left" rowspan="1">Basic Constraints: Cultural Norms, Sperm Aging, Fetal Loss &amp; Child Mortality</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Basic Constraints Only</td>
+<td align="left" rowspan="1" colspan="1">415 (364–457)</td>
+<td align="left" rowspan="1" colspan="1">898 (824–955)</td>
+<td align="left" rowspan="1" colspan="1">367 (333–402)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ovulation Sync.</td>
+<td align="left" rowspan="1" colspan="1">427 (383–481)</td>
+<td align="left" rowspan="1" colspan="1">896 (826–947)</td>
+<td align="left" rowspan="1" colspan="1">364 (330–402)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Love</td>
+<td align="left" rowspan="1" colspan="1">357 (323–397)</td>
+<td align="left" rowspan="1" colspan="1">654 (616–694)</td>
+<td align="left" rowspan="1" colspan="1">309 (278–346)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Favourites</td>
+<td align="left" rowspan="1" colspan="1">421 (386–465)</td>
+<td align="left" rowspan="1" colspan="1">896 (843–958)</td>
+<td align="left" rowspan="1" colspan="1">366 (330–404)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">All Constraints</td>
+<td align="left" rowspan="1" colspan="1">356 (327–388)</td>
+<td align="left" rowspan="1" colspan="1">656 (619–691)</td>
+<td align="left" rowspan="1" colspan="1">311 (270–353)</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt102"><label/><p>In 100 simulations we modelled the complete life span reproductive success based on one copulation a day. Basic constraints are female cycle, harem size, reproductive span, female age, pregnancy and lactation. According to Muslim customs a harem owner can have four wives and eleven favourites.</p></fn></table-wrap-foot></table-wrap>
+<p>All constraints used in the model have a significant effect on the number of offspring (t-test, p&lt;0.001).</p>
+</sec><sec id="s3c">
+<title>How many women does one man need?</title>
+<p>Our calculations indicate that the harem size necessary to reach the reproductive outcome of 1171 children is far lower than the reported 504. The number of offspring reaches saturation at much smaller breeding pools. Calculations based on the conception model by Jöchle indicate that a harem size beyond 110 does not lead to an increased number of offspring (Quadratic regression: R<sup>2</sup> = .978, df = 2274, p&lt;0.001; Y = 86.262−0.057x<sup>2</sup>+17.041x). For the Wilcox-Weinberg model the saturation is reached at a harem size of about 70 (Quadratic regression: R<sup>2</sup> = .864, df = 2274, p&lt;0.001; Y = 133.701−0.028x<sup>2</sup>+7.436x), and for the Barrett-Marshall model reproductive outcome does not increase beyond a harem size of 65 (Quadratic regression: R<sup>2</sup> = .835, df = 2274, p&lt;0.001; Y = 131.665−0.024x<sup>2</sup>+6.241x). (<xref ref-type="fig" rid="pone-0085292-g002">Fig. 2</xref>)</p>
+<fig id="pone-0085292-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0085292.g002</object-id><label>Figure 2</label><caption>
+<title>The potential reproductive outcome is related to the harem size.</title>
+<p>Saturation is reached at smaller harem sizes for the Wilcox-Weinberg and Barrett-Marshall models than for the Jöchle model.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0085292.g002" position="float" xlink:type="simple"/></fig></sec></sec><sec id="s4">
+<title>Discussion</title>
+<p>In general, results indicate that the Emperor could have reached his notorious reproductive success with fewer copulations than assumed so far - thus the historic reports could be facts and not fancy. With our simulation we could also provide evidence that the harem size is of lesser importance for the achievement of the reported reproductive success than thought so far. A breeding pool of 65 to 110 women leads to the maximum reproductive outcome. This highlights the importance of incorporating cost-benefit calculations – increasing the size of the breeding pool beyond that point increases the costs without additional benefits to outweigh them. Having a harem of 500 concubines might have been due to other considerations than maximization of individual reproductive outcome. For example, it could have been a means to remove the additional women from the reach of other men, thus depriving them of reproductive potential.</p>
+<p>We also show that the choice of conception model has to be carefully considered. Sexual habits have a strong impact on the distribution of conception likelihood over the female cycle. Therefore it is essential to take frequency of intercourse into account when trying to estimate the likelihood of pregnancy resulting from intercourse. In our case, the sexual habits of the concubines were most likely similar to the sexual habits of women in the Jöchle databases, i.e. rare intercourse due to the large number of women in the harem.</p>
+<p>In our models, we intentionally chose to incorporate more conservative assumptions about the effect sizes of the involved variables (i.e. foetal loss, child mortality, …). This means, that we always chose the figure most adverse to number of offspring. As the goal was to investigate whether the historic reports about the reproductive success of Moulay Ismael can be correct, rather than estimating the maximum number of offspring possible for a man, this was the method of choice. When addressing different scientific questions, one might choose to change these figures.</p>
+<p>Besides contributing to the dispute about the limits of male potential reproductive success by shedding light on the most popular example in this debate, this study also provides a rationale for the choice of conception models. While female sexual habits have not been considered so far, this study emphasizes the importance to take them into account.</p>
+</sec><sec id="s5">
+<title>Supporting Information</title>
+<supplementary-material id="pone.0085292.s001" mimetype="text/x-python" xlink:href="info:doi/10.1371/journal.pone.0085292.s001" position="float" xlink:type="simple"><label>Script S1</label><caption>
+<p><bold>The Python script we used for the simulation.</bold> Comments in the program explain the variables used and describe the steps of the calculations.</p>
+<p>(PY)</p>
+</caption></supplementary-material></sec></body>
+<back><ref-list>
+<title>References</title>
+<ref id="pone.0085292-Zerjal1"><label>1</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zerjal</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Xue</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Bertorelle</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Wells</surname><given-names>RS</given-names></name>, <name name-style="western"><surname>Bao</surname><given-names>W</given-names></name>, <etal>et al</etal>. (<year>2003</year>) <article-title>The genetic legacy of the Mongols</article-title>. <source>Am J Hum Genet</source> <volume>72</volume><supplement>(3)</supplement>: <fpage>717</fpage>–<lpage>21</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085292-Einon1"><label>2</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Einon</surname><given-names>D</given-names></name> (<year>1995</year>) <article-title>How many children can one man have?</article-title> <source>EHB</source> <volume>19</volume>: <fpage>413</fpage>–<lpage>426</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085292-Gould1"><label>3</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gould</surname><given-names>RG</given-names></name> (<year>2000</year>) <article-title>How many children Moulay Ismael should have had?</article-title> <source>EHB</source> <volume>21</volume>: <fpage>295</fpage>–<lpage>296</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085292-France1"><label>4</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>France</surname><given-names>JT</given-names></name>, <name name-style="western"><surname>Graham</surname><given-names>FM</given-names></name>, <name name-style="western"><surname>Gosling</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Hair</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Knox</surname><given-names>BS</given-names></name> (<year>1992</year>) <article-title>Characteristics of natural conceptual cycles occurring in a prospective study of sex preselection: fertility awareness, symptoms, hormone levels, sperm survival and pregnancy outcome</article-title>. <source>Int J Fertil</source> <volume>37</volume>: <fpage>244</fpage>–<lpage>255</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085292-Harlow1"><label>5</label>
+<mixed-citation publication-type="book" xlink:type="simple">Harlow SD (2000) Menstruation and menstrual disorders: the epidemiology of menstruation and menstrual dysfunction. In: Goldman M, Hatch M, editors. Women and Health. Academic Press, San Diego, CA. pp. 99–113.</mixed-citation>
+</ref>
+<ref id="pone.0085292-GarciaEnguidanos1"><label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Garcia-Enguidanos</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Calle</surname><given-names>ME</given-names></name>, <name name-style="western"><surname>Valero</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Luna</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Dominguez-Rojas</surname><given-names>V</given-names></name> (<year>2002</year>) <article-title>Risk factors in miscarriage: A review</article-title>. <source>Eur J Obstet Gynecol Reprod Biol</source> <volume>102</volume><supplement>(2)</supplement>: <fpage>111</fpage>–<lpage>119</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085292-NyboAndersen1"><label>7</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nybo Andersen</surname><given-names>AM</given-names></name>, <name name-style="western"><surname>Wohlfahrt</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Christens</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Olsen</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Melbye</surname><given-names>M</given-names></name> (<year>2000</year>) <article-title>Maternal age and fetal loss: population based register linkage study,</article-title>. <source>BMJ</source> <volume>320</volume>: <fpage>1708</fpage>–<lpage>1712</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085292-Stanton1"><label>8</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Stanton</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Lawn</surname><given-names>JE</given-names></name>, <name name-style="western"><surname>Rahman</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Wilczynska-Ketende</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Hill</surname><given-names>K</given-names></name> (<year>2006</year>) <article-title>Stillbirth rates: delivering estimates in 190 countries,</article-title>. <source>The Lancet</source> <volume>367</volume><supplement>(9521)</supplement>: <fpage>1487</fpage>–<lpage>1494</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085292-Lee1"><label>9</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lee</surname><given-names>AC</given-names></name>, <name name-style="western"><surname>Mullany</surname><given-names>LC</given-names></name>, <name name-style="western"><surname>Tielsch</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Katz</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Khatry</surname><given-names>SK</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Community-based stillbirth rates and risk factors in rural Sarlahi, Nepal</article-title>. <source>Int J Gynecol Obstet</source> <volume>113</volume><supplement>(3)</supplement>: <fpage>199</fpage>–<lpage>204</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085292-Rttimann1"><label>10</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rüttimann</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Loesch</surname><given-names>S</given-names></name> (<year>2012</year>) <article-title>Mortality and morbidity in the city of Bern, Switzerland, 1805–1815 with special emphasis on infant, child and maternal deaths</article-title>. <source>HOMO</source> <volume>63</volume><supplement>(1)</supplement>: <fpage>50</fpage>–<lpage>66</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085292-Freund1"><label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Freund</surname><given-names>M</given-names></name> (<year>1963</year>) <article-title>Effect of frequency of emission on semen output and an estimate of daily sperm production in man</article-title>. <source>J Reprod Fertil</source> <volume>6</volume>: <fpage>269</fpage>–<lpage>286</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085292-Kidd1"><label>12</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kidd</surname><given-names>SA</given-names></name>, <name name-style="western"><surname>Eskenazi</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Wyrobek</surname><given-names>AJ</given-names></name> (<year>2001</year>) <article-title>Effects of male age on semen quality and fertility: a review of the literature</article-title>. <source>Fertility and sterility</source> <volume>75</volume><supplement>(2)</supplement>: <fpage>237</fpage>–<lpage>248</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085292-Busnot1"><label>13</label>
+<mixed-citation publication-type="other" xlink:type="simple">Busnot D (1712) Histoire du regne de Moulay Ismail. Edition Mercure de France 2002.</mixed-citation>
+</ref>
+<ref id="pone.0085292-Weinberg1"><label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Weinberg</surname><given-names>CR</given-names></name>, <name name-style="western"><surname>Wilcox</surname><given-names>AJ</given-names></name> (<year>1995</year>) <article-title>A model for estimating the potency and survival of human gametes in vivo</article-title>. <source>Biometrics</source> <volume>51</volume>: <fpage>405</fpage>–<lpage>412</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085292-Barrett1"><label>15</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Barrett</surname><given-names>JC</given-names></name>, <name name-style="western"><surname>Marshall</surname><given-names>J</given-names></name> (<year>1969</year>) <article-title>The risk of conception on different days of the menstrual cycle</article-title>. <source>Population Studies</source> <volume>23</volume>: <fpage>455</fpage>–<lpage>461</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085292-Jchle1"><label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jöchle</surname><given-names>W</given-names></name> (<year>1973</year>) <article-title>Coitus-induced ovulation</article-title>. <source>Contraception</source> <volume>7</volume>: <fpage>523</fpage>–<lpage>564</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085292-Zhou1"><label>17</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zhou</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Weinberg</surname><given-names>CR</given-names></name> (<year>1996</year>) <article-title>Modeling Conception as an Aggregated Bernoulli Outcome with Latent Variables via the EM Algorithm</article-title>. <source>Biometrics</source> <volume>52: 3</volume>: <fpage>945</fpage>–<lpage>954</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085292-Strassmann1"><label>18</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Strassmann</surname><given-names>BI</given-names></name> (<year>1997</year>) <article-title>The biology of menstruation in Homo sapiens: Total lifetime menses, fecundity, and nonsynchrony in a natural-fertility population</article-title>. <source>Curr Anthropol</source> <volume>37</volume><supplement>(1)</supplement>: <fpage>123</fpage>–<lpage>129</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085292-Zhengwei1"><label>19</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zhengwei</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Schank</surname><given-names>JC</given-names></name> (<year>2006</year>) <article-title>Women do not synchronize their menstrual cycles</article-title>. <source>Human Nature</source> <volume>17</volume><supplement>(4)</supplement>: <fpage>434</fpage>–<lpage>447</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085292-Ziomkiewicz1"><label>20</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ziomkiewicz</surname><given-names>A</given-names></name> (<year>2006</year>) <article-title>Menstrual synchrony: Fact or artifact?</article-title> <source>Human Nature</source> <volume>17</volume><supplement>(4)</supplement>: <fpage>419</fpage>–<lpage>432</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085292-Chiazze1"><label>21</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chiazze</surname><given-names>L</given-names><suffix>Jr</suffix></name>, <name name-style="western"><surname>Brayer, FT Macisco</surname><given-names>JJ</given-names><suffix>Jr</suffix></name>, <name name-style="western"><surname>Parker</surname><given-names>MP</given-names></name>, <name name-style="western"><surname>Duffy</surname><given-names>BJ</given-names></name> (<year>1968</year>) <article-title>The length and variability of the human menstrual cycle</article-title>. <source>JAMA: The journal of the American Medical Association</source> <volume>203</volume><supplement>(6)</supplement>: <fpage>377</fpage>–<lpage>380</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085292-Fehring1"><label>22</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fehring</surname><given-names>RJ</given-names></name> (<year>2002</year>) <article-title>Accuracy of the peak day of cervical mucus as a biological marker of fertility</article-title>. <source>Contraception</source> <volume>66</volume>: <fpage>231</fpage>–<lpage>235</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085292-Oberzaucher1"><label>23</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Oberzaucher</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Katina</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Holzleitner</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Schmehl</surname><given-names>SF</given-names></name>, <name name-style="western"><surname>Mehu-Blantar</surname><given-names>I</given-names></name>, <etal>et al</etal>. (<year>2013</year>) <article-title>The myth of hidden ovulation: Shape and texture changes in the face during the menstrual cycle</article-title>. <source>Journal of Evolutionary Psychology</source></mixed-citation>
+</ref>
+<ref id="pone.0085292-LawSmith1"><label>24</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Law Smith</surname><given-names>MJ</given-names></name>, <name name-style="western"><surname>Perrett</surname><given-names>DI</given-names></name>, <name name-style="western"><surname>Jones</surname><given-names>BC</given-names></name>, <name name-style="western"><surname>Cornwell</surname><given-names>RE</given-names></name>, <name name-style="western"><surname>Moore</surname><given-names>FR</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Facial appearance is a cue to oestrogen levels in women</article-title>. <source>Proceedings of the Royal Society B</source> <volume>273</volume><supplement>(1583)</supplement>: <fpage>135</fpage>–<lpage>140</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085292-Roberts1"><label>25</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Roberts</surname><given-names>SC</given-names></name>, <name name-style="western"><surname>Havlicek</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Flegr</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Hruskova</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Little</surname><given-names>AC</given-names></name>, <etal>et al</etal>. (<year>2004</year>) <article-title>Female facial attractiveness increases during the fertile phase of the menstrual cycle</article-title>. <source>Proceedings of the Royal Society B</source> <volume>271</volume>: <fpage>270</fpage>–<lpage>272</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085292-Sharman1"><label>26</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sharman</surname><given-names>A</given-names></name> (<year>1951</year>) <article-title>Menstruation after Childbirth</article-title>. <source>British Journal of Obstetrics and Gynecology</source> <volume>58</volume><supplement>(3)</supplement>: <fpage>440</fpage>–<lpage>445</lpage>.</mixed-citation>
+</ref>
+</ref-list></back>
+</article>

@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="publisher-id">PONE-D-12-26466</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0054995</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Computational biology</subject>
+            <subj-group>
+              <subject>Ecosystem modeling</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Ecology</subject>
+            <subj-group>
+              <subject>Biodiversity</subject>
+              <subject>Biogeography</subject>
+              <subject>Evolutionary ecology</subject>
+              <subject>Macroecology</subject>
+              <subject>Spatial and landscape ecology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Evolutionary biology</subject>
+          </subj-group>
+          <subj-group>
+            <subject>Zoology</subject>
+            <subj-group>
+              <subject>Mammalogy</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Social and behavioral sciences</subject>
+          <subj-group>
+            <subject>Anthropology</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Computational Biology</subject>
+          <subject>Evolutionary Biology</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Asian Primate Species Richness Correlates with Rainfall</article-title>
+        <alt-title alt-title-type="running-head">Asian Primate Diversity Correlates with Rainfall</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Wang</surname>
+            <given-names>Yi-Chen</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Srivathsan</surname>
+            <given-names>Amrita</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Feng</surname>
+            <given-names>Chen-Chieh</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Salim</surname>
+            <given-names>Agus</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Shekelle</surname>
+            <given-names>Myron</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Department of Geography, National University of Singapore, Singapore, Singapore</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Department of Biological Sciences, National University of Singapore, Singapore, Singapore</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Hatfield Consultants, North Vancouver, British Columbia, Canada</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>Department of Biology, Museum of Vertebrate Biology, Portland State University, Portland, Oregon, United States of America</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Curnoe</surname>
+            <given-names>Darren</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>University of New South Wales, Australia</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">shekelle@tarsier.org</email></corresp>
+        <fn fn-type="conflict">
+          <p>The authors declare that the affiliation of their co-author, Mr Agus Salim, to Hatfield Consultants, does not alter their adherence to all the PLOS ONE policies on sharing data and materials.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Processed the data: YW CF A. Srivathsan A. Salim. Conceived and designed the experiments: A. Srivathsan MS YW. Analyzed the data: YW CF MS A. Salim. Contributed reagents/materials/analysis tools: YW CF A. Srivathsan A. Salim. Wrote the paper: YW MS.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>30</day>
+        <month>1</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>8</volume>
+      <issue>1</issue>
+      <elocation-id>e54995</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>31</day>
+          <month>8</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>19</day>
+          <month>12</month>
+          <year>2012</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Wang et al</copyright-holder>
+        <license xlink:type="simple">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Previous studies of meta-analyses found significantly positive correlations between primate species richness and rainfall for Africa, Madagascar and the Neotropics, with the exception of Asia, leaving the open question whether that anomaly is the result of sampling bias, biogeography, or some other factor. This study re-examines the question using modelled data, with primate species richness data from the Southeast Asian Mammals Databank and rainfall data from the Climatic Research Unit. Data processing with Geographical Information Systems resulted in 390 sample points. Reduced major axis and ordinary least squares regressions were employed to examine the relationship for six regions, including the whole study area of Southeast Asia, and the subareas of Huxley West, Huxley East, Mainland Southeast Asia, Borneo, and Sumatra. The results showed a significant positive relationship between primate species richness and mean annual rainfall for Southeast Asia (r = 0.26, P&lt;0.001). Comparing the results for the large islands and Mainland Southeast Asia showed that Sumatra had the highest correlation (r = 0.58; P&lt;0.05). After controlling for the major biogeographic effect associated with Huxley’s Line, our results showed that primate species richness is positively associated with mean annual rainfall in Southeast Asia. Our findings contrast to prior studies of meta-analyses that showed no relationship between rainfall and primate species richness in Asia, and thereby bring Asia into agreement with results showing significant positive correlations between rainfall and primate species richness everywhere else in the world. The inference is that previous anomalous results for Asia were result of sampling bias in the meta-analysis.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>The Faculty of Science, National University of Singapore provided funding support for Shekelle. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="8"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Understanding the causes of spatial variation in species richness is one of the major research goals of macroecology and biogeography <xref ref-type="bibr" rid="pone.0054995-Gotelli1">[1]</xref>. Geographical factors that have been documented to influence species richness include, for example, the well recognized latitudinal gradients <xref ref-type="bibr" rid="pone.0054995-Fischer1">[2]</xref>–<xref ref-type="bibr" rid="pone.0054995-Smith1">[5]</xref>, the established species-area relationships <xref ref-type="bibr" rid="pone.0054995-MacArthur1">[6]</xref>–<xref ref-type="bibr" rid="pone.0054995-Moody1">[8]</xref>, and the widely studied but highly debated productivity-biodiversity relationship <xref ref-type="bibr" rid="pone.0054995-Huston1">[9]</xref>–<xref ref-type="bibr" rid="pone.0054995-Fridley1">[13]</xref>. Numerous studies have examined the broad geographical factors underlying species diversity of many groups of vertebrates, especially for birds <xref ref-type="bibr" rid="pone.0054995-Ricklefs1">[3]</xref>, <xref ref-type="bibr" rid="pone.0054995-Blackburn1">[14]</xref>–<xref ref-type="bibr" rid="pone.0054995-Hawkins1">[16]</xref>. In contrast, although primates are among the most intensively studied mammals, relatively few attempts have explored the factors affecting primate species richness at the regional or continental level.</p>
+      <p>Non-human primates are distributed over Asia, Africa, Madagascar, and the Neotropics. Despite this wide distribution, around 90% of primate species are concentrated within tropical rain forests <xref ref-type="bibr" rid="pone.0054995-Mittermeier1">[17]</xref>. This argues for the importance of factors, such as climate and forest biome, in primate species distribution <xref ref-type="bibr" rid="pone.0054995-Lawes1">[18]</xref>. Indeed, past research has reported primate species richness as a function of rainfall <xref ref-type="bibr" rid="pone.0054995-Reed1">[19]</xref>, <xref ref-type="bibr" rid="pone.0054995-Fleagle1">[20]</xref> and plant productivity <xref ref-type="bibr" rid="pone.0054995-Kay1">[21]</xref>.</p>
+      <p>One curious and widely disseminated feature of previous studies, however, is that the results for Asia are anomalous, with respect to other regions (see <xref ref-type="bibr" rid="pone.0054995-Fleagle1">[20]</xref>). Comparative analysis of primate species richness in over 70 sites obtained from the published literature in Asia, Africa, Madagascar, and the Neotropics showed a significantly positive correlation between the number of primate species and the mean annual rainfall within all regions, with the exception of Asia <xref ref-type="bibr" rid="pone.0054995-Reed1">[19]</xref>. The absence of a pattern for Asia is likely because of one or more of three reasons. First, the anomalous result for Asia could be the result of Type II error caused by sampling bias, an inherent problem of meta-analyses <xref ref-type="bibr" rid="pone.0054995-Whittaker1">[11]</xref>. Second, Southeast Asia is regarded as one of the most complex biogeographic regions on Earth, and it is possible that historical biogeographic factors influenced the negative result for Asia. Tropical Asia consists of numerous islands. The area and distance effects of island biogeography theory posit that small and isolated islands away from a source population tend to have low species richness in comparison with large landmasses <xref ref-type="bibr" rid="pone.0054995-MacArthur1">[6]</xref>. Similarly, geologic history plays an important role in shaping the spatial variation in faunal richness. The Sunda Shelf islands to the west of Wallace’s Line were connected to Asia when sea level was lower during the Pleistocene Epoch, whereas no land bridge connected Asia to islands east of Wallace’s Line, e.g. Sulawesi, Lombok, etc. <xref ref-type="bibr" rid="pone.0054995-Harrison1">[22]</xref>. Consequently, there are stark differences in mammals across Wallace’s Line <xref ref-type="bibr" rid="pone.0054995-Osborne1">[23]</xref>. Third, anyone of a variety of other factors could have caused the negative result for Asia. For example, the monsoonal climate produces marked dry and wet seasons in many parts of tropical Asia. The extreme seasonal variation in rainfall might have accounted for a lack of relationship between rainfall and species diversity <xref ref-type="bibr" rid="pone.0054995-Fleagle1">[20]</xref>, <xref ref-type="bibr" rid="pone.0054995-Gentry1">[24]</xref>, <xref ref-type="bibr" rid="pone.0054995-Ganzhorn1">[25]</xref>, and this would require investigation should the negative result for Asia be confirmed by subsequent studies. Thus, a central objective for advancing studies of species richness is to ascertain the underlying cause of the negative result for primates in Asia.</p>
+      <p>Another issue in the debate concerns the nature of the relationship. Kay et al. <xref ref-type="bibr" rid="pone.0054995-Kay1">[21]</xref> revealed a unimodal relationship between primate species richness and annual rainfall in the Neotropics, peaking at 2500 mm and then declining. They also found a similar pattern for Asia by re-analysing Reed and Fleagle’s <xref ref-type="bibr" rid="pone.0054995-Reed1">[19]</xref> data. When plotting plant productivity as a function of rainfall, the pattern mirrored the distribution of primate species richness, and based on this linkage, they suggested that plant productivity plays a role in species richness of Neotropical primates. However, it has been noted that the non-linear relationship maybe overemphasized because of the presence of very few samples with low species richness at high rainfall <xref ref-type="bibr" rid="pone.0054995-Cowlishaw1">[26]</xref>.</p>
+      <p>All of these previous analyses were dependent, partially or wholly, on literature searches. They therefore suffered from the issues related to meta-analyses in that research designs varied from study to study, and the aims of the original studies were often profoundly different from the meta-analyses <xref ref-type="bibr" rid="pone.0054995-Whittaker1">[11]</xref>. Moreover, idiosyncrasies in the sampling of literature would affect the results. To illustrate this point, in the previous analyses (e.g. <xref ref-type="bibr" rid="pone.0054995-Reed1">[19]</xref>, <xref ref-type="bibr" rid="pone.0054995-Fleagle1">[20]</xref>), Asia was represented by an idiosyncratic collection of sample points from the literature, such that all but one point came from regions of rainfall above 1500 mm annually. This collection of sample points would have influenced the correlations found, because the left-hand side of the graph (i.e. regions of low rainfall) were virtually unsampled, in spite of the fact that large areas of Asia have rainfall well below 1500 mm annually. A re-examination of primate species richness and rainfall in Asia, with sampling that adequately covers the range of rainfall found within Asia, is therefore needed to better answer the question as to whether primate species richness and rainfall are correlated in Asia.</p>
+      <p>The advancement in Geographical Information Systems (GIS) technology has enabled the analysis of broad spatial patterns of primate species distribution <xref ref-type="bibr" rid="pone.0054995-Reed2">[27]</xref>. Thus, in this study, we use spatial analysis and GIS-modelled data to examine the relationship between primate species richness and mean annual rainfall across Southeast Asia, the region of Asia for which the comprehensive primate distribution data are available. Our research revisited the anomaly of the relationship between primate species richness and rainfall for Asia in two seminal publications in the <italic>Proceedings of the National Academy of Sciences USA</italic> (i.e. <xref ref-type="bibr" rid="pone.0054995-Reed1">[19]</xref>, <xref ref-type="bibr" rid="pone.0054995-Kay1">[21]</xref>) and one standard textbook (i.e. <xref ref-type="bibr" rid="pone.0054995-Fleagle1">[20]</xref>), which together have been cited more than 1500 times according to Google Scholar. We used modelled data to test whether the anomaly holds, or if it might be the result of sampling error from the meta-analysis, which obscure the biogeographical effect. The study aimed at filling the research gap in the knowledge of the relationship between primate species richness and rainfall in Asia. Specially, we address three questions. First, is primate species richness statistically significantly correlated with mean annual rainfall in Southeast Asia? Second, are the patterns of correlation different for the biogeographical regions on the two sides of the Wallace’s Line? Third, are the patterns of correlation different between mainland and large islands?</p>
+    </sec>
+    <sec id="s2" sec-type="materials|methods">
+      <title>Materials and Methods</title>
+      <sec id="s2a">
+        <title>Study Area</title>
+        <p>The study area lies between 11°S and 28°N and 92°E and 128°E. The region includes continental and insular Southeast Asia. The continental Southeast Asia comprises Myanmar, Thailand, Lao People’s Democratic Republic, Cambodia, Vietnam, and Peninsular Malaysia. It experiences greater seasonality, more extremes in both temperature and rainfall, and a more pronounced dry season. The insular Southeast Asia includes the Philippines, East Malaysia (the states of Sarawak and Sabah), Brunei, Singapore, Indonesia, and East Timor, most of which experience humid equatorial climate <xref ref-type="bibr" rid="pone.0054995-Goh1">[28]</xref>.</p>
+        <p>The region has an important faunal boundary based on the biogeographical work of Wallace (i.e. Wallace’s Line, coined by T. H. Huxley in 1868). There have been a number of variants of Wallace’s Line <xref ref-type="bibr" rid="pone.0054995-Simpson1">[29]</xref>. We employed Huxley’s <xref ref-type="bibr" rid="pone.0054995-Huxley1">[30]</xref> modification (hereafter, Huxley’s Line), which relied primarily on bird and mammal distributions <xref ref-type="bibr" rid="pone.0054995-Esselstyn1">[31]</xref>. The line runs east of Bali, then up between Borneo and Sulawesi, and from there extending northward to include the island of Palawan to the Oriental Biogeographical Region (<xref ref-type="fig" rid="pone-0054995-g001">Fig. 1</xref>) <xref ref-type="bibr" rid="pone.0054995-Lohman1">[32]</xref>. The line also delineates the extent of Sunda Shelf. During maximum glaciations before the end of the Pleistocene (11,700 years ago), water locked up by the ice sheets caused the sea level to be some 120 m lower than the present day <xref ref-type="bibr" rid="pone.0054995-Harrison1">[22]</xref>. Borneo, Sumatra, and other islands to the west of Huxley’s Line were united with the continental Southeast Asia into an extensive contiguous landmass. Some islands to the east of Huxley’s Line (e.g. Sulawesi) were, however, separated from the mainland since the Pliocene (about 5 Ma) <xref ref-type="bibr" rid="pone.0054995-Lohman1">[32]</xref>.</p>
+        <fig id="pone-0054995-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0054995.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>The study area of Southeast Asia and its subdivisions for analysis.</title>
+            <p>The solid gray line is Huxley’s Line that separates the whole study area into the regions of Huxley East and Huxley West. Within the region of Huxley West, three regions are further analysed, including Mainland Southeast Asia, Borneo, and Sumatra.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0054995.g001" position="float" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s2b">
+        <title>Primate Species Richness and Rainfall Data</title>
+        <p>There are various ways to measure species richness, and the term carries different meanings in different contexts. Since we are using GIS-modelled data based upon estimated extent of occurrence of primate taxa, our definition of species richness is the number of species at a given sample point that would hypothetically be sympatric if their distribution was continuous throughout the polygons of their extents of occurrence. This is the meaning of species richness that we intend throughout the paper. This is equivalent to local species richness as employed by Kay et al. <xref ref-type="bibr" rid="pone.0054995-Kay1">[21]</xref> and similar to that defined by Lawes and Eeley <xref ref-type="bibr" rid="pone.0054995-Lawes1">[18]</xref>.</p>
+        <p>To calculate primate species richness, we used data from the Southeast Asian Mammals Databank (SAMD) at <ext-link ext-link-type="uri" xlink:href="http://www.ieaitaly.org/samd/" xlink:type="simple">http://www.ieaitaly.org/samd/</ext-link><xref ref-type="bibr" rid="pone.0054995-Catullo1">[33]</xref>. The SAMD is a comprehensive database on distribution and ecology of more than 1000 mammal species <xref ref-type="bibr" rid="pone.0054995-Boitani1">[34]</xref>. We obtained a total of 99 GIS data layers from the SAMD, each of which represented the extent of occurrence of a primate species or subspecies. We followed the SAMD in adopting the primate taxonomy by Wilson and Reeder <xref ref-type="bibr" rid="pone.0054995-Wilson1">[35]</xref>. Using the Geoprocessing tools in ArcGIS 10 <xref ref-type="bibr" rid="pone.0054995-ESRI1">[36]</xref>, we derived a single GIS polygon layer of primate species richness distribution, with the number of primate species ranging from 1 to 11 in each of the polygons.</p>
+        <p>For rainfall data, we used the Global Climate Dataset produced by the Climatic Research Unit (CRU) of University of East Anglia (i.e. the CRU TS 2.1 data set). This data set, available at <ext-link ext-link-type="uri" xlink:href="http://csi.cgiar.org/cru/" xlink:type="simple">http://csi.cgiar.org/cru/</ext-link>, includes monthly time-series of climatic variables from 1901 to 2002 in GIS point data format. The data resolution for the land surface of Southeast Asia is at 0.5 degree resolution, resulting in a total of 1288 climatic data points for the study area. For each of the 1288 data points, we calculated the mean annual rainfall using the monthly time-series data from 1901 to 2002.</p>
+      </sec>
+      <sec id="s2c">
+        <title>Associating Primate Species Richness with Rainfall</title>
+        <p>To examine the relationship between primate species richness and mean annual rainfall, we first overlaid the 1288 climatic data points with the derived polygon layer of primate species richness distribution in GIS. We removed polygons with no climatic points from the analysis, most of which were sliver polygons smaller than the 0.5 degree gap between the climatic data points. Sliver polygons in our analysis are likely as a result of small discrepancies when digitizing extents of primate occurrence. A total of 390 polygons remained. Each primate species richness polygon was typically associated with more than one climatic sampling point because the 1288 climatic data points were regularly distributed at 0.5 degree interval. To decrease spatial dependence, instead of associating the 1288 climatic data points with primate species richness directly, similar to Kozak and Wiens <xref ref-type="bibr" rid="pone.0054995-Kozak1">[37]</xref>, we calculated mean annual rainfall using all the climatic points within a given polygon of the derived primate species richness GIS layer. As a result, our analysis for the whole of Southeast Asia had a total of 390 sample points, each of which was associated with values for primate species richness and mean annual rainfall.</p>
+        <p>With these sample points, we examined the relationship between primate species richness and rainfall for the following six regions indicated in <xref ref-type="fig" rid="pone-0054995-g001">Figure 1:</xref> (1) “Southeast Asia”, covering the whole area in the figure; (2) “Huxley West”, the region to the west of Huxley’s Line, illustrating the extent of Sunda Shelf; (3) “Huxley East”, the region to the east of Huxley’s Line, consisting of the Philippines, Sulawesi, and the Lesser Sunda Islands, except for Bali; (4) “Mainland Southeast Asia”, including continental Southeast Asia, except for their surrounding small islands; (5) the island of “Borneo”, which is occupied by the countries of Indonesia, Malaysia and Brunei; and (6) the Indonesia island “Sumatra”. We considered Borneo and Sumatra as individual regions for testing because they are the two largest islands in the study area, and their sizes, 748,168 km<sup>2</sup> and 443,066 km<sup>2</sup>, respectively, are comparable to Madagascar (587,713 km<sup>2</sup>), for which Reed and Fleagle <xref ref-type="bibr" rid="pone.0054995-Reed1">[19]</xref> found a positive correlation between primate species richness and rainfall.</p>
+        <p>We investigated if the average species richness in the two regions separated by Huxley’s Line and between mainland and island were different using Welch’s <italic>t</italic> test because of unequal variances. We diagnosed the normality of the rainfall data for each of the six regions using the Shapiro-Wilks test. The diagnostic tests showed that the rainfall data for the regions of Southeast Asia, Huxley West, and Mainland Southeast Asia were not normally distributed (P&lt;0.01). Hence, we transformed the data for these three regions into logarithmic scales. Retesting of the logarithm-transformed data showed that they met the assumption of normality at P = 0.01; the logarithm-transformed data for these three regions were therefore used for analysis. For all the six regions, we used the reduced major axis (RMA) regression to examine the relationship between primate species richness and mean annual rainfall for the reason that the independent variable (i.e. the mean annual rainfall data here) was subject to measurement error. However, the ordinary least squares (OLS) regression analysis was also conducted to allow the comparison of the results with the findings for Asia in prior studies (i.e. <xref ref-type="bibr" rid="pone.0054995-Reed1">[19]</xref>–<xref ref-type="bibr" rid="pone.0054995-Kay1">[21]</xref>) and to provide correlation coefficient and its square (r and r<sup>2</sup>) because they are defined independently of the line fitting criterion and do not differ for RMA and OLS lines <xref ref-type="bibr" rid="pone.0054995-Smith2">[38]</xref>. All of the statistical tests and analyses were carried out in R.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <p>Of the 390 sample points across Southeast Asia, primate species richness ranged from 1 to 11 with an average of 5.7 species per locality (<xref ref-type="table" rid="pone-0054995-t001">Table 1</xref>). The island of Borneo, on average, had the highest species richness per locality (Mean = 7.5) among the six regions analysed. The average species richness in Borneo is also statistically higher than that in Mainland Southeast Asia (t = −11.15; P&lt;0.001). The region to the east of Huxley’s Line had much lower primate specie richness, an average of 1.7 primate species per locality (<xref ref-type="table" rid="pone-0054995-t001">Table 1</xref>). This was significantly lower than the average species richness for the region west of Huxley’s Line, which had a mean of 5.9 species (t = 25.19, P&lt;0.001). The mean annual rainfall was higher in the two large islands, 3183 mm and 2458 mm respectively for Borneo and Sumatra, while the region of Mainland Southeast Asia had the lowest mean annual rainfall of 2027 mm. The variation of mean annual rainfall across Mainland Southeast Asia was wide, ranging from 881 to 4841 mm (<xref ref-type="table" rid="pone-0054995-t001">Table 1</xref>).</p>
+      <table-wrap id="pone-0054995-t001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0054995.t001</object-id>
+        <label>Table 1</label>
+        <caption>
+          <title>Regional variation in rainfall and primate species richness.</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone-0054995-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0054995.t001" xlink:type="simple"/>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Region</td>
+                <td align="left" rowspan="1" colspan="1">N</td>
+                <td colspan="4" align="left" rowspan="1">Rainfall (mm)</td>
+                <td colspan="2" align="left" rowspan="1">Species richness</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">Min</td>
+                <td align="left" rowspan="1" colspan="1">Max</td>
+                <td align="left" rowspan="1" colspan="1">Mean</td>
+                <td align="left" rowspan="1" colspan="1">SD</td>
+                <td align="left" rowspan="1" colspan="1">Mean</td>
+                <td align="left" rowspan="1" colspan="1">SD</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Southeast Asia</td>
+                <td align="left" rowspan="1" colspan="1">390</td>
+                <td align="left" rowspan="1" colspan="1">881</td>
+                <td align="left" rowspan="1" colspan="1">4841</td>
+                <td align="left" rowspan="1" colspan="1">2364</td>
+                <td align="left" rowspan="1" colspan="1">743.7</td>
+                <td align="left" rowspan="1" colspan="1">5.7</td>
+                <td align="left" rowspan="1" colspan="1">2.19</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Huxley West</td>
+                <td align="left" rowspan="1" colspan="1">364</td>
+                <td align="left" rowspan="1" colspan="1">881</td>
+                <td align="left" rowspan="1" colspan="1">4841</td>
+                <td align="left" rowspan="1" colspan="1">2369</td>
+                <td align="left" rowspan="1" colspan="1">758.6</td>
+                <td align="left" rowspan="1" colspan="1">5.9</td>
+                <td align="left" rowspan="1" colspan="1">1.98</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Huxley East</td>
+                <td align="left" rowspan="1" colspan="1">26</td>
+                <td align="left" rowspan="1" colspan="1">1243</td>
+                <td align="left" rowspan="1" colspan="1">3238</td>
+                <td align="left" rowspan="1" colspan="1">2296</td>
+                <td align="left" rowspan="1" colspan="1">495.0</td>
+                <td align="left" rowspan="1" colspan="1">1.7</td>
+                <td align="left" rowspan="1" colspan="1">0.67</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Mainland Southeast Asia</td>
+                <td align="left" rowspan="1" colspan="1">231</td>
+                <td align="left" rowspan="1" colspan="1">881</td>
+                <td align="left" rowspan="1" colspan="1">4841</td>
+                <td align="left" rowspan="1" colspan="1">2027</td>
+                <td align="left" rowspan="1" colspan="1">614.2</td>
+                <td align="left" rowspan="1" colspan="1">5.5</td>
+                <td align="left" rowspan="1" colspan="1">1.85</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Borneo</td>
+                <td align="left" rowspan="1" colspan="1">83</td>
+                <td align="left" rowspan="1" colspan="1">1938</td>
+                <td align="left" rowspan="1" colspan="1">4083</td>
+                <td align="left" rowspan="1" colspan="1">3183</td>
+                <td align="left" rowspan="1" colspan="1">543.7</td>
+                <td align="left" rowspan="1" colspan="1">7.5</td>
+                <td align="left" rowspan="1" colspan="1">1.14</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Sumatra</td>
+                <td align="left" rowspan="1" colspan="1">34</td>
+                <td align="left" rowspan="1" colspan="1">1724</td>
+                <td align="left" rowspan="1" colspan="1">3090</td>
+                <td align="left" rowspan="1" colspan="1">2458</td>
+                <td align="left" rowspan="1" colspan="1">322.0</td>
+                <td align="left" rowspan="1" colspan="1">6.9</td>
+                <td align="left" rowspan="1" colspan="1">0.91</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+        <table-wrap-foot>
+          <fn id="nt101">
+            <label/>
+            <p>N: number of sample points; SD: standard deviation.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <p>The RMA regressions showed positive relationships between primate species richness and mean annual rainfall for all the six regions analysed (<xref ref-type="table" rid="pone-0054995-t002">Table 2</xref>, <xref ref-type="fig" rid="pone-0054995-g002">Fig. 2</xref>). The slope derived from the RMA for the whole study area Southeast Asia with logarithm-transformed rainfall data was 15.968 (95% confidence interval = 14.501, 17.582), and the results from the OLS regression for the whole Southeast Asia exhibited a significant positive relationship between rainfall and the number of primate species found (r = 0.26, P&lt;0.001) (<xref ref-type="table" rid="pone-0054995-t002">Table 2</xref>, <xref ref-type="fig" rid="pone-0054995-g002">Fig. 2A</xref>). When data for the region of Huxley West were analysed, the correlation between mean annual rainfall and primate species richness obtained from the OLS became slightly stronger (r = 0.29; P&lt;0.001) (<xref ref-type="table" rid="pone-0054995-t002">Table 2</xref>), with a slightly shallower slope of 14.191 (<xref ref-type="fig" rid="pone-0054995-g002">Fig. 2B</xref>) obtained from the RMA (95% confidence interval = 12.857, 15.664). On the other hand, in comparison with Huxley West, the correlation for the region of Huxley East was higher (r = 0.31) but not statistically significant (P = 0.119). In Borneo and Sumatra, primate species richness also displayed a significant positive linear relationship with rainfall (P&lt;0.05) (<xref ref-type="table" rid="pone-0054995-t002">Table 2</xref>, <xref ref-type="fig" rid="pone-0054995-g002">Figs. 2E–2F</xref>). In addition, Sumatra had the highest correlation (r = 0.58) among the six regions analysed, and a steeper slope than Borneo (<xref ref-type="table" rid="pone-0054995-t002">Table 2</xref>). The slope derived from the RMA for the Mainland Southeast Asia was 15.069 (95% confidence interval = 13.244, 17.145) (<xref ref-type="fig" rid="pone-0054995-g002">Fig. 2C</xref>), but the region had the lowest correlation (r = 0.11) than any other region analysed, and the relationship was not statistically significant (P = 0.098) (<xref ref-type="table" rid="pone-0054995-t002">Table 2</xref>).</p>
+      <fig id="pone-0054995-g002" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0054995.g002</object-id>
+        <label>Figure 2</label>
+        <caption>
+          <title>Primate species richness as a function of rainfall for (A) Southeast Asia; (B) Huxley West; (C) Mainland Southeast Asia; (D) Huxley East; (E) Borneo; and (F) Sumatra.</title>
+          <p>Note that log-transformed rainfall data are used for (A) to (C) because the data of these three regions are not normally distributed. For comparison purpose, the ranges for all the y-axes are fixed; the rainfall range in the x-axis for (A) to (C) is approximately the same as that for (D) to (E) after log-transformed. The dash and solid fitted trend lines are based on the reduced major axis and the ordinary least squares regressions, respectively.</p>
+        </caption>
+        <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0054995.g002" position="float" xlink:type="simple"/>
+      </fig>
+      <table-wrap id="pone-0054995-t002" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0054995.t002</object-id>
+        <label>Table 2</label>
+        <caption>
+          <title>Slope and intercept parameters of the relationships between primate species richness and mean annual rainfall obtained from the reduced major axis (RMA) and the ordinary least squares (OLS) regressions for the six regions analysed in the study.</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone-0054995-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0054995.t002" xlink:type="simple"/>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Region</td>
+                <td colspan="2" align="left" rowspan="1">RMA</td>
+                <td colspan="5" align="left" rowspan="1">OLS</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">Intercept</td>
+                <td align="left" rowspan="1" colspan="1">Slope</td>
+                <td align="left" rowspan="1" colspan="1">Intercept</td>
+                <td align="left" rowspan="1" colspan="1">Slope</td>
+                <td align="left" rowspan="1" colspan="1">r</td>
+                <td align="left" rowspan="1" colspan="1">r<sup>2</sup></td>
+                <td align="left" rowspan="1" colspan="1">P value</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Southeast Asia<xref ref-type="table-fn" rid="nt103">a</xref></td>
+                <td align="left" rowspan="1" colspan="1">−47.869</td>
+                <td align="left" rowspan="1" colspan="1">15.968</td>
+                <td align="left" rowspan="1" colspan="1">−8.068</td>
+                <td align="left" rowspan="1" colspan="1">4.095</td>
+                <td align="left" rowspan="1" colspan="1">0.26</td>
+                <td align="left" rowspan="1" colspan="1">0.07</td>
+                <td align="left" rowspan="1" colspan="1">0.000</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Huxley West<xref ref-type="table-fn" rid="nt103">a</xref></td>
+                <td align="left" rowspan="1" colspan="1">−41.634</td>
+                <td align="left" rowspan="1" colspan="1">14.191</td>
+                <td align="left" rowspan="1" colspan="1">−7.931</td>
+                <td align="left" rowspan="1" colspan="1">4.138</td>
+                <td align="left" rowspan="1" colspan="1">0.29</td>
+                <td align="left" rowspan="1" colspan="1">0.09</td>
+                <td align="left" rowspan="1" colspan="1">0.000</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Mainland Southeast Asia<xref ref-type="table-fn" rid="nt103">a</xref></td>
+                <td align="left" rowspan="1" colspan="1">−44.053</td>
+                <td align="left" rowspan="1" colspan="1">15.069</td>
+                <td align="left" rowspan="1" colspan="1">0.094</td>
+                <td align="left" rowspan="1" colspan="1">1.647</td>
+                <td align="left" rowspan="1" colspan="1">0.11</td>
+                <td align="left" rowspan="1" colspan="1">0.01</td>
+                <td align="left" rowspan="1" colspan="1">0.098</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Borneo</td>
+                <td align="left" rowspan="1" colspan="1">0.783</td>
+                <td align="left" rowspan="1" colspan="1">0.002</td>
+                <td align="left" rowspan="1" colspan="1">5.660</td>
+                <td align="left" rowspan="1" colspan="1">0.001</td>
+                <td align="left" rowspan="1" colspan="1">0.27</td>
+                <td align="left" rowspan="1" colspan="1">0.07</td>
+                <td align="left" rowspan="1" colspan="1">0.014</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Sumatra</td>
+                <td align="left" rowspan="1" colspan="1">−0.091</td>
+                <td align="left" rowspan="1" colspan="1">0.003</td>
+                <td align="left" rowspan="1" colspan="1">2.808</td>
+                <td align="left" rowspan="1" colspan="1">0.002</td>
+                <td align="left" rowspan="1" colspan="1">0.58</td>
+                <td align="left" rowspan="1" colspan="1">0.34</td>
+                <td align="left" rowspan="1" colspan="1">0.000</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Huxley East</td>
+                <td align="left" rowspan="1" colspan="1">−1.362</td>
+                <td align="left" rowspan="1" colspan="1">0.001</td>
+                <td align="left" rowspan="1" colspan="1">0.762</td>
+                <td align="left" rowspan="1" colspan="1">0.000</td>
+                <td align="left" rowspan="1" colspan="1">0.31</td>
+                <td align="left" rowspan="1" colspan="1">0.10</td>
+                <td align="left" rowspan="1" colspan="1">0.119</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+        <table-wrap-foot>
+          <fn id="nt102">
+            <label/>
+            <p>The correlation coefficient and its square (r and r<sup>2</sup>) are defined independently of the line fitting criterion and do not differ for RMA and OLS lines <xref ref-type="bibr" rid="pone.0054995-Kozak1">[37]</xref>. The P values indicate whether the relationships obtained from the OLS regressions are statistically significant.</p>
+          </fn>
+          <fn id="nt103">
+            <label>a</label>
+            <p>Logarithm-transformed data used.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <sec id="s4a">
+        <title>Primate Species Richness Correlates with Rainfall in Southeast Asia</title>
+        <p>The results of the study show positive relationships between mean annual rainfall and primate species richness for different regions in Southeast Asia (<xref ref-type="fig" rid="pone-0054995-g002">Fig. 2</xref>). Similar to the findings found in Reed and Fleagle <xref ref-type="bibr" rid="pone.0054995-Reed1">[19]</xref> for other tropical areas such as the Neotropics and Africa that primate species richness is positively associated with mean annual rainfall, the relationship for the whole Southeast Asia exhibits a positive slope (<xref ref-type="fig" rid="pone-0054995-g002">Fig. 2A</xref>) and a statistically significant correlation between the variables (P&lt;0.001). Contrary to the fairly strong correlations found for the Neotropics (r<sup>2</sup> = 0.67), Africa (r<sup>2</sup> = 0.75), and Madagascar (r<sup>2</sup> = 0.70) in Reed and Fleagle <xref ref-type="bibr" rid="pone.0054995-Reed1">[19]</xref>, the highest correlation in the Southeast Asian region was found in the large island Sumatra (r<sup>2</sup> = 0.34), and the correlation for the whole Southeast Asia, albeit statistically significant, was not strong (r<sup>2</sup> = 0.07) (<xref ref-type="table" rid="pone-0054995-t002">Table 2</xref>).</p>
+        <p>The results of the study contrast to prior studies that show no relationship between rainfall and primate species in Asia <xref ref-type="bibr" rid="pone.0054995-Reed1">[19]</xref>, <xref ref-type="bibr" rid="pone.0054995-HasselFinnegan1">[39]</xref>. The differences in the findings may result from variations in sample sizes, as a more extensive data set covering a wide spatial extent should allow a better evaluation of the correlation and the possible influences of biogeographical regions and island area. Reed and Fleagle <xref ref-type="bibr" rid="pone.0054995-Reed1">[19]</xref> included 11 localities from the literature for tropical Asia; Hassel-Finnegan <xref ref-type="bibr" rid="pone.0054995-HasselFinnegan1">[39]</xref> acquired published and unpublished data from 45 protected areas in southern China, continental Southeast Asia, Borneo and Sumatra, all of which were located in the west of Huxley’s Line; our study analysed 390 points from both the Huxley West and the Huxley East regions, covering the largest spatial extent. Our data set thus extensively included localities across a wide range of rainfall from both the continental and insular Southeast Asia (<xref ref-type="fig" rid="pone-0054995-g001">Fig. 1</xref>), and from islands of both relatively low species richness (e.g. the Philippines and Sulawesi) and high species richness (e.g. Borneo) (<xref ref-type="table" rid="pone-0054995-t001">Table 1</xref>).</p>
+      </sec>
+      <sec id="s4b">
+        <title>Variations in Patterns of Relations in Southeast Asia</title>
+        <sec id="s4b1">
+          <title>Between the biogeographical regions of huxley west and huxley east</title>
+          <p>Our results indicate a major biogeographical effect associated with Huxley’s Line, which separates Bali from Lombok, Borneo from Sulawesi, and Palawan from the rest of the Philippine archipelago (<xref ref-type="fig" rid="pone-0054995-g001">Fig. 1</xref>). Compared to the Huxley West, there is an abrupt and significant decline (P&lt;0.001) in the average number of primate species for the Huxley East (<xref ref-type="table" rid="pone-0054995-t001">Table 1</xref>) with the number of primate species per locality ranging only from 1 to 3. Huxley’s Line represents a sharp boundary in the distribution of some mammals, and has been recognized as being an artifact of a dispersal barrier separating historical mainland Asia from lands to the east <xref ref-type="bibr" rid="pone.0054995-Raven1">[40]</xref>, <xref ref-type="bibr" rid="pone.0054995-Mayr1">[41]</xref>. During the Pleistocene Epoch, the islands in the Huxley East remained unconnected to mainland Asia at the maximum sea-level lowering at –120 m. Although Borneo and Sulawesi were closer in distance during the Pleistocene, they were still separated by a deep trench and no land bridge formed between them <xref ref-type="bibr" rid="pone.0054995-Osborne1">[23]</xref>. Hypotheses for the presence of primates to the east of Huxley’s Line in the Philippines, Sulawesi, and the Lesser Sunda Islands included: arrival by some form of sweepstakes dispersal that created a seemingly depauperate fauna <xref ref-type="bibr" rid="pone.0054995-Osborne1">[23]</xref>, or even that they were transported there by humans <xref ref-type="bibr" rid="pone.0054995-Harcourt1">[42]</xref>. Excluding data points of the Huxley East from the analysis increased the correlation between primate species richness and rainfall (<xref ref-type="table" rid="pone-0054995-t002">Table 2</xref>), because it removed low species richness areas that were the result of the depauperate fauna created by sweepstakes dispersal, as opposed to being low because of low rainfall.</p>
+        </sec>
+        <sec id="s4b2">
+          <title>Between mainland and large islands</title>
+          <p>A concern with regard to the analysis for the region of Huxley West would be that it comprises of both mainland and islands and thus the results may be influenced by the species-area effects of island biogeography. Indeed, previous studies have suggested that the lack of relation between rainfall and number of primates at Asian site may partly reflect the fact that the continent of Asia includes many separate islands <xref ref-type="bibr" rid="pone.0054995-Reed1">[19]</xref>, <xref ref-type="bibr" rid="pone.0054995-Fleagle1">[20]</xref>, <xref ref-type="bibr" rid="pone.0054995-HasselFinnegan1">[39]</xref>. The sizes of islands could place an upper limit on the potential primate diversity at many sites, resulting in relatively low species diversity, regardless of rainfall <xref ref-type="bibr" rid="pone.0054995-Reed1">[19]</xref>. However, Hassel-Finnegan <xref ref-type="bibr" rid="pone.0054995-HasselFinnegan1">[39]</xref> found that island areas did not limit species diversity in the region; primate species richness was higher for island than mainland sites, although the difference was not statistically significant. Likewise, our results showed that the mean primate species richness was statistically higher in the large islands of Borneo and Sumatra than in Mainland Southeast Asia (P&lt;0.001).</p>
+          <p>The pattern of relation between primate species richness and rainfall for Borneo and Sumatra exhibited a significant positive relationship (<xref ref-type="fig" rid="pone-0054995-g002">Figs. 2E–2F</xref>), which was similar to that found for the large island of Madagascar <xref ref-type="bibr" rid="pone.0054995-Reed1">[19]</xref>. Nevertheless, the relationship for the two largest islands, Borneo and Sumatra, in Southeast Asia (r<sup>2</sup> = 0.07 and 0.34, respectively; <xref ref-type="table" rid="pone-0054995-t002">Table 2</xref>) was not as strong as that for Madagascar (r<sup>2</sup> = 0.70) in Africa. Unlike Madagascar of which several sites also documented low number of primate species with low rainfall data less than 1000 mm (cf. <xref ref-type="bibr" rid="pone.0054995-Reed1">[19]</xref>), all the localities analysed in this study for Borneo and Sumatra recorded at least five or more primate species with rainfall above 1700 mm (<xref ref-type="fig" rid="pone-0054995-g002">Figs. 2E–2F</xref>; <xref ref-type="table" rid="pone-0054995-t001">Table 1</xref>). In addition, the difference in the strength of correlation between the Southeast Asian large islands and Madagascar was likely as a result of the latitudinal influence on species richness in Madagascar. Both Borneo and Sumatra straddle the equator, with the landmasses relatively balanced north and south of the equator (<xref ref-type="fig" rid="pone-0054995-g001">Fig. 1</xref>). On the contrary, Madagascar is situated between 12° and 26° South latitude, and hence, the pattern of relation between species richness and rainfall in Madagascar may be further enhanced by the latitudinal gradient.</p>
+          <p>The high average primate species richness in Borneo and Sumatra compared to other regions analysed in this study also corresponded with the high average local species richness shown in Lawes and Eeley 18. Borneo, in particular, has been found to have a higher number of endemic primate species, presumably as a result of its degree of isolation from other Sunda sub-provinces during glacial periods, compared to Sumatra that was more readily recolonized from the mainland Southeast Asia via the Malay Peninsula <xref ref-type="bibr" rid="pone.0054995-Harrison1">[22]</xref>. In concordance with this, research has shown that Borneo and Sumatra deviate by a large amount from the general pattern of the species-area relationship for islands in Southeast Asia <xref ref-type="bibr" rid="pone.0054995-Harcourt1">[42]</xref>. Heaney <xref ref-type="bibr" rid="pone.0054995-Heaney1">[43]</xref> hypothesized that high species richness in Borneo and Sumatra might have resulted from their large areas allowing high levels of habitat heterogeneity for niche diversification. Our results, however, indicate that high species richness in Borneo and Sumatra deviated from the pattern of the species-area relationship for islands in Southeast Asia (cf. <xref ref-type="bibr" rid="pone.0054995-Harcourt1">[42]</xref>). This might be attributed to high rainfall distributions in Borneo and Sumatra (<xref ref-type="fig" rid="pone-0054995-g002">Figs. 2E–2F</xref>).</p>
+          <p>Compared to the rainfall distribution of Mainland Southeast Asia (<xref ref-type="fig" rid="pone-0054995-g002">Fig. 2C</xref>), the rainfall distribution of the region of Huxley West (<xref ref-type="fig" rid="pone-0054995-g002">Fig. 2B</xref>) had a larger number of sample points in the mid and high rainfall range, mostly from localities of Borneo (<xref ref-type="fig" rid="pone-0054995-g002">Fig. 2E</xref>), Sumatra (<xref ref-type="fig" rid="pone-0054995-g002">Fig. 2F</xref>) and Java (data not shown). When these points were included in the analyses, the results shifted from no statistically significant correlation with primate species richness for the region of Mainland Southeast Asia, to statistically significant linear correlation for the region of Huxley West. This is particularly interesting, because previous studies have attributed the lack of relationship between primate species richness and rainfall to the presence of the large number of islands in Asia. Contrary to this, we observed that inclusion of islands into the data set increased the quantity of high rainfall sample points, thereby improving the correlation.</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec id="s5">
+      <title>Conclusions and Future Work</title>
+      <p>With a wider range of rainfall data and a larger spatial extent of examination than prior work, the results of this study indicate that primate species richness is positively correlated with rainfall in Southeast Asia. In addition, the study detects the major biogeographical effect associated with Huxley’s Line. The average number of primate species per locality is significantly lower in the Huxley East than that in the Huxley West. In comparison with Huxley West, the correlation between rainfall and primate species richness for the region of Huxley East was also not statistically significant. Within the region of Huxley West, the patterns of correlations are different between the Mainland Southeast Asia and the large islands. Primate species richness displays a statistically significant linear relationship with rainfall in large islands Borneo and Sumatra, but not in Mainland Southeast Asia. The approach employed in this study allows the re-examination of the patterns of correlation for primate species richness as a function of rainfall in Southeast Asia, enabling a better understanding of factors that govern species distribution and diversity.</p>
+      <p>That rainfall did not hold a significant relationship with primate species richness in Mainland Southeast Asia does not preclude the possibility of a non-linear correlation. Kay et al. <xref ref-type="bibr" rid="pone.0054995-Kay1">[21]</xref> has found a non-linear unimodal relationship for the Neotropics, with primate species richness first increasing as rainfall increases but then declining gently in localities with high rainfall, as a result of decrease in plant productivity. It will be desirable to investigate if such non-linear relationship exists for the region of Mainland Southeast Asia, and whether forest productivity plays a role in primate species richness in the region. In addition, compared to prior work, the r values for the six regions analysed in Southeast Asia are low. This is not unexpected due to the larger sample sizes analyzed in the study, but also calls for attention to considering other factors as explanatory variables for primate diversity. Indeed, the present day patterns of primate species richness in Southeast Asia seem to reflect a combination of environmental and historical factors rather than a single unitary cause <xref ref-type="bibr" rid="pone.0054995-Fleagle1">[20]</xref>, <xref ref-type="bibr" rid="pone.0054995-HasselFinnegan1">[39]</xref>. An area for future research is to incorporate phylogeny in the analysis (e.g. <xref ref-type="bibr" rid="pone.0054995-Kozak1">[37]</xref>, <xref ref-type="bibr" rid="pone.0054995-Freckleton1">[44]</xref>, <xref ref-type="bibr" rid="pone.0054995-Rabosky1">[45]</xref>) to quantify the relative effects of space and phylogeny in simultaneously shaping the variations in species distributions and to address how the climate-diversity relationships actually arise.</p>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We wish to thank the University Scholars Programme and the GIS and Map Resource Unit of the Geography Department, National University of Singapore for providing the facilities for analysis, John Fleagle, Richard Kay, Dave Higdon and Carel van Schaik for helpful discussion, and two anonymous reviewers and the academic editor Darren Curnoe for valuable comments.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0054995-Gotelli1">
+        <label>1</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gotelli</surname><given-names>NJ</given-names></name>, <name name-style="western"><surname>Anderson</surname><given-names>MJ</given-names></name>, <name name-style="western"><surname>Arita</surname><given-names>HT</given-names></name>, <name name-style="western"><surname>Chao</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Colwell</surname><given-names>RK</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Patterns and causes of species richness: a general simulation model for macroecology</article-title>. <source>Ecol Lett</source> <volume>12</volume>: <fpage>873</fpage>–<lpage>886</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Fischer1">
+        <label>2</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fischer</surname><given-names>AG</given-names></name> (<year>1960</year>) <article-title>Latitudinal variations in organic diversity</article-title>. <source>Evolution</source> <volume>14</volume>: <fpage>64</fpage>–<lpage>81</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Ricklefs1">
+        <label>3</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ricklefs</surname><given-names>RE</given-names></name> (<year>2006</year>) <article-title>Global variation in the diversification rate of passerine birds</article-title>. <source>Ecology</source> <volume>87</volume>: <fpage>2468</fpage>–<lpage>2478</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Stevens1">
+        <label>4</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Stevens</surname><given-names>RD</given-names></name> (<year>2006</year>) <article-title>Historical processes enhance patterns of diversity along latitudinal gradients</article-title>. <source>Proc Biol Sci</source> <volume>273</volume>: <fpage>2283</fpage>–<lpage>2289</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Smith1">
+        <label>5</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Smith BT, Bryson Jr RW, Houston DD, Klicka J (2012) An asymmetry in niche conservatism contributes to the latitudinal species diversity gradient in New World vertebrates. Ecol Lett, In press. DOI: 10.1111/j.1461-0248.2012.01855.x.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-MacArthur1">
+        <label>6</label>
+        <mixed-citation publication-type="other" xlink:type="simple">MacArthur RH, Wilson EO (1967) The theory of island biogeography. Princeton: Princeton University Press. 203 p.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Rosenzweig1">
+        <label>7</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Rosenzweig ML (1995) Species diversity in space and time. Cambridge: Cambridge University Press. 460 p.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Moody1">
+        <label>8</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Moody</surname><given-names>A</given-names></name> (<year>2000</year>) <article-title>Analysis of plant species diversity with respect to island characteristics on the Channel Islands, California</article-title>. <source>J Biogeogr</source> <volume>27</volume>: <fpage>711</fpage>–<lpage>723</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Huston1">
+        <label>9</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Huston</surname><given-names>M</given-names></name> (<year>1979</year>) <article-title>A general hypothesis of species diversity</article-title>. <source>Am Nat</source> <volume>113</volume>: <fpage>81</fpage>–<lpage>101</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Chase1">
+        <label>10</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chase</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Leibold</surname><given-names>MA</given-names></name> (<year>2002</year>) <article-title>Spatial scale dictates the productivity-biodiversity relationship</article-title>. <source>Nature</source> <volume>416</volume>: <fpage>427</fpage>–<lpage>430</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Whittaker1">
+        <label>11</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Whittaker</surname><given-names>RJ</given-names></name> (<year>2010</year>) <article-title>Meta-analyses and mega-mistakes: calling time on meta-analysis of the species richness–productivity relationship</article-title>. <source>Ecology</source> <volume>91</volume>: <fpage>2522</fpage>–<lpage>2533</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Adler1">
+        <label>12</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Adler</surname><given-names>PB</given-names></name>, <name name-style="western"><surname>Seabloom</surname><given-names>EW</given-names></name>, <name name-style="western"><surname>Borer</surname><given-names>ET</given-names></name>, <name name-style="western"><surname>Hillebrand</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Hautier</surname><given-names>Y</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Productivity is a poor predictor of plant species richness</article-title>. <source>Science</source> <volume>333</volume>: <fpage>1750</fpage>–<lpage>1753</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Fridley1">
+        <label>13</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fridley</surname><given-names>JD</given-names></name>, <name name-style="western"><surname>Grime</surname><given-names>JP</given-names></name>, <name name-style="western"><surname>Huston</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Pierce</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Smart</surname><given-names>SM</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Comment on “Productivity is a poor predictor of plant species richness”</article-title>. <source>Science</source> <volume>335</volume>: <fpage>1441</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Blackburn1">
+        <label>14</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Blackburn</surname><given-names>TM</given-names></name>, <name name-style="western"><surname>Gaston</surname><given-names>KJ</given-names></name> (<year>1996</year>) <article-title>Spatial patterns in the species richness of birds in the New World</article-title>. <source>Ecography</source> <volume>19</volume>: <fpage>369</fpage>–<lpage>376</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Hurlbert1">
+        <label>15</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hurlbert</surname><given-names>AH</given-names></name>, <name name-style="western"><surname>Haskell</surname><given-names>JP</given-names></name> (<year>2003</year>) <article-title>The effect of energy and seasonality on avian species richness and community composition</article-title>. <source>Am Nat</source> <volume>161</volume>: <fpage>83</fpage>–<lpage>97</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Hawkins1">
+        <label>16</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hawkins</surname><given-names>BA</given-names></name>, <name name-style="western"><surname>Diniz-Filho</surname><given-names>JAF</given-names></name>, <name name-style="western"><surname>Jaramillo</surname><given-names>CA</given-names></name>, <name name-style="western"><surname>Soeller</surname><given-names>SA</given-names></name> (<year>2006</year>) <article-title>Post-Eocene climate change, niche conservatism, and the latitudinal diversity gradient of New World birds</article-title>. <source>J Biogeogr</source> <volume>33</volume>: <fpage>770</fpage>–<lpage>780</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Mittermeier1">
+        <label>17</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Mittermeier RA (1988) Primate diversity and the tropical forest: case studies from Brazil and Madagascar and the importance of the megadiversity countries. In: Wilson EO, editor. Biodiversity. Washington DC: National Academy Press. 145–154.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Lawes1">
+        <label>18</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lawes</surname><given-names>MJ</given-names></name>, <name name-style="western"><surname>Eeley</surname><given-names>HAC</given-names></name> (<year>2000</year>) <article-title>Are local patterns of anthropoid primate diversity related to patterns of diversity at a larger scale</article-title>? <source>J Biogeogr</source> <volume>27</volume>: <fpage>1421</fpage>–<lpage>1435</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Reed1">
+        <label>19</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Reed</surname><given-names>KE</given-names></name>, <name name-style="western"><surname>Fleagle</surname><given-names>JG</given-names></name> (<year>1995</year>) <article-title>Geographic and climatic control of primate diversity</article-title>. <source>Proc Natl Acad Sci U S A</source> <volume>92</volume>: <fpage>7874</fpage>–<lpage>7876</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Fleagle1">
+        <label>20</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Fleagle JG (1999) Primate adaptation and evolution. San Diego: Academic Press. 596 p.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Kay1">
+        <label>21</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kay</surname><given-names>RF</given-names></name>, <name name-style="western"><surname>Madden</surname><given-names>RH</given-names></name>, <name name-style="western"><surname>Van Schaik</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Higdon</surname><given-names>D</given-names></name> (<year>1997</year>) <article-title>Primate species richness is determined by plant productivity: implications for Conservation</article-title>. <source>Proc Natl Acad Sci U S A</source> <volume>97</volume>: <fpage>13023</fpage>–<lpage>13027</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Harrison1">
+        <label>22</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Harrison T, Krigbaum J, Manser J (2006) Primate biogeography and ecology on the Sunda Shelf Islands: a paleontological and zooarcheological perspective. In: Lehman SM, Fleagle JG, editors. Primate biogeography: progress and prospects. New York: Springer. 331–372.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Osborne1">
+        <label>23</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Osborne PL (2000) Tropical ecosystems and ecological concepts. Cambridge: Cambridge University Press. 464 p.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Gentry1">
+        <label>24</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gentry</surname><given-names>AH</given-names></name> (<year>1988</year>) <article-title>Changes in plant community diversity and floristic composition on environmental and geographical gradients</article-title>. <source>Ann Mo Bot Gard</source> <volume>75(1)</volume>: <fpage>1</fpage>–<lpage>34</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Ganzhorn1">
+        <label>25</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ganzhorn</surname><given-names>JU</given-names></name>, <name name-style="western"><surname>Malcomber</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Andrianantoanina</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Goodman</surname><given-names>SM</given-names></name> (<year>1997</year>) <article-title>Habitat characteristics and lemur species richness in Madagascar</article-title>. <source>Biotropica</source> <volume>29</volume>: <fpage>331</fpage>–<lpage>343</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Cowlishaw1">
+        <label>26</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Cowlishaw G, Dunbar RIM (2000) Primate conservation biology. Chicago: The University of Chicago Press. 498 p.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Reed2">
+        <label>27</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Reed</surname><given-names>KE</given-names></name>, <name name-style="western"><surname>Bidner</surname><given-names>LR</given-names></name> (<year>2004</year>) <article-title>Primate communities: past, present and possible future</article-title>. <source>Yearb Phys Anthropol</source> <volume>47</volume>: <fpage>2</fpage>–<lpage>39</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Goh1">
+        <label>28</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Goh KC (2005) The climate of Southeast Asia. In: Gupta A, editor. The physical geography of Southeast Asia. Oxford: Oxford University Press. 80–93.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Simpson1">
+        <label>29</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Simpson</surname><given-names>GG</given-names></name> (<year>1977</year>) <article-title>Too many lines; the limits of the oriental and Australian Zoogeographic regions</article-title>. <source>Proc Am Philos Soc</source> <volume>121</volume>: <fpage>107</fpage>–<lpage>120</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Huxley1">
+        <label>30</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Huxley</surname><given-names>TH</given-names></name> (<year>1868</year>) <article-title>On the classification and distribution of the Alectoromorphae and Heteromorphae</article-title>. <source>Proc Zool Soc London</source> <volume>1868</volume>: <fpage>296</fpage>–<lpage>319</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Esselstyn1">
+        <label>31</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Esselstyn</surname><given-names>JA</given-names></name>, <name name-style="western"><surname>Oliveros</surname><given-names>CH</given-names></name>, <name name-style="western"><surname>Moyle</surname><given-names>RG</given-names></name>, <name name-style="western"><surname>Peterson</surname><given-names>AT</given-names></name>, <name name-style="western"><surname>McGuire</surname><given-names>JA</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Integrating phylogenetic and taxonomic evidence illuminates complex biogeographic patterns along Huxley’s modification of Wallace’s Line</article-title>. <source>J Biogeogr</source> <volume>37</volume>: <fpage>2054</fpage>–<lpage>2066</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Lohman1">
+        <label>32</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lohman</surname><given-names>DJ</given-names></name>, <name name-style="western"><surname>de Bruyn</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Page</surname><given-names>T</given-names></name>, <name name-style="western"><surname>von Rintelen</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Hall</surname><given-names>R</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Biogeography of the Indo-Australian Archipelago</article-title>. <source>Annu Rev Ecol Evol Syst</source> <volume>42</volume>: <fpage>205</fpage>–<lpage>226</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Catullo1">
+        <label>33</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Catullo</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Masi</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Falcucci</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Maiorano</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Rondinini</surname><given-names>C</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>A gap analysis of Southeast Asian mammals based on habitat suitability models</article-title>. <source>Biol Conserv</source> <volume>141</volume>: <fpage>2730</fpage>–<lpage>2744</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Boitani1">
+        <label>34</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Boitani L, Catullo G, Marzetti I, Masi M, Rulli M, <etal>et al</etal>. (2006) The Southeast Asian mammal databank, a tool for conservation and monitoring of mammal diversity in Southeast Asia. Roma: Istituto di Ecologia Applicata.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Wilson1">
+        <label>35</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Wilson DE, Reeder DM (2005) Mammal species of the world. Baltimore: Johns Hopkins University Press. 2142 p.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-ESRI1">
+        <label>36</label>
+        <mixed-citation publication-type="other" xlink:type="simple">ESRI (2010) ArcGIS 10. Redland: Environmental Systems Research Institute Inc.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Kozak1">
+        <label>37</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kozak</surname><given-names>KH</given-names></name>, <name name-style="western"><surname>Wiens</surname><given-names>JJ</given-names></name> (<year>2012</year>) <article-title>Phylogeny, ecology, and the origins of climate-richness relationships</article-title>. <source>Ecology</source> <volume>93(8)</volume>: <fpage>S167</fpage>–<lpage>S181</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Smith2">
+        <label>38</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Smith</surname><given-names>RJ</given-names></name> (<year>2009</year>) <article-title>Use and misuse of the reduced major axis for line-fitting</article-title>. <source>Am J Phys Anthropol</source> <volume>140</volume>: <fpage>476</fpage>–<lpage>486</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-HasselFinnegan1">
+        <label>39</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Hassel-Finnegan HM (2009) Southeast Asian primate communities: species richness and population density. MA Thesis, Stony Brook University, New York.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Raven1">
+        <label>40</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Raven</surname><given-names>HC</given-names></name> (<year>1935</year>) <article-title>Wallace’s Line and the distribution of Indo-Australian mammals</article-title>. <source>Bull Am Mus Nat Hist</source> <volume>68</volume>: <fpage>177</fpage>–<lpage>293</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Mayr1">
+        <label>41</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mayr</surname><given-names>E</given-names></name> (<year>1944</year>) <article-title>Wallace’s Line in the light of recent zoogeographic studies</article-title>. <source>Q Rev Biol</source> <volume>19(1)</volume>: <fpage>1</fpage>–<lpage>14</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Harcourt1">
+        <label>42</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Harcourt</surname><given-names>AH</given-names></name> (<year>1999</year>) <article-title>Biogeographic relationships of primates on Southeast Asian islands</article-title>. <source>Glob Ecol Biogeogr</source> <volume>8</volume>: <fpage>55</fpage>–<lpage>61</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Heaney1">
+        <label>43</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Heaney</surname><given-names>LR</given-names></name> (<year>1984</year>) <article-title>Mammalian species richness on islands on the Sunda Shelf, Southeast Asia</article-title>. <source>Oceologia</source> <volume>61</volume>: <fpage>11</fpage>–<lpage>17</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Freckleton1">
+        <label>44</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Freckleton</surname><given-names>RP</given-names></name>, <name name-style="western"><surname>Jetz</surname><given-names>W</given-names></name> (<year>2009</year>) <article-title>Space versus phylogeny: disentangling phylogenetic and spatial signals in comparative data</article-title>. <source>Proc R Soc B</source> <volume>276</volume>: <fpage>21</fpage>–<lpage>30</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0054995-Rabosky1">
+        <label>45</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rabosky</surname><given-names>DL</given-names></name>, <name name-style="western"><surname>Slater</surname><given-names>GJ</given-names></name>, <name name-style="western"><surname>Alfaro</surname><given-names>ME</given-names></name> (<year>2012</year>) <article-title>Clade age and species richness are decoupled across the eukaryotic tree of life</article-title>. <source>PLoS Biol</source> <volume>10(8)</volume>: <fpage>e1001381</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pbio.1001381" xlink:type="simple">10.1371/journal.pbio.1001381</ext-link></comment></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

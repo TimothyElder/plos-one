@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="research-article" dtd-version="3.0" xml:lang="en">
+  <front>
+    <journal-meta><journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosone</journal-id><issn pub-type="epub">1932-6203</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="publisher-id">PONE-D-12-10614</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0042702</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Computational biology</subject>
+            <subj-group>
+              <subject>Population genetics</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Evolutionary biology</subject>
+            <subj-group>
+              <subject>Population genetics</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genetics</subject>
+            <subj-group>
+              <subject>Genome-wide association studies</subject>
+              <subject>Human genetics</subject>
+              <subject>Population genetics</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Population biology</subject>
+            <subj-group>
+              <subject>Epidemiology</subject>
+              <subj-group>
+                <subject>Genetic epidemiology</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Population genetics</subject>
+              <subj-group>
+                <subject>Gene flow</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Social and behavioral sciences</subject>
+          <subj-group>
+            <subject>Anthropology</subject>
+            <subj-group>
+              <subject>Biological anthropology</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Genetics and Genomics</subject>
+          <subject>Public Health and Epidemiology</subject>
+          <subject>Computational Biology</subject>
+          <subject>Evolutionary Biology</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>Genome-Wide Analysis in Brazilian Xavante Indians Reveals Low Degree of Admixture</article-title><alt-title alt-title-type="running-head">Genetic Structure of Xavante Indians</alt-title></title-group><contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Kuhn</surname>
+            <given-names>Patricia C.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Horimoto</surname>
+            <given-names>Andréa R. V. Russo.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Sanches</surname>
+            <given-names>José Maurício</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Vieira Filho</surname>
+            <given-names>João Paulo B.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Franco</surname>
+            <given-names>Luciana</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Fabbro</surname>
+            <given-names>Amaury Dal</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Franco</surname>
+            <given-names>Laercio Joel</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Pereira</surname>
+            <given-names>Alexandre C.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Moises</surname>
+            <given-names>Regina S</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1">
+        <label>1</label>
+        <addr-line>Disciplina de Endocrinologia, Escola Paulista de Medicina, Universidade Federal de São Paulo, São Paulo, Brazil</addr-line>
+      </aff><aff id="aff2">
+        <label>2</label>
+        <addr-line>Laboratory of Genetics and Molecular Cardiology, Heart Institute, Medical School of University of São Paulo, São Paulo, Brazil</addr-line>
+      </aff><aff id="aff3">
+        <label>3</label>
+        <addr-line>Departamento de Medicina Social, Faculdade de Medicina de Ribeirão Preto, Universidade de São Paulo, Ribeirão Preto, Brazil</addr-line>
+      </aff><contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>O’Rourke</surname>
+            <given-names>Dennis</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group><aff id="edit1">
+        <addr-line>University of Utah, United States of America</addr-line>
+      </aff><author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">rmoises@unifesp.br</email></corresp>
+        <fn fn-type="conflict">
+          <p>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: PCK ARVRH ACP RSM. Performed the experiments: PCK. Analyzed the data: PCK ARVRH JMS ACP RSM. Contributed reagents/materials/analysis tools: ARVRH JMS LJF ACP. Wrote the paper: PCK ARVRH ACP RSM. Collected the data: PCK JPBVF LF LJF ADF RSM.</p>
+        </fn>
+      </author-notes><pub-date pub-type="collection">
+        <year>2012</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>10</day>
+        <month>8</month>
+        <year>2012</year>
+      </pub-date><volume>7</volume><issue>8</issue><elocation-id>e42702</elocation-id><history>
+        <date date-type="received">
+          <day>13</day>
+          <month>4</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>10</day>
+          <month>7</month>
+          <year>2012</year>
+        </date>
+      </history><permissions>
+        
+        <copyright-holder>Kuhn et al</copyright-holder>
+        <license xlink:type="simple">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions><abstract>
+        <p>Characterization of population genetic variation and structure can be used as tools for research in human genetics and population isolates are of great interest. The aim of the present study was to characterize the genetic structure of Xavante Indians and compare it with other populations. The Xavante, an indigenous population living in Brazilian Central Plateau, is one of the largest native groups in Brazil. A subset of 53 unrelated subjects was selected from the initial sample of 300 Xavante Indians. Using 86,197 markers, Xavante were compared with all populations of HapMap Phase III and HGDP-CEPH projects and with a Southeast Brazilian population sample to establish its population structure<monospace>. </monospace>Principal Components Analysis showed that the Xavante Indians are concentrated in the Amerindian axis near other populations of known Amerindian ancestry such as Karitiana, Pima, Surui and Maya and a low degree of genetic admixture was observed. This is consistent with the historical records of bottlenecks experience and cultural isolation. By calculating pair-wise F<sub>st</sub> statistics we characterized the genetic differentiation between Xavante Indians and representative populations of the HapMap and from HGDP-CEPH project. We found that the genetic differentiation between Xavante Indians and populations of Ameridian, Asian, European, and African ancestry increased progressively. Our results indicate that the Xavante is a population that remained genetically isolated over the past decades and can offer advantages for genome-wide mapping studies of inherited disorders.</p>
+      </abstract><funding-group>
+        <funding-statement>This study was funded by grants from Fundação de Amparo à Pesquisa do Estado de São Paulo (Fapesp), Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) and INCT- Obesidade e Diabetes. The funders have no rule in study design, data coletion and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group><counts>
+        <page-count count="6"/>
+      </counts></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Knowledge of genetic diversity patterns of human populations provides important insights of their evolutionary history and is useful in genetic mapping studies of complex diseases and their component traits <xref ref-type="bibr" rid="pone.0042702-Rosenberg1">[1]</xref>–<xref ref-type="bibr" rid="pone.0042702-CavalliSforza1">[3]</xref>. In this context, isolated populations are of particular interest since they may overcome some of the challenges in genetic investigations. Here we report the first genome-wide SNP-based study of the genetic structure in Xavante Indians.</p>
+      <p>Xavante is an indigenous population living in Mato Grosso state, Central Brazil. They comprise approximately 10,000 individuals, one of the largest indigenous groups in Brazil, and are Jê-speaking people <xref ref-type="bibr" rid="pone.0042702-Pereira1">[4]</xref>, <xref ref-type="bibr" rid="pone.0042702-Coimbra1">[5]</xref>. The earliest contact of Xavante with western culture was during the 18<sup>th</sup> century in the Brazilian Central Plateau and this period was marked by epidemics, armed conflicts and forced labor imposed by the Portuguese colonial government. In the middle of 19<sup>th</sup> century, in an attempt to escape mistreatment, they moved westward to their present habitat and remained relatively isolated until the early 20<sup>th</sup> century. In the 1940s Brazilian government decided to stimulate settlements in its central region, considered a sparsely populated area, aiming to promote greater integration of this area with the rest of the country. As a result of this political decision the Xavante groups were forced to deal with the settlers and the post-contact period was characterized by epidemics and conflicts that resulted in a severe reduction of their population. By the end of the 1950s, the Xavante were reduced to small patches of settlements. However, in the last decades with the demarcation of their lands, health programs and establishment of peaceful contacts with non-Indians they experienced an increase in their population. Importantly, despite of the interaction with the outsiders, the Xavante maintain their own complex social organization and cultural values that were preserved over the years <xref ref-type="bibr" rid="pone.0042702-Coimbra1">[5]</xref>–<xref ref-type="bibr" rid="pone.0042702-Garfield1">[7]</xref>.</p>
+      <p>The aim of the present study was to characterize the genetic structure in Xavante Indians providing valuable baseline data for future genetic studies and to compare it with a Southeast Brazilian population <xref ref-type="bibr" rid="pone.0042702-Giolo1">[8]</xref>, populations of the Human Genome Diversity Panel (HGDP-CEPH) <xref ref-type="bibr" rid="pone.0042702-Li1">[9]</xref>, and populations of the HapMap Project, Phase III <xref ref-type="bibr" rid="pone.0042702-Altshuler1">[10]</xref>, which include individuals of Asian, African, European, and Mexican Ancestry.</p>
+    </sec>
+    <sec id="s2">
+      <title>Material and Methods</title>
+      <sec id="s2a">
+        <title>Population Samples</title>
+        <p>A cross-sectional study was conducted in the Sangradouro Reservation, Mato Grosso state, Brazil. The initial sample of Xavante Indians was comprised of 300 individuals and blood samples were collected from each subject. Genomic DNA was extracted from peripheral blood leukocytes using a commercial kit (Puregene DNA Isolation Kit, Gentra System, USA).</p>
+      </sec>
+      <sec id="s2b">
+        <title>Genotyping</title>
+        <p>Individuals were genotyped in 731,442 SNPs using Human Omni Express Bead Chip plataform (Illumina, San Diego, CA, USA). Genome-wide pair-wise identity-by-descent (IBD) estimated using the PLINK package <xref ref-type="bibr" rid="pone.0042702-Purcell1">[11]</xref> (<ext-link ext-link-type="uri" xlink:href="http://pngu.mgh.harvard.edu/~purcell/plink/" xlink:type="simple">http://pngu.mgh.harvard.edu/~purcell/plink/</ext-link>) confirmed the presence of related individuals in this sample. Genetic data were used for obtaining maximum likelihood estimates of relationship among pairs of individuals using the ML-Relate software <xref ref-type="bibr" rid="pone.0042702-Kalinowski1">[12]</xref> (<ext-link ext-link-type="uri" xlink:href="http://www.montana.edu/kalinowski/Software/MLRelate.htm" xlink:type="simple">http://www.montana.edu/kalinowski/Software/MLRelate.htm</ext-link>). This approach uses simulation to determine which relationships are consistent with the empirical genotype data, comparing putative relationships with possible alternatives. Only main pairs of individuals, such as parent-offspring, full-siblings, and half-siblings, are identified by the software. The ML-Relate software was unable to estimate the relationships using the complete panel of SNPs (731,442 SNPs), therefore we selected a set of approximately 10% independent markers (730 SNPs) to perform this analysis. The selection of unrelated individuals was conducted in several steps. The individual with the greatest number of relationships was identified and removed from the Xavante sample. Next, the relatedness was recalculated, generating other relationship structures. Again, the individual with the higher number of relatedness was removed and the relatedness was recalculated. This process was repeatedly made until we had only an unrelated sample. We identified 53 unrelated Xavante Indians in our sample.</p>
+        <p>Genotype data from the HapMap project (Phase 3) <xref ref-type="bibr" rid="pone.0042702-Altshuler1">[10]</xref>, the Human Genome Diversity Panel (HGDP-CEPH) <xref ref-type="bibr" rid="pone.0042702-Li1">[9]</xref>, and from a Brazilian population sample were used to study the genetic structure of Xavante Indians. The HapMap Phase III data set is composed of 1,301 individuals of 11 populations that had been genotyped in almost 1.6 million genetic markers. The HGDP-CEPH database is composed of 1,068 individuals of 55 isolated populations. The Brazilian sample is constituted by 172 non-related individuals of a high degree of admixture <xref ref-type="bibr" rid="pone.0042702-Giolo1">[8]</xref>, selected from residents in the municipality of São Paulo, the largest metropolitan area of the country. Genotyping for the Brazilian samples was performed using the Affymetrix SNP array 6.0 (Affymetrix, Santa Clara, CA, USA). All 11 panels of HapMap data set and 55 isolated populations of HGDP database were considered in our study. The PLINK package <xref ref-type="bibr" rid="pone.0042702-Purcell1">[11]</xref> was used for data management and quality control procedures on markers. Representative founder individuals were selected presenting a minimum percentage of 95% of high quality genotyped markers. Genetic markers were filtered using a maximum per-marker missing of 0.01 and a minor allele frequency (MAF) greater than 1%. The final dataset was composed of 1,198 HapMap, 940 HGDP, 172 São Paulo, and 53 Xavante individuals and 86,197 markers. <xref ref-type="table" rid="pone-0042702-t001">Table 1</xref> shows the populations and their respective number of individuals included in our study.</p>
+        <table-wrap id="pone-0042702-t001" orientation="portrait" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0042702.t001</object-id><label>Table 1</label><caption>
+            <title>Populations and number of individuals (N) included in the study.</title>
+          </caption><alternatives>
+            <graphic id="pone-0042702-t001-1" mimetype="image" orientation="portrait" position="float" xlink:href="info:doi/10.1371/journal.pone.0042702.t001" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Population</td>
+                  <td align="left" colspan="1" rowspan="1">N</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">ASW (African ancestry in Southwest USA)</td>
+                  <td align="left" colspan="1" rowspan="1">53</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">CEU (Utah residents with Northern and WesternEuropean ancestry from the CEPH collection)</td>
+                  <td align="left" colspan="1" rowspan="1">112</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">CHB (Han Chinese in Beijing, China)</td>
+                  <td align="left" colspan="1" rowspan="1">137</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">CHD (Chinese in Metropolitan Denver, Colorado)</td>
+                  <td align="left" colspan="1" rowspan="1">109</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">GIH(Gujarati Indians in Houston, Texas, USA)</td>
+                  <td align="left" colspan="1" rowspan="1">101</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">JPT (Japanese in Tokio, Japan)</td>
+                  <td align="left" colspan="1" rowspan="1">113</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">LWK (Luhya in Webuye, Kenya)</td>
+                  <td align="left" colspan="1" rowspan="1">110</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">MEX(Mexican ancestry in Los Angeles, California)</td>
+                  <td align="left" colspan="1" rowspan="1">58</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">MKK (Maasai in Kinyawa, Kenya)</td>
+                  <td align="left" colspan="1" rowspan="1">156</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">TSI(Toscans in Italy)</td>
+                  <td align="left" colspan="1" rowspan="1">102</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">YRI (Yoruba in Ibadan, Nigeria)</td>
+                  <td align="left" colspan="1" rowspan="1">147</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Adygei</td>
+                  <td align="left" colspan="1" rowspan="1">17</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Balochi</td>
+                  <td align="left" colspan="1" rowspan="1">24</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">BantuKenya</td>
+                  <td align="left" colspan="1" rowspan="1">11</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">BantuSouthAfrica</td>
+                  <td align="left" colspan="1" rowspan="1">8</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Basque</td>
+                  <td align="left" colspan="1" rowspan="1">24</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Bedouin</td>
+                  <td align="left" colspan="1" rowspan="1">46</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">BiakaPygmy</td>
+                  <td align="left" colspan="1" rowspan="1">21</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Brahui</td>
+                  <td align="left" colspan="1" rowspan="1">25</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Burusho</td>
+                  <td align="left" colspan="1" rowspan="1">25</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Cambodian</td>
+                  <td align="left" colspan="1" rowspan="1">10</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Colombian</td>
+                  <td align="left" colspan="1" rowspan="1">7</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Dai</td>
+                  <td align="left" colspan="1" rowspan="1">10</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Daur</td>
+                  <td align="left" colspan="1" rowspan="1">9</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Druze</td>
+                  <td align="left" colspan="1" rowspan="1">42</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">French</td>
+                  <td align="left" colspan="1" rowspan="1">28</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Han</td>
+                  <td align="left" colspan="1" rowspan="1">44</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Hazara</td>
+                  <td align="left" colspan="1" rowspan="1">22</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Hezhen</td>
+                  <td align="left" colspan="1" rowspan="1">8</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Italian</td>
+                  <td align="left" colspan="1" rowspan="1">12</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Japanese</td>
+                  <td align="left" colspan="1" rowspan="1">28</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Kalash</td>
+                  <td align="left" colspan="1" rowspan="1">23</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Karitiana</td>
+                  <td align="left" colspan="1" rowspan="1">14</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Lahu</td>
+                  <td align="left" colspan="1" rowspan="1">8</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Makrani</td>
+                  <td align="left" colspan="1" rowspan="1">25</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Mandenka</td>
+                  <td align="left" colspan="1" rowspan="1">22</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Maya</td>
+                  <td align="left" colspan="1" rowspan="1">21</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">MbutiPygmy</td>
+                  <td align="left" colspan="1" rowspan="1">13</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Melanesian</td>
+                  <td align="left" colspan="1" rowspan="1">10</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Miao</td>
+                  <td align="left" colspan="1" rowspan="1">10</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Mongola</td>
+                  <td align="left" colspan="1" rowspan="1">10</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Mozabite</td>
+                  <td align="left" colspan="1" rowspan="1">29</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Naxi</td>
+                  <td align="left" colspan="1" rowspan="1">8</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Orcadian</td>
+                  <td align="left" colspan="1" rowspan="1">15</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Oroqen</td>
+                  <td align="left" colspan="1" rowspan="1">9</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Palestinian</td>
+                  <td align="left" colspan="1" rowspan="1">46</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Papuan</td>
+                  <td align="left" colspan="1" rowspan="1">17</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Pathan</td>
+                  <td align="left" colspan="1" rowspan="1">22</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Pima</td>
+                  <td align="left" colspan="1" rowspan="1">14</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Russian</td>
+                  <td align="left" colspan="1" rowspan="1">25</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">San</td>
+                  <td align="left" colspan="1" rowspan="1">5</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Sardinian</td>
+                  <td align="left" colspan="1" rowspan="1">28</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">She</td>
+                  <td align="left" colspan="1" rowspan="1">10</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Sindhi</td>
+                  <td align="left" colspan="1" rowspan="1">24</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Surui</td>
+                  <td align="left" colspan="1" rowspan="1">8</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Tu</td>
+                  <td align="left" colspan="1" rowspan="1">10</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Tujia</td>
+                  <td align="left" colspan="1" rowspan="1">10</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Tuscan</td>
+                  <td align="left" colspan="1" rowspan="1">8</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Uygur</td>
+                  <td align="left" colspan="1" rowspan="1">10</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Xibo</td>
+                  <td align="left" colspan="1" rowspan="1">9</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Yakut</td>
+                  <td align="left" colspan="1" rowspan="1">25</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Yi</td>
+                  <td align="left" colspan="1" rowspan="1">10</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Yoruba</td>
+                  <td align="left" colspan="1" rowspan="1">21</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Xavante</td>
+                  <td align="left" colspan="1" rowspan="1">53</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">São Paulo</td>
+                  <td align="left" colspan="1" rowspan="1">172</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives></table-wrap>
+        <p>The Indian leaders and the study participants were informed about the purposes of this study and gave their consent. The majority of the population gave their written consent, for the ones who were illiterate (14%), fingerprint impressions were used to document their approval. A Xavante health agent worked as an interpreter when necessary. This study was approved by Ethics Committee of Escola Paulista de Medicina, Universidade Federal de São Paulo and Brazilian National Ethics Commision (CONEP).</p>
+      </sec>
+      <sec id="s2c">
+        <title>Statistical Analysis</title>
+        <p>Principal component analysis (PCA) was applied to genotype data to infer continuous axes of genetic variation using the SmartPCA program of the Eigensoft package <xref ref-type="bibr" rid="pone.0042702-Price1">[13]</xref>. The axes of variation are defined as the top eigenvectors of a covariance matrix among samples and they are able to reduce the data to a small number of dimensions. PCA analysis were initially carried out using different subsets of populations to evaluate which populations were relevant to estimate the population structure of Xavante Indians. These datasets were composed by Xavante sample and, respectively: (a) other Amerindians samples; (b) Amerindians and Asians samples; (c) Amerindians, Asians and São Paulo samples; (d) the complete dataset. In these subsets, Han Chinese from Beijing, China (CHB), Chinese in Metropolitan Denver, Colorado (CHD), Gujarati Indians in Houston, Texas (GHI), and Japanese in Tokyo, Japan (JPT) (HapMap populations) and Cambodian represent the Asian ancestry; and Karitiana, Pima, Surui, and Maya (HGDP-CEPH) were used as representatives of the Amerindian ancestry. Mexican ancestry in Los Angeles, California (MEX HapMap populations) was also included in all analyzed subsets. MEX and São Paulo samples represent admixture populations. The three first principal components were plotted against each other and the different plots were analyzed. The São Paulo and Gujarati Indians in Houston, Texas, USA (GHI population of the HapMap project) samples have not contributed effectively to reveal the genetic population structure of Xavante samples and were removed from final dataset. Thus the final dataset for PCA was composed by Xavante Indians and all populations of HAPMAP and HGDP projects, excluding GHI and São Paulo samples. A PCA was then performed using this final dataset.</p>
+        <p>Pair-wise F<sub>st</sub> estimates were also computed by SmartPCA program to characterize the genetic differentiation between Xavante Indians and the populations of the final dataset.</p>
+        <p>Next, we investigate the genome-wide genetic distance among individuals of all populations using a distance matrix computed by the PLINK package <xref ref-type="bibr" rid="pone.0042702-Purcell1">[11]</xref>. This matrix was obtained from complementary values of pair-wise identity-by-state. A neighbour-joining tree was constructed using PHYLIP (<ext-link ext-link-type="uri" xlink:href="http://evolution.genetics.washington.edu/phylip.html" xlink:type="simple">http://evolution.genetics.washington.edu/phylip.html</ext-link>) and visualized with HyperTree <xref ref-type="bibr" rid="pone.0042702-Bingham1">[14]</xref>, a Java phylogenetic tree viewer (<ext-link ext-link-type="uri" xlink:href="http://kinase.com/tools/HyperTree.html" xlink:type="simple">http://kinase.com/tools/HyperTree.html</ext-link>).</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <p>We knew there was a familial structure in the Xavante Indians sample. Genealogical relationships can be represented mathematically as probabilities that individuals share zero, one, or two alleles identical-by-descent. All 731.442 markers were used to estimate the genome-wide pair-wise identity-by-descent using the PLINK package, confirming the presence of related individuals in our sample, as shown in <xref ref-type="fig" rid="pone-0042702-g001">Figure 1A</xref> (initial Xavante sample). In an unrelated sample, the pairs of individuals must be concentrated in the right-down portion of the graphic, showing a high probability of sharing zero alleles against a low probability of sharing one allele identical-by-descent. In our initial sample, the pairs are scattered in the graphic. The circle in the (0,0) position represents a duplicate sample, since there was no monozygotic twins in this population, which was used for QC measures.</p>
+      <fig id="pone-0042702-g001" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0042702.g001</object-id>
+        <label>Figure 1</label>
+        <caption>
+          <title>Probabilities that pairs of individuals, represented by circles, share zero (IBD = 0) vs. one (IBD = 1) allele identical-by-descent.</title>
+          <p>Panel A represents the sharing of alleles among the initial sample of Xavantes, and panel B represents the sharing of alleles among unrelated individuals only.</p>
+        </caption>
+        <graphic mimetype="image" orientation="portrait" position="float" xlink:href="info:doi/10.1371/journal.pone.0042702.g001" xlink:type="simple"/>
+      </fig>
+      <p>The ML-Relate software was used to select unrelated individuals. Estimates of relatedness and relationship of main related pairs (parent-offspring, full-siblings, and half-siblings) are computed by maximum likelihood approach. After the removing process, a subset of 53 unrelated Xavante Indians were selected for the genetic population structure analysis. In <xref ref-type="fig" rid="pone-0042702-g001">Figure 1B</xref>, we show the sharing probability of alleles among pairs of individuals in this subset. ML-Relate has identified the main related pairs only, then the individuals more distantly related, as second- or third-degree related, remain in the sample. Indeed, the maximum probability of share one allele (IBD = 1) founded among unrelated individuals is 0.29, slightly greater than that observed between uncle/aunt and nephew/niece or among first cousins (0.25), confirming the presence of second-degree or more distant relationships in our final Xavante sample.</p>
+      <p>The group of 53 Xavante Indians was merged with HapMap, HGDP-CEPH, and São Paulo databases and the set of markers genotyped in all datasets was determined. The merged dataset is composed of 2,363 individuals (1,198 HapMap, 940 HGDP, 172 São Paulo, and 53 Xavante individuals) genotyped in 86,197 markers.</p>
+      <p>Ten continuous axes of genetic variation (eigenvectors) were computed using the Eigensoft package. Principal component analyses (PCA) using different subsets of populations were firstly performed to investigate which populations were important for determine the genetic structure of the Xavante Indians. These datasets were composed by Xavante Indians and, respectively: (a) only Amerindians samples; (b) Amerindians and Asians samples; (c) Amerindians, Asians and São Paulo samples; (d) the complete dataset. Three-dimensional plots were provided to all analyses, considering the first three principal components. Comparing plots of each subset of populations, we decided to remove São Paulo and GHI samples from the final dataset for PCA, since these two populations do not enhance the determination of the eigenvectors of the Xavante sample. Thus the final dataset for PCA was composed by Xavante Indians and all populations of HAPMAP and HGDP projects, excluding only São Paulo and GHI samples. A principal component analysis was then performed using this final dataset<monospace>. </monospace>Although the São Paulo sample has been removed from our final dataset, we plotted the first three eigenvectors including it to illustrate the ancestry of the general Brazilian population, as shown in <xref ref-type="fig" rid="pone-0042702-g002">Figure 2</xref>. Xavante Indians (purple points), as expected, are concentrated in the Amerindian axis near the other populations of known Amerindian ancestry (Karitiana, Pima, Surui, and Maya). The São Paulo sample (black dots) is predominantly located between the European and African axis, showing a high degree of genetic admixture. This finding confirms early results <xref ref-type="bibr" rid="pone.0042702-Giolo1">[8]</xref>, and it corroborates the long history of intermarriage between Europeans and Africans descent in the Brazilian population.</p>
+      <fig id="pone-0042702-g002" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0042702.g002</object-id>
+        <label>Figure 2</label>
+        <caption>
+          <title>Three-dimensional plot of first three principal components (PC1, PC2, and PC3) computed from the merged dataset of populations.</title>
+          <p>Yoruba, Maasai in Kinyawa, Kenia (MKK), African ancestry in Southwest, USA (ASW), and BantuKenya populations represent Africans; Utah residents with Northern and Western European ancestry from the CEPH collection (CEU), Adygei, and Basque populations represent Europeans; and Han Chinese in Beijing, China (CHB), Chinese in Metropolitan Denver, Colorado (CHD), Japanese in Tokyo, Japan (JPT), and Cambodian represent Asians.</p>
+        </caption>
+        <graphic mimetype="image" orientation="portrait" position="float" xlink:href="info:doi/10.1371/journal.pone.0042702.g002" xlink:type="simple"/>
+      </fig>
+      <p>We also studied the genetic similarity at the individual level from a genetic distance matrix obtained by calculating the complementary values of the genome-wide average proportion of alleles identical-by-state shared among pairs of individuals from all studied samples. The results of a neighbour-joining tree analysis are shown in <xref ref-type="fig" rid="pone-0042702-g003">Figure 3</xref>. The individuals were color labeled according to the geographical distribution of their populations. The Xavante Indians (in purple) clustered among the other Native American populations (in pink), as expected, corroborating the results obtained by the principal component analysis.</p>
+      <fig id="pone-0042702-g003" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0042702.g003</object-id>
+        <label>Figure 3</label>
+        <caption>
+          <title>Neighbour-joining tree for the final dataset.</title>
+          <p>The individuals were color labeled according to geographical distribution of their populations. ASW: African ancestry in Southwest USA; CEU: Utah residents with Northern and Western European ancestry from the CEPH collection; CHB: Han Chinese in Beijing, China; CHD: Chinese in Metropolitan Denver, Colorado; JPT: Japanese in Tokyo, Japan; LWK: Luhya in Webuye, Kenya; MEX: Mexican ancestry in Los Angeles, California; MKK: Maasai in Kinyawa, Kenya; TSI: Toscani in Italy; YRI: Yoruba in Ibadan, Nigeria.</p>
+        </caption>
+        <graphic mimetype="image" orientation="portrait" position="float" xlink:href="info:doi/10.1371/journal.pone.0042702.g003" xlink:type="simple"/>
+      </fig>
+      <p>Pair-wise F<sub>st</sub> estimates were also computed by the SmartPCA program of the Eigensoft package for all populations of our final dataset with more than 6 sampled individuals. The genetic differentiation between Xavante Indians and representative populations of the European, Asian, African, and Amerindian ancestry are shown in <xref ref-type="table" rid="pone-0042702-t002">Table 2</xref>. We selected the HapMap populations CEU (Utah residents with Northern and Western European ancestry from the CEPH collection) to represent European ancestry, CHB, CHD, and JPT to represent Asian ancestry, and YRI (Yoruba in Ibadan, Nigeria) to characterize the African ancestry. Colombian, and Maya from HGDP-CEPH project characterized the Amerindian ancestry. Again, these results confirm some expected differences and resemblances among the set of studied populations. The genetic differentiation between Xavante Indians and populations of Ameridian, Asian, European, and African ancestry increased progressively.</p>
+      <table-wrap id="pone-0042702-t002" orientation="portrait" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0042702.t002</object-id><label>Table 2</label><caption>
+          <title>F<sub>st</sub> estimates between Xavante Indians and representative populations of European (CEU), Asian (CHB, CHD, and JPT), African (YRI), and Amerindian (Colombian, and Maya) ancestry.</title>
+        </caption><alternatives>
+          <graphic id="pone-0042702-t002-2" mimetype="image" orientation="portrait" position="float" xlink:href="info:doi/10.1371/journal.pone.0042702.t002" xlink:type="simple"/>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Xavantes</td>
+                <td align="left" colspan="1" rowspan="1">CEU</td>
+                <td align="left" colspan="1" rowspan="1">CHB</td>
+                <td align="left" colspan="1" rowspan="1">CHD</td>
+                <td align="left" colspan="1" rowspan="1">JPT</td>
+                <td align="left" colspan="1" rowspan="1">YRI</td>
+                <td align="left" colspan="1" rowspan="1">Colombian</td>
+                <td align="left" colspan="1" rowspan="1">Maya</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Xavantes (53)</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">CEU (112)</td>
+                <td align="left" colspan="1" rowspan="1">0,186<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">CHB (137)</td>
+                <td align="left" colspan="1" rowspan="1">0,153<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">0,109<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">CHD (109)</td>
+                <td align="left" colspan="1" rowspan="1">0,155<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">0,111<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">0,001</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">JPT (113)</td>
+                <td align="left" colspan="1" rowspan="1">0,154<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">0,112<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">0,007</td>
+                <td align="left" colspan="1" rowspan="1">0,008<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">YRI (147)</td>
+                <td align="left" colspan="1" rowspan="1">0,271<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">0,150<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">0,182<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">0,183<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">0,184<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Colombian (7)</td>
+                <td align="left" colspan="1" rowspan="1">0,075<xref ref-type="table-fn" rid="nt103">***</xref></td>
+                <td align="left" colspan="1" rowspan="1">0,164<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">0,133<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">0,135<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">0,133<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">0,250<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Maya (21)</td>
+                <td align="left" colspan="1" rowspan="1">0,058<xref ref-type="table-fn" rid="nt103">***</xref></td>
+                <td align="left" colspan="1" rowspan="1">0,118<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">0,095<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">0,097<xref ref-type="table-fn" rid="nt103">***</xref></td>
+                <td align="left" colspan="1" rowspan="1">0,096<xref ref-type="table-fn" rid="nt103">***</xref></td>
+                <td align="left" colspan="1" rowspan="1">0,209<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                <td align="left" colspan="1" rowspan="1">0,087<xref ref-type="table-fn" rid="nt101">*</xref></td>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives><table-wrap-foot>
+          <fn id="nt101">
+            <label>*</label>
+            <p>p&lt;0.05;</p>
+          </fn>
+          <fn id="nt102">
+            <label>**</label>
+            <p>p&lt;0.01;</p>
+          </fn>
+          <fn id="nt103">
+            <label>***</label>
+            <p>p&lt;0.001;</p>
+          </fn>
+          <fn id="nt104">
+            <label/>
+            <p>CEU: Utah residents with Northern and Western European ancestry from the CEPH collection; CHB: Han Chineses in Beijing, China; CHD: Chineses in Metropolitan Denver, Colorado; JPT: Japaneses in Tokyo, Japan; YRI: Yoruba in Ibadan, Nigeria. Numbers inside brackets represent the number of individuals in each population.</p>
+          </fn>
+        </table-wrap-foot></table-wrap>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>In this study we compared the genetic variation of 2,363 individuals (1,198 HapMap, 940 HGDP, 172 São Paulo, and 53 Xavante individuals) genotyped in 86,197 markers. Our results showed that the Xavante population has a low level of genetic admixture. This is consistent with the historical records of bottlenecks experience, cultural isolation with subsequent reduced gene flow. Despite using different methodologies, which difficult the comparison, our data are consistent with previous studies that have shown low level of admixture in the Xavante population suggesting that no significant changes in this villagés gene pool has occurred over last decades <xref ref-type="bibr" rid="pone.0042702-Coimbra1">[5]</xref>, <xref ref-type="bibr" rid="pone.0042702-Ward1">[15]</xref>–<xref ref-type="bibr" rid="pone.0042702-Friedrich1">[17]</xref>.</p>
+      <p>Genetic studies of isolated populations have been subject of interest since they may help to map genes underlying simple monogenic, as well as, complex diseases. In isolated populations, monogenic disorders are less likely to show non-allelic heterogeneity <xref ref-type="bibr" rid="pone.0042702-Shefferd1">[18]</xref>. The use of these populations in mapping complex disease have some advantages such as low genetic diversity, high degree of LD, restricted allelic and locus heterogeneity, reduced haplotype complexity and greater potential for identification of rare variants <xref ref-type="bibr" rid="pone.0042702-Kristiansson1">[19]</xref>–<xref ref-type="bibr" rid="pone.0042702-Jordes1">[21]</xref>. These benefits in association with cultural and environmental homogeneity make this population a good opportunity to identify novel susceptibility alleles for complex disease.</p>
+      <p>Principal component analyses demonstrate that the Xavante population is a distinct ethnic group more closely related to individuals of Amerindian ancestry and genetically distinct from other HapMap and HGDP populations and from São Paulo individuals.</p>
+      <p>By calculating pairwise F<sub>st</sub> statistics, we found that the genetic differentiation between the Xavante population and representative populations of Amerindian, Asian, European and African ancestry increased progressively. These results are consistent with the Americas history of peopling that suggests a main colonization event from Siberia. The migration of humans from Eurasia to the Americas took place via Bering Strait and spread throughout North, Central and South Americas, diversifying into several culturally distinct native populations <xref ref-type="bibr" rid="pone.0042702-Wang1">[22]</xref>–<xref ref-type="bibr" rid="pone.0042702-Tamm1">[27]</xref>.</p>
+      <p>The findings from this study add to our understanding of genomic variation across the South American native populations and confirm that the Xavante is a closed Indian population that can provide a unique opportunity for genome-wide mapping studies of inherited disorders.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0042702-Rosenberg1">
+        <label>1</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rosenberg</surname><given-names>NA</given-names></name>, <name name-style="western"><surname>Pritchard</surname><given-names>JK</given-names></name>, <name name-style="western"><surname>Weber</surname><given-names>JL</given-names></name>, <name name-style="western"><surname>Cann</surname><given-names>HM</given-names></name>, <name name-style="western"><surname>Kidd</surname><given-names>KK</given-names></name>, <etal>et al</etal>. (<year>2002</year>) <article-title>Genetic structure of human populations</article-title>. <source>Science</source> <volume>298</volume>: <fpage>2381</fpage>–<lpage>2384</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-Tishkoff1">
+        <label>2</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tishkoff</surname><given-names>SA</given-names></name>, <name name-style="western"><surname>Verrelli</surname><given-names>BC</given-names></name> (<year>2003</year>) <article-title>Patterns of human genetic diversity: implications for human evolutionary history and disease</article-title>. <source>Annu Rev Genomics Hum Genet</source> <volume>4</volume>: <fpage>293</fpage>–<lpage>340</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-CavalliSforza1">
+        <label>3</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Cavalli-Sforza LL, Feldman MW (2003) The application of molecular genetic approaches to the study of human evolution. Nat Genet 33: Suppl S266–275.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-Pereira1">
+        <label>4</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pereira</surname><given-names>NOM</given-names></name>, <name name-style="western"><surname>Santos</surname><given-names>RV</given-names></name>, <name name-style="western"><surname>Welch</surname><given-names>JR</given-names></name>, <name name-style="western"><surname>Souza</surname><given-names>LG</given-names></name>, <name name-style="western"><surname>Coimbra</surname><given-names>CEA</given-names><suffix>Jr</suffix></name> (<year>2009</year>) <article-title>Demography, territory, and identity of indigenous peoples in Brazil: The Xavante indians and the 2000 Brazilian National Census</article-title>. <source>Human Organization</source> <volume>68</volume>: <fpage>166</fpage>–<lpage>180</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-Coimbra1">
+        <label>5</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Coimbra CEA Jr, Flowers NM, Salzano FM, Santos RV (2002) The Xavant in transition: health, ecology and bioanthropology in Central Brazil. Ann Arbor: University of Michigan Press. 344 p.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-Nell1">
+        <label>6</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nell</surname><given-names>JV</given-names></name>, <name name-style="western"><surname>Salzano</surname><given-names>FM</given-names></name>, <name name-style="western"><surname>Junqueira</surname><given-names>PC</given-names></name>, <name name-style="western"><surname>Maybury-Lewis</surname><given-names>D</given-names></name> (<year>1964</year>) <article-title>Studies on the Xavante Indians of the Brazilian Mato Grosso. Am. J. Hum</article-title>. <source>Genet</source> <volume>16</volume>: <fpage>52</fpage>–<lpage>140</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-Garfield1">
+        <label>7</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Garfield S (2001) Indigenous struggle at the heart of Brazil: state policy, frontier expansion, and the Xavante Indians. Durham: Duke University Press. 361 p.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-Giolo1">
+        <label>8</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Giolo</surname><given-names>SR</given-names></name>, <name name-style="western"><surname>Soler</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Greenway</surname><given-names>SC</given-names></name>, <name name-style="western"><surname>Almeida</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>de Andrade</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Brazilian urban population genetic structure reveals a high degree of admixture</article-title>. <source>Eur J Hum Genet</source> <volume>20</volume>: <fpage>111</fpage>–<lpage>116</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-Li1">
+        <label>9</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Li</surname><given-names>JZ</given-names></name>, <name name-style="western"><surname>Absher</surname><given-names>DM</given-names></name>, <name name-style="western"><surname>Tang</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Southwick</surname><given-names>AM</given-names></name>, <name name-style="western"><surname>Casto</surname><given-names>AM</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>Worldwide human relationships inferred from genome-wide patterns of variation</article-title>. <source>Science</source> <volume>319</volume>: <fpage>1100</fpage>–<lpage>1104</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-Altshuler1">
+        <label>10</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Altshuler</surname><given-names>DM</given-names></name>, <name name-style="western"><surname>Gibbs</surname><given-names>RA</given-names></name>, <name name-style="western"><surname>Peltonen</surname><given-names>L</given-names></name> (<year>2010</year>) <name name-style="western"><surname>Dermitzakis</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Schaffner</surname><given-names>SF</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Integrating common and rare genetic variation in diverse human populations</article-title>. <source>Nature</source> <volume>467</volume>: <fpage>52</fpage>–<lpage>58</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-Purcell1">
+        <label>11</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Purcell</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Neale</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Todd-Brown</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Thomas</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Ferreira</surname><given-names>MA</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>PLINK: a tool set for whole-genome association and population-based linkage analyses</article-title>. <source>Am J Hum Genet</source> <volume>81</volume>: <fpage>559</fpage>–<lpage>575</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-Kalinowski1">
+        <label>12</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kalinowski</surname><given-names>ST</given-names></name>, <name name-style="western"><surname>Wagner</surname><given-names>AP</given-names></name>, <name name-style="western"><surname>Taper</surname><given-names>ML</given-names></name> (<year>2006</year>) <article-title>ML-Relate: a computer program for maximum likelihood estimation of relatedness and relationship</article-title>. <source>Molecular Ecology Notes</source> <volume>6</volume>: <fpage>576</fpage>–<lpage>579</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-Price1">
+        <label>13</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Price</surname><given-names>AL</given-names></name>, <name name-style="western"><surname>Patterson</surname><given-names>NJ</given-names></name>, <name name-style="western"><surname>Plenge</surname><given-names>RM</given-names></name>, <name name-style="western"><surname>Weinblatt</surname><given-names>ME</given-names></name>, <name name-style="western"><surname>Shadick</surname><given-names>NA</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Principal components analysis corrects for stratification in genome-wide association studies</article-title>. <source>Nat Genet</source> <volume>38</volume>: <fpage>904</fpage>–<lpage>909</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-Bingham1">
+        <label>14</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bingham</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Sudarsanam</surname><given-names>S</given-names></name> (<year>2000</year>) <article-title>Visualizing large hierarchical clusters in hyperbolic space</article-title>. <source>Bioinformatics</source> <volume>16</volume>: <fpage>660</fpage>–<lpage>661</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-Ward1">
+        <label>15</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ward</surname><given-names>RH</given-names></name>, <name name-style="western"><surname>Salzano</surname><given-names>FM</given-names></name>, <name name-style="western"><surname>Bonatto</surname><given-names>SL</given-names></name>, <name name-style="western"><surname>Hutz</surname><given-names>MH</given-names></name>, <name name-style="western"><surname>Coimbra</surname><given-names>CEA</given-names></name>, <etal>et al</etal>. (<year>1996</year>) <article-title>Mitochondrial DNA polymorphism in three Brazilian Indian tribes</article-title>. <source>Am J Hum Biol</source> <volume>8</volume>: <fpage>317</fpage>–<lpage>323</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-Salzano1">
+        <label>16</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Salzano</surname><given-names>FM</given-names></name>, <name name-style="western"><surname>Franco</surname><given-names>MHLP</given-names></name>, <name name-style="western"><surname>Weimer</surname><given-names>TA</given-names></name>, <name name-style="western"><surname>Callegari-Jacques</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Mestriner</surname><given-names>MA</given-names></name>, <etal>et al</etal>. (<year>1997</year>) <article-title>The Brazilian Xavante Indians revisited: new protein genetic studies</article-title>. <source>Am J Phys Anthropol</source> <volume>104</volume>: <fpage>23</fpage>–<lpage>34</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-Friedrich1">
+        <label>17</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Friedrich</surname><given-names>DC</given-names></name>, <name name-style="western"><surname>Callegari-Jacques</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Petzl-Erler</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Tsuneto</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Salzano</surname><given-names>FM</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Stability or variation? Patterns of lactase gene and its enhancer region distributions in Brazilian Amerindians</article-title>. <source>Am J Phys Anthropol</source> <volume>147</volume>: <fpage>427</fpage>–<lpage>432</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-Shefferd1">
+        <label>18</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Shefferd</surname><given-names>VC</given-names></name>, <name name-style="western"><surname>Stone</surname><given-names>EM</given-names></name>, <name name-style="western"><surname>Carmi</surname><given-names>R</given-names></name> (<year>1998</year>) <article-title>Use of isolated inbred human populations for identification of disease genes</article-title>. <source>Trends Genet</source> <volume>14</volume>: <fpage>391</fpage>–<lpage>396</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-Kristiansson1">
+        <label>19</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kristiansson</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Naukkarinen</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Peltonen</surname><given-names>L</given-names></name> (<year>2008</year>) <article-title>Isolated populations and complex disease gene identification</article-title>. <source>Genome Biology</source> <volume>9</volume>: <fpage>109.1</fpage>–<lpage>109.9</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-Peltonen1">
+        <label>20</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Peltonen</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Palotie</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Lange</surname><given-names>K</given-names></name> (<year>2000</year>) <article-title>Use of population isolates for mapping complex traits</article-title>. <source>Nature Genet</source> <volume>1</volume>: <fpage>182</fpage>–<lpage>190</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-Jordes1">
+        <label>21</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jordes</surname><given-names>LB</given-names></name>, <name name-style="western"><surname>Watkins</surname><given-names>WS</given-names></name>, <name name-style="western"><surname>Kere</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Nyman</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Eriksson</surname><given-names>AW</given-names></name>, <etal>et al</etal>. (<year>2000</year>) <article-title>Gene mapping in isolated populations: new roles for old friends?</article-title> <source>Hum Hered</source> <volume>50</volume>: <fpage>57</fpage>–<lpage>65</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-Wang1">
+        <label>22</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wang</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Lewis</surname><given-names>CM</given-names><suffix>Jr</suffix></name>, <name name-style="western"><surname>Jakobsson</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Ramachandran</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Rayet</surname><given-names>N</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Genetic variation and population structure in native americans</article-title>. <source>PLoS Genetics</source> <volume>3</volume>: <fpage>2049</fpage>–<lpage>2067</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-Mulligan1">
+        <label>23</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mulligan</surname><given-names>CJ</given-names></name>, <name name-style="western"><surname>Hunley</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Cole</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Long</surname><given-names>JC</given-names></name> (<year>2004</year>) <article-title>Population genetics, history, and health patterns in native americans</article-title>. <source>Rev Genomics Hum Genet</source> <volume>5</volume>: <fpage>295</fpage>–<lpage>315</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-Zegura1">
+        <label>24</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zegura</surname><given-names>SL</given-names></name>, <name name-style="western"><surname>Karafet</surname><given-names>TM</given-names></name>, <name name-style="western"><surname>Zhivotovsky</surname><given-names>LA</given-names></name>, <name name-style="western"><surname>Hammer</surname><given-names>MF</given-names></name> (<year>2004</year>) <article-title>High-resolution SNPs and microsatellite haplotypes point to a single, recent entry of native american Y chromosomes into the Americas</article-title>. <source>Mol Biol Evol</source> <volume>21(1)</volume>: <fpage>164</fpage>–<lpage>175</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-Kolman1">
+        <label>25</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kolman</surname><given-names>CJ</given-names></name>, <name name-style="western"><surname>Nyamkhishig</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Bermingham</surname><given-names>E</given-names></name> (<year>1996</year>) <article-title>Mitochondrial DNA analysis of Mongolian populations and implications for the origin of New World founders</article-title>. <source>Genetics</source> <volume>142</volume>: <fpage>1321</fpage>–<lpage>1334</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-Santos1">
+        <label>26</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Santos</surname><given-names>FR</given-names></name>, <name name-style="western"><surname>Pandya</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Tyler-Smith</surname><given-names>C</given-names></name> (<year>1999</year>) <article-title>The Central Siberian origin for native American chromosomes</article-title>. <source>Am J Hum Genet</source> <volume>64</volume>: <fpage>619</fpage>–<lpage>628</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042702-Tamm1">
+        <label>27</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tamm</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Kivisild</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Reidla</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Metspalu</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Smith</surname><given-names>DG</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Standstill and spread of native american founders</article-title>. <source>PLoS One</source> <volume>9</volume>: <fpage>1</fpage>–<lpage>6</lpage>.</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

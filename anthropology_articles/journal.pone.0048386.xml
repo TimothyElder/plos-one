@@ -1,0 +1,1054 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="publisher-id">PONE-D-12-11752</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0048386</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Computer science</subject>
+          <subj-group>
+            <subject>Natural language processing</subject>
+          </subj-group>
+          <subj-group>
+            <subject>Text mining</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Mathematics</subject>
+          <subj-group>
+            <subject>Applied mathematics</subject>
+            <subj-group>
+              <subject>Complex systems</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Physics</subject>
+          <subj-group>
+            <subject>Interdisciplinary physics</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Social and behavioral sciences</subject>
+          <subj-group>
+            <subject>Anthropology</subject>
+            <subj-group>
+              <subject>Cultural anthropology</subject>
+              <subj-group>
+                <subject>Natural language</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Communications</subject>
+            <subj-group>
+              <subject>Natural language</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Linguistics</subject>
+            <subj-group>
+              <subject>Computational linguistics</subject>
+              <subject>Natural language</subject>
+              <subject>Psycholinguistics</subject>
+              <subject>Sociolinguistics</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Science education</subject>
+            <subj-group>
+              <subject>Pedagogy</subject>
+              <subject>Teaching methods</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Computer Science</subject>
+          <subject>Science Policy</subject>
+          <subject>Physics</subject>
+          <subject>Mathematics</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>A Practical Approach to Language Complexity: A Wikipedia Case Study</article-title>
+        <alt-title alt-title-type="running-head">Language Complexity of Simple English Wikipedia</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Yasseri</surname>
+            <given-names>Taha</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Kornai</surname>
+            <given-names>András</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Kertész</surname>
+            <given-names>János</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Department of Theoretical Physics, Budapest University of Technology and Economics, Budapest, Hungary</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Computer and Automation Research Institute, Hungarian Academy of Sciences, Budapest, Hungary</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Center for Network Science, Central European University, Budapest, Hungary</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Altmann</surname>
+            <given-names>Eduardo G.</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>Max Planck Institute for the Physics of Complex Systems, Germany</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">yasseri@phy.bme.hu</email></corresp>
+        <fn fn-type="conflict">
+          <p>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: TY AK JK. Performed the experiments: TY AK. Analyzed the data: TY AK. Wrote the paper: TY AK JK.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2012</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>7</day>
+        <month>11</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>7</volume>
+      <issue>11</issue>
+      <elocation-id>e48386</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>15</day>
+          <month>4</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>24</day>
+          <month>9</month>
+          <year>2012</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2012</copyright-year>
+        <copyright-holder>Yasseri et al</copyright-holder>
+        <license xlink:type="simple">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>In this paper we present statistical analysis of English texts from Wikipedia. We try to address the issue of language complexity empirically by comparing the simple English Wikipedia (Simple) to comparable samples of the main English Wikipedia (Main). Simple is supposed to use a more simplified language with a limited vocabulary, and editors are explicitly requested to follow this guideline, yet in practice the vocabulary richness of both samples are at the same level. Detailed analysis of longer units (n-grams of words and part of speech tags) shows that the language of Simple is less complex than that of Main primarily due to the use of shorter sentences, as opposed to drastically simplified syntax or vocabulary. Comparing the two language varieties by the Gunning readability index supports this conclusion. We also report on the topical dependence of language complexity, that is, that the language is more advanced in conceptual articles compared to person-based (biographical) and object-based articles. Finally, we investigate the relation between conflict and language complexity by analyzing the content of the talk pages associated to controversial and peacefully developing articles, concluding that controversy has the effect of reducing language complexity.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>Financial support from EU’s FP7 (Seventh Framework Programme) FET-Open (Future and Emerging Technologies Open Scheme) to ICTeCollective Project No. 238597 is acknowledged by all authors (<ext-link ext-link-type="uri" xlink:href="http://becs.aalto.fi/ictecollective/" xlink:type="simple">http://becs.aalto.fi/ictecollective/</ext-link>). Kornai was partially supported by OTKA (Hungarian Scientific Research Fund) grant number 82333. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="8"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Readability is one of the central issues of language complexity and applied linguistics in general <xref ref-type="bibr" rid="pone.0048386-PaascheOrlow1">[1]</xref>. Despite the long history of investigations on readability measurement, and significant effort to introduce computational criteria to model and evaluate the complexity of text in the sense of readability, a conclusive and fully representative scheme is still missing <xref ref-type="bibr" rid="pone.0048386-Klare1">[2]</xref>–<xref ref-type="bibr" rid="pone.0048386-Karmakar1">[4]</xref>. In recent years the large amount of machine readable user generated text available on the web has offered new possibilities to address many classic questions of psycholinguistics. Recent studies, based on text-mining of blogs <xref ref-type="bibr" rid="pone.0048386-Lambiotte1">[5]</xref>, web pages <xref ref-type="bibr" rid="pone.0048386-Serrano1">[6]</xref>, online forums <xref ref-type="bibr" rid="pone.0048386-Altmann1">7</xref>,<xref ref-type="bibr" rid="pone.0048386-Altmann2">8</xref>, etc, have advanced our understanding of natural languages considerably.</p>
+      <p>Among all the potential online corpora, Wikipedia, a multilingual online encyclopedia <xref ref-type="bibr" rid="pone.0048386-Wikipedia1">[9]</xref>, which is written collaboratively by volunteers around the world, has a special position. Since Wikipedia content is produced collaboratively, it is a uniquely unbiased sample. As Wikipedias exist in many languages, we can carry out a wide range of cross-linguistic studies. Moreover, the broad studies on social aspects of Wikipedia and its communities of users <xref ref-type="bibr" rid="pone.0048386-Voss1">[10]</xref>–<xref ref-type="bibr" rid="pone.0048386-Yasseri2">[18]</xref> makes it possible to develop sociolinguistic descriptions for the linguistic observations.</p>
+      <p>One of the particularly interesting editions of Wikipedia is the <italic>Simple English Wikipedia</italic> <xref ref-type="bibr" rid="pone.0048386-Wikipedia2">[19]</xref> (Simple). Simple aims at providing an encyclopedia for people with only basic knowledge of English, in particular children, adults with learning difficulties, and people learning English as a second language. See <xref ref-type="table" rid="pone-0048386-t001">Table 1</xref> comparing the articles for ‘April’ in Simple and Main. In this work, we reconsider the issue of language complexity based on the statistical analysis of a corpus extracted from Simple. We compare basic measures of readability across Simple and the standard English Wikipedia (Main) <xref ref-type="bibr" rid="pone.0048386-Wikipedia3">[20]</xref> to understand how simple is Simple in comparison. Since there are no supervising editors involved in the process of writing Wikipedia articles, both Simple and Main are uncorrected (natural) output of the human language generation ability. The text of Wikipedias is emerging from contributions of a large number of independent editors, therefore all different types of personalization and bias are eliminated, making it possible to address the fundamental concepts regardless of marginal phenomena.</p>
+      <table-wrap id="pone-0048386-t001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0048386.t001</object-id>
+        <label>Table 1</label>
+        <caption>
+          <title>The articles on <italic>April</italic> in Main English and Simple English Wikipedias.</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone-0048386-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0048386.t001" xlink:type="simple"/>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Main</td>
+                <td align="left" rowspan="1" colspan="1">Simple</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">April is the fourth month of the year in the Julian and Gregorian calendars, and one of four months with a length of 30 days. The traditional etymology is from the Latin aperire, “to open,” in allusion to its being the season when trees and flowers begin to “open”.</td>
+                <td align="left" rowspan="1" colspan="1">April is the fourth month of the year. It has 30 days. The name April comes from that Latin word aperire which means “to open”. This probably refers to growing plants in spring.</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+      </table-wrap>
+      <p>Readability studies on different corpora have a long history; see <xref ref-type="bibr" rid="pone.0048386-Baumann1">[21]</xref> for a summary. In a recent study <xref ref-type="bibr" rid="pone.0048386-Roberts1">[22]</xref>, readability of articles published in the <italic>Annals of Internal Medicine</italic> before and after the reviewing process is investigated, and a slight improvement in readability upon the review process is reported. Wikipedia is widely used to extract concepts, relations, facts and descriptions by applying natural language processing techniques <xref ref-type="bibr" rid="pone.0048386-Medelyan1">[23]</xref>. In <xref ref-type="bibr" rid="pone.0048386-Gabrilovich1">[24]</xref>–<xref ref-type="bibr" rid="pone.0048386-Gabrilovich2">[27]</xref> different authors have tried to extract semantic knowledge from Wikipedia aiming at measuring semantic relatedness, lexical analysis and text classification. Wikipedia is used to establish topical indexing methods in <xref ref-type="bibr" rid="pone.0048386-Medelyan2">[28]</xref>. Tan and Fuchun performed query segmentation by combining generative language models and Wikipedia information <xref ref-type="bibr" rid="pone.0048386-Tan1">[29]</xref>. In a novel approach, Tyers and Pienaarused used Wikipedia to extract bilingual word pairs from interlingual hyperlinks connecting articles from different language editions <xref ref-type="bibr" rid="pone.0048386-Tyers1">[30]</xref>. And more practically, Sharoff and Hartley have been seeking for “suitable texts for language learners”, developing a new complexity measure, based on both lexical and grammatical features <xref ref-type="bibr" rid="pone.0048386-Sharoff1">[31]</xref>. Comparisons between Simple and Main for the selected set of articles show that in most cases Simple has less complexity, but there exist exceptional articles, which are more readable in Main than in Simple. In a complementary study <xref ref-type="bibr" rid="pone.0048386-Besten1">[32]</xref>, Simple is examined by measuring the Flesch reading score <xref ref-type="bibr" rid="pone.0048386-Flesch1">[33]</xref>. They found that Simple is not simple enough compared to other English texts, but there is a positive trend for the whole Wikipedia to become more readable as time goes by, and that the tagging of those articles that need more simplifications by editors is crucial for this achievement. In a new class of applications <xref ref-type="bibr" rid="pone.0048386-Napoles1">[34]</xref>–<xref ref-type="bibr" rid="pone.0048386-Coster1">[36]</xref>, Simple is used to establish automated text simplification algorithms.</p>
+    </sec>
+    <sec id="s2" sec-type="methods">
+      <title>Methods</title>
+      <p>We built our own corpora from the dumps <xref ref-type="bibr" rid="pone.0048386-Wikimedia1">[37]</xref> of Simple and Main Wikipedias released at the end of 2010 using the WikiExtractor developed at the University of Pisa Multimedia Lab (see <xref ref-type="supplementary-material" rid="pone.0048386.s002">Text S2</xref> for the availability of this and other software packages and corpora used in this work). The Simple corpus covers the whole text of Simple Wikipedia articles (no talk pages, categories and templates). For the Main English Wikipedia, first we made a big single text including all articles, and then created a corpus comparable to Simple by randomly selecting texts having the same sizes as the Simple articles. In both samples HTML entities were converted to characters, MediaWiki tags and commands were discarded, but the anchor texts were kept.</p>
+      <p>Simple uses significantly shorter words (4.68 characters/word) than Main (5.01 characters/word). We can define ‘same size’ by equal number of characters (see Condition CB in <xref ref-type="table" rid="pone-0048386-t002">Table 2</xref>), or by equal number of words (Condition WB). Since sentence lengths are also quite different (Simple has 17.0 words/sentence on average, Main has 25.2), the standard practice of computational linguistics of counting punctuation marks as full word tokens may also be seen as problematic. Therefore, we created two further conditions, CN (character-balanced but no punctuation) and WN (word-balanced no punctuation). In both conditions, we used the standard (Koehn, see <xref ref-type="supplementary-material" rid="pone.0048386.s002">Text S2</xref>) tokenizer to find the words, but in the N conditions we removed the punctuation chars,.?();”!:. Another potential issue concerns stemming, whether we consider the tokens <italic>amazing, amazed, amazes</italic> as belonging to the same or different types. To see whether this makes any difference, we also created conditions CBP, WBP, CNP, and WNP by stemming both Simple and Main using the standard Porter stemmer <xref ref-type="bibr" rid="pone.0048386-Porter1">[38]</xref>. <xref ref-type="table" rid="pone-0048386-t002">Table 2</xref> compares for Simple and Main a classic measure of vocabulary richness, Herdan’s <italic>C</italic>, defined as log(#types)/log(#tokens), under these conditions.</p>
+      <table-wrap id="pone-0048386-t002" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0048386.t002</object-id>
+        <label>Table 2</label>
+        <caption>
+          <title>Vocabulary richness in Main and Simple.</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone-0048386-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0048386.t002" xlink:type="simple"/>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Cond</td>
+                <td align="left" rowspan="1" colspan="1">SR</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>C<sub>M</sub></italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>C<sub>S</sub></italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>C<sub>M</sub>/C<sub>S</sub></italic>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">CB</td>
+                <td align="left" rowspan="1" colspan="1">1.0002</td>
+                <td align="left" rowspan="1" colspan="1">0.8226</td>
+                <td align="left" rowspan="1" colspan="1">0.8167</td>
+                <td align="left" rowspan="1" colspan="1">1.0072</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">CN</td>
+                <td align="left" rowspan="1" colspan="1">0.9997</td>
+                <td align="left" rowspan="1" colspan="1">0.7782</td>
+                <td align="left" rowspan="1" colspan="1">0.7739</td>
+                <td align="left" rowspan="1" colspan="1">1.0055</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">WB</td>
+                <td align="left" rowspan="1" colspan="1">1.0000</td>
+                <td align="left" rowspan="1" colspan="1">0.8218</td>
+                <td align="left" rowspan="1" colspan="1">0.8167</td>
+                <td align="left" rowspan="1" colspan="1">1.0061</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">WN</td>
+                <td align="left" rowspan="1" colspan="1">1.0000</td>
+                <td align="left" rowspan="1" colspan="1">0.7774</td>
+                <td align="left" rowspan="1" colspan="1">0.7739</td>
+                <td align="left" rowspan="1" colspan="1">1.0045</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">CBP</td>
+                <td align="left" rowspan="1" colspan="1">1.0002</td>
+                <td align="left" rowspan="1" colspan="1">0.8061</td>
+                <td align="left" rowspan="1" colspan="1">0.8013</td>
+                <td align="left" rowspan="1" colspan="1">1.0059</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">CNP</td>
+                <td align="left" rowspan="1" colspan="1">0.9997</td>
+                <td align="left" rowspan="1" colspan="1">0.7568</td>
+                <td align="left" rowspan="1" colspan="1">0.7542</td>
+                <td align="left" rowspan="1" colspan="1">1.0034</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">WBP</td>
+                <td align="left" rowspan="1" colspan="1">1.0000</td>
+                <td align="left" rowspan="1" colspan="1">0.8052</td>
+                <td align="left" rowspan="1" colspan="1">0.8013</td>
+                <td align="left" rowspan="1" colspan="1">1.0049</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">WNP</td>
+                <td align="left" rowspan="1" colspan="1">1.0000</td>
+                <td align="left" rowspan="1" colspan="1">0.7563</td>
+                <td align="left" rowspan="1" colspan="1">0.7543</td>
+                <td align="left" rowspan="1" colspan="1">1.0028</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+        <table-wrap-foot>
+          <fn id="nt101">
+            <label/>
+            <p>For the definition of conditions (character- or word-balanced, with or without puctuation, with or without Porter stemming) see the Methods section. SR is size ratio (number of characters in C conditions, number of words in W conditions) for comparable Main and Simple corpora. <italic>C<sub>M</sub></italic> and <italic>C<sub>S</sub></italic> are Herdan’s <italic>C</italic> for Main and Simple. As the last column shows, the vocabulary richness of comparable Simle and Main corpora differs at most by 0.72% depending on condition.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <p>For word and part of speech (POS) n-gram statistics not all these conditions make sense, since automatic POS taggers crucially rely on information in the affixes that would be destroyed by stemming, and for the automatic detection of sentence boundaries punctuation is required <xref ref-type="bibr" rid="pone.0048386-Mikheev1">[39]</xref>. We therefore used word-balanced samples with punctuation kept in place (condition WB) but distinguished different conditions of POS tagging for the following reason. Wikipedia, and encyclopedias in general, use an extraordinary amount of proper names (three times as much as ordinary English as measured e.g. on the Brown Corpus), many of which are multiword <italic>named entities</italic>. An ordinary POS tagger may not recognize that Long Island is a single named entity and could tag it as JJ NN (adjective noun) rather than as NNP NNP (proper name phrase). Therefore, we supplemented the original POS tagging (Condition O) by a named entity recognition (NER) system and rerun the POS tagging in light of the NER output (Condition N). If adjacent NNP-tagged elements are counted as a single NE phrase, we obtain the SO (shortened original) and SN (shortened NER-based) versions. Since neither word-based nor POS-based n-grams are very meaningful if they span sentence boundaries, we also created ‘postprocessed’ versions, where for odd n those n-grams where the boundary was in the middle were omitted, and the words/tags falling on the shorter side were uniformly replaced by the boundary marker both for odd and even n.</p>
+      <p>To measure text readability, we limited ourselves to the “Gunning fog index” <italic>F</italic>, <xref ref-type="bibr" rid="pone.0048386-Gunning1">[40]</xref>, <xref ref-type="bibr" rid="pone.0048386-Gunning2">[41]</xref> which is one of the simplest and most reliable among all different recent and classic measures (see <xref ref-type="bibr" rid="pone.0048386-Kincaid1">[42]</xref>–<xref ref-type="bibr" rid="pone.0048386-DuBay1">[44]</xref>). <italic>F</italic> is calculated as <disp-formula id="pone.0048386.e001"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0048386.e001" xlink:type="simple"/></disp-formula>where words are considered complex if they have three or more syllables. A simple interpretation of <italic>F</italic> is the number of years of formal education needed to understand the text.</p>
+    </sec>
+    <sec id="s3">
+      <title>Results and Discussion</title>
+      <p>We present our results in three parts. First we report on overall comparison of Main and Simple at different levels of word and n-gram statistics in addition to readability analysis. Next we narrow down the analysis further to compare selected articles and categories of articles, and examine the dependence of language complexity on the text topic. Finally, we explore the relation between controversy and language complexity by considering the case of editorial wars and related discussion pages in Wikipedia.</p>
+      <sec id="s3a">
+        <title>Overall Comparison</title>
+        <sec id="s3a1">
+          <title>Readability</title>
+          <p>In <xref ref-type="table" rid="pone-0048386-t003">Table 3</xref>, the Gunning fog index calculated for 6 different English corpora is reported. Remarkably, the fog index of Simple is higher than that of Dickens, whose writing style is sophisticated but doesn’t rely on the use of longer latinate words which are hard to avoid in an encyclopedia. The British National Corpus, which is a reasonable approximation to what we would want to think of as ‘English in general’ is a third of the way between Simple and Main, demonstrating the accomplishments of Simple editors, who pushed Simple half as much below average complexity as the encyclopedia genre pushes Main above it.</p>
+          <table-wrap id="pone-0048386-t003" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0048386.t003</object-id>
+            <label>Table 3</label>
+            <caption>
+              <title>Readability of different English corpora.</title>
+            </caption>
+            <alternatives>
+              <graphic id="pone-0048386-t003-3" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0048386.t003" xlink:type="simple"/>
+              <table>
+                <colgroup span="1">
+                  <col align="left" span="1"/>
+                  <col align="center" span="1"/>
+                  <col align="center" span="1"/>
+                  <col align="center" span="1"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">Corpus</td>
+                    <td align="left" rowspan="1" colspan="1">
+                      <italic>F</italic>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">Corpus</td>
+                    <td align="left" rowspan="1" colspan="1">
+                      <italic>F</italic>
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">Dickens</td>
+                    <td align="left" rowspan="1" colspan="1">8.6±0.1</td>
+                    <td align="left" rowspan="1" colspan="1">Simple</td>
+                    <td align="left" rowspan="1" colspan="1">10.8±0.2</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">SJM</td>
+                    <td align="left" rowspan="1" colspan="1">10.3±0.1</td>
+                    <td align="left" rowspan="1" colspan="1">BNC</td>
+                    <td align="left" rowspan="1" colspan="1">12.1±0.5</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">WSJ</td>
+                    <td align="left" rowspan="1" colspan="1">10.8±0.2</td>
+                    <td align="left" rowspan="1" colspan="1">Main</td>
+                    <td align="left" rowspan="1" colspan="1">15.8±0.4</td>
+                  </tr>
+                </tbody>
+              </table>
+            </alternatives>
+            <table-wrap-foot>
+              <fn id="nt102">
+                <label/>
+                <p>Gunning fog index for 6 different corpora of WSJ: <italic>Wall Street Journal</italic>•, <italic>Charles Dickens’</italic> books, SJM: <italic>San Jose Mercury News</italic>*, BNC: <italic>British National Corpus</italic><sup>†</sup>, Simple, and Main. •<ext-link ext-link-type="uri" xlink:href="http://www.wsj.com" xlink:type="simple">http://www.wsj.com</ext-link> *<ext-link ext-link-type="uri" xlink:href="http://www.mercurynews.com" xlink:type="simple">http://www.mercurynews.com</ext-link> <sup>†</sup><ext-link ext-link-type="uri" xlink:href="http://www.natcorp.ox.ac.uk" xlink:type="simple">http://www.natcorp.ox.ac.uk</ext-link>.</p>
+              </fn>
+            </table-wrap-foot>
+          </table-wrap>
+        </sec>
+        <sec id="s3a2">
+          <title>Word statistics</title>
+          <p>Vocabulary richness is compared for Simple and Main in <xref ref-type="table" rid="pone-0048386-t002">Table 2</xref> using Herdan’s <italic>C</italic>, a measure that is remarkably stable across sample sizes: for example using only 95% of the word-balanced (Condition WB) samples we would obtain <italic>C</italic> values that differ from the ones reported here by less than 0.066% and 0.044%. For technical reasons we could not balance the samples perfectly (there is no sense in cutting in the middle of a line, let alone the middle of a word), but the size ratios (column SR in <xref ref-type="table" rid="pone-0048386-t002">Table 2</xref>) were kept within 0.03%, two orders of magnitude less discrepancy than the 5% we used above, making the error introduced by less than perfect balancing negligible.</p>
+          <p>The precise choice of condition has a significant impact on <italic>C</italic>, ranging from a low of 0.754 (character-balanced, no punctuation, Porter stemming) to a high of 0.8226 (character-balanced, punctuation included, no stemming), but practically no effect on the <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0048386.e002" xlink:type="simple"/></inline-formula> ratio, which is between 0.28% and 0.72% for all conditions reported here. In other words, we observe the same vocabulary richness in balanced samples of Simple and Main quite independent of the specific processing and balancing steps taken. We also experimented with several other tokenizers and stemmers, as well as inclusion or exclusion of numerals or words with foreign (not ISO-8859-1) characters, but the precise choice of condition made little difference in that the discrepancy between <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0048386.e003" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0048386.e004" xlink:type="simple"/></inline-formula> always stayed less than 1% (<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0048386.e005" xlink:type="simple"/></inline-formula> to <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0048386.e006" xlink:type="simple"/></inline-formula>). The only condition where a more significant difference of 3.4% could be observed was when Simple was directly paired with Main by selecting, wherever possible, the corresponding Main version of every Simple article.</p>
+          <p>As discussed in <xref ref-type="bibr" rid="pone.0048386-Tweedie1">[45]</xref>, one cannot reasonably expect the same result to hold for other traditional measures of vocabulary richness such as type-token ratio, since these are not independent of sample size asymptotically <xref ref-type="bibr" rid="pone.0048386-Kornai1">[46]</xref>. However, Herdan’s Law (also known as Heaps’ Law, <xref ref-type="bibr" rid="pone.0048386-Herdan1">[47]</xref>, <xref ref-type="bibr" rid="pone.0048386-Heaps1">[48]</xref>), which states that the number of different types <italic>V</italic> scales with the number of tokens <italic>N</italic> as <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0048386.e007" xlink:type="simple"/></inline-formula>, is known to be asymptotically true for any distribution following Zipf’s law <xref ref-type="bibr" rid="pone.0048386-Zipf1">[49]</xref>, see <xref ref-type="bibr" rid="pone.0048386-Kornai2">[50]</xref>–<xref ref-type="bibr" rid="pone.0048386-vanLeijenhorst1">[52]</xref>. In <xref ref-type="fig" rid="pone-0048386-g001">Fig. 1</xref> (left and middle panels) our study of both laws in Condition WB, are illustrated.</p>
+          <fig id="pone-0048386-g001" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0048386.g001</object-id>
+            <label>Figure 1</label>
+            <caption>
+              <title>Word-level statistical analysis of Main and Simple.</title>
+              <p>Condition WB, as explained the Methods section. <italic>left:</italic> Zipf’s law for the Main (black) and Simple (red) samples. <italic>middle:</italic> Heaps’ law (same colors). The exponents are 0.72±0.01 (Main) and 0.69±0.01 (Simple). <italic>right:</italic> Comparing token frequencies in the two samples for 300 randomly selected words (“S” and “M” stand for Simple and Main respectively), the correlation coefficient is C = 0.985. All three diagrams show that the two samples have statistically almost the same vocabulary richness.</p>
+            </caption>
+            <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0048386.g001" position="float" xlink:type="simple"/>
+          </fig>
+          <p>Since all these results demonstrate the similarity of the Simple and Main samples in the sense of unigram vocabulary richness, a conclusion that is quite contrary to the Simple Wikipedia stylistic guidelines <xref ref-type="bibr" rid="pone.0048386-Wikipedia4">[53]</xref>, we performed some additional tests. First, we selected 300 words randomly and compared the number of their appearance in both samples (right panel of <xref ref-type="fig" rid="pone-0048386-g001">Fig. 1</xref>). Next, we considered the word entropy of Simple and Main, obtaining 10.2 and 10.6 bits respectively. Again, the exact numbers depend on the details of preprocessing, but the difference is in the 2.9% to 3.9% range in favor of Main in every condition, while the dependence on condition is in the 1.8% to 2.8% range. Though 0.4 bits are above the noise level, the numbers should be compared to the word entropy of mixed text, 9.8 bits, as measured on the Brown Corpus, and of spoken conversation, 7.8 bits, as measured on the Switchboard Corpus. When a switch in genre can bring over 30% decrease in word entropy, a 3% difference pales in comparison. Altogether, both Simple and Main are close in word entropy to high quality newspaper prose such as the Wall Street Journal, 10.3 bits, and the San Jose Mercury News, 11.1 bits.</p>
+        </sec>
+        <sec id="s3a3">
+          <title>Word n-gram statistics</title>
+          <p>One effect not measured by the standard unigram techniques is the contribution of lexemes composed of more than one word, including idiomatic expressions like ‘take somebody to task’ and collocations like ‘heavy drinker’. The Simple Wikipedia guidelines <xref ref-type="bibr" rid="pone.0048386-Wikipedia4">[53]</xref> explicitly warn against the use of idioms: ‘Do not use idioms (one or more words that together mean something other than what they say) ’. One could assume that Simple editors rely more on such multiword patterns, and the n-gram analysis presented here supports this. In <xref ref-type="fig" rid="pone-0048386-g002">Fig. 2</xref> made under condition WB, the token frequencies of n-grams are shown in a Zipf-style plot as a function of their rank. Both the unigram statistics discussed in the previous section and the 2-gram statistics presented here are nearly identical for Simple and Main, but 3-grams and higher n-grams begin to show some discrepancy between them. In reality, a sample of this small size (below 10<sup>7</sup> words) is too small to represent higher n-grams well, as is clear from manual inspection of the top 5-grams of Simple.</p>
+          <fig id="pone-0048386-g002" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0048386.g002</object-id>
+            <label>Figure 2</label>
+            <caption>
+              <title>N-gram statistical analysis of Main and Simple.</title>
+              <p>Condition WB, as explained the Methods section. Number of appearances of n-grams in Main (black) and Simple (red) for <italic>n</italic> = 2−5 from left to right. By increasing <italic>n</italic>, the difference between two samples becomes more significant. In Simple there are more of the frequently appearing n-grams than in Main.</p>
+            </caption>
+            <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0048386.g002" position="float" xlink:type="simple"/>
+          </fig>
+          <p>Ignoring 5-grams composed of Chinese characters (which are mapped into the same string by the tokenizer), the top four entries, with over 4200 occurrences, all come from the string. <bold>It is found in the region</bold>. In fact, by grepping on high frequency n-grams such as <italic>is a commune of</italic> we find over six thousand entries in Simple such as the following: <italic>Alairac is a commune of 1,034 people (1999). It is located in the region Languedoc-Roussillon in the Aude department in the south of France.</italic> Since most of these entries came from only a handful of editors, we can be reasonably certain that they were generated from geographic databases (gazetteers) using a simple ‘American Chinese Menu’ substitution tool <xref ref-type="bibr" rid="pone.0048386-Sproat1">[54]</xref>, perhaps implemented as Wikipedia robots.</p>
+          <p>Since an estimated 12.3% of the articles in Simple fit these patterns, it is no surprise that they contribute somewhat to the apparent n-gram simplicity of Simple. Indeed, the entropy differential between Main and Simple, which is 0.39 bits absolute (1.7% relative) for 5-grams, decreases to 0.28 bits (1.2% relative) if these articles are removed from Simple and the Main sample is decreased to match. (By word count the robot-generated material is less than 2% of Simple, so the adjustment has little impact.) Since higher n-grams are seriously undersampled (generally, 10<sup>9</sup> words ‘gigaword corpora’ are considered necessary for word trigrams, while our entire samples are below 10<sup>7</sup> words) we cannot pursue the matter of multiword patterns further, but note that the boundary between the machine-generated and the manually written is increasingly blurred.</p>
+          <p>Consider <italic>Joyeuse is a commune in the French department of Ardèche in the region of Rhône-Alpes. It is the seat of the canton of Joyeuse</italic>, an article that clearly started its history by semi-automatic or fully automatic generation. By now (August 2012) the article is twice as long (either by manual writing or semi-automatic import from the main English wikipedia), and its content is clearly beyond what any gazetteer would list. With high quality robotic generation, editors will simply not know, or care, whether they are working on a page that originally comes from a robot. Therefore, in what follows we consider Simple in its entirety, especially as the part of speech (POS) statistics that we now turn to are not particularly impacted by robotic generation.</p>
+        </sec>
+        <sec id="s3a4">
+          <title>Part of speech statistics</title>
+          <p><xref ref-type="fig" rid="pone-0048386-g003">Figure 3</xref> shows the distribution of the part of speech (POS) tags in Main and Simple for Condition O (word balanced, punctuation and possessive <italic>‘s</italic> counted as separate words, as standard with the the Penn Treebank POS set <xref ref-type="bibr" rid="pone.0048386-The1">[55]</xref>.) It is evident from comparing the first and second columns that the encyclopedia genre is particularly heavy on Named Entities (proper nouns or phrases designating specific places, people, and organizations <xref ref-type="bibr" rid="pone.0048386-Chinchor1">[56]</xref>). Since multiword entities like <italic>Long Island, Benjamin Franklin, National Academy of Sciences</italic> are quite common, we also preprocessed the data using the HunNER Named Entity Recognizer <xref ref-type="bibr" rid="pone.0048386-Varga1">[57]</xref>, and performed the part of speech tagging afterwards (condition N). When adjacent NNP words are counted as one, we obtained the SO and SN conditions. This obviously affects not just the NNP counts, but also the higher n-grams that contain NNP.</p>
+          <fig id="pone-0048386-g003" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0048386.g003</object-id>
+            <label>Figure 3</label>
+            <caption>
+              <title>Part of Speech statistics of Main English and Simple English Wikipedias.</title>
+              <p>Condition O, as explained the Methods section. The legends are defined as NN: Noun, singular or mass; IN: Preposition or subordinating conjunction; NNP: Proper noun, singular; DT: Determiner; JJ: Adjective; NNS: Noun, plural; VBD: Verb, past tense; CC: Coordinating conjunction; CD: Cardinal number; RB: Adverb; VBN: Verb, past participle; VBZ: Verb, 3rd person singular present; TO: to; VB: Verb, base form; VBG: Verb, gerund or present participle; PRP: Personal pronoun; VBP: Verb, non-3rd person singular present; PRP$: Possessive pronoun; POS: Possessive ending; WDT: Wh-determiner; MD: Modal; NNPS: Proper noun, plural; WRB: Wh-adverb; JJR: Adjective, comparative; JJS: Adjective, superlative; WP: Wh-pronoun; RP: Particle; RBR: Adverb, comparative; EX: Existential there; SYM: Symbol; RBS: Adverb, superlative; FW: Foreign word; PDT: Predeterminer; WP$: Possessive wh-pronoun; LS: List item marker; UH: Interjection.</p>
+            </caption>
+            <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0048386.g003" position="float" xlink:type="simple"/>
+          </fig>
+          <p>Again, the similarity of Simple and Main is quite striking: the cosine similarity measure of these distributions is between 0.989 (Condition O) and 0.991 (Condition SO), corresponding to an angle of 7.7 to 8.6 degrees. To put these numbers in perspective, note that the similarity between Main and the Brown Corpus is 0.901 (25.8 degrees), and between Main and Switchboard 0.671 (47.8 degrees). For POS n-grams, it makes sense to omit n-grams with a sentence boundary at the center. For the POS unigram models this means that we do not count the notably different sentence lengths twice, a step that would bring cosine similarity between Simple and Main to 0.992 (Condition SO) or 0.993 (Condition N), corresponding to an angle of 6.8 to 7.1 degrees. Either way, the angle between Simple and Main is remarkably acute.</p>
+          <p>While <xref ref-type="fig" rid="pone-0048386-g003">Figure 3</xref> shows some slight stylistic variation, e.g. that Simple uses twice as many personal pronouns (<italic>he, she, it, …</italic>) as Main, it is hard to reach any overarching generalizations about these, both because most of the differences are statistically insignificant, and because they point in different directions. One may be tempted to consider the use of pronouns to be an indicator of simpler, more direct, and more personal language, but by the same token one would have to consider the use of wh-adverbs (<italic>how however whence whenever where whereby wherever wherein whereof why …</italic>) to be a hallmark of more sophisticated, more logical, and more impersonal style, yet it is Simple that has 50% more of these.</p>
+          <p><xref ref-type="fig" rid="pone-0048386-g004">Figure 4</xref> shows that the POS n-gram Zipf plots for <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0048386.e008" xlink:type="simple"/></inline-formula> are practically indistinguishable across Simple and Main under Condition N. (We are publishing this figure as it is the worst – under the other conditions, the match is even better.) In terms of cosine similarity, the same tendencies that we established for unigram data remain true for bigram or higher POS n-grams: the Switchboard data is quite far from both Simple and Main, the Brown Corpus is closer, and the WSJ is closest. However, Simple and Main are noticeably closer to one another than either of them is to WSJ, as is evident from the <xref ref-type="table" rid="pone-0048386-t004">Table 4</xref>, which gives the angle, in decimal degrees, between Simple and Main (column SM), Main and WSJ (column MW), and Simple and WSJ (column SW) based on POS n-grams for <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0048386.e009" xlink:type="simple"/></inline-formula>, under condition SN, with postprocessing of n-grams spanning sentence boundaries. We chose this condition because we believe it to be the least noisy, but we emphasize that the same relations are observed for all other conditions, with or without sentence boundary postprocessing, with or without removal of machine-generated entries from Simple, with or without readjusting the Main corpus to reflect this change (all 32 combinations were investigated). The data leave no doubt that the WSJ is closer to Main than to Simple, but the angles are large enough, especially when compared to the Simple/Main column, to discourage any attempt at explaining the syntax of Main, or Simple, based on the syntax of well-edited journalistic prose. We conclude that the simplicity of Simple, evident both from reading the material and from the Gunning Fog index discussed above, is due primarily to Main having considerably longer sentences. A secondary effect may be the use of shorter subsentences (comma-separated stretches) as well, but this remains unclear in that the number of subsentence separators (commas, colons, semicolons, parens, quotation marks) per sentence is considerably higher in Main (1.62) than in Simple (1.01), so a Main subsentence is on the average not much longer than a Simple subsentence (8.62 vs 7.96 content words/subsentence).</p>
+          <fig id="pone-0048386-g004" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0048386.g004</object-id>
+            <label>Figure 4.POS-N-gram</label>
+            <caption>
+              <title>N-gram statistical analysis of Main and Simple</title>
+              <p>Number of appearances of POS n-grams in Main and Simple for <italic>n</italic> = 1–5 under condition N.</p>
+            </caption>
+            <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0048386.g004" position="float" xlink:type="simple"/>
+          </fig>
+          <table-wrap id="pone-0048386-t004" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0048386.t004</object-id>
+            <label>Table 4</label>
+            <caption>
+              <title>Statistical similarity between different samples at different length of n-grams.</title>
+            </caption>
+            <alternatives>
+              <graphic id="pone-0048386-t004-4" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0048386.t004" xlink:type="simple"/>
+              <table>
+                <colgroup span="1">
+                  <col align="left" span="1"/>
+                  <col align="center" span="1"/>
+                  <col align="center" span="1"/>
+                  <col align="center" span="1"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">n</td>
+                    <td align="left" rowspan="1" colspan="1">SM</td>
+                    <td align="left" rowspan="1" colspan="1">MW</td>
+                    <td align="left" rowspan="1" colspan="1">SW</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">2</td>
+                    <td align="left" rowspan="1" colspan="1">13.1</td>
+                    <td align="left" rowspan="1" colspan="1">28.3</td>
+                    <td align="left" rowspan="1" colspan="1">33.8</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">3</td>
+                    <td align="left" rowspan="1" colspan="1">16.5</td>
+                    <td align="left" rowspan="1" colspan="1">33.4</td>
+                    <td align="left" rowspan="1" colspan="1">40.4</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">4</td>
+                    <td align="left" rowspan="1" colspan="1">20.1</td>
+                    <td align="left" rowspan="1" colspan="1">40.8</td>
+                    <td align="left" rowspan="1" colspan="1">49.8</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">5</td>
+                    <td align="left" rowspan="1" colspan="1">28.7</td>
+                    <td align="left" rowspan="1" colspan="1">47.9</td>
+                    <td align="left" rowspan="1" colspan="1">58.2</td>
+                  </tr>
+                </tbody>
+              </table>
+            </alternatives>
+            <table-wrap-foot>
+              <fn id="nt103">
+                <label/>
+                <p>Angle, in decimal degrees, between Simple and Main (column SM), Main and WSJ (column MW), and Simple and WSJ (column SW) based on POS n-grams for <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0048386.e010" xlink:type="simple"/></inline-formula>, under condition SN, with postprocessing of n-grams spanning sentence boundaries.</p>
+              </fn>
+            </table-wrap-foot>
+          </table-wrap>
+        </sec>
+      </sec>
+      <sec id="s3b">
+        <title>Topical Comparison</title>
+        <p>Clearly, readability of text is a very context dependent feature. The more conceptually complex a topic, the more complex linguistic structures and the less readability are expected. To examine this intuitive hypothesis, we considered different articles in different topical categories. Instead of systematically covering all possible categories of articles, here we illustrate the phenomenon on a limited number of cases, where significant differences are observed. The readability index of 10 selected articles from different topical categories is measured and reported in in <xref ref-type="table" rid="pone-0048386-t005">Table 5</xref>.</p>
+        <table-wrap id="pone-0048386-t005" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0048386.t005</object-id>
+          <label>Table 5</label>
+          <caption>
+            <title>Comparison of readability in Main and Simple English Wikipedias.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0048386-t005-5" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0048386.t005" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Article</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>F</italic>
+                    <sub>M<italic>ain</italic></sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>F</italic>
+                    <sub>S<italic>imple</italic></sub>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Philosophy</td>
+                  <td align="left" rowspan="1" colspan="1">16.6</td>
+                  <td align="left" rowspan="1" colspan="1">11.3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Physics</td>
+                  <td align="left" rowspan="1" colspan="1">15.9</td>
+                  <td align="left" rowspan="1" colspan="1">11.1</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Politics</td>
+                  <td align="left" rowspan="1" colspan="1">14.1</td>
+                  <td align="left" rowspan="1" colspan="1">8.9</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">You’re My Heart, You’re My Soul (song)</td>
+                  <td align="left" rowspan="1" colspan="1">9.6</td>
+                  <td align="left" rowspan="1" colspan="1">5.8</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Real Madrid C.F.</td>
+                  <td align="left" rowspan="1" colspan="1">11.6</td>
+                  <td align="left" rowspan="1" colspan="1">7.6</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Immanuel Kant</td>
+                  <td align="left" rowspan="1" colspan="1">15.7</td>
+                  <td align="left" rowspan="1" colspan="1">10.3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Albert Einstein</td>
+                  <td align="left" rowspan="1" colspan="1">13.5</td>
+                  <td align="left" rowspan="1" colspan="1">8.9</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Barack Obama</td>
+                  <td align="left" rowspan="1" colspan="1">12.7</td>
+                  <td align="left" rowspan="1" colspan="1">9.7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Madonna (entertainer)</td>
+                  <td align="left" rowspan="1" colspan="1">11.2</td>
+                  <td align="left" rowspan="1" colspan="1">8.9</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Lionel Messi</td>
+                  <td align="left" rowspan="1" colspan="1">12.8</td>
+                  <td align="left" rowspan="1" colspan="1">7.9</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt104">
+              <label/>
+              <p>Gunning fog index for the same example articles in Main and Simple.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>While these results are clearly indicative of the main tendencies, for more reliable statistics we need larger samples. To this end we sampled over <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0048386.e011" xlink:type="simple"/></inline-formula> articles from 10 different categories and averaged the readability index for the articles within the category. Results are shown in <xref ref-type="table" rid="pone-0048386-t006">Table 6</xref>. The numbers make it clear that more sophisticated topics, e.g. <italic>Philosophy</italic> and <italic>Physics</italic> require more elaborate language compared to the more common topics of <italic>Politics</italic> and <italic>Sport</italic>. In addition, there is considerable difference between subjective and objective articles, in that the level of complexity is slightly higher in the former: more objective articles (e.g. biographies) are more readable.</p>
+        <table-wrap id="pone-0048386-t006" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0048386.t006</object-id>
+          <label>Table 6</label>
+          <caption>
+            <title>Readability in different topical categories.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0048386-t006-6" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0048386.t006" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Category</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>F</italic>
+                    <sub>M<italic>ain</italic></sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>F</italic>
+                    <sub>S<italic>imple</italic></sub>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Philosophy</td>
+                  <td align="left" rowspan="1" colspan="1">17.2±0.6</td>
+                  <td align="left" rowspan="1" colspan="1">12.7±0.8</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Physics</td>
+                  <td align="left" rowspan="1" colspan="1">16.5±0.4</td>
+                  <td align="left" rowspan="1" colspan="1">11.3±0.7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Politics</td>
+                  <td align="left" rowspan="1" colspan="1">14.0±0.5</td>
+                  <td align="left" rowspan="1" colspan="1">11.2±0.8</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Songs</td>
+                  <td align="left" rowspan="1" colspan="1">13.3±0.6</td>
+                  <td align="left" rowspan="1" colspan="1">11.0±0.7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Sport clubs</td>
+                  <td align="left" rowspan="1" colspan="1">12.2±0.7</td>
+                  <td align="left" rowspan="1" colspan="1">10.1±0.6</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Philosophers</td>
+                  <td align="left" rowspan="1" colspan="1">15.9±0.6</td>
+                  <td align="left" rowspan="1" colspan="1">11.5±0.8</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Physicists</td>
+                  <td align="left" rowspan="1" colspan="1">15.0±0.5</td>
+                  <td align="left" rowspan="1" colspan="1">10.0±0.7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Politicians</td>
+                  <td align="left" rowspan="1" colspan="1">13.1±0.4</td>
+                  <td align="left" rowspan="1" colspan="1">10.2±0.6</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Singers</td>
+                  <td align="left" rowspan="1" colspan="1">13.2±0.4</td>
+                  <td align="left" rowspan="1" colspan="1">10.1±0.5</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Athletes</td>
+                  <td align="left" rowspan="1" colspan="1">13.1±0.3</td>
+                  <td align="left" rowspan="1" colspan="1">10.1±0.6</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt105">
+              <label/>
+              <p>Gunning fog index for samples of articles in 10 different categories in Main and Simple.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="s3c">
+        <title>Conflict and Controversy</title>
+        <p>Wikipedia pages usually evolve in a smooth, constructive manner, but sometimes severe conflicts, so called <italic>edit wars</italic>, emerge. A measure <italic>M</italic> of controversially was coined by appropriately weighting the number of mutual reverts with the number of edits of the participants of the conflict in our previous works <xref ref-type="bibr" rid="pone.0048386-Yasseri2">[18]</xref>, <xref ref-type="bibr" rid="pone.0048386-Sumi1">[58]</xref>, <xref ref-type="bibr" rid="pone.0048386-Sumi2">[59]</xref>. (For the exact definition and more details, see <xref ref-type="supplementary-material" rid="pone.0048386.s001">Text S1</xref>.) By measuring <italic>M</italic> for articles, one could rank them according to controversiality (the intensity of editorial wars on the article).</p>
+        <p>In order to enhance the collaboration, resolve the issues, and discuss the quality of the articles, editors communicate to each other through the “talk pages” <xref ref-type="bibr" rid="pone.0048386-Wikipedia5">[60]</xref> both in controversial and in peacefully evolving articles. Depending on the controversially of the topic, the language that is used by editors for these communications can become rather offensive and destructive.</p>
+        <p>In classical cognitive sociology <xref ref-type="bibr" rid="pone.0048386-Deutsch1">[61]</xref>, there is a distinction between “constructive” and “destructive” conflicts. “Destructive processes form a coherent system aimed at inflicting psychological, material or physical damage on the opponent, while constructive processes form a coherent system aimed at achieving one’s goals while maintaining or enhancing relations with the opponent” <xref ref-type="bibr" rid="pone.0048386-Samson1">[62]</xref>. There are many characteristics that distinguish these two types of interactions, such as the use of swearwords and taboo expressions, but for our purposes the most important is the lowering of language complexity in the case of destructive conflict <xref ref-type="bibr" rid="pone.0048386-Samson1">[62]</xref>.</p>
+        <p>Since we can locate destructive conflicts in Wikipedia based on measuring <italic>M</italic>, a computation that does not take linguistic factors into account, we can check independently whether linguistic complexity is indeed decreased as the destructivity of the conflict increases. To this end, we created two similarly sized samples, one composed of 20 highly controversial articles like <italic>Anarchism</italic> and <italic>Jesus</italic>, the other composed of 20 peacefully developing articles like <italic>Deer</italic> and <italic>York</italic>. The Gunning fog index was calculated both for the articles and the corresponding talk pages for both samples. Results are shown in <xref ref-type="table" rid="pone-0048386-t007">Table 7</xref>. We see that the fog index of the conflict pages is significantly higher than those of the peaceful ones (with 99.9% confidence calculated with Welch’s t-test). This is in accord with the previous conclusion about the topical origin of differences in the index (see <xref ref-type="table" rid="pone-0048386-t006">Table 6</xref>): clearly, conflict pages are usually about rather complex issues.</p>
+        <table-wrap id="pone-0048386-t007" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0048386.t007</object-id>
+          <label>Table 7</label>
+          <caption>
+            <title>Controversy and readability.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0048386-t007-7" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0048386.t007" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">Controversial</td>
+                  <td align="left" rowspan="1" colspan="1">Peaceful</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>F</italic>
+                    <sub>A<italic>rticle</italic></sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">16.5±0.9</td>
+                  <td align="left" rowspan="1" colspan="1">11.6±0.4</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>F</italic>
+                    <sub>T<italic>alk</italic></sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">11.7±0.6</td>
+                  <td align="left" rowspan="1" colspan="1">8.6±0.8</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <inline-formula>
+                      <inline-graphic xlink:href="info:doi/10.1371/journal.pone.0048386.e012" xlink:type="simple"/>
+                    </inline-formula>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">4.8</td>
+                  <td align="left" rowspan="1" colspan="1">3.0</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt106">
+              <label/>
+              <p>Gunning fog index for two sample articles of highly controversial and peaceful articles and the corresponding talk pages.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>In both samples there is a notable decrease in the fog index when going from the main page to the talk page, but this decrease is considerably larger for the conflict pages (4.8 vs. 3.0, separated within a confidence interval of 85%). This is just as expected from earlier observations of linguistic behavior during destructive conflict <xref ref-type="bibr" rid="pone.0048386-Samson1">[62]</xref>. The language complexities for controversial articles and the corresponding talk pages are higher to begin with, but the amount of reduction in language complexity <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0048386.e013" xlink:type="simple"/></inline-formula> is much more noticeable in the presence of destructive conflicts and severe editorial wars.</p>
+      </sec>
+      <sec id="s3d">
+        <title>Conclusions and Future Work</title>
+        <p>In this work we exploited the unique near-parallelism that obtains between the Main and the Simple English Wikipedias to study empirically the linguistic differences triggered by a single stylistic factor, the effort of the editors to make Simple simple. We have found, quite contrary to naive expectations, and to Simple Wikipedia guidelines, that classic measures of vocabulary richness and syntactic complexity are barely affected by the simplification effort. The real impact of this effort is seen in the less frequent use of more complex words, and in the use of shorter sentences, both directly contributing to a decreased Fog index.</p>
+        <p>Simplification of the lexicon, as measured by <italic>C</italic> or word entropy, is hardly detectable, unless we directly compare the corresponding Simple and Main articles, and even there the effect is small, 3.4%. The amount of syntactic variety, as measured by POS n-gram entropy, is decreased from Main to Simple by a more detectable, but still rather small amount, 2–3%, with an estimated 20–30% of this decrease due to robotic generation of pages. Altogether, the complexity of Simple remains quite close to that of newspaper text, and very far from the easily detectable simplification seen in spoken language.</p>
+        <p>We believe our work can help future editors of the simple Wikipedia, e.g. by adding robotic complexity checkers. Further investigation of the linguistic properties of Wikipedias in general and the simple English edition in particular could provide results of great practical utility not only in natural language processing and applied linguistics, but also in foreign language education and improvement of teaching methods. The methods used here may also find an application in the study of other purportedly simpler language varieties such as creoles and child-direceted speech.</p>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Supporting Information</title>
+      <supplementary-material id="pone.0048386.s001" mimetype="application/pdf" xlink:href="info:doi/10.1371/journal.pone.0048386.s001" position="float" xlink:type="simple">
+        <label>Text S1</label>
+        <caption>
+          <p><bold>Controversy measure.</bold> Detailed description and definition of controversy measure <italic>M</italic>.</p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0048386.s002" mimetype="application/pdf" xlink:href="info:doi/10.1371/journal.pone.0048386.s002" position="float" xlink:type="simple">
+        <label>Text S2</label>
+        <caption>
+          <p><bold>Corpora and analysis tools.</bold> Detailed protocol of text-mining process and directions to the software and corpora.</p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>TY thanks Katarzyna Samson for useful discussions. We thank Attila Zséder and Gábor Recski for helping us with the POS analysis. Suggestions by the anonymous PLoS ONE referees led to significant improvements in the paper, and are gratefully acknowledged here.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0048386-PaascheOrlow1">
+        <label>1</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Paasche-Orlow</surname><given-names>MK</given-names></name>, <name name-style="western"><surname>Taylor</surname><given-names>HA</given-names></name>, <name name-style="western"><surname>Brancati</surname><given-names>FL</given-names></name> (<year>2003</year>) <article-title>Readability standards for informed-consent forms as compared with actual readability</article-title>. <source>New England Journal of Medicine</source> <volume>348</volume>: <fpage>721</fpage>–<lpage>726</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Klare1">
+        <label>2</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Klare</surname><given-names>GR</given-names></name> (<year>1974</year>) <article-title>Assessing readability</article-title>. <source>Reading Research Quarterly</source> <volume>10</volume>: <fpage>62</fpage>–<lpage>102</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Kanungo1">
+        <label>3</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Kanungo T, Orr D (2009) Predicting the readability of short web summaries. In: Proceedings of the Second ACM International Conference on Web Search and Data Mining (WSDM ’09). New York: ACM Press. 202–211.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Karmakar1">
+        <label>4</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Karmakar S, Zhu Y (2010) Visualizing multiple text readability indexes. In: 2010 International Conference on Education and Management Technology (ICEMT). Washington, DC: IEEE. 133–137.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Lambiotte1">
+        <label>5</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lambiotte</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Ausloos</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Thelwall</surname><given-names>M</given-names></name> (<year>2007</year>) <article-title>Word statistics in blogs and rss feeds: Towards empirical universal evidence</article-title>. <source>Journal of Informetrics</source> <volume>1</volume>: <fpage>277</fpage>–<lpage>286</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Serrano1">
+        <label>6</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Serrano</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Flammini</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Menczer</surname><given-names>F</given-names></name> (<year>2009</year>) <article-title>Modeling statistical properties of written text</article-title>. <source>PLoS ONE</source> <volume>4</volume>: <fpage>e5372</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Altmann1">
+        <label>7</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Altmann</surname><given-names>EG</given-names></name>, <name name-style="western"><surname>Pierrehumbert</surname><given-names>JB</given-names></name>, <name name-style="western"><surname>Motter</surname><given-names>AE</given-names></name> (<year>2009</year>) <article-title>Beyond word frequency: Bursts, lulls, and scaling in the temporal distributions of words</article-title>. <source>PLoS ONE</source> <volume>4</volume>: <fpage>e7678</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Altmann2">
+        <label>8</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Altmann</surname><given-names>EG</given-names></name>, <name name-style="western"><surname>Pierrehumbert</surname><given-names>JB</given-names></name>, <name name-style="western"><surname>Motter</surname><given-names>AE</given-names></name> (<year>2011</year>) <article-title>Niche as a determinant of word fate in online groups</article-title>. <source>PLoS ONE</source> <volume>6</volume>: <fpage>e19009</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Wikipedia1">
+        <label>9</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Wikipedia. Available: <ext-link ext-link-type="uri" xlink:href="http://www.wikipedia.org" xlink:type="simple">http://www.wikipedia.org</ext-link>. Accessed 2012 Jul 8.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Voss1">
+        <label>10</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Voss J (2005) Measuring Wikipedia. 10th International Conference of the International Society for Scientometrics and Informetrics, Stockholm, Sweden, 24–28 July 2005.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Ortega1">
+        <label>11</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Ortega F, Gonzalez Barahona JM (2007) Quantitative analysis of the Wikipedia community of users. In: Proceedings of the 2007 international symposium on Wikis (WikiSym ’07). New York: ACM Press. 75–86.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Halavais1">
+        <label>12</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Halavais</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Lackaff</surname><given-names>D</given-names></name> (<year>2008</year>) <article-title>An analysis of topical coverage of Wikipedia</article-title>. <source>Journal of Computer-Mediated Communication</source> <volume>13</volume>: <fpage>429</fpage>–<lpage>440</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Javanmardi1">
+        <label>13</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Javanmardi</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Lopes</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Baldi</surname><given-names>P</given-names></name> (<year>2010</year>) <article-title>Modeling user reputation in wikis</article-title>. <source>Statistical Analysis and Data Mining</source> <volume>3</volume>: <fpage>126</fpage>–<lpage>139</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Laniado1">
+        <label>14</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Laniado D, Tasso R (2011) Co-authorship 2.0: patterns of collaboration in Wikipedia. In: Proceedings of the 22nd ACM conference on Hypertext and hypermedia (HT ’11). New York: ACM Press. 201–210.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Massa1">
+        <label>15</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Massa P (2011) Social networks of Wikipedia. In: Proceedings of the 22nd ACM conference on Hypertext and hypermedia (HT ’11). New York: ACM Press. 221–230.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Kimmons1">
+        <label>16</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Kimmons R (2011) Understanding collaboration in Wikipedia. First Monday 16.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Yasseri1">
+        <label>17</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yasseri</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Sumi</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Kertész</surname><given-names>J</given-names></name> (<year>2012</year>) <article-title>Circadian patterns of Wikipedia editorial activity: A demographic analysis</article-title>. <source>PLoS ONE</source> <volume>7</volume>: <fpage>e30091</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Yasseri2">
+        <label>18</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yasseri</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Sumi</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Rung</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Kornai</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Kertész</surname><given-names>J</given-names></name> (<year>2012</year>) <article-title>Dynamics of conicts in Wikipedia</article-title>. <source>PLoS ONE</source> <volume>7</volume>: <fpage>e38869</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Wikipedia2">
+        <label>19</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Wikipedia. Simple english Wikipedia. Available: <ext-link ext-link-type="uri" xlink:href="http://simple.wikipedia.org" xlink:type="simple">http://simple.wikipedia.org</ext-link>. Accessed 2012 Jul 8.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Wikipedia3">
+        <label>20</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Wikipedia. English Wikipedia. Available: <ext-link ext-link-type="uri" xlink:href="http://www.en.wikipedia.org" xlink:type="simple">http://www.en.wikipedia.org</ext-link>. Accessed 2012 Jul 8.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Baumann1">
+        <label>21</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Baumann J (2005) Vocabulary-comprehension relationships. In: Maloch B, Hoffman JV, Schallert DL, Fairbanks CM, Worthy J, editors. Fifty-fourth yearbook of the National Reading Conference. Oak Creek, WI: National Reading Conference. p.117131.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Roberts1">
+        <label>22</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Roberts</surname><given-names>JC</given-names></name>, <name name-style="western"><surname>Fletcher</surname><given-names>RH</given-names></name>, <name name-style="western"><surname>Fletcher</surname><given-names>SW</given-names></name> (<year>1994</year>) <article-title>Effects of peer review and editing on the readability of articles published in annals of internal medicine</article-title>. <source>JAMA: The Journal of the American Medical Association</source> <volume>272</volume>: <fpage>119</fpage>–<lpage>121</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Medelyan1">
+        <label>23</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Medelyan</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Milne</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Legg</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Witten</surname><given-names>IH</given-names></name> (<year>2009</year>) <article-title>Mining meaning from Wikipedia</article-title>. <source>International Journal of Human-Computer Studies</source> <volume>67</volume>: <fpage>716</fpage>–<lpage>754</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Gabrilovich1">
+        <label>24</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Gabrilovich E, Markovitch S (2007) Computing semantic relatedness using Wikipedia-based explicit semantic analysis. In: Proceedings of the 20th international joint conference on artifical intelligence (IJCAI ’07). San Francisco, CA: Morgan Kaufmann Publishers Inc. 1606–1611.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Zesch1">
+        <label>25</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Zesch T, Müller C, Gurevych I (2008) Extracting lexical semantic knowledge from Wikipedia and Wiktionary. In: Proc. of the 6th Conference on Language Resources and Evaluation (LREC 2008). Marrakech, Morocco.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Wang1">
+        <label>26</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Wang P, Domeniconi C (2008) Building semantic kernels for text classification using Wikipedia. In: Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining (KDD ’08). New York: ACM Press. 713–721.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Gabrilovich2">
+        <label>27</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gabrilovich</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Markovitch</surname><given-names>S</given-names></name> (<year>2009</year>) <article-title>Wikipedia-based semantic interpretation for natural language processing</article-title>. <source>J Artif Int Res</source> <volume>34</volume>: <fpage>443</fpage>–<lpage>498</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Medelyan2">
+        <label>28</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Medelyan O, Witten IH, Milne D (2008) Topic indexing with Wikipedia. In: Proceedings of the AAAI 2008 Workshop on Wikipedia and Artificial Intelligence (WIKIAI 2008). 19–24. Available: <ext-link ext-link-type="uri" xlink:href="http://www.aaai.org/Papers/Workshops/2008/WS-08-15/WS08-15-004.pdf" xlink:type="simple">http://www.aaai.org/Papers/Workshops/2008/WS-08-15/WS08-15-004.pdf</ext-link>. Accessed 2012 Oct 13.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Tan1">
+        <label>29</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Tan B, Peng F (2008) Unsupervised query segmentation using generative language models and Wikipedia. In: Proceedings of the 17th international conference on World Wide Web (WWW ’08). New York: ACM Press. 347–356.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Tyers1">
+        <label>30</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Tyers F, Pienaar J (2008) Extracting bilingual word pairs from Wikipedia. In: Proceedings of the SALTMIL Workshop at Language Resources and Evaluation Conference (LREC 2008). Marrakech, Morocco.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Sharoff1">
+        <label>31</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Sharoff SKS, Hartley A (2008) Seeking needles in the web haystack: Finding texts suitable for language learners. In: 8th Teaching and Language Corpora Conference (TaLC-8).</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Besten1">
+        <label>32</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Besten</surname><given-names>MD</given-names></name>, <name name-style="western"><surname>Dalle</surname><given-names>J</given-names></name> (<year>2008</year>) <article-title>Keep it simple: A companion for simple Wikipedia?</article-title> <source>Industry &amp; Innovation</source> <volume>15</volume>: <fpage>169</fpage>–<lpage>178</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Flesch1">
+        <label>33</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Flesch R (1979) How to Write Plain English. New York: Harper and Row.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Napoles1">
+        <label>34</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Napoles C, Dredze M (2010) Learning simple Wikipedia: A cogitation in ascertaining abecedarian language. In: Proceedings of the NAACL HLT 2010 Workshop on Computational Linguistics and Writing. Stroudsburg, PA: Association for Computational Linguistics. 42–50.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Yatskar1">
+        <label>35</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Yatskar M, Pang B, Danescu-Niculescu-Mizil C, Lee L (2010) For the sake of simplicity: unsupervised extraction of lexical simplifications from Wikipedia. In: Human Language Technologies 2010 Annual Conference of the North American Chapter of the Association for Computational Linguistics. Stroudsburg, PA: Association for Computational Linguistics. 365–368.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Coster1">
+        <label>36</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Coster W, Kauchak D (2011) Simple English Wikipedia: a new text simplification task. In: Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics. Stroudsburg, PA: Association for Computational Linguistics. 665–669.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Wikimedia1">
+        <label>37</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Wikimedia. Wikimedia downloads. Available: <ext-link ext-link-type="uri" xlink:href="http://dumps.wikimedia.org" xlink:type="simple">http://dumps.wikimedia.org</ext-link>. Accessed 2012 Jul 8.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Porter1">
+        <label>38</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Porter M. The Porter Stemming Algorithm. Available: <ext-link ext-link-type="uri" xlink:href="http://tartarus.org/" xlink:type="simple">http://tartarus.org/</ext-link>\sim$martin/PorterStemmer/. Accessed 2012 Jul 8.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Mikheev1">
+        <label>39</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mikheev</surname><given-names>A</given-names></name> (<year>2002</year>) <article-title>Periods, capitalized words, etc</article-title>. <source>Computational Linguistics</source> <volume>28</volume>: <fpage>289</fpage>–<lpage>318</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Gunning1">
+        <label>40</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Gunning R (1952) The technique of clear writing. New York: McGraw-Hill International Book Co.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Gunning2">
+        <label>41</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gunning</surname><given-names>R</given-names></name> (<year>1969</year>) <article-title>The fog index after twenty years</article-title>. <source>Journal of Business Communication</source> <volume>6</volume>: <fpage>3</fpage>–<lpage>13</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Kincaid1">
+        <label>42</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Kincaid JP, Fishburn RP, Rogers RL, Chissom BS (1975) Derivation of new redability formulas for navy enlisted personnel. Technical Report Research Branch Report 8–75. Naval Air Station, Milington, TN.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-CollinsThompson1">
+        <label>43</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Collins-Thompson K, Callan J (2004) A language modeling approach to predicting reading difficulty. In: Proceedings of HLT/NAACL. Available: <ext-link ext-link-type="uri" xlink:href="http://acl.ldc.upenn.edu/hlt-naacl2004/main/pdf/111_Paper.pdf" xlink:type="simple">http://acl.ldc.upenn.edu/hlt-naacl2004/main/pdf/111_Paper.pdf</ext-link>. Accessed 2012 Oct 13.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-DuBay1">
+        <label>44</label>
+        <mixed-citation publication-type="other" xlink:type="simple">DuBay WH (2007) Smart Language: Readers, Readability, and the Grading of Text. Costa Mesa, California: BookSurge Publishing.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Tweedie1">
+        <label>45</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tweedie</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Baayen</surname><given-names>RH</given-names></name> (<year>1998</year>) <article-title>How variable may a constant be? Measures of lexical richness in perspective</article-title>. <source>Computers and the Humanities</source> <volume>32</volume>: <fpage>323</fpage>–<lpage>352</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Kornai1">
+        <label>46</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kornai</surname><given-names>A</given-names></name> (<year>2002</year>) <article-title>How many words are there?</article-title> <source>Glottometrics</source> <volume>4</volume>: <fpage>61</fpage>–<lpage>86</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Herdan1">
+        <label>47</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Herdan G (1964) Quantitative linguistics. Washington: Butterworths.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Heaps1">
+        <label>48</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Heaps HS (1978) Information Retrieval: Computational and Theoretical Aspects. Orlando, FL: Academic Press, Inc.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Zipf1">
+        <label>49</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Zipf GK (1935) The psycho-biology of language: an introduction to dynamic philology. Cambridge, MA: The MIT Press.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Kornai2">
+        <label>50</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Kornai A (1999) Zipf’s law outside the middle range. In: Rogers J, editor. Proceedings of the Sixth Meeting on Mathematics of Language. Orlando, FL: University of Central Florida. 347–356.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-BaezaYates1">
+        <label>51</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Baeza Yates</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Navarro</surname><given-names>G</given-names></name> (<year>2000</year>) <article-title>Block addressing indices for approximate text retrieval</article-title>. <source>Journal of the American Society for Information Science</source> <volume>51</volume>: <fpage>69</fpage>–<lpage>82</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-vanLeijenhorst1">
+        <label>52</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>van Leijenhorst</surname><given-names>D</given-names></name>, <name name-style="western"><surname>van der Weide</surname><given-names>TP</given-names></name> (<year>2005</year>) <article-title>A formal derivation of Heaps’ Law</article-title>. <source>Information Sciences</source> <volume>170</volume>: <fpage>263</fpage>–<lpage>272</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Wikipedia4">
+        <label>53</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Wikipedia. How to write simple english pages. Available: <ext-link ext-link-type="uri" xlink:href="http://simple.wikipedia.org/wiki/Wikipedia" xlink:type="simple">http://simple.wikipedia.org/wiki/Wikipedia</ext-link>: How_to_write_Simple_English_pages. Accessed 2012 Jul 8.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Sproat1">
+        <label>54</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Sproat R (2010) Language, Technology, and Society. Oxford: Oxford University Press.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-The1">
+        <label>55</label>
+        <mixed-citation publication-type="other" xlink:type="simple">The University of Pennsylvania (Penn) treebank tag-set. Available: <ext-link ext-link-type="uri" xlink:href="http://www.comp.leeds.ac.uk/ccalas/tagsets/upenn.html" xlink:type="simple">http://www.comp.leeds.ac.uk/ccalas/tagsets/upenn.html</ext-link>. Accessed 2012 Jul 8.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Chinchor1">
+        <label>56</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Chinchor NA (1998) Proceedings of the Seventh Message Understanding Conference (MUC-7) named entity task definition. In: Proceedings of the Seventh Message Understanding Conference (MUC-7), Fairfax, VA. 21 pp. Version 3.5. Available: <ext-link ext-link-type="uri" xlink:href="http://acl.ldc.upenn.edu/muc7/ne_task.html" xlink:type="simple">http://acl.ldc.upenn.edu/muc7/ne_task.html</ext-link>. Accessed 2012 Oct 13.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Varga1">
+        <label>57</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Varga</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Simon</surname><given-names>E</given-names></name> (<year>2007</year>) <article-title>Hungarian named entity recognition with a maximum entropy approach</article-title>. <source>Acta Cybern</source> <volume>18</volume>: <fpage>293</fpage>–<lpage>301</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Sumi1">
+        <label>58</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Sumi R, Yasseri T, Rung A, Kornai A, Kertész J (2011) Characterization and prediction of Wikipedia edit wars. In: Proceedings of the ACM WebSci ’11: 1–3. Available: <ext-link ext-link-type="uri" xlink:href="http://www.websci11.org/fileadmin/websci/Posters/58_paper.pdf" xlink:type="simple">http://www.websci11.org/fileadmin/websci/Posters/58_paper.pdf</ext-link>. Accessed 2012 Oct 13.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Sumi2">
+        <label>59</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Sumi R, Yasseri T, Rung A, Kornai A, Kertész J (2011) Edit wars in Wikipedia. In: 2011 IEEE International Conference on Social Computing/IEEE International Conference on Privacy, Security, Risk and Trust (Socialcom ’11). Los Alamitos, CA. Washington, DC: IEEE Computer Society. 724–727.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Wikipedia5">
+        <label>60</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Wikipedia. Help:using talk pages. Available: <ext-link ext-link-type="uri" xlink:href="http://en.wikipedia.org/wiki/Help:Using_talk_pages" xlink:type="simple">http://en.wikipedia.org/wiki/Help:Using_talk_pages</ext-link>. Accessed 2012 Jul 8.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Deutsch1">
+        <label>61</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Deutsch M (1973) The resolution of conflict: Constructive and destructive processes. New Haven, CT: Yale University Press.</mixed-citation>
+      </ref>
+      <ref id="pone.0048386-Samson1">
+        <label>62</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Samson K, Nowak A (2010) Linguistic signs of destructive and constructive processes in conflict. IACM 23rd Annual Conference Paper. Available: <ext-link ext-link-type="uri" xlink:href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1615028" xlink:type="simple">http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1615028</ext-link>. Accessed 2012 Oct 13.</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

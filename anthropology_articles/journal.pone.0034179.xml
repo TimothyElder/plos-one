@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosone</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group><issn pub-type="epub">1932-6203</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="publisher-id">PONE-D-11-22772</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0034179</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Computational biology</subject>
+            <subj-group>
+              <subject>Population genetics</subject>
+              <subj-group>
+                <subject>Effective population size</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Population modeling</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Ecology</subject>
+            <subj-group>
+              <subject>Ecological metrics</subject>
+              <subj-group>
+                <subject>Effective population size</subject>
+                <subject>Species diversity</subject>
+                <subject>Species richness</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Biodiversity</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Social and behavioral sciences</subject>
+          <subj-group>
+            <subject>Anthropology</subject>
+          </subj-group>
+          <subj-group>
+            <subject>Archaeology</subject>
+          </subj-group>
+          <subj-group>
+            <subject>Sociology</subject>
+            <subj-group>
+              <subject>Culture</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Computational Biology</subject>
+          <subject>Ecology</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>Estimating the Richness of a Population When the Maximum Number of Classes Is Fixed: A Nonparametric Solution to an Archaeological Problem</article-title><alt-title alt-title-type="running-head">Doubly-Bounded Class Richness Confidence Intervals</alt-title></title-group><contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Eren</surname>
+            <given-names>Metin I.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Chao</surname>
+            <given-names>Anne</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Hwang</surname>
+            <given-names>Wen-Han</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Colwell</surname>
+            <given-names>Robert K.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1"><label>1</label><addr-line>Department of Anthropology, University of Kent, Canterbury, United Kingdom</addr-line>       </aff><aff id="aff2"><label>2</label><addr-line>Institute of Statistics, National Tsing Hua University, Hsin-Chu, Taiwan</addr-line>       </aff><aff id="aff3"><label>3</label><addr-line>Institute of Statistics, National Chung Hsing University, Taichung, Taiwan</addr-line>       </aff><aff id="aff4"><label>4</label><addr-line>Department of Ecology and Evolutionary Biology, University of Connecticut, Storrs, Connecticut, United States of America</addr-line>       </aff><contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Mesoudi</surname>
+            <given-names>Alex</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group><aff id="edit1">Queen Mary, University of London, United Kingdom</aff><author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">metin.i.eren@gmail.com</email></corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: MIE AC WH RKC. Performed the experiments: MIE AC WH RKC. Analyzed the data: MIE AC WH RKC. Contributed reagents/materials/analysis tools: MIE AC WH RKC. Wrote the paper: MIE AC WH RKC.</p>
+        </fn>
+      <fn fn-type="conflict">
+        <p>The authors have declared that no competing interests exist.</p>
+      </fn></author-notes><pub-date pub-type="collection">
+        <year>2012</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>29</day>
+        <month>5</month>
+        <year>2012</year>
+      </pub-date><volume>7</volume><issue>5</issue><elocation-id>e34179</elocation-id><history>
+        <date date-type="received">
+          <day>14</day>
+          <month>11</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>26</day>
+          <month>2</month>
+          <year>2012</year>
+        </date>
+      </history><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2012</copyright-year><copyright-holder>Eren et al</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><abstract>
+        <sec>
+          <title>Background</title>
+          <p>Estimating assemblage species or class richness from samples remains a challenging, but essential, goal. Though a variety of statistical tools for estimating species or class richness have been developed, they are all singly-bounded: assuming only a lower bound of species or classes. Nevertheless there are numerous situations, particularly in the cultural realm, where the maximum number of classes is fixed. For this reason, a new method is needed to estimate richness when both upper and lower bounds are known.</p>
+        </sec>
+        <sec>
+          <title>Methodology/Principal Findings</title>
+          <p>Here, we introduce a new method for estimating class richness: doubly-bounded confidence intervals (both lower and upper bounds are known). We specifically illustrate our new method using the Chao1 estimator, rarefaction, and extrapolation, although any estimator of asymptotic richness can be used in our method. Using a case study of Clovis stone tools from the North American Lower Great Lakes region, we demonstrate that singly-bounded richness estimators can yield confidence intervals with upper bound estimates larger than the possible maximum number of classes, while our new method provides estimates that make empirical sense.</p>
+        </sec>
+        <sec>
+          <title>Conclusions/Significance</title>
+          <p>Application of the new method for constructing doubly-bound richness estimates of Clovis stone tools permitted conclusions to be drawn that were not otherwise possible with singly-bounded richness estimates, namely, that Lower Great Lakes Clovis Paleoindians utilized a settlement pattern that was probably more logistical in nature than residential. However, our new method is not limited to archaeological applications. It can be applied to any set of data for which there is a fixed maximum number of classes, whether that be site occupancy models, commercial products (e.g. athletic shoes), or census information (e.g. nationality, religion, age, race).</p>
+        </sec>
+      </abstract><funding-group><funding-statement>The authors have no support or funding to report.</funding-statement></funding-group><counts>
+        <page-count count="11"/>
+      </counts></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>The concept of richness, defined as the number of species or classes in a biological assemblage, is the simplest and the most intuitive concept for characterizing assemblage (community) diversity (<xref ref-type="bibr" rid="pone.0034179-Magurran1">[1]</xref>;<xref ref-type="bibr" rid="pone.0034179-Chao1">[2]</xref>;<xref ref-type="bibr" rid="pone.0034179-Colwell1">[3]</xref>;<xref ref-type="bibr" rid="pone.0034179-Gotelli1">[4]</xref>). The measurement of richness, however, is not always straightforward (<xref ref-type="bibr" rid="pone.0034179-Gotelli2">[5]</xref>). Researchers who sample biological assemblages must face the problem of how well a sample reflects a community’s “true” (asymptotic) richness (<xref ref-type="bibr" rid="pone.0034179-Colwell2">[6]</xref>;<xref ref-type="bibr" rid="pone.0034179-Hughes1">[7]</xref>). For this reason, extrapolating from the known to the unknown is now an essential objective in ecology, paleontology, and conservation biology (<xref ref-type="bibr" rid="pone.0034179-Colwell3">[8]</xref>). For this reason, a variety of statistical tools for estimating species or class richness have been developed, including rarefaction (<xref ref-type="bibr" rid="pone.0034179-Gotelli1">[4]</xref>;<xref ref-type="bibr" rid="pone.0034179-Sanders1">[9]</xref>;<xref ref-type="bibr" rid="pone.0034179-Hurlbert1">[10]</xref>;<xref ref-type="bibr" rid="pone.0034179-HeckK1">[11]</xref>;<xref ref-type="bibr" rid="pone.0034179-Gotelli3">[12]</xref>), extrapolation from accumulation curves (<xref ref-type="bibr" rid="pone.0034179-Colwell1">[3]</xref>), parametric estimators (<xref ref-type="bibr" rid="pone.0034179-Bunge1">[13]</xref>), and nonparametric estimators (e.g. <xref ref-type="bibr" rid="pone.0034179-Chao1">[2]</xref>;<xref ref-type="bibr" rid="pone.0034179-Chao2">[14]</xref>).</p>
+      <p>In ecological and biogeographic assessments of richness, established upper limits for the number of species that can be found in a particular region are rarely, if ever, known. This is because species can immigrate, emigrate, speciate, become extinct, hide, get lost, or simply be too rare to be observed with practical levels of sampling effort. New species are constantly being discovered (e.g. <xref ref-type="bibr" rid="pone.0034179-Grismer1">[15]</xref>), even primates (<xref ref-type="bibr" rid="pone.0034179-Roosmalen1">[16]</xref>). There are always more species lurking somewhere in a study region, even if just vagrants from elsewhere. As such, biological richness estimators have been universally constructed without a known upper bound as a constraint. In contrast, most richness estimators have a lower bound set, sensibly enough, by the observed number of species or classes.</p>
+      <p>For the past thirty years it has been commonplace for archaeologists to apply these singly-bounded (a lower, but no upper bound) richness estimators to samples of stone artifacts in order to estimate the “true” artifact richness of an assemblage (e.g. <xref ref-type="bibr" rid="pone.0034179-Baxter1">[17]</xref>;<xref ref-type="bibr" rid="pone.0034179-Cochrane1">[18]</xref>;<xref ref-type="bibr" rid="pone.0034179-Eerkens1">[19]</xref>;<xref ref-type="bibr" rid="pone.0034179-Grayson1">[20]</xref>;<xref ref-type="bibr" rid="pone.0034179-Kaufman1">[21]</xref>;<xref ref-type="bibr" rid="pone.0034179-Kintigh1">[22]</xref>;<xref ref-type="bibr" rid="pone.0034179-Leonard1">[23]</xref>, and papers therein; <xref ref-type="bibr" rid="pone.0034179-Simek1">[24]</xref>;<xref ref-type="bibr" rid="pone.0034179-Thomas1">[25]</xref>). Archaeologists often treat stone tools like biological entities, in the sense that new classes ( =  species) can always be discovered (e.g. <xref ref-type="bibr" rid="pone.0034179-Bradley1">[26]</xref>;<xref ref-type="bibr" rid="pone.0034179-Ellis1">[27]</xref>;<xref ref-type="bibr" rid="pone.0034179-Jackson1">[28]</xref>;<xref ref-type="bibr" rid="pone.0034179-Shott1">[29]</xref>). Fieldwork and excavation in new geographic areas and/or time periods may yield unique, novel forms. Moreover, with an increased understanding of stone tool production techniques (called flintknapping) and tool uses, new “technological” and “functional” classes that previously went unnoticed can be discovered and described by reexamining previously studied artifact assemblages (e.g. <xref ref-type="bibr" rid="pone.0034179-Eren1">[30]</xref>;<xref ref-type="bibr" rid="pone.0034179-Eren2">[31]</xref>;<xref ref-type="bibr" rid="pone.0034179-Tomenchuk1">[32]</xref>). In this sense, there is no logical incongruity in the application of singly-bounded richness estimators to archaeological stone tools.</p>
+      <p>A number of criticisms have been persuasively leveled against the standard practice of stone tool classification (called typology), however, including its subjective, non-quantitative nature (<xref ref-type="bibr" rid="pone.0034179-Bisson1">[33]</xref>) and the unavoidable inter-observer variability that it yields (<xref ref-type="bibr" rid="pone.0034179-Fish1">[34]</xref>;<xref ref-type="bibr" rid="pone.0034179-Whittaker1">[35]</xref>). Our purpose here is not to further criticize subjective approaches to classifying stone tools, but to contrast them with an objective, logical alternative: paradigmatic classification. Dunnell (<xref ref-type="bibr" rid="pone.0034179-Dunnell1">[36]</xref>) defined paradigmatic classification as a dimensional classification procedure in which the classes are defined by intersection, with each dimension being a set of mutually exclusive alternative features. However, all features belonging to a single dimension share the ability to combine with attributes of each other dimension. Dunnell (<xref ref-type="bibr" rid="pone.0034179-Dunnell1">[36]</xref>) specified, “In paradigmatic classification all of the class definitions are drawn from the same set of dimensions of features. Individual classes are distinguished from one another by the unique product obtained in the combination, permutation, or intersection of features from the set of dimensions.” <xref ref-type="fig" rid="pone-0034179-g001">Figure 1</xref> provides a visual representation of paradigmatic classification (see also <xref ref-type="bibr" rid="pone.0034179-OBrian1">[37]</xref>;<xref ref-type="bibr" rid="pone.0034179-OBrien1">[38]</xref>).</p>
+      <fig id="pone-0034179-g001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0034179.g001</object-id>
+        <label>Figure 1</label>
+        <caption>
+          <title>A three-dimensional representation of a paradigmatic classification of three dimensions (upper case letters, Roman numerals, and Arabic numerals).</title>
+          <p>For example, any item possessing the attributes “I”, “C”, and “2″ would fall into the blue square class, while any item possessing the attributes “II”, A”, and “1″ would fall into the green square class. Redrawn and modified from (<xref ref-type="fig" rid="pone-0034179-g004">Figure 4</xref> in <xref ref-type="bibr" rid="pone.0034179-Dunnell1">[36]</xref>: 72).</p>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.g001" xlink:type="simple"/>
+      </fig>
+      <p>Significantly, because a paradigmatic classification is produced by the intersection of dimensions of features, the maximum of classes possible for the assemblage under examination is fixed (see <xref ref-type="fig" rid="pone-0034179-g001">Figure 1</xref> and caption), given the classification. In other words, the upper bound of richness is fixed and known a priori. In terms of estimating assemblage richness from a sample, this constraint is a fundamentally different one from what ecologists or biologists usually face because biological and ecological taxa are usually “extensionally” defined (<xref ref-type="bibr" rid="pone.0034179-Dunnell1">[36]</xref>: 15). An extensional unit is derived by enumerating selected attributes shared by the unit’s members; the criteria comprising the unit are based on observed attributes of the actual members already placed in the unit. The characteristics of extensionally derived units are not theoretically informed in an explicit manner. As Dunnell (<xref ref-type="bibr" rid="pone.0034179-Dunnell1">[36]</xref>: 15) notes, extensionally defined units are restricted in their utility to defining what is already known, i.e., extensional units are dependent on the specimens examined. Dunnell (<xref ref-type="bibr" rid="pone.0034179-Dunnell1">[36]</xref>: 15) used the following example:</p>
+      <p>To define the term “dog” extensionally requires that you already know what dogs are in order to make the definitional listing. Ultimately, then, an extensional definition of a term simply means that something is that something because it is, and nothing more.</p>
+      <p>Alternatively, “intensionally” defined units, such as those created by paradigmatic classification, “specify a set of features which objects, whether known or unknown, must display in order to be considered referents for a given term” (<xref ref-type="bibr" rid="pone.0034179-Dunnell1">[36]</xref>: 16). An intensional definition comprises the necessary and sufficient conditions for membership in a unit; it explicitly lists the distinctive attributes that a phenomenon must display to be identified as a member of the unit. The definitive attributes of the unit are derived from theory; there is no necessary reference to real, empirical specimens when the unit is constructed. The fact that something might not exist has no bearing on unit construction.</p>
+      <sec id="s1a">
+        <title>An Example of Incompatibility</title>
+        <p>In a study by Eren (<xref ref-type="bibr" rid="pone.0034179-Eren3">[39]</xref>), a non-parametric estimator, Chao1 (<xref ref-type="bibr" rid="pone.0034179-Chao2">[14]</xref>), was used to estimate richness of paradigmatic classes of stone tools from seven late Pleistocene archaeological sites in the Lower Great Lakes region of North America. Here, “non-parametric” means that we do not need to specify a class abundance distribution. Thus a non-parametric estimator can be applied to all types of class distributions. The Chao1 estimator, developed for ecological applications, is based on the concept that rare species carry the most information about the number of species present in the assemblage, but not observed in a sample from it. Thus Chao1 uses only the singletons (species represented in the sample by only one individual) and doubletons (species represented in the sample by exactly two individuals) to estimate the number of unobserved species (<xref ref-type="bibr" rid="pone.0034179-Chao1">[2]</xref>;<xref ref-type="bibr" rid="pone.0034179-Chao2">[14]</xref>). Importantly, a 95% confidence interval can be calculated for this richness estimator (<xref ref-type="bibr" rid="pone.0034179-Chao3">[40]</xref>). (See Section 3 for details and formulas for the Chao1 estimator and its associated confidence interval.).</p>
+        <p>The stone tools under analysis are known as “unifacial stone tools,” a family of tools used by Clovis Paleoindians in Late Pleistocene North America (≈11,570 – 10,800 BP, [41∶254]) for a variety of scraping, cutting, and engraving tasks (for examples, see <xref ref-type="supplementary-material" rid="pone.0034179.s001">Figures S1</xref>, <xref ref-type="supplementary-material" rid="pone.0034179.s002">S2</xref>, <xref ref-type="supplementary-material" rid="pone.0034179.s003">S3</xref>, <xref ref-type="supplementary-material" rid="pone.0034179.s004">S4</xref>, <xref ref-type="supplementary-material" rid="pone.0034179.s005">S5</xref>). Criteria for two paradigmatic classifications were devised to classify, first, the overall shape of a stone tool and, second, the shape of its constituent parts (its edges). An analogous situation would be the creation of two classification schemes for, first, the shape of Swiss Army knives and, second, the gadgets contained within each one. The “tool shape” paradigmatic classification consisted of three dimensions with three, six, and six, features, respectively, for a total of 108 possible classes (3*6*6 = 108). The “edge shape” paradigmatic classification included four dimensions, with four, three, three, and three features, respectively, also for a total of 108 possible classes (4*3*3*3 = 108). (For details on the dimensions and features of the paradigmatic classifications used here, see the <xref ref-type="supplementary-material" rid="pone.0034179.s017">Materials S1</xref> and <xref ref-type="supplementary-material" rid="pone.0034179.s006">Figures S6</xref>, <xref ref-type="supplementary-material" rid="pone.0034179.s007">S7</xref>, <xref ref-type="supplementary-material" rid="pone.0034179.s008">S8</xref>, <xref ref-type="supplementary-material" rid="pone.0034179.s009">S9</xref>, <xref ref-type="supplementary-material" rid="pone.0034179.s010">S10</xref>, <xref ref-type="supplementary-material" rid="pone.0034179.s011">S11</xref>, <xref ref-type="supplementary-material" rid="pone.0034179.s012">S12</xref>, <xref ref-type="supplementary-material" rid="pone.0034179.s013">S13</xref>, <xref ref-type="supplementary-material" rid="pone.0034179.s014">S14</xref>, <xref ref-type="supplementary-material" rid="pone.0034179.s015">S15</xref>, <xref ref-type="supplementary-material" rid="pone.0034179.s016">S16</xref>.).</p>
+        <p>When the Chao1 estimator was used to estimate paradigmatic class richness, an impossible estimate emerged: the upper 95% confidence interval of class richness sometimes exceeded the maximum number of possible classes (<xref ref-type="table" rid="pone-0034179-t001">Tables 1</xref> and <xref ref-type="table" rid="pone-0034179-t002">2</xref>, column 8) This discrepancy indicated to us that a new method was needed to address richness estimation when both upper and lower bounds are known. We introduce here doubly-bounded confidence intervals (both lower and upper bounds fixed) for class richness.</p>
+        <table-wrap id="pone-0034179-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0034179.t001</object-id><label>Table 1</label><caption>
+            <title>The Chao1 estimate for tool class data, its standard error, and the 95% confidence interval for each of the seven sites (see Section 3 for notation and formulas).</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0034179-t001-1" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.t001" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Site</td>
+                <td align="left" colspan="1" rowspan="1">n</td>
+                <td align="left" colspan="1" rowspan="1">S<sub>obs</sub></td>
+                <td align="left" colspan="1" rowspan="1">Singletons</td>
+                <td align="left" colspan="1" rowspan="1">Doubletons</td>
+                <td align="left" colspan="1" rowspan="1">Chao1 estimate</td>
+                <td align="left" colspan="1" rowspan="1">Standard error</td>
+                <td align="left" colspan="1" rowspan="1">95% confidence interval</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Arc</td>
+                <td align="left" colspan="1" rowspan="1">134</td>
+                <td align="left" colspan="1" rowspan="1">31</td>
+                <td align="left" colspan="1" rowspan="1">12</td>
+                <td align="left" colspan="1" rowspan="1">7</td>
+                <td align="left" colspan="1" rowspan="1">41.28</td>
+                <td align="left" colspan="1" rowspan="1">7.78</td>
+                <td align="left" colspan="1" rowspan="1">33.74 – 69.48</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Butler</td>
+                <td align="left" colspan="1" rowspan="1">63</td>
+                <td align="left" colspan="1" rowspan="1">23</td>
+                <td align="left" colspan="1" rowspan="1">9</td>
+                <td align="left" colspan="1" rowspan="1">6</td>
+                <td align="left" colspan="1" rowspan="1">29.75</td>
+                <td align="left" colspan="1" rowspan="1">5.88</td>
+                <td align="left" colspan="1" rowspan="1">24.54 – 52.44</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Gainey</td>
+                <td align="left" colspan="1" rowspan="1">31</td>
+                <td align="left" colspan="1" rowspan="1">23</td>
+                <td align="left" colspan="1" rowspan="1">16</td>
+                <td align="left" colspan="1" rowspan="1">6</td>
+                <td align="left" colspan="1" rowspan="1">44.33</td>
+                <td align="left" colspan="1" rowspan="1">14.52</td>
+                <td align="left" colspan="1" rowspan="1">29.36 – 94.51</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Leavitt</td>
+                <td align="left" colspan="1" rowspan="1">33</td>
+                <td align="left" colspan="1" rowspan="1">20</td>
+                <td align="left" colspan="1" rowspan="1">14</td>
+                <td align="left" colspan="1" rowspan="1">2</td>
+                <td align="left" colspan="1" rowspan="1">69.00</td>
+                <td align="left" colspan="1" rowspan="1">43.99</td>
+                <td align="left" colspan="1" rowspan="1">30.85 – <bold>241.14</bold></td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Paleo Crossing</td>
+                <td align="left" colspan="1" rowspan="1">159</td>
+                <td align="left" colspan="1" rowspan="1">25</td>
+                <td align="left" colspan="1" rowspan="1">8</td>
+                <td align="left" colspan="1" rowspan="1">4</td>
+                <td align="left" colspan="1" rowspan="1">33.00</td>
+                <td align="left" colspan="1" rowspan="1">7.48</td>
+                <td align="left" colspan="1" rowspan="1">26.69 – 62.84</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Potts</td>
+                <td align="left" colspan="1" rowspan="1">41</td>
+                <td align="left" colspan="1" rowspan="1">20</td>
+                <td align="left" colspan="1" rowspan="1">10</td>
+                <td align="left" colspan="1" rowspan="1">3</td>
+                <td align="left" colspan="1" rowspan="1">36.66</td>
+                <td align="left" colspan="1" rowspan="1">14.84</td>
+                <td align="left" colspan="1" rowspan="1">32.72 – 94.54</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Udora</td>
+                <td align="left" colspan="1" rowspan="1">97</td>
+                <td align="left" colspan="1" rowspan="1">31</td>
+                <td align="left" colspan="1" rowspan="1">17</td>
+                <td align="left" colspan="1" rowspan="1">6</td>
+                <td align="left" colspan="1" rowspan="1">56.08</td>
+                <td align="left" colspan="1" rowspan="1">16.03</td>
+                <td align="left" colspan="1" rowspan="1">39.34 – <bold>110.96</bold></td>
+              </tr>
+            </tbody>
+          </table></alternatives><table-wrap-foot>
+            <fn id="nt101">
+              <label/>
+              <p>The last column, obtained from Eq. (4), shows that the upper limits of the 95% confidence intervals for Leavitt and Udora Sites (boldfaced) exceeded the maximum possible value of 108.</p>
+            </fn>
+          </table-wrap-foot></table-wrap>
+        <table-wrap id="pone-0034179-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0034179.t002</object-id><label>Table 2</label><caption>
+            <title>The Chao1 estimate for edge class data, its standard error, and the 95% confidence interval for each of the seven sites (see Section 3 for notation and formulas).</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0034179-t002-2" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.t002" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Site</td>
+                <td align="left" colspan="1" rowspan="1">n</td>
+                <td align="left" colspan="1" rowspan="1">S<sub>obs</sub></td>
+                <td align="left" colspan="1" rowspan="1">Singletons</td>
+                <td align="left" colspan="1" rowspan="1">Doubletons</td>
+                <td align="left" colspan="1" rowspan="1">Chao1 estimate</td>
+                <td align="left" colspan="1" rowspan="1">Standard error</td>
+                <td align="left" colspan="1" rowspan="1">95% confidence interval</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Arc</td>
+                <td align="left" colspan="1" rowspan="1">834</td>
+                <td align="left" colspan="1" rowspan="1">36</td>
+                <td align="left" colspan="1" rowspan="1">14</td>
+                <td align="left" colspan="1" rowspan="1">2</td>
+                <td align="left" colspan="1" rowspan="1">85.99</td>
+                <td align="left" colspan="1" rowspan="1">43.99</td>
+                <td align="left" colspan="1" rowspan="1">46.85 – <bold>257.14</bold></td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Butler</td>
+                <td align="left" colspan="1" rowspan="1">272</td>
+                <td align="left" colspan="1" rowspan="1">24</td>
+                <td align="left" colspan="1" rowspan="1">10</td>
+                <td align="left" colspan="1" rowspan="1">1</td>
+                <td align="left" colspan="1" rowspan="1">74.00</td>
+                <td align="left" colspan="1" rowspan="1">59.58</td>
+                <td align="left" colspan="1" rowspan="1">31.95 – <bold>339.63</bold></td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Gainey</td>
+                <td align="left" colspan="1" rowspan="1">203</td>
+                <td align="left" colspan="1" rowspan="1">25</td>
+                <td align="left" colspan="1" rowspan="1">8</td>
+                <td align="left" colspan="1" rowspan="1">4</td>
+                <td align="left" colspan="1" rowspan="1">33.00</td>
+                <td align="left" colspan="1" rowspan="1">7.48</td>
+                <td align="left" colspan="1" rowspan="1">26.69 – 62.84</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Leavitt</td>
+                <td align="left" colspan="1" rowspan="1">222</td>
+                <td align="left" colspan="1" rowspan="1">26</td>
+                <td align="left" colspan="1" rowspan="1">9</td>
+                <td align="left" colspan="1" rowspan="1">1</td>
+                <td align="left" colspan="1" rowspan="1">66.50</td>
+                <td align="left" colspan="1" rowspan="1">48.08</td>
+                <td align="left" colspan="1" rowspan="1">32.28 – <bold>287.05</bold></td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Paleo Crossing</td>
+                <td align="left" colspan="1" rowspan="1">1220</td>
+                <td align="left" colspan="1" rowspan="1">43</td>
+                <td align="left" colspan="1" rowspan="1">16</td>
+                <td align="left" colspan="1" rowspan="1">3</td>
+                <td align="left" colspan="1" rowspan="1">85.66</td>
+                <td align="left" colspan="1" rowspan="1">33.23</td>
+                <td align="left" colspan="1" rowspan="1">54.06 – <bold>207.54</bold></td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Potts</td>
+                <td align="left" colspan="1" rowspan="1">351</td>
+                <td align="left" colspan="1" rowspan="1">25</td>
+                <td align="left" colspan="1" rowspan="1">5</td>
+                <td align="left" colspan="1" rowspan="1">2</td>
+                <td align="left" colspan="1" rowspan="1">31.25</td>
+                <td align="left" colspan="1" rowspan="1">7.55</td>
+                <td align="left" colspan="1" rowspan="1">25.97 – 65.13</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Udora</td>
+                <td align="left" colspan="1" rowspan="1">634</td>
+                <td align="left" colspan="1" rowspan="1">37</td>
+                <td align="left" colspan="1" rowspan="1">15</td>
+                <td align="left" colspan="1" rowspan="1">3</td>
+                <td align="left" colspan="1" rowspan="1">74.50</td>
+                <td align="left" colspan="1" rowspan="1">29.68</td>
+                <td align="left" colspan="1" rowspan="1">46.55 – <bold>184.15</bold></td>
+              </tr>
+            </tbody>
+          </table></alternatives><table-wrap-foot>
+            <fn id="nt102">
+              <label/>
+              <p>The last column, obtained from Eq. (4), shows that the upper limits of the 95% confidence interval of all sites except for Gainey and Potts (boldfaced) exceed the maximum possible value of 108.</p>
+            </fn>
+          </table-wrap-foot></table-wrap>
+      </sec>
+    </sec>
+    <sec id="s2" sec-type="methods">
+      <title>Methods</title>
+      <sec id="s2a">
+        <title>Chao 1 Estimator</title>
+        <p>In this paper, we specifically illustrate our new method using the Chao1 estimator (<xref ref-type="bibr" rid="pone.0034179-Chao2">[14]</xref>), although any estimator of class richness can be used in our method. Let S be the true unknown class richness of the assemblage and let S<sub>obs</sub> be the number of observed classes in an empirical sample of size n from the assemblage, which we call the reference sample. We assume the fixed maximum for S is U (in our archaeological example, U = 108, as described earlier).</p>
+        <p>If an assemblage includes a non-negligible proportion of rare classes that may remain undetected in a sample of limited size, then the observed richness in the sample is likely to substantially underestimate the true richness. The abundant classes, which are virtually certain to be detected in samples, contain almost no information about the undetected classes, whereas rare classes, which are likely to be either undetected or infrequently detected, contain almost all the information about the number of undetected classes. We define the abundance frequency count f<sub>k</sub> as the number of classes each represented by exactly k artifacts in the reference sample, 0≤ <italic>k</italic> ≤ <italic>n</italic><sub>.</sub> The number of classes present in the assemblage but not detected in the reference sample is thus represented as f<sub>0</sub>.</p>
+        <p>The Chao1 estimator uses only the number of singletons (f<sub>1</sub>) and doubletons (f<sub>2</sub>) and the observed richness to obtain the following estimator for the class richness (<xref ref-type="bibr" rid="pone.0034179-Chao2">[14]</xref>):<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.e001" xlink:type="simple"/><label>(1)</label></disp-formula></p>
+        <p>with an associated variance estimator of (if <italic>f</italic><sub>2</sub>&gt;0):<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.e002" xlink:type="simple"/><label>(2)</label></disp-formula></p>
+        <p>If <italic>f</italic><sub>2</sub> = 0, the variance formula (2) becomes:<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.e003" xlink:type="simple"/><label>(2a)</label></disp-formula></p>
+        <p>Chao et al. (<xref ref-type="bibr" rid="pone.0034179-Chao4">[42]</xref>) showed that, under many class abundance distributions, the Chao1 estimator, originally derived as an estimate of minimum possible richness, is very sharp if the reference sample size is large enough. This justifies the use of the Chao1 estimator as a valid estimator for large n. Since sampling variation is unavoidable, a confidence interval, which indicates the possible range of class richness based on the Chao1 estimator, should be reported to reflect sampling uncertainty. From a statistical point of view, the information about a fixed maximum does not help find a more accurate nonparametric point estimator for class richness, but it can be incorporated into the construction of a confidence interval such that the upper limit of the resulting interval is at most the maximum value U.</p>
+        <p>Bootstrapping is an approximation method that is widely used to assess sampling variability and to obtain confidence intervals for complicated estimators (<xref ref-type="bibr" rid="pone.0034179-Efron1">[43]</xref>;<xref ref-type="bibr" rid="pone.0034179-Efron2">[44]</xref>). If we were to regard the reference sample of n artifacts that we collected as an “assemblage” and generate a series of bootstrap samples by randomly selecting n artifacts, with replacement, from the reference sample, we could calculate a Chao1 estimate of class richness, called a bootstrap estimate S*. Repeating this resampling procedure many times would produce many bootstrap estimates, forming a distribution that could be used for statistical inference in estimating at confidence interval.</p>
+        <p>In fact, we do not need to do bootstrap resampling because the bootstrap idea suggests an analytic method to obtain a confidence interval when both minimum and maximum bounds on the true class richness are known. We first review the method to construct a singly-bounded confidence interval with the lower bound no less than the observed richness. In most applications, the distribution for the undetected number of classes is right skewed, thus it is reasonable to assume a log-normal distribution for the number of undetected classes. Thus, we can assume that Y = log(S<sup>*</sup> − S<sub>obs</sub>) is a normal distribution with mean <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034179.e004" xlink:type="simple"/></inline-formula> and variance σ<sup>2</sup>. It follows from the properties of a log-normal distribution that.<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.e005" xlink:type="simple"/><label>(3)</label></disp-formula></p>
+        <p>Then a 95% confidence interval for class richness is (<xref ref-type="bibr" rid="pone.0034179-Meltzer1">[41]</xref>).<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.e006" xlink:type="simple"/><label>(4)</label></disp-formula>where</p>
+        <p><disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.e007" xlink:type="simple"/></disp-formula>and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034179.e008" xlink:type="simple"/></inline-formula> is given in Eq. (2). The lower limit of the resulting confidence interval is not lower than the observed class richness. In the last column of <xref ref-type="table" rid="pone-0034179-t001">Tables 1</xref> and <xref ref-type="table" rid="pone-0034179-t002">2</xref>, we show the confidence interval computed from Eq. (4) for each site. However, as explained earlier, some of the upper limits (boldfaced entries in the tables) exceed the maximum value of 108.</p>
+        <p>Here we propose a new analytic method based on the bootstrap idea to incorporate the maximum value U in the construction of confidence intervals, yielding a doubly-bounded confidence interval. Since any sensible estimate S<sup>*</sup> should satisfy S<sub>obs</sub> ≤ S<sup>*</sup> ≤ U, equivalently, all reasonable values of Y = log(S<sup>*</sup> − S<sub>obs</sub>) should be less or equal to V = log(U − S<sub>obs</sub>). Therefore, instead of the usual normal distribution, the distribution of Y follows a “truncated” distribution with the following density function (here “truncated” means that we only consider those Y values less than or equal to V.).<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.e009" xlink:type="simple"/></disp-formula>where φ and Φ denote, respectively, the probability density function and cumulative distribution function of the standard normal distribution. Let <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034179.e010" xlink:type="simple"/></inline-formula>, then a 1−α confidence interval for log(S − S<sub>obs</sub>) is</p>
+        <p><disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.e011" xlink:type="simple"/></disp-formula>where z<sub>α</sub> is a lower percentile point of a standard normal distribution, i.e., Φ(z<sub>α</sub>) = α and σ is defined in Eq. (3). As a result, the 1− α confidence interval for S is</p>
+        <p><disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.e012" xlink:type="simple"/><label>(5)</label></disp-formula>The intervals in Equations (4) and (5) are both non-symmetric with respect to the richness estimate due to the log-transformation.</p>
+        <p>In the online Supporting Information (see <xref ref-type="supplementary-material" rid="pone.0034179.s018">Appendix S1</xref> and <xref ref-type="supplementary-material" rid="pone.0034179.s019">Table S1</xref> (spreadsheet)), using the edge class data for the Udora site (<xref ref-type="table" rid="pone-0034179-t002">Table 2</xref>), we provide full calculation details to illustrate how to compute the new, doubly-bounded confidence interval. The traditional (singly-bounded) interval, Eq. (4), yields a 95% confidence interval of (46.55, 184.15) for which the upper limit exceeds 108. The new method, Eq. (5), yields a 95% confidence interval of (46.02, 104.36). Hence this example shows that the lower limit of the new interval is at least the observed class richness, while, simultaneously, the upper limit is less than 108. The doubly-bounded confidence interval for each site is shown in <xref ref-type="table" rid="pone-0034179-t003">Tables 3</xref> and <xref ref-type="table" rid="pone-0034179-t004">4</xref>.</p>
+        <table-wrap id="pone-0034179-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0034179.t003</object-id><label>Table 3</label><caption>
+            <title>Comparison of traditional (singly-bounded) and new (doubly-bounded) confidence intervals for tool class data (the doubly-bounded interval is obtained from Eq. 5).</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0034179-t003-3" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.t003" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Site</td>
+                <td align="left" colspan="1" rowspan="1">Traditional 95% confidence interval</td>
+                <td align="left" colspan="1" rowspan="1">New 95% confidence interval</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Arc</td>
+                <td align="left" colspan="1" rowspan="1">33.74 – 69.48</td>
+                <td align="left" colspan="1" rowspan="1">33.75 – 68.90</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Butler</td>
+                <td align="left" colspan="1" rowspan="1">24.54 – 52.44</td>
+                <td align="left" colspan="1" rowspan="1">24.55 – 52.31</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Gainey</td>
+                <td align="left" colspan="1" rowspan="1">29.36 – 94.51</td>
+                <td align="left" colspan="1" rowspan="1">29.34 – 87.14</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Leavitt</td>
+                <td align="left" colspan="1" rowspan="1">30.85 – 241.14</td>
+                <td align="left" colspan="1" rowspan="1">30.01 – 103.80</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Paleo Crossing</td>
+                <td align="left" colspan="1" rowspan="1">26.69 – 62.84</td>
+                <td align="left" colspan="1" rowspan="1">26.69 – 62.08</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Potts</td>
+                <td align="left" colspan="1" rowspan="1">32.72 – 94.54</td>
+                <td align="left" colspan="1" rowspan="1">23.71 – 83.88</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Udora</td>
+                <td align="left" colspan="1" rowspan="1">39.34 – 110.96</td>
+                <td align="left" colspan="1" rowspan="1">39.29 – 96.05</td>
+              </tr>
+            </tbody>
+          </table></alternatives></table-wrap>
+        <table-wrap id="pone-0034179-t004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0034179.t004</object-id><label>Table 4</label><caption>
+            <title>Comparison of traditional (singly-bounded) and new (doubly-bounded) confidence intervals for edge class data (the doubly-bounded interval is obtained from Eq. 5).</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0034179-t004-4" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.t004" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Site</td>
+                <td align="left" colspan="1" rowspan="1">Traditional 95% confidence interval</td>
+                <td align="left" colspan="1" rowspan="1">New 95% confidence interval</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Arc</td>
+                <td align="left" colspan="1" rowspan="1">46.85 – 257.14</td>
+                <td align="left" colspan="1" rowspan="1">45.65 – 105.36</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Butler</td>
+                <td align="left" colspan="1" rowspan="1">31.95 – 339.63</td>
+                <td align="left" colspan="1" rowspan="1">30.92 – 104.06</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Gainey</td>
+                <td align="left" colspan="1" rowspan="1">26.69 – 62.84</td>
+                <td align="left" colspan="1" rowspan="1">26.69 – 62.08</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Leavitt</td>
+                <td align="left" colspan="1" rowspan="1">32.28 – 287.05</td>
+                <td align="left" colspan="1" rowspan="1">31.66 – 103.29</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Paleo Crossing</td>
+                <td align="left" colspan="1" rowspan="1">54.06 – 207.54</td>
+                <td align="left" colspan="1" rowspan="1">53.11 – 105.62</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Potts</td>
+                <td align="left" colspan="1" rowspan="1">25.97 – 65.13</td>
+                <td align="left" colspan="1" rowspan="1">25.97 – 63.24</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Udora</td>
+                <td align="left" colspan="1" rowspan="1">46.55 – 184.15</td>
+                <td align="left" colspan="1" rowspan="1">46.02 – 104.36</td>
+              </tr>
+            </tbody>
+          </table></alternatives></table-wrap>
+      </sec>
+      <sec id="s2b">
+        <title>Interpolation (Rarefaction) and Extrapolation</title>
+        <p>Species richness estimators aim to estimate an asymptotic value, approached as the sample size tends to infinity. Colwell et al. (<xref ref-type="bibr" rid="pone.0034179-Colwell1">[3]</xref>) recently linked interpolation and extrapolation curves as a smooth curve. This curve provides useful information on comparing species richness for finite sample sizes. The goal of rarefaction is to estimate the expected number of classes S(m) in a random set of m individuals from the reference sample (m &lt; n). Suppose the observed class abundance for the ith class is denoted by X<sub>i</sub>. Then a minimum variance unbiased estimator (Smith and Grassle 1977) for S(m) is.<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.e013" xlink:type="simple"/></disp-formula></p>
+        <p>Colwell et al. (<xref ref-type="bibr" rid="pone.0034179-Colwell1">[3]</xref>) obtained an approximate unconditional variance estimator <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034179.e014" xlink:type="simple"/></inline-formula> of the rarefied richness <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034179.e015" xlink:type="simple"/></inline-formula>. A traditional, symmetric 95% confidence interval is constructed by using <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034179.e016" xlink:type="simple"/></inline-formula>.</p>
+        <p>The goal of extrapolation is to estimate the expected number of classes S(n+m*) in an augmented sample of n + m* individuals from the assemblage (m* &gt;0). Shen et al. (<xref ref-type="bibr" rid="pone.0034179-Bettinger1">[46]</xref>) derived the following estimator of S(n+m*):<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.e017" xlink:type="simple"/><label>(6)</label></disp-formula>where <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034179.e018" xlink:type="simple"/></inline-formula><sub>,</sub> based on the Chao1 estimator. A variance estimator <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034179.e019" xlink:type="simple"/></inline-formula> was also derived by Shen et al. (<xref ref-type="bibr" rid="pone.0034179-Shen1">[45]</xref>). A symmetric 95% confidence interval for extrapolation is constructed as <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034179.e020" xlink:type="simple"/></inline-formula>.</p>
+        <p>In <xref ref-type="fig" rid="pone-0034179-g002">Figure 2</xref>, we show the plots of rarefaction and extrapolation for tool class data from seven sites. The corresponding plots for edge class data are shown in <xref ref-type="fig" rid="pone-0034179-g003">Figure 3</xref>. In <xref ref-type="fig" rid="pone-0034179-g002">Figure 2</xref>, the upper limit of the traditional symmetric 95% confidence interval of the predicted class richness for the Leavitt Site is greater than the maximum value of 108 when sample size exceeds 200. We now briefly describe the modifications required for the confidence interval of the extrapolation part of the curve, when when there is a fixed maximum value for class richness. If we assume that the logarithm of bootstrap estimates of S(n+m*) is a normal distribution truncated by log(U), then a parallel derivation to that in Section 3 for obtaining Equation (5) yields a 1− α confidence interval for S(n+m*) given by.</p>
+        <fig id="pone-0034179-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0034179.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Rarefaction and extrapolation curves (upper panel) for tool class data from seven sites, with symmetric 95% confidence intervals (lower panel) based on Colwell et al. <xref ref-type="bibr" rid="pone.0034179-Colwell1">[3]</xref>.</title>
+            <p>Black dots: the reference (empirical) samples. Solid lines: rarefaction curves. Dashed lines: extrapolation curves. Shaded area for each solid line: 95% confidence interval for the expected rarefied class richness. Shaded area for each dashed line: 95% confidence interval for the expected extrapolated class richness up to a sample size of 350.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.g002" xlink:type="simple"/>
+        </fig>
+        <fig id="pone-0034179-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0034179.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Rarefaction and extrapolation curve (upper panel) of seven sites for edge class data with symmetric 95% confidence intervals (lower panel) based on Colwell et al. <xref ref-type="bibr" rid="pone.0034179-Colwell1">[3]</xref>.</title>
+            <p>Black dots: the reference (empirical) samples. Solid lines: rarefaction curves. Dashed lines: extrapolation curves. Shaded area for each solid line: 95% confidence interval for the expected rarefied class richness. Shaded area for each dashed line: 95% confidence interval for the expected extrapolated class richness up to a sample size of 1500.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.g003" xlink:type="simple"/>
+        </fig>
+        <p><disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.e021" xlink:type="simple"/><label>(7)</label></disp-formula>where</p>
+        <p><disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.e022" xlink:type="simple"/><label>(7a)</label></disp-formula>and we define p<sub>1</sub> as <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034179.e023" xlink:type="simple"/></inline-formula>. A similar approach can be also applied to the rarefaction part of the curve simply by replacing <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034179.e024" xlink:type="simple"/></inline-formula> and its variance by <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034179.e025" xlink:type="simple"/></inline-formula> and its variance. Thus, the 1− α confidence interval for S(m) is</p>
+        <p><disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.e026" xlink:type="simple"/><label>(8)</label></disp-formula>where</p>
+        <p><disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.e027" xlink:type="simple"/><label>(8a)</label></disp-formula>and p<sub>2</sub> is defined as <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034179.e028" xlink:type="simple"/></inline-formula>.</p>
+        <p>In <xref ref-type="fig" rid="pone-0034179-g004">Figure 4</xref>, we single out the Leavitt Site to compare the original symmetric and the modified confidence intervals. The sample size for tool class in Leavitt Site is only 33, thus the variance of the Chao1 estimator is the largest of the seven sites. When we extrapolate to 350, it is unavoidable that the confidence intervals become wide. The comparison of seven sites with the modified confidence intervals are shown in <xref ref-type="fig" rid="pone-0034179-g005">Figure 5</xref> for tool class data and in <xref ref-type="fig" rid="pone-0034179-g006">Figure 6</xref> for edge class data. It is clear that for any finite sample sizes, all seven intervals overlap substantially. Although slight overlap may not imply significance, the considerable overlap among these confidence intervals indicates that the current data do not support any significant difference in class richness, among the seven sites.</p>
+        <fig id="pone-0034179-g004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0034179.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>Comparison of the symmetric intervals (wider intervals, as in <xref ref-type="fig" rid="pone-0034179-g002">Figure 2</xref>) and the doubly-bounded confidence interval for tool class data from Leavitt Site.</title>
+            <p>The symmetric intervals were obtained based on Colwell et al. <xref ref-type="bibr" rid="pone.0034179-Colwell1">[3]</xref> and the doubly-bounded intervals were computed from Equations (7) and (8). The intervals unavoidably tend to be wide due to the small sample size (n = 33) for the site. Long-range extrapolation is applied only to illustrate the behavior or the bounded confidence interval.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.g004" xlink:type="simple"/>
+        </fig>
+        <fig id="pone-0034179-g005" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0034179.g005</object-id>
+          <label>Figure 5</label>
+          <caption>
+            <title>Rarefaction and extrapolation curves for tool class data from seven sites with doubly-bounded 95% confidence intervals based on Equations (7) and (8).</title>
+            <p>Black dots: reference samples. Solid lines: rarefaction curves. Dashed lines: extrapolation curves. Shaded area for each solid line: 95% confidence interval for the expected rarefied class richness. Shaded area for each dashed line: 95% confidence interval for the expected extrapolated class richness up to a sample size of 350.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.g005" xlink:type="simple"/>
+        </fig>
+        <fig id="pone-0034179-g006" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0034179.g006</object-id>
+          <label>Figure 6</label>
+          <caption>
+            <title>Rarefaction and extrapolation curves for edge class data from seven sites with doubly-bounded 95% confidence intervals based on Equations (7) and (8).</title>
+            <p>Black dots: reference samples. Solid lines: rarefaction curves. Dashed lines: extrapolation curves. Shaded area for each solid line: 95% confidence interval for the expected rarefied class richness. Shaded area for each dashed line: 95% confidence interval for the expected extrapolated class richness up to a sample size of 1500.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.g006" xlink:type="simple"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results and Discussion</title>
+      <p>Based on the work of Bettinger (<xref ref-type="bibr" rid="pone.0034179-Bettinger1">[46]</xref>), Schiffer (<xref ref-type="bibr" rid="pone.0034179-Schiffer1">[47]</xref>), and Surovell (<xref ref-type="bibr" rid="pone.0034179-Surovell1">[48]</xref>), Eren (<xref ref-type="bibr" rid="pone.0034179-Eren3">[39]</xref>) proposed that different forager base camp settlement patterns would be corroborated by different levels of tool class and edge class richness, by the pattern of relative abundance among classes, and by the classes represented in artifact assemblages (see also <xref ref-type="bibr" rid="pone.0034179-Kent1">[49]</xref>;<xref ref-type="bibr" rid="pone.0034179-Plog1">[50]</xref>;<xref ref-type="bibr" rid="pone.0034179-Reid1">[51]</xref>;<xref ref-type="bibr" rid="pone.0034179-Schlanger1">[52]</xref>;<xref ref-type="bibr" rid="pone.0034179-Thomas2">[53]</xref>;<xref ref-type="bibr" rid="pone.0034179-Yellen1">[54]</xref>). In regard to richness only, a residential forager settlement pattern (moving a base camp across the landscape short distances, but frequently, to complete different subsistence tasks) would be supported if the unifacial stone tool class and edge class richness differed significantly among the seven base camp sites. The rationale behind this inference is that a sample of base camp sites used by a group of foragers following a residential mobility strategy would be less likely to exhibit the same scope of tool-using activities (and thus tool class and edge class richness) at all sites, since each is positioned in a unique location across a landscape for a different subsistence purpose. Alternatively, a logistical forager settlement pattern (moving a base camp far across the landscape, but less often) would be supported if tool class and edge class richness varied little among sites. In a logistical mobility strategy, base camps are occupied for much longer periods, requiring relatively more subsistence tasks to eventually be completed at a single location. If so, a sample of logistical base camp sites is more likely to reveal similar spectra of tool-using activities (and thus tool and edge class richness), as the same wide scope of activities will be eventually carried out at each.</p>
+      <p>The original (singly-bounded) 95% confidence intervals of the seven base camp sites’ tool and edge class richness (<xref ref-type="table" rid="pone-0034179-t003">Table 3</xref> and <xref ref-type="table" rid="pone-0034179-t004">4</xref>, column 1, <xref ref-type="fig" rid="pone-0034179-g002">Figures 2</xref> and <xref ref-type="fig" rid="pone-0034179-g003">3</xref>) did not allow any inference about forager settlement patterns because they did not make any empirical or logical sense. However, with confidence intervals constrained by the maximum class richness (<xref ref-type="table" rid="pone-0034179-t003">Table 3</xref> and <xref ref-type="table" rid="pone-0034179-t004">4</xref>, column 1, <xref ref-type="fig" rid="pone-0034179-g005">Figures 5</xref> and <xref ref-type="fig" rid="pone-0034179-g006">6</xref>), it is now clear that the new 95% confidence intervals overlap substantially, suggesting that tool class and edge class richness do not vary significantly among the sites. Our conclusion is justified from both asymptotic richness estimation (<xref ref-type="table" rid="pone-0034179-t003">Table 3</xref> and <xref ref-type="table" rid="pone-0034179-t004">4</xref>) and rarefaction-extrapolation methodology (<xref ref-type="fig" rid="pone-0034179-g005">Figures 5</xref> and <xref ref-type="fig" rid="pone-0034179-g006">6</xref>). On its own this result supports the notion that Late Pleistocene Clovis foragers in the Lower Great Lakes used a base camp settlement pattern that was probably more logistical in nature than residential, though future assessments should consider this result among a suite of other diversity measures and archaeological evidence.</p>
+      <p>The applicability of our new method is not limited to archaeology or paradigmatic classification. Indeed, it can be applied to any set of data for which there is a fixed maximum number of classes:</p>
+      <sec id="s3a">
+        <title>Site Occupancy Models</title>
+        <p>In site occupancy models (<xref ref-type="bibr" rid="pone.0034179-MacKenzie1">[55]</xref>), a fixed maximum number of U sites may either be occupied or unoccupied by a member of each class. The site occupancy rate can be estimated by S<sub>est</sub>/U, where S<sub>est</sub> is interpreted as the estimated number of sites at which the class is present. Therefore, because an upper bound for any estimate is the number of sites, our method can be applied to site occupancy models. In the previous literature, the estimated upper limit of a confidence interval of the occupancy rate may exceed one because the estimate may exceed the number of sites. By contrast, the new method avoids this obvious impossibility.</p>
+      </sec>
+      <sec id="s3b">
+        <title>A Marketing Example</title>
+        <p>Suppose a manufacturer of athletic shoes has a current range of products that includes exactly U shoe styles. To efficiently target company advertising, the manufacturer’s marketing division wants to estimate the relative abundance and the total number of the company’s shoe styles currently worn on university campuses in different regions of several countries. Because students may well have purchased shoes far from the campus, even in a different country, for students at highly international universities, local sales data from shops near campuses are not reliable.</p>
+        <p>Instead, the marketing department hires local observers at each campus to count the number of students they observe over a specified period wearing each of the U styles. The relative abundance of the styles recorded at each campus can be approximated, for these purposes, from the proportions observed, but the total number of styles actually worn on a campus may lie anywhere between the observed number (S<sub>obs</sub>) and U. Our new method (Equations 1 and 5) can provide an appropriate estimate with sensible confidence intervals.</p>
+      </sec>
+      <sec id="s3c">
+        <title>A Census Example</title>
+        <p>Suppose a social/political scientist is conducting research on the sociocultural richness (as measured by the number of distinct sociocultural groups represented) of people in geographic regions or neighborhoods where that information would be difficult to obtain by an exhaustive census, for practical or logistical reasons (war zones, hazardous terrain, cost of surveying an entire population). Characteristics such race, religion, nationality, or socio-economic status could be assessed from the sample of people who are most easily and/or safely accessible, from which a fixed number of sociocultural categories (classes, in the statistical sense) could be defined. The application of our estimators would allow for an assessment of true sociocultural richness for each place, based on limited sampling, that would not otherwise be practical.</p>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Supporting Information</title>
+      <supplementary-material id="pone.0034179.s001" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.s001" xlink:type="simple">
+        <label>Figure S1</label>
+        <caption>
+          <p>
+            <bold>Unifacial stone tools from the site of Paleo Crossing, Ohio.</bold>
+          </p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0034179.s002" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.s002" xlink:type="simple">
+        <label>Figure S2</label>
+        <caption>
+          <p>
+            <bold>Unifacial stone tools from the site of Paleo Crossing, Ohio.</bold>
+          </p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0034179.s003" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.s003" xlink:type="simple">
+        <label>Figure S3</label>
+        <caption>
+          <p>
+            <bold>Unifacial stone tools from the site of Paleo Crossing, Ohio.</bold>
+          </p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0034179.s004" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.s004" xlink:type="simple">
+        <label>Figure S4</label>
+        <caption>
+          <p>
+            <bold>Handheld use of a unifacial stone tools.</bold>
+          </p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0034179.s005" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.s005" xlink:type="simple">
+        <label>Figure S5</label>
+        <caption>
+          <p>
+            <bold>A hafted unifacial stone tool.</bold>
+          </p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0034179.s006" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.s006" xlink:type="simple">
+        <label>Figure S6</label>
+        <caption>
+          <p>
+            <bold>Visual criterial for defininf a unifacial stone tool.</bold>
+          </p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0034179.s007" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.s007" xlink:type="simple">
+        <label>Figure S7</label>
+        <caption>
+          <p>
+            <bold>Collins (1999) triangular coordinate graph.</bold>
+          </p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0034179.s008" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.s008" xlink:type="simple">
+        <label>Figure S8</label>
+        <caption>
+          <p>
+            <bold>Measurement of unifacial stone tool length, width, and thickness.</bold>
+          </p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0034179.s009" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.s009" xlink:type="simple">
+        <label>Figure S9</label>
+        <caption>
+          <p>
+            <bold>Measurement of the “width category” and “thickness category.”</bold>
+          </p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0034179.s010" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.s010" xlink:type="simple">
+        <label>Figure S10</label>
+        <caption>
+          <p>
+            <bold>Schematic examples of unifacial stone tool morphological classes.</bold>
+          </p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0034179.s011" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.s011" xlink:type="simple">
+        <label>Figure S11</label>
+        <caption>
+          <p>
+            <bold>Examples of unifacial stone tool edge sections.</bold>
+          </p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0034179.s012" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.s012" xlink:type="simple">
+        <label>Figure S12</label>
+        <caption>
+          <p>
+            <bold>Edge angle measurements.</bold>
+          </p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0034179.s013" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.s013" xlink:type="simple">
+        <label>Figure S13</label>
+        <caption>
+          <p>
+            <bold>Edge shape measurements.</bold>
+          </p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0034179.s014" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.s014" xlink:type="simple">
+        <label>Figure S14</label>
+        <caption>
+          <p>
+            <bold>Unifacial stone tool edge notches.</bold>
+          </p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0034179.s015" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.s015" xlink:type="simple">
+        <label>Figure S15</label>
+        <caption>
+          <p>
+            <bold>Unifacial stone tool edge spurs.</bold>
+          </p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0034179.s016" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.s016" xlink:type="simple">
+        <label>Figure S16</label>
+        <caption>
+          <p>
+            <bold>Schematic examples of unifacial stone tool edge morphological classes.</bold>
+          </p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0034179.s017" mimetype="application/msword" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.s017" xlink:type="simple">
+        <label>Materials S1</label>
+        <caption>
+          <p>
+            <bold>Schematic examples of unifacial stone tool edge morphological classes.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0034179.s018" mimetype="application/msword" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.s018" xlink:type="simple">
+        <label>Appendix S1</label>
+        <caption>
+          <p>
+            <bold>An illustrative example for calculating doubly-bound confidence intervals.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0034179.s019" mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" position="float" xlink:href="info:doi/10.1371/journal.pone.0034179.s019" xlink:type="simple">
+        <label>Table S1</label>
+        <caption>
+          <p>
+            <bold>A spreadsheet for calculating doubly-bound confidence intervals.</bold>
+          </p>
+          <p>(XLSX)</p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>Thanks to K. Sabeel Rahman for discussions on the census example. We are grateful to Rebecca Catto, Jeffrey P. Clemens, Noreen von Cramon-Taubadel, Aaron Greenspan, Stephen Lycett, and David Meltzer for reading over an early version of this manuscript. Thanks also to Elizabeth Russell (<ext-link ext-link-type="uri" xlink:href="http://www.elizabethphoto.com" xlink:type="simple">http://www.elizabethphoto.com</ext-link>) for the photographs of unifacial stone tools provided in the supplementary materials. Thanks to Mustafa, Kathleen, and Nimet Eren for support. Alex Mesoudi, Mike O’Brien, and anonymous reviewers provided valuable comments that improved this manuscript.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0034179-Magurran1">
+        <label>1</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Magurran</surname><given-names>A</given-names></name></person-group>             <year>2004</year>             <article-title>Measuring Biological Diversity.</article-title>             <publisher-loc>Oxford</publisher-loc>             <publisher-name>Blackwell</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Chao1">
+        <label>2</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Chao</surname><given-names>A</given-names></name></person-group>             <year>2005</year>             <article-title>Species estimation and applications.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>Balakrishnan</surname><given-names>N</given-names></name><name name-style="western"><surname>Read</surname><given-names>CB</given-names></name><name name-style="western"><surname>Vidakovic</surname><given-names>B</given-names></name></person-group>             <source>Encyclopedia of statistical sciences, 2nd Edition, Vol 12</source>             <publisher-loc>New York</publisher-loc>             <publisher-name>Wiley</publisher-name>             <fpage>7907</fpage>             <lpage>7916</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Colwell1">
+        <label>3</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Colwell</surname><given-names>R</given-names></name><name name-style="western"><surname>Chao</surname><given-names>A</given-names></name><name name-style="western"><surname>Gotelli</surname><given-names>N</given-names></name><name name-style="western"><surname>Lin</surname><given-names>S</given-names></name><name name-style="western"><surname>Mao</surname><given-names>C</given-names></name><etal/></person-group>             <year>2012</year>             <article-title>Models and estimators linking individual-based and sample-based rarefaction, extrapolation, and comparison of assemblages.</article-title>             <source>J Plant Ecol:</source>             <volume>5</volume>             <fpage>3</fpage>             <lpage>21</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Gotelli1">
+        <label>4</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Gotelli</surname><given-names>N</given-names></name><name name-style="western"><surname>Colwell</surname><given-names>R</given-names></name></person-group>             <year>2011</year>             <article-title>Estimating species richness.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>Magurran</surname><given-names>A</given-names></name><name name-style="western"><surname>McGill</surname><given-names>B</given-names></name></person-group>             <source>Frontiers in measuring biodiversity</source>             <publisher-loc>New York</publisher-loc>             <publisher-name>Oxford University Press</publisher-name>             <fpage>39</fpage>             <lpage>54</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Gotelli2">
+        <label>5</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Gotelli</surname><given-names>N</given-names></name><name name-style="western"><surname>Chao</surname><given-names>A</given-names></name></person-group>             <year>2012</year>             <article-title>Measuring and estimating species richness, species diversity, and biotic similarity from sampling data.</article-title>             <source>The Encyclopedia of Biodiversity, 2<sup>nd</sup> edition.</source><publisher-name>Elsevier</publisher-name><publisher-loc>N.Y</publisher-loc>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Colwell2">
+        <label>6</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Colwell</surname><given-names>R</given-names></name><name name-style="western"><surname>Mao</surname><given-names>C</given-names></name><name name-style="western"><surname>Chang</surname><given-names>J</given-names></name></person-group>             <year>2004</year>             <article-title>Interpolating, extrapolating, and comparing incidence-based species accumulation curves.</article-title>             <source>Ecology</source>             <volume>85</volume>             <fpage>2717</fpage>             <lpage>2727</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Hughes1">
+        <label>7</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Hughes</surname><given-names>J</given-names></name><name name-style="western"><surname>Hellmann</surname><given-names>J</given-names></name><name name-style="western"><surname>Ricketts</surname><given-names>T</given-names></name><name name-style="western"><surname>Bohannan</surname><given-names>B</given-names></name></person-group>             <year>2001</year>             <article-title>Counting the uncountable: statistical approaches to estimating microbial diversity.</article-title>             <source>Appl Environ Microbiol</source>             <volume>67</volume>             <fpage>4399</fpage>             <lpage>4406</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Colwell3">
+        <label>8</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Colwell</surname><given-names>R</given-names></name><name name-style="western"><surname>Coddington</surname><given-names>J</given-names></name></person-group>             <year>1994</year>             <article-title>Estimating terrestrial biodiversity through extrapolation.</article-title>             <source>Philos T R Soc B</source>             <volume>345</volume>             <fpage>101</fpage>             <lpage>118</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Sanders1">
+        <label>9</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Sanders</surname><given-names>H</given-names></name></person-group>             <year>1968</year>             <article-title>Marine benthic diversity: a comparative study.</article-title>             <source>The Am Nat</source>             <volume>102</volume>             <fpage>243</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Hurlbert1">
+        <label>10</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Hurlbert</surname><given-names>S</given-names></name></person-group>             <year>1971</year>             <article-title>The nonconcept of species diversity: a critique and alternative parameters.</article-title>             <source>Ecology</source>             <volume>52</volume>             <fpage>577</fpage>             <lpage>586</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-HeckK1">
+        <label>11</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Heck K</surname><suffix>Jr</suffix></name><name name-style="western"><surname>van Belle</surname><given-names>G</given-names></name><name name-style="western"><surname>Simberloff</surname><given-names>D</given-names></name></person-group>             <year>1975</year>             <article-title>Explicit calculation of the rarefaction diversity measurement and the determination of sufficient sample size.</article-title>             <source>Ecology</source>             <volume>56</volume>             <fpage>1459</fpage>             <lpage>1461</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Gotelli3">
+        <label>12</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Gotelli</surname><given-names>N</given-names></name><name name-style="western"><surname>Colwell</surname><given-names>R</given-names></name></person-group>             <year>2001</year>             <article-title>Quantifying biodiversity: procedures and pitfalls in the measurement and comparison of species richness.</article-title>             <source>Ecol Lett</source>             <volume>4</volume>             <fpage>379</fpage>             <lpage>391</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Bunge1">
+        <label>13</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bunge</surname><given-names>J</given-names></name><name name-style="western"><surname>Fitzpatrick</surname><given-names>M</given-names></name></person-group>             <year>1993</year>             <article-title>Estimating the number of species: a review.</article-title>             <source>J Am Stat Assoc</source>             <volume>88</volume>             <fpage>364</fpage>             <lpage>373</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Chao2">
+        <label>14</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Chao</surname><given-names>A</given-names></name></person-group>             <year>1984</year>             <article-title>Non-parametric estimation of the number of classes in a population.</article-title>             <source>Scand J Stat</source>             <volume>11</volume>             <fpage>265</fpage>             <lpage>270</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Grismer1">
+        <label>15</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Grismer</surname><given-names>J</given-names></name><name name-style="western"><surname>Grismer</surname><given-names>L</given-names></name></person-group>             <year>2010</year>             <article-title>Who’s your mommy? Identifying maternal ancestors of asexual species of Leiolepis Cuvier, 1829 and the description of a new endemic species of asexual Leiolepis Cuvier, 1829 from Southern Vietnam.</article-title>             <source>Zootaxa</source>             <volume>2433</volume>             <fpage>47</fpage>             <lpage>61</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Roosmalen1">
+        <label>16</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Roosmalen</surname><given-names>M</given-names></name><name name-style="western"><surname>Roosmalen</surname><given-names>T</given-names></name><name name-style="western"><surname>Mittermeier</surname><given-names>R</given-names></name></person-group>             <year>2002</year>             <article-title>A taxonomic review of the Titi Monkeys, Genus Callicebus Thomas, 1903, with the description of two new species, Callicebus bernhardi and Callicebus stephennashi, from Brazilian Amazonia.</article-title>             <publisher-name>Neotropical Primates 10 (Sppl.)</publisher-name>             <fpage>1</fpage>             <lpage>53</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Baxter1">
+        <label>17</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Baxter</surname><given-names>M</given-names></name></person-group>             <year>2001</year>             <article-title>Methodological issues in the study of assemblage diversity.</article-title>             <source>Am Antiquity</source>             <volume>66</volume>             <fpage>715</fpage>             <lpage>725</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Cochrane1">
+        <label>18</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Cochrane</surname><given-names>W</given-names></name></person-group>             <year>2003</year>             <article-title>Artefact attribute richness and sample size adequacy.</article-title>             <source>J Archaeol Sci</source>             <volume>30</volume>             <fpage>837</fpage>             <lpage>848</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Eerkens1">
+        <label>19</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Eerkens</surname><given-names>J</given-names></name><name name-style="western"><surname>Ferguson</surname><given-names>J</given-names></name><name name-style="western"><surname>Glascock</surname><given-names>M</given-names></name><name name-style="western"><surname>Skinner</surname><given-names>C</given-names></name><name name-style="western"><surname>Waechter</surname><given-names>S</given-names></name></person-group>             <year>2007</year>             <article-title>Reduction strategies and geochemical characterization of lithic assemblages: a comparison of three case studies from western North America.</article-title>             <source>Am Antiquity</source>             <volume>72</volume>             <fpage>585</fpage>             <lpage>597</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Grayson1">
+        <label>20</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Grayson</surname><given-names>D</given-names></name><name name-style="western"><surname>Cole</surname><given-names>S</given-names></name></person-group>             <year>1998</year>             <article-title>Stone tool assemblage richness during the Middle and Early Upper Palaeolithic in France.</article-title>             <source>J Archaeol Sci</source>             <volume>25</volume>             <fpage>927</fpage>             <lpage>938</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Kaufman1">
+        <label>21</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kaufman</surname><given-names>D</given-names></name></person-group>             <year>1998</year>             <article-title>Measuring archaeological diversity: an application of the Jackknife technique.</article-title>             <source>Am Antiquity</source>             <volume>63</volume>             <fpage>73</fpage>             <lpage>85</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Kintigh1">
+        <label>22</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kintigh</surname><given-names>K</given-names></name></person-group>             <year>1984</year>             <article-title>Measuring archaeological diversity by comparison with simulated assemblages.</article-title>             <source>Am Antiquity</source>             <volume>49</volume>             <fpage>44</fpage>             <lpage>54</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Leonard1">
+        <label>23</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Leonard</surname><given-names>R</given-names></name><name name-style="western"><surname>Jones</surname><given-names>G</given-names></name></person-group>             <year>1989</year>             <article-title>Quantifying Diversity in Archaeology.</article-title>             <publisher-loc>Cambridge</publisher-loc>             <publisher-name>Cambridge University Press</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Simek1">
+        <label>24</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Simek</surname><given-names>J</given-names></name><name name-style="western"><surname>Price</surname><given-names>H</given-names></name></person-group>             <year>1990</year>             <article-title>Chronological change in Perigord lithic assemblage diversity.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>P</surname><given-names>InMellars</given-names></name></person-group>             <source>editor</source>             <publisher-loc>The Emergence of Modern Humans</publisher-loc>             <publisher-name>An Archaeological Perspective. Edinburgh: University of Edinburgh Press</publisher-name>             <fpage>243</fpage>             <lpage>261</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Thomas1">
+        <label>25</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Thomas</surname><given-names>D</given-names></name></person-group>             <year>1988</year>             <article-title>The Archaeology of Monitor Valley: 3.</article-title>             <publisher-loc>Survey and Additional Excavations. New York</publisher-loc>             <publisher-name>Anthropological Papers 66(2), American Museum of Natural History</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Bradley1">
+        <label>26</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bradley</surname><given-names>J</given-names></name><name name-style="western"><surname>Spiess</surname><given-names>A</given-names></name><name name-style="western"><surname>Boisvert</surname><given-names>R</given-names></name><name name-style="western"><surname>Boudreau</surname><given-names>J</given-names></name></person-group>             <year>2008</year>             <article-title>What’s the point? Model forms and attributes of Paleoindian bifaces in the New England-Maritimes region.</article-title>             <source>Archaeol Eastern North Amer</source>             <volume>36</volume>             <fpage>119</fpage>             <lpage>172</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Ellis1">
+        <label>27</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Ellis</surname><given-names>C</given-names></name><name name-style="western"><surname>Deller</surname><given-names>D</given-names></name></person-group>             <year>1988</year>             <article-title>Some distinctive Paleo-Indian tool types from the Lower Great Lakes area.</article-title>             <source>Midcontinental J Archaeol</source>             <volume>13</volume>             <fpage>111</fpage>             <lpage>158</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Jackson1">
+        <label>28</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Jackson</surname><given-names>L</given-names></name></person-group>             <year>1998</year>             <article-title>The Plainville Point: description of a Late-Paleoindian type.</article-title>             <source>Current Research in the Pleistocene</source>             <volume>15</volume>             <fpage>23</fpage>             <lpage>25</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Shott1">
+        <label>29</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Shott</surname><given-names>M</given-names></name></person-group>             <year>1997</year>             <article-title>Activity and formation as sources of variation in Great Lakes Paleoindian assemblages.</article-title>             <source>Midcontinental J Archaeol</source>             <volume>22</volume>             <fpage>197</fpage>             <lpage>236</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Eren1">
+        <label>30</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Eren</surname><given-names>MI</given-names></name><name name-style="western"><surname>Redmond</surname><given-names>B</given-names></name></person-group>             <year>2011</year>             <article-title>Clovis Blades at Paleo Crossing (33ME274), Medina County, Ohio.</article-title>             <source>Midcontinental J Archaeol</source>             <volume>36</volume>             <fpage>173</fpage>             <lpage>194</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Eren2">
+        <label>31</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Eren</surname><given-names>MI</given-names></name><name name-style="western"><surname>Vanderlaan</surname><given-names>S</given-names></name><name name-style="western"><surname>Holland</surname><given-names>J</given-names></name></person-group>             <year>2011</year>             <article-title>Overshot flaking at the Arc Site, Genesee County, New York: Examining the Clovis-Gainey Connection.</article-title>             <source>The Open Anthropol J</source>             <volume>4</volume>             <fpage>40</fpage>             <lpage>52</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Tomenchuk1">
+        <label>32</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Tomenchuk</surname><given-names>J</given-names></name><name name-style="western"><surname>Storck</surname><given-names>PL</given-names></name></person-group>             <year>1997</year>             <article-title>Two newly recognized Paleoindian tool types: single- and double-scribe compass gravers and coring gravers.</article-title>             <source>Am Antiquity</source>             <volume>62</volume>             <fpage>508</fpage>             <lpage>522</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Bisson1">
+        <label>33</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bisson</surname><given-names>M</given-names></name></person-group>             <year>2000</year>             <article-title>Nineteeth Century tools for Twenty-First Century archaeology? Why the Middle Paleolithic typology of Francois Bordes must be replaced.</article-title>             <source>J Archaeol Meth Th</source>             <volume>7</volume>             <fpage>1</fpage>             <lpage>48</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Fish1">
+        <label>34</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Fish</surname><given-names>P</given-names></name></person-group>             <year>1978</year>             <article-title>Consistency in archaeological measurement and classification: a pilot study.</article-title>             <source>Am Antiquity</source>             <volume>43</volume>             <fpage>86</fpage>             <lpage>89</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Whittaker1">
+        <label>35</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Whittaker</surname><given-names>J</given-names></name><name name-style="western"><surname>Caulkins</surname><given-names>D</given-names></name><name name-style="western"><surname>Kamp</surname><given-names>K</given-names></name></person-group>             <year>1998</year>             <article-title>Evaluating consistency in typology and classification.</article-title>             <source>J Archaeol Meth Th</source>             <volume>5</volume>             <fpage>129</fpage>             <lpage>164</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Dunnell1">
+        <label>36</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Dunnell</surname><given-names>R</given-names></name></person-group>             <year>1971</year>             <article-title>Systematics in Prehistory.</article-title>             <publisher-loc>New York</publisher-loc>             <publisher-name>The Free Press</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-OBrian1">
+        <label>37</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>O’Brian</surname><given-names>M</given-names></name><name name-style="western"><surname>Lyman</surname><given-names>R</given-names></name></person-group>             <year>2000</year>             <article-title>Applying Evolutionary Archaeology: A Systematic Approach.</article-title>             <publisher-loc>New York</publisher-loc>             <publisher-name>Kluwer Academic/Plenum</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-OBrien1">
+        <label>38</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>O’Brien</surname><given-names>M</given-names></name><name name-style="western"><surname>Lyman</surname><given-names>R</given-names></name></person-group>             <year>2003</year>             <article-title>Cladistics and Archaeology.</article-title>             <publisher-loc>Salt Lake City</publisher-loc>             <publisher-name>University of Utah Press</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Eren3">
+        <label>39</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Eren</surname><given-names>MI</given-names></name></person-group>             <year>2011</year>             <article-title>Behavioral Adaptations of Human Colonizers in the North American Lower Great Lakes Region.</article-title>             <publisher-name>Unpublished Ph.D. Dissertation, Department of Anthropology, Southern Methodist University, Dallas, TX</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Chao3">
+        <label>40</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Chao</surname><given-names>A</given-names></name></person-group>             <year>1987</year>             <article-title>Estimating the population size for capture-recapture data with unequal catchability.</article-title>             <source>Biometrics</source>             <volume>43</volume>             <fpage>783</fpage>             <lpage>791</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Meltzer1">
+        <label>41</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Meltzer</surname><given-names>D</given-names></name></person-group>             <year>2009</year>             <article-title>First Peoples in a New World: Colonizing Ice Age America.</article-title>             <publisher-loc>Berkeley</publisher-loc>             <publisher-name>University of California Press</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Chao4">
+        <label>42</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Chao</surname><given-names>A</given-names></name><name name-style="western"><surname>Shen</surname><given-names>T-J</given-names></name><name name-style="western"><surname>Hwang</surname><given-names>W-H</given-names></name></person-group>             <year>2006</year>             <article-title>Application of Laplace’s boundary-mode approximations to estimate species and shared species richness.</article-title>             <source>Aust NZ J Stat</source>             <volume>48</volume>             <fpage>117</fpage>             <lpage>128</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Efron1">
+        <label>43</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Efron</surname><given-names>B</given-names></name></person-group>             <year>1979</year>             <article-title>Bootstrap methods: another look at the jackknife.</article-title>             <source>Ann Stat</source>             <volume>7</volume>             <fpage>1</fpage>             <lpage>26</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Efron2">
+        <label>44</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Efron</surname><given-names>B</given-names></name><name name-style="western"><surname>Tibshirani</surname><given-names>RJ</given-names></name></person-group>             <year>1993</year>             <article-title>An Introduction to the Bootstrap.</article-title>             <publisher-loc>New York</publisher-loc>             <publisher-name>Chapman and Hall</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Shen1">
+        <label>45</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Shen</surname><given-names>T-J</given-names></name><name name-style="western"><surname>Chao</surname><given-names>A</given-names></name><name name-style="western"><surname>Lin</surname><given-names>C-F</given-names></name></person-group>             <year>2003</year>             <article-title>Predicting the number of new species in further taxonomic sampling.</article-title>             <source>Ecology</source>             <volume>84</volume>             <fpage>798</fpage>             <lpage>804</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Bettinger1">
+        <label>46</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bettinger</surname><given-names>R</given-names></name></person-group>             <year>1991</year>             <article-title>Hunter-Gatherers: Archaeological and Evolutionary Theory.</article-title>             <publisher-loc>New York</publisher-loc>             <publisher-name>Plenum Press</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Schiffer1">
+        <label>47</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Schiffer</surname><given-names>M</given-names></name></person-group>             <year>1975</year>             <article-title>The effects of occupation span on site content.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>M</surname><given-names>InSchiffer</given-names></name><name name-style="western"><surname>J</surname><given-names>House</given-names></name></person-group>             <source>editors</source>             <publisher-loc>The Cache River Archaeological Project</publisher-loc>             <publisher-name>An Experiment in Contract Archaeology. Fayetteville: Arkansas Archaeological Survey, Research Series 8</publisher-name>             <fpage>265</fpage>             <lpage>269</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Surovell1">
+        <label>48</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Surovell</surname><given-names>T</given-names></name></person-group>             <year>2009</year>             <article-title>Toward a Behavioral Ecology of Lithic Technology: Cases from PaleoindianArchaeology.</article-title>             <publisher-loc>Tucson</publisher-loc>             <publisher-name>The University of Arizona Press</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Kent1">
+        <label>49</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kent</surname><given-names>S</given-names></name></person-group>             <year>1992</year>             <article-title>Studying variability in the archaeological record: an ethnoarchaeological model for distinguishing mobility patterns.</article-title>             <source>Am Antiquity</source>             <volume>57</volume>             <fpage>635</fpage>             <lpage>660</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Plog1">
+        <label>50</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Plog</surname><given-names>S</given-names></name></person-group>             <year>1989</year>             <article-title>Ritual, exchange, and the development of regional systems.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>W</surname><given-names>InLipe</given-names></name><name name-style="western"><surname>M</surname><given-names>Hegmon</given-names></name></person-group>             <source>editors</source>             <publisher-loc>The Architecture of Social Integration. Cortez</publisher-loc>             <publisher-name>Occasional Paper No. 1 Crow Canyon Archaeological Center</publisher-name>             <fpage>143</fpage>             <lpage>154</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Reid1">
+        <label>51</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Reid</surname><given-names>J</given-names></name></person-group>             <year>1982</year>             <article-title>Analystic procedures for interassemblage-settlement system analysis.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>J</surname><given-names>InReid</given-names></name></person-group>             <source>editor</source>             <publisher-loc>Introduction and Special Studies. Tucson</publisher-loc>             <publisher-name>Cholla Project Archaeology, Vol. 1, Archaeological Series No. 1</publisher-name>             <fpage>193</fpage>             <lpage>216</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Schlanger1">
+        <label>52</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Schlanger</surname><given-names>S</given-names></name></person-group>             <year>1990</year>             <article-title>Artifact assemblage composition and site occupation duration.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>P</surname><given-names>InMinnis</given-names></name><name name-style="western"><surname>C</surname><given-names>Redman</given-names></name></person-group>             <source>editors</source>             <publisher-loc>Perspectives on Southwestern Prehistory. Boulder</publisher-loc>             <publisher-name>Westview Press</publisher-name>             <fpage>103</fpage>             <lpage>121</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Thomas2">
+        <label>53</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Thomas</surname><given-names>D</given-names></name></person-group>             <year>1989</year>             <article-title>Diversity in hunter-gatherer cultural geography.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>R</surname><given-names>InLeonard</given-names></name><name name-style="western"><surname>G</surname><given-names>Jones</given-names></name></person-group>             <source>editors</source>             <publisher-loc>Quantifying Diversity in Archaeology. Cambridge</publisher-loc>             <publisher-name>Cambridge University Press</publisher-name>             <fpage>85</fpage>             <lpage>91</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-Yellen1">
+        <label>54</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Yellen</surname><given-names>J</given-names></name></person-group>             <year>1977</year>             <article-title>Archaeological Approaches to the Present: Models for Reconstructing the Past.</article-title>             <publisher-loc>New York</publisher-loc>             <publisher-name>Academic Press</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0034179-MacKenzie1">
+        <label>55</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>MacKenzie</surname><given-names>D</given-names></name><name name-style="western"><surname>Nichols</surname><given-names>J</given-names></name><name name-style="western"><surname>Lachman</surname><given-names>G</given-names></name><name name-style="western"><surname>Droege</surname><given-names>S</given-names></name><name name-style="western"><surname>Royle</surname><given-names>J</given-names></name><etal/></person-group>             <year>2002</year>             <article-title>Estimating site occupancy rates when detection probabilities are less than one.</article-title>             <source>Ecology</source>             <volume>83</volume>             <fpage>2248</fpage>             <lpage>2255</lpage>          </element-citation>
+      </ref>
+    </ref-list>
+    
+  </back>
+</article>

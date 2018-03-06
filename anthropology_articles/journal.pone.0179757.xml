@@ -1,0 +1,903 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1d3 20150301//EN" "http://jats.nlm.nih.gov/publishing/1.1d3/JATS-journalpublishing1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="1.1d3" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-16-47825</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0179757</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Digestive system</subject><subj-group><subject>Teeth</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Digestive system</subject><subj-group><subject>Teeth</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Head</subject><subj-group><subject>Jaw</subject><subj-group><subject>Teeth</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Head</subject><subj-group><subject>Jaw</subject><subj-group><subject>Teeth</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Paleontology</subject><subj-group><subject>Paleobiology</subject><subj-group><subject>Paleozoology</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Earth sciences</subject><subj-group><subject>Paleontology</subject><subj-group><subject>Paleobiology</subject><subj-group><subject>Paleozoology</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Ecology</subject><subj-group><subject>Paleoecology</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Ecology and environmental sciences</subject><subj-group><subject>Ecology</subject><subj-group><subject>Paleoecology</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Paleontology</subject><subj-group><subject>Paleobiology</subject><subj-group><subject>Paleoecology</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Earth sciences</subject><subj-group><subject>Paleontology</subject><subj-group><subject>Paleobiology</subject><subj-group><subject>Paleoecology</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Paleontology</subject><subj-group><subject>Paleobiology</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Earth sciences</subject><subj-group><subject>Paleontology</subject><subj-group><subject>Paleobiology</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Ecology and environmental sciences</subject><subj-group><subject>Limnology</subject><subj-group><subject>Paleolimnology</subject><subj-group><subject>Paleoenvironments</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Earth sciences</subject><subj-group><subject>Marine and aquatic sciences</subject><subj-group><subject>Limnology</subject><subj-group><subject>Paleolimnology</subject><subj-group><subject>Paleoenvironments</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Paleontology</subject><subj-group><subject>Paleolimnology</subject><subj-group><subject>Paleoenvironments</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Earth sciences</subject><subj-group><subject>Paleontology</subject><subj-group><subject>Paleolimnology</subject><subj-group><subject>Paleoenvironments</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Paleontology</subject><subj-group><subject>Fossils</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Earth sciences</subject><subj-group><subject>Paleontology</subject><subj-group><subject>Fossils</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Paleoanthropology</subject><subj-group><subject>Hominids</subject><subj-group><subject>Hominins</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Paleontology</subject><subj-group><subject>Paleoanthropology</subject><subj-group><subject>Hominids</subject><subj-group><subject>Hominins</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Earth sciences</subject><subj-group><subject>Paleontology</subject><subj-group><subject>Paleoanthropology</subject><subj-group><subject>Hominids</subject><subj-group><subject>Hominins</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Physical anthropology</subject><subj-group><subject>Paleoanthropology</subject><subj-group><subject>Hominids</subject><subj-group><subject>Hominins</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Physical anthropology</subject><subj-group><subject>Paleoanthropology</subject><subj-group><subject>Hominids</subject><subj-group><subject>Hominins</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Physiology</subject><subj-group><subject>Digestive physiology</subject><subj-group><subject>Dentition</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Physiology</subject><subj-group><subject>Digestive physiology</subject><subj-group><subject>Dentition</subject></subj-group></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Examining the use of Amazon’s Mechanical Turk for edge extraction of the occlusal surface of fossilized bovid teeth</article-title>
+<alt-title alt-title-type="running-head">Edge extraction using Amazon’s Mechanical Turk</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<contrib-id authenticated="true" contrib-id-type="orcid">http://orcid.org/0000-0002-8413-5097</contrib-id>
+<name name-style="western">
+<surname>Matthews</surname> <given-names>Gregory J.</given-names></name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Thiruvathukal</surname> <given-names>George K.</given-names></name>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Luetkemeier</surname> <given-names>Maxwell P.</given-names></name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Brophy</surname> <given-names>Juliet K.</given-names></name>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+</contrib>
+</contrib-group>
+<aff id="aff001">
+<label>1</label>
+<addr-line>Department of Mathematics and Statistics, Loyola University Chicago, Chicago, IL, United States of America</addr-line>
+</aff>
+<aff id="aff002">
+<label>2</label>
+<addr-line>Department of Computer Science, Loyola University Chicago, Chicago, IL, United States of America</addr-line>
+</aff>
+<aff id="aff003">
+<label>3</label>
+<addr-line>Department of Geography and Anthropology, Louisiana State University, Baton Rouge, LA, United States of America</addr-line>
+</aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Lozano</surname> <given-names>Sergi</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1">
+<addr-line>Institut Català de Paleoecologia Humana i Evolució Social (IPHES), SPAIN</addr-line>
+</aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<fn fn-type="con">
+<p><list list-type="simple">
+<list-item><p><bold>Conceptualization:</bold> GKT GJM JKB.</p></list-item>
+<list-item><p><bold>Data curation:</bold> GJM GKT MPL.</p></list-item>
+<list-item><p><bold>Formal analysis:</bold> GJM MPL.</p></list-item>
+<list-item><p><bold>Investigation:</bold> GKT GJM MPL.</p></list-item>
+<list-item><p><bold>Methodology:</bold> GJM GKT.</p></list-item>
+<list-item><p><bold>Software:</bold> GKT GJM MPL.</p></list-item>
+<list-item><p><bold>Visualization:</bold> GJM.</p></list-item>
+<list-item><p><bold>Writing – original draft:</bold> GJM JKB MPL GKT.</p></list-item>
+<list-item><p><bold>Writing – review &amp; editing:</bold> GJM JKB MPL GKT.</p></list-item>
+</list></p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">gmatthews1@luc.edu</email></corresp>
+</author-notes>
+<pub-date pub-type="collection">
+<year>2017</year>
+</pub-date>
+<pub-date pub-type="epub">
+<day>13</day>
+<month>7</month>
+<year>2017</year>
+</pub-date>
+<volume>12</volume>
+<issue>7</issue>
+<elocation-id>e0179757</elocation-id>
+<history>
+<date date-type="received">
+<day>5</day>
+<month>12</month>
+<year>2016</year>
+</date>
+<date date-type="accepted">
+<day>2</day>
+<month>6</month>
+<year>2017</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2017</copyright-year>
+<copyright-holder>Matthews et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0179757"/>
+<abstract>
+<p>In order to reconstruct environments associated with Plio-Pleistocene hominins in southern Africa, researchers frequently rely upon the animals associated with the hominins, in particular, animals in the Family Bovidae. Bovids in southern Africa are typically identified by their teeth. However, identifying the taxon of a bovid tooth is challenging due to various biasing factors. Furthermore, inaccurate identification of fossil bovids can have significant consequences on the reconstructed paleoenvironment. Recent research on the classification of bovid fossil teeth has relied on using elliptical Fourier analysis to summarize the shape of the outline of the occlusal surface of the tooth and the resulting harmonic amplitudes. Currently, an expert in the field must manually place landmarks around the edges of each tooth which is slow and time consuming. This study tests whether it is possible to crowdsource this task, while maintaining the necessary level of quality needed to perform a statistical analysis on each tooth. Amazon Mechanical Turk workers place landmarks on the edge of the tooth which is compared to the performance of an expert in the field. The results suggest that crowdsourcing the digitization process is reliable and replicable. With the technical aspects of digitization managed, researchers can concentrate on analyzing and interpreting the data.</p>
+</abstract>
+<funding-group>
+<funding-statement>The authors received no specific funding for this work.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="9"/>
+<table-count count="5"/>
+<page-count count="18"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability">
+<meta-name>Data Availability</meta-name>
+<meta-value>All data are available in the GitHub repository (<ext-link ext-link-type="uri" xlink:href="https://github.com/gjm112/MTurkTeeth" xlink:type="simple">https://github.com/gjm112/MTurkTeeth</ext-link>).</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec001" sec-type="intro">
+<title>1 Introduction</title>
+<p>Reconstructing past environments associated with early hominins is essential for understanding human evolution and is valuable for identifying habitat preferences, diet, and ecological relationships between hominins and other species. In order to reconstruct past environments, paleoanthropologists commonly rely on the animals that are found associated with the hominins. Animals in the Family Bovidae such as antelopes and buffalo are particularly useful for this task due to their strict ecological tendencies [<xref ref-type="bibr" rid="pone.0179757.ref001">1</xref>–<xref ref-type="bibr" rid="pone.0179757.ref003">3</xref>]. In addition, bovids are one of the most common fossils found in southern Africa, in particular isolated teeth. However, identifying bovid teeth in the fossil record is complicated by biasing factors such as attrition and sex [<xref ref-type="bibr" rid="pone.0179757.ref004">4</xref>]. Overlap exists in the form (i.e. size and shape) of bovid teeth making it difficult to identify the taxon and, therefore, difficult to reconstruct the past environment [<xref ref-type="bibr" rid="pone.0179757.ref004">4</xref>]. The purpose of this study is to demonstrate a reliable, replicable, uncomplicated method for extracting the form of the occlusal surface of bovid teeth which can then be used to identify teeth in the fossil record. Several recent studies have demonstrated that morphometrics is particularly useful for documenting biological shape [<xref ref-type="bibr" rid="pone.0179757.ref005">5</xref>–<xref ref-type="bibr" rid="pone.0179757.ref011">11</xref>]. This new methodology extracts edges by relying on crowdsourcing. The outlines are then used in supervised machine learning techniques in conjunction with elliptical fourier analysis (EFA) [<xref ref-type="bibr" rid="pone.0179757.ref012">12</xref>].</p>
+<p>It should be noted that ideally edge extraction of the occlusal surface of these teeth could be performed using automated procedures based on techniques such as those described in [<xref ref-type="bibr" rid="pone.0179757.ref013">13</xref>] or [<xref ref-type="bibr" rid="pone.0179757.ref014">14</xref>]. However, in this specific setting automated methods are difficult to use as these techniques tend to often identify the bottom of a tooth as the edge rather than the actual occlusal surface.</p>
+<p>Previously, [<xref ref-type="bibr" rid="pone.0179757.ref001">1</xref>] performed a study to standardize the identification of bovid teeth using EFA. While successful in identifying bovid taxa, the process to extract the outlines was tedious and time consuming. In order to extract the outline of a tooth, an image was imported into a digitizer program, MLmetrics [<xref ref-type="bibr" rid="pone.0179757.ref015">15</xref>], where 60 points were manually placed around the tooth according to a template so as to maintain homology. The points were then exported and analyzed in a fourier analysis program [<xref ref-type="bibr" rid="pone.0179757.ref016">16</xref>]. The study generated occlusal outline information for over 7000 extant and fossil teeth. However, the results could not be easily used to identify fossils from new sites due to the time consuming nature of the process of edge extraction. The present study provides results of an exploratory analysis that employs Amazon’s Mechanical Turk platform [<xref ref-type="bibr" rid="pone.0179757.ref017">17</xref>] as a method to crowdsource the edge extraction of bovid teeth.</p>
+<p>In this study, the digitized outlines of an expert in the field, the co-author Juliet K Brophy (JKB), are compared with up to three outlines extracted by Amazon Mechanical Turk workers. The results of this preliminary study suggest that crowdsourcing the digitizing process is reliable and replicable. Furthermore, this streamlined process allows for more teeth to be processed in a timely manner, saves the time of researchers from performing technical tasks, and frees them up to focus more of their time on aspects of this project that require expertise, such as analyzing and interpreting the data.</p>
+</sec>
+<sec id="sec002">
+<title>2 Related work</title>
+<p>Mechanical Turk [<xref ref-type="bibr" rid="pone.0179757.ref017">17</xref>] was introduced by Amazon.com, Inc. in 2005. As such, there is a relatively limited body of scholarly work exploring the uses of the platform. The projects that task quality assessment, the focus of this study, can be divided into two categories: assessing survey response accuracy and annotating digital images.</p>
+<sec id="sec003">
+<title>2.1 Assessing survey response accuracy</title>
+<p>Studies in this category focus on investigating how accurate survey responses are from Mechanical Turk Workers. These analyses aim to answer questions such as: How closely do Mechanical Turk surveys reflect surveys distributed using more traditional methods? [<xref ref-type="bibr" rid="pone.0179757.ref018">18</xref>]; How honest are Mechanical Turk workers in their responses? [<xref ref-type="bibr" rid="pone.0179757.ref019">19</xref>, <xref ref-type="bibr" rid="pone.0179757.ref020">20</xref>]; and Does Mechanical Turk provide researchers with a more diverse response pool than the mainstay of distributing surveys to college students with the promise of extra credit? [<xref ref-type="bibr" rid="pone.0179757.ref021">21</xref>]</p>
+<p>[<xref ref-type="bibr" rid="pone.0179757.ref020">20</xref>] uses Mechanical Turk in order to combine the speed and cost-effectiveness of a simulated study with the authenticity of human behavioral studies when analyzing human cooperation. The study claims that prior to Mechanical Turk and the ability to crowdsource data collection, most evolutionary models were based on simulations or mathematical algorithms due to the lack of survey labs and a consistent subject pool. With its use, however, researchers can request a task to be done and collect results entirely online much in the same way a simulation study is conducted. With that said, [<xref ref-type="bibr" rid="pone.0179757.ref020">20</xref>] mentions that a major concern of using Mechanical Turk is the lack of control researchers have over their subjects. It is possible, for instance, for subjects to incorrectly answer a question due to a lack of understanding. Additionally, subjects are completely free to leave in the middle of the survey. After conducting a number of experiments, both online and in person, [<xref ref-type="bibr" rid="pone.0179757.ref020">20</xref>] found that these limitations had a very small effect on the results.</p>
+<p>In a similar study, [<xref ref-type="bibr" rid="pone.0179757.ref021">21</xref>] conducted an experiment comparing the performance of Mechanical Turk workers versus subjects in a controlled laboratory setting in an acceptability judgment task. The main concern addressed in [<xref ref-type="bibr" rid="pone.0179757.ref021">21</xref>] is that additional noise, introduced by using Mechanical Turk, might detract from the power of the experiment. To help control for this, they introduced a rejection criteria. Mechanical Turk workers were required to be native English speakers, which resulted in a 15% rejection rate. [<xref ref-type="bibr" rid="pone.0179757.ref021">21</xref>], like [<xref ref-type="bibr" rid="pone.0179757.ref020">20</xref>], states that another major concern in the use of Mechanical Turk is the inability to establish whether or not the Turker understood the task, possibly resulting in inaccurate data. It concluded, however, that using Mechanical Turk is comparable to laboratory research as long as a mechanism exists to reject certain responses.</p>
+<p>Additional information on testing best practices when using Mechanical Turk in survey research can be found in [<xref ref-type="bibr" rid="pone.0179757.ref019">19</xref>], which evaluates how various factors effect the reliability of responses, and [<xref ref-type="bibr" rid="pone.0179757.ref018">18</xref>], which compares the demographics of Mechanical Turk respondents to national demographics.</p>
+</sec>
+<sec id="sec004">
+<title>2.2 Annotating digital images</title>
+<p>This category of Mechanical Turk work evaluates the quality of edge extraction research. Two of the primary works related to this topic include [<xref ref-type="bibr" rid="pone.0179757.ref022">22</xref>] and [<xref ref-type="bibr" rid="pone.0179757.ref023">23</xref>].</p>
+<p>[<xref ref-type="bibr" rid="pone.0179757.ref022">22</xref>] explored the use of Mechanical Turk in image classification focusing on techniques for automatically “cleaning” the data sets. They demonstrate that by using multiple methods for measuring the accuracy of annotations they can outperform other methods that rely on a single measure. They also demonstrate that image classification can be performed with high levels of accuracy when using Mechanical Turk workers to extract the edge of images. Further, classification accuracy can be improved by over 7%, by cleaning the data using the techniques considered in this study.</p>
+<p>[<xref ref-type="bibr" rid="pone.0179757.ref023">23</xref>] evaluates various annotation techniques with the goal of maximizing quality while minimizing cost. This research used landmark-based edge extraction and a gold standard method of grading. Landmark extraction, or annotation, involves having a Turker place a number of points along the border of an image. Once the outline is extracted, it can be tested for quality against an outline annotated by an expert, which is referred to as the “gold standard” grading technique. While it was not used in this particular study, [<xref ref-type="bibr" rid="pone.0179757.ref023">23</xref>] also mentions grading outlines based on their distance from the mean image produced by multiple Mechanical Turk workers, which may be useful as it eliminates the need for expert tracing.</p>
+</sec>
+</sec>
+<sec id="sec005" sec-type="materials|methods">
+<title>3 Methods</title>
+<p>This exploratory study includes a sample of 96 teeth of known species from four different tribes: Alcelaphini, Bovini, Hippotragini, and Neotragini. These teeth were obtained from the Ditsong Museum (TM) (formerly Transvaal Museum) and the National Museum of Bloemfontein (NMB), South Africa. (Permission to use these specimens was received by JKB from both institutions (i.e. National Museum, Bloemfontein and Ditsong Museum (formerly Transvaal Museum)). Permits are not required to look at extant bovid specimens in South Africa. Therefore, no permits were required for the described study.) The complete repository information is in <xref ref-type="table" rid="pone.0179757.t001">Table 1</xref>. Permission was received from each institute to photograph these specimens. No permits were required for the described study, which complied with all relevant regulations.</p>
+<table-wrap id="pone.0179757.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0179757.t001</object-id>
+<label>Table 1</label>
+<caption>
+<title>List of extant bovid specimens used in this study from the National Museum, Bloemfontein (NMB) and the Ditsong Musuem (TM) (formerly Transvaal Museum).</title>
+</caption>
+<alternatives>
+<graphic id="pone.0179757.t001g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0179757.t001" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Genus</th>
+<th align="left">Species</th>
+<th align="left">Repository</th>
+<th align="left">Specimen Number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" colspan="4"><bold>UM3</bold></td>
+</tr>
+<tr>
+<td align="left"><italic>Connochaetes</italic></td>
+<td align="left"><italic>taurinus</italic></td>
+<td align="left">NMB</td>
+<td align="left">64, 12066, 12204, 12475</td>
+</tr>
+<tr>
+<td align="left"><italic>Damaliscus</italic></td>
+<td align="left"><italic>dorcas</italic></td>
+<td align="left">NMB</td>
+<td align="left">8752, 9382, 12159, 12175, M144</td>
+</tr>
+<tr>
+<td align="left"><italic>Oryx</italic></td>
+<td align="left"><italic>gazella</italic></td>
+<td align="left">NMB</td>
+<td align="left">250, 9304, 9330, 12094, 12181</td>
+</tr>
+<tr>
+<td align="left"><italic>Hippotragus</italic></td>
+<td align="left"><italic>niger</italic></td>
+<td align="left">NMB</td>
+<td align="left">177, 178, 183, 232, 893</td>
+</tr>
+<tr>
+<td align="left"><italic>Syncerus</italic></td>
+<td align="left"><italic>caffer</italic></td>
+<td align="left">NMB</td>
+<td align="left">9, 12, 16</td>
+</tr>
+<tr>
+<td align="center" colspan="4"><bold>UM2</bold></td>
+</tr>
+<tr>
+<td align="left"><italic>Hippotragus</italic></td>
+<td align="left"><italic>equinus</italic></td>
+<td align="left">NMB</td>
+<td align="left">191, 196, 887</td>
+</tr>
+<tr>
+<td align="left"><italic>Hippotragus</italic></td>
+<td align="left"><italic>equinus</italic></td>
+<td align="left">TM</td>
+<td align="left">AZ 1133</td>
+</tr>
+<tr>
+<td align="center" colspan="4"><bold>LM3</bold></td>
+</tr>
+<tr>
+<td align="left"><italic>Alcelaphus</italic></td>
+<td align="left"><italic>buselaphus</italic></td>
+<td align="left">NMB</td>
+<td align="left">6022, 8715, 8763, 12199, 12215</td>
+</tr>
+<tr>
+<td align="left"><italic>Raphicerus</italic></td>
+<td align="left"><italic>campestris</italic></td>
+<td align="left">NMB</td>
+<td align="left">8730, 9343, 9438, 9761, 9787</td>
+</tr>
+<tr>
+<td align="left"><italic>Pelea</italic></td>
+<td align="left"><italic>capreolus</italic></td>
+<td align="left">NMB</td>
+<td align="left">9446, 6878</td>
+</tr>
+<tr>
+<td align="left"><italic>Pelea</italic></td>
+<td align="left"><italic>capreolus</italic></td>
+<td align="left">TM</td>
+<td align="left">AZ 479, 10005, 10007</td>
+</tr>
+<tr>
+<td align="left"><italic>Syncerus</italic></td>
+<td align="left"><italic>caffer</italic></td>
+<td align="left">NMB</td>
+<td align="left">1000, 1001, 1002, 8743, 8774</td>
+</tr>
+<tr>
+<td align="center" colspan="4"><bold>LM2</bold></td>
+</tr>
+<tr>
+<td align="left"><italic>Connochaetes</italic></td>
+<td align="left"><italic>gnou</italic></td>
+<td align="left">NMB</td>
+<td align="left">12218, 12323, 12399, 12394</td>
+</tr>
+<tr>
+<td align="left"><italic>Connochaetes</italic></td>
+<td align="left"><italic>taurinus</italic></td>
+<td align="left">NMB</td>
+<td align="left">12201, 12204, 12209, 12475, 12476</td>
+</tr>
+<tr>
+<td align="left"><italic>Alcelaphus</italic></td>
+<td align="left"><italic>buselaphus</italic></td>
+<td align="left">NMB</td>
+<td align="left">6022, 12196, 12199, 12215, 12420</td>
+</tr>
+<tr>
+<td align="left"><italic>Damaliscus</italic></td>
+<td align="left"><italic>dorcas</italic></td>
+<td align="left">NMB</td>
+<td align="left">7440, 9384, 12039, 12157</td>
+</tr>
+<tr>
+<td align="left"><italic>Raphicerus</italic></td>
+<td align="left"><italic>campestris</italic></td>
+<td align="left">NMB</td>
+<td align="left">8730, 9438, 9761, 9787, 12169</td>
+</tr>
+<tr>
+<td align="left"><italic>Pelea</italic></td>
+<td align="left"><italic>capreolus</italic></td>
+<td align="left">NMB</td>
+<td align="left">6878, 9446, 9855</td>
+</tr>
+<tr>
+<td align="left"><italic>Oryx</italic></td>
+<td align="left"><italic>gazella</italic></td>
+<td align="left">NMB</td>
+<td align="left">9304, 9335, 12182, 12213, 12352</td>
+</tr>
+<tr>
+<td align="left"><italic>Hippotragus</italic></td>
+<td align="left"><italic>niger</italic></td>
+<td align="left">NMB</td>
+<td align="left">176</td>
+</tr>
+<tr>
+<td align="left"><italic>Hippotragus</italic></td>
+<td align="left"><italic>niger</italic></td>
+<td align="left">TM</td>
+<td align="left">3812, 4251, 13130, 13136</td>
+</tr>
+<tr>
+<td align="left"><italic>Hippotragus</italic></td>
+<td align="left"><italic>equinus</italic></td>
+<td align="left">NMB</td>
+<td align="left">191, 887</td>
+</tr>
+<tr>
+<td align="left"><italic>Hippotragus</italic></td>
+<td align="left"><italic>equinus</italic></td>
+<td align="left">TM</td>
+<td align="left">AZ 2444, AZ 1333, 12072</td>
+</tr>
+<tr>
+<td align="center" colspan="4"><bold>LM1</bold></td>
+</tr>
+<tr>
+<td align="left"><italic>Alcelaphus</italic></td>
+<td align="left"><italic>buselaphus</italic></td>
+<td align="left">NMB</td>
+<td align="left">8790, 12195, 12420</td>
+</tr>
+<tr>
+<td align="left"><italic>Damaliscus</italic></td>
+<td align="left"><italic>dorcas</italic></td>
+<td align="left">NMB</td>
+<td align="left">9384, 12039, 12157, 12320, 15155</td>
+</tr>
+<tr>
+<td align="left"><italic>Hippotragus</italic></td>
+<td align="left"><italic>niger</italic></td>
+<td align="left">TM</td>
+<td align="left">3812, 13130, 13138, 13143, 13153</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>We investigated three mandibular molars (LM1, LM2, LM3) and two maxillary molars (UM2, UM3). Details of the data are shown in <xref ref-type="table" rid="pone.0179757.t002">Table 2</xref>. An example of the raw image of a tooth prior to extraction can be seen in the left side of <xref ref-type="fig" rid="pone.0179757.g001">Fig 1</xref>. Prior to being digitized by a Turk worker, all of the teeth were scaled to each other.</p>
+<table-wrap id="pone.0179757.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0179757.t002</object-id>
+<label>Table 2</label>
+<caption>
+<title>The distribution of tribe by tooth type in the data set.</title>
+</caption>
+<alternatives>
+<graphic id="pone.0179757.t002g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0179757.t002" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center"/>
+<th align="center" colspan="5">Tooth Type</th>
+<th align="center"/>
+</tr>
+<tr>
+<th align="center">Tribe</th>
+<th align="center">LM1</th>
+<th align="center">LM2</th>
+<th align="center">LM3</th>
+<th align="center">UM2</th>
+<th align="center">UM3</th>
+<th align="center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Alcelaphini</td>
+<td align="center">8</td>
+<td align="center">15</td>
+<td align="center">5</td>
+<td align="center">0</td>
+<td align="center">5</td>
+<td align="center">33</td>
+</tr>
+<tr>
+<td align="center">Bovini</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">5</td>
+<td align="center">0</td>
+<td align="center">5</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">Hippotragini</td>
+<td align="center">5</td>
+<td align="center">15</td>
+<td align="center">0</td>
+<td align="center">5</td>
+<td align="center">10</td>
+<td align="center">35</td>
+</tr>
+<tr>
+<td align="center">Neogtragini</td>
+<td align="center">0</td>
+<td align="center">8</td>
+<td align="center">10</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">18</td>
+</tr>
+<tr>
+<td align="center">Total</td>
+<td align="center">13</td>
+<td align="center">38</td>
+<td align="center">20</td>
+<td align="center">5</td>
+<td align="center">20</td>
+<td align="center">96</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<fig id="pone.0179757.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0179757.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>Raw image of tooth.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0179757.g001" xlink:type="simple"/>
+</fig>
+<sec id="sec006">
+<title>3.1 HIT protocol</title>
+<p>Amazon states: “A Human Intelligence Task, or HIT, is a question that needs an answer. A HIT represents a single, self-contained task that a Worker can work on, submit an answer, and collect a reward for completing” [<xref ref-type="bibr" rid="pone.0179757.ref024">24</xref>]. Specifically in this setting, the Mechanical Turk worker downloads the image of a bovid tooth in the freeware GIMP (the GNU Image Manipulation Program) [<xref ref-type="bibr" rid="pone.0179757.ref025">25</xref>]. After testing several programs for obtaining the polygon, this program produced the best results. Next, the Mechanical Turk worker selects the <italic>lasso tool</italic> which allows a polygonal selection to be made around the tooth. Once the bounding polygon has been created, the user then cuts and pastes the extracted selection onto a blank canvas. This shape is then filled in with all black using the bucket fill tool in GIMP creating a black and white image of each tooth where the interior of the tooth is black and the background is all white. The resulting file is then saved onto one’s computer and uploaded to the link provided in the HIT.</p>
+</sec>
+<sec id="sec007">
+<title>3.2 Processing the Mechanical Turk output</title>
+<p>For every raw image of a tooth considered in this study, Mechanical Turk workers were asked to extract the outline of the occlusal surface in GIMP [<xref ref-type="bibr" rid="pone.0179757.ref025">25</xref>]. This process was repeated 3 times for each tooth. (Mechanical Turk workers were used only to trace images of bovid teeth. No personal information relating to any mechanical Turk worker was collected.) The output from each of the Mechanical Turk workers was then forced to a black and white image using ImageMagick [<xref ref-type="bibr" rid="pone.0179757.ref026">26</xref>]. The expert (JKB) also traced the outline of the occlusal surface of each tooth using the exact methods as the Mechanical Turk workers.</p>
+<p>
+<xref ref-type="fig" rid="pone.0179757.g001">Fig 1</xref> shows an example of a raw image of a tooth, and <xref ref-type="fig" rid="pone.0179757.g002">Fig 2</xref> shows the tracing by an expert using GIMP. The results from Mechanical Turk workers for this specific tooth are shown in <xref ref-type="fig" rid="pone.0179757.g003">Fig 3</xref>. Each of these three images corresponds to different tracings of the raw tooth presented in <xref ref-type="fig" rid="pone.0179757.g001">Fig 1</xref>. Note that the tracing on the bottom of <xref ref-type="fig" rid="pone.0179757.g003">Fig 3</xref> was not done correctly by the Mechanical Turk worker and needed to be adjusted after the fact to an image that is strictly black and white.</p>
+<fig id="pone.0179757.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0179757.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>Extracted Occlusal Surface using GIMP performed by expert.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0179757.g002" xlink:type="simple"/>
+</fig>
+<fig id="pone.0179757.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0179757.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>Three black and white images produced by Mechanical Turk workers for the tooth shown in <xref ref-type="fig" rid="pone.0179757.g001">Fig 1</xref>.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0179757.g003" xlink:type="simple"/>
+</fig>
+<p>While three separate HITs for each tooth were posted, we were not always able to get three viable tracings. In some cases, no tracing was returned whereas is other cases, tracings were returned but were clearly wrong. This circumstance occurred, for instance, when Turkers traced around the occlusal surface of teeth that were not the focus of the image, traced some parts of the internal area of the tooth, or returned a.xcf file (a GIMP file) instead of the .jpg that was requested in the HIT.</p>
+<p>Once the black and white images are collected and processed, they can be read into R using the “import_jpg” function from the Momocs package [<xref ref-type="bibr" rid="pone.0179757.ref027">27</xref>]. This function extracts x- and y- coordinates along the border between the black and white fields in the images returned from Mechanical Turk workers.</p>
+<p>A restriction of the “import_jpg” function is in how an image’s points are sequenced the same from tooth to tooth. So, for instance, the first point listed for one tooth could correspond to the extreme left of the image and the first point listed for a different tooth could be the point on the extreme right. This creates problems when using landmark based approaches such as calculating distances between Mechanical Turk workers and the gold standard teeth extracted by an expert. In order to overcome this, we took the points extracted from “import_jpg” and first performed EFA using the function “efourier” on the (x, y)-coordinates to derive harmonics that describe the tooth.</p>
+<p>Elliptical Fourier Analysis is specified as a parametric function
+<disp-formula id="pone.0179757.e001"><alternatives><graphic id="pone.0179757.e001g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0179757.e001" xlink:type="simple"/><mml:math display="block" id="M1"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi>x</mml:mi> <mml:mo>=</mml:mo> <mml:mi>f</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>=</mml:mo> <mml:msub><mml:mi>A</mml:mi> <mml:mn>0</mml:mn></mml:msub> <mml:mo>+</mml:mo> <mml:munderover><mml:mo>∑</mml:mo> <mml:mrow><mml:mi>j</mml:mi> <mml:mo>=</mml:mo> <mml:mn>1</mml:mn></mml:mrow> <mml:mi>H</mml:mi></mml:munderover> <mml:msub><mml:mi>a</mml:mi> <mml:mi>j</mml:mi></mml:msub> <mml:mi>c</mml:mi> <mml:mi>o</mml:mi> <mml:mi>s</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>j</mml:mi> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>+</mml:mo> <mml:munderover><mml:mo>∑</mml:mo> <mml:mrow><mml:mi>j</mml:mi> <mml:mo>=</mml:mo> <mml:mn>1</mml:mn></mml:mrow> <mml:mi>H</mml:mi></mml:munderover> <mml:msub><mml:mi>b</mml:mi> <mml:mi>j</mml:mi></mml:msub> <mml:mi>s</mml:mi> <mml:mi>i</mml:mi> <mml:mi>n</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>j</mml:mi> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives></disp-formula> <disp-formula id="pone.0179757.e002"><alternatives><graphic id="pone.0179757.e002g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0179757.e002" xlink:type="simple"/><mml:math display="block" id="M2"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi>y</mml:mi> <mml:mo>=</mml:mo> <mml:mi>f</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>=</mml:mo> <mml:msub><mml:mi>C</mml:mi> <mml:mn>0</mml:mn></mml:msub> <mml:mo>+</mml:mo> <mml:munderover><mml:mo>∑</mml:mo> <mml:mrow><mml:mi>j</mml:mi> <mml:mo>=</mml:mo> <mml:mn>1</mml:mn></mml:mrow> <mml:mi>H</mml:mi></mml:munderover> <mml:msub><mml:mi>c</mml:mi> <mml:mi>j</mml:mi></mml:msub> <mml:mi>c</mml:mi> <mml:mi>o</mml:mi> <mml:mi>s</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>j</mml:mi> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>+</mml:mo> <mml:munderover><mml:mo>∑</mml:mo> <mml:mrow><mml:mi>j</mml:mi> <mml:mo>=</mml:mo> <mml:mn>1</mml:mn></mml:mrow> <mml:mi>H</mml:mi></mml:munderover> <mml:msub><mml:mi>d</mml:mi> <mml:mi>j</mml:mi></mml:msub> <mml:mi>s</mml:mi> <mml:mi>i</mml:mi> <mml:mi>n</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>j</mml:mi> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives></disp-formula>
+where <italic>H</italic> is the number of harmonics used, <italic>A</italic><sub>0</sub> and <italic>C</italic><sub>0</sub> are constants, and <italic>a</italic><sub><italic>h</italic></sub>, <italic>b</italic><sub><italic>h</italic></sub>, <italic>c</italic><sub><italic>h</italic></sub>, and <italic>d</italic><sub><italic>h</italic></sub> are the amplitudes associated with the <italic>h</italic>-th harmonic and <italic>h</italic> = 1, 2, ⋯, <italic>H</italic>. Since EFA is not a landmark based procedure, the initial ordering of the points does not hinder the estimation of the harmonics. Next, so that we are able to perform landmark based analysis, we used the estimated harmonics to output a specific number of points around the edges of each tooth which all begin in the same location. These resulting points act as landmarks, which were used to calculate Riemann distance between shapes created by Mechanical Turk workers and created by the expert.</p>
+<p>Additionally, the amplitudes (i.e. <italic>a</italic><sub><italic>h</italic></sub>, <italic>b</italic><sub><italic>h</italic></sub>, <italic>c</italic><sub><italic>h</italic></sub>, and <italic>d</italic><sub><italic>h</italic></sub>) created in EFA can then be used as input features in machine learning algorithms to classify the teeth to tribes and species. Since ultimately what we are interested in is classifying these teeth, the performance of classifiers based on the work of Mechanical Turk workers was compared to the classification accuracy when the model was trained using the outlines traced by the expert. The classification algorithm considered here was random forests [<xref ref-type="bibr" rid="pone.0179757.ref028">28</xref>]. The tracings from the Mechanical Turk worker and the expert were compared to assess how similar they are and to asses differences in the predictive accuracy.</p>
+<p>In order to measure the tracing error, Riemanian distance [<xref ref-type="bibr" rid="pone.0179757.ref021">21</xref>] was calculated between the Turkers tracings and the expert tracing. To do this, we first extracted the edges of the black and white images using the “import_jpg” function in the “Momocs” [<xref ref-type="bibr" rid="pone.0179757.ref019">19</xref>] package in R. This creates a given number of (x, y)-coordiates for the outlines of the black and white images. However, the ordering of these points may not line up correctly with the ordering of another tracing of the same tooth. These harmonics can then be used as input in the function “efourier_shape” to output 150 (x, y)-coordinates which act as landmarks around each tooth so that a direct comparison can be made between the mechanical Turk tracings and the tracings performed by the expert.</p>
+</sec>
+<sec id="sec008">
+<title>3.3 Evaluation of Mechanical Turk work</title>
+<p>In order to measure the tracing error, Riemanian distance [<xref ref-type="bibr" rid="pone.0179757.ref029">29</xref>] was calculated between the tracings generated by Turkers and the expert tracing. To do this, we first extracted the edges of the black and white images using the “import_jpg” function in the “Momocs” [<xref ref-type="bibr" rid="pone.0179757.ref027">27</xref>] package in R [<xref ref-type="bibr" rid="pone.0179757.ref030">30</xref>]. This creates a given number of (x, y)-coordiates for the outlines of the black and white images. However, the ordering of these points may not line up correctly with the ordering of another tracing of the same tooth. These harmonics can then be used as input in the function “efourier_shape” to output 150 (x, y)-coordinates which act as landmarks around each tooth so that a direct comparison can be made between the mechanical Turk tracings and the tracings performed by the expert.</p>
+<p>Ultimately the goal of tracing these outlines is to accurately classify the tribe and species that these teeth represent. Previous work [<xref ref-type="bibr" rid="pone.0179757.ref031">31</xref>] compared five different machine learning algorithms based on their performance classifying teeth into tribe and species. Here, we only consider the use of random forests for classification of tribe to compare the tracings created by mechanical Turk workers to the tracings created by JKB.</p>
+</sec>
+</sec>
+<sec id="sec009" sec-type="results">
+<title>4 Results</title>
+<sec id="sec010">
+<title>4.1 Tracing error</title>
+<p>The Riemanian error distances ranged from 0.01113 to 1.113 with a median error of 0.1154. A histogram of this distribution can be seen in <xref ref-type="fig" rid="pone.0179757.g004">Fig 4</xref>. Notice that the distribution is skewed heavily to the right and indicates that many of the Mechanical Turk workers trace the outline with only small amounts of error with a full 50% less than 0.1154. For reference, Figs <xref ref-type="fig" rid="pone.0179757.g005">5</xref> and <xref ref-type="fig" rid="pone.0179757.g006">6</xref> show two examples of the work of Mechanical Turk workers, with outlines in red, yellow, and blue, compared to the gold standard, which is shown in black. In <xref ref-type="fig" rid="pone.0179757.g005">Fig 5</xref>, an example of the results for a tooth is shown. The Mechanical Turk tracings are visually nearly identical to the gold standard tracing and these correspond to Riemann distances of 0.0191, 0.0527, and 0.0342 for red, blue, and yellow, respectively. The other image in <xref ref-type="fig" rid="pone.0179757.g006">Fig 6</xref> displays a different tooth where the Mechanical Turk workers struggled a bit more to accurately trace the outline of the occlusal surface relative to the gold standard. Visually the yellow tracing is the most accurate relative to the gold standard and has the lowest Riemann error of 0.0517. The tracings displayed by the red and blue curves are less accurate and correspond to Riemann errors of 0.1516 and 0.0879, respectively.</p>
+<fig id="pone.0179757.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0179757.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title>Distribution of errors as measured by Riemannian distance.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0179757.g004" xlink:type="simple"/>
+</fig>
+<fig id="pone.0179757.g005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0179757.g005</object-id>
+<label>Fig 5</label>
+<caption>
+<title>The black outline is the tracing done by JKB and the three other teeth in red, blue, and yellow correspond to the three tracings done by the Mechanical Turk workers.</title>
+<p>The red, blue, and yellow numbers that appear the upper right of the image correspond to the Riemanian distance between each Mechanical Turk tracing and the tracing done by the expert.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0179757.g005" xlink:type="simple"/>
+</fig>
+<fig id="pone.0179757.g006" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0179757.g006</object-id>
+<label>Fig 6</label>
+<caption>
+<title>The black outline is the tracing done by JKB and the three other teeth in red, blue, and yellow correspond to the three tracings done by the Mechanical Turk workers.</title>
+<p>The red, blue, and yellow numbers that appear the upper right of the image correspond to the Riemanian distance between each Mechanical Turk tracing and the tracing done by the expert.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0179757.g006" xlink:type="simple"/>
+</fig>
+<p>With a frame of reference for the meaning of the Riemann errors, Figs <xref ref-type="fig" rid="pone.0179757.g007">7</xref> and <xref ref-type="fig" rid="pone.0179757.g008">8</xref> display boxplots corresponding to the distribution of the Riemann distance by tooth position and Tribe. In <xref ref-type="fig" rid="pone.0179757.g007">Fig 7</xref> it is evident that first lower molars (LM1) have much larger errors between the Mechanical Turk workers and the expert among tooth positions considered here.</p>
+<fig id="pone.0179757.g007" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0179757.g007</object-id>
+<label>Fig 7</label>
+<caption>
+<title>Errors as measured by Riemannian distance by tooth position.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0179757.g007" xlink:type="simple"/>
+</fig>
+<fig id="pone.0179757.g008" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0179757.g008</object-id>
+<label>Fig 8</label>
+<caption>
+<title>Errors as measured by Riemannian distance by Tribe.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0179757.g008" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec011">
+<title>4.2 Predictive accuracy</title>
+<p>The histogram seen in <xref ref-type="fig" rid="pone.0179757.g009">Fig 9</xref> depicts the classification accuracy results from the crowdsourced tracings. These results were created by repeatedly sampling one of the at-most three tracings per tooth in order to make a data set. Leave-one-out-cross validation was then performed using random forests. Accuracy of the model was quantified using a log loss score, comparing the predicted class to the actual observed class. From the histogram, it can be seen that if only one Turker for each image was used, they would perform consistently and considerably worse than the expert. The best sample is roughly .85 in terms of log-loss, while the mean is closer to 1.3, while the worst case is nearly 1.5.</p>
+<fig id="pone.0179757.g009" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0179757.g009</object-id>
+<label>Fig 9</label>
+<caption>
+<title>Comparing the classification accuracy of different methods of extracting the edges of bovid teeth.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0179757.g009" xlink:type="simple"/>
+</fig>
+<p>The dotted line labeled “Mean of MTurk” was calculated by classifying the average shape of the Turkers outlines after eliminating obviously incorrect tracings. One can see that there is an improvement over even the best sample of individual workers. By taking the average image, the log-loss value lowered to 0.7788 for classifying the tribe.</p>
+<p>Using the expert’s tracings we can further reduce log-loss, which is to be expected, down to 0.6689. While this is certainly an improvement over the Mechanical Turk workers, we argue that this level of log-loss is still acceptably close to the expert to still be of use in that the time that is saved by crowdsourcing the extraction of the edges is worth a small trade-off in classification accuracy.</p>
+<p>Finally, we evaluated the classification performance of the traced outlines by averaging all of the Mechanical Turk workers (excluding images where the Riemann distance was greated that 0.2 from the expert) and the expert. This slightly improved classification accuracy compared to the average of the Mechanical Turk workers to a log-loss of 0.7524; however, the expert alone still has the lowest log-loss.</p>
+<p>Finally, we consider results in terms of misclassification rather than log-loss. <xref ref-type="table" rid="pone.0179757.t003">Table 3</xref> shows the misclassifications for JKB alone. Using only those tracings, the model was able to classify correctly 79% of the specimens in cross validation. A large amount of the error occurred between Alcelaphini and Hippotragini. Namely, of the missclassified observations, 75% were either actually Alcelaphini but classified as Hippotragini, or actually Hippotragini but classified as Alcelaphini. <xref ref-type="table" rid="pone.0179757.t004">Table 4</xref> shows the missclassification results of the average image from the Turkers. The model correctly classified the Turker results 74% of the time. Once again, the largest source of confusion was between Hippotragini and Alcelaphini. <xref ref-type="table" rid="pone.0179757.t005">Table 5</xref> shows the results when the outlines of the Mechanical Turk workers were averaged with the gold standard. Somewhat surprisingly, this result was worse in terms of missclassification than the other two specifications considered here with a classification rate of 68% in spite of being better than using the Turk outlines only in terms of log-loss.</p>
+<table-wrap id="pone.0179757.t003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0179757.t003</object-id>
+<label>Table 3</label>
+<caption>
+<title>Expert tracings only.</title>
+</caption>
+<alternatives>
+<graphic id="pone.0179757.t003g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0179757.t003" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center"/>
+<th align="center" colspan="3">Predicted Class</th>
+</tr>
+<tr>
+<th align="center">Actual Class</th>
+<th align="center">Alcelaphini</th>
+<th align="center">Hippotragini</th>
+<th align="center">Neotragini</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Alcelaphini</td>
+<td align="center">11</td>
+<td align="center">3</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">Hippotragini</td>
+<td align="center">3</td>
+<td align="center">11</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">Neotragini</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center" colspan="4">Log Loss: 0.6688741</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<table-wrap id="pone.0179757.t004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0179757.t004</object-id>
+<label>Table 4</label>
+<caption>
+<title>Mean of MTurk worker tracings (Removed if Riemann distance from mean &gt; 0.2).</title>
+</caption>
+<alternatives>
+<graphic id="pone.0179757.t004g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0179757.t004" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center"/>
+<th align="center" colspan="3">Predicted Class</th>
+</tr>
+<tr>
+<th align="center">Actual Class</th>
+<th align="center">Alcelaphini</th>
+<th align="center">Hippotragini</th>
+<th align="center">Neotragini</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Alcelaphini</td>
+<td align="center">10</td>
+<td align="center">2</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">Hippotragini</td>
+<td align="center">4</td>
+<td align="center">11</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">Neotragini</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center" colspan="4">Log Loss: 0.7787713</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<table-wrap id="pone.0179757.t005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0179757.t005</object-id>
+<label>Table 5</label>
+<caption>
+<title>Mean of MTurk workers and expert tracings.</title>
+</caption>
+<alternatives>
+<graphic id="pone.0179757.t005g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0179757.t005" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center"/>
+<th align="center" colspan="3">Predicted Class</th>
+</tr>
+<tr>
+<th align="center">Actual Class</th>
+<th align="center">Alcelaphini</th>
+<th align="center">Hippotragini</th>
+<th align="center">Neotragini</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Alcelaphini</td>
+<td align="center">11</td>
+<td align="center">3</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">Hippotragini</td>
+<td align="center">5</td>
+<td align="center">8</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">Neotragini</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center" colspan="4">Log Loss: 0.7524494</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+</sec>
+<sec id="sec012" sec-type="conclusions">
+<title>5 Discussion</title>
+<p>The results of this study suggest that the proposed method will dramatically decrease the amount of subjectivity in bovid tooth identification and will advance the field of paleoanthropology/zooarchaeology. The importance of this method cannot be understated. As mentioned previously, bovids have different ecological requirements. Therefore, misidentified bovids can lead to incorrect paleoenvironmental reconstructions. For example, three researchers analyzed the bovid fauna from the South African site of Makapansgat and proposed paleoenvironmental reconstructions for Member 3 [<xref ref-type="bibr" rid="pone.0179757.ref032">32</xref>–<xref ref-type="bibr" rid="pone.0179757.ref034">34</xref>]. While each researcher relied upon the same assemblage to form their reconstruction, the papers suggest a different paleoenvironment: shrub-like with nearby open grasslands [<xref ref-type="bibr" rid="pone.0179757.ref032">32</xref>]; woodland [<xref ref-type="bibr" rid="pone.0179757.ref033">33</xref>]; and bushland with riparian woodland and nearby limited wetlands [<xref ref-type="bibr" rid="pone.0179757.ref034">34</xref>]. Reconstructions like these are used to discuss hominin behavior as well as speciation and extinction events. In fact, until recently it was commonly thought that one early human ancestor, Australopithecus robustus, went extinct due to being a habitat specialist that could not survive in fluctuating environmental conditions [<xref ref-type="bibr" rid="pone.0179757.ref004">4</xref>]. By more accurately identifying the bovids from sites associated with A. robustus using morphometrics, [<xref ref-type="bibr" rid="pone.0179757.ref004">4</xref>] was able to demonstrate that this hominin lived in a variety of habitats that changed over time; A. robustus was more likely a habitat generalist. Therefore, the hypothesis that A. robustus went extinct because it was a habitat specialist requires rethinking. If a fraction of these subjectivity problems are solved with this new methodology, the field is advancing and more accurate paleoenvironmental reconstructions and interpretations will be made.</p>
+<p>With that said, some preliminary issues exist with this methodology. First, if a large number of teeth needs to be traced with replicates of each tooth, this process can get expensive. In the future, ideally, we will be able to leverage modern computer vision algorithms to extract the edges of these teeth with little or possibly no human aid. Second, some teeth are more difficult for a lay person to trace (e.g. LM1) and those teeth may still require an expert to trace those teeth or at least someone who has received more training than the average Mechanical Turk worker. This result is not unexpected as this method is not designed to completely replace all other forms of tooth identification, rather it is intended to provide objective, reliable classifications of bovid teeth and to supplement and be supplemented by other forms of tooth identification, as needed. Regardless of these problems, the benefits of employing this method and decreasing the subjectively involved in bovid tooth identification far outweigh the issues.</p>
+</sec>
+<sec id="sec013" sec-type="conclusions">
+<title>6 Conclusion</title>
+<p>This study demonstrates that by taking the average shape of multiple Mechanical Turk workers, we can quickly obtain the outline the occlusal surface of a tooth that performs similarly to the expert’s in terms of classification. A database was created of 96 different teeth along with the associated ground truth tracings done by an expert. Once outlines traced by non-experts through Amazon’s Mechanical Turk were collected, we imported an outline into R and lined up landmarks for comparison using EFA. The accuracy of the tracings was evaluated by calculating the Riemann distances between the landmarks on the crowdsourced outline and the outlines generated by the expert. Further, predictive accuracy was assessed using leave-one-out cross validation with random forests on a small subset of the data. We find that in terms of log-loss the tracings performed by the expert, while superior, were not substantially better than using the average of the mechanical Turk workers. In terms of classification accuracy, we measured 74% classification rate using the average of the tracings of the mechanical Turk workers, which is very close to the classification accuracy of 79% when using the tracings generated by the expert. The results suggest that this process can be useful for researchers in many scientific areas (e.g. anthropologists, paleontologists, zooarchaeologists, etc.) who need quick, objective classifications for teeth recovered in the field. Further, one area of future work we are particularly interested in is the analysis and classification of partially observed teeth due (i.e. broken teeth). We believe that this method explored here can be easily extended to the case when teeth are broken.</p>
+</sec>
+</body>
+<back>
+<ref-list>
+<title>References</title>
+<ref id="pone.0179757.ref001">
+<label>1</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Brophy</surname> <given-names>JK</given-names></name>, <name name-style="western"><surname>de Ruiter</surname> <given-names>DJ</given-names></name>, <name name-style="western"><surname>Athreya</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>DeWitt</surname> <given-names>TJ</given-names></name>. <article-title>Quantitative morphological analysis of bovid teeth and its implications for paleoenvironmental reconstructions in South Africa</article-title>. <source>Journal of Archaeological Science</source>. <year>2014</year>;<volume>41</volume>(<issue>41</issue>):<fpage>376</fpage>–<lpage>388</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.jas.2013.08.005" xlink:type="simple">10.1016/j.jas.2013.08.005</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0179757.ref002">
+<label>2</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Bobe</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Eck</surname> <given-names>GG</given-names></name>. <article-title>Responses to African bovids to Pliocene climactic change</article-title>. <source>Paleobiology Memoirs</source>. <year>2001</year>;<volume>2</volume>:<fpage>1</fpage>–<lpage>47</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1666/0094-8373(2001)027%3C0001:ROABTP%3E2.0.CO;2" xlink:type="simple">10.1666/0094-8373(2001)027%3C0001:ROABTP%3E2.0.CO;2</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0179757.ref003">
+<label>3</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>de Ruiter</surname> <given-names>DJ</given-names></name>, <name name-style="western"><surname>Brophy</surname> <given-names>JK</given-names></name>, <name name-style="western"><surname>Lewis</surname> <given-names>PJ</given-names></name>, <name name-style="western"><surname>Churchill</surname> <given-names>SE</given-names></name>, <name name-style="western"><surname>Berger</surname> <given-names>LR</given-names></name>. <article-title>Faunal assemblage composition and paleoenvironment of Plovers Lake, a Middle Stone Age locality in Gauteng Province</article-title>. <source>Journal of Human Evolution</source>. <year>2008</year>;<volume>55</volume>:<fpage>1102</fpage>–<lpage>1117</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.jhevol.2008.07.011" xlink:type="simple">10.1016/j.jhevol.2008.07.011</ext-link></comment> <object-id pub-id-type="pmid">18954892</object-id></mixed-citation>
+</ref>
+<ref id="pone.0179757.ref004">
+<label>4</label>
+<mixed-citation publication-type="other" xlink:type="simple">Brophy JK. Reconstructing the habitat mosaic associated with Australopithecus robustus: evidence from quantitative morphological analysis of bovid teeth. Texas A&amp;M University; 2011.</mixed-citation>
+</ref>
+<ref id="pone.0179757.ref005">
+<label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Adams</surname> <given-names>DC</given-names></name>, <name name-style="western"><surname>Rohlf</surname> <given-names>FJ</given-names></name>, <name name-style="western"><surname>Slice</surname> <given-names>DE</given-names></name>. <article-title>The Promise of Mechanical Turk: How Online Labor Markets Can Help Theorists Run Behavioral Experiments</article-title>. <source>Hystrix</source>. <year>2013</year>;<volume>24</volume>:<fpage>7</fpage>–<lpage>14</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0179757.ref006">
+<label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Bright</surname> <given-names>JA</given-names></name>. <article-title>A review of paleontological finite element models and their validity</article-title>. <source>Journal of Paleontology</source>. <year>2014</year>;<volume>88</volume>:<fpage>760</fpage>–<lpage>769</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1666/13-090" xlink:type="simple">10.1666/13-090</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0179757.ref007">
+<label>7</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Drake</surname> <given-names>AG</given-names></name>, <name name-style="western"><surname>Coquerelle</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Colombeau</surname> <given-names>G</given-names></name>. <article-title>3D Morphometric analysis of fossil canid skulls contradicts the suggested domestication of dogs during the late Paleolithic</article-title>. <source>Scientific Reports</source>. <year>2015</year>;<volume>5</volume>:<fpage>8299</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/srep08299" xlink:type="simple">10.1038/srep08299</ext-link></comment> <object-id pub-id-type="pmid">25654325</object-id></mixed-citation>
+</ref>
+<ref id="pone.0179757.ref008">
+<label>8</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Falkingham</surname> <given-names>PL</given-names></name>. <article-title>Acquisition of high resolution three-dimensional models using free, open-source, photogrammetric software</article-title>. <source>Palaeontologia Electronica</source>. <year>2012</year>;<volume>15</volume>(<issue>1</issue>):<fpage>15p</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0179757.ref009">
+<label>9</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Klingenberg</surname> <given-names>C</given-names></name>. <article-title>Evolution and development of shape: integrating quantitative approaches</article-title>. <source>Nature Reviews Genetics</source>. <year>2010</year>;<volume>11</volume>:<fpage>623</fpage>–<lpage>635</lpage>. <object-id pub-id-type="pmid">20697423</object-id></mixed-citation>
+</ref>
+<ref id="pone.0179757.ref010">
+<label>10</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Mitteroecker</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Gunz</surname> <given-names>P</given-names></name>. <article-title>Advances in Geometric Morphometrics</article-title>. <source>Evolutionary Biology</source>. <year>2009</year>;<volume>36</volume>:<fpage>235</fpage>–<lpage>247</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s11692-009-9055-x" xlink:type="simple">10.1007/s11692-009-9055-x</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0179757.ref011">
+<label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Polly</surname> <given-names>PD</given-names></name>, <name name-style="western"><surname>Stayton</surname> <given-names>CT</given-names></name>, <name name-style="western"><surname>Dumont</surname> <given-names>ER</given-names></name>, <name name-style="western"><surname>Pierce</surname> <given-names>SE</given-names></name>, <name name-style="western"><surname>Rayfield</surname> <given-names>EJ</given-names></name>, <name name-style="western"><surname>Angielczyk</surname> <given-names>KD</given-names></name>. <article-title>Combining geometric morphometrics and finite element analysis with evolutionary modeling: towards a synthesis</article-title>. <source>Journal of Vertebrate Paleontology</source>. <year>2016</year>; <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1080/02724634.2016.1111225" xlink:type="simple">10.1080/02724634.2016.1111225</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0179757.ref012">
+<label>12</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Kuhl</surname> <given-names>FP</given-names></name>, <name name-style="western"><surname>Giardina</surname> <given-names>CR</given-names></name>. <article-title>Elliptic Fourier features of a closed contour</article-title>. <source>Computer graphics and image processing</source>. <year>1982</year>;<volume>18</volume>(<issue>3</issue>):<fpage>236</fpage>–<lpage>258</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/0146-664X(82)90034-X" xlink:type="simple">10.1016/0146-664X(82)90034-X</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0179757.ref013">
+<label>13</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Canny</surname> <given-names>J</given-names></name>. <article-title>A computational approach to edge detection</article-title>. <source>Pattern Analysis and Machine Intelligence</source>. <year>1986</year>;<volume>8</volume>:<fpage>679</fpage>–<lpage>714</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1109/TPAMI.1986.4767851" xlink:type="simple">10.1109/TPAMI.1986.4767851</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0179757.ref014">
+<label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Lindeberg</surname> <given-names>T</given-names></name>. <article-title>Edge Detection and Ridge Detection with Automatic Scale Selection</article-title>. <source>International Journal of Computer Vision</source>. <year>1998</year>;<volume>30</volume>(<issue>2</issue>):<fpage>117</fpage>–<lpage>154</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1023/A:1008097225773" xlink:type="simple">10.1023/A:1008097225773</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0179757.ref015">
+<label>15</label>
+<mixed-citation publication-type="other" xlink:type="simple">Wolfe CA, Lestrel PE, Read DW. EFF23 2-D and 3-D Elliptical Fourier Functions; 1999.</mixed-citation>
+</ref>
+<ref id="pone.0179757.ref016">
+<label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Lestrel</surname> <given-names>PE</given-names></name>. <article-title>Method for analyzing complex two-dimensional forms: Elliptical Fourier Functions</article-title>. <source>Am J Hum Biol</source>. <year>1989</year>;<volume>1</volume>:<fpage>149</fpage>–<lpage>164</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/ajhb.1310010204" xlink:type="simple">10.1002/ajhb.1310010204</ext-link></comment> <object-id pub-id-type="pmid">28514011</object-id></mixed-citation>
+</ref>
+<ref id="pone.0179757.ref017">
+<label>17</label>
+<mixed-citation publication-type="other" xlink:type="simple">Amazon’s Mechanical Turk;. <comment>Available from: <ext-link ext-link-type="uri" xlink:href="https://www.mturk.com/mturk/welcome" xlink:type="simple">https://www.mturk.com/mturk/welcome</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0179757.ref018">
+<label>18</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Huff</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Tingley</surname> <given-names>D</given-names></name>. <article-title>“Who are these people?” Evaluating the demographic characteristics and political preferences of MTurk Survey Respondents</article-title>. <source>Research &amp; Politics</source>. <year>2015</year>;<volume>2</volume>(<issue>3</issue>).</mixed-citation>
+</ref>
+<ref id="pone.0179757.ref019">
+<label>19</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Rouse</surname> <given-names>SV</given-names></name>. <article-title>A reliability analysis of Mechanical Turk data</article-title>. <source>Computers in Human Behavior</source>. <year>2015</year>;<volume>43</volume>:<fpage>304</fpage>–<lpage>307</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.chb.2014.11.004" xlink:type="simple">10.1016/j.chb.2014.11.004</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0179757.ref020">
+<label>20</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Rand</surname> <given-names>DG</given-names></name>. <article-title>The Promise of Mechanical Turk: How Online Labor Markets Can Help Theorists Run Behavioral Experiments</article-title>. <source>Journal of Theoretical Biology</source>. <year>2012</year>;<volume>299</volume>:<fpage>172</fpage>–<lpage>179</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.jtbi.2011.03.004" xlink:type="simple">10.1016/j.jtbi.2011.03.004</ext-link></comment> <object-id pub-id-type="pmid">21402081</object-id></mixed-citation>
+</ref>
+<ref id="pone.0179757.ref021">
+<label>21</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Sprouse</surname> <given-names>J</given-names></name>. <article-title>A validation of Amazon Mechanical Turk for the collection of acceptability judgments in linguistic theory</article-title>. <source>Behavior Research Methods</source>. <year>2011</year>;<volume>43</volume>:<fpage>155</fpage>–<lpage>167</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.3758/s13428-010-0039-7" xlink:type="simple">10.3758/s13428-010-0039-7</ext-link></comment> <object-id pub-id-type="pmid">21287108</object-id></mixed-citation>
+</ref>
+<ref id="pone.0179757.ref022">
+<label>22</label>
+<mixed-citation publication-type="other" xlink:type="simple">Vittayakorn S, Hayes J. Quality Assessment for Crowdsourced Object Annotations. In: Proceeding of British Machine Vision Conference (BMVC); 2011.</mixed-citation>
+</ref>
+<ref id="pone.0179757.ref023">
+<label>23</label>
+<mixed-citation publication-type="other" xlink:type="simple">Sorokin A, Forsyth D. Utility data annotation with Amazon Mechanical Turk. In: IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops (CVPRW’08). IEEE; 2008. p. 1–8.</mixed-citation>
+</ref>
+<ref id="pone.0179757.ref024">
+<label>24</label>
+<mixed-citation publication-type="other" xlink:type="simple">Amazon Mechanical Turk, General Questions, What is a HIT?; Accessed: May 22, 2017. <comment>Available from: <ext-link ext-link-type="uri" xlink:href="https://www.mturk.com/mturk/help?helpPage=overview" xlink:type="simple">https://www.mturk.com/mturk/help?helpPage=overview</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0179757.ref025">
+<label>25</label>
+<mixed-citation publication-type="other" xlink:type="simple">The GIMP Development Team. GNU Image Manipulation Program (GIMP); 2016. <comment>Available from: <ext-link ext-link-type="uri" xlink:href="http://www.gimp.org" xlink:type="simple">www.gimp.org</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0179757.ref026">
+<label>26</label>
+<mixed-citation publication-type="other" xlink:type="simple">ImageMagick; 2016. <comment>Available from: <ext-link ext-link-type="uri" xlink:href="http://www.imagemagick.org" xlink:type="simple">www.imagemagick.org</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0179757.ref027">
+<label>27</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Bonhomme</surname> <given-names>V</given-names></name>, <name name-style="western"><surname>Picq</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Gaucherel</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Claude</surname> <given-names>J</given-names></name>. <article-title>Momocs: Outline Analysis Using R</article-title>. <source>Journal of Statistical Software</source>. <year>2014</year>;<volume>56</volume>(<issue>13</issue>):<fpage>1</fpage>–<lpage>24</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.18637/jss.v056.i13" xlink:type="simple">10.18637/jss.v056.i13</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0179757.ref028">
+<label>28</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Breiman</surname> <given-names>L</given-names></name>. <article-title>Random Forests</article-title>. <source>Machine Learning</source>. <year>2001</year>;<volume>45</volume>:<fpage>5</fpage>–<lpage>32</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0179757.ref029">
+<label>29</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Kendall</surname> <given-names>DG</given-names></name>. <article-title>Shape manifolds, Procrustean metrics and complex projective spaces</article-title>. <source>Bulletin of the London Mathematical Society</source>. <year>1982</year>;<volume>16</volume>:<fpage>81</fpage>–<lpage>121</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1112/blms/16.2.81" xlink:type="simple">10.1112/blms/16.2.81</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0179757.ref030">
+<label>30</label>
+<mixed-citation publication-type="other" xlink:type="simple">R Core Team. R: A Language and Environment for Statistical Computing; 2016. <comment>Available from: <ext-link ext-link-type="uri" xlink:href="https://www.R-project.org/" xlink:type="simple">https://www.R-project.org/</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0179757.ref031">
+<label>31</label>
+<mixed-citation publication-type="other" xlink:type="simple">Matthews GJ, Brophy JK, Luetkemeier MP, Gu H, Thiruvathukal GK. A comparison of machine learning techniques for taxonomic classification of teeth from the Family Bovidae; 2016.</mixed-citation>
+</ref>
+<ref id="pone.0179757.ref032">
+<label>32</label>
+<mixed-citation publication-type="other" xlink:type="simple">Cooke HBS, Wells LH. Fossil Bovidae from the Limeworks Quarry, Makapansgat, Potgietersrust. Paleont Afr. 1956;.</mixed-citation>
+</ref>
+<ref id="pone.0179757.ref033">
+<label>33</label>
+<mixed-citation publication-type="other" xlink:type="simple">Vrba ES. The fossil record of African antelopes (Mammalia, Bovidae) in relation to human evolution and paleoclimate. 1995;.</mixed-citation>
+</ref>
+<ref id="pone.0179757.ref034">
+<label>34</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Reed</surname> <given-names>KE</given-names></name>. <article-title>Using large mammal communities to examine ecological and taxonomic structure and predict vegetation in extant and extinct assemblages</article-title>. <source>Paleobiology</source>. <year>1998</year>;<volume>24</volume>(<issue>03</issue>):<fpage>384</fpage>–<lpage>408</lpage>.</mixed-citation>
+</ref>
+</ref-list>
+</back>
+</article>

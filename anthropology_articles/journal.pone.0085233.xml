@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group>
+<journal-title>PLoS ONE</journal-title></journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-13-05539</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0085233</article-id>
+<article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Biology</subject><subj-group><subject>Computational biology</subject><subj-group><subject>Genomics</subject><subj-group><subject>Functional genomics</subject><subject>Genome analysis tools</subject><subject>Genome sequencing</subject></subj-group></subj-group><subj-group><subject>Population genetics</subject><subj-group><subject>Genetic polymorphism</subject></subj-group></subj-group><subj-group><subject>Sequence analysis</subject></subj-group></subj-group><subj-group><subject>Evolutionary biology</subject><subj-group><subject>Population genetics</subject><subj-group><subject>Genetic polymorphism</subject></subj-group></subj-group></subj-group><subj-group><subject>Genetics</subject><subj-group><subject>Population genetics</subject><subj-group><subject>Genetic polymorphism</subject></subj-group></subj-group><subj-group><subject>Human genetics</subject></subj-group></subj-group><subj-group><subject>Genomics</subject><subj-group><subject>Genome analysis tools</subject><subject>Genome sequencing</subject></subj-group></subj-group><subj-group><subject>Population biology</subject><subj-group><subject>Population genetics</subject><subj-group><subject>Genetic polymorphism</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Medicine</subject><subj-group><subject>Drugs and devices</subject><subj-group><subject>Ethnopharmacology</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Social and behavioral sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Ethnobiology</subject></subj-group></subj-group><subj-group><subject>Sociology</subject><subj-group><subject>Demography</subject><subj-group><subject>Ethnic groups</subject></subj-group></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Whole Genome Sequence of a Turkish Individual</article-title>
+<alt-title alt-title-type="running-head">Turkish Genome</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Dogan</surname><given-names>Haluk</given-names></name><xref ref-type="aff" rid="aff1"/></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Can</surname><given-names>Handan</given-names></name><xref ref-type="aff" rid="aff1"/></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Otu</surname><given-names>Hasan H.</given-names></name><xref ref-type="aff" rid="aff1"/><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+</contrib-group>
+<aff id="aff1"><addr-line>Department of Genetics and Bioengineering, Istanbul Bilgi University, Istanbul, Turkey</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Zhang</surname><given-names>Huiping</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Yale University, United States of America</addr-line></aff>
+<author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">hasan.otu@bilgi.edu.tr</email></corresp>
+<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn>
+<fn fn-type="con"><p>Conceived and designed the experiments: HHO HC. Performed the experiments: HC HD. Analyzed the data: HHO HD. Contributed reagents/materials/analysis tools: HC HHO. Wrote the paper: HHO HC. Interpreted the results: HHO HC HD.</p></fn>
+</author-notes>
+<pub-date pub-type="collection"><year>2014</year></pub-date>
+<pub-date pub-type="epub"><day>9</day><month>1</month><year>2014</year></pub-date>
+<volume>9</volume>
+<issue>1</issue>
+<elocation-id>e85233</elocation-id>
+<history>
+<date date-type="received"><day>28</day><month>1</month><year>2013</year></date>
+<date date-type="accepted"><day>18</day><month>11</month><year>2013</year></date>
+</history>
+<permissions>
+<copyright-year>2014</copyright-year>
+<copyright-holder>Dogan et al</copyright-holder><license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions>
+<abstract>
+<p>Although whole human genome sequencing can be done with readily available technical and financial resources, the need for detailed analyses of genomes of certain populations still exists. Here we present, for the first time, sequencing and analysis of a Turkish human genome. We have performed 35x coverage using paired-end sequencing, where over 95% of sequencing reads are mapped to the reference genome covering more than 99% of the bases. The assembly of unmapped reads rendered 11,654 contigs, 2,168 of which did not reveal any homology to known sequences, resulting in ∼1 Mbp of unmapped sequence. Single nucleotide polymorphism (SNP) discovery resulted in 3,537,794 SNP calls with 29,184 SNPs identified in coding regions, where 106 were nonsense and 259 were categorized as having a high-impact effect. The homo/hetero zygosity (1,415,123∶2,122,671 or 1∶1.5) and transition/transversion ratios (2,383,204∶1,154,590 or 2.06∶1) were within expected limits. Of the identified SNPs, 480,396 were potentially novel with 2,925 in coding regions, including 48 nonsense and 95 high-impact SNPs. Functional analysis of novel high-impact SNPs revealed various interaction networks, notably involving hereditary and neurological disorders or diseases. Assembly results indicated 713,640 indels (1∶1.09 insertion/deletion ratio), ranging from −52 bp to 34 bp in length and causing about 180 codon insertion/deletions and 246 frame shifts. Using paired-end- and read-depth-based methods, we discovered 9,109 structural variants and compared our variant findings with other populations. Our results suggest that whole genome sequencing is a valuable tool for understanding variations in the human genome across different populations. Detailed analyses of genomes of diverse origins greatly benefits research in genetics and medicine and should be conducted on a larger scale.</p>
+</abstract>
+<funding-group><funding-statement>This work is funded by Istanbul Bilgi University Research Fund. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts><page-count count="9"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title>Introduction</title>
+<p>Following the publication of two draft sequences <xref ref-type="bibr" rid="pone.0085233-Lander1">[1]</xref>, <xref ref-type="bibr" rid="pone.0085233-Venter1">[2]</xref>, a highly accurate and nearly complete assembly of the human genome was published in 2004 <xref ref-type="bibr" rid="pone.0085233-Consortium1">[3]</xref>. In parallel with the low-cost/high-throughput advances in DNA sequencing technology, human whole genome sequencing (WGS) is being performed worldwide at an increasing pace. Individual WGS began to surface with Venter's and Watson's genomes <xref ref-type="bibr" rid="pone.0085233-Levy1">[4]</xref>, <xref ref-type="bibr" rid="pone.0085233-Wheeler1">[5]</xref>, and this approach was quickly adapted to individuals from diverse ethnic backgrounds <xref ref-type="bibr" rid="pone.0085233-Pritchard1">[6]</xref>. Understanding DNA sequence variation sheds light on the relationship between genotype and phenotype, and WGS has proven to be a powerful tool. The 1000 Genomes Project, for example, has performed 185 human WGSs from four populations and discovered about 20,000 novel structural variants in its Pilot Phase <xref ref-type="bibr" rid="pone.0085233-Abecasis1">[7]</xref>. In Phase I of the project, the number of sequenced individuals increased to 1,092 covering 14 populations and identifying 38M single nucleotide polymorphisms (SNPs), 1.4 M indels and over 14 K larger deletions <xref ref-type="bibr" rid="pone.0085233-Abecasis2">[8]</xref>.</p>
+<p>Efforts (other than WGS) that target discovery of human genome variations also exist, such as the HapMap project <xref ref-type="bibr" rid="pone.0085233-Altshuler1">[9]</xref>. Latest HapMap results cover 1,184 individuals from 11 populations and involve genotyping of common SNPs and sequencing of relatively small regions (∼100 Kbp). Overall, HapMap and similar consortiums have catalogued over 10 million SNPs, 3 million indels, and associated linkage-disequilibrium patterns. This ongoing process of identifying genomic variants has paved the way for genome-wide association studies over the past few years, and disease susceptibility has been found to be associated with these variants for over a thousand regions so far. This accumulated knowledge in the post-genomic era is opening new frontiers in medicine and public health using a personalized approach, and WGS is becoming the method of choice with its ability to construct a nearly complete picture of identifying structural variations.</p>
+<p>Despite the increasing use of human WGS for both research and clinical purposes, there remain two areas that require further attention: i) there are populations for which WGS or SNP discovery efforts have not been done; ii) very few of the human WGS performed so far provide high-coverage sequencing results with detailed analysis. Out of the 185 individuals for whom WGS has been performed in the 1000 Genomes Project's Pilot Phase, only six were subjected to high-coverage sequencing (∼42x) while the remaining individuals were subjected to low-coverage sequencing (2–6x). All of the individuals studied in Phase I of the project were analyzed using low-coverage sequencing (2–6x).</p>
+<p>There have been various efforts to perform high coverage WGS of different populations with detailed analysis <xref ref-type="bibr" rid="pone.0085233-Ahn1">[10]</xref>, <xref ref-type="bibr" rid="pone.0085233-Fujimoto1">[11]</xref>, <xref ref-type="bibr" rid="pone.0085233-Ju1">[12]</xref>, <xref ref-type="bibr" rid="pone.0085233-Kim1">[13]</xref>, <xref ref-type="bibr" rid="pone.0085233-Tong1">[14]</xref>, <xref ref-type="bibr" rid="pone.0085233-Bentley1">[15]</xref>. In order to provide a better and more complete picture of human genome variations, we believe more individuals from diverse populations need to be sequenced and analyzed at a sufficiently detailed level. Therefore, in this paper, we present a high-coverage WGS of a Turkish individual and the results of the associated analysis.</p>
+<p>Turkey, the most populous well-defined region inhabited by Turks, is an interesting geographical region as it lies at the crossroads between Europe and Asia. Historically, migration from Central Asia and ancestral contribution to regions surrounding Anatolia, such as the Balkans, Middle East, Caucasian and Caspian regions, has positioned the Turkish population as an interesting genetic resource that requires further detailed analysis. Certain important diseases, such as hemoglobinopathies (e.g. sickle-cell disease), thalassemias, and Behcet's disease, are highly prevalent in the Turkish population; and diseases exist where the Turkish population does not exhibit the variant believed to be the cause <xref ref-type="bibr" rid="pone.0085233-Akin1">[16]</xref>, <xref ref-type="bibr" rid="pone.0085233-Erbilgin1">[17]</xref>, <xref ref-type="bibr" rid="pone.0085233-Yazici1">[18]</xref>. The current study provides a baseline for high-throughput/wide-spectrum analysis of genome variations in the Turkish population, which may lead to a better understanding of the relationship between the genotype and the phenotype through comparative analysis.</p>
+</sec><sec id="s2" sec-type="materials|methods">
+<title>Materials and Methods</title>
+<sec id="s2a">
+<title>Ethics Statement</title>
+<p>This study is approved by the Committee on Ethics in Research on Humans of Istanbul Bilgi University.</p>
+</sec><sec id="s2b">
+<title>Individual Selection, DNA Isolation, and Genotyping</title>
+<p>The genomic DNA (gDNA) used in this study came from a healthy male individual, who was anonymous and was reported to come from Turkish ethnicity for at least three generations. Informed consent was obtained prior to the collection of the blood sample from which gDNA was isolated using a QIAamp DNA blood kit (Qiagen®). The individual gave written consent to the publication of his genome sequence. A quality control inspection and rough quantitation of the gDNA sample was performed by agarose gel electrophoresis and UV-induced ethidium bromide fluorescence (<xref ref-type="supplementary-material" rid="pone.0085233.s001">Figure S1</xref>). The quality of the sample on the gel was visually compared to New England BioLabs 2-Log DNA Ladder molecular weight size marker. The sample was of acceptable quality for continued processing. The individual was genotyped using Illumina Human CytoSNP-12 V2.1 (Illumina®) SNP chip following the manufacturer's instructions.</p>
+</sec><sec id="s2c">
+<title>Library Preparation and Sequencing</title>
+<p>The genomic DNA sample was used to generate a paired-end library suitable for the HiSeq sequencing platform (Illumina®) prepared using the TrueSeq DNA Sample Preparation kit, following the manufacturer's instructions. Quality control analysis of the library using an Agilent 2100 Bioanalyzer indicated that the library was of acceptable quality, containing the expected fragment size and yield, for continued sample processing (<xref ref-type="supplementary-material" rid="pone.0085233.s002">Figure S2</xref>). The library generated was used in the cBot System for cluster generation in three flow cell lanes. The flow cell containing amplified clusters was sequenced using 2×101 base pair paired-end sequencing on a Hi-Seq 2000. Bad quality reads were eliminated from the final output of the sequencing machine. In brief, for each cluster, a “chastity” score was calculated, which is the Highest_Intensity/(Highest_Intensity + Next_Highest_Intensity) for a base call in the first 25 cycles. A cluster was retained if it contained at most one base call instance where the chastity parameter was less than the threshold. Remaining reads were further trimmed and filtered using Trimmomatic <xref ref-type="bibr" rid="pone.0085233-Krueger1">[19]</xref> where reads with a high quality (average Q≥20) score and a minimum length of 36 (after trimming) were kept.</p>
+<p>Sanger sequencing was used for validation of 20 small indels identified by computational analysis of the whole genome sequence data. DNA was isolated using a Dual DNA isolation kit (GenedireX Inc., Taiwan). Twenty regions were amplified from 50 ng genomic DNA with 10 pmol of forward and reverse primer pairs. Polymerase chain reaction (PCR) was performed using the following cycling profile: initial denaturation at 95°C for 5 min. followed by 10 cycles of 95°C for 30 s, 63°C for 30 s, and 72°C for 30 s; 25 cycles of 95°C for 30 s, 56°C for 30 s, and 72°C for 30 s; and a final extension step at 12°C for 5 min. Amplicons were purified using GenedireX PCR Clean-Up kit (GenedireX Inc., Taiwan) and quantified. ABI 3100 DNA analyzer and ABI BigDye Terminator cycle sequencing was used for Sanger sequencing.</p>
+</sec><sec id="s2d">
+<title>Mapping and <italic>De Novo</italic> Assembly</title>
+<p>The reference genome used in this study was NCBI human reference genome build 37.1 (GRCh37/hg19 assembly). We adopted two workflows for read mapping. First, we used the vendor supplied Eland and Casava (v1.8) pipeline using recommended settings with a variants covariance cut-off value of 3. Alternatively, we used the Burrows-Wheeler Alignment tool (BWA v0.6.2) for mapping reads to the reference genome <xref ref-type="bibr" rid="pone.0085233-Li1">[20]</xref>. The vendor-supplied method of mapping was used only for SNP calling in the respective pipeline. The mapping results provided in the manuscript are based on the BWA approach. In the application of the BWA tool, we used a minimum seed length of 20 (with a maximum seed distance of 2), an output alignment score cut-off of 30, a maximum edit distance of 0.04, and a maximum insert size of 500. Specifically, we used the <italic>bwasw</italic> algorithm to index the database and generated suffix array indices for two ends in a paired-end read separately. We then combined the two results with the <italic>sampe</italic> algorithm to produce the final sequence alignment/map (SAM) file. BWA analysis results were investigated with SAMStat v1.08 <xref ref-type="bibr" rid="pone.0085233-Lassmann1">[21]</xref> to determine the quality and statistics associated with the mapping step. Unmapped reads were assembled using the iterative De Bruijn Graph De Novo Assembler (IDBA v1.1.0) where the minimum seed length for overlapping nucleotides was set to be 25 <xref ref-type="bibr" rid="pone.0085233-Peng1">[22]</xref>. We required at least five pair-end connections to join two contigs and a minimum contig length of 100. The resulting contigs were analyzed using BLAST v2.2.26 <xref ref-type="bibr" rid="pone.0085233-Altschul1">[23]</xref> on the NCBI's RefSeq genomic database using an E-value cut-off of 10<sup>−10</sup>.</p>
+</sec><sec id="s2e">
+<title>SNP/Indel and CNV/SV Identification</title>
+<p>SNP identification was done using the vendor-supplied Eland-Casava pipeline with the recommended settings and The Genome Analysis Toolkit (GATK v2.2) <xref ref-type="bibr" rid="pone.0085233-DePristo1">[24]</xref> applied on the BWA output. GATK has also been used in indel identification. Prior to variant discovery, reads were subjected to local realignment, coordinate sort, quality recalibration, and duplicate removal. In the GATK analysis, we used a minimum confidence score threshold of Q30 with default parameters. Annotation of the discovered SNPs/indels and their potential effects were analyzed using snpEff v3.1 <xref ref-type="bibr" rid="pone.0085233-Cingolani1">[25]</xref>. During the SNP/indel discovery and analysis phases, we adopted NCBI's dbSNP build 135. CNV/SV events were discovered using read-depth-based CNVnator and paired-end-based CLEVER algorithms <xref ref-type="bibr" rid="pone.0085233-Abyzov1">[26]</xref>, <xref ref-type="bibr" rid="pone.0085233-Marschall1">[27]</xref>. In the CLEVER approach, we used a maximum insert length of 50,000 and a maximum allowed coverage of 200. In the CNVnator analysis, we used a bin (window) size of 100 with default parameters. CNV/SV calls using the SNP chip data were obtained by QuantiSNP with default parameters <xref ref-type="bibr" rid="pone.0085233-Colella1">[28]</xref>.</p>
+</sec><sec id="s2f">
+<title>Functional Analysis</title>
+<p>We used Ingenuity Software Knowledge Base (IKB), (Redwood City, CA) for the functional interaction analysis of the genes affected by high-impact, novel SNPs. IKB uses interactions between genes and/or gene products based on manual curation of scientific literature providing a robust interaction database. Once a gene list of interest is identified, IKB uses known interactions between these genes to build an interaction network. The final network includes genes that are not in the input list but are highly connected to the genes in the input list. This feature enables the investigation of new modules of interactions that are not covered by existing canonical pathways. The results are also analyzed in terms of drugs, small metabolites, functions, and diseases that are overlaid on the resulting network. To this end, an annotation of the resulting interaction network is achieved where functional entities involved in the network are underlined.</p>
+</sec></sec><sec id="s3">
+<title>Results</title>
+<sec id="s3a">
+<title>Individual Selection, DNA Isolation, and Genotyping</title>
+<p>Prior to the sequencing step, we compared the microarray genotyping results of the individual used in this project, who was an anonymous, healthy male claiming to have come from Turkish ancestry for at least three generations, with those obtained from the HapMap project <xref ref-type="bibr" rid="pone.0085233-Altshuler1">[9]</xref> and a recent genome-wide association study targeting Behcet's disease <xref ref-type="bibr" rid="pone.0085233-Remmers1">[29]</xref>. The latter has utilized 1,215 cases and 1,278 controls from Turkey, genotyped on Illumina's HumanCNV370-Quad v3.0 1 (Illumina®) chip. HapMap populations represent African ancestry in the southwestern USA (ASW); Utah, USA inhabitants with ancestry from northern and western Europe (CEU); Han Chinese in Beijing, China (CHB); Chinese in metropolitan Denver, Colorado, USA (CHD); Gujarati Indians in Houston, Texas, USA (GIH); Japanese in Tokyo, Japan (JPT); Luhya in Webuye, Kenya (LWK); Maasai in Kinyawa, Kenya (MKK); Mexican ancestry in Los Angeles, California, USA (MXL); Tuscans in Italy (TSI); and Yoruba in Ibadan, Nigeria (YRI). We compared the SNP calls coming from the three data sets using Eigenstrat v4.2 <xref ref-type="bibr" rid="pone.0085233-Price1">[30]</xref> to investigate the clustering of individuals based on a principal components analysis (PCA). We then performed PCA analysis only on the Turkish samples used in the Behcet study and the individual used in the current study. In both PCA analyses shown in <xref ref-type="fig" rid="pone-0085233-g001">Figure 1</xref>, we utilized only the healthy controls from the Behcet study. Our results show that the individual chosen for WGS represents a typical member of the Turkish population, which differs from the populations used in the HapMap project.</p>
+<fig id="pone-0085233-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0085233.g001</object-id><label>Figure 1</label><caption>
+<title>Position of the Turkish population and the sequenced individual based on Principal Components Analysis of genotyping data.</title>
+<p>(a) PCA of the genotyping data from the populations in the HapMap project and GWAS targeting the Turkish population (TUR); (b) PCA of the genotyping data from the GWAS targeting the Turkish population and the individual used for sequencing in this project (IND).</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0085233.g001" position="float" xlink:type="simple"/></fig></sec><sec id="s3b">
+<title>Trimming, Mapping, and Assembly of the Reads</title>
+<p>DNA sequencing generated 1,238,722,496 paired-end reads corresponding to ∼125,111 M bases of data yielding ∼35x coverage. Quality and length-based trimming and filtering dropped 4.44% of the reads eliminating a total 5.03% of total base pairs. The remaining ∼1.18 billion reads (accounting for ∼116,720 M bases) proved to be of high quality (mode of the average read quality Q is ∼38), with sufficient length (mode is ∼100 bp), and included no Ns (<xref ref-type="supplementary-material" rid="pone.0085233.s003">Figure S3</xref>). Of the high quality reads, 95.28% (∼1.13 billion) were successfully mapped to the reference genome (GRCh37/hg19) covering 99.6% of the bases in the reference genome using the BWA mapping approach. Approximately 50 million unmapped reads (accounting for 4,946 M bases) were assembled using IDBA, which generated 11,654 contigs with lengths ranging between 100 – 43,190 base pairs amounting to ∼10 Mbp of potentially novel sequence. Mean contig length was 856 bp with an N50 of 1,378 bp and an N80 of 497 bp. Of the contigs, 9,486 (∼81%) received a hit in the RefSeq database. Most of the contigs that received a hit were found to be homologues to alternate, reference, or other human sequences (∼97%), while the remaining 313 contigs were found to be homologous to nonhuman primates and other sequences. The 2,168 contigs that were not found to be homologous to any sequences in the RefSeq database represented a total of 927,213 base pairs of assembly with a mean contig length of 427 bp and an N50 of 469 bp. These results are summarized in <xref ref-type="table" rid="pone-0085233-t001">Table 1</xref>.</p>
+<table-wrap id="pone-0085233-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0085233.t001</object-id><label>Table 1</label><caption>
+<title>Read Sequencing and Analysis Statistics.</title>
+</caption><alternatives><graphic id="pone-0085233-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0085233.t001" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<tbody>
+<tr>
+<td colspan="6" align="left" rowspan="1"><bold>Trimming and Filtering</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">No. of Reads (Raw)</td>
+<td colspan="2" align="left" rowspan="1">Total Base Pairs (Raw)</td>
+<td colspan="2" align="left" rowspan="1">No. of Reads (Trimmed and Filtered)</td>
+<td align="left" rowspan="1" colspan="1">Total Base Pairs (Trimmed and Filtered)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">∼1.24×10<sup>9</sup></td>
+<td colspan="2" align="left" rowspan="1">∼125×10<sup>9</sup></td>
+<td colspan="2" align="left" rowspan="1">∼1.18×10<sup>9</sup></td>
+<td align="left" rowspan="1" colspan="1">∼117×10<sup>9</sup></td>
+</tr>
+<tr>
+<td colspan="6" align="left" rowspan="1"><bold>Mapping</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">No. of Mapped High Quality Reads</td>
+<td colspan="2" align="left" rowspan="1">Total Base Pairs Mapped</td>
+<td colspan="2" align="left" rowspan="1">No. of Unmapped High Quality Reads</td>
+<td align="left" rowspan="1" colspan="1">Total Base Pairs Unmapped</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">∼1.13×10<sup>9</sup></td>
+<td colspan="2" align="left" rowspan="1">∼112×10<sup>9</sup></td>
+<td colspan="2" align="left" rowspan="1">∼50×10<sup>6</sup></td>
+<td align="left" rowspan="1" colspan="1">∼5×10<sup>9</sup></td>
+</tr>
+<tr>
+<td colspan="6" align="left" rowspan="1"><bold>Assembly of Unmapped Reads</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">No. of Contigs</td>
+<td colspan="2" align="left" rowspan="1">Total Length of the Assembly (bp)</td>
+<td colspan="2" align="left" rowspan="1">Min.–Max.–Mean Contig Length (bp)</td>
+<td align="left" rowspan="1" colspan="1">N50 (bp)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">11,654</td>
+<td colspan="2" align="left" rowspan="1">9,987,256</td>
+<td colspan="2" align="left" rowspan="1">100–43,190–856</td>
+<td align="left" rowspan="1" colspan="1">1,378</td>
+</tr>
+<tr>
+<td colspan="6" align="left" rowspan="1"><bold>Homology Search</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Contigs Without a Hit</td>
+<td colspan="2" align="left" rowspan="1">Total Length of Unhit Contigs (bp)</td>
+<td colspan="2" align="left" rowspan="1">Min.–Max.–Mean Unhit Contig Length</td>
+<td align="left" rowspan="1" colspan="1">N50 of Unhit Contigs (bp)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">2,168 (19%)</td>
+<td colspan="2" align="left" rowspan="1">927,213</td>
+<td colspan="2" align="left" rowspan="1">100–9,345–427</td>
+<td align="left" rowspan="1" colspan="1">469</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Contigs With a Hit</td>
+<td align="left" rowspan="1" colspan="1">Reference Genome</td>
+<td align="left" rowspan="1" colspan="1">Alternate Assemblies</td>
+<td align="left" rowspan="1" colspan="1">Other Human Sequences</td>
+<td align="left" rowspan="1" colspan="1">Non-human primates</td>
+<td align="left" rowspan="1" colspan="1">Other</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">9,486 (81%)</td>
+<td align="left" rowspan="1" colspan="1">983 (8.5%)</td>
+<td align="left" rowspan="1" colspan="1">7,814 (67.0%)</td>
+<td align="left" rowspan="1" colspan="1">376 (3.2%)</td>
+<td align="left" rowspan="1" colspan="1">218 (1.9%)</td>
+<td align="left" rowspan="1" colspan="1">95 (0.8%)</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap></sec><sec id="s3c">
+<title>SNP Identification</title>
+<p>Casava and GATK workflows identified 3,642,449 and 4,301,769 SNPs, respectively. In order to increase the reliability of our findings, all downstream analysis was performed with SNPs identified by both methods, which resulted in 3,537,794 variants. Of these concordant SNP calls, 97.8% were in agreement with the SNPs called by the genotyping performed on the array, showing high reproducibility. The transitions (2,383,204) transversions (1,154,590), Ts/Tv, ratio was 2.06, and the homozygosity (1,415,123) and heterozygosity (2,122,671) proportions were 40% and 60%, respectively, with both ratios and percentages resembling expected figures in similar studies <xref ref-type="bibr" rid="pone.0085233-Tong1">[14]</xref>. Of the SNPs, 47% were in an intronic region; and 43% of the SNPs were in an intergenic region. About 7% of the SNPs were in upstream or downstream regions of a gene and an additional 1.2% of the SNPs were in an untranslated 3′ or 5′ region. Of these SNPs, 29,184 were identified in coding regions with 15,876 synonymous, 13,202 nonsynonymous, and 106 nonsense SNPs. In <xref ref-type="fig" rid="pone-0085233-g002">Figure 2</xref>, we show the distribution of the SNPs based on the region in which they were found.</p>
+<fig id="pone-0085233-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0085233.g002</object-id><label>Figure 2</label><caption>
+<title>Distribution of the 3,537,794 identified SNPs based on their genomic location.</title>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0085233.g002" position="float" xlink:type="simple"/></fig>
+<p>SNPs, where (i) the variant hits a splice acceptor/donor site, (ii) a start codon is changed into a nonstart codon, or (iii) a stop codon is gained or lost due to the variant are categorized as having a “high-impact” effect. There were a total of 259 SNPs with a high-impact effect and 167 of these were found to be on gene sequences. Out of the ∼3.5 million SNPs identified, there were 480,396 potentially novel SNPs that did not exist in dbSNP. Of these potentially novel SNPs, 49% and 41% were in intergenic and intronic regions, respectively. Over 8% were upstream or downstream of a gene, and 2,925 (or 0.5%) of the SNPs were found to be in coding regions. There were 48 nonsense SNPs and a total of 95 SNPs with a high impact. These high-impact SNPs affected 47 genes (45 well characterized). In <xref ref-type="supplementary-material" rid="pone.0085233.s009">Table S1</xref>, we list these genes along with their effects and annotations. In <xref ref-type="table" rid="pone-0085233-t002">Table 2</xref>, we show the 23 well-characterized genes that were affected by a novel nonsense SNP. Gene annotations were obtained using the GeneALaCart tool of the GeneCards suite (<ext-link ext-link-type="uri" xlink:href="http://www.genecards.org" xlink:type="simple">www.genecards.org</ext-link>) <xref ref-type="bibr" rid="pone.0085233-Safran1">[31]</xref>.</p>
+<table-wrap id="pone-0085233-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0085233.t002</object-id><label>Table 2</label><caption>
+<title>Annotation for the 23 genes that were affected by a novel nonsense SNP.</title>
+</caption><alternatives><graphic id="pone-0085233-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0085233.t002" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Symbol</td>
+<td align="left" rowspan="1" colspan="1">Descriptions</td>
+<td align="left" rowspan="1" colspan="1">Chr</td>
+<td align="left" rowspan="1" colspan="1">Disorder/Disease</td>
+<td align="left" rowspan="1" colspan="1">Function</td>
+<td align="left" rowspan="1" colspan="1">Pathway</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">ABCA9</td>
+<td align="left" rowspan="1" colspan="1">ATP-binding cassette A9</td>
+<td align="left" rowspan="1" colspan="1">17</td>
+<td align="left" rowspan="1" colspan="1">Pseudoxanthoma elasticum</td>
+<td align="left" rowspan="1" colspan="1">Monocyte differentiation; Lipid homeostasis</td>
+<td align="left" rowspan="1" colspan="1">ABC transporters</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ADCK3</td>
+<td align="left" rowspan="1" colspan="1">aarF domain containing kinase 3</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">Spinocerebellar ataxia</td>
+<td align="left" rowspan="1" colspan="1">Protein serine/threonine kinase activity</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ANKRD35</td>
+<td align="left" rowspan="1" colspan="1">Ankyrin repeat domain-containing protein 35</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Protein binding</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">CAD</td>
+<td align="left" rowspan="1" colspan="1">CAD trifunctional protein</td>
+<td align="left" rowspan="1" colspan="1">2</td>
+<td align="left" rowspan="1" colspan="1">Fibrosarcoma</td>
+<td align="left" rowspan="1" colspan="1">Aspartate carbamoyltransferase activity</td>
+<td align="left" rowspan="1" colspan="1">Pyrimidine metabolism; Transcription/Ligand-dependent activation of the ESR1/SP pathway</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">CDC27</td>
+<td align="left" rowspan="1" colspan="1">cell division cycle 27</td>
+<td align="left" rowspan="1" colspan="1">17</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Cell cycle checkpoint</td>
+<td align="left" rowspan="1" colspan="1">Cell cycle_Regulation of G1/S transition</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">DPRX</td>
+<td align="left" rowspan="1" colspan="1">Divergent-paired related homeobox</td>
+<td align="left" rowspan="1" colspan="1">19</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Sequence-specific DNA binding TF activity</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">FRG2C</td>
+<td align="left" rowspan="1" colspan="1">FSHD region gene 2 family, member C</td>
+<td align="left" rowspan="1" colspan="1">3</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">GIMAP6</td>
+<td align="left" rowspan="1" colspan="1">GTPase, IMAP family member 6</td>
+<td align="left" rowspan="1" colspan="1">7</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">GTP binding</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">HSPBAP1</td>
+<td align="left" rowspan="1" colspan="1">27 kDa heat shock protein-associated protein 1</td>
+<td align="left" rowspan="1" colspan="1">3</td>
+<td align="left" rowspan="1" colspan="1">Intractable epilepsy; Renal carcinoma</td>
+<td align="left" rowspan="1" colspan="1">Cellular stress response</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">HTR2C</td>
+<td align="left" rowspan="1" colspan="1">5-hydroxytryptamine receptor 1C</td>
+<td align="left" rowspan="1" colspan="1">X</td>
+<td align="left" rowspan="1" colspan="1">Schizophrenia; Migraine; Prader-Willi syndrome; Attention deficit hyperactivity disease</td>
+<td align="left" rowspan="1" colspan="1">Phosphatidylinositol phospholipase C activity</td>
+<td align="left" rowspan="1" colspan="1">Calcium signaling pathway; Neuroactive ligand-receptor interaction</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">KBTBD3</td>
+<td align="left" rowspan="1" colspan="1">BTB and kelch domain-containing protein 3</td>
+<td align="left" rowspan="1" colspan="1">11</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Protein binding</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">KRTAP2-2</td>
+<td align="left" rowspan="1" colspan="1">Keratin-associated protein 2.2</td>
+<td align="left" rowspan="1" colspan="1">17</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Keratin filament</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">MLL3</td>
+<td align="left" rowspan="1" colspan="1">Myeloid/lymphoid leukemia3</td>
+<td align="left" rowspan="1" colspan="1">7</td>
+<td align="left" rowspan="1" colspan="1">Leukemia</td>
+<td align="left" rowspan="1" colspan="1">Methyltransferase activity</td>
+<td align="left" rowspan="1" colspan="1">Lysine degradation</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">MYT1</td>
+<td align="left" rowspan="1" colspan="1">Myelin transcription factor I</td>
+<td align="left" rowspan="1" colspan="1">20</td>
+<td align="left" rowspan="1" colspan="1">Dysembryoplastic neuroepithelial tumor; Periventricular leukomalacia</td>
+<td align="left" rowspan="1" colspan="1">Oligodendrocyte lineage development</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">PCNT</td>
+<td align="left" rowspan="1" colspan="1">Pericentrin</td>
+<td align="left" rowspan="1" colspan="1">21</td>
+<td align="left" rowspan="1" colspan="1">Seckel syndrome; Microcephaly</td>
+<td align="left" rowspan="1" colspan="1">M transition of mitotic cell cycle</td>
+<td align="left" rowspan="1" colspan="1">Centrosome maturation</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">PPP2R2B</td>
+<td align="left" rowspan="1" colspan="1">Protein phosphatase 2, regulatory subunit B</td>
+<td align="left" rowspan="1" colspan="1">5</td>
+<td align="left" rowspan="1" colspan="1">Spinocerebellar ataxia</td>
+<td align="left" rowspan="1" colspan="1">Apoptotic process</td>
+<td align="left" rowspan="1" colspan="1">mRNA surveillance pathway; Tight junction; Reg'n. of CFTR activity</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">PROSER1</td>
+<td align="left" rowspan="1" colspan="1">Proline and serine rich 1</td>
+<td align="left" rowspan="1" colspan="1">13</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">TBCK</td>
+<td align="left" rowspan="1" colspan="1">TBC1 domain containing kinase</td>
+<td align="left" rowspan="1" colspan="1">4</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">TCP10L2</td>
+<td align="left" rowspan="1" colspan="1">T-complex 10 like prtn. 2</td>
+<td align="left" rowspan="1" colspan="1">6</td>
+<td align="left" rowspan="1" colspan="1">Spina bifida</td>
+<td align="left" rowspan="1" colspan="1">Cytosol</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">TECTA</td>
+<td align="left" rowspan="1" colspan="1">Tectorin alpha</td>
+<td align="left" rowspan="1" colspan="1">11</td>
+<td align="left" rowspan="1" colspan="1">Nonsyndromic deafness; Scotoma; Sensorineural hearing loss</td>
+<td align="left" rowspan="1" colspan="1">Cell-matrix adhesion</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">TFAP2B</td>
+<td align="left" rowspan="1" colspan="1">Transcription factor AP-2 beta</td>
+<td align="left" rowspan="1" colspan="1">6</td>
+<td align="left" rowspan="1" colspan="1">Patent ductus arteriosus; Skeletal muscle neoplasm</td>
+<td align="left" rowspan="1" colspan="1">Cellular ammonia/urea/creatinine homeostasis</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">XIAP</td>
+<td align="left" rowspan="1" colspan="1">X-linked inhibitor of apoptosis protein</td>
+<td align="left" rowspan="1" colspan="1">X</td>
+<td align="left" rowspan="1" colspan="1">Leukemia; Lymphoma</td>
+<td align="left" rowspan="1" colspan="1">Caspases, apoptosis regulation; inflammation</td>
+<td align="left" rowspan="1" colspan="1">Ubiquitin mediated proteolysis; SMAC-mediated apoptosis</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ZNF778</td>
+<td align="left" rowspan="1" colspan="1">Zinc finger protein 778</td>
+<td align="left" rowspan="1" colspan="1">16</td>
+<td align="left" rowspan="1" colspan="1">KBG syndrome; Learning disability</td>
+<td align="left" rowspan="1" colspan="1">Zinc ion binding</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap></sec><sec id="s3d">
+<title>Indel Detection</title>
+<p>We identified 713,640 indels, which consisted of 341,382 insertions and 372,258 deletions. Of these indels, 159,593 (or 22%) were found to be novel. The length distribution ranged from -52 bp to 34 bp (see <xref ref-type="supplementary-material" rid="pone.0085233.s004">Figure S4</xref> for the histogram of indel lengths) where the average ± standard deviation values were 17.03±9.72 bp for insertions and -26.50±15.15 bp for deletions. Of the indels, 40.8% and 49.5% were in an intergenic and intronic region, respectively. An additional 8.3% were equally divided between upstream and downstream regions of genes; and about 1% were in 3′ and 5′ untranslated regions, the majority (∼95%) being in the 3′ UTR. Only 50 and 53 indels were in a splice site acceptor and donor regions, respectively; and 1,934 (or 0.2%) affected a coding region. Of these, 246 indels caused a frame shift, while 104 resulted in a codon deletion and 75 resulted in a codon insertion. When we imposed a window-based filtering such that no two indels co-occurred within 20 bp of each other, we identified 655,195 indels, out of which 123,478 (or 19%) were novel.</p>
+<p>We performed Sanger sequencing on 20 regions containing 20 predicted indels and validated 18 of these indels. We randomly selected the indels for validation with the constraints that they overlapped with coding sequences in possibly detrimental ways and showed different homo/heterozygosity status in a ratio of ∼2∶1, as observed in previous studies <xref ref-type="bibr" rid="pone.0085233-Levy1">[4]</xref>. Seventeen of the 20 indels used for validation were overlapping with known genes, and 3 were overlapping with predicted gene regions. Fourteen indels were homozygous, and 6 were heterozygous. The 20 indels represented 3 frame-shift deletions, 5 frame-shift insertions, 3 nonframe-shift deletions, 8 nonframe-shift insertions and 1 stop-gain SNV all overlapping with coding sequencing in potentially detrimental ways. We list the details of the 20 indels used for validation and utilized forward and reverse primers in <xref ref-type="supplementary-material" rid="pone.0085233.s010">Table S2</xref> and <xref ref-type="supplementary-material" rid="pone.0085233.s011">Table S3</xref>.</p>
+</sec><sec id="s3e">
+<title>Structural Variant Discovery</title>
+<p>Employed read-depth and paired-end CNV/SV discovery methods <xref ref-type="bibr" rid="pone.0085233-Abyzov1">[26]</xref>, <xref ref-type="bibr" rid="pone.0085233-Marschall1">[27]</xref> identified 9,109 such events including 7302 deletions, 1663 duplications, and 144 insertions. Length normalized distribution of these calls followed a uniform distribution across chromosomes. On average, we observed 3.11 CNV/SV events per chromosome per million base pairs with a standard deviation of 0.77 (<xref ref-type="supplementary-material" rid="pone.0085233.s005">Figure S5</xref>). Of the predicted CNV/SV calls, 58.5% overlapped with the structural variants identified as part of the 1000 Genomes Project. The length distribution of the total and novel CNV/SV events revealed that 3,820 out of 9,109 total (or 42%) and 1,786 out of 3,780 novel (or 48%) events were less than 1 Kbp (<xref ref-type="supplementary-material" rid="pone.0085233.s006">Figure S6</xref>). When we compared the CNV/SV events called by two different algorithms, we identified 1,629 concordant, high-confidence calls. Of these high confidence calls, 1,223 (or 75%) overlapped with CNV/SVs identified as part of the 1000 Genomes Project. We also verified the CNV/SV calls with the results of the SNP chip data and found 394 concordant calls.</p>
+</sec></sec><sec id="s4">
+<title>Discussion</title>
+<p>In this paper, we present high-depth coverage (∼35×) and detailed analysis of the whole genome sequence of a Turkish individual. Although whole genome human sequencing is almost routinely done, very few of these efforts provide high coverage and analysis; and various populations are not included in large consortium efforts. Therefore, we believe the current study provides a reference data set in understanding human genome variation on a large scale and a population-dependent context and is an initial step in exploring Turkish genomic features. Despite its importance as the first Turkish whole genome analysis, we acknowledge that further studies are required to validate and generalize our findings to the population scale. Nevertheless, we believe the data presented here will provide a cornerstone for such studies and enrich the analysis of human genomic variation across diverse populations.</p>
+<p>Our genotyping results from chip and sequence data, and the comparative analysis of these with HapMap and other chip genotyping results suggest that the sequenced individual represents a typical member of the Turkish population. The sequencing analysis proves that the data generated is of high quality as only 5% of the total sequence is filtered out, and the remaining reads almost completely cover the reference human genome. High N50 values indicate successful assembly of unmapped reads, which also resulted in ∼1 Mbp of unmapped human genome sequence that did not reveal any homology in the RefSeq database. SNP identification rendered high reproducibility with ∼98% consistency between the sequencing and microarray genotyping results and validated about 86% of identified SNPs in the dbSNP database. We believe the remaining 480,396 potentially novel SNPs contribute to understanding the human genomic variation and the relationship between genotypes and phenotypes.</p>
+<p>The length distribution of the 9,109 identified CNV/SV events showed peaks at the 300 bp and 6,000 bp marks potentially representing short and long interspersed elements, respectively. A similar trend is seen in the 1,629 high confidence calls (<xref ref-type="supplementary-material" rid="pone.0085233.s006">Figure S6</xref>). The relatively high number of CNV/SV calls are due to the inclusion of short variants (variants smaller than 1 Kbp), which constitute 42% of total calls and 48% of novel calls. We validated CNV/SV events that fall within a size range which can be validated with the SNP chip. We have been able to verify 394 CNV/SV calls where the majority of the variants were greater than 10 kbp in length. We found 3,780 CNV/SV calls that were not identified in the 1000 Genomes Project and may be variants potentially specific to the Turkish population.</p>
+<p>In order to position our results in a better population genetics context, we compared the SNPs identified in the sequenced Turkish individual to the SNPs found in Utah, USA inhabitants with ancestry from Europe (CEU) and to the SNPs found in Han Chinese in Beijing, China (CHB). Both CEU and CHB populations were included in the HapMap project, which constitute the source of the identified SNPs in these populations used in our analysis. From a historical perspective, precursors of the Turks originated in Central Asia and Turks are known to have been inhabitants of regions that are parts of modern day China. Turks' migration toward the West ended up mostly in Anatolia with minor settlements in Europe. Turks' presence in Europe was later expanded throughout the Ottoman era. We, therefore, performed our comparative analysis with CEU and CHB, which are the two most closely related populations to the Turkish population with available large-scale genetic data. We found 665,032 SNPs commonly shared by the three populations, which corresponds to 47% of all of the CEU SNPs and 50% of all the CHB SNPs (<xref ref-type="supplementary-material" rid="pone.0085233.s007">Figure S7</xref>). SNPs exclusively shared by the Turkish and CEU populations were 3% of the total CEU SNPs (43,592 out of 1,412,090 SNPs) while SNPs exclusively shared by the Turkish and CHB populations were 1% of the total CHB SNPs (15,657 out of 1,328,223 SNPs). Although more evidence is needed to make conclusive remarks, our results may suggest that the Turkish population is almost equidistant to the CEU and CHB populations, being slightly closer to the CEU.</p>
+<p>Novel SNPs predicted by our results have the potential to explain genetic features specific to the Turkish population. The 23 well-characterized genes that were affected by the novel nonsense SNPs identified in this study were found to affect 25 different phenotypes listed in OMIM, potentially leading to additional genetic disease mechanisms (see <xref ref-type="table" rid="pone-0085233-t002">Table 2</xref>). We used Ingenuity Software Knowledge Base (IKB), (Redwood City, CA) to further identify networks that explain underlying interactions for the 47 genes that were affected by a high-impact novel SNP. The biological functions identified by IKB are grouped in 66 categories. Out of these categories, two of the most significant ones were hereditary disorders and neurological diseases. The former included 14 disorders, 3 of which were X-linked via the gene XIAP; and the latter involved 27 diseases, most notably due to HTR2C. These results are summarized in <xref ref-type="supplementary-material" rid="pone.0085233.s012">Table S4</xref>.</p>
+<p>IKB analysis revealed three interaction networks that included 15, 13, and 3 of the 47 genes. In <xref ref-type="fig" rid="pone-0085233-g003">Figure 3</xref> and <xref ref-type="supplementary-material" rid="pone.0085233.s008">Figure S8</xref>, we show the first two networks where corresponding drug and hereditary and neurological disorders/diseases are overlaid on the networks. In this representation, we show the subcellular layout; and for the network shown in <xref ref-type="fig" rid="pone-0085233-g003">Figure 3</xref>, HTR2C and XIAP seem to play central roles at the membrane and cytoplasm levels. We observe a downstream effect of HTR2C on SMT3 suppressor of mif two 3 homolog 2 (SUMO2) through glutaredoxin 3 (GLRX3). It has been shown that 5-hydroxytryptamine receptors are associated with protein networks involved in synaptic localization along with multidomain proteins such as GLRX3 <xref ref-type="bibr" rid="pone.0085233-Becamel1">[32]</xref>. GLRX3 may participate in the inhibition of apoptosis and play a role in cellular growth, regulating the function of the thioredoxin system; and contains subunits that may serve as a redox sensor <xref ref-type="bibr" rid="pone.0085233-Cheng1">[33]</xref>. SUMO2, which binds with GLRX3 <xref ref-type="bibr" rid="pone.0085233-Golebiowski1">[34]</xref>, is known to be involved in a number of processes like apoptosis, protein stability, and transcriptional regulation. On the other hand, SUMO2 is active in acetylation of histone H3 <xref ref-type="bibr" rid="pone.0085233-Ni1">[35]</xref> through SMARCA4 <xref ref-type="bibr" rid="pone.0085233-Bruderer1">[36]</xref>; and XIAP is involved in methylation of histone H3 <xref ref-type="bibr" rid="pone.0085233-Ougolkov1">[37]</xref>. This cascade of events may suggest a mechanism in which two central genes affected by novel nonsense SNPs identified in this study, XIAP and HTR2C, are involved in various neurological diseases such as amyotrophic lateral sclerosis <xref ref-type="bibr" rid="pone.0085233-Inoue1">[38]</xref>. In the other interaction network identified by IKB, we see a key role played by ubiquitin C (UBC), which is linked to the genes affected by novel high impact SNPs. The suggested outcomes involve various neurological disorders in addition to tumorigenesis and blastomas (<xref ref-type="supplementary-material" rid="pone.0085233.s008">Figure S8</xref>). Overall, we believe that functional and systems level analysis of population-dependent genomic variations may shed light on disease mechanisms as demonstrated here.</p>
+<fig id="pone-0085233-g003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0085233.g003</object-id><label>Figure 3</label><caption>
+<title>Ingenuity Network analysis of 45 genes affected by a high impact novel SNP.</title>
+<p>Genes indicated by red are affected by a nonsense SNP and genes indicated by green are affected by an SNP targeting a splice site donor/acceptor region. Drug targets, hereditary and neurological disorders/diseases are indicated where applicable.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0085233.g003" position="float" xlink:type="simple"/></fig><sec id="s4a">
+<title>Data Accession</title>
+<p>The whole genome sequencing reads have been deposited in the NCBI Short Read Archive (SRA) database under the accession number SRA056442. SNPs and indels have been deposited in the NCBI dbSNP database with the handle ID “BILGI_BIOE”. CNV/SV calls have been deposited in the NCBI dbVar database with project ID PRJNA171612.</p>
+</sec></sec><sec id="s5">
+<title>Supporting Information</title>
+<supplementary-material id="pone.0085233.s001" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0085233.s001" position="float" xlink:type="simple"><label>Figure S1</label><caption>
+<p><bold>QC gel image (0.8% agarose) of gDNA sample (1) compared to molecular weight marker (M).</bold> Sample quality was considered to be acceptable if the gDNA supplied a single visible band while lacking any significant degradation products (degraded DNA seen as smear of small fragments).</p>
+<p>(TIF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0085233.s002" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0085233.s002" position="float" xlink:type="simple"><label>Figure S2</label><caption>
+<p><bold>Library quality.</bold> The electropherogram for the generated library displaying expected yield and size.</p>
+<p>(TIF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0085233.s003" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0085233.s003" position="float" xlink:type="simple"><label>Figure S3</label><caption>
+<p><bold>Quality statistics for the forward reads only (almost identical results are obtained for the reverse reads) following trimming and filtering.</bold> a) Average base quality with respect to the position of the base in the read; b) Histogram of the sequence lengths; c) histogram of the average quality scores of the reads; d) Ns seen in the reads with respect to the position of the base in the read.</p>
+<p>(TIF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0085233.s004" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0085233.s004" position="float" xlink:type="simple"><label>Figure S4</label><caption>
+<p><bold>Length distribution of the identified 713, 640 indels.</bold></p>
+<p>(TIF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0085233.s005" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0085233.s005" position="float" xlink:type="simple"><label>Figure S5</label><caption>
+<p><bold>Distribution of 9,109 identified CNV/SV calls across chromosomes.</bold> A) Number of CNV/SV events; B) Length normalized (per million base pairs) CNV/SV events.</p>
+<p>(TIF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0085233.s006" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0085233.s006" position="float" xlink:type="simple"><label>Figure S6</label><caption>
+<p><bold>Length distribution of 9,109 identified, 3870 novel, and 1629 high confidence CNV/SV calls.</bold> Note that the bin size for SVs less than 10 Kbp is 200 bp while the bin size for SVs more than 10 Kbp is 2 Kbp. The last bar in the graphs on the right-hand column represents SVs more than 250 Kbp.</p>
+<p>(TIF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0085233.s007" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0085233.s007" position="float" xlink:type="simple"><label>Figure S7</label><caption>
+<p><bold>Overlap of SNPs identified in the Turkish individual used in the manuscript (TUR); Utah, USA inhabitants with ancestry from Europe (CEU); and Han Chinese in Beijing, China (CHB).</bold></p>
+<p>(TIF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0085233.s008" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0085233.s008" position="float" xlink:type="simple"><label>Figure S8</label><caption>
+<p><bold>IKB Network analysis of 45 genes affected by a high impact novel SNP.</bold> Genes indicated by red are affected by a nonsense SNP and genes indicated by green are affected by a SNP targeting a splice site donor/acceptor region. Hereditary and Neurological Disorders/Diseases are indicated where applicable.</p>
+<p>(TIF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0085233.s009" mimetype="application/pdf" xlink:href="info:doi/10.1371/journal.pone.0085233.s009" position="float" xlink:type="simple"><label>Table S1</label><caption>
+<p><bold>45 well characterized genes that were affected by a high-impact SNP.</bold> Effect Types: 1: Stop gained; 2: Splice site acceptor; 3: Splice site donor; 4: Stop lost; 5: Start lost.</p>
+<p>(PDF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0085233.s010" mimetype="application/pdf" xlink:href="info:doi/10.1371/journal.pone.0085233.s010" position="float" xlink:type="simple"><label>Table S2</label><caption>
+<p><bold>20 predicted indels used for validation by Sanger Sequencing (V: Validated NV: Not Validated).</bold></p>
+<p>(PDF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0085233.s011" mimetype="application/pdf" xlink:href="info:doi/10.1371/journal.pone.0085233.s011" position="float" xlink:type="simple"><label>Table S3</label><caption>
+<p><bold>Forward and reverse primers used in Sanger Sequencing.</bold></p>
+<p>(PDF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0085233.s012" mimetype="application/pdf" xlink:href="info:doi/10.1371/journal.pone.0085233.s012" position="float" xlink:type="simple"><label>Table S4</label><caption>
+<p><bold>Biological Function categories known to involve 45 well characterized genes that were affected by a high-impact SNP.</bold></p>
+<p>(PDF)</p>
+</caption></supplementary-material></sec></body>
+<back><ref-list>
+<title>References</title>
+<ref id="pone.0085233-Lander1"><label>1</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lander</surname><given-names>ES</given-names></name>, <name name-style="western"><surname>Linton</surname><given-names>LM</given-names></name>, <name name-style="western"><surname>Birren</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Nusbaum</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Zody</surname><given-names>MC</given-names></name>, <etal>et al</etal>. (<year>2001</year>) <article-title>Initial sequencing and analysis of the human genome</article-title>. <source>Nature</source> <volume>409</volume>: <fpage>860</fpage>–<lpage>921</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Venter1"><label>2</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Venter</surname><given-names>JC</given-names></name>, <name name-style="western"><surname>Adams</surname><given-names>MD</given-names></name>, <name name-style="western"><surname>Myers</surname><given-names>EW</given-names></name>, <name name-style="western"><surname>Li</surname><given-names>PW</given-names></name>, <name name-style="western"><surname>Mural</surname><given-names>RJ</given-names></name>, <etal>et al</etal>. (<year>2001</year>) <article-title>The sequence of the human genome</article-title>. <source>Science</source> <volume>291</volume>: <fpage>1304</fpage>–<lpage>1351</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Consortium1"><label>3</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Consortium</surname><given-names>IHGS</given-names></name> (<year>2004</year>) <article-title>Finishing the euchromatic sequence of the human genome</article-title>. <source>Nature</source> <volume>431</volume>: <fpage>931</fpage>–<lpage>945</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Levy1"><label>4</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Levy</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Sutton</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Ng</surname><given-names>PC</given-names></name>, <name name-style="western"><surname>Feuk</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Halpern</surname><given-names>AL</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>The diploid genome sequence of an individual human</article-title>. <source>PLoS Biol</source> <volume>5</volume>: <fpage>e254</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Wheeler1"><label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wheeler</surname><given-names>DA</given-names></name>, <name name-style="western"><surname>Srinivasan</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Egholm</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Shen</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Chen</surname><given-names>L</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>The complete genome of an individual by massively parallel DNA sequencing</article-title>. <source>Nature</source> <volume>452</volume>: <fpage>872</fpage>–<lpage>876</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Pritchard1"><label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pritchard</surname><given-names>JK</given-names></name> (<year>2011</year>) <article-title>Whole-genome sequencing data offer insights into human demography</article-title>. <source>Nat Genet</source> <volume>43</volume>: <fpage>923</fpage>–<lpage>925</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Abecasis1"><label>7</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Abecasis</surname><given-names>GR</given-names></name>, <name name-style="western"><surname>Altshuler</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Auton</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Brooks</surname><given-names>LD</given-names></name>, <name name-style="western"><surname>Durbin</surname><given-names>RM</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>A map of human genome variation from population-scale sequencing</article-title>. <source>Nature</source> <volume>467</volume>: <fpage>1061</fpage>–<lpage>1073</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Abecasis2"><label>8</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Abecasis</surname><given-names>GR</given-names></name>, <name name-style="western"><surname>Auton</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Brooks</surname><given-names>LD</given-names></name>, <name name-style="western"><surname>DePristo</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Durbin</surname><given-names>RM</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>An integrated map of genetic variation from 1,092 human genomes</article-title>. <source>Nature</source> <volume>491</volume>: <fpage>56</fpage>–<lpage>65</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Altshuler1"><label>9</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Altshuler</surname><given-names>DM</given-names></name>, <name name-style="western"><surname>Gibbs</surname><given-names>RA</given-names></name>, <name name-style="western"><surname>Peltonen</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Dermitzakis</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Schaffner</surname><given-names>SF</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Integrating common and rare genetic variation in diverse human populations</article-title>. <source>Nature</source> <volume>467</volume>: <fpage>52</fpage>–<lpage>58</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Ahn1"><label>10</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ahn</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Kim</surname><given-names>TH</given-names></name>, <name name-style="western"><surname>Lee</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Kim</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Ghang</surname><given-names>H</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>The first Korean genome sequence and analysis: full genome sequencing for a socio-ethnic group</article-title>. <source>Genome Res</source> <volume>19</volume>: <fpage>1622</fpage>–<lpage>1629</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Fujimoto1"><label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fujimoto</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Nakagawa</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Hosono</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Nakano</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Abe</surname><given-names>T</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Whole-genome sequencing and comprehensive variant analysis of a Japanese individual using massively parallel sequencing</article-title>. <source>Nat Genet</source> <volume>42</volume>: <fpage>931</fpage>–<lpage>936</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Ju1"><label>12</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ju</surname><given-names>YS</given-names></name>, <name name-style="western"><surname>Kim</surname><given-names>JI</given-names></name>, <name name-style="western"><surname>Kim</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Hong</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Park</surname><given-names>H</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Extensive genomic and transcriptional diversity identified through massively parallel DNA and RNA sequencing of eighteen Korean individuals</article-title>. <source>Nat Genet</source> <volume>43</volume>: <fpage>745</fpage>–<lpage>752</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Kim1"><label>13</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kim</surname><given-names>JI</given-names></name>, <name name-style="western"><surname>Ju</surname><given-names>YS</given-names></name>, <name name-style="western"><surname>Park</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Kim</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Lee</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>A highly annotated whole-genome sequence of a Korean individual</article-title>. <source>Nature</source> <volume>460</volume>: <fpage>1011</fpage>–<lpage>1015</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Tong1"><label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tong</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Prendergast</surname><given-names>JG</given-names></name>, <name name-style="western"><surname>Lohan</surname><given-names>AJ</given-names></name>, <name name-style="western"><surname>Farrington</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Cronin</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Sequencing and analysis of an Irish human genome</article-title>. <source>Genome Biol</source> <volume>11</volume>: <fpage>R91</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Bentley1"><label>15</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bentley</surname><given-names>DR</given-names></name>, <name name-style="western"><surname>Balasubramanian</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Swerdlow</surname><given-names>HP</given-names></name>, <name name-style="western"><surname>Smith</surname><given-names>GP</given-names></name>, <name name-style="western"><surname>Milton</surname><given-names>J</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>Accurate whole human genome sequencing using reversible terminator chemistry</article-title>. <source>Nature</source> <volume>456</volume>: <fpage>53</fpage>–<lpage>59</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Akin1"><label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Akin</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Onay</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Turker</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Cogulu</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Ozkinay</surname><given-names>F</given-names></name> (<year>2010</year>) <article-title>MEFV mutations in patients with Familial Mediterranean Fever from the Aegean region of Turkey</article-title>. <source>Mol Biol Rep</source> <volume>37</volume>: <fpage>93</fpage>–<lpage>98</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Erbilgin1"><label>17</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Erbilgin</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Sayitoglu</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Hatirnaz</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Dogru</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Akcay</surname><given-names>A</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Prognostic significance of NOTCH1 and FBXW7 mutations in pediatric T-ALL</article-title>. <source>Dis Markers</source> <volume>28</volume>: <fpage>353</fpage>–<lpage>360</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Yazici1"><label>18</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yazici</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Yurdakul</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Yazici</surname><given-names>H</given-names></name> (<year>2010</year>) <article-title>Behcet's syndrome</article-title>. <source>Curr Rheumatol Rep</source> <volume>12</volume>: <fpage>429</fpage>–<lpage>435</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Krueger1"><label>19</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Krueger</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Kreck</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Franke</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Andrews</surname><given-names>SR</given-names></name> (<year>2012</year>) <article-title>DNA methylome analysis using short bisulfite sequencing data</article-title>. <source>Nat Methods</source> <volume>9</volume>: <fpage>145</fpage>–<lpage>151</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Li1"><label>20</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Li</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Durbin</surname><given-names>R</given-names></name> (<year>2009</year>) <article-title>Fast and accurate short read alignment with Burrows-Wheeler transform</article-title>. <source>Bioinformatics</source> <volume>25</volume>: <fpage>1754</fpage>–<lpage>1760</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Lassmann1"><label>21</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lassmann</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Hayashizaki</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Daub</surname><given-names>CO</given-names></name> (<year>2011</year>) <article-title>SAMStat: monitoring biases in next generation sequencing data</article-title>. <source>Bioinformatics</source> <volume>27</volume>: <fpage>130</fpage>–<lpage>131</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Peng1"><label>22</label>
+<mixed-citation publication-type="other" xlink:type="simple">Peng Y, Leung H, Yiu S, Chin F. IDBA–A Practical Iterative de Bruijn Graph De Novo Assembler; 2010. Springer. pp. 426–440.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Altschul1"><label>23</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Altschul</surname><given-names>SF</given-names></name>, <name name-style="western"><surname>Gish</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Miller</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Myers</surname><given-names>EW</given-names></name>, <name name-style="western"><surname>Lipman</surname><given-names>DJ</given-names></name> (<year>1990</year>) <article-title>Basic local alignment search tool</article-title>. <source>J Mol Biol</source> <volume>215</volume>: <fpage>403</fpage>–<lpage>410</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-DePristo1"><label>24</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>DePristo</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Banks</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Poplin</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Garimella</surname><given-names>KV</given-names></name>, <name name-style="western"><surname>Maguire</surname><given-names>JR</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>A framework for variation discovery and genotyping using next-generation DNA sequencing data</article-title>. <source>Nat Genet</source> <volume>43</volume>: <fpage>491</fpage>–<lpage>498</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Cingolani1"><label>25</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cingolani</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Platts</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Wang le</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Coon</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Nguyen</surname><given-names>T</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>A program for annotating and predicting the effects of single nucleotide polymorphisms, SnpEff: SNPs in the genome of Drosophila melanogaster strain w1118; iso-2; iso-3</article-title>. <source>Fly (Austin)</source> <volume>6</volume>: <fpage>80</fpage>–<lpage>92</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Abyzov1"><label>26</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Abyzov</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Urban</surname><given-names>AE</given-names></name>, <name name-style="western"><surname>Snyder</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Gerstein</surname><given-names>M</given-names></name> (<year>2011</year>) <article-title>CNVnator: an approach to discover, genotype, and characterize typical and atypical CNVs from family and population genome sequencing</article-title>. <source>Genome Res</source> <volume>21</volume>: <fpage>974</fpage>–<lpage>984</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Marschall1"><label>27</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Marschall</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Costa</surname><given-names>IG</given-names></name>, <name name-style="western"><surname>Canzar</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Bauer</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Klau</surname><given-names>GW</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>CLEVER: clique-enumerating variant finder</article-title>. <source>Bioinformatics</source> <volume>28</volume>: <fpage>2875</fpage>–<lpage>2882</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Colella1"><label>28</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Colella</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Yau</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Taylor</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Mirza</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Butler</surname><given-names>H</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>QuantiSNP: an Objective Bayes Hidden-Markov Model to detect and accurately map copy number variation using SNP genotyping data</article-title>. <source>Nucleic Acids Res</source> <volume>35</volume>: <fpage>2013</fpage>–<lpage>2025</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Remmers1"><label>29</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Remmers</surname><given-names>EF</given-names></name>, <name name-style="western"><surname>Cosan</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Kirino</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Ombrello</surname><given-names>MJ</given-names></name>, <name name-style="western"><surname>Abaci</surname><given-names>N</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Genome-wide association study identifies variants in the MHC class I, IL10, and IL23R-IL12RB2 regions associated with Behcet's disease</article-title>. <source>Nat Genet</source> <volume>42</volume>: <fpage>698</fpage>–<lpage>702</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Price1"><label>30</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Price</surname><given-names>AL</given-names></name>, <name name-style="western"><surname>Patterson</surname><given-names>NJ</given-names></name>, <name name-style="western"><surname>Plenge</surname><given-names>RM</given-names></name>, <name name-style="western"><surname>Weinblatt</surname><given-names>ME</given-names></name>, <name name-style="western"><surname>Shadick</surname><given-names>NA</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Principal components analysis corrects for stratification in genome-wide association studies</article-title>. <source>Nat Genet</source> <volume>38</volume>: <fpage>904</fpage>–<lpage>909</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Safran1"><label>31</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Safran</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Dalah</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Alexander</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Rosen</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Iny Stein</surname><given-names>T</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>GeneCards Version 3: the human gene integrator</article-title>. <source>Database (Oxford)</source> <volume>2010</volume>: <fpage>baq020</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Becamel1"><label>32</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Becamel</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Alonso</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Galeotti</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Demey</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Jouin</surname><given-names>P</given-names></name>, <etal>et al</etal>. (<year>2002</year>) <article-title>Synaptic multiprotein complexes associated with 5-HT(2C) receptors: a proteomic approach</article-title>. <source>EMBO J</source> <volume>21</volume>: <fpage>2332</fpage>–<lpage>2342</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Cheng1"><label>33</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cheng</surname><given-names>NH</given-names></name>, <name name-style="western"><surname>Zhang</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Chen</surname><given-names>WQ</given-names></name>, <name name-style="western"><surname>Jin</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Cui</surname><given-names>X</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>A mammalian monothiol glutaredoxin, Grx3, is critical for cell cycle progression during embryogenesis</article-title>. <source>FEBS J</source> <volume>278</volume>: <fpage>2525</fpage>–<lpage>2539</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Golebiowski1"><label>34</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Golebiowski</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Matic</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Tatham</surname><given-names>MH</given-names></name>, <name name-style="western"><surname>Cole</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Yin</surname><given-names>Y</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>System-wide changes to SUMO modifications in response to heat shock</article-title>. <source>Sci Signal</source> <volume>2</volume>: <fpage>ra24</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Ni1"><label>35</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ni</surname><given-names>Z</given-names></name>, <name name-style="western"><surname>Karaskov</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Yu</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Callaghan</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Der</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2005</year>) <article-title>Apical role for BRG1 in cytokine-induced promoter assembly</article-title>. <source>Proc Natl Acad Sci U S A</source> <volume>102</volume>: <fpage>14611</fpage>–<lpage>14616</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Bruderer1"><label>36</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bruderer</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Tatham</surname><given-names>MH</given-names></name>, <name name-style="western"><surname>Plechanovova</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Matic</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Garg</surname><given-names>AK</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Purification and identification of endogenous polySUMO conjugates</article-title>. <source>EMBO Rep</source> <volume>12</volume>: <fpage>142</fpage>–<lpage>148</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Ougolkov1"><label>37</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ougolkov</surname><given-names>AV</given-names></name>, <name name-style="western"><surname>Bone</surname><given-names>ND</given-names></name>, <name name-style="western"><surname>Fernandez-Zapico</surname><given-names>ME</given-names></name>, <name name-style="western"><surname>Kay</surname><given-names>NE</given-names></name>, <name name-style="western"><surname>Billadeau</surname><given-names>DD</given-names></name> (<year>2007</year>) <article-title>Inhibition of glycogen synthase kinase-3 activity leads to epigenetic silencing of nuclear factor kappaB target genes and induction of apoptosis in chronic lymphocytic leukemia B cells</article-title>. <source>Blood</source> <volume>110</volume>: <fpage>735</fpage>–<lpage>742</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0085233-Inoue1"><label>38</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Inoue</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Tsukita</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Iwasato</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Suzuki</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Tomioka</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2003</year>) <article-title>The crucial role of caspase-9 in the disease progression of a transgenic ALS mouse model</article-title>. <source>EMBO J</source> <volume>22</volume>: <fpage>6665</fpage>–<lpage>6674</lpage>.</mixed-citation>
+</ref>
+</ref-list></back>
+</article>

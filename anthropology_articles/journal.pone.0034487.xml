@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosone</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group><issn pub-type="epub">1932-6203</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="publisher-id">PONE-D-12-02204</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0034487</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Computer science</subject>
+          <subj-group>
+            <subject>Algorithms</subject>
+          </subj-group>
+          <subj-group>
+            <subject>Computer modeling</subject>
+          </subj-group>
+          <subj-group>
+            <subject>Computerized simulations</subject>
+          </subj-group>
+          <subj-group>
+            <subject>Computing methods</subject>
+            <subj-group>
+              <subject>Computer inferencing</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Geoinformatics</subject>
+            <subj-group>
+              <subject>Geostatistics</subject>
+              <subject>Spatial autocorrelation</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Mathematics</subject>
+          <subj-group>
+            <subject>Applied mathematics</subject>
+            <subj-group>
+              <subject>Algorithms</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Social and behavioral sciences</subject>
+          <subj-group>
+            <subject>Anthropology</subject>
+            <subj-group>
+              <subject>Social anthropology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Sociology</subject>
+            <subj-group>
+              <subject>Social mobility</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Computer Science</subject>
+          <subject>Mathematics</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>Collective Human Mobility Pattern from Taxi Trips in Urban Area</article-title><alt-title alt-title-type="running-head">Collective Human Mobility Pattern</alt-title></title-group><contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Peng</surname>
+            <given-names>Chengbin</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Jin</surname>
+            <given-names>Xiaogang</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Wong</surname>
+            <given-names>Ka-Chun</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Shi</surname>
+            <given-names>Meixia</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Liò</surname>
+            <given-names>Pietro</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1"><label>1</label><addr-line>Mathematical and Computer Sciences and Engineering Division, King Abdullah University of Science and Technology, Jeddah, Kingdom of Saudi Arabia</addr-line>       </aff><aff id="aff2"><label>2</label><addr-line>Institute of Artificial Intelligence, College of Computer Science, Zhejiang University, Hangzhou, China</addr-line>       </aff><aff id="aff3"><label>3</label><addr-line>College of Environmental and Resource Sciences, Zhejiang University, Hangzhou, China</addr-line>       </aff><aff id="aff4"><label>4</label><addr-line>Computer Laboratory, Cambridge University, Cambridge, United Kingdom</addr-line>       </aff><contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Perc</surname>
+            <given-names>Matjaz</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group><aff id="edit1">University of Maribor, Slovenia</aff><author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">Pietro.Lio@cl.cam.ac.uk</email></corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: CP XJ PL. Performed the experiments: CP KW. Analyzed the data: CP XJ KW MS PL. Contributed reagents/materials/analysis tools: CP PL. Wrote the paper: CP XJ PL.</p>
+        </fn>
+      <fn fn-type="conflict">
+        <p>The authors have declared that no competing interests exist.</p>
+      </fn></author-notes><pub-date pub-type="collection">
+        <year>2012</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>18</day>
+        <month>4</month>
+        <year>2012</year>
+      </pub-date><volume>7</volume><issue>4</issue><elocation-id>e34487</elocation-id><history>
+        <date date-type="received">
+          <day>17</day>
+          <month>1</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>28</day>
+          <month>2</month>
+          <year>2012</year>
+        </date>
+      </history><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2012</copyright-year><copyright-holder>Peng et al</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><abstract>
+        <p>We analyze the passengers' traffic pattern for 1.58 million taxi trips of Shanghai, China. By employing the non-negative matrix factorization and optimization methods, we find that, people travel on workdays mainly for three purposes: commuting between home and workplace, traveling from workplace to workplace, and others such as leisure activities. Therefore, traffic flow in one area or between any pair of locations can be approximated by a linear combination of three basis flows, corresponding to the three purposes respectively. We name the coefficients in the linear combination as traffic powers, each of which indicates the strength of each basis flow. The traffic powers on different days are typically different even for the same location, due to the uncertainty of the human motion. Therefore, we provide a probability distribution function for the relative deviation of the traffic power. This distribution function is in terms of a series of functions for normalized binomial distributions. It can be well explained by statistical theories and is verified by empirical data. These findings are applicable in predicting the road traffic, tracing the traffic pattern and diagnosing the traffic related abnormal events. These results can also be used to infer land uses of urban area quite parsimoniously.</p>
+      </abstract><funding-group><funding-statement>CP was supported by Graduate Fellowship from King Abdullah University of Science and Technology. CP and XJ were supported by the National Science Foundation of China under Grant No. 61070069. PL was supported by the following project: RECOGNITION: Relevance and Cognition for Self-Awareness in a Content-Centric Internet (257756), which is funded by the European Commission within the 7th Framework Programme (FP7). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts>
+        <page-count count="8"/>
+      </counts></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Urban traffic has drawn the attention of physicists since more than one decade ago. Generally, there has been two kinds of approaches for the traffic analysis. In microscopic models, some researchers represent vehicles as particles interacting with each other <xref ref-type="bibr" rid="pone.0034487-Chowdhury1">[1]</xref>, <xref ref-type="bibr" rid="pone.0034487-Nagel1">[2]</xref>, while some others use the cellular automata framework <xref ref-type="bibr" rid="pone.0034487-Chowdhury1">[1]</xref>, <xref ref-type="bibr" rid="pone.0034487-Esser1">[3]</xref>, <xref ref-type="bibr" rid="pone.0034487-Simon1">[4]</xref>. Based on game theory, the impact of individuals' irregular behaviors on traffic system is also emphasized <xref ref-type="bibr" rid="pone.0034487-Perc1">[5]</xref>. On the other hand, from the macroscopic perspective, the idea of fluid dynamics is introduced <xref ref-type="bibr" rid="pone.0034487-Chowdhury1">[1]</xref>, <xref ref-type="bibr" rid="pone.0034487-Helbing1">[6]</xref>.</p>
+      <p>In recent years, a new and more fundamental approach for traffic analysis is emerging: human mobility, by drawing statistical inferences from the enormous empirical data <xref ref-type="bibr" rid="pone.0034487-Brockmann1">[7]</xref>–<xref ref-type="bibr" rid="pone.0034487-Jiang1">[9]</xref>. Several reasons boost the research in this area.</p>
+      <p>Firstly, the knowledge of the mobility pattern is essential in traffic modeling <xref ref-type="bibr" rid="pone.0034487-Leutzbach1">[10]</xref>, <xref ref-type="bibr" rid="pone.0034487-Kerner1">[11]</xref> for simulation, forecasting <xref ref-type="bibr" rid="pone.0034487-Kitamura1">[12]</xref>, <xref ref-type="bibr" rid="pone.0034487-Kuppam1">[13]</xref> and control <xref ref-type="bibr" rid="pone.0034487-Kerner1">[11]</xref>. In addition, by measuring the traffic flow during some time interval to see whether or not it agrees with the verified estimation, the collective mobility analysis can serve as a tool for abnormality definition and detection <xref ref-type="bibr" rid="pone.0034487-Liao1">[14]</xref>, <xref ref-type="bibr" rid="pone.0034487-Candia1">[15]</xref>. Compared to computer vision based detection <xref ref-type="bibr" rid="pone.0034487-Andrade1">[16]</xref>, <xref ref-type="bibr" rid="pone.0034487-Mehran1">[17]</xref>, collective mobility model based abnormality detection can be applied in a much larger scale of area, for example, the whole city.</p>
+      <p>Secondly, the mobility pattern and the consequential traffic flow can also interact with the land use. The characteristics of traveling strongly influence urban formation, evolving, and future planning <xref ref-type="bibr" rid="pone.0034487-Handy1">[18]</xref>–<xref ref-type="bibr" rid="pone.0034487-Waddell1">[21]</xref>, whereas the land use can also affect the urban traffic <xref ref-type="bibr" rid="pone.0034487-Boarnet1">[22]</xref>–<xref ref-type="bibr" rid="pone.0034487-Handy2">[24]</xref> and the human mobility <xref ref-type="bibr" rid="pone.0034487-Han1">[25]</xref>.</p>
+      <p>Thirdly, the better understanding of human mobility can help to more easily control the spreading of contagious diseases by limiting the contact among individuals <xref ref-type="bibr" rid="pone.0034487-LonginiI1">[26]</xref>, since the transmission of infected people from one place to another is an important way to infect the susceptible ones, either in a small scale area <xref ref-type="bibr" rid="pone.0034487-Eubank1">[27]</xref>,<xref ref-type="bibr" rid="pone.0034487-Easley1">[28]</xref> or from a worldwide viewpoint <xref ref-type="bibr" rid="pone.0034487-Anderson1">[29]</xref>–<xref ref-type="bibr" rid="pone.0034487-Riley1">[31]</xref>. Similar theories hold for viruses contamination with malicious code among wireless communication devices <xref ref-type="bibr" rid="pone.0034487-Kleinberg1">[32]</xref>, <xref ref-type="bibr" rid="pone.0034487-Hu1">[33]</xref>.</p>
+      <p>Due to the high importance of human mobility research, and the availability of the large amount of empirical data as a consequence of the prevalence of wireless communication devices, researchers become more and more interested in the statistical features of human mobility pattern via real world data <xref ref-type="bibr" rid="pone.0034487-Castellano1">[34]</xref>. Ref. <xref ref-type="bibr" rid="pone.0034487-Brockmann1">[7]</xref> and Ref. <xref ref-type="bibr" rid="pone.0034487-Jiang1">[9]</xref> suggest that human travels are reminiscent of Lévy Flights <xref ref-type="bibr" rid="pone.0034487-Shlesinger1">[35]</xref> according to the trajectories of bank notes and taxies respectively, while Ref. <xref ref-type="bibr" rid="pone.0034487-Rhee1">[36]</xref> reports some variances by the GPS information from volunteers. These differences are later recognized as a result of the periodic pattern of individual's traveling <xref ref-type="bibr" rid="pone.0034487-Gonzlez1">[8]</xref> and recently Ref. <xref ref-type="bibr" rid="pone.0034487-Song1">[37]</xref> discovers up to 93% of total time when individual locations are predictable in their data set, which contains trajectories of mobile phone users. For taxi trips, Ref. <xref ref-type="bibr" rid="pone.0034487-Liang1">[38]</xref> studies the distribution of the travel distances and time.</p>
+      <p>Nevertheless, previous statistical inferences of human mobility mostly focus on individual level, while this article analyzes the citizens' collective dynamics in the urban area. In our research, based on the traveling purposes, we discovered three distinct basis patterns for collective traffic flow regardless of the location. In addition, a distribution is revealed that can characterize the fluctuation of the traffic flow at any time in each location. As mentioned above, these findings can be useful for urban planning, traffic estimation and anomalous detection. Further studies on interaction between different areas will provide a more detailed collective mobility model, and would additionally benefit the research on epidemic spreading in urban area.</p>
+    </sec>
+    <sec id="s2">
+      <title>Analysis</title>
+      <sec id="s2a">
+        <title>Data Description and Background Assumptions</title>
+        <p>In this research, the data <xref ref-type="bibr" rid="pone.0034487-Shanghai1">[39]</xref> are collected from about two thousand taxies operating within the urban area of Shanghai, China. These data mainly focus on the central part of city, and the population in this part is about seven million according to the fifth national population census <xref ref-type="bibr" rid="pone.0034487-Shanghai2">[40]</xref>. The information about when and where passengers were picked up and dropped off can be retrieved from the raw data, and every pair of picking and dropping information is defined as a taxi trip. The data set includes about 1.58 million taxi trips. The longitude and latitude location information in the data by GPS is converted to positions in a planar coordinate system, with the city landmark Oriental Pearl Tower as the origin. For the ease of analyzing and representing, the urban area is divided into squares, similar to a chessboard. The side lengths of each square is identically 200 meters. In our context, each location corresponds to one of these squares. More details can be found in <xref ref-type="supplementary-material" rid="pone.0034487.s001">Appendix S1</xref>.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Basis Traffic Flows: the Constancy</title>
+        <p>As we know, even a <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e001" xlink:type="simple"/></inline-formula> area in a city can possess land of several different types, for example, containing schools, shops and apartments at the same time. In this section, we will discuss how to categorize the taxi trips according to the traveling purposes, and then use these categories to infer the land use composition for each square.</p>
+        <p>First of all, we consider the taxi trip categorization. People setting out in the same location would possibly have different purposes: some may go to workplaces while some others may go for entertainment. Meanwhile, for trips belonging to the same category but in different locations, the collective pattern should be similar, regarding to the departure and arrival time in a large amount of data. For example, if the number of trips between residential area and workplaces (for commuting purpose) reaches the highest at 8:00 am (going to work) and 5:00 pm (getting off work), then the number of trips in this category in any place would peak almost at the same time, although the scale may be different.</p>
+        <p>In short, we can define a set of basis collective patterns, each of which corresponding to a trip category respectively. Then linear combinations of these patterns can describe the macro traveling pattern of each location. Finally, the coefficients in a linear combination can reflect the land uses of the location.</p>
+        <p>Directly from the taxi data, we can only calculate the macro patterns. Therefore, we should adopt appropriate inference methods to find the basis patterns and the coefficients for each location.</p>
+        <p>To represent our method more formally, we define <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e002" xlink:type="simple"/></inline-formula> to index the square in <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e003" xlink:type="simple"/></inline-formula>th row and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e004" xlink:type="simple"/></inline-formula>th column among all the squares divided within the city. If <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e005" xlink:type="simple"/></inline-formula> is the number of rows and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e006" xlink:type="simple"/></inline-formula> is the number of columns for squares in the map, then <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e007" xlink:type="simple"/></inline-formula>, and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e008" xlink:type="simple"/></inline-formula>. Let <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e009" xlink:type="simple"/></inline-formula> be the number of time slots, normally 24 for one day. Therefore for location <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e010" xlink:type="simple"/></inline-formula>, the numbers of departure and arrival trips (macro pattern) along time each day can be represented by a <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e011" xlink:type="simple"/></inline-formula> vector <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e012" xlink:type="simple"/></inline-formula>, which is easy to calculate. We can also define a set of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e013" xlink:type="simple"/></inline-formula> vectors containing normalized numbers of trips along time: <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e014" xlink:type="simple"/></inline-formula>, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e015" xlink:type="simple"/></inline-formula>, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e016" xlink:type="simple"/></inline-formula>, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e017" xlink:type="simple"/></inline-formula>, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e018" xlink:type="simple"/></inline-formula>, each for one basis pattern that we seek for.</p>
+        <p>The macro pattern is a linear combination of basis patterns, so we have<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.e019" xlink:type="simple"/><label>(1)</label></disp-formula>where <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e020" xlink:type="simple"/></inline-formula> is a row vector containing <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e021" xlink:type="simple"/></inline-formula> coefficients for the linear combination on the right-hand side.</p>
+        <p>By taking all the locations into account, it can also be written as<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.e022" xlink:type="simple"/><label>(2)</label></disp-formula>and abbreviated as</p>
+        <p><disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.e023" xlink:type="simple"/><label>(3)</label></disp-formula>Because the two matrices on the right-hand side of Eq. (3) are unknown, there are many matrix decomposition methods that may apply. However, according to the physical meaning of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e024" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e025" xlink:type="simple"/></inline-formula>, all the entries of these two matrices should be nonnegative. Therefore, we choose nonnegative matrix factorization (NMF) <xref ref-type="bibr" rid="pone.0034487-Lee1">[41]</xref>, <xref ref-type="bibr" rid="pone.0034487-Lin1">[42]</xref> for the decomposition.</p>
+        <p>In our context, it is a method to factorize a matrix <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e026" xlink:type="simple"/></inline-formula> into two nonnegative factors <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e027" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e028" xlink:type="simple"/></inline-formula> approximately. By this approach, we can find the basis patterns (the row vectors of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e029" xlink:type="simple"/></inline-formula>) and the parameter vectors (the row vectors of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e030" xlink:type="simple"/></inline-formula>) simultaneously. As vector <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e031" xlink:type="simple"/></inline-formula> (the <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e032" xlink:type="simple"/></inline-formula>th row of matrix <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e033" xlink:type="simple"/></inline-formula>) is only responsible for vector <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e034" xlink:type="simple"/></inline-formula> (the <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e035" xlink:type="simple"/></inline-formula>th row of matrix <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e036" xlink:type="simple"/></inline-formula>), in fact, each element of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e037" xlink:type="simple"/></inline-formula> denotes the scale of traffic flow with respect to the corresponding category, in location <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e038" xlink:type="simple"/></inline-formula>. Hence, we also call these elements the traffic power because they reflect how strong the traffic flows of different categories are.</p>
+        <p>Now the only thing left is to determine <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e039" xlink:type="simple"/></inline-formula>, the number of the basis patterns.</p>
+        <p>From the algorithmic perspective, we noticed that NMF starts with random initial conditions <xref ref-type="bibr" rid="pone.0034487-Lee1">[41]</xref>. By experiments on the taxi data with many different random initial conditions, we find that only when <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e040" xlink:type="simple"/></inline-formula> equals 3, the factorization results can be stable. This fact indicates that with parameter <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e041" xlink:type="simple"/></inline-formula>, NMF can find out statistically significant characteristics for the data, and <xref ref-type="fig" rid="pone-0034487-g001">Fig. 1</xref> demonstrates the resulted basis pattern <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e042" xlink:type="simple"/></inline-formula>, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e043" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e044" xlink:type="simple"/></inline-formula>.</p>
+        <fig id="pone-0034487-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0034487.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Basis Pattern B: Green is B1, Red is B2, and Blue is B3.</title>
+            <p>Solid Lines Represent the Mean <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e045" xlink:type="simple"/></inline-formula>, while Dashed Lines Represent the Positive and Negative Deviations Averaged on Different Days.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.g001" xlink:type="simple"/>
+        </fig>
+        <p>On the other hand, from the land-use and trip-category perspective, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e046" xlink:type="simple"/></inline-formula> is a reasonable choice in categorizing trip purposes.</p>
+        <p>There are several land-use definitions related to the topic of mobility. For example, each place may be classified as a residential (home), working, shopping, or recreational location <xref ref-type="bibr" rid="pone.0034487-Eubank1">[27]</xref>. It may also be regarded as one of the following types: a residential area, a workplace, a commercial zone, a recreation area and educational facilities <xref ref-type="bibr" rid="pone.0034487-Hollick1">[43]</xref>. In Ref. <xref ref-type="bibr" rid="pone.0034487-BenAkiva1">[44]</xref>, these types are simplified into workplace, home and shop. Specifically for the city of Shanghai based on GIS information, Ref. <xref ref-type="bibr" rid="pone.0034487-Zhang1">[45]</xref> refers to the land types including residence, industry, agriculture, roads, water, land for construction and other urban land. In our context, we can simplify the land-use definition to be: residences, workplaces and others. Here workplaces shall include any industrial and office workplaces as well as schools, and other places can include shopping and recreational facilities, hospitals, etc.</p>
+        <p>For trips, some scientists categorize these individual activities into several orientations: family, work, leisure and service-based movement <xref ref-type="bibr" rid="pone.0034487-Onnela1">[46]</xref>. Similarly, according to our land-use definition, we can use three purpose-based categories for the trips: commuting between home and workplace (<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e047" xlink:type="simple"/></inline-formula>), business traveling between two workplaces (<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e048" xlink:type="simple"/></inline-formula>), and trips from or to other places (<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e049" xlink:type="simple"/></inline-formula>). This representation is in accordance with the algorithmic result in <xref ref-type="fig" rid="pone-0034487-g001">Fig. 1</xref>. Take a typical workday as an example, based on our three categories, the major traffic flows in the city are supposed to be as follows: those from home to workplaces in the early morning (green line), from one workplace to another in the daytime (red line), from workplace to home or to other places at dusk (green line again), and those between other places and home in the night (blue line).</p>
+        <p>Therefore, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e050" xlink:type="simple"/></inline-formula> is an effective and reasonable choice.</p>
+        <p>In the following sections with <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e051" xlink:type="simple"/></inline-formula>, for clarity, we will use <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e052" xlink:type="simple"/></inline-formula>, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e053" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e054" xlink:type="simple"/></inline-formula> to replace <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e055" xlink:type="simple"/></inline-formula>, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e056" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e057" xlink:type="simple"/></inline-formula> respectively:<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.e058" xlink:type="simple"/><label>(4)</label></disp-formula></p>
+        <p>We also use <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e059" xlink:type="simple"/></inline-formula>, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e060" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e061" xlink:type="simple"/></inline-formula> to represent the three entries in vector <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e062" xlink:type="simple"/></inline-formula>:<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.e063" xlink:type="simple"/><label>(5)</label></disp-formula></p>
+        <p><xref ref-type="supplementary-material" rid="pone.0034487.s002">Appendix S2</xref> describes the detailed implementation about applying NMF to this problem. The basis pattern on different days are averaged to <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e064" xlink:type="simple"/></inline-formula>. Then, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e065" xlink:type="simple"/></inline-formula>, the traffic power, can be recalculated based on <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e066" xlink:type="simple"/></inline-formula> for different day. If it variants in an acceptable interval day by day, the daily average of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e067" xlink:type="simple"/></inline-formula>, represented by <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e068" xlink:type="simple"/></inline-formula>, can indicate the land use of location <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e069" xlink:type="simple"/></inline-formula>. For example, if <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e070" xlink:type="simple"/></inline-formula> is large, then the traffic flow corresponding to basis pattern <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e071" xlink:type="simple"/></inline-formula> is large, suggesting that location <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e072" xlink:type="simple"/></inline-formula> serves mainly for residences or workplaces, while if <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e073" xlink:type="simple"/></inline-formula> is the largest, we can be quite sure that this location is mainly for workplaces. In addition, if the variation of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e074" xlink:type="simple"/></inline-formula> on some day goes out of the acceptable interval, it indicates that something abnormal happens on that day. This feature can be helpful for anomaly detection on human activities in a large area. In the next section, we will analyze the variance of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e075" xlink:type="simple"/></inline-formula>, to determine what is an acceptable interval.</p>
+      </sec>
+      <sec id="s2c">
+        <title>Daily Traffic Power: the Variation</title>
+        <p>Typically in a city, the volume of the traffic flow is quite regular everyday <xref ref-type="bibr" rid="pone.0034487-Gonzlez1">[8]</xref>. However even for the same time in the same location but on different days, the volume is vulnerable to change within a certain range. This section is devoted to analyze how <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e076" xlink:type="simple"/></inline-formula> fluctuates everyday. In this case, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e077" xlink:type="simple"/></inline-formula> is calculated from the average basis pattern <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e078" xlink:type="simple"/></inline-formula> according to <xref ref-type="supplementary-material" rid="pone.0034487.s002">Appendix S2</xref>.</p>
+        <p>We define a random variable <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e079" xlink:type="simple"/></inline-formula> to represent the relative variance of the traffic power.</p>
+        <p>The empirical distribution function of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e080" xlink:type="simple"/></inline-formula> can be simply extracted from a collection of the following expressions in different locations on different days:<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.e081" xlink:type="simple"/><label>(6)</label></disp-formula>where <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e082" xlink:type="simple"/></inline-formula> means the daily average, as we have used.</p>
+        <p>We also find the theoretical distribution function of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e083" xlink:type="simple"/></inline-formula>, which is more complex.</p>
+        <p>First, we try to find <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e084" xlink:type="simple"/></inline-formula> only for the first category of trips in location <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e085" xlink:type="simple"/></inline-formula>. We define <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e086" xlink:type="simple"/></inline-formula> as the potential population that may affect the first-category traffic in this location, and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e087" xlink:type="simple"/></inline-formula> as the probability (ratio) that an individual in the population finally becomes part of that traffic flow. Then the number of such trips follows a binomial distribution:<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.e088" xlink:type="simple"/><label>(7)</label></disp-formula>where <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e089" xlink:type="simple"/></inline-formula> can be any non-negative integer less than <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e090" xlink:type="simple"/></inline-formula>. Because it is a binomial distribution, the corresponding CDF can be written in terms of the beta functions:<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.e091" xlink:type="simple"/><label>(8)</label></disp-formula>where <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e092" xlink:type="simple"/></inline-formula>. <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e093" xlink:type="simple"/></inline-formula> is the incomplete beta function as <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e094" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e095" xlink:type="simple"/></inline-formula> is the beta function as <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e096" xlink:type="simple"/></inline-formula>. Eq. (8) is strictly equal when <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e097" xlink:type="simple"/></inline-formula> is a positive integer, while for a real positive number of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e098" xlink:type="simple"/></inline-formula>, we may use this approximation:</p>
+        <p><disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.e099" xlink:type="simple"/><label>(9)</label></disp-formula>According to the definition, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e100" xlink:type="simple"/></inline-formula>, where <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e101" xlink:type="simple"/></inline-formula> is equivalent to <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e102" xlink:type="simple"/></inline-formula> by the property of expectation of the binomial distribution, and can be treated as a constant for a given location. Therefore, the probability density function (PDF) of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e103" xlink:type="simple"/></inline-formula> is:<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.e104" xlink:type="simple"/><label>(10)</label></disp-formula>where <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e105" xlink:type="simple"/></inline-formula> should satisfy the condition that <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e106" xlink:type="simple"/></inline-formula> is a non-negative integer. The cumulative distribution function (CDF) is</p>
+        <p><disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.e107" xlink:type="simple"/><label>(11)</label></disp-formula>where <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e108" xlink:type="simple"/></inline-formula> where represents the floor function. We call this distribution the normalized binomial distribution of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e109" xlink:type="simple"/></inline-formula>. As listed in <xref ref-type="supplementary-material" rid="pone.0034487.s003">Appendix S3</xref>, the moment generation functions of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e110" xlink:type="simple"/></inline-formula> indicate that <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e111" xlink:type="simple"/></inline-formula> plays an essential role in the distribution. Numerical simulations also provide evidence that the distribution of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e112" xlink:type="simple"/></inline-formula> is strongly affected by <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e113" xlink:type="simple"/></inline-formula> (the product of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e114" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e115" xlink:type="simple"/></inline-formula>), but is almost irrelevant to <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e116" xlink:type="simple"/></inline-formula> or <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e117" xlink:type="simple"/></inline-formula> alone. Therefore, we can assign an constant integer <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e118" xlink:type="simple"/></inline-formula> to <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e119" xlink:type="simple"/></inline-formula>.</p>
+        <p>Let <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e120" xlink:type="simple"/></inline-formula> be a vector containing all the possible values of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e121" xlink:type="simple"/></inline-formula>. Then the PDF of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e122" xlink:type="simple"/></inline-formula> with <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e123" xlink:type="simple"/></inline-formula> can be written in this form<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.e124" xlink:type="simple"/><label>(12)</label></disp-formula>and the CDF is</p>
+        <p>
+          <disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.e125" xlink:type="simple"/><label>(13)</label></disp-formula>
+        </p>
+        <p>Finally, we discuss how to make <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e126" xlink:type="simple"/></inline-formula> representative for variations of any traffic category in any location. We define a vector <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e127" xlink:type="simple"/></inline-formula>, in which each entry <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e128" xlink:type="simple"/></inline-formula> denotes the proportion of traffic flow corresponding to <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e129" xlink:type="simple"/></inline-formula>. Then for a randomly selected traffic flow, when the average number of trips <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e130" xlink:type="simple"/></inline-formula> is not given, a general expression for the CDF of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e131" xlink:type="simple"/></inline-formula> is<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.e132" xlink:type="simple"/><label>(14)</label></disp-formula></p>
+        <p>By beta approximation as in Eq. (9), it can be written into a continuous version<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.e133" xlink:type="simple"/><label>(15)</label></disp-formula></p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <p>In this section, we demonstrate how our theoretical results are supported by the empirical investigation.</p>
+      <p>The general characteristics of our data set, such as the displacement distribution in <xref ref-type="fig" rid="pone-0034487-g002">Fig. 2</xref> and the visiting frequency distribution in <xref ref-type="fig" rid="pone-0034487-g003">Fig. 3</xref>, are similar to others' <xref ref-type="bibr" rid="pone.0034487-Gonzlez1">[8]</xref>, <xref ref-type="bibr" rid="pone.0034487-Liang1">[38]</xref>. The plot of daily traffic flow in <xref ref-type="fig" rid="pone-0034487-g004">Fig. 4</xref> exhibits some hot areas by red, including the most flourishing commercial street Nanjing Road as the largest red block, Shanghai Railway Station, Shanghai South Railway Station, Lujiazui Finance &amp; Trade Zone, etc. The largest isolated area in blue is the Pudong International Airport.</p>
+      <fig id="pone-0034487-g002" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0034487.g002</object-id>
+        <label>Figure 2</label>
+        <caption>
+          <title>Traveling Distance Distribution.</title>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.g002" xlink:type="simple"/>
+      </fig>
+      <fig id="pone-0034487-g003" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0034487.g003</object-id>
+        <label>Figure 3</label>
+        <caption>
+          <title>Visiting Frequency Distribution of Different Locations.</title>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.g003" xlink:type="simple"/>
+      </fig>
+      <fig id="pone-0034487-g004" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0034487.g004</object-id>
+        <label>Figure 4</label>
+        <caption>
+          <title>The Average Traffic Flow of Each Location, and the Tags Corresponding to Following Locations:</title>
+          <p>◯1 Shanghai Railway Station; ◯2 Nanjing Road &amp; People's Square; ◯3 Lujiazui Finance &amp; Trade Zone; ◯4 Shanghai South Railway Station; ◯5 Pudong International Airport.</p>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.g004" xlink:type="simple"/>
+      </fig>
+      <p>Without any intentional intervention, by NMF with random initial values, we find that the normalized basis pattern on workdays is generally quite similar (<xref ref-type="fig" rid="pone-0034487-g001">Fig. 1</xref>). Therefore, we can use the traffic power <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e134" xlink:type="simple"/></inline-formula> to analyze the mean and the deviation of daily traffic.</p>
+      <p>In <xref ref-type="fig" rid="pone-0034487-g005">Fig. 5</xref>, the three components of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e135" xlink:type="simple"/></inline-formula> in every location is normalized and represented by yellow, red and blue respectively. For example, a location in yellow color means the traffic flow of the first category (<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e136" xlink:type="simple"/></inline-formula>: commuting between home and workplace) is dominant there. Mixed colors in some places indicate a mixture of traffic flows of different categories. It is noticeable that in area where the traffic flow is large, the positive (<xref ref-type="fig" rid="pone-0034487-g006">Fig. 6(a)</xref>) and negative (<xref ref-type="fig" rid="pone-0034487-g006">Fig. 6(b)</xref>) deviation of the traffic power <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e137" xlink:type="simple"/></inline-formula> is quite small. The distribution of this deviation can be represented accordingly by <xref ref-type="fig" rid="pone-0034487-g007">Fig. 7(a)</xref> and <xref ref-type="fig" rid="pone-0034487-g007">Fig. 7(b)</xref>, which is fitted well with Eq. (15). This fitting result is quite different from the best fitted normal distribution by the central limit theory, which verifies Eq. (14) and Eq. (15) that <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e138" xlink:type="simple"/></inline-formula> should be a collection of random variables following a set of distributions with different parameters. The proportion of traffic flow with <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e139" xlink:type="simple"/></inline-formula> is <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e140" xlink:type="simple"/></inline-formula>, as plotted in <xref ref-type="fig" rid="pone-0034487-g008">Fig. 8</xref>. Here we limit each <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e141" xlink:type="simple"/></inline-formula> to be no larger than twice of the empirical value. According to the result in <xref ref-type="fig" rid="pone-0034487-g007">Fig. 7</xref>, for the whole city, 80% of the deviations are within the range of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e142" xlink:type="simple"/></inline-formula>. Although the lengths of vectors <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e143" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e144" xlink:type="simple"/></inline-formula> are identically 50 in our estimation, the number of active pairs (<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e145" xlink:type="simple"/></inline-formula>) of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e146" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e147" xlink:type="simple"/></inline-formula> is only about 10, and this number can be reduced if we only calculate for a small area given the sufficient amount of data. In short, we can see that Eq. (15) can be a reasonable approximation for the relative deviation of the daily traffic flow. <xref ref-type="fig" rid="pone-0034487-g009">Fig. 9(b)</xref> presents the components of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e148" xlink:type="simple"/></inline-formula> for the central part of the city in comparison with the urban planning map for Year 2004–2020 in <xref ref-type="fig" rid="pone-0034487-g009">Fig. 9(a)</xref>. Generally, it can be seen that the residence area have a large volume of traffic with respect to <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e149" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e150" xlink:type="simple"/></inline-formula>, corresponding to trips between home and workplaces and trips for other purposes, while in the workplace area especially for business, there are lots of flows corresponding to the second category <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e151" xlink:type="simple"/></inline-formula>, and in the remaining area, the third one <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e152" xlink:type="simple"/></inline-formula> is quite significant. We should note that the urban planning map (2004–2020) is not an exact description for the land uses of Year 2007, and consequently, the patterns of the two figures may not agree well in some small areas. For example, the red patch around point <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e153" xlink:type="simple"/></inline-formula> in <xref ref-type="fig" rid="pone-0034487-g009">Fig. 9(a)</xref> is planned as an industrial land, namely, workplace in our context, while in fact it was a construction site for Expo 2010 Shanghai China with very few taxi traffic in Year 2007. Yet it is still reasonable for a construction site to have the major taxi flows of type <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e154" xlink:type="simple"/></inline-formula> as shown in <xref ref-type="fig" rid="pone-0034487-g009">Fig. 9(b)</xref> because in the evening workers would be very likely to go out for recreation, entertainments, etc.</p>
+      <fig id="pone-0034487-g005" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0034487.g005</object-id>
+        <label>Figure 5</label>
+        <caption>
+          <title>The Average Component Proportions of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e155" xlink:type="simple"/></inline-formula> in Each Location, Equivalent to the Categorical Proportion of the Traffic.</title>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.g005" xlink:type="simple"/>
+      </fig>
+      <fig id="pone-0034487-g006" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0034487.g006</object-id>
+        <label>Figure 6</label>
+        <caption>
+          <title>The Relative Deviation for Components of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e156" xlink:type="simple"/></inline-formula> in Each Location: (a) the Average Positive Deviation; (b) The Average Negative Deviation.</title>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.g006" xlink:type="simple"/>
+      </fig>
+      <fig id="pone-0034487-g007" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0034487.g007</object-id>
+        <label>Figure 7</label>
+        <caption>
+          <title>The Distribution of the Relative Deviation for Components of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e157" xlink:type="simple"/></inline-formula>: (a) CDF; (b) PDF.</title>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.g007" xlink:type="simple"/>
+      </fig>
+      <fig id="pone-0034487-g008" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0034487.g008</object-id>
+        <label>Figure 8</label>
+        <caption>
+          <title>The Parameters for the Distribution.</title>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.g008" xlink:type="simple"/>
+      </fig>
+      <fig id="pone-0034487-g009" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0034487.g009</object-id>
+        <label>Figure 9</label>
+        <caption>
+          <title>Comparing the Empirical Data to Urban Planning Map: (a) the Area Type from Urban Planning <xref ref-type="bibr" rid="pone.0034487-Shanghai3">[<bold>47</bold>]</xref> for Central Part of the City; (b) the Average Categorical Proportion of Traffic for Central Part of the City.</title>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.g009" xlink:type="simple"/>
+      </fig>
+      <p>In addition, we can see how the government planning <xref ref-type="bibr" rid="pone.0034487-Shanghai3">[47]</xref> is affected by what it is now. For example, Nanjing Road and near by is the largest block with high traffic throughput, and traffic flows are constituted mainly by those of workplaces related (<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e158" xlink:type="simple"/></inline-formula>) and other facilities related (<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e159" xlink:type="simple"/></inline-formula>) categories. In the planning, it is designed to be a public activity center for administrative, business and shopping purposes. Lujiazui is another similar but smaller zone, which is planned mainly for business and shopping centers.</p>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>In this research, we find that the traffic on workdays can be divided into three categories according to the different purposes: commuting between home and workplaces, traveling from workplace to workplace, and others such as leisure activities. Each of these categories has a highly distinguishable basis pattern: <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e160" xlink:type="simple"/></inline-formula>, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e161" xlink:type="simple"/></inline-formula> or <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e162" xlink:type="simple"/></inline-formula>. The relative daily deviation of the traffic flow in each category can be modeled as Eq. (14), which is a mixture of normalized binomial distributions, with a continuous approximation as Eq. (15).</p>
+      <p>This basis pattern theory is applicable to data sets containing the beginning and ending information of trips, such as the bicycle departure and arrival data <xref ref-type="bibr" rid="pone.0034487-Kaltenbrunner1">[48]</xref>, cell phone based mobility information <xref ref-type="bibr" rid="pone.0034487-Gonzlez1">[8]</xref>, GPS based data, etc.</p>
+      <p>The first contribution of this research is, it provides a very economical approach to understand how the urban traffic at different locations are composed from the three categories. For instance, a large <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e163" xlink:type="simple"/></inline-formula> means there is a large portion of traffic between home and workplaces at location <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e164" xlink:type="simple"/></inline-formula>. This theory can also help to infer the land use composition by a quite easy, real-time, and automated way. For example, the evidence of a large <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e165" xlink:type="simple"/></inline-formula> everyday indicates location <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e166" xlink:type="simple"/></inline-formula> is mainly for residential or working purpose, while a large <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e167" xlink:type="simple"/></inline-formula> can imply that it has lots of workplaces. A mixture of different land uses in a single location can be found by this method as well.</p>
+      <p>Second, based on the NMF approach, the time series of the total traffic at any location can be expressed as a linear combination of the basis patterns. Therefore, we can compress the traffic data of a large area into a very small data size, but still with a quite high resolution. Namely, we only need to store the global basis patterns, and for each location, we use a small vector for the traffic power to represent how strong each basis pattern is.</p>
+      <p>Third, we find that the distribution of the relative deviation is not a normal distribution, indicating that the random variable <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e168" xlink:type="simple"/></inline-formula> is not identical from one place to another, or from time to time. The significance of Eq. (14) and Eq. (15) is, they provide an expression of how traffic fluctuates for various unknown positions and time intervals. This description of relative deviation can also be helpful to estimate the change of the traffic flow, which would be important in traffic predicting, controlling and urban planning.</p>
+      <p>Finally, with the deviation distribution, we can not only predict the change of traffic, but also diagnose the abnormality of the traffic: where, when, why, and how. The first two functions are obvious, while ‘why’ abnormal can be disclosed by the traffic power, and ‘how’ abnormal can be revealed by the probability of the deviation. For example, if some traffic flow is very abnormal one day, the probability density of the variance on that day should be very small.</p>
+      <p>Our analysis focusing on the traffic flows in different locations on different workdays. Our results can also be extend to the traffic on a road. The road traffic is a summation of the traffic passing this road from several sources and to several destinations. Therefore, the volume and the deviation of the road traffic flow can also be explained in our framework.</p>
+    </sec>
+    <sec id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material id="pone.0034487.s001" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.s001" xlink:type="simple">
+        <label>Appendix S1</label>
+        <caption>
+          <p>More on Data Description and Background Assumptions.</p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0034487.s002" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.s002" xlink:type="simple">
+        <label>Appendix S2</label>
+        <caption>
+          <p>Implementation Details about the Factorization.</p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0034487.s003" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pone.0034487.s003" xlink:type="simple">
+        <label>Appendix S3</label>
+        <caption>
+          <p>Moment Generation Function of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0034487.e169" xlink:type="simple"/></inline-formula>.</p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We would like to thank Wireless and Sensor networks Lab (WnSN, Shanghai Jiao Tong University, China) for providing the data source. We thank Dr. Min-You Wu, Yang Yang (Shanghai Jiao Tong University, China) for supports in data. We also thank Xianchuang Su, Dr. Yixiao Li, Dr. Yong Min and Chuanzi Chen (Zhejiang University, China), Dr. David Keyes and Dr. Xiangliang Zhang (King Abdullah University of Science and Technology, Saudi Arabia) for precious suggestions. For computer time, this research used the resources of the Supercomputing Laboratory at King Abdullah University of Science &amp; Technology (KAUST) in Thuwal, Saudi Arabia.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0034487-Chowdhury1">
+        <label>1</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Chowdhury</surname><given-names>D</given-names></name><name name-style="western"><surname>Santen</surname><given-names>L</given-names></name><name name-style="western"><surname>Schadschneider</surname><given-names>A</given-names></name></person-group>             <year>2000</year>             <article-title>Statistical physics of vehicular traffic and some related systems.</article-title>             <source>Physics Reports</source>             <volume>329</volume>             <fpage>199</fpage>             <lpage>329</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Nagel1">
+        <label>2</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Nagel</surname><given-names>K</given-names></name></person-group>             <year>1996</year>             <article-title>Particle hopping models and traffic flow theory.</article-title>             <source>Physical Review E</source>             <volume>53</volume>             <fpage>4655</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Esser1">
+        <label>3</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Esser</surname><given-names>J</given-names></name><name name-style="western"><surname>Schreckenberg</surname><given-names>M</given-names></name></person-group>             <year>1997</year>             <article-title>Microscopic simulation of urban traffic based on cellular automata.</article-title>             <source>International Journal of Modern Physics C-Physics and Computer</source>             <volume>8</volume>             <fpage>1025</fpage>             <lpage>1036</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Simon1">
+        <label>4</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Simon</surname><given-names>P</given-names></name><name name-style="western"><surname>Nagel</surname><given-names>K</given-names></name></person-group>             <year>1998</year>             <article-title>A simplified cellular automaton model for city traffic.</article-title>             <source>Arxiv preprint cond-mat/</source>             <volume>9801022</volume>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Perc1">
+        <label>5</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Perc</surname><given-names>M</given-names></name></person-group>             <year>2007</year>             <article-title>Premature seizure of traffic flow due to the introduction of evolutionary games.</article-title>             <source>New Journal of Physics</source>             <volume>9</volume>             <fpage>3</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Helbing1">
+        <label>6</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Helbing</surname><given-names>D</given-names></name></person-group>             <year>1995</year>             <article-title>Improved fluid-dynamic model for vehicular traffic.</article-title>             <source>Physical Review E</source>             <volume>51</volume>             <fpage>3164</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Brockmann1">
+        <label>7</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Brockmann</surname><given-names>D</given-names></name><name name-style="western"><surname>Hufnagel</surname><given-names>L</given-names></name><name name-style="western"><surname>Geisel</surname><given-names>T</given-names></name></person-group>             <year>2006</year>             <article-title>The scaling laws of human travel.</article-title>             <source>Nature</source>             <volume>439</volume>             <fpage>462</fpage>             <lpage>465</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Gonzlez1">
+        <label>8</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>González</surname><given-names>M</given-names></name><name name-style="western"><surname>Hidalgo</surname><given-names>C</given-names></name><name name-style="western"><surname>Barabási</surname><given-names>A</given-names></name></person-group>             <year>2008</year>             <article-title>Understanding individual human mobility patterns.</article-title>             <source>Nature</source>             <volume>453</volume>             <fpage>779</fpage>             <lpage>782</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Jiang1">
+        <label>9</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Jiang</surname><given-names>B</given-names></name><name name-style="western"><surname>Yin</surname><given-names>J</given-names></name><name name-style="western"><surname>Zhao</surname><given-names>S</given-names></name></person-group>             <year>2009</year>             <article-title>Characterizing the human mobility pattern in a large street network.</article-title>             <source>Physical Review E</source>             <volume>80</volume>             <fpage>021136</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Leutzbach1">
+        <label>10</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Leutzbach</surname><given-names>W</given-names></name></person-group>             <year>1987</year>             <article-title>Introduction to the theory of traffic flow.</article-title>             <publisher-name>Springer Verlag</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Kerner1">
+        <label>11</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kerner</surname><given-names>B</given-names></name></person-group>             <year>2009</year>             <article-title>Introduction to modern traffic flow theory and control: the long road to threephase traffic theory.</article-title>             <publisher-name>Springer Verlag</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Kitamura1">
+        <label>12</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kitamura</surname><given-names>R</given-names></name><name name-style="western"><surname>Chen</surname><given-names>C</given-names></name><name name-style="western"><surname>Pendyala</surname><given-names>R</given-names></name><name name-style="western"><surname>Narayanan</surname><given-names>R</given-names></name></person-group>             <year>2000</year>             <article-title>Micro-simulation of daily activity-travel patterns for travel demand forecasting.</article-title>             <source>Transportation</source>             <volume>27</volume>             <fpage>25</fpage>             <lpage>51</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Kuppam1">
+        <label>13</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kuppam</surname><given-names>A</given-names></name><name name-style="western"><surname>Pendyala</surname><given-names>R</given-names></name></person-group>             <year>2001</year>             <article-title>A structural equations analysis of commuters' activity and travel patterns.</article-title>             <source>Transportation</source>             <volume>28</volume>             <fpage>33</fpage>             <lpage>54</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Liao1">
+        <label>14</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Liao</surname><given-names>Z</given-names></name><name name-style="western"><surname>Yang</surname><given-names>S</given-names></name><name name-style="western"><surname>Liang</surname><given-names>J</given-names></name></person-group>             <year>2010</year>             <article-title>Detection of Abnormal Crowd Distribution.</article-title>             <source>IEEE/ACM International Conference on Green Computing and Communications &amp; IEEE/ACM International Conferenceon Cyber, Physical and Social Computing</source>             <publisher-name>IEEE</publisher-name>             <fpage>600</fpage>             <lpage>604</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Candia1">
+        <label>15</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Candia</surname><given-names>J</given-names></name><name name-style="western"><surname>González</surname><given-names>M</given-names></name><name name-style="western"><surname>Wang</surname><given-names>P</given-names></name><name name-style="western"><surname>Schoenharl</surname><given-names>T</given-names></name><name name-style="western"><surname>Madey</surname><given-names>G</given-names></name><etal/></person-group>             <year>2008</year>             <article-title>Uncovering individual and collective human dynamics from mobile phone records.</article-title>             <source>Journal of Physics A: Mathematical and Theoretical</source>             <volume>41</volume>             <fpage>224015</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Andrade1">
+        <label>16</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Andrade</surname><given-names>E</given-names></name><name name-style="western"><surname>Blunsden</surname><given-names>S</given-names></name><name name-style="western"><surname>Fisher</surname><given-names>R</given-names></name></person-group>             <year>2006</year>             <article-title>Modelling crowd scenes for event detection.</article-title>             <source>Proceedings of the 18th International Conference on Pattern Recognition</source>             <publisher-name>IEEE, volume 1</publisher-name>             <fpage>175</fpage>             <lpage>178</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Mehran1">
+        <label>17</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Mehran</surname><given-names>R</given-names></name><name name-style="western"><surname>Oyama</surname><given-names>A</given-names></name><name name-style="western"><surname>Shah</surname><given-names>M</given-names></name></person-group>             <year>2009</year>             <article-title>Abnormal crowd behavior detection using social force model.</article-title>             <source>IEEE Conference on Computer Vision and Pattern Recognition</source>             <publisher-name>IEEE</publisher-name>             <fpage>935</fpage>             <lpage>942</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Handy1">
+        <label>18</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Handy</surname><given-names>S</given-names></name></person-group>             <year>1996</year>             <article-title>Methodologies for exploring the link between urban form and travel behavior.</article-title>             <source>Transportation Research Part D: Transport and Environment</source>             <volume>1</volume>             <fpage>151</fpage>             <lpage>165</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Horner1">
+        <label>19</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Horner</surname><given-names>M</given-names></name><name name-style="western"><surname>O'Kelly</surname><given-names>M</given-names></name></person-group>             <year>2001</year>             <article-title>Embedding economies of scale concepts for hub network design.</article-title>             <source>Journal of Transport Geography</source>             <volume>9</volume>             <fpage>255</fpage>             <lpage>265</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Dieleman1">
+        <label>20</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Dieleman</surname><given-names>F</given-names></name><name name-style="western"><surname>Dijst</surname><given-names>M</given-names></name><name name-style="western"><surname>Burghouwt</surname><given-names>G</given-names></name></person-group>             <year>2002</year>             <article-title>Urban form and travel behaviour: micro-level household attributes and residential context.</article-title>             <source>Urban Studies</source>             <volume>39</volume>             <fpage>507</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Waddell1">
+        <label>21</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Waddell</surname><given-names>P</given-names></name></person-group>             <year>2002</year>             <article-title>Modeling urban development for land use, transportation, and environmental planning.</article-title>             <source>Journal of the American Planning Association</source>             <volume>68</volume>             <fpage>297</fpage>             <lpage>314</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Boarnet1">
+        <label>22</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Boarnet</surname><given-names>M</given-names></name><name name-style="western"><surname>Crane</surname><given-names>R</given-names></name></person-group>             <year>2001</year>             <article-title>The influence of land use on travel behavior: specification and estimation strategies.</article-title>             <source>Transportation Research Part A: Policy and Practice</source>             <volume>35</volume>             <fpage>823</fpage>             <lpage>845</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Wegener1">
+        <label>23</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Wegener</surname><given-names>M</given-names></name></person-group>             <year>2004</year>             <article-title>Overview of land use transport models.</article-title>             <source>Handbook of transport geography and spatial systems</source>             <volume>5</volume>             <fpage>127</fpage>             <lpage>146</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Handy2">
+        <label>24</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Handy</surname><given-names>S</given-names></name></person-group>             <year>2005</year>             <article-title>Smart growth and the transportation-land use connection: what does the research tell us?</article-title>             <source>International Regional Science Review</source>             <volume>28</volume>             <fpage>146</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Han1">
+        <label>25</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Han</surname><given-names>X</given-names></name><name name-style="western"><surname>Hao</surname><given-names>Q</given-names></name><name name-style="western"><surname>Wang</surname><given-names>B</given-names></name><name name-style="western"><surname>Zhou</surname><given-names>T</given-names></name></person-group>             <year>2011</year>             <article-title>Origin of the scaling law in human mobility: Hierarchy of traffic systems.</article-title>             <source>Physical Review E</source>             <volume>83</volume>             <fpage>036117</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-LonginiI1">
+        <label>26</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Longini I</surname><suffix>Jr</suffix></name><name name-style="western"><surname>Nizam</surname><given-names>A</given-names></name><name name-style="western"><surname>Xu</surname><given-names>S</given-names></name><name name-style="western"><surname>Ungchusak</surname><given-names>K</given-names></name><name name-style="western"><surname>Hanshaoworakul</surname><given-names>W</given-names></name><etal/></person-group>             <year>2005</year>             <article-title>Containing pandemic influenza at the source.</article-title>             <source>Science</source>             <volume>309</volume>             <fpage>1083</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Eubank1">
+        <label>27</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Eubank</surname><given-names>S</given-names></name><name name-style="western"><surname>Guclu</surname><given-names>H</given-names></name><name name-style="western"><surname>Kumar</surname><given-names>V</given-names></name><name name-style="western"><surname>Marathe</surname><given-names>M</given-names></name><name name-style="western"><surname>Srinivasan</surname><given-names>A</given-names></name><etal/></person-group>             <year>2004</year>             <article-title>Modelling disease outbreaks in realistic urban social networks.</article-title>             <source>Nature</source>             <volume>429</volume>             <fpage>180</fpage>             <lpage>184</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Easley1">
+        <label>28</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Easley</surname><given-names>D</given-names></name><name name-style="western"><surname>Kleinberg</surname><given-names>J</given-names></name></person-group>             <year>2010</year>             <article-title>Networks, crowds, and markets: Reasoning about a highly connected world.</article-title>             <publisher-name>Cambridge University Press</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Anderson1">
+        <label>29</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Anderson</surname><given-names>R</given-names></name><name name-style="western"><surname>Fraser</surname><given-names>C</given-names></name><name name-style="western"><surname>Ghani</surname><given-names>A</given-names></name><name name-style="western"><surname>Donnelly</surname><given-names>C</given-names></name><name name-style="western"><surname>Riley</surname><given-names>S</given-names></name><etal/></person-group>             <year>2004</year>             <article-title>Epidemiology, transmission dynamics and control of SARS: the 2002–2003 epidemic.</article-title>             <source>Philosophical Transactions of the Royal Society of London Series B: Biological Sciences</source>             <volume>359</volume>             <fpage>1091</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Hufnagel1">
+        <label>30</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Hufnagel</surname><given-names>L</given-names></name><name name-style="western"><surname>Brockmann</surname><given-names>D</given-names></name><name name-style="western"><surname>Geisel</surname><given-names>T</given-names></name></person-group>             <year>2004</year>             <article-title>Forecast and control of epidemics in a globalized world.</article-title>             <source>Proceedings of the National Academy of Sciences of the United States of America</source>             <volume>101</volume>             <fpage>15124</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Riley1">
+        <label>31</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Riley</surname><given-names>S</given-names></name></person-group>             <year>2007</year>             <article-title>Large-scale spatial-transmission models of infectious disease.</article-title>             <source>Science</source>             <volume>316</volume>             <fpage>1298</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Kleinberg1">
+        <label>32</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kleinberg</surname><given-names>J</given-names></name></person-group>             <year>2007</year>             <article-title>The wireless epidemic.</article-title>             <source>Nature</source>             <volume>449</volume>             <fpage>287</fpage>             <lpage>288</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Hu1">
+        <label>33</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Hu</surname><given-names>H</given-names></name><name name-style="western"><surname>Myers</surname><given-names>S</given-names></name><name name-style="western"><surname>Colizza</surname><given-names>V</given-names></name><name name-style="western"><surname>Vespignani</surname><given-names>A</given-names></name></person-group>             <year>2009</year>             <article-title>WiFi networks and malware epidemiology.</article-title>             <source>Proceedings of the National Academy of Sciences</source>             <volume>106</volume>             <fpage>1318</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Castellano1">
+        <label>34</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Castellano</surname><given-names>C</given-names></name><name name-style="western"><surname>Fortunato</surname><given-names>S</given-names></name><name name-style="western"><surname>Loreto</surname><given-names>V</given-names></name></person-group>             <year>2009</year>             <article-title>Statistical physics of social dynamics.</article-title>             <source>Reviews of modern physics</source>             <volume>81</volume>             <fpage>591</fpage>             <lpage>646</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Shlesinger1">
+        <label>35</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Shlesinger</surname><given-names>M</given-names></name><name name-style="western"><surname>Zaslavsky</surname><given-names>G</given-names></name><name name-style="western"><surname>Frisch</surname><given-names>U</given-names></name></person-group>             <year>1995</year>             <article-title>Lévy flights and related topics in physics. In: Lévy Flights and Related Topics in Physics: Proceedings of the International Workshop Held at Nice, France.</article-title>             <source>volume</source>             <volume>450</volume>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Rhee1">
+        <label>36</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Rhee</surname><given-names>I</given-names></name><name name-style="western"><surname>Shin</surname><given-names>M</given-names></name><name name-style="western"><surname>Hong</surname><given-names>S</given-names></name><name name-style="western"><surname>Lee</surname><given-names>K</given-names></name><name name-style="western"><surname>Chong</surname><given-names>S</given-names></name></person-group>             <year>2008</year>             <article-title>On the levy-walk nature of human mobility.</article-title>             <source>INFOCOM 2008</source>             <publisher-name>The 27th Conference on Computer Communications. IEEE. IEEE</publisher-name>             <fpage>924</fpage>             <lpage>932</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Song1">
+        <label>37</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Song</surname><given-names>C</given-names></name><name name-style="western"><surname>Qu</surname><given-names>Z</given-names></name><name name-style="western"><surname>Blumm</surname><given-names>N</given-names></name><name name-style="western"><surname>Barabasi</surname><given-names>A</given-names></name></person-group>             <year>2010</year>             <article-title>Limits of predictability in human mobility.</article-title>             <source>Science</source>             <volume>327</volume>             <fpage>1018</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Liang1">
+        <label>38</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Liang</surname><given-names>X</given-names></name><name name-style="western"><surname>Zheng</surname><given-names>X</given-names></name><name name-style="western"><surname>Lv</surname><given-names>W</given-names></name><name name-style="western"><surname>Zhu</surname><given-names>T</given-names></name><name name-style="western"><surname>Xu</surname><given-names>K</given-names></name></person-group>             <year>2012</year>             <article-title>The scaling of human mobility by taxis is exponential.</article-title>             <source>Physica A: Statistical Mechanics and its Applications</source>             <volume>391</volume>             <fpage>2135</fpage>             <lpage>2144</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Shanghai1">
+        <label>39</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <collab xlink:type="simple">Shanghai Jiao Tong University, China</collab>             <year>2007</year>             <article-title>SUVnet-Trace data.</article-title>             <volume>9</volume>             <comment>Available: <ext-link ext-link-type="uri" xlink:href="http://wirelesslab.sjtu.edu.cn" xlink:type="simple">http://wirelesslab.sjtu.edu.cn</ext-link>. Accessed 2012 Mar</comment>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Shanghai2">
+        <label>40</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <collab xlink:type="simple">Shanghai Population and Family Planning Commission, China</collab>             <year>2001</year>             <article-title>From the fifth population census to evaluate the population condition for the sustainable development of Shanghai.</article-title>             <volume>9</volume>             <comment>Available: <ext-link ext-link-type="uri" xlink:href="http://www.popinfo.gov.cn/yearbook/2001nj/zhuanwen/7-4.htm" xlink:type="simple">http://www.popinfo.gov.cn/yearbook/2001nj/zhuanwen/7-4.htm</ext-link>. Accessed 2012 Mar</comment>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Lee1">
+        <label>41</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lee</surname><given-names>D</given-names></name><name name-style="western"><surname>Seung</surname><given-names>H</given-names></name></person-group>             <year>1999</year>             <article-title>Learning the parts of objects by non-negative matrix factorization.</article-title>             <source>Nature</source>             <volume>401</volume>             <fpage>788</fpage>             <lpage>791</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Lin1">
+        <label>42</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lin</surname><given-names>C</given-names></name></person-group>             <year>2007</year>             <article-title>Projected gradient methods for nonnegative matrix factorization.</article-title>             <source>Neural computation</source>             <volume>19</volume>             <fpage>2756</fpage>             <lpage>2779</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Hollick1">
+        <label>43</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Hollick</surname><given-names>M</given-names></name><name name-style="western"><surname>Krop</surname><given-names>T</given-names></name><name name-style="western"><surname>Schmitt</surname><given-names>J</given-names></name><name name-style="western"><surname>Huth</surname><given-names>H</given-names></name><name name-style="western"><surname>Steinmetz</surname><given-names>R</given-names></name></person-group>             <year>2004</year>             <article-title>Modeling mobility and workload for wireless metropolitan area networks.</article-title>             <source>Computer Communications</source>             <volume>27</volume>             <fpage>751</fpage>             <lpage>761</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-BenAkiva1">
+        <label>44</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Ben-Akiva</surname><given-names>M</given-names></name><name name-style="western"><surname>Bowman</surname><given-names>J</given-names></name><name name-style="western"><surname>Ramming</surname><given-names>S</given-names></name><name name-style="western"><surname>Walker</surname><given-names>J</given-names></name></person-group>             <year>1998</year>             <article-title>Behavioral realism in urban transportation planning models.</article-title>             <publisher-loc>Transportation Models in the Policy-Making Process</publisher-loc>             <publisher-name>Uses, Misuses and Lessons for the Future</publisher-name>             <fpage>4</fpage>             <lpage>6</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Zhang1">
+        <label>45</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Zhang</surname><given-names>L</given-names></name><name name-style="western"><surname>Wu</surname><given-names>J</given-names></name><name name-style="western"><surname>Zhen</surname><given-names>Y</given-names></name><name name-style="western"><surname>Shu</surname><given-names>J</given-names></name></person-group>             <year>2004</year>             <article-title>A GIS-based gradient analysis of urban landscape pattern of Shanghai metropolitan area, China.</article-title>             <source>Landscape and Urban Planning</source>             <volume>69</volume>             <fpage>1</fpage>             <lpage>16</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Onnela1">
+        <label>46</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Onnela</surname><given-names>J</given-names></name><name name-style="western"><surname>Saramäki</surname><given-names>J</given-names></name><name name-style="western"><surname>Hyvönen</surname><given-names>J</given-names></name><name name-style="western"><surname>Szabó</surname><given-names>G</given-names></name><name name-style="western"><surname>Lazer</surname><given-names>D</given-names></name><etal/></person-group>             <year>2007</year>             <article-title>Structure and tie strengths in mobile communication networks.</article-title>             <source>Proceedings of the National Academy of Sciences</source>             <volume>104</volume>             <fpage>7332</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Shanghai3">
+        <label>47</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <collab xlink:type="simple">Shanghai Municipal Bureau of Planning and Land Resources, China</collab>             <year>2009</year>             <article-title>Shanghai urban planning: land-use planning.</article-title>             <volume>9</volume>             <comment>Available: <ext-link ext-link-type="uri" xlink:href="http://www.china.com.cn/aboutchina/zhuanti/09dfgl/2009-09/08/content184882372.htm" xlink:type="simple">http://www.china.com.cn/aboutchina/zhuanti/09dfgl/2009-09/08/content184882372.htm</ext-link>. Accessed 2012 Mar</comment>          </element-citation>
+      </ref>
+      <ref id="pone.0034487-Kaltenbrunner1">
+        <label>48</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kaltenbrunner</surname><given-names>A</given-names></name><name name-style="western"><surname>Meza</surname><given-names>R</given-names></name><name name-style="western"><surname>Grivolla</surname><given-names>J</given-names></name><name name-style="western"><surname>Codina</surname><given-names>J</given-names></name><name name-style="western"><surname>Banchs</surname><given-names>R</given-names></name></person-group>             <year>2008</year>             <article-title>Bicycle cycles and mobility patterns-Exploring and characterizing data from a community bicycle program.</article-title>             <publisher-name>Arxiv preprint arXiv</publisher-name> <comment>08104187</comment>           </element-citation>
+      </ref>
+    </ref-list>
+    
+  </back>
+</article>

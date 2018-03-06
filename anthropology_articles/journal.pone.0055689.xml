@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="publisher-id">PONE-D-12-20277</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0055689</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Computational biology</subject>
+            <subj-group>
+              <subject>Population modeling</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Population biology</subject>
+            <subj-group>
+              <subject>Population dynamics</subject>
+              <subject>Population metrics</subject>
+              <subject>Population modeling</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Computer science</subject>
+          <subj-group>
+            <subject>Computer modeling</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Mathematics</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Epidemiology</subject>
+            <subj-group>
+              <subject>Cancer epidemiology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Non-clinical medicine</subject>
+            <subj-group>
+              <subject>Health care policy</subject>
+              <subj-group>
+                <subject>Ethnic differences</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Social and behavioral sciences</subject>
+          <subj-group>
+            <subject>Anthropology</subject>
+            <subj-group>
+              <subject>Cultural anthropology</subject>
+              <subj-group>
+                <subject>Ethnic groups</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Sociology</subject>
+            <subj-group>
+              <subject>Demography</subject>
+              <subj-group>
+                <subject>Ethnic groups</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Public Health and Epidemiology</subject>
+          <subject>Computational Biology</subject>
+          <subject>Computer Science</subject>
+          <subject>Mathematics</subject>
+          <subject>Non-Clinical Medicine</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Heuristic Algorithms for Assigning Hispanic Ethnicity</article-title>
+        <alt-title alt-title-type="running-head">Assigning Hispanic Ethnicity</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Boscoe</surname>
+            <given-names>Francis P.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Schymura</surname>
+            <given-names>Maria J.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Zhang</surname>
+            <given-names>Xiuling</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Kramer</surname>
+            <given-names>Rachel A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>New York State Cancer Registry, New York State Department of Health, Albany, New York, United States of America</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>New York State Cancer Services Program, New York State Department of Health, Albany, New York, United States of America</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Glymour</surname>
+            <given-names>M. Maria</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>Harvard School of Public Health, United States of America</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">fpb01@health.state.ny.us</email></corresp>
+        <fn fn-type="conflict">
+          <p>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Read, commented and contributed to the manuscript: MJS RAK XZ. Conceived and designed the experiments: MJS FPB. Analyzed the data: XZ FPB. Contributed reagents/materials/analysis tools: RAK. Wrote the paper: FPB.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>6</day>
+        <month>2</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>8</volume>
+      <issue>2</issue>
+      <elocation-id>e55689</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>9</day>
+          <month>7</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>2</day>
+          <month>1</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Boscoe et al</copyright-holder>
+        <license xlink:type="simple">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>We compared several techniques for assigning Hispanic ethnicity to records in data systems where this information may be missing, variously making use of country of origin, surname, race, and county of residence. We considered an algorithm in use by the North American Association of Central Cancer Registries (NAACCR), a variation of this developed by the authors, a “fast and frugal” algorithm developed with the aid of recursive partitioning methods, and conventional logistic regression. With the exception of logistic regression, each approach was rule-based: if specific criteria were met, an ethnicity assignment was made; otherwise, the next criterion was considered, until all records were assigned. We evaluated the algorithms on a sample of over 500,000 female clients from the New York State Cancer Services Program for whom self-reported Hispanic ethnicity was known. We found that all approaches yielded similarly high accuracy, sensitivity, and positive predictive value in all parts of the state, from areas with very low to very high Hispanic populations. An advantage of the fast and frugal method is that it consists of a small number of easily remembered steps.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>This work was supported in part by the Centers for Disease Control and Prevention’s Cooperative Agreement U58/DP000783 (<ext-link ext-link-type="uri" xlink:href="http://www.cdc.gov/" xlink:type="simple">http://www.cdc.gov/</ext-link>), awarded to the New York State Department of Health through the National Program of Cancer Registries. No additional external funding was received for this study. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="6"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Race and Hispanic ethnicity are routinely used in public health and public policy analyses in the United States, particularly to identify disparities. They are generally considered useful categories, despite problems with standard definitions and terminology and more fundamental concerns over what identified disparities truly signify <xref ref-type="bibr" rid="pone.0055689-Bhopal1">[1]</xref>–<xref ref-type="bibr" rid="pone.0055689-Rebbeck1">[2]</xref>. Most researchers do agree that race and ethnicity data stand to be improved <xref ref-type="bibr" rid="pone.0055689-Lin1">[3]</xref>–<xref ref-type="bibr" rid="pone.0055689-Ma1">[6]</xref>. For example, despite significant effort over four years, a large health maintenance organization (HMO) was able to obtain race/ethnicity information on only one-third of its enrollees <xref ref-type="bibr" rid="pone.0055689-Elliott1">[7]</xref>. Similarly, in some state cancer registries, more than half of the records are missing values for ethnicity, although nationally the figure is closer to five percent <xref ref-type="bibr" rid="pone.0055689-NorthAmericanAssociationofCentralCancer1">[8]</xref>. Another study found that as of 2008, just twenty states collected hospital discharge data in accordance with current federal race/ethnicity definitions, nineteen followed earlier definitions, and eight did not collect race and/or ethnicity at all <xref ref-type="bibr" rid="pone.0055689-Andrews1">[9]</xref>.</p>
+      <p>Investigators have tackled the problem of missing race and ethnicity data by trying to make improvements in initial data collection or by linking to external databases <xref ref-type="bibr" rid="pone.0055689-Elliott1">[7]</xref>, <xref ref-type="bibr" rid="pone.0055689-Stroupe1">[10]</xref>. With either of these approaches, the aim is to obtain the self-reported value, which is generally taken to be the best measure of race and ethnicity <xref ref-type="bibr" rid="pone.0055689-McAlpine1">[11]</xref>. Another alternative is to assign a likely value based on the values of other highly predictive variables such as birth place, surname, or residential location <xref ref-type="bibr" rid="pone.0055689-Elliott1">[7]</xref>, <xref ref-type="bibr" rid="pone.0055689-NAACCR1">[12]</xref>–<xref ref-type="bibr" rid="pone.0055689-Elliott2">[15]</xref>. This approach necessarily introduces some misclassification compared with self-reported values, but can be considerably less costly, as it just involves applying a model or algorithm to already-collected data.</p>
+      <p>Surnames have long been used to aid in ethnic identification in the United States. The United States Census Bureau has been publishing Spanish surname lists since the 1950 census, with steady improvements in their quality and scope <xref ref-type="bibr" rid="pone.0055689-Perkins1">[16]</xref>. Morgan and others found the 1990 list to be more predictive of Hispanic ethnicity than codes collected directly by the Medicare program <xref ref-type="bibr" rid="pone.0055689-Morgan1">[17]</xref>–<xref ref-type="bibr" rid="pone.0055689-Wei1">[18]</xref>. The lists have led to key insights; for example, Smith and Bradshaw found that using surnames to calculate mortality rates by ethnicity in Texas partially explained the “Hispanic paradox” by which Hispanics have lower mortality than non-Hispanic whites <xref ref-type="bibr" rid="pone.0055689-Smith1">[19]</xref>. Because Hispanic ethnicity is underreported on death certificates, Hispanic mortality rates appear artificially low; using surname-derived ethnicity corrects for this.</p>
+      <p>In this paper, we evaluated four approaches for assigning Hispanic ethnicity by comparing the results to a large set of self-reported values (<xref ref-type="table" rid="pone-0055689-t001">Table 1</xref>). First, we considered the NAACCR Hispanic Identification Algorithm (NHIA) currently in use by central cancer registries in the United States <xref ref-type="bibr" rid="pone.0055689-NAACCR2">[13]</xref>. This algorithm was developed by a team of over a dozen researchers between 2001 and 2003 and has been subjected to ongoing evaluation and occasional minor adjustment since that time. Next, we considered a data-driven solution developed by the authors (hereafter referred to as the “authors’ method”) based on our experience and familiarity with the data set. We then considered a “fast and frugal” algorithm suggested by the recursive partitioning method <xref ref-type="bibr" rid="pone.0055689-Czerlinski1">[20]</xref>–<xref ref-type="bibr" rid="pone.0055689-Cook1">[21]</xref>. Recursive partitioning is a technique that creates a decision tree that attempts to maximize the classification of the population based on dichotomous dependent variables. Finally, we considered a traditional logistic regression approach. The four approaches variously made use of birthplace, surname and/or maiden name, race, and county of residence. Each approach classified all records as either Hispanic or non-Hispanic and did not leave any unclassified. All but the regression method are examples of “take the best” heuristics, where a series of criteria are applied, and the process halted as soon as a discrimination is able to be made <xref ref-type="bibr" rid="pone.0055689-Gigerenzer1">[22]</xref>.</p>
+      <table-wrap id="pone-0055689-t001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0055689.t001</object-id>
+        <label>Table 1</label>
+        <caption>
+          <title>Hispanic identification algorithms evaluated. Number of persons classified by each step given in parentheses.</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone-0055689-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0055689.t001" xlink:type="simple"/>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Algorithm Name</td>
+                <td align="left" rowspan="1" colspan="1">Description</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">NAACCR Hispanic Identification Algorithm (NHIA)<xref ref-type="table-fn" rid="nt102">a</xref></td>
+                <td align="left" rowspan="1" colspan="1">1. Persons born in non-Spanish-speaking countries in South America and Europe and several other specified countries are coded as non-Hispanic (28,191).</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">2. Persons born in Spanish-speaking countries are coded as Hispanic (148,698).</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">3. Persons with American Indian, Asian, or Pacific Islander race are coded as non-Hispanic (51,063).</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">4. Female maiden names that are Hispanic among at least 75% of the population are coded as Hispanic (7,044).</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">5. Female maiden names that are Hispanic among less than 5% of the population are coded as non-Hispanic (68,459).</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">6. Female surnames that are Hispanic among at least 75% of the population are coded as Hispanic (14,977).</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">7. Remaining cases are coded as non-Hispanic (228,139).</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Authors’ algorithm</td>
+                <td align="left" rowspan="1" colspan="1">1. Persons with Asian race are coded as non-Hispanic (51,401).</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">2. Persons born in Spanish-speaking countries are coded as Hispanic (148,554).</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">3. Persons born in all remaining countries except U.S., Brazil, Portugal (including Cape Verde), and Belize are coded as non-Hispanic (53,219).</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">4. Surnames that are Hispanic among at least 75% of the population are coded as Hispanic (20,847).</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">5. Surnames that are Hispanic among less than 25% of the population are coded as non-Hispanic (268,497).</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">6. Persons from high-Hispanic counties (≥10% Hispanic in the 2000 U.S. census) are coded as Hispanic (1,330).</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">7. Persons from low-Hispanic counties (&lt;5% Hispanic in the 2000 U.S. census) are coded as non-Hispanic (671).</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">8. Majority-Hispanic surnames are coded as Hispanic (1,194).</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">9. Remaining cases are coded as non-Hispanic (858).</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Fast and frugal (3-step version)</td>
+                <td align="left" rowspan="1" colspan="1">1. Persons born in Spanish-speaking countries are coded as Hispanic (148,719).</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">2. Majority-Hispanic surnames are coded as Hispanic (25,222).</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">3. Remaining cases are coded as non-Hispanic (372,630)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Fast and frugal (4-step version)</td>
+                <td align="left" rowspan="1" colspan="1">1. Persons with Asian or Pacific Islander race are coded as non-Hispanic (51,401).</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">2. Persons born in Spanish-speaking countries are coded as Hispanic (148,554).</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">3. Majority-Hispanic surnames are coded as Hispanic (24,272).</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">4. Remaining cases are coded as non-Hispanic (322,344).</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Logistic regression</td>
+                <td align="left" rowspan="1" colspan="1">Hispanic ethnicity is a function of country of birth, surname percent Hispanic (using the same categories as in <xref ref-type="table" rid="pone-0055689-t003">Table 3</xref>), county percent Hispanic (grouped into 5% intervals up to 25–30% and over 30%), and race.</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+        <table-wrap-foot>
+          <fn id="nt101">
+            <label/>
+            <p>For all but the NHIA algorithm, maiden names are used in place of surname when available.</p>
+          </fn>
+          <fn id="nt102">
+            <label>a</label>
+            <p>This is a “female only” version of the published algorithm; a data set including males would require one additional step.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <p>We applied our methods to a sample of female clients from the New York State Cancer Services Program (CSP). The CSP, which is funded through the Centers for Disease Control and Prevention’s (CDC) National Breast and Cervical Cancer Early Detection Program and New York state funds, provides free cancer screening and diagnostic services for uninsured and underinsured age-eligible adults with household incomes less than or equal to 250 percent of the federal poverty level. Demographic and other background information are collected for all clients receiving screening or diagnostic services through the CSP as part of a standard intake process. Clients are asked to self-identify their race and ethnicity as well as their place of birth.</p>
+      <p>The sample from the CSP included over 500,000 women served between 1994 through 2010, over 180,000 of whom self-identified as Hispanic (<xref ref-type="table" rid="pone-0055689-t002">Table 2</xref>). This ratio of nearly one-third Hispanic was considerably higher than the Hispanic proportion in New York State as a whole for this period, about 13 percent. Participants in this program were also more likely to be Asian, foreign born, and between the ages of 40 and 59 than the overall population. The data set was geographically balanced, however, with ample representation from all parts of the state, including low-population, low-Hispanic counties.</p>
+      <table-wrap id="pone-0055689-t002" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0055689.t002</object-id>
+        <label>Table 2</label>
+        <caption>
+          <title>Comparison of New York State and CSP populations, age 18 and above.</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone-0055689-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0055689.t002" xlink:type="simple"/>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">New York State, 2000 Census (%)</td>
+                <td align="left" rowspan="1" colspan="1">CSP, 1994–2010 (%)<xref ref-type="table-fn" rid="nt103">a</xref></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Race/ethnicity</td>
+                <td align="left" rowspan="1" colspan="1">Hispanic</td>
+                <td align="left" rowspan="1" colspan="1">13.3</td>
+                <td align="left" rowspan="1" colspan="1">32.5</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">White</td>
+                <td align="left" rowspan="1" colspan="1">61.7</td>
+                <td align="left" rowspan="1" colspan="1">39.9</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">Black</td>
+                <td align="left" rowspan="1" colspan="1">14.7</td>
+                <td align="left" rowspan="1" colspan="1">15.9</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">Asian</td>
+                <td align="left" rowspan="1" colspan="1">5.4</td>
+                <td align="left" rowspan="1" colspan="1">9.4</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">Other</td>
+                <td align="left" rowspan="1" colspan="1">4.8</td>
+                <td align="left" rowspan="1" colspan="1">2.3</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Birthplace</td>
+                <td align="left" rowspan="1" colspan="1">Born in U.S.</td>
+                <td align="left" rowspan="1" colspan="1">72.2</td>
+                <td align="left" rowspan="1" colspan="1">49.5</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">Born in Spanish-speaking country</td>
+                <td align="left" rowspan="1" colspan="1">9.7</td>
+                <td align="left" rowspan="1" colspan="1">27.5</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">Other foreign-born</td>
+                <td align="left" rowspan="1" colspan="1">18.1</td>
+                <td align="left" rowspan="1" colspan="1">23.0</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Age</td>
+                <td align="left" rowspan="1" colspan="1">18–39</td>
+                <td align="left" rowspan="1" colspan="1">40.7</td>
+                <td align="left" rowspan="1" colspan="1">19.8</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">40–49</td>
+                <td align="left" rowspan="1" colspan="1">19.4</td>
+                <td align="left" rowspan="1" colspan="1">33.4</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">50–59</td>
+                <td align="left" rowspan="1" colspan="1">15.0</td>
+                <td align="left" rowspan="1" colspan="1">25.9</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">60–69</td>
+                <td align="left" rowspan="1" colspan="1">10.2</td>
+                <td align="left" rowspan="1" colspan="1">13.3</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">70–79</td>
+                <td align="left" rowspan="1" colspan="1">8.8</td>
+                <td align="left" rowspan="1" colspan="1">5.7</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">80+</td>
+                <td align="left" rowspan="1" colspan="1">5.9</td>
+                <td align="left" rowspan="1" colspan="1">1.9</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Geography</td>
+                <td align="left" rowspan="1" colspan="1">New York City</td>
+                <td align="left" rowspan="1" colspan="1">43.3</td>
+                <td align="left" rowspan="1" colspan="1">43.4</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">New York State Excluding New York City</td>
+                <td align="left" rowspan="1" colspan="1">56.7</td>
+                <td align="left" rowspan="1" colspan="1">56.6</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+        <table-wrap-foot>
+          <fn id="nt103">
+            <label>a</label>
+            <p>Excludes records with missing information, which ranged from 0 percent (age) to 3 percent (birthplace).</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+    </sec>
+    <sec id="s2">
+      <title>Data and Methods</title>
+      <p>Using the four approaches presented in <xref ref-type="table" rid="pone-0055689-t001">Table 1</xref>, we derived Hispanic ethnicity for 546,571 unique women from the CSP client database from the years 1994 to 2010 with known self-reported Hispanic ethnicity. An additional 16,961 persons with unknown Hispanic ethnicity were excluded from the analysis. Birthplace consisted of the state, territory, or country of birth, coded using standard cancer registration codes that group some less common birthplaces together, such as some Pacific Island countries <xref ref-type="bibr" rid="pone.0055689-Thornton1">[23]</xref>. Spanish-speaking birthplaces were defined as Argentina, Bolivia, Chile, Colombia, Costa Rica, Cuba, Dominican Republic, Ecuador, El Salvador, Guatemala, Honduras, Mexico, Nicaragua, Panama, Paraguay, Peru, Puerto Rico, Spain, Uruguay, and Venezuela. Non-specific birthplace codes for Central America, South America, and Latin America (n = 271) were also counted in the Spanish-speaking group. Equatorial Guinea is the only other country with Spanish as an official language, but no separate code existed for this country, as it was grouped with those from other West African nations.</p>
+      <p>Birthplace was not specified for 2.9% of the sample. For these records, algorithmic rules regarding birthplace (i.e., whether born in a Spanish-speaking country) were always taken to be false. Analogous reasoning was used for persons missing race (4.7%) and/or county (0.5%).</p>
+      <p>Hispanic surnames were determined using a list of 151,671 surnames occurring at least 100 times in the United States in the 2000 census, tabulated by race and ethnicity <xref ref-type="bibr" rid="pone.0055689-Word1">[24]</xref>. This list, released in 2008, is based on 86 percent of the entire U.S. population. As names on this file are limited to 14 characters, the match to the CSP data was based on the first fourteen characters; just 0.2 percent of the names on the CSP file contained 15 or more characters. Following a practice developed after the 1990 census, names were grouped into five categories based on the likelihood that a given surname was reported as Hispanic (<xref ref-type="table" rid="pone-0055689-t003">Table 3</xref>) <xref ref-type="bibr" rid="pone.0055689-Wei1">[18]</xref>. Names not on the list (i.e., those occurring fewer than 100 times) were counted as rarely Hispanic. Where both surname and maiden name were available, the maiden name was used, except in the NHIA method where both were considered in certain instances (see <xref ref-type="table" rid="pone-0055689-t001">Table 1</xref>).</p>
+      <table-wrap id="pone-0055689-t003" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0055689.t003</object-id>
+        <label>Table 3</label>
+        <caption>
+          <title>Hispanic Surname Classification Scheme.</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone-0055689-t003-3" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0055689.t003" xlink:type="simple"/>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Designation</td>
+                <td align="left" rowspan="1" colspan="1">% of Persons</td>
+                <td align="left" rowspan="1" colspan="1">Number of Names,2000 Census (%)</td>
+                <td align="left" rowspan="1" colspan="1">Number of Hispanicswith this designation,2000 Census (%)</td>
+                <td align="left" rowspan="1" colspan="1">Number of Hispanicswith this designation,CSP data (%)</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Heavily Hispanic</td>
+                <td align="left" rowspan="1" colspan="1">≥75%</td>
+                <td align="left" rowspan="1" colspan="1">6,020 (4.0)</td>
+                <td align="left" rowspan="1" colspan="1">25,353,317 (71.8)</td>
+                <td align="left" rowspan="1" colspan="1">129,839 (73.9)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Generally Hispanic</td>
+                <td align="left" rowspan="1" colspan="1">≥50%–&lt;75%</td>
+                <td align="left" rowspan="1" colspan="1">1,774 (1.1)</td>
+                <td align="left" rowspan="1" colspan="1">1,185,327 (3.4)</td>
+                <td align="left" rowspan="1" colspan="1">9,627 (5.5)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Moderately Hispanic</td>
+                <td align="left" rowspan="1" colspan="1">≥25%–&lt;50%</td>
+                <td align="left" rowspan="1" colspan="1">1,616 (1.1)</td>
+                <td align="left" rowspan="1" colspan="1">429,309 (1.2)</td>
+                <td align="left" rowspan="1" colspan="1">3,748 (2.1)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Occasionally Hispanic</td>
+                <td align="left" rowspan="1" colspan="1">≥5%–&lt;25%</td>
+                <td align="left" rowspan="1" colspan="1">11,179 (7.4)</td>
+                <td align="left" rowspan="1" colspan="1">547,786 (1.6)</td>
+                <td align="left" rowspan="1" colspan="1">4,236 (2.4)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Rarely Hispanic</td>
+                <td align="left" rowspan="1" colspan="1">&lt;5%</td>
+                <td align="left" rowspan="1" colspan="1">131,082 (86.2)</td>
+                <td align="left" rowspan="1" colspan="1">7,790,079 (22.1)</td>
+                <td align="left" rowspan="1" colspan="1">28,166 (16.0)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Total</td>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">151,671 (100.0)</td>
+                <td align="left" rowspan="1" colspan="1">35,305,818 (100.0)</td>
+                <td align="left" rowspan="1" colspan="1">175,616 (100.0)</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+      </table-wrap>
+      <p>Derived Hispanic ethnicity was compared with self-reported Hispanic ethnicity for each of the four methods, and accuracy, sensitivity, specificity, positive predictive value (PPV), negative predictive value (NPV), and relative bias were calculated. Relative bias is defined as the percent underprediction or overprediction of Hispanics relative to the true number. Two different versions of the fast and frugal method were tabulated, one using three steps and one using four steps. Results were tabulated for the entire population as well as for three different levels of Hispanic prevalence: counties less than 5 percent Hispanic, 5 to 10 percent Hispanic, and over 10 percent Hispanic, as reported in the 2000 census. This step was taken to verify that the results were applicable to all regions of the state.</p>
+      <p>The logistic regression model computed a probability of each individual being Hispanic based on race (white, black, American Indian, Asian, Pacific Islander, other, unknown), birthplace (United States, Spanish-speaking country, Brazil or Portugal, other North American country, other South American country, other European country, other), Hispanic surname prevalence (as listed in <xref ref-type="table" rid="pone-0055689-t003">Table 3</xref>), and county of residence (in 5 percent increments, from 0–5 to 30+ percent). Persons with probabilities of 0.3 or greater were counted as Hispanic; this probability matched the population prevalence and yielded the most accurate results. To minimize the impact of overfitting and increase the model’s generalizability to data from other states, we partitioned the state into two areas with similar population size, Hispanic prevalence, and a mixture of urban and rural areas. The first area consisted of 46 counties and included the New York City boroughs of Manhattan and the Bronx, the northern suburbs of New York City, and most of upstate New York, including the urban centers of Syracuse and Buffalo. The second area consisted of 16 counties and included the New York City boroughs of Brooklyn, Queens, and Staten Island, Long Island, and north-central New York including Rochester. We then performed two-fold cross validation, modeling each of the areas and testing with the other, and summing the two results.</p>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <p><xref ref-type="table" rid="pone-0055689-t004">Table 4</xref> lists self-reported ethnicity versus algorithm-derived ethnicity for each of the methods, first for the entire data set and then stratified by county Hispanic prevalence. Each of the methods did similarly well at classifying Hispanics. For the entire data set, accuracy ranged from 96.3 to 96.6 percent and sensitivity from 92.9 to 93.9 percent, while specificity, PPV, and NPV showed similarly high values and low variability. All methods slightly underestimated the actual number of Hispanics, ranging from 1.0 percent to 2.8 percent, as indicated by the relative bias measure. With the exception of regression, each method performed the best overall by at least one of the six quality measures. Greater variation was seen after stratifying results into counties with high, medium, and low Hispanic prevalence. In medium and low Hispanic counties, sensitivity and PPV were reduced, while specificity and NPV rose. In other words, proportionally more true Hispanics were missed and true non-Hispanics were counted as such in these counties. This in turn resulted in higher overall accuracy and more pronounced relative bias. These effects were particularly noticeable for the regression method. The relative bias finding contradicts a result from Minnesota which showed that NHIA resulted in an overestimation of Hispanics in low-Hispanic counties, though this effect was only seen in counties below 2 percent Hispanic <xref ref-type="bibr" rid="pone.0055689-NAACCR2">[13]</xref>.</p>
+      <table-wrap id="pone-0055689-t004" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0055689.t004</object-id>
+        <label>Table 4</label>
+        <caption>
+          <title>Hispanic Classification Results by Method and County Hispanic Prevalence.</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone-0055689-t004-4" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0055689.t004" xlink:type="simple"/>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td colspan="4" align="left" rowspan="1">Self-Reported Value/Algorithm-Derived Value</td>
+                <td colspan="6" align="left" rowspan="1">Quality Measure<xref ref-type="table-fn" rid="nt105">b</xref></td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">County HispanicPrev.<xref ref-type="table-fn" rid="nt104">a</xref></td>
+                <td align="left" rowspan="1" colspan="1">Method</td>
+                <td align="left" rowspan="1" colspan="1">Hispanic/Hispanic (A)</td>
+                <td align="left" rowspan="1" colspan="1">Hispanic/Non-Hispanic (B)</td>
+                <td align="left" rowspan="1" colspan="1">Non-Hispanic/Non-Hispanic (C)</td>
+                <td align="left" rowspan="1" colspan="1">Non-Hispanic/Hispanic (D)</td>
+                <td align="left" rowspan="1" colspan="1">Acc</td>
+                <td align="left" rowspan="1" colspan="1">SN</td>
+                <td align="left" rowspan="1" colspan="1">SP</td>
+                <td align="left" rowspan="1" colspan="1">PPV</td>
+                <td align="left" rowspan="1" colspan="1">NPV</td>
+                <td align="left" rowspan="1" colspan="1">RB</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">All</td>
+                <td align="left" rowspan="1" colspan="1">NHIA</td>
+                <td align="left" rowspan="1" colspan="1">163,175</td>
+                <td align="left" rowspan="1" colspan="1">12,441</td>
+                <td align="left" rowspan="1" colspan="1">363,411</td>
+                <td align="left" rowspan="1" colspan="1">7,544</td>
+                <td align="left" rowspan="1" colspan="1">96.3</td>
+                <td align="left" rowspan="1" colspan="1">92.9</td>
+                <td align="left" rowspan="1" colspan="1">98.0</td>
+                <td align="left" rowspan="1" colspan="1">95.6</td>
+                <td align="left" rowspan="1" colspan="1">96.7</td>
+                <td align="left" rowspan="1" colspan="1">−2.8</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">Authors’</td>
+                <td align="left" rowspan="1" colspan="1">164,596</td>
+                <td align="left" rowspan="1" colspan="1">11,020</td>
+                <td align="left" rowspan="1" colspan="1">363,626</td>
+                <td align="left" rowspan="1" colspan="1">7,329</td>
+                <td align="left" rowspan="1" colspan="1">96.6</td>
+                <td align="left" rowspan="1" colspan="1">93.7</td>
+                <td align="left" rowspan="1" colspan="1">98.0</td>
+                <td align="left" rowspan="1" colspan="1">95.7</td>
+                <td align="left" rowspan="1" colspan="1">97.1</td>
+                <td align="left" rowspan="1" colspan="1">−2.1</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">FF (4)</td>
+                <td align="left" rowspan="1" colspan="1">164,800</td>
+                <td align="left" rowspan="1" colspan="1">10,816</td>
+                <td align="left" rowspan="1" colspan="1">362,929</td>
+                <td align="left" rowspan="1" colspan="1">8,026</td>
+                <td align="left" rowspan="1" colspan="1">96.6</td>
+                <td align="left" rowspan="1" colspan="1">93.8</td>
+                <td align="left" rowspan="1" colspan="1">97.8</td>
+                <td align="left" rowspan="1" colspan="1">95.4</td>
+                <td align="left" rowspan="1" colspan="1">97.1</td>
+                <td align="left" rowspan="1" colspan="1">−1.6</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">FF (3)</td>
+                <td align="left" rowspan="1" colspan="1">164,900</td>
+                <td align="left" rowspan="1" colspan="1">10,716</td>
+                <td align="left" rowspan="1" colspan="1">361,914</td>
+                <td align="left" rowspan="1" colspan="1">9,041</td>
+                <td align="left" rowspan="1" colspan="1">96.4</td>
+                <td align="left" rowspan="1" colspan="1">93.9</td>
+                <td align="left" rowspan="1" colspan="1">97.6</td>
+                <td align="left" rowspan="1" colspan="1">94.8</td>
+                <td align="left" rowspan="1" colspan="1">97.1</td>
+                <td align="left" rowspan="1" colspan="1">−1.0</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">Regression<xref ref-type="table-fn" rid="nt106">c</xref></td>
+                <td align="left" rowspan="1" colspan="1">163,694</td>
+                <td align="left" rowspan="1" colspan="1">11,922</td>
+                <td align="left" rowspan="1" colspan="1">363,193</td>
+                <td align="left" rowspan="1" colspan="1">7,762</td>
+                <td align="left" rowspan="1" colspan="1">96.4</td>
+                <td align="left" rowspan="1" colspan="1">93.2</td>
+                <td align="left" rowspan="1" colspan="1">97.9</td>
+                <td align="left" rowspan="1" colspan="1">95.5</td>
+                <td align="left" rowspan="1" colspan="1">96.8</td>
+                <td align="left" rowspan="1" colspan="1">−2.4</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">High</td>
+                <td align="left" rowspan="1" colspan="1">NHIA</td>
+                <td align="left" rowspan="1" colspan="1">140,402</td>
+                <td align="left" rowspan="1" colspan="1">8,987</td>
+                <td align="left" rowspan="1" colspan="1">170,050</td>
+                <td align="left" rowspan="1" colspan="1">5,176</td>
+                <td align="left" rowspan="1" colspan="1">95.6</td>
+                <td align="left" rowspan="1" colspan="1">94.0</td>
+                <td align="left" rowspan="1" colspan="1">97.0</td>
+                <td align="left" rowspan="1" colspan="1">96.4</td>
+                <td align="left" rowspan="1" colspan="1">95.0</td>
+                <td align="left" rowspan="1" colspan="1">−2.6</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">Authors’</td>
+                <td align="left" rowspan="1" colspan="1">141,323</td>
+                <td align="left" rowspan="1" colspan="1">8,066</td>
+                <td align="left" rowspan="1" colspan="1">170,188</td>
+                <td align="left" rowspan="1" colspan="1">5,038</td>
+                <td align="left" rowspan="1" colspan="1">96.0</td>
+                <td align="left" rowspan="1" colspan="1">94.6</td>
+                <td align="left" rowspan="1" colspan="1">97.1</td>
+                <td align="left" rowspan="1" colspan="1">95.6</td>
+                <td align="left" rowspan="1" colspan="1">95.5</td>
+                <td align="left" rowspan="1" colspan="1">−2.0</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">FF (4)</td>
+                <td align="left" rowspan="1" colspan="1">141,803</td>
+                <td align="left" rowspan="1" colspan="1">7,586</td>
+                <td align="left" rowspan="1" colspan="1">169,405</td>
+                <td align="left" rowspan="1" colspan="1">5,821</td>
+                <td align="left" rowspan="1" colspan="1">95.9</td>
+                <td align="left" rowspan="1" colspan="1">94.9</td>
+                <td align="left" rowspan="1" colspan="1">96.7</td>
+                <td align="left" rowspan="1" colspan="1">96.1</td>
+                <td align="left" rowspan="1" colspan="1">95.7</td>
+                <td align="left" rowspan="1" colspan="1">−1.2</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">FF (3)</td>
+                <td align="left" rowspan="1" colspan="1">141,839</td>
+                <td align="left" rowspan="1" colspan="1">7,550</td>
+                <td align="left" rowspan="1" colspan="1">168,593</td>
+                <td align="left" rowspan="1" colspan="1">6,633</td>
+                <td align="left" rowspan="1" colspan="1">95.6</td>
+                <td align="left" rowspan="1" colspan="1">94.9</td>
+                <td align="left" rowspan="1" colspan="1">96.2</td>
+                <td align="left" rowspan="1" colspan="1">95.5</td>
+                <td align="left" rowspan="1" colspan="1">95.7</td>
+                <td align="left" rowspan="1" colspan="1">−0.6</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">Regression</td>
+                <td align="left" rowspan="1" colspan="1">140,748</td>
+                <td align="left" rowspan="1" colspan="1">8,641</td>
+                <td align="left" rowspan="1" colspan="1">169,277</td>
+                <td align="left" rowspan="1" colspan="1">5,949</td>
+                <td align="left" rowspan="1" colspan="1">95.5</td>
+                <td align="left" rowspan="1" colspan="1">94.2</td>
+                <td align="left" rowspan="1" colspan="1">96.6</td>
+                <td align="left" rowspan="1" colspan="1">95.9</td>
+                <td align="left" rowspan="1" colspan="1">95.1</td>
+                <td align="left" rowspan="1" colspan="1">−1.8</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Medium</td>
+                <td align="left" rowspan="1" colspan="1">NHIA</td>
+                <td align="left" rowspan="1" colspan="1">16,600</td>
+                <td align="left" rowspan="1" colspan="1">1,666</td>
+                <td align="left" rowspan="1" colspan="1">46,664</td>
+                <td align="left" rowspan="1" colspan="1">982</td>
+                <td align="left" rowspan="1" colspan="1">96.0</td>
+                <td align="left" rowspan="1" colspan="1">90.9</td>
+                <td align="left" rowspan="1" colspan="1">97.9</td>
+                <td align="left" rowspan="1" colspan="1">94.4</td>
+                <td align="left" rowspan="1" colspan="1">96.6</td>
+                <td align="left" rowspan="1" colspan="1">−3.7</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">Authors’</td>
+                <td align="left" rowspan="1" colspan="1">16,705</td>
+                <td align="left" rowspan="1" colspan="1">1,561</td>
+                <td align="left" rowspan="1" colspan="1">46,774</td>
+                <td align="left" rowspan="1" colspan="1">872</td>
+                <td align="left" rowspan="1" colspan="1">96.3</td>
+                <td align="left" rowspan="1" colspan="1">91.5</td>
+                <td align="left" rowspan="1" colspan="1">98.2</td>
+                <td align="left" rowspan="1" colspan="1">95.0</td>
+                <td align="left" rowspan="1" colspan="1">96.8</td>
+                <td align="left" rowspan="1" colspan="1">−3.8</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">FF (4)</td>
+                <td align="left" rowspan="1" colspan="1">16,768</td>
+                <td align="left" rowspan="1" colspan="1">1,498</td>
+                <td align="left" rowspan="1" colspan="1">46,692</td>
+                <td align="left" rowspan="1" colspan="1">954</td>
+                <td align="left" rowspan="1" colspan="1">96.3</td>
+                <td align="left" rowspan="1" colspan="1">91.8</td>
+                <td align="left" rowspan="1" colspan="1">98.0</td>
+                <td align="left" rowspan="1" colspan="1">94.6</td>
+                <td align="left" rowspan="1" colspan="1">96.9</td>
+                <td align="left" rowspan="1" colspan="1">−3.0</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">FF (3)</td>
+                <td align="left" rowspan="1" colspan="1">16,772</td>
+                <td align="left" rowspan="1" colspan="1">1,494</td>
+                <td align="left" rowspan="1" colspan="1">46,600</td>
+                <td align="left" rowspan="1" colspan="1">1,046</td>
+                <td align="left" rowspan="1" colspan="1">96.2</td>
+                <td align="left" rowspan="1" colspan="1">91.8</td>
+                <td align="left" rowspan="1" colspan="1">97.8</td>
+                <td align="left" rowspan="1" colspan="1">94.1</td>
+                <td align="left" rowspan="1" colspan="1">96.9</td>
+                <td align="left" rowspan="1" colspan="1">−2.5</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">Regression</td>
+                <td align="left" rowspan="1" colspan="1">17,165</td>
+                <td align="left" rowspan="1" colspan="1">1,101</td>
+                <td align="left" rowspan="1" colspan="1">46,443</td>
+                <td align="left" rowspan="1" colspan="1">1,203</td>
+                <td align="left" rowspan="1" colspan="1">96.5</td>
+                <td align="left" rowspan="1" colspan="1">94.0</td>
+                <td align="left" rowspan="1" colspan="1">97.5</td>
+                <td align="left" rowspan="1" colspan="1">93.5</td>
+                <td align="left" rowspan="1" colspan="1">97.7</td>
+                <td align="left" rowspan="1" colspan="1">0.6</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Low</td>
+                <td align="left" rowspan="1" colspan="1">NHIA</td>
+                <td align="left" rowspan="1" colspan="1">5,199</td>
+                <td align="left" rowspan="1" colspan="1">1,621</td>
+                <td align="left" rowspan="1" colspan="1">145,137</td>
+                <td align="left" rowspan="1" colspan="1">1,347</td>
+                <td align="left" rowspan="1" colspan="1">98.1</td>
+                <td align="left" rowspan="1" colspan="1">76.2</td>
+                <td align="left" rowspan="1" colspan="1">99.1</td>
+                <td align="left" rowspan="1" colspan="1">79.4</td>
+                <td align="left" rowspan="1" colspan="1">98.9</td>
+                <td align="left" rowspan="1" colspan="1">−4.0</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">Authors’</td>
+                <td align="left" rowspan="1" colspan="1">5,114</td>
+                <td align="left" rowspan="1" colspan="1">1,706</td>
+                <td align="left" rowspan="1" colspan="1">145,510</td>
+                <td align="left" rowspan="1" colspan="1">974</td>
+                <td align="left" rowspan="1" colspan="1">98.2</td>
+                <td align="left" rowspan="1" colspan="1">75.0</td>
+                <td align="left" rowspan="1" colspan="1">99.3</td>
+                <td align="left" rowspan="1" colspan="1">84.0</td>
+                <td align="left" rowspan="1" colspan="1">98.8</td>
+                <td align="left" rowspan="1" colspan="1">−10.7</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">FF (4)</td>
+                <td align="left" rowspan="1" colspan="1">5,268</td>
+                <td align="left" rowspan="1" colspan="1">1,552</td>
+                <td align="left" rowspan="1" colspan="1">145,220</td>
+                <td align="left" rowspan="1" colspan="1">1,264</td>
+                <td align="left" rowspan="1" colspan="1">98.2</td>
+                <td align="left" rowspan="1" colspan="1">77.2</td>
+                <td align="left" rowspan="1" colspan="1">99.1</td>
+                <td align="left" rowspan="1" colspan="1">80.6</td>
+                <td align="left" rowspan="1" colspan="1">98.9</td>
+                <td align="left" rowspan="1" colspan="1">−4.2</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">FF (3)</td>
+                <td align="left" rowspan="1" colspan="1">5,275</td>
+                <td align="left" rowspan="1" colspan="1">1,545</td>
+                <td align="left" rowspan="1" colspan="1">145,178</td>
+                <td align="left" rowspan="1" colspan="1">1,306</td>
+                <td align="left" rowspan="1" colspan="1">98.1</td>
+                <td align="left" rowspan="1" colspan="1">77.3</td>
+                <td align="left" rowspan="1" colspan="1">99.1</td>
+                <td align="left" rowspan="1" colspan="1">80.2</td>
+                <td align="left" rowspan="1" colspan="1">98.9</td>
+                <td align="left" rowspan="1" colspan="1">−3.5</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">Regression</td>
+                <td align="left" rowspan="1" colspan="1">4,714</td>
+                <td align="left" rowspan="1" colspan="1">2,106</td>
+                <td align="left" rowspan="1" colspan="1">146,073</td>
+                <td align="left" rowspan="1" colspan="1">411</td>
+                <td align="left" rowspan="1" colspan="1">98.4</td>
+                <td align="left" rowspan="1" colspan="1">69.1</td>
+                <td align="left" rowspan="1" colspan="1">99.7</td>
+                <td align="left" rowspan="1" colspan="1">92.0</td>
+                <td align="left" rowspan="1" colspan="1">98.6</td>
+                <td align="left" rowspan="1" colspan="1">−24.9</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+        <table-wrap-foot>
+          <fn id="nt104">
+            <label>a</label>
+            <p>County Hispanic prevalence: High: 9 counties with ≥10% Hispanic population according to the 2000 U.S. Census; Medium: 7 counties with 5–10%; Low: 46 counties with &lt;5% Hispanic. In the CSP sample, 149,389 of 324,615 from high-Hispanic counties self-identified as Hispanic (46%). Corresponding values for medium-Hispanic counties were 18,266 of 65,912 (28%), and for low-Hispanic counties were 6,820 of 153,304 (4%). County was not known for 2,740 persons.</p>
+          </fn>
+          <fn id="nt105">
+            <label>b</label>
+            <p>Quality measures: Acc: Accuracy (A+C)/(A+B+C+D); SN: Sensitivity (A)/(A+B); SP: Specificity (C)/(C+D); PPV: Positive Predictive Value (A)/(A+D); NPV: Negative Predictive Value (C)/(B+C); RB: Relative Bias [(A+D)/(A+B)]−1.</p>
+          </fn>
+          <fn id="nt106">
+            <label>c</label>
+            <p>Sum of the two models, each containing approximately half of the observations.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <p>We do not report statistical tests on the differences between the methods because their interpretation is unclear: given the large sample sizes, the small differences seen would tend to rate as “significant” based on sampling theory, but non-sampling error (i.e., data entry and transcription error) is likely a more important source of variation in this data set. Also, given the differences in the underlying ethnic compositions of states, these results for New York should be considered merely good approximations and not precise predictors of what could be expected in other states.</p>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>Given the similar results from the different algorithms, no single option stands out as clearly superior. Simplicity is therefore an important consideration for selecting among them. There are a number of reasons to prefer a simpler algorithm. First, it facilitates code maintenance, from the need for periodic updates (as when a new surname list becomes available) to the need for local modification (as in Hawaii, where the legacy of Spanish colonization of parts of the Pacific requires needs to be taken into account). Simpler code also makes for simpler translation into other programming languages. Second, a simpler algorithm is more easily comprehended and communicated. The first author of this paper serves as the technical contact for the NHIA algorithm, and based on the number of detailed questions he has received over the years, he can attest to a broad preference for transparency and clarity among users. Lastly, simpler algorithms are often more predictive than complex algorithms when applied to new locations or time periods. This is because complex algorithms are more susceptible to the problem of overfitting, either because they incorporate information unique to the test data set or because they insufficiently distinguish pattern from noise <xref ref-type="bibr" rid="pone.0055689-Elliott2">[15]</xref>, <xref ref-type="bibr" rid="pone.0055689-Hawkins1">[25]</xref>.</p>
+      <p>Given these considerations, the fast and frugal approach is particularly attractive. The rules (if not the specific surnames) can be committed to memory, summarized on an index card, or readily adapted into any computer language. There are, at most, just three questions to ask: Was the person born in a Spanish-speaking country? Does he or she have a Spanish surname? Is he or she Asian or Pacific Islander? The authors’ and NHIA methods, in contrast, provide evidence of the diminishing returns of added complexity. While each step in the authors’ method resulted in a better fit to the self-reported values, by step 6 the magnitude of these improvements had become negligible. For NHIA, the intricate rules involving maiden name seem reasonable but offered little gain, while the counting of American Indians and Brazilians as non-Hispanic actually reduced the overall accuracy, as they reflect dated notions that these categories are mutually exclusive (data not shown).</p>
+      <p>The county-stratified results support the use of a single rule applicable to all locations, regardless of the underlying Hispanic prevalence. To the extent that there were differences, low-Hispanic counties traded lower sensitivity and PPV for higher specificity and NPV, but had higher overall accuracy. This is because the comparatively few Hispanics in these counties were somewhat more difficult to detect. For example, 98 percent of over 2,000 women in high-prevalence Hispanic counties with the birth name Gonzalez self-reported as Hispanic, while in low-prevalence counties the figure was 88 percent of 150 women. The name was a good predictor in both instances, just not an equally good predictor. Hispanic self-identity is not exclusively a function of ancestry, but is also a dynamic construction of interactions with family, neighbors, and community - items that can never be fully captured by an algorithm.</p>
+      <p>A more striking example was seen among persons born in Brazil, Portugal, and Cape Verde. According to the usual federal definition, these persons are non-Hispanic, because they are neither of “Spanish speaking background” nor “have origins in Spanish-speaking countries” <xref ref-type="bibr" rid="pone.0055689-Passel1">[26]</xref>. In our sample, however, 32 percent of Portuguese and 46 percent of Brazilians identified themselves as Hispanic. Coincidentally, nearly half of the Brazilian and Portuguese surnames appeared on the Hispanic surname list, so applying the list to these groups yielded close to the correct number of Hispanics overall. While not accurate at the individual level, this yielded a better overall result than if they had been counted as either entirely Hispanic or entirely non-Hispanic. (In a state such as Massachusetts where Portuguese speakers greatly outnumber Spanish speakers, this approach would require more scrutiny). Comparable results to ours have been found in the U.S. census, even though the past three censuses have attempted to discourage Portuguese speakers from identifying as Hispanic by including the term “Spanish” wherever “Hispanic” appears on a form <xref ref-type="bibr" rid="pone.0055689-Marrow1">[27]</xref>.</p>
+      <p>There was also variation in Hispanic self-identification within Spanish-speaking countries. While most were near 100 percent, there were two outliers: Spain (81 percent) and Panama (64 percent). When developing the authors’ method, we considered making a special rule governing these countries, but ultimately did not given that they represented just 0.1 percent of the sample. This is just one of many possible narrowly focused additional rules that we could have included that would have resulted in marginal gain and increased likelihood of overfitting.</p>
+      <p>A potential limitation of all of the methods is that while the CSP data set had the advantages of being large and geographically diverse, it is not representative of the population as a whole, either of New York State or the United States. If Hispanic self-identification varies significantly between lower-income women and higher-income women, or between women and men, or between New Yorkers and non-New Yorkers, then similar results might not be obtained when these methods are applied to a wider population. However, the fact that the NHIA algorithm has been applied to cancer patients nationwide for nearly a decade ameliorates this concern. We further note that the CSP is a public health program and not a study where data are collected through a rigorous research protocol. A large number of clinical and program staff have been responsible for collecting the ethnicity and country of origin data for the CSP clients over the years. While we believe the data to be of good quality, their accuracy has not been assessed or verified.</p>
+      <p>Finally, we note that the assignment of ethnicity (or race, or any other demographic or clinical variable in public health surveillance) is typically done on a small fraction of cases for which the value is unknown, not on an entire population, as we did here. For a more typical real-world example, imagine a data set with 20 percent of the records coded as Hispanic and 10 percent coded as unknown ethnicity, and assume that the various algorithms designate between 24 and 25 percent of the unknown as Hispanic. The resulting Hispanic prevalence in the data set would range from 24.4 to 24.5 percent. The impacts on disease rates or other secondary outcomes of interest would be of a similar range. This further argues for an approach that is simple and memorable.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0055689-Bhopal1">
+        <label>1</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bhopal</surname><given-names>R</given-names></name> (<year>1997</year>) <article-title>Is research into ethnicity and health racist, unsound, or important science?</article-title> <source>BMJ</source> <volume>314</volume>: <fpage>1751</fpage>–<lpage>1756</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-Rebbeck1">
+        <label>2</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rebbeck</surname><given-names>TR</given-names></name>, <name name-style="western"><surname>Halbert</surname><given-names>CH</given-names></name>, <name name-style="western"><surname>Sankar</surname><given-names>P</given-names></name> (<year>2006</year>) <article-title>Genetics, epidemiology, and cancer disparities: is it black and white?</article-title> <source>Journal of Clinical Oncology</source> <volume>24</volume>: <fpage>2164</fpage>–<lpage>2169</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-Lin1">
+        <label>3</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lin</surname><given-names>SS</given-names></name>, <name name-style="western"><surname>Kelsey</surname><given-names>JL</given-names></name> (<year>2000</year>) <article-title>Use of race and ethnicity in epidemiologic research: concepts, methodological issues, and suggestions for research</article-title>. <source>Epidemiologic Reviews</source> <volume>22</volume>: <fpage>187</fpage>–<lpage>202</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-Comstock1">
+        <label>4</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Comstock</surname><given-names>RD</given-names></name>, <name name-style="western"><surname>Castillo</surname><given-names>EM</given-names></name>, <name name-style="western"><surname>Lindsay</surname><given-names>SP</given-names></name> (<year>2004</year>) <article-title>Four-year review of the use of race and ethnicity in epidemiologic and public health research</article-title>. <source>American Journal of Epidemiology</source> <volume>159</volume>: <fpage>611</fpage>–<lpage>619</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-National1">
+        <label>5</label>
+        <mixed-citation publication-type="other" xlink:type="simple">National Research Council (2004) Eliminating health disparities: measurement and data needs. Washington, DC: National Academies Press.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-Ma1">
+        <label>6</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ma</surname><given-names>IW</given-names></name>, <name name-style="western"><surname>Khan</surname><given-names>NA</given-names></name>, <name name-style="western"><surname>Kang</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Zalunardo</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Palepu</surname><given-names>A</given-names></name> (<year>2007</year>) <article-title>Systematic review identified suboptimal reporting and use of race/ethnicity in general medical journals</article-title>. <source>Journal of Clinical Epidemiology</source> <volume>60</volume>: <fpage>572</fpage>–<lpage>578</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-Elliott1">
+        <label>7</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Elliott</surname><given-names>MN</given-names></name>, <name name-style="western"><surname>Fremont</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Morrison</surname><given-names>PA</given-names></name>, <name name-style="western"><surname>Pantoja</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Lurie</surname><given-names>N</given-names></name> (<year>2008</year>) <article-title>A new method for estimating race/ethnicity and associated disparities where administrative records lack self-reported race/ethnicity</article-title>. <source>Health Services Research</source> <volume>43</volume>: <fpage>1722</fpage>–<lpage>1736</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-NorthAmericanAssociationofCentralCancer1">
+        <label>8</label>
+        <mixed-citation publication-type="other" xlink:type="simple">North American Association of Central Cancer Registries (2012) CINA Deluxe Analytic File. Available: <ext-link ext-link-type="uri" xlink:href="http://www.naaccr.org/Research/CINADeluxe.aspx" xlink:type="simple">http://www.naaccr.org/Research/CINADeluxe.aspx</ext-link>. Accessed 2012 May 1.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-Andrews1">
+        <label>9</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Andrews</surname><given-names>RM</given-names></name> (<year>2011</year>) <article-title>Race and ethnicity reporting in statewide hospital data: progress and future challenges in a key resource for local and state monitoring of health disparities</article-title>. <source>Journal of Public Health Management and Practice</source> <volume>17</volume>: <fpage>167</fpage>–<lpage>173</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-Stroupe1">
+        <label>10</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Stroupe</surname><given-names>KT</given-names></name>, <name name-style="western"><surname>Tarlov</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Zhang</surname><given-names>QY</given-names></name>, <name name-style="western"><surname>Haywood</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Owens</surname><given-names>A</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Use of Medicare and DOD data for improving VA race data quality</article-title>. <source>Journal of Rehabilitation Research and Development</source> <volume>47</volume>: <fpage>781</fpage>–<lpage>795</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-McAlpine1">
+        <label>11</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>McAlpine</surname><given-names>DD</given-names></name>, <name name-style="western"><surname>Beebe</surname><given-names>TJ</given-names></name>, <name name-style="western"><surname>Davern</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Call</surname><given-names>KT</given-names></name> (<year>2007</year>) <article-title>Agreement between self-reported and administrative race and ethnicity data among Medicaid enrollees in Minnesota</article-title>. <source>Health Services Research</source> <volume>42</volume>: <fpage>2373</fpage>–<lpage>2388</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-NAACCR1">
+        <label>12</label>
+        <mixed-citation publication-type="other" xlink:type="simple">NAACCR Race and Ethnicity Work Group (2010) NAACCR Asian Pacific Islander Identification Algorithm [NAPIIA v1.2.1]. Springfield, IL: North American Association of Central Cancer Registries.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-NAACCR2">
+        <label>13</label>
+        <mixed-citation publication-type="other" xlink:type="simple">NAACCR Race and Ethnicity Work Group (2011) NAACCR guideline for enhancing Hispanic/Latino identification: revised NAACCR Hispanic/Latino Identification Algorithm [NHIA v2.2.1]. Springfield, IL: North American Association of Central Cancer Registries.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-Eicheldinger1">
+        <label>14</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Eicheldinger</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Bonito</surname><given-names>A</given-names></name> (<year>2008</year>) <article-title>More accurate racial and ethnic codes for Medicare administrative data</article-title>. <source>Health Care Financing Review</source> <volume>29</volume>: <fpage>27</fpage>–<lpage>42</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-Elliott2">
+        <label>15</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Elliott</surname><given-names>MN</given-names></name>, <name name-style="western"><surname>Fremont</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Morrison</surname><given-names>PA</given-names></name>, <name name-style="western"><surname>Pantoja</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Lurie</surname><given-names>N</given-names></name> (<year>2008</year>) <article-title>A new method for estimating race/ethnicity and associated disparities where administrative records lack self-reported race/ethnicity</article-title>. <source>Health Services Research</source> <volume>43</volume>: <fpage>1722</fpage>–<lpage>1736</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-Perkins1">
+        <label>16</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Perkins RC (1993) Evaluating the Passel-Word Spanish surname list: 1990 decennial census post enumeration survey results. Population Division Working Paper No. 4. Washington, DC: U.S. Bureau of the Census.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-Morgan1">
+        <label>17</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Morgan</surname><given-names>RO</given-names></name>, <name name-style="western"><surname>Wei</surname><given-names>II</given-names></name>, <name name-style="western"><surname>Virnig</surname><given-names>BA</given-names></name> (<year>2004</year>) <article-title>Improving identification of Hispanic males in Medicare: use of surname matching</article-title>. <source>Medical Care</source> <volume>42</volume>: <fpage>810</fpage>–<lpage>816</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-Wei1">
+        <label>18</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wei</surname><given-names>II</given-names></name>, <name name-style="western"><surname>Virnig</surname><given-names>BA</given-names></name>, <name name-style="western"><surname>John</surname><given-names>DA</given-names></name>, <name name-style="western"><surname>Morgan</surname><given-names>RO</given-names></name> (<year>2006</year>) <article-title>Using a Spanish surname match to improve identification of Hispanic women in Medicare administrative data</article-title>. <source>Health Services Research</source> <volume>41</volume>: <fpage>1469</fpage>–<lpage>1481</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-Smith1">
+        <label>19</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Smith</surname><given-names>DP</given-names></name>, <name name-style="western"><surname>Bradshaw</surname><given-names>BS</given-names></name> (<year>2006</year>) <article-title>Rethinking the Hispanic paradox: death rates and life expectancy for US non-Hispanic white and Hispanic populations</article-title>. <source>American Journal of Public Health</source> <volume>96</volume>: <fpage>1686</fpage>–<lpage>1692</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-Czerlinski1">
+        <label>20</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Czerlinski J, Gigerenzer G, Goldstein DG (1999) How good are simple heuristics? In: Gigerenzer G, Todd PM, the ABC Research Group, editors. Simple heuristics that make us smart. New York: Oxford University Press. 97–118.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-Cook1">
+        <label>21</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cook</surname><given-names>EF</given-names></name>, <name name-style="western"><surname>Goldman</surname><given-names>L</given-names></name> (<year>1984</year>) <article-title>Empiric comparison of multivariate analytic techniques: advantages and disadvantages of recursive partitioning analysis</article-title>. <source>Journal of Chronic Diseases</source> <volume>37</volume>: <fpage>721</fpage>–<lpage>731</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-Gigerenzer1">
+        <label>22</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Gigerenzer G, Goldstein DG (1999) Betting on one good reason: the Take the Best heuristic. In: Gigerenzer G, Todd PM, the ABC Research Group, editors. Simple heuristics that make us smart. New York: Oxford University Press. 75–95.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-Thornton1">
+        <label>23</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Thornton M, O’Connor L, editors (2009) Standards for cancer registries, volume II: data standards and data dictionary, record layout version 12, fourteenth edition. Springfield, IL: North American Association of Central Cancer Registries.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-Word1">
+        <label>24</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Word DL, Coleman CD, Nunziata R, Kominski R (2007) Frequently occurring surnames from Census 2000. Washington, DC: U.S. Bureau of the Census.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-Hawkins1">
+        <label>25</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hawkins</surname><given-names>DM</given-names></name> (<year>2004</year>) <article-title>The problem of overfitting</article-title>. <source>Journal of Chemical Information and Computer Sciences</source> <volume>44</volume>: <fpage>1</fpage>–<lpage>12</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-Passel1">
+        <label>26</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Passel J, Taylor P (2009) Who's Hispanic? Washington, DC: Pew Hispanic Center. Available: <ext-link ext-link-type="uri" xlink:href="http://www.pewhispanic.org/files/reports/111.pdf" xlink:type="simple">http://www.pewhispanic.org/files/reports/111.pdf</ext-link>. Accessed 2012 May 1.</mixed-citation>
+      </ref>
+      <ref id="pone.0055689-Marrow1">
+        <label>27</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Marrow</surname><given-names>H</given-names></name> (<year>2003</year>) <article-title>To be or not to be (Hispanic or Latino): Brazilian racial and ethnic identity in the United States</article-title>. <source>Ethnicities</source> <volume>3</volume>: <fpage>427</fpage>–<lpage>464</lpage>.</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

@@ -1,0 +1,1034 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group>
+<journal-title>PLoS ONE</journal-title></journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-13-51650</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0100733</article-id>
+<article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Biology and life sciences</subject><subj-group><subject>Physical anthropology</subject><subj-group><subject>Anthropometry</subject></subj-group></subj-group><subj-group><subject>Computational biology</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Physical sciences</subject><subj-group><subject>Mathematics</subject><subj-group><subject>Applied mathematics</subject><subject>Numerical analysis</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Research and analysis methods</subject><subj-group><subject>Research design</subject><subj-group><subject>Clinical research design</subject><subject>Cohort studies</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Computer and information sciences</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Medicine and health sciences</subject><subj-group><subject>Epidemiology</subject><subj-group><subject>Epidemiology of aging</subject></subj-group></subj-group><subj-group><subject>Public and occupational health</subject></subj-group><subj-group><subject>Pulmonology</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Social sciences</subject><subj-group><subject>Anthropology</subject></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>A Large Cohort Study Concerning Age-Dependent Impacts of Anthropometric Variables on Spirometric Parameters in Nonsmoking Healthy Adults</article-title>
+<alt-title alt-title-type="running-head">Impacts of Age-Dependent Anthropometric Variables</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Omori</surname><given-names>Hisamitsu</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Onoue</surname><given-names>Ayumi</given-names></name><xref ref-type="aff" rid="aff2"><sup>2</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Katoh</surname><given-names>Takahiko</given-names></name><xref ref-type="aff" rid="aff2"><sup>2</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Ogata</surname><given-names>Yasuhiro</given-names></name><xref ref-type="aff" rid="aff3"><sup>3</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Kawashima</surname><given-names>Hidetoshi</given-names></name><xref ref-type="aff" rid="aff3"><sup>3</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Miyao</surname><given-names>Naoki</given-names></name><xref ref-type="aff" rid="aff4"><sup>4</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Tsuji</surname><given-names>Takao</given-names></name><xref ref-type="aff" rid="aff5"><sup>5</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Aoshiba</surname><given-names>Kazutetsu</given-names></name><xref ref-type="aff" rid="aff5"><sup>5</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Nagai</surname><given-names>Atsushi</given-names></name><xref ref-type="aff" rid="aff6"><sup>6</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Yamaguchi</surname><given-names>Kazuhiro</given-names></name><xref ref-type="aff" rid="aff7"><sup>7</sup></xref><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+</contrib-group>
+<aff id="aff1"><label>1</label><addr-line>Department of Biomedical Laboratory Sciences, Kumamoto University, Kumamoto, Japan</addr-line></aff>
+<aff id="aff2"><label>2</label><addr-line>Department of Public Health Faculty of Life Sciences, Kumamoto University, Kumamoto, Japan</addr-line></aff>
+<aff id="aff3"><label>3</label><addr-line>Health Care Center, Japanese Red Cross Kumamoto, Kumamoto, Japan</addr-line></aff>
+<aff id="aff4"><label>4</label><addr-line>Internal Medicine, Nihon Koukan Hospital, Kawasaki, Japan</addr-line></aff>
+<aff id="aff5"><label>5</label><addr-line>Department of Respiratory Medicine, Tokyo Medical University Ibaraki Medical Center, Ibaraki, Japan</addr-line></aff>
+<aff id="aff6"><label>6</label><addr-line>The First Department of Medicine, Tokyo Women's Medical University, Tokyo, Japan</addr-line></aff>
+<aff id="aff7"><label>7</label><addr-line>Comprehensive and Internal Medicine, Tokyo Women's Medical University Medical Center East, Tokyo, Japan</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Chen</surname><given-names>Yang-Ching</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Taipei City Hospital, Taiwan</addr-line></aff>
+<author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">yamaguc@sirius.ocn.ne.jp</email></corresp>
+<fn fn-type="conflict"><p>KY was supported by the funds donated from the companies including Teijin Home Healthcare, GSK, AstraZeneca, Boeringer Ingelheim, Eisai Global, Daiichi Sankyo, Otsuka, Ono, and Air Water. The other authors declare no support from any organization for the submitted work, no financial relationships with any organizations that might have an interest in the submitted work, and no other relationships or activities that could appear to have influenced the submitted work. There are no patents, products in development or marketed products to declare. This does not alter the authors' adherence to all the PLOS ONE policies on sharing data and materials.</p></fn>
+<fn fn-type="con"><p>Conceived and designed the experiments: KY HO. Performed the experiments: AO TK YO HK. Analyzed the data: KY NM. Contributed reagents/materials/analysis tools: NM TT KA AN. Wrote the paper: KY.</p></fn>
+</author-notes>
+<pub-date pub-type="collection"><year>2014</year></pub-date>
+<pub-date pub-type="epub"><day>23</day><month>6</month><year>2014</year></pub-date>
+<volume>9</volume>
+<issue>6</issue>
+<elocation-id>e100733</elocation-id>
+<history>
+<date date-type="received"><day>12</day><month>12</month><year>2013</year></date>
+<date date-type="accepted"><day>30</day><month>5</month><year>2014</year></date>
+</history>
+<permissions>
+<copyright-year>2014</copyright-year>
+<copyright-holder>Omori et al</copyright-holder><license xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions>
+<abstract><sec>
+<title>Backgrounds</title>
+<p>Although height (H) has been considered the principal anthropometric variable governing lung function, the age-dependent differences in its influences on determining spirometric parameters (SPs) have not been conclusively investigated. Moreover, there has been no study centered on age-dependent effects of other anthropometric variables, including body weight (BW) and body fat mass (BFM) on SPs. In addition, the age-dependent influences of these anthropometric variables are anticipated to differ quantitatively between male and female participants.</p>
+</sec><sec>
+<title>Methods</title>
+<p>A total of 16,919 nonsmoking healthy Japanese adults (men: 6,116, women: 10,803) were partitioned into six groups stratified by gender and age at intervals of 20-years: young-, middle-, and advanced-age groups of either gender. Using a model in which a SP was described by a logarithmic additive function of age, H, BW, and BFM, we determined the partial regression coefficients of the respective anthropometric variables to predict the reference means of SPs, including FVC, FEV<sub>1</sub>, FEV<sub>1</sub>/FVC, PEF, FEF<sub>50</sub>, and FEF<sub>75</sub>, in the six groups.</p>
+</sec><sec>
+<title>Results/Discussion</title>
+<p>Although the impact of H on FVC and FEV<sub>1</sub> was relatively homogeneous irrespective of gender and age, its homogeneity faded for flow parameters, particularly in the female middle- and advanced-age groups, indicating that the age-dependent contribution of H to SPs was enhanced more in women. The impact of BW on SPs differed depending on age, and this effect was also more conspicuous for female participants. H and BW generally exerted positive effects on SPs, whereas BFM had negative effects. Opposite effects of BW and BFM were observed in the female middle-age group in particular.</p>
+</sec><sec>
+<title>Conclusions</title>
+<p>The effects of anthropometric variables on spirometric parameters are highly age-dependent, particularly in women, leading to the conclusion that the assumption of age-independent, constant partial regression coefficients of anthropometric variables while predicting the reference mean of a certain spirometric parameter may result in substantial errors.</p>
+</sec></abstract>
+<funding-group><funding-statement>The present study was undertaken using the research funds (Consent No. 873) donated from Teijin Home Healthcare Limited Japan (<ext-link ext-link-type="uri" xlink:href="http://www.teijin.co.jp/" xlink:type="simple">http://www.teijin.co.jp/</ext-link>). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts><page-count count="13"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title>Introduction</title>
+<p>Overwhelming numbers (more than 120 papers) of ethnic-specific regression equations for predicting reference means and/or lower limits of normal (LLN) concerning various spirometric parameters in adults have been published over several decades <xref ref-type="bibr" rid="pone.0100733-LungFunctionin1">[1]</xref>. Most of these equations were generated, however, by introducing age (A) and height (H) as explanatory variables. Incorporating the LMS (lambda, mu, and sigma) method with a smoothing function, Stanojevic et al. <xref ref-type="bibr" rid="pone.0100733-Stanojevic1">[2]</xref> recently demonstrated novel regression equations covering an entire range of age from preschool children to elderly persons in non-Hispanic white subjects. Extending the study of Stanojevic et al., the Global Lungs Initiative (GLI), an ERS Task Force, developed more global multi-ethnic regression equations with two explanatory variables, A and H, applicable across all ages from 3 to 95 years old for people of varied races <xref ref-type="bibr" rid="pone.0100733-Quanjer1">[3]</xref>–<xref ref-type="bibr" rid="pone.0100733-Stocks1">[5]</xref>. The reason why most of the studies performed in this field adopted only H as the explanatory anthropometric variable may be based on the fact that not only is the lung volume modeled most appropriately by the H (besides age), but, in addition, the goal of such studies is to develop a parsimonious equation that is easily handled in clinical situations <xref ref-type="bibr" rid="pone.0100733-Quanjer1">[3]</xref>. Although this consideration is appreciated from a clinical point of view, it does not imply that other anthropometric variables play no role in deciding spirometric parameters. In fact, numerous studies have been conducted to elucidate the effects of varied anthropometric variables other than H on spirometric parameters, though their impacts were not conclusively certified <xref ref-type="bibr" rid="pone.0100733-Chen1">[6]</xref>–<xref ref-type="bibr" rid="pone.0100733-Wu1">[19]</xref>. The common assumption in all the studies described above is that the effect of anthropometric variables, including H, body weight (BW), body mass index (BMI), or body fat mass (BFM) on a given spirometric parameter is independent of age. However, bodily shape or physique may change with aging. For instance, BW generally increases in middle age but decrease in advanced age <xref ref-type="bibr" rid="pone.0100733-Chinn1">[7]</xref>. H commonly decreases with increasing age. These facts indicate that the quantitative effect of a certain anthropometric variable on the decision of a spirometric parameter should not be taken to be constant but instead considered to change depending on age. Based on these considerations, we generated the following hypotheses in the present study: 1) spirometric parameters would be influenced by a variety of anthropometric variables, including H, BW, and BFM; 2) their effects would differ depending on age, i.e., age-specific difference in contribution of an anthropometric variable to a spirometric parameter; and 3) the extent of age-dependent contribution of an anthropometric variable would differ qualitatively and quantitatively between men and women, i.e., there are gender-specific differences in the effects of an anthropometric variable on a spirometric parameter. To test these hypotheses, we examined the relationship between anthropometric variables and spirometric parameters in six groups stratified by gender and age at intervals of 20 years. Each group consisted of thousands of healthy nonsmoking Japanese adults with a relatively narrow age span, i.e., 20 to 39 years old (young-age group), 40 to 59 years old (middle-age group) or more than 60 years old (advanced-age group). We believe that the investigation of groups with a narrow age range would be aid in extracting the age-specific contributions of anthropometric variables to spirometric parameter values.</p>
+</sec><sec id="s2" sec-type="methods">
+<title>Methods</title>
+<sec id="s2a">
+<title>Ethics Statement</title>
+<p>All participants provided written informed consent indicating they agreed their data could be used for clinical research. The participants were asked whether they agreed with the registration of their details in the database for various research programs. Our research protocol was approved by the Human Ethics Committee of the Japanese Red Cross Kumamoto Health Care Center (registration number: 137).</p>
+</sec><sec id="s2b">
+<title>Study population</title>
+<p>Healthy nonsmokers in the general population were sorted from those undergoing a medical checkup at the Japanese Red Cross Kumamoto Health Care Center during the two years from April 2008 to March 2010. The medical checkup included a questionnaire, test of physical strength and fitness, spirometry, chest X-ray, electrocardiogram (ECG), various blood tests, and medical examination by a physician. Nonsmokers were defined as the individuals who declared, in the questionnaire, that they never smoked before the medical checkup. Among the nonsmokers, the subjects who were reported to have no occupational history exposed to either biomass fuels or dusts and no obvious respiratory symptom, including dyspnea on exertion, nocturnal dyspnea, cough, sputum, or wheezing, were selected as the healthy nonsmoker candidates. The medical histories, as well as the results of various blood examinations, chest X-ray, and ECG, of these candidates were carefully inspected by the staff physicians. The candidates, who were confirmed to have neither cardiovascular disease nor respiratory diseases, such as lung cancer, bronchial asthma, COPD, interstitial lung disease, or infiltrative lung disease, were defined as healthy nonsmokers. The staff physicians excluded the nonsmokers who took the special medicines for asthma, COPD, and cardiovascular diseases excepting hypertension. In addition, they excluded the nonsmokers having serious systemic diseases such as malignancy in any organ, renal failure requiring dialysis, diabetes mellitus with insulin therapy, and so on. However, the nonsmokers with hypertension or hyperlipidemia were accepted as the healthy nonsmokers unless their diseases were serious. Subsequently, the respiratory specialists checked the acceptability of spirometric data and finally decided the participants eligible for the analysis. Through this process, the healthy nonsmokers with no spirometric data or incomplete and/or unacceptable traces of forced expiratory flow-volume curves were excluded. Thus, the total of 56,829 subjects over 20 years old (men: 34,160, women: 22,669) undergoing the medical checkup during the two years were assessed for eligibility and the 16,919 healthy nonsmoking adults (men: 6,116, women: 10,803) were finally enrolled for the analysis.</p>
+<p>These participants were partitioned into three groups stratified by age at intervals of 20 years. The participants whose age was less than 39 years old were categorized as the young-age group, whereas those ranging between 40 to 59 years old were categorized as the middle-age group. The participants whose age was more than 60 years old were assigned to the advanced-age group. Among the men, the young-age, middle-age, and advanced-age groups consisted of 1,106, 3,343, and 1,667 subjects, respectively (<xref ref-type="table" rid="pone-0100733-t001">Table 1</xref>). The number of female subjects forming the young-age, middle-age, and advanced-age groups was 1,578, 6,427, and 2,798, respectively (<xref ref-type="table" rid="pone-0100733-t002">Table 2</xref>). These classifications were made on the ground of the preliminary results obtained for the 12 groups stratified by gender and age at intervals of 10 years, i.e. the group with age ranging from 20 to 29 years, 30 to 39 years, 40 to 49 years, 50 to 59 years, 60 to 69 years, or more than 70 years in each gender. We estimated the effects of explanatory variables, including age and anthropometric factors of height, body weight, and body fat mass, on various spirometric parameters in these 12 groups. The results showed that, in each gender, the effects of explanatory variables on spirometric parameters were qualitatively and quantitatively the same between the two successive age-groups in a first approximation (data not shown), indicating that the two successive age-groups would be united. Thus, the combination of the age-group with 20–29 years and that with 30–39 years formed the young-age group, whereas the group with 40–49 years and that with 50–59 years formed the middle-age group. Similarly, the unification of the group with 60–69 years and that with more than 70 years made up the advanced-age group. We believe that the simplification of the group classification may hasten the comprehension on the intricate results observed in this study.</p>
+<table-wrap id="pone-0100733-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0100733.t001</object-id><label>Table 1</label><caption>
+<title>Demographic, anthropometric, and spirometric characteristics of male participants.</title>
+</caption><alternatives><graphic id="pone-0100733-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0100733.t001" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Young-age Group (n = 1,106)</td>
+<td align="left" rowspan="1" colspan="1">Middle-age Group (n = 3,343)</td>
+<td align="left" rowspan="1" colspan="1">Advanced-age Group (n = 1,667)</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Age (years)</td>
+<td align="left" rowspan="1" colspan="1">35.7±2.8</td>
+<td align="left" rowspan="1" colspan="1">49.4±5.8<sup>*</sup></td>
+<td align="left" rowspan="1" colspan="1">66.7±5.7<sup>*,†</sup></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Height (cm)</td>
+<td align="left" rowspan="1" colspan="1">171.6±5.7</td>
+<td align="left" rowspan="1" colspan="1">169.8±6.0<sup>*</sup></td>
+<td align="left" rowspan="1" colspan="1">164.7±5.9<sup>*,†</sup></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Body weight (kg)</td>
+<td align="left" rowspan="1" colspan="1">70.0±11.1</td>
+<td align="left" rowspan="1" colspan="1">69.6±10.5</td>
+<td align="left" rowspan="1" colspan="1">63.2±8.5<sup>*,†</sup></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">BMI (kg/m<sup>2</sup>)</td>
+<td align="left" rowspan="1" colspan="1">23.8±3.5</td>
+<td align="left" rowspan="1" colspan="1">24.1±3.2<sup>*</sup></td>
+<td align="left" rowspan="1" colspan="1">23.3 ± 2.7<sup>*,†</sup></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">%FAT (%)</td>
+<td align="left" rowspan="1" colspan="1">22.9 ± 5.4</td>
+<td align="left" rowspan="1" colspan="1">22.8 ± 5.1</td>
+<td align="left" rowspan="1" colspan="1">20.5 ± 4.7<sup>*,†</sup></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">BFM (kg)</td>
+<td align="left" rowspan="1" colspan="1">16.5 ± 6.3</td>
+<td align="left" rowspan="1" colspan="1">16.2 ± 5.9</td>
+<td align="left" rowspan="1" colspan="1">13.2 ± 4.4<sup>*,†</sup></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">FVC (L)</td>
+<td align="left" rowspan="1" colspan="1">4.25 ± 0.79</td>
+<td align="left" rowspan="1" colspan="1">3.95 ± 0.74<sup>*</sup></td>
+<td align="left" rowspan="1" colspan="1">3.56 ± 0.67<sup>*,†</sup></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">FEV<sub>1</sub> (L)</td>
+<td align="left" rowspan="1" colspan="1">3.51 ± 0.68</td>
+<td align="left" rowspan="1" colspan="1">3.17 ± 0.60<sup>*</sup></td>
+<td align="left" rowspan="1" colspan="1">2.79 ± 0.55<sup>*,†</sup></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">FEV<sub>1</sub>/FVC (%)</td>
+<td align="left" rowspan="1" colspan="1">82.72 ± 5.75</td>
+<td align="left" rowspan="1" colspan="1">80.50 ± 5.48<sup>*</sup></td>
+<td align="left" rowspan="1" colspan="1">78.56 ± 5.67<sup>*,†</sup></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">PEF (L/s)</td>
+<td align="left" rowspan="1" colspan="1">8.41 ± 1.77</td>
+<td align="left" rowspan="1" colspan="1">8.19 ± 1.87<sup>*</sup></td>
+<td align="left" rowspan="1" colspan="1">7.53 ± 1.71<sup>*,†</sup></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">FEF<sub>50</sub> (L/s)</td>
+<td align="left" rowspan="1" colspan="1">4.44 ± 1.34</td>
+<td align="left" rowspan="1" colspan="1">4.00 ± 1.27<sup>*</sup></td>
+<td align="left" rowspan="1" colspan="1">3.47 ± 1.21<sup>*,†</sup></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">FEF<sub>75</sub> (L/s)</td>
+<td align="left" rowspan="1" colspan="1">1.58 ± 0.66</td>
+<td align="left" rowspan="1" colspan="1">1.20 ± 0.50<sup>*</sup></td>
+<td align="left" rowspan="1" colspan="1">0.90 ± 0.44<sup>*,†</sup></td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt101"><label/><p>Values are the means ± SD. BMI: body mass index. %FAT: fat percentage of body mass. BFM: body fat mass calculated from body mass (kg) multiplied by %FAT/100. <sup>*</sup>: significantly different from the young-age group (at least p&lt;0.01). <sup>†</sup>: different from the middle-age group (at least p&lt;0.01).</p></fn></table-wrap-foot></table-wrap><table-wrap id="pone-0100733-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0100733.t002</object-id><label>Table 2</label><caption>
+<title>Demographic, anthropometric, and spirometric characteristics of female participants.</title>
+</caption><alternatives><graphic id="pone-0100733-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0100733.t002" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Young-age Group (n = 1,578)</td>
+<td align="left" rowspan="1" colspan="1">Middle-age Group (n = 6,427)</td>
+<td align="left" rowspan="1" colspan="1">Advanced-age Group (n = 2,798)</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Age (years)</td>
+<td align="left" rowspan="1" colspan="1">35.6 ± 3.0</td>
+<td align="left" rowspan="1" colspan="1">49.7 ± 5.8<sup>*</sup></td>
+<td align="left" rowspan="1" colspan="1">66.1 ± 5.4<sup>*,†</sup></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Height (cm)</td>
+<td align="left" rowspan="1" colspan="1">159.5 ± 5.2</td>
+<td align="left" rowspan="1" colspan="1">156.9 ± 5.4<sup>*</sup></td>
+<td align="left" rowspan="1" colspan="1">152.3 ± 5.1<sup>*,†</sup></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Body weight (kg)</td>
+<td align="left" rowspan="1" colspan="1">53.3 ± 8.6</td>
+<td align="left" rowspan="1" colspan="1">54.4 ± 8.6<sup>*</sup></td>
+<td align="left" rowspan="1" colspan="1">52.1 ± 7.6<sup>*,†</sup></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">BMI (kg/m<sup>2</sup>)</td>
+<td align="left" rowspan="1" colspan="1">20.9 ± 3.2</td>
+<td align="left" rowspan="1" colspan="1">22.1 ± 3.3<sup>*</sup></td>
+<td align="left" rowspan="1" colspan="1">22.4 ± 3.0<sup>*,†</sup></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">%FAT (%)</td>
+<td align="left" rowspan="1" colspan="1">26.2 ± 6.4</td>
+<td align="left" rowspan="1" colspan="1">27.8 ± 6.2<sup>*</sup></td>
+<td align="left" rowspan="1" colspan="1">27.9 ± 5.8<sup>*</sup></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">BFM (kg)</td>
+<td align="left" rowspan="1" colspan="1">14.4 ± 6.1</td>
+<td align="left" rowspan="1" colspan="1">15.6 ± 6.0<sup>*</sup></td>
+<td align="left" rowspan="1" colspan="1">14.9 ± 5.1<sup>*,†</sup></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">FVC (L)</td>
+<td align="left" rowspan="1" colspan="1">3.25 ± 0.59</td>
+<td align="left" rowspan="1" colspan="1">3.12 ± 0.64<sup>*</sup></td>
+<td align="left" rowspan="1" colspan="1">2.82 ± 0.72<sup>*,†</sup></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">FEV<sub>1</sub> (L)</td>
+<td align="left" rowspan="1" colspan="1">2.73 ± 0.46</td>
+<td align="left" rowspan="1" colspan="1">2.53 ± 0.51<sup>*</sup></td>
+<td align="left" rowspan="1" colspan="1">2.23 ± 0.59<sup>*,†</sup></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">FEV<sub>1</sub>/FVC (%)</td>
+<td align="left" rowspan="1" colspan="1">84.27 ± 6.32</td>
+<td align="left" rowspan="1" colspan="1">81.28 ± 5.65<sup>*</sup></td>
+<td align="left" rowspan="1" colspan="1">79.24 ± 5.47<sup>*,†</sup></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">PEF (L/s)</td>
+<td align="left" rowspan="1" colspan="1">6.01 ± 1.49</td>
+<td align="left" rowspan="1" colspan="1">6.09 ± 1.56</td>
+<td align="left" rowspan="1" colspan="1">5.65 ± 1.65<sup>*,†</sup></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">FEF<sub>50</sub> (L/s)</td>
+<td align="left" rowspan="1" colspan="1">3.60 ± 0.96</td>
+<td align="left" rowspan="1" colspan="1">3.31 ± 1.01<sup>*</sup></td>
+<td align="left" rowspan="1" colspan="1">2.87 ± 1.08<sup>*,†</sup></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">FEF<sub>75</sub> (L/s)</td>
+<td align="left" rowspan="1" colspan="1">1.35 ± 0.55</td>
+<td align="left" rowspan="1" colspan="1">0.99 ± 0.44<sup>*</sup></td>
+<td align="left" rowspan="1" colspan="1">0.75 ± 0.42<sup>*,†</sup></td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt102"><label/><p>Values are the means ± SD. Symbols are the same as denoted in <xref ref-type="table" rid="pone-0100733-t001">Table 1</xref>. <sup>*</sup>: different from the young-age group (at least p&lt;0.03). <sup>†</sup>: different from the middle-age group (at least p&lt;0.03).</p></fn></table-wrap-foot></table-wrap></sec><sec id="s2c">
+<title>Spirometry and measurements of anthropometric measurements</title>
+<p>Forced expiratory pulmonary function tests were performed using an electric spirometer (DISCOM-21 FX, CHEST Co., Tokyo, Japan). Maneuvers were performed according to the standardization of lung function testing recommended by the ATS/ERS Task Force <xref ref-type="bibr" rid="pone.0100733-Miller1">[20]</xref>. Under supervision by a skilled technician for lung function tests, the participant repeated the forced expiratory maneuver until at least three acceptable and reproducible blows were obtained. Checking the values of FVC, FEV<sub>1</sub>, and extrapolated volume as well as the shape of the flow-volume curve, the technician selected the best FVC blow among the three traces. The trace thus selected was inspected by a respiratory specialist, who finally decided whether the best FVC trace of the participant was acceptable for the further analysis. We adopted FVC, FEV<sub>1</sub>, FEV<sub>1</sub>/FVC, PEF, FEF<sub>50</sub>, and FEF<sub>75</sub> as forced expiratory spirometric parameters for the subsequent analysis.</p>
+<p>A variety of anthropometric variables, including standing height (H, cm), body weight (BW, kg), body mass index (BMI), and fat percentage of body mass (%FAT, %), were examined for all participants. Standing height was measured with a stadiometer without shoes, while the participant was weighed on a scale wearing a suite of light clothes (weight: 500 g). Blood examinations and %FAT measurements were performed under fasting conditions without taking the breakfast. %FAT was measured with a bioelectrical impedance method (BF-220, TANITA Co., Tokyo, Japan). Body fat mass (BFM, kg) was calculated by multiplying BW by (%FAT/100).</p>
+</sec><sec id="s2d">
+<title>Multivariate analysis and selection of anthropometric variables</title>
+<p>Extending the model proposed by the GLI <xref ref-type="bibr" rid="pone.0100733-Quanjer1">[3]</xref>–<xref ref-type="bibr" rid="pone.0100733-Stocks1">[5]</xref>, we assumed that the effect of various explanatory variables (E<sub>1</sub>, E<sub>2</sub>, E<sub>3</sub>⋅⋅⋅E<sub>n</sub>) on the spirometric parameter (SP) was described by the multiplicative exponential function. Thus, the regression model for a certain SP assumed the following:<disp-formula id="pone.0100733.e001"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0100733.e001" xlink:type="simple"/><label>(1)</label></disp-formula>where K<sub>0</sub> is the constant equal to Exp(a<sub>0</sub>). By taking the logarithm (Ln) of both sides of eq. (1), the model is converted to the logarithmic additive function as follows:<disp-formula id="pone.0100733.e002"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0100733.e002" xlink:type="simple"/><label>(2)</label></disp-formula></p>
+<p>In eq. (2), a<sub>i</sub> (i = 1 to n) is the partial regression coefficient of a particular explanatory variable, whereas a<sub>0</sub> is the invariable constant. The most important issue is what kinds of anthropometric factors should be introduced as explanatory variables deciding SPs. In addition to age (A), height (H) has universally been accepted as the principal explanatory variable predicting SPs. Other anthropometric variables, such as body weight (BW), body mass index (BMI), body fat mass (BFM, defined as multiplying BW by fat percentage of body mass (%FAT)), fat-free mass (FFM), and body surface area (BSA), have also been taken as explanatory variables deciding SPs <xref ref-type="bibr" rid="pone.0100733-Chen1">[6]</xref>–<xref ref-type="bibr" rid="pone.0100733-Wu1">[19]</xref>. BW is important because it is the sum of the various constituents forming the body, including respiratory muscles that influence a variety of pulmonary function parameters <xref ref-type="bibr" rid="pone.0100733-Chinn1">[7]</xref>–<xref ref-type="bibr" rid="pone.0100733-Cotes2">[9]</xref>, <xref ref-type="bibr" rid="pone.0100733-Schoenberg1">[21]</xref>. BFM may also play a significant role because fat accumulation along central and peripheral airways elicits airway narrowing and leads to a decrease in various SPs <xref ref-type="bibr" rid="pone.0100733-Chinn1">[7]</xref>, <xref ref-type="bibr" rid="pone.0100733-Cotes3">[22]</xref>. FFM is important because respiratory muscles are contained in FFM. In the present study, however, we did not measure FFM. This is because, for estimating FFM, the skinfold thickness at various regions of the body should be measured <xref ref-type="bibr" rid="pone.0100733-Durnin1">[23]</xref>, the method being time-consuming and not fitted for medical checkups subject to many persons. Instead, we assumed that the difference between BW and BFM might act as the component reflecting FFM in a first approximation. Although some authors used BMI and BSA as explanatory variables for predicting SPs <xref ref-type="bibr" rid="pone.0100733-Chinn1">[7]</xref>–<xref ref-type="bibr" rid="pone.0100733-Cotes2">[9]</xref>, <xref ref-type="bibr" rid="pone.0100733-GarcaRo1">[10]</xref>, <xref ref-type="bibr" rid="pone.0100733-GarcaRo2">[11]</xref>, <xref ref-type="bibr" rid="pone.0100733-Pistelli1">[18]</xref>, we considered that the effects of these two variables on SPs would be involved in those of H and BW. This is due to the fact that BMI and BSA are expressed as BW/H<sup>2</sup> and c<sub>0</sub>⋅(BW)<sup>c1</sup>⋅(H)<sup>c2</sup> (c<sub>0</sub>, c<sub>1</sub>, and c<sub>2</sub>: constants), respectively. Taking the logarithm of BMI or BSA, each value is converted to the logarithmic additive function as: <disp-formula id="pone.0100733.e003"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0100733.e003" xlink:type="simple"/><label>(3)</label></disp-formula></p>
+<p><disp-formula id="pone.0100733.e004"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0100733.e004" xlink:type="simple"/><label>(4)</label></disp-formula></p>
+<p>Eqs. (3) and (4) certainly indicate that the effect of BMI or BSA on SPs is partitioned into the effects of BW and H. Based on these reasons, we adopted age (A), height (H), body weight (BW), and body fat mass (BFM) as explanatory variables for predicting reference means of various spirometric parameters in the present study. Thus, the regression model for a certain SP was assumed the following:<disp-formula id="pone.0100733.e005"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0100733.e005" xlink:type="simple"/><label>(5)</label></disp-formula></p>
+<p>We decided the coefficients of a<sub>i</sub> (i = 0 to 4) in each age group of either gender by applying the classical multiple-regression analysis with least-squares minimization. Overall agreement between the predicted reference means and observed values was judged by the coefficient of determination adjusted for degrees of freedom (adjusted-R<sup>2</sup>). Normality for the distribution of residuals of each Ln(SP) was examined using the Kolmogorov-Smirnov and Shapiro-Wilk tests. These tests indicated that the residuals between the logarithm-transformed forms of observed values and those of the predicted reference means did not follow the normal distribution for most of the spirometric parameters. Therefore, we did not calculate the lower limit of normal (LLN) of each Ln(SP) from the standard deviation of residuals (RSD). Instead, we determined it from the 5<sup>th</sup> percentile of distribution of the residuals. The disparity between the log-transformed value of predicted reference mean and LLN was defined as ΔLLN as follows:<disp-formula id="pone.0100733.e006"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0100733.e006" xlink:type="simple"/><label>(6)</label></disp-formula></p>
+<p>All calculations were performed using the IBM SPSS Statistics (Version 21.0, SPSS Inc., an IBM Co., NY, USA). Unless otherwise specified, the values were expressed as the means ± standard deviations. A p-value lower than 0.05 was deemed to be statistically significant.</p>
+</sec></sec><sec id="s3">
+<title>Results</title>
+<p>In the male participants, H was the maximum in young-age group, whereas BMI displayed the largest value in the middle-age group (<xref ref-type="table" rid="pone-0100733-t001">Table 1</xref>). The values of BW, %FAT, and BFM in young-age and middle-age groups were higher than those in the advanced-age group. In the men, all spirometric parameters were significantly different between three groups, and the highest value was observed in the young-age group (<xref ref-type="table" rid="pone-0100733-t001">Table 1</xref>).</p>
+<p>Somewhat different from the male participants, H was decreased and BMI increased with aging in the female participants (<xref ref-type="table" rid="pone-0100733-t002">Table 2</xref>). BW or BFM reached the maximum level in the middle-age group, whereas %FAT displayed the highest value in the middle-age and advanced-age groups. In the female participants, spirometric parameters other than PEF revealed trends identical to those investigated in the male participants (<xref ref-type="table" rid="pone-0100733-t002">Table 2</xref>).</p>
+<p>Among the partial regression coefficients of a<sub>0</sub>, a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, and a<sub>4</sub> determined in the young-age, middle-age, and advanced-age groups of both genders, only the values reaching statistical significance are depicted in <xref ref-type="table" rid="pone-0100733-t003">Tables 3</xref>, <xref ref-type="table" rid="pone-0100733-t004">4</xref>, and <xref ref-type="table" rid="pone-0100733-t005">5</xref>, respectively.</p>
+<table-wrap id="pone-0100733-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0100733.t003</object-id><label>Table 3</label><caption>
+<title>Partial-regression coefficients of log-transformed equations predicting the reference means of spirometric parameters in the young-age male and female groups.</title>
+</caption><alternatives><graphic id="pone-0100733-t003-3" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0100733.t003" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Constant</td>
+<td align="left" rowspan="1" colspan="1">Ln(Age)</td>
+<td align="left" rowspan="1" colspan="1">Ln(H)</td>
+<td align="left" rowspan="1" colspan="1">Ln(BW)</td>
+<td align="left" rowspan="1" colspan="1">Ln(BFM)</td>
+<td align="left" rowspan="1" colspan="1">R<sup>2</sup></td>
+<td align="left" rowspan="1" colspan="1">ΔLLN</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ln(FVC)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">M</td>
+<td align="left" rowspan="1" colspan="1">−7.093</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">1.656</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.270</td>
+<td align="left" rowspan="1" colspan="1">0.408</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">F</td>
+<td align="left" rowspan="1" colspan="1">−4.434</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.980</td>
+<td align="left" rowspan="1" colspan="1">0.153</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.264</td>
+<td align="left" rowspan="1" colspan="1">0.264</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ln(FEV<sub>1</sub>)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">M</td>
+<td align="left" rowspan="1" colspan="1">−6.746</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">1.551</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.240</td>
+<td align="left" rowspan="1" colspan="1">0.439</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">F</td>
+<td align="left" rowspan="1" colspan="1">−4.292</td>
+<td align="left" rowspan="1" colspan="1">−0.117</td>
+<td align="left" rowspan="1" colspan="1">1.059</td>
+<td align="left" rowspan="1" colspan="1">0.082</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.250</td>
+<td align="left" rowspan="1" colspan="1">0.271</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ln(FEV<sub>1</sub>/FVC)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">M</td>
+<td align="left" rowspan="1" colspan="1">4.926</td>
+<td align="left" rowspan="1" colspan="1">−0.080</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">−0.054</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.150</td>
+<td align="left" rowspan="1" colspan="1">0.117</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">F</td>
+<td align="left" rowspan="1" colspan="1">4.891</td>
+<td align="left" rowspan="1" colspan="1">−0.107</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">−0.030</td>
+<td align="left" rowspan="1" colspan="1">0.199</td>
+<td align="left" rowspan="1" colspan="1">0.135</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ln(PEF)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">M</td>
+<td align="left" rowspan="1" colspan="1">−2.373</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.871</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.125</td>
+<td align="left" rowspan="1" colspan="1">0.456</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">F</td>
+<td align="left" rowspan="1" colspan="1">0.797</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.244</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.154</td>
+<td align="left" rowspan="1" colspan="1">0.373</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ln(FEF<sub>50</sub>)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">M</td>
+<td align="left" rowspan="1" colspan="1">−2.231</td>
+<td align="left" rowspan="1" colspan="1">−0.251</td>
+<td align="left" rowspan="1" colspan="1">0.889</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.114</td>
+<td align="left" rowspan="1" colspan="1">0.552</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">F</td>
+<td align="left" rowspan="1" colspan="1">−1.244</td>
+<td align="left" rowspan="1" colspan="1">−0.276</td>
+<td align="left" rowspan="1" colspan="1">0.603</td>
+<td align="left" rowspan="1" colspan="1">0.105</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.139</td>
+<td align="left" rowspan="1" colspan="1">0.457</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ln(FEF<sub>75</sub>)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">M</td>
+<td align="left" rowspan="1" colspan="1">−5.671</td>
+<td align="left" rowspan="1" colspan="1">−0.531</td>
+<td align="left" rowspan="1" colspan="1">1.623</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">−0.153</td>
+<td align="left" rowspan="1" colspan="1">0.190</td>
+<td align="left" rowspan="1" colspan="1">0.892</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">F</td>
+<td align="left" rowspan="1" colspan="1">−5.051</td>
+<td align="left" rowspan="1" colspan="1">−0.665</td>
+<td align="left" rowspan="1" colspan="1">1.579</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">−0.142</td>
+<td align="left" rowspan="1" colspan="1">0.223</td>
+<td align="left" rowspan="1" colspan="1">0.775</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt103"><label/><p>Ln: natural logarithm. M: male. F: female. H: height. BW: body weight. BFM: body fat mass. R<sup>2</sup>: coefficient of determination adjusted for degrees of freedom. ΔLLN  =  reference mean – LLN in Ln form. Only the coefficients with statistical significance are presented (at least p&lt;0.04).</p></fn></table-wrap-foot></table-wrap><table-wrap id="pone-0100733-t004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0100733.t004</object-id><label>Table 4</label><caption>
+<title>Partial-regression coefficients of log-transformed equations predicting the reference means of spirometric parameters in the middle-age male and female groups.</title>
+</caption><alternatives><graphic id="pone-0100733-t004-4" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0100733.t004" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Constant</td>
+<td align="left" rowspan="1" colspan="1">Ln(Age)</td>
+<td align="left" rowspan="1" colspan="1">Ln(H)</td>
+<td align="left" rowspan="1" colspan="1">Ln(BW)</td>
+<td align="left" rowspan="1" colspan="1">Ln(BFM)</td>
+<td align="left" rowspan="1" colspan="1">R<sup>2</sup></td>
+<td align="left" rowspan="1" colspan="1">ΔLLN</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ln(FVC)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">M</td>
+<td align="left" rowspan="1" colspan="1">−5.921</td>
+<td align="left" rowspan="1" colspan="1">−0.178</td>
+<td align="left" rowspan="1" colspan="1">1.580</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">−0.051</td>
+<td align="left" rowspan="1" colspan="1">0.318</td>
+<td align="left" rowspan="1" colspan="1">0.378</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">F</td>
+<td align="left" rowspan="1" colspan="1">−5.120</td>
+<td align="left" rowspan="1" colspan="1">−0.147</td>
+<td align="left" rowspan="1" colspan="1">1.348</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.276</td>
+<td align="left" rowspan="1" colspan="1">0.268</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ln(FEV<sub>1</sub>)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">M</td>
+<td align="left" rowspan="1" colspan="1">−4.625</td>
+<td align="left" rowspan="1" colspan="1">−0.263</td>
+<td align="left" rowspan="1" colspan="1">1.265</td>
+<td align="left" rowspan="1" colspan="1">0.138</td>
+<td align="left" rowspan="1" colspan="1">−0.108</td>
+<td align="left" rowspan="1" colspan="1">0.318</td>
+<td align="left" rowspan="1" colspan="1">0.385</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">F</td>
+<td align="left" rowspan="1" colspan="1">−4.152</td>
+<td align="left" rowspan="1" colspan="1">−0.245</td>
+<td align="left" rowspan="1" colspan="1">1.191</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.291</td>
+<td align="left" rowspan="1" colspan="1">0.272</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ln(FEV<sub>1</sub>/FVC)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">M</td>
+<td align="left" rowspan="1" colspan="1">5.433</td>
+<td align="left" rowspan="1" colspan="1">−0.079</td>
+<td align="left" rowspan="1" colspan="1">−0.140</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">−0.008</td>
+<td align="left" rowspan="1" colspan="1">0.142</td>
+<td align="left" rowspan="1" colspan="1">0.118</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">F</td>
+<td align="left" rowspan="1" colspan="1">5.793</td>
+<td align="left" rowspan="1" colspan="1">−0.099</td>
+<td align="left" rowspan="1" colspan="1">−0.233</td>
+<td align="left" rowspan="1" colspan="1">0.063</td>
+<td align="left" rowspan="1" colspan="1">−0.030</td>
+<td align="left" rowspan="1" colspan="1">0.166</td>
+<td align="left" rowspan="1" colspan="1">0.119</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ln(PEF)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">M</td>
+<td align="left" rowspan="1" colspan="1">−1.990</td>
+<td align="left" rowspan="1" colspan="1">−0.136</td>
+<td align="left" rowspan="1" colspan="1">0.895</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.155</td>
+<td align="left" rowspan="1" colspan="1">0.485</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">F</td>
+<td align="left" rowspan="1" colspan="1">0.749</td>
+<td align="left" rowspan="1" colspan="1">−0.079</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.415</td>
+<td align="left" rowspan="1" colspan="1">−0.119</td>
+<td align="left" rowspan="1" colspan="1">0.122</td>
+<td align="left" rowspan="1" colspan="1">0.384</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ln(FEF<sub>50</sub>)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">M</td>
+<td align="left" rowspan="1" colspan="1">−1.381</td>
+<td align="left" rowspan="1" colspan="1">−0.326</td>
+<td align="left" rowspan="1" colspan="1">0.776</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.160</td>
+<td align="left" rowspan="1" colspan="1">0.557</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">F</td>
+<td align="left" rowspan="1" colspan="1">1.216</td>
+<td align="left" rowspan="1" colspan="1">−0.316</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.347</td>
+<td align="left" rowspan="1" colspan="1">−0.081</td>
+<td align="left" rowspan="1" colspan="1">0.155</td>
+<td align="left" rowspan="1" colspan="1">0.520</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ln(FEF<sub>75</sub>)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">M</td>
+<td align="left" rowspan="1" colspan="1">−1.493</td>
+<td align="left" rowspan="1" colspan="1">−0.774</td>
+<td align="left" rowspan="1" colspan="1">0.764</td>
+<td align="left" rowspan="1" colspan="1">0.329</td>
+<td align="left" rowspan="1" colspan="1">−0.260</td>
+<td align="left" rowspan="1" colspan="1">0.260</td>
+<td align="left" rowspan="1" colspan="1">0.731</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">F</td>
+<td align="left" rowspan="1" colspan="1">1.993</td>
+<td align="left" rowspan="1" colspan="1">−0.918</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.560</td>
+<td align="left" rowspan="1" colspan="1">−0.280</td>
+<td align="left" rowspan="1" colspan="1">0.276</td>
+<td align="left" rowspan="1" colspan="1">0.681</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt104"><label/><p>Symbols are as depicted in <xref ref-type="table" rid="pone-0100733-t003">Table 3</xref>. The coefficients presented are statistically significant (at least p&lt;0.03).</p></fn></table-wrap-foot></table-wrap><table-wrap id="pone-0100733-t005" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0100733.t005</object-id><label>Table 5</label><caption>
+<title>Partial-regression coefficients of log-transformed equations predicting the reference means of spirometric parameters in the advanced-age male and female groups.</title>
+</caption><alternatives><graphic id="pone-0100733-t005-5" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0100733.t005" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Constant</td>
+<td align="left" rowspan="1" colspan="1">Ln(Age)</td>
+<td align="left" rowspan="1" colspan="1">Ln(H)</td>
+<td align="left" rowspan="1" colspan="1">Ln(BW)</td>
+<td align="left" rowspan="1" colspan="1">Ln(BFM)</td>
+<td align="left" rowspan="1" colspan="1">R<sup>2</sup></td>
+<td align="left" rowspan="1" colspan="1">ΔLLN</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ln(FVC)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">M</td>
+<td align="left" rowspan="1" colspan="1">−3.976</td>
+<td align="left" rowspan="1" colspan="1">−0.420</td>
+<td align="left" rowspan="1" colspan="1">1.387</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.034</td>
+<td align="left" rowspan="1" colspan="1">0.345</td>
+<td align="left" rowspan="1" colspan="1">0.321</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">F</td>
+<td align="left" rowspan="1" colspan="1">−3.970</td>
+<td align="left" rowspan="1" colspan="1">−0.640</td>
+<td align="left" rowspan="1" colspan="1">1.523</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.353</td>
+<td align="left" rowspan="1" colspan="1">0.288</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ln(FEV<sub>1</sub>)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">M</td>
+<td align="left" rowspan="1" colspan="1">−3.201</td>
+<td align="left" rowspan="1" colspan="1">−0.579</td>
+<td align="left" rowspan="1" colspan="1">1.318</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">−0.034</td>
+<td align="left" rowspan="1" colspan="1">0.372</td>
+<td align="left" rowspan="1" colspan="1">0.317</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">F</td>
+<td align="left" rowspan="1" colspan="1">−2.498</td>
+<td align="left" rowspan="1" colspan="1">−0.804</td>
+<td align="left" rowspan="1" colspan="1">1.320</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.361</td>
+<td align="left" rowspan="1" colspan="1">0.309</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ln(FEV<sub>1</sub>/FVC)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">M</td>
+<td align="left" rowspan="1" colspan="1">4.989</td>
+<td align="left" rowspan="1" colspan="1">−0.150</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.171</td>
+<td align="left" rowspan="1" colspan="1">0.114</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">F</td>
+<td align="left" rowspan="1" colspan="1">6.207</td>
+<td align="left" rowspan="1" colspan="1">−0.164</td>
+<td align="left" rowspan="1" colspan="1">−0.255</td>
+<td align="left" rowspan="1" colspan="1">0.033</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.191</td>
+<td align="left" rowspan="1" colspan="1">0.113</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ln(PEF)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">M</td>
+<td align="left" rowspan="1" colspan="1">−2.007</td>
+<td align="left" rowspan="1" colspan="1">−0.245</td>
+<td align="left" rowspan="1" colspan="1">0.985</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.186</td>
+<td align="left" rowspan="1" colspan="1">0.450</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">F</td>
+<td align="left" rowspan="1" colspan="1">−1.182</td>
+<td align="left" rowspan="1" colspan="1">−0.536</td>
+<td align="left" rowspan="1" colspan="1">0.991</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.053</td>
+<td align="left" rowspan="1" colspan="1">0.238</td>
+<td align="left" rowspan="1" colspan="1">0.409</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ln(FEF<sub>50</sub>)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">M</td>
+<td align="left" rowspan="1" colspan="1">0.697</td>
+<td align="left" rowspan="1" colspan="1">−0.976</td>
+<td align="left" rowspan="1" colspan="1">0.898</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.267</td>
+<td align="left" rowspan="1" colspan="1">0.569</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">F</td>
+<td align="left" rowspan="1" colspan="1">5.496</td>
+<td align="left" rowspan="1" colspan="1">−1.281</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.217</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.289</td>
+<td align="left" rowspan="1" colspan="1">0.604</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ln(FEF<sub>75</sub>)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">M</td>
+<td align="left" rowspan="1" colspan="1">−1.115</td>
+<td align="left" rowspan="1" colspan="1">−1.530</td>
+<td align="left" rowspan="1" colspan="1">1.659</td>
+<td align="left" rowspan="1" colspan="1">−0.274</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.314</td>
+<td align="left" rowspan="1" colspan="1">0.717</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">F</td>
+<td align="left" rowspan="1" colspan="1">3.016</td>
+<td align="left" rowspan="1" colspan="1">−1.705</td>
+<td align="left" rowspan="1" colspan="1">0.737</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.289</td>
+<td align="left" rowspan="1" colspan="1">0.723</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt105"><label/><p>Symbols are the same as shown in <xref ref-type="table" rid="pone-0100733-t003">Table 3</xref>. All coefficients presented are statistically significant (at least p&lt;0.02).</p></fn></table-wrap-foot></table-wrap><sec id="s3a">
+<title>Relationship between the anthropometric variables and spirometric parameters of the young-age group (<xref ref-type="table" rid="pone-0100733-t003">Table 3</xref>)</title>
+<p>Age did not act as a significant determinant on FVC and PEF in both genders as well as on FEV<sub>1</sub> in male participants. However, age was a decisive factor for FEV<sub>1</sub> in female participants and FEV<sub>1</sub>/FVC as well as flow parameters, including FEF<sub>50</sub> and FEF<sub>75</sub>, in both genders.</p>
+<p>H had a substantial impact on FVC, FEV<sub>1</sub>, and the flow parameters of FEF<sub>50</sub> and FEF<sub>75</sub> in both genders. However, it did not have a significant impact on FEV<sub>1</sub>/FVC in both genders and PEF in female participants.</p>
+<p>BW functioned as one of the determinants on FEV<sub>1</sub>/FVC in male participants and FVC, FEV<sub>1</sub> PEF, and FEF<sub>50</sub> in female participants.</p>
+<p>BFM had an appreciable impact on FEV<sub>1</sub>/FVC in female participants and FEF<sub>75</sub> in both genders. However, there was no spirometric parameter simultaneously influenced by BW and BFM.</p>
+</sec><sec id="s3b">
+<title>Middle-age group (<xref ref-type="table" rid="pone-0100733-t004">Table 4</xref>)</title>
+<p>Unlike the young-age group, age played an important role in deciding all spirometric parameters in the middle-age group irrespective of gender.</p>
+<p>Although H acted as a significant explanatory variable determining all spirometric parameters in male participants, it had no significant influence on the flow parameters of PEF, FEF<sub>50</sub>, and FEF<sub>75</sub> in female participants.</p>
+<p>BW and BFM concurrently exerted a considerable influence on FEV<sub>1</sub> and FEF<sub>75</sub> in male participants as well as FEV<sub>1</sub>/FVC and all flow parameters in female participants. The direction of contributions of BW and BFM was opposite, i.e., BW increased, whereas BFM decreased, a given spirometric parameter. However, apart from BW, BFM appreciably contributed to determination of the FVC and FEV<sub>1</sub>/FVC of male participants.</p>
+</sec><sec id="s3c">
+<title>Advanced-age group (<xref ref-type="table" rid="pone-0100733-t005">Table 5</xref>)</title>
+<p>Similar to the middle-age group, age played a significant role for all spirometric parameters independent of gender in the advanced-age group. It should be noted that the decline of pulmonary function with age was consistently larger in the advanced-age group than in other age groups regardless of the spirometric parameter or the gender.</p>
+<p>H functioned as a decisive factor for many spirometric parameters in advanced-age group, but it had no significant influence on FEV<sub>1</sub>/FVC in male participants and FEF<sub>50</sub> in female participants.</p>
+<p>In contrast to the middle-age group, the concurrent contribution of BW and BFM to the spirometric parameters was not investigated in the advanced-age group. BW decreased FEF<sub>75</sub> in male participants but increased FEV<sub>1</sub>/FVC and FEF<sub>50</sub> in female participants. BFM increased FVC in male participants as well as PEF in female participants but decreased FEV<sub>1</sub> in male participants.</p>
+</sec><sec id="s3d">
+<title>Age- and gender-dependent contributions of anthropometric variables to spirometric parameters (<xref ref-type="fig" rid="pone-0100733-g001">Figs. 1</xref> to <xref ref-type="fig" rid="pone-0100733-g009">9</xref>)</title>
+<p>Depending on gender and age, the anthropometric variables of H, BW, and BFM were inextricably linked with spirometric parameters in a qualitatively and/or quantitatively different manner. One exception was the effect of H on FVC and FEV<sub>1</sub>. For these parameters, the impact of H was relatively homogeneous and approximately independent of age in both genders (<xref ref-type="fig" rid="pone-0100733-g001">Fig. 1</xref>). The identical tendency, i.e., the constant partial regression coefficient of H with respect to age, approximately held for PEF and FEF<sub>50</sub> but not for FEV<sub>1</sub>/FVC and FEF<sub>75</sub> for the male participants (<xref ref-type="fig" rid="pone-0100733-g002">Figs. 2</xref>, <xref ref-type="fig" rid="pone-0100733-g003">3</xref>). On the other hand, the partial regression coefficients of H for spirometric parameters, except for FVC and FEV<sub>1</sub>, were not constant and changed significantly with age in the female participants (<xref ref-type="fig" rid="pone-0100733-g001">Figs. 1</xref>-<xref ref-type="fig" rid="pone-0100733-g003">3</xref>).</p>
+<fig id="pone-0100733-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0100733.g001</object-id><label>Figure 1</label><caption>
+<title>Age-specific effects of height (H) on decision of FVC and FEV<sub>1</sub> estimated for three different age groups of either males or females.</title>
+<p>(A): Partial regression coefficients of Ln(H) for reference means of Ln(FVC) in young-, middle-, and advanced-age groups of both genders. Partial regression coefficients of Ln(H) for Ln(FVC) are denoted as ΔLn(FVC)/ΔLn(H). (B): Partial regression coefficients of Ln(H) for Ln(FEV<sub>1</sub>) are designated as ΔLn(FEV<sub>1</sub>)/ΔLn(H).</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0100733.g001" position="float" xlink:type="simple"/></fig><fig id="pone-0100733-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0100733.g002</object-id><label>Figure 2</label><caption>
+<title>Age-specific impacts of height (H) on PEF and FEF<sub>50</sub> estimated for three different age groups of both men and women.</title>
+<p>(A): Partial regression coefficients of Ln(H) for reference means of Ln(PEF) in young-, middle-, and advanced-age groups of either gender. Partial regression coefficients of Ln(H) for ΔLn(PEF) are defined as ΔLn(PEF)/ΔLn(H). (B): Partial regression coefficients of Ln(H) for Ln(FEF<sub>50</sub>) are defined as ΔLn(FEF<sub>50</sub>)/ΔLn(H).</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0100733.g002" position="float" xlink:type="simple"/></fig><fig id="pone-0100733-g003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0100733.g003</object-id><label>Figure 3</label><caption>
+<title>Age-specific effects of height (H) on decision of FEV<sub>1</sub>/FVC and FEF<sub>75</sub> estimated for three different age groups of male and female participants.</title>
+<p>(A): Partial regression coefficients of Ln(H) for reference means of Ln(FEV<sub>1</sub>/FVC) in young-, middle-, and advanced-age groups of either gender. Partial regression coefficients of Ln(H) for Ln(FEV<sub>1</sub>/FVC) are denoted as ΔLn(FEV<sub>1</sub>/FVC)/ΔLn(H). (B): Partial regression coefficients of Ln(H) for Ln(FEF<sub>75</sub>) are designated as ΔLn(FEV<sub>75</sub>)/ΔLn(H).</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0100733.g003" position="float" xlink:type="simple"/></fig>
+<p>BW exerted little influence on FVC, PEF, and FEF<sub>50</sub> in any of the age groups in the male participants (<xref ref-type="fig" rid="pone-0100733-g004">Figs. 4</xref>, <xref ref-type="fig" rid="pone-0100733-g005">5</xref>). For the male participants, however, BW had appreciable impacts on FEV<sub>1</sub>, FEV<sub>1</sub>/FVC and FEF<sub>75</sub> in some age groups (<xref ref-type="fig" rid="pone-0100733-g004">Figs. 4</xref>, <xref ref-type="fig" rid="pone-0100733-g006">6</xref>). In the female participants, BW played an important role in determining FVC or FEV<sub>1</sub> only in the young-age group (<xref ref-type="fig" rid="pone-0100733-g004">Fig. 4</xref>). The FEV<sub>1</sub>/FVC and the flow parameters of PEF, FEF<sub>50</sub>, and FEF<sub>75</sub> in the female groups were substantially influenced by BW in an age-dependent manner, with the maximum effect being detected in the middle-age group (<xref ref-type="fig" rid="pone-0100733-g005">Figs. 5</xref>, <xref ref-type="fig" rid="pone-0100733-g006">6</xref>).</p>
+<fig id="pone-0100733-g004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0100733.g004</object-id><label>Figure 4</label><caption>
+<title>Age-specific contributions of body weight (BW) to FVC and FEV<sub>1</sub> estimated for three different age groups of both genders.</title>
+<p>(A): Partial regression coefficients of Ln(BW) for reference means of Ln(FVC) in young-, middle-, and advanced-age groups of either gender. They are designated as ΔLn(FVC)/ΔLn(BW). (B): Partial regression coefficients of Ln(BW) for Ln(FEV<sub>1</sub>) are designated as ΔLn(FEV<sub>1</sub>)/ΔLn(BW).</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0100733.g004" position="float" xlink:type="simple"/></fig><fig id="pone-0100733-g005" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0100733.g005</object-id><label>Figure 5</label><caption>
+<title>Age-specific impacts of body weight (BW) on PEF and FEF<sub>50</sub> estimated for three different age groups of male and female participants.</title>
+<p>(A): Partial regression coefficients of Ln(BW) for the reference means of Ln(PEF) in young-, middle-, and advanced-age groups of both genders. Partial regression coefficients of Ln(BW) for Ln(PEF) are defined as ΔLn(PEF)/ΔLn(BW). (B): Partial regression coefficients of Ln(BW) for Ln(FEF<sub>50</sub>) are defined as ΔLn(FEF<sub>50</sub>)/ΔLn(BW).</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0100733.g005" position="float" xlink:type="simple"/></fig><fig id="pone-0100733-g006" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0100733.g006</object-id><label>Figure 6</label><caption>
+<title>Age-specific contributions of body weight (BW) to decision of FEV<sub>1</sub>/FVC and FEF<sub>75</sub> estimated for three different age groups of both genders.</title>
+<p>(A): Partial regression coefficients of Ln(BW) for reference means of Ln(FEV<sub>1</sub>/FVC) in young-, middle-, and advanced-age groups of both genders. They are designated as ΔLn(FEV<sub>1</sub>/FVC)/ΔLn(BW). (B): Partial regression coefficients of Ln(BW) for Ln(FEF<sub>75</sub>) are designated as ΔLn(FEF<sub>75</sub>)/ΔLn(BW).</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0100733.g006" position="float" xlink:type="simple"/></fig>
+<p>Although H and BW generally were factors that increased spirometric parameters, BFM exerted negative impacts on most of the spirometric parameters in an age-dependent fashion (<xref ref-type="fig" rid="pone-0100733-g007">Figs. 7</xref>, <xref ref-type="fig" rid="pone-0100733-g008">8</xref>). The concurrent impacts of BW and BFM were specifically detected in the female middle-age group, in which BW functioned as an increasing factor, whereas BFM was as a decreasing factor for a variety of flow parameters (<xref ref-type="fig" rid="pone-0100733-g009">Fig. 9</xref>). The influence of BFM on spirometric parameters was weaker in the young- and advanced-age groups irrespective of gender (<xref ref-type="fig" rid="pone-0100733-g007">Fig. 7</xref>, <xref ref-type="fig" rid="pone-0100733-g008">8</xref>).</p>
+<fig id="pone-0100733-g007" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0100733.g007</object-id><label>Figure 7</label><caption>
+<title>Age-specific impacts of body fat mass (BFM) on FEV<sub>1</sub> and FEV<sub>1</sub>/FVC estimated for three different age groups of both men and women.</title>
+<p>(A): Partial regression coefficients of Ln(BFM) for reference means of Ln(FEV<sub>1</sub>) in young-, middle-, and advanced-age groups of either gender, which were expressed as ΔLn(FEV<sub>1</sub>)/ΔLn(BFM). (B): Partial regression coefficients of Ln(BFM) for Ln(FEV<sub>1</sub>/FVC), being defined as ΔLn(FEV<sub>1</sub>/FVC)/ΔLn(BFM).</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0100733.g007" position="float" xlink:type="simple"/></fig><fig id="pone-0100733-g008" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0100733.g008</object-id><label>Figure 8</label><caption>
+<title>Age-specific impacts of body fat mass (BFM) on deciding FEF<sub>50</sub> and FEF<sub>75</sub> estimated for three different age groups of male and female participants.</title>
+<p>(A): Partial regression coefficients of Ln(BFM) for reference means of Ln(FEF<sub>50</sub>) in young-, middle-, and advanced-age groups of either gender. They are expressed as ΔLn(FEF<sub>50</sub>)/ΔLn(BFM). (B): Partial regression coefficients of Ln(BFM) for Ln(FEF<sub>75</sub>) are defined as ΔLn(FEF<sub>75</sub>)/ΔLn(BFM).</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0100733.g008" position="float" xlink:type="simple"/></fig><fig id="pone-0100733-g009" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0100733.g009</object-id><label>Figure 9</label><caption>
+<title>Opposite effects of body weight (BW) and body fat mass (BFM) on FEF<sub>75</sub> in female middle-age group.</title>
+<p>(A): Ln(FEF<sub>75</sub>) vs. Ln(BW). Parentheses: absolute values of BW without log-transformation. Red line: slope of the equation predicting reference means of Ln(FEF<sub>75</sub>) from Ln(BW), which is equal to partial regression coefficient shown in <xref ref-type="table" rid="pone-0100733-t004">Table 4</xref> and Fig. 6-(B). (B): Ln(FEF<sub>75</sub>) vs. Ln(BFM). Parentheses: absolute values of BFM with no log-transformation. Red line: slope of the equation predicting reference means of Ln(FEF<sub>75</sub>) from Ln(BFM), which is equal to partial regression coefficient given in <xref ref-type="table" rid="pone-0100733-t004">Table 4</xref> and Fig. 8-(B).</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0100733.g009" position="float" xlink:type="simple"/></fig></sec></sec><sec id="s4">
+<title>Discussion</title>
+<sec id="s4a">
+<title>Critique of the method</title>
+<p>Although we applied the multiplicative model similar to that proposed by the GLI <xref ref-type="bibr" rid="pone.0100733-Quanjer1">[3]</xref>–<xref ref-type="bibr" rid="pone.0100733-Stocks1">[5]</xref>, we did not determine the partial regression coefficients for Ln(SP) in terms of the LMS method with smoothing such as penalized beta-spline <xref ref-type="bibr" rid="pone.0100733-Cole1">[24]</xref>, <xref ref-type="bibr" rid="pone.0100733-Cole2">[25]</xref>, i.e., more generalized additive, linear model describing location, scale, and shape (GAMLSS) of a given dataset. Instead, we determined the coefficients with the method of classical multiple-regression analysis of least-squares minimization without smoothing. The reason for this simplification is that the main purpose of the present study is not to establish the generalized regression equations for SPs applicable for all ages but to explore the age- and gender-associated impacts of each anthropometric factor on each SP.</p>
+<p>We should note that it has not been verified whether the age-related importance of anthropometric variables for determining spirometric parameters investigated in the present study holds true for all races and ethnicities because our study population consisted entirely of nonsmoking healthy Japanese adults.</p>
+</sec><sec id="s4b">
+<title>Aging- and gender-dependent contributions of age to spirometric parameters</title>
+<p>Although age was not a determinant on FVC and PEF in the young-age groups of both genders and FEV<sub>1</sub> in the male young-age group, age played an important role in deciding other spirometric parameters in any age groups irrespective of the gender. It should be noted that the decline of pulmonary function with age was consistently larger in the advanced-age group than in other age groups regardless of the spirometric parameter or the gender, indicating that the degree of effects of age on spirometric parameters would differ depending on aging. These facts suggest that the assumption of aging-independent, constant partial regression coefficients of age are not acceptable for any spirometric parameters in both genders.</p>
+</sec><sec id="s4c">
+<title>Age- and gender-dependent contributions of anthropometric variables to spirometric parameters</title>
+<p>We demonstrated that the anthropometric variables of H, BW, and BFM were linked with spirometric parameters generally in an age-dependent manner. However, the impact of H on FVC and FEV<sub>1</sub> was relatively homogeneous and approximately independent of age in both genders, indicating that the assumption of an age-independent, constant value of the partial regression coefficient of H is only acceptable for the equation predicting the reference mean of FVC or FEV<sub>1</sub> irrespective of the gender. The identical assumption, i.e., the constant partial regression coefficient of H with regard to age, approximately held for PEF and FEF<sub>50</sub> for the male participants. On the other hand, the partial regression coefficients of H for most of the spirometric parameters in the female participants were changed significantly with age, suggesting that the age-dependent contribution of H to the spirometric parameters is more evident in the female participants than in the male participants.</p>
+<p>For the male participants, BW exerted little influence on FVC, PEF, and FEF<sub>50</sub> in any of the age groups, allowing us to set the partial regression coefficients of BW for these spirometric parameters to zero, i.e., the homogeneous effects of BW on FVC, PEF, and FEF<sub>50</sub> in the male participants. For the male participants, however, BW had appreciable impacts on FEV<sub>1</sub>, FEV<sub>1</sub>/FVC and FEF<sub>75</sub> in some age groups, indicating that the assumption of the age-independent, constant partial regression coefficients of BW was not acceptable for these spirometric parameters. For the female participants, BW played a substantial role in determining all of the spirometric parameters in an age-dependent manner. Joining the findings observed for male and female participants, we considered that, although the impact of BW on spirometric parameters were very inhomogeneous and changed distinctly depending on gender and age, they were more conspicuous for the female participants than for the male participants.</p>
+<p>In contrast with H and BW, BFM exerted negative influences on most of the spirometric parameters in an age-dependent fashion. In the female middle-age group, BW functioned as an increasing factor, whereas BFM was as a decreasing factor for a variety of flow parameters, indicating that the negative effect of BFM on certain spirometric parameters could be offset by the positive effect of BW. The importance of BW and BFM in the female middle-age group is supported by the fact that physique changes with aging, leading to both BW and BFM reaching the maximums in this female age group (<xref ref-type="table" rid="pone-0100733-t002">Table 2</xref>). On the other hand, the influence of BW and BFM on spirometric parameters appeared to be weak in the advanced-age population irrespective of gender. This is also explained by the finding that BW and BFM generally decreased with aging, reaching the minimums or the lower levels in the advanced-age population (<xref ref-type="table" rid="pone-0100733-t001">Tables 1</xref>, <xref ref-type="table" rid="pone-0100733-t002">2</xref>).</p>
+</sec><sec id="s4d">
+<title>Importance of body weight and body fat mass in determining spirometric parameters</title>
+<p>BW is the sum of the various constituents, including respiratory muscles and fat deposition in the thoracic cavity and around the airway. Respiratory muscles influence the maximal respiratory pressures, and, hence, a variety of pulmonary function parameters such as inspiratory capacity, FVC, FEV<sub>1</sub>, and PEF <xref ref-type="bibr" rid="pone.0100733-Chinn1">[7]</xref>–<xref ref-type="bibr" rid="pone.0100733-Cotes2">[9]</xref>, <xref ref-type="bibr" rid="pone.0100733-Schoenberg1">[21]</xref>. Fat components represented by BFM influence the lung volumes, the work of breathing, and, in some circumstances, the airway caliber <xref ref-type="bibr" rid="pone.0100733-Chinn1">[7]</xref>, <xref ref-type="bibr" rid="pone.0100733-Cotes3">[22]</xref>. Fat accumulation along a large airway may cause central airway narrowing, leading to a decrease in FVC, FEV<sub>1</sub>, and/or PEF. On the other hand, fat deposition along a small airway may elicit peripheral airway narrowing, leading to reduction in flow parameters such as FEF<sub>50</sub> and FEF<sub>75</sub>. We found that the negative impact of BFM on the spirometric parameter was age-dependent and evident for FVC (male), FEV<sub>1</sub> (male), FEV<sub>1</sub>/FVC (both genders), PEF (female), FEF<sub>50</sub> (female), or FEF<sub>75</sub> (both genders) in the middle-age group. Our findings are partially consistent with those reported by Cotes et al. <xref ref-type="bibr" rid="pone.0100733-Cotes2">[9]</xref>, who demonstrated that the fat percentage of body mass (%FAT) plays a negative role in determining FVC and FEV<sub>1</sub> in both genders. Unfortunately, however, they did not address the age-dependent contribution of %FAT to the spirometric parameters. Interestingly, we found that, in contrast to BFM, BW had a positive impact on most of the spirometric parameters, though BFM was one of the components forming BW. This peculiar finding may be explained, in part, by the fact that the content of respiratory muscles is among the components of BW as well. Our findings are in accordance with the study of Pistelli et al. <xref ref-type="bibr" rid="pone.0100733-Pistelli1">[18]</xref>, who demonstrated the positive effect of BMI on many spirometric parameters, but our findings are seemingly inconsistent with that of Chen et al. <xref ref-type="bibr" rid="pone.0100733-Chen1">[6]</xref> and Chinn et al. <xref ref-type="bibr" rid="pone.0100733-Chinn1">[7]</xref>, both of whom demonstrated a weight-gain-associated decline in lung function. A longitudinal study done by Chen et al. <xref ref-type="bibr" rid="pone.0100733-Chen1">[6]</xref> showed that each kg of weight-gain was associated with an excess loss of 26 mL in FVC and 23 mL in FEV<sub>1</sub> in men, and 14 mL and 9 mL respectively in women. Chinn et al. <xref ref-type="bibr" rid="pone.0100733-Chinn1">[7]</xref> revealed that FVC and FEV<sub>1</sub> were decreased by about 20 mL per kg-gain of BW in a longitudinal study for male shipyard workers. As pointed out by Chinn et al. <xref ref-type="bibr" rid="pone.0100733-Chinn1">[7]</xref>, however, the increase in BW of a certain person in a longitudinal observation is generally caused by the increase in BFM but not by the increase in FFM. In other word, the effect of weight-gain on lung function in a longitudinal observation reflects the effect of increased BFM at a relatively constant level of FFM. Therefore, we considered that the findings reported by Chen et al. <xref ref-type="bibr" rid="pone.0100733-Chen1">[6]</xref> and Chinn et al. <xref ref-type="bibr" rid="pone.0100733-Chinn1">[7]</xref> were not inconsistent with our findings, in which BFM was found to have a negative impact on lung function.</p>
+</sec><sec id="s4e">
+<title>Clinical implication of the present study</title>
+<p>We found that, in addition to age and height, body weight and body fat mass had substantial impacts on deciding the reference means of various spirometric parameters. Furthermore, we demonstrated that the effects of all explanatory variables introduced in the present study were conspicuously age-dependent. Therefore, we considered that our findings would serve as a warning to the reference equations reported over several decades, in which aging-independent contributions of two explanatory variables, including age and height, to spirometric parameters were simply assumed. Since spirometric parameters are measured under a forced expiratory maneuver, the effect of the variables involving the respiratory muscles should be taken into account. For this purpose, fat-free mass (FFM) or bone-free lean body mass (BF-LBM) deserves a good indicator <xref ref-type="bibr" rid="pone.0100733-Mohamed1">[17]</xref>. It is not easy, however, to measure these variables in a cohort consisting of numerous subjects. Therefore, we used body weight as a substitute for them, in which respiratory muscles are contained. However, we should notice that body weight has a disadvantage, i.e., it includes body fat mass (BFM) as well. In an obese subject, the excessive body weight caused by increased BFM will conceal the positive effect of respiratory muscles in association with disclosing the negative effect of fat deposition in the thoracic and abdominal cavities, which leads to narrowing the airway calibers and inhibiting the diaphragm movement. We consider that, to defeat the disadvantageous effect of body weight caused by increased BFM, it is indispensable to concurrently estimate the independent effects of body weight and that of BFM, like the present study did.</p>
+<p>Although we did not estimate the quantitative difference between the predicted means of spirometric parameters calculated from our equations (aging-dependent differences in partial regression coefficients of age, height, body weight, and body fat mass) and those calculated under a simple assumption of constant partial regression coefficients of age and height with regard to aging, we believe that the latter may exert an erroneous impact on the predicted means of spirometric parameters.</p>
+</sec></sec><sec id="s5">
+<title>Conclusions</title>
+<p>This is the first large clinical trial demonstrating the important roles of age-dependent contributions of anthropometric variables, including height, body weight, and body fat mass, to various spirometric parameters. Furthermore, we demonstrated that the age-related effects of anthropometric variables on spirometric parameters were gender-dependent, and these effects were more evident in the female participants than in the male participants. The findings in the present study suggest that the assumption of constant partial regression coefficients for anthropometric variables with respect to age may result in a substantial error when predicting the reference means of various spirometric parameters, especially in women.</p>
+</sec></body>
+<back><ref-list>
+<title>References</title>
+<ref id="pone.0100733-LungFunctionin1"><label>1</label>
+<mixed-citation publication-type="other" xlink:type="simple">Lung Function in Growth and Aging (2012) Publish reference values. Available: <ext-link ext-link-type="uri" xlink:href="http://www.lungfunction.org/publishedreferencevalues.html" xlink:type="simple">www.lungfunction.org/publishedreferencevalues.html</ext-link>.</mixed-citation>
+</ref>
+<ref id="pone.0100733-Stanojevic1"><label>2</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Stanojevic</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Wade</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Stocks</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Hankinson</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Coates</surname><given-names>AL</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>Reference ranges for spirometry across all ages</article-title>. <source>Am J Respir Crit Care Med</source> <volume>177</volume>: <fpage>253</fpage>–<lpage>260</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0100733-Quanjer1"><label>3</label>
+<mixed-citation publication-type="other" xlink:type="simple">Quanjer PH, Stanojevic S, Stocks J, Cole TJ (2012) GAMLSS in action - annotated examples of working with R and GAMLSS. Available: <ext-link ext-link-type="uri" xlink:href="http://www.spirxpert.com/download/GAMLSS-in-action.zip" xlink:type="simple">www.spirxpert.com/download/GAMLSS-in-action.zip</ext-link>.</mixed-citation>
+</ref>
+<ref id="pone.0100733-Quanjer2"><label>4</label>
+<mixed-citation publication-type="other" xlink:type="simple">Quanjer PH, Stanojevic S, Cole TJ (2012) Multi-ethnic reference values for spirometry for the 3–95 year age range: the global lung function equations. Eur Repir J doi:10.1183/09031936.00080312.</mixed-citation>
+</ref>
+<ref id="pone.0100733-Stocks1"><label>5</label>
+<mixed-citation publication-type="other" xlink:type="simple">Stocks J, Baur X, Hall G, Culver B, GLI ERS Task Force (TF-2009-03 to establish improved Lung Function Reference Values) (2012) Implementing GLI 2012 lung function regression equations. Available: <ext-link ext-link-type="uri" xlink:href="http://www.lungfunction.org/files/pdf" xlink:type="simple">www.lungfunction.org/files/pdf</ext-link>.</mixed-citation>
+</ref>
+<ref id="pone.0100733-Chen1"><label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chen</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Horne</surname><given-names>SL</given-names></name>, <name name-style="western"><surname>Dosman</surname><given-names>JA</given-names></name> (<year>1993</year>) <article-title>Body weight and weight gain related to pulmonary function decline in adults: a six year follow up study</article-title>. <source>Thorax</source> <volume>48</volume>: <fpage>375</fpage>–<lpage>380</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0100733-Chinn1"><label>7</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chinn</surname><given-names>DJ</given-names></name>, <name name-style="western"><surname>Cotes</surname><given-names>JE</given-names></name>, <name name-style="western"><surname>Reed</surname><given-names>JW</given-names></name> (<year>1996</year>) <article-title>Longitudinal effects of change in body mass on measurements of ventilatory capacity</article-title>. <source>Thorax</source> <volume>51</volume>: <fpage>699</fpage>–<lpage>704</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0100733-Cotes1"><label>8</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cotes</surname><given-names>JE</given-names></name>, <name name-style="western"><surname>Dabbs</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Hall</surname><given-names>AM</given-names></name>, <name name-style="western"><surname>Heywood</surname><given-names>HC</given-names></name>, <name name-style="western"><surname>Laurence</surname><given-names>KM</given-names></name> (<year>1979</year>) <article-title>Sitting height, fat-free mass and body fat as reference variables for lung function in healthy British children: comparison with stature</article-title>. <source>Ann Hum Biol</source> <volume>6</volume>: <fpage>307</fpage>–<lpage>314</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0100733-Cotes2"><label>9</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cotes</surname><given-names>JE</given-names></name>, <name name-style="western"><surname>Chin</surname><given-names>DJ</given-names></name>, <name name-style="western"><surname>Reed</surname><given-names>JW</given-names></name> (<year>2001</year>) <article-title>Body mass, fat percentage, and fat free mass as reference variables for lung function: effects on terms for age and sex</article-title>. <source>Thorax</source> <volume>56</volume>: <fpage>839</fpage>–<lpage>844</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0100733-GarcaRo1"><label>10</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>García-Río</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Pino</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Dorgham</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Alonso</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Villamor</surname><given-names>J</given-names></name> (<year>2004</year>) <article-title>Spirometric reference equations for European females and males aged 65–85 yrs</article-title>. <source>Eur Respir J</source> <volume>24</volume>: <fpage>397</fpage>–<lpage>405</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0100733-GarcaRo2"><label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>García-Río</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Dorgham</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Pino</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Villasante</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Garcia-Quero</surname><given-names>C</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Lung volume reference values for women and men 65 to 85 Years of Age</article-title>. <source>Am J Respir Crit Care Med</source> <volume>180</volume>: <fpage>1083</fpage>–<lpage>1091</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0100733-Gore1"><label>12</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gore</surname><given-names>CJ</given-names></name>, <name name-style="western"><surname>Crockett</surname><given-names>AJ</given-names></name>, <name name-style="western"><surname>Pederson</surname><given-names>DG</given-names></name>, <name name-style="western"><surname>Booth</surname><given-names>ML</given-names></name>, <name name-style="western"><surname>Bauman</surname><given-names>A</given-names></name>, <etal>et al</etal>. (<year>1995</year>) <article-title>Spirometric standards for healthy adult lifetime nonsmokers in Australia</article-title>. <source>Eur Respir J</source> <volume>8</volume>: <fpage>773</fpage>–<lpage>782</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0100733-Hall1"><label>13</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hall</surname><given-names>AM</given-names></name>, <name name-style="western"><surname>Heywood</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Cotes</surname><given-names>JE</given-names></name> (<year>1979</year>) <article-title>Lung function in healthy British women</article-title>. <source>Thorax</source> <volume>34</volume>: <fpage>359</fpage>–<lpage>365</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0100733-Hankinson1"><label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hankinson</surname><given-names>JL</given-names></name>, <name name-style="western"><surname>Odencrantz</surname><given-names>JR</given-names></name>, <name name-style="western"><surname>Fedan</surname><given-names>KB</given-names></name> (<year>1999</year>) <article-title>Spirometric reference values from a sample of the general U.S. population</article-title>. <source>Am J Respir Crit Care Med</source> <volume>159</volume>: <fpage>179</fpage>–<lpage>187</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0100733-Jenkins1"><label>15</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jenkins</surname><given-names>SC</given-names></name>, <name name-style="western"><surname>Moxham</surname><given-names>J</given-names></name> (<year>1991</year>) <article-title>The effect of mild obesity on lung function</article-title>. <source>Respir Med</source> <volume>85</volume>: <fpage>309</fpage>–<lpage>311</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0100733-Mengesha1"><label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mengesha</surname><given-names>YA</given-names></name>, <name name-style="western"><surname>Mekonnen</surname><given-names>Y</given-names></name> (<year>1985</year>) <article-title>Spirometric lung function tests in normal non-smoking Ethiopian men and women</article-title>. <source>Thorax</source> <volume>40</volume>: <fpage>465</fpage>–<lpage>468</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0100733-Mohamed1"><label>17</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mohamed</surname><given-names>EI</given-names></name>, <name name-style="western"><surname>Maiolo</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Iacopino</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Pepe</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Di Daniele</surname><given-names>N</given-names></name>, <etal>et al</etal>. (<year>2002</year>) <article-title>The impact of body-weight components on forced spirometry in healthy Italians</article-title>. <source>Lung</source> <volume>180</volume>: <fpage>149</fpage>–<lpage>159</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0100733-Pistelli1"><label>18</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pistelli</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Bottai</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Viegi</surname><given-names>G</given-names></name> (<year>2000</year>) <article-title>Smooth reference equations for slow vital capacity and flow-volume curve indexes</article-title>. <source>Am J Respir Crit Care Med</source> <volume>161</volume>: <fpage>899</fpage>–<lpage>905</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0100733-Wu1"><label>19</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wu</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Zhang</surname><given-names>Z</given-names></name>, <name name-style="western"><surname>Gang</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Love</surname><given-names>EJ</given-names></name> (<year>2009</year>) <article-title>Predictive equations for lung function based on a large occupational population in North China</article-title>. <source>J Occup Health</source> <volume>51</volume>: <fpage>471</fpage>–<lpage>477</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0100733-Miller1"><label>20</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Miller</surname><given-names>MR</given-names></name>, <name name-style="western"><surname>Hankinson</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Brusasco</surname><given-names>V</given-names></name> (<year>2005</year>) <article-title>Standardisation of spirometry (Series “ATS/ERS Task Force: Standardisation of Lung Function Testing)</article-title>. <source>Eur Respir J</source> <volume>26</volume>: <fpage>319</fpage>–<lpage>338</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0100733-Schoenberg1"><label>21</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schoenberg</surname><given-names>JB</given-names></name>, <name name-style="western"><surname>Beck</surname><given-names>GJ</given-names></name>, <name name-style="western"><surname>Bouhoys</surname><given-names>A</given-names></name> (<year>1978</year>) <article-title>Growth and decay of pulmonary function in healthy blacks and whites</article-title>. <source>Respir Physiol</source> <volume>33</volume>: <fpage>367</fpage>–<lpage>393</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0100733-Cotes3"><label>22</label>
+<mixed-citation publication-type="other" xlink:type="simple">Cotes JE (1993) Lung function. 5th edition. Oxford: Blackwell Scientific Publications.</mixed-citation>
+</ref>
+<ref id="pone.0100733-Durnin1"><label>23</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Durnin</surname><given-names>JVGA</given-names></name>, <name name-style="western"><surname>Womersley</surname><given-names>J</given-names></name> 974 <article-title>Body fat assessed from total body density and its estimation from skinfold thickness: measurements on 481 men and women aged from 16 to 72 years</article-title>. <source>Br J Nutr</source> <volume>32</volume>: <fpage>77</fpage>–<lpage>97</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0100733-Cole1"><label>24</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cole</surname><given-names>TJ</given-names></name>, <name name-style="western"><surname>Green</surname><given-names>PJ</given-names></name> (<year>1992</year>) <article-title>Smoothing reference centile curves: the LMS method and penalized likelihood</article-title>. <source>Stat Med</source> <volume>11</volume>: <fpage>1305</fpage>–<lpage>1319</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0100733-Cole2"><label>25</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cole</surname><given-names>TJ</given-names></name>, <name name-style="western"><surname>Stanojevic</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Coates</surname><given-names>AL</given-names></name>, <name name-style="western"><surname>Hankinson</surname><given-names>JL</given-names></name>, <name name-style="western"><surname>Wade</surname><given-names>AM</given-names></name> (<year>2009</year>) <article-title>Age- and size related reference ranges: a case study of spirometry through childhood and adulthood</article-title>. <source>Stat Med</source> <volume>28</volume>: <fpage>880</fpage>–<lpage>898</lpage>.</mixed-citation>
+</ref>
+</ref-list></back>
+</article>

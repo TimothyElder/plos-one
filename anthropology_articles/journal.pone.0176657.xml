@@ -1,0 +1,612 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1d3 20150301//EN" "http://jats.nlm.nih.gov/publishing/1.1d3/JATS-journalpublishing1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="1.1d3" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-15-42742</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0176657</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Health care</subject><subj-group><subject>Health care providers</subject><subj-group><subject>Medical doctors</subject><subj-group><subject>Physicians</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>People and places</subject><subj-group><subject>Population groupings</subject><subj-group><subject>Professions</subject><subj-group><subject>Medical doctors</subject><subj-group><subject>Physicians</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Health care</subject><subj-group><subject>Health care providers</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>People and places</subject><subj-group><subject>Population groupings</subject><subj-group><subject>Ethnicities</subject><subj-group><subject>Norwegian people</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Cultural anthropology</subject><subj-group><subject>Geographic and national differences</subject><subj-group><subject>Geographic and national differences in health care</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Health care</subject><subj-group><subject>Geographic and national differences in health care</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Health care</subject><subj-group><subject>Health care providers</subject><subj-group><subject>Medical doctors</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>People and places</subject><subj-group><subject>Population groupings</subject><subj-group><subject>Professions</subject><subj-group><subject>Medical doctors</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Health care</subject><subj-group><subject>Health care providers</subject><subj-group><subject>Allied health care professionals</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Database and informatics methods</subject><subj-group><subject>Bioinformatics</subject><subj-group><subject>Sequence analysis</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>People and places</subject><subj-group><subject>Geographical locations</subject><subj-group><subject>Europe</subject><subj-group><subject>Norway</subject></subj-group></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>A sequential model for the structure of health care utilization</article-title>
+<alt-title alt-title-type="running-head">A sequential model for the structure of health care utilization</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Herrmann</surname> <given-names>Wolfram J.</given-names></name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Haarmann</surname> <given-names>Alexander</given-names></name>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+<xref ref-type="fn" rid="currentaff001"><sup>¤</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Bærheim</surname> <given-names>Anders</given-names></name>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+</contrib>
+</contrib-group>
+<aff id="aff001">
+<label>1</label>
+<addr-line>Institute of General Practice, Charité-Universitätsmedizin Berlin, Berlin, Germany</addr-line>
+</aff>
+<aff id="aff002">
+<label>2</label>
+<addr-line>Institute of General Practice and Family Medicine, Otto-von-Guericke-University of Magdeburg, Magdeburg, Germany</addr-line>
+</aff>
+<aff id="aff003">
+<label>3</label>
+<addr-line>Department of Global Public Health and Primary Care, University of Bergen, Bergen, Norway</addr-line>
+</aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Yi</surname> <given-names>Huso</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1">
+<addr-line>The Chinese University of Hong Kong, HONG KONG</addr-line>
+</aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<fn fn-type="con">
+<p>
+<list list-type="simple">
+<list-item>
+<p><bold>Conceptualization:</bold> WJH.</p>
+</list-item>
+<list-item>
+<p><bold>Data curation:</bold> WJH AH AB.</p>
+</list-item>
+<list-item>
+<p><bold>Formal analysis:</bold> WJH AH AB.</p>
+</list-item>
+<list-item>
+<p><bold>Funding acquisition:</bold> WJH.</p>
+</list-item>
+<list-item>
+<p><bold>Investigation:</bold> WJH AH AB.</p>
+</list-item>
+<list-item>
+<p><bold>Methodology:</bold> WJH AB.</p>
+</list-item>
+<list-item>
+<p><bold>Project administration:</bold> WJH.</p>
+</list-item>
+<list-item>
+<p><bold>Resources:</bold> WJH AB.</p>
+</list-item>
+<list-item>
+<p><bold>Supervision:</bold> WJH AB.</p>
+</list-item>
+<list-item>
+<p><bold>Validation:</bold> WJH AH AB.</p>
+</list-item>
+<list-item>
+<p><bold>Visualization:</bold> WJH.</p>
+</list-item>
+<list-item>
+<p><bold>Writing – original draft:</bold> WJH.</p>
+</list-item>
+<list-item>
+<p><bold>Writing – review &amp; editing:</bold> AH AB.</p>
+</list-item>
+</list>
+</p>
+</fn>
+<fn fn-type="current-aff" id="currentaff001">
+<label>¤</label>
+<p>Current address: University of Bremen, Bremen, Germany</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">wolfram.herrmann@charite.de</email></corresp>
+</author-notes>
+<pub-date pub-type="collection">
+<year>2017</year>
+</pub-date>
+<pub-date pub-type="epub">
+<day>12</day>
+<month>5</month>
+<year>2017</year>
+</pub-date>
+<volume>12</volume>
+<issue>5</issue>
+<elocation-id>e0176657</elocation-id>
+<history>
+<date date-type="received">
+<day>28</day>
+<month>9</month>
+<year>2015</year>
+</date>
+<date date-type="accepted">
+<day>16</day>
+<month>4</month>
+<year>2017</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2017</copyright-year>
+<copyright-holder>Herrmann et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0176657"/>
+<abstract>
+<p>Traditional measurement models of health care utilization are not able to represent the complex structure of health care utilization. In this qualitative study, we, therefore, developed a new model to represent the health care utilization structure. In Norway and Germany, we conducted episodic interviews, participant observation and a concurrent context analysis. Data was analyzed by thematic coding in the framework of grounded theory. Consultations do very often not only have one single reason for encounter. They are usually not independent events but form part of consultation sequences. We could find structural differences between Norway and Germany regarding the flow of information between consultations and which providers are involved in health care in what way. This leads to a sequential model, in which health care utilization is seen as sequences of consultations. Such health care utilization sequences consist of nodes which are connected by edges. Nodes represent patient-provider contacts and edges depict the flow of information. Time and the level of health care providers are dimensions in the model. These sequences can be described by different measures and aggregated on population level. Thus, the sequential model can be further used in analyzing health care utilization quantitatively, e.g., by using routine data.</p>
+</abstract>
+<funding-group>
+<award-group id="award001">
+<funding-source>
+<institution-wrap>
+<institution-id institution-id-type="funder-id">http://dx.doi.org/10.13039/501100001659</institution-id>
+<institution>Deutsche Forschungsgemeinschaft</institution>
+</institution-wrap>
+</funding-source>
+<award-id>HE 6399/1-1</award-id>
+<principal-award-recipient>
+<name name-style="western">
+<surname>Herrmann</surname> <given-names>Wolfram J.</given-names></name>
+</principal-award-recipient>
+</award-group>
+<award-group id="award002">
+<funding-source>
+<institution-wrap>
+<institution-id institution-id-type="funder-id">http://dx.doi.org/10.13039/501100001659</institution-id>
+<institution>Deutsche Forschungsgemeinschaft</institution>
+</institution-wrap>
+</funding-source>
+<award-id>HE 6399/1-2</award-id>
+<principal-award-recipient>
+<name name-style="western">
+<surname>Herrmann</surname> <given-names>Wolfram J.</given-names></name>
+</principal-award-recipient>
+</award-group>
+<funding-statement>The study was funded by the Deutsche Forschungsgemeinschaft (DFG, <ext-link ext-link-type="uri" xlink:href="http://www.dfg.de" xlink:type="simple">www.dfg.de</ext-link>), grant numbers HE 6399/1-1 and HE 6399/1-2. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="1"/>
+<table-count count="2"/>
+<page-count count="10"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability">
+<meta-name>Data Availability</meta-name>
+<meta-value>The underlying interview excerpts in their original language (German/Norwegian) can be requested by the first author <email xlink:type="simple">wolfram.herrmann@charite.de</email>. The whole qualitative material can be accessed upon request to the institute’s secretary Mrs. Anke Krause at <email xlink:type="simple">anke.krause@charite.de</email>.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec001" sec-type="intro">
+<title>Introduction</title>
+<p>Health care utilization is an important aspect to describe and understand health care systems. Often it is researched in the context of inequality of access and utilization regarding differences in socio-economic status, education, gender, race, specific illnesses, or regions [<xref ref-type="bibr" rid="pone.0176657.ref001">1</xref>–<xref ref-type="bibr" rid="pone.0176657.ref005">5</xref>]. It also plays an important role regarding inappropriate utilization, e.g. in the German or Spanish health care system [<xref ref-type="bibr" rid="pone.0176657.ref006">6</xref>, <xref ref-type="bibr" rid="pone.0176657.ref007">7</xref>]. Health care utilization and its determinants are also important for health care planning [<xref ref-type="bibr" rid="pone.0176657.ref008">8</xref>, <xref ref-type="bibr" rid="pone.0176657.ref009">9</xref>].</p>
+<p>Health care utilization differs spatially, between countries as well as inside countries [<xref ref-type="bibr" rid="pone.0176657.ref005">5</xref>, <xref ref-type="bibr" rid="pone.0176657.ref010">10</xref>, <xref ref-type="bibr" rid="pone.0176657.ref011">11</xref>]. It can for instance be shown that health care utilization rates in Norway are more than three times smaller than in Germany [<xref ref-type="bibr" rid="pone.0176657.ref012">12</xref>]. However, neither morbidity patterns and life expectancy nor the relative number of physicians differ between these two countries; some differences can be found with regard to the relative number of family physicians and the health care expenditure (cf. <xref ref-type="table" rid="pone.0176657.t001">Table 1</xref>) [<xref ref-type="bibr" rid="pone.0176657.ref013">13</xref>].</p>
+<table-wrap id="pone.0176657.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0176657.t001</object-id>
+<label>Table 1</label>
+<caption>
+<title>Number of physicians and health care expenditure compared between Germany and Norway [<xref ref-type="bibr" rid="pone.0176657.ref013">13</xref>].</title>
+</caption>
+<alternatives>
+<graphic id="pone.0176657.t001g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0176657.t001" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="right"/>
+<th align="center">Germany</th>
+<th align="center">Norway</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">Physicians per 100,000 inhabitants</td>
+<td align="char" char=".">382.4</td>
+<td align="char" char=".">371.8</td>
+</tr>
+<tr>
+<td align="right">Family physicians per 100,000 inhabitants</td>
+<td align="char" char=".">65.8</td>
+<td align="char" char=".">90.2</td>
+</tr>
+<tr>
+<td align="right">Health care expenditure of GDP</td>
+<td align="char" char=".">11.3%</td>
+<td align="char" char=".">9.0%</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>Health care utilization can be measured regarding health care services in general [<xref ref-type="bibr" rid="pone.0176657.ref005">5</xref>] or of defined distinctive services [<xref ref-type="bibr" rid="pone.0176657.ref004">4</xref>, <xref ref-type="bibr" rid="pone.0176657.ref014">14</xref>]. There are three different approaches for measuring health care utilization which are commonly used: if a service was used at all, how often a service was used per time interval and the overall cost of health care services. In a review of studies using Andersens’ behavioral model [<xref ref-type="bibr" rid="pone.0176657.ref015">15</xref>] Babitsch et al. reported that the majority of studies used binary outcomes for health services research, thus, if a service has been used or not [<xref ref-type="bibr" rid="pone.0176657.ref016">16</xref>]. This approach has also been used, e.g., in the measurement studies of Jordan et al. and Reijneveld [<xref ref-type="bibr" rid="pone.0176657.ref017">17</xref>, <xref ref-type="bibr" rid="pone.0176657.ref018">18</xref>]. This approach is especially adequate for questions of access to health care. A second approach are the numbers of use of services per time interval, e.g. number of emergency room visits, number of hospitalizations, number of hospital nights, number of physician visits most often per month or per year. This approach of rates has been used in several measurement studies [<xref ref-type="bibr" rid="pone.0176657.ref019">19</xref>–<xref ref-type="bibr" rid="pone.0176657.ref023">23</xref>]. A third approach combining services is to measure the overall costs [<xref ref-type="bibr" rid="pone.0176657.ref005">5</xref>, <xref ref-type="bibr" rid="pone.0176657.ref021">21</xref>]. Models for measuring health care utilization taking more complex structures of health care utilization into account are not commonly used.</p>
+<p>These measurements of health care utilization are then applied to causal models, such as Andersens’ behavioral model. In Andersen’s behavioral model, which exists in many different versions, factors such as need and enabling factors are associated with health care utilization measures [<xref ref-type="bibr" rid="pone.0176657.ref015">15</xref>]. A different approach in health care utilization research is to look at individual decision processes how to decide on utilizing health care having a particular health care problem [<xref ref-type="bibr" rid="pone.0176657.ref024">24</xref>]. In this approach health care utilization is modeled as single (usually independent) events.</p>
+<p>Starting from the health care utilization differences between Germany and Norway, our goal was to develop exploratively a new measurement model for health care utilization which might be better capable to represent complex health care utilization differences.</p>
+</sec>
+<sec id="sec002">
+<title>Method</title>
+<p>We chose a qualitative study design. As cases we opted for Norway and Germany, countries with similar morbidity and mortality patterns. Furthermore, health care is provided mainly by self-employed family physicians in both countries. The German health care system is a Bismarckian system with mandatory health care insurance for about 90% of the population. In ambulatory care, family physicians and specialists are working self-employed and usually in small scale practices. There are no co-payments for consultations but for medication and there is free access to all ambulatory physicians [<xref ref-type="bibr" rid="pone.0176657.ref025">25</xref>]. The Norwegian health care system is a state driven system financed by taxes and co-payments. Mainly self-employed family physicians practice in group practices. Every patient is registered with a family physician. Specialists are mainly working in outpatient clinics at hospitals. There is gatekeeping in place, which means that patients have to be referred by a family physician to a specialist [<xref ref-type="bibr" rid="pone.0176657.ref026">26</xref>].</p>
+<p>To analyze patients’ concepts and behavior in the interplay with the health care system, we chose a threefold methodological approach: First, we conducted episodic interviews with patients, a type of qualitative interview, which consists of narrative and abstract questions. Second, we conducted participant observations in primary care practices, mainly following consultations in the role of a guest. Third, we compared emerging factors between the two health care systems and checked for existing evidence of their effect.</p>
+<p>Access to the field was granted via eight primary care practices, four in Germany and four in Norway. In both countries, two of them were situated in rural and two in urban settings. They were diverse regarding their size. In each of these practices we conducted several blocks of participant observation over the course of one week. Overall, we observed 400 consultations.</p>
+<p>In each of the practices we recruited potential interviewees by a short questionnaire handed out to all patients on two or three days. The questionnaire contained questions on age, gender, number of chronic conditions and number of visits to the GP. Out of this pool of potential interviewees we chose the Norwegian interviewees by theoretical sampling and matched the German interviewees accordingly regarding the four categories of the questionnaire and if the visited practice was a rural or urban one. Overall, we interviewed 40 patients. An overview of the socio-demographic characteristics of the sample can be found in <xref ref-type="table" rid="pone.0176657.t002">Table 2</xref>.</p>
+<table-wrap id="pone.0176657.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0176657.t002</object-id>
+<label>Table 2</label>
+<caption>
+<title>Socio-demographic information of our sample of interviewees.</title>
+</caption>
+<alternatives>
+<graphic id="pone.0176657.t002g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0176657.t002" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="right" rowspan="2"/>
+<th align="center" colspan="2">Germany</th>
+<th align="center" colspan="2">Norway</th>
+</tr>
+<tr>
+<th align="center">urban</th>
+<th align="center">rural</th>
+<th align="center">urban</th>
+<th align="center">rural</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">female</td>
+<td align="center">5</td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="right">male</td>
+<td align="center">7</td>
+<td align="center">4</td>
+<td align="center">5</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="right">range of years of birth</td>
+<td align="center" colspan="2">1935–1990</td>
+<td align="center" colspan="2">1931–1987</td>
+</tr>
+<tr>
+<td align="right">average year of birth</td>
+<td align="center" colspan="2">1957</td>
+<td align="center" colspan="2">1957</td>
+</tr>
+<tr>
+<td align="right">Σ</td>
+<td align="center" colspan="2">20</td>
+<td align="center" colspan="2">20</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>Data was analyzed by thematic coding in the framework of grounded theory [<xref ref-type="bibr" rid="pone.0176657.ref027">27</xref>, <xref ref-type="bibr" rid="pone.0176657.ref028">28</xref>]. First, selected interviews and observation protocols were coded line by line by several researchers [<xref ref-type="bibr" rid="pone.0176657.ref029">29</xref>]. Then we developed a thematic structure for the codes in joint workshops. A thematic structure is a hierarchical ordering of codes into categories. Consecutively, all interviews were coded and memos written by the help of the online-tool Dedoose. During the process of coding, the thematic structure was further refined. Four main findings regarding the structure of health care utilization emerged during the process of analysis. For all these findings we looked for confirming and contradicting data in the overall material.</p>
+<p>The study has been conducted according to the principles expressed in the Declaration of Helsinki. All interviewees and observed patients gave written informed consent. The study has been approved by the ethical review committee of the medical faculty of the Otto-von-Guericke-University of Magdeburg and by the Regional Committee for Medical and Health Research Ethics in Western Norway (REK Vest). A more detailed description of the methodology is published in the study protocol [<xref ref-type="bibr" rid="pone.0176657.ref030">30</xref>].</p>
+</sec>
+<sec id="sec003" sec-type="results">
+<title>Results</title>
+<sec id="sec004">
+<title>Consultations are often not due to a single reason</title>
+<p>During participant observation in primary care practices in Norway and Germany, we could observe that consultations were frequently not owed to an acute single reason for encounter. Most often, especially in patients with chronic conditions, there were several “collected” reasons for encounter or no explicit reason at all. This is even more illustrated by the common behavior of Norwegian patients to bring a list of topics they want to talk about with the doctor.</p>
+<p>This can be found back in the interviews as well. The following German participant, for instance, is talking about seeing his doctor regularly and collecting topics he wants to raise:</p>
+<disp-quote>
+<p><italic>I had to go to the doctor, because, all the time, I’ve been taking blood pressure medication. Thus, he wanted to see me, asked me to come in intervals. Maybe about once a month. And I liked that, liked that very much. And if you had something else, you could tell him during that occasion as well. He has seen me about every quarter of a year. He has given me a new appointment every time</italic>.</p>
+<p><italic>(D14)</italic></p>
+</disp-quote>
+<p>An important aspect of these follow-up visits in both countries is monitoring, as is illustrated by this quote of a Norwegian patient:</p>
+<disp-quote>
+<p><italic>I visit him [(the family physician)] and get these measurements done. Every now and then he measures my blood pressure, every now and then he takes blood samples and sends them to the university hospital. And so on. And usually we agree on that I will return to see him in about four, five weeks. Thus, I make an appointment with the medical assistant before I go</italic>.</p>
+<p><italic>(N08)</italic></p>
+</disp-quote>
+<p>Such follow-up visits are often induced by the doctor, who wants to monitor the patients’ health status:</p>
+<disp-quote>
+<p><italic>And I have to say, we have such a rhythm: She wants to see me every four weeks, no matter if I have any complaints or not. Hence, she wants to be up to date and to see me every few weeks. And I must admit, otherwise, I wouldn’t visit the doctor</italic>.</p>
+<p><italic>(D16)</italic></p>
+</disp-quote>
+<p>Thus, consultations do very often not have just one single reason for encounter, while they at the same time often originate in the physician’s desire to monitor the health status of the patient.</p>
+</sec>
+<sec id="sec005">
+<title>Consultations are events in sequences of consultations</title>
+<p>In line with this observation, we found during our participant observation that most consultations cannot be understood in themselves: Just from following the consultation from its start to its end, it is with few exceptions not comprehensible on its own, because it builds on what has previously happened and is known to GP and patient. This observation is strengthened by the common behavior of family physicians to explain the background of the patient’s story and what had happened in previous consultations to the observer before or after the consultation. This highlights that the consultation itself is usually just one single event in a longer process, thus it is not an independent event.</p>
+<p>Additionally, a consultation is not only linked to those consultations and events which preceded this consultation, but very often a follow-up consultations is already appointed at the end of the consultation. Thus, a consultation is most often an event in a sequence of consultations. This can be highlighted by the following quote of a patient who is summoned by his GP quarterly:</p>
+<disp-quote>
+<p><italic>Why do I have to go so often to the doctor? Because he summons me, I do not go there on my own will. […] Why does the GP want to see me every quarter of a year in his surger? I can understand that I shall go annualy to the urologist because of preventive services</italic>.</p>
+<p><italic>(D14)</italic></p>
+</disp-quote>
+<p>Thus, consultations are usually neither due to a single reason nor closed events, but events in a sequence of consultations.</p>
+</sec>
+<sec id="sec006">
+<title>Structural differences in referrals and flow of information</title>
+<p>Regarding how these consultations are connected, we could observe structural differences between Norway and Germany concerning referrals and the flow of information.</p>
+<p>In the Norwegian health care system, referrals by the family physician are obligatory:</p>
+<disp-quote>
+<p><italic>However, that’s then the Norwegian system. That’s how it is in Norway, if you want to or not. That’s how it is for every one, you don’t have the right to go directly to a specialist. You must go via a family physician anyhow</italic>.</p>
+<p><italic>(N04)</italic></p>
+</disp-quote>
+<p>In Norway, referrals are (electronic) letters sent from the family physician to a designated specialist. These letters contain detailed information, e.g. about the urgency of the problem. Depending on this information the specialist decides in what order she sees the patients and sends everyone on the list the date of their appointment.</p>
+<p>In the German health care system, referrals are facultative:</p>
+<disp-quote>
+<p><italic>I’m happy that it’s over with the rule that you had to go to the family physician all the time first. Now I am able to decide on my own if I go to a doctor who says, no that’s nothing [serious] or if I go to a specialist who has different possibilities to look closer and find maybe something</italic>.</p>
+<p><italic>(D10)</italic></p>
+</disp-quote>
+<p>In Germany, referrals are short forms which are handed out to the patient. They contain usually very sparse if any information. The patient has then to organize an appointment with a specialist.</p>
+<p>While information from specialists back to family physicians flows mainly by electronic letters in Norway, this information is paper-based and sent by post or via the patient in Germany. However, often this information is missing, which makes the integration of findings by different physicians difficult.</p>
+<p>Thus, the flow of information between the different consultations differs between Norway and Germany.</p>
+</sec>
+<sec id="sec007">
+<title>Differences in which specialist providers are involved</title>
+<p>While in Norway a gatekeeping system is in place and other providers than GPs are sparsely in ambulatory care, specialists in ambulatory health care is widespread in Germany:</p>
+<disp-quote>
+<p><italic>The last time I visited a doctor was the dentist, and for check-up […] the second last time, maybe more interesting was at the oncologist for aftercare, because I have cancer. […] and before that I visited the urologist; he checked something because of the surgery and cancer […], and before that I visited the angiologist […] who ran tests. And before that I visited the cardiologist, who did tests as well</italic>.</p>
+<p><italic>(D14)</italic></p>
+</disp-quote>
+<p>Especially, for patients with chronic conditions health care is shifted towards specialists, which is also highlighted by this quote of a patient with renal failure:</p>
+<disp-quote>
+<p><italic>That’s why I have nothing to do with the family physician, nothing. I receive medication and those things just from the nephrologist. As far as I’m concerned, yeah. And otherwise, the family physician—almost nothing</italic>.</p>
+<p><italic>(D12)</italic></p>
+</disp-quote>
+<p>This can be contrasted to findings from participant observation in Norway: A family physician told she has to care even for highly disabled chronically ill children, and she only gets advice, e.g. by phone, from the pediatrician.</p>
+<p>Thus, not only the connection between the consultations but also the level and kind of provider these consultations differ between Norway and Germany.</p>
+</sec>
+<sec id="sec008">
+<title>A new derived model for describing the structure of health care utilization</title>
+<p>Hence, we can conclude that a new model representing the structure of health care utilization has to include consultations as events in sequences of consultations, the dimension of time, the different providers involved in health care, and the different flows of information between the providers. Thus, the components of the model we want to propose are:</p>
+<list list-type="bullet">
+<list-item>
+<p>health care utilization as a sequence of consultations</p>
+</list-item>
+<list-item>
+<p>nodes represent patient-provider contacts</p>
+</list-item>
+<list-item>
+<p>edges connect these nodes and depict the flow of information as
+<list list-type="simple">
+<list-item><p>– referral</p></list-item>
+<list-item><p>– medical report</p></list-item>
+<list-item><p>– follow-up appointment</p></list-item>
+</list></p>
+</list-item>
+<list-item>
+<p>time as dimension</p>
+</list-item>
+<list-item>
+<p>level of health care provider as dimension</p>
+</list-item>
+</list>
+<p>Hence, health care utilization is first of all seen as individual health care utilization sequences which can be summarized by measures and aggregated on population level. <xref ref-type="fig" rid="pone.0176657.g001">Fig 1</xref> gives a fictitious example of such an individual health care utilization sequence. As one can see, these sequences consist of superimposed patient pathways.</p>
+<fig id="pone.0176657.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0176657.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>A fictitious example of a health care utilization sequence.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0176657.g001" xlink:type="simple"/>
+</fig>
+<p>Based on the qualitative findings, e.g., the differences in flow of information between the Norwegian and Germany health care system, we propose as summary measures for individual health care utilization sequences: The qualitative result hint at differences in the length of the interval between visits, both, for GPs and other specialists. Thus, the length of the interval between visits is a summary measure. As described above, also the number of health providers involved varies, which is another summary measure. Another difference between the health care in Norway and Germany is the flow of information. Hence, another summary measure is the continuity of the flow of information. The continuity of the flow of information describes how many patient-provider-contacts are connected by flow of information to preceding patient-provider-contacts. For some patients, there are threads of health care provision which are only loosely connected with each other: E.g., a patient may visit regularly his orthopedist without a prior referral and is referred by him to physiotherapy; this patient also visits regularly his family physician, but there is only low nor no interaction between his family physician and his orthopedist.</p>
+</sec>
+</sec>
+<sec id="sec009" sec-type="conclusions">
+<title>Discussion</title>
+<p>Our qualitative findings highlight the importance to look at health care utilization not as a count of contacts but as events on patient pathways. We call these pathways health care utilization sequences. In the model we propose, the nodes of these sequences are patient-provider-contacts connected by the flow of information as edges.</p>
+<p>Because it is a qualitative study we did not aim for representativity of our findings but for generalizability of the found structures. Thus, the quantitative applicability and distribution has to be evaluated in follow-up studies. The found differences are closely related to underlying aspects of the respective health care systems. However, we deem it important to highlight which aspects of the health care system contributes to which specific structures of health care utilization and in what way instead of drawing any unspecific relationship to the overall system. The derived model shall enable further research on such connections.</p>
+<p>Our findings that consultations are often not just owed to one specific reason for encounter are in line with the Norwegian recommendation for family physicians to ask for all reasons in the opening phase of a consultation [<xref ref-type="bibr" rid="pone.0176657.ref031">31</xref>]. The habit of frequent follow-ups of patients with chronic conditions found in the German part of this study are in line with the findings of secondary data analysis of German patients, where patients with chronic conditions commonly had 25 or more contacts per year [<xref ref-type="bibr" rid="pone.0176657.ref010">10</xref>, <xref ref-type="bibr" rid="pone.0176657.ref032">32</xref>, <xref ref-type="bibr" rid="pone.0176657.ref033">33</xref>].</p>
+<p>Our findings are derived from a study conducted in Norway and Germany, two countries with different health care systems; one is a state-driven system and one a Bismarckian. Both health care systems have in common to have mainly self-employed family physicians and both countries are industrialized affluent countries. However, the general model we derived can also be transferred to different types of health care systems, such as in the US, because it is a generic one starting from patients’ experience. The model we describe could be also extended to countries where other providers such as traditional healers are involved. They can be denoted as providers.</p>
+<p>A limitation of our study is that only participants who at least visit the doctor once could be included into the study because of the recruitment by GP surgeries. However, also participants who visit doctors very rarely could be included. A strength of our study is that it consisted of different methodological approaches, episodic interviews and participant observation. The findings in both approaches were triangulated and, thus, have a higher validity.</p>
+<p>This new measurement model can be directly related to the common models presented in the introduction. From a health care utilization sequence, both, counts of number of visits and a binary variable if a provider has been visited can be directly deduced. However, the sequence contains much more information of the course of health care over time.</p>
+<p>The here introduced health care utilization sequences can be described mathematically as directed networks or graphs. This opens up the possibility to use algorithms from graph theory to analyze these sequences. For example, for the continuity of the flow of information, one needs to check for the connectivity of all nodes with the in time preceding nodes. This can be done by the according graph theory algorithms for connectivity.</p>
+</sec>
+<sec id="sec010" sec-type="conclusions">
+<title>Conclusions</title>
+<p>Our findings show that health care utilization goes beyond counts of consultations. Because consultations and individual events of utilization are not independent of each other, summative rates are often oversimplifying. The course of health care utilization is more complex, thus, we prefer to call it health care utilization structure. This health care utilization structure can be represented by health care utilization sequences. These sequences of individual patients can on the one hand establish a framework for further analyses of health care utilization patterns. On the other hand these sequences can be aggregated on population level, e.g., regarding inhabitants of a designated geographical area.</p>
+<p>The sequential model should be applied in a quantitative research design in a next step. Especially routine date seem to be an appropriate source for extracting the necessary information to construct health care utilization sequences. On individual and aggregated level, it is then possible to look for determinants of either patterns of sequences or determinants of characteristics of the sequences. Additionally, these sequential approach is going to allow researching the influence of health care characteristics, such as the role of the GP, on outcomes, such as hospitalization rates. For analyzing and simulating such sequences the graph character of the sequences and computational advances in graph theory can be used.</p>
+</sec>
+</body>
+<back>
+<ack>
+<p>We thank all researchers and students who contributed to the study, namely Anne-Katharina Koch, Kevin Schröder, Jona Ober, Christina Wagenknecht, Anne Bretschneider, Stephan Bilkenroth, Yvonne Marx, Sigurd Skrondal, Sabina Sendrowicz, Sebastian Huter, Jan Islei, Thomas Lichte, Markus Herrmann and Uwe Flick. We thank especially all GPs who allowed us to do participant observation in their practices and all interviewees.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0176657.ref001">
+<label>1</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Terraneo</surname> <given-names>M</given-names></name>. <article-title>Inequities in health care utilization by people aged 50+: evidence from 12 European countries</article-title>. <source>Social Science and Medicine</source>. <year>2015</year> <month>Feb</month>;<volume>126</volume>:<fpage>154</fpage>–<lpage>163</lpage>. Available from: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.socscimed.2014.12.028" xlink:type="simple">http://dx.doi.org/10.1016/j.socscimed.2014.12.028</ext-link>. <object-id pub-id-type="pmid">25562311</object-id></mixed-citation>
+</ref>
+<ref id="pone.0176657.ref002">
+<label>2</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Morris</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Sutton</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Gravelle</surname> <given-names>H</given-names></name>. <article-title>Inequity and inequality in the use of health care in England: an empirical investigation</article-title>. <source>Social Science &amp; Medicine</source>. <year>2005</year>;<volume>60</volume>:<fpage>1251</fpage>–<lpage>1266</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.socscimed.2004.07.016" xlink:type="simple">10.1016/j.socscimed.2004.07.016</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0176657.ref003">
+<label>3</label>
+<mixed-citation publication-type="book" xlink:type="simple">
+<name name-style="western"><surname>Bartley</surname> <given-names>M</given-names></name>. <source>Health inequality: an introduction to theories, concepts, and methods</source>. <publisher-name>Polity Press</publisher-name>; <year>2004</year>.</mixed-citation>
+</ref>
+<ref id="pone.0176657.ref004">
+<label>4</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>McKernan</surname> <given-names>SC</given-names></name>, <name name-style="western"><surname>Kuthy</surname> <given-names>RA</given-names></name>, <name name-style="western"><surname>Hanley</surname> <given-names>PF</given-names></name>, <name name-style="western"><surname>Jones</surname> <given-names>MP</given-names></name>, <name name-style="western"><surname>Momany</surname> <given-names>ET</given-names></name>, <name name-style="western"><surname>McQuistan</surname> <given-names>MR</given-names></name>, <etal>et al</etal>. <article-title>Geographic variation of dental utilization among low income children</article-title>. <source>Health &amp; Place</source>. <year>2015</year>;<volume>34</volume>:<fpage>150</fpage>—<lpage>156</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.healthplace.2015.05.002" xlink:type="simple">10.1016/j.healthplace.2015.05.002</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0176657.ref005">
+<label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Mangano</surname> <given-names>A</given-names></name>. <article-title>An analysis of the regional differences in health care utilization in Italy</article-title>. <source>Health &amp; Place</source>. <year>2010</year>;<volume>16</volume>(<issue>2</issue>):<fpage>301</fpage>—<lpage>308</lpage>. Available from: <ext-link ext-link-type="uri" xlink:href="http://www.sciencedirect.com/science/article/pii/S1353829209001269" xlink:type="simple">http://www.sciencedirect.com/science/article/pii/S1353829209001269</ext-link>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.healthplace.2009.10.013" xlink:type="simple">10.1016/j.healthplace.2009.10.013</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0176657.ref006">
+<label>6</label>
+<mixed-citation publication-type="other" xlink:type="simple">Sachverständigenrat zur Begutachtung der Entwicklung im Gesundheitswesen. Koordination und Integration—Gesundheitsversorgung in einer Gesellschaft des längeren Lebens; 2009.</mixed-citation>
+</ref>
+<ref id="pone.0176657.ref007">
+<label>7</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>González Alvarez</surname> <given-names>ML</given-names></name>, <name name-style="western"><surname>Barranquero</surname> <given-names>AC</given-names></name>. <article-title>Inequalities in health care utilization in Spain due to double insurance coverage: An Oaxaca-Ransom decomposition</article-title>. <source>Social Science and Medicine</source>. <year>2009</year> <month>Sep</month>;<volume>69</volume>(<issue>5</issue>):<fpage>793</fpage>–<lpage>801</lpage>. Available from: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.socscimed.2009.06.037" xlink:type="simple">http://dx.doi.org/10.1016/j.socscimed.2009.06.037</ext-link>. <object-id pub-id-type="pmid">19628322</object-id></mixed-citation>
+</ref>
+<ref id="pone.0176657.ref008">
+<label>8</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Sofianopoulou</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Rushton</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Rubin</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Pless-Mulloli</surname> <given-names>T</given-names></name>. <article-title>Defining {GP} practice areas based on true service utilisation</article-title>. <source>Health &amp; Place</source>. <year>2012</year>;<volume>18</volume>(<issue>6</issue>):<fpage>1248</fpage>—<lpage>1254</lpage>. Available from: <ext-link ext-link-type="uri" xlink:href="http://www.sciencedirect.com/science/article/pii/S1353829212001530" xlink:type="simple">http://www.sciencedirect.com/science/article/pii/S1353829212001530</ext-link>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.healthplace.2012.08.006" xlink:type="simple">10.1016/j.healthplace.2012.08.006</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0176657.ref009">
+<label>9</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Mason</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Sutton</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Whittaker</surname> <given-names>W</given-names></name>, <name name-style="western"><surname>Birch</surname> <given-names>S</given-names></name>. <article-title>Exploring the limitations of age-based models for health care planning</article-title>. <source>Social Science and Medicine</source>. <year>2015</year> <month>May</month>;<volume>132</volume>:<fpage>11</fpage>–<lpage>19</lpage>. Available from: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.socscimed.2015.03.005" xlink:type="simple">http://dx.doi.org/10.1016/j.socscimed.2015.03.005</ext-link>. <object-id pub-id-type="pmid">25780858</object-id></mixed-citation>
+</ref>
+<ref id="pone.0176657.ref010">
+<label>10</label>
+<mixed-citation publication-type="book" xlink:type="simple">
+<name name-style="western"><surname>Riens</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Erhart</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Mangiapane</surname> <given-names>S</given-names></name>. <source>Arztkontakte im Jahr 2007—Hintergründe und Analysen</source>. <publisher-loc>Berlin</publisher-loc>; <year>2012</year>. <ext-link ext-link-type="uri" xlink:href="http://www.versorgungsatlas.de/fileadmin/ziva_docs/ID_14_Dok1_Bericht.pdf" xlink:type="simple">http://www.versorgungsatlas.de/fileadmin/ziva_docs/ID_14_Dok1_Bericht.pdf</ext-link>. Available from: <ext-link ext-link-type="uri" xlink:href="http://www.versorgungsatlas.de/fileadmin/ziva_docs/ID_14_Dok1_Bericht.pdf" xlink:type="simple">http://www.versorgungsatlas.de/fileadmin/ziva_docs/ID_14_Dok1_Bericht.pdf</ext-link> [cited 05.07.2012].</mixed-citation>
+</ref>
+<ref id="pone.0176657.ref011">
+<label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Rooväli</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Kiivet</surname> <given-names>RA</given-names></name>. <article-title>Geographical variations in hospital use in Estonia</article-title>. <source>Health &amp; Place</source>. <year>2006</year>;<volume>12</volume>(<issue>2</issue>):<fpage>195</fpage>—<lpage>202</lpage>. Available from: <ext-link ext-link-type="uri" xlink:href="http://www.sciencedirect.com/science/article/pii/S1353829204001169" xlink:type="simple">http://www.sciencedirect.com/science/article/pii/S1353829204001169</ext-link>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.healthplace.2004.12.001" xlink:type="simple">10.1016/j.healthplace.2004.12.001</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0176657.ref012">
+<label>12</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Karsch-Völk</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Kamps</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Schneider</surname> <given-names>A</given-names></name>. <article-title>Vergleich des deutschen mit dem norwegischen Primärarztsystem ausärztlicher Sicht</article-title>. <source>Z Allg Med</source>. <year>2010</year>;<volume>86</volume>:<fpage>468</fpage>–<lpage>473</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0176657.ref013">
+<label>13</label>
+<mixed-citation publication-type="other" xlink:type="simple">World Health Organization. European health for all database (HFA-DB); 2014. <ext-link ext-link-type="uri" xlink:href="http://data.euro.who.int/hfadb/tables/tableA.php?w=1680&amp;h=1050" xlink:type="simple">http://data.euro.who.int/hfadb/tables/tableA.php?w=1680&amp;h=1050</ext-link>. Available from: <ext-link ext-link-type="uri" xlink:href="http://data.euro.who.int/hfadb/tables/tableA.php?w=1680&amp;h=1050" xlink:type="simple">http://data.euro.who.int/hfadb/tables/tableA.php?w=1680&amp;h=1050</ext-link>.</mixed-citation>
+</ref>
+<ref id="pone.0176657.ref014">
+<label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Gatrell</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Lancaster</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Chapple</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Horsley</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Smith</surname> <given-names>M</given-names></name>. <article-title>Variations in use of tertiary cardiac services in part of North-West England</article-title>. <source>Health &amp; Place</source>. <year>2002</year>;<volume>8</volume>(<issue>3</issue>):<fpage>147</fpage>—<lpage>153</lpage>. Available from: <ext-link ext-link-type="uri" xlink:href="http://www.sciencedirect.com/science/article/pii/S1353829201000442" xlink:type="simple">http://www.sciencedirect.com/science/article/pii/S1353829201000442</ext-link>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S1353-8292(01)00044-2" xlink:type="simple">10.1016/S1353-8292(01)00044-2</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0176657.ref015">
+<label>15</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Andersen</surname> <given-names>RM</given-names></name>. <article-title>Revisiting the behavioral model and access to medical care: does it matter?</article-title> <source>Journal of Health and Social Behavior</source>. <year>1995</year>;<volume>36</volume>:<fpage>1</fpage>–<lpage>10</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2307/2137284" xlink:type="simple">10.2307/2137284</ext-link></comment> <object-id pub-id-type="pmid">7738325</object-id></mixed-citation>
+</ref>
+<ref id="pone.0176657.ref016">
+<label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Babitsch</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Gohl</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Lengerke</surname> <given-names>Tvon</given-names></name>. <article-title>Re-revisiting Andersen’s Behavioral Model of Health Services Use: a systematic review of studies from 1998–2011</article-title>. <source>GMS Psycho-Social-Medicine</source>. <year>2012</year> <volume>10</volume>;<fpage>9</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0176657.ref017">
+<label>17</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Jordan</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Jinks</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Croft</surname> <given-names>P</given-names></name>. <article-title>Health care utilization: measurement using primary care records and patient recall both showed bias</article-title>. <source>J Clin Epidemiol</source>. <year>2006</year> <month>Aug</month>;<volume>59</volume>(<issue>8</issue>):<fpage>791</fpage>–<lpage>797</lpage>. Available from: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.jclinepi.2005.12.008" xlink:type="simple">http://dx.doi.org/10.1016/j.jclinepi.2005.12.008</ext-link>. <object-id pub-id-type="pmid">16828671</object-id></mixed-citation>
+</ref>
+<ref id="pone.0176657.ref018">
+<label>18</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Reijneveld</surname> <given-names>SA</given-names></name>. <article-title>The cross-cultural validity of self-reported use of health care: a comparison of survey and registration data</article-title>. <source>J Clin Epidemiol</source>. <year>2000</year> <month>Mar</month>;<volume>53</volume>(<issue>3</issue>):<fpage>267</fpage>–<lpage>272</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0895-4356(99)00138-9" xlink:type="simple">10.1016/S0895-4356(99)00138-9</ext-link></comment> <object-id pub-id-type="pmid">10760636</object-id></mixed-citation>
+</ref>
+<ref id="pone.0176657.ref019">
+<label>19</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Bhandari</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Wagner</surname> <given-names>T</given-names></name>. <source>Self-Reported Utilization of Health Care Services: Improving Measurement and Accuracy</source>. <year>2006</year>;<volume>63</volume>(<issue>2</issue>):<fpage>217</fpage>–<lpage>235</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0176657.ref020">
+<label>20</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Connelly</surname> <given-names>JE</given-names></name>, <name name-style="western"><surname>Philbrick</surname> <given-names>JT</given-names></name>, <name name-style="western"><surname>Smith</surname> <given-names>G</given-names> <suffix>Jr</suffix></name>, <name name-style="western"><surname>Kaiser</surname> <given-names>DL</given-names></name>, <name name-style="western"><surname>Wymer</surname> <given-names>A</given-names></name>. <article-title>Health perceptions of primary care patients and the influence on health care utilization</article-title>. <source>Med Care</source>. <year>1989</year> <month>Mar</month>;<volume>27</volume>(<issue>3 Suppl</issue>):<fpage>S99</fpage>–<lpage>109</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/00005650-198903001-00009" xlink:type="simple">10.1097/00005650-198903001-00009</ext-link></comment> <object-id pub-id-type="pmid">2921890</object-id></mixed-citation>
+</ref>
+<ref id="pone.0176657.ref021">
+<label>21</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Diehr</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Yanez</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Ash</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Hornbrook</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Lin</surname> <given-names>DY</given-names></name>. <article-title>Methods for analyzing health care utilization and costs</article-title>. <source>Annual Review of Public Health</source>. <year>1999</year>;<volume>20</volume>:<fpage>125</fpage>–<lpage>144</lpage>. Available from: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1146/annurev.publhealth.20.1.125" xlink:type="simple">http://dx.doi.org/10.1146/annurev.publhealth.20.1.125</ext-link>. <object-id pub-id-type="pmid">10352853</object-id></mixed-citation>
+</ref>
+<ref id="pone.0176657.ref022">
+<label>22</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Ritter</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Hobfoll</surname> <given-names>SE</given-names></name>, <name name-style="western"><surname>Lavin</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Cameron</surname> <given-names>RP</given-names></name>, <name name-style="western"><surname>Hulsizer</surname> <given-names>MR</given-names></name>. <article-title>Stress, psychosocial resources, and depressive symptomatology during pregnancy in low-income, inner-city women</article-title>. <source>Health Psychol</source>. <year>2000</year> <month>Nov</month>;<volume>19</volume>(<issue>6</issue>):<fpage>576</fpage>–<lpage>585</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1037/0278-6133.19.6.576" xlink:type="simple">10.1037/0278-6133.19.6.576</ext-link></comment> <object-id pub-id-type="pmid">11129361</object-id></mixed-citation>
+</ref>
+<ref id="pone.0176657.ref023">
+<label>23</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Roberts</surname> <given-names>RO</given-names></name>, <name name-style="western"><surname>Bergstralh</surname> <given-names>EJ</given-names></name>, <name name-style="western"><surname>Schmidt</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Jacobsen</surname> <given-names>SJ</given-names></name>. <article-title>Comparison of self-reported and medical record health care utilization measures</article-title>. <source>Journal of Clinical Epidemiology</source>. <year>1996</year> <month>Sep</month>;<volume>49</volume>(<issue>9</issue>):<fpage>989</fpage>–<lpage>995</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/0895-4356(96)00143-6" xlink:type="simple">10.1016/0895-4356(96)00143-6</ext-link></comment> <object-id pub-id-type="pmid">8780606</object-id></mixed-citation>
+</ref>
+<ref id="pone.0176657.ref024">
+<label>24</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Rosenstock</surname> <given-names>IM</given-names></name>. <article-title>Why people use health services</article-title>. <source>Milbank Memorial Fund Quarterly</source>. <year>1966</year>;<volume>44</volume>:<fpage>Suppl94</fpage>–<lpage>Suppl127</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2307/3348967" xlink:type="simple">10.2307/3348967</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0176657.ref025">
+<label>25</label>
+<mixed-citation publication-type="other" xlink:type="simple">Busse R, Blümel M. Germany—Health system review. Health Systems in Transition. WHO Regional Office for Europe; 2014.</mixed-citation>
+</ref>
+<ref id="pone.0176657.ref026">
+<label>26</label>
+<mixed-citation publication-type="other" xlink:type="simple">Ringard Å, Sagan A, Sperre Saunes I, Lindahl AK. Norway. vol. 15 of Health Systems in Transition. WHO Regional Office for Europe on behalf of the European Observatory on Health Systems and Policies; 2013.</mixed-citation>
+</ref>
+<ref id="pone.0176657.ref027">
+<label>27</label>
+<mixed-citation publication-type="book" xlink:type="simple">
+<name name-style="western"><surname>Flick</surname> <given-names>U</given-names></name>. <chapter-title>Episodic Interviewing</chapter-title>. In: <name name-style="western"><surname>Bauer</surname> <given-names>MW</given-names></name>, <name name-style="western"><surname>Gaskell</surname> <given-names>G</given-names></name>, editors. <source>Qualitative Researching with Text, Image and Sound. A Practical Handbook</source>. <publisher-loc>London</publisher-loc>: <publisher-name>Sage</publisher-name>; <year>2000</year>. p. <fpage>75</fpage>–<lpage>92</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0176657.ref028">
+<label>28</label>
+<mixed-citation publication-type="book" xlink:type="simple">
+<name name-style="western"><surname>Glaser</surname> <given-names>BG</given-names></name>, <name name-style="western"><surname>Strauss</surname> <given-names>AL</given-names></name>. <chapter-title>The Discovery of Grounded Theory</chapter-title>. <source>Strategies for Qualitative Research</source>. <publisher-loc>Aldine</publisher-loc>; <year>1967</year>.</mixed-citation>
+</ref>
+<ref id="pone.0176657.ref029">
+<label>29</label>
+<mixed-citation publication-type="book" xlink:type="simple">
+<name name-style="western"><surname>Charmaz</surname> <given-names>K</given-names></name>. <chapter-title>Constructing grounded theory</chapter-title>. <source>A practical guide through qualitative analysis</source>. <publisher-loc>London</publisher-loc>: <publisher-name>SAGE</publisher-name>; <year>2006</year>.</mixed-citation>
+</ref>
+<ref id="pone.0176657.ref030">
+<label>30</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Herrmann</surname> <given-names>WJ</given-names></name>, <name name-style="western"><surname>Haarmann</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Flick</surname> <given-names>U</given-names></name>, <name name-style="western"><surname>Bærheim</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Lichte</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Herrmann</surname> <given-names>M</given-names></name>. <article-title>Patients’ subjective concepts about primary healthcare utilisation: the study protocol of a qualitative comparative study between Norway and Germany</article-title>. <source>BMJ Open</source>. <year>2013</year>;<volume>3</volume>(<issue>6</issue>). Available from: <ext-link ext-link-type="uri" xlink:href="http://bmjopen.bmj.com/content/3/6/e002952.abstract" xlink:type="simple">http://bmjopen.bmj.com/content/3/6/e002952.abstract</ext-link>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1136/bmjopen-2013-002952" xlink:type="simple">10.1136/bmjopen-2013-002952</ext-link></comment> <object-id pub-id-type="pmid">23794555</object-id></mixed-citation>
+</ref>
+<ref id="pone.0176657.ref031">
+<label>31</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Schei</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Bærheim</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Meland</surname> <given-names>E</given-names></name>. <article-title>Klinisk kommunikasjon—et strukturert undervisningsopplegg</article-title>. <source>Tidsskrift for Den Norske Laegeforening</source>. <year>2000</year>;<volume>120</volume>:<fpage>2258</fpage>–<lpage>2262</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0176657.ref032">
+<label>32</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Garrido</surname> <given-names>MV</given-names></name>, <name name-style="western"><surname>Zentner</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Busse</surname> <given-names>R</given-names></name>. <article-title>The effects of gatekeeping: a systematic review of the literature</article-title>. <source>Scandinavian Journal of Primary Health Care</source>. <year>2011</year>;<volume>29</volume>:<fpage>28</fpage>–<lpage>38</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.3109/02813432.2010.537015" xlink:type="simple">10.3109/02813432.2010.537015</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0176657.ref033">
+<label>33</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Kulu-Glasgow</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Delnoij</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>de Bakker</surname> <given-names>D</given-names></name>. <article-title>Self-referral in a gatekeeping system: patients’ reasons for skipping the general-practitioner</article-title>. <source>Health Policy</source>. <year>1998</year> <day>9</day>;<volume>45</volume>(<issue>3</issue>):<fpage>221</fpage>–<lpage>238</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0168-8510(98)00045-1" xlink:type="simple">10.1016/S0168-8510(98)00045-1</ext-link></comment> <object-id pub-id-type="pmid">10338953</object-id></mixed-citation>
+</ref>
+</ref-list>
+</back>
+</article>

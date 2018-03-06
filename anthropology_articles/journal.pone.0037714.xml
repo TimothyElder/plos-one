@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosone</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group><issn pub-type="epub">1932-6203</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="publisher-id">PONE-D-11-18065</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0037714</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Computational biology</subject>
+            <subj-group>
+              <subject>Molecular genetics</subject>
+              <subj-group>
+                <subject>Gene expression</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Evolutionary biology</subject>
+          </subj-group>
+          <subj-group>
+            <subject>Genetics</subject>
+            <subj-group>
+              <subject>Gene expression</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Molecular cell biology</subject>
+            <subj-group>
+              <subject>Gene expression</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Neuroscience</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Neurology</subject>
+            <subj-group>
+              <subject>Epilepsy</subject>
+              <subj-group>
+                <subject>Temporal lobe epilepsy</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Pediatrics</subject>
+            <subj-group>
+              <subject>Adolescent medicine</subject>
+              <subject>Child development</subject>
+              <subject>Developmental and pediatric neurology</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Social and behavioral sciences</subject>
+          <subj-group>
+            <subject>Anthropology</subject>
+            <subj-group>
+              <subject>Biological anthropology</subject>
+              <subject>Physical anthropology</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Genetics and Genomics</subject>
+          <subject>Molecular Biology</subject>
+          <subject>Computational Biology</subject>
+          <subject>Neuroscience</subject>
+          <subject>Evolutionary Biology</subject>
+          <subject>Pediatrics and Child Health</subject>
+          <subject>Neurological Disorders</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>Dynamic Gene Expression in the Human Cerebral Cortex Distinguishes Children from Adults</article-title><alt-title alt-title-type="running-head">Variable Gene Expression in Childhood</alt-title></title-group><contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Sterner</surname>
+            <given-names>Kirstin N.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="fn" rid="fn1">
+            <sup>¤</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Weckle</surname>
+            <given-names>Amy</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Chugani</surname>
+            <given-names>Harry T.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Tarca</surname>
+            <given-names>Adi L.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Sherwood</surname>
+            <given-names>Chet C.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Hof</surname>
+            <given-names>Patrick R.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Kuzawa</surname>
+            <given-names>Christopher W.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Boddy</surname>
+            <given-names>Amy M.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Abbas</surname>
+            <given-names>Asad</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Raaum</surname>
+            <given-names>Ryan L.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff7">
+            <sup>7</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Grégoire</surname>
+            <given-names>Lucie</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Lipovich</surname>
+            <given-names>Leonard</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Grossman</surname>
+            <given-names>Lawrence I.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Uddin</surname>
+            <given-names>Monica</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" deceased="yes" xlink:type="simple">
+          <name name-style="western">
+            <surname>Goodman</surname>
+            <given-names>Morris</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff8">
+            <sup>8</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Wildman</surname>
+            <given-names>Derek E.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff9">
+            <sup>9</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1"><label>1</label><addr-line>Center for Molecular Medicine &amp; Genetics, Wayne State University School of Medicine, Detroit, Michigan, United States of America</addr-line>       </aff><aff id="aff2"><label>2</label><addr-line>Departments of Pediatrics and Neurology, Wayne State University School of Medicine, Detroit, Michigan, United States of America</addr-line>       </aff><aff id="aff3"><label>3</label><addr-line>Department of Computer Science, Wayne State University, Detroit, Michigan, United States of America</addr-line>       </aff><aff id="aff4"><label>4</label><addr-line>Department of Anthropology, The George Washington University, Washington DC, United States of America</addr-line>       </aff><aff id="aff5"><label>5</label><addr-line>Fishberg Department of Neuroscience and Friedman Brian Institute, Mount Sinai School of Medicine, New York, New York, United States of America</addr-line>       </aff><aff id="aff6"><label>6</label><addr-line>Department of Anthropology, Northwestern University, Evanston, Illinois, United States of America</addr-line>       </aff><aff id="aff7"><label>7</label><addr-line>Department of Anthropology, Lehman College &amp; The Graduate Center, City University of New York, Bronx, New York, United States of America</addr-line>       </aff><aff id="aff8"><label>8</label><addr-line>Department of Anatomy &amp; Cell Biology, Wayne State University School of Medicine, Detroit, Michigan, United States of America</addr-line>       </aff><aff id="aff9"><label>9</label><addr-line>Center for Molecular Medicine &amp; Genetics and the Department of Obstetrics &amp; Gynecology, Wayne State University School of Medicine, Detroit, Michigan, United States of America</addr-line>       </aff><contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Ginsberg</surname>
+            <given-names>Stephen D.</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group><aff id="edit1">Nathan Kline Institute and New York University School of Medicine, United States of America</aff><author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">dwildman@genetics.wayne.edu</email></corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: HTC CCS PRH CWK LL LIG MU MG DEW. Performed the experiments: KNS AW AMB AA LG DEW. Analyzed the data: KNS ALT RLR DEW. Contributed reagents/materials/analysis tools: HTC. Wrote the paper: KNS AW CCS PRH CWK LL LIG DEW.</p>
+        </fn>
+        <fn fn-type="current-aff" id="fn1">
+          <label>¤</label>
+          <p>Current address: Department of Anthropology, University of Oregon, Eugene, Oregon, United States of America</p>
+        </fn>
+      <fn fn-type="conflict">
+        <p>The authors have declared that no competing interests exist.</p>
+      </fn></author-notes><pub-date pub-type="collection">
+        <year>2012</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>30</day>
+        <month>5</month>
+        <year>2012</year>
+      </pub-date><volume>7</volume><issue>5</issue><elocation-id>e37714</elocation-id><history>
+        <date date-type="received">
+          <day>15</day>
+          <month>9</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>27</day>
+          <month>4</month>
+          <year>2012</year>
+        </date>
+      </history><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2012</copyright-year><copyright-holder>Sterner et al</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><abstract>
+        <p>In comparison with other primate species, humans have an extended juvenile period during which the brain is more plastic. In the current study we sought to examine gene expression in the cerebral cortex during development in the context of this adaptive plasticity. We introduce an approach designed to discriminate genes with variable as opposed to uniform patterns of gene expression and found that greater inter-individual variance is observed among children than among adults. For the 337 transcripts that show this pattern, we found a significant overrepresentation of genes annotated to the immune system process (pFDR≅0). Moreover, genes known to be important in neuronal function, such as brain-derived neurotrophic factor (<italic>BDNF</italic>), are included among the genes more variably expressed in childhood. We propose that the developmental period of heightened childhood neuronal plasticity is characterized by more dynamic patterns of gene expression in the cerebral cortex compared to adulthood when the brain is less plastic. That an overabundance of these genes are annotated to the immune system suggests that the functions of these genes can be thought of not only in the context of antigen processing and presentation, but also in the context of nervous system development.</p>
+      </abstract><funding-group><funding-statement>This work was supported by the National Science Foundation [grant numbers BCS0827546 and BCS0827531]. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts>
+        <page-count count="11"/>
+      </counts></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Many of the behavioral traits that distinguish humans from other species are molded throughout development by an exceptional capacity to incorporate experience and learning into the production of culture <xref ref-type="bibr" rid="pone.0037714-Tomasello1">[1]</xref>. This ability to learn results from changes that occur in the organization of the brain as the result of experiences. The cerebral cortex is continually remodeled in response to various molecular signals, as well as environmental stimuli <xref ref-type="bibr" rid="pone.0037714-Yirmiya1">[2]</xref>. This phenotypic plasticity in the brain can occur at multiple levels, ranging from large-scale remapping of cortical areas to more subtle strengthening or weakening of synaptic connections <xref ref-type="bibr" rid="pone.0037714-Berlucchi1">[3]</xref>. Indeed, an enhanced capacity for such plasticity may be important in the development of evolutionarily distinct aspects of human cognition <xref ref-type="bibr" rid="pone.0037714-Sherwood1">[4]</xref>–<xref ref-type="bibr" rid="pone.0037714-Chugani1">[6]</xref>. While a certain degree of plasticity is exhibited throughout one's lifetime, the juvenile brain undergoes a greater degree of cortical remodeling than does the adult brain <xref ref-type="bibr" rid="pone.0037714-Johnston1">[7]</xref>, <xref ref-type="bibr" rid="pone.0037714-Galvan1">[8]</xref>. Determining the molecular underpinnings that enable this heightened cortical plasticity is fundamental for uncovering the mechanisms subserving the development of human brain function. A particularly promising avenue of research in this area focuses on identifying how the expression of genes changes throughout development <xref ref-type="bibr" rid="pone.0037714-Harris1">[9]</xref>–<xref ref-type="bibr" rid="pone.0037714-Kang1">[11]</xref>. Such changes in the regulation of gene expression may have significantly influenced human brain evolution <xref ref-type="bibr" rid="pone.0037714-King1">[12]</xref>.</p>
+      <p>Regulation of gene expression in the brain may be one way the developing nervous system is able to exhibit plasticity in response to changes in the environment. This phenotypic plasticity likely results from modifications to neuron morphology and synaptic connections as well as to the surrounding cells (e.g., oligodendrocytes, microglia, astrocytes) that participate in neuron function. As a result, a reflection of phenotypic plasticity in the brain may be observed by measuring variability in gene expression in samples of cerebral cortex tissue taken from individuals of different ages. In the current genome-wide study we sought to clarify whether mRNA expression in children is more dynamic and variable than gene expression in adult brains. We reasoned that those genes for which cortical expression is more variable across individuals during childhood and early adolescence, compared to adults, could be considered candidates for involvement in neuronal and synaptic plasticity. To explore these questions, we used microarray techniques to examine gene expression in surgically-resected human cerebral cortex tissue in individuals ranging in age from less than one year to 53 years of age. Using these data, we develop an approach designed to discriminate the degree to which gene expression is variable across individuals of the same age class, and then test for age related differences in the degree of this variability.</p>
+    </sec>
+    <sec id="s2">
+      <title>Results</title>
+      <sec id="s2a">
+        <title>Genes with Greater Variance in Expression During Childhood</title>
+        <p>We sought to identify which genes showed expression patterns in the cerebral cortex that are variable across individuals and to then evaluate whether there were age differences in the degree of this variability. To test this, 20,678 well-curated microarray probes were sorted by variance in expression level across all samples, regardless of age, and the probes with greatest variance (5%, n = 1095) were retained for further analyses. We then divided the 37 samples into two age groups [younger (&lt;15 years old) and older (≥15 years old)] and compared the variance between groups for each gene. A cutoff of 15 years was used to distinguish older individuals with adult levels of cortical glucose uptake <xref ref-type="bibr" rid="pone.0037714-Chugani1">[6]</xref> and synapse organization and density <xref ref-type="bibr" rid="pone.0037714-Huttenlocher1">[13]</xref>, <xref ref-type="bibr" rid="pone.0037714-Glantz1">[14]</xref> from younger individuals. We then calculated the expression variance in each group (younger and older) and tested whether the ratio of the variance of the younger group to the older group was greater than 1 for each probe using an F-test. Of the 1095 most-variable probes, 71% showed significantly greater variance during childhood than during adulthood [p&lt;1×10<sup>−16</sup> (Wilcoxon signed-rank test); <xref ref-type="fig" rid="pone-0037714-g001">Figure 1</xref>]. Of these, a total of 337 probes (<xref ref-type="supplementary-material" rid="pone.0037714.s004">Dataset S1</xref>) corresponding to 302 annotated genes showed significantly greater expression variance during childhood (pFDR&lt;0.25; 93 probes with FDR&lt;0.1).</p>
+        <fig id="pone-0037714-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0037714.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Paired differences between the standard deviation of genes in children vs. adults.</title>
+            <p>The boxplot is made from for all 1095 probes with highest variance across all samples. Positive values indicate larger standard deviation (SD) in the younger group (children&lt;15 years), whereas negative values indicate larger standard deviation in the older group (adults≥15 years). The median (heavy black line) represents the point at which 50% of the data are greater than (above the line) or less than (below the line) this value. The upper quartile (open box above the median) represents the 25% of the data greater than the median. The lower quartile (open box below the median) represents the 25% of the data less than the median. Note that 71% of the probes have greater standard deviation in the younger group. The maximum (above the upper quartile) and minimum (below the lower quartile) values excluding outliers are also shown. Outliers are drawn as open circles.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0037714.g001" xlink:type="simple"/>
+        </fig>
+        <p>Gene ontology analyses were used to help identify overrepresented gene annotation terms in this list of 337 probes. These analyses revealed that the most overrepresented biological processes, when compared to all genes present on the array, were immune system process (BP_GO:0002376) and immune response (BP_GO:0006955) (<xref ref-type="fig" rid="pone-0037714-g002">Figures 2</xref> and <xref ref-type="supplementary-material" rid="pone.0037714.s001">S1</xref> and <xref ref-type="supplementary-material" rid="pone.0037714.s005">Dataset S2</xref>). We also conducted gene ontology and pathway analyses using as the reference list the subset of 1095 probes with greatest variance regardless of age. With this analysis we found further enrichment for particular ‘immunity-related’ terms and pathways (<xref ref-type="fig" rid="pone-0037714-g003">Figure 3</xref> and <xref ref-type="supplementary-material" rid="pone.0037714.s006">Dataset S3</xref>).</p>
+        <fig id="pone-0037714-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0037714.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Gene Ontology and KEGG pathway analyses</title>
+            <p>(<bold>reference  =  all genes</bold>)<bold>.</bold> Gene Ontology Biological Process (GO_BP) and KEGG pathway analyses for probes with greater variance in childhood than in adulthood using as reference all genes called present on the array. The <italic>expected</italic> number of genes is the number of genes predicted for this term by random chance. The <italic>observed</italic> number of genes is the number of genes actually present in our dataset for this term. For example, in this context we would expect by random chance to see 13 genes annotated to the GO_BP term ‘immune system process’ (GO:0002376). Instead, we observed 75 genes annotated to this term (pFDR  = 0). The steepness of the slope of each line reflects statistical significance with steeper lines having smaller pFDR values. Those categories with the greatest slope (pFDR  = ≤0.02) are labeled in this figure. All 339 GO_BP terms and 19 KEGG pathways that met our enrichment criterion of pFDR ≤0.1 can be found in <xref ref-type="supplementary-material" rid="pone.0037714.s005">Dataset S2</xref>. Additional GO (Molecular Process and Cellular Component) data and plots can be found in <xref ref-type="supplementary-material" rid="pone.0037714.s005">Dataset S2</xref> and <xref ref-type="supplementary-material" rid="pone.0037714.s001">Figure S1</xref> respectively.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0037714.g002" xlink:type="simple"/>
+        </fig>
+        <fig id="pone-0037714-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0037714.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Gene Ontology and KEGG pathway analyses</title>
+            <p>(<bold>reference  = 1095 probes with greatest variance</bold>)<bold>.</bold> GO and KEGG pathway analyses for probes with greater variance in childhood than in adulthood using as reference the 1095 (∼5%) genes with highest variance across all samples. The <italic>expected</italic> number of genes is the number of genes predicted for this term by random chance. The <italic>observed</italic> number of genes is the number of genes actually present in our dataset for this term. For example, in this context we would expect by random chance to see 47 genes annotated to the GO_BP term ‘immune system process’ (GO:0002376). Instead, we observed 84 genes annotated to this term (pFDR  = 0). The steepness of the slope of each line reflects statistical significance with steeper lines having smaller pFDR values. Those categories with the greatest slope (pFDR  = ≤0.02) are labeled in this figure. All 10 GO_BP terms and 6 KEGG pathways that met our enrichment criterion of pFDR ≤0.1 can be found in <xref ref-type="supplementary-material" rid="pone.0037714.s006">Dataset S3</xref>. Molecular Function (MF) analyses did not meet enrichment criteria. Cellular Compartment (CC) has one term that met our criterion (MHC protein complex; pFDR  = 0.09; see <xref ref-type="supplementary-material" rid="pone.0037714.s006">Dataset S3</xref>).</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0037714.g003" xlink:type="simple"/>
+        </fig>
+        <p>To examine the effect of having multiple brain regions included in the childhood dataset, these analyses were repeated using only samples collected from the temporal lobe. The resulting list of significant probes and the original list of 337 probes have 86% overlap (<xref ref-type="supplementary-material" rid="pone.0037714.s004">Dataset S1</xref>). As a result, similar gene ontology terms and pathways were enriched whether all samples or only the temporal cortex samples were used.</p>
+        <p>Our gene expression analyses were based on tissue homogenates, and thus we sought to determine the cellular localization pattern of proteins that showed a more variable mRNA expression pattern in children. Specifically, we used immunohistochemistry to determine the cellular localization for three proteins encoded by genes that were found to be more variable in their expression in childhood (HLA class I histocompatibility antigen, alpha chain, HLA-E; a subcomponent of the classical pathway of complement activation, C1q; and Neuronal pentraxin-2, NP2). We found that all three proteins are expressed in microglia and/or neuronal cells in human temporal tissue (<xref ref-type="fig" rid="pone-0037714-g004">Figure 4</xref>). In addition, we found evidence for the expression of all three proteins in both cell types in a temporal cortex sample from a child. HLA-E expression was detected in microglia and neurons of both adults examined. Expression of NP2 was found in both microglia and neurons of one adult examined. There was no evidence; however, of C1q expression in either adult (<xref ref-type="fig" rid="pone-0037714-g004">Figure 4</xref>). The absence of C1q immunoreactivity in cells of the cerebral cortex of adult humans was further confirmed in an additional four individuals (data not shown).</p>
+        <fig id="pone-0037714-g004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0037714.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>Immunohistochemistry evidence for expression of ‘immunity-related’ genes in neurons and glial cells.</title>
+            <p>Immunohistochemistry showing the protein expression of C1Q, NP2 and HLA-E in nondiseased human glial cells and neurons. Arrows denote the location of microglia (M) and neurons (N). Images A–B show C1Q staining in frozen temporal lobe sections of two adults. Images C–D show C1Q staining of microglia and neurons, respectively, in frozen temporal lobe sections of a child. Image E shows NP2 staining of microglia and neurons in frozen temporal lobe sections of an adult. Image F is a negative control of the adult frozen temporal lobe tissue. Images G–H show NP2 staining of microglia and neurons, respectively, in paraffin embedded temporal lobe section of a child. Images I–J show HLA-E staining of both microglia and neurons in frozen temporal lobe sections of two adults. Image K shows HLA-E staining of microglia and neurons in a frozen temporal lobe section of a child. Image L is a negative control of the frozen temporal lobe section of the child. We found evidence for the expression of all three proteins in both cell types of the child. However, in the adult, NP2 and HLA-E were present in both cell types but there was no evidence of C1Q expression.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0037714.g004" xlink:type="simple"/>
+        </fig>
+        <p>Recent studies have identified a large number of developmentally regulated genes <xref ref-type="bibr" rid="pone.0037714-Harris1">[9]</xref>, <xref ref-type="bibr" rid="pone.0037714-Kang1">[11]</xref>. One possible explanation for the greater variance we observed among children is that expression of these genes is developmentally regulated. To test for this we used quadratic regression to examine the expression levels of the 302 genes that have evidence for a wider expression variance in childhood as a function of age (<xref ref-type="supplementary-material" rid="pone.0037714.s004">Dataset S1</xref>). We found that only 1 of the 302 genes is differentially expressed as a function of age (<italic>NQO1</italic>; pFDR = 0.18), the remaining 301 are not (pFDR ≥0.25). Thus, we are confident that childhood inter-individual variation rather than developmental trajectories explains the observed results.</p>
+        <p>To evaluate whether the greater gene expression variance among children and overrepresentation of genes annotated to the immune response is a result of using RNA derived from control (normal) tissue harvested from surgically resected samples, these analyses were repeated using expression data derived from postmortem tissues taken from individuals having no history of psychiatric or neurological complaints [GEO accession: GSE13564 <xref ref-type="bibr" rid="pone.0037714-Harris1">[9]</xref>]. Of the 1020 genes representing the 5% of genes with greatest expression variance across all samples, 78% showed higher variance in the younger group (&lt;15 years) compared to the older group (≥15 years) (p&lt;2.2×10<sup>−16</sup>; <xref ref-type="supplementary-material" rid="pone.0037714.s002">Figure S2</xref>). Of these 1020 genes 529 were significant (pFDR&lt;0.25) in this analysis. The list obtained by intersecting the significant genes in the variance analysis based on the Harris et al. dataset included 34 genes (<xref ref-type="supplementary-material" rid="pone.0037714.s007">Dataset S4</xref>); by random chance we would have expected to find approximately 55 overlapping genes between the two studies. Thus, specific genes involved in plasticity show variation between the two studies. Biological processes related to immunity (e.g. BP_GO:0006955, GO:0002252, GO:0050776) and nervous system development (BP_GO:0007399) were enriched (p&lt;0.01; <xref ref-type="supplementary-material" rid="pone.0037714.s008">Dataset S5</xref>) in the list of 529 significant genes, which was similar to what was observed based on current study data.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Validation of Microarray Data Using qPCR</title>
+        <p>We chose for validation fourteen probes annotated to genes with greater variance in expression during childhood (<italic>HLA-DOA</italic>, <italic>APOL3</italic>, <italic>LEP, C1QC, CHURC1, HLA-DOA, HLA-E, NPTX2, PCDH17, HLA-DPA1, SERPINA3, NPAS4, IL8</italic> and <italic>FCGBP</italic>). The qPCR data of six of these probes <italic>(APOL3</italic>, <italic>HLA-DOA, HLA-DPA1, SERPINA3, NPAS4,</italic> and <italic>FCGBP)</italic> were in agreement with microarray findings (<xref ref-type="fig" rid="pone-0037714-g005">Figure 5</xref>). The genes that did not validate, failed because of 1) poor Illumina probe annotation; and 2) the microarray results may be more sensitive in detecting variance than is qPCR.</p>
+        <fig id="pone-0037714-g005" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0037714.g005</object-id>
+          <label>Figure 5</label>
+          <caption>
+            <title>Test of the correlation between microarray and qPCR data.</title>
+            <p>Y-axis shows mRNA expression levels [–DCt values (Ct reference–Ct target)] derived from qPCR experiments whereas the X-axis shows the log2 normalized microarray expression signal intensities. Correlations were considered significant when p&lt;0.05. ρ = correlation coefficient.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0037714.g005" xlink:type="simple"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Discussion</title>
+      <p>Among transcripts showing the greatest variance in expression levels, we found a significantly higher number of genes (n = 302) in which expression variability among individuals was greater in samples collected in children and young adolescence than those collected in adults. These data provide compelling evidence for greater variance in the expression of genes in the cerebral cortex earlier in development. We note that this variance is associated with the general greater overall plasticity during childhood <xref ref-type="bibr" rid="pone.0037714-Johnston1">[7]</xref>, <xref ref-type="bibr" rid="pone.0037714-Galvan1">[8]</xref>. Determining how and if such inter-individual variance in the transcriptome relates to plasticity among neurons and at the synapse and how it manifests as phenotypic or behavioral variability is of fundamental importance for uncovering the biological mechanisms underlying human brain development. These genes and their related pathways make compelling candidates for further study of nervous system development and cognition, and they also reinforce a role for system-wide plasticity and adaptation in the nervous system. Strikingly, many of these genes are known to function in the immune system. These data suggest many genes traditionally considered to be ‘immunity-related’ are not only expressed in the brain but also show greater variance in their expression levels at a developmental stage characterized by heightened neuronal and synaptic plasticity.</p>
+      <sec id="s3a">
+        <title>Convergence of Neurologically Expressed Responses in Adulthood</title>
+        <p>Many of the 302 genes (e.g., brain-derived neurotrophic factor) with more dynamic patterns of gene expression during childhood already have documented roles in the nervous system. When we intersect our list of 302 genes with phenotype data (largely derived from knock out experiments in mice <xref ref-type="bibr" rid="pone.0037714-Austin1">[15]</xref>) compiled by Mammalian Genome Informatics <xref ref-type="bibr" rid="pone.0037714-Bult1">[16]</xref>, we find 238 of these genes have orthologous mouse genes represented in the phenotype database. Half of all protein-coding genes with a mammalian phenotype (MP:0000001) show some sort of nervous system phenotype (3,011 of 6,406). Only 66 of the 238 variable orthologous human genes have a noted neuronal phenotype (Mammalian Phenotype IDs: MP:0003631 and MP:0005386; <xref ref-type="supplementary-material" rid="pone.0037714.s009">Dataset S6</xref>), in mice. This is a significant underrepresentation (2 tailed p≤0.0001, Fisher's Exact Test). Future work will be necessary to understand whether the neuronal function of these human genes represents an evolutionary divergence from mouse genes.</p>
+        <p>That we detect a high degree of inter-individual variability in the regulation of these transcripts during childhood may reflect the fact that this is a developmental stage characterized by increased neuronal plasticity. From both an immunological <xref ref-type="bibr" rid="pone.0037714-Sperling1">[17]</xref> and neurological <xref ref-type="bibr" rid="pone.0037714-Johnston1">[7]</xref> perspective, children have a more naïve and less established response to novel environments when compared to adults. Both the child's nervous and immune systems develop in response to stimuli <xref ref-type="bibr" rid="pone.0037714-Kioussis1">[18]</xref>, and because children are initially exposed to different stimuli at different times, we might speculate that what happens to forge a connection between a stimulus and a response in one child may be different than what happens to forge that same connection in another. However, as children age, the efficiency and speed of the response (both neurological and immunological) to stimuli grows, and during adulthood these responses may converge regardless of the nature of their initial exposures <xref ref-type="bibr" rid="pone.0037714-Bonilla1">[19]</xref>, <xref ref-type="bibr" rid="pone.0037714-Haynes1">[20]</xref>. This could result in more targeted, yet less plastic, responses to environmental stimuli during adulthood. We suggest that greater variability in the expression of these ‘response genes’ in the brain during childhood could reflect a developmental period during which neurological responses are being established and the brain is more plastic <xref ref-type="bibr" rid="pone.0037714-Johnston1">[7]</xref>. We might speculate on the mechanistic level that during childhood the brain is responding to stimuli with more <italic>ad hoc</italic>, less fixed signaling and biochemical pathways. Although this may be necessary during childhood, such variability is energetically costly to maintain <xref ref-type="bibr" rid="pone.0037714-Chugani1">[6]</xref>, <xref ref-type="bibr" rid="pone.0037714-Chugani2">[21]</xref> and should be selected against when an effective response is already present. Therefore, just as exposure converges between individuals during adulthood, we observe similar convergence at the transcript level of these genes between adults. Importantly, we found a very similar pattern in two independent and distinct datasets.</p>
+      </sec>
+      <sec id="s3b">
+        <title>Immune System Genes in the Normal, Healthy Brain</title>
+        <p>Of the 302 genes identified as having greater variance among children, 84 were annotated to the immune system. The central nervous system (CNS) has traditionally been considered immune privileged; a system in which white cells and plasma proteins tolerate the introduction of alloantigens rather than initiating an immune response. However, similarities between the immune and central nervous systems have previously been suggested <xref ref-type="bibr" rid="pone.0037714-Blalock1">[22]</xref>, <xref ref-type="bibr" rid="pone.0037714-Blalock2">[23]</xref> and recent research shows increased evidence of cross-talk between the two systems <xref ref-type="bibr" rid="pone.0037714-Yirmiya1">[2]</xref>, <xref ref-type="bibr" rid="pone.0037714-McAllister1">[24]</xref>–<xref ref-type="bibr" rid="pone.0037714-Sun1">[26]</xref> as well as shared mechanisms underlying similar structures and functions <xref ref-type="bibr" rid="pone.0037714-Kioussis1">[18]</xref>. Although ‘immunity-related’ proteins such as IL-1, IL-6 and TNF <xref ref-type="bibr" rid="pone.0037714-Balschun1">[27]</xref>–<xref ref-type="bibr" rid="pone.0037714-Vitkovic1">[29]</xref>, CXCL12/CXCR4 <xref ref-type="bibr" rid="pone.0037714-Li1">[30]</xref>–<xref ref-type="bibr" rid="pone.0037714-Ransohoff1">[32]</xref>, C1q and C3 <xref ref-type="bibr" rid="pone.0037714-Deverman1">[33]</xref>, <xref ref-type="bibr" rid="pone.0037714-Stevens1">[34]</xref>, and the major histocompatibility complex class I (MHCI) family <xref ref-type="bibr" rid="pone.0037714-Fourgeaud1">[35]</xref>–<xref ref-type="bibr" rid="pone.0037714-Huh1">[37]</xref> have been shown to function in the healthy CNS, the current research suggests that this is only a subset of ‘immunity-related’ genes expressed in healthy brain tissue. Our dataset of 84 genes annotated to ‘immune system process’ (BP_GO:0002376; <xref ref-type="supplementary-material" rid="pone.0037714.s006">Dataset S3</xref>) includes genes implicated in the classical complement cascade (e.g., <italic>C1QB, C1QC, C2, C5AR1</italic>), chemokine signaling and cytokine-cytokine interactions (e.g., <italic>CCL26, CCL5, CCR1, CXCL10, IL6, IL8, LEP, OSM, TNFSF10, TNFSF13B, WAS</italic>, and <italic>DOCK2</italic>), MHC class II receptor activity (e.g., <italic>HLA-DMA, HLA-DOA, HLA-DPA1, HLA-DRA, HLA-DRB3</italic>, and <italic>HLA-DRB4</italic>), MHC class I receptor activity (e.g., <italic>HLA-A, HLA-B, HLA-E,</italic> and <italic>HLA-H</italic>), cell adhesion (e.g., <italic>CD86, ITGAL, ITGB2, SPN,</italic> and HLA molecules), and Toll-like receptor signaling (e.g., <italic>CD14, CD86, CCL5, CXCL10, IL6, IL8, LY96, TLR7</italic>). Although many of these genes have traditionally been considered ‘immunity-related,’ it is important to note that, unlike their roles in the immune system, the processes discussed here (e.g., MHCI receptor activity, cell adhesion) appear to function in the brain free from injury, disease and exposure to pathogens <xref ref-type="bibr" rid="pone.0037714-Boulanger2">[38]</xref>. Both glial cells (e.g., microglia) and neurons appear capable of expressing these genes in the central nervous system under normal conditions <xref ref-type="bibr" rid="pone.0037714-Fourgeaud1">[35]</xref>, and additional work is needed to decipher whether glial or neuronal functions contribute to the pattern of gene expression described here.</p>
+        <p>Blood contamination in cortical tissue could confound our gene expression result, especially in the case of immune related genes. Thus, we provide evidence, using immunohistochemistry, that HLA-E is present in both glial cells and neurons of a child's brain as well as two adult brains (<xref ref-type="fig" rid="pone-0037714-g004">Figure 4</xref>). To our knowledge, the expression of this protein has previously only been characterized in tumor cells <xref ref-type="bibr" rid="pone.0037714-Kren1">[39]</xref> and in trophoblast cells <xref ref-type="bibr" rid="pone.0037714-King2">[40]</xref>. We also found evidence for protein expression of C1q and NP2 in both cells types of the child brain, NP2 expression in both cell types of the adult brain but no evidence of expression of C1q in two adult brains. This finding is consistent with studies suggesting an interaction between NP2 and C1q in mice <xref ref-type="bibr" rid="pone.0037714-Stevens1">[34]</xref>. Our findings suggest the potential exists for a similar interaction in the human brain, but this interaction may be limited to the younger, more plastic cortex. That we did not detect expression of C1q in the adult brain provides evidence that this protein plays a more prominent role in the developing rather than the adult brain. Further work is necessary to determine the relationship between mRNA and protein expression of C1q.</p>
+        <p>Previous studies have demonstrated differential expression of MHCI gene and protein expression in regions of the central nervous system undergoing activity-dependent plasticity <xref ref-type="bibr" rid="pone.0037714-Corriveau1">[36]</xref>, <xref ref-type="bibr" rid="pone.0037714-Huh1">[37]</xref>, <xref ref-type="bibr" rid="pone.0037714-McConnell1">[41]</xref>–<xref ref-type="bibr" rid="pone.0037714-Rolleke1">[45]</xref>. Whereas the exact mechanisms underlying MHCI's role in plasticity are not yet known, a growing body of evidence points to MHCI protein involvement in selective maintenance or elimination of synapses throughout normal brain development and cell-cell communication <xref ref-type="bibr" rid="pone.0037714-Boulanger1">[25]</xref>, <xref ref-type="bibr" rid="pone.0037714-Corriveau1">[36]</xref>, <xref ref-type="bibr" rid="pone.0037714-Huh1">[37]</xref> as well as a role in neurotransmission at the synapse <xref ref-type="bibr" rid="pone.0037714-Ribic1">[44]</xref>. In addition, it was recently shown that neuronal MHCI has the ability to modulate NMDA receptor function and NMDA-induced AMPA receptor trafficking, which suggests a role for MHCI in NMDAR-dependent synaptic plasticity <xref ref-type="bibr" rid="pone.0037714-Fourgeaud1">[35]</xref>. The authors note that because MHCI levels vary during development and are activity dependent, changes in MHCI levels may provide a mechanism for developmental changes in plasticity and synaptic activity in the brain <xref ref-type="bibr" rid="pone.0037714-Fourgeaud1">[35]</xref>. In children in the present study, MHCI genes like <italic>HLA-A, HLA-B</italic>, and <italic>HLA-E</italic> are expressed at different levels in different individuals. It is tempting to speculate that such ‘immunity-related’ genes expressed by neurons may encode proteins that can initiate processes important for nervous system development.</p>
+      </sec>
+      <sec id="s3c">
+        <title>Is the dynamic pattern of gene expression among children uniquely human?</title>
+        <p>When considering the evolution of the human brain in particular we propose humans may exhibit a more prolonged period of adaptive mRNA expression variability during childhood. Humans have a longer period of juvenile development in comparison to other primates <xref ref-type="bibr" rid="pone.0037714-Leigh1">[46]</xref>, <xref ref-type="bibr" rid="pone.0037714-Leigh2">[47]</xref>. During this time the cerebral cortex consumes nearly twice the amount of glucose as observed during adulthood <xref ref-type="bibr" rid="pone.0037714-Chugani2">[21]</xref> and there are extensive changes to synaptic organization and density <xref ref-type="bibr" rid="pone.0037714-Huttenlocher1">[13]</xref>, <xref ref-type="bibr" rid="pone.0037714-Glantz1">[14]</xref>. Our data suggest that another characteristic of the human cerebral cortex is greater inter-individual variance in gene expression earlier in development. Because we observe this pattern in tissue samples that are heterogeneous in cellular composition, we suggest this variance relates to overall phenotypic plasticity in the brain but further work is needed to distinguish the relative contribution of each cell type to this transcriptional variability in childhood. Genes that show this pattern may contribute to phenotypic plasticity in the brain and serve as mediators between the environment and genome.</p>
+        <p>Testing if this prolonged period of adaptive gene expression is unique to humans will require examining gene expression throughout development in nonhuman primates. One promising potential avenue for pursuing this aim is to examine regulatory elements of the 302 genes identified in this study across nonhuman primates. Those elements fixed in modern human populations but derived from the ancestral condition may point to human specific features. Additionally, examining variance in gene expression in nonhuman primate cortical tissue would provide a more comparative context and allow us to infer if the pattern that we observe in these human samples is evolutionarily derived. Good candidate species for this type of study include chimpanzees and rhesus macaques. Unlike humans and chimpanzees, macaques have a much shorter period of juvenile development <xref ref-type="bibr" rid="pone.0037714-Leigh1">[46]</xref>, <xref ref-type="bibr" rid="pone.0037714-Leigh2">[47]</xref> and when compared to humans, and glucose consumption levels also peak earlier in development than in humans <xref ref-type="bibr" rid="pone.0037714-Jacobs1">[48]</xref>. Although many of these same genes may be expressed in nonhuman primate cortical tissue and would show similar degrees of expression variance in younger vs. older individuals, we would suggest that the period of greater expression variance would be greatly reduced in species with shorter periods of brain development. Understanding these processes from an evolutionary perspective may provide clues to the origin and refinement of human cognitive features.</p>
+      </sec>
+    </sec>
+    <sec id="s4" sec-type="materials|methods">
+      <title>Materials and Methods</title>
+      <sec id="s4a">
+        <title>Samples</title>
+        <p>Samples (<xref ref-type="supplementary-material" rid="pone.0037714.s003">Table S1</xref>) were derived from surgically resected control tissues (e.g., electrophysiologically inactive) that were removed from patients during surgery for brain disorders (e.g., intractable seizures). Written informed consent was obtained from all patients involved in the study; in the case of children, consent was obtained from authorized legal representatives (e.g., parents/legal guardians). Procedures for obtaining consent were approved by the human investigation committee. Race and/or ethnicity were self-identified, and patients were then categorized according to National Science Foundation established criteria. The research described in this publication was reviewed and approved by the Human Investigation Committee (HIC) at Wayne State University (HIC# 071608MP4X) and was found to present no greater than minimal risk to human subjects.</p>
+        <p>Cerebral cortex tissues taken primarily from the temporal lobe (<xref ref-type="supplementary-material" rid="pone.0037714.s003">Table S1</xref>) were flash frozen in dry ice and stored at −70°C. Tissue samples were homogenized in TRI Reagent (Applied Biosytems/Ambion, Austin, TX). RNA extraction was completed using the TRIzol protocol (Invitrogen, Carlsbad, CA) or the MagMax-96 for Microarray kit (Applied Biosystems/Ambion) following the manufacturers' instructions. The TURBO DNase treatment (Applied Biosytems/Ambion) or RNeasy kit in conjunction with the RNase-Free DNase Set (Qiagen, Valencia, CA) was used to further purify the initial RNA isolation according to the manufacturer's recommendations. The DNA-free RNA isolations with ABS 260/280 ratios above 1.7 (Nanodrop 1000; Thermo Scientific, Wilmington, DE) and two distinct peaks representing the 18S and 28S ribosomal RNA and minimal background banding (Agilent Bioanalyzer 2100; Santa Clara, CA), were selected for analysis. Gene expression data were collected using a genome-wide microarray [Illumina Human HT-12v3 chips using the Illumina BeadChip platform (Illumina, San Diego, CA)] by the Applied Genomics Techology Center (AGTC; Wayne State University, Detroit, MI) following Illumina's protocol in the TotalPrep-96 RNA Amplification Kit (Applied Biosytems/Ambion, Austin, TX) for labeling and the Whole-Genome Gene Expression with IntelliHyb Seal for the hybridization, wash, and stain (Illumina, San Diego, CA).</p>
+      </sec>
+      <sec id="s4b">
+        <title>Data Preprocessing</title>
+        <p>Illumina BeadStudio (V.3) was used to process the arrays and obtain background corrected intensity values for all 48,803 probes in 40 arrays (corresponding to 37 unique brain samples) as well as the probe detection p-values. Only probes with a detection p-value ≤0.1 in at least half (16) of the total number of unique individuals sampled were retained for future analyses. This filtering step resulted in a total of 20,678 probes for our variance analyses. All values in the background corrected expression matrix were offset by adding a constant so that the smallest intensity value equaled 1.0 in order to allow further log transformation of the data. Expression values were then log<sub>2</sub> -transformed and quantile-normalized <xref ref-type="bibr" rid="pone.0037714-Bolstad1">[49]</xref>. A final preprocessing step averaged over the expression values for each of the 3 samples run in duplicate.</p>
+      </sec>
+      <sec id="s4c">
+        <title>Variance in Expression Level by Age Group</title>
+        <p>The log<sub>2</sub> gene expression data for each gene was first adjusted for the SEX variable by subtracting from all male sample expression levels the male average expression level and from all female sample expression levels the female average expression level. The variance of each probe was determined from these SEX adjusted data and then probes were sorted from largest to smallest variance and the top ∼5% (1095 probes) were retained for further examination. We chose to pre-filter the variant transcripts to be sure we were capturing those transcripts with the greatest overall variance among individuals. This pre-filtering step allowed us to filter out thousands of transcripts with low to nonsignificant levels of inter-individual variance and to determine, with greater statistical power, if the most variant transcripts exhibit 1) greater variance in kids, 2) greater variance in adults, or 3) if the most variant transcripts were equally variant across all individuals.</p>
+        <p>Samples were divided into two age groups: children or younger individuals (&lt;15 years old; 29 individuals) and adults or older individuals (≥15 years old; 8 individuals). A cutoff of 15 years was chosen because cortical glucose uptake has reached adult levels <xref ref-type="bibr" rid="pone.0037714-Chugani1">[6]</xref> and changes to synapse organization and density are approaching adult levels at this age <xref ref-type="bibr" rid="pone.0037714-Huttenlocher1">[13]</xref>, <xref ref-type="bibr" rid="pone.0037714-Glantz1">[14]</xref>. Expression variance was computed in each group and we tested whether the ratio of the variance of younger individuals to older individuals was greater than 1 for each probe with an F-test. The nominal p-value derived from the F statistic accounts for the different number of degrees of freedom in the estimation of the variance of each group. A Wilcoxon signed-rank test was used to determine whether the top 5% of probes with the largest variance had greater variance in younger individuals. Gene ontology and pathway analyses were conducted for the probes (<xref ref-type="supplementary-material" rid="pone.0037714.s004">Dataset S1</xref>) with significantly greater expression variance during childhood using as reference list both a) the list of all probes called present and b) the list of 5% most varying probes.</p>
+        <p>In order to test that the variance analysis was not simply identifying genes that are differentially expressed as a function of childhood age only (i.e. developmentally regulated changes in gene expression), we used a quadratic regression approach to examine the relationships between gene expression levels and age. We employed a linear model that assumes a quadratic relationship between expression levels (log-transformed) and age while adjusting for sex and potential for developmental delay. An F-test was used to calculate a p-value for each probe representing the probability that the expression level is not significant for age. These p-values were corrected for multiple hypothesis testing and nominal as well as pFDR values for all 337 probes identified as having greater expression variance among children are reported in <xref ref-type="supplementary-material" rid="pone.0037714.s004">Dataset S1</xref>.</p>
+        <p>In order to examine the effect of having tissue derived from surgical patients, these analyses were repeated using a previously published dataset <xref ref-type="bibr" rid="pone.0037714-Harris1">[9]</xref> with expression data derived from postmortem tissue (GEO accession: GSE13564). All 42 individuals from this dataset with age information were used in this analysis. The raw data was preprocessed using the RMA algorithm <xref ref-type="bibr" rid="pone.0037714-Irizarry1">[50]</xref> implemented in the <italic>affy</italic> package <xref ref-type="bibr" rid="pone.0037714-Gautier1">[51]</xref> of Bioconductor, which included background correction, quantile normalization and summarization of probe intensities into one value per probeset and sample. Probesets not detected present (or marginally present) in at least half of the samples were discarded from further analyses. The present and marginal present calls were obtained using the <italic>affy</italic> package. In addition, probesets that could not be mapped to a valid Entrez ID were also discarded from further analyses. The difference in gene variance between age groups (&lt;15 and ≥15 years) were performed as described above except that the sex adjustment step was skipped since there was no gender data available for this dataset.</p>
+      </sec>
+      <sec id="s4d">
+        <title>Immunohistochemistry</title>
+        <p>Human, nondiseased, surgically resected, temporal cortex tissues were obtained from 2 male subjects, one representing the younger group (&lt;15 years) and one representing the older group ≥15 years). The resected temporal tissue was fixed in 4% freshly depolymerized paraformaldehyde in 0.1 M phosphate buffer saline pH 7.4 (PBS) at 4°C for 4 days. The tissue was rinsed in PBS for 30 minutes, 3 times on a rocking device and then divided into two halves and subsequently immersed in a 15% sucrose solution in PBS and placed at 4°C overnight. The samples then were placed in 30% sucrose in PBS for several days at 4°C until the tissue sank in the solution. Cryoblocks were made using Optimum Cutting Temperature compound (OCT) and stored at −80°C. With the aid of a cryomicrotome, 6-µm thick frontal sections were cut from one half of each cryoblock at −20°C to −26°C, mounted on charged glass slides and stored at −80°C for future use.</p>
+        <p>Immunohistochemistry was performed using mouse monoclonal antibodies against HLA-E (Abcam, Cambridge, MA Clone MEM-E/02, IgG1, dilution 1∶20), goat polyclonal antibody against a peptide mapping near the N-terminus of NP2 of human origin (genetic locus <italic>NPTX2</italic>, Santa Cruz Biotechnology, Santa Cruz, CA, dilution 1∶25) and rat monoclonal antibody C1q (7H8, Abcam, Cambridge, MA, 1∶10 dilution).</p>
+        <p>All samples were air dried and rehydrated. Immunohistochemical tissue labeling was performed using the Discovery Immunohistochemistry Auto-System (Ventana). Cell conditioning, pretreatment and blocking of peroxidases were performed according to standard protocols.</p>
+        <p>An additional, nondiseased, postmortem obtained temporal cortex sample was also stained following similar methods to those above. Prior to immunostaining, sections were rinsed thoroughly in PBS and pretreated for antigen retrieval by incubation in 10 mM sodium citrate buffer (pH 3.5) at 37°C in an oven for 30 minutes. Sections were then rinsed and immersed in a solution of 0.75% hydrogen peroxide in 75% methanol to eliminate endogenous peroxidase activity. After rinsing again, sections were incubated in the primary antibody, HLA-E (same as above, but 1∶100 dilution) or rabbit polyclonal C1QC antibody (Abcam, Cambridge, MA, 1∶100 dilution) diluted in PBS with 2% normal horse serum and 0.1% Triton X-100 detergent for approximately 24 hours on a rotator at 4°C. After rinsing in PBS, sections were incubated in biotinylated anti-rabbit IgG (1∶200 dilution, BA-2000, Vector Laboratories, Burlingame, CA) and processed with the avidin-biotin-peroxidase method using a Vectastain Elite ABC kit (pk-6100, Vector Laboratories). Sections were rinsed again in PBS, followed by a rinse in sodium acetate buffer. Immunoreactivity was revealed using 3,3′-diaminobenzidine and nickel enhancement.</p>
+      </sec>
+      <sec id="s4e">
+        <title>qPCR Validation</title>
+        <p>Validation of mRNA expression patterns was performed by qPCR on three genes of interest (<italic>HLA-DOA, APOL3,</italic> and <italic>LEP</italic>) using the Taqman gene expression assays available from Applied Biosystems (ABI). In order to account for the slight bias of younger individuals in the microarray analysis, 10 samples from individuals ≥15 years old and 1 sample from &lt;15 years old were added to the 36 (1 sample lacked sufficient RNA for validation) for validation by qPCR. A total of 800 ng of RNA from each sample were synthesized into complementary DNA (cDNA) using Superscript III First-Strand Synthesis system (Invitrogen). qPCR was performed using the Stratagene (Santa Clara, CA) MX3000P real-time machine and ABI's Taqman 2X Universal PCR master mix (2X), No AmpErase UNG. The reference gene human <italic>RPLPO</italic>, a standard endogenous control from ABI's Taqman gene expression assays, was multiplexed with the target gene for every cDNA template as a quality control measure. All samples were run in triplicate. We also examined additional genes of interest <italic>C1QC, CHURC1, HLA-DOA, HLA-E, NPTX2, PCDH17, HLA-DPA1, SERPINA3, NPAS4, IL8, FCGBP</italic>, respectively, using the conditions above except the assays were run on an Applied Biosystems 7500 Fast Real-Time PCR System. Average Ct value was used for each sample. The –DCt values (Ct target – Ct reference), which are surrogates for log (base 2) gene expression were analyzed as described above.</p>
+      </sec>
+      <sec id="s4f">
+        <title>Probe Annotation and Gene Ontology Mapping</title>
+        <p>When an Illumina probe lacked gene annotation information we mapped the probe sequence to the human genome (Feb. 2009 GRCh37.hg19) using the UCSC Genome Bioinformatics Site Blat tool and chose the best sequence match. For all ontology analyses GO mappings were based on data provided by Gene Ontology (<ext-link ext-link-type="uri" xlink:href="ftp://ftp.geneontology.org/pub/go/godatabase/archive/latest-lite/" xlink:type="simple">ftp://ftp.geneontology.org/pub/go/godatabase/archive/latest-lite/</ext-link>) on 2009-Aug 30 and Entrez Gene (<ext-link ext-link-type="uri" xlink:href="ftp://ftp.ncbi.nlm.nih.gov/gene/DATA" xlink:type="simple">ftp://ftp.ncbi.nlm.nih.gov/gene/DATA</ext-link>) on 2009-Mar 11. Onto-Express <xref ref-type="bibr" rid="pone.0037714-Draghici1">[52]</xref> was used to examine relationships between GO terms.</p>
+      </sec>
+      <sec id="s4g">
+        <title>Software Tools Used in Analyses</title>
+        <p>The R statistical language and environment <xref ref-type="bibr" rid="pone.0037714-R1">[53]</xref> using specialized bioinformatics packages available via the Bioconductor project (<ext-link ext-link-type="uri" xlink:href="http://www.bioconductor.org" xlink:type="simple">www.bioconductor.org</ext-link>) was used for all data analyses. Bioinformatics packages used included limma, preprocessCore, marray, GOstats, KEGG.db, GO.db.</p>
+      </sec>
+      <sec id="s4h">
+        <title>Data Deposition</title>
+        <p>Microarray image files collected for this project are MIAME (Minimum Information about a Microarray Experiment <xref ref-type="bibr" rid="pone.0037714-Brazma1">[54]</xref>) compliant and have been deposited in the National Center for Biotechnology Information's Gene Expression Omnibus (GEO) data repository under the series accession number GSE37721.</p>
+      </sec>
+    </sec>
+    <sec id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material id="pone.0037714.s001" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pone.0037714.s001" xlink:type="simple">
+        <label>Figure S1</label>
+        <caption>
+          <p><bold>Gene Ontology analyses.</bold> GO term (Molecular Function and Cellular Component) analyses for probes with greater variance in childhood than in adulthood using as reference all genes called present on the array. The <italic>expected</italic> number of genes is the number of genes predicted for this term by random chance. The <italic>observed</italic> number of genes is the number of genes actually present in our dataset for this term. For example, in this context we would expect by random chance to see &gt;1 gene annotated to the GO_MP term ‘MHC class II receptor activity’ (GO:0032395). Instead, we observed 5 genes annotated to this term (pFDR = 0). The steepness of the slope of each line reflects statistical significance with steeper lines having smaller pFDR values. Those categories with the greatest slope (pFDR  = ≤0.05) are labeled in this figure. All 26 GO_MP terms and 30 CO_CC terms that met our enrichment criterion of pFDR≤0.1 can be found in <xref ref-type="supplementary-material" rid="pone.0037714.s006">Dataset S3</xref>.</p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0037714.s002" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pone.0037714.s002" xlink:type="simple">
+        <label>Figure S2</label>
+        <caption>
+          <p><bold>Paired differences between the standard deviation of genes in children vs. adults.</bold> The boxplot is made from for all 1020 probes with highest variance across all samples in the postmortem dataset. Positive values indicate larger standard deviation in the younger group (children &lt;15 years), whereas negative values indicate larger standard deviation in the older group (adults ≥15 years). The median (heavy black line) represents the point at which 50% of the data are greater than (above the line) or less than (below the line) this value. The upper quartile (open box above the median) represents the 25% of the data greater than the median. The lower quartile (open box below the median) represents the 25% of the data less than the median. Note that 78% of the probes have greater standard deviation in the younger group. The maximum (above the upper quartile) and minimum (below the lower quartile) values excluding outliers are also shown. Outliers are drawn as open circles.</p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0037714.s003" mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" position="float" xlink:href="info:doi/10.1371/journal.pone.0037714.s003" xlink:type="simple">
+        <label>Table S1</label>
+        <caption>
+          <p>
+            <bold>Sample information for all individuals.</bold>
+          </p>
+          <p>(XLSX)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0037714.s004" mimetype="application/x-excel" position="float" xlink:href="info:doi/10.1371/journal.pone.0037714.s004" xlink:type="simple">
+        <label>Dataset S1</label>
+        <caption>
+          <p>
+            <bold>Probes with greater variance in expression in children than in adults.</bold>
+          </p>
+          <p>(XLS)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0037714.s005" mimetype="application/x-excel" position="float" xlink:href="info:doi/10.1371/journal.pone.0037714.s005" xlink:type="simple">
+        <label>Dataset S2</label>
+        <caption>
+          <p>
+            <bold>GO and Kegg Pathway analyses for probes with greater variance in children than in adults using as reference all genes called present on the array.</bold>
+          </p>
+          <p>(XLS)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0037714.s006" mimetype="application/x-excel" position="float" xlink:href="info:doi/10.1371/journal.pone.0037714.s006" xlink:type="simple">
+        <label>Dataset S3</label>
+        <caption>
+          <p>
+            <bold>GO and Kegg Pathway analyses for probes with greater variance in children than in adults using as reference the top 5% of genes with highest variance.</bold>
+          </p>
+          <p>(XLS)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0037714.s007" mimetype="text/comma-separated-values" position="float" xlink:href="info:doi/10.1371/journal.pone.0037714.s007" xlink:type="simple">
+        <label>Dataset S4</label>
+        <caption>
+          <p>
+            <bold>Genes found to be significant in variance analyses (great variance in children than adults) in both the Harris et al. 2009 (GEO accession: GSE13564) and current datasets.</bold>
+          </p>
+          <p>(CSV)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0037714.s008" mimetype="application/x-excel" position="float" xlink:href="info:doi/10.1371/journal.pone.0037714.s008" xlink:type="simple">
+        <label>Dataset S5</label>
+        <caption>
+          <p><bold>GO analysis for probes with greater variance in children than adults.</bold> (Harris et al., 2009 Dataset; GEO accession: GSE13564).</p>
+          <p>(XLS)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0037714.s009" mimetype="application/x-excel" position="float" xlink:href="info:doi/10.1371/journal.pone.0037714.s009" xlink:type="simple">
+        <label>Dataset S6</label>
+        <caption>
+          <p>
+            <bold>Intersection of 302 genes with greater variance in children with Mammalian Genome Informatics dataset of Mammalian Phenotype ID: MP:0003631 and MP:0005386).</bold>
+          </p>
+          <p>(XLS)</p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We thank Mei-Li Lee and Henriette Mair-Meijers (Wayne State University) for providing research support and William Leonard (Northwestern University) for insightful discussion. Dr. Jeffrey Loeb (Wayne State University) kindly provided tissue used for immunohistochemistry studies. Cheryl Stimson (The George Washington University) graciously performed additional immunohistochemistry experiments.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0037714-Tomasello1">
+        <label>1</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Tomasello</surname><given-names>M</given-names></name></person-group>             <year>2001</year>             <article-title>The cultural origins of human cognition.</article-title>             <publisher-loc>Cambridge, MA</publisher-loc>             <publisher-name>Harvard University Press</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Yirmiya1">
+        <label>2</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Yirmiya</surname><given-names>R</given-names></name><name name-style="western"><surname>Goshen</surname><given-names>I</given-names></name></person-group>             <year>2011</year>             <article-title>Immune modulation of learning, memory, neural plasticity and neurogenesis.</article-title>             <source>Brain Behav Immun</source>             <volume>25</volume>             <fpage>181</fpage>             <lpage>213</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Berlucchi1">
+        <label>3</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Berlucchi</surname><given-names>G</given-names></name><name name-style="western"><surname>Buchtel</surname><given-names>HA</given-names></name></person-group>             <year>2009</year>             <article-title>Neuronal plasticity: historical roots and evolution of meaning.</article-title>             <source>Exp Brain Res</source>             <volume>192</volume>             <fpage>307</fpage>             <lpage>319</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Sherwood1">
+        <label>4</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Sherwood</surname><given-names>CC</given-names></name><name name-style="western"><surname>Subiaul</surname><given-names>F</given-names></name><name name-style="western"><surname>Zawidzki</surname><given-names>TW</given-names></name></person-group>             <year>2008</year>             <article-title>A natural history of the human mind: tracing evolutionary changes in brain and cognition.</article-title>             <source>J Anat</source>             <volume>212</volume>             <fpage>426</fpage>             <lpage>454</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Allman1">
+        <label>5</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Allman</surname><given-names>JM</given-names></name></person-group>             <year>1999</year>             <article-title>Evolving brains.</article-title>             <publisher-loc>New York</publisher-loc>             <publisher-name>Scientific American Library</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Chugani1">
+        <label>6</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Chugani</surname><given-names>HT</given-names></name></person-group>             <year>1998</year>             <article-title>A critical period of brain development: studies of cerebral glucose utilization with PET.</article-title>             <source>Prev Med</source>             <volume>27</volume>             <fpage>184</fpage>             <lpage>188</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Johnston1">
+        <label>7</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Johnston</surname><given-names>MV</given-names></name></person-group>             <year>2009</year>             <article-title>Plasticity in the developing brain: Implications for rehabilitation.</article-title>             <source>Dev Disabil Res Rev</source>             <volume>15</volume>             <fpage>94</fpage>             <lpage>101</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Galvan1">
+        <label>8</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Galvan</surname><given-names>A</given-names></name></person-group>             <year>2010</year>             <article-title>Neural plasticity of development and learning.</article-title>             <source>Hum Brain Mapp</source>             <volume>31</volume>             <fpage>879</fpage>             <lpage>890</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Harris1">
+        <label>9</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Harris</surname><given-names>LW</given-names></name><name name-style="western"><surname>Lockstone</surname><given-names>HE</given-names></name><name name-style="western"><surname>Khaitovich</surname><given-names>P</given-names></name><name name-style="western"><surname>Weickert</surname><given-names>CS</given-names></name><name name-style="western"><surname>Webster</surname><given-names>MJ</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Gene expression in the prefrontal cortex during adolescence: implications for the onset of schizophrenia.</article-title>             <source>BMC Med Genomics</source>             <volume>2</volume>             <fpage>28</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Somel1">
+        <label>10</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Somel</surname><given-names>M</given-names></name><name name-style="western"><surname>Franz</surname><given-names>H</given-names></name><name name-style="western"><surname>Yan</surname><given-names>Z</given-names></name><name name-style="western"><surname>Lorenc</surname><given-names>A</given-names></name><name name-style="western"><surname>Guo</surname><given-names>S</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Transcriptional neoteny in the human brain.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>106</volume>             <fpage>5743</fpage>             <lpage>5748</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Kang1">
+        <label>11</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kang</surname><given-names>HJ</given-names></name><name name-style="western"><surname>Kawasawa</surname><given-names>YI</given-names></name><name name-style="western"><surname>Cheng</surname><given-names>F</given-names></name><name name-style="western"><surname>Zhu</surname><given-names>Y</given-names></name><name name-style="western"><surname>Xu</surname><given-names>X</given-names></name><etal/></person-group>             <year>2011</year>             <article-title>Spatio-temporal transcriptome of the human brain.</article-title>             <source>Nature</source>             <volume>478</volume>             <issue>7370</issue>             <fpage>483</fpage>             <lpage>489</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-King1">
+        <label>12</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>King</surname><given-names>MC</given-names></name><name name-style="western"><surname>Wilson</surname><given-names>AC</given-names></name></person-group>             <year>1975</year>             <article-title>Evolution at two levels in humans and chimpanzees.</article-title>             <source>Science</source>             <volume>188</volume>             <fpage>107</fpage>             <lpage>116</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Huttenlocher1">
+        <label>13</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Huttenlocher</surname><given-names>PR</given-names></name><name name-style="western"><surname>Dabholkar</surname><given-names>AS</given-names></name></person-group>             <year>1997</year>             <article-title>Regional differences in synaptogenesis in human cerebral cortex.</article-title>             <source>J Comp Neurol</source>             <volume>387</volume>             <fpage>167</fpage>             <lpage>178</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Glantz1">
+        <label>14</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Glantz</surname><given-names>LA</given-names></name><name name-style="western"><surname>Gilmore</surname><given-names>JH</given-names></name><name name-style="western"><surname>Hamer</surname><given-names>RM</given-names></name><name name-style="western"><surname>Lieberman</surname><given-names>JA</given-names></name><name name-style="western"><surname>Jarskog</surname><given-names>LF</given-names></name></person-group>             <year>2007</year>             <article-title>Synaptophysin and postsynaptic density protein 95 in the human prefrontal cortex from mid-gestation into early adulthood.</article-title>             <source>Neuroscience</source>             <volume>149</volume>             <fpage>582</fpage>             <lpage>591</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Austin1">
+        <label>15</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Austin</surname><given-names>CP</given-names></name><name name-style="western"><surname>Battey</surname><given-names>JF</given-names></name><name name-style="western"><surname>Bradley</surname><given-names>A</given-names></name><name name-style="western"><surname>Bucan</surname><given-names>M</given-names></name><name name-style="western"><surname>Capecchi</surname><given-names>M</given-names></name><etal/></person-group>             <year>2004</year>             <article-title>The knockout mouse project.</article-title>             <source>Nat Genet</source>             <volume>36</volume>             <fpage>921</fpage>             <lpage>924</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Bult1">
+        <label>16</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bult</surname><given-names>CJ</given-names></name><name name-style="western"><surname>Eppig</surname><given-names>JT</given-names></name><name name-style="western"><surname>Kadin</surname><given-names>JA</given-names></name><name name-style="western"><surname>Richardson</surname><given-names>JE</given-names></name><name name-style="western"><surname>Blake</surname><given-names>JA</given-names></name></person-group>             <year>2008</year>             <article-title>The Mouse Genome Database (MGD): mouse biology and model systems.</article-title>             <source>Nucleic Acids Res</source>             <volume>36</volume>             <fpage>D724</fpage>             <lpage>728</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Sperling1">
+        <label>17</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Sperling</surname><given-names>A</given-names></name><name name-style="western"><surname>Bluestone</surname><given-names>JA</given-names></name></person-group>             <year>1998</year>             <article-title>Acquired immune response.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>Peter</surname><given-names>JD</given-names></name></person-group>             <source>Encyclopedia of Immunology</source>             <publisher-loc>Oxford</publisher-loc>             <publisher-name>Elsevier</publisher-name>             <fpage>13</fpage>             <lpage>15</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Kioussis1">
+        <label>18</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kioussis</surname><given-names>D</given-names></name><name name-style="western"><surname>Pachnis</surname><given-names>V</given-names></name></person-group>             <year>2009</year>             <article-title>Immune and nervous systems: more than just a superficial similarity?</article-title>             <source>Immunity</source>             <volume>31</volume>             <fpage>705</fpage>             <lpage>710</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Bonilla1">
+        <label>19</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bonilla</surname><given-names>FA</given-names></name><name name-style="western"><surname>Oettgen</surname><given-names>HC</given-names></name></person-group>             <year>2010</year>             <article-title>Adaptive immunity.</article-title>             <source>J Allergy Clin Immunol</source>             <volume>125</volume>             <fpage>S33</fpage>             <lpage>40</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Haynes1">
+        <label>20</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Haynes</surname><given-names>L</given-names></name></person-group>             <year>2005</year>             <article-title>The effect of aging on cognate function and development of immune memory.</article-title>             <source>Curr Opin Immunol</source>             <volume>17</volume>             <fpage>476</fpage>             <lpage>479</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Chugani2">
+        <label>21</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Chugani</surname><given-names>HT</given-names></name><name name-style="western"><surname>Phelps</surname><given-names>ME</given-names></name><name name-style="western"><surname>Mazziotta</surname><given-names>JC</given-names></name></person-group>             <year>1987</year>             <article-title>Positron emission tomography study of human brain functional development.</article-title>             <source>Ann Neurol</source>             <volume>22</volume>             <fpage>487</fpage>             <lpage>497</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Blalock1">
+        <label>22</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Blalock</surname><given-names>JE</given-names></name></person-group>             <year>1984</year>             <article-title>The immune system as a sensory organ.</article-title>             <source>J Immunol</source>             <volume>132</volume>             <fpage>1067</fpage>             <lpage>1070</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Blalock2">
+        <label>23</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Blalock</surname><given-names>JE</given-names></name></person-group>             <year>1994</year>             <article-title>The syntax of immune-neuroendocrine communication.</article-title>             <source>Immunol Today</source>             <volume>15</volume>             <fpage>504</fpage>             <lpage>511</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-McAllister1">
+        <label>24</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>McAllister</surname><given-names>AK</given-names></name><name name-style="western"><surname>van de Water</surname><given-names>J</given-names></name></person-group>             <year>2009</year>             <article-title>Breaking boundaries in neural-immune interactions.</article-title>             <source>Neuron</source>             <volume>64</volume>             <fpage>9</fpage>             <lpage>12</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Boulanger1">
+        <label>25</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Boulanger</surname><given-names>LM</given-names></name><name name-style="western"><surname>Shatz</surname><given-names>CJ</given-names></name></person-group>             <year>2004</year>             <article-title>Immune signalling in neural development, synaptic plasticity and disease.</article-title>             <source>Nat Rev Neurosci</source>             <volume>5</volume>             <fpage>521</fpage>             <lpage>531</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Sun1">
+        <label>26</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Sun</surname><given-names>J</given-names></name><name name-style="western"><surname>Singh</surname><given-names>V</given-names></name><name name-style="western"><surname>Kajino-Sakamoto</surname><given-names>R</given-names></name><name name-style="western"><surname>Aballay</surname><given-names>A</given-names></name></person-group>             <year>2011</year>             <article-title>Neuronal GPCR controls innate immunity by regulating noncanonical unfolded protein response genes.</article-title>             <source>Science</source>             <volume>332</volume>             <fpage>729</fpage>             <lpage>732</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Balschun1">
+        <label>27</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Balschun</surname><given-names>D</given-names></name><name name-style="western"><surname>Wetzel</surname><given-names>W</given-names></name><name name-style="western"><surname>Del Rey</surname><given-names>A</given-names></name><name name-style="western"><surname>Pitossi</surname><given-names>F</given-names></name><name name-style="western"><surname>Schneider</surname><given-names>H</given-names></name><etal/></person-group>             <year>2004</year>             <article-title>Interleukin-6: a cytokine to forget.</article-title>             <source>FASEB J</source>             <volume>18</volume>             <fpage>1788</fpage>             <lpage>1790</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Pickering1">
+        <label>28</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Pickering</surname><given-names>M</given-names></name><name name-style="western"><surname>O'Connor</surname><given-names>JJ</given-names></name></person-group>             <year>2007</year>             <article-title>Pro-inflammatory cytokines and their effects in the dentate gyrus.</article-title>             <source>Prog Brain Res</source>             <volume>163</volume>             <fpage>339</fpage>             <lpage>354</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Vitkovic1">
+        <label>29</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Vitkovic</surname><given-names>L</given-names></name><name name-style="western"><surname>Konsman</surname><given-names>JP</given-names></name><name name-style="western"><surname>Bockaert</surname><given-names>J</given-names></name><name name-style="western"><surname>Dantzer</surname><given-names>R</given-names></name><name name-style="western"><surname>Homburger</surname><given-names>V</given-names></name><etal/></person-group>             <year>2000</year>             <article-title>Cytokine signals propagate through the brain.</article-title>             <source>Mol Psychiatry</source>             <volume>5</volume>             <fpage>604</fpage>             <lpage>615</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Li1">
+        <label>30</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Li</surname><given-names>M</given-names></name><name name-style="western"><surname>Ransohoff</surname><given-names>RM</given-names></name></person-group>             <year>2008</year>             <article-title>Multiple roles of chemokine CXCL12 in the central nervous system: a migration from immunology to neurobiology.</article-title>             <source>Prog Neurobiol</source>             <volume>84</volume>             <fpage>116</fpage>             <lpage>131</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Tiveron1">
+        <label>31</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Tiveron</surname><given-names>MC</given-names></name><name name-style="western"><surname>Cremer</surname><given-names>H</given-names></name></person-group>             <year>2008</year>             <article-title>CXCL12/CXCR4 signalling in neuronal cell migration.</article-title>             <source>Curr Opin Neurobiol</source>             <volume>18</volume>             <fpage>237</fpage>             <lpage>244</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Ransohoff1">
+        <label>32</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Ransohoff</surname><given-names>RM</given-names></name></person-group>             <year>2009</year>             <article-title>Chemokines and chemokine receptors: standing at the crossroads of immunobiology and neurobiology.</article-title>             <source>Immunity</source>             <volume>31</volume>             <fpage>711</fpage>             <lpage>721</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Deverman1">
+        <label>33</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Deverman</surname><given-names>BE</given-names></name><name name-style="western"><surname>Patterson</surname><given-names>PH</given-names></name></person-group>             <year>2009</year>             <article-title>Cytokines and CNS development.</article-title>             <source>Neuron</source>             <volume>64</volume>             <fpage>61</fpage>             <lpage>78</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Stevens1">
+        <label>34</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Stevens</surname><given-names>B</given-names></name><name name-style="western"><surname>Allen</surname><given-names>NJ</given-names></name><name name-style="western"><surname>Vazquez</surname><given-names>LE</given-names></name><name name-style="western"><surname>Howell</surname><given-names>GR</given-names></name><name name-style="western"><surname>Christopherson</surname><given-names>KS</given-names></name><etal/></person-group>             <year>2007</year>             <article-title>The classical complement cascade mediates CNS synapse elimination.</article-title>             <source>Cell</source>             <volume>131</volume>             <fpage>1164</fpage>             <lpage>1178</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Fourgeaud1">
+        <label>35</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Fourgeaud</surname><given-names>L</given-names></name><name name-style="western"><surname>Davenport</surname><given-names>CM</given-names></name><name name-style="western"><surname>Tyler</surname><given-names>CM</given-names></name><name name-style="western"><surname>Cheng</surname><given-names>TT</given-names></name><name name-style="western"><surname>Spencer</surname><given-names>MB</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>MHC class I modulates NMDA receptor function and AMPA receptor trafficking.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>107</volume>             <fpage>22278</fpage>             <lpage>22283</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Corriveau1">
+        <label>36</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Corriveau</surname><given-names>RA</given-names></name><name name-style="western"><surname>Huh</surname><given-names>GS</given-names></name><name name-style="western"><surname>Shatz</surname><given-names>CJ</given-names></name></person-group>             <year>1998</year>             <article-title>Regulation of class I MHC gene expression in the developing and mature CNS by neural activity.</article-title>             <source>Neuron</source>             <volume>21</volume>             <fpage>505</fpage>             <lpage>520</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Huh1">
+        <label>37</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Huh</surname><given-names>GS</given-names></name><name name-style="western"><surname>Boulanger</surname><given-names>LM</given-names></name><name name-style="western"><surname>Du</surname><given-names>H</given-names></name><name name-style="western"><surname>Riquelme</surname><given-names>PA</given-names></name><name name-style="western"><surname>Brotz</surname><given-names>TM</given-names></name><etal/></person-group>             <year>2000</year>             <article-title>Functional requirement for class I MHC in CNS development and plasticity.</article-title>             <source>Science</source>             <volume>290</volume>             <fpage>2155</fpage>             <lpage>2159</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Boulanger2">
+        <label>38</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Boulanger</surname><given-names>LM</given-names></name><name name-style="western"><surname>Huh</surname><given-names>GS</given-names></name><name name-style="western"><surname>Shatz</surname><given-names>CJ</given-names></name></person-group>             <year>2001</year>             <article-title>Neuronal plasticity and cellular immunity: shared molecular mechanisms.</article-title>             <source>Curr Opin Neurobiol</source>             <volume>11</volume>             <fpage>568</fpage>             <lpage>578</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Kren1">
+        <label>39</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kren</surname><given-names>L</given-names></name><name name-style="western"><surname>Slaby</surname><given-names>O</given-names></name><name name-style="western"><surname>Muckova</surname><given-names>K</given-names></name><name name-style="western"><surname>Lzicarova</surname><given-names>E</given-names></name><name name-style="western"><surname>Sova</surname><given-names>M</given-names></name><etal/></person-group>             <year>2011</year>             <article-title>Expression of immune-modulatory molecules HLA-G and HLA-E by tumor cells in glioblastomas: an unexpected prognostic significance?</article-title>             <source>Neuropathology</source>             <volume>31</volume>             <fpage>129</fpage>             <lpage>134</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-King2">
+        <label>40</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>King</surname><given-names>A</given-names></name><name name-style="western"><surname>Allan</surname><given-names>DS</given-names></name><name name-style="western"><surname>Bowen</surname><given-names>M</given-names></name><name name-style="western"><surname>Powis</surname><given-names>SJ</given-names></name><name name-style="western"><surname>Joseph</surname><given-names>S</given-names></name><etal/></person-group>             <year>2000</year>             <article-title>HLA-E is expressed on trophoblast and interacts with CD94/NKG2 receptors on decidual NK cells.</article-title>             <source>Eur J Immunol</source>             <volume>30</volume>             <fpage>1623</fpage>             <lpage>1631</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-McConnell1">
+        <label>41</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>McConnell</surname><given-names>MJ</given-names></name><name name-style="western"><surname>Huang</surname><given-names>YH</given-names></name><name name-style="western"><surname>Datwani</surname><given-names>A</given-names></name><name name-style="western"><surname>Shatz</surname><given-names>CJ</given-names></name></person-group>             <year>2009</year>             <article-title>H2-K(b) and H2-D(b) regulate cerebellar long-term depression and limit motor learning.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>106</volume>             <fpage>6784</fpage>             <lpage>6789</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Datwani1">
+        <label>42</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Datwani</surname><given-names>A</given-names></name><name name-style="western"><surname>McConnell</surname><given-names>MJ</given-names></name><name name-style="western"><surname>Kanold</surname><given-names>PO</given-names></name><name name-style="western"><surname>Micheva</surname><given-names>KD</given-names></name><name name-style="western"><surname>Busse</surname><given-names>B</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Classical MHCI molecules regulate retinogeniculate refinement and limit ocular dominance plasticity.</article-title>             <source>Neuron</source>             <volume>64</volume>             <fpage>463</fpage>             <lpage>470</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Goddard1">
+        <label>43</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Goddard</surname><given-names>CA</given-names></name><name name-style="western"><surname>Butts</surname><given-names>DA</given-names></name><name name-style="western"><surname>Shatz</surname><given-names>CJ</given-names></name></person-group>             <year>2007</year>             <article-title>Regulation of CNS synapses by neuronal MHC class I. Proc Natl Acad Sci U S A</article-title>             <volume>104</volume>             <fpage>6828</fpage>             <lpage>6833</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Ribic1">
+        <label>44</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Ribic</surname><given-names>A</given-names></name><name name-style="western"><surname>Zhang</surname><given-names>M</given-names></name><name name-style="western"><surname>Schlumbohm</surname><given-names>C</given-names></name><name name-style="western"><surname>Matz-Rensing</surname><given-names>K</given-names></name><name name-style="western"><surname>Uchanska-Ziegler</surname><given-names>B</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>Neuronal MHC Class I molecules are involved in excitatory synaptic transmission at the hippocampal mossy fiber synapses of marmoset monkeys.</article-title>             <source>Cell Mol Neurobiol</source>             <volume>30</volume>             <fpage>827</fpage>             <lpage>839</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Rolleke1">
+        <label>45</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Rolleke</surname><given-names>U</given-names></name><name name-style="western"><surname>Flugge</surname><given-names>G</given-names></name><name name-style="western"><surname>Plehm</surname><given-names>S</given-names></name><name name-style="western"><surname>Schlumbohm</surname><given-names>C</given-names></name><name name-style="western"><surname>Armstrong</surname><given-names>VW</given-names></name><etal/></person-group>             <year>2006</year>             <article-title>Differential expression of major histocompatibility complex class I molecules in the brain of a New World monkey, the common marmoset (<italic>Callithrix jacchus</italic>).</article-title>             <source>J Neuroimmunol</source>             <volume>176</volume>             <fpage>39</fpage>             <lpage>50</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Leigh1">
+        <label>46</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Leigh</surname><given-names>SR</given-names></name></person-group>             <year>2001</year>             <article-title>Evolution of human growth.</article-title>             <source>Evol Anthropol</source>             <volume>10</volume>             <fpage>223</fpage>             <lpage>236</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Leigh2">
+        <label>47</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Leigh</surname><given-names>SR</given-names></name><name name-style="western"><surname>Park</surname><given-names>PB</given-names></name></person-group>             <year>1998</year>             <article-title>Evolution of human growth prolongation.</article-title>             <source>Am J Phys Anthropol</source>             <volume>107</volume>             <fpage>331</fpage>             <lpage>350</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Jacobs1">
+        <label>48</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Jacobs</surname><given-names>B</given-names></name><name name-style="western"><surname>Chugani</surname><given-names>HT</given-names></name><name name-style="western"><surname>Allada</surname><given-names>V</given-names></name><name name-style="western"><surname>Chen</surname><given-names>S</given-names></name><name name-style="western"><surname>Phelps</surname><given-names>ME</given-names></name><etal/></person-group>             <year>1995</year>             <article-title>Developmental changes in brain metabolism in sedated rhesus macaques and vervet monkeys revealed by positron emission tomography.</article-title>             <source>Cereb Cortex</source>             <volume>5</volume>             <fpage>222</fpage>             <lpage>233</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Bolstad1">
+        <label>49</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bolstad</surname><given-names>BM</given-names></name><name name-style="western"><surname>Irizarry</surname><given-names>RA</given-names></name><name name-style="western"><surname>Astrand</surname><given-names>M</given-names></name><name name-style="western"><surname>Speed</surname><given-names>TP</given-names></name></person-group>             <year>2003</year>             <article-title>A comparison of normalization methods for high density oligonucleotide array data based on variance and bias.</article-title>             <source>Bioinformatics</source>             <volume>19</volume>             <fpage>185</fpage>             <lpage>193</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Irizarry1">
+        <label>50</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Irizarry</surname><given-names>RA</given-names></name><name name-style="western"><surname>Hobbs</surname><given-names>B</given-names></name><name name-style="western"><surname>Collin</surname><given-names>F</given-names></name><name name-style="western"><surname>Beazer-Barclay</surname><given-names>YD</given-names></name><name name-style="western"><surname>Antonellis</surname><given-names>KJ</given-names></name><etal/></person-group>             <year>2003</year>             <article-title>Exploration, normalization, and summaries of high density oligonucelotide array probe level data.</article-title>             <source>Biostatistics</source>             <volume>4</volume>             <fpage>249</fpage>             <lpage>64</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Gautier1">
+        <label>51</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Gautier</surname><given-names>L</given-names></name><name name-style="western"><surname>Cope</surname><given-names>LM</given-names></name><name name-style="western"><surname>Bolstad</surname><given-names>BM</given-names></name><name name-style="western"><surname>Irizarry</surname><given-names>RA</given-names></name></person-group>             <year>2004</year>             <article-title>affy – Analysis of Affymetrix GeneChip data at the probe level.</article-title>             <source>Bioinformatics</source>             <volume>20</volume>             <fpage>307</fpage>             <lpage>315</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Draghici1">
+        <label>52</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Draghici</surname><given-names>S</given-names></name><name name-style="western"><surname>Khatri</surname><given-names>P</given-names></name><name name-style="western"><surname>Martins</surname><given-names>RP</given-names></name><name name-style="western"><surname>Ostermeier</surname><given-names>GC</given-names></name><name name-style="western"><surname>Krawetz</surname><given-names>SA</given-names></name></person-group>             <year>2003</year>             <article-title>Global functional profiling of gene expression.</article-title>             <source>Genomics</source>             <volume>81</volume>             <fpage>98</fpage>             <lpage>104</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-R1">
+        <label>53</label>
+        <element-citation publication-type="other" xlink:type="simple">             <collab xlink:type="simple">R Development Core Team</collab>             <year>2010</year>             <comment>R; A language and environment for statistical computing. R Foundation for Statistical Computing Vienna, Austria: ISBN 3-900051-900007-900050. Available: <ext-link ext-link-type="uri" xlink:href="http://www.R-project.org" xlink:type="simple">http://www.R-project.org</ext-link></comment>          </element-citation>
+      </ref>
+      <ref id="pone.0037714-Brazma1">
+        <label>54</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Brazma</surname><given-names>A</given-names></name><name name-style="western"><surname>Hingamp</surname><given-names>P</given-names></name><name name-style="western"><surname>Quackenbush</surname><given-names>J</given-names></name><name name-style="western"><surname>Sherlock</surname><given-names>G</given-names></name><name name-style="western"><surname>Spellman</surname><given-names>P</given-names></name><etal/></person-group>             <year>2001</year>             <article-title>Minimum information about a microarray experiment (MIAME)-toward standards for microarray data.</article-title>             <source>Nat Genet</source>             <volume>29</volume>             <fpage>365</fpage>             <lpage>371</lpage>          </element-citation>
+      </ref>
+    </ref-list>
+    
+  </back>
+</article>

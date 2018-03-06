@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group>
+<journal-title>PLoS ONE</journal-title></journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-13-08855</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0068178</article-id>
+<article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Biology</subject><subj-group><subject>Computational biology</subject><subj-group><subject>Natural language processing</subject><subject>Text mining</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Computer science</subject><subj-group><subject>Information technology</subject></subj-group><subj-group><subject>Natural language processing</subject></subj-group><subj-group><subject>Text mining</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Social and behavioral sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Cultural anthropology</subject><subj-group><subject>Natural language</subject></subj-group></subj-group></subj-group><subj-group><subject>Linguistics</subject><subj-group><subject>Natural language</subject></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Morpheme Matching Based Text Tokenization for a Scarce Resourced Language</article-title>
+<alt-title alt-title-type="running-head">Text Tokenization for a Scarce Resourced Language</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Rehman</surname><given-names>Zobia</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Anwar</surname><given-names>Waqas</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref><xref ref-type="aff" rid="aff2"><sup>2</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Bajwa</surname><given-names>Usama Ijaz</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Xuan</surname><given-names>Wang</given-names></name><xref ref-type="aff" rid="aff2"><sup>2</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Chaoying</surname><given-names>Zhou</given-names></name><xref ref-type="aff" rid="aff2"><sup>2</sup></xref></contrib>
+</contrib-group>
+<aff id="aff1"><label>1</label><addr-line>Department of Computer Science, COMSATS Institute of Information Technology, Abbottabad, Pakistan</addr-line></aff>
+<aff id="aff2"><label>2</label><addr-line>Harbin Institute of Technology, Shenzhen, Graduate School, China</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Patterson</surname><given-names>Randen Lee</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>UC Davis School of Medicine, United States of America</addr-line></aff>
+<author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">usama@ciit.net.pk</email></corresp>
+<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn>
+<fn fn-type="con"><p>Conceived and designed the experiments: ZR WA. Performed the experiments: ZR. Analyzed the data: ZR WA UIB WX. Wrote the paper: ZR WA UIB ZC.</p></fn>
+</author-notes>
+<pub-date pub-type="collection"><year>2013</year></pub-date>
+<pub-date pub-type="epub"><day>21</day><month>8</month><year>2013</year></pub-date>
+<volume>8</volume>
+<issue>8</issue>
+<elocation-id>e68178</elocation-id>
+<history>
+<date date-type="received"><day>1</day><month>3</month><year>2013</year></date>
+<date date-type="accepted"><day>26</day><month>5</month><year>2013</year></date>
+</history>
+<permissions>
+<copyright-year>2013</copyright-year>
+<copyright-holder>Rehman et al</copyright-holder><license xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions>
+<abstract>
+<p>Text tokenization is a fundamental pre-processing step for almost all the information processing applications. This task is nontrivial for the scarce resourced languages such as Urdu, as there is inconsistent use of space between words. In this paper a morpheme matching based approach has been proposed for Urdu text tokenization, along with some other algorithms to solve the additional issues of boundary detection of compound words, affixation, reduplication, names and abbreviations. This study resulted into 97.28% precision, 93.71% recall, and 95.46% F1-measure; while tokenizing a corpus of 57000 words by using a morpheme list with 6400 entries.</p>
+</abstract>
+<funding-group><funding-statement>The authors have no funding or support to report.</funding-statement></funding-group><counts><page-count count="8"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title>Introduction</title>
+<p>Urdu is a morphologically rich language, spoken by more than 150 million people of the world; either as their mother tongue or second language. It is composed of many different languages of the world, e.g., Arabic, Persian, Turkish, Hindi, Sanskrit, and English. It frequently adopts new words from the other languages as well. It is a bidirectional language and uses Arabic based orthography, whereas its morphology is influenced by all the above mentioned languages <xref ref-type="bibr" rid="pone.0068178-Zobia1">[1]</xref>.</p>
+<p>Tokenization is a very first step for numerous language processing tasks, e.g., part of speech tagging, machine translation, spell checking, sentence boundary detection, information retrieval, and information extraction. It is simpler for inflectional languages such as English, where space is used as word delimiter. In some of the Asian languages, space is frequently used even after each character, e.g., Chinese, Thai, and Lao. In such languages, the challenge for tokenization is to omit the space which comes between the characters forming a single word. In hand written Urdu text there is no convention of delimiters; words are written in continuation without any space between them. There are two types of characters in Urdu; joiners and non joiners as shown in <xref ref-type="table" rid="pone-0068178-t001">table 1</xref> and <xref ref-type="table" rid="pone-0068178-t002">2</xref> respectively. Joiners are the characters which can occupy the initial, medial or final forms in the word. If a word ends with a joiner character and no delimiter is used after it then it will join itself with its following word, resulting into a vague one, which will not be understandable even for the native speaker of the language. That's why space is used after such words just to make them reader understandable. Sometimes instead of this space a special Urdu character, Zero Width Non Joiner (ZWNJ) is used to keep such words apart from their followings.</p>
+<table-wrap id="pone-0068178-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t001</object-id><label>Table 1</label><caption>
+<title>Non-Joiner Urdu Alphabets.</title>
+</caption><alternatives><graphic id="pone-0068178-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t001" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">ا د ڈ ذ ر ز ڑ ژ و ے</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap><table-wrap id="pone-0068178-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t002</object-id><label>Table 2</label><caption>
+<title>Joiner Urdu Alphabets.</title>
+</caption><alternatives><graphic id="pone-0068178-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t002" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">ب پ ت ٹ ث ج چ ح خ س ش ص ض ط ظ ع غ ف ق ک گ ل م ن ہ ء ھ ی </td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p>Non joiners are the characters which do not concatenate themselves with their following characters or words; therefore it is not needed to place any delimiter after a word ending at a non joiner.</p>
+<p>The uneven use of delimiters makes the tokenization of Urdu text more difficult. During tokenization it is also needed to assign single boundary to compound words, words with affixations, reduplicated words, names, and abbreviations.</p>
+<p>Tokenization approach proposed in this paper is based on morpheme matching. Forward maximum matching, dynamic maximum matching and dynamic maximum matching along with maximum likelihood approach have been used to split the Urdu text into tokens. Some other algorithms also have been designed to solve the issues of compound words, affixation, reduplication, names and abbreviations. This work has been tested over a corpus of 57000 words using a lexicon with 6400 entries. It produced 97.28% precision, 93.71% recall, and 95.46% F1-measure with all known words in the corpus.</p>
+<sec id="s1a">
+<title>1. Issues of Urdu text tokenization</title>
+<p>It is easy to tokenize the string by just splitting it using the space between words. But it is difficult for the languages which do not use space or use it inconsistently between words. Space is not used in hand written Urdu text and it is the one's own job to identify the individual words in continuum string. In computerized Urdu text documents, space is used occasionally according to diverse nature of Urdu characters. The problems of Urdu text tokenization can be divided into two; space inclusion issues and space exclusion issues.</p>
+<sec id="s1a1">
+<title>1.1. Space inclusion issues</title>
+<p>In computerized Urdu text, it is needed to insert space between words or add ZWNJ at the end of first word, if it ends at a joiner character.</p>
+<p>In <xref ref-type="table" rid="pone-0068178-t003">table 3</xref>, (I) string is written without inter word space and (II) with space at the end of each word. It is obvious that all the words end at non joiners, that's why in example (I) and (II), both give the same meanings. Native speaker can understand that both of the examples have same words but example (I) will appear as a single vague word for the machine.</p>
+<table-wrap id="pone-0068178-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t003</object-id><label>Table 3</label><caption>
+<title>Words ending at non joiners.</title>
+</caption><alternatives><graphic id="pone-0068178-t003-3" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t003" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">اسدشہرسےباہرجاپہنچا (I)</td>
+<td align="left" rowspan="1" colspan="1">اسد شہر سے باہر جا پہنچا (II)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Asad reached out of the city.</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p>ZWNJ is used between two words, if it is needed to keep them apart from each other. But it does not help to identify a word boundary; rather it helps to look them apart from each other. For example, in the <xref ref-type="table" rid="pone-0068178-t004">table 4</xref>, there is a string “پرانیسڑک” (old track), in this the two words are separated by an additional ZWNJ character.</p>
+<table-wrap id="pone-0068178-t004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t004</object-id><label>Table 4</label><caption>
+<title>ZWNJ between words.</title>
+</caption><alternatives><graphic id="pone-0068178-t004-4" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t004" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">(old track) پرانیسڑک</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">(Words without space or ZWNJ)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">(old track) پرانی سڑک</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">(Words separated by space)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">(old track) پرانیسڑک</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">(Words separated by ZWNJ)</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap></sec><sec id="s1a2">
+<title>1.2. Space exclusion issues</title>
+<p>Space exclusion is another issue of text tokenization. Sometimes it is needed to insert space between the words which collectively give the single meaning. In tokenization process, these words should be assigned a single boundary, while ignoring the space between them.</p>
+<p><xref ref-type="table" rid="pone-0068178-t005">Table 5</xref> shows some examples of space exclusion issue.</p>
+<table-wrap id="pone-0068178-t005" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t005</object-id><label>Table 5</label><caption>
+<title>Space exclusion issues.</title>
+</caption><alternatives><graphic id="pone-0068178-t005-5" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t005" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Word</td>
+<td align="left" rowspan="1" colspan="1">Category of the word</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">روٹی کپڑا (basic needs of life)</td>
+<td align="left" rowspan="1" colspan="1">Compound</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">نظم و ضبط (discipline)</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">حد نظر (scene limit)</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">دن بدن (day by day)</td>
+<td align="left" rowspan="1" colspan="1">Reduplication</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">صبح صبح (early morning)</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ٹھيک ٹھاک (absolutely fine)</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">بيش قيمت (expensive)</td>
+<td align="left" rowspan="1" colspan="1">Prefixation</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ان تھک (hard work)</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">آلہ کار (apparatus)</td>
+<td align="left" rowspan="1" colspan="1">Suffixation</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"> دہشت یگرد (terrorism)</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">جنوبی افريقہ (South Africa)</td>
+<td align="left" rowspan="1" colspan="1">Proper Noun with more than one word</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">زينب نور (Zainab Noor)</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ايش ٹرے (ash tray)</td>
+<td align="left" rowspan="1" colspan="1">English words</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">نيٹ ورک (network)</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ايم قريشی (M. Qureshi)</td>
+<td align="left" rowspan="1" colspan="1">Abbreviations</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">اين ايل پی (NLP)</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap></sec></sec><sec id="s1b">
+<title>2. Tokenization techniques</title>
+<p>There are numerous tokenization techniques available for the various languages of the world, e.g., rule based techniques <xref ref-type="bibr" rid="pone.0068178-Zhou1">[2]</xref> <xref ref-type="bibr" rid="pone.0068178-Kaplan1">[3]</xref>, statistical techniques <xref ref-type="bibr" rid="pone.0068178-Yang1">[4]</xref>, fuzzy techniques <xref ref-type="bibr" rid="pone.0068178-Shahabi1">[5]</xref>, lexical techniques <xref ref-type="bibr" rid="pone.0068178-Wu1">[6]</xref>, <xref ref-type="bibr" rid="pone.0068178-Labadi1">[7]</xref>, and feature based techniques <xref ref-type="bibr" rid="pone.0068178-Meknavin1">[8]</xref>. Significant work has also been done for Arabic <xref ref-type="bibr" rid="pone.0068178-Attia1">[9]</xref> and Persian language <xref ref-type="bibr" rid="pone.0068178-Megerdoomian1">[10]</xref> <xref ref-type="bibr" rid="pone.0068178-Shamsford1">[11]</xref>, which are closer to Urdu because of the same script.</p>
+<p>In <xref ref-type="bibr" rid="pone.0068178-Poowarawan1">[12]</xref> Thai language text has been segmented using the longest matching technique. Algorithm reads the input text from left to right and searches for the longest match in the dictionary. If a match is found but it does not allow the algorithm to find rest of the words in the dictionary, then algorithm will back track and will search for another suitable match. This work produced 97.03% accuracy for Thai language text (composed of all known words).</p>
+<p>In <xref ref-type="bibr" rid="pone.0068178-Wong1">[13]</xref> the authors used forward maximum matching to segment Chinese text and they reported an error rate of 0.26% for 1.2 million characters. In this work a lexicon of 85855 words has been used and words in it have been divided according to their length. For efficient searching, authors placed all single length words in one table and all the words with length 2 in a separate table. They divided the words with length 3 into prefixes of length 2 and suffixes of length 1, while the words with four characters have been divided into prefixes and suffixes of length 2. Words with length greater than four have been divided into prefixes, infixes and suffixes of length 2. In all combinations each prefix was pointing to the corresponding suffix.</p>
+<p>In <xref ref-type="bibr" rid="pone.0068178-Yang1">[4]</xref> Chinese text has been statistically segmented using mutual information value. Mutual information of the characters was computed and statistical methods were applied to segment the text. They divided input text into consecutive sequences of characters. For every character in a phrase the bi-gram mutual information value was computed. Characters with the highest bi-gram mutual information value were considered the words and removed from the consecutive sequences of characters. The process was repeated until the last phrase consisted of words of length 1 or 2. This approach produced 73.49% precision and 73.90% recall for the articles obtained from the 442 Chinese news papers.</p>
+<p>In <xref ref-type="bibr" rid="pone.0068178-Charoenpornsawat1">[14]</xref> Thai text has been segmented using Ripper. It is an algorithm that learns the prepositional rules and constructs a rule set. This rule set is used to classify the training data. In this approach, these rules have been applied on the N-best segmentations, which were obtained after applying maximum matching technique along with POS tagger on the input text. This technique produced 91.27% and 89% precision for a test corpus of 2500 sentences, using context independent and context dependent features respectively.</p>
+<p>In <xref ref-type="bibr" rid="pone.0068178-Attia1">[9]</xref> rule based approach has been implemented to tokenize the Arabic script. In the very first step authors delimited main tokens on the basis of white spaces. In next step three different models have been designed to detect sub tokens, clitics, and stems inside the main tokens. The first model used Arabic morphological analyzer to identify the sub tokens; while the second model identified clitics with the help of clitic guesser and clitic transducer. The final model was also a morphological analyzer to identify the token boundary between clitic and stem. In the next step multiword expressions were delimited in the tokens, white spaces were normalized and tokenization ambiguities were removed.</p>
+<p>Authors in <xref ref-type="bibr" rid="pone.0068178-Shamsford1">[11]</xref> developed a tokenizer for Persian language by combining dictionary based and rule based approaches. This tokenizer delimits words, multipart verbs, abbreviations, numbers, dates and proper nouns.</p>
+<p>In <xref ref-type="bibr" rid="pone.0068178-Lehal1">[15]</xref> authors developed a segmenter for Urdu language using the bilingual corpora and statistical techniques. The task of space omission in Urdu text has been completed in two main phases; in first phase the merged words have been delimited and in the second phase the individual words identified inside the merged words. This segmenter has been tested for 1.61 million words and it showed 99.15% accuracy for the words facing the space omission problem. The study in <xref ref-type="bibr" rid="pone.0068178-Durrani1">[16]</xref> used n-gram technique along with maximum matching to build a segmenter for Urdu language and achieved 95.8% accuracy.</p>
+</sec></sec><sec id="s2">
+<title>Proposed Methods to Tokenize Urdu Text</title>
+<p>In proposed work, Urdu text has been tokenized by using forward maximum matching algorithm, dynamic maximum matching algorithm, and the combination of dynamic maximum matching along with maximum likelihood approach. In preprocessing phase of our approach, we removed the diacritics, ZWNJ, and white spaces from the text. So the text could acquire the form of space free string, which could be further divided into morphemes by using available algorithms and morpheme look-up list. Once the basic morphemes were available from the input text, we applied our supporting algorithms to join them where needed.</p>
+<sec id="s2a">
+<title>1. Forward maximum matching</title>
+<p>In forward maximum matching, string tokenization is started from right to left. Urdu character string without any space or ZWNJ and list of free morphemes (sorted and reversed) have been passed to the algorithm and the algorithm returned the list of individual tokens of the string.</p>
+<p><bold>1.1. Algorithm</bold></p>
+<list list-type="order"><list-item>
+<p>Search in the morpheme list for the free morpheme that matches with the start of the string.</p>
+</list-item><list-item>
+<p>If it is found, append it to the token list and strip it out from the string but if no match is found, strip a single character and append it with the token list.</p>
+</list-item><list-item>
+<p>Repeat the above two steps until the string gets empty.</p>
+</list-item><list-item>
+<p>Finally search for all the single characters in the token list and concatenate them to the previous token in the list.</p>
+</list-item></list>
+<p>The above algorithm is explained in the following example and its output as shown in the <xref ref-type="table" rid="pone-0068178-t006">table 6</xref> and <xref ref-type="table" rid="pone-0068178-t007">7</xref>.</p>
+<table-wrap id="pone-0068178-t006" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t006</object-id><label>Table 6</label><caption>
+<title>Output of forward maximum matching.</title>
+</caption><alternatives><graphic id="pone-0068178-t006-6" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t006" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">سعودی (Saudi)</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap><table-wrap id="pone-0068178-t007" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t007</object-id><label>Table 7</label><caption>
+<title>Output of forward maximum matching.</title>
+</caption><alternatives><graphic id="pone-0068178-t007-7" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t007" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">سعودی (Saudi)</td>
+<td align="left" rowspan="1" colspan="1">عرب (Arab)</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p>“<bold>سعودی عرب</bold>” (Saudi Arab) is an Urdu text string, having free morphemes [“<bold>سعود</bold>” (Saud), “سعودی” (Saudi), “دی” (di), “دیع” (diA), “عر” (Ar), “<bold>عرب</bold>” (Arab), “رب” (Rab)]. All these morphemes are obtained from the list of free morphemes. For the tokenization of the Urdu text it is required to insert and delete the space from the text according to conditions. To resolve this ambiguity, algorithm removes all the spaces and ZWNJ characters from the input text and tokenizes it according to the list of free morphemes. Tokens demanding no space between them are merged to form a single token by applying some other supporting algorithms. These algorithms are discussed in coming sections. After removing space, the string acquires the form “<bold>سعودیعرب</bold>” (Saudi Arab). Algorithm sorts and reverses the morpheme list and new morpheme list becomes [“<bold>عرب</bold>” (Arab), “عر” (Ar), “سعودی” (Saudi), “سعود” (Saud), “دیع” (diA), “دی” (di), “رب” (rab)]. Algorithm searches from left to right, in the morpheme list for the morpheme which matches with the start of the string. It finds “سعودی” (Saudi) in the list and strips it from the string and string becomes “<bold>عرب</bold>” (Arab). This morpheme is striped out from the string and stored in the token list.</p>
+<p>Algorithm starts its search again in the morpheme list for the remaining characters of the string. Searching from left to right it finds “<bold>عرب</bold>” (Arab) in the very start, as the string starts with this morpheme so it is stripped out from the string and appended to the token list.</p>
+</sec><sec id="s2b">
+<title>2. Dynamic maximum matching</title>
+<p>Forward maximum matching gives only one tokenization sequence; while dynamic matching gives all the possible tokenization sequences of the given string according to the available morpheme list. If it can not find any match then it splits the string into characters. Total number of single characters in each tokenization sequence is considered as number of errors in it. It selects one having minimum number of tokens, as best tokenization sequence. But if there are more than one tokenization sequences with same number of words, it selects one of them having minimum number of errors.</p>
+<p><bold>2.1. Algorithm</bold></p>
+<list list-type="order"><list-item>
+<p>In the list of free morphemes find all those morphemes which match with the start of the string.</p>
+</list-item><list-item>
+<p>Once they are found, populate the 2-D array with them which is used to store the all possible combinations of input string, number of tokens and number of errors in each combination.</p>
+</list-item><list-item>
+<p>If no match is found then strip a single character from the input string and store it in the 2D-array and update the error field against that specific segmentation sequence.</p>
+</list-item><list-item>
+<p>At the end select one with the minimum number of tokens and errors.</p>
+</list-item><list-item>
+<p>Concatenate each single character with the previous token in the list.</p>
+</list-item></list>
+<p>Consider the same example which has been used in forward maximum matching algorithm; for the above algorithm, it is explained in the <xref ref-type="table" rid="pone-0068178-t008">tables 8</xref>, <xref ref-type="table" rid="pone-0068178-t009">9</xref>, <xref ref-type="table" rid="pone-0068178-t010">10</xref>, <xref ref-type="table" rid="pone-0068178-t011">11</xref>. String to be tokenized is “<bold>سعودی عرب</bold>” (Saudi Arab) along with the list of free morphemes [“<bold>سعود</bold>” (Saud), “<bold>سعودی</bold>” (Saudi), “<bold>دی</bold>” (di), “<bold>دیع</bold>” (diA), “<bold>عر</bold>” (Ar), “<bold>عرب</bold>” (Arab), “<bold>رب</bold>” (rab)]. Like forward maximum matching, it will eliminate white spaces, diacritics and ZWNJ characters from input string. So the input string will look like “<bold>سعودیعرب</bold>” (Saudi Arab). It will create a 2-D matrix for different segmentation sequences. The second last column in the 2-D matrix is used to represent number of tokens in the row, whereas the last column is used to represent the number of errors in it.</p>
+<table-wrap id="pone-0068178-t008" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t008</object-id><label>Table 8</label><caption>
+<title>Output of dynamic maximum matching.</title>
+</caption><alternatives><graphic id="pone-0068178-t008-8" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t008" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">سعود (Saud)</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">سعودی (Saudi)</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap><table-wrap id="pone-0068178-t009" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t009</object-id><label>Table 9</label><caption>
+<title>Output of dynamic maximum matching.</title>
+</caption><alternatives><graphic id="pone-0068178-t009-9" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t009" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">سعود (Saud)</td>
+<td align="left" rowspan="1" colspan="1">ی(i)</td>
+<td align="left" rowspan="1" colspan="1">2</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">سعودی (Saudi)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap><table-wrap id="pone-0068178-t010" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t010</object-id><label>Table 10</label><caption>
+<title>Output of dynamic maximum matching.</title>
+</caption><alternatives><graphic id="pone-0068178-t010-10" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t010" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">سعود(Saud)</td>
+<td align="left" rowspan="1" colspan="1">ی(i)</td>
+<td align="left" rowspan="1" colspan="1">عر(Ar)</td>
+<td align="left" rowspan="1" colspan="1">3</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">سعودی(Saudi)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">سعود(Saud)</td>
+<td align="left" rowspan="1" colspan="1">ی(i)</td>
+<td align="left" rowspan="1" colspan="1">عرب(arab)</td>
+<td align="left" rowspan="1" colspan="1">3</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap><table-wrap id="pone-0068178-t011" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t011</object-id><label>Table 11</label><caption>
+<title>Output of dynamic maximum matching.</title>
+</caption><alternatives><graphic id="pone-0068178-t011-11" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t011" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">سعود(Saud)</td>
+<td align="left" rowspan="1" colspan="1">ی(i)</td>
+<td align="left" rowspan="1" colspan="1">عر(Ar)</td>
+<td align="left" rowspan="1" colspan="1">ب(ab)</td>
+<td align="left" rowspan="1" colspan="1">4</td>
+<td align="left" rowspan="1" colspan="1">2</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">سعودی(Saudi)</td>
+<td align="left" rowspan="1" colspan="1">عر(Ar)</td>
+<td align="left" rowspan="1" colspan="1">ب(ab)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">3</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">سعود(Saud)</td>
+<td align="left" rowspan="1" colspan="1">ی(i)</td>
+<td align="left" rowspan="1" colspan="1">عرب(Arab)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">3</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">سعودی(Saudi)</td>
+<td align="left" rowspan="1" colspan="1">عرب(Arab)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">2</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p>In the first step, the algorithm will search in the list of free morphemes for all the possible morphemes which match with the start of the input string. It will find “<bold>سعود</bold>” (Saud) and “<bold>سعودی</bold>” (Saudi), and will store them in the 2-D matrix as shown in <xref ref-type="table" rid="pone-0068178-t008">table 8</xref>.</p>
+<p>In next step it will take the token “<bold>سعود</bold>” (Saud) and will find morphemes in the list that follow this token in the input string. As it does not find any match, so it will read only next character from the input string and will store it in the array after incrementing the error variable by 1.</p>
+<p>For the first array, it will start its search again for the morphemes following “<bold>ی</bold>” (i) in the string. As it finds two morphemes, therefore it will store a copy of this row in the next empty row available, to append the corresponding morphemes.</p>
+<p>Entire process will continue until all possible segmentation sequences are completed for the input string. The final 2-D matrix will be as shown in <xref ref-type="table" rid="pone-0068178-t011">table 11</xref>.</p>
+<p>To find the best segmentation amongst all, the algorithm will compare the number of tokens and the number of errors in all the segmentation sequences. One with the minimum number of tokens will be considered the best segmentation sequence for the input string. If more than one segmentation sequences have the same number of tokens then the one having minimum number of errors will be selected. In the example given in <xref ref-type="table" rid="pone-0068178-t011">table 11</xref>, last segmentation with two tokens and without any error will be selected.</p>
+</sec><sec id="s2c">
+<title>3. Dynamic maximum matching along with maximum likelihood approach</title>
+<p>This technique works on more than one possible outcomes of the dynamic matching algorithm. It calculates probability of each token in the corpus and computes cumulative probability of each tokenization sequence. Tokenization sequence with highest cumulative probability is considered the most optimal tokenization scheme for the input string.</p>
+<p>If the DMM algorithm returns more than one token combinations with equal number of tokens and errors, then bigram probability of each token will be calculated for each combination and the model will return the one with highest cumulative probability value P(T) = ∩<sub>i = 1−n</sub> P(t<sub>i</sub>|t<sub>i−1</sub>) (Eq. 1) <xref ref-type="bibr" rid="pone.0068178-Anwar1">[17]</xref>. In Eq. 1, T represents the contestant combination having all possible tokens and t represents the individual tokens in T.</p>
+<p>Consider the example given in <xref ref-type="table" rid="pone-0068178-t012">table 12</xref>.</p>
+<table-wrap id="pone-0068178-t012" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t012</object-id><label>Table 12</label><caption>
+<title>Segmentations produced by dynamic matching.</title>
+</caption><alternatives><graphic id="pone-0068178-t012-12" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t012" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">اس</td>
+<td align="left" rowspan="1" colspan="1">نے</td>
+<td align="left" rowspan="1" colspan="1">کہا</td>
+<td align="left" rowspan="1" colspan="1">کہ</td>
+<td align="left" rowspan="1" colspan="1">اسے</td>
+<td align="left" rowspan="1" colspan="1">جنے</td>
+<td align="left" rowspan="1" colspan="1">دو</td>
+<td align="left" rowspan="1" colspan="1">Correct</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">اس</td>
+<td align="left" rowspan="1" colspan="1">نے</td>
+<td align="left" rowspan="1" colspan="1">کہا</td>
+<td align="left" rowspan="1" colspan="1">کہا</td>
+<td align="left" rowspan="1" colspan="1">سے</td>
+<td align="left" rowspan="1" colspan="1">جنے</td>
+<td align="left" rowspan="1" colspan="1">دو</td>
+<td align="left" rowspan="1" colspan="1">Incorrect</td>
+</tr>
+<tr>
+<td colspan="8" align="left" rowspan="1">He said let him in. (Correct).</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p>Suppose these two segmentations are obtained from dynamic matching, both having equal number of words and no error. In order to select one of them, both of these will be passed to the bi-gram statistical model. Cumulative probability values 1.6e-11 and 2.4e-16 have been calculated the segmentations in the first and second row of the table respectively. As the first segmentation has the highest value of cumulative probability, therefore it will be selected as the best tokenization sequence.</p>
+</sec><sec id="s2d">
+<title>4. Supporting algorithms</title>
+<p>Forward maximum matching and dynamic maximum matching techniques tokenize the input text into free morphemes, but to handle the issues of affixation, compound words, names, and abbreviations following algorithms have been designed.</p>
+<list list-type="bullet"><list-item>
+<p>Algorithm for compound word generation</p>
+</list-item><list-item>
+<p>Algorithm for prefixation</p>
+</list-item><list-item>
+<p>Algorithm for suffixation</p>
+</list-item><list-item>
+<p>Algorithm for full reduplication</p>
+</list-item><list-item>
+<p>Algorithm for partial reduplication</p>
+</list-item><list-item>
+<p>Algorithm to handle names and abbreviations</p>
+</list-item></list>
+<p><bold>4.1. Algorithm for compound word generation</bold></p>
+<list list-type="order"><list-item>
+<p>In the token list, group two consecutive tokens such that neither should be ‘اور’ (and) nor ‘و’ (and).</p>
+</list-item><list-item>
+<p>Find a match for the new token in the list of compound morphemes. If a match is found then replace the first token in the token list with new token and remove the next token from the list.</p>
+</list-item><list-item>
+<p>If the second token is ‘اور’ (and) or ‘و’ (and) then group three consecutive tokens to create the new one. Find a match for it in the compound word list. If it is found then replace the first token in the list with this and remove next two tokens from the token list. Group the tokens in a way such that if the preceding token ends with joiner character then embed the ZWNJ between preceding and following token.</p>
+</list-item></list>
+<p>The words shown in <xref ref-type="table" rid="pone-0068178-t013">table 13</xref> and <xref ref-type="table" rid="pone-0068178-t014">14</xref> are the lists of tokens generated by any of the forward maximum matching or dynamic maximum matching algorithm. If <xref ref-type="table" rid="pone-0068178-t013">table 13</xref> is passed to compound word generation algorithm, it will search for the every element of the token list, in the list of compound words. For the given example, if it reads the token “<bold>محنت</bold>” (hard work) and finds it also in the compound words list; in this case it will read previous token of it “<bold>بہت</bold>” (very) and the next token “<bold>و</bold>” (and). According to algorithm first condition is not met as previous token “<bold>بہت</bold>” (very) is not in the compound words list, therefore for the second condition algorithm will read the token “<bold>مشقت</bold>” (struggle) as next token. Now “<bold>محنت</bold>” (hard work), “<bold>و</bold>” (and) and “<bold>مشقت</bold>” (struggle) will become previous, current and next tokens respectively. The first condition of algorithm is not satisfied as the current token is “<bold>و</bold>” (and), therefore it will check for the second condition. As previous, current and next, all the tokens are available in the list of compound morphemes and current token is “<bold>و</bold>” (and), so it will join them while embedding ZWNJ after previous token to form the compound word “<bold>محنتومشقت</bold>” (hard work). It will replace previous token “<bold>محنت</bold>” (hard work) with this compound word while removing “<bold>و</bold>” (and) and “<bold>مشقت</bold>” (struggle) from the list of tokens.</p>
+<table-wrap id="pone-0068178-t013" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t013</object-id><label>Table 13</label><caption>
+<title>Compound word generation.</title>
+</caption><alternatives><graphic id="pone-0068178-t013-13" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t013" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">وہ</td>
+<td align="left" rowspan="1" colspan="1">بہت</td>
+<td align="left" rowspan="1" colspan="1">محنت</td>
+<td align="left" rowspan="1" colspan="1">و</td>
+<td align="left" rowspan="1" colspan="1">مشقت</td>
+<td align="left" rowspan="1" colspan="1">سے</td>
+<td align="left" rowspan="1" colspan="1">کام</td>
+<td align="left" rowspan="1" colspan="1">کرتا</td>
+<td align="left" rowspan="1" colspan="1">تھا</td>
+</tr>
+<tr>
+<td colspan="7" align="left" rowspan="1">He had been working very hard.</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap><table-wrap id="pone-0068178-t014" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t014</object-id><label>Table 14</label><caption>
+<title>Compound word generation.</title>
+</caption><alternatives><graphic id="pone-0068178-t014-14" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t014" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">وہ</td>
+<td align="left" rowspan="1" colspan="1">بہت</td>
+<td align="left" rowspan="1" colspan="1">محنتومشقت</td>
+<td align="left" rowspan="1" colspan="1">سے</td>
+<td align="left" rowspan="1" colspan="1">کام</td>
+<td align="left" rowspan="1" colspan="1">کرتا</td>
+<td align="left" rowspan="1" colspan="1">تھا</td>
+</tr>
+<tr>
+<td colspan="7" align="left" rowspan="1">He had been working very hard.</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p><bold>4.2. Algorithm for prefixation</bold></p>
+<list list-type="order"><list-item>
+<p>Search for every element of the token list, in the list of prefixes.</p>
+</list-item><list-item>
+<p>If it is found then group it with the next token in the token list. If the previous token ends with a joiner character then embed ZWNJ between previous and the next token.</p>
+</list-item></list>
+<p>Consider the examples shown in <xref ref-type="table" rid="pone-0068178-t015">table 15</xref> and <xref ref-type="table" rid="pone-0068178-t016">16</xref>. The above algorithm will search for every token in the list of prefixes until it finds a match or array traversing is completed. For the given example after finding the token “<bold>نا</bold>” (un) in the list of prefixes, it will read the token (next token) “<bold>اہل</bold>” (able) which follows it in the token list and will concatenate both of them to form “<bold>نااہل</bold>” (unable). Further it will replace “<bold>نا</bold>” (un) with the new token “<bold>نااہل</bold>” (unable) and will remove “<bold>اہل</bold>” (able) from the token list. Output of this algorithm will be as given in <xref ref-type="table" rid="pone-0068178-t016">table 16</xref>.</p>
+<table-wrap id="pone-0068178-t015" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t015</object-id><label>Table 15</label><caption>
+<title>Example of prefixation.</title>
+</caption><alternatives><graphic id="pone-0068178-t015-15" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t015" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">سب</td>
+<td align="left" rowspan="1" colspan="1">نا</td>
+<td align="left" rowspan="1" colspan="1">اہل</td>
+<td align="left" rowspan="1" colspan="1">تھے</td>
+<td align="left" rowspan="1" colspan="1">ايک</td>
+<td align="left" rowspan="1" colspan="1">مشکل</td>
+<td align="left" rowspan="1" colspan="1">حل</td>
+<td align="left" rowspan="1" colspan="1">نہ</td>
+<td align="left" rowspan="1" colspan="1">کر</td>
+<td align="left" rowspan="1" colspan="1">سکے</td>
+</tr>
+<tr>
+<td colspan="10" align="left" rowspan="1">They were even unable to solve a single problem.</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap><table-wrap id="pone-0068178-t016" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t016</object-id><label>Table 16</label><caption>
+<title>Example of prefixation.</title>
+</caption><alternatives><graphic id="pone-0068178-t016-16" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t016" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">سب</td>
+<td align="left" rowspan="1" colspan="1">نااہل</td>
+<td align="left" rowspan="1" colspan="1">تھے</td>
+<td align="left" rowspan="1" colspan="1">جو</td>
+<td align="left" rowspan="1" colspan="1">مشکل</td>
+<td align="left" rowspan="1" colspan="1">حل</td>
+<td align="left" rowspan="1" colspan="1">نہ</td>
+<td align="left" rowspan="1" colspan="1">کر</td>
+<td align="left" rowspan="1" colspan="1">سکے</td>
+</tr>
+<tr>
+<td colspan="9" align="left" rowspan="1">They were even unable to solve a single problem.</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p><bold>4.3. Algorithm for suffixation</bold></p>
+<list list-type="order"><list-item>
+<p>After fixing the prefixes reverse the order of the token list.</p>
+</list-item><list-item>
+<p>Search for every token in the list of suffixes.</p>
+</list-item><list-item>
+<p>If a match is found then concatenate first token at the end of the next, in the token list, such that if next token ends with a joiner then embed ZWNJ between two tokens.</p>
+</list-item><list-item>
+<p>Reverse the order of the token list.</p>
+</list-item></list>
+<p>The different stages of the suffixation process have been shown in the <xref ref-type="table" rid="pone-0068178-t017">tables 17</xref>, <xref ref-type="table" rid="pone-0068178-t018">18</xref>, <xref ref-type="table" rid="pone-0068178-t019">19</xref>, <xref ref-type="table" rid="pone-0068178-t020">20</xref>.</p>
+<table-wrap id="pone-0068178-t017" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t017</object-id><label>Table 17</label><caption>
+<title>Example of suffixation.</title>
+</caption><alternatives><graphic id="pone-0068178-t017-17" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t017" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">اس</td>
+<td align="left" rowspan="1" colspan="1">نے</td>
+<td align="left" rowspan="1" colspan="1">بہت</td>
+<td align="left" rowspan="1" colspan="1">متاثر</td>
+<td align="left" rowspan="1" colspan="1">کن</td>
+<td align="left" rowspan="1" colspan="1">کام</td>
+<td align="left" rowspan="1" colspan="1">کيا</td>
+</tr>
+<tr>
+<td colspan="7" align="left" rowspan="1">He performed impressively.</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap><table-wrap id="pone-0068178-t018" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t018</object-id><label>Table 18</label><caption>
+<title>Example of suffixation.</title>
+</caption><alternatives><graphic id="pone-0068178-t018-18" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t018" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">کيا</td>
+<td align="left" rowspan="1" colspan="1">کام</td>
+<td align="left" rowspan="1" colspan="1">کن</td>
+<td align="left" rowspan="1" colspan="1">متاثر</td>
+<td align="left" rowspan="1" colspan="1">بہت</td>
+<td align="left" rowspan="1" colspan="1">نے</td>
+<td align="left" rowspan="1" colspan="1">اس</td>
+</tr>
+<tr>
+<td colspan="7" align="left" rowspan="1">He performed impressively.</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap><table-wrap id="pone-0068178-t019" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t019</object-id><label>Table 19</label><caption>
+<title>Example of suffixation.</title>
+</caption><alternatives><graphic id="pone-0068178-t019-19" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t019" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">کيا</td>
+<td align="left" rowspan="1" colspan="1">کام</td>
+<td align="left" rowspan="1" colspan="1">متاثر کن</td>
+<td align="left" rowspan="1" colspan="1">بہت</td>
+<td align="left" rowspan="1" colspan="1">نے</td>
+<td align="left" rowspan="1" colspan="1">اس</td>
+</tr>
+<tr>
+<td colspan="6" align="left" rowspan="1">He performed impressively.</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap><table-wrap id="pone-0068178-t020" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t020</object-id><label>Table 20</label><caption>
+<title>Example of suffixation.</title>
+</caption><alternatives><graphic id="pone-0068178-t020-20" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t020" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">اس</td>
+<td align="left" rowspan="1" colspan="1">نے</td>
+<td align="left" rowspan="1" colspan="1">بہت</td>
+<td align="left" rowspan="1" colspan="1">متاثر کن</td>
+<td align="left" rowspan="1" colspan="1">کام</td>
+<td align="left" rowspan="1" colspan="1">کيا</td>
+</tr>
+<tr>
+<td colspan="6" align="left" rowspan="1">He performed impressively.</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p>Algorithm will reverse the list of tokens shown in <xref ref-type="table" rid="pone-0068178-t017">table 17</xref>.</p>
+<p>Now it will start reading the tokens from left and for each token it will try to find a match in the list of suffixes. In the given example, it finds “<bold>کن</bold>” in the suffix list and reads next token “<bold>متاثر</bold>” (impressed). Further both of these tokens will be concatenated to form “<bold>متاثر کن</bold> ” (impressing). Now suffix “<bold>کن</bold>” will be removed from the token list and “<bold>متاثر</bold>” (impressed) will be replaced with “<bold>متاثر کن</bold>” (impressing).</p>
+<p>Finally the list will be reversed to get the real order of tokens as in the input token list.</p>
+<p><bold>4.4. Algorithm for full reduplication</bold></p>
+<list list-type="order"><list-item>
+<p>For every token in the list of token, compare each to the next in the token list.</p>
+</list-item><list-item>
+<p>If both are equal then combine them to form a new token. If the token ends at a joiner character, then embed a ZWNJ between them.</p>
+</list-item></list>
+<p><xref ref-type="table" rid="pone-0068178-t021">Table 21</xref> and <xref ref-type="table" rid="pone-0068178-t022">22</xref>, show the input and output for the full reduplication algorithm respectively.</p>
+<table-wrap id="pone-0068178-t021" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t021</object-id><label>Table 21</label><caption>
+<title>Example of full reduplication.</title>
+</caption><alternatives><graphic id="pone-0068178-t021-21" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t021" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">اس</td>
+<td align="left" rowspan="1" colspan="1">نے</td>
+<td align="left" rowspan="1" colspan="1">دو</td>
+<td align="left" rowspan="1" colspan="1">دو</td>
+<td align="left" rowspan="1" colspan="1">ہار</td>
+<td align="left" rowspan="1" colspan="1">خريدے</td>
+</tr>
+<tr>
+<td colspan="6" align="left" rowspan="1">He bought two necklaces.</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap><table-wrap id="pone-0068178-t022" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t022</object-id><label>Table 22</label><caption>
+<title>Example of full reduplication.</title>
+</caption><alternatives><graphic id="pone-0068178-t022-22" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t022" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">اس</td>
+<td align="left" rowspan="1" colspan="1">نے</td>
+<td align="left" rowspan="1" colspan="1">دودو</td>
+<td align="left" rowspan="1" colspan="1">ہار</td>
+<td align="left" rowspan="1" colspan="1">خريدے</td>
+</tr>
+<tr>
+<td colspan="5" align="left" rowspan="1">He bought two necklaces.</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p>Algorithm will read the tokens in the array, in the form of the pair of previous and next token. If a pair contains similar contents then it joins them to form a single token. In the given example, when algorithm reads the token “دو” (two) as previous token and next to it is also “دو” (two), therefore it will join both of these to form “دودو” (two) and will replace the previous token in the list with this newly concatenated token. This algorithm will also remove the next token “دو” (two) from the token list.</p>
+<p><bold>4.5. Algorithm for partial reduplication</bold></p>
+<list list-type="order"><list-item>
+<p>For every token in the token list, compare the length of two consecutive tokens. If they are equal in length and the length is not less than 4 <xref ref-type="bibr" rid="pone.0068178-Durrani1">[16]</xref>, then compare them character by character. If one character is dissimilar, it means they can be combined to form a partial reduplicated word.</p>
+</list-item><list-item>
+<p>If there is difference of one character in the length of two tokens and excluding the first character of the second token, both the tokens are similar then combine them to form a new token. If the first token ends with a joiner then embed a ZWNJ between them.</p>
+</list-item></list>
+<p><xref ref-type="table" rid="pone-0068178-t023">Table 23</xref> and <xref ref-type="table" rid="pone-0068178-t024">24</xref>, show the input and output token lists for the partial reduplication algorithm respectively.</p>
+<table-wrap id="pone-0068178-t023" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t023</object-id><label>Table 23</label><caption>
+<title>Example of partial reduplication.</title>
+</caption><alternatives><graphic id="pone-0068178-t023-23" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t023" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">وہ</td>
+<td align="left" rowspan="1" colspan="1">گاہے</td>
+<td align="left" rowspan="1" colspan="1">بگاے</td>
+<td align="left" rowspan="1" colspan="1">جيا</td>
+<td align="left" rowspan="1" colspan="1">کرتا</td>
+<td align="left" rowspan="1" colspan="1">تھا</td>
+</tr>
+<tr>
+<td colspan="6" align="left" rowspan="1">He had been visiting time to time.</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap><table-wrap id="pone-0068178-t024" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t024</object-id><label>Table 24</label><caption>
+<title>Example of partial reduplication.</title>
+</caption><alternatives><graphic id="pone-0068178-t024-24" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t024" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">وہ</td>
+<td align="left" rowspan="1" colspan="1">گاہےبگاہے</td>
+<td align="left" rowspan="1" colspan="1">آيا</td>
+<td align="left" rowspan="1" colspan="1">کرتا</td>
+<td align="left" rowspan="1" colspan="1">تھا</td>
+</tr>
+<tr>
+<td colspan="5" align="left" rowspan="1">He had been visiting time to time.</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p>When the algorithm will start reading the above token list, in its first iteration, it will find the token “<bold>وہ</bold>” (he) as previous token and “گاہے” as the next. But both of these do not satisfy the condition of having three or more than three corresponding similar characters. In the next iteration the token “گاہے” will become previous token and “بگاے” the next. As both of these have more than three similar characters, so the algorithm will concatenate them by placing the ZWNJ between them and new token will become “گاہےبگاہے” (time to time). It will replace “گاہے” with newly concatenated token and will remove token “بگاے” from the token list.</p>
+<p><bold>4.6. Algorithm for names and abbreviations</bold></p>
+<list list-type="order"><list-item>
+<p>Search for every token in the list of names and in the list of English characters, if match is found then check the previous token.</p>
+</list-item><list-item>
+<p>If the previous token is in the name list or ends with a name, it is an English character or ends with an English character, or it is not equal to ‘-’ but ends with a ‘-’ then combine both of the tokens. If first token ends with a joiner character then embed a ZWNJ between them.</p>
+</list-item><list-item>
+<p>If the newly formed token ends with the ‘کے’ then split it into two, by separating ‘کے’ from the token.</p>
+</list-item></list>
+<p>Different phases of this algorithm are shown in the <xref ref-type="table" rid="pone-0068178-t025">tables 25</xref>, <xref ref-type="table" rid="pone-0068178-t026">26</xref>, <xref ref-type="table" rid="pone-0068178-t027">27</xref>, <xref ref-type="table" rid="pone-0068178-t028">28</xref>, <xref ref-type="table" rid="pone-0068178-t029">29</xref>. As algorithm starts reading the elements in the token list, it will find the very first token in the list of names. As it has no previous token therefore algorithm will read the next token “علی” in the token list. It will also be found in the list of names; therefore it will read the previous token of it and will search for it in the same list. As it is available in the name list also, therefore new token will be composed by concatenating both of these, while inserting ZWNJ between them. The new token “<bold>اسدعلی</bold>” will replace the previous token “<bold>اسد</bold>” in the list and the token “علی” will be removed from it, as shown in <xref ref-type="table" rid="pone-0068178-t026">table 26</xref>.</p>
+<table-wrap id="pone-0068178-t025" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t025</object-id><label>Table 25</label><caption>
+<title>Example of names and abbreviate.</title>
+</caption><alternatives><graphic id="pone-0068178-t025-25" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t025" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">اسد</td>
+<td align="left" rowspan="1" colspan="1">علی</td>
+<td align="left" rowspan="1" colspan="1">نے</td>
+<td align="left" rowspan="1" colspan="1">يو</td>
+<td align="left" rowspan="1" colspan="1">۔</td>
+<td align="left" rowspan="1" colspan="1">ايس</td>
+<td align="left" rowspan="1" colspan="1">۔</td>
+<td align="left" rowspan="1" colspan="1">اے</td>
+<td align="left" rowspan="1" colspan="1">۔</td>
+<td align="left" rowspan="1" colspan="1">جانا</td>
+<td align="left" rowspan="1" colspan="1">ہے</td>
+</tr>
+<tr>
+<td colspan="11" align="left" rowspan="1">Asad Ali has to visit U.S.A.</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap><table-wrap id="pone-0068178-t026" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t026</object-id><label>Table 26</label><caption>
+<title>Example of names and abbreviations.</title>
+</caption><alternatives><graphic id="pone-0068178-t026-26" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t026" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">اسدعلی</td>
+<td align="left" rowspan="1" colspan="1">نے</td>
+<td align="left" rowspan="1" colspan="1">يو</td>
+<td align="left" rowspan="1" colspan="1">۔</td>
+<td align="left" rowspan="1" colspan="1">ايس</td>
+<td align="left" rowspan="1" colspan="1">۔</td>
+<td align="left" rowspan="1" colspan="1">اے</td>
+<td align="left" rowspan="1" colspan="1">۔</td>
+<td align="left" rowspan="1" colspan="1">جانا</td>
+<td align="left" rowspan="1" colspan="1">ہے</td>
+</tr>
+<tr>
+<td colspan="10" align="left" rowspan="1">Asad Ali has to visit U.S.A.</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap><table-wrap id="pone-0068178-t027" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t027</object-id><label>Table 27</label><caption>
+<title>Example of names and abbreviations.</title>
+</caption><alternatives><graphic id="pone-0068178-t027-27" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t027" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">اسدعلی</td>
+<td align="left" rowspan="1" colspan="1">نے</td>
+<td align="left" rowspan="1" colspan="1">يو۔</td>
+<td align="left" rowspan="1" colspan="1">ايس</td>
+<td align="left" rowspan="1" colspan="1">۔</td>
+<td align="left" rowspan="1" colspan="1">اے</td>
+<td align="left" rowspan="1" colspan="1">۔</td>
+<td align="left" rowspan="1" colspan="1">جانا</td>
+<td align="left" rowspan="1" colspan="1">ہے</td>
+</tr>
+<tr>
+<td colspan="9" align="left" rowspan="1">Asad Ali has to visit U.S.A.</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap><table-wrap id="pone-0068178-t028" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t028</object-id><label>Table 28</label><caption>
+<title>Example of names and abbreviations.</title>
+</caption><alternatives><graphic id="pone-0068178-t028-28" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t028" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">اسدعلی</td>
+<td align="left" rowspan="1" colspan="1">نے</td>
+<td align="left" rowspan="1" colspan="1">يو۔ ايس</td>
+<td align="left" rowspan="1" colspan="1">۔</td>
+<td align="left" rowspan="1" colspan="1">اے</td>
+<td align="left" rowspan="1" colspan="1">۔</td>
+<td align="left" rowspan="1" colspan="1">جانا</td>
+<td align="left" rowspan="1" colspan="1">ہے</td>
+</tr>
+<tr>
+<td colspan="8" align="left" rowspan="1">Asad Ali decided to visit U.S.A.</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap><table-wrap id="pone-0068178-t029" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.t029</object-id><label>Table 29</label><caption>
+<title>Example of names and abbreviations.</title>
+</caption><alternatives><graphic id="pone-0068178-t029-29" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.t029" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">اسدعلی</td>
+<td align="left" rowspan="1" colspan="1">نے</td>
+<td align="left" rowspan="1" colspan="1">يو۔ ايس۔ اے اے۔</td>
+<td align="left" rowspan="1" colspan="1">جانا</td>
+<td align="left" rowspan="1" colspan="1">ہے</td>
+</tr>
+<tr>
+<td colspan="5" align="left" rowspan="1">Asad Ali has to visit U.S.A.</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p>Onwards it will read the next token “نے” in the token list, but as it does not exist in the list of names, neither it is a ‘۔’ nor an English character, therefore algorithm will look for the next token in the list. It reads “يو” but previous token “نے” does not satisfy the condition; therefore algorithm will go for the next token. It finds ‘۔’ as next token and “يو” as the previous token. As the condition of the algorithm is satisfied, so both of these tokens will be combined as “يو۔”. New token will replace the previous token “يو” in the token list and “۔” will be removed from the list, as shown in <xref ref-type="table" rid="pone-0068178-t027">table 27</xref>. Algorithm reads the next token “ايس” in the token list, it is also an English character and according to the algorithm, previous token “يو۔” ends with “۔”, therefore both of these will be merged as shown in <xref ref-type="table" rid="pone-0068178-t028">table 28</xref>. Similarly the next token “۔” will be joined to previous token “يو۔ ايس” to form “<bold>يو۔ ايس۔</bold>” and the same process will be followed for the next two tokens “اے” and “۔”. The output of this process is shown in the <xref ref-type="table" rid="pone-0068178-t029">table 29</xref>. At last the algorithm will check in the list for the token which starts with a name and ends with “<bold>کے</bold>”. If a match is found, it will split it into name and “<bold>کے</bold>”; as in the <xref ref-type="table" rid="pone-0068178-t029">table 29</xref> there is no such case, therefore it is the final output for the given example.</p>
+</sec></sec><sec id="s3">
+<title>Experimental Results and Discussion</title>
+<p>Experimental results are calculated by tokenizing the corpus with 57000 words by using a morpheme list containing 6400 free morphemes. Test corpus has been tokenized by using three different approaches; forward maximum matching, dynamic maximum matching and dynamic maximum matching along with maximum likelihood approach. Following two paragraphs illustrate how the corpus has been tokenized by using the three mentioned techniques.</p>
+<p>Suppose there is a string “<bold>اس نے سنا کہ اسے جانے دو</bold>” (He heard that let him leave.) and list of free morphemes related to it [<bold>“نے”, “ناک”, “کہا”, “کہ”, “سے”, “سنا”, “سن”, “دو”, “جانے”, “جا”, “اسے”, “اس”</bold>]. Maximum matching will return the list of tokens [<bold>“اس”, “نے”, “سنا”, “کہا”, “سے”, “جانے”, “دو”</bold>] for the input string and it contains two words “<bold>کہا</bold>” and “<bold>سے</bold>” which have been tokenized incorrectly.</p>
+<p>Dynamic matching tokenizes the similar string into [“<bold>اس</bold>”, “<bold>نے</bold>”, “<bold>سنا</bold>”, “<bold>کہا</bold>”, “<bold>سے</bold>”, “<bold>جانے</bold>”, “<bold>دو</bold>”] and [“<bold>اس</bold>”, “<bold>نے</bold>”, “<bold>سنا</bold>”, “<bold>کہ</bold>”, “<bold>اسے</bold>”, “<bold>جانے</bold>”, “<bold>دو</bold>”], with equal number of tokens and without any error. It will select the first tokenization sequence with two incorrect tokens, because both sequences appear same to it, as they have equal number of tokens and errors. But if it is combined with maximum likelihood approach then it will select the three best segmentations out of all produced tokenization schemes and will compute bi-gram probability for each. So for the given example, dynamic maximum matching along with maximum likelihood will return the tokenization sequence [“<bold>اس</bold>”, “<bold>نے</bold>”, “<bold>سنا</bold>”, “<bold>کہ</bold>”, “<bold>اسے</bold>”, “<bold>جانے</bold>”, “<bold>دو</bold>”], containing all correct tokens in it.</p>
+<p>The results obtained after applying the proposed three different techniques over 57000 words are shown in <xref ref-type="fig" rid="pone-0068178-g001">figure 1</xref>. Using forward maximum matching 93.78% precision, 91.06% recall, and 92.39% F1-measure are obtained. Dynamic matching produced 96.00% precision, 93.06% recall, and 94.31% F1-measure. Best results have been seen by using dynamic maximum matching along with maximum likelihood approach, which are 97.28% precision, 93.71% recall, and 95.46% F1-measure.</p>
+<fig id="pone-0068178-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0068178.g001</object-id><label>Figure 1</label><caption>
+<title>Performance comparison.</title>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0068178.g001" position="float" xlink:type="simple"/></fig>
+<p>The study in <xref ref-type="bibr" rid="pone.0068178-Lehal1">[15]</xref>, achieved 99.29% recall and 99.38% precision for Urdu merged word recognition component. The author used Urdu, Hindi, and English morphological rules to find the merged words in the text. He used longest matching, maximum matching and statistical rules to fix only the space omission issues in Urdu text. Author had the advantage of availability of the bilingual corpus which had been helpful, while solving the ambiguities seen during maximum matching process.</p>
+<p>In a study <xref ref-type="bibr" rid="pone.0068178-Durrani1">[16]</xref> similar to ours, the same corpus was used while applying same techniques but in a different way. Authors initially segmented the text with the available spaces between the words, further they searched for orthographic words inside the available segments for space omission problem. After fixing space omission problem they applied their rules for space insertion errors. This study reported an accuracy of 95.8%. Following formulas are used for precision, recall and F1-measure;</p>
+<p>Precision = number of correct tokens returned by tokenizer/total number of tokens returned by tokenizer</p>
+<p>Recall = number of correct tokens returned by tokenizer/total number of tokens in Corpus</p>
+<p>F1-measure = 2*Precision*Recall/(Precision+Recall)</p>
+</sec><sec id="s4">
+<title>Conclusion</title>
+<p>The problem of tokenizing Urdu text strings revolves around the insertion and deletion of the space between the words. In the hand written Urdu text, there is no use of space between the words but in case of the computerized text files space is inserted after the words ending at joiner characters (characters which join themselves with the following characters). In this work Urdu text has been tokenized using three different approaches; forward maximum matching, dynamic maximum matching, and dynamic maximum matching along with maximum likelihood approach. All of these approaches work with some other algorithms which have been proposed to resolve the issues of identification of compound words, affixations, reduplication, names, and abbreviations. This work produced up to 97.28% precision, 93.71% recall, and 95.46% F1-measure with the test data comprising of 57000 words. The work proposed in this paper is more dependent on the corpus; it definitely affects the results, if there are unseen words (words not available in the corpus) in the text to be segmented. In future we are aimed to develop a tokenization method which would be least dependant on the corpus, and using machine learning techniques, would be able to learn the morphological patterns of the valid morphemes in Urdu text. So instead of searching for morphemes in a corpus, it could be searched for specific morphological patterns in the text in order to tokenize it.</p>
+</sec></body>
+<back><ref-list>
+<title>References</title>
+<ref id="pone.0068178-Zobia1"><label>1</label>
+<mixed-citation publication-type="other" xlink:type="simple">Zobia R, Waqas A, Usama IB (2011) Challenges in Urdu text tokenization and sentence boundary disambiguation. Proceedings of the IJCNLP Workshop on South and Southeast Asian Natural Language Processing 40–45.</mixed-citation>
+</ref>
+<ref id="pone.0068178-Zhou1"><label>2</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zhou</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Liu</surname><given-names>Q</given-names></name> (<year>2002</year>) <article-title>A character net based Chinese text segmentation method</article-title>. <source>Workshop on Building and Using Semantic Networks</source> <volume>11</volume>: <fpage>1</fpage>–<lpage>6</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0068178-Kaplan1"><label>3</label>
+<mixed-citation publication-type="other" xlink:type="simple">Kaplan RM (2005) A method for tokenizing text. CSLI Publications, Stanford. pp. 55–63.</mixed-citation>
+</ref>
+<ref id="pone.0068178-Yang1"><label>4</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yang</surname><given-names>CC</given-names></name>, <name name-style="western"><surname>Li</surname><given-names>KW</given-names></name> (<year>2005</year>) <article-title>A heuristic method based on a statistical approach for Chinese text segmentation</article-title>. <source>Journal of the American Society for Information Science and Technology</source> <volume>56</volume>: <fpage>1438</fpage>–<lpage>1447</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0068178-Shahabi1"><label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Shahabi</surname><given-names>AS</given-names></name>, <name name-style="western"><surname>Kangaveri</surname><given-names>MR</given-names></name> (<year>2007</year>) <article-title>Intelligent processing system</article-title>. <source>IFIP International Federation of Information Processing Springer Boston</source> <volume>228</volume>: <fpage>411</fpage>–<lpage>420</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0068178-Wu1"><label>6</label>
+<mixed-citation publication-type="other" xlink:type="simple">Wu D, Fung P (1994) Improving Chinese tokenization with linguistic filters on statistical lexical acquisition. Proceedings of the Fourth Conference on Applied Natural Language Processing 180–181.</mixed-citation>
+</ref>
+<ref id="pone.0068178-Labadi1"><label>7</label>
+<mixed-citation publication-type="other" xlink:type="simple">Labadié A, Prince V (2008) Lexical and semantic methods in inner text topic segmentation: a comparison between C99 and Transeg. Proceedings of the 13th international conference on Natural Language and Information Systems: Applications of Natural Language to Information Systems 347–349.</mixed-citation>
+</ref>
+<ref id="pone.0068178-Meknavin1"><label>8</label>
+<mixed-citation publication-type="other" xlink:type="simple">Meknavin S, Charoenpornsawat P, Kijsirikul B (1997) Feature-based Thai word segmentation. Proceedings of Natural Language Processing Pacific Rim Symposium 35–46.</mixed-citation>
+</ref>
+<ref id="pone.0068178-Attia1"><label>9</label>
+<mixed-citation publication-type="other" xlink:type="simple">Attia MA (2007) Arabic tokenization system. Workshop on Computational Approaches to Semitic Language 65–72.</mixed-citation>
+</ref>
+<ref id="pone.0068178-Megerdoomian1"><label>10</label>
+<mixed-citation publication-type="other" xlink:type="simple">Megerdoomian K, Zajac R (2000) Processing Persian text: Tokenization in the Shiraz project. Memoranda in Computer and Cognitive Science Project Report.</mixed-citation>
+</ref>
+<ref id="pone.0068178-Shamsford1"><label>11</label>
+<mixed-citation publication-type="other" xlink:type="simple">Shamsford M, Kiani S, Shahidi Y (2009) STeP-1: standard text preparation for Persian language. Third Workshop on Computational Approaches to Arabic Script-based Languages 859–865.</mixed-citation>
+</ref>
+<ref id="pone.0068178-Poowarawan1"><label>12</label>
+<mixed-citation publication-type="other" xlink:type="simple">Poowarawan Y (1986) Dictionary based Thai syllable separation. Proceedings of the Ninth Electronics Engineering Conference.</mixed-citation>
+</ref>
+<ref id="pone.0068178-Wong1"><label>13</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wong</surname><given-names>PK</given-names></name>, <name name-style="western"><surname>Chan</surname><given-names>C</given-names></name> (<year>1996</year>) <article-title>Chinese word segmentation based on maximum matching and word binding force</article-title>. <source>Proceedings of the 16th conference on Computational linguistics</source> <volume>1</volume>: <fpage>200</fpage>–<lpage>203</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0068178-Charoenpornsawat1"><label>14</label>
+<mixed-citation publication-type="other" xlink:type="simple">Charoenpornsawat P, Kijsirikul B, Meknavin S (1998) Feature-based Thai unknown word boundary identification using winnow. IEEE Asia Pacific Conference on Circuits and Systems 539–547.</mixed-citation>
+</ref>
+<ref id="pone.0068178-Lehal1"><label>15</label>
+<mixed-citation publication-type="other" xlink:type="simple">Lehal (2010) A word segmentation system for handling space omission problem in Urdu script. Proceedings of the 1st Workshop on South and Southeast Asian Natural Language Processing 43–50.</mixed-citation>
+</ref>
+<ref id="pone.0068178-Durrani1"><label>16</label>
+<mixed-citation publication-type="other" xlink:type="simple">Durrani N, Hussain S (2011) Urdu word segmentation. In Proceedings of the 11<sup>th</sup> Annual Conference of the North American Chapter of the Association for Computational Linguistics 528–536.</mixed-citation>
+</ref>
+<ref id="pone.0068178-Anwar1"><label>17</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Anwar</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Xuan</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Lu</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Xiaolong</surname><given-names>W</given-names></name> (<year>2007</year>) <article-title>A statistical based part of speech tagger for Urdu language</article-title>. <source>International Conference on Machine Learning and Cybernetics</source> <volume>6</volume>: <fpage>3418</fpage>–<lpage>3424</lpage>.</mixed-citation>
+</ref>
+</ref-list></back>
+</article>

@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosone</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group><issn pub-type="epub">1932-6203</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="publisher-id">PONE-D-11-10274</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0023613</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Computer science</subject>
+          <subj-group>
+            <subject>Computer modeling</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Social and behavioral sciences</subject>
+          <subj-group>
+            <subject>Anthropology</subject>
+            <subj-group>
+              <subject>Cultural anthropology</subject>
+              <subj-group>
+                <subject>Natural language</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Linguistics</subject>
+            <subj-group>
+              <subject>Computational linguistics</subject>
+              <subject>Dialectology</subject>
+              <subject>Historical linguistics</subject>
+              <subject>Linguistic geography</subject>
+              <subject>Natural language</subject>
+              <subject>Sociolinguistics</subject>
+              <subject>Speech</subject>
+              <subject>Structural linguistics</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Sociology</subject>
+            <subj-group>
+              <subject>Culture</subject>
+              <subject>Social policy</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Computer Science</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>Quantitative Social Dialectology: Explaining Linguistic Variation Geographically and Socially</article-title><alt-title alt-title-type="running-head">Quantitative Social Dialectology</alt-title></title-group><contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Wieling</surname>
+            <given-names>Martijn</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Nerbonne</surname>
+            <given-names>John</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Baayen</surname>
+            <given-names>R. Harald</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1"><label>1</label><addr-line>Department of Humanities Computing, University of Groningen, Groningen, The Netherlands</addr-line>       </aff><aff id="aff2"><label>2</label><addr-line>Department of Linguistics, University of Alberta, Edmonton, Canada</addr-line>       </aff><contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Perc</surname>
+            <given-names>Matjaz</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group><aff id="edit1">University of Maribor, Slovenia</aff><author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">m.b.wieling@rug.nl</email></corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: MW RHB. Performed the experiments: MW RHB. Analyzed the data: MW RHB. Contributed reagents/materials/analysis tools: MW RHB. Wrote the paper: MW JN RHB.</p>
+        </fn>
+      <fn fn-type="conflict">
+        <p>The authors have declared that no competing interests exist.</p>
+      </fn></author-notes><pub-date pub-type="collection">
+        <year>2011</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>1</day>
+        <month>9</month>
+        <year>2011</year>
+      </pub-date><volume>6</volume><issue>9</issue><elocation-id>e23613</elocation-id><history>
+        <date date-type="received">
+          <day>7</day>
+          <month>6</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>21</day>
+          <month>7</month>
+          <year>2011</year>
+        </date>
+      </history><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2011</copyright-year><copyright-holder>Wieling et al</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><abstract>
+        <p>In this study we examine linguistic variation and its dependence on both social and geographic factors. We follow dialectometry in applying a quantitative methodology and focusing on dialect distances, and social dialectology in the choice of factors we examine in building a model to predict word pronunciation distances from the standard Dutch language to 424 Dutch dialects. We combine linear mixed-effects regression modeling with generalized additive modeling to predict the pronunciation distance of 559 words. Although geographical position is the dominant predictor, several other factors emerged as significant. The model predicts a greater distance from the standard for smaller communities, for communities with a higher average age, for nouns (as contrasted with verbs and adjectives), for more frequent words, and for words with relatively many vowels. The impact of the demographic variables, however, varied from word to word. For a majority of words, larger, richer and younger communities are moving towards the standard. For a smaller minority of words, larger, richer and younger communities emerge as driving a change away from the standard. Similarly, the strength of the effects of word frequency and word category varied geographically. The peripheral areas of the Netherlands showed a greater distance from the standard for nouns (as opposed to verbs and adjectives) as well as for high-frequency words, compared to the more central areas. Our findings indicate that changes in pronunciation have been spreading (in particular for low-frequency words) from the Hollandic center of economic power to the peripheral areas of the country, meeting resistance that is stronger wherever, for well-documented historical reasons, the political influence of Holland was reduced. Our results are also consistent with the theory of lexical diffusion, in that distances from the Hollandic norm vary systematically and predictably on a word by word basis.</p>
+      </abstract><funding-group><funding-statement>The authors have no support or funding to report.</funding-statement></funding-group><counts>
+        <page-count count="14"/>
+      </counts></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>In this study we integrate the approaches of two fields addressing linguistic variation, dialectometry and (social) dialectology. Dialectology is the older discipline, where researchers focus on a single or small set of linguistic features in their analysis. Initially the focus in this field was on dialect geography <xref ref-type="bibr" rid="pone.0023613-Chambers1">[1, Ch. 2]</xref>, where the distribution of these features was visualized on a map. Later, dialectologists more and more realized the importance of social variation. The work of Labov and later Trudgill has been very influential in this regard <xref ref-type="bibr" rid="pone.0023613-Labov1">[2]</xref>, <xref ref-type="bibr" rid="pone.0023613-Trudgill1">[3]</xref>. Social dialectologists have often examined both social and linguistic influences on individual linguistic features, generally using logistic regression designs <xref ref-type="bibr" rid="pone.0023613-Paolillo1">[4]</xref>, but more recently also using mixed-effects regression modeling <xref ref-type="bibr" rid="pone.0023613-Johnson1">[5]</xref>.</p>
+      <p>Dialectometry was pioneered by Jean Séguy, who calculated aggregate dialect distances based on the number of mismatching linguistic items between pairs of sites <xref ref-type="bibr" rid="pone.0023613-Sguy1">[6]</xref> and used a regression design to examine the influence of geography on these aggregate distances <xref ref-type="bibr" rid="pone.0023613-Sguy2">[7]</xref>. Since then other researchers, among others, Goebl, Heeringa and Nerbonne, and Kretzschmar, have refined the (computational and quantitative) techniques to measure and interpret these aggregate dialect distances <xref ref-type="bibr" rid="pone.0023613-Goebl1">[8]</xref>–<xref ref-type="bibr" rid="pone.0023613-Kretzschmar1">[10]</xref>. We follow dialectometry in viewing linguistic distance for hundreds of individual words as our primary dependent variable.</p>
+      <p>2While the social dimension is a very important aspect in dialectology, it has been less important in dialectometry where the main focus still lies on dialect geography <xref ref-type="bibr" rid="pone.0023613-Nerbonne1">[11]</xref>. Of course there are some exceptions in which (for example) the diachronic perspective is taken into account <xref ref-type="bibr" rid="pone.0023613-Heeringa2">[12]</xref>, <xref ref-type="bibr" rid="pone.0023613-Wieling1">[13]</xref>, or age and gender are considered as covariates <xref ref-type="bibr" rid="pone.0023613-Leinonen1">[14]</xref>, but to our knowledge no dialectometric study has attempted to model the effects of multiple geographic and social variables simultaneously.</p>
+      <p>Dialectometry has also been criticized for focusing too much on the aggregate level of linguistic differences <xref ref-type="bibr" rid="pone.0023613-Schneider1">[15]</xref>, <xref ref-type="bibr" rid="pone.0023613-Woolhiser1">[16]</xref>, thereby neglecting the level of linguistic structure where individual words and linguistic properties are important. Acknowledging honorable exceptions <xref ref-type="bibr" rid="pone.0023613-Nerbonne1">[11]</xref>, we concede that the focus in dialectometry has been on aggregate levels, but the strength of the present analysis is that it focuses on individual words in addition to aggregate distances predicted by geography.</p>
+      <p>This quantitative social dialectological study is the first to investigate the effect of a range of social and lexical factors on a large set of dialect distances. In the following we will focus on building a model to explain the pronunciation distance between dialectal pronunciations (in different locations) and standard Dutch for a large set of distinct words. Of course, choosing standard Dutch as the reference pronunciation is not historically motivated, as standard Dutch is not the proto-language. However, the standard language remains an important reference point for two reasons. First, as noted by Kloeke, in the 16th and 17th centuries individual sound changes have spread from the Hollandic center of economic and political power to the more peripheral areas of the Netherlands <xref ref-type="bibr" rid="pone.0023613-Kloeke1">[17]</xref>. Furthermore, modern Dutch dialects are known to be converging to the standard language <xref ref-type="bibr" rid="pone.0023613-Wieling1">[13]</xref>, <xref ref-type="bibr" rid="pone.0023613-vanderWal1">[18, pp. 355–356]</xref>. We therefore expect geographical distance to reveal a pattern consistent with Kloeke's ‘Hollandic Expansion’, with greater geographical distance correlating with greater distance from the Hollandic standard.</p>
+      <p>Kloeke also pointed out that sound changes may proceed on a word-by-word basis <xref ref-type="bibr" rid="pone.0023613-Kloeke1">[17]</xref>. The case for lexical diffusion was championed by Wang and contrasts with the Neogrammarian view that sound changes are exceptionless and apply to all words of the appropriate form to undergo the change <xref ref-type="bibr" rid="pone.0023613-Wang1">[19]</xref>. The Neogrammarian view is consistent with waves of sound changes emanating from Holland to the outer provinces, but it predicts that lexical properties such as a word's frequency of occurrence and its categorial status as a noun or verb should be irrelevant for predicting a region's pronunciation distance to the standard language.</p>
+      <p>In order to clarify the extent to which variation at the lexical level co-determines the dialect landscape in the Netherlands, we combine generalized additive modeling (which allows us to model complex non-linear surfaces) with mixed-effects regression models (which allow us to explore word-specific variation). First, however, we introduce the <xref ref-type="sec" rid="s2">materials and methods</xref> of our study.</p>
+    </sec>
+    <sec id="s2" sec-type="materials|methods">
+      <title>Materials and Methods</title>
+      <sec id="s2a">
+        <title>Pronunciation data</title>
+        <p>The Dutch dialect data set contains phonetic transcriptions of 562 words in 424 locations in the Netherlands. <xref ref-type="fig" rid="pone-0023613-g001">Figure 1</xref> shows the distribution of the locations over the Netherlands together with the province names. Wieling, Heeringa and Nerbonne selected the words from the Goeman-Taeldeman-Van Reenen-Project (GTRP; <xref ref-type="bibr" rid="pone.0023613-Goeman1">[20]</xref>) specifically for an analysis of pronunciation variation in the Netherlands and Flanders <xref ref-type="bibr" rid="pone.0023613-Wieling1">[13]</xref>. The transcriptions in the GTRP were made by several transcribers between 1980 and 1995, making it currently the largest contemporary Dutch dialect data set available. The word categories include mainly verbs (30.8%), nouns (40.3%) and adjectives (20.8%). The complete list of words is presented in <xref ref-type="bibr" rid="pone.0023613-Wieling1">[13]</xref>. For the present study, we excluded 3 words of the original set (<italic>gaarne</italic>, <italic>geraken</italic> and <italic>ledig</italic>) as it turned out these words also varied lexically. The standard Dutch pronunciation of all 559 words was transcribed by one of the authors based on <xref ref-type="bibr" rid="pone.0023613-Gussenhoven1">[21]</xref>.</p>
+        <fig id="pone-0023613-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0023613.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Distribution of locations in the GTRP including province names.</title>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0023613.g001" xlink:type="simple"/>
+        </fig>
+        <p>Because the set of words included common words (e.g., ‘walking’) as well as less frequent words (e.g., ‘oats’), we included word frequency information, extracted from the CELEX lexical database <xref ref-type="bibr" rid="pone.0023613-Baayen1">[22]</xref>, as an independent variable.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Social data</title>
+        <p>Besides the information about the speakers recorded by the GTRP compilers, such as year of recording, gender and age of the speaker, we extracted additional demographic information about each of the 424 places from Statistics Netherlands <xref ref-type="bibr" rid="pone.0023613-CBS1">[23]</xref>. We obtained information about the average age, average income, number of inhabitants (i.e. population size) and male-female ratio in every location in the year 1995 (approximately coinciding with the end of the GTRP data collection period). As Statistics Netherlands uses three measurement levels (i.e. neighborhood, district and municipality), we manually selected the appropriate level for every location. For large cities (e.g., Rotterdam), the corresponding municipality (generally having the same name) was selected as it mainly consisted of the city itself. For smaller cities, located in a municipality having multiple villages and/or cities, the district was selected which consisted of the single city (e.g., Coevorden). Finally, for very small villages located in a district having multiple small villages, the neighborhood was selected which consisted of the single village (e.g., Barger-Oosterveld).</p>
+      </sec>
+      <sec id="s2c">
+        <title>Obtaining pronunciation distances</title>
+        <p>For all 424 locations, the pronunciation distance between standard Dutch and the dialectal pronunciations was calculated by using the Levenshtein distance <xref ref-type="bibr" rid="pone.0023613-Levenshtein1">[24]</xref>. The Levenshtein distance minimizes the number of insertions, deletions and substitutions to transform one pronunciation string into the other. For example, the Levenshtein distance between two Dutch dialectal variants of the word ‘two’, [tei] and [twa], is 3:<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0023613.e001" xlink:type="simple"/></disp-formula>The corresponding alignment is:<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0023613.e002" xlink:type="simple"/></disp-formula>Note that in the example above an alternative optimal alignment substitutes [a] for [i] instead of [e].</p>
+        <p>The regular Levenshtein distance does not distinguish vowels and consonants and therefore may align a vowel with a consonant. To enforce linguistically sensible alignments, a syllabicity constraint is normally added such that vowels are not aligned with (non-sonorant) consonants.</p>
+        <p>As shown in the example above, the Levenshtein distance increases with one for every mismatch. Some sounds, however, are phonetically closer to each other than other sounds, e.g., /a/ and /e/ are closer than /a/ and /i/. A distance measure for two pronunciations should reflect this. Wieling, Prokić and Nerbonne introduced a method which uses the relative alignment frequency of sounds to determine their distance <xref ref-type="bibr" rid="pone.0023613-Wieling2">[25]</xref>. Pairs of sounds which are aligned relatively frequently are assigned a low distance, while sounds which co-occur relatively infrequently are assigned a high distance. The method is based on calculating the Pointwise Mutual Information score (PMI; <xref ref-type="bibr" rid="pone.0023613-Church1">[26]</xref>) between every pair of sounds and was found to improve alignments compared to the Levenshtein distance with (and without) the syllabicity constraint. In addition, a recent study by Wieling, Margaretha and Nerbonne (submitted) found that the automatically determined PMI distances between vowels correspond well with acoustic vowel distances for several languages. A detailed description about the PMI method can be found in <xref ref-type="bibr" rid="pone.0023613-Wieling3">[27]</xref>.</p>
+        <p>As an illustration of the PMI method, consider the alignment of [tei] and [twa], now using the PMI-based costs:<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0023613.e003" xlink:type="simple"/></disp-formula>In contrast to the previous example, the [a] can only be aligned with [e], as the cost of aligning [a] and [i] is higher (and the cost of deleting [e] is higher than deleting [i]).</p>
+        <p>In the following, the pronunciation distances are based on the PMI-based Levenshtein distance. Because longer words will likely have a greater pronunciation distance (as more sounds may change) than shorter words, we normalize the PMI-based word pronunciation distances by dividing by the alignment length.</p>
+      </sec>
+      <sec id="s2d">
+        <title>Modeling the role of geography: generalized additive modeling</title>
+        <p>Given a fine-grained measure capturing the distance between two pronunciations, a key question from a dialectometric perspective is how to model pronunciation distance as a function of the longitude and latitude of the pronunciation variants. The problem is that for understanding how longitude and latitude predict pronunciation distance, the standard linear regression model is not flexible enough. The problem with standard regression is that it can model pronunciation distance as a flat plane spanned by longitude and latitude (by means of two simple main effects) or as a hyperbolic plane (by means of a multiplicative interaction of longitude by latitude). A hyperbolic plane, unfortunately, imposes a very limited functional form on the regression surface that for dialect data will often be totally inappropriate.</p>
+        <p>We therefore turned to generalized additive models (GAM), an extension of multiple regression that provides flexible tools for modeling complex interactions describing wiggly surfaces. For isometric predictors such as longitude and latitude, thin plate regression splines are an excellent choice. Thin plate regression splines model a complex, wiggly surface as a weighted sum of geometrically simpler, analytically well defined, surfaces <xref ref-type="bibr" rid="pone.0023613-Wood1">[28]</xref>. The details of the weights and smoothing basis functions are not of interest for the user, they are estimated by the GAM algorithms such that an optimal balance between undersmoothing and oversmoothing is obtained, using either generalized cross-validation or relativized maximum likelihood (see <xref ref-type="bibr" rid="pone.0023613-Wood2">[29]</xref> for a detailed discussion). The significance of a thin plate regression spline is assessed with an <italic>F</italic>-test evaluating whether the estimated degrees of freedom invested in the spline yield an improved fit of the model to the data. Generalized additive models have been used successfully in modeling experimental data in psycholinguistics, see <xref ref-type="bibr" rid="pone.0023613-Tremblay1">[30]</xref> for evoked response potentials, and see <xref ref-type="bibr" rid="pone.0023613-Baayen2">[31]</xref>–<xref ref-type="bibr" rid="pone.0023613-Baayen4">[33]</xref> for chronometric data. They are also widely used in biology, see, for instance, <xref ref-type="bibr" rid="pone.0023613-Schmidt1">[34]</xref> for spatial explicit modeling in ecology.</p>
+        <p>For our data, we use a generalized additive model to provide us with a two-dimensional surface estimator (based on the combination of longitude and latitude) of pronunciation distance using thin-plate regression splines as implemented in the <italic>mgcv</italic> package for <italic>R</italic> <xref ref-type="bibr" rid="pone.0023613-Wood2">[29]</xref>. <xref ref-type="fig" rid="pone-0023613-g002">Figure 2</xref> presents the resulting regression surface using a contour plot. The (solid) contour lines represent distance isoglosses. Darker shades of gray indicate smaller distances, lighter shades of gray represent greater distances from the standard language.</p>
+        <fig id="pone-0023613-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0023613.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Contour plot obtained with a generalized additive model.</title>
+            <p>The contour plot shows a regression surface of pronunciation distance as a function of longitude and latitude obtained with a generalized additive model using a thin plate regression spline. The (black) contour lines represent distance isoglosses, darker shades of gray indicate smaller distances closer to the standard language, lighter shades of gray represent greater distances. Note that the empty square indicates the location of the IJsselmeer, a large lake in the Netherlands.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0023613.g002" xlink:type="simple"/>
+        </fig>
+        <p>The general geographic pattern fits well with Kloeke's hypothesis of a Hollandic expansion: As we move away from Holland, pronunciation distances increase <xref ref-type="bibr" rid="pone.0023613-Kloeke1">[17]</xref>. Kloeke showed that even in the sixteenth and seventeenth centuries the economic and political supremacy of the provinces of North and South Holland led to the spread of Hollandic speech norms to the outer provinces.</p>
+        <p>We can clearly identify the separation from the standard spoken in the provinces of North and South Holland (central west) of the province of Friesland (in the north), the Low Saxon dialects spoken in Groningen and Drenthe (in the northeast), and the Franconian dialects of Zeeland (in the southwest) and Limburg (southeast). The 28.69 estimated degrees of freedom invested in the thin plate regression spline were supported by an <italic>F</italic>-value of 1051 (<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0023613.e004" xlink:type="simple"/></inline-formula>). The local cohesion in <xref ref-type="fig" rid="pone-0023613-g002">Figure 2</xref> makes sense, since nearby locations tend to speak dialectal varieties which are relatively similar <xref ref-type="bibr" rid="pone.0023613-Nerbonne2">[35]</xref>.</p>
+      </sec>
+      <sec id="s2e">
+        <title>Mixed-effects modeling</title>
+        <p>A problem with this generalized additive model is that the random-effects structure of our data set is not taken into account. In mixed-effects regression modeling (for introductions, see, e.g., <xref ref-type="bibr" rid="pone.0023613-Pinheiro1">[36]</xref>–<xref ref-type="bibr" rid="pone.0023613-Baayen6">[38]</xref>), a distinction is made between fixed-effect and random-effect factors. Fixed-effect factors are factors with a small number of levels that exhaust all possible levels (e.g., the gender of a speaker is either male or female). Random-effect factors, by contrast, have levels sampled from a much larger population of possible levels. In our data, there are three random-effect factors that are likely to introduce systematic variation that is ignored in our generalized additive model.</p>
+        <p>A first random-effect factor is location. Our observations are made at 424 locations where speakers were interviewed. Since these 424 locations are a sample of a much larger set of communities that might have been sampled, location is a random-effect factor. Because we used the pronunciations of a single speaker at a given location, location is confounded with speaker. Hence, our random-effect factor location represents both location and speaker.</p>
+        <p>The data obtained from the 424 locations were coded phonetically by 30 different transcribers. Since these transcribers are themselves a sample of a larger set of possible transcribers, transcriber is a second random-effect factor in our model. By including transcriber in our model, we can account for biases in how individuals positioned the data that they listened to with respect to the standard language.</p>
+        <p>The third random-effect factor is word. Each of the 559 words was pronounced in most of the 424 locations. The words are also sampled from a much larger population of words, and hence constitute a random-effect factor as well.</p>
+        <p>In mixed-effect models, random-effect factors are viewed as sources of random noise that can be linked to specific observational units, in our case, locations, transcribers, and words. In the simplest case, the variability associated with a given random-effect factor is restricted to adjustments to the population intercept. For instance, some transcribers might be biased towards the standard language, others might be biased against it. These biases are assumed to follow a normal distribution with mean zero and unknown standard deviation to be estimated from the data. Once these biases have been estimated, it is possible to adjust the population intercept so that it becomes precise for each individual transcriber. We will refer to these adjusted intercepts as – in this case – by-transcriber random intercepts.</p>
+        <p>It is possible, however, that the variation associated with a random-effect factor affects not only the intercept, but also the slopes of other predictors. We shall see below that in our data the slope of population size varies with word, indicating that the strength of population size is not the same for all words. A mixed-effects model will estimate the by-word biases in the slope of population size, and by adding these estimated biases to the general population size slope, by-word random slopes are obtained that make the estimated effect of population size as precise as possible for each word.</p>
+        <p>Whether random intercepts and random slopes are justified is verified by means of likelihood ratio tests, which evaluate whether the increase in the number of parameters is justified given the increase in goodness of fit.</p>
+        <p>Statistical models combining mixed-effects regression and generalized additive modeling are currently under development. We have explored the <italic>gamm4</italic> package for <italic>R</italic> developed by Wood, but this package proved unable to cope with the rich random effects structure characterizing our data. We therefore used the generalized additive model simply to predict the pronunciation distance from longitude and latitude, without including any further predictors. We then use the fitted values of this simple model (see <xref ref-type="fig" rid="pone-0023613-g002">Figure 2</xref>) as a predictor representing geography in our final model. (The same approach was taken by Schmidt and colleagues, who also failed to use the <italic>gamm4</italic> package successfully <xref ref-type="bibr" rid="pone.0023613-Schmidt1">[34]</xref>.) In what follows, we refer to these fitted values as the GAM distance.</p>
+        <p>In our analyses, we considered several other predictors in addition to GAM distance and the three random-effect factors location, transcriber, and word. We included a contrast to distinguish nouns (and adverbs, but those only occur infrequently) from verbs and adjectives. Other lexical variables we included were word frequency, the length of the word, and the vowel-to-consonant ratio in the standard Dutch pronunciation of each word. The location-related variables we investigated were average age, average income, male-female ratio and the total number of inhabitants in every location. Finally, the speaker- and transcriber-related variables we extracted from the GTRP were gender, year of birth, year of recording and gender of the fieldworker (not necessarily being the same person as the transcriber). Unfortunately, for about 5% of the locations the information about gender, year of birth and year of recording was missing. As information about the employment of the speaker or speaker's partner was missing even more frequently (in about 17% of the locations), we did not include this variable in our analysis.</p>
+        <p>A recurrent problem in large-scale regression studies is collinearity of the predictors. For instance, in the Netherlands, communities with a larger population and higher average income are found in the west of the country. In order to facilitate interpretation, and to avoid enhancement or suppression due to correlations between the predictor variables <xref ref-type="bibr" rid="pone.0023613-Friedman1">[39]</xref>, we decorrelated such predictors from GAM distance by using as predictor the residuals of a linear model regressing that predictor on GAM distance. For average age as well as for population count, the resulting residuals correlated highly with the original values (<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0023613.e005" xlink:type="simple"/></inline-formula>0.97), indicating that the residuals can be interpreted in the same way as the original values. Because average income and average population age were also correlated (<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0023613.e006" xlink:type="simple"/></inline-formula>) we corrected the variable representing the average population age for the effect of average income.</p>
+        <p>In order to reduce the potentially harmful effect of outliers, various numerical predictors were log-transformed. We scaled all numerical predictors by subtracting the mean and dividing by the standard deviation in order to facilitate the interpretation of the fitted parameters of the statistical model. Our dependent variable, the pronunciation distance per word from standard Dutch (averaged by alignment length) was also log-transformed and centered. The value 0 indicates the mean distance from the standard pronunciation, while negative values indicate a distance closer and positive values indicate a distance farther away from standard Dutch.</p>
+        <p>The significance of fixed-effect predictors was evaluated by means of the usual <italic>t</italic>-test for the coefficients, in addition to model comparison likelihood ratio tests and AIC (Akaike Information Criterion; <xref ref-type="bibr" rid="pone.0023613-Akaike1">[40]</xref>). Since our data set contains a very large number of observations (a few hundred thousand items), the <italic>t</italic>-distribution approximates the standard normal distribution and factors will be significant (<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0023613.e007" xlink:type="simple"/></inline-formula>) when they have an absolute value of the <italic>t</italic>-statistic exceeding 2 <xref ref-type="bibr" rid="pone.0023613-Baayen5">[37]</xref>. A one-tailed test (only applicable with a clear directional hypothesis) is significant when the absolute value of the <italic>t</italic>-statistic exceeds <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0023613.e008" xlink:type="simple"/></inline-formula>.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <p>The total number of cases in our original data set was 228,476 (not all locations have pronunciations for every word). To reduce the effect of noise in the transcriptions, we eliminated all items in our data set with a pronunciation distance from standard Dutch larger than 2.5 standard deviations above the mean pronunciation distance for each word. Because locations in the province of Friesland are characterized by having a separate language (Frisian) with a relatively large distance from standard Dutch, we based the exclusion of items on the means and standard deviation for the Frisian and non-Frisian area separately. After deleting 2610 cases (1.14%), our final data set consisted of 225,866 cases.</p>
+      <p>We fitted a mixed-effects regression model to the data, step by step removing predictors that did not contribute significantly to the model fit. In the following we will discuss the specification of the resulting model including all significant predictors and verified random-effect factors. This model explains approximately 44.5% of the variance of our dependent variable (i.e. the linguistic distance compared to standard Dutch).</p>
+      <p>The coefficients and associated statistics of the fixed-effect factors and covariates are shown in <xref ref-type="table" rid="pone-0023613-t001">Table 1</xref> (note that most values in the table are close to 0 as we are predicting average PMI distances, which are relatively small). The random-effect structure is summarized in <xref ref-type="table" rid="pone-0023613-t002">Table 2</xref>. The residuals of our model followed a normal distribution, and did not reveal any non-uniformity with respect to location. <xref ref-type="table" rid="pone-0023613-t003">Table 3</xref> summarizes the relation between the independent variables and the distance from standard Dutch. A more detailed interpretation is provided in the sections below on demographic and lexical predictors.</p>
+      <table-wrap id="pone-0023613-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0023613.t001</object-id><label>Table 1</label><caption>
+          <title>Fixed-effect coefficients of a minimally adequate model fitted to the pronunciation distances from standard Dutch.</title>
+        </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0023613-t001-1" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0023613.t001" xlink:type="simple"/><table>
+          <colgroup span="1">
+            <col align="left" span="1"/>
+            <col align="center" span="1"/>
+            <col align="center" span="1"/>
+            <col align="center" span="1"/>
+          </colgroup>
+          <thead>
+            <tr>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1">Estimate</td>
+              <td align="left" colspan="1" rowspan="1">Std. Error</td>
+              <td align="left" colspan="1" rowspan="1"><italic>t</italic>-value</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Intercept</td>
+              <td align="left" colspan="1" rowspan="1">−0.0153</td>
+              <td align="left" colspan="1" rowspan="1">0.0105</td>
+              <td align="left" colspan="1" rowspan="1">−1.4561</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">GAM distance (geography)</td>
+              <td align="left" colspan="1" rowspan="1">0.9684</td>
+              <td align="left" colspan="1" rowspan="1">0.0274</td>
+              <td align="left" colspan="1" rowspan="1">35.3239</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Population size (log)</td>
+              <td align="left" colspan="1" rowspan="1">−0.0069</td>
+              <td align="left" colspan="1" rowspan="1">0.0026</td>
+              <td align="left" colspan="1" rowspan="1">−2.6386</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Population average age</td>
+              <td align="left" colspan="1" rowspan="1">0.0045</td>
+              <td align="left" colspan="1" rowspan="1">0.0025</td>
+              <td align="left" colspan="1" rowspan="1">1.8049</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Population average income (log)</td>
+              <td align="left" colspan="1" rowspan="1">−0.0005</td>
+              <td align="left" colspan="1" rowspan="1">0.0026</td>
+              <td align="left" colspan="1" rowspan="1">−0.1988</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Word frequency (log)</td>
+              <td align="left" colspan="1" rowspan="1">0.0198</td>
+              <td align="left" colspan="1" rowspan="1">0.0060</td>
+              <td align="left" colspan="1" rowspan="1">3.2838</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Noun instead of Verb/Adjective</td>
+              <td align="left" colspan="1" rowspan="1">0.0409</td>
+              <td align="left" colspan="1" rowspan="1">0.0122</td>
+              <td align="left" colspan="1" rowspan="1">3.3437</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Vowel-consonant ratio (log)</td>
+              <td align="left" colspan="1" rowspan="1">0.0625</td>
+              <td align="left" colspan="1" rowspan="1">0.0059</td>
+              <td align="left" colspan="1" rowspan="1">10.5415</td>
+            </tr>
+          </tbody>
+        </table></alternatives></table-wrap>
+      <table-wrap id="pone-0023613-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0023613.t002</object-id><label>Table 2</label><caption>
+          <title>Random-effect parameters of the minimally adequate model fitted to the pronunciation distances from standard Dutch.</title>
+        </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0023613-t002-2" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0023613.t002" xlink:type="simple"/><table>
+          <colgroup span="1">
+            <col align="left" span="1"/>
+            <col align="center" span="1"/>
+            <col align="center" span="1"/>
+            <col align="center" span="1"/>
+            <col align="center" span="1"/>
+          </colgroup>
+          <thead>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Factors</td>
+              <td align="left" colspan="1" rowspan="1">Rnd. effects</td>
+              <td align="left" colspan="1" rowspan="1">Std. Dev.</td>
+              <td align="left" colspan="1" rowspan="1">Cor.</td>
+              <td align="left" colspan="1" rowspan="1"/>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Word</td>
+              <td align="left" colspan="1" rowspan="1">Intercept</td>
+              <td align="left" colspan="1" rowspan="1">0.1394</td>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1">Pop. size (log)</td>
+              <td align="left" colspan="1" rowspan="1">0.0186</td>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1">Pop. avg. age</td>
+              <td align="left" colspan="1" rowspan="1">0.0086</td>
+              <td align="left" colspan="1" rowspan="1">−0.856</td>
+              <td align="left" colspan="1" rowspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1">Pop. avg. income (log)</td>
+              <td align="left" colspan="1" rowspan="1">0.0161</td>
+              <td align="left" colspan="1" rowspan="1">0.867</td>
+              <td align="left" colspan="1" rowspan="1">−0.749</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Location</td>
+              <td align="left" colspan="1" rowspan="1">Intercept</td>
+              <td align="left" colspan="1" rowspan="1">0.0613</td>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1">Word freq. (log)</td>
+              <td align="left" colspan="1" rowspan="1">0.0161</td>
+              <td align="left" colspan="1" rowspan="1">−0.084</td>
+              <td align="left" colspan="1" rowspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1">Noun instead of Verb/Adj.</td>
+              <td align="left" colspan="1" rowspan="1">0.0528</td>
+              <td align="left" colspan="1" rowspan="1">−0.595</td>
+              <td align="left" colspan="1" rowspan="1">0.550</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Transcriber</td>
+              <td align="left" colspan="1" rowspan="1">Intercept</td>
+              <td align="left" colspan="1" rowspan="1">0.026</td>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Residual</td>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1">0.2233</td>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1"/>
+            </tr>
+          </tbody>
+        </table></alternatives><table-wrap-foot>
+          <fn id="nt101">
+            <label/>
+            <p>The column Cor. contains the correlations between the random slopes and/or intercepts. The first number in the first correlation column for the by-word random slopes represents the correlation between the by-word random slope for population size and the by-word random slope for average age, while the second number represents the correlation between the by-word random slope for population size and the by-word random slope for average income. The first number in the second column represents the correlation between the by-word random slopes of average income and average age. Similarly, the first correlation column for the by-location random slopes contains the correlations between the by-location random intercept and the random slope for word frequency and the noun-verb contrast, respectively. The second column contains the correlation between the by-location random slopes for word frequency and the noun-verb contrast. See the text for interpretation.</p>
+          </fn>
+        </table-wrap-foot></table-wrap>
+      <table-wrap id="pone-0023613-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0023613.t003</object-id><label>Table 3</label><caption>
+          <title>Interpretation of significant fixed-effect predictors.</title>
+        </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0023613-t003-3" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0023613.t003" xlink:type="simple"/><table>
+          <colgroup span="1">
+            <col align="left" span="1"/>
+            <col align="center" span="1"/>
+          </colgroup>
+          <thead>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Predictor</td>
+              <td align="left" colspan="1" rowspan="1">Interpretation</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">GAM distance (geography)</td>
+              <td align="left" colspan="1" rowspan="1">Peripheral areas in the north, east and south have a higher distance from standard Dutch than the central western part of the Netherlands (see <xref ref-type="fig" rid="pone-0023613-g002">Figure 2</xref>).</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Population size (log)</td>
+              <td align="left" colspan="1" rowspan="1">Locations with a larger population have a pronunciation closer to standard Dutch, but the effect varies per word (see <xref ref-type="fig" rid="pone-0023613-g003">Figure 3</xref>).</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Population average age</td>
+              <td align="left" colspan="1" rowspan="1">Locations with a younger population have a pronunciation closer to standard Dutch, but the effect varies per word (see <xref ref-type="fig" rid="pone-0023613-g003">Figure 3</xref>).</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Population average income (log)</td>
+              <td align="left" colspan="1" rowspan="1">There is no significant general effect of average income in a population, but the effect varies per word (see <xref ref-type="fig" rid="pone-0023613-g003">Figure 3</xref>).</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Word frequency (log)</td>
+              <td align="left" colspan="1" rowspan="1">More frequent words have a higher distance from standard Dutch, but the effect varies per location (see <xref ref-type="fig" rid="pone-0023613-g004">Figure 4</xref>).</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Noun instead of Verb/Adjective</td>
+              <td align="left" colspan="1" rowspan="1">Nouns have a higher distance from standard Dutch than verbs and adjectives, but the effect varies per location (see <xref ref-type="fig" rid="pone-0023613-g005">Figure 5</xref>).</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Vowel-consonant ratio (log)</td>
+              <td align="left" colspan="1" rowspan="1">Words with relatively more vowels have a higher distance from standard Dutch.</td>
+            </tr>
+          </tbody>
+        </table></alternatives></table-wrap>
+      <p>The inclusion of the fixed-effect factors (except average population income) and random-effect factors shown in <xref ref-type="table" rid="pone-0023613-t001">Table 1</xref> and <xref ref-type="table" rid="pone-0023613-t002">2</xref> was supported by likelihood ratio tests indicating that the additional parameters significantly improved the goodness of fit of the model. <xref ref-type="table" rid="pone-0023613-t004">Tables 4</xref> and <xref ref-type="table" rid="pone-0023613-t005">5</xref> show the increase of the goodness of fit for every additional factor measured by the increase of the log-likelihood and the decrease of the Akaike Information Criterion <xref ref-type="bibr" rid="pone.0023613-Akaike1">[40]</xref>. To assess the influence of each additional fixed-effect factor, the random effects were held constant, including only the random intercepts for word, location and transcriber. The baseline model, to which the inclusion of the first fixed-effect factor (geography) was compared, only consisted of the random intercepts for word, location and transcriber. Subsequently, the next model (including both geography and the vowel-to-consonant ratio per word), was compared to the model including geography (and the random intercepts) only. This is shown in <xref ref-type="table" rid="pone-0023613-t004">Table 4</xref> (sorted by decreasing importance of the individual fixed-effect factors). Log-likelihood ratio tests were carried out with maximum likelihood estimation, as recommended in <xref ref-type="bibr" rid="pone.0023613-Pinheiro1">[36]</xref>.</p>
+      <table-wrap id="pone-0023613-t004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0023613.t004</object-id><label>Table 4</label><caption>
+          <title>Goodness of fit of the fixed-effect factors of the model.</title>
+        </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0023613-t004-4" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0023613.t004" xlink:type="simple"/><table>
+          <colgroup span="1">
+            <col align="left" span="1"/>
+            <col align="center" span="1"/>
+            <col align="center" span="1"/>
+            <col align="center" span="1"/>
+          </colgroup>
+          <thead>
+            <tr>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1">Log-lik. increase</td>
+              <td align="left" colspan="1" rowspan="1">AIC decrease</td>
+              <td align="left" colspan="1" rowspan="1">Likelihood ratio test</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Random intercepts</td>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">+GAM distance (geography)</td>
+              <td align="left" colspan="1" rowspan="1">270.6</td>
+              <td align="left" colspan="1" rowspan="1">539.2</td>
+              <td align="left" colspan="1" rowspan="1">p<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0023613.e009" xlink:type="simple"/></inline-formula>0.0001</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">+Vowel-consonant ratio (log)</td>
+              <td align="left" colspan="1" rowspan="1">50.9</td>
+              <td align="left" colspan="1" rowspan="1">99.8</td>
+              <td align="left" colspan="1" rowspan="1">p<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0023613.e010" xlink:type="simple"/></inline-formula>0.0001</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">+Noun instead of Verb/Adjective</td>
+              <td align="left" colspan="1" rowspan="1">5.6</td>
+              <td align="left" colspan="1" rowspan="1">9.2</td>
+              <td align="left" colspan="1" rowspan="1">p<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0023613.e011" xlink:type="simple"/></inline-formula>0.0008</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">+Population size</td>
+              <td align="left" colspan="1" rowspan="1">3.8</td>
+              <td align="left" colspan="1" rowspan="1">5.7</td>
+              <td align="left" colspan="1" rowspan="1">p<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0023613.e012" xlink:type="simple"/></inline-formula>0.0056</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">+Word frequency (log)</td>
+              <td align="left" colspan="1" rowspan="1">3.8</td>
+              <td align="left" colspan="1" rowspan="1">5.7</td>
+              <td align="left" colspan="1" rowspan="1">p<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0023613.e013" xlink:type="simple"/></inline-formula>0.0056</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">+Population average age</td>
+              <td align="left" colspan="1" rowspan="1">2.5</td>
+              <td align="left" colspan="1" rowspan="1">3.1</td>
+              <td align="left" colspan="1" rowspan="1">p<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0023613.e014" xlink:type="simple"/></inline-formula>0.0244</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">+Population average income (log)</td>
+              <td align="left" colspan="1" rowspan="1">0.0</td>
+              <td align="left" colspan="1" rowspan="1">−2.0</td>
+              <td align="left" colspan="1" rowspan="1">p<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0023613.e015" xlink:type="simple"/></inline-formula>0.9554</td>
+            </tr>
+          </tbody>
+        </table></alternatives><table-wrap-foot>
+          <fn id="nt102">
+            <label/>
+            <p>Each row specifies the increase in goodness of fit obtained by adding the current predictor to the model including all preceding predictors (as well as the random intercepts for word, location and transcriber). Note that the final row indicates that population average income does not improve the model.</p>
+          </fn>
+        </table-wrap-foot></table-wrap>
+      <table-wrap id="pone-0023613-t005" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0023613.t005</object-id><label>Table 5</label><caption>
+          <title>Goodness of fit of the random-effect factors of the model.</title>
+        </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0023613-t005-5" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0023613.t005" xlink:type="simple"/><table>
+          <colgroup span="1">
+            <col align="left" span="1"/>
+            <col align="center" span="1"/>
+            <col align="center" span="1"/>
+            <col align="center" span="1"/>
+          </colgroup>
+          <thead>
+            <tr>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1">Log-lik. increase</td>
+              <td align="left" colspan="1" rowspan="1">AIC decrease</td>
+              <td align="left" colspan="1" rowspan="1">Likelihood ratio test</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Fixed-effect factors</td>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">+Random intercept word</td>
+              <td align="left" colspan="1" rowspan="1">32797.8</td>
+              <td align="left" colspan="1" rowspan="1">65593.6</td>
+              <td align="left" colspan="1" rowspan="1">p<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0023613.e016" xlink:type="simple"/></inline-formula>0.0001</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">+Random intercept location</td>
+              <td align="left" colspan="1" rowspan="1">5394.2</td>
+              <td align="left" colspan="1" rowspan="1">10786.4</td>
+              <td align="left" colspan="1" rowspan="1">p<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0023613.e017" xlink:type="simple"/></inline-formula>0.0001</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">+Random intercept transcriber</td>
+              <td align="left" colspan="1" rowspan="1">14.0</td>
+              <td align="left" colspan="1" rowspan="1">26.1</td>
+              <td align="left" colspan="1" rowspan="1">p<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0023613.e018" xlink:type="simple"/></inline-formula>0.0001</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">+Population size (word)</td>
+              <td align="left" colspan="1" rowspan="1">490.3</td>
+              <td align="left" colspan="1" rowspan="1">978.6</td>
+              <td align="left" colspan="1" rowspan="1">p<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0023613.e019" xlink:type="simple"/></inline-formula>0.0001</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">+Population average age (word)</td>
+              <td align="left" colspan="1" rowspan="1">96.0</td>
+              <td align="left" colspan="1" rowspan="1">188.0</td>
+              <td align="left" colspan="1" rowspan="1">p<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0023613.e020" xlink:type="simple"/></inline-formula>0.0001</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">+Population average income (word)</td>
+              <td align="left" colspan="1" rowspan="1">443.9</td>
+              <td align="left" colspan="1" rowspan="1">881.8</td>
+              <td align="left" colspan="1" rowspan="1">p<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0023613.e021" xlink:type="simple"/></inline-formula>0.0001</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">+Word frequency (location)</td>
+              <td align="left" colspan="1" rowspan="1">220.1</td>
+              <td align="left" colspan="1" rowspan="1">436.3</td>
+              <td align="left" colspan="1" rowspan="1">p<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0023613.e022" xlink:type="simple"/></inline-formula>0.0001</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">+Noun instead of Verb/Adj. (location)</td>
+              <td align="left" colspan="1" rowspan="1">1064.4</td>
+              <td align="left" colspan="1" rowspan="1">2122.8</td>
+              <td align="left" colspan="1" rowspan="1">p<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0023613.e023" xlink:type="simple"/></inline-formula>0.0001</td>
+            </tr>
+          </tbody>
+        </table></alternatives><table-wrap-foot>
+          <fn id="nt103">
+            <label/>
+            <p>Each row specifies the increase in goodness of fit of the model resulting from the addition of the specified random slope or intercept to the preceding model. All models include the fixed effect factors listed in <xref ref-type="table" rid="pone-0023613-t001">Table 1</xref>.</p>
+          </fn>
+        </table-wrap-foot></table-wrap>
+      <p>Similarly, the importance of additional random-effect factors was assessed by restricting the fixed-effect predictors to those listed in <xref ref-type="table" rid="pone-0023613-t001">Table 1</xref>. The baseline model in <xref ref-type="table" rid="pone-0023613-t005">Table 5</xref>, to which the inclusion of the random intercept for word was compared, only consisted of the fixed-effect factors listed in <xref ref-type="table" rid="pone-0023613-t001">Table 1</xref>. The next model (also including location as a random intercept) was compared to the model with only word as a random intercept. In later steps random slopes were added. For instance, the sixth model (including random slopes for population size and average population age, and their correlation) was compared to the fifth model which only included population size as a random slope. Log-likelihood ratio tests evaluating random-effects parameters were carried out with relativized maximum likelihood estimation, again following <xref ref-type="bibr" rid="pone.0023613-Pinheiro1">[36]</xref>.</p>
+      <p>Due to the large size of our data set, it proved to be computationally infeasible to include all variables in our random-effects structure (e.g., the vowel-to-consonant ratio was not included). As further gains in goodness of fit are to be expected when more parameters are invested in the random-effects structure, our model does not show the complete (best) random-effects structure. However, we have checked that the fixed-effect factors remained significant when additional uncorrelated by-location or by-word random slopes were included in the model specification. In other words, we have verified that the <italic>t</italic>-values of the fixed-effect factors in <xref ref-type="table" rid="pone-0023613-t001">Table 1</xref> are not anti-conservative and therefore our results remain valid.</p>
+      <sec id="s3a">
+        <title>Demographic predictors</title>
+        <p>The geographical predictor GAM distance (see <xref ref-type="fig" rid="pone-0023613-g002">Figure 2</xref>) emerged as the predictor with the smallest uncertainty concerning its slope, as indicated by the huge <italic>t</italic>-value. As GAM distance represents the fitted values of a generalized additive model fitted to pronunciation distance from standard Dutch (adjusted <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0023613.e024" xlink:type="simple"/></inline-formula>0.12), the strong statistical support for this predictor is unsurprising. Even though GAM distance accounts for a substantial amount of variance, location is also supported as a significant random-effect factor, indicating that there are differences in pronunciation distances from the standard language that cannot be reduced to geographical location. The random-effect factor location, in other words, represents systematic variability that can be traced to the different locations (or speakers), but that resists explanation through our demographic fixed-effect predictors. To what extent, then, do these demographic predictors help explain pronunciation distance from the standard language over and above longitude, latitude, and the location (speaker) itself?</p>
+        <p><xref ref-type="table" rid="pone-0023613-t001">Table 1</xref> lists two demographic predictors that reached significance. First, locations with many inhabitants (a large population size) tend to have a lower distance from the standard language than locations with few inhabitants. A possible explanation for this finding is that people tend to have weaker social ties in urban populations, which causes dialect leveling <xref ref-type="bibr" rid="pone.0023613-Milroy1">[41]</xref>. Since the standard Dutch language has an important position in the Netherlands <xref ref-type="bibr" rid="pone.0023613-vanderWal1">[18]</xref>, <xref ref-type="bibr" rid="pone.0023613-Smakman1">[42]</xref>, and has been dominant for many centuries <xref ref-type="bibr" rid="pone.0023613-Kloeke1">[17]</xref>, conversations between speakers of different dialects will normally be held in standard Dutch and consequently leveling will proceed in the direction of standard Dutch. The greater similarity of varieties in settlements of larger size is also consistent with the predictions of the gravity hypothesis which states that linguistic innovation proceeds first from large settlements to other large nearby settlements, after which smaller settlements adopt the innovations from nearby larger settlements <xref ref-type="bibr" rid="pone.0023613-Trudgill2">[43]</xref>.</p>
+        <p>The second (one-tailed) significant demographic covariate is the average age of the inhabitants of a given location. Since younger people tend to speak less in their dialect and more in standard Dutch than the older population <xref ref-type="bibr" rid="pone.0023613-Heeringa2">[12]</xref>, <xref ref-type="bibr" rid="pone.0023613-vanderWal1">[18, pp. 355–356]</xref>, the positive slope of average age is as expected.</p>
+        <p>Note that <xref ref-type="table" rid="pone-0023613-t001">Table 1</xref> also contains average income as a demographic covariate. This variable is not significant in the fixed-effect part of the model (as the absolute <italic>t</italic>-value is lower than 1.65), but is included as it is an important predictor in the random-effects structure of the model.</p>
+        <p>Interestingly, all three demographic predictors required by-word random slopes. <xref ref-type="fig" rid="pone-0023613-g003">Figure 3</xref> shows the by-word random slopes for all combinations of population size (i.e. the number of inhabitants), average age and average income. At the extremes in every graph, the words themselves have been added to the scatter plot (<italic>gehad</italic>, ‘had’; <italic>zand</italic>, ‘sand’; <italic>hoop</italic>, ‘hope’; <italic>vrij</italic>, ‘free’; <italic>mazelen</italic>, ‘measles’; <italic>bier</italic>, ‘beer’). The grey quadrant in every graph marks where most words are located. Words in this quadrant have slopes consistent with the general model (the model estimates shown in <xref ref-type="table" rid="pone-0023613-t001">Table 1</xref> are indicated by the dashed lines).</p>
+        <fig id="pone-0023613-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0023613.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>By-word random slopes in a mixed-effects model fitted to pronunciation distances from standard Dutch.</title>
+            <p>All combinations of by-word random slopes (i.e. the word-specific coefficients) for population size, age and income are shown. The grey quadrant in every graph marks where most words (dots) are located. The dashed lines indicate the model estimates of every predictor.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0023613.g003" xlink:type="simple"/>
+        </fig>
+        <p>When looking at the top-left graph, we see that most words (represented by dots) are located in the lower left quadrant, consistent with the negative slope of population size (−0.0069) and the (non-significant) negative slope of average income (−0.0005; see <xref ref-type="table" rid="pone-0023613-t001">Table 1</xref>). Words in this quadrant have negative slopes for population size, indicating that these words will tend to be more similar to the standard in larger communities (the more to the left the dot is located, the more similar it will be to the standard language). At the same time, the same words also have negative slopes for average income, indicating that these words will tend to be more similar to the standard in richer communities (the lower the dot is located, the more similar it will be to the standard language). This pattern reverses for the words in the opposite quadrant. A word such as <italic>vrij</italic> (free) has a large positive coefficient for population size, indicating that in larger communities this word will differ more from the standard. The word <italic>vrij</italic> also has a positive coefficient for average income. Therefore, speakers in poorer communities will pronounce the word closer to the standard, while speakers in richer communities will pronounce it more differently. The correlation parameter of 0.867 in <xref ref-type="table" rid="pone-0023613-t002">Table 2</xref> quantifies the strong connection between the by-word random slopes for average income and population size.</p>
+        <p>The top-right graph illustrates that the coefficients of average age and average income are also closely linked per word (indicated by the high correlation parameter of −0.749 in <xref ref-type="table" rid="pone-0023613-t002">Table 2</xref>). Words in the grey quadrant behave in accordance with the general model (e.g., the word <italic>gehad</italic> will be more similar to the standard language in a richer community as well as in a younger community), while words in the opposite quadrant behave in a reversed fashion (e.g., the word <italic>vrij</italic> will differ more from the standard in a richer community as well as in a younger community).</p>
+        <p>Finally, the bottom-left graph shows that the coefficients of population size and average age are also closely connected per word (indicated by the high correlation parameter of −0.856 in <xref ref-type="table" rid="pone-0023613-t002">Table 2</xref>). Words in the grey quadrant behave in accordance with the general model (e.g., the word <italic>gehad</italic> will be more similar to the standard language in a larger community as well as in a younger community), while words in the opposite quadrant behave in a reversed fashion (e.g., the word <italic>bier</italic> will differ more from the standard in a larger community as well as in a younger community).</p>
+        <p>Two important points emerge from this analysis. First, the effects of the three demographic variables, population size, average age and average income, differ dramatically depending on what word is being considered. Second, words tend to be influenced by all three demographic variables similarly. If a word is influenced more strongly by one variable than predicted by the general model, it will also be influenced more strongly by the other two variables (e.g., the word <italic>gehad</italic>). Alternatively, if a word is influenced in the reverse direction by one variable compared to the general model, it will likely also be influenced in the reverse direction by the other two variables (e.g., the word <italic>vrij</italic>).</p>
+        <p>Besides these significant variables, we investigated several other demographic predictors that did not reach significance. One variable we considered was the male-female ratio at a given location. While the gender of the speaker is likely to play an important role, we are uncertain if the ratio of men versus women in a location should play a significant role. With other predictors in the model, it did not prove significant. We also expected a negative influence of average income on the pronunciation distance from the standard, since standard Dutch has a relatively high prestige <xref ref-type="bibr" rid="pone.0023613-vanderWal1">[18, Ch. 12]</xref>. However, as shown in <xref ref-type="table" rid="pone-0023613-t001">Table 1</xref>, this effect did not reach significance, possibly due to the large collinearity with geography; the highest average income in the Netherlands is earned in the western part of the Netherlands <xref ref-type="bibr" rid="pone.0023613-CBS1">[23]</xref>, where dialects are also most similar to standard Dutch <xref ref-type="bibr" rid="pone.0023613-Heeringa3">[44, p. 274]</xref>. Average income was highly significant when geography was excluded from the model.</p>
+        <p>No speaker-related variables were included in the final model. We were surprised that the gender of the speaker did not reach significance, as the importance of this factor has been reported in many sociolinguistic studies <xref ref-type="bibr" rid="pone.0023613-Cheshire1">[45]</xref>. However, when women have a limited social circle (e.g., the wife of a farmer living on the outskirts of a small rural community), they actually tend to speak more traditionally than men <xref ref-type="bibr" rid="pone.0023613-vanderWal1">[18, p. 365]</xref>. Since such women are certainly present in our data set, this may explain the absence of a gender difference in our model. We also expected speaker age to be a significant predictor, since dialects are leveling in the Netherlands <xref ref-type="bibr" rid="pone.0023613-Heeringa2">[12]</xref>, <xref ref-type="bibr" rid="pone.0023613-vanderWal1">[18, pp. 355–356]</xref>. However, as the speakers were relatively close in age (e.g., 74% of the speakers were born between 1910 and 1930) and we only used pronunciations of a single speaker per location, this effect might have been too difficult to detect in our data set.</p>
+        <p>The two fieldworker-related factors (gender of the fieldworker and year of recording) were not very informative, because they suffered from substantial geographic collinearity. With respect to the year of recording, we found that locations in Friesland were visited quite late in the project, while their distances from standard Dutch were largest. Regarding the gender of the fieldworkers, female fieldworkers mainly visited the central locations in the Netherlands, while the male fieldworkers visited the more peripheral areas (where the pronunciation distance from standard Dutch is larger).</p>
+      </sec>
+      <sec id="s3b">
+        <title>Lexical predictors</title>
+        <p><xref ref-type="table" rid="pone-0023613-t001">Table 1</xref> lists three lexical predictors that reached significance: the vowel-to-consonant ratio, word frequency and the contrast between nouns and verbs. Unsurprisingly, the length of the word was not a significant predictor, as we normalized pronunciation distance by the alignment length.</p>
+        <p>The first significant lexical factor was the vowel-to-consonant ratio. The general effect of the vowel-to-consonant ratio was linear, with a greater ratio predicting a greater distance from the standard. As vowels are much more variable than consonants (e.g., <xref ref-type="bibr" rid="pone.0023613-Keating1">[46]</xref>), this is not a very surprising finding.</p>
+        <p>The second, more interesting, significant lexical factor was word frequency. More frequent words tend to have a higher distance from the standard. We remarked earlier that Dutch dialects tend to converge to standard Dutch. A larger distance from the standard likely indicates an increased resistance to standardization. Indeed, given the recent study of Pagel and colleagues, where they show that more frequent words are more resistant to change <xref ref-type="bibr" rid="pone.0023613-Pagel1">[47]</xref>, this seems quite sensible.</p>
+        <p>However, the effect of word frequency is not uniform across locations, as indicated by the presence of by-location random slopes for word frequency in our model (see <xref ref-type="table" rid="pone-0023613-t002">Table 2</xref>). The parameters for these random slopes (the standard deviation for the random slopes and the correlation parameter for the random slopes and intercepts) jointly increase the log-likelihood of the model by no less than 220 units, compared to 3.8 log-likelihood units for the fixed-effect (population) slope of frequency. Interestingly, although the by-location random slopes for frequency properly follow a normal distribution, they are not uniformly distributed across the different regions of the Netherlands, as illustrated in the upper right panel of <xref ref-type="fig" rid="pone-0023613-g004">Figure 4</xref>. In this panel, contour lines link locations for which the slope of the frequency effect is the same. The two dark grey areas (central Holland and Groningen and Drenthe) are characterized by slopes close to zero, while the white area in Friesland indicates a large positive slope (i.e. the Frisian pronunciations become more distinct from standard Dutch for higher frequency words).</p>
+        <fig id="pone-0023613-g004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0023613.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>Word frequency and distance from the standard language.</title>
+            <p>Upper left: distance predicted only from longitude and latitude. Upper right: the geographical distribution of random slopes for word frequency. Lower four panels: the combined effect of geography and word frequency on pronunciation distance for the minimum frequency (Q0), the first (Q1) and third quartile (Q3) and the maximum frequency (Q4). Darker shades of gray denote smaller values, lighter shades indicate larger values.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0023613.g004" xlink:type="simple"/>
+        </fig>
+        <p>To clarify how geography (GAM distance) and frequency jointly predict distance from the standard language, we first calculated the fitted GAM distance for each location. We then estimated the predicted distance from the standard language using GAM distance and word frequency as predictors, weighted by the weights estimated by our mixed-effects model. Because the fitted surfaces vary with frequency, we selected the minimum frequency (Q0), first (Q1) and third (Q3) quartiles as well as the maximum frequency (Q4) for visualization (see the lower panels in <xref ref-type="fig" rid="pone-0023613-g004">Figure 4</xref>). Panel Q0 shows the surface for the words with the lowest frequency in our data. As frequency increased, the surface gradually morphs into the surface shown in the lower right panel (Q4). The first thing to note is that as frequency increases, the shades of grey become lighter, indicating greater differences from the standard. This is the main effect of frequency: higher-frequency words are more likely to resist assimilation to the standard language. The second thing to note is that the distances between the contour lines decrease with increasing frequency, indicating that the differences between regions with respect to the frequency effect become increasingly more pronounced. For instance, the Low Saxon dialect of Twente on the central east border with Germany, and the Frisian varieties in the north profile themselves more clearly as different from the Hollandic standard for the higher-frequency words (Q4) than for the lower-frequency words (Q0).</p>
+        <p>For the lowest-frequency words (panel Q0), the northeast separates itself from the Hollandic sphere of influence, with distance slowly increasing towards the very northeast of the country. This area includes Friesland and the Low Saxon dialects. As word frequency increases, the distance from standard Dutch increases, and most clearly so in Friesland. For Friesland, this solid resistance to the Hollandic norm, especially for high-frequency words, can be attributed to Frisian being a different language that is mutually unintelligible with standard Dutch.</p>
+        <p>Twente also stands out as highly resistant to the influence of the standard language. In the 16th and 17th centuries, this region was not under firm control of the Dutch Republic, and Roman Catholicism remained stronger here than in the regions towards its west and north. The resistance to protestantism in this region may have contributed to its resistance to the Hollandic speech norms (see also <xref ref-type="bibr" rid="pone.0023613-vanReenen1">[48]</xref>).</p>
+        <p>In the southwest (Zeeland) and the southeast (Limburg), we find Low Franconian dialects that show the same pattern across all frequency quartiles, again with increased distance from Holland predicting greater pronunciation distance. The province of Limburg has never been under firm control of Holland for long, and has a checkered history of being ruled by Spain, France, Prussia, and Austria before becoming part of the kingdom of the Netherlands. Outside of the Hollandic sphere of influence, it has remained closer to dialects found in Germany and Belgium. The province of Zeeland, in contrast, has retained many features of an earlier linguistic expansion from Flanders – in the middle ages, Flanders had strong political influence in Zeeland. Zeeland was not affected by an expansion from Brabant (which is found in the central south of the Netherlands as well as in Belgium), but that expansion strongly influenced the dialects of Holland. This Brabantic expansion, which took place in the late middle ages up to the seventeenth century, clarifies why, across all frequency quartiles, the Brabantic dialects are most similar to the Hollandic dialects.</p>
+        <p>Our regression model appears to conflict with the view of Kloeke (which was also adopted by Bloomfield) that high-frequency words should be more likely to undergo change than low-frequency words <xref ref-type="bibr" rid="pone.0023613-Kloeke1">[17]</xref>, <xref ref-type="bibr" rid="pone.0023613-Bloomfield1">[49]</xref>. This position was already argued for by Schuchardt, who discussed data suggesting that high-frequency words are more profoundly affected by sound change than low-frequency words <xref ref-type="bibr" rid="pone.0023613-Schuchardt1">[50]</xref>. Bybee called attention to language-internal factors of change that are frequency-sensitive <xref ref-type="bibr" rid="pone.0023613-Bybee1">[51]</xref>. She argued that changes affecting high-frequency words first would be a consequence of the overlap and reduction of articulatory gestures that comes with fluency. In contrast, low-frequency words would be more likely to undergo analogical leveling or regularization.</p>
+        <p>Our method does not allow us to distinguish between processes of articulatory simplification and processes of leveling or regularization. Moreover, our method evaluates the joint effect of many different sound changes for the geographical landscape. Our results indicate that, in general, high-frequency words are most different from the standard. However, high-frequency words can differ from the standard for very different reasons. For instance, they may represent older forms that have resisted changes that affected the standard. Alternatively, they may have undergone region-specific articulatory simplification. Furthermore, since higher-frequency forms are better entrenched in memory <xref ref-type="bibr" rid="pone.0023613-Hasher1">[52]</xref>, <xref ref-type="bibr" rid="pone.0023613-Baayen7">[53]</xref>, they may be less susceptible to change. As a consequence, changes towards the standard in high-frequency words may be more salient, and more likely to negatively affect a speaker's in-group status as a member of a dialect community. Whatever the precise causes underlying their resistance to accommodation to the standard may be, our data do show that the net outcome of the different forces involved in sound change is one in which it is the high-frequency words that are most different from the standard language.</p>
+        <p>The third lexical factor that reached significance was the contrast between nouns as opposed to verbs and adjectives. Nouns have a greater distance from the standard language than verbs and adjectives. (Further analyses revealed that the effects of verbs and adjectives did not differ significantly.) This finding harmonizes well with the results of Pagel and colleagues, where they also observed that nouns were most resistant to change, followed by verbs and adjectives <xref ref-type="bibr" rid="pone.0023613-Pagel1">[47]</xref>.</p>
+        <p>Similar to word frequency, we also observe a non-uniform effect of the contrast between nouns as opposed to verbs and adjectives across locations, indicated by the presence of the by-location random slopes for the word category contrast in our model (see <xref ref-type="table" rid="pone-0023613-t002">Table 2</xref>). The parameters for these random slopes (the standard deviation for the random slopes and the correlation parameter for the random slopes and intercepts) jointly increase the log-likelihood of the model by 1064 units, compared to 5.6 log-likelihood units for the fixed-effect (population) slope of this contrast. These by-location random slopes are not uniformly distributed across the geographical area, as shown by the upper right panel of <xref ref-type="fig" rid="pone-0023613-g005">Figure 5</xref>. This panel clearly shows that the word category in the north-west of the Netherlands does not influence the distance from the standard language (i.e. the slope is 0), while in Friesland nouns have a much higher distance from the standard than verbs or adjectives.</p>
+        <fig id="pone-0023613-g005" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0023613.g005</object-id>
+          <label>Figure 5</label>
+          <caption>
+            <title>Contrast between nouns as opposed to verbs/adjectives and distance from the standard language.</title>
+            <p>Upper left: distance predicted only from longitude and latitude. Upper right: the geographical distribution of random slopes for the contrast between nouns as opposed to verbs and adjectives. Bottom panels: the combined effect of geography and the word category on pronunciation distance for verbs/adjectives (panel V) and nouns (panel N). Darker shades of gray denote smaller values, lighter shades indicate larger values.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0023613.g005" xlink:type="simple"/>
+        </fig>
+        <p>To clarify how geography (GAM distance) and the word category contrast jointly predict distance from the standard language, we first calculated the fitted GAM distance for each location. We then estimated the predicted distance from the standard language using GAM distance, a fixed (median) word frequency, and the word category contrast as predictors, weighted by the weights estimated by our mixed-effects model. Because the fitted surfaces are different for nouns as opposed to verbs and adjectives, we visualized both surfaces in the bottom panels in <xref ref-type="fig" rid="pone-0023613-g005">Figure 5</xref>. The first thing to note is that in panel N the shades of grey are lighter than in panel V, indicating greater differences from the standard. This is the main effect of the word category contrast: nouns are more likely to resist assimilation to the standard language than verbs or adjectives. The second thing to note is that the distances between the contour lines are smaller for nouns, indicating that the differences between regions are more pronounced for nouns than for verbs.</p>
+        <p>As the pattern of variation at the periphery of the Netherlands is quite similar to the pattern reported for high-frequency words (i.e. the peripheral areas are quite distinct from the standard), we will not repeat its discussion here. The similarity between high-frequency words and nouns (as opposed to verbs and adjectives) is also indicated by the correlation parameter of 0.550 in <xref ref-type="table" rid="pone-0023613-t002">Table 2</xref>.</p>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>In this study we have illustrated that several factors play a significant role in determining dialect distances from the standard language. Besides the importance of geography, we found clear support for three word-related variables (i.e. the contrast between nouns as opposed to verbs and adjectives, word frequency and the vowel-to-consonant ratio in the standard Dutch pronunciation) as well as two variables relating to the social environment (i.e. the number of inhabitants in a location and the average age of the inhabitants in a population). These results clearly indicate the need for variationists to consider explanatory quantitative models which incorporate geographical, social and word-related variables as independent variables.</p>
+      <p>We did not find support for the importance of speaker-related variables such as gender and age. As we only had a single pronunciation per location, we cannot exclude the possibility that these speaker-related variables do play an important role. It would be very informative to investigate dialect change in a data set with speakers of various ages in the same location, using the apparent time construct <xref ref-type="bibr" rid="pone.0023613-Bailey1">[54]</xref>. In addition, being able to compare male and female speakers in a single location would give us more insight into the effect of gender.</p>
+      <p>It is important to note that the contribution of the random-effects structure to the goodness of fit of the model tends to be one or two orders of magnitude larger than the contributions of the fixed-effect predictors, with GAM distance (geography) as sole exception. This indicates that the variation across speakers/locations and across words is huge compared to the magnitude of the effects of the socio-demographic and lexical predictors.</p>
+      <p>Our model also provides some insight into lexical diffusion. While we did not focus on individual sound changes, it is clear that the resistance to change at the word level is influenced by several word-related factors, as well as a number of socio-demographic factors of which the precise effect varies per word. Consequently, it is sensible to presume that a sound in one word will change more quickly than the same sound in another word (i.e. constituting a lexically gradual change). However, to make more precise statements about lexical diffusion as opposed to the lexically abrupt sound changes posited in the Neogrammarian hypothesis (e.g., see <xref ref-type="bibr" rid="pone.0023613-Labov2">[55]</xref> for a discussion of both views), it is necessary to look at the level of the individual sound correspondences.</p>
+      <p>It would, therefore, be rewarding to develop a model to predict if an individual sound in a dialectal pronunciation is equal to or different from the corresponding sound in the standard Dutch pronunciation. As the Levenshtein distance is based on the alignments of sounds, these sound correspondences are already available. Using a logistic mixed-effects regression model would enable us to determine which factors predict the (dis)similarity of this sound compared to the sound in the standard Dutch pronunciation. Of course, this would also increase the computational effort, but since on average every word consists of about 4 to 5 sounds, this potential study should remain tractable.</p>
+      <p>In the present study, we connected a larger distance from standard Dutch with a greater resistance to change (i.e. standardization). While this might be true, it is also possible that words do not only change in the direction of the standard language. Ideally this should be investigated using pronunciations of identical words at different moments in time. For example, by comparing our data to the overlapping older pronunciations in the <italic>Reeks Nederlandse Dialectatlassen</italic> <xref ref-type="bibr" rid="pone.0023613-Blancquaert1">[56]</xref>.</p>
+      <p>Instead of using standard Dutch as our reference point, we could also use proto-Germanic, following the approach of Heeringa and Joseph <xref ref-type="bibr" rid="pone.0023613-Heeringa4">[57]</xref>. It would be rewarding to see if smaller distances from the proto-language correspond to larger distances from the standard language. Alternatively, we might study the dialectal landscape from another perspective, by selecting a dialectal variety as our reference point. For example, dialect distances could be calculated with respect to a specific Frisian or Limburgian dialect.</p>
+      <p>In summary, our quantitative sociolinguistic analysis has found support for lexical diffusion in Dutch dialects and has clearly illustrated that convergence towards standard Dutch is most likely in low-frequent words. Furthermore we have shown that mixed-effects regression modeling in combination with a generalized additive model representing geography is highly suitable for investigating dialect distances and its determinants.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0023613-Chambers1">
+        <label>1</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Chambers</surname><given-names>J</given-names></name><name name-style="western"><surname>Trudgill</surname><given-names>P</given-names></name></person-group>             <year>1998</year>             <article-title>Dialectology.</article-title>             <comment>Cambridge University Press, Second edition</comment>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Labov1">
+        <label>2</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Labov</surname><given-names>W</given-names></name></person-group>             <year>1963</year>             <article-title>The social motivation of a sound change.</article-title>             <source>Word</source>             <volume>19</volume>             <fpage>273</fpage>             <lpage>309</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Trudgill1">
+        <label>3</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Trudgill</surname><given-names>P</given-names></name></person-group>             <year>1986</year>             <article-title>Dialects in contact.</article-title>             <source>Blackwell</source>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Paolillo1">
+        <label>4</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Paolillo</surname><given-names>JC</given-names></name></person-group>             <year>2002</year>             <source>Analyzing linguistic variation: Statistical models and methods</source>             <publisher-loc>Stanford, California</publisher-loc>             <publisher-name>Center for the Study of Language and Information</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Johnson1">
+        <label>5</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Johnson</surname><given-names>DE</given-names></name></person-group>             <year>2009</year>             <article-title>Getting off the GoldVarb standard: Introducing Rbrul for mixed-effects variable rule analysis.</article-title>             <source>Language and Linguistics Compass</source>             <volume>3</volume>             <fpage>359</fpage>             <lpage>383</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Sguy1">
+        <label>6</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Séguy</surname><given-names>J</given-names></name></person-group>             <year>1973</year>             <article-title>La dialectométrie dans l'atlas linguistique de Gascogne.</article-title>             <source>Revue de Linguistique Romane</source>             <volume>37</volume>             <fpage>1</fpage>             <lpage>24</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Sguy2">
+        <label>7</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Séguy</surname><given-names>J</given-names></name></person-group>             <year>1971</year>             <article-title>La relation entre la distance spatiale et la distance lexicale.</article-title>             <source>Revue de Linguistique Romane</source>             <volume>35</volume>             <fpage>335</fpage>             <lpage>357</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Goebl1">
+        <label>8</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Goebl</surname><given-names>H</given-names></name></person-group>             <year>1993</year>             <article-title>Dialectometry: A short overview of the principles and practice of quantitative classification of linguistic atlas data.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>Köhler</surname><given-names>R</given-names></name><name name-style="western"><surname>Rieger</surname><given-names>B</given-names></name></person-group>             <source>Contributions to Quantitative Linguistics</source>             <publisher-loc>Dordrecht</publisher-loc>             <publisher-name>Kluwer</publisher-name>             <fpage>277</fpage>             <lpage>315</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Heeringa1">
+        <label>9</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Heeringa</surname><given-names>W</given-names></name><name name-style="western"><surname>Nerbonne</surname><given-names>J</given-names></name></person-group>             <year>2001</year>             <article-title>Dialect areas and dialect continua.</article-title>             <source>Language Variation and Change</source>             <volume>13</volume>             <fpage>375</fpage>             <lpage>400</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Kretzschmar1">
+        <label>10</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kretzschmar</surname><given-names>W</given-names><suffix>Jr</suffix></name></person-group>             <year>1996</year>             <article-title>Quantitative areal analysis of dialect features.</article-title>             <source>Language Variation and Change</source>             <volume>8</volume>             <fpage>13</fpage>             <lpage>39</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Nerbonne1">
+        <label>11</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Nerbonne</surname><given-names>J</given-names></name><name name-style="western"><surname>Prokić</surname><given-names>J</given-names></name><name name-style="western"><surname>Wieling</surname><given-names>M</given-names></name><name name-style="western"><surname>Gooskens</surname><given-names>C</given-names></name></person-group>             <year>2010</year>             <article-title>Some further dialectometrical steps.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>Aurrekoetxea</surname><given-names>G</given-names></name><name name-style="western"><surname>Ormaetxea</surname><given-names>JL</given-names></name></person-group>             <source>Tools for Linguistic Variation, Supplements of the Anuario de Filologia Vasca “Julio Urquijo”, XIII</source>             <publisher-loc>Bilbao</publisher-loc>             <publisher-name>University of the Basque Country</publisher-name>             <fpage>41</fpage>             <lpage>56</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Heeringa2">
+        <label>12</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Heeringa</surname><given-names>W</given-names></name><name name-style="western"><surname>Nerbonne</surname><given-names>J</given-names></name></person-group>             <year>1999</year>             <article-title>Change, convergence and divergence among Dutch and Frisian.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>Boersma</surname><given-names>P</given-names></name><name name-style="western"><surname>Breuker</surname><given-names>PH</given-names></name><name name-style="western"><surname>Jansma</surname><given-names>LG</given-names></name><name name-style="western"><surname>van der Vaart</surname><given-names>J</given-names></name></person-group>             <fpage>88</fpage>             <lpage>109</lpage>             <comment>Philologia Frisica Anno 1999. Lêzingen fan it fyftjinde Frysk filologekongres, Fryske Akademy, Ljouwert</comment>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Wieling1">
+        <label>13</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Wieling</surname><given-names>M</given-names></name><name name-style="western"><surname>Heeringa</surname><given-names>W</given-names></name><name name-style="western"><surname>Nerbonne</surname><given-names>J</given-names></name></person-group>             <year>2007</year>             <article-title>An aggregate analysis of pronunciation in the Goeman-Taeldeman-Van Reenen-Project data.</article-title>             <source>Taal en Tongval</source>             <volume>59</volume>             <fpage>84</fpage>             <lpage>116</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Leinonen1">
+        <label>14</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Leinonen</surname><given-names>T</given-names></name></person-group>             <year>2010</year>             <article-title>An acoustic analysis of vowel pronunciation in Swedish dialects.</article-title>             <comment>Ph.D. thesis, University of Groningen</comment>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Schneider1">
+        <label>15</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Schneider</surname><given-names>E</given-names></name></person-group>             <year>1988</year>             <article-title>Qualitative vs. quantitative methods of area delimitation in dialectology: A comparison based on lexical data from Georgia and Alabama.</article-title>             <source>Journal of English Linguistics</source>             <volume>21</volume>             <fpage>175</fpage>             <lpage>212</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Woolhiser1">
+        <label>16</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Woolhiser</surname><given-names>C</given-names></name></person-group>             <year>2005</year>             <article-title>Political borders and dialect divergence/convergence in Europe.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>Peter Aurer</surname><given-names>FH</given-names></name><name name-style="western"><surname>Kerswill</surname><given-names>P</given-names></name></person-group>             <source>Dialect Change. Convergence and Divergence in European Languages</source>             <publisher-loc>New York</publisher-loc>             <publisher-name>Cambridge University Press</publisher-name>             <fpage>236</fpage>             <lpage>262</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Kloeke1">
+        <label>17</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kloeke</surname><given-names>GG</given-names></name></person-group>             <year>1927</year>             <source>De Hollandse expansie in de zestiende en zeventiende eeuw en haar weerspiegeling in de hedendaagsche Nederlandse dialecten (The Hollandic expansion in the sixteenth and seventeenth centuries and her reflection in present-day Dutch dialects)</source>             <publisher-loc>The Hague</publisher-loc>             <publisher-name>Martinus Nijhoff</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-vanderWal1">
+        <label>18</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>van der Wal</surname><given-names>M</given-names></name><name name-style="western"><surname>van Bree</surname><given-names>C</given-names></name></person-group>             <year>2008</year>             <source>Geschiedenis van het Nederlands</source>             <publisher-loc>Utrecht</publisher-loc>             <publisher-name>Spectrum, fifth edition</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Wang1">
+        <label>19</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Wang</surname><given-names>W</given-names></name></person-group>             <year>1969</year>             <article-title>Competing changes as a cause of residue.</article-title>             <source>Language</source>             <volume>45</volume>             <fpage>9</fpage>             <lpage>25</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Goeman1">
+        <label>20</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Goeman</surname><given-names>T</given-names></name><name name-style="western"><surname>Taeldeman</surname><given-names>J</given-names></name></person-group>             <year>1996</year>             <article-title>Fonologie en morfologie van de Nederlandse dialecten. Een nieuwe materiaalverzameling en twee nieuwe atlasprojecten.</article-title>             <source>Taal en Tongval</source>             <volume>48</volume>             <fpage>38</fpage>             <lpage>59</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Gussenhoven1">
+        <label>21</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Gussenhoven</surname><given-names>C</given-names></name></person-group>             <year>1999</year>             <article-title>Illustrations of the IPA: Dutch.</article-title>             <source>Handbook of the International Phonetic Association</source>             <publisher-loc>Cambridge</publisher-loc>             <publisher-name>Cambridge University Press</publisher-name>             <fpage>74</fpage>             <lpage>77</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Baayen1">
+        <label>22</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Baayen</surname><given-names>RH</given-names></name><name name-style="western"><surname>Piepenbrock</surname><given-names>R</given-names></name><name name-style="western"><surname>Gulikers</surname><given-names>L</given-names></name></person-group>             <year>1996</year>             <article-title>CELEX2.</article-title>             <comment>Linguistic Data Consortium, Philadelphia</comment>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-CBS1">
+        <label>23</label>
+        <element-citation publication-type="other" xlink:type="simple">             <collab xlink:type="simple">CBS Statline</collab>             <year>2010</year>             <article-title>Kerncijfers wijken en buurten 1995.</article-title>             <comment>Available at <ext-link ext-link-type="uri" xlink:href="http://statline.cbs.nl" xlink:type="simple">http://statline.cbs.nl</ext-link>. Accessed: August 9, 2010</comment>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Levenshtein1">
+        <label>24</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Levenshtein</surname><given-names>V</given-names></name></person-group>             <year>1965</year>             <article-title>Binary codes capable of correcting deletions, insertions and reversals.</article-title>             <source>Doklady Akademii Nauk SSSR</source>             <volume>163</volume>             <fpage>845</fpage>             <lpage>848</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Wieling2">
+        <label>25</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Wieling</surname><given-names>M</given-names></name><name name-style="western"><surname>Prokić</surname><given-names>J</given-names></name><name name-style="western"><surname>Nerbonne</surname><given-names>J</given-names></name></person-group>             <year>2009</year>             <article-title>Evaluating the pairwise alignment of pronunciations.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>Borin</surname><given-names>L</given-names></name><name name-style="western"><surname>Lendvai</surname><given-names>P</given-names></name></person-group>             <fpage>26</fpage>             <lpage>34</lpage>             <comment>Language Technology and Resources for Cultural Heritage, Social Sciences, Humanities, and Education</comment>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Church1">
+        <label>26</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Church</surname><given-names>K</given-names></name><name name-style="western"><surname>Hanks</surname><given-names>P</given-names></name></person-group>             <year>1990</year>             <article-title>Word association norms, mutual information, and lexicography.</article-title>             <source>Computational Linguistics</source>             <volume>16</volume>             <fpage>22</fpage>             <lpage>29</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Wieling3">
+        <label>27</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Wieling</surname><given-names>M</given-names></name><name name-style="western"><surname>Nerbonne</surname><given-names>J</given-names></name></person-group>             <year>2011</year>             <article-title>Measuring linguistic variation commensurably.</article-title>             <source>Dialectologia Special Issue II: Production, Perception and Attitude</source>             <fpage>141</fpage>             <lpage>162</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Wood1">
+        <label>28</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Wood</surname><given-names>S</given-names></name></person-group>             <year>2003</year>             <article-title>Thin plate regression splines.</article-title>             <source>Journal of the Royal Statistical Society: Series B (Statistical Methodology)</source>             <volume>65</volume>             <fpage>95</fpage>             <lpage>114</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Wood2">
+        <label>29</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Wood</surname><given-names>S</given-names></name></person-group>             <year>2006</year>             <source>Generalized additive models: an introduction with R.</source>             <publisher-name>Chapman &amp; Hall/CRC</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Tremblay1">
+        <label>30</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Tremblay</surname><given-names>A</given-names></name><name name-style="western"><surname>Baayen</surname><given-names>RH</given-names></name></person-group>             <year>2010</year>             <article-title>Holistic processing of regular four-word sequences: A behavioral and ERP study of the effects of structure, frequency, and probability on immediate free recall.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>Wood</surname><given-names>D</given-names></name></person-group>             <source>Perspectives on formulaic language: Acquisition and communication</source>             <publisher-loc>London</publisher-loc>             <publisher-name>The Continuum International Publishing Group</publisher-name>             <fpage>151</fpage>             <lpage>173</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Baayen2">
+        <label>31</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Baayen</surname><given-names>RH</given-names></name><name name-style="western"><surname>Kuperman</surname><given-names>V</given-names></name><name name-style="western"><surname>Bertram</surname><given-names>R</given-names></name></person-group>             <year>2010</year>             <article-title>Frequency effects in compound processing.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>Scalise</surname><given-names>S</given-names></name><name name-style="western"><surname>Vogel</surname><given-names>I</given-names></name></person-group>             <publisher-loc>Compounding, Amsterdam/Philadelphia</publisher-loc>             <publisher-name>Benjamins</publisher-name>             <fpage>257</fpage>             <lpage>270</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Baayen3">
+        <label>32</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Baayen</surname><given-names>RH</given-names></name></person-group>             <year>2010</year>             <article-title>The directed compound graph of English. An exploration of lexical connectivity and its processing consequences.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>Olson</surname><given-names>S</given-names></name></person-group>             <source>New impulses in word-formation (Linguistische Berichte Sonderheft 17)</source>             <publisher-loc>Hamburg</publisher-loc>             <publisher-name>Buske</publisher-name>             <fpage>383</fpage>             <lpage>402</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Baayen4">
+        <label>33</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Baayen</surname><given-names>RH</given-names></name><name name-style="western"><surname>Milin</surname><given-names>P</given-names></name><name name-style="western"><surname>Durdević</surname><given-names>DF</given-names></name><name name-style="western"><surname>Hendrix</surname><given-names>P</given-names></name><name name-style="western"><surname>Marelli</surname><given-names>M</given-names></name></person-group>             <year>2011</year>             <article-title>An amorphous model for morphological processing in visual comprehension based on naive discriminative learning.</article-title>             <source>Psychological Review</source>             <volume>118</volume>             <fpage>438</fpage>             <lpage>481</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Schmidt1">
+        <label>34</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Schmidt</surname><given-names>M</given-names></name><name name-style="western"><surname>Kiviste</surname><given-names>A</given-names></name><name name-style="western"><surname>von Gadow</surname><given-names>K</given-names></name></person-group>             <year>2011</year>             <article-title>A spatially explicit height–diameter model for Scots pine in Estonia.</article-title>             <source>European Journal of Forest Research</source>             <volume>130</volume>             <fpage>303</fpage>             <lpage>315</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Nerbonne2">
+        <label>35</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Nerbonne</surname><given-names>J</given-names></name><name name-style="western"><surname>Kleiweg</surname><given-names>P</given-names></name></person-group>             <year>2007</year>             <article-title>Toward a dialectological yardstick.</article-title>             <source>Quantitative Linguistics</source>             <volume>14</volume>             <fpage>148</fpage>             <lpage>167</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Pinheiro1">
+        <label>36</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Pinheiro</surname><given-names>JC</given-names></name><name name-style="western"><surname>Bates</surname><given-names>DM</given-names></name></person-group>             <year>2000</year>             <source>Mixed-effects models in S and S-PLUS. Statistics and Computing</source>             <publisher-loc>New York</publisher-loc>             <publisher-name>Springer</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Baayen5">
+        <label>37</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Baayen</surname><given-names>RH</given-names></name><name name-style="western"><surname>Davidson</surname><given-names>D</given-names></name><name name-style="western"><surname>Bates</surname><given-names>D</given-names></name></person-group>             <year>2008</year>             <article-title>Mixed-effects modeling with crossed random effects for subjects and items.</article-title>             <source>Journal of Memory and Language</source>             <volume>59</volume>             <fpage>390</fpage>             <lpage>412</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Baayen6">
+        <label>38</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Baayen</surname><given-names>RH</given-names></name></person-group>             <year>2008</year>             <source>Analyzing linguistic data: A practical introduction to statistics using R.</source>             <publisher-name>Cambridge University Press</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Friedman1">
+        <label>39</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Friedman</surname><given-names>L</given-names></name><name name-style="western"><surname>Wall</surname><given-names>M</given-names></name></person-group>             <year>2005</year>             <article-title>Graphical views of suppression and multicollinearity in multiple regression.</article-title>             <source>The American Statistician</source>             <volume>59</volume>             <fpage>127</fpage>             <lpage>136</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Akaike1">
+        <label>40</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Akaike</surname><given-names>H</given-names></name></person-group>             <year>1974</year>             <article-title>A new look at the statistical identification model.</article-title>             <source>IEEE transactions on Automatic Control</source>             <volume>19</volume>             <fpage>716</fpage>             <lpage>723</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Milroy1">
+        <label>41</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Milroy</surname><given-names>L</given-names></name></person-group>             <year>2002</year>             <article-title>Social Networks.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>Chambers</surname><given-names>J</given-names></name><name name-style="western"><surname>Trudgill</surname><given-names>P</given-names></name><name name-style="western"><surname>Schilling-Estes</surname><given-names>N</given-names></name></person-group>             <fpage>549</fpage>             <lpage>572</lpage>             <comment>The Handbook of Language Variation and Change, Blackwell Publishing Ltd</comment>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Smakman1">
+        <label>42</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Smakman</surname><given-names>D</given-names></name></person-group>             <year>2006</year>             <article-title>Standard Dutch in the Netherlands.</article-title>             <comment>A sociolinguistic and phonetic description. Ph.D. thesis, Radboud Universiteit</comment>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Trudgill2">
+        <label>43</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Trudgill</surname><given-names>P</given-names></name></person-group>             <year>1974</year>             <article-title>Linguistic change and diffusion: Description and explanation in sociolinguistic dialect geography.</article-title>             <source>Language in Society</source>             <volume>3</volume>             <fpage>215</fpage>             <lpage>246</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Heeringa3">
+        <label>44</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Heeringa</surname><given-names>W</given-names></name></person-group>             <year>2004</year>             <article-title>Measuring Dialect Pronunciation Differences using Levenshtein Distance.</article-title>             <comment>Ph.D. thesis, Rijksuniversiteit Groningen</comment>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Cheshire1">
+        <label>45</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Cheshire</surname><given-names>J</given-names></name></person-group>             <year>2002</year>             <article-title>Sex and gender in variationist research.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>Chambers</surname><given-names>J</given-names></name><name name-style="western"><surname>Trudgill</surname><given-names>P</given-names></name><name name-style="western"><surname>Schilling-Estes</surname><given-names>N</given-names></name></person-group>             <fpage>423</fpage>             <lpage>443</lpage>             <comment>The Handbook of Language Variation and Change, Blackwell Publishing Ltd</comment>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Keating1">
+        <label>46</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Keating</surname><given-names>P</given-names></name><name name-style="western"><surname>Lindblom</surname><given-names>B</given-names></name><name name-style="western"><surname>Lubker</surname><given-names>J</given-names></name><name name-style="western"><surname>Kreiman</surname><given-names>J</given-names></name></person-group>             <year>1994</year>             <article-title>Variability in jaw height for segments in English and Swedish VCVs.</article-title>             <source>Journal of Phonetics</source>             <volume>22</volume>             <fpage>407</fpage>             <lpage>422</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Pagel1">
+        <label>47</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Pagel</surname><given-names>M</given-names></name><name name-style="western"><surname>Atkinson</surname><given-names>Q</given-names></name><name name-style="western"><surname>Meade</surname><given-names>A</given-names></name></person-group>             <year>2007</year>             <article-title>Frequency of word-use predicts rates of lexical evolution throughout Indo-European history.</article-title>             <source>Nature</source>             <volume>449</volume>             <fpage>717</fpage>             <lpage>720</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-vanReenen1">
+        <label>48</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>van Reenen</surname><given-names>P</given-names></name></person-group>             <year>2006</year>             <source>In Holland staat een ‘Huis’. Kloekes expansietheorie met speciale aandacht voor de dialecten van Overijssel (Kloeke's expansion theory with special attention to the dialects of Overijssel)</source>             <publisher-loc>Amsterdam &amp; Münster</publisher-loc>             <publisher-name>Stichting Neerlandistiek VU &amp; Nodus Publikationen</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Bloomfield1">
+        <label>49</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bloomfield</surname><given-names>L</given-names></name></person-group>             <year>1933</year>             <source>Language</source>             <publisher-loc>London</publisher-loc>             <publisher-name>Allen and Unwin</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Schuchardt1">
+        <label>50</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Schuchardt</surname><given-names>H</given-names></name></person-group>             <year>1885</year>             <source>Über die Lautgesetze: gegen die Junggrammatiker</source>             <publisher-loc>Berlin</publisher-loc>             <publisher-name>Oppenheim</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Bybee1">
+        <label>51</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bybee</surname><given-names>J</given-names></name></person-group>             <year>2002</year>             <article-title>Word frequency and context of use in the lexical diffusion of phonetically conditioned sound change.</article-title>             <source>Language Variation and Change</source>             <volume>14</volume>             <fpage>261</fpage>             <lpage>290</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Hasher1">
+        <label>52</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Hasher</surname><given-names>L</given-names></name><name name-style="western"><surname>Zacks</surname><given-names>RT</given-names></name></person-group>             <year>1984</year>             <article-title>Automatic processing of fundamental information. The case of frequency of occurrence.</article-title>             <source>American Psychologist</source>             <volume>39</volume>             <fpage>1372</fpage>             <lpage>1388</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Baayen7">
+        <label>53</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Baayen</surname><given-names>RH</given-names></name></person-group>             <year>2007</year>             <article-title>Storage and computation in the mental lexicon.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>Jarema</surname><given-names>G</given-names></name><name name-style="western"><surname>Libben</surname><given-names>G</given-names></name></person-group>             <publisher-loc>The Mental Lexicon</publisher-loc>             <publisher-name>Core Perspectives, Elsevier</publisher-name>             <fpage>81</fpage>             <lpage>104</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Bailey1">
+        <label>54</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bailey</surname><given-names>G</given-names></name><name name-style="western"><surname>Wikle</surname><given-names>T</given-names></name><name name-style="western"><surname>Tillery</surname><given-names>J</given-names></name><name name-style="western"><surname>Sand</surname><given-names>L</given-names></name></person-group>             <year>1991</year>             <article-title>The apparent time construct.</article-title>             <source>Language Variation and Change</source>             <volume>3</volume>             <fpage>241</fpage>             <lpage>264</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Labov2">
+        <label>55</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Labov</surname><given-names>W</given-names></name></person-group>             <year>1981</year>             <article-title>Resolving the Neogrammarian controversy.</article-title>             <source>Language</source>             <volume>57</volume>             <fpage>267</fpage>             <lpage>308</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Blancquaert1">
+        <label>56</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Blancquaert</surname><given-names>E</given-names></name><name name-style="western"><surname>Pée</surname><given-names>W</given-names></name></person-group>             <year>1925–1982</year>             <source>Reeks Nederlandse Dialectatlassen</source>             <publisher-loc>Antwerpen</publisher-loc>             <publisher-name>De Sikkel</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0023613-Heeringa4">
+        <label>57</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Heeringa</surname><given-names>W</given-names></name><name name-style="western"><surname>Joseph</surname><given-names>B</given-names></name></person-group>             <year>2007</year>             <article-title>The relative divergence of Dutch dialect pronunciations from their common source: An exploratory study.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>Nerbonne</surname><given-names>J</given-names></name><name name-style="western"><surname>Ellison</surname><given-names>TM</given-names></name><name name-style="western"><surname>Kondrak</surname><given-names>G</given-names></name></person-group>             <source>Proceedings of the Ninth Meeting of the ACL Special Interest Group in Computational Morphology and Phonology</source>             <publisher-loc>Stroudsburg, PA</publisher-loc>             <publisher-name>ACL</publisher-name>             <fpage>31</fpage>             <lpage>39</lpage>          </element-citation>
+      </ref>
+    </ref-list>
+    
+  </back>
+</article>

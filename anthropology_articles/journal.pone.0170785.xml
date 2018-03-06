@@ -1,0 +1,1570 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1d3 20150301//EN" "http://jats.nlm.nih.gov/publishing/1.1d3/JATS-journalpublishing1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="1.1d3" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1371/journal.pone.0170785</article-id>
+<article-id pub-id-type="publisher-id">PONE-D-16-05551</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3"><subject>People and places</subject><subj-group><subject>Population groupings</subject><subj-group><subject>Age groups</subject><subj-group><subject>Children</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>People and places</subject><subj-group><subject>Population groupings</subject><subj-group><subject>Families</subject><subj-group><subject>Children</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Nutrition</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Nutrition</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Nutrition</subject><subj-group><subject>Malnutrition</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Nutrition</subject><subj-group><subject>Malnutrition</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Physiology</subject><subj-group><subject>Physiological processes</subject><subj-group><subject>Food consumption</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Physiology</subject><subj-group><subject>Physiological processes</subject><subj-group><subject>Food consumption</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Pediatrics</subject><subj-group><subject>Child health</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Public and occupational health</subject><subj-group><subject>Child health</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Health care</subject><subj-group><subject>Health statistics</subject><subj-group><subject>Morbidity</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>People and places</subject><subj-group><subject>Geographical locations</subject><subj-group><subject>Africa</subject><subj-group><subject>Ethiopia</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Physical anthropology</subject><subj-group><subject>Anthropometry</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Physical anthropology</subject><subj-group><subject>Anthropometry</subject></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Spatial heterogeneity and risk factors for stunting among children under age five in Ethiopia: A Bayesian geo-statistical model</article-title>
+<alt-title alt-title-type="running-head">Spatial heterogeneity and risk factors for stunting</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Hagos</surname>
+<given-names>Seifu</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Hailemariam</surname>
+<given-names>Damen</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>WoldeHanna</surname>
+<given-names>Tasew</given-names>
+</name>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Lindtjørn</surname>
+<given-names>Bernt</given-names>
+</name>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+</contrib-group>
+<aff id="aff001"><label>1</label> <addr-line>Department of Reproductive Health and Health Service Management, School of Public Health, College of Health Sciences, Addis Ababa University, Addis Ababa, Ethiopia</addr-line></aff>
+<aff id="aff002"><label>2</label> <addr-line>Center for International Health, University of Bergen, Bergen, Norway</addr-line></aff>
+<aff id="aff003"><label>3</label> <addr-line>Department of Economics, College of Business and economics, Addis Ababa University, Addis Ababa, Ethiopia</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Deribe</surname>
+<given-names>Kebede</given-names>
+</name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Brighton and Sussex Medical School, UNITED KINGDOM</addr-line></aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<fn fn-type="con">
+<p><list list-type="simple"><list-item><p><bold>Conceptualization:</bold> SH BL DH TW.</p></list-item> <list-item><p><bold>Formal analysis:</bold> SH BL DH TW.</p></list-item> <list-item><p><bold>Methodology:</bold> SH BL DH TW.</p></list-item> <list-item><p><bold>Project administration:</bold> SH BL DH TW.</p></list-item> <list-item><p><bold>Software:</bold> SH BL.</p></list-item> <list-item><p><bold>Writing – original draft:</bold> SH BL DH TW.</p></list-item> <list-item><p><bold>Writing – review &amp; editing:</bold> SH BL DH TW.</p></list-item></list>
+</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">seif_h23@yahoo.com</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<day>7</day>
+<month>2</month>
+<year>2017</year>
+</pub-date>
+<pub-date pub-type="collection">
+<year>2017</year>
+</pub-date>
+<volume>12</volume>
+<issue>2</issue>
+<elocation-id>e0170785</elocation-id>
+<history>
+<date date-type="received">
+<day>8</day>
+<month>2</month>
+<year>2016</year>
+</date>
+<date date-type="accepted">
+<day>11</day>
+<month>1</month>
+<year>2017</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2017</copyright-year>
+<copyright-holder>Hagos et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0170785"/>
+<abstract>
+<sec id="sec001">
+<title>Background</title>
+<p>Understanding the spatial distribution of stunting and underlying factors operating at meso-scale is of paramount importance for intervention designing and implementations. Yet, little is known about the spatial distribution of stunting and some discrepancies are documented on the relative importance of reported risk factors. Therefore, the present study aims at exploring the spatial distribution of stunting at meso- (district) scale, and evaluates the effect of spatial dependency on the identification of risk factors and their relative contribution to the occurrence of stunting and severe stunting in a rural area of Ethiopia.</p>
+</sec>
+<sec id="sec002">
+<title>Methods</title>
+<p>A community based cross sectional study was conducted to measure the occurrence of stunting and severe stunting among children aged 0–59 months. Additionally, we collected relevant information on anthropometric measures, dietary habits, parent and child-related demographic and socio-economic status. Latitude and longitude of surveyed households were also recorded. Local Anselin Moran's <italic>I</italic> was calculated to investigate the spatial variation of stunting prevalence and identify potential local pockets (hotspots) of high prevalence. Finally, we employed a Bayesian geo-statistical model, which accounted for spatial dependency structure in the data, to identify potential risk factors for stunting in the study area.</p>
+</sec>
+<sec id="sec003">
+<title>Results</title>
+<p>Overall, the prevalence of stunting and severe stunting in the district was 43.7% [95%CI: 40.9, 46.4] and 21.3% [95%CI: 19.5, 23.3] respectively. We identified statistically significant clusters of high prevalence of stunting (hotspots) in the eastern part of the district and clusters of low prevalence (cold spots) in the western. We found out that the inclusion of spatial structure of the data into the Bayesian model has shown to improve the fit for stunting model. The Bayesian geo-statistical model indicated that the risk of stunting increased as the child’s age increased (OR 4.74; 95% Bayesian credible interval [BCI]:3.35–6.58) and among boys (OR 1.28; 95%BCI; 1.12–1.45). However, maternal education and household food security were found to be protective against stunting and severe stunting.</p>
+</sec>
+<sec id="sec004">
+<title>Conclusion</title>
+<p>Stunting prevalence may vary across space at different scale. For this, it's important that nutrition studies and, more importantly, control interventions take into account this spatial heterogeneity in the distribution of nutritional deficits and their underlying associated factors. The findings of this study also indicated that interventions integrating household food insecurity in nutrition programs in the district might help to avert the burden of stunting.</p>
+</sec>
+</abstract>
+<funding-group>
+<funding-statement>We would like to acknowledge the Center for International Health at the University of Bergen for funding the study. The funder had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="2"/>
+<table-count count="3"/>
+<page-count count="18"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability">
+<meta-name>Data availability</meta-name>
+<meta-value>All relevant data are within the paper and its Supporting Information files.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec005" sec-type="intro">
+<title>Introduction</title>
+<p>Child undernutrition, including macronutrient and micronutrient deficiencies, contributed around 45% of child deaths in 2011 [<xref ref-type="bibr" rid="pone.0170785.ref001">1</xref>]. Stunting, a measure of chronic undernutrition, is the most prevalent form of child undernutrition in developing countries. Thus, in 2011, about 165 million stunted children were estimated in developing countries[<xref ref-type="bibr" rid="pone.0170785.ref002">2</xref>]. Globally, the prevalence of stunting among children under age five has decreased. At regional level, as compared to other regions, very little decline in the prevalence of stunting is documented in Africa[<xref ref-type="bibr" rid="pone.0170785.ref002">2</xref>]. In 2012, the WHO sets a global target to reduce the number of stunted children by 40% from the baseline 171 million in 2010 to 100 million by 2025[<xref ref-type="bibr" rid="pone.0170785.ref002">2</xref>].</p>
+<p>Stunting, defined as height-for-age (HAZ) z- scores 2 standard deviations (SD) below WHO 2005 median, is a serious public health problem and its consequence goes beyond the childhood period. Evidences suggest that stunting has both short and long term consequences such impaired health, lower school and educational performance, lower economic productivity and loss of human capital and household income [<xref ref-type="bibr" rid="pone.0170785.ref003">3</xref>,<xref ref-type="bibr" rid="pone.0170785.ref004">4</xref>], and increased risk of cardiovascular diseases in adulthood [<xref ref-type="bibr" rid="pone.0170785.ref005">5</xref>].</p>
+<p>Ethiopia has given a priority to reduce stunting as established in its national nutrition strategy and plan. This plan of action aims to accelerate the reduction of stunting and focuses on the first 1000 days, children under two years and pregnant and lactating women [<xref ref-type="bibr" rid="pone.0170785.ref006">6</xref>]. Despite the country has documented a decline in the prevalence of stunting from 58% to 40% between 2000 and 2014 [<xref ref-type="bibr" rid="pone.0170785.ref007">7</xref>–<xref ref-type="bibr" rid="pone.0170785.ref010">10</xref>], prevalence rates still remain high. Moreover, the progress in reduction of stunting among the regions is uneven across the country. Based on the WHO recommended criteria for assessing the severity of stunting at population level, 5 out of the nine regions in the country are classified under very high severity (&gt;40% prevalence) while the remaining 4 were classified in the medium to high severity (prevalence range of 20–40%).</p>
+<p>The factors influencing stunting among children 0–59 months are multiple. The WHO conceptual framework for stunting (2013) identified household and family factors, complementary feeding and breastfeeding practices and infections as the most plausible causes of stunting [<xref ref-type="bibr" rid="pone.0170785.ref011">11</xref>]. Contextual factors at community and societal level such as beliefs, norms, and livelihoods influence the proximate causes of stunting. Many studies corroborated in reporting significant association with maternal education, household wealth, maternal age, dietary diversity, diseases and infections. Dietary diversity and recommended complementary feeding practices were found to be significantly associated with reducing the odds of stunting in younger children [<xref ref-type="bibr" rid="pone.0170785.ref012">12</xref>,<xref ref-type="bibr" rid="pone.0170785.ref013">13</xref>]. Infectious diseases arising from respiratory illnesses [<xref ref-type="bibr" rid="pone.0170785.ref014">14</xref>], malaria [<xref ref-type="bibr" rid="pone.0170785.ref015">15</xref>] and diarrhoea [<xref ref-type="bibr" rid="pone.0170785.ref014">14</xref>–<xref ref-type="bibr" rid="pone.0170785.ref016">16</xref>] during the period of growth and development (6–59 months) are also important proximal determinants of growth faltering [<xref ref-type="bibr" rid="pone.0170785.ref017">17</xref>,<xref ref-type="bibr" rid="pone.0170785.ref018">18</xref>]. At the individual level, stunting prevalence appears to be more prevalent in boys than girls and also in older age groups [<xref ref-type="bibr" rid="pone.0170785.ref001">1</xref>].</p>
+<p>The underlying factors for child undernutrition also include household and family related factors such as food security, child care, household environment (access to water and sanitation) and lack of basic health services [<xref ref-type="bibr" rid="pone.0170785.ref001">1</xref>,<xref ref-type="bibr" rid="pone.0170785.ref011">11</xref>,<xref ref-type="bibr" rid="pone.0170785.ref018">18</xref>,<xref ref-type="bibr" rid="pone.0170785.ref019">19</xref>]. Household economic inequalities and its relation to child undernutrition (stunting) is a controversial issue. Some studies have shown the potential of improved household income in improving access and the consumption of goods and services, which in turn improves undernutrition [<xref ref-type="bibr" rid="pone.0170785.ref001">1</xref>,<xref ref-type="bibr" rid="pone.0170785.ref020">20</xref>–<xref ref-type="bibr" rid="pone.0170785.ref022">22</xref>]. In contrast others have reported a weak relation between income growth and undernutrition at the household level [<xref ref-type="bibr" rid="pone.0170785.ref023">23</xref>–<xref ref-type="bibr" rid="pone.0170785.ref025">25</xref>]. The mother’s education, which is a modifiable household factor, is a key predictor of linear growth and stunting [<xref ref-type="bibr" rid="pone.0170785.ref011">11</xref>,<xref ref-type="bibr" rid="pone.0170785.ref026">26</xref>–<xref ref-type="bibr" rid="pone.0170785.ref030">30</xref>]. A better maternal educational status might improve child caring practices related to stunting, or could help to understand and respond to nutrition-based educational messages, as well as helping to adopt optimal complementary feeding and household dietary behaviours [<xref ref-type="bibr" rid="pone.0170785.ref030">30</xref>].</p>
+<p>In summary we have noted a significant variation among studies on the relative importance of factors associated with stunting and undernutrition. We believe that the variation in findings arises partly from the underlying social environment (contexts) upon which the different risk factors for stunting operate. In addition to this, quite a few of these studies accounted for the spatial dependence structures in the data when analyzing the risk factors for stunting [<xref ref-type="bibr" rid="pone.0170785.ref031">31</xref>–<xref ref-type="bibr" rid="pone.0170785.ref033">33</xref>]. Failure to account for spatial dependency, when existing, could result in spurious significant association. Hence it is important to understand contextual factors influencing stunting in Ethiopia. Therefore, in the present work we aimed at identifying risk factors for stunting and severe stunting in southern Ethiopia and explored their spatial distribution at district (meso-scale) level. Additionally, we investigated the effect of spatial dependency on the identification of risk factors and their relative contribution to the occurrence of stunting and severe stunting. The findings from this study will provide new insights on the spatial epidemiology of stunting and more practically will help local health services tackle more efficiently the underlying factors behind the occurrence of stunting in the study area and other similar contexts.</p>
+</sec>
+<sec id="sec006" sec-type="materials|methods">
+<title>Materials and methods</title>
+<sec id="sec007">
+<title>Study setting</title>
+<p>We conducted this study in Meskane Mareko District (38.45763 E, 8.042144 N), which is located around 130 km south of Addis Ababa (capital city of Ethiopia). The district is located in Guraghe Zone, in the Southern part of the country. According to the district Office report, the district had an estimated population size of 199,771 and 38, 933 households. Seven health centers, 40 health posts and two hospitals were serving the residents in the district at the time of the study.</p>
+</sec>
+<sec id="sec008">
+<title>Study design and period</title>
+<p>This study used a cross sectional design. The data collection was conducted between December 2013 and April 2014.</p>
+</sec>
+<sec id="sec009">
+<title>Sample size and sampling procedure</title>
+<p>The data for this work was extracted from a major study intended to examine the spatial distribution of the three forms of undernutrition; wasting, underweight and stunting at different geographic scale in the district. We calculated sample sizes for multiple objectives of the research project using a formula for estimating a single population proportion. Three sample sizes were determined taking the expected prevalence of severe wasting, severe underweight and severe stunting and using the following parameters; 80% power and 95% confidence level, design effect of 1.5 and 1.0% margin of error. By comparing the sample sizes calculated for the three objectives, the largest sample size was obtained for the expected prevalence of severe wasting [<xref ref-type="bibr" rid="pone.0170785.ref034">34</xref>]. Using the expected prevalence of severe wasting, the calculated sample size was 1,567 children in the age group of 0–59 months. With an expectation of approximately 10% for non-response rate, a minimum of 1,723 children under age five were required. This sample size was chosen since it was adequate to answer the other objectives of the study.</p>
+<p>The district had a total of 40 <italic>kebeles</italic> (<italic>Kebele is the smallest administrative unit in Ethiopia</italic>). A <italic>kebele</italic> is further divided into villages. The sample size (1,723 children) was allocated to 34 kebeles proportional to the number of households. For each <italic>kebele</italic>, we randomly selected one or two villages depending on the number of villages per <italic>kebele</italic>. For <italic>Kebeles</italic> with 3–6 villages, we randomly selected one village while for <italic>Kebeles</italic> with 7–9 villages; we randomly selected two villages from each <italic>Kebele</italic>. This gave us a total of 45 villages. The sample size (1,723 children) was divided among the 45 villages proportionate to the number of households.</p>
+<p>We obtained the list of household’s names and profile from the Health Extension Workers’ (HEWs) family registry forms. Households were eligible for the study if their occupants have children under the age of five. Households (secondary sampling unit) were selected using simple random sampling method. We visited all households with support of HEWs, local guides and local supervisors. All children aged 0–59 months found in sampled houses were included in the study.</p>
+<p>Few days before this survey, we completed a census on selected six kebeles (24 villages) found in the district to evaluate the local scale (within kebeles) spatial distribution and clustering of wasting, underweight and stunting[<xref ref-type="bibr" rid="pone.0170785.ref035">35</xref>]. We used the same research tool and research assistants with that of this survey. We collected data from a total of 2,371 children under the age of five. The study team subsequently decided to include this sample to the present analytic sample in order to improve and guarantee the representativeness of the outcome. Potential bias on different sampling design was minimized by giving more weight to children selected randomly at the main survey. This paper is hence based on a total 4, 094 children under age five who lived in 40 <italic>kebeles</italic> in the district.</p>
+</sec>
+<sec id="sec010">
+<title>Data collection</title>
+<sec id="sec011">
+<title>Anthropometry data</title>
+<p>Anthropometric data (weight, height/length) were collected from children aged 0–59 months. A digital weighing scale (Coline brand) with weighting capacity of 150kg and designed in 100gram graduation was used to measure weight of children. For some of the children, we used tare weighing. Locally constructed Stadiometer was used to measure height of children whereas length boards were used to measure length of children. Length/height measurements were taken with a precision of 0.1cm. Due to the lack of accurate record of date of birth, we used local calendar of events to estimate children and mother’s month and year of birth.</p>
+<p>Twenty enumerators were trained on anthropometric measurement, geo referencing visited households and interviewing skills. We evaluated the performance of the enumerators through conducting a measurement standardization exercise on five children. We paired the enumerators to form ten teams. Each team measured the height of the five children in two rounds. These two rounds of measurements were used to calculate the intra-pair Technical error measurement (TEM) and inter-pair TEM. The intra Pair TEM was used to evaluate variation in measurement within pairs of data collectors whereas the inter-pair TEM was used to evaluate the variation in measurement between pairs of data collectors. We calculated the coefficient of reliability (R) that is used to estimate the proportion of total variance that cannot be explained by measurement error. This standardization exercise was repeated until the coefficient of reliability was 86%. The methods employed in constructing the coefficient of reliability and detailed report are provided elsewhere[<xref ref-type="bibr" rid="pone.0170785.ref035">35</xref>].</p>
+<p>We administered a questionnaire to mothers or guardian of children to collect a range of factors that can be associated with stunting. The questionnaire included items on household and family factors concerning home environment, sanitation, food and water safety, household food access, dietary diversity, history of morbidity (diarrheal diseases and fever) and child/parent socio demographic characteristics [<xref ref-type="bibr" rid="pone.0170785.ref011">11</xref>]. Geographic location of selected households and their elevation were collected using a hand held Global Positioning System (GPS) device (Garmin GPSMAP<sup>®</sup>).</p>
+<p>The questionnaire included the Household food Insecurity Assessment Scale (HFIAS) for determining the household food insecurity (access) prevalence. The HFIAS was developed by Food and Nutrition Technical Assistance Project to measure the magnitude of food Insecurity at household level. The HFIAS tool is based on a set of nine questions and follow-up of frequency of occurrence questions. The HFIAS tool was validated and has shown to perform well with minor adaptations in the same setting [<xref ref-type="bibr" rid="pone.0170785.ref036">36</xref>].</p>
+<p>In addition, household food intake was qualitatively evaluated through asking consumption of twelve food groups. We asked the consumption of the following 12 food groups, including (i) cereals/breads, (ii) beans, (iii)potatoes and other roots/tubers, (iv) vegetables, (v) fruits, (vi) eggs, (vii) milk and milk products, (viii) fish, (ix) meat, (x) oil, fat or butter, (xi) sugar or honey, and, (xii) coffee and tea the day and night prior of the survey.</p>
+<p>In order to construct a relative households wealth index, a suite of several socio economic indicators were collected: land ownership, type of house and building materials, availability of fixed domestic assets (i.e. radio, television, bed, chairs and other household items), ownership of domestic animals, source of drinking and cooking water and availability and type of latrine.</p>
+</sec>
+</sec>
+<sec id="sec012">
+<title>Data analysis</title>
+<p>We used EpiData Version 3.1 for data entry and Stata 13.0 (StataCorp, College Station, TX) for cleaning and initial analysis. We revisited the questionnaire for correcting data entry errors and missing data. All variables with missing data were reported.</p>
+<sec id="sec013">
+<title>Children nutritional status</title>
+<p>Children were considered stunted if z-scores of height-for-age (HAZ) were 2SD below the WHO 2005 median or severe stunted if z-scores of height-for-age (HAZ) were 3SD below the WHO 2005 median. The HAZ scores were calculated using WHO Antro software (v3.2.2) and according to recent WHO reference standard [<xref ref-type="bibr" rid="pone.0170785.ref037">37</xref>]. Estimates of stunting and severe stunting in the district were computed using the “svy” command in STATA which accounts for clustering and stratification. Weighting was applied during the analysis whereby data from the census were given less weight than data obtained from random sampling. A complex survey data analysis was employed designating the survey’s primary sampling unit (villages) and strata (agro ecology zone). The variance was adjusted using Taylor linearized variance estimation method.</p>
+</sec>
+<sec id="sec014">
+<title>Household food insecurity</title>
+<p>The household food insecurity (access) prevalence was derived from the HFIAS tool. The procedure used to assign households to one of the food insecurity levels are described elsewhere [<xref ref-type="bibr" rid="pone.0170785.ref038">38</xref>]. Briefly, the frequencies of affirmative responses to the nine questions describing food insecurity scenarios were used to classify households. The nine scenarios are ordered in such a way to reflect an increasing severity of food insecurity.</p>
+<p>A household is considered food secured when none of the 9 scenarios are experienced or only sporadic "concern about food" is reported (first scenario). A severely food insecured household experiences one of the last three scenarios (items 7, 8 and9): running out of food, going to bed hungry, or going a whole day and night without eating. Based on this, households were categorized into four levels of food insecurity: food secure, mildly food insecure, moderately food insecure and severely food insecure.</p>
+</sec>
+<sec id="sec015">
+<title>Dietary diversity</title>
+<p>Household level dietary diversity indicator used in the analysis was generated using a set of twelve food groups eaten in the respective house during the day and night prior to the date of the survey. For households in the sample, we calculated the total number of food groups consumed. The total number of food groups consumed by households could range from 0 to 12. The total number of food groups consumed was used to classify households into lowest, medium and high dietary diversity. Households with lowest dietary diversity consumed three or less food groups. Households with medium dietary diversity consumed four or five food groups whereas households with high dietary diversity consumed six or more food groups.</p>
+</sec>
+<sec id="sec016">
+<title>Household wealth</title>
+<p>Principal component analysis (PCA) was used to construct a relative household wealth index combining several socio economic indicators. A relative socio- economic status was constructed by dividing the resulting score into quintiles that indicate poorest, poor, medium, rich and richest households.</p>
+</sec>
+</sec>
+<sec id="sec017">
+<title>Analysis of spatial distribution of stunting and severe stunting</title>
+<p>We used semivariogram analysis to determine if there exists a spatial autocorrelation in the data and to evaluate whether there is a spatial trend on how stunting is spatially distributed considering both distance between observations and direction of this spatial trend. Semivariogram revealed the presence of autocorrelation by plotting the semivariance of the pairs of observations that are separated by the same distance; thus describing how similar observations are at different separation distances[<xref ref-type="bibr" rid="pone.0170785.ref039">39</xref>]. When the separation distance between the observations increase, the semivariance is expected to increases since observations which are closer to one another are expected to be more similar than those which are distant. Leveling out of the semivariogram indicates lack of spatial autocorrelation. The semivariogram is described by three parameters; range (maximum distance at which one could find spatial dependency), sill (the maximum semivariance value or the value where the semivariogram level out) and nugget (represents the micro-scale variation or measurement error). We used raw data to construct isotropic empirical semivariogram (employing exponential model) in R version 3.0.2. using the geoR package (<xref ref-type="fig" rid="pone.0170785.g001">Fig 1</xref>).</p>
+<fig id="pone.0170785.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0170785.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>Geographic distribution of stunting, (right) hot spots of stunting (high value and low value clusters) among children under the age of 5 years in the Meskane Mareko District, Ethiopia, 2014.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0170785.g001" xlink:type="simple"/>
+</fig>
+<p>Additionally, spatial pattern of the occurrence of stunting was explored at district level (between communities). Thus, Anselin local Moran's <italic>I</italic> was used to test whether stunting were distributed randomly over space, and if not, to identify significant spatial clusters. The implementation of Anselin Local Moran's I was conducted using the tool available at the Spatial Statistic toolbox of ArcGIS version10.0 (Environmental Systems Research Institute Inc., Redlands CA, USA)[<xref ref-type="bibr" rid="pone.0170785.ref039">39</xref>].</p>
+<p>We prepared an attribute table containing information for each village such as the village identification (ID), the proportion of children stunted (population file), and village’s coordinates. We assumed that spatial autocorrelation for stunting declined with the distance and therefore a spatial weight matrix conceptualizing the spatial relationship between communities was generated using an inverse distance approach.</p>
+<p>Standardization of spatial weights was applied so that all weights summed to unity within a group of neighbours. Furthermore, we checked out for normality of the stunting prevalence data using histogram plots and Shapiro-Wilk test for normality as spatial association can be biased when data are not normally distributed.</p>
+</sec>
+<sec id="sec018">
+<title>Variable selection</title>
+<p>The main outcomes of interest for this study were both moderate and severe forms of stunting in children under age five. The potential explanatory (exposure) variables considered were child’s age, sex, morbidity, and place of delivery, parent or guardian’s education level, age, ethnicity, and religion, altitude, level of household food insecurity and diversity, relative economic status, household head’s gender, and husband’s occupation.</p>
+<p>Descriptive analysis was done on explanatory variables using frequency distribution, tables, and summary statistics. The variables were checked for normality using histogram plots. Due to the problem of heaping, we transformed reported child age into six categories (&lt;6, 6–11, 12–13, 24–35, 36–47 and 48–59 months). We checked for collinearity among explanatory variables by calculating the variance inflation factor (VIF).</p>
+<p>A univariable multilevel analysis based on mixed effect logistic regression was used to identify factors that could potentially be associated with the occurrence of stunting and severe stunting. This univariable analysis was conducted in Stata 11.0 (StataCorp College Station, TX). Two level logistic models with a random intercept for <italic>Kebeles</italic> and a random intercept for villages were specified. In the final model for stunting and severe stunting, child’s age, sex, morbidity status, and place of delivery, parent or guardian education level, ethnicity, and marital status, altitude, level of household food insecurity, and relative economic status were statistically significant at 20% significance level (at P-value &lt;0.2) and considered as potential explanatory variables for Bayesian modeling.</p>
+</sec>
+<sec id="sec019">
+<title>Spatial and non-spatial Bayesian modeling</title>
+<p>Bayesian logistic regression model was undertaken using WinBUGS version 1.4.3 (MRC Biostatistics Unit, Cambridge and Imperial College London, UK). Separate models were fitted for stunting and severe stunting with the variables identified above, including a Bayesian logistic regression model with a spatial dependence structure of the data and a Bayesian logistic regression model without of a spatial structure. The rationales for excluding or including the spatial dependence component were to evaluate the effect of including spatial structure on the performance of the model and also to determine the effect on the statistical significances of the odds ratios of the explanatory variables. To this end, the deviance information criterion (DIC) statistic was calculated for each model to evaluate and used to compare model performance. A model with lower DIC was considered as one with a better fit.</p>
+<p>We started with non-informative prior and 10,000 iterations. We checked for convergence of parameters visually using history plot and kerenel density estimate. Convergence was successfully achieved after 10,000 iterations for stunting and 20,000 iteration for severe stunting models. After convergence, a further 20,000 iterations were run and values were thinned by 10 and stored. The stored samples were used to calculate summary statistics (mean, SD, and 95% credible intervals) of the parameters. (Details of the structure of the models are described in <xref ref-type="supplementary-material" rid="pone.0170785.s002">S1 Dataset</xref>).</p>
+</sec>
+<sec id="sec020">
+<title>Ethical clearance</title>
+<p>The study protocol was approved by Institutional Review Board of Addis Ababa University, College of Health Sciences. The study was also approved by the Regional Committee for Medical and Research Ethics, Western Norway (REK Vest). Information on the research objective was read to the participants and verbal Informed consent was received. Verbal consent procedure was considered and approved according to the IRB/ethics committee approval. We obtained only verbal consent since the great majorities of the respondents were illiterate and could not write. This procedure is approved by Institutional Review Board of Addis Ababa University, College of Health Sciences as well as by the Regional Committee for Medical and Research Ethics, Western Norway (REK Vest). Privacy and confidentiality of respondents was also maintained.</p>
+</sec>
+</sec>
+<sec id="sec021" sec-type="results">
+<title>Results</title>
+<p>The study involved a total of 4,094 children 0–59 months; 104(2.6%) of them had missing information on age, sex, or height or the values collected on age or height were not plausible. Fifteen (0.35%) households were not surveyed after repeated visits because of unavailability, which gives a final analytical sample size of 3975.</p>
+<p>As a brief description of the background characteristics about the children included in the study, most of them lived with mother who had no formal education (75.3%); 15.2% were born in a health facility and nearly 93% of children lived in male headed households. More than 75% of the children lived in a household with a lowest dietary diversity and 81% lived in households with a moderate and mild food insecurity. Over three forth (77%) lived in a household with traditional pit latrine and 38% had morbidity in the past two weeks (see <xref ref-type="table" rid="pone.0170785.t001">Table 1</xref>).</p>
+<table-wrap id="pone.0170785.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0170785.t001</object-id>
+<label>Table 1</label> <caption><title>Stunting according to demographic, household food security and other selected characteristics in 3975 children aged 0–59 months, Butajera, Ethiopia 2014.</title></caption>
+<alternatives>
+<graphic id="pone.0170785.t001g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0170785.t001" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Background characteristics</th>
+<th align="center" colspan="5">Height-for-age Z scores (HAZ)</th>
+</tr>
+<tr>
+<th align="left"/>
+<th align="center">Percentage withZ-score &lt;—2</th>
+<th align="center">Percentage withZ-score &lt;—3</th>
+<th align="center">Mean Z-Score</th>
+<th align="center">Weighted number ofchildren</th>
+<th align="center">Unweighted number of children</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><bold>Age in months</bold></td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="right">&lt;6</td>
+<td align="center">19.3</td>
+<td align="center">14.1</td>
+<td align="char" char=".">-0.29</td>
+<td align="center">297</td>
+<td align="center">292</td>
+</tr>
+<tr>
+<td align="right">6–11</td>
+<td align="center">31.5</td>
+<td align="center">16.5</td>
+<td align="char" char=".">-0.98</td>
+<td align="center">408</td>
+<td align="center">408</td>
+</tr>
+<tr>
+<td align="right">12–23</td>
+<td align="center">51.7</td>
+<td align="center">27.5</td>
+<td align="char" char=".">-1.87</td>
+<td align="center">708</td>
+<td align="center">707</td>
+</tr>
+<tr>
+<td align="right">24–35</td>
+<td align="center">53.4</td>
+<td align="center">27.0</td>
+<td align="char" char=".">-2.11</td>
+<td align="center">742</td>
+<td align="center">731</td>
+</tr>
+<tr>
+<td align="right">36–47</td>
+<td align="center">45.4</td>
+<td align="center">20.7</td>
+<td align="char" char=".">-1.98</td>
+<td align="center">908</td>
+<td align="center">892</td>
+</tr>
+<tr>
+<td align="right">48–59</td>
+<td align="center">41.2</td>
+<td align="center">16.4</td>
+<td align="char" char=".">-1.88</td>
+<td align="center">971</td>
+<td align="center">945</td>
+</tr>
+<tr>
+<td align="right"><bold>P value (dose response trend)</bold><xref ref-type="table-fn" rid="t001fn001">*</xref></td>
+<td align="center"><italic>P&lt;0</italic>.<italic>01</italic></td>
+<td align="center"><italic>P&lt;0</italic>.<italic>05</italic></td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="left"><bold>Sex of the child</bold></td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="right">Female</td>
+<td align="center">40.6</td>
+<td align="center">17.9</td>
+<td align="char" char=".">-1.64</td>
+<td align="center">2034</td>
+<td align="center">2006</td>
+</tr>
+<tr>
+<td align="right">Male</td>
+<td align="center">46.8</td>
+<td align="center">24.7</td>
+<td align="char" char=".">-1.83</td>
+<td align="center">2006</td>
+<td align="center">1969</td>
+</tr>
+<tr>
+<td align="left"><bold>Place of delivery</bold></td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="right">Home</td>
+<td align="center">45.2</td>
+<td align="center">22.3</td>
+<td align="char" char=".">-1.78</td>
+<td align="center">3418</td>
+<td align="center">3370</td>
+</tr>
+<tr>
+<td align="right">Health facility</td>
+<td align="center">34.8</td>
+<td align="center">16.3</td>
+<td align="char" char=".">-1.49</td>
+<td align="center">615</td>
+<td align="center">598</td>
+</tr>
+<tr>
+<td align="left"><bold>Mother marital status</bold></td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="right">Single, separated, divorced, widowed</td>
+<td align="center">42.0</td>
+<td align="center">21.9</td>
+<td align="char" char=".">-1.87</td>
+<td align="center">206</td>
+<td align="center">199</td>
+</tr>
+<tr>
+<td align="right">Married or living together</td>
+<td align="center">43.7</td>
+<td align="center">21.3</td>
+<td align="char" char=".">-1.73</td>
+<td align="center">3845</td>
+<td align="center">3776</td>
+</tr>
+<tr>
+<td align="left"><bold>Mother’s Education</bold></td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="right">None</td>
+<td align="center">44.2</td>
+<td align="center">22.4</td>
+<td align="char" char=".">-1.78</td>
+<td align="center">3023</td>
+<td align="center">2965</td>
+</tr>
+<tr>
+<td align="right">Read and write</td>
+<td align="center">41.7</td>
+<td align="center">17.5</td>
+<td align="char" char=".">-1.67</td>
+<td align="center">151</td>
+<td align="center">149</td>
+</tr>
+<tr>
+<td align="right">Primary and above</td>
+<td align="center">41.5</td>
+<td align="center">18.1</td>
+<td align="char" char=".">-1.56</td>
+<td align="center">842</td>
+<td align="center">826</td>
+</tr>
+<tr>
+<td align="right"><bold>P value (dose response trend)</bold><xref ref-type="table-fn" rid="t001fn001">*</xref></td>
+<td align="center"><italic>P&lt;0</italic>.<italic>05</italic></td>
+<td align="center"><italic>P&lt;0</italic>.<italic>05</italic></td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="left"><bold>Morbidity status (past 24 hr)</bold></td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="right">None</td>
+<td align="center">43.3</td>
+<td align="center">21.1</td>
+<td align="char" char=".">-1.78</td>
+<td align="center">2495</td>
+<td align="center">2463</td>
+</tr>
+<tr>
+<td align="right">Morbid</td>
+<td align="center">44.3</td>
+<td align="center">21.7</td>
+<td align="char" char=".">-1.67</td>
+<td align="center">1556</td>
+<td align="center">1530</td>
+</tr>
+<tr>
+<td align="right"><bold>P value (dose response trend)</bold><xref ref-type="table-fn" rid="t001fn001">*</xref></td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="left"><bold>Household head gender</bold></td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="right">Female</td>
+<td align="center">38.8</td>
+<td align="center">21.5</td>
+<td align="char" char=".">-1.77</td>
+<td align="center">286</td>
+<td align="center">277</td>
+</tr>
+<tr>
+<td align="right">Male</td>
+<td align="center">44.0</td>
+<td align="center">21.4</td>
+<td align="char" char=".">-1.73</td>
+<td align="center">3722</td>
+<td align="center">3656</td>
+</tr>
+<tr>
+<td align="left"><bold>Household food insecurity</bold></td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="right">Food secured</td>
+<td align="center">39.4</td>
+<td align="center">16.2</td>
+<td align="char" char=".">-1.55</td>
+<td align="center">772</td>
+<td align="center">745</td>
+</tr>
+<tr>
+<td align="right">Mildly food insecure</td>
+<td align="center">42.0</td>
+<td align="center">21.8</td>
+<td align="char" char=".">-1.74</td>
+<td align="center">1427</td>
+<td align="center">1403</td>
+</tr>
+<tr>
+<td align="right">Moderately food insecure</td>
+<td align="center">46.4</td>
+<td align="center">22.7</td>
+<td align="char" char=".">-1.82</td>
+<td align="center">1759</td>
+<td align="center">1739</td>
+</tr>
+<tr>
+<td align="right">severely food insecure</td>
+<td align="center">49.6</td>
+<td align="center">13.8</td>
+<td align="char" char=".">-1.49</td>
+<td align="center">59</td>
+<td align="center">55</td>
+</tr>
+<tr>
+<td align="right"><bold>P value (dose response trend)</bold><xref ref-type="table-fn" rid="t001fn001">*</xref></td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="left"><bold>Household Food diversity score</bold></td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="right">Lowest</td>
+<td align="center">44.5</td>
+<td align="center">18.1</td>
+<td align="char" char=".">-1.77</td>
+<td align="center">637</td>
+<td align="center">619</td>
+</tr>
+<tr>
+<td align="right">Medium</td>
+<td align="center">43.8</td>
+<td align="center">22.0</td>
+<td align="char" char=".">-1.73</td>
+<td align="center">3189</td>
+<td align="center">3138</td>
+</tr>
+<tr>
+<td align="right">High</td>
+<td align="center">38.1</td>
+<td align="center">21.1</td>
+<td align="char" char=".">-1.69</td>
+<td align="center">225</td>
+<td align="center">218</td>
+</tr>
+<tr>
+<td align="left"><bold>Household wealth</bold></td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="right">Poorest</td>
+<td align="center">47.6</td>
+<td align="center">24.3</td>
+<td align="char" char=".">-1.83</td>
+<td align="center">990</td>
+<td align="center">975</td>
+</tr>
+<tr>
+<td align="right">Poor</td>
+<td align="center">45.1</td>
+<td align="center">23.0</td>
+<td align="char" char=".">-1.82</td>
+<td align="center">747</td>
+<td align="center">728</td>
+</tr>
+<tr>
+<td align="right">Middle</td>
+<td align="center">43.2</td>
+<td align="center">21.1</td>
+<td align="char" char=".">-1.75</td>
+<td align="center">731</td>
+<td align="center">724</td>
+</tr>
+<tr>
+<td align="right">Rich</td>
+<td align="center">41.9</td>
+<td align="center">18.8</td>
+<td align="char" char=".">-1.66</td>
+<td align="center">900</td>
+<td align="center">879</td>
+</tr>
+<tr>
+<td align="right">Richest</td>
+<td align="center">39.0</td>
+<td align="center">18.7</td>
+<td align="char" char=".">-1.59</td>
+<td align="center">683</td>
+<td align="center">669</td>
+</tr>
+<tr>
+<td align="right"><bold>P value (dose response trend)</bold><xref ref-type="table-fn" rid="t001fn001">*</xref></td>
+<td align="center"><italic>P&lt;0</italic>.<italic>01</italic></td>
+<td align="center"><italic>P&lt;0</italic>.<italic>05</italic></td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="left"><bold>Household Dietary diversity score (0–12)</bold><xref ref-type="table-fn" rid="t001fn002">**</xref></td>
+<td align="center">4.12 ± 0.9</td>
+<td align="center">4.11± 0.9<xref ref-type="table-fn" rid="t001fn002">**</xref></td>
+<td align="center">-</td>
+<td align="center">3975</td>
+<td align="center">3975</td>
+</tr>
+<tr>
+<td align="left"><bold>Total [95%CI]</bold></td>
+<td align="center">43.7[40.9,46.4]</td>
+<td align="center">21.3[19.5,23.3]</td>
+<td align="char" char=".">-1.74</td>
+<td align="center">4048</td>
+<td align="center">3975</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t001fn001"><p>* Dose response test: The test performed is the Extended Mantel Haenszel Chi Square for linear trend with a p-value for one degree of freedom.</p></fn>
+<fn id="t001fn002"><p>** mean and standard deviation</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<sec id="sec022">
+<title>Children’s nutritional status</title>
+<p>A summary of the demographic, household food security and other selected characteristics of 3,975 children aged 0–59 months are presented in <xref ref-type="table" rid="pone.0170785.t001">Table 1</xref>. The overall prevalence of stunting in the district was 43.7% [95%CI: 40.9, 46.4]. The prevalence of stunting started to rise at the age of 6–11 months (31.5%) and peaked at the age of 24–35 months (53.4%).The prevalence of stunting was found to be higher among children who were delivered at home (45.2%), whose mother were without any formal education (44.2%), and among those who lived in severely food insecure (49.6%) and poorest households (47.6%). The overall district level prevalence of severe stunting was 21.3% [95%CI: 19.5, 23.3]. Similar to the pattern observed for stunting, the prevalence of severe stunting started to increase at the age of 6–11 months (16.5%) and peaked at the age of 24–35 months (27.0%).</p>
+<p>The result on the magnitude of food insecurity indicated that only 775 (19.2%) households were food secured while most of the sampled households were either mildly or moderately food insecured. A high percentage of households (78%) had a medium diversity score (consumed 4 or five food groups in the previous day) whereas 15.7% of the sampled households had a lowest dietary diversity (consumed 3 or less food groups in the previous day). The overall mean dietary diversity score was 4 food groups and did not vary among children.</p>
+<p>A significant dose response linear relationship between stunting (severe stunting) and child age was documented (P&lt;0.01). In addition to this, a significant dose response relationship was documented between stunting (severe stunting) and maternal education, household food insecurity level, and household wealth. Conversely, we did not observe noticeable differences in the prevalence of stunting (severe stunting) due to differences in marital status, gender of household head, and child’s morbidity status.</p>
+</sec>
+<sec id="sec023">
+<title>Spatial distribution of stunting</title>
+<p>The geographic distribution of stunting is shown in <xref ref-type="fig" rid="pone.0170785.g001">Fig 1</xref>. Using LISA statistics, we identified significant spatial variability on the distribution of stunting in the district. We identified statistically significant clusters of high prevalence of stunting (hotspots) in the eastern part of the district and clusters of low prevalence (cold spots) in the western (<xref ref-type="fig" rid="pone.0170785.g001">Fig 1</xref>).</p>
+<p>Spatial autocorrelation was evident, as depicted in <xref ref-type="fig" rid="pone.0170785.g002">Fig 2</xref>. According to the semivariogram, stunting prevalence is spatially dependent at a maximum distance of 14,4 kms. However, our Bayesian multivariate models show that, after adjusting by individual and household-related covariates and accounting for random spatial effects, the range of spatial effect for stunting and severe stunting is around 33km. The geostatistical models for stunting showed that the range of spatial effects and spatial variances for stunting and severe were around 33km and 0.96 respectively (<xref ref-type="table" rid="pone.0170785.t002">Table 2</xref>).</p>
+<fig id="pone.0170785.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0170785.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>Empirical semivariogram model of the spatial dependency of stunting (parameter values fitted were range = 14400 meters, sill = 122.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0170785.g002" xlink:type="simple"/>
+</fig>
+<table-wrap id="pone.0170785.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0170785.t002</object-id>
+<label>Table 2</label> <caption><title>Posterior means and standard deviation of regression coefficients (odds ratio and Bayesian credible interval) in the binary logistic geostatistical model for risk factor for childhood severe stunting Butajera, Ethiopia 2014.</title></caption>
+<alternatives>
+<graphic id="pone.0170785.t002g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0170785.t002" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Background characteristics</th>
+<th align="left" colspan="8">Severe Stunting (HAZ &lt;−3)</th>
+</tr>
+<tr>
+<th align="left"/>
+<th align="left" colspan="4">Bayesian logistic regression model, no geostatistical component</th>
+<th align="left" colspan="4">Bayesian geostatistical model</th>
+</tr>
+<tr>
+<th align="left"/>
+<th align="center">Posterior Mean</th>
+<th align="center">SD</th>
+<th align="center">Median</th>
+<th align="left">Adjusted 95% Bayesian credible intervals (BCI) OR (95% BCI)</th>
+<th align="center">Posterior Mean</th>
+<th align="center">SD</th>
+<th align="center">Median</th>
+<th align="left">Adjusted 95% Bayesian credible intervals (BCI) OR (95% BCI)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" colspan="9"><bold><italic>Age (months)</italic></bold></td>
+</tr>
+<tr>
+<td align="right">&lt; 6</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"/>
+<td align="center"><italic>1</italic>.<italic>0</italic></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><italic>1</italic>.<italic>0</italic></td>
+</tr>
+<tr>
+<td align="right">6–11</td>
+<td align="char" char=".">1.00</td>
+<td align="char" char=".">0.2</td>
+<td align="char" char=".">1.0</td>
+<td align="center">1.00 (0.60–1.60)</td>
+<td align="char" char=".">1.00</td>
+<td align="char" char=".">0.25</td>
+<td align="char" char=".">0.97</td>
+<td align="center">1.00 (0.61–1.56)</td>
+</tr>
+<tr>
+<td align="right">12–23</td>
+<td align="char" char=".">2.10</td>
+<td align="char" char=".">0.4</td>
+<td align="char" char=".">2.0</td>
+<td align="center">2.10 (1.40–3.00)*</td>
+<td align="char" char=".">2.05</td>
+<td align="char" char=".">0.43</td>
+<td align="char" char=".">2.00</td>
+<td align="center">2.05 (1.37–3.04)*</td>
+</tr>
+<tr>
+<td align="right">24–35</td>
+<td align="char" char=".">2.70</td>
+<td align="char" char=".">0.6</td>
+<td align="char" char=".">2.6</td>
+<td align="center">2.70 (1.80–4.00)*</td>
+<td align="char" char=".">2.67</td>
+<td align="char" char=".">0.56</td>
+<td align="char" char=".">2.61</td>
+<td align="center">2.67 (1.76–3.94)*</td>
+</tr>
+<tr>
+<td align="right">36–47</td>
+<td align="char" char=".">2.00</td>
+<td align="char" char=".">0.4</td>
+<td align="char" char=".">1.9</td>
+<td align="center">2.00 (1.30–2.90)*</td>
+<td align="char" char=".">1.96</td>
+<td align="char" char=".">0.41</td>
+<td align="char" char=".">1.92</td>
+<td align="center">1.96 (1.29–2.89)*</td>
+</tr>
+<tr>
+<td align="right">48–59</td>
+<td align="char" char=".">1.70</td>
+<td align="char" char=".">0.3</td>
+<td align="char" char=".">1.6</td>
+<td align="center">1.70 (1.10–2.50)*</td>
+<td align="char" char=".">1.66</td>
+<td align="char" char=".">0.35</td>
+<td align="char" char=".">1.62</td>
+<td align="center">1.66 (1.11–2.45)*</td>
+</tr>
+<tr>
+<td align="left" colspan="9"><bold>Sex of the child</bold></td>
+</tr>
+<tr>
+<td align="right">Female</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="right">Male</td>
+<td align="char" char=".">1.30</td>
+<td align="char" char=".">0.1</td>
+<td align="char" char=".">1.30</td>
+<td align="center">1.30 (1.10–1.60)*</td>
+<td align="char" char=".">1.34</td>
+<td align="char" char=".">0.11</td>
+<td align="char" char=".">1.34</td>
+<td align="center">1.34 (1.14–1.57)*</td>
+</tr>
+<tr>
+<td align="left" colspan="9"><bold>Morbidity</bold></td>
+</tr>
+<tr>
+<td align="right">None</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1</td>
+<td align="center">1.0</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="right">Yes</td>
+<td align="char" char=".">0.9</td>
+<td align="char" char=".">0.1</td>
+<td align="char" char=".">0.9</td>
+<td align="center">0.90 (0.70–1.00)</td>
+<td align="char" char=".">0.86</td>
+<td align="char" char=".">0.07</td>
+<td align="char" char=".">0.86</td>
+<td align="center">0.86 (0.73–1.01)</td>
+</tr>
+<tr>
+<td align="left" colspan="9"><bold>Place of delivery</bold></td>
+</tr>
+<tr>
+<td align="right">Home</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="right">Health facility</td>
+<td align="char" char=".">0.90</td>
+<td align="char" char=".">0.1</td>
+<td align="char" char=".">0.90</td>
+<td align="center">0.90 (0.70–1.10)</td>
+<td align="char" char=".">0.91</td>
+<td align="char" char=".">0.11</td>
+<td align="char" char=".">0.90</td>
+<td align="center">0.91 (0.71–1.14)</td>
+</tr>
+<tr>
+<td align="left" colspan="9"><bold>Mother’s Education</bold></td>
+</tr>
+<tr>
+<td align="right">Primary and above</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="right">Read and write</td>
+<td align="char" char=".">0.90</td>
+<td align="char" char=".">0.2</td>
+<td align="char" char=".">0.90</td>
+<td align="center">0.90(0.50–1.50)</td>
+<td align="char" char=".">0.94</td>
+<td align="char" char=".">0.24</td>
+<td align="char" char=".">0.91</td>
+<td align="center">0.94(0.55–1.47)</td>
+</tr>
+<tr>
+<td align="right">None</td>
+<td align="char" char=".">1.30</td>
+<td align="char" char=".">0.1</td>
+<td align="char" char=".">1.30</td>
+<td align="center">1.30(1.10–1.60)*</td>
+<td align="char" char=".">1.33</td>
+<td align="char" char=".">0.14</td>
+<td align="char" char=".">1.33</td>
+<td align="center">1.30(1.08–1.64)*</td>
+</tr>
+<tr>
+<td align="left" colspan="9"><bold>Ethnicity/race</bold></td>
+</tr>
+<tr>
+<td align="right">Guraghee</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="right">Siltie</td>
+<td align="char" char=".">1.2</td>
+<td align="char" char=".">0.1</td>
+<td align="char" char=".">1.2</td>
+<td align="center">1.20(1.00–1.50)</td>
+<td align="char" char=".">1.25</td>
+<td align="char" char=".">0.14</td>
+<td align="char" char=".">1.25</td>
+<td align="center">1.25(1.00–1.54)</td>
+</tr>
+<tr>
+<td align="right">Mareko</td>
+<td align="char" char=".">1.4</td>
+<td align="char" char=".">0.3</td>
+<td align="char" char=".">1.4</td>
+<td align="center">1.40(0.96–2.00)</td>
+<td align="char" char=".">1.35</td>
+<td align="char" char=".">0.27</td>
+<td align="char" char=".">1.33</td>
+<td align="center">1.35(0.88–1.95)</td>
+</tr>
+<tr>
+<td align="right">Others</td>
+<td align="char" char=".">1.0</td>
+<td align="char" char=".">0.2</td>
+<td align="char" char=".">1.0</td>
+<td align="center">1.00(0.60–1.50)</td>
+<td align="char" char=".">0.97</td>
+<td align="char" char=".">0.22</td>
+<td align="char" char=".">0.95</td>
+<td align="center">0.97(0.59–1.45)</td>
+</tr>
+<tr>
+<td align="left" colspan="9"><bold>Household food insecurity</bold></td>
+</tr>
+<tr>
+<td align="right">Food secured</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="right">Mildly food insecured</td>
+<td align="char" char=".">1.3</td>
+<td align="char" char=".">0.2</td>
+<td align="char" char=".">1.3</td>
+<td align="center">1.30(1.00–1.60)</td>
+<td align="char" char=".">1.29</td>
+<td align="char" char=".">0.16</td>
+<td align="char" char=".">1.29</td>
+<td align="center">1.29(1.01–1.64)*</td>
+</tr>
+<tr>
+<td align="right">Moderately food insecured</td>
+<td align="char" char=".">1.3</td>
+<td align="char" char=".">0.2</td>
+<td align="char" char=".">1.3</td>
+<td align="center">1.30(1.00–1.60)</td>
+<td align="char" char=".">1.31</td>
+<td align="char" char=".">0.16</td>
+<td align="char" char=".">1.30</td>
+<td align="center">1.31(1.04–1.64)*</td>
+</tr>
+<tr>
+<td align="right">Severely food insecured</td>
+<td align="char" char=".">0.7</td>
+<td align="char" char=".">0.3</td>
+<td align="char" char=".">0.7</td>
+<td align="center">0.70(0.30–1.40)</td>
+<td align="char" char=".">0.71</td>
+<td align="char" char=".">0.31</td>
+<td align="char" char=".">0.66</td>
+<td align="center">0.71(0.26–1.45)</td>
+</tr>
+<tr>
+<td align="left" colspan="9"><bold>Household wealth</bold></td>
+</tr>
+<tr>
+<td align="right">Richest</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+<td align="center"/>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="right">Rich</td>
+<td align="char" char=".">0.8</td>
+<td align="char" char=".">0.1</td>
+<td align="char" char=".">0.8</td>
+<td align="center">0.80(0.60–1.00)</td>
+<td align="char" char=".">0.80</td>
+<td align="char" char=".">0.11</td>
+<td align="char" char=".">0.79</td>
+<td align="center">0.80(0.61–1.02)</td>
+</tr>
+<tr>
+<td align="right">Middle</td>
+<td align="char" char=".">0.9</td>
+<td align="char" char=".">0.1</td>
+<td align="char" char=".">0.9</td>
+<td align="center">0.90(0.70–1.20)</td>
+<td align="char" char=".">0.89</td>
+<td align="char" char=".">0.13</td>
+<td align="char" char=".">0.88</td>
+<td align="center">0.89(0.66–1.17)</td>
+</tr>
+<tr>
+<td align="right">Poor</td>
+<td align="char" char=".">1.0</td>
+<td align="char" char=".">0.1</td>
+<td align="char" char=".">1.0</td>
+<td align="center">1.00(0.80–1.40)</td>
+<td align="char" char=".">1.04</td>
+<td align="char" char=".">0.14</td>
+<td align="char" char=".">1.03</td>
+<td align="center">1.04(0.78–1.35)</td>
+</tr>
+<tr>
+<td align="right">Poorest</td>
+<td align="char" char=".">1.1</td>
+<td align="char" char=".">0.1</td>
+<td align="char" char=".">1.1</td>
+<td align="center">1.10(0.80–1.40)</td>
+<td align="char" char=".">1.10</td>
+<td align="char" char=".">0.14</td>
+<td align="char" char=".">1.09</td>
+<td align="center">1.10(0.84–1.41)</td>
+</tr>
+<tr>
+<td align="left"><bold>attitude</bold></td>
+<td align="center" colspan="4"/>
+<td align="center" colspan="4"/>
+</tr>
+<tr>
+<td align="right">altitude (meter)</td>
+<td align="char" char=".">1.0</td>
+<td align="char" char=".">0.0</td>
+<td align="char" char=".">1.0</td>
+<td align="center">1.00(1.00,1.00)</td>
+<td align="char" char=".">0.99</td>
+<td align="char" char=".">0.0</td>
+<td align="char" char=".">0.99</td>
+<td align="center">0.99(0.99,1.00)</td>
+</tr>
+<tr>
+<td align="left"><bold>Model DIC</bold></td>
+<td align="center" colspan="4"><bold>3890</bold></td>
+<td align="center" colspan="4"><bold>3889</bold></td>
+</tr>
+<tr>
+<td align="left"><bold>Range of the spatial effect [range in km]</bold></td>
+<td align="center" colspan="8"><bold>32.4 (6.2–202.5)</bold></td>
+</tr>
+<tr>
+<td align="left"><bold>Spatial variance</bold></td>
+<td align="center" colspan="8"><bold>0.96(3.65E14–0.099)</bold></td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="sec024">
+<title>Potential risk factors</title>
+<p>The Bayesian spatial and non-spatial models for stunting and severe stunting are presented in Tables <xref ref-type="table" rid="pone.0170785.t002">2</xref> and <xref ref-type="table" rid="pone.0170785.t003">3</xref>. Based on the value of DIC statistics as a measure of model performance, the stunting model accounting for spatial random effects had substantially better model fit compared with the model without spatial component. However, the inclusion of spatial component in the severe stunning model did not improve the model fit.</p>
+<table-wrap id="pone.0170785.t003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0170785.t003</object-id>
+<label>Table 3</label> <caption><title>Posterior means and standard deviation of regression coefficients (odds ratio and Bayesian credible interval) in the binary logistic geostatistical model for risk factor for childhood stunting Butajera, Ethiopia 2014.</title></caption>
+<alternatives>
+<graphic id="pone.0170785.t003g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0170785.t003" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Background characteristics</th>
+<th align="center" colspan="8">stunting (HAZ &lt;−2)</th>
+</tr>
+<tr>
+<th align="left"/>
+<th align="center" colspan="4">Bayesian logistic regression model, no geostatistical component</th>
+<th align="center" colspan="4">Bayesian geostatistical model</th>
+</tr>
+<tr>
+<th align="left"/>
+<th align="center">Posterior Mean</th>
+<th align="center">SD</th>
+<th align="center">Median</th>
+<th align="left">Adjusted 95% Bayesian credible intervals (BCI)OR (95% BCI)</th>
+<th align="center">Posterior Mean</th>
+<th align="center">SD</th>
+<th align="center">Median</th>
+<th align="left">Adjusted 95% Bayesian credible intervals (BCI) OR (95% BCI)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" colspan="9"><bold>Age (months)</bold></td>
+</tr>
+<tr>
+<td align="right">&lt; 6</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="right">6–11</td>
+<td align="char" char=".">1.70</td>
+<td align="center">0.30</td>
+<td align="char" char=".">1.60</td>
+<td align="center">1.70 (1.10,2.40)*</td>
+<td align="char" char=".">1.68</td>
+<td align="center">0.33</td>
+<td align="char" char=".">1.65</td>
+<td align="center">1.68 (1.14,2.42)*</td>
+</tr>
+<tr>
+<td align="right">12–23</td>
+<td align="char" char=".">4.10</td>
+<td align="center">0.70</td>
+<td align="char" char=".">4.00</td>
+<td align="center">4.10 (2.90,5.70)*</td>
+<td align="char" char=".">4.10</td>
+<td align="center">0.72</td>
+<td align="char" char=".">4.03</td>
+<td align="center">4.10 (2.90,5.72)*</td>
+</tr>
+<tr>
+<td align="right">24–35</td>
+<td align="char" char=".">4.70</td>
+<td align="center">0.80</td>
+<td align="char" char=".">4.70</td>
+<td align="center">4.70 (3.30,6.60)*</td>
+<td align="char" char=".">4.74</td>
+<td align="center">0.83</td>
+<td align="char" char=".">4.67</td>
+<td align="center">4.74 (3.35,6.58)*</td>
+</tr>
+<tr>
+<td align="right">36–47</td>
+<td align="char" char=".">4.00</td>
+<td align="center">0.70</td>
+<td align="char" char=".">3.90</td>
+<td align="center">4.00 (2.80,5.50)*</td>
+<td align="char" char=".">3.96</td>
+<td align="center">0.69</td>
+<td align="char" char=".">3.90</td>
+<td align="center">3.96 (2.82,5.50)*</td>
+</tr>
+<tr>
+<td align="right">48–59</td>
+<td align="char" char=".">3.20</td>
+<td align="center">0.60</td>
+<td align="char" char=".">3.10</td>
+<td align="center">3.20 (2.30,4.40)*</td>
+<td align="char" char=".">3.19</td>
+<td align="center">0.55</td>
+<td align="char" char=".">3.14</td>
+<td align="center">3.19 (2.28,4.41)*</td>
+</tr>
+<tr>
+<td align="left" colspan="9"><bold>Sex of the child</bold></td>
+</tr>
+<tr>
+<td align="right">Female</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="right">Male</td>
+<td align="char" char=".">1.3</td>
+<td align="center">0.1</td>
+<td align="char" char=".">1.3</td>
+<td align="center">1.3 (1.10,1.50)*</td>
+<td align="char" char=".">1.28</td>
+<td align="center">0.08</td>
+<td align="char" char=".">1.27</td>
+<td align="center">1.28 (1.12,1.45)*</td>
+</tr>
+<tr>
+<td align="left" colspan="9"><bold>Place of delivery</bold></td>
+</tr>
+<tr>
+<td align="right">Home</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="right">Health facility</td>
+<td align="char" char=".">0.8</td>
+<td align="center">0.1</td>
+<td align="char" char=".">0.8</td>
+<td align="center">0.8 (0.70–1.00)</td>
+<td align="char" char=".">0.8</td>
+<td align="center">0.08</td>
+<td align="char" char=".">0.81</td>
+<td align="center">0.81 (0.66–0.98)*</td>
+</tr>
+<tr>
+<td align="left" colspan="9"><bold>Mother’s Education</bold></td>
+</tr>
+<tr>
+<td align="right">Primary and above</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="right">Read and write</td>
+<td align="char" char=".">1.0</td>
+<td align="center">0.20</td>
+<td align="char" char=".">1.00</td>
+<td align="center">1.00(0.70,1.40)</td>
+<td align="char" char=".">1.02</td>
+<td align="center">0.20</td>
+<td align="char" char=".">1.00</td>
+<td align="center">1.02(0.68,1.45)</td>
+</tr>
+<tr>
+<td align="right">None</td>
+<td align="char" char=".">1.2</td>
+<td align="center">0.10</td>
+<td align="char" char=".">1.20</td>
+<td align="center">1.21(1.00,1.40)</td>
+<td align="char" char=".">1.21</td>
+<td align="center">0.10</td>
+<td align="char" char=".">1.20</td>
+<td align="center">1.21(1.02,1.42)*</td>
+</tr>
+<tr>
+<td align="left" colspan="9"><bold>Ethnicity/race</bold></td>
+</tr>
+<tr>
+<td align="right">Guraghee</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="right">Siltie</td>
+<td align="char" char=".">1.10</td>
+<td align="center">0.10</td>
+<td align="char" char=".">1.10</td>
+<td align="center">1.10(0.90,1.40)</td>
+<td align="char" char=".">1.14</td>
+<td align="center">0.11</td>
+<td align="char" char=".">1.13</td>
+<td align="center">1.14(0.94,1.36)</td>
+</tr>
+<tr>
+<td align="right">Mareko</td>
+<td align="char" char=".">1.30</td>
+<td align="center">0.20</td>
+<td align="char" char=".">1.30</td>
+<td align="center">1.30(0.90,1.80)</td>
+<td align="char" char=".">1.28</td>
+<td align="center">0.22</td>
+<td align="char" char=".">1.26</td>
+<td align="center">1.28(0.91,1.77)</td>
+</tr>
+<tr>
+<td align="right">Others</td>
+<td align="char" char=".">1.00</td>
+<td align="center">0.20</td>
+<td align="char" char=".">1.00</td>
+<td align="center">1.00(0.70,1.40)</td>
+<td align="char" char=".">0.97</td>
+<td align="center">0.18</td>
+<td align="char" char=".">0.95</td>
+<td align="center">0.97(0.66,1.37)</td>
+</tr>
+<tr>
+<td align="left" colspan="9"><bold>Household food insecurity</bold></td>
+</tr>
+<tr>
+<td align="right">Food secured</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="right">Mildly food insecured</td>
+<td align="char" char=".">1.10</td>
+<td align="center">0.10</td>
+<td align="char" char=".">1.10</td>
+<td align="center">1.10 (0.90,1.30)</td>
+<td align="char" char=".">1.08</td>
+<td align="center">0.10</td>
+<td align="char" char=".">1.07</td>
+<td align="center">1.08 (0.89,1.30)</td>
+</tr>
+<tr>
+<td align="right">Moderately food insecured</td>
+<td align="char" char=".">1.20</td>
+<td align="center">0.10</td>
+<td align="char" char=".">1.20</td>
+<td align="center">1.20(1.00,1.50)</td>
+<td align="char" char=".">1.26</td>
+<td align="center">0.12</td>
+<td align="char" char=".">1.25</td>
+<td align="center">1.26 (1.04,1.51)*</td>
+</tr>
+<tr>
+<td align="right">Severely food insecured</td>
+<td align="char" char=".">1.40</td>
+<td align="center">0.40</td>
+<td align="char" char=".">1.30</td>
+<td align="center">1.40(0.70,2.30)</td>
+<td align="char" char=".">1.36</td>
+<td align="center">0.42</td>
+<td align="char" char=".">1.31</td>
+<td align="center">1.36 (0.72,2.34)</td>
+</tr>
+<tr>
+<td align="left" colspan="9"><bold>Household wealth</bold></td>
+</tr>
+<tr>
+<td align="right">Richest</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="right">Rich</td>
+<td align="char" char=".">1.00</td>
+<td align="center">0.10</td>
+<td align="char" char=".">1.00</td>
+<td align="center">1.00 (0.80,1.20)</td>
+<td align="char" char=".">0.95</td>
+<td align="center">0.10</td>
+<td align="char" char=".">0.95</td>
+<td align="center">0.95 (0.76,1.18)</td>
+</tr>
+<tr>
+<td align="right">Middle</td>
+<td align="char" char=".">1.10</td>
+<td align="center">0.10</td>
+<td align="char" char=".">1.10</td>
+<td align="center">1.10 (0.90,1.40)</td>
+<td align="char" char=".">1.12</td>
+<td align="center">0.13</td>
+<td align="char" char=".">1.11</td>
+<td align="center">1.12 (0.89,1.40)</td>
+</tr>
+<tr>
+<td align="right">Poor</td>
+<td align="char" char=".">1.10</td>
+<td align="center">0.10</td>
+<td align="char" char=".">1.10</td>
+<td align="center">1.10 (0.90,1.40)</td>
+<td align="char" char=".">1.13</td>
+<td align="center">0.13</td>
+<td align="char" char=".">1.12</td>
+<td align="center">1.13(0.89,1.40)</td>
+</tr>
+<tr>
+<td align="right">Poorest</td>
+<td align="char" char=".">1.20</td>
+<td align="center">0.10</td>
+<td align="char" char=".">1.20</td>
+<td align="center">1.20 (1.00,1.50)</td>
+<td align="char" char=".">1.18</td>
+<td align="center">0.13</td>
+<td align="char" char=".">1.17</td>
+<td align="center">1.18(0.94,1.46)</td>
+</tr>
+<tr>
+<td align="left"><bold>altitude (location)</bold></td>
+<td align="center" colspan="4"/>
+<td align="center" colspan="4"/>
+</tr>
+<tr>
+<td align="right">altitude (meter)</td>
+<td align="char" char=".">1.0</td>
+<td align="center">0</td>
+<td align="char" char=".">1.00</td>
+<td align="left">1.00(1.00,1.00)</td>
+<td align="char" char=".">1.00</td>
+<td align="center">0</td>
+<td align="char" char=".">1.0</td>
+<td align="center">1.00(1.00,1.00)</td>
+</tr>
+<tr>
+<td align="right"><bold>Model DIC</bold></td>
+<td align="center" colspan="4"><bold>5133</bold></td>
+<td align="center" colspan="4"><bold>5126</bold></td>
+</tr>
+<tr>
+<td align="right"><bold>Range of the spatial effect [range in km]</bold></td>
+<td align="center" colspan="8"><bold>33 (6.5–204.5)</bold></td>
+</tr>
+<tr>
+<td align="right"><bold>Spatial variance</bold></td>
+<td align="center" colspan="8"><bold>0.96(3.6E14–0.098)</bold></td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>The Bayesian geostatistical model for stunting indicated that age of a child, child’s sex, place of delivery, mothers education, and household food insecurity were significantly associated with stunting. Age and sex of a child, household food insecurity, and mother’s education were significantly associated with severe stunting.</p>
+<p>We found that the risk of stunting and severe stunting increased as the age of the child increased. Children in the age group 24–35 months were 4.7 times higher odds of stunting (OR 4.74; 95% Bayesian credible interval [BCI]; 3.35–6.58) and 2.7 times more likely to be severely stunted (OR 2.67; 95% BCI; 1.76–3.94) relative to children below 6 months of age</p>
+<p>The odds of stunting among boys was 28% higher than the odds among girls (OR 1.28; 95%BCI; 1.12–1.45) and the odds of severe stunting among boys was 34% higher than the odds among girls (OR 1.34; 95% BCI; 1.14–1.57).</p>
+<p>Higher mother’s/guardian education level has a protective effect from the risk of stunting and severe stunting. The odds of stunting was 20% higher among children whose mother had no education compared to children whose mother had primary and above education (OR 1.21; 95%BCI; 1.02–1.42). Similarly, the odds of severe stunting was 30% higher among children whose mother had no education (OR 1.30; 95%BCI; 1.08–1.64). We also found that children born in a health facility were more likely to be stunted than children born at home (20% lower risk of stunting in children born home versus health facility, OR 0.81; 95%BCI: 0.66–0.986).</p>
+<p>Household food insecurity is associated with increased risk of stunting and severe stunting. We found that children who lived in moderately food insecured households were more likely to be stunted than children living in food secured households. (OR 1.26; 95% BCI; 1.04–1.51).Moreover, children who lived in moderately food insecured households were more likely to be severely stunted than children living in food secured households (OR 1.31; 95% BCI; 1.04–1.64).</p>
+<p>We didn’t find statistically significant association between the risk of stunting and risk factors such as ethnicity, household wealth, and altitude. Childhood morbidity, pace of delivery, household wealth, and place (location) of residency were not found to be associated with severe stunting.</p>
+</sec>
+</sec>
+<sec id="sec025">
+<title>Discussions</title>
+<p>In the south of Ethiopia, household food insecurity was identified as a major risk factor for stunting. Other factors such as child's age, sex, and place of delivery and mother's education also seem to contribute to the risk of stunting. We also found out a clear spatial pattern on the distribution of stunting at district level which would need further attention. This aggregation might be driven by environmental, anthropological and biological factors that have not been considered in this study. Additionally, our study also demonstrates the relevance of accounting for spatial dependency when exploring risk factors of stunting.</p>
+<p>We found out that the inclusion of spatial structure of the data into the Bayesian model has shown to improve the model fit for stunting model. We also noted that some of the risk factors for stunting such as place of delivery, mothers’ education and household food insecurity become statistically significant when we included a random spatial effect in the model fitting. That means that other spatially dependent factors, which our model did not account for, are determining the risk and distribution of stunting in the study area. However we did not find an improvement in the model fit for severe stunting model when we included a spatial random effect.</p>
+<p>In the spatial model, child characteristics such as child’s age and sex were important predictors for both stunting and severe stunting. Previous works in Ethiopia and elsewhere have shown that boys are more likely to be stunted and severely stunted than girls [<xref ref-type="bibr" rid="pone.0170785.ref027">27</xref>,<xref ref-type="bibr" rid="pone.0170785.ref040">40</xref>], even though this result is not consistent everywhere[<xref ref-type="bibr" rid="pone.0170785.ref041">41</xref>]. Further studies to understand the role of gender difference in the risk of stunting in the study setting and beyond is warranted.</p>
+<p>The risk to stunting was greatest for the age group of 24–35 months. We found a significant dose response relationship between child’s age and the risk of stunting, indicating a possible cause-effect relationship. This relationship is also consistent with other similar works [<xref ref-type="bibr" rid="pone.0170785.ref041">41</xref>,<xref ref-type="bibr" rid="pone.0170785.ref042">42</xref>] and interpretable with the peculiarities specific to the age period [<xref ref-type="bibr" rid="pone.0170785.ref011">11</xref>]. This period (6–35 months) is the time when a child is introduced to complementary foods and poor complementary feeding practices during this age period is an important risk factor for stunting [<xref ref-type="bibr" rid="pone.0170785.ref043">43</xref>]. In addition, during this period children become more mobile and exposed to environmental factors influencing linear growth [<xref ref-type="bibr" rid="pone.0170785.ref011">11</xref>].</p>
+<p>Mother’s education emerges as key predictor of stunting in this study. Mother’s education, which is a modifiable household factor, has a strong and consistent relationship with poor nutritional status [<xref ref-type="bibr" rid="pone.0170785.ref011">11</xref>,<xref ref-type="bibr" rid="pone.0170785.ref026">26</xref>–<xref ref-type="bibr" rid="pone.0170785.ref028">28</xref>]. We also documented a dose-response relationship between mothers/ caregiver’s education and stunting. Educational status of mothers/caregiver influences the risk to stunting in multiple pathways. Better maternal educational status probably improves child caring practices associated with stunting, or might help understand and respond to nutrition based educational messages, and eventually adopt optimal complementary feeding and household dietary behaviors [<xref ref-type="bibr" rid="pone.0170785.ref011">11</xref>].</p>
+<p>Unsurprisingly, Household food insecurity (HFI) was found to be associated with stunting, as other works have also reported [<xref ref-type="bibr" rid="pone.0170785.ref020">20</xref>,<xref ref-type="bibr" rid="pone.0170785.ref044">44</xref>,<xref ref-type="bibr" rid="pone.0170785.ref045">45</xref>]. Children in moderately food-insecured households had 1.3 greater odds of being stunted than children in food-secured households. Similar to previous works, we noted that the relationship between HFI and stunting is independent of household wealth [<xref ref-type="bibr" rid="pone.0170785.ref020">20</xref>,<xref ref-type="bibr" rid="pone.0170785.ref044">44</xref>]. This might indicates that HFI is not simply an indicator of household socio economic status but can be an independent factor influencing stunting in children. This finding might suggest that, among resource constrained communities, interventions integrating HFI in nutrition programs would be effective in averting stunting [<xref ref-type="bibr" rid="pone.0170785.ref044">44</xref>]. It is also documented that HFI could impact stunting through other pathways than dietary diversity such as its effect on caregiving and feeding practices, and maternal depression [<xref ref-type="bibr" rid="pone.0170785.ref020">20</xref>].</p>
+<p>We found non-significant relationship between household relative wealth and the risk of stunting. Some works have reported conflicting relations between household wealth (poverty) and stunting. Studies report that children living in a relatively wealthier household’s might be better off through improved access and consumption of goods and services which in turn improves undernutrition [<xref ref-type="bibr" rid="pone.0170785.ref020">20</xref>–<xref ref-type="bibr" rid="pone.0170785.ref022">22</xref>]. On the other hand, rising incomes at household’s level might not necessarily help to improve stunting. Vollmer and colleagues reported a weak relation between income growth and undernutrition at household level. The authors have indicated that this weak relationship could perhaps be due to the fact that the increased income might not be spent in a way that improves nutritional status of children [<xref ref-type="bibr" rid="pone.0170785.ref023">23</xref>–<xref ref-type="bibr" rid="pone.0170785.ref025">25</xref>]. Household spending on quality foods and resource allocation between food and non-food items could influence the success of the relative increase in income to avert child undernutrition at household level [<xref ref-type="bibr" rid="pone.0170785.ref024">24</xref>,<xref ref-type="bibr" rid="pone.0170785.ref025">25</xref>].</p>
+<p>In summary, the risk factors identified in this study are in agreement with some studies and at same time differ from other reports. This might partly indicate the fact that the role of factors influencing the risk to stunting vary contextually. Furthermore, methodological differences may explain part of the differences in the findings of these studies. These differences could be related to differences on study design (i.e. some are cross sectional, others are cohort and ecological studies), sampling techniques, standardization of measurements and analytical methods employed (i.e. the use multilevel modeling, adjustment for clustering and spatial dependency, selection of exposure variables in the model).</p>
+<p>Our study has potential limitations that require further consideration. The limitations stem from the methodology employed (study design and spatial analysis), measurements, and respondent behaviors. First, we could not ascertain child age with reports as there was no formal birth registration in the study community. Even though we developed a local events calendar for this purpose, we experienced age heaping during analysis. We were forced to categorize child’s and mother’s age for analysis. Second, we didn’t collect detailed dietary intake data (quantity and quality) for each children surveyed but for the entire family unit. The lack of a significant relationship between dietary diversity and stunting could be partly due to the fact that dietary diversity might not accurately reflect diet quality and micronutrient adequacy in the diet. Due to the target age for this analysis (0–59), we were not able to calculate and include indicators of breastfeeding and complementary feeding practices for children 0–24 months. The inclusion of these WHO IYCF indicators could have improved the model for stunting in our study. Third, due to the anticipation of support, women/respondent might have over reported deficiencies in dietary diversity which in turn had inflated the estimated level of food insecurity. Fourth, the statistical tests employed in the spatial analysis assumed stationarity and isotropy. This assumption hold that the population at risk is evenly distributed across the study area and the spatial dependency is the same in all directions. Finally, stunting and the potential risk factors were measured simultaneously using a cross sectional survey. However, stunting is a chronic condition and the result of a cumulative exposure of the child to various risk factors, whilst some of the risk factors measured in the study, such as dietary diversity and household food security, applied for a shorter period of time prior to the survey. Thus, we may not be certain that some of these risk factors measured in our study preceded the occurrence of stunting.</p>
+<p>To mitigate some of the aforementioned limitations, we standardized the anthropometric measurements and applied a robust statistical analysis in a Bayesian framework. Furthermore, we accounted for the spatial dependence structure in the data for multivariate model fitting. On top of this, we tested the relationship between stunting and selected risk factors for a dose response relationship to take into account for possible cause -effect relationships.</p>
+</sec>
+<sec id="sec026" sec-type="conclusions">
+<title>Conclusions</title>
+<p>Stunting prevalence may vary across space at different scale. For this, it's important that nutrition studies and, more importantly, control interventions take into account this spatial heterogeneity in the distribution of nutritional deficits and their underlying associated factors. Thus, geographically targeted nutritional interventions might be more efficient and cost-effective in southern Ethiopia and, by extension, in similar settings. The findings of this study also indicated that interventions integrating household food insecurity in nutrition programs in the district might help to avert the burden of stunting.</p>
+</sec>
+<sec id="sec027">
+<title>Supporting information</title>
+<supplementary-material id="pone.0170785.s001" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" position="float" xlink:href="info:doi/10.1371/journal.pone.0170785.s001" xlink:type="simple">
+<label>S1 Text</label>
+<caption>
+<title>Logistic geostatistical model structure and description.</title>
+<p>(DOCX)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0170785.s002" mimetype="application/zip" position="float" xlink:href="info:doi/10.1371/journal.pone.0170785.s002" xlink:type="simple">
+<label>S1 Dataset</label>
+<caption>
+<title>The data set used in the geostatistical model.</title>
+<p>(ZIP)</p>
+</caption>
+</supplementary-material>
+</sec>
+</body>
+<back>
+<ack>
+<p>We would a like to acknowledge the Center for International Health at the University of Bergen for funding the study.</p>
+<p>We are very much thankful to all study participants for their willingness to participate in the study.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0170785.ref001"><label>1</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Black</surname> <given-names>RE</given-names></name>, <name name-style="western"><surname>Victora</surname> <given-names>CG</given-names></name>, <name name-style="western"><surname>Walker</surname> <given-names>SP</given-names></name>, <name name-style="western"><surname>Bhutta</surname> <given-names>ZA</given-names></name>, <name name-style="western"><surname>Christian</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>de Onis</surname> <given-names>M</given-names></name> <etal>et al</etal>.: <article-title>Maternal and child undernutrition and overweight in low-income and middle-income countries</article-title>. <source>Lancet</source> <year>2013</year>, <volume>382</volume>.</mixed-citation></ref>
+<ref id="pone.0170785.ref002"><label>2</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>de Onis</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Dewey</surname> <given-names>KG</given-names></name>, <name name-style="western"><surname>Borghi</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Onyango</surname> <given-names>AW</given-names></name>, <name name-style="western"><surname>Blossner</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Daelmans</surname> <given-names>B</given-names></name> <etal>et al</etal>.: <article-title>The World Health Organization's global target for reducing childhood stunting by 2025: rationale and proposed actions</article-title>. <source>Maternal &amp; child nutrition</source> <year>2013</year>, <volume>9</volume> <issue>Suppl 2</issue>.</mixed-citation></ref>
+<ref id="pone.0170785.ref003"><label>3</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dewey</surname> <given-names>KG</given-names></name>, <name name-style="western"><surname>Begum</surname> <given-names>K</given-names></name>: <article-title>Long-term consequences of stunting in early life</article-title>. <source>Maternal &amp; child nutrition</source> <year>2011</year>, <volume>7</volume> <issue>Suppl 3</issue>.</mixed-citation></ref>
+<ref id="pone.0170785.ref004"><label>4</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Victora</surname> <given-names>CG</given-names></name>, <name name-style="western"><surname>Adair</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Fall</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Hallal</surname> <given-names>PC</given-names></name>, <name name-style="western"><surname>Martorell</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Richter</surname> <given-names>L</given-names></name> <etal>et al</etal>.: <article-title>Maternal and child undernutrition: consequences for adult health and human capital</article-title>. <source>Lancet</source> <year>2008</year>, <volume>371</volume>.</mixed-citation></ref>
+<ref id="pone.0170785.ref005"><label>5</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Stein</surname> <given-names>AD</given-names></name>, <name name-style="western"><surname>Thompson</surname> <given-names>AM</given-names></name>, <name name-style="western"><surname>Waters</surname> <given-names>A</given-names></name>: <article-title>Childhood growth and chronic disease: evidence from countries undergoing the nutrition transition</article-title>. <source>Maternal &amp; child nutrition</source> <year>2005</year>, <volume>1</volume>.</mixed-citation></ref>
+<ref id="pone.0170785.ref006"><label>6</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lemma</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Matji</surname> <given-names>J</given-names></name>: <article-title>Delivery platforms for sustained nutrition in Ethiopia</article-title>. <source>Lancet</source> <year>2013</year>, <volume>382</volume>.</mixed-citation></ref>
+<ref id="pone.0170785.ref007"><label>7</label><mixed-citation publication-type="other" xlink:type="simple">Central Statistical Agency [Ethiopia] and ORC Macro. Ethiopia Demographic and Health Survey 2000. 2001. Addis Ababa, Ethiopia and Calverton, Maryland, USA: Central Statistical Agency and ORC Macro.</mixed-citation></ref>
+<ref id="pone.0170785.ref008"><label>8</label><mixed-citation publication-type="other" xlink:type="simple">Central Statistical Agency [Ethiopia] and ORC Macro. Ethiopia Demographic and Health Survey 2005. 2006. Addis Ababa, Ethiopia and Calverton, Maryland, USA: Central Statistical Agency and ORC Macro.</mixed-citation></ref>
+<ref id="pone.0170785.ref009"><label>9</label><mixed-citation publication-type="other" xlink:type="simple">Central Statistical Agency [Ethiopia] aII. Ethiopia Demographic and Health Survey 2011. 2012. Addis Ababa, Ethiopia and Calverton, Maryland, USA: Central Statistical Agency and ORC Macro.</mixed-citation></ref>
+<ref id="pone.0170785.ref010"><label>10</label><mixed-citation publication-type="other" xlink:type="simple">Central Statistical Agency [Ethiopia] 2014. Ethiopia Mini Demographic and Health Survey 2014. 2014. Addis Ababa, Ethiopia.</mixed-citation></ref>
+<ref id="pone.0170785.ref011"><label>11</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Stewart</surname> <given-names>CP</given-names></name>, <name name-style="western"><surname>Iannotti</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Dewey</surname> <given-names>KG</given-names></name>, <name name-style="western"><surname>Michaelsen</surname> <given-names>KF</given-names></name>, <name name-style="western"><surname>Onyango</surname> <given-names>AW</given-names></name>: <article-title>Contextualising complementary feeding in a broader framework for stunting prevention</article-title>. <source>Maternal &amp; child nutrition</source> <year>2013</year>, <volume>9</volume> <issue>Suppl 2</issue>.</mixed-citation></ref>
+<ref id="pone.0170785.ref012"><label>12</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Arimond</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Ruel</surname> <given-names>MT</given-names></name>: <article-title>Dietary diversity is associated with child nutritional status: evidence from 11 demographic and health surveys</article-title>. <source>J Nutr</source> <year>2004</year>, <volume>134</volume>: <fpage>2579</fpage>–<lpage>2585</lpage>. <object-id pub-id-type="pmid">15465751</object-id></mixed-citation></ref>
+<ref id="pone.0170785.ref013"><label>13</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Umeta</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>West</surname> <given-names>CE</given-names></name>, <name name-style="western"><surname>Verhoef</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Haidar</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Hautvast</surname> <given-names>JG</given-names></name>: <article-title>Factors associated with stunting in infants aged 5–11 months in the Dodota-Sire District, rural Ethiopia</article-title>. <source>The Journal of nutrition</source> <year>2003</year>, <volume>133</volume>.</mixed-citation></ref>
+<ref id="pone.0170785.ref014"><label>14</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rowland</surname> <given-names>MG</given-names></name>, <name name-style="western"><surname>Rowland</surname> <given-names>SG</given-names></name>, <name name-style="western"><surname>Cole</surname> <given-names>TJ</given-names></name>: <article-title>Impact of infection on the growth of children from 0 to 2 years in an urban West African community</article-title>. <source>Am J Clin Nutr</source> <year>1988</year>, <volume>47</volume>: <fpage>134</fpage>–<lpage>138</lpage>. <object-id pub-id-type="pmid">3337031</object-id></mixed-citation></ref>
+<ref id="pone.0170785.ref015"><label>15</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rowland</surname> <given-names>MG</given-names></name>, <name name-style="western"><surname>Cole</surname> <given-names>TJ</given-names></name>, <name name-style="western"><surname>Whitehead</surname> <given-names>RG</given-names></name>: <article-title>A quantitative study into the role of infection in determining nutritional status in Gambian village children</article-title>. <source>Br J Nutr</source> <year>1977</year>, <volume>37</volume>: <fpage>441</fpage>–<lpage>450</lpage>. <object-id pub-id-type="pmid">861194</object-id></mixed-citation></ref>
+<ref id="pone.0170785.ref016"><label>16</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Checkley</surname> <given-names>W</given-names></name>, <name name-style="western"><surname>Epstein</surname> <given-names>LD</given-names></name>, <name name-style="western"><surname>Gilman</surname> <given-names>RH</given-names></name>, <name name-style="western"><surname>Cabrera</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Black</surname> <given-names>RE</given-names></name>: <article-title>Effects of acute diarrhea on linear growth in Peruvian children</article-title>. <source>Am J Epidemiol</source> <year>2003</year>, <volume>157</volume>: <fpage>166</fpage>–<lpage>175</lpage>. <object-id pub-id-type="pmid">12522024</object-id></mixed-citation></ref>
+<ref id="pone.0170785.ref017"><label>17</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Scrimshaw</surname> <given-names>NS</given-names></name>, <name name-style="western"><surname>Taylor</surname> <given-names>CE</given-names></name>, <name name-style="western"><surname>Gordon</surname> <given-names>JE</given-names></name>: <article-title>Interactions of nutrition and infection</article-title>. <source>Monogr Ser World Health Organ</source> <year>1968</year>, <volume>57</volume>: <fpage>3</fpage>–<lpage>329</lpage>. <object-id pub-id-type="pmid">4976616</object-id></mixed-citation></ref>
+<ref id="pone.0170785.ref018"><label>18</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Black</surname> <given-names>RE</given-names></name>, <name name-style="western"><surname>Allen</surname> <given-names>LH</given-names></name>, <name name-style="western"><surname>Bhutta</surname> <given-names>ZA</given-names></name>, <name name-style="western"><surname>Caulfield</surname> <given-names>LE</given-names></name>, <name name-style="western"><surname>de</surname> <given-names>OM</given-names></name>, <name name-style="western"><surname>Ezzati</surname> <given-names>M</given-names></name> <etal>et al</etal>.: <article-title>Maternal and child undernutrition: global and regional exposures and health consequences</article-title>. <source>Lancet</source> <year>2008</year>, <volume>371</volume>: <fpage>243</fpage>–<lpage>260</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0140-6736(07)61690-0" xlink:type="simple">10.1016/S0140-6736(07)61690-0</ext-link></comment> <object-id pub-id-type="pmid">18207566</object-id></mixed-citation></ref>
+<ref id="pone.0170785.ref019"><label>19</label><mixed-citation publication-type="book" xlink:type="simple"><collab>UNICEF</collab>. <source>Strategy for improving nutrition of children and women in developing countries</source>. <year>1990</year>. <publisher-loc>New York</publisher-loc>: <publisher-name>UNICEF</publisher-name>.</mixed-citation></ref>
+<ref id="pone.0170785.ref020"><label>20</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ali</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Saha</surname> <given-names>KK</given-names></name>, <name name-style="western"><surname>Nguyen</surname> <given-names>PH</given-names></name>, <name name-style="western"><surname>Diressie</surname> <given-names>MT</given-names></name>, <name name-style="western"><surname>Ruel</surname> <given-names>MT</given-names></name>, <name name-style="western"><surname>Menon</surname> <given-names>P</given-names></name> <etal>et al</etal>.: <article-title>Household food insecurity is associated with higher child undernutrition in Bangladesh, Ethiopia, and Vietnam, but the effect is not mediated by child dietary diversity</article-title>. <source>The Journal of nutrition</source> <year>2013</year>, <volume>143</volume>.</mixed-citation></ref>
+<ref id="pone.0170785.ref021"><label>21</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Outes</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Porter</surname> <given-names>C</given-names></name>: <article-title>Catching up from early nutritional deficits? Evidence from rural Ethiopia</article-title>. <source>Economics and human biology</source> <year>2013</year>, <volume>11</volume>.</mixed-citation></ref>
+<ref id="pone.0170785.ref022"><label>22</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Petrou</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Kupek</surname> <given-names>E</given-names></name><article-title>: Poverty and childhood undernutrition in developing countries: a multi-national cohort study</article-title>. <source>Social science &amp; medicine (1982)</source> <year>2010</year>, <volume>71</volume>.</mixed-citation></ref>
+<ref id="pone.0170785.ref023"><label>23</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Singh</surname> <given-names>A</given-names></name>: <article-title>Why are economic growth and reductions in child undernutrition so weakly correlated—and what can public policy do?</article-title> <source>The Lancet Global health</source> <year>2014</year>, <volume>2</volume>.</mixed-citation></ref>
+<ref id="pone.0170785.ref024"><label>24</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Subramanyam</surname> <given-names>MA</given-names></name>, <name name-style="western"><surname>Kawachi</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Berkman</surname> <given-names>LF</given-names></name>, <name name-style="western"><surname>Subramanian</surname> <given-names>SV</given-names></name>: <article-title>Is economic growth associated with reduction in child undernutrition in India?</article-title> <source>PLoS medicine</source> <year>2011</year>, <volume>8</volume>.</mixed-citation></ref>
+<ref id="pone.0170785.ref025"><label>25</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Vollmer</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Harttgen</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Subramanyam</surname> <given-names>MA</given-names></name>, <name name-style="western"><surname>Finlay</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Klasen</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Subramanian</surname> <given-names>SV</given-names></name>: <article-title>Association between economic growth and early childhood undernutrition: evidence from 121 Demographic and Health Surveys from 36 low-income and middle-income countries</article-title>. <source>The Lancet Global health</source> <year>2014</year>, <volume>2</volume>.</mixed-citation></ref>
+<ref id="pone.0170785.ref026"><label>26</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Herrador</surname> <given-names>Z</given-names></name>, <name name-style="western"><surname>Sordo</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Gadisa</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Moreno</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Nieto</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Benito</surname> <given-names>A</given-names></name> <etal>et al</etal>.: <article-title>Cross-sectional study of malnutrition and associated factors among school aged children in rural and urban settings of Fogera and Libo Kemkem districts, Ethiopia</article-title>. <source>PLoS One</source> <year>2014</year>, <volume>9</volume>.</mixed-citation></ref>
+<ref id="pone.0170785.ref027"><label>27</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Medhin</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Hanlon</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Dewey</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Alem</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Tesfaye</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Worku</surname> <given-names>B</given-names></name> <etal>et al</etal>.: <article-title>Prevalence and predictors of undernutrition among infants aged six and twelve months in Butajira, Ethiopia: the P-MaMiE Birth Cohort</article-title>. <source>BMC Public Health</source> <year>2010</year>, <volume>10</volume>.</mixed-citation></ref>
+<ref id="pone.0170785.ref028"><label>28</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Alemayehu</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Tinsae</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Haileslassie</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Seid</surname> <given-names>O</given-names></name>, <name name-style="western"><surname>Gebregziabher</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Yebyo</surname> <given-names>H</given-names></name>: <article-title>Undernutrition status and associated factors in under-5 children, in Tigray, Northern Ethiopia</article-title>. <source>Nutrition (Burbank, Los Angeles County, Calif)</source> <year>2015</year>, <volume>31</volume>.</mixed-citation></ref>
+<ref id="pone.0170785.ref029"><label>29</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Smith</surname> <given-names>LC</given-names></name>, <name name-style="western"><surname>Haddad</surname> <given-names>L</given-names></name>. <source><italic>Explaining Child Malnutrition in Developing Countries</italic></source>. <year>2000</year>. <publisher-name>International Food Policy Research Institute</publisher-name>:<publisher-loc>Washington, DC</publisher-loc>.</mixed-citation></ref>
+<ref id="pone.0170785.ref030"><label>30</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Frost</surname> <given-names>MB</given-names></name>, <name name-style="western"><surname>Forste</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Haas</surname> <given-names>DW</given-names></name>: <article-title>Maternal education and child nutritional status in Bolivia: finding the links</article-title>. <source>Soc Sci Med</source> <year>2005</year>, <volume>60</volume>: <fpage>395</fpage>–<lpage>407</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.socscimed.2004.05.010" xlink:type="simple">10.1016/j.socscimed.2004.05.010</ext-link></comment> <object-id pub-id-type="pmid">15522494</object-id></mixed-citation></ref>
+<ref id="pone.0170785.ref031"><label>31</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kandala</surname> <given-names>NB</given-names></name>, <name name-style="western"><surname>Fahrmeir</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Klasen</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Priebe</surname> <given-names>J</given-names></name>: <article-title>Geo-additive Models of Childhood Undernutrition in Three Sub-Saharan African Countries</article-title>. <source>Population Space and Place</source> <year>2009</year>, <volume>15</volume>: <fpage>461</fpage>–<lpage>473</lpage>.</mixed-citation></ref>
+<ref id="pone.0170785.ref032"><label>32</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kandala</surname> <given-names>NB</given-names></name>, <name name-style="western"><surname>Madungu</surname> <given-names>TP</given-names></name>, <name name-style="western"><surname>Emina</surname> <given-names>JB</given-names></name>, <name name-style="western"><surname>Nzita</surname> <given-names>KP</given-names></name>, <name name-style="western"><surname>Cappuccio</surname> <given-names>FP</given-names></name>: <article-title>Malnutrition among children under the age of five in the Democratic Republic of Congo (DRC): does geographic location matter?</article-title> <source>BMC Public Health</source> <year>2011</year>, <volume>11</volume>: <fpage>261</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/1471-2458-11-261" xlink:type="simple">10.1186/1471-2458-11-261</ext-link></comment> <object-id pub-id-type="pmid">21518428</object-id></mixed-citation></ref>
+<ref id="pone.0170785.ref033"><label>33</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Khatab</surname> <given-names>K</given-names></name>: <article-title>Childhood Malnutrition in Egypt using Geoadditive Gaussian and Latent Variable Models</article-title>. <source>American Journal of Tropical Medicine and Hygiene</source> <year>2010</year>, <volume>82</volume>: <fpage>653</fpage>–<lpage>663</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.4269/ajtmh.2010.09-0501" xlink:type="simple">10.4269/ajtmh.2010.09-0501</ext-link></comment> <object-id pub-id-type="pmid">20348515</object-id></mixed-citation></ref>
+<ref id="pone.0170785.ref034"><label>34</label><mixed-citation publication-type="other" xlink:type="simple">Central Statistical Agency [Ethiopia] aII. Ethiopia Demographic and Health Survey 2011. 2012. Addis Ababa, Ethiopia and Calverton, Maryland, USA: Central Statistical Agency and ORC Macro.</mixed-citation></ref>
+<ref id="pone.0170785.ref035"><label>35</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gebreyesus</surname> <given-names>SH</given-names></name>, <name name-style="western"><surname>Mariam</surname> <given-names>DH</given-names></name>, <name name-style="western"><surname>Woldehanna</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Lindtjorn</surname> <given-names>B</given-names></name>: <article-title>Local spatial clustering of stunting and wasting among children under the age of 5 years: implications for intervention strategies</article-title>. <source>Public Health Nutr</source> <year>2015</year>, <fpage>1</fpage>–<lpage>11</lpage>.</mixed-citation></ref>
+<ref id="pone.0170785.ref036"><label>36</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gebreyesus</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Lunde</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Mariam</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Woldehanna</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Lindtjorn</surname> <given-names>B</given-names></name>: <article-title>Is the adapted Household Food Insecurity Access Scale (HFIAS) developed internationally to measure food insecurity valid in urban and rural households of Ethiopia?</article-title> <source>BMC Nutrition</source> <year>2015</year>, <volume>1</volume>.</mixed-citation></ref>
+<ref id="pone.0170785.ref037"><label>37</label><mixed-citation publication-type="book" xlink:type="simple"><collab>World Health Organization</collab>. <source>WHO Child Growth Standards: Methods and Development</source>. <year>2009</year>. <publisher-name>WHO</publisher-name>.</mixed-citation></ref>
+<ref id="pone.0170785.ref038"><label>38</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Coates</surname> <given-names>J, Jennifer</given-names></name>, <name name-style="western"><surname>Swindale</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Bilinsky</surname> <given-names>P</given-names></name>. <source>Household Food Insecurity Access Scale (HFIAS) for Measurement of Household Food Access: Indicator Guide (v. 3)</source>. <year>2007</year>. <publisher-loc>Washington, D.C.</publisher-loc>: <publisher-name>Food and Nutrition echnical Assistance Project, Academy for Educational Development</publisher-name>.</mixed-citation></ref>
+<ref id="pone.0170785.ref039"><label>39</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Pfeiffer</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Robinson</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Stevenson</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Stevens</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Rogers</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Clements</surname> <given-names>C</given-names></name>: <source>Spatial Analysis in Epidemiology</source>. <publisher-name>OXFORD University Press</publisher-name>; <year>2010</year>.</mixed-citation></ref>
+<ref id="pone.0170785.ref040"><label>40</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Asfaw</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Wondaferash</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Taha</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Dube</surname> <given-names>L</given-names></name>: <article-title>Prevalence of undernutrition and associated factors among children aged between six to fifty nine months in Bule Hora district, South Ethiopia</article-title>. <source>BMC Public Health</source> <year>2015</year>, <volume>15</volume>.</mixed-citation></ref>
+<ref id="pone.0170785.ref041"><label>41</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lindtjorn</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Alemu</surname> <given-names>T</given-names></name>: <article-title>Year-to-year and seasonal variations in stunting among preschool children in Ethiopia</article-title>. <source>Journal of health, population, and nutrition</source> <year>2002</year>, <volume>20</volume>.</mixed-citation></ref>
+<ref id="pone.0170785.ref042"><label>42</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mulugeta</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Hagos</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Kruseman</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Linderhof</surname> <given-names>V</given-names></name>, <name name-style="western"><surname>Stoecker</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Abraha</surname> <given-names>Z</given-names></name> <etal>et al</etal>.: <article-title>Child malnutrition in Tigray, northern Ethiopia</article-title>. <source>East African medical journal</source> <year>2010</year>, <volume>87</volume>.</mixed-citation></ref>
+<ref id="pone.0170785.ref043"><label>43</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bhutta</surname> <given-names>ZA</given-names></name>, <name name-style="western"><surname>Das</surname> <given-names>JK</given-names></name>, <name name-style="western"><surname>Rizvi</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Gaffey</surname> <given-names>MF</given-names></name>, <name name-style="western"><surname>Walker</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Horton</surname> <given-names>S</given-names></name> <etal>et al</etal>.: <article-title>Evidence-based interventions for improvement of maternal and child nutrition: what can be done and at what cost?</article-title> <source>Lancet</source> <year>2013</year>, <volume>382</volume>: <fpage>452</fpage>–<lpage>477</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0140-6736(13)60996-4" xlink:type="simple">10.1016/S0140-6736(13)60996-4</ext-link></comment> <object-id pub-id-type="pmid">23746776</object-id></mixed-citation></ref>
+<ref id="pone.0170785.ref044"><label>44</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Psaki</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Bhutta</surname> <given-names>ZA</given-names></name>, <name name-style="western"><surname>Ahmed</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Ahmed</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Bessong</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Islam</surname> <given-names>M</given-names></name> <etal>et al</etal>.: <article-title>Household food access and child malnutrition: results from the eight-country MAL-ED study</article-title>. <source>Population health metrics</source> <year>2012</year>, <volume>10</volume>.</mixed-citation></ref>
+<ref id="pone.0170785.ref045"><label>45</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Humphries</surname> <given-names>DL</given-names></name>, <name name-style="western"><surname>Dearden</surname> <given-names>KA</given-names></name>, <name name-style="western"><surname>Crookston</surname> <given-names>BT</given-names></name>, <name name-style="western"><surname>Fernald</surname> <given-names>LC</given-names></name>, <name name-style="western"><surname>Stein</surname> <given-names>AD</given-names></name>, <name name-style="western"><surname>Woldehanna</surname> <given-names>T</given-names></name> <etal>et al</etal>.: <article-title>Cross-Sectional and Longitudinal Associations between Household Food Security and Child Anthropometry at Ages 5 and 8 Years in Ethiopia, India, Peru, and Vietnam</article-title>. <source>The Journal of nutrition</source> <year>2015</year>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

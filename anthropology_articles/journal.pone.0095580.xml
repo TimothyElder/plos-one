@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group>
+<journal-title>PLoS ONE</journal-title></journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-13-45427</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0095580</article-id>
+<article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Biology and life sciences</subject><subj-group><subject>Agriculture</subject><subj-group><subject>Crops</subject><subj-group><subject>Cereal crops</subject><subj-group><subject>Maize</subject></subj-group></subj-group></subj-group></subj-group><subj-group><subject>Biogeography</subject></subj-group><subj-group><subject>Ecology</subject><subj-group><subject>Paleoecology</subject><subject>Spatial and landscape ecology</subject></subj-group></subj-group><subj-group><subject>Organisms</subject><subj-group><subject>Plants</subject><subj-group><subject>Trees</subject></subj-group></subj-group></subj-group><subj-group><subject>Paleontology</subject><subj-group><subject>Paleobiology</subject><subj-group><subject>Paleobotany</subject></subj-group></subj-group><subj-group><subject>Paleoanthropology</subject></subj-group></subj-group><subj-group><subject>Plant science</subject><subj-group><subject>Geobotany</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Computer and information sciences</subject><subj-group><subject>Geoinformatics</subject><subj-group><subject>Geostatistics</subject><subject>Spatial analysis</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Earth sciences</subject><subj-group><subject>Geochemistry</subject><subj-group><subject>Biogeochemistry</subject></subj-group></subj-group><subj-group><subject>Geography</subject><subj-group><subject>Human geography</subject><subj-group><subject>Behavioral geography</subject></subj-group></subj-group><subj-group><subject>Historical geography</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Physical sciences</subject><subj-group><subject>Chemistry</subject><subj-group><subject>Radiochemistry</subject></subj-group></subj-group><subj-group><subject>Mathematics</subject><subj-group><subject>Probability theory</subject><subj-group><subject>Bayes theorem</subject></subj-group></subj-group><subj-group><subject>Statistics (mathematics)</subject><subj-group><subject>Biostatistics</subject><subject>Statistical methods</subject></subj-group></subj-group></subj-group><subj-group><subject>Physics</subject><subj-group><subject>Particle physics</subject><subj-group><subject>Composite particles</subject><subj-group><subject>Atoms</subject><subj-group><subject>Isotopes</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Social sciences</subject><subj-group><subject>Anthropology</subject></subj-group><subj-group><subject>Archaeology</subject><subj-group><subject>Archaeometry</subject></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Strontium Isotopes and the Reconstruction of the Chaco Regional System: Evaluating Uncertainty with Bayesian Mixing Models</article-title>
+<alt-title alt-title-type="running-head">Strontium Isotopes and the Chaco Regional System</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Drake</surname><given-names>Brandon Lee</given-names></name><xref ref-type="aff" rid="aff1"/><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Wills</surname><given-names>Wirt H.</given-names></name><xref ref-type="aff" rid="aff1"/></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Hamilton</surname><given-names>Marian I.</given-names></name><xref ref-type="aff" rid="aff1"/></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Dorshow</surname><given-names>Wetherbee</given-names></name><xref ref-type="aff" rid="aff1"/></contrib>
+</contrib-group>
+<aff id="aff1"><addr-line>Department of Anthropology, University of New Mexico, Albuquerque, New Mexico, United States of America</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Hart</surname><given-names>John P.</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>New York State Museum, United States of America</addr-line></aff>
+<author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">b.lee.drake@gmail.edu</email></corresp>
+<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn>
+<fn fn-type="con"><p>Conceived and designed the experiments: BLD WHW MIH WD. Performed the experiments: BLD. Analyzed the data: BLD. Contributed reagents/materials/analysis tools: WHW MIH WD. Wrote the paper: BLD WHW MIH.</p></fn>
+</author-notes>
+<pub-date pub-type="collection"><year>2014</year></pub-date>
+<pub-date pub-type="epub"><day>22</day><month>5</month><year>2014</year></pub-date>
+<volume>9</volume>
+<issue>5</issue>
+<elocation-id>e95580</elocation-id>
+<history>
+<date date-type="received"><day>17</day><month>10</month><year>2013</year></date>
+<date date-type="accepted"><day>28</day><month>3</month><year>2014</year></date>
+</history>
+<permissions>
+<copyright-year>2014</copyright-year>
+<copyright-holder>Drake et al</copyright-holder><license xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions>
+<abstract>
+<p>Strontium isotope sourcing has become a common and useful method for assigning sources to archaeological artifacts. In Chaco Canyon, an Ancestral Pueblo regional center in New Mexico, previous studies using these methods have suggested that significant portion of maize and wood originate in the Chuska Mountains region, 75 km to the East. In the present manuscript, these results were tested using both frequentist methods (to determine if geochemical sources can truly be differentiated) and Bayesian methods (to address uncertainty in geochemical source attribution). It was found that Chaco Canyon and the Chuska Mountain region are not easily distinguishable based on radiogenic strontium isotope values. The strontium profiles of many geochemical sources in the region overlap, making it difficult to definitively identify any one particular geochemical source for the canyon's pre-historic maize. Bayesian mixing models support the argument that some spruce and fir wood originated in the San Mateo Mountains, but that this cannot explain all <sup>87</sup>Sr/<sup>86</sup>Sr values in Chaco timber. Overall radiogenic strontium isotope data do not clearly identify a single major geochemical source for maize, ponderosa, and most spruce/fir timber. As such, the degree to which Chaco Canyon relied upon outside support for both food and construction material is still ambiguous.</p>
+</abstract>
+<funding-group><funding-statement>The University of New Mexico Department of Anthropology provided support that assisted with the initial databasing of strontium isotope data. This material is based in part upon work supported by the National Science Foundation Graduate Research Fellowship Program under Grant No. DGE-0903444. The funders had no role in the study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts><page-count count="13"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title>Introduction</title>
+<p>During the Bonito Phase (ca. AD 860 to 1140) in Chaco Canyon, New Mexico (<xref ref-type="fig" rid="pone-0095580-g001">Figure 1</xref>), a series of dispersed subsistence farming communities coalesced around the construction of communal stone buildings called “Great Houses,” of which Pueblo Bonito is the most famous (<xref ref-type="fig" rid="pone-0095580-g002">Figure 2</xref>). Often referred to as the “Chaco Phenomenon,” the social changes that occurred during the Bonito Phase are widely viewed as characteristic of emergent social complexity. Bonito Phase food production was based on the cultivation of maize, beans and squash, and possibly non-domesticates such as sunflowers, and there is evidence for water control features designed to direct seasonal runoff into fields <xref ref-type="bibr" rid="pone.0095580-Vivian1">[1]</xref>. These crops were grown in Chaco despite constraints imposed by aridity and high elevation, but there is considerable debate among specialists about whether the canyon could have produced enough food to support “monumental” Great House construction efforts or even sustain a relatively small residential population <xref ref-type="bibr" rid="pone.0095580-Benson1">[2]</xref>. If the local economy could not underwrite the labor requirements of construction or meet the basic physiological needs of a small canyon residential community, then an obvious conclusion is that labor and food were brought into Chaco from somewhere else <xref ref-type="bibr" rid="pone.0095580-Wills1">[3]</xref>. The Bonito Phase is famous for evidence of long-distance exchange in materials, especially pottery, turquoise, macaws, cacao, and timber <xref ref-type="bibr" rid="pone.0095580-Toll1">[4]</xref>–<xref ref-type="bibr" rid="pone.0095580-Crown1">[6]</xref> and therefore it is reasonable to think that food could have moved through these same exchange systems.</p>
+<fig id="pone-0095580-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0095580.g001</object-id><label>Figure 1</label><caption>
+<title>Location of Chaco Canyon (center point) in the San Juan Basin, surrounding upland areas and location of strontium samples associated with forested zones.</title>
+<p>A simplified geology (colored based on age) shows the relation of strontium sampling locations to their parent geology.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0095580.g001" position="float" xlink:type="simple"/></fig><fig id="pone-0095580-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0095580.g002</object-id><label>Figure 2</label><caption>
+<title>Chaco Canyon Great Houses, local tributaries and strontium sample locations associated with maize sourcing studies <xref ref-type="bibr" rid="pone.0095580-Benson4">[9]</xref>.</title>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0095580.g002" position="float" xlink:type="simple"/></fig>
+<p>Over the past decade a series of studies based on strontium isotope analysis of maize (<italic>Zea mays</italic>) have attempted to identify specific source areas (farming locations) outside of Chaco <xref ref-type="bibr" rid="pone.0095580-Benson1">[2]</xref> <xref ref-type="bibr" rid="pone.0095580-Benson2">[7]</xref>–<xref ref-type="bibr" rid="pone.0095580-Benson5">[10]</xref>. Researchers have concluded that at least some maize was imported from distances of up to 75 km. Diamond (2005) has argued that reliance on such long-distance exchange networks was an unsustainable economic strategy that set up conditions for the rapid collapse and abandonment of Chaco society during a major 12th century drought <xref ref-type="bibr" rid="pone.0095580-Benson5">[10]</xref>. Emergent complex societies in the past are typically associated with evidence for long-distance exchange <xref ref-type="bibr" rid="pone.0095580-Earle1">[11]</xref>; the demonstration of long-distance transport for construction materials and food would imply a high level of complexity in Chaco Canyon <xref ref-type="bibr" rid="pone.0095580-English1">[12]</xref>. General conditions may have been wetter at the time <xref ref-type="bibr" rid="pone.0095580-GrissinoMayer1">[13]</xref>, with Great House construction occurring during wet periods <xref ref-type="bibr" rid="pone.0095580-Windes1">[14]</xref>.</p>
+<p>However, the following study illustrates that radiogenic strontium isotope (<sup>87</sup>Sr/<sup>86</sup>Sr) values obtained from Chaco maize do not discriminate statistically between the <sup>87</sup>Sr/<sup>86</sup>Sr values of purported distant geographical sources and <sup>87</sup>Sr/<sup>86</sup>Sr values of sources within Chaco Canyon itself <xref ref-type="bibr" rid="pone.0095580-Benson2">[7]</xref>. A second set of strontium isotope analyses designed to identify possible long-distance sources of timber used to build Great Houses <xref ref-type="bibr" rid="pone.0095580-English1">[12]</xref><xref ref-type="bibr" rid="pone.0095580-Reynolds1">[15]</xref> showed a similar lack of clear discrimination among potential sources of ponderosa pine (<italic>Pinus ponderosa</italic>), the primary construction species. These same studies, however, indicated potential timber sources in the canyon drainage system. Building on recent models showing that the prehistoric agricultural potential of the canyon has been previously underestimated <xref ref-type="bibr" rid="pone.0095580-Dorshow1">[16]</xref>–<xref ref-type="bibr" rid="pone.0095580-Dorshow2">[17]</xref>, it is suggested here that the importation of costly basic resources during the Bonito Phase has not yet been proven, despite popular assumptions that Great House society was based on such transactions <xref ref-type="bibr" rid="pone.0095580-Benson5">[10]</xref>.</p>
+<sec id="s1a">
+<title>Background</title>
+<p>Scholars propose that in the 11<sup>th</sup> century AD, Chaco saw the development of a meta-community of Great Houses as well as dozens of smaller residential buildings hierarchically organized as a way to effectively manage social relations, food production, and regional exchange <xref ref-type="bibr" rid="pone.0095580-Windes2">[18]</xref>–<xref ref-type="bibr" rid="pone.0095580-Kantner1">[25]</xref>. In turn, the concentration of Great Houses in the canyon (<xref ref-type="fig" rid="pone-0095580-g002">Figure 2</xref>) is usually seen as the sociopolitical center of a larger regional network of farming communities outside Chaco, each containing at least one Great House <xref ref-type="bibr" rid="pone.0095580-Kantner2">[26]</xref>. Most Great House architecture in Chaco was built during the 11<sup>th</sup> century A.D., with construction declining precipitously after AD 1100, and ending by the late AD 1200s or earlier <xref ref-type="bibr" rid="pone.0095580-Dean1">[27]</xref> <xref ref-type="bibr" rid="pone.0095580-Windes3">[28]</xref>.</p>
+<p>The San Juan basin is a mixture of Pennsylvanian, Triassic, Jurassic, Cretaceous, Tertiary, and Quaternary sedimentary formations (<xref ref-type="fig" rid="pone-0095580-g001">Figure 1</xref>, <xref ref-type="supplementary-material" rid="pone.0095580.s001">Figure S1</xref>, <xref ref-type="supplementary-material" rid="pone.0095580.s002">S2</xref>, <xref ref-type="supplementary-material" rid="pone.0095580.s003">S3</xref>) <xref ref-type="bibr" rid="pone.0095580-Kirby1">[29]</xref>. Today, Chaco Canyon itself holds few advantages for dry-farming. The canyon's high elevation (1800 to 1900 masl), aridity, b-seasonal precipitation, and cold winters make cultivation a risky endeavor. Paleoenvironmental studies suggest that the canyon vegetation has changed little over the past 2000 years, leading many researchers to speculate that food was brought into the canyon from elsewhere. Studies in the possible sources of construction beams and maize were spurred on by the recognition that the major mountain ranges near the Colorado Plateau had differing geochemistries <xref ref-type="bibr" rid="pone.0095580-English1">[12]</xref>, chief among these being radiogenic strontium isotope ratios. Evidence for a substantial presence of spruce and fir in Chaco Canyon during the period of construction of the Great Houses is limited <xref ref-type="bibr" rid="pone.0095580-Judd1">[30]</xref>–<xref ref-type="bibr" rid="pone.0095580-Betancourt1">[33]</xref>. The long distance transport of tree beams had been hypothesized before <xref ref-type="bibr" rid="pone.0095580-Betancourt2">[34]</xref><xref ref-type="bibr" rid="pone.0095580-Durand1">[35]</xref>, and <sup>87</sup>Sr/<sup>86</sup>Sr values could serve as valid test. Strontium atoms themselves have the same outer electron valence shell structure as calcium, and can be substituted for calcium in plant and animal tissues. Radiogenic (<sup>87</sup>Sr) to non-radiogenic (<sup>86</sup>Sr) strontium isotope ratios are unique across many geological terrains, and therefore measuring them can be useful in sourcing various materials. Radiogenic strontium (<sup>87</sup>Sr) forms as radioactive rubidium decays. The amount of <sup>87</sup>Sr in any particular substrate is a function of the age of the rock as well as the original abundance of strontium and rubidium. When set as a ratio with non-radiogenic strontium, variation in abundance is normalized <xref ref-type="bibr" rid="pone.0095580-Bentley1">[36]</xref>. Bedrock weathering is the primary input for soil <sup>87</sup>Sr/<sup>86</sup>Sr <xref ref-type="bibr" rid="pone.0095580-Bentley1">[36]</xref> <xref ref-type="bibr" rid="pone.0095580-Beard1">[37]</xref> but alluvial and aeolian deposition can also influence ratios, along with differential weathering of minerals. However, differences between the radiogenic strontium isotope ratios of bedrock and soil are generally minimal <xref ref-type="bibr" rid="pone.0095580-Bentley1">[36]</xref> <xref ref-type="bibr" rid="pone.0095580-Hodel1">[38]</xref>, though the ratio does vary by depth <xref ref-type="bibr" rid="pone.0095580-Poszwa1">[39]</xref>. Plants acquire the <sup>87</sup>Sr/<sup>86</sup>Sr value of the soils that they grow in, and numerous studies have confirmed that a plant's <sup>87</sup>Sr/<sup>86</sup>Sr value is consistently a less variable, more averaged version of the local soil's <xref ref-type="bibr" rid="pone.0095580-Poszwa1">[39]</xref> <xref ref-type="bibr" rid="pone.0095580-Sillen1">[40]</xref>.</p>
+<p>A notable contribution to this effort has been a long-term study examining the <sup>87</sup>Sr/<sup>86</sup>Sr values from maize found in Chaco Canyon and its potential regional sources <xref ref-type="bibr" rid="pone.0095580-Benson1">[2]</xref> <xref ref-type="bibr" rid="pone.0095580-Benson2">[7]</xref> <xref ref-type="bibr" rid="pone.0095580-Benson3">[8]</xref>. These studies analyzed synthetic soil-water samples collected from locations throughout the southern Colorado Plateau (including 48 in Chaco Canyon) and 36 maize cobs from nine Chaco sites, including seven from Pueblo Bonito. Twenty-one of the maize cobs from four sites all dated to the late 12<sup>th</sup> century AD. The specimens from Pueblo Bonito ranged from the late 9<sup>th</sup> to early 13<sup>th</sup> centuries, while six samples from other sites dated to the 15<sup>th</sup>, 18<sup>th</sup> and 19<sup>th</sup> centuries (<xref ref-type="bibr" rid="pone.0095580-Benson2">[7]</xref>, <xref ref-type="table" rid="pone-0095580-t001">Table 1</xref>). Although Benson and colleagues (2009) concluded that none of the analyzed maize came from sources in Chaco Canyon, they also recognized significant shortcomings in their comparative database stemming from geological complexity at the regional level. The geological variation observed by Benson's study group likely reflects the regional dominance of Cretaceous sandstone formations (<xref ref-type="fig" rid="pone-0095580-g001">Figure 1</xref>) combined with a variety of erosional and depositional processes (including aeolian mixing), all of which can lead to extremely patchy geochemical properties in potential cultivation sites.</p>
+<table-wrap id="pone-0095580-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0095580.t001</object-id><label>Table 1</label><caption>
+<title>Comparison of medians across maize by provenience (columns) and potential sources (rows).</title>
+</caption><alternatives><graphic id="pone-0095580-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0095580.t001" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Aztec Soil</td>
+<td align="left" rowspan="1" colspan="1">Chuska Slope</td>
+<td align="left" rowspan="1" colspan="1">Lobo Mesa</td>
+<td align="left" rowspan="1" colspan="1">Northeastern San Juan River</td>
+<td align="left" rowspan="1" colspan="1">Red Mesa</td>
+<td align="left" rowspan="1" colspan="1">La Plata</td>
+<td align="left" rowspan="1" colspan="1">Salmon Ruin</td>
+<td align="left" rowspan="1" colspan="1">Pre 1140 Maize</td>
+<td align="left" rowspan="1" colspan="1">Post 1140 Maize</td>
+<td align="left" rowspan="1" colspan="1">Historic Maize</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chaco Watershed</td>
+<td align="left" rowspan="1" colspan="1">−0.0003*</td>
+<td align="left" rowspan="1" colspan="1">0.0002*</td>
+<td align="left" rowspan="1" colspan="1">−0.0006**</td>
+<td align="left" rowspan="1" colspan="1">0.0006**</td>
+<td align="left" rowspan="1" colspan="1">0.0002</td>
+<td align="left" rowspan="1" colspan="1">0.0004*</td>
+<td align="left" rowspan="1" colspan="1">−0.0008**</td>
+<td align="left" rowspan="1" colspan="1"><bold>−0.0002</bold></td>
+<td align="left" rowspan="1" colspan="1">−0.0009**</td>
+<td align="left" rowspan="1" colspan="1">−0.0012**</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Aztec Soil</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.0005**</td>
+<td align="left" rowspan="1" colspan="1">−0.0003</td>
+<td align="left" rowspan="1" colspan="1">0.0009**</td>
+<td align="left" rowspan="1" colspan="1">0.0005*</td>
+<td align="left" rowspan="1" colspan="1">0.0008*</td>
+<td align="left" rowspan="1" colspan="1">−0.0005*</td>
+<td align="left" rowspan="1" colspan="1">0.0001</td>
+<td align="left" rowspan="1" colspan="1">−0.0006</td>
+<td align="left" rowspan="1" colspan="1">−0.0009*</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chuska Slope</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">−0.0008**</td>
+<td align="left" rowspan="1" colspan="1">0.0003**</td>
+<td align="left" rowspan="1" colspan="1">0.0001</td>
+<td align="left" rowspan="1" colspan="1">0.0002</td>
+<td align="left" rowspan="1" colspan="1">−0.0011**</td>
+<td align="left" rowspan="1" colspan="1">−0.0004**</td>
+<td align="left" rowspan="1" colspan="1">−0.0011**</td>
+<td align="left" rowspan="1" colspan="1">−0.00145**</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Lobo Mesa</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.0011**</td>
+<td align="left" rowspan="1" colspan="1">0.0008*</td>
+<td align="left" rowspan="1" colspan="1">0.0010*</td>
+<td align="left" rowspan="1" colspan="1"><bold>−0.0003</bold></td>
+<td align="left" rowspan="1" colspan="1">0.0004</td>
+<td align="left" rowspan="1" colspan="1">−0.0003</td>
+<td align="left" rowspan="1" colspan="1"><bold>−0.0006</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Northwestern San Juan River</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>−0.0003</bold></td>
+<td align="left" rowspan="1" colspan="1">−0.0001</td>
+<td align="left" rowspan="1" colspan="1">−0.0014*</td>
+<td align="left" rowspan="1" colspan="1">−0.0008**</td>
+<td align="left" rowspan="1" colspan="1">−0.0014**</td>
+<td align="left" rowspan="1" colspan="1">−0.0018**</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Red Mesa</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.0002</td>
+<td align="left" rowspan="1" colspan="1">−0.0011*</td>
+<td align="left" rowspan="1" colspan="1"><bold>−0.0004</bold></td>
+<td align="left" rowspan="1" colspan="1">−0.0011**</td>
+<td align="left" rowspan="1" colspan="1">−0.0014*</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">La Plata</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">−0.0013*</td>
+<td align="left" rowspan="1" colspan="1">−0.0006*</td>
+<td align="left" rowspan="1" colspan="1">−0.0013**</td>
+<td align="left" rowspan="1" colspan="1">−0.0016*</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Salmon Ruin</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>0.0006</bold></td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">−0.0003</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Pre 1140 Maize</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>−0.0007</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>−0.0010</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Post 1140 Maize</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">−0.0003</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt101"><label/><p>Significance codes: 0.001 ‘**’ 0.01 ‘*’.</p></fn><fn id="nt102"><label/><p>Items in bold indicate that no significant difference between medians was found.</p></fn></table-wrap-foot></table-wrap>
+<p>Benson's efforts to identify geographic sources for maize found in Chaco have been paralleled by radiogenic strontium isotope studies designed to locate sources for wood recovered from Chaco Great Houses. More than 80% of the primary wooden beams in Great Houses were ponderosa pine (<italic>Pinus ponderosa</italic>), which grew in Chaco in the early 20<sup>th</sup> century A.D., albeit only a few isolated trees <xref ref-type="bibr" rid="pone.0095580-Judd1">[30]</xref>. However, many of the construction elements in Great Houses included Douglas fir (<italic>Pseudotsuga menziesii</italic>), spruce (<italic>Picea spp.</italic>) and even aspen (<italic>Populus tremuloides</italic>) species, which did not grow in Chaco during the late Holocene <xref ref-type="bibr" rid="pone.0095580-Hall1">[31]</xref>–<xref ref-type="bibr" rid="pone.0095580-Betancourt1">[33]</xref>. The ten largest ruins in Chaco would have required ca. 45,000 high elevation trees (2500 m and above today), based on species proportions recovered from excavations <xref ref-type="bibr" rid="pone.0095580-Betancourt2">[34]</xref>. Archaeologists have argued that over time, Chaco builders would have depleted any locally available ponderosa, forcing them to seek this species in distant mountains, up to 80 km distant <xref ref-type="bibr" rid="pone.0095580-Betancourt2">[34]</xref> <xref ref-type="bibr" rid="pone.0095580-English1">[12]</xref> <xref ref-type="bibr" rid="pone.0095580-Windes3">[28]</xref>. Spruce and fir in the region primarily occur in high-altitude sub-alpine montane and mesic woodlands in the Chuska, San Mateo, San Pedro, and La Plata Mountains while Ponderosa occupies the slopes of these ranges (<xref ref-type="supplementary-material" rid="pone.0095580.s004">Figure S4</xref>). These mountains ranges are at least 70+ kilometers away from Chaco Canyon Great Houses. However, spruce, fir, and ponderosa are sporadically available in mesic and riparian mixed conifer woodlands closer to the canyon (<xref ref-type="supplementary-material" rid="pone.0095580.s005">Figure S5</xref>) <xref ref-type="bibr" rid="pone.0095580-United1">[41]</xref>. These trees typically grow on north-facing slopes near arroyos and other sources of periodic water. These woodlands occur along the paths to most nearby mountain ranges (<xref ref-type="supplementary-material" rid="pone.0095580.s006">Figure S6</xref>, <xref ref-type="supplementary-material" rid="pone.0095580.s007">S7</xref>, <xref ref-type="supplementary-material" rid="pone.0095580.s008">S8</xref>, <xref ref-type="supplementary-material" rid="pone.0095580.s009">S9</xref>). It is unlikely that these trees grew directly in Chaco Canyon based on macrobotanicals found in packrat middens in the canyon <xref ref-type="bibr" rid="pone.0095580-Betancourt1">[33]</xref>, though only two of these samples fall within a few centuries of the construction period.</p>
+<p>Following a pioneering investigation which demonstrated that trees growing on different substrates in the San Juan Basin produced chemically distinct signatures <xref ref-type="bibr" rid="pone.0095580-Betancourt2">[34]</xref>, English, et al. (2001) analyzed radiogenic strontium isotopes from <italic>Picea sp.</italic> (spruce), <italic>Abies sp.</italic> (fir), <italic>Pinus ponderosa</italic> (ponderosa), water, and rocks at three areas where high elevation trees grow now. They compared these values to 52 archaeological specimens of spruce and fir from six Great Houses and concluded the archaeological wood came from the San Mateo Mountains (80+ km to the south) and the Chuska Mountains (75+ km to the west) <xref ref-type="bibr" rid="pone.0095580-English1">[12]</xref>. Because these species correspond to modern elevations above 2500 m, the analysis did not include other possible geographic sources. Today, isolated stands of spruce, fir, and ponderosa exist in riparian and mesic mixed-conifer forests in the San Juan Basin <xref ref-type="bibr" rid="pone.0095580-United1">[41]</xref>. Historically, isolated fir and ponderosa were both available in the canyon itself <xref ref-type="bibr" rid="pone.0095580-Dean1">[27]</xref>. If conditions were previously cooler and wetter, these isolated stands could potentially have existed in larger quantities across the San Juan Basin <xref ref-type="bibr" rid="pone.0095580-GrissinoMayer1">[13]</xref> <xref ref-type="bibr" rid="pone.0095580-Windes1">[14]</xref> and provided a more attractive source for timber than distant mountain ranges.</p>
+<p>However, a subsequent attempt to use radiogenic strontium isotopes for sourcing ponderosa pine was unable to establish clear connections between potential source areas and archaeological specimens recovered from canyon Great Houses. Reynolds et al (2005) compared <sup>87</sup>Sr/<sup>86</sup>Sr values for 62 living ponderosa from 19 geological source areas with 53 archaeological ponderosa from Pueblo Bonito, Chetro Ketl, and Pueblo del Arroyo (<xref ref-type="fig" rid="pone-0095580-g001">Figure 1</xref>). The results were plotted as means and the geological sample distribution compared visually to the archaeological distribution. Data were insufficient to allow clear identification of the particular origins of any of the Chaco timbers, although the authors suggested that the ponderosa pine data indicated a shift to more northern and western sources, specifically the La Plata or San Juan Mountains, ca. 150 km away. They also noted that they could not rule out the possibility that half the archaeological beams grew in Chaco itself, based on isotopic values from water samples in the canyon <xref ref-type="bibr" rid="pone.0095580-Reynolds1">[15]</xref>.</p>
+<p>As geochemical data are variable due to geologic process or instrumental error, there must be some consideration of uncertainty in the original geochemical source data before attempting to make an argument for a specific geospatial source <xref ref-type="bibr" rid="pone.0095580-Hughs1">[42]</xref>. The present study uses both frequentist inference and Bayesian mixing models to assess the distinction between potential geochemical sources for the maize and trees found in Chaco Canyon by characterizing variation in both source samples and archaeological specimens as probability statements and distributions.</p>
+<p>The sample of potential sources for spruce, fir and ponderosa was expanded beyond only high-altitude regions to include the Chaco Watershed and Aztec ruins based on riparian and mesic mixed conifer forest located in the area (Figures S4, S5, S6, S7, S8, S9). The sample of potential sources for maize includes the Chaco Watershed. This was excluded in earlier analysis as environmental conditions were not considered suitable for maize cultivation <xref ref-type="bibr" rid="pone.0095580-Benson2">[7]</xref>–<xref ref-type="bibr" rid="pone.0095580-Benson5">[10]</xref>. However, recent work indicates that maize cultivation was possible <xref ref-type="bibr" rid="pone.0095580-Dorshow1">[16]</xref>–<xref ref-type="bibr" rid="pone.0095580-Dorshow2">[17]</xref>, as water control features and field houses are present in the canyon.</p>
+<p>The large quantity of available radiogenic strontium data not only provides a way to get a more holistic view of the prehistoric economy of Chaco Canyon, but also a large data set to assess the utility of Bayesian inference into geochemical sourcing questions.</p>
+</sec></sec><sec id="s2" sec-type="methods">
+<title>Methods</title>
+<p>Strontium data reported by English et al. (2001) and Reynolds et al. (2005) were used to define high-altitude geochemical sources for timber, while strontium data reported by Benson et al. (2003), Benson et al. (2009), and Benson et al. (2010) were used to define lower-elevation geochemical sources for maize cultivation in the immediate Chaco region and the broader San Juan Basin (<xref ref-type="supplementary-material" rid="pone.0095580.s019">Tables S9</xref>, <xref ref-type="supplementary-material" rid="pone.0095580.s010">S10</xref>, <xref ref-type="supplementary-material" rid="pone.0095580.s011">S11</xref>, <xref ref-type="supplementary-material" rid="pone.0095580.s012">S12</xref>) <xref ref-type="bibr" rid="pone.0095580-English1">[12]</xref> <xref ref-type="bibr" rid="pone.0095580-Benson1">[2]</xref> <xref ref-type="bibr" rid="pone.0095580-Reynolds1">[15]</xref> <xref ref-type="bibr" rid="pone.0095580-Benson2">[7]</xref>. Potential maize geochemical sources were defined using soil and synthetic water <sup>87</sup>Sr/<sup>86</sup>Sr values (n = 154) and potential timber geochemical sources were defined using geologic and modern tree <sup>87</sup>Sr/<sup>86</sup>Sr values (n = 223). Soil and water samples grouped by Benson et al. (2009) as either Chaco Canyon or the Upper Rio Chaco region were combined to form a single strontium isotope ratio set because the canyon is located in the hydrological center of the samples identified as the Upper Rio Chaco (<xref ref-type="fig" rid="pone-0095580-g002">Figure 2</xref>). This sample is referred to in this manuscript as the Chaco watershed. <sup>87</sup>Sr/<sup>86</sup>Sr values for Chaco maize were grouped into temporal cultivation periods (pre-1140, post-1140, and historic). Values for archeological timbers were grouped by taxon (spruce, ponderosa, and fir). NBS SRM-987 values were reported for each study (English et al (2001) = 0.7102453+/−0.000012 <xref ref-type="bibr" rid="pone.0095580-English1">[12]</xref>; Reynolds et al (2005) <xref ref-type="bibr" rid="pone.0095580-Reynolds1">[15]</xref>  = 0.7102680+/−0.00004; Benson et al (2003) <xref ref-type="bibr" rid="pone.0095580-Benson1">[2]</xref>  = 0.710276+/−0.000016; Benson et al (2009) <xref ref-type="bibr" rid="pone.0095580-Benson2">[7]</xref>  = 0.71029+/−0.00002) and <sup>87</sup>Sr/<sup>86</sup>Sr values were normalized to 0.71029 per Benson et al (2009) (<xref ref-type="supplementary-material" rid="pone.0095580.s019">Tables S9</xref>–<xref ref-type="supplementary-material" rid="pone.0095580.s012">S12</xref>).</p>
+<p>Frequentist statistics can be used to determine whether or not <sup>87</sup>Sr/<sup>86</sup>Sr measures of central tendency for potential sources, maize, or timber species are distinguishable. First, kernel density estimates and plots were created in order to visualize the probability distributions of <sup>87</sup>Sr/<sup>86</sup>Sr values for sources, timber, and maize. Kernel density estimates were formed with the “stats” package in the R programming language (R 3.0.2) <xref ref-type="bibr" rid="pone.0095580-Wickham1">[43]</xref><xref ref-type="bibr" rid="pone.0095580-Auguie1">[44]</xref> using a Gaussian smoothing kernel with a smoothing bandwidth equal to the standard deviation of each geochemical source and the Great House construction timber. These plots function similarly to histograms, but can be “smoothed” by assuming a normal distribution for each data point in order to depict a more curve-like probability density function for the variable of interest. For each geochemically defined source, timber taxon, and temporal maize cultivation group, 552 equally spaced points were generated with these smoothing parameters. The resulting kernel density estimate plots were used to produce individual <sup>87</sup>Sr/<sup>86</sup>Sr probability curves for each geochemically defined source, each timber taxon, and each temporally defined maize cultivation groups. In addition to qualitative assessments of kernel density plots, simple Wilcoxon Mann-Whitney tests, which allow for comparing medians between data sets that are not normally distributed or have unequal variances, were run to determine if means were significantly different.</p>
+<p>As a supplement to frequentist methods, mixing models can be used to assess possible source attributions <xref ref-type="bibr" rid="pone.0095580-Erhardt1">[45]</xref>. Mixing models are most commonly used in ecology for assessing the contributions of different prey items to a predator's diet <xref ref-type="bibr" rid="pone.0095580-Phillips1">[46]</xref> <xref ref-type="bibr" rid="pone.0095580-Inger1">[47]</xref>, but they are well suited for geochemical source analysis as well. In the traditional approach, after measuring N isotopic elements, basic mixing models estimate the proportional contribution of N+1 sources to a mixture by solving a system of N+1 linear equations. A clear limitation to this method is that the number of sources considered in a model is capped by the number of isotopes measured <xref ref-type="bibr" rid="pone.0095580-Phillips1">[46]</xref> <xref ref-type="bibr" rid="pone.0095580-Phillips2">[48]</xref>. The use of Bayesian inference techniques allows a release from this restriction; theoretically any number of sources could be considered regardless of the number of isotopic elements <xref ref-type="bibr" rid="pone.0095580-Parnell1">[49]</xref> <xref ref-type="bibr" rid="pone.0095580-Newsome1">[50]</xref> <xref ref-type="bibr" rid="pone.0095580-Moore1">[51]</xref>. A Bayesian approach also allows the incorporation of prior information into the model and more ways to investigate uncertainty and variability within potential sources. In this study, the R package SIAR (Stable Isotope Analysis in R) <xref ref-type="bibr" rid="pone.0095580-Parnell1">[49]</xref> <xref ref-type="bibr" rid="pone.0095580-Parnell2">[52]</xref> was used to build Bayesian mixing models to estimate the relative contribution of geochemical sources to the radiogenic strontium signatures in Chaco maize and timber. Using SIAR, each potential geochemical source was defined as a mean and standard deviation of measured <sup>87</sup>Sr/<sup>86</sup>Sr from the soil, water, or modern trees in that locality. Archeological samples were defined using radiogenic <sup>87</sup>Sr/<sup>86</sup>Sr values grouped by cultivation period (for maize: pre-1140, post-1140, and historic) or by taxonomic group (for timbers: spruce, ponderosa, and fir).</p>
+<p>The Dirichlet distribution (a generalization of the more commonly used Beta distribution) was used as a prior for the proportional contribution of each source and no other information was included in the prior. Each source was treated as independent with an equal prior probability (12.5%), but the total proportions were required to sum to one <xref ref-type="bibr" rid="pone.0095580-Parnell1">[49]</xref>. Priors for all samples were kept as equal (12.5%) so that posterior probabilities primarily reflected the data following procedures used by Parnell et al. <xref ref-type="bibr" rid="pone.0095580-Parnell1">[49]</xref>. Isotopic data for each timber and maize sample were inputted, and 200,000 Markov Chain Monte Carlo simulations with 50,000 burn-ins were run to determine the proportionate contribution of each geochemical source to the maize and timbers of Chaco Canyon. Definitive source attributions should show a high proportionate contribution for one source over the others, while ambiguous source attributions should show an even spread of posterior probabilities.</p>
+<p>One limitation of the mixing model software is that all data is assumed to follow a normal distribution <xref ref-type="bibr" rid="pone.0095580-Erhardt1">[45]</xref> <xref ref-type="bibr" rid="pone.0095580-Parnell1">[49]</xref> <xref ref-type="bibr" rid="pone.0095580-Newsome1">[50]</xref>. To our knowledge, software does not yet exist to run Bayesian mixing models without this assumption. Shapiro-Wilkes tests for normality (<xref ref-type="supplementary-material" rid="pone.0095580.s011">Table S1</xref>) indicate this is a potential issue with the Chuska Mountains, San Pedro Mountains, and Aztec soils. To test the effects of these influences, a reduced model of the data were run for ponderosa with the Chuska Mountains corrected for normality (removing data points CHM-214b and CHM-214d) and for Pre-1140 A.D. maize (removing data point CHCU43684A). Removing these data limit the generalizability of these models, but do allow for a comparison between the posterior probabilities of data coerced to be normal to the full data set. A third robustness test included a sequential increase of prior probabilities by 3.5% from 12.5% to 93% for the Chuska Mountains with the posterior probability assessed relative to the prior probability.</p>
+</sec><sec id="s3">
+<title>Results</title>
+<sec id="s3a">
+<title>Maize Sources</title>
+<p>Our kernel density plots yielded a series of overlapping probability curves that reveal considerable uncertainty in source attribution for maize. <sup>87</sup>Sr/<sup>86</sup>Sr values from Chaco Canyon maize radiocarbon-dated to Pueblo I and II periods (pre-1140 AD) largely overlap with the <sup>87</sup>Sr/<sup>86</sup>Sr values of the Chaco watershed source, as well as many of the other defined sources (<xref ref-type="fig" rid="pone-0095580-g003">Figure 3a, 3b</xref>). Additionally, this subset of maize data has a bimodal distribution. A second, smaller peak appears outside the <sup>87</sup>Sr/<sup>86</sup>Sr value of any known geochemical source within the study area. This indicates that there must be some yet-undefined geochemical source influencing this maize sample; it cannot be all sourced within the known geochemistry of the sampled areas.</p>
+<fig id="pone-0095580-g003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0095580.g003</object-id><label>Figure 3</label><caption>
+<title>Kernel density distributions of historical, pre-1140 A.D., and post-1140 A.D. maize in Chaco Canyon (a) and soil and water <sup>87</sup>Sr/<sup>86</sup>Sr sources (b).</title>
+<p>The dotted line represents the strontium isotope ratio for a single ponderosa tree stump found in the West Court of Pueblo Bonito (JPB-99). Maize from both time periods overlaps with strontium isotope ratios from the Chaco watershed, though maize dating after 1140 A.D. has more cobs with higher values than found within the canyon and in the selected source data set.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0095580.g003" position="float" xlink:type="simple"/></fig>
+<p>Wilcoxon Mann-Whitney tests showed no statistical different in the <sup>87</sup>Sr/<sup>86</sup>Sr values for maize predating 1140 A.D. and the Chaco watershed, Aztec soils, Chuska Slope soils, Lobo Mesa soils, or Salmon Ruin soil sources. Shapiro Wilkes tests for normality indicate that the Aztec soil, pre-1140 A.D., and post-1140 A.D. maize are non-normal to the 99% confidence level.</p>
+<p>In the Bayesian mixing model results, Salmon Ruin had the highest mean source posterior probability for post-1140 A.D. maize (<xref ref-type="fig" rid="pone-0095580-g004">Figure 4a</xref>, <xref ref-type="table" rid="pone-0095580-t002">Table 2</xref>), although it was not a large difference with respect to probability for the Aztec soil, Chaco watershed soil, or Lobo Mesa soil sources.</p>
+<fig id="pone-0095580-g004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0095580.g004</object-id><label>Figure 4</label><caption>
+<title>Ternary and proportion plots illustrating source mean posterior probabilities generated from Markov-Chain Monte Carlo simulations of strontium isotope data.</title>
+<p>There is no clear pattern for pre-1140 A.D. (a), post-1140 A.D. (b), and historic maize (c), indicating that no source attribution is more likely than others based on this model. Mean posterior probability proportions of geochemical source contributions for pre-1140 maize (d), post-1140 maize (e), and historic maize (f) are also displayed.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0095580.g004" position="float" xlink:type="simple"/></fig><table-wrap id="pone-0095580-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0095580.t002</object-id><label>Table 2</label><caption>
+<title>Mean posterior probability proportions of geochemical source contributions to observed variation in Chaco maize.</title>
+</caption><alternatives><graphic id="pone-0095580-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0095580.t002" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Pre 1140 A.D. Maize</td>
+<td align="left" rowspan="1" colspan="1">Post 1140 A.D. Maize</td>
+<td align="left" rowspan="1" colspan="1">Historic Maize</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chaco Watershed</td>
+<td align="left" rowspan="1" colspan="1">0.127</td>
+<td align="left" rowspan="1" colspan="1">0.145</td>
+<td align="left" rowspan="1" colspan="1">0.128</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Aztec Soil</td>
+<td align="left" rowspan="1" colspan="1">0.131</td>
+<td align="left" rowspan="1" colspan="1">0.114</td>
+<td align="left" rowspan="1" colspan="1">0.135</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chuska Slope</td>
+<td align="left" rowspan="1" colspan="1">0.120</td>
+<td align="left" rowspan="1" colspan="1">0.098</td>
+<td align="left" rowspan="1" colspan="1">0.119</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Northwestern San Juan</td>
+<td align="left" rowspan="1" colspan="1">0.110</td>
+<td align="left" rowspan="1" colspan="1">0.076</td>
+<td align="left" rowspan="1" colspan="1">0.121</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Lobo Mesa</td>
+<td align="left" rowspan="1" colspan="1">0.134</td>
+<td align="left" rowspan="1" colspan="1">0.177</td>
+<td align="left" rowspan="1" colspan="1">0.132</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Red Mesa</td>
+<td align="left" rowspan="1" colspan="1">0.119</td>
+<td align="left" rowspan="1" colspan="1">0.094</td>
+<td align="left" rowspan="1" colspan="1">0.122</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">La Plata</td>
+<td align="left" rowspan="1" colspan="1">0.117</td>
+<td align="left" rowspan="1" colspan="1">0.085</td>
+<td align="left" rowspan="1" colspan="1">0.119</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Salmon Ruin</td>
+<td align="left" rowspan="1" colspan="1">0.143</td>
+<td align="left" rowspan="1" colspan="1">0.211</td>
+<td align="left" rowspan="1" colspan="1">0.125</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt103"><label/><p>For all maize samples, the strontium shows uniform mean posterior probabilities across all possible sources. This indicates a high degree of uncertainty when attempting to use strontium to source maize samples.</p></fn></table-wrap-foot></table-wrap>
+<p><sup>87</sup>Sr/<sup>86</sup>Sr values from maize grown in the Pueblo III period (post-1140 AD) partially overlapped with canyon drainage <sup>87</sup>Sr/<sup>86</sup>Sr values, but some cobs had ratios outside those obtained from the Chaco watershed. These outlying ratios did not correspond to any other sources in this dataset (<xref ref-type="fig" rid="pone-0095580-g003">Figure 3a, 3b</xref>), suggesting an unknown or un-sampled source. It is certain that some post-1140 AD maize cobs were from the Navajo occupation of the canyon, which post-dates the acquisition of horses and consequently could easily have been transported from farming locales outside Chaco proper. This later maize had a small statistically significant difference with all potential sources except the Salmon Ruin area (<xref ref-type="table" rid="pone-0095580-t001">Table 1</xref>). In the Bayesian mixing models, it had the highest probability of association with Salmon Ruin and Lobo Mesa soil sources, although again the differences are not great (<xref ref-type="fig" rid="pone-0095580-g003">Figure 3a</xref>, <xref ref-type="table" rid="pone-0095580-t002">Table 2</xref>).</p>
+<p>To determine the effects of non-normality on the conclusion for Pre-1140 A.D. maize, a sample (CHCU43684A) was removed from this data set and the model re-run without it. Mean posterior probabilities were not substantially different as a consequence of a violation of the normality assumption for this data set (<xref ref-type="supplementary-material" rid="pone.0095580.s013">Table S3</xref>). A second run of the model was performed on data rounded to the 4th decimal place, and neither median difference was significance (<xref ref-type="supplementary-material" rid="pone.0095580.s014">Table S4</xref>) or posterior probabilities (<xref ref-type="supplementary-material" rid="pone.0095580.s015">Table S5</xref>) were strongly affected by this treatment.</p>
+<p>Maize dated to the historic era (post 1492 A.D.) were similar to pre-1140 A.D. maize in that no single source was dominant (<xref ref-type="fig" rid="pone-0095580-g004">Figure 4c</xref>, <xref ref-type="fig" rid="pone-0095580-g005">Figure 5a–c</xref>, <xref ref-type="table" rid="pone-0095580-t002">Table 2</xref>). Overall, the Monte Carlo simulations did not support any definitive geochemical sources associated with Chaco maize from any period (<xref ref-type="table" rid="pone-0095580-t002">Table 2</xref>, <xref ref-type="fig" rid="pone-0095580-g004">Figure 4a–c</xref>, <xref ref-type="fig" rid="pone-0095580-g005">Figure 5a–c</xref>).</p>
+<fig id="pone-0095580-g005" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0095580.g005</object-id><label>Figure 5</label><caption>
+<title>Map of mean posterior probabilities for source contribution in the San Juan Basin for pre-1140 A.D. maize (a), post-1140 A.D. maize (b), and historic maize (c).</title>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0095580.g005" position="float" xlink:type="simple"/></fig></sec><sec id="s3b">
+<title>Timber Sources</title>
+<p>Wilcoxon Mann-Whitney tests indicated that there was no significant difference in medians for the Chaco watershed region and the Chuska Mountains at the 99% confidence level (<xref ref-type="table" rid="pone-0095580-t003">Table 3</xref>), meaning these sources may not be sufficiently geochemically distinguishable. This complicates arguments for the Chuska Mountains as a major source for timber or maize <xref ref-type="bibr" rid="pone.0095580-Benson1">[2]</xref>. The Bayesian mixing model indicated that some spruce and fir from Great Houses was likely from the San Mateo range (<xref ref-type="fig" rid="pone-0095580-g006">Figure 6a–f</xref>, <xref ref-type="fig" rid="pone-0095580-g007">Figure 7</xref>, <xref ref-type="table" rid="pone-0095580-t004">Table 4</xref>), though some values fell within the range of the Chuska and Chaco watershed regions. It is important to note that the Bayesian model is not a confirmation that San Mateo is a source for construction timbers, only that it is the most likely given the available <sup>87</sup>Sr/<sup>86</sup>Sr values. Although Chaco is a marginal location for ponderosa and fir today, and well outside the modern range of spruce, if trees that grow in Chaco Canyon mirror the strontium isotope values from the Chuska Mountains and, in part, the La Plata Mountains, it may be impossible to distinguish these two/three geochemical sources based on strontium isotope data alone. Therefore, the geochemical source attribution for timber data is also unclear.</p>
+<fig id="pone-0095580-g006" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0095580.g006</object-id><label>Figure 6</label><caption>
+<title>Ternary and proportion plots illustrating source posterior probabilities generated from Markov-Chain Monte Carlo simulations of strontium isotope data.</title>
+<p>Both Spruce and Fir (a &amp; b) indicate San Mateo is a more likely source than either the Chuska Mountains or isolated stands near Chaco. There is no clear pattern for Ponderosa pine (c), indicating that no source attribution is more likely than others based on this model. Mean posterior probability proportions of geochemical source contributions for fir (d), spruce (e) and ponderosa (f) are also displayed.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0095580.g006" position="float" xlink:type="simple"/></fig><fig id="pone-0095580-g007" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0095580.g007</object-id><label>Figure 7</label><caption>
+<title>Map of mean posterior probabilities for source contribution in the San Juan Basin for fir (a), spruce (b), and ponderosa (c).</title>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0095580.g007" position="float" xlink:type="simple"/></fig><table-wrap id="pone-0095580-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0095580.t003</object-id><label>Table 3</label><caption>
+<title>Comparison of medians across multiple potential timber sources.</title>
+</caption><alternatives><graphic id="pone-0095580-t003-3" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0095580.t003" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Chuska Mountains</td>
+<td align="left" rowspan="1" colspan="1">San Mateo Mountains</td>
+<td align="left" rowspan="1" colspan="1">Cuba Mesa</td>
+<td align="left" rowspan="1" colspan="1">Hosta Butte</td>
+<td align="left" rowspan="1" colspan="1">La Plata Mountains</td>
+<td align="left" rowspan="1" colspan="1">San Pedro Mountains</td>
+<td align="left" rowspan="1" colspan="1">Great Houses Ponderosa</td>
+<td align="left" rowspan="1" colspan="1">Great Houses Spruce</td>
+<td align="left" rowspan="1" colspan="1">Great Houses Fir</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chaco Watershed</td>
+<td align="left" rowspan="1" colspan="1">−0.0002</td>
+<td align="left" rowspan="1" colspan="1">0.0016**</td>
+<td align="left" rowspan="1" colspan="1">−0.0049**</td>
+<td align="left" rowspan="1" colspan="1">−0.0017**</td>
+<td align="left" rowspan="1" colspan="1">−0.0006**</td>
+<td align="left" rowspan="1" colspan="1">−0.0052**</td>
+<td align="left" rowspan="1" colspan="1">−0.0003**</td>
+<td align="left" rowspan="1" colspan="1">0.0007**</td>
+<td align="left" rowspan="1" colspan="1">−0.0002</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chuska Mountains</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.0018**</td>
+<td align="left" rowspan="1" colspan="1">−0.0046**</td>
+<td align="left" rowspan="1" colspan="1">−0.0015**</td>
+<td align="left" rowspan="1" colspan="1">−0.0003*</td>
+<td align="left" rowspan="1" colspan="1">−0.0050**</td>
+<td align="left" rowspan="1" colspan="1">−0.0001*</td>
+<td align="left" rowspan="1" colspan="1">0.0009**</td>
+<td align="left" rowspan="1" colspan="1">0.0001</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">San Mateo Mountains</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">−0.0064**</td>
+<td align="left" rowspan="1" colspan="1">−0.0032**</td>
+<td align="left" rowspan="1" colspan="1">−0.0021**</td>
+<td align="left" rowspan="1" colspan="1">−0.0068**</td>
+<td align="left" rowspan="1" colspan="1">−0.0019**</td>
+<td align="left" rowspan="1" colspan="1">−0.0009**</td>
+<td align="left" rowspan="1" colspan="1">−0.0017**</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Cuba Mesa</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.0032*</td>
+<td align="left" rowspan="1" colspan="1">0.0043**</td>
+<td align="left" rowspan="1" colspan="1">−0.0003</td>
+<td align="left" rowspan="1" colspan="1">0.0045**</td>
+<td align="left" rowspan="1" colspan="1">0.0055**</td>
+<td align="left" rowspan="1" colspan="1">0.0047**</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Hosta Butte</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.0011</td>
+<td align="left" rowspan="1" colspan="1">−0.0035**</td>
+<td align="left" rowspan="1" colspan="1">0.0014*</td>
+<td align="left" rowspan="1" colspan="1">0.0023**</td>
+<td align="left" rowspan="1" colspan="1">0.0015**</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">La Plata Mountains</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">−0.0047**</td>
+<td align="left" rowspan="1" colspan="1">0.0002</td>
+<td align="left" rowspan="1" colspan="1">0.0012**</td>
+<td align="left" rowspan="1" colspan="1">0.0004*</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">San Pedro Mountains</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.0049**</td>
+<td align="left" rowspan="1" colspan="1">0.0059**</td>
+<td align="left" rowspan="1" colspan="1">0.0051**</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Great Houses Ponderosa</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.001**</td>
+<td align="left" rowspan="1" colspan="1">0.0002**</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Great Houses Spruce</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">−0.0008*</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt104"><label/><p>Significance codes: 0.001 ‘**’ 0.01 ‘*’.</p></fn><fn id="nt105"><label/><p>Items in bold indicate that no significant difference between medians was found, potentially indicating that these sources cannot be quantitatively distinguished by strontium alone.</p></fn></table-wrap-foot></table-wrap><table-wrap id="pone-0095580-t004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0095580.t004</object-id><label>Table 4</label><caption>
+<title>Mean posterior probability proportions of geochemical source contributions to observed variation in Chaco timber.</title>
+</caption><alternatives><graphic id="pone-0095580-t004-4" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0095580.t004" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Spruce</td>
+<td align="left" rowspan="1" colspan="1">Fir</td>
+<td align="left" rowspan="1" colspan="1">Ponderosa</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chuska Mountains</td>
+<td align="left" rowspan="1" colspan="1">0.121</td>
+<td align="left" rowspan="1" colspan="1">0.153</td>
+<td align="left" rowspan="1" colspan="1">0.145</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chaco Watershed</td>
+<td align="left" rowspan="1" colspan="1">0.125</td>
+<td align="left" rowspan="1" colspan="1">0.159</td>
+<td align="left" rowspan="1" colspan="1">0.145</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Aztec Soil</td>
+<td align="left" rowspan="1" colspan="1">0.100</td>
+<td align="left" rowspan="1" colspan="1">0.126</td>
+<td align="left" rowspan="1" colspan="1">0.143</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">San Mateo Mountains</td>
+<td align="left" rowspan="1" colspan="1">0.475</td>
+<td align="left" rowspan="1" colspan="1">0.319</td>
+<td align="left" rowspan="1" colspan="1">0.168</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">San Pedro Mountains</td>
+<td align="left" rowspan="1" colspan="1">0.021</td>
+<td align="left" rowspan="1" colspan="1">0.030</td>
+<td align="left" rowspan="1" colspan="1">0.063</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">La Plata Mountains</td>
+<td align="left" rowspan="1" colspan="1">0.078</td>
+<td align="left" rowspan="1" colspan="1">0.108</td>
+<td align="left" rowspan="1" colspan="1">0.135</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Hosta Butte</td>
+<td align="left" rowspan="1" colspan="1">0.056</td>
+<td align="left" rowspan="1" colspan="1">0.072</td>
+<td align="left" rowspan="1" colspan="1">0.124</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Cuba Mesa</td>
+<td align="left" rowspan="1" colspan="1">0.025</td>
+<td align="left" rowspan="1" colspan="1">0.033</td>
+<td align="left" rowspan="1" colspan="1">0.076</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt106"><label/><p>For most potential timber geochemical sources, mean posterior proportion probabilities show little difference from prior probabilities. This indicates a high degree of uncertainty when attempting to use strontium to source timber samples. Only the San Mateo source emerges as a higher probability source for spruce (0.475) and fir (0.319).</p></fn></table-wrap-foot></table-wrap>
+<p>To determine the effects of non-normality on the conclusion for the Chuska source, two samples (CHM-214b and CHM-214d) were removed from this data set and the model re-run without it. Mean posterior probabilities were not substantially different as a consequence of a violation of the normality assumption for this data set (<xref ref-type="supplementary-material" rid="pone.0095580.s016">Table S6</xref>). A second run of the model was performed on data rounded to the 4th decimal place, and neither median was difference significance (<xref ref-type="supplementary-material" rid="pone.0095580.s017">Table S7</xref>) or posterior probabilities (<xref ref-type="supplementary-material" rid="pone.0095580.s018">Table S8</xref>) were strongly affected by this treatment. A sequential increase of prior probabilities increased posterior probabilities for the Chuska Mountains timber source for spruce, however in all cases the posterior was lower than the prior (<xref ref-type="supplementary-material" rid="pone.0095580.s010">Figure S10</xref>).</p>
+<p>All code and analyses are available in the supporting information <xref ref-type="supplementary-material" rid="pone.0095580.s023">R code S1</xref>. All data is available in the supplementary material (<xref ref-type="supplementary-material" rid="pone.0095580.s019">Tables S9</xref>, <xref ref-type="supplementary-material" rid="pone.0095580.s010">S10</xref>, <xref ref-type="supplementary-material" rid="pone.0095580.s011">S11</xref>, <xref ref-type="supplementary-material" rid="pone.0095580.s012">S12</xref>). In addition, instructions are offered for modifying the code to use the same approach with new data.</p>
+</sec></sec><sec id="s4">
+<title>Discussion</title>
+<p>Both qualitative interpretation using kernel density plots and quantitative source attributions using Bayesian mixing models indicate that geochemical sources for both maize and timber are not as distinguishable as indicated in the past, with the exception of the San Mateo Mountains. Data do not support the argument that maize was exclusively imported from outside Chaco Canyon, and do not support the Chuska Mountains as an unambiguous source for timber. There are no dominant or unambiguous geochemical, and thus geospatial, sources for Chaco maize or timber indicated in the radiogenic strontium isotope data. The overlapping kernel density plots for <sup>87</sup>Sr/<sup>86</sup>Sr values of the Chaco watershed, maize cobs, and construction timbers from Great Houses, in addition to the Chuska Mountains and Chuska Slope soils, all share peaks near the <sup>87</sup>Sr/<sup>86</sup>Sr value of the ponderosa stump (JPB-99) found in Pueblo Bonito (<xref ref-type="fig" rid="pone-0095580-g008">Figure 8</xref>). It is very likely that at least some of the geochemical sources of construction timber and maize are the same. <sup>87</sup>Sr/<sup>86</sup>Sr values obtained from soil and water sources in the Chaco watershed are consistent with values from archaeological timbers from the major Great Houses (<xref ref-type="fig" rid="pone-0095580-g003">Figure 3a, 3b</xref>), but water samples from Werritos Rincon and South Gap (canyon tributaries) are also similar to the mean value for the Chuska sources, the lower mode for the La Plata source, and the Pueblo Bonito stump (JPB-99).</p>
+<fig id="pone-0095580-g008" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0095580.g008</object-id><label>Figure 8</label><caption>
+<title>Correspondence of means between soils, maize, and trees in Chaco Canyon and the Chuska region.</title>
+<p>The red line represents the strontium isotope ratio for a Ponderosa tree stump found in the West Plaza of Pueblo Bonito (JPB-99). There is considerable overlap in strontium isotope ratios in the Chaco and Chuska regions.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0095580.g008" position="float" xlink:type="simple"/></fig>
+<p>The results of robustness testing, which included removing data points to coerce the Chuska Mountains timber source and pre-1140 A.D. maize and rounding data to the 4th decimal place, did not substantially alter results or conclusions. This indicates that the Bayesian mixing model as employed in the SIAR package for R is robust to violations in the normality assumption, at least as far as the present study is concerned. These results mirror those of Parnell et al. 2010 <xref ref-type="bibr" rid="pone.0095580-Parnell1">[49]</xref> who found that SIAR was robust to violations of its core assumptions.</p>
+<p>It is important to note how the Bayesian mixing models should, and should not, be interpreted. The posterior probability of the Bayesian mixing models should not be regarded as a hypothesis test for a given source, but rather as a statement of uncertainty regarding that source's contribution to the observed data in ecofacts from Chaco Canyon. Each source was assigned a prior probability of 12.5%. The posterior probability reflects the assessments of the likelihood of each source contributing to the variation observed in Chaco Canyon ecofacts in light of the strontium data from selected sources. That the posterior probability for the San Mateo Mountains, 47.5% (<xref ref-type="table" rid="pone-0095580-t004">Table 4</xref>), is so much higher than the prior reflects the higher confidence of that range being a source for at least some of the spruce and fir. However, for ponderosa, the posterior probability, 14.5%, is not much higher than the prior; this indicates that strontium data does not present strong evidence for that range being a large proportional contributor to observed <sup>87</sup>Sr/<sup>86</sup>Sr variation relative to other potential sources. This does not rule out San Mateo as a source for ponderosa, it only indicates that strontium data do not present a compelling case for this argument. This same interpretation extends to Chaco Canyon and the Chuska Mountains as sources for spruce, fir, or ponderosa; the posterior probabilities for proportional contribution are not substantially higher than the priors. Increasing the priors does not change this interpretation (<xref ref-type="supplementary-material" rid="pone.0095580.s010">Figure S10</xref>), as posterior probabilities remain lower than weighted priors. Likewise, for almost all maize sources for all time periods analyzed in the present manuscript, posterior probabilities for potential sources were not substantially higher than the priors used. The only exception to this is Salmon Ruins and possibly Lobo Mesa for the maize grown after 1140 A.D. but before the historic period. As noted earlier, posterior probabilities for source contribution to observed geochemical variability do not rule out potential sources, but they do address which sources are more or less likely to contribute to observed radiogenic strontium isotope ratio variation in ecofacts. It is difficult to make any clear arguments about geochemical sourcing for most maize or timber in Chaco Canyon in light of the currently available radiogenic strontium isotope data.</p>
+<p>The clearest possible source attribution that emerged from the mixing model analysis is the San Mateo range for spruce and fir trees (<xref ref-type="fig" rid="pone-0095580-g006">Figure 6</xref>–<xref ref-type="fig" rid="pone-0095580-g007">7</xref>, <xref ref-type="table" rid="pone-0095580-t004">Table 4</xref>). However, while the Bayesian approach indicated San Mateo was a likely source for some spruce and fir, Mann-Whitney tests showed significant differences between the medians of San Mateo <sup>87</sup>Sr/<sup>86</sup>Sr values and the species means from construction timber in Chaco Canyon. These conflicting results highlight the limitations of frequentist methods when inferring geochemical sources. A geochemical source can neither be ruled out nor confirmed based solely on a shared mean/median with another geochemical data set, because an object can be collected from a limited portion of the source and thus have a significantly different <sup>87</sup>Sr/<sup>86</sup>Sr value from its parent population. A comparison of means can indicate if a particular geochemical source is likely, but it cannot rule one out. However, a comparison of means can be highly useful in determining if geospatially distinct sources can be differentiated geochemically. For example, the Chuska range is distinct from the Chaco watershed as a geospatial source (<xref ref-type="fig" rid="pone-0095580-g001">Figure 1</xref>), but geochemically, they overlap almost completely (<xref ref-type="fig" rid="pone-0095580-g008">Figure 8</xref>, <xref ref-type="table" rid="pone-0095580-t003">Table 3</xref>). The Bayesian mixing model approach illustrated in this manuscript offers a more probabilistic assessment for relative source contributions. Frequentist methods are appropriate when addressing if one geochemical source can be distinguished from another; Bayesian methods can be appropriate when assessing the probability of a given geochemical source explaining variation in a set of objects.</p>
+<p>Maize data are particularly ambiguous; posterior probabilities do not substantially deviate from the priors used for source contribution, with the exception of Salmon Ruins for Post-1140 A.D. samples (<xref ref-type="table" rid="pone-0095580-t002">Table 2</xref>). The central problem is that variation in maize <sup>87</sup>Sr/<sup>86</sup>Sr values from all time periods overwhelms variation in geochemical sources (<xref ref-type="fig" rid="pone-0095580-g003">Figure 3</xref>). This phenomenon is interesting for two reasons. First it indicates that not all radiogenic strontium isotope variability has been documented in the San Juan Basin despite dedicated sampling and effort, a result identified by Benson <xref ref-type="bibr" rid="pone.0095580-Benson2">[7]</xref>–<xref ref-type="bibr" rid="pone.0095580-Benson5">[10]</xref>. Secondly, that historical maize largely matches the distribution of post-1140 A.D. maize and has a similarly large range as pre-1140 A.D. maize. As the ancestral pueblo were the primary occupants in the pre-historic period and the Navajo for the historic period <xref ref-type="bibr" rid="pone.0095580-Kantner2">[26]</xref>, this raises interesting questions regarding long-distance transportation of maize. If, as argued in the past <xref ref-type="bibr" rid="pone.0095580-Benson2">[7]</xref>–<xref ref-type="bibr" rid="pone.0095580-Benson5">[10]</xref>, maize was transported long distances to Chaco Canyon during the Great House period as based on <sup>87</sup>Sr/<sup>86</sup>Sr values, why would historic maize follow the same pattern? Was historic maize imported from the same locations by a different ethnic group hundreds of years after Chaco's role as a ceremonial center had ended? Unfortunately, the strontium data are too ambiguous to facilitate a straightforward interpretation of provenance for existing maize samples.</p>
+<p>The inconclusive results are not surprising because the San Juan Basin consists largely of sedimentary sandstones and shales that contribute through aeolian and alluvial processes to soil development <xref ref-type="bibr" rid="pone.0095580-Love1">[53]</xref>. Chaco Canyon is 32 km in length and includes an 11,000 sq. km watershed that funnels sediment into the canyon and its tributaries. The geological formations that contribute to the Chaco watershed (primarily the Mesa Verde and Meneffee formations) are widespread across the San Juan Basin (<xref ref-type="fig" rid="pone-0095580-g001">Figure 1</xref>). Consequently, it seems likely that canyon and basin soils would be relatively homogenized with respect to strontium and therefore it is difficult to differentiate from any particular source in the larger region <xref ref-type="bibr" rid="pone.0095580-Graustein1">[54]</xref> <xref ref-type="bibr" rid="pone.0095580-Aubert1">[55]</xref>. Based on available radiogenic strontium isotopes samples, Chaco Canyon and its tributaries are equally likely to represent source areas for ponderosa as far more distant parts of the San Juan Basin. Taken in isolation, radiogenic strontium isotope ratios from the Chuska Mountains region is consistent with data from Chaco Canyon, but the same statement can be made for a much broader area across the entire Colorado plateau that, in wetter conditions, could have supported more forests in and near riparian and mesic mixed conifer forests present in the basin.</p>
+<p>The results of quantitative analysis indicate considerable ambiguity regarding geochemical sources for Chaco canyon maize and tree lumber. While some spruce and fir trees can likely be sourced to the San Mateo range, there is no clear evidence for a primary ponderosa geochemical source. A few ponderosa stands may be sourced to the San Pedro range due to a high <sup>87</sup>Sr/<sup>86</sup>Sr value <xref ref-type="bibr" rid="pone.0095580-Reynolds1">[15]</xref>, but it is unlikely that the San Pedro range was a major source for timber. Like ponderosa, maize from Chaco Canyon also does not have any clear geochemical sources (<xref ref-type="fig" rid="pone-0095580-g004">Figure 4a</xref>, <xref ref-type="fig" rid="pone-0095580-g005">Figure 5a–c</xref>). The data presented here do not contradict arguments that some construction elements may have originated from the San Mateo Mountains <xref ref-type="bibr" rid="pone.0095580-English1">[12]</xref> <xref ref-type="bibr" rid="pone.0095580-Reynolds1">[15]</xref>, but there is no geochemical evidence that the Chuska Mountains were a major source for construction timbers. Similarly, the Chuska slope does not appear to be any more likely as a source for maize compared to more local alternatives (<xref ref-type="fig" rid="pone-0095580-g004">Figure 4a–c</xref>, <xref ref-type="fig" rid="pone-0095580-g005">Figure 5a</xref>, <xref ref-type="table" rid="pone-0095580-t002">Table 2</xref>). The range of <sup>87</sup>Sr/<sup>86</sup>Sr values for the Chuska Mountains and Chuska slope soils overlaps considerably with values of soils from the Chaco watershed (<xref ref-type="fig" rid="pone-0095580-g008">Figure 8</xref>), and there is not a significant difference between their means (<xref ref-type="table" rid="pone-0095580-t003">Table 3</xref>). As such, isolated ponderosa stands near Chaco Canyon and a dense ponderosa forest in the Chuska Mountains will have the same strontium isotope ratio. Therefore, <sup>87</sup>Sr/<sup>86</sup>Sr values cannot be used to distinguish between the Chuska and Chaco regions. For maize, Chuska slope soils and the Chaco watershed can be differentiated generally, but the majority of pre-1140 A.D. maize falls within the overlapping <sup>87</sup>Sr/<sup>86</sup>Sr values that characterize both potential sources (<xref ref-type="fig" rid="pone-0095580-g003">Figure 3a,b</xref>).</p>
+<p>Recent modeling of potential agricultural productivity in Chaco Canyon <xref ref-type="bibr" rid="pone.0095580-Dorshow1">[16]</xref> <xref ref-type="bibr" rid="pone.0095580-Dorshow2">[17]</xref> indicates that there was more arable land than recognized in previous studies of Bonito Phase food production. Without a clear indication from geochemical analyses that extramural sources of maize or ponderosa pine were important during the Bonito Phase, the case for long-distance transport of food and wood has not been demonstrated. Therefore there is no unambiguous evidence that the economic foundation of Chaco society was predicated on such transactions. Some high elevation wood was brought to the canyon, at least in part including the San Mateo Mountains, but it is unknown how these trees were procured or whether they were economically significant. For maize in particular, an argument for long-distance transport is tenuous due to the close correspondence of <sup>87</sup>Sr/<sup>86</sup>Sr values of historical maize and <sup>87</sup>Sr/<sup>86</sup>Sr values of post-1140 A.D. maize (<xref ref-type="fig" rid="pone-0095580-g003">Figure 3a</xref>), as well as the overlap in <sup>87</sup>Sr/<sup>86</sup>Sr values from maize from all periods have with Chaco watershed <sup>87</sup>Sr/<sup>86</sup>Sr values (<xref ref-type="fig" rid="pone-0095580-g003">Figure 3b</xref>).</p>
+<p>The concept of a “source” in geochemistry studies is complex and varies considerably in spatial scale, from individual specimens or samples to geographic regions, and therefore sampling designs that match data to questions are critical to the success of any sourcing enterprise <xref ref-type="bibr" rid="pone.0095580-Montgomery1">[56]</xref>. In using chemical data for sourcing, an important distinction must be drawn between geochemical sources and geospatial sources <xref ref-type="bibr" rid="pone.0095580-Hughs1">[42]</xref>. Potential sources for Bonito Phase maize may lie outside the canyon and it is possible that ponderosa pine was transported long distances to Chaco. Recent analysis suggests that the northern portion of the Chaco watershed may be a maize source; this would be supported in part by the present analysis. However, while some chert artifacts do originate for the Chuska Mountains region <xref ref-type="bibr" rid="pone.0095580-Cameron1">[57]</xref>, the radiogenic strontium isotope evidence does not support this region as a likely source for either maize or construction timbers. San Mateo is better supported as a support by this analysis; obsidian has been demonstrated to have come, in part, from Mt. Taylor in the San Mateo Range <xref ref-type="bibr" rid="pone.0095580-Duff1">[58]</xref>. However, the connection between timber acquisition and lithic procurement is ambiguous. As Chaco Canyon was a source of long-distance trade, it is difficult to weight the influences of one type of artifact upon another. The present re-evaluation of radiogenic strontium isotope data does not rule out some long-distance transport of high elevation tree species, though it best supports models in which these come from the south, not the west or north. The case for long-distance acquisition in maize and ponderosa pine is ambiguous and additional research is needed to determine possible relationships between Great Houses the procurement of these costly resources.</p>
+</sec><sec id="s5">
+<title>Supporting Information</title>
+<supplementary-material id="pone.0095580.s001" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0095580.s001" position="float" xlink:type="simple"><label>Figure S1</label><caption>
+<p><bold>Geological Labels.</bold></p>
+<p>(TIF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0095580.s002" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0095580.s002" position="float" xlink:type="simple"><label>Figure S2</label><caption>
+<p><bold>Sediment Age of Deposition.</bold></p>
+<p>(TIF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0095580.s003" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0095580.s003" position="float" xlink:type="simple"><label>Figure S3</label><caption>
+<p><bold>Sediment Type.</bold></p>
+<p>(TIF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0095580.s004" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0095580.s004" position="float" xlink:type="simple"><label>Figure S4</label><caption>
+<p><bold>San Juan Basin Vegetation Cover.</bold></p>
+<p>(TIF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0095580.s005" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0095580.s005" position="float" xlink:type="simple"><label>Figure S5</label><caption>
+<p><bold>Chaco Area Vegetation Cover.</bold></p>
+<p>(TIF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0095580.s006" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0095580.s006" position="float" xlink:type="simple"><label>Figure S6</label><caption>
+<p><bold>Chaco/Chuska Mountains Vegetation Cover.</bold></p>
+<p>(TIF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0095580.s007" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0095580.s007" position="float" xlink:type="simple"><label>Figure S7</label><caption>
+<p><bold>Chaco/San Mateo Mountains Vegetation Cover.</bold></p>
+<p>(TIF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0095580.s008" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0095580.s008" position="float" xlink:type="simple"><label>Figure S8</label><caption>
+<p><bold>Chaco/San Pedro Mountains Vegetation Cover.</bold></p>
+<p>(TIF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0095580.s009" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0095580.s009" position="float" xlink:type="simple"><label>Figure S9</label><caption>
+<p><bold>Chaco/La Plata Mountains Vegetation Cover.</bold></p>
+<p>(TIF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0095580.s010" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0095580.s010" position="float" xlink:type="simple"><label>Figure S10</label><caption>
+<p><bold>Difference between Posterior and Prior probabilities for sequentially weighted priors for the Chuska Mountains as a potential source of spruce.</bold></p>
+<p>(TIF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0095580.s011" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0095580.s011" position="float" xlink:type="simple"><label>Table S1</label><caption>
+<p>Shapiro-Wilkes Test for normality of sources.</p>
+<p>(DOC)</p>
+</caption></supplementary-material><supplementary-material id="pone.0095580.s012" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0095580.s012" position="float" xlink:type="simple"><label>Table S2</label><caption>
+<p>Shapiro-Wilkes Test for tested data.</p>
+<p>(DOC)</p>
+</caption></supplementary-material><supplementary-material id="pone.0095580.s013" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0095580.s013" position="float" xlink:type="simple"><label>Table S3</label><caption>
+<p>Posterior probabilities of maize data coerced to normality through removal of data points (Pre-1140 A.D. Maize, CHCU43684A) and full model results.</p>
+<p>(DOC)</p>
+</caption></supplementary-material><supplementary-material id="pone.0095580.s014" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0095580.s014" position="float" xlink:type="simple"><label>Table S4</label><caption>
+<p>Comparison of medians across maize by provenience (columns) and potential sources (rows). Items in bold indicate that no significant difference between medians was found. Original <sup>87</sup>Sr/<sup>86</sup>Sr data were rounded to the 4th decimal place.</p>
+<p>(DOC)</p>
+</caption></supplementary-material><supplementary-material id="pone.0095580.s015" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0095580.s015" position="float" xlink:type="simple"><label>Table S5</label><caption>
+<p>Proportion of the 200,000 run simulations in which each maize sample (columns) fell within the mean +/− one standard deviation of each source (rows). For all maize samples, the strontium shows uniform proportions across all possible sources. This indicates a high degree of uncertainty when attempting to use strontium to source maize samples. Original <sup>87</sup>Sr/<sup>86</sup>Sr data were rounded to the 4th decimal place.</p>
+<p>(DOC)</p>
+</caption></supplementary-material><supplementary-material id="pone.0095580.s016" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0095580.s016" position="float" xlink:type="simple"><label>Table S6</label><caption>
+<p>Posterior probabilities of source data coerced to normality through removal of data points (Chuska Mountains, CHM-214b and CHM-214d) and full model results.</p>
+<p>(DOC)</p>
+</caption></supplementary-material><supplementary-material id="pone.0095580.s017" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0095580.s017" position="float" xlink:type="simple"><label>Table S7</label><caption>
+<p>Comparison of medians across multiple potential timber sources. Items in bold indicate that no significant difference between medians was found, potentially indicating that these sources cannot be quantitatively distinguished by strontium alone. Original <sup>87</sup>Sr/<sup>86</sup>Sr data were rounded to the 4th decimal place.</p>
+<p>(DOC)</p>
+</caption></supplementary-material><supplementary-material id="pone.0095580.s018" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0095580.s018" position="float" xlink:type="simple"><label>Table S8</label><caption>
+<p>Proportion of the 200,000 run simulations in which each timber sample (columns) fell within the mean +/− one standard deviation of each source (rows). For all timber samples, the strontium shows uniform proportions across all possible sources. This indicates a high degree of uncertainty when attempting to use strontium to source timber samples. Only the San Mateo source emerges as a higher probability source for spruce (0.469) and fir (0.320). Original <sup>87</sup>Sr/<sup>86</sup>Sr data were rounded to the 4th decimal place.</p>
+<p>(DOC)</p>
+</caption></supplementary-material><supplementary-material id="pone.0095580.s019" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0095580.s019" position="float" xlink:type="simple"><label>Table S9</label><caption>
+<p>Maize Source Strontium Isotope Data.</p>
+<p>(DOC)</p>
+</caption></supplementary-material><supplementary-material id="pone.0095580.s020" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0095580.s020" position="float" xlink:type="simple"><label>Table S10</label><caption>
+<p>Tree Source Strontium Isotope Data.</p>
+<p>(DOC)</p>
+</caption></supplementary-material><supplementary-material id="pone.0095580.s021" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0095580.s021" position="float" xlink:type="simple"><label>Table S11</label><caption>
+<p>Maize Strontium Isotope Data.</p>
+<p>(DOC)</p>
+</caption></supplementary-material><supplementary-material id="pone.0095580.s022" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0095580.s022" position="float" xlink:type="simple"><label>Table S12</label><caption>
+<p>Chaco Timber Strontium Isotope Data.</p>
+<p>(DOC)</p>
+</caption></supplementary-material><supplementary-material id="pone.0095580.s023" xlink:href="info:doi/10.1371/journal.pone.0095580.s023" mimetype="text/plain" position="float" xlink:type="simple"><label>R code S1</label><caption>
+<p><bold>Supplementary computer code.</bold></p>
+<p>(TXT)</p>
+</caption></supplementary-material></sec></body>
+<back>
+<ack>
+<p>We wish to thank Thomas C. Windes for his advice and insights about Chaco archaeology and its tree-ring record, as well as his remarkable dedication and commitment to constructing an empirical dendrochronological dataset for the canyon. We also acknowledge with gratitude the support and interest of staff at Chaco Culture National Historic Park, especially Dabney Ford, Wendy Bustard, and Barbara West. Much of this analysis was supported by the University of New Mexico and we have benefited greatly from discussions with our UNM colleagues Patricia Crown, Hannah Mattson and Jennie Sturm. This material is based in part upon work supported by the National Science Foundation Graduate Research Fellowship Program under Grant No. DGE-0903444. We would like to thank two anonymous reviewers who gave important input that greatly improved the manuscript. We would also like to thank Larry Benson, Julio Betancourt, Jay Quade, and Nathan English who provided valuable comments and feedback as part of the PLoS One review process.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0095580-Vivian1"><label>1</label>
+<mixed-citation publication-type="book" xlink:type="simple">Vivian GR, Van West CR, Dean JS, Akins NJ, Toll MS, <etal>et al</etal>.. (2006) Ecology and economy. In: The Archaeology of Chaco Canyon: An Eleventh-Century Pueblo Regional Center (ed. Lekson SH) School of American Press. Santa Fe, NM. pp. 45–66.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Benson1"><label>2</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Benson</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Cordell</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Vincent</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Taylor</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Stein</surname><given-names>J</given-names></name>, <etal>et al</etal>. (<year>2003</year>) <article-title>Ancient maize from Chacoan Great Houses: Where was it grown?</article-title> <source>Proc Natl Acad Sci</source> <volume>100</volume>: <fpage>13111</fpage>–<lpage>13115</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Wills1"><label>3</label>
+<mixed-citation publication-type="book" xlink:type="simple">Wills WH (2000) Political leadership and the construction of Chacoan Great Houses, A.D. 1020–1140. In: Alternative Leadership Strategies in the Prehistoric Southwest (ed. Mills B). University of Arizona Press, Tuscon. pp. 19–44.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Toll1"><label>4</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Toll</surname><given-names>HW</given-names></name> (<year>2001</year>) <article-title>Making and breaking pots in the Chaco World</article-title>. <source>Am Antiq</source> <volume>66</volume>: <fpage>56</fpage>–<lpage>78</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Toll2"><label>5</label>
+<mixed-citation publication-type="book" xlink:type="simple">Toll HW (2006) Organization of Production. In: The Archaeology of Chaco Canyon: An Eleventh-Century Pueblo Regional Center (ed. Lekson SH) School of American Press. Santa Fe, NM. pp. 117–151.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Crown1"><label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Crown</surname><given-names>PL</given-names></name>, <name name-style="western"><surname>Hurst</surname><given-names>JL</given-names></name> (<year>2009</year>) <article-title>Evidence of cacao use in the prehispanic American Southwest</article-title>. <source>Proc Natl Acad Sci</source> <volume>106</volume>: <fpage>2110</fpage>–<lpage>2113</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Benson2"><label>7</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Benson</surname><given-names>LV</given-names></name>, <name name-style="western"><surname>Stein</surname><given-names>JR</given-names></name>, <name name-style="western"><surname>Taylor</surname><given-names>HE</given-names></name> (<year>2009</year>) <article-title>Possible sources of archaeological maize found in Chaco Canyon and Aztec Ruin, New Mexico</article-title>. <source>J Archaeol Sci</source> <volume>36</volume>: <fpage>387</fpage>–<lpage>407</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Benson3"><label>8</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Benson</surname><given-names>LV</given-names></name> (<year>2010</year>) <article-title>Who provided maize to Chaco Canyon after the mid-12th century drought?</article-title> <source>J of Arch Sci</source> <volume>37</volume>: <fpage>621</fpage>–<lpage>629</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Benson4"><label>9</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Benson</surname><given-names>LV</given-names></name> (<year>2011</year>) <article-title>Factors controlling the pre-Columbian and early historic maize productivity in the American Southwest, Part 2: The Chaco Halo, Mesa Verde, Pajarito Plateau/Bandalier, and Zuni archaeological regions</article-title>. <source>J Arch Method and Theory</source> <volume>18</volume> (<issue>1</issue>) <fpage>61</fpage>–<lpage>109</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Benson5"><label>10</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Benson</surname><given-names>LV</given-names></name> (<year>2012</year>) <article-title>Development and application of methods used to source prehistoric Southwestern maize: a review</article-title>. <source>J Arch Sci</source> <volume>39</volume>: <fpage>791</fpage>–<lpage>807</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Earle1"><label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Earle</surname><given-names>T</given-names></name> (<year>2001</year>) <article-title>Economic support of the Chaco Canyon society</article-title>. <source>Am Antiq</source> <volume>66</volume>: <fpage>26</fpage>–<lpage>35</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-English1"><label>12</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>English</surname><given-names>NB</given-names></name>, <name name-style="western"><surname>Betancourt</surname><given-names>JL</given-names></name>, <name name-style="western"><surname>Dean</surname><given-names>JS</given-names></name>, <name name-style="western"><surname>Quade</surname><given-names>J</given-names></name> (<year>2001</year>) <article-title>Strontium isotopes reveal distant sources of architectural timber in Chaco Canyon, New Mexico</article-title>. <source>Proc Natl Acad Sci</source> <volume>98</volume>: <fpage>11891</fpage>–<lpage>11896</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-GrissinoMayer1"><label>13</label>
+<mixed-citation publication-type="book" xlink:type="simple">Grissino-Mayer HD (1996) A 2129 year annual reconstruction of precipitation for northwestern New Mexico, USA. In: Dean JS, Meko DM, Swetnam TW, editors. Tree Rings, Environment, and Humanity. Radiocarbon 1996, Department of Geosciences, The University of Arizona, Tucson: 191–204.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Windes1"><label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Windes</surname><given-names>TC</given-names></name>, <name name-style="western"><surname>Ford</surname><given-names>D</given-names></name> (<year>1996</year>) <article-title>The Chaco Wood Project: The chronometric reappraisal of Pueblo Bonito</article-title>. <source>Am Antiq</source> <volume>61</volume> (<issue>2</issue>) <fpage>295</fpage>–<lpage>310</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Reynolds1"><label>15</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Reynolds</surname><given-names>AC</given-names></name>, <name name-style="western"><surname>Betancourt</surname><given-names>JL</given-names></name>, <name name-style="western"><surname>Quade</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Patchett</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Dean</surname><given-names>JS</given-names></name>, <etal>et al</etal>. (<year>2005</year>) <article-title>87Sr/86Sr sourcing of ponderosa pine used at Anasazi great house construction in Chaco Canyon, New Mexico</article-title>. <source>J of Arch Sci</source> <volume>32</volume>: <fpage>1061</fpage>–<lpage>1075</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Dorshow1"><label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dorshow</surname><given-names>WB</given-names></name> (<year>2012</year>) <article-title>Modeling agricultural potential in Chaco Canyon during the Bonito phase: A predictive geospatial approach</article-title>. <source>J Arch Sci</source> <volume>39</volume> (<issue>7</issue>) <fpage>2098</fpage>–<lpage>2115</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Dorshow2"><label>17</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dorshow</surname><given-names>WB</given-names></name>, <name name-style="western"><surname>Wills</surname><given-names>WH</given-names></name> (<year>2012</year>) <article-title>Agriculture and community in Chaco Canyon: Revisiting Pueblo Alto</article-title>. <source>J Arch Sci</source> <volume>31</volume> (<issue>2</issue>) <fpage>138</fpage>–<lpage>155</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Windes2"><label>18</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Windes</surname><given-names>TC</given-names></name>, <name name-style="western"><surname>McKenna</surname><given-names>PJ</given-names></name> (<year>2001</year>) <article-title>Going against the grain: wood production in Chacoan society</article-title>. <source>Am Antiq</source> <volume>66</volume>: <fpage>119</fpage>–<lpage>140</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Lekson1"><label>19</label>
+<mixed-citation publication-type="book" xlink:type="simple">Lekson SH, Gillespie WB, Windes TC (1984) Great Pueblo Architecture of Chaco Canyon. Publications in Archaeology 18B, National Park Service, US Department of the Interior. Albuquerque, NM.</mixed-citation>
+</ref>
+<ref id="pone.0095580-VanDyke1"><label>20</label>
+<mixed-citation publication-type="book" xlink:type="simple">Van Dyke RM (2007) The Chaco Experience: Landscape and Ideology at the Center Place. Santa Fe: School for Advanced Research Press. 344 p.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Lekson2"><label>21</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lekson</surname><given-names>SH</given-names></name>, <name name-style="western"><surname>Windes</surname><given-names>TC</given-names></name>, <name name-style="western"><surname>Stein</surname><given-names>JR</given-names></name>, <name name-style="western"><surname>Judge</surname><given-names>WJ</given-names></name> (<year>1988</year>) <article-title>The Chaco Canyon community</article-title>. <source>Scientific American</source> <volume>256</volume>: <fpage>100</fpage>–<lpage>109</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Neitzel1"><label>22</label>
+<mixed-citation publication-type="book" xlink:type="simple">Neitzel JE (2003) The organization, function, and population of Pueblo Bonito. In: Neitzel JE, editor. Pueblo Bonito: Center of the Chacoan World. Washington, D.C: Smithsonian Institution Press. pp. 143–150.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Grebinger1"><label>23</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Grebinger</surname><given-names>P</given-names></name> (<year>1973</year>) <article-title>Prehistoric social organization in Chaco Canyon, New Mexico: an alternative reconstruction</article-title>. <source>Kiva</source> <volume>39</volume>: <fpage>3</fpage>–<lpage>23</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Sebastian1"><label>24</label>
+<mixed-citation publication-type="book" xlink:type="simple">Sebastian L (1992) The Chaco Anasazi: Sociopolitical Evolution in the Prehistoric Southwest. Cambridge: Cambridge University Press. 196 p.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Kantner1"><label>25</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kantner</surname><given-names>J</given-names></name> (<year>1996</year>) <article-title>Political competition among the Chaco Anasazi of the American Southwest</article-title>. <source>J of Anth Arch</source> <volume>15</volume>: <fpage>41</fpage>–<lpage>105</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Kantner2"><label>26</label>
+<mixed-citation publication-type="book" xlink:type="simple">Kantner J, Kintigh KW (2007) The Chaco World. In: Lekson SH, editor. The Archaeology of Chaco Canyon: An Eleventh-Century Pueblo Regional Center. Santa Fe: School of American Research Press. pp. 153–188.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Dean1"><label>27</label>
+<mixed-citation publication-type="book" xlink:type="simple">Dean JS, Warren RL (1983) Dendrochronology. In: Lekson SH, editor. The Architecture and Dendrochronology of Chetro Ketl. Albuquerque, New Mexico: National Park Service. pp. 105–240.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Windes3"><label>28</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Windes</surname><given-names>TC</given-names></name>, <name name-style="western"><surname>Ford</surname><given-names>D</given-names></name> (<year>1996</year>) <article-title>The Chaco wood project: the chronometric reappraisal of Pueblo Bonito</article-title>. <source>Am Antiq</source> <volume>61</volume>: <fpage>295</fpage>–<lpage>310</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Kirby1"><label>29</label>
+<mixed-citation publication-type="other" xlink:type="simple">Kirby S, Pohs K (2004) Southwest Regional GAP Analysis Project Final Report. USGS GAP Analysis Program. Available: <ext-link ext-link-type="uri" xlink:href="http://earth.gis.usu.edu/swgap/geology.html" xlink:type="simple">http://earth.gis.usu.edu/swgap/geology.html</ext-link>. Accessed 2014 May 5.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Judd1"><label>30</label>
+<mixed-citation publication-type="book" xlink:type="simple">Judd NM (1954) The Material Culture of Pueblo Bonito. In: Smithsonian Miscellaneous Collections <volume>147</volume> ((<issue>1</issue>) ). Washington, D.C: Smithsonian Institution.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Hall1"><label>31</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hall</surname><given-names>SA</given-names></name> (<year>1977</year>) <article-title>Late Quaternary sedimentation and paleoecological history of Chaco Canyon, New Mexico</article-title>. <source>Geological Society of America Bulletin</source> <volume>88</volume>: <fpage>1593</fpage>–<lpage>1618</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Hall2"><label>32</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hall</surname><given-names>SA</given-names></name> (<year>1988</year>) <article-title>Prehistoric vegetation and environment at Chaco Canyon</article-title>. <source>American Antiquity</source> <volume>53</volume> (<issue>3</issue>) <fpage>582</fpage>–<lpage>292</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Betancourt1"><label>33</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Betancourt</surname><given-names>JL</given-names></name>, <name name-style="western"><surname>Van Devender</surname><given-names>TR</given-names></name> (<year>1981</year>) <article-title>Holocene vegetation in Chaco Canyon, New Mexico</article-title>. <source>Science</source> <volume>214</volume> (<issue>4521</issue>) <fpage>656</fpage>–<lpage>658</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Betancourt2"><label>34</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Betancourt</surname><given-names>JL</given-names></name>, <name name-style="western"><surname>Dean</surname><given-names>JS</given-names></name>, <name name-style="western"><surname>Hull</surname><given-names>HM</given-names></name> (<year>1986</year>) <article-title>Prehistoric long-distance transport of construction beams, Chaco Canyon, New Mexico</article-title>. <source>Am Antiq</source> <volume>51</volume>: <fpage>370</fpage>–<lpage>375</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Durand1"><label>35</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Durand</surname><given-names>SR</given-names></name>, <name name-style="western"><surname>Shelley</surname><given-names>PH</given-names></name>, <name name-style="western"><surname>Antweiler</surname><given-names>RC</given-names></name>, <name name-style="western"><surname>Taylor</surname><given-names>HE</given-names></name> (<year>1999</year>) <article-title>Trees, chemistry, and prehistory in the American Southwest</article-title>. <source>J of Archaeol Sci</source> <volume>26</volume>: <fpage>185</fpage>–<lpage>203</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Bentley1"><label>36</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bentley</surname><given-names>RA</given-names></name> (<year>2006</year>) <article-title>Strontium isotopes from the earth to the archeological skeleton: a review</article-title>. <source>J Arch Method and Theory</source> <volume>13</volume>: <fpage>135</fpage>–<lpage>187</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Beard1"><label>37</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Beard</surname><given-names>BL</given-names></name>, <name name-style="western"><surname>Johnson</surname><given-names>CM</given-names></name> (<year>2000</year>) <article-title>Strontium isotope composition of skeletal material can determine the birth place and geographic mobility of humans and animals</article-title>. <source>Journal of Forensic Science</source> <volume>45</volume> (<issue>5</issue>) <fpage>1049</fpage>–<lpage>1061</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Hodel1"><label>38</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hodel</surname><given-names>DA</given-names></name>, <name name-style="western"><surname>Quinn</surname><given-names>RL</given-names></name>, <name name-style="western"><surname>Brenner</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Kamenov</surname><given-names>G</given-names></name> (<year>2004</year>) <article-title>Spatial variation of strontium isotopes in the Maya region: A tool for tracking ancient human migration</article-title>. <source>J Archeol Sci</source> <volume>31</volume>: <fpage>585</fpage>–<lpage>601</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Poszwa1"><label>39</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Poszwa</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Dambrine</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Ferry</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Pollier</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Loubet</surname><given-names>M</given-names></name> (<year>2002</year>) <article-title>Do deep tree roots provide nutrients to the tropical rainforest?</article-title> <source>Biogeochemistry</source> <volume>60</volume>: <fpage>97</fpage>–<lpage>118</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Sillen1"><label>40</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sillen</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Hall</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Richardson</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Armstrong</surname><given-names>R</given-names></name> (<year>1998</year>) <article-title>87Sr/86Sr ratios in modern and fossil food-webs of the Sterkfontein Valley: Implications for early hominid habitat preference</article-title>. <source>Geochim Cosmochim Acta</source> <volume>62</volume>: <fpage>2463</fpage>–<lpage>2478</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-United1"><label>41</label>
+<mixed-citation publication-type="other" xlink:type="simple">United States Geological Survey National Gap Analysis Program (2004) <italic>Provisional Digital Land Cover Map for the Southwestern United States</italic>. Version 1.0. RS/GIS Laboratory, College of Natural Resources, Utah State University.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Hughs1"><label>42</label>
+<mixed-citation publication-type="book" xlink:type="simple">Hughs RE (1998) On reliability, validity, and scale in obsidian sourcing research. In: Unit Issues in Archaeology: Measuring Time, Space, and Material (eds. Ramenofsky AF, Steffen A). University of Utah Press, Provo, UT pp. 103–114.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Wickham1"><label>43</label>
+<mixed-citation publication-type="book" xlink:type="simple">Wickham H (2009) ggplot2: Elegant graphics for data analysis. Springer: New York.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Auguie1"><label>44</label>
+<mixed-citation publication-type="other" xlink:type="simple">Auguie B (2012) gridExtra: Functions in Grid graphics. R version 0.9.1. Available: <ext-link ext-link-type="uri" xlink:href="http://CRAN.R-project.org/package=gridExtra" xlink:type="simple">http://CRAN.R-project.org/package=gridExtra</ext-link>. Accessed 2014 May 5.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Erhardt1"><label>45</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Erhardt</surname><given-names>EB</given-names></name>, <name name-style="western"><surname>Bedrick</surname><given-names>EJ</given-names></name> (<year>2013</year>) <article-title>A Bayesian framework for stable isotope mixing models</article-title>. <source>Environ Ecol Stat</source> <volume>20</volume>: <fpage>377</fpage>–<lpage>397</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Phillips1"><label>46</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Phillips</surname><given-names>DL</given-names></name> (<year>2012</year>) <article-title>Converting isotope values to diet composition: the use of mixing models</article-title>. <source>Journal of Mammalogy</source> <volume>93</volume> (<issue>2</issue>) <fpage>342</fpage>–<lpage>352</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Inger1"><label>47</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Inger</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Bearhop</surname><given-names>S</given-names></name> (<year>2008</year>) <article-title>Applications of stable isotope analyses to avian ecology</article-title>. <source>Ibis</source> <volume>150</volume> (<issue>3</issue>) <fpage>447</fpage>–<lpage>461</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Phillips2"><label>48</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Phillips</surname><given-names>DL</given-names></name>, <name name-style="western"><surname>Gregg</surname><given-names>JW</given-names></name> (<year>2001</year>) <article-title>Uncertainty in source partitioning using stable isotopes</article-title>. <source>Oecologia</source> <volume>127</volume> (<issue>2</issue>) <fpage>171</fpage>–<lpage>179</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Parnell1"><label>49</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Parnell</surname><given-names>AC</given-names></name>, <name name-style="western"><surname>Inger</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Bearhop</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Jackson</surname><given-names>AL</given-names></name> (<year>2010</year>) <article-title>Source partitioning using stable isotopes: coping with too much variation</article-title>. <source>PLoS One</source> <volume>5</volume> (<issue>3</issue>) <fpage>e9672</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Newsome1"><label>50</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Newsome</surname><given-names>SD</given-names></name>, <name name-style="western"><surname>Martinez del Rio</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Bearhop</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Phillips</surname><given-names>DL</given-names></name> (<year>2007</year>) <article-title>A niche for isotopic ecology</article-title>. <source>Frontiers in Ecology and the Environment</source> <volume>5</volume> (<issue>8</issue>) <fpage>429</fpage>–<lpage>436</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Moore1"><label>51</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Moore</surname><given-names>JW</given-names></name>, <name name-style="western"><surname>Semmens</surname><given-names>BX</given-names></name> (<year>2008</year>) <article-title>Incorporating uncertainty and prior information into stable isotope mixing models</article-title>. <source>Ecology Letters</source> <volume>11</volume> (<issue>5</issue>) <fpage>470</fpage>–<lpage>480</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Parnell2"><label>52</label>
+<mixed-citation publication-type="other" xlink:type="simple">Parnell A, Jackson A (2013) SIAR: Stable isotope analysis in R. R package version 4.2. <ext-link ext-link-type="uri" xlink:href="http://CRAN.R-project.org/package=siar" xlink:type="simple">http://CRAN.R-project.org/package=siar</ext-link>. Accessed 2014 May 5.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Love1"><label>53</label>
+<mixed-citation publication-type="book" xlink:type="simple">Love DW (1983) Quaternary facies in Chaco Canyon and their implications for geomorphic-sedimentologic models. In: Wells SG, Love DW, Gardner TW, editors. Chaco Canyon Country. American Geomorphological Field Group. pp. 195–206.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Graustein1"><label>54</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Graustein</surname><given-names>WC</given-names></name> (<year>1989</year>) <article-title><sup>87</sup>Sr/<sup>86</sup>Sr Ratios Measure the Sources and Flow of Strontium in Terrestrial Ecosystems</article-title>. <source>Ecological Studies</source> <volume>68</volume>: <fpage>491</fpage>–<lpage>512</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Aubert1"><label>55</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Aubert</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Probst</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Stille</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Viville</surname><given-names>D</given-names></name> (<year>2002</year>) <article-title>Evidence of hydrological control of Sr behavior in stream water (Strengbach catchment, Vosges mountains, France)</article-title>. <source>Appl Geochem</source> <volume>17</volume>: <fpage>285</fpage>–<lpage>300</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Montgomery1"><label>56</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Montgomery</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Evans</surname><given-names>JA</given-names></name>, <name name-style="western"><surname>Cooper</surname><given-names>RE</given-names></name> (<year>2005</year>) <article-title>Resolving archaeological populations with strontium mixing diagrams</article-title>. <source>Geophysical Research Abstracts</source> <volume>Vol. 7</volume>: <fpage>10020</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Cameron1"><label>57</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cameron</surname><given-names>CM</given-names></name> (<year>2001</year>) <article-title>Pink chert, projectile points, and the Chacoan regional system</article-title>. <source>Am Antiq</source> <volume>66</volume>: <fpage>79</fpage>–<lpage>102</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0095580-Duff1"><label>58</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Duff</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Moss</surname><given-names>JMM</given-names></name>, <name name-style="western"><surname>Windes</surname><given-names>TC</given-names></name>, <name name-style="western"><surname>Kantner</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Shackley</surname><given-names>MS</given-names></name> (<year>2012</year>) <article-title>Patterns in procurement of obsidian in Chaco Canyon and in Chaco-era communities in New Mexico as revealed by X-ray fluorescence</article-title>. <source>J of Archaeol Sci</source> <volume>39</volume>: <fpage>2995</fpage>–<lpage>3007</lpage>.</mixed-citation>
+</ref>
+</ref-list></back>
+</article>

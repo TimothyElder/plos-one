@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosone</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group><issn pub-type="epub">1932-6203</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="publisher-id">PONE-D-11-04507</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0019345</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Computational biology</subject>
+            <subj-group>
+              <subject>Natural language processing</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Neuroscience</subject>
+            <subj-group>
+              <subject>Cognitive neuroscience</subject>
+              <subject>Learning and memory</subject>
+              <subject>Neural networks</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Diagnostic medicine</subject>
+            <subj-group>
+              <subject>Clinical neurophysiology</subject>
+              <subj-group>
+                <subject>Electroencephalography</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Mental health</subject>
+            <subj-group>
+              <subject>Psychology</subject>
+              <subj-group>
+                <subject>Cognitive psychology</subject>
+                <subj-group>
+                  <subject>Learning</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Social and behavioral sciences</subject>
+          <subj-group>
+            <subject>Anthropology</subject>
+            <subj-group>
+              <subject>Cultural anthropology</subject>
+              <subj-group>
+                <subject>Natural language</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Communications</subject>
+            <subj-group>
+              <subject>Natural language</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Linguistics</subject>
+            <subj-group>
+              <subject>Natural language</subject>
+              <subject>Psycholinguistics</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Psychology</subject>
+            <subj-group>
+              <subject>Cognitive psychology</subject>
+              <subj-group>
+                <subject>Learning</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Mental Health</subject>
+          <subject>Computational Biology</subject>
+          <subject>Physiology</subject>
+          <subject>Neuroscience</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>Big Words, Halved Brains and Small Worlds: Complex Brain Networks of Figurative Language Comprehension</article-title><alt-title alt-title-type="running-head">Networks of Figurative Language Comprehension</alt-title></title-group><contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Arzouan</surname>
+            <given-names>Yossi</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Solomon</surname>
+            <given-names>Sorin</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Faust</surname>
+            <given-names>Miriam</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Goldstein</surname>
+            <given-names>Abraham</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1"><label>1</label><addr-line>Gonda Brain Research Center, Bar-Ilan University, Ramat Gan, Israel</addr-line>       </aff><aff id="aff2"><label>2</label><addr-line>Racah Institute of Physics, Hebrew University of Jerusalem, Jerusalem, Israel</addr-line>       </aff><aff id="aff3"><label>3</label><addr-line>Department of Psychology, Bar-Ilan University, Ramat Gan, Israel</addr-line>       </aff><contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Perc</surname>
+            <given-names>Matjaz</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group><aff id="edit1">University of Maribor, Slovenia</aff><author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">goldsa@mail.biu.ac.il</email></corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: YA SS MF AG. Performed the experiments: YA. Analyzed the data: YA AG. Wrote the paper: YA AG.</p>
+        </fn>
+      <fn fn-type="conflict">
+        <p>The authors have declared that no competing interests exist.</p>
+      </fn></author-notes><pub-date pub-type="collection">
+        <year>2011</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>27</day>
+        <month>4</month>
+        <year>2011</year>
+      </pub-date><volume>6</volume><issue>4</issue><elocation-id>e19345</elocation-id><history>
+        <date date-type="received">
+          <day>23</day>
+          <month>2</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>28</day>
+          <month>3</month>
+          <year>2011</year>
+        </date>
+      </history><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2011</copyright-year><copyright-holder>Arzouan et al</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><abstract>
+        <p>Language comprehension is a complex task that involves a wide network of brain regions. We used topological measures to qualify and quantify the functional connectivity of the networks used under various comprehension conditions. To that aim we developed a technique to represent functional networks based on EEG recordings, taking advantage of their excellent time resolution in order to capture the fast processes that occur during language comprehension. Networks were created by searching for a specific causal relation between areas, the negative feedback loop, which is ubiquitous in many systems. This method is a simple way to construct directed graphs using event-related activity, which can then be analyzed topologically. Brain activity was recorded while subjects read expressions of various types and indicated whether they found them meaningful. Slightly different functional networks were obtained for event-related activity evoked by each expression type. The differences reflect the special contribution of specific regions in each condition and the balance of hemispheric activity involved in comprehending different types of expressions and are consistent with the literature in the field. Our results indicate that representing event-related brain activity as a network using a simple temporal relation, such as the negative feedback loop, to indicate directional connectivity is a viable option for investigation which also derives new information about aspects not reflected in the classical methods for investigating brain activity.</p>
+      </abstract><funding-group><funding-statement>YA was partially supported by the Horowitz Foundation (Complexity Science). The funder had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. No additional external funding was received for this study.</funding-statement></funding-group><counts>
+        <page-count count="7"/>
+      </counts></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Language comprehension is one of the most complex tasks handled by the brain. As such, it involves the coordinated activity of numerous regions each contributing a particular aspect of processing. Classically, “language regions” have been thought to be confined to the left hemisphere Wernicke's and Broca's areas, however recent evidence is accumulating indicating that other areas, especially in the right hemisphere, are necessary for various aspects of language. For example right-hemisphere activity is prominent during discourse processing <xref ref-type="bibr" rid="pone.0019345-StGeorge1">[1]</xref>, recognition of prosody <xref ref-type="bibr" rid="pone.0019345-Ross1">[2]</xref>, and comprehension of ambiguity <xref ref-type="bibr" rid="pone.0019345-Zempleni1">[3]</xref> and novel metaphors <xref ref-type="bibr" rid="pone.0019345-Arzouan1">[4]</xref>. Thus it is now obvious that language comprehension is not undertaken only by a couple of language “centers”, but it involves a large network of regions working in concert in a complex and dynamic manner <xref ref-type="bibr" rid="pone.0019345-Ferstl1">[5]</xref>. Understanding such an intricate system calls for novel analytical methods.</p>
+      <p>A recent approach to the study of brain function portrays the brain as a network of anatomical or functional connections <xref ref-type="bibr" rid="pone.0019345-Sporns1">[6]</xref> and has the potential to be able to capture the complexity of brain function during mental operations. Complex networks can be analyzed and compared by representing networks abstractly as graphs (e.g., <xref ref-type="bibr" rid="pone.0019345-Harary1">[7]</xref>–<xref ref-type="bibr" rid="pone.0019345-Chartrand1">[8]</xref>), consisting of a set of vertices (nodes) linked by a set of edges (connections). Such graphs represent the topology of a network usually without taking into account the actual physical distance between vertices. Graph theory deals with the formal description and analysis of graphs and provides quantitative characterizations of any graph using a set of universal parameters. This approach has been successfully applied to the study of other complex systems such as metabolism <xref ref-type="bibr" rid="pone.0019345-Wagner1">[9]</xref>, geophysical processes <xref ref-type="bibr" rid="pone.0019345-Yang1">[10]</xref> and sociology <xref ref-type="bibr" rid="pone.0019345-Wasserman1">[11]</xref>.</p>
+      <p>Here we used topological measures to investigate how brain regions operate when understanding different types of expressions. The same brain and anatomical connections are used in comprehending textual material of different kinds. However, when reading expressions that require different processing styles, such as literal vs. novel metaphoric expressions, the various brain regions involved should contribute differently to the mechanisms of understanding. Thus the functional connectivity networks underlying different comprehension modes should reflect these changes in connectivity, even though they share the same anatomical connections. The aim was to utilize topological measures to qualify and quantify the functional connectivity of the networks used under various comprehension conditions.</p>
+      <p>To that aim we developed a technique to represent functional networks based on EEG recordings, taking advantage of their excellent time resolution in order to capture the fast processes that occur during language comprehension. We recorded brain activity while subjects read simple expressions and indicated whether they found them meaningful. Event-related potentials, which reflect activity time-locked to a particular event, in this case word presentation, were used in order to measure activity related only to the comprehension task. The networks were created based on the time-course of current source density estimates at 66 cortical areas derived from the event-related potentials.</p>
+      <p>Studies using graph theory analysis of functional brain networks have mainly used symmetrical measures of statistical association or functional connectivity between pairs of brain regions or sensors (e.g., <xref ref-type="bibr" rid="pone.0019345-Achard1">[12]</xref>–<xref ref-type="bibr" rid="pone.0019345-Stam1">[13]</xref>). Generally, these measures of connectivity are thresholded at some critical value to construct undirected graphs. Other studies have attempted to construct directed graphs using effective connectivity models based on causal influence estimates <xref ref-type="bibr" rid="pone.0019345-Brovelli1">[14]</xref>–<xref ref-type="bibr" rid="pone.0019345-Friston1">[15]</xref>. However the implementation of those models tends to be complicated and time consuming, and largely rely on prior theoretical knowledge. Here we opted for a third option and looked for a specific ‘physiological’ causal relation between areas, the negative feedback loop <xref ref-type="bibr" rid="pone.0019345-Pigolotti1">[16]</xref>. For each brain region pair, we tested whether activation of the first region was followed by activation of the second which in turn was followed by deactivation of the first region. Every pair that fulfilled the criterion was added as a link in the network. This method is a simple way to construct directed graphs using event-related activity, which can then be analyzed topologically. Negative feedback loops (NFLs) are of course not the only possible causal relation between brain regions, but they are ubiquitous in the nervous system. The presence of feedback loops was found in theoretical studies of oscillatory systems <xref ref-type="bibr" rid="pone.0019345-Krishna1">[17]</xref>–<xref ref-type="bibr" rid="pone.0019345-Leloup1">[18]</xref> that used differential equations to describe the dynamics of the system variables. Most of these models found NFLs to be an essential property of the system <xref ref-type="bibr" rid="pone.0019345-Snoussi1">[19]</xref>.</p>
+      <p>Our aim was to use this technique and apply it to EEG recordings of people involved in a language comprehension task <xref ref-type="bibr" rid="pone.0019345-Arzouan2">[20]</xref> consisting of four types of simple expressions: word pairs with a literal semantic relation (‘burning fire’), conventional metaphors (“bright mind”), unfamiliar metaphors (“ripe dream”) and unrelated pairs (“indirect blanket”). These expression types have been shown to require different processing during comprehension <xref ref-type="bibr" rid="pone.0019345-Arzouan2">[20]</xref>–<xref ref-type="bibr" rid="pone.0019345-Mashal1">[21]</xref>. A network was constructed for each expression type and was analyzed using various graph theory metrics. The aim of the research was twofold; the first aim was to test whether negative feedback loops can be used as a relatively simple measure of directed functional connectivity. The second aim was to show the usefulness of graph theory measures in the study of neuro-cognitive mechanisms. Our aim was not only to show that functional brain connectivity networks behave like complex scale-free small worlds, but also to derive new information about aspects not reflected in the classical methods for investigating brain activity. We hypothesized that slightly different functional networks will be obtained for event-related activity evoked by each expression type. The differences will reflect the special contribution of specific regions in each condition and the balance of hemispheric activity involved in comprehending different types of expressions.</p>
+    </sec>
+    <sec id="s2" sec-type="methods">
+      <title>Method</title>
+      <sec id="s2a">
+        <title>Ethics statement</title>
+        <p>All study procedures were approved by the committee of the Department of Psychology at Bar-Ilan University and all participants provided written informed consent.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Participants</title>
+        <p>Twenty-eight right-handed native Hebrew speakers (12 men, 16 women, average age 23) participated in the experiment and received partial academic credit.</p>
+      </sec>
+      <sec id="s2c">
+        <title>Behavioral paradigm</title>
+        <p>Two-word expressions were presented in a random order, one word at a time, on a computer screen using white letters and black background. Stimuli on each trial were presented in the following time sequence: fixation cross (200 ms), first word (200 ms), blank (200 ms), and second word (200 ms). Participants were instructed to “judge whether the presented two-word expression conveys a meaning (be it literal or metaphoric) or does not convey a meaning as a pair”, and press a corresponding key. Response period was limited to 2 s and was followed by a 2 s inter-trial interval. A total of 96 Hebrew two-word expressions (24 per condition) were presented, consisting of conventional metaphoric (CM) expressions (e.g., <italic>lucid mind</italic>, <italic>transparent intention</italic>), novel metaphors (NM) drawn from poetry texts (e.g., <italic>ripe dream</italic>, <italic>conscience storm</italic>), literally related (LT) words (e.g., <italic>burning fire</italic>, <italic>problem resolution</italic>), and unrelated (UR) words (e.g., <italic>indirect blanket, wisdom wash)</italic>. The detailed experimental paradigm is reported in <xref ref-type="bibr" rid="pone.0019345-Arzouan1">[4]</xref>, <xref ref-type="bibr" rid="pone.0019345-Arzouan2">[20]</xref>.</p>
+      </sec>
+      <sec id="s2d">
+        <title>EEG Recording</title>
+        <p>EEG was recorded using a 65-channel geodesic net (Electrical Geodesics Inc.) with 250 Hz sampling rate, 0.1–100 Hz bandpass filter, and referenced to Cz. Impedances were kept below 50 kΩ. Data were further filtered (40 Hz) and referenced to an average reference offline. ERPs were time-locked to the onset of the second word of the pair. Epochs were 1000 ms long with a 100 ms pre-stimulus baseline. Trials with eye movement and other artifacts were removed.</p>
+      </sec>
+      <sec id="s2e">
+        <title>Data Preprocessing</title>
+        <p>ERPs were derived by averaging correctly classified trials on each condition for each participant, that is, LT, CM and NM pairs judged as conveying a meaning and UR pairs judged as not conveying a meaning. In order to estimate the neural sources of the waveforms for each condition, the average ERPs for each condition and subject were subjected to LORETA analysis <xref ref-type="bibr" rid="pone.0019345-PascualMarqui1">[22]</xref>–<xref ref-type="bibr" rid="pone.0019345-PascualMarqui3">[24]</xref>. LORETA calculates the three-dimensional current density distribution of the neural generators in the brain under the assumption that for each voxel the current density should be as close as possible to the average current density of the neighboring voxels (‘contiguity’). Computations were made using a three-shell spherical head model registered to the Talairach space of the brain's gray matter. The procedure yielded current density values for 2394 voxels, with a spatial resolution of 7 mm and a temporal resolution on the order of 4 ms. Voxels were labeled into 33 anatomical areas in each hemisphere according to the MNI305 atlas <xref ref-type="bibr" rid="pone.0019345-Collins1">[25]</xref>. Data for each area were smoothed using a moving average of 10 samples (∼40 ms), then whitened with single value decomposition and normalized to the mean.</p>
+      </sec>
+      <sec id="s2f">
+        <title>Networks</title>
+        <p>Nodes were localized at the center of each anatomical brain region, and the activation of each node was calculated as the mean current density of all voxels in the region. Directional links between nodes were created by finding negative feedback loops with an algorithm adapted from <xref ref-type="bibr" rid="pone.0019345-Pigolotti1">[16]</xref>. For each pair of nodes, we tested whether during the time course of brain activity, activation of the first node was followed by activation of the second which in turn was followed by deactivation of the first region, regardless of the time length of activation or deactivation. A link was delineated between every two nodes (anatomical regions) that exhibited such a negative feedback loop anywhere along a discrete temporal dimension with time bins of 60 ms. Activation at a time-bin was defined as a current density value greater than the mean of that area, and deactivation was defined as a current density value lesser than the mean. Every node pair that fulfilled the criterion was added as a link in the network. The link was regarded as outgoing for the node that was activated first and incoming for the second node. A separate network was constructed for each condition.</p>
+      </sec>
+      <sec id="s2g">
+        <title>Network analyses</title>
+        <p>To analyze and quantify the connectivity of the emergent networks we used graph theory methods <xref ref-type="bibr" rid="pone.0019345-Sporns2">[26]</xref> and small-world networks analyses <xref ref-type="bibr" rid="pone.0019345-Watts1">[27]</xref>. These were implemented using functions from the Complex Networks Analysis Package <xref ref-type="bibr" rid="pone.0019345-Muchnik1">[28]</xref>. In the current study we calculated for each network the node degree distribution, betweenesss centrality, shortest path and clustering coefficient for the quantification of the small-world properties. These measures were calculated for each node, and averaged over all nodes to estimate the global characteristics of each network. The degree of a node is the number of connections that link it to the rest of the network, and the degree distribution refers to the degrees of all nodes in the network. Whereas random networks have a symmetrically-centered Gaussian degree distribution, complex networks generally have non-Gaussian degree distributions, often with a long tail towards high degrees. In scale-free networks the degree distribution follows a power law <xref ref-type="bibr" rid="pone.0019345-Albert1">[29]</xref>. The clustering coefficient is calculated as the number of connections that exist between the nearest neighbors of a node as a proportion of the maximum number of possible connections. High clustering is taken to reflect high local efficiency of information transfer and robustness <xref ref-type="bibr" rid="pone.0019345-Bassett1">[30]</xref>. The shortest path measure is the minimum number of edges that must be traversed to go from one node to another. Short mean path-lengths reflect high global efficiency of parallel information transfer <xref ref-type="bibr" rid="pone.0019345-Achard2">[31]</xref>. Betweeness is a measure of centrality indicating the relative importance of a vertex within the network. The betweeness of vertex <italic>v</italic> is the proportion of shortest paths between every two vertices in the network that pass through <italic>v</italic> (see <xref ref-type="bibr" rid="pone.0019345-Bullmore1">[32]</xref> for a review).</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <sec id="s3a">
+        <title>Network properties</title>
+        <p>This analyses process resulted in four directed networks with 66 nodes and 1687 directional links for the UR pairs, 1658 for the LT, 1603 for the CM and 1515 for the NM pairs, out of 4290 possible links in each network (<xref ref-type="fig" rid="pone-0019345-g001">Figure 1</xref>). The degree-distribution exponents (γ in the probability of degree k formula, p(k) = k<sup>−γ</sup>) ranged from 2.8 to 3.5, with a gradual decay reflecting the scale-free character of the networks, both for the incoming and outgoing links.</p>
+        <fig id="pone-0019345-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0019345.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Graphical representation of the networks' main hubs for each expression type, located at the center each region.</title>
+            <p>The diameter of the circles represent the node degree of the hub. Closed circles depict the outgoing degree, dotted circled depict the incoming degree.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0019345.g001" xlink:type="simple"/>
+        </fig>
+        <p>Average shortest path was relatively low (mean λ = 2.5) reflecting high global efficiency of parallel information transfer. However, the clustering coefficient (local efficiency) was also low (mean γ = 0.34), and not larger than an equivalent random net. This might be due to the low resolution of source localization in EEG and averaging of whole areas, which mask the activity at the local-network level.</p>
+      </sec>
+      <sec id="s3b">
+        <title>Hemispheres</title>
+        <p>A count of the inward and outward links for the nodes in each hemisphere indicated an overall balanced network hemispherically (<xref ref-type="table" rid="pone-0019345-t001">Table 1</xref>). However, in the LT condition the number of links within the LH was significantly higher than the number of links within the RH, and this was reversed in the UR condition, χ<sup>2</sup>(3) = 57.4, p&lt;0.0001). In both CM and NM conditions the leftward bias was not significant. A similar picture was obtained when examining the outgoing and incoming links. In the LT condition there were more outgoing links from the LH than from the RH, and more incoming links to the LH than to the RH. In contrast, for the UR condition there were more incoming and outgoing links in the RH than in the LH. This was statistically significant for both the incoming, χ<sup>2</sup> (3) = 29.0, p&lt;0.001, and outgoing, χ<sup>2</sup> (3) = 32.2, p&lt;0.001, links. Here again, both CM and NM conditions were more balanced, with a slight bias to the left which was not significant.</p>
+        <table-wrap id="pone-0019345-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0019345.t001</object-id><label>Table 1</label><caption>
+            <title>Number of links in the networks of each condition.</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0019345-t001-1" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0019345.t001" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">LT</td>
+                <td align="left" colspan="1" rowspan="1">UR</td>
+                <td align="left" colspan="1" rowspan="1">CM</td>
+                <td align="left" colspan="1" rowspan="1">NM</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>Within hemisphere</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">RH</td>
+                <td align="left" colspan="1" rowspan="1">250</td>
+                <td align="left" colspan="1" rowspan="1">373</td>
+                <td align="left" colspan="1" rowspan="1">311</td>
+                <td align="left" colspan="1" rowspan="1">286</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">LH</td>
+                <td align="left" colspan="1" rowspan="1">479</td>
+                <td align="left" colspan="1" rowspan="1">316</td>
+                <td align="left" colspan="1" rowspan="1">377</td>
+                <td align="left" colspan="1" rowspan="1">384</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">RH/LH ratio</td>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>0.52</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>1.18</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>0.82</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>0.74</bold>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>Incoming to:</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">RH</td>
+                <td align="left" colspan="1" rowspan="1">609</td>
+                <td align="left" colspan="1" rowspan="1">746</td>
+                <td align="left" colspan="1" rowspan="1">689</td>
+                <td align="left" colspan="1" rowspan="1">652</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">LH</td>
+                <td align="left" colspan="1" rowspan="1">821</td>
+                <td align="left" colspan="1" rowspan="1">677</td>
+                <td align="left" colspan="1" rowspan="1">709</td>
+                <td align="left" colspan="1" rowspan="1">685</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">RH/LH ratio</td>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>0.74</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>1.10</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>0.97</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>0.95</bold>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>Outgoing from:</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">RH</td>
+                <td align="left" colspan="1" rowspan="1">592</td>
+                <td align="left" colspan="1" rowspan="1">734</td>
+                <td align="left" colspan="1" rowspan="1">643</td>
+                <td align="left" colspan="1" rowspan="1">587</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">LH</td>
+                <td align="left" colspan="1" rowspan="1">838</td>
+                <td align="left" colspan="1" rowspan="1">689</td>
+                <td align="left" colspan="1" rowspan="1">755</td>
+                <td align="left" colspan="1" rowspan="1">750</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">RH/LH ratio</td>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>0.70</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>1.06</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>0.85</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>0.78</bold>
+                </td>
+              </tr>
+            </tbody>
+          </table></alternatives></table-wrap>
+        <p>The average node degree between hemispheres and conditions was examined using analysis of variance. For the outgoing links the mean node degree was higher for the LH than for the RH (27 vs. 22.7), F(1,252) = 10.20, p&lt;0.01. There was also an interaction between hemisphere and condition: the LH advantage was found in LT, CM, NM conditions but was reversed for the UR condition F(3,252) = 3.86, p&lt;0.01. The interaction was significant, F(3,252) = 3.8,p&lt;0.05, also for the incoming links, but no LH advantage was found for the metaphor conditions (<xref ref-type="fig" rid="pone-0019345-g002">Figure 2</xref>).</p>
+        <fig id="pone-0019345-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0019345.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Average node degree for each condition and hemisphere.</title>
+            <p>Left panel (a) shows the outgoing node degree. Right panel (b) shows the incoming node degree. Black bars: left hemisphere, grey bars: right hemisphere.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0019345.g002" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s3c">
+        <title>Hubs</title>
+        <p>Hubs were defined as nodes with degrees higher than 2% of the total links in the network. The most connected hubs were different for the four conditions (<xref ref-type="table" rid="pone-0019345-t002">Table 2</xref>). The measures for betweeness centrality paralleled those of the node degree. Thus, in these networks, nodes with the highest degree were also the central ones.</p>
+        <table-wrap id="pone-0019345-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0019345.t002</object-id><label>Table 2</label><caption>
+            <title>Most connected nodes (hubs) for each condition in descending order according to their node degree.</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0019345-t002-2" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0019345.t002" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">LT</td>
+                <td align="left" colspan="1" rowspan="1">UR</td>
+                <td align="left" colspan="1" rowspan="1">CM</td>
+                <td align="left" colspan="1" rowspan="1">NM</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">L Angular (1.2)</td>
+                <td align="left" colspan="1" rowspan="1">R Medial Frontal (0.7)</td>
+                <td align="left" colspan="1" rowspan="1">L Sup Occipital (1.0)</td>
+                <td align="left" colspan="1" rowspan="1">R Sup Temporal (0.8)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">L Medial Frontal (0.8)</td>
+                <td align="left" colspan="1" rowspan="1">R Sup Temporal (1.0)</td>
+                <td align="left" colspan="1" rowspan="1">R Precentral (1.2)</td>
+                <td align="left" colspan="1" rowspan="1">L Lingual (0.7)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">L Sup Parietal Lob (0.7)</td>
+                <td align="left" colspan="1" rowspan="1">R Paracentral Lob (0.7)</td>
+                <td align="left" colspan="1" rowspan="1">L Lingual (0.7)</td>
+                <td align="left" colspan="1" rowspan="1">L Precuneus (0.7)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">R Sup Temporal (1.2)</td>
+                <td align="left" colspan="1" rowspan="1">R Inf Frontal (0.8)</td>
+                <td align="left" colspan="1" rowspan="1">L Orbital (1.5)</td>
+                <td align="left" colspan="1" rowspan="1">L Precentral (1.2)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">L Post Cingulate (1.2)</td>
+                <td align="left" colspan="1" rowspan="1">L Inf Temporal (1.0)</td>
+                <td align="left" colspan="1" rowspan="1">R Ant Cingulate (1.5)</td>
+                <td align="left" colspan="1" rowspan="1">L Inf Frontal (0.7)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">L Fusiform (0.8)</td>
+                <td align="left" colspan="1" rowspan="1">L Precentral (1.0)</td>
+                <td align="left" colspan="1" rowspan="1">R Post Cingulate (1.0)</td>
+                <td align="left" colspan="1" rowspan="1">R Inf Frontal (1.4)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">R Parahippocampal (1.0)</td>
+                <td align="left" colspan="1" rowspan="1">L Subcallosal (0.8)</td>
+                <td align="left" colspan="1" rowspan="1">R Inf Frontal (2.0)</td>
+                <td align="left" colspan="1" rowspan="1">R Sub-Gyral (1.0)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">L Lingual (0.7)</td>
+                <td align="left" colspan="1" rowspan="1">R Fusiform (1.0)</td>
+                <td align="left" colspan="1" rowspan="1">R Middle Frontal (0.7)</td>
+                <td align="left" colspan="1" rowspan="1">L Insula (0.8)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">L Orbital (0.7)</td>
+                <td align="left" colspan="1" rowspan="1">R Inf Occipital (1.1)</td>
+                <td align="left" colspan="1" rowspan="1">L Paracentral Lob (0.5)</td>
+                <td align="left" colspan="1" rowspan="1">L Middle Temporal (1.3)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">L Supramarginal (1.1)</td>
+                <td align="left" colspan="1" rowspan="1">R Precentral (1.1)</td>
+                <td align="left" colspan="1" rowspan="1">R Rectal (1.6)</td>
+                <td align="left" colspan="1" rowspan="1">R Subcallosal (1.2)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">R Inf Temporal (1.4)</td>
+                <td align="left" colspan="1" rowspan="1">R Parahippocampal (0.7)</td>
+                <td align="left" colspan="1" rowspan="1">L Ant Cingulate (1.3)</td>
+                <td align="left" colspan="1" rowspan="1">R Post Cingulate (1.0)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">R Supramarginal(0.8)</td>
+                <td align="left" colspan="1" rowspan="1">R Subcallosal (0.7)</td>
+                <td align="left" colspan="1" rowspan="1">L Angular (1.1)</td>
+                <td align="left" colspan="1" rowspan="1">L Inf Parietal Lob (1.2)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">L Middle Temporal (1.4)</td>
+                <td align="left" colspan="1" rowspan="1">L Inf Temporal (0.6)</td>
+                <td align="left" colspan="1" rowspan="1">R Insula (0.6)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">R Lingual (1.3)</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">L Angular (1.0)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">L Middle Occipital (0.9)</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">R Parahippocampal (1.5)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">L Lingual (0.5)</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">L Sub-Gyral (0.9)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">R Angular (0.8)</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">L Rectal (0.9)</td>
+              </tr>
+            </tbody>
+          </table></alternatives><table-wrap-foot>
+            <fn id="nt101">
+              <label/>
+              <p>The in/out link ratio for each node is listed in parentheses.</p>
+            </fn>
+          </table-wrap-foot></table-wrap>
+        <p>In the NM condition the most connected node was the right superior temporal gyrus (rSTG), with more outward than inward links (in/out ratio  = 0.8). The right medial frontal gyrus was the main hub in the UR condition, also with an outward bias (0.7). The major hub in the CM condition was the left superior occipital gyrus (in/out ratio  = 1.0), and in the LT condition the left angular gyrus was the most connected node with a significant inward bias (1.2).</p>
+        <p>The only node that was a hub (&gt;2%) in all conditions was the left lingual gyrus which had more outward than inward links (in/out  = 0.6). Two other nodes, the rSTG and the right parahippocampal gyrus, were hubs for NM, LT, and UR but not for CM, although their main direction differed between conditions. The rSTG had an outward bias for NM, was balanced for UR, and had an inward bias in LT. When counting only inward links, it was a major node for the CM condition as well. In contrast, the right parahippocampal gyrus had an inward bias for NM, an outward bias for UR, but was balanced for LT.</p>
+        <p>The left angular gyrus was a hub in all but UR conditions. Its direction was more in than out in CM and LT, but was balanced in NM. The right inferior frontal gyrus was a hub in all conditions but LT. It was mostly inward biased for CM and NM, but outwards biased for UR. Interestingly, the right inferior frontal gyrus had a very low node degree in the LT condition. Apart from the above nodes three additional nodes were found to be very connected in both the NM and UR conditions: left middle temporal gyrus, right subcallosal gyrus and left precentral gyrus. All had an inward bias, apart from the right subcallosal gyrus which had an outward bias for the UR condition. The right posterior cingulate was common to both metaphor types and had no directional bias. The precentral and rectal gyri were very connected also in both metaphor networks, but in different hemispheres: in the right hemisphere for CM and in the left for NM.</p>
+        <p>Hubs specific to the NM network included right and left insula, left precuneus and left inferior frontal gyrus (all with an outward bias), left inferior parietal lobule (inward bias), as well as bilateral temporal sub-gyri (balanced in direction). The CM network hubs comprised bilateral anterior cingulate (in), right middle frontal gyrus and left paracentral lobule (both out). The most connected nodes when comprehending literal expressions were mainly regions involved in reading words, such as the left fusiform, lingual and angular gyri as well as bilateral supramarginal gyri.</p>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>Our results indicate that representing event-related brain activity as a network is a viable option for investigation. In particular, the use of a simple temporal relation such as the negative feedback loop to indicate directional connectivity resulted in networks consistent with the literature in the field. Several of the brain regions found to be the most central and functionally connected are areas that have previously been reported as active during language tasks in imaging studies. However, the networks parameters revealed information not available through regular analyses. Some of the most connected regions in our networks are not frequently reported as having increased activation in comprehension tasks. Thus, the directional connectivity yields important information that is not reflected in general activity measures.</p>
+      <p>The hemispheric balance indices of the network underlying literal expressions show a left hemispheric bias, in accordance with the literature. In contrast, the UR network was right biased, probably reflecting the use of coarse coded concepts when searching for meaning <xref ref-type="bibr" rid="pone.0019345-JungBeeman1">[33]</xref>. Both types of metaphors, conventional and novel, were handled by more balanced networks, indicating that information flow from the two hemispheres is needed to understand them. When comprehending meaningful expressions, the LH had a higher average node degree, indicating that the regions in that hemisphere had more connections, both for incoming and outgoing links. The reverse was true for UR in which the RH had greater connectivity overall. In a previous study <xref ref-type="bibr" rid="pone.0019345-Arzouan1">[4]</xref> we showed that both hemispheres are activated when comprehending figural meanings. The present findings demonstrate that both hemispheres contribute and share information, although the specific information flow differs depending on the type comprehension needed.</p>
+      <p>The differences between the functional networks are better described by considering the main hubs or central nodes which were common for various expression types and those which appeared only in particular conditions. The only node which was found as a main hub in all conditions was the left lingual gyrus. The left lingual gyrus is frequently reported to be active when recognizing words and has been shown to be more active for words than pseudowords <xref ref-type="bibr" rid="pone.0019345-Hagoort1">[34]</xref>. Thus, it should naturally appear as a hub in each of the four networks. Its direction, mostly outward connections, is consistent with its role of feeding the information about the word to other areas.</p>
+      <p>A second common hub was the right superior temporal gyrus. The superior temporal gyri have been suggested to have a role in semantic integration, with an advantage of the right hemisphere for integrating multiple distantly related concepts and activating large semantic fields <xref ref-type="bibr" rid="pone.0019345-JungBeeman1">[33]</xref>. The coarse coding of the right hemisphere is useful in complex language tasks that require integrating contextual information or bridging between seemingly unrelated words as in the present experiment. Our results indicate, however, that the flow of information in the integration mechanism is different for the various expression types. In the NM network the directionality of rSTG had a slight outward bias, but had an inward bias for conventional metaphors and literal expressions. This suggests that semantic integration is not merely a passive process but an active one involving both transmitting as well as receiving information from various sources.</p>
+      <p>An additional common hub was the right parahippocampal gyrus, which is frequently found in tasks involving contextual memory <xref ref-type="bibr" rid="pone.0019345-Luck1">[35]</xref> as well as social context such as when understanding sarcasm <xref ref-type="bibr" rid="pone.0019345-Rankin1">[36]</xref>. When searching for the meaning of seemingly unrelated words contextual information has a key role. Interestingly, most connections in that node were inbound in the NM network, but outbound in the UR network. It can be speculated that when the meaning of novel metaphoric expressions was successfully reached this was partly based on integrating such contextual information. In contrast, with unrelated word pairs, contextual information was used as a search strategy which turned to be unsuccessful. For conventional or ‘dead’ metaphors for which the figurative meaning is the salient one, using contextual information would be detrimental thus the parahippocampal gyrus did not emerge as a hub.</p>
+      <p>The left angular gyrus was a main hub in the networks for all meaningful expressions. It is part of the word reading network and is functionally connected with visual association areas in the occipital and temporal lobes as well as language areas <xref ref-type="bibr" rid="pone.0019345-Horwitz1">[37]</xref>. It is presumed to be involved in mapping visually presented inputs onto linguistic representations <xref ref-type="bibr" rid="pone.0019345-Demonet1">[38]</xref>. Interestingly, patients with damage to the left angular gyrus are unable to comprehend the metaphorical meaning of common proverbs <xref ref-type="bibr" rid="pone.0019345-Ramachandran1">[39]</xref>.</p>
+      <p>Comprehension of novel metaphors was implemented in a functional network in which the most connected areas included the left precuneus, left inferior frontal gyrus, as well as left inferior parietal lobule and left angular gyrus. The precuneus is thought to act as an associative region involved in metal imagery and has wide connections with the inferior parietal lobule and angular gyri <xref ref-type="bibr" rid="pone.0019345-Cavanna1">[40]</xref>. Together with the inferior frontal gyrus it is active in episodic memory tasks <xref ref-type="bibr" rid="pone.0019345-Lundstrom1">[41]</xref>, and has been considered as a parietal prefrontal hub <xref ref-type="bibr" rid="pone.0019345-Bullmore1">[32]</xref>. Its centrality in novel metaphor comprehension is consistent with its associative and working memory roles. Comprehending novel metaphors entails retrieving information about distant concepts which are then imagined in order to find the parallels between the source and the target. The right and left insulae also turned up as very central areas for novel metaphors. Previous studies using this type of stimuli have also found increased insular activation <xref ref-type="bibr" rid="pone.0019345-Mashal2">[42]</xref>–<xref ref-type="bibr" rid="pone.0019345-Schmidt1">[43]</xref>.</p>
+      <p>In contrast, the network for conventional metaphors included the left superior occipital gyrus, the anterior cingulate, the right middle frontal gyrus and the left paracentral lobule. The left angular, lingual gyrus, and right posterior cingulate, as well as more frontal regions (precentral gyrus, inferior frontal, and rectal gyri) were common to both types of metaphoric expressions. However, the laterality of the precental gyrus and the inferior frontal gyrus was opposite for the two conditions, right hemisphere for conventional metaphors and left hemisphere for novel ones.</p>
+      <p>In sum, the characteristics of the networks produced using the NFL method with ERPs have the potential to reveal important information about the cognitive mechanisms they represent. Of course NFLs are not the only type of functional connection between areas, but they are ubiquitous in the nervous system, and as shown here, they yield a coherent representation of the activity of the brain under various task conditions. It is important to note, however, that networks derived from EEG data were not completely compatible with the expected small-world connectivity in the cortex. This is probably due to the lack of spatial resolution of the LORETA solutions and the use of whole regions as nodes. Such low scale data can only reveal long-range connections between areas and is blind to within-area local connections. It is possible that brain recordings with better spatial resolution such as MEG will provide the necessary information to render small-world networks using this method.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0019345-StGeorge1">
+        <label>1</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>St George</surname><given-names>M</given-names></name><name name-style="western"><surname>Kutas</surname><given-names>M</given-names></name><name name-style="western"><surname>Martinez</surname><given-names>A</given-names></name><name name-style="western"><surname>Sereno</surname><given-names>MI</given-names></name></person-group>             <year>1999</year>             <article-title>Semantic integration in reading: engagement of the right hemisphere during discourse processing.</article-title>             <source>Brain</source>             <volume>122</volume>             <fpage>1317</fpage>             <lpage>1325</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Ross1">
+        <label>2</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Ross</surname><given-names>ED</given-names></name><name name-style="western"><surname>Monnot</surname><given-names>M</given-names></name></person-group>             <year>2008</year>             <article-title>Neurology of affective prosody and its functional-anatomic organization in right hemisphere.</article-title>             <source>Brain Lang</source>             <volume>104</volume>             <fpage>51</fpage>             <lpage>74</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Zempleni1">
+        <label>3</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Zempleni</surname><given-names>MZ</given-names></name><name name-style="western"><surname>Renken</surname><given-names>R</given-names></name><name name-style="western"><surname>Hoeks</surname><given-names>JCJ</given-names></name><name name-style="western"><surname>Hoogduin</surname><given-names>JM</given-names></name><name name-style="western"><surname>Stowe</surname><given-names>L</given-names></name></person-group>             <year>2007</year>             <article-title>Semantic ambiguity processing in sentence context: Evidence from event-related fMRI.</article-title>             <source>NeuroImage</source>             <volume>34</volume>             <fpage>1270</fpage>             <lpage>1279</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Arzouan1">
+        <label>4</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Arzouan</surname><given-names>Y</given-names></name><name name-style="western"><surname>Goldstein</surname><given-names>A</given-names></name><name name-style="western"><surname>Faust</surname><given-names>M</given-names></name></person-group>             <year>2007</year>             <article-title>Dynamics of hemispheric activity during metaphor comprehension: electrophysiological measures.</article-title>             <source>NeuroImage</source>             <volume>36</volume>             <fpage>222</fpage>             <lpage>31</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Ferstl1">
+        <label>5</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Ferstl</surname><given-names>EC</given-names></name><name name-style="western"><surname>Neumann</surname><given-names>J</given-names></name><name name-style="western"><surname>Bogler</surname><given-names>C</given-names></name><name name-style="western"><surname>von Cramon</surname><given-names>DY</given-names></name></person-group>             <year>2008</year>             <article-title>The extended language network: a meta-analysis of neuroimaging studies on text comprehension.</article-title>             <source>Hum Brain Mapp</source>             <volume>29</volume>             <fpage>581</fpage>             <lpage>593</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Sporns1">
+        <label>6</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Sporns</surname><given-names>O</given-names></name><name name-style="western"><surname>Tononi</surname><given-names>G</given-names></name><name name-style="western"><surname>Edelman</surname><given-names>GM</given-names></name></person-group>             <year>2000</year>             <article-title>Theoretical neuroanatomy: relating anatomical and functional connectivity in graphs and cortical connection matrices.</article-title>             <source>Cereb Cortex</source>             <volume>10</volume>             <fpage>127</fpage>             <lpage>141</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Harary1">
+        <label>7</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Harary</surname><given-names>F</given-names></name></person-group>             <year>1969</year>             <article-title>Graph theory.</article-title>             <publisher-loc>Reading, MA</publisher-loc>             <publisher-name>Addison-Wesley</publisher-name> <!--===== Restructure page-count as size[@units="page"] =====--><size units="page">274</size>           </element-citation>
+      </ref>
+      <ref id="pone.0019345-Chartrand1">
+        <label>8</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Chartrand</surname><given-names>G</given-names></name><name name-style="western"><surname>Lesniak</surname><given-names>L</given-names></name></person-group>             <year>2005</year>             <article-title>Graphs &amp; digraphs (4th ed.).</article-title>             <publisher-loc>Boca Raton, FL</publisher-loc>             <publisher-name>CRC Press</publisher-name> <!--===== Restructure page-count as size[@units="page"] =====--><size units="page">386</size>           </element-citation>
+      </ref>
+      <ref id="pone.0019345-Wagner1">
+        <label>9</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Wagner</surname><given-names>A</given-names></name><name name-style="western"><surname>Fell</surname><given-names>DA</given-names></name></person-group>             <year>2001</year>             <article-title>The small world inside large metabolic networks.</article-title>             <source>Proc Biol Sci</source>             <volume>268</volume>             <fpage>1803</fpage>             <lpage>1810</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Yang1">
+        <label>10</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Yang</surname><given-names>XS</given-names></name></person-group>             <year>2010</year>             <article-title>Small-World Networks in Geophysics.</article-title>             <source>Geophys Res Lett</source>             <volume>28</volume>             <fpage>2549</fpage>             <lpage>2552</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Wasserman1">
+        <label>11</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Wasserman</surname><given-names>S</given-names></name><name name-style="western"><surname>Faust</surname><given-names>K</given-names></name></person-group>             <year>1994</year>             <article-title>Social network analysis: Methods and applications.</article-title>             <publisher-loc>Cambridge, UK</publisher-loc>             <publisher-name>Cambridge University Press</publisher-name> <!--===== Restructure page-count as size[@units="page"] =====--><size units="page">857</size>           </element-citation>
+      </ref>
+      <ref id="pone.0019345-Achard1">
+        <label>12</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Achard</surname><given-names>S</given-names></name><name name-style="western"><surname>Salvador</surname><given-names>R</given-names></name><name name-style="western"><surname>Whitcher</surname><given-names>B</given-names></name><name name-style="western"><surname>Suckling</surname><given-names>J</given-names></name><name name-style="western"><surname>Bullmore</surname><given-names>E</given-names></name></person-group>             <year>2006</year>             <article-title>A resilient, low-frequency, small-world human brain functional network with highly connected association cortical hubs.</article-title>             <source>J Neurosci</source>             <volume>26</volume>             <fpage>63</fpage>             <lpage>72</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Stam1">
+        <label>13</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Stam</surname><given-names>C</given-names></name></person-group>             <year>2004</year>             <article-title>Functional connectivity patterns of human magnetoencephalographic recordings: a “small-world” network?</article-title>             <source>Neurosci Lett</source>             <volume>355</volume>             <fpage>25</fpage>             <lpage>28</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Brovelli1">
+        <label>14</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Brovelli</surname><given-names>A</given-names></name><name name-style="western"><surname>Ding</surname><given-names>M</given-names></name><name name-style="western"><surname>Ledberg</surname><given-names>A</given-names></name><name name-style="western"><surname>Chen</surname><given-names>Y</given-names></name><name name-style="western"><surname>Nakamura</surname><given-names>R</given-names></name><etal/></person-group>             <year>2004</year>             <article-title>Beta oscillations in a large-scale sensorimotor cortical network: directional influences revealed by Granger causality.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>101</volume>             <fpage>9849</fpage>             <lpage>9854</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Friston1">
+        <label>15</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Friston</surname><given-names>KJ</given-names></name><name name-style="western"><surname>Harrison</surname><given-names>L</given-names></name><name name-style="western"><surname>Penny</surname><given-names>W</given-names></name></person-group>             <year>2003</year>             <article-title>Dynamic causal modelling.</article-title>             <source>NeuroImage</source>             <volume>19</volume>             <fpage>1273</fpage>             <lpage>1302</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Pigolotti1">
+        <label>16</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Pigolotti</surname><given-names>S</given-names></name><name name-style="western"><surname>Krishna</surname><given-names>S</given-names></name><name name-style="western"><surname>Jensen</surname><given-names>MH</given-names></name></person-group>             <year>2007</year>             <article-title>Oscillation patterns in negative feedback loops.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>104</volume>             <fpage>6533</fpage>             <lpage>6537</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Krishna1">
+        <label>17</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Krishna</surname><given-names>S</given-names></name><name name-style="western"><surname>Jensen</surname><given-names>MH</given-names></name><name name-style="western"><surname>Sneppen</surname><given-names>K</given-names></name></person-group>             <year>2006</year>             <article-title>Minimal model of spiky oscillations in NF-kappaB signaling.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>103</volume>             <fpage>10840</fpage>             <lpage>10845</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Leloup1">
+        <label>18</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Leloup</surname><given-names>JC</given-names></name><name name-style="western"><surname>Goldbeter</surname><given-names>A</given-names></name></person-group>             <year>2004</year>             <article-title>Modeling the mammalian circadian clock: sensitivity analysis and multiplicity of oscillatory mechanisms.</article-title>             <source>J Theor Biol</source>             <volume>230</volume>             <fpage>541</fpage>             <lpage>562</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Snoussi1">
+        <label>19</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Snoussi</surname><given-names>E</given-names></name></person-group>             <year>1998</year>             <article-title>Necessary conditions for multistationarity and stable periodicity.</article-title>             <source>J Biol Syst</source>             <volume>6</volume>             <fpage>3</fpage>             <lpage>9</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Arzouan2">
+        <label>20</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Arzouan</surname><given-names>Y</given-names></name><name name-style="western"><surname>Goldstein</surname><given-names>A</given-names></name><name name-style="western"><surname>Faust</surname><given-names>M</given-names></name></person-group>             <year>2007</year>             <article-title>Brainwaves are stethoscopes: ERP correlates of novel metaphor comprehension.</article-title>             <source>Brain Res</source>             <volume>1160</volume>             <fpage>69</fpage>             <lpage>81</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Mashal1">
+        <label>21</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Mashal</surname><given-names>N</given-names></name><name name-style="western"><surname>Faust</surname><given-names>M</given-names></name><name name-style="western"><surname>Hendler</surname><given-names>T</given-names></name><name name-style="western"><surname>Jung-Beeman</surname><given-names>M</given-names></name></person-group>             <year>2007</year>             <article-title>An fMRI investigation of the neural correlates underlying the processing of novel metaphoric expressions.</article-title>             <source>Brain Lang</source>             <volume>100</volume>             <fpage>115</fpage>             <lpage>126</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-PascualMarqui1">
+        <label>22</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Pascual-Marqui</surname><given-names>RD</given-names></name></person-group>             <year>1999</year>             <article-title>Review of methods for solving the EEG inverse problem.</article-title>             <source>Int J Bioelectromag</source>             <volume>1</volume>             <fpage>75</fpage>             <lpage>86</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-PascualMarqui2">
+        <label>23</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Pascual-Marqui</surname><given-names>RD</given-names></name><name name-style="western"><surname>Michel</surname><given-names>CM</given-names></name><name name-style="western"><surname>Lehmann</surname><given-names>D</given-names></name></person-group>             <year>1994</year>             <article-title>Low resolution electromagnetic tomography: a new method for localizing electrical activity in the brain.</article-title>             <source>Int J Psychophysiol</source>             <volume>18</volume>             <fpage>49</fpage>             <lpage>65</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-PascualMarqui3">
+        <label>24</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Pascual-Marqui</surname><given-names>R</given-names></name><name name-style="western"><surname>Esslen</surname><given-names>M</given-names></name><name name-style="western"><surname>Kochi</surname><given-names>K</given-names></name><name name-style="western"><surname>Lehmann</surname><given-names>D</given-names></name></person-group>             <year>2002</year>             <article-title>Functional imaging with low resolution brain electromagnetic tomography (LORETA): review, new comparisons, and new validation.</article-title>             <source>J Clin Neurophysiol</source>             <volume>30</volume>             <fpage>81</fpage>             <lpage>94</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Collins1">
+        <label>25</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Collins</surname><given-names>DL</given-names></name><name name-style="western"><surname>Neelin</surname><given-names>P</given-names></name><name name-style="western"><surname>Peters</surname><given-names>TM</given-names></name><name name-style="western"><surname>Evans</surname><given-names>AC</given-names></name></person-group>             <year>1994</year>             <article-title>Automatic 3D intersubject registration of MR volumetric data in standardized Talairach space.</article-title>             <source>J Comput Assist Tomogr</source>             <volume>18</volume>             <fpage>192</fpage>             <lpage>205</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Sporns2">
+        <label>26</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Sporns</surname><given-names>O</given-names></name><name name-style="western"><surname>Chialvo</surname><given-names>DR</given-names></name><name name-style="western"><surname>Kaiser</surname><given-names>M</given-names></name><name name-style="western"><surname>Hilgetag</surname><given-names>CC</given-names></name></person-group>             <year>2004</year>             <article-title>Organization, development and function of complex brain networks.</article-title>             <source>Trends Cogn Sci</source>             <volume>8</volume>             <fpage>418</fpage>             <lpage>425</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Watts1">
+        <label>27</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Watts</surname><given-names>DJ</given-names></name><name name-style="western"><surname>Strogatz</surname><given-names>SH</given-names></name></person-group>             <year>1998</year>             <article-title>Collective dynamics of “small-world” networks.</article-title>             <source>Nature</source>             <volume>393</volume>             <fpage>440</fpage>             <lpage>442</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Muchnik1">
+        <label>28</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Muchnik</surname><given-names>L</given-names></name><name name-style="western"><surname>Itzhack</surname><given-names>R</given-names></name><name name-style="western"><surname>Solomon</surname><given-names>S</given-names></name><name name-style="western"><surname>Louzoun</surname><given-names>Y</given-names></name></person-group>             <year>2007</year>             <article-title>Self-emergence of knowledge trees: Extraction of the Wikipedia hierarchies.</article-title>             <source>Phys Rev E</source>             <volume>76</volume>             <fpage>16106</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Albert1">
+        <label>29</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Albert</surname><given-names>R</given-names></name><name name-style="western"><surname>Barabási</surname><given-names>AL</given-names></name></person-group>             <year>2002</year>             <article-title>Statistical mechanics of complex networks.</article-title>             <source>Rev Modern Phys</source>             <volume>74</volume>             <fpage>47</fpage>             <lpage>97</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Bassett1">
+        <label>30</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bassett</surname><given-names>DS</given-names></name><name name-style="western"><surname>Bullmore</surname><given-names>E</given-names></name></person-group>             <year>2006</year>             <article-title>Small-world brain networks.</article-title>             <source>The Neuroscientist</source>             <volume>12</volume>             <fpage>512</fpage>             <lpage>523</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Achard2">
+        <label>31</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Achard</surname><given-names>S</given-names></name><name name-style="western"><surname>Bullmore</surname><given-names>E</given-names></name></person-group>             <year>2007</year>             <article-title>Efficiency and cost of economical brain functional networks.</article-title>             <source>PLoS Comput Biol</source>             <volume>3</volume>             <fpage>e17</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Bullmore1">
+        <label>32</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bullmore</surname><given-names>E</given-names></name><name name-style="western"><surname>Sporns</surname><given-names>O</given-names></name></person-group>             <year>2009</year>             <article-title>Complex brain networks: graph theoretical analysis of structural and functional systems.</article-title>             <source>Nat Rev Neurosci</source>             <volume>10</volume>             <fpage>186</fpage>             <lpage>198</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-JungBeeman1">
+        <label>33</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Jung-Beeman</surname><given-names>M</given-names></name></person-group>             <year>2005</year>             <article-title>Bilateral brain processes for comprehending natural language.</article-title>             <source>Trends Cogn Sci</source>             <volume>9</volume>             <fpage>512</fpage>             <lpage>518</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Hagoort1">
+        <label>34</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Hagoort</surname><given-names>P</given-names></name><name name-style="western"><surname>Indefrey</surname><given-names>P</given-names></name><name name-style="western"><surname>Brown</surname><given-names>C</given-names></name><name name-style="western"><surname>Herzog</surname><given-names>H</given-names></name><name name-style="western"><surname>Steinmetz</surname><given-names>H</given-names></name><etal/></person-group>             <year>1999</year>             <article-title>The neural circuitry involved in the reading of German words and pseudowords: a PET study.</article-title>             <source>J Cogn Neurosci</source>             <volume>11</volume>             <fpage>383</fpage>             <lpage>398</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Luck1">
+        <label>35</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Luck</surname><given-names>D</given-names></name><name name-style="western"><surname>Danion</surname><given-names>JM</given-names></name><name name-style="western"><surname>Marrer</surname><given-names>C</given-names></name><name name-style="western"><surname>Pham</surname><given-names>B</given-names></name><name name-style="western"><surname>Gounot</surname><given-names>D</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>The right parahippocampal gyrus contributes to the formation and maintenance of bound information in working memory.</article-title>             <source>Brain Cogn</source>             <volume>72</volume>             <fpage>255</fpage>             <lpage>263</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Rankin1">
+        <label>36</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Rankin</surname><given-names>KP</given-names></name><name name-style="western"><surname>Salazar</surname><given-names>A</given-names></name><name name-style="western"><surname>Gorno-Tempini</surname><given-names>ML</given-names></name><name name-style="western"><surname>Sollberger</surname><given-names>M</given-names></name><name name-style="western"><surname>Wilson</surname><given-names>SM</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Detecting sarcasm from paralinguistic cues: anatomic and cognitive correlates in neurodegenerative disease.</article-title>             <source>NeuroImage</source>             <volume>47</volume>             <fpage>2005</fpage>             <lpage>2015</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Horwitz1">
+        <label>37</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Horwitz</surname><given-names>B</given-names></name><name name-style="western"><surname>Rumsey</surname><given-names>JM</given-names></name><name name-style="western"><surname>Donohue</surname><given-names>BC</given-names></name></person-group>             <year>1998</year>             <article-title>Functional connectivity of the angular gyrus in normal reading and dyslexia.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>95</volume>             <fpage>8939</fpage>             <lpage>8944</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Demonet1">
+        <label>38</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Demonet</surname><given-names>J</given-names></name><name name-style="western"><surname>Chollet</surname><given-names>F</given-names></name><name name-style="western"><surname>Ramsey</surname><given-names>S</given-names></name><name name-style="western"><surname>Cardebat</surname><given-names>D</given-names></name><name name-style="western"><surname>Nespoulous</surname><given-names>JL</given-names></name><etal/></person-group>             <year>1992</year>             <article-title>The anatomy of phonological and semantic processing in normal subjects.</article-title>             <source>Brain</source>             <volume>115</volume>             <fpage>1753</fpage>             <lpage>1768</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Ramachandran1">
+        <label>39</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Ramachandran</surname><given-names>VS</given-names></name></person-group>             <year>2004</year>             <article-title>A brief tour of human consciousness: from impostor poodles to purple numbers.</article-title>             <publisher-loc>New York</publisher-loc>             <publisher-name>Pi Press</publisher-name> <!--===== Restructure page-count as size[@units="page"] =====--><size units="page">208</size>           </element-citation>
+      </ref>
+      <ref id="pone.0019345-Cavanna1">
+        <label>40</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Cavanna</surname><given-names>AE</given-names></name><name name-style="western"><surname>Trimble</surname><given-names>MR</given-names></name></person-group>             <year>2006</year>             <article-title>The precuneus: a review of its functional anatomy and behavioural correlates.</article-title>             <source>Brain</source>             <volume>129</volume>             <fpage>564</fpage>             <lpage>583</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Lundstrom1">
+        <label>41</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lundstrom</surname><given-names>BN</given-names></name><name name-style="western"><surname>Ingvar</surname><given-names>M</given-names></name><name name-style="western"><surname>Petersson</surname><given-names>KM</given-names></name></person-group>             <year>2005</year>             <article-title>The role of precuneus and left inferior frontal cortex during source memory episodic retrieval.</article-title>             <source>NeuroImage</source>             <volume>27</volume>             <fpage>824</fpage>             <lpage>834</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Mashal2">
+        <label>42</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Mashal</surname><given-names>N</given-names></name><name name-style="western"><surname>Faust</surname><given-names>M</given-names></name><name name-style="western"><surname>Hendler</surname><given-names>T</given-names></name></person-group>             <year>2005</year>             <article-title>The role of the right hemisphere in processing nonsalient metaphorical meanings: application of principal components analysis to fMRI data.</article-title>             <source>Neuropsychologia</source>             <volume>43</volume>             <fpage>2084</fpage>             <lpage>2100</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0019345-Schmidt1">
+        <label>43</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Schmidt</surname><given-names>GL</given-names></name><name name-style="western"><surname>Seger</surname><given-names>CA</given-names></name></person-group>             <year>2009</year>             <article-title>Neural correlates of metaphor processing: the roles of figurativeness, familiarity and difficulty.</article-title>             <source>Brain Cogn</source>             <volume>71</volume>             <fpage>375</fpage>             <lpage>386</lpage>          </element-citation>
+      </ref>
+    </ref-list>
+    
+  </back>
+</article>

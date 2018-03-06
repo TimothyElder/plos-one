@@ -1,0 +1,1533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="publisher-id">PONE-D-12-32648</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0057368</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Engineering</subject>
+          <subj-group>
+            <subject>Signal processing</subject>
+            <subj-group>
+              <subject>Image processing</subject>
+              <subject>Speech signal processing</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Mathematics</subject>
+          <subj-group>
+            <subject>Statistics</subject>
+            <subj-group>
+              <subject>Biostatistics</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Neurology</subject>
+            <subj-group>
+              <subject>Facial nerve disorders</subject>
+              <subject>Movement disorders</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Otorhinolaryngology</subject>
+            <subj-group>
+              <subject>Speech language pathology</subject>
+              <subj-group>
+                <subject>Speech therapy</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Cleft lip and palate</subject>
+              <subject>Oral and maxillofacial trauma</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Social and behavioral sciences</subject>
+          <subj-group>
+            <subject>Anthropology</subject>
+            <subj-group>
+              <subject>Biological anthropology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Linguistics</subject>
+            <subj-group>
+              <subject>Speech</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Neurological Disorders</subject>
+          <subject>Mathematics</subject>
+          <subject>Otolaryngology</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>A Geometric Morphometric Approach to the Analysis of Lip Shape during Speech: Development of a Clinical Outcome Measure</article-title>
+        <alt-title alt-title-type="running-head">Lip Shape during Speech</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Popat</surname>
+            <given-names>Hashmat</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Richmond</surname>
+            <given-names>Stephen</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Zhurov</surname>
+            <given-names>Alexei I.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Rosin</surname>
+            <given-names>Paul L.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Marshall</surname>
+            <given-names>David</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Applied Clinical Research and Public Health, School of Dentistry, Cardiff University, Cardiff, United Kingdom</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Cardiff School of Computer Science and Informatics, Cardiff University, Cardiff, United Kingdom</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Meara</surname>
+            <given-names>John G.</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>Boston Children's Hospital, United States of America</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">popath@cardiff.ac.uk</email></corresp>
+        <fn fn-type="conflict">
+          <p>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Designed the software used in GPA analysis and landmarking: AIZ. Conceived and designed the experiments: HP SR AIZ PLR DM. Performed the experiments: HP. Analyzed the data: HP AIZ PLR. Contributed reagents/materials/analysis tools: HP SR AIZ PLR DM. Wrote the paper: HP SR PLR DM.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>25</day>
+        <month>2</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>8</volume>
+      <issue>2</issue>
+      <elocation-id>e57368</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>24</day>
+          <month>10</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>12</day>
+          <month>1</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Popat et al</copyright-holder>
+        <license xlink:type="simple">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Objective assessments of lip movement can be beneficial in many disciplines including visual speech recognition, for surgical outcome assessment in patients with cleft lip and for the rehabilitation of patients with facial nerve impairments. The aim of this study was to develop an outcome measure for lip shape during speech using statistical shape analysis techniques. Lip movements during speech were captured from a sample of adult subjects considered as average using a three-dimensional motion capture system. Geometric Morphometrics was employed to extract three-dimensional coordinate data for lip shape during four spoken words decomposed into seven visemes (which included the resting lip shape). Canonical variate analysis was carried out in an attempt to statistically discriminate the seven visemes. The results showed that the second canonical variate discriminated the resting lip shape from articulation of the utterances and accounted for 17.2% of the total variance of the model. The first canonical variate was significant in discriminating between the utterances and accounted for 72.8% of the total variance of the model. The outcome measure was created using the 95% confidence intervals of the canonical variate scores for each subject plotted as ellipses for each viseme. The method and outcome model is proposed as reference to compare lip movement during speech in similar population groups.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>The study was funded by Cardiff University as a Ph.D. project. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="7"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>The study of lip shape during speech has an important role in visual speech recognition among other related disciplines. The shape of the lips during speech has three important functions <xref ref-type="bibr" rid="pone.0057368-Dawes1">[1]</xref>. Firstly they are a place of closure for a number of phonemes such as /p/ and /b/. Secondly they can alter the size and shape of the oral cavity to differentiate /u/ from /i/ by lip protrusion. Finally they can act as a sound source where air passes through the space between the upper incisors and the lower lip under pressure causing friction during /f/. Speech readers demonstrate that information conveyed visually during the process of speech allows recognition of what is being said. Indeed, lip movement is known to play an important role in both sign language and communication between the deaf <xref ref-type="bibr" rid="pone.0057368-Pearson1">[2]</xref>. Adequate visibility of the face and distinct lip shapes aid speech perception and can help disambiguate speech sounds that can be confusable from acoustics alone, e.g., the unvoiced consonants /p/ (a bilabial) and /k/ (a velar) <xref ref-type="bibr" rid="pone.0057368-Aleksic1">[3]</xref>. It is therefore clear that lip shape plays a significant role in verbal communication.</p>
+      <p>Disorders of speech such as dysarthrias can result from a physical or neurological deficit of the motor-speech system, of which the lips can be affected. Although the treatment for these conditions will depend on the effect the dysarthria has on control of the articulators, aims of rehabilitation will involve strengthening and increasing control over the articulator muscles and learning the correct mouth movements for phonemes. Objective assessments can be beneficial in these situations to allow the clinician to diagnose, treatment plan and quantitatively monitor change/outcome over time. In allied clinical specialities such as orthodontics and maxillofacial surgery, data from control groups are collected to act as a reference to objectively compare an individual or groups of patients. For example, lateral cephalograms <xref ref-type="bibr" rid="pone.0057368-Hans1">[4]</xref> and more recently three-dimensional (3D) laser scans <xref ref-type="bibr" rid="pone.0057368-Kau1">[5]</xref> from population groups can be age and/or sex matched, enabling comparisons to be made between an individual and their respective control template to guide treatment planning and measure outcome. Traditionally, assessment of lip function has been carried out using subjective grading scales <xref ref-type="bibr" rid="pone.0057368-House1">[6]</xref> or descriptions of two-dimensional video recordings <xref ref-type="bibr" rid="pone.0057368-Wood1">[7]</xref>. Advances in medical imaging have led to more sophisticated and objective measures of facial function being reported but their routine clinical application has been limited <xref ref-type="bibr" rid="pone.0057368-Neely1">[8]</xref>, <xref ref-type="bibr" rid="pone.0057368-Sjogreen1">[9]</xref>. Therefore, the aims of this study are to present a method/protocol for the analysis of lip shape during speech and to utilise statistical shape analyses to create an outcome measure for lip shape during speech for use in clinical interventions/rehabilitation.</p>
+    </sec>
+    <sec id="s2" sec-type="materials|methods">
+      <title>Materials and Methods</title>
+      <p>All participants provided their written consent to participate in this study. Ethical approval was obtained from South East Wales Research Ethics Committee (no. 09/41) prior to the commencement of the study. A sample participant consent form and information leaflet can be provided on request.</p>
+      <p>We confirm that the person in <xref ref-type="fig" rid="pone-0057368-g001">Figure 1</xref> has seen this manuscript and figure and has provided written informed consent for their images to be used for publication.</p>
+      <fig id="pone-0057368-g001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0057368.g001</object-id>
+        <label>Figure 1</label>
+        <caption>
+          <title>Lip landmarks used in study.</title>
+        </caption>
+        <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0057368.g001" position="float" xlink:type="simple"/>
+      </fig>
+      <sec id="s2a">
+        <title>Participants</title>
+        <p>Inclusion criteria for the study were: the participants to be aged between 21–40 years, no relevant medical history, no history of facial surgery or paralysis, a full dentition with a Class 1 maxillary-mandibular skeletal relationship and British English as their first language. One hundred and fifteen white subjects (62 male, 53 female) with a mean age of 33.4 years were included.</p>
+        <p>Subjects were asked to say four verbal utterances (puppy, rope, baby, bob) in a normal, relaxed manner whilst scanned using the 3dMDFace™ Dynamic System (3Q Technologies, Atlanta, GA, USA) at 48 frames per second under standardised conditions. The system is a commercially available ultra-fast 3D surface scanner which captures images based on active stereophotogrammetry and uses a random infrared speckle projection to capture both pattern-projected and non-pattern projected white-light images simultaneously. The detailed specifications of the imaging system have been described in a previous publication <xref ref-type="bibr" rid="pone.0057368-Popat1">[10]</xref>.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Image processing</title>
+        <p>The video sequences were analysed according to the visemes or mouth shapes for each word. The corresponding phonetic descriptions based on British English <xref ref-type="bibr" rid="pone.0057368-Roach1">[11]</xref> are shown in <xref ref-type="table" rid="pone-0057368-t001">Table 1</xref>. For the four words used in this study there are nine phonemes (including silence). As there is not always one-to-one mapping between phonemes and visemes - seven visemes (rest, <bold>p</bold>uppy, pupp<bold>y</bold>, <bold>r</bold>ope, <bold>b</bold>aby, bab<bold>y</bold>, b<bold>o</bold>b) were analysed in this part of the study. To account for temporal variations in the articulation of the visemes between subjects only the frame of maximal lip movement for each of the visemes was selected for analysis. This frame was selected by direct observation and represented the point at which the upper and lower lips were most apart in the vertical plane for the visemes <bold>p</bold>uppy and <bold>b</bold>aby, where the commissures were at their widest for the visemes pupp<bold>y</bold> and bab<bold>y</bold>, and where the lips were at their most protrusive for the visemes <bold>r</bold>ope and b<bold>o</bold>b.</p>
+        <table-wrap id="pone-0057368-t001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0057368.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Phoneme to viseme mapping of the study words based on British English (visemes in bold).</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0057368-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0057368.t001" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Phoneme</td>
+                  <td align="left" rowspan="1" colspan="1">Description</td>
+                  <td align="left" rowspan="1" colspan="1">Viseme</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">/p/</td>
+                  <td align="left" rowspan="1" colspan="1">Plosive consonant</td>
+                  <td align="left" rowspan="1" colspan="1"><bold>p</bold>uppy</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">/b/</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"><bold>b</bold>aby</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">/i/</td>
+                  <td align="left" rowspan="1" colspan="1">Long vowel</td>
+                  <td align="left" rowspan="1" colspan="1">pupp<bold>y</bold></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">bab<bold>y</bold></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">/r/</td>
+                  <td align="left" rowspan="1" colspan="1">Approximant consonant</td>
+                  <td align="left" rowspan="1" colspan="1"><bold>r</bold>ope</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">/&lt;$&gt;\raster="rg1"&lt;$&gt;/</td>
+                  <td align="left" rowspan="1" colspan="1">Short vowel</td>
+                  <td align="left" rowspan="1" colspan="1">b<bold>o</bold>b</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <p>Six landmarks were manually placed around the lips for the facial shell of maximum lip movement for each viseme (<xref ref-type="fig" rid="pone-0057368-g001">Figure 1</xref>). The landmarks are defined in anthropometric studies as: labiale superius (ls) - the midpoint of the upper vermilion line, labiale inferius (li) – the midpoint of the lower vermilion line, crista philtri (cph L/R) – the point on the left and right elevated margins of the philtrum above the vermilion line and cheilion (ch L/R) – the point located at the left and right labial commissure <xref ref-type="bibr" rid="pone.0057368-Farkas1">[12]</xref>. Following identification, the x, y, z coordinates of the 6 lip landmarks were recorded for each of the seven visemes. Closely matched maximal frames were all landmarked and the frame showing the greatest displacement vector for the particular viseme (as detailed above) was included in the analysis.</p>
+        <sec id="s2b1">
+          <title>Landmarking error</title>
+          <p>Intra- and inter-examiner reproducibility of landmark placement has been previously assessed using mean distance error calculations <xref ref-type="bibr" rid="pone.0057368-Toma1">[13]</xref>. The range of total landmark distance error for both intra- and inter-examiner assessments was 0.6–1.39 mm <xref ref-type="bibr" rid="pone.0057368-Popat2">[14]</xref>.</p>
+        </sec>
+      </sec>
+      <sec id="s2c">
+        <title>Statistical analysis</title>
+        <p>Generalised Procrustes Analysis (GPA) was used to align the coordinates for all landmarks in the dataset. GPA is a rigid registration technique involving superimposition of landmark coordinates in optimal positions by means of their translation, rotation and scaling so as to minimise the sum of squared Euclidean distances <xref ref-type="bibr" rid="pone.0057368-Gower1">[15]</xref>. Following registration, a centroid representing the mean position for the six landmarks for each of the seven visemes was derived. Two standard deviations (SD) around each centroid (representing 95% of the variability in <italic>x</italic>, <italic>y</italic>, and <italic>z</italic> from the mean) were calculated for all individuals and plotted as ellipsoids in RAPIDFORM™ software (INUS Technology Inc., Seoul, South Korea). This enabled the variation in lip shape for the visemes to be visualised individually. The mean displacement vectors from rest to maximal lip shape for each of the visemes were also tabulated to quantify the shape changes in the ellipsoid plots.</p>
+        <p>Canonical Variate Analysis (CVA) was then carried out using the peak x, y, z coordinates as predictor variables entered into the model for all seven visemes simultaneously. Viseme groupings were specified <italic>a priori</italic>. CVA projects multivariate data in a manner that maximises the separation between three or more given groups <xref ref-type="bibr" rid="pone.0057368-Darlington1">[16]</xref>. It is an extension of discriminant analysis and for <italic>N</italic> groups (in this example, seven viseme groups) will produce <italic>N</italic> – 1 axes (here, six canonical variates) of diminishing importance. Eigenvalues explain the amount of variation in lip shape for a particular canonical variate (CV). Significance testing of the CVs was conducted at a threshold of p&lt;0.05 to provide a quantitative measure of which CVs statistically differentiated the visemes. CVA was carried out using SPSS 20.0.0 (SPSS Inc., Chicago, IL). Finally, the outcome measure for lip shape during speech was created by plotting the CV scores for each subject by viseme encompassed by 95% confidence intervals for those CVs that significantly differentiated the visemes.</p>
+      </sec>
+      <sec id="s2d">
+        <title>Data preparation</title>
+        <p>The use of CVA required the assumption of multivariate data normality and homogeneous variance-covariance matrices between groups to be satisfied <xref ref-type="bibr" rid="pone.0057368-Tabachnick1">[17]</xref>. Multivariate outliers were investigated using the Mahalanobis distance at a threshold of 42.3 <xref ref-type="bibr" rid="pone.0057368-Ahrens1">[18]</xref>. There were five multivariate outliers identified outside the threshold that were removed prior to CVA. Homogeneity of variance-covariance matrices was tested using Box's M Test. This was violated (p&lt;.001) and therefore separate-group covariance matrices were displayed for CVA.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <p><xref ref-type="fig" rid="pone-0057368-g002">Figure 2</xref> shows ellipsoid plots of each viseme from the resting lip shape (blue) to peak amplitude. <xref ref-type="table" rid="pone-0057368-t002">Tables 2</xref>, <xref ref-type="table" rid="pone-0057368-t003">3</xref>, <xref ref-type="table" rid="pone-0057368-t004">4</xref>, <xref ref-type="table" rid="pone-0057368-t005">5</xref>, <xref ref-type="table" rid="pone-0057368-t006">6</xref>, and <xref ref-type="table" rid="pone-0057368-t007">7</xref> show the mean displacement vectors (in mm) for each of the visemes visualised in <xref ref-type="fig" rid="pone-0057368-g001">Figure 1</xref>. As maximum landmark reproducibility error has been previously been recorded at 1.39 mm (SD = 0.57) only mean displacements greater than 2.0 mm are considered as contributors to their respective visemes.</p>
+      <fig id="pone-0057368-g002" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0057368.g002</object-id>
+        <label>Figure 2</label>
+        <caption>
+          <title>Ellipsoid plots showing variation in maximal lip movement from resting lip shape (blue).</title>
+        </caption>
+        <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0057368.g002" position="float" xlink:type="simple"/>
+      </fig>
+      <table-wrap id="pone-0057368-t002" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0057368.t002</object-id>
+        <label>Table 2</label>
+        <caption>
+          <title>Mean movement at peak amplitude for the viseme <bold>p</bold>uppy (bold highlights principal contributors &gt;2.0 mm).</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone-0057368-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0057368.t002" xlink:type="simple"/>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td colspan="2" align="left" rowspan="1">x</td>
+                <td colspan="2" align="left" rowspan="1">y</td>
+                <td colspan="2" align="left" rowspan="1">z</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Landmark</td>
+                <td align="left" rowspan="1" colspan="1">Mean</td>
+                <td align="left" rowspan="1" colspan="1">SD</td>
+                <td align="left" rowspan="1" colspan="1">Mean</td>
+                <td align="left" rowspan="1" colspan="1">SD</td>
+                <td align="left" rowspan="1" colspan="1">Mean</td>
+                <td align="left" rowspan="1" colspan="1">SD</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>ls</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">−0.16</td>
+                <td align="left" rowspan="1" colspan="1">0.86</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>−2.48</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2.32</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>−2.29</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2.29</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>li</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">−0.28</td>
+                <td align="left" rowspan="1" colspan="1">1.20</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>9.65</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">3.59</td>
+                <td align="left" rowspan="1" colspan="1">−0.05</td>
+                <td align="left" rowspan="1" colspan="1">2.75</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>cphL</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">−0.22</td>
+                <td align="left" rowspan="1" colspan="1">2.46</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>−3.05</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2.03</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>−2.15</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2.08</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>cphR</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">0.01</td>
+                <td align="left" rowspan="1" colspan="1">2.43</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>−3.46</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2.03</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>−2.17</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2.18</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>chL</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">−0.34</td>
+                <td align="left" rowspan="1" colspan="1">2.62</td>
+                <td align="left" rowspan="1" colspan="1">−0.24</td>
+                <td align="left" rowspan="1" colspan="1">2.54</td>
+                <td align="left" rowspan="1" colspan="1">0.25</td>
+                <td align="left" rowspan="1" colspan="1">2.87</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>chR</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">0.23</td>
+                <td align="left" rowspan="1" colspan="1">2.34</td>
+                <td align="left" rowspan="1" colspan="1">−0.19</td>
+                <td align="left" rowspan="1" colspan="1">2.52</td>
+                <td align="left" rowspan="1" colspan="1">0.90</td>
+                <td align="left" rowspan="1" colspan="1">2.58</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+      </table-wrap>
+      <table-wrap id="pone-0057368-t003" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0057368.t003</object-id>
+        <label>Table 3</label>
+        <caption>
+          <title>Mean movement at peak amplitude for the viseme pupp<bold>y</bold> (bold highlights principal contributors &gt;2.0 mm).</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone-0057368-t003-3" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0057368.t003" xlink:type="simple"/>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td colspan="2" align="left" rowspan="1">x</td>
+                <td colspan="2" align="left" rowspan="1">y</td>
+                <td colspan="2" align="left" rowspan="1">z</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Landmark</td>
+                <td align="left" rowspan="1" colspan="1">Mean</td>
+                <td align="left" rowspan="1" colspan="1">SD</td>
+                <td align="left" rowspan="1" colspan="1">Mean</td>
+                <td align="left" rowspan="1" colspan="1">SD</td>
+                <td align="left" rowspan="1" colspan="1">Mean</td>
+                <td align="left" rowspan="1" colspan="1">SD</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>ls</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">−0.26</td>
+                <td align="left" rowspan="1" colspan="1">0.84</td>
+                <td align="left" rowspan="1" colspan="1">1.53</td>
+                <td align="left" rowspan="1" colspan="1">2.24</td>
+                <td align="left" rowspan="1" colspan="1">−1.36</td>
+                <td align="left" rowspan="1" colspan="1">2.19</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>li</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">−0.27</td>
+                <td align="left" rowspan="1" colspan="1">1.10</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>7.63</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">3.06</td>
+                <td align="left" rowspan="1" colspan="1">0.36</td>
+                <td align="left" rowspan="1" colspan="1">2.81</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>cphL</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">−0.47</td>
+                <td align="left" rowspan="1" colspan="1">2.34</td>
+                <td align="left" rowspan="1" colspan="1">1.17</td>
+                <td align="left" rowspan="1" colspan="1">2.20</td>
+                <td align="left" rowspan="1" colspan="1">−1.22</td>
+                <td align="left" rowspan="1" colspan="1">2.11</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>cphR</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">−0.08</td>
+                <td align="left" rowspan="1" colspan="1">2.13</td>
+                <td align="left" rowspan="1" colspan="1">1.26</td>
+                <td align="left" rowspan="1" colspan="1">2.20</td>
+                <td align="left" rowspan="1" colspan="1">−1.31</td>
+                <td align="left" rowspan="1" colspan="1">2.17</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>chL</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">−1.27</td>
+                <td align="left" rowspan="1" colspan="1">2.95</td>
+                <td align="left" rowspan="1" colspan="1">0.64</td>
+                <td align="left" rowspan="1" colspan="1">2.80</td>
+                <td align="left" rowspan="1" colspan="1">0.23</td>
+                <td align="left" rowspan="1" colspan="1">2.86</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>chR</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">1.77</td>
+                <td align="left" rowspan="1" colspan="1">2.77</td>
+                <td align="left" rowspan="1" colspan="1">0.98</td>
+                <td align="left" rowspan="1" colspan="1">2.56</td>
+                <td align="left" rowspan="1" colspan="1">0.85</td>
+                <td align="left" rowspan="1" colspan="1">3.06</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+      </table-wrap>
+      <table-wrap id="pone-0057368-t004" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0057368.t004</object-id>
+        <label>Table 4</label>
+        <caption>
+          <title>Mean movement at peak amplitude for the viseme rope (bold highlights principal contributors &gt;2.0 mm).</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone-0057368-t004-4" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0057368.t004" xlink:type="simple"/>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td colspan="2" align="left" rowspan="1">x</td>
+                <td colspan="2" align="left" rowspan="1">y</td>
+                <td colspan="2" align="left" rowspan="1">z</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Landmark</td>
+                <td align="left" rowspan="1" colspan="1">Mean</td>
+                <td align="left" rowspan="1" colspan="1">SD</td>
+                <td align="left" rowspan="1" colspan="1">Mean</td>
+                <td align="left" rowspan="1" colspan="1">SD</td>
+                <td align="left" rowspan="1" colspan="1">Mean</td>
+                <td align="left" rowspan="1" colspan="1">SD</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>ls</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">−0.19</td>
+                <td align="left" rowspan="1" colspan="1">1.06</td>
+                <td align="left" rowspan="1" colspan="1">−1.54</td>
+                <td align="left" rowspan="1" colspan="1">2.41</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>−4.96</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">3.35</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>li</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">−0.14</td>
+                <td align="left" rowspan="1" colspan="1">1.20</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>7.55</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">3.41</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>−3.01</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">3.59</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>cphL</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">−0.23</td>
+                <td align="left" rowspan="1" colspan="1">2.47</td>
+                <td align="left" rowspan="1" colspan="1">−1.02</td>
+                <td align="left" rowspan="1" colspan="1">2.29</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>−4.49</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">3.20</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>cphR</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">−0.11</td>
+                <td align="left" rowspan="1" colspan="1">2.56</td>
+                <td align="left" rowspan="1" colspan="1">−1.04</td>
+                <td align="left" rowspan="1" colspan="1">2.30</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>−4.64</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">3.22</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>chL</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>3.68</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">3.03</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>2.29</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2.84</td>
+                <td align="left" rowspan="1" colspan="1">−1.31</td>
+                <td align="left" rowspan="1" colspan="1">4.68</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>chR</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>−4.17</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2.69</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>2.80</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">3.16</td>
+                <td align="left" rowspan="1" colspan="1">−1.47</td>
+                <td align="left" rowspan="1" colspan="1">4.52</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+      </table-wrap>
+      <table-wrap id="pone-0057368-t005" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0057368.t005</object-id>
+        <label>Table 5</label>
+        <caption>
+          <title>Mean movement at peak amplitude for the viseme baby (bold highlights principal contributors &gt;2.0 mm).</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone-0057368-t005-5" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0057368.t005" xlink:type="simple"/>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td colspan="2" align="left" rowspan="1">x</td>
+                <td colspan="2" align="left" rowspan="1">y</td>
+                <td colspan="2" align="left" rowspan="1">z</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Landmark</td>
+                <td align="left" rowspan="1" colspan="1">Mean</td>
+                <td align="left" rowspan="1" colspan="1">SD</td>
+                <td align="left" rowspan="1" colspan="1">Mean</td>
+                <td align="left" rowspan="1" colspan="1">SD</td>
+                <td align="left" rowspan="1" colspan="1">Mean</td>
+                <td align="left" rowspan="1" colspan="1">SD</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>ls</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">−0.22</td>
+                <td align="left" rowspan="1" colspan="1">0.95</td>
+                <td align="left" rowspan="1" colspan="1">−1.90</td>
+                <td align="left" rowspan="1" colspan="1">2.26</td>
+                <td align="left" rowspan="1" colspan="1">−1.14</td>
+                <td align="left" rowspan="1" colspan="1">1.86</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>li</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">0.01</td>
+                <td align="left" rowspan="1" colspan="1">1.18</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>9.06</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2.99</td>
+                <td align="left" rowspan="1" colspan="1">1.47</td>
+                <td align="left" rowspan="1" colspan="1">2.94</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>cphL</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">−0.58</td>
+                <td align="left" rowspan="1" colspan="1">1.92</td>
+                <td align="left" rowspan="1" colspan="1">−1.66</td>
+                <td align="left" rowspan="1" colspan="1">2.14</td>
+                <td align="left" rowspan="1" colspan="1">−0.92</td>
+                <td align="left" rowspan="1" colspan="1">1.86</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>cphR</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">0.11</td>
+                <td align="left" rowspan="1" colspan="1">1.82</td>
+                <td align="left" rowspan="1" colspan="1">−1.64</td>
+                <td align="left" rowspan="1" colspan="1">2.14</td>
+                <td align="left" rowspan="1" colspan="1">−1.03</td>
+                <td align="left" rowspan="1" colspan="1">1.88</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>chL</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">−1.45</td>
+                <td align="left" rowspan="1" colspan="1">2.37</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>2.55</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2.62</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>2.36</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2.86</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>chR</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">0.94</td>
+                <td align="left" rowspan="1" colspan="1">2.46</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>2.68</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2.62</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>2.54</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2.69</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+      </table-wrap>
+      <table-wrap id="pone-0057368-t006" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0057368.t006</object-id>
+        <label>Table 6</label>
+        <caption>
+          <title>Mean movement at peak amplitude for the viseme baby (bold highlights principal contributors &gt;2.0 mm).</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone-0057368-t006-6" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0057368.t006" xlink:type="simple"/>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td colspan="2" align="left" rowspan="1">x</td>
+                <td colspan="2" align="left" rowspan="1">y</td>
+                <td colspan="2" align="left" rowspan="1">z</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Landmark</td>
+                <td align="left" rowspan="1" colspan="1">Mean</td>
+                <td align="left" rowspan="1" colspan="1">SD</td>
+                <td align="left" rowspan="1" colspan="1">Mean</td>
+                <td align="left" rowspan="1" colspan="1">SD</td>
+                <td align="left" rowspan="1" colspan="1">Mean</td>
+                <td align="left" rowspan="1" colspan="1">SD</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>ls</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">−0.06</td>
+                <td align="left" rowspan="1" colspan="1">0.95</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>−2.38</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2.16</td>
+                <td align="left" rowspan="1" colspan="1">−0.49</td>
+                <td align="left" rowspan="1" colspan="1">1.91</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>li</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">0.24</td>
+                <td align="left" rowspan="1" colspan="1">1.27</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>5.50</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">3.01</td>
+                <td align="left" rowspan="1" colspan="1">1.15</td>
+                <td align="left" rowspan="1" colspan="1">2.76</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>cphL</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">−0.36</td>
+                <td align="left" rowspan="1" colspan="1">1.96</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>−2.07</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2.14</td>
+                <td align="left" rowspan="1" colspan="1">−0.37</td>
+                <td align="left" rowspan="1" colspan="1">1.86</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>cphR</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">0.11</td>
+                <td align="left" rowspan="1" colspan="1">1.78</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>−2.13</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2.13</td>
+                <td align="left" rowspan="1" colspan="1">−0.42</td>
+                <td align="left" rowspan="1" colspan="1">1.90</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>chL</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">−1.06</td>
+                <td align="left" rowspan="1" colspan="1">2.56</td>
+                <td align="left" rowspan="1" colspan="1">1.35</td>
+                <td align="left" rowspan="1" colspan="1">2.65</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>2.35</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2.65</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>chR</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">0.27</td>
+                <td align="left" rowspan="1" colspan="1">2.37</td>
+                <td align="left" rowspan="1" colspan="1">1.49</td>
+                <td align="left" rowspan="1" colspan="1">2.48</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>2.34</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2.67</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+      </table-wrap>
+      <table-wrap id="pone-0057368-t007" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0057368.t007</object-id>
+        <label>Table 7</label>
+        <caption>
+          <title>Mean movement at peak amplitude for the viseme bob (red highlights principal contributors &gt;2.0 mm).</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone-0057368-t007-7" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0057368.t007" xlink:type="simple"/>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td colspan="2" align="left" rowspan="1">x</td>
+                <td colspan="2" align="left" rowspan="1">y</td>
+                <td colspan="2" align="left" rowspan="1">z</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Landmark</td>
+                <td align="left" rowspan="1" colspan="1">Mean</td>
+                <td align="left" rowspan="1" colspan="1">SD</td>
+                <td align="left" rowspan="1" colspan="1">Mean</td>
+                <td align="left" rowspan="1" colspan="1">SD</td>
+                <td align="left" rowspan="1" colspan="1">Mean</td>
+                <td align="left" rowspan="1" colspan="1">SD</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>ls</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">−0.26</td>
+                <td align="left" rowspan="1" colspan="1">1.04</td>
+                <td align="left" rowspan="1" colspan="1">−1.18</td>
+                <td align="left" rowspan="1" colspan="1">2.69</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>−4.24</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2.90</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>li</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">0.01</td>
+                <td align="left" rowspan="1" colspan="1">1.10</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>7.93</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">3.81</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>−2.28</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">3.44</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>cphL</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">−0.16</td>
+                <td align="left" rowspan="1" colspan="1">2.01</td>
+                <td align="left" rowspan="1" colspan="1">−0.78</td>
+                <td align="left" rowspan="1" colspan="1">2.44</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>−3.99</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2.85</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>cphR</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">−0.11</td>
+                <td align="left" rowspan="1" colspan="1">1.99</td>
+                <td align="left" rowspan="1" colspan="1">−0.80</td>
+                <td align="left" rowspan="1" colspan="1">2.46</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>−3.95</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2.74</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>chL</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>3.00</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2.88</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>3.19</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2.73</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>−3.31</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">4.05</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>chR</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>−3.01</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2.70</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>3.40</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2.63</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>−2.58</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">3.82</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+      </table-wrap>
+      <p>The viseme <bold>p</bold>uppy can be described as principally a mean downward movement of the lower lip at <italic>li</italic> of up to 10 mm (<xref ref-type="table" rid="pone-0057368-t002">Table 2</xref>). There is an associated mean upward movement of the midline, left and right upper lip at <italic>ls</italic> and <italic>cph</italic> of approximately 3 mm. This equates to an overall mouth opening of 13 mm. In addition to the vertical component, there is also a slight mean protrusive movement of the upper lip at <italic>ls</italic> and <italic>cph</italic> of up to 2.5 mm. There is negligible movement in the lateral plane. Except for a downward movement of the lower lip at <italic>li</italic> of 7.63 mm, there were no other mean landmark displacements that exceeded 2 mm for the viseme pupp<bold><underline>y</underline></bold> (<xref ref-type="table" rid="pone-0057368-t003">Table 3</xref>).</p>
+      <p>The viseme <bold>r</bold>ope is principally composed of a downward movement of the lower lip at <italic>li</italic> with a mean of approximately 7.5 mm (<xref ref-type="table" rid="pone-0057368-t004">Table 4</xref>). There is an associated mean downward movement of the left and right commissures of up to 3 mm. The commissures narrow the mouth aperture through medial movement of <italic>chL</italic> and <italic>chR</italic>. All landmarks show a mean protrusive element although this was primarily related to the upper lip. The magnitude of the standard deviation particularly in the Z plane suggests that there is a wide variation in protrusive movement for this viseme.</p>
+      <p>The principal mean movement for the viseme <bold>b</bold>aby is a downward movement of the lower lip in the order of 9 mm (<xref ref-type="table" rid="pone-0057368-t005">Table 5</xref>). There is also a slight protrusive movement of the elevated margins of the upper lip. However this is only marginally above 2 mm in magnitude and the standard deviation suggests a high variation within the sample for these landmarks.</p>
+      <p>Mean landmark displacement for the viseme bab<bold>y</bold> involves a combination of downward movement of the lower lip and upward movement of the upper lip (<xref ref-type="table" rid="pone-0057368-t006">Table 6</xref>). This is in favour of the lower lip in an almost 2∶1 ratio. There is also a protrusive element to the corners of the mouth, but in a similar finding to the preceding viseme, the magnitude is only marginally over 2 mm and as the standard deviation is relatively high, the variation in the sample is wide.</p>
+      <p>In a similar manner to <bold>r</bold>ope, the viseme b<bold>o</bold>b shows strong protrusive elements for all landmarks in the z plane (<xref ref-type="table" rid="pone-0057368-t007">Table 7</xref>). In addition, there is contribution from <italic>li</italic> to mouth opening in the order of almost 8 mm. The corners of the mouth appear to move towards each other as well as moving downwards. Standard deviations for all principal contributors are relatively high implying a wider degree of variation in movement for the sample.</p>
+      <sec id="s3a">
+        <title>Canonical variate analysis</title>
+        <p>Six CVs were revealed through the analysis with the first explaining 72.8% of the variance, whereas the second explained only 17.2% (<xref ref-type="table" rid="pone-0057368-t008">Table 8</xref>). In total, the first two CVs accounted for 90% of the variance with CV3-6 explaining the remaining 10%. The significance of the model was tested as a whole, following which each variate was removed in turn to see whether the variates that remained were considered significant (<xref ref-type="table" rid="pone-0057368-t009">Table 9</xref>). This showed that in combination, the first four CVs significantly discriminated the seven visemes. Despite this, scatterplots of the CV scores for each subject labeled by viseme showed that only CV1 and CV2 clearly differentiated the seven lip shapes (<xref ref-type="fig" rid="pone-0057368-g003">Figure 3</xref>). Encompassed by 95% confidence interval ellipses, the plot shows a wide variation in resting lip shape (red). A shift along the Y-axis (CV2) marks the change from resting lip shape to utterance articulation. Progression along the X-axis (CV1) differentiates the utterances. <bold>P</bold>uppy (blue) appeared to be the most distinct viseme whereas overlap of the 95% confidence interval ellipses suggested that <bold>r</bold>ope (brown) and b<bold>o</bold>b (yellow), and <bold>b</bold>aby (green) and bab<bold>y</bold> (grey) were extremely similar in peak lip shape.</p>
+        <fig id="pone-0057368-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0057368.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Scatterplot of CV Scores for CV1-2 labelled by viseme.</title>
+            <p>Red cross = resting. Blue square = <bold>p</bold>uppy. Purple circle = pupp<bold>y</bold>. Yellow triangle = <bold>r</bold>ope. Green bar = <bold>b</bold>aby. Grey triangle = bab<bold>y</bold>. Brown bar = b<bold>o</bold>b.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0057368.g003" position="float" xlink:type="simple"/>
+        </fig>
+        <table-wrap id="pone-0057368-t008" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0057368.t008</object-id>
+          <label>Table 8</label>
+          <caption>
+            <title>Summary of canonical variates.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0057368-t008-8" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0057368.t008" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CV</td>
+                  <td align="left" rowspan="1" colspan="1">Eigenvalue</td>
+                  <td align="left" rowspan="1" colspan="1">Variance (%)</td>
+                  <td align="left" rowspan="1" colspan="1">Cumulative (%)</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">2.21</td>
+                  <td align="left" rowspan="1" colspan="1">72.8</td>
+                  <td align="left" rowspan="1" colspan="1">72.8</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">0.52</td>
+                  <td align="left" rowspan="1" colspan="1">17.2</td>
+                  <td align="left" rowspan="1" colspan="1">90.1</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">0.19</td>
+                  <td align="left" rowspan="1" colspan="1">6.5</td>
+                  <td align="left" rowspan="1" colspan="1">96.6</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">0.09</td>
+                  <td align="left" rowspan="1" colspan="1">3.0</td>
+                  <td align="left" rowspan="1" colspan="1">99.6</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                  <td align="left" rowspan="1" colspan="1">0.00</td>
+                  <td align="left" rowspan="1" colspan="1">0.2</td>
+                  <td align="left" rowspan="1" colspan="1">99.9</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">6</td>
+                  <td align="left" rowspan="1" colspan="1">0.00</td>
+                  <td align="left" rowspan="1" colspan="1">0.1</td>
+                  <td align="left" rowspan="1" colspan="1">100.0</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <table-wrap id="pone-0057368-t009" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0057368.t009</object-id>
+          <label>Table 9</label>
+          <caption>
+            <title>Significance testing of canonical variates.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0057368-t009-9" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0057368.t009" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Test of Variates</td>
+                  <td align="left" rowspan="1" colspan="1">Significance</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1 through 6</td>
+                  <td align="left" rowspan="1" colspan="1">0.00</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">2 through 6</td>
+                  <td align="left" rowspan="1" colspan="1">0.00</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">3 through 6</td>
+                  <td align="left" rowspan="1" colspan="1">0.00</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">4 through 6</td>
+                  <td align="left" rowspan="1" colspan="1">0.00</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">5 through 6</td>
+                  <td align="left" rowspan="1" colspan="1">0.98</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">6</td>
+                  <td align="left" rowspan="1" colspan="1">0.95</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <p>The pooled within-groups correlations between the landmark coordinates and CVs are shown in <xref ref-type="table" rid="pone-0057368-t010">Table 10</xref>. Coordinates are ordered by absolute size of their correlation within a CV. The largest absolute correlations between each coordinate and the first four CVs are highlighted. CV2, which explained 17.2% of the variance in the sample and was the variate that differentiated resting lip shape from articulation of the utterances and correlated with midline lip protrusion (<italic>ls</italic> Z and <italic>li</italic> Z) and vertical opening at the commissures (<italic>chL</italic> Y and <italic>chR</italic> Y). CV1, which explained 72.8% of the variance, differentiated between the difference visemes and correlated with changes in vertical mouth opening (<italic>ls</italic> Y, <italic>li</italic> Y, <italic>cphL</italic> Y and <italic>cphR</italic> Y) and mouth width (<italic>chL</italic> X and <italic>chR</italic> X).</p>
+        <table-wrap id="pone-0057368-t010" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0057368.t010</object-id>
+          <label>Table 10</label>
+          <caption>
+            <title>Correlations between landmark coordinates and CVs (significant CVs in bold).</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0057368-t010-10" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0057368.t010" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Coordinate</td>
+                  <td colspan="6" align="left" rowspan="1">CV</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                  <td align="left" rowspan="1" colspan="1">6</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">ls Y</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>0.76</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">−0.23</td>
+                  <td align="left" rowspan="1" colspan="1">−0.28</td>
+                  <td align="left" rowspan="1" colspan="1">−0.01</td>
+                  <td align="left" rowspan="1" colspan="1">−0.03</td>
+                  <td align="left" rowspan="1" colspan="1">−0.21</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">li Y</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>−0.70</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">0.01</td>
+                  <td align="left" rowspan="1" colspan="1">0.51</td>
+                  <td align="left" rowspan="1" colspan="1">0.30</td>
+                  <td align="left" rowspan="1" colspan="1">0.10</td>
+                  <td align="left" rowspan="1" colspan="1">0.16</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">cphL Y</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>0.67</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">−0.38</td>
+                  <td align="left" rowspan="1" colspan="1">−0.17</td>
+                  <td align="left" rowspan="1" colspan="1">−0.26</td>
+                  <td align="left" rowspan="1" colspan="1">−0.02</td>
+                  <td align="left" rowspan="1" colspan="1">−0.09</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">cphR Y</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>0.66</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">−0.35</td>
+                  <td align="left" rowspan="1" colspan="1">−0.22</td>
+                  <td align="left" rowspan="1" colspan="1">−0.12</td>
+                  <td align="left" rowspan="1" colspan="1">−0.27</td>
+                  <td align="left" rowspan="1" colspan="1">0.11</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">chR X</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>0.51</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">−0.50</td>
+                  <td align="left" rowspan="1" colspan="1">0.08</td>
+                  <td align="left" rowspan="1" colspan="1">−0.24</td>
+                  <td align="left" rowspan="1" colspan="1">−0.35</td>
+                  <td align="left" rowspan="1" colspan="1">−0.40</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">chL X</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>−0.50</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">0.46</td>
+                  <td align="left" rowspan="1" colspan="1">0.38</td>
+                  <td align="left" rowspan="1" colspan="1">0.30</td>
+                  <td align="left" rowspan="1" colspan="1">−0.12</td>
+                  <td align="left" rowspan="1" colspan="1">−0.25</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">chL Y</td>
+                  <td align="left" rowspan="1" colspan="1">−0.25</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>0.52</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">−0.35</td>
+                  <td align="left" rowspan="1" colspan="1">−0.02</td>
+                  <td align="left" rowspan="1" colspan="1">0.21</td>
+                  <td align="left" rowspan="1" colspan="1">0.05</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">ls Z</td>
+                  <td align="left" rowspan="1" colspan="1">0.34</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>−0.50</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">0.16</td>
+                  <td align="left" rowspan="1" colspan="1">0.04</td>
+                  <td align="left" rowspan="1" colspan="1">−0.24</td>
+                  <td align="left" rowspan="1" colspan="1">0.01</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">chR Y</td>
+                  <td align="left" rowspan="1" colspan="1">−0.29</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>0.47</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">−0.15</td>
+                  <td align="left" rowspan="1" colspan="1">−0.28</td>
+                  <td align="left" rowspan="1" colspan="1">−0.11</td>
+                  <td align="left" rowspan="1" colspan="1">−0.23</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">cphR Z</td>
+                  <td align="left" rowspan="1" colspan="1">0.41</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>−0.45</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">0.41</td>
+                  <td align="left" rowspan="1" colspan="1">0.11</td>
+                  <td align="left" rowspan="1" colspan="1">0.21</td>
+                  <td align="left" rowspan="1" colspan="1">0.23</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">li Z</td>
+                  <td align="left" rowspan="1" colspan="1">−0.27</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>0.35</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">0.32</td>
+                  <td align="left" rowspan="1" colspan="1">−0.30</td>
+                  <td align="left" rowspan="1" colspan="1">0.04</td>
+                  <td align="left" rowspan="1" colspan="1">0.12</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">cphR X</td>
+                  <td align="left" rowspan="1" colspan="1">0.10</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>0.28</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">−0.04</td>
+                  <td align="left" rowspan="1" colspan="1">−0.10</td>
+                  <td align="left" rowspan="1" colspan="1">0.04</td>
+                  <td align="left" rowspan="1" colspan="1">0.08</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">chL Z</td>
+                  <td align="left" rowspan="1" colspan="1">−0.11</td>
+                  <td align="left" rowspan="1" colspan="1">0.14</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>−0.78</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">0.22</td>
+                  <td align="left" rowspan="1" colspan="1">0.27</td>
+                  <td align="left" rowspan="1" colspan="1">0.08</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">cphL Z</td>
+                  <td align="left" rowspan="1" colspan="1">0.26</td>
+                  <td align="left" rowspan="1" colspan="1">−0.30</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>0.53</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">−0.24</td>
+                  <td align="left" rowspan="1" colspan="1">−0.13</td>
+                  <td align="left" rowspan="1" colspan="1">0.17</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">li X</td>
+                  <td align="left" rowspan="1" colspan="1">−0.04</td>
+                  <td align="left" rowspan="1" colspan="1">−0.02</td>
+                  <td align="left" rowspan="1" colspan="1">−0.35</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>−0.48</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">−0.01</td>
+                  <td align="left" rowspan="1" colspan="1">0.45</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">ls X</td>
+                  <td align="left" rowspan="1" colspan="1">0.06</td>
+                  <td align="left" rowspan="1" colspan="1">−0.04</td>
+                  <td align="left" rowspan="1" colspan="1">0.27</td>
+                  <td align="left" rowspan="1" colspan="1">−0.06</td>
+                  <td align="left" rowspan="1" colspan="1">0.66</td>
+                  <td align="left" rowspan="1" colspan="1">0.41</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">chR Z</td>
+                  <td align="left" rowspan="1" colspan="1">−0.16</td>
+                  <td align="left" rowspan="1" colspan="1">.016</td>
+                  <td align="left" rowspan="1" colspan="1">−0.32</td>
+                  <td align="left" rowspan="1" colspan="1">0.22</td>
+                  <td align="left" rowspan="1" colspan="1">−0.21</td>
+                  <td align="left" rowspan="1" colspan="1">−0.50</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">cphL X</td>
+                  <td align="left" rowspan="1" colspan="1">−0.03</td>
+                  <td align="left" rowspan="1" colspan="1">−0.26</td>
+                  <td align="left" rowspan="1" colspan="1">−0.24</td>
+                  <td align="left" rowspan="1" colspan="1">0.26</td>
+                  <td align="left" rowspan="1" colspan="1">0.24</td>
+                  <td align="left" rowspan="1" colspan="1">0.29</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>In this study, a sample of 115 <italic>average</italic> subjects was used to model ordinary lip movement for different visemes. When reviewing the literature for databases that have used 3D data to construct profiles of average facial movement, a benchmark of approximately 100 subjects has been quoted <xref ref-type="bibr" rid="pone.0057368-Savran1">[19]</xref>, <xref ref-type="bibr" rid="pone.0057368-Gupta1">[20]</xref>. In this respect, the number of participants recruited can be considered acceptable.</p>
+      <p>The 115 subjects were asked to say four utterance or verbal gestures. Many previous studies have utilised non-verbal gestures such as facial expressions as a measure of lip/facial movement <xref ref-type="bibr" rid="pone.0057368-Johnston1">[21]</xref>, <xref ref-type="bibr" rid="pone.0057368-Sawyer1">[22]</xref>. Clinically, the facial gesture that is used should be reproducible over time so that it is performed as near to the same way each occasion with as little variation as possible. In this respect, the effect of a clinical intervention on facial movement can be truly quantified. Previous research suggests that verbal facial gestures are more reproducible over time than non-verbal <xref ref-type="bibr" rid="pone.0057368-Popat3">[23]</xref> and therefore verbal gestures were adopted for this study. Furthermore, the words chosen are bilabial speech postures <xref ref-type="bibr" rid="pone.0057368-Duffy1">[24]</xref> stimulating the lip articulators and have a clinical connotation being used in cleft speech assessments <xref ref-type="bibr" rid="pone.0057368-Sell1">[25]</xref>.</p>
+      <p>Only the maximum frame of lip movement was analysed in this study partly due to temporal variations in the articulation of visemes between the subjects. In addition, the time required to manually landmark all the facial shells in a sequence would result in several thousand images to process, which was considered unfeasible. Therefore peak lip shape was considered as a comparable point in time across the sample. Clearly the choice of maximal frame could influence the outcome of the results and the reliability of choosing this frame was not investigated. However, given the relatively high frame capture rate of 48 frames per second, a one-frame discrepancy is unlikely to skew the results significantly <xref ref-type="bibr" rid="pone.0057368-Qifeng1">[26]</xref>. Another aspect of only choosing the maximal frame for analysis is that information on speech and trajectory of the visemes is unavailable. As automated methods of image registration and landmark identification/tracking are developed, the capacity for larger volumes of data to be analysed will increase <xref ref-type="bibr" rid="pone.0057368-Sidorov1">[27]</xref>.</p>
+      <p>Once the x, y, z data from the facial shells had been extracted, GPA ensured that all coordinates were aligned in the same 3D space, which compensated for head movements during articulation. Other studies have used head frames to introduce immobile reference points to compensate for head movements <xref ref-type="bibr" rid="pone.0057368-Mishima1">[28]</xref>, but using GPA eliminates this requirement. The other advantage of the GMM approach is that the coordinates of the landmarks are statistically analysed rather than inter-landmark distances. This allows the results of the statistical analyses to be visualised as deformations of landmark configurations thereby increasing the sensitivity as more shape information is analysed <xref ref-type="bibr" rid="pone.0057368-Hennessy1">[29]</xref>.</p>
+      <p>The CVA model showed that the visemes <bold>r</bold>ope and b<bold>o</bold>b, and <bold>b</bold>aby and bab<bold>y</bold> were essentially the same (showing concentric 95% confidence intervals), and therefore from a clinical perspective only the most reproducible visemes could be retained. The clear separation of the visemes along CV1 represents potential for use as a clinical outcome measure. Data from a single patient or patient groups can be analysed in a similar manner to the GMM approach described and projected onto the average CVA model. Abnormal lip movement could be identified and indeed quantified by the distance of the patient data from the 95% confidence interval of the average model thereby acting as a diagnostic tool during clinical examinations and as a functional outcome measure following an intervention/rehabilitation. Despite basing the clinical model on verbal utterances implying that the data is specific to the geographical area and language it could also act as a template to compare lip shape/movement from different populations.</p>
+    </sec>
+    <sec id="s5">
+      <title>Conclusion</title>
+      <p>An average model has been created for lip shape during movement through two canonical variates; one of which distinguishes resting lip shape from the four utterances and the other discriminates between the four utterances. The method utilises pre-existing statistical shape analysis and can be reproduced in the clinical setting to provide a diagnostic and functional outcome tool.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0057368-Dawes1">
+        <label>1</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dawes</surname><given-names>KS</given-names></name>, <name name-style="western"><surname>Kelly</surname><given-names>SW</given-names></name> (<year>2005</year>) <article-title>An instrument for the non-invasive assessment of lip function during speech</article-title>. <source>Medical Engineering &amp; Physics</source> <volume>27</volume>: <fpage>523</fpage>–<lpage>535</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Pearson1">
+        <label>2</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pearson</surname><given-names>D</given-names></name> (<year>1981</year>) <article-title>Visual Communication Systems for the Deaf</article-title>. <source>IEEE Transactions on Communications</source> <volume>29</volume>: <fpage>1986</fpage>–<lpage>1992</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Aleksic1">
+        <label>3</label>
+        <mixed-citation publication-type="book" xlink:type="simple">Aleksic PS, Potamianos G, Katsaggelos AK (2009) Audiovisual Speech Processing. In: Bovik AC, editor. The Essential Guide to Video Processing. London: Academic Press.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Hans1">
+        <label>4</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hans</surname><given-names>MG</given-names></name>, <name name-style="western"><surname>Broadbent</surname><given-names>BHJ</given-names></name>, <name name-style="western"><surname>Nelson</surname><given-names>SS</given-names></name> (<year>1994</year>) <article-title>The Broadbent-Bolton Growth Study–past, present, and future</article-title>. <source>American Journal of Orthodontics and Dentofacial Orthopedics</source> <volume>105</volume>: <fpage>598</fpage>–<lpage>603</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Kau1">
+        <label>5</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kau</surname><given-names>CH</given-names></name>, <name name-style="western"><surname>Richmond</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Palomo</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Hans</surname><given-names>MG</given-names></name> (<year>2005</year>) <article-title>Three-dimensional cone beam computerized tomography in orthodontics</article-title>. <source>Journal of Orthodontics</source> <volume>32</volume>: <fpage>282</fpage>–<lpage>293</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-House1">
+        <label>6</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>House</surname><given-names>JW</given-names></name> (<year>1983</year>) <article-title>Facial nerve grading systems</article-title>. <source>Laryngoscope</source> <volume>93</volume>: <fpage>1056</fpage>–<lpage>1069</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Wood1">
+        <label>7</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wood</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Hughes</surname><given-names>G</given-names></name>, <name name-style="western"><surname>TL</surname><given-names>G</given-names></name> (<year>1994</year>) <article-title>Objective measurement of normal facial movement with video microscaling</article-title>. <source>American Journal of Otology</source> <volume>15</volume>: <fpage>61</fpage>–<lpage>65</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Neely1">
+        <label>8</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Neely</surname><given-names>JG</given-names></name>, <name name-style="western"><surname>Wang</surname><given-names>KX</given-names></name>, <name name-style="western"><surname>Shapland</surname><given-names>CA</given-names></name>, <name name-style="western"><surname>Sehizadeh</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Wang</surname><given-names>A</given-names></name> (<year>2010</year>) <article-title>Computerized objective measurement of facial motion: normal variation and test-retest reliability</article-title>. <source>Otology and Neurotology</source> <volume>31</volume>: <fpage>1488</fpage>–<lpage>1492</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Sjogreen1">
+        <label>9</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sjogreen</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Lohmander</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Kiliaridis</surname><given-names>S</given-names></name> (<year>2011</year>) <article-title>Exploring quantitative methods for evaluation of lip function</article-title>. <source>Journal of Oral Rehabilitation</source> <volume>38</volume>: <fpage>410</fpage>–<lpage>422</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Popat1">
+        <label>10</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Popat</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Richmond</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Benedikt</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Marshall</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Rosin</surname><given-names>PL</given-names></name> (<year>2009</year>) <article-title>Quantitative analysis of facial movement-a review of three-dimensional imaging techniques</article-title>. <source>Computerized Medical Imaging and Graphics</source> <volume>33</volume>: <fpage>377</fpage>–<lpage>383</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Roach1">
+        <label>11</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Roach</surname><given-names>P</given-names></name> (<year>2004</year>) <article-title>British English: Received Pronunciation</article-title>. <source>Journal of the International Phonetic Association</source> <volume>34</volume>: <fpage>239</fpage>–<lpage>245</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Farkas1">
+        <label>12</label>
+        <mixed-citation publication-type="book" xlink:type="simple">Farkas LG (1994) Anthropometry of the Head and Face. New York: Lippincott-Raven. 405 p.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Toma1">
+        <label>13</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Toma</surname><given-names>AM</given-names></name>, <name name-style="western"><surname>Zhurov</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Playle</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Ong</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Richmond</surname><given-names>S</given-names></name> (<year>2009</year>) <article-title>Reproducibility of facial soft tissue landmarks on 3D laser-scanned facial images</article-title>. <source>Orthodontics and Craniofacial Research</source> <volume>12</volume>: <fpage>33</fpage>–<lpage>42</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Popat2">
+        <label>14</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Popat</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Zhurov</surname><given-names>AI</given-names></name>, <name name-style="western"><surname>Toma</surname><given-names>AM</given-names></name>, <name name-style="western"><surname>Richmond</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Marshall</surname><given-names>D</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Statistical modelling of lip movement in the clinical context</article-title>. <source>Orthod Craniofac Res</source> <volume>15</volume>: <fpage>92</fpage>–<lpage>102</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Gower1">
+        <label>15</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gower</surname><given-names>JC</given-names></name> (<year>1975</year>) <article-title>Generalized Procrustes Analysis</article-title>. <source>Psychometrika</source> <volume>40</volume>: <fpage>33</fpage>–<lpage>51</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Darlington1">
+        <label>16</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Darlington</surname><given-names>RB</given-names></name>, <name name-style="western"><surname>Weinberg</surname><given-names>SL</given-names></name>, <name name-style="western"><surname>Walberg</surname><given-names>HJ</given-names></name> (<year>1973</year>) <article-title>Canonical Variate Analysis and Related Techniques</article-title>. <source>Review of Educational Research</source> <volume>43</volume>: <fpage>433</fpage>–<lpage>454</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Tabachnick1">
+        <label>17</label>
+        <mixed-citation publication-type="book" xlink:type="simple">Tabachnick BG, Fidell LS (2007) Principal components and factor analysis. In: Hartman S, editor. Multivariate statistics. 5th ed. Boston: Allyn &amp; Bacon. pp. 607–675.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Ahrens1">
+        <label>18</label>
+        <mixed-citation publication-type="book" xlink:type="simple">Ahrens H (1958) Critical Values of Chi Square. In: Pearson ES, Hartley HO, editors. Biometrika Tables for Statisticians. 3rd ed. New York: Cambridge University Press.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Savran1">
+        <label>19</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Savran</surname><given-names>A</given-names></name>, <name name-style="western"><surname>AlyÄuz</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Dibeklioglu</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Celiktutan</surname><given-names>O</given-names></name>, <name name-style="western"><surname>GÄokberk</surname><given-names>B</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>Bosphorus database for 3D face analysis</article-title>. <source>Biometrics and Identity Management</source> <volume>5372</volume>: <fpage>47</fpage>–<lpage>56</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Gupta1">
+        <label>20</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gupta</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Markey</surname><given-names>MK</given-names></name>, <name name-style="western"><surname>Bovik</surname><given-names>CA</given-names></name> (<year>2010</year>) <article-title>Anthropometric 3D Face Recognition</article-title>. <source>International Journal of Computer Vision</source> <volume>90</volume>: <fpage>331</fpage>–<lpage>349</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Johnston1">
+        <label>21</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Johnston</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Millett</surname><given-names>DT</given-names></name>, <name name-style="western"><surname>Ayoub</surname><given-names>AF</given-names></name> (<year>2003</year>) <article-title>Are Facial Expressions Reproducible?</article-title> <source>Cleft Palate Craniofacial Journal</source> <volume>40</volume>: <fpage>291</fpage>–<lpage>296</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Sawyer1">
+        <label>22</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sawyer</surname><given-names>AR</given-names></name>, <name name-style="western"><surname>See</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Nduka</surname><given-names>C</given-names></name> (<year>2009</year>) <article-title>Assessment of the reproducibility of facial expressions with 3-D stereophotogrammetry</article-title>. <source>Otolarnygology Head and Neck Surgery</source> <volume>140</volume>: <fpage>76</fpage>–<lpage>81</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Popat3">
+        <label>23</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Popat</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Henley</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Richmond</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Benedikt</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Marshall</surname><given-names>D</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>A comparison of the reproducibility of verbal and non-verbal facial gestures using three-dimensional motion analysis</article-title>. <source>Otolaryngology - Head and Neck Surgery</source> <volume>142</volume>: <fpage>867</fpage>–<lpage>872</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Duffy1">
+        <label>24</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Duffy</surname><given-names>J</given-names></name> (<year>1995</year>) <article-title>Motor speech disorders : substrates, differential diagnosis, and management</article-title>. <source>St Louis: Mosby, Inc</source></mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Sell1">
+        <label>25</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sell</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Harding</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Grunwell</surname><given-names>P</given-names></name> (<year>1999</year>) <article-title>GOS.SP.ASS.'98: an assessment for speech disorders associated with cleft palate and/or velopharyngeal dysfunction (revised)</article-title>. <source>International Journal of Language and Communication Disorders</source> <volume>34</volume>: <fpage>17</fpage>–<lpage>33</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Qifeng1">
+        <label>26</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Qifeng</surname><given-names>Z</given-names></name>, <name name-style="western"><surname>Alwan</surname><given-names>A</given-names></name> <article-title>On the use of variable frame rate analysis in speech recognition; 2000;</article-title>. <source>Istanbul, Turkey</source> <fpage>1783</fpage>–<lpage>1786</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Sidorov1">
+        <label>27</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sidorov</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Richmond</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Marshall</surname><given-names>D</given-names></name> (<year>2011</year>) <article-title>Efficient Groupwise Non-rigid Registration of Textured Surfaces</article-title>. <source>Proceedings of the International Conference on Computer Vision and Pattern Recognition</source> <fpage>2401</fpage>–<lpage>2408</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Mishima1">
+        <label>28</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mishima</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Yamada</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Ohura</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Sugahara</surname><given-names>T</given-names></name> (<year>2006</year>) <article-title>Production of a range image for facial motion analysis: A method for analyzing lip motion</article-title>. <source>Computerized Medical Imaging and Graphics</source> <volume>30</volume>: <fpage>53</fpage>–<lpage>59</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0057368-Hennessy1">
+        <label>29</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hennessy</surname><given-names>RJ</given-names></name>, <name name-style="western"><surname>Moss</surname><given-names>JP</given-names></name> (<year>2001</year>) <article-title>Facial growth: separating shape from size</article-title>. <source>European Journal of Orthodontics</source> <volume>23</volume>: <fpage>275</fpage>–<lpage>285</lpage>.</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

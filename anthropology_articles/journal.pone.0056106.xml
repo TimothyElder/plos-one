@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="publisher-id">PONE-D-12-26679</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0056106</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Computational biology</subject>
+            <subj-group>
+              <subject>Natural language processing</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Computer science</subject>
+          <subj-group>
+            <subject>Natural language processing</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Social and behavioral sciences</subject>
+          <subj-group>
+            <subject>Anthropology</subject>
+            <subj-group>
+              <subject>Cultural anthropology</subject>
+              <subj-group>
+                <subject>Natural language</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Linguistic anthropology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Communications</subject>
+            <subj-group>
+              <subject>Natural language</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Linguistics</subject>
+            <subj-group>
+              <subject>Natural language</subject>
+              <subject>Psycholinguistics</subject>
+              <subject>Sociolinguistics</subject>
+              <subject>Structural linguistics</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Computational Biology</subject>
+          <subject>Computer Science</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Use of Semantic Information to Interpret Thematic Information for Real-Time Sentence Comprehension in an SOV Language</article-title>
+        <alt-title alt-title-type="running-head">Semantic Information for Sentence Comprehension</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Yokoyama</surname>
+            <given-names>Satoru</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Takahashi</surname>
+            <given-names>Kei</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Kawashima</surname>
+            <given-names>Ryuta</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Institute of Development, Aging, and Cancer, Tohoku University, Sendai City, Miyagi prefecture, Japan</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Graduate School of International Cultural Studies, Tohoku University, Sendai City, Miyagi prefecture, Japan</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Paterson</surname>
+            <given-names>Kevin</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>University of Leicester, United Kingdom</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">yokoyama@idac.tohoku.ac.jp</email></corresp>
+        <fn fn-type="conflict">
+          <p>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: SY KT RK. Performed the experiments: SY KT. Analyzed the data: SY. Contributed reagents/materials/analysis tools: SY KT. Wrote the paper: SY.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>8</day>
+        <month>2</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>8</volume>
+      <issue>2</issue>
+      <elocation-id>e56106</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>21</day>
+          <month>8</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>4</day>
+          <month>1</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Yokoyama et al</copyright-holder>
+        <license xlink:type="simple">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Recently, sentence comprehension in languages other than European languages has been investigated from a cross-linguistic perspective. In this paper, we examine whether and how animacy-related semantic information is used for real-time sentence comprehension in a SOV word order language (i.e., Japanese). Twenty-three Japanese native speakers participated in this study. They read semantically reversible and non-reversible sentences with canonical word order, and those with scrambled word order. In our results, the second argument position in reversible sentences took longer to read than that in non-reversible sentences, indicating that animacy information is used in second argument processing. In contrast, for the predicate position, there was no difference in reading times, suggesting that animacy information is NOT used in the predicate position. These results are discussed using the sentence comprehension models of an SOV word order language.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>This work was supported by JSPS KAKENHI grant number 23720192. The funder had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="6"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Recently, sentence comprehension in languages other than European languages has been investigated from a cross-linguistic perspective. In particular, while a large number of studies have already examined the English language so far, the number of studies focusing on the Japanese language, which has many characteristics that differ from the English language, has been increasing <xref ref-type="bibr" rid="pone.0056106-Kamide1">[1]</xref>–<xref ref-type="bibr" rid="pone.0056106-Wolff1">[9]</xref>. Between English and Japanese, there are mainly two points related to sentence comprehension that differ: one is the canonical word order (English: SVO; Japanese: SOV), the other is the case marking system (English: word order; Japanese: case particles). Such differences have been assumed to reflect different processing strategies during sentence comprehension between these two languages <xref ref-type="bibr" rid="pone.0056106-Bornkessel1">[10]</xref>, <xref ref-type="bibr" rid="pone.0056106-Chujo1">[11]</xref>. However, the number of studies of sentence comprehension in SOV languages, including the Japanese language, remains small, suggesting that the mechanism of sentence comprehension in SOV languages is still unclear. Hence, to totally cover the human language processing mechanism, it is necessary to investigate the sentence comprehension mechanism in SOV languages.</p>
+      <p>So far, to our knowledge, there are only two models to explain simplex sentence comprehension in the Japanese language: that of Chujo (1983) <xref ref-type="bibr" rid="pone.0056106-Yokoyama2">[12]</xref> and that of Yokoyama et al. (2012) <xref ref-type="bibr" rid="pone.0056106-Chujo1">[11]</xref>. Chujo's Japanese simplex sentence comprehension model proposes that the word order of arguments, the case particle of arguments, and the relationship between arguments and predicate are all used to comprehend a simplex sentence. When the first noun is input, word order information is used. For example, when <italic>John</italic> is input, this noun is interpreted as an actor, as described above. When a case particle follows the first noun, case particle information is used. Since case particle information is superior to the use of word order information, the argument interpretation previously constructed by word order information is revised. For example, when <italic>John-o</italic> (o is an accusative case particle in Japanese) is input, firstly <italic>John</italic> is interpreted as an actor by word order information. But, when <italic>o</italic> is input, <italic>John</italic> is re-interpreted as an undergoer. Finally, when a predicate is input, if there is a discrepancy between the previously constructed argument interpretation and one constructed by the relationship between argument and predicate, the latter information is used and the argument interpretation is revised. For example, when <italic>John-o Mary-ga Hometa</italic> (Mary praised John) is input, since <italic>Hometa</italic> requires a human actor and any undergoer, and <italic>John-o</italic> and <italic>Mary-ga</italic> fulfill the requirement, no revision is necessary and sentence comprehension is completed.</p>
+      <p>Yokoyama et al.'s model is based on recent works examining previous psycholinguistic and neurolinguistic studies of Japanese sentence comprehension, and is called the partial incremental argument interpretation (PIAI) model. It is like an extended version of Chujo's model, adding some newly obtained findings from recent studies. Basically, in this model, the use of the above three sources of information is the same, but the order of priority and the timing of the use differ from those in Chujo's model. In the PIAI model, if there is a case particle, the case particle information is preferentially used. If there is no case particle, the animacy information of the argument is used. If neither case particle nor animacy information is used, word order information is used. When these kinds of information are used, no revision is required, which differs from Chujo's model. For example, when <italic>John-o</italic> is input, this model predicts that no revision is necessary to re-interpret it as an undergoer rather than an actor. Instead, this model predicts that the first argument is not immediately processed. When both the first and second arguments are input, they are interpreted by using the above three kinds of information. For example, when <italic>John-o Mary-ga</italic> is input, since case particles exist, <italic>John</italic> and <italic>Mary</italic> are interpreted as an undergoer and an actor, respectively. If there are no case particles, for example, when <italic>John pen</italic> is input, by using animacy information, <italic>John</italic> is interpreted as an actor, because it is an animate noun, and <italic>pen</italic> as an undergoer, because it is an inanimate noun. In Chujo's model, semantic information is assumed to be used at the time of predicate processing, while the PIAI model assumes that semantic information is used during argument processing, before predicate processing. In addition, in the latter model, the treatment of the <italic>ni</italic> case particle, which is a dative case particle, differs from that in Chujo's model. While Chujo's model did not mention how <italic>ni</italic> is processed, the PIAI model predicts that a <italic>ni</italic>-marked argument is not immediately processed but rather at the time of predicate processing, differently from the nominative case particle <italic>ga</italic> and the accusative case particle <italic>o</italic>.</p>
+      <p>However, so far, while the use of animacy information has been confirmed in the off-line questionnaire environment <xref ref-type="bibr" rid="pone.0056106-Ferreira1">[13]</xref>, there is no evidence supporting the assumption that animacy information is used for an incremental interpretation of arguments before inputting the predicate in the timeline of a real-time sentence comprehension situation. Regarding the use of animacy information, it is well-known that semantically reversible sentences are more difficult to comprehend than the corresponding non-reversible sentences, due to the animacy information of the arguments <xref ref-type="bibr" rid="pone.0056106-Ferreira1">[13]</xref>–<xref ref-type="bibr" rid="pone.0056106-Slobin1">[17]</xref>. This difficulty may be caused by the multiple possible interpretations of ‘who does what to whom’ information in the thematic role assignment of the subject and object in reversible sentences in comparison to non-reversible sentences. For example, there are at least two semantic possibilities for thematic role assignment in reversible sentences such as <italic>the boy praised the girl</italic>. One is that the actor is <italic>the boy</italic> and the undergoer is <italic>the girl</italic>. Another is that the actor is <italic>the girl</italic> and the undergoer is <italic>the boy</italic>. In contrast, in non-reversible sentences such as <italic>the boy touched the table</italic>, it is impossible to interpret <italic>the table</italic> as the actor in the thematic role assignment. Hence, since reversible sentence comprehension places less of a constraint on the thematic role assignment of the subject and the object than the corresponding non-reversible one, it is easier to understand non-reversible sentences than reversible sentences.</p>
+      <p>One recent study regarding reversible sentence comprehension was done by Ferreira <xref ref-type="bibr" rid="pone.0056106-Ferreira1">[13]</xref>, and it compared English reversible sentence comprehension with that of non-reversible sentences. In this study, reversible passive sentences (e.g., the dog was bitten by the fox) were misinterpreted by English native speakers. Participants in the study were asked to listen to a stimulus sentence and, afterwards, answer a question regarding who does what to whom, where, and when with regard to the presented stimulus sentence. Unfortunately, it is hard to indicate when participants show difficulty in real-time reversible sentence comprehension.</p>
+      <p>Furthermore, to our knowledge, there have been only a few studies examining reversible sentence comprehension in the Japanese language. Itoh et al. found that Japanese native speakers used animacy information in argument interpretation as well as case particles <xref ref-type="bibr" rid="pone.0056106-Ito1">[18]</xref>. For example, in Japanese, it is possible to drop a case particle, as in <italic>Taro Keeki Tabetayo</italic> (Taro ate the cake). Itoh et al. reported that Japanese native speakers interpreted Taro as the actor and <italic>Keeki</italic> as the undergoer for comprehension of <italic>Keeki Taro Tabetayo</italic>, suggesting that Japanese native speakers used the animacy information of <italic>Taro</italic> and <italic>Keeki</italic> to process these argument interpretations in a no-case particle environment. This finding leads us to postulate that reversibility affects Japanese sentence comprehension as well as English sentence comprehension. A Japanese sentence comprehension model such as Yokoyama et al. (2012) <xref ref-type="bibr" rid="pone.0056106-Ito1">[18]</xref> is based on this finding in terms of the incremental process of arguments before inputting a predicate or verb. However, since that study used the off-line questionnaire method, it is still unclear whether animacy information is used for real-time processing of reversible sentences in the Japanese language or not.</p>
+      <p>Regarding real-time sentence comprehension, there exists only one study examining reversible sentence comprehension in the Japanese language. Suzuki used a self-paced listening task and compared reaction times for each sentence position of the subject, object, and verb in semantically reversible sentences with canonical word order (hereafter, reversible canonical sentences) such as <italic>Inu-ga Buta-o Tatakimashita</italic> (the dog hit the pig), reversible sentences with scrambled word order (hereafter, reversible scrambled sentences) such as <italic>Buta-o Inu-ga Tatakimashita</italic>, non-reversible canonical sentences such as <italic>Kitsune-ga Ichigo-o Tabemashita</italic> (the fox ate the strawberry), and non-reversible scrambled sentences such as <italic>Ichigo-o Kitsune-ga Tabemashita</italic> <xref ref-type="bibr" rid="pone.0056106-Suzuki1">[19]</xref>. That study reported that a semantic reversibility effect was observed at both the second argument position and the verb position. However, since actually used words were critically different between reversible and non-reversible sentences, at least the main effect of the object (e.g., <italic>Buta</italic>: the pig, and <italic>Ichigo</italic>: the strawberry) in reversibility is not enough to test the reversibility effect. In order to indicate that there is a reversibility effect, it is necessary to test the interaction of reversibility×word order in his study. Unfortunately, he found no interaction of reversibility×word order in all positions. This suggests that in a SOV language such as Japanese, reversibility presents no real difficulty for real-time sentence comprehension, which conflicts with the findings of Itoh et al. (1993) <xref ref-type="bibr" rid="pone.0056106-Ito1">[18]</xref>.</p>
+      <p>One possible reason why there is a discrepancy between the findings of Itoh et al. (1993) <xref ref-type="bibr" rid="pone.0056106-Ito1">[18]</xref> and those from Suzuki (2008) <xref ref-type="bibr" rid="pone.0056106-Suzuki1">[19]</xref> is the experimental method used in Suzuki (2008) <xref ref-type="bibr" rid="pone.0056106-Suzuki1">[19]</xref>. The most plausible reason we can think of is that the self-paced “listening” task used in Suzuki (2008) <xref ref-type="bibr" rid="pone.0056106-Suzuki1">[19]</xref> is not natural enough to see the reversibility effect in real-time sentence comprehension. Although there is, as Suzuki (2008) <xref ref-type="bibr" rid="pone.0056106-Suzuki1">[19]</xref> stated, a previous study suggesting that a self-paced “listening” task shows similar results to eye-tracking experiments for real-time sentence comprehension, the speed of the listening process cannot be controlled in actual daily life, since speakers control the speed of the utterances. In contrast, a self-paced reading task, which has often been used in real-time sentence comprehension studies, is more natural than the self-paced listening task, since the reading process can usually be controlled by the reader. Hence, it is conceivable that a self-paced “listening” task could cause problems when examining real-time reversible sentence comprehension.</p>
+      <p>Consequently, the purpose of the current study is to examine whether animacy information is used for real-time sentence comprehension in the Japanese language or not. To this end, we used a self-paced “reading” task, which is more natural than a self-paced listening task, and Japanese reversible canonical, reversible scrambled, non-reversible canonical, and non-reversible scrambled sentences as stimuli. By using this task and these stimuli, we tested the following research question derived from previous simplex sentence comprehension models: Is animacy information used during real-time sentence comprehension or not? Chujo's model predicts that semantic information such as animacy information is used in the predicate, since this model proposes that when a predicate is input, if there is a discrepancy between the previously constructed argument interpretation and one constructed by the relationship between argument and predicate, the latter information is used and the argument interpretation is revised. Additionally, this model does not propose that such semantic information is used during argument processing before input of the predicate. Hence, Chujo's model predicts that animacy information is not used in argument processing, but in predicate processing. In contrast, the PIAI model proposes that, in the second argument, the thematic information process begins by using case particle information, animacy information, or word order information, while animacy information is not used in predicate processing. Hence, the PIAI model predicts that animacy information is used in argument processing before input of the predicate, but not in predicate processing.</p>
+      <p>To test this issue, four types of stimulus sentences were used: reversible canonical sentences, reversible scrambled sentences, non-reversible canonical sentences, and non-reversible scrambled sentences [see (1)–(4) below]. These were categorized into four conditions, as follows:</p>
+      <list list-type="order">
+        <list-item>
+          <p>Reversible canonical sentence</p>
+          <list list-type="simple">
+            <list-item>
+              <p>Kinoo sono-dansei-ga sono-otokonoko-o home-ta-rashii.</p>
+            </list-item>
+            <list-item>
+              <p>Yesterday the man-NOM the boy-ACC praise-PAST-AUX.</p>
+            </list-item>
+            <list-item>
+              <p>Yesterday, the man seemed to praise the boy.</p>
+            </list-item>
+          </list>
+        </list-item>
+        <list-item>
+          <p>Reversible scrambled sentence</p>
+          <list list-type="simple">
+            <list-item>
+              <p>Kinoo sono-otokonoko-o sono-dansei-ga home-ta-rashii.</p>
+            </list-item>
+            <list-item>
+              <p>Yesterday the boy-ACC the man-NOM praise-PAST-AUX.</p>
+            </list-item>
+            <list-item>
+              <p>Yesterday, the man seemed to praise the boy.</p>
+            </list-item>
+          </list>
+        </list-item>
+        <list-item>
+          <p>Non-reversible canonical sentence</p>
+          <list list-type="simple">
+            <list-item>
+              <p>Senshuu sono-onnanoko-ga sono-hon-o yon-da-souda.</p>
+            </list-item>
+            <list-item>
+              <p>Last week the girl-NOM the book-ACC read-PAST-AUX</p>
+            </list-item>
+            <list-item>
+              <p>Last week, the girl seemed to read the book.</p>
+            </list-item>
+          </list>
+        </list-item>
+        <list-item>
+          <p>Non-reversible scrambled sentence</p>
+          <list list-type="simple">
+            <list-item>
+              <p>Senshuu sono-hon-o sono-onnanoko-ga yon-da-souda.</p>
+            </list-item>
+            <list-item>
+              <p>Last week the book-ACC the girl-NOM read-PAST-AUX</p>
+            </list-item>
+            <list-item>
+              <p>Last week, the girl seemed to read the book.</p>
+            </list-item>
+          </list>
+        </list-item>
+      </list>
+      <p>Then, in order to first test whether animacy information is used in argument processing before input of the predicate, we compared the reading times of the second argument between the reversible scrambled and non-reversible scrambled sentences. In Japanese, arguments can be interchanged. For example, in the sentence with canonical word order <italic>Taroo-ga Pan-o Tabe-ta</italic> (Taroo ate bread), these two arguments (Taroo-ga and Pan-o) are interchangeable without a change in meaning. By using this phenomenon, we can directly compare the reading times of the second argument (e.g., <italic>Taroo-ga</italic>) between the reversible scrambled sentences (e.g., <italic>Pan-o Taroo-ga Tabeta</italic>) and the non-reversible scrambled sentences (e.g., <italic>Hanako-o Taroo-ga Hometa</italic>) because of the common lexical item (i.e., <italic>Taroo-ga</italic>). If the animacy information of the first argument is used to reduce the possible thematic role assignment patterns of the second argument in real-time sentence comprehension, the second argument in the scrambled non-reversible sentence would be easier to comprehend than that in the scrambled reversible sentence.</p>
+      <p>Secondly, in order to test whether animacy information is used in predicate processing, we examined the interaction between the reversibility factor (i.e., reversible vs. non-reversible) and the scrambling factor (i.e., canonical vs. scrambled) among the reversible canonical, non-reversible canonical, reversible scrambled, and non-reversible scrambled sentences. Since the verbs are basically different between reversible and non-reversible sentences, it is hard to directly compare the reading times of the verb/predicate between these two types of sentences. Hence, to control the difference of verbs/predicates between the two, we used a 2×2 design with the scrambling factor and reversibility factor, and tested their interaction. Basically, scrambled sentences are harder to process than the corresponding canonical sentences in the Japanese language <xref ref-type="bibr" rid="pone.0056106-Mazuka1">[2]</xref>, <xref ref-type="bibr" rid="pone.0056106-Koizumi1">[5]</xref>, <xref ref-type="bibr" rid="pone.0056106-Kim1">[20]</xref>. If the animacy information of arguments is used in predicate processing, the scrambling effect between the canonical non-reversible and scrambled reversible sentences would be larger than that between the canonical reversible and scrambled reversible sentences; in other words, animacy information would reduce the possible thematic role assignment patterns so that predicates in non-reversible sentences are easier to comprehend.</p>
+    </sec>
+    <sec id="s2" sec-type="methods">
+      <title>Methods</title>
+      <p>Twenty-three Japanese native speakers (two female; mean age: 21.1, SD = 0.8) participated in this experiment. Written informed consent was obtained from each subject in accordance with the guidelines approved by the Tohoku University School of Medicine and the Helsinki Declaration of Human Rights, 1975.</p>
+      <p>Each target sentence consisted of two arguments (a subject marked by a nominative case particle and an object marked by an accusative case particle) and a verb followed by an auxiliary verb such as <italic>souda, youda</italic>, and <italic>rashii</italic>, which represent the meaning of a guess. Also, all sentences started with an adverb representing time such as kinoo (yesterday). All of the animate nouns were <italic>sono-dansei</italic>, <italic>sono-josei</italic>, <italic>sono-otokonoko</italic>, and <italic>sono-onnanoko</italic> (that man, that woman, that boy, and that girl, respectively), and these items were counter-balanced across all conditions <xref ref-type="bibr" rid="pone.0056106-Meltzer1">[21]</xref>. Inanimate nouns in non-reversible sentences were like <italic>hako</italic> (box), <italic>tsukue</italic> (desk), <italic>teeburu</italic> (table), <italic>isu</italic> (chair), <italic>kabe</italic> (wall), and so on, which are high-frequency words in the Japanese language. Based on the above items, four types of stimulus sentences were created: reversible canonical sentences, reversible scrambled sentences, non-reversible canonical sentences, and non-reversible scrambled sentences (see (1)–(4) above).</p>
+      <p>Thirty-two items were prepared as target stimuli for this experiment. Additionally, fifty-four filler items were prepared, which were not included in the data analysis. The filler items comprised transitive sentences, scrambled sentences, sentences including a relative clause, passive sentences, and scrambled passive sentences. The words used were similar to those of the target sentences.</p>
+      <p>The experiment was conducted with a Windows-based notebook computer running E-prime 2.0 (PST Inc., Pittsburgh, PA) software. Participants were timed in a phrase-by-phrase (a phrase is defined as a noun with a case particle, a verb, an auxiliary verb, or adverb in this experiment), self-paced, non-cumulative moving-window reading task <xref ref-type="bibr" rid="pone.0056106-Just1">[22]</xref>. Stimuli initially appeared as dots with intervening spaces indicating the segments, and participants pressed the enter key to reveal each subsequent region of the sentence, in turn causing the present region to revert to dots. At the end of each sentence, a yes/no question appeared on a new screen. All sentences fit on a single line and were presented without line breaks. Participants answered by pressing either the y or n key. No feedback was provided. Before this experiment, participants read written instructions and completed eight practice trials. The experiment took the participants approximately 30 minutes.</p>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <p>Here, in order to easily identify examples of each condition, we would like to show an example for each condition again. Also, we added “/” to show how to present stimuli to participants by using phrase-by-phrase manner.</p>
+      <list list-type="order">
+        <list-item>
+          <p>Reversible canonical sentence</p>
+          <list list-type="simple">
+            <list-item>
+              <p>Kinoo/sono-dansei-ga/sono-otokonoko-o/home-ta-rashii.</p>
+            </list-item>
+            <list-item>
+              <p>Yesterday the man-NOM the boy-ACC praise-PAST-AUX.</p>
+            </list-item>
+            <list-item>
+              <p>Yesterday, the man seemed to praise the boy.</p>
+            </list-item>
+          </list>
+        </list-item>
+        <list-item>
+          <p>Reversible scrambled sentence</p>
+          <list list-type="simple">
+            <list-item>
+              <p>Kinoo/sono-otokonoko-o/sono-dansei-ga/home-ta-rashii.</p>
+            </list-item>
+            <list-item>
+              <p>Yesterday the boy-ACC the man-NOM praise-PAST-AUX.</p>
+            </list-item>
+            <list-item>
+              <p>Yesterday, the man seemed to praise the boy.</p>
+            </list-item>
+          </list>
+        </list-item>
+        <list-item>
+          <p>Non-reversible canonical sentence</p>
+          <list list-type="simple">
+            <list-item>
+              <p>Senshuu/sono-onnanoko-ga/sono-hon-o/yon-da-souda.</p>
+            </list-item>
+            <list-item>
+              <p>Last week the girl-NOM the book-ACC read-PAST-AUX</p>
+            </list-item>
+            <list-item>
+              <p>Last week, the girl seemed to read the book.</p>
+            </list-item>
+          </list>
+        </list-item>
+        <list-item>
+          <p>Non-reversible scrambled sentence</p>
+          <list list-type="simple">
+            <list-item>
+              <p>Senshuu/sono-hon-o/sono-onnanoko-ga/yon-da-souda.</p>
+            </list-item>
+            <list-item>
+              <p>Last week the book-ACC the girl-NOM read-PAST-AUX</p>
+            </list-item>
+            <list-item>
+              <p>Last week, the girl seemed to hit the woman.</p>
+            </list-item>
+          </list>
+        </list-item>
+      </list>
+      <p>Regarding the accuracy rates of probe questions, ANOVA showed the statistical significance of all main effects of scrambling (F(1,22) = 22.02, p&lt;0.002) and reversibility (F(1,22) = 23.48, p&lt;0.001), and their interaction (F(1,22) = 4.84, p&lt;0.05). Overall, scrambled sentences were harder to comprehend than the corresponding canonical ones, and reversible sentences were harder to comprehend than the corresponding non-reversible ones. These results are consistent with previous findings <xref ref-type="bibr" rid="pone.0056106-Koizumi1">[5]</xref>, <xref ref-type="bibr" rid="pone.0056106-Tamaoka1">[6]</xref>, <xref ref-type="bibr" rid="pone.0056106-Wolff1">[9]</xref>, <xref ref-type="bibr" rid="pone.0056106-Kemper1">[14]</xref>.</p>
+      <p>Before performing the analysis of reading times, reaction times outside of 3.5 standard deviations (SD) at both the high and low ranges were replaced to the maximum or minimum by boundaries indicated by 3.5 SD from the individual means of participants in each category, according to previous studies <xref ref-type="bibr" rid="pone.0056106-Koizumi1">[5]</xref>, <xref ref-type="bibr" rid="pone.0056106-Tamaoka1">[6]</xref>. This procedure affected less than 2% of all data. The statistical tests analyzed both subject (F1) and item (F2) variability. Only stimulus items for which participants provided correct responses were used in the analyses of reading times. The accuracy rates and reading times described above are shown in <xref ref-type="table" rid="pone-0056106-t001">Table 1</xref>. Based on our experimental hypotheses, we conducted two statistical tests.</p>
+      <table-wrap id="pone-0056106-t001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0056106.t001</object-id>
+        <label>Table 1</label>
+        <caption>
+          <title>Results.</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone-0056106-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0056106.t001" xlink:type="simple"/>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td colspan="3" align="left" rowspan="1">Accuracy rates of probe question (%)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">Mean</td>
+                <td align="left" rowspan="1" colspan="1">SD</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Reversible/Canonical</td>
+                <td align="left" rowspan="1" colspan="1">91.3</td>
+                <td align="left" rowspan="1" colspan="1">12.7</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Reversible/Scrambled</td>
+                <td align="left" rowspan="1" colspan="1">77.71</td>
+                <td align="left" rowspan="1" colspan="1">22.2</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Non-reversible/Canonical</td>
+                <td align="left" rowspan="1" colspan="1">99.45</td>
+                <td align="left" rowspan="1" colspan="1">2.6</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Non-reversible/Scrambled</td>
+                <td align="left" rowspan="1" colspan="1">95.65</td>
+                <td align="left" rowspan="1" colspan="1">1.8</td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td colspan="3" align="left" rowspan="1">Reading times for the second argument position (ms)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">Mean</td>
+                <td align="left" rowspan="1" colspan="1">SD</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Reversible</td>
+                <td align="left" rowspan="1" colspan="1">997</td>
+                <td align="left" rowspan="1" colspan="1">218</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Non-reversible</td>
+                <td align="left" rowspan="1" colspan="1">1189</td>
+                <td align="left" rowspan="1" colspan="1">216</td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td colspan="3" align="left" rowspan="1">Reading times for the verb position (ms)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">Mean</td>
+                <td align="left" rowspan="1" colspan="1">SD</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Reversible/Canonical</td>
+                <td align="left" rowspan="1" colspan="1">899</td>
+                <td align="left" rowspan="1" colspan="1">268</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Reversible/Scrambled</td>
+                <td align="left" rowspan="1" colspan="1">998</td>
+                <td align="left" rowspan="1" colspan="1">335</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Non-reversible/Canonical</td>
+                <td align="left" rowspan="1" colspan="1">626</td>
+                <td align="left" rowspan="1" colspan="1">151</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Non-reversible/Scrambled</td>
+                <td align="left" rowspan="1" colspan="1">719</td>
+                <td align="left" rowspan="1" colspan="1">242</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+      </table-wrap>
+      <p>The first is an ANOVA of reading times of the second argument between the reversible scrambled and the non-reversible scrambled sentences. Our results showed that the reading times of the second argument for the non-reversible scrambled sentences were shorter than those for the reversible scrambled sentences (F1(1,22) = 14.79, p&lt;0.001, F2(1,31) = 9.93, p&lt;0.05). This indicates that the animacy information of the first argument is used to reduce the possible thematic role assignment patterns of the second argument in real-time sentence comprehension, as the PIAI model predicted. This data is shown in <xref ref-type="fig" rid="pone-0056106-g001">Fig. 1</xref>.</p>
+      <fig id="pone-0056106-g001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0056106.g001</object-id>
+        <label>Figure 1</label>
+        <caption>
+          <title>Reading times at the second argument position.</title>
+          <p>Mean reading times for the second argument between the reversible scrambled sentence and the non-reversible scrambled sentence conditions. Error bar denotes standard mean error.</p>
+        </caption>
+        <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0056106.g001" position="float" xlink:type="simple"/>
+      </fig>
+      <p>The second is a 2×2 ANOVA of reading times at the predicate position with the reversibility factor and the scrambling factor among the reversible canonical, non-reversible canonical, reversible scrambled, and non-reversible scrambled sentences. In our results, the main effects of both the reversibility and scrambling factors were statistically significant (reversibility factor: F1(1,22) = 43.20, p&lt;0.001; F2(1,31) = 20.96, p&lt;0.005; scrambling factor: F1(1,22) = 6.80, p&lt;0.05; F2(1,31) = 22.96, p&lt;0.005). In contrast, there was no statistical significance in their interaction (F1(1,22) = 0.17, p = 0.89, F2(1,31) = 0.28, p = 0.61), in which reversible sentences showed no different scrambling effect from the corresponding non-reversible sentences. This indicates that the animacy information of arguments is not used in predicate processing. This data is shown in <xref ref-type="fig" rid="pone-0056106-g002">Fig. 2</xref>.</p>
+      <fig id="pone-0056106-g002" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0056106.g002</object-id>
+        <label>Figure 2</label>
+        <caption>
+          <title>Reading times at the verb position.</title>
+          <p>Mean reading times for the predicate among four conditions: reversible canonical, non-reversible canonical, reversible scrambled, and non-reversible scrambled sentences. Error bar denotes standard mean error.</p>
+        </caption>
+        <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0056106.g002" position="float" xlink:type="simple"/>
+      </fig>
+      <p>Note that we do not show any other statistical results of reading times at other positions, since they are not related to the purpose of the present study. To be more specific, at the first argument position, there is no concrete purpose and hypothesis to directly compare reading times among four conditions.</p>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>The purpose of the current study was to examine whether animacy information is used in real-time sentence comprehension in the Japanese language or not. To this end, by using a self-paced reading task, we first tested whether animacy information is used at the second argument position during real-time sentence comprehension or not, and, secondly, whether animacy information is used at the predicate position during real-time sentence comprehension or not. Our results indicate that the animacy information of the first argument is used to reduce the possible thematic role assignment patterns of the second argument in real-time sentence comprehension, as the PIAI model predicted. Regarding the second hypothesis, our results do not provide any evidence to support the hypothesis that the animacy information of arguments is used in predicate processing, as the PIAI model also predicted. First, we would like to discuss the interpretation of our results.</p>
+      <p>Regarding the first test that animacy information is used at the second argument position during real-time sentence comprehension, because of the same lexical item (i.e., <italic>Taroo-ga</italic>), we can directly compare the reading times of the second argument (e.g., <italic>Taroo-ga</italic>) between the reversible scrambled sentences (e.g., <italic>Pan-wo Taroo-ga Tabeta</italic>) and the non-reversible scrambled sentences (e.g., <italic>Hanako-wo Taroo-ga Hometa</italic>). Between these two conditions, the differences are found in their first argument (e.g., <italic>Pan-wo</italic> and <italic>Hanako-wo</italic>) and their predicate (e.g., <italic>Tabeta</italic> and <italic>Hometa</italic>). At the second argument position, their predicates are not presented, since Japanese is a SOV language which has a predicate at the end of a clause or sentence. Since we observed a statistically significant difference in the reading times of the second argument between the two conditions, even when the same lexical item was presented, this difference should be caused by the difference of the first argument. Since the reading time of the second argument in non-reversible scrambled sentences was shorter than that in reversible scrambled sentences, the results strongly support the hypothesis that the animacy information of the first argument reduces the possible thematic role assignment patterns of the second argument, indicating that animacy information is used at the second argument position during real-time sentence comprehension. The above result is consistent with previous findings that showed reversible sentences are harder to understand <xref ref-type="bibr" rid="pone.0056106-Ferreira1">[13]</xref>–<xref ref-type="bibr" rid="pone.0056106-Slobin1">[17]</xref>.</p>
+      <p>Regarding the second test that animacy information is not used at the predicate position during real-time sentence comprehension, verbs are basically different between reversible and non-reversible sentences. Hence, to control the difference of verbs/predicates between the two conditions, we used a 2×2 design with a reversibility factor and a scrambling factor, and tested their interaction. Consistent with previous findings that scrambled sentences are harder to process than the corresponding canonical sentences in Japanese <xref ref-type="bibr" rid="pone.0056106-Mazuka1">[2]</xref>, <xref ref-type="bibr" rid="pone.0056106-Koizumi1">[5]</xref>, <xref ref-type="bibr" rid="pone.0056106-Kim1">[20]</xref>, we found longer reading times of predicates in the scrambled sentence condition than in the canonical sentence condition. Also, we found longer reading times of predicates in the reversible sentence condition than in the non-reversible sentence condition, but these results are relatively meaningless with respect to the second hypothesis, since compared lexical items themselves differ between the two conditions, as described in the <xref ref-type="sec" rid="s1">Introduction</xref>. To this end, we tested the interaction between the scrambling and reversibility factors, and we did not find any statistical significance. Since we did find statistically significant main effects for both the reversibility and scrambling factors, it may be impossible to explain that the non-statistical significance found in the interaction effect is due to the small number of subjects or to less statistical power. Hence, our results suggest that animacy information is not used at the predicate position during real-time sentence comprehension.</p>
+      <p>Next, we would like to discuss our results in the context of the Japanese simplex sentence comprehension models. As described above, both of the experimental results reported here support the predictions of the PIAI model, but not those of Chujo's model. The PIAI model predicts that the animacy information of arguments is used in the processing of the argument before input of the predicate. Actually, our results showed that, in the second argument position, the non-reversible sentence condition is easier to comprehend than the reversible sentence condition. This supports the PIAI model prediction that the animacy information of the first argument is used to reduce the possible thematic role assignment patterns of the second argument in real-time sentence comprehension, so that non-reversible sentences with fewer possible thematic patterns are easier to understand than reversible sentences with more possible thematic patterns. In addition, we found the reversibility factor had no effect on the processing of the predicate, suggesting that during the latter, the integration/completion of sentence comprehension does not require or use the animacy information of arguments. In the PIAI model, since the animacy information in arguments has not been assumed to be used in the processing of the predicate, our results support its prediction as well.</p>
+      <p>However, there is at least one remaining issue with regard to the use of animacy information in sentence comprehension: whether the animacy information of the first argument is used for the processing of the first argument or not. While our results indicate that the animacy information of the first argument is used to interpret the second argument, our experiment cannot examine whether the animacy information of the first argument is used for the processing of the first argument or not. The reason is that in our experiment, the accusative-marked argument (i.e., <italic>o</italic>-marked argument) differs between the reversible and non-reversible sentence conditions in terms of the lexical item (e.g., animate nouns in the reversible sentences, but inanimate nouns in the non-reversible sentences). This means that we cannot directly compare the reading times between the two. Since, in order to test this issue, we have to control the lexical items, it is necessary to conduct another experiment.</p>
+    </sec>
+    <sec id="s5">
+      <title>Conclusions</title>
+      <p>The purpose of the current study was to examine whether animacy information is used in real-time sentence comprehension in the Japanese language, which is one of SOV languages, or not. To this end, by using a self-paced reading task, we tested whether animacy information is used in the second argument position during real-time sentence comprehension or not, and whether animacy information is used in the predicate position during real-time sentence comprehension or not. Our results support the PIAI model predictions but not Chujo's model predictions. In order to comprehend a sentence in SOV languages, readers/listeners cannot use information from a predicate at the beginning of sentence comprehension, which differs from the case in SVO languages. To cover all of the human sentence comprehension mechanisms, it is necessary to examine which points differ between SVO and SOV languages, and which points are the same between the two.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0056106-Kamide1">
+        <label>1</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kamide</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Mitchell</surname><given-names>DC</given-names></name> (<year>1999</year>) <article-title>Incremental Pre-head Attachment in Japanese Parsing</article-title>. <source>Lang Cogn Proc</source> <volume>14</volume>: <fpage>631</fpage>–<lpage>662</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056106-Mazuka1">
+        <label>2</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Mazuka R, Ito K, Kondo T (2002) Costs of scrambling in Japanese sentence processing. In M. Nakayama (Ed), Sentence processing in East Asian languages pp. 167–188. CA.: CSLI publications.</mixed-citation>
+      </ref>
+      <ref id="pone.0056106-Miyamoto1">
+        <label>3</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Miyamoto</surname><given-names>ET</given-names></name> (<year>2002</year>) <article-title>Case markers as clause boundary inducers in Japanese</article-title>. <source>J Psycholing Res</source> <volume>31</volume>: <fpage>307</fpage>–<lpage>347</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056106-Miyamoto2">
+        <label>4</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Miyamoto</surname><given-names>ET</given-names></name> (<year>2003</year>) <article-title>Reanalysis of Clause Boundaries in Japanese as a Constraint-Driven Process</article-title>. <source>Lang Speech</source> <volume>46</volume>: <fpage>23</fpage>–<lpage>52</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056106-Koizumi1">
+        <label>5</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Koizumi</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Tamaoka</surname><given-names>T</given-names></name> (<year>2004</year>) <article-title>Cognitive processing of Japanese setences with ditransitive verbs</article-title>. <source>Gengo kenkyu</source> <volume>125</volume>: <fpage>173</fpage>–<lpage>190</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056106-Tamaoka1">
+        <label>6</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tamaoka</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Sakai</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Kawahara</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Miyaoka</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Hyunjung</surname><given-names>L</given-names></name>, <etal>et al</etal>. (<year>2005</year>) <article-title>Priority information used for the processing of Japanese sentences: Thematic roles, case particles or grammatical functions?</article-title> <source>J Psycholing Res</source> <volume>34</volume>: <fpage>281</fpage>–<lpage>332</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056106-Oishi1">
+        <label>7</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Oishi H, Yasunaga D, Sakamoto T (2007) Revision process in Japanese sentence processing: Evidence from event-related brain potentials. In TSakamoto (Ed.), Communicating Skills of Intention. Hituzi Shobo, pp. 367–381.</mixed-citation>
+      </ref>
+      <ref id="pone.0056106-Yokoyama1">
+        <label>8</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yokoyama</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Watanabe</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Iwata</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Ikuta</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Haji</surname><given-names>T</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Is Broca's area involved in the processing of passive sentences? An event-related fMRI study</article-title>. <source>Neuropsychologia</source> <volume>45</volume>: <fpage>989</fpage>–<lpage>996</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056106-Wolff1">
+        <label>9</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wolff</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Schlesewsky</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Hirotani</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Bornkessel-Schlesewsky</surname><given-names>I</given-names></name> (<year>2008</year>) <article-title>The neural mechanisms of word order processing revisited: electrophysiological evidence from Japanese</article-title>. <source>Brain Lang</source> <volume>107</volume>: <fpage>133</fpage>–<lpage>157</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056106-Bornkessel1">
+        <label>10</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bornkessel</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Schlesewsky</surname><given-names>M</given-names></name> (<year>2006</year>) <article-title>The Extended Argument Dependency Model: A Neurocognitive Approach to Sentence Comprehension Across Languages</article-title>. <source>Psychol Rev</source> <volume>113</volume>: <fpage>787</fpage>–<lpage>821</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056106-Chujo1">
+        <label>11</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chujo</surname><given-names>K</given-names></name> (<year>1983</year>) <article-title>The interrelationships among strategies for sentence comprehension</article-title>. <source>The Japanese Journal of Psychology</source> <volume>54</volume>: <fpage>250</fpage>–<lpage>256</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056106-Yokoyama2">
+        <label>12</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Yokoyama S, Yoshimoto K, Kawashima R. (2012) The Partial Incremental Argument Interpretation Model: Real Time Argument Interpretation in Simplex Sentence Comprehension of the Japanese Language. Psychology of Language, New York, USA: Nova Science Publisher. pp. 159–183.</mixed-citation>
+      </ref>
+      <ref id="pone.0056106-Ferreira1">
+        <label>13</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ferreira</surname><given-names>F</given-names></name> (<year>2003</year>) <article-title>The misinterpretation of noncanonical sentences</article-title>. <source>Cogn Psychol</source> <volume>47</volume>: <fpage>164</fpage>–<lpage>203</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056106-Kemper1">
+        <label>14</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kemper</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Catlin</surname><given-names>J</given-names></name> (<year>1979</year>) <article-title>On the role of semantic constraints in sentence comprehension</article-title>. <source>Lang Speech</source> <volume>22</volume>: <fpage>253</fpage>–<lpage>267</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056106-Herriot1">
+        <label>15</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Herriot</surname><given-names>P</given-names></name> (<year>1969</year>) <article-title>The comprehension of active and passive sentences as a function of pragmatic expectation</article-title>. <source>Journal of Verbal Learning and Verbal Behavior</source> <volume>8</volume>: <fpage>166</fpage>–<lpage>169</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056106-Richardson1">
+        <label>16</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Richardson</surname><given-names>FM</given-names></name>, <name name-style="western"><surname>Thomas</surname><given-names>MS</given-names></name>, <name name-style="western"><surname>Price</surname><given-names>CJ</given-names></name> (<year>2010</year>) <article-title>Neuronal activation for semantically reversible sentences</article-title>. <source>J Cogn Neurosci</source> <volume>22</volume>: <fpage>1283</fpage>–<lpage>1298</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056106-Slobin1">
+        <label>17</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Slobin</surname><given-names>DI</given-names></name> (<year>1966</year>) <article-title>Grammatical transformations and sentence comprehension in childhood and adulthood</article-title>. <source>Journal of Verbal Learning and Verbal Behavior</source> <volume>5</volume>: <fpage>219</fpage>–<lpage>227</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056106-Ito1">
+        <label>18</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Ito T, Tahara S, Wonsook P (1993) The role of case particles on sentence comprehension: Japanese and Korean languges. Tokyo: Kazama shobo.</mixed-citation>
+      </ref>
+      <ref id="pone.0056106-Suzuki1">
+        <label>19</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Suzuki T (2008) Processing Japanese Simple Sentences in a Self-paced Listening Paradigm. IEICE Technical Report, TL2008-15, 17–22.</mixed-citation>
+      </ref>
+      <ref id="pone.0056106-Kim1">
+        <label>20</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kim</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Koizumi</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Ikuta</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Fukumitsu</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Kimura</surname><given-names>N</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Scrambling Effects on the Processing of Japanese Sentences: An fMRI Study</article-title>. <source>J Neuroling</source> <volume>22</volume>: <fpage>151</fpage>–<lpage>166</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056106-Meltzer1">
+        <label>21</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Meltzer</surname><given-names>J</given-names></name>, <name name-style="western"><surname>McArdle</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Schafer</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Braun</surname><given-names>A</given-names></name> (<year>2010</year>) <article-title>Neural Aspects of Sentence Comprehension: Syntactic Complexity, Reversibility, and Reanalysis</article-title>. <source>Cereb Cortex</source> <volume>20</volume>: <fpage>1853</fpage>–<lpage>1864</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0056106-Just1">
+        <label>22</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Just</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Carpenter</surname><given-names>PA</given-names></name>, <name name-style="western"><surname>Wooley</surname><given-names>JD</given-names></name> (<year>1982</year>) <article-title>Paradigms and Processes in Reading Comprehension</article-title>. <source>J Exp Psychol: General</source> <volume>111</volume>: <fpage>228</fpage>–<lpage>238</lpage>.</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

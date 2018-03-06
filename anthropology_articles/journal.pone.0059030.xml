@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="publisher-id">PONE-D-12-21988</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0059030</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Computer science</subject>
+          <subj-group>
+            <subject>Text mining</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Social and behavioral sciences</subject>
+          <subj-group>
+            <subject>Anthropology</subject>
+            <subj-group>
+              <subject>Cultural anthropology</subject>
+              <subj-group>
+                <subject>Geographic and national differences</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Social anthropology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Linguistics</subject>
+            <subj-group>
+              <subject>Historical linguistics</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Psychology</subject>
+            <subj-group>
+              <subject>Behavior</subject>
+              <subj-group>
+                <subject>Emotions</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Sociology</subject>
+            <subj-group>
+              <subject>Culture</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Computer Science</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>The Expression of Emotions in 20th Century Books</article-title>
+        <alt-title alt-title-type="running-head">The Expression of Emotions in 20th Century Books</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Acerbi</surname>
+            <given-names>Alberto</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Lampos</surname>
+            <given-names>Vasileios</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Garnett</surname>
+            <given-names>Philip</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Bentley</surname>
+            <given-names>R. Alexander</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Department of Archaeology and Anthropology, University of Bristol, Bristol, United Kingdom</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Centre for the Study of Cultural Evolution, Stockholm University, Stockholm, Sweden</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Department of Computer Science, University of Sheffield, Sheffield, United Kingdom</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>Department of Anthropology, Durham University, Durham, United Kingdom</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Lehmann</surname>
+            <given-names>Sune</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>Technical University of Denmark, Denmark</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">alberto.acerbi@gmail.com</email></corresp>
+        <fn fn-type="conflict">
+          <p>Co-author R. Alexander Bentley is a PLOS ONE Editorial Board member. This does not alter the authors' adherence to all the PLOS ONE policies on sharing data and materials.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: AA VL RAB. Analyzed the data: AA VL. Wrote the paper: AA VL PG RAB.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>20</day>
+        <month>3</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>8</volume>
+      <issue>3</issue>
+      <elocation-id>e59030</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>26</day>
+          <month>7</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>11</day>
+          <month>2</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Acerbi et al</copyright-holder>
+        <license xlink:type="simple">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>We report here trends in the usage of “mood” words, that is, words carrying emotional content, in 20th century English language books, using the data set provided by Google that includes word frequencies in roughly 4% of all books published up to the year 2008. We find evidence for distinct historical periods of positive and negative moods, underlain by a general decrease in the use of emotion-related words through time. Finally, we show that, in books, American English has become decidedly more “emotional” than British English in the last half-century, as a part of a more general increase of the stylistic divergence between the two variants of English language.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>This research was partially supported by the Leverhulme Trust "Tipping Points" program. A. Acerbi was initially supported by the "Uniquely Human" project funded by the Swedish Research Council, and then by a Newton International Fellowship. V. Lampos acknowledges the support from the TrendMiner project (EU-FP7-ICT n.287863). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="6"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Studies of cultural change and evolution have been transformed recently by a new level of accessibility and volume of electronic data concerning human behavior <xref ref-type="bibr" rid="pone.0059030-Weinberger1">[1]</xref>. Among these, new studies of word usage can access mass everyday public preferences that may be missed in mainstream history and politics <xref ref-type="bibr" rid="pone.0059030-Michel1">[2]</xref>–<xref ref-type="bibr" rid="pone.0059030-Twenge1">[8]</xref>. For example, interest in mass public ‘mood’ was sparked by claims that Twitter mood words can predict stock market trends <xref ref-type="bibr" rid="pone.0059030-Bollen1">[9]</xref>, and, in general, sentiment analysis of Twitter stream is a growing field of research <xref ref-type="bibr" rid="pone.0059030-Go1">[10]</xref>–<xref ref-type="bibr" rid="pone.0059030-Agarwal1">[12]</xref>. This has been paired by findings of surprisingly straightforward patterns about word usage online, such as S-curves of adoption <xref ref-type="bibr" rid="pone.0059030-Altmann1">[13]</xref>–<xref ref-type="bibr" rid="pone.0059030-Bentley3">[15]</xref>, or traders whose instant messaging patterns correlate with their financial success <xref ref-type="bibr" rid="pone.0059030-Saavedra1">[16]</xref>–<xref ref-type="bibr" rid="pone.0059030-Preis1">[18]</xref>.</p>
+      <p>While these studies focus on the recent, short-time scale of online media, one of the exciting challenges of the ‘Big Data’ agenda is to address cultural dynamics at longer time scales. Language itself is a remarkably long-lived phenomenon, with most of the common words in a language having been passed down through multiple generations for centuries or millennia <xref ref-type="bibr" rid="pone.0059030-Lieberman1">[3]</xref>, <xref ref-type="bibr" rid="pone.0059030-Pagel1">[4]</xref>, <xref ref-type="bibr" rid="pone.0059030-Fortunato1">[19]</xref>. While studies of word usage in different online communities <xref ref-type="bibr" rid="pone.0059030-Altmann1">[13]</xref> can achieve unprecedented sample sizes, long-term temporal dynamics and diversity are exhibited by the history and inferred prehistory of human languages <xref ref-type="bibr" rid="pone.0059030-Evans1">[20]</xref>–<xref ref-type="bibr" rid="pone.0059030-Nichols1">[23]</xref>.</p>
+      <p>In a novel approach, Hughes et al. <xref ref-type="bibr" rid="pone.0059030-Hughes1">[7]</xref> investigated past centuries of books (using the Project Gutenberg Digital Library) through the frequencies of ‘content-free’ words, that is words that carry little or not meaning on their own, but acquire it according to the context in which they are used, such as “to be” verbs, conjunctions (e.g. <italic>and</italic>, <italic>but</italic>), articles (e.g. <italic>the</italic>), pronouns (e.g. <italic>you</italic>, <italic>us</italic>) and prepositions (e.g. <italic>about</italic>, <italic>within</italic>). Representing authors by a vector of normalised content-free word frequencies used in their works, Hughes et al. <xref ref-type="bibr" rid="pone.0059030-Hughes1">[7]</xref> found temporal regimes of similarity among authors (1784–1829, 1825–1870, 1866–1911, and 1907–1952) that provided a fascinating comparison with well-known historical genres of literature. In evolutionary terms, words with specific content are selected to serve a more direct purpose, but the content-free words subject to random drift mark differences in stylistic genre.</p>
+      <p>If content-free words are a good proxy for stylistic change, we may add in increments of ‘content’ and see how patterns change. For example, using Google's Ngram database <xref ref-type="bibr" rid="pone.0059030-Michel1">[2]</xref>, Twenge et al. <xref ref-type="bibr" rid="pone.0059030-Twenge1">[8]</xref> found that the summed frequencies of ‘individualistic’ words (e.g., <italic>independent</italic>, <italic>individual</italic>, <italic>unique</italic>, <italic>self</italic>, <italic>solitary</italic>, <italic>personal</italic>) significantly increased in American books between 1960 and 2008, while ‘communal’ words (e.g., <italic>communal</italic>, <italic>team</italic>, <italic>collective</italic>, <italic>village</italic>, <italic>group</italic>, <italic>union</italic>) did not. During those same 48 years, individualistic phrases (e.g., <italic>all about me</italic>, <italic>I get what I want</italic>) also increased in frequency compared to communal phrases (e.g., <italic>band together</italic>, <italic>unitedi we stand</italic>) <xref ref-type="bibr" rid="pone.0059030-Twenge1">[8]</xref>.</p>
+      <p>Here we analyze trends in the past century of mood words in books, using Google's Ngram database. Google's Ngram database represents a 4% digitally–scanned sample of several centuries of books, for a total of 5,195,769 volumes <xref ref-type="bibr" rid="pone.0059030-Michel1">[2]</xref>. The corpus contains texts in different languages, and, for English, a further distinctions is made between American English and British English (according to the country of publication, i.e. United States versus Great Britain). Additionally, a subset of English texts collects only fiction books. Titles of books present in the corpus are not available because of copyright reasons <xref ref-type="bibr" rid="pone.0059030-Michel1">[2]</xref>. The corpus gives information on how many times, in a given year, an 1-gram or an n-gram is used, where an 1-gram is a string of characters uninterrupted by space (i.e. a word, but also numbers, typos, etc.) and an n-gram is a sequence of <italic>n</italic> 1-grams.</p>
+      <p>We make use of six unique lists of terms (see Methods) to characterize mood categories labeled as Anger, Disgust, Fear, Joy, Sadness, and Surprise. These mood word lists have previously been applied on a study of U.K. Twitter content, which showed that changes in these mood word frequencies identified real-world events such as the unexpected deaths of popular personas, public unrest, or natural disasters <xref ref-type="bibr" rid="pone.0059030-Lansdall1">[24]</xref>. We extend the time scale of this analysis by tracking mood word frequencies through the past century of Google book data. We find a general decrease in the use of mood terms through time, which underlies a distinct increase in emotional word usage in American books versus British books in the last half century.</p>
+    </sec>
+    <sec id="s2">
+      <title>Results</title>
+      <p>Our analysis yielded three main results. First, we can distinguish between ‘happy’ and ‘sad’ periods in the data, plotting the differences between <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e001" xlink:type="simple"/></inline-formula>-scores (see Methods) for Joy and Sadness in the 1-grams English data set. <xref ref-type="fig" rid="pone-0059030-g001">Figure 1</xref> shows that moods tracked broad historical trends, including a ‘sad’ peak corresponding to Second World War, and two ‘happy’ peaks, one in the 1920's and the other in the 1960's. In more recent years we can see a ‘sad’ period starting from the 1970's, with an increase in ‘happiness’ in the last years of the data set. Interestingly, the First World War does not seem to register a particular change in mood words (<xref ref-type="fig" rid="pone-0059030-g001">Figure 1</xref>).</p>
+      <fig id="pone-0059030-g001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0059030.g001</object-id>
+        <label>Figure 1</label>
+        <caption>
+          <title>Historical periods of positive and negative moods.</title>
+          <p>Difference between <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e002" xlink:type="simple"/></inline-formula>-scores of Joy and Sadness for years from 1900 to 2000 (raw data and smoothed trend). Values above zero indicate generally ‘happy’ periods, and values below the zero indicate generally ‘sad’ periods. Values are smoothed using Friedman's ‘super smoother' through R function supsmu() <xref ref-type="bibr" rid="pone.0059030-R1">[47]</xref>.</p>
+        </caption>
+        <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0059030.g001" position="float" xlink:type="simple"/>
+      </fig>
+      <p>Our second finding is a clear decrease in the overall use of mood words through time (<xref ref-type="fig" rid="pone-0059030-g002">Figure 2</xref>). We performed checks to confirm that the overall decrease in mood word frequency in the data is not merely a reflection of, for example, greater numbers of technically-oriented or scientific books through time. Although the Ngram database does not give an explicit breakdown of book subject categories <xref ref-type="bibr" rid="pone.0059030-Michel1">[2]</xref>, we analyzed the same mood word lists on Google's 1-grams English Fiction data set, which contains only works of fiction and literary criticism. In support of a real decrease in literary emotion, we found a similar decrease in the overall use of mood words (see <xref ref-type="supplementary-material" rid="pone.0059030.s001">Figure S1</xref>).</p>
+      <fig id="pone-0059030-g002" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0059030.g002</object-id>
+        <label>Figure 2</label>
+        <caption>
+          <title>Decrease in the use of emotion-related words through time.</title>
+          <p>Difference between <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e003" xlink:type="simple"/></inline-formula>-scores of the six emotions and of a random sample of stems (see Methods) for years from 1900 to 2000 (raw data and smoothed trend). Red: the trend for Fear (raw data and smoothed trend), the emotion with the highest final value. Blue: the trend for Disgust (raw data and smoothed trend), the emotion with the lowest final value. Values are smoothed using Friedman's ‘super smoother’ through R function supsmu() <xref ref-type="bibr" rid="pone.0059030-R1">[47]</xref>.</p>
+        </caption>
+        <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0059030.g002" position="float" xlink:type="simple"/>
+      </fig>
+      <p>Within this general decrease, we identify Disgust as the emotion with the lowest final <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e004" xlink:type="simple"/></inline-formula>-score and Fear as having the highest final <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e005" xlink:type="simple"/></inline-formula>-score (<xref ref-type="fig" rid="pone-0059030-g002">Figure 2</xref>). Notably, the mood of Fear, which declined throughout most of the early century, has increased markedly since the 1970's, in contrast to the continued decline of other moods (<xref ref-type="fig" rid="pone-0059030-g002">Figure 2</xref>).</p>
+      <p>Our third finding is that, since about 1960, American books have increased their mood contents compared to British books. This divergence between American and British English occurs within the context of the overall decline in the use of mood words. If we plot the difference in <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e006" xlink:type="simple"/></inline-formula>-scores between American and British word data (<xref ref-type="fig" rid="pone-0059030-g003">Figure 3a</xref>), we see a clear, steady, relative increase in American emotion-related words from 1960 to 2000. Since about 1980, books written in American have been more ‘emotional’ (in all mood figures) than the ones written in British (<xref ref-type="fig" rid="pone-0059030-g003">Figure 3a</xref>). This difference in <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e007" xlink:type="simple"/></inline-formula>-scores – which reflects the respective deviations from each nation's mean value – is duplicated also by the same change in absolute emotion scores (see Methods): American and British English have similar absolute emotion scores in the first half of the <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e008" xlink:type="simple"/></inline-formula> century (or even British slightly more emotional), followed by a relative increase in the emotion scores for just the American English data set (data not shown).</p>
+      <fig id="pone-0059030-g003" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0059030.g003</object-id>
+        <label>Figure 3</label>
+        <caption>
+          <title>Differences between American English and British English.</title>
+          <p>Difference between <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e009" xlink:type="simple"/></inline-formula>-scores in American English and British English for years from 1900 to 2000 (raw data and smoothed trend). A: Emotion terms. B: Content-free words. C: Random sample. D: 100 largest urban agglomerations in the world. Values are smoothed using Friedman's ‘super smoother’ through R function supsmu() <xref ref-type="bibr" rid="pone.0059030-R1">[47]</xref>.</p>
+        </caption>
+        <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0059030.g003" position="float" xlink:type="simple"/>
+      </fig>
+      <p>Again to confirm the reality of the pattern, we checked this American–British divergence in emotion words against other indicators. <xref ref-type="fig" rid="pone-0059030-g003">Figure 3b</xref> shows the difference between American and British usage of the 307 content-free words compiled by Hughes et al. <xref ref-type="bibr" rid="pone.0059030-Hughes1">[7]</xref>. The post-1960 divergence in content-free word usage (<xref ref-type="fig" rid="pone-0059030-g003">Figure 3b</xref>) is strikingly similar to the divergence in emotional word usage (<xref ref-type="fig" rid="pone-0059030-g003">Figure 3a</xref>). As mentioned in the Introduction, changes in the use of content-free words have been associated with broader stylistic differentiations <xref ref-type="bibr" rid="pone.0059030-Hughes1">[7]</xref>, hence our analysis suggests that the divergence between American and British English in respect to the use of mood words is paired by a more general stylistic divergence since the 1960s.</p>
+      <p>As above, this does not appear to be an artifact of the Ngram data. To test this, we also checked the divergence using a random sample of words (<xref ref-type="fig" rid="pone-0059030-g003">Figure 3c</xref>) or in the usage of the names of the 100 most populated cities (<xref ref-type="fig" rid="pone-0059030-g003">Figure 3d</xref>) from the same American and British Ngram datasets. Neither showed the same change we see in both emotion words and content-free words. This suggests that emotional content and style were coupled in a distinct way, and that the divergence of these between British and American English stands out from the background of other word types.</p>
+    </sec>
+    <sec id="s3">
+      <title>Discussion</title>
+      <p>Using the extraordinary new data on word frequencies in books <xref ref-type="bibr" rid="pone.0059030-Michel1">[2]</xref>, we find that significant changes in the usage of more generalized mood terms are also detectable through the years. While studies of online social media have shown how short–term patterns in word usage respond to socio-political events <xref ref-type="bibr" rid="pone.0059030-Bollen1">[9]</xref>, <xref ref-type="bibr" rid="pone.0059030-Lansdall1">[24]</xref>–<xref ref-type="bibr" rid="pone.0059030-Schellenberg1">[26]</xref>, here we find that the expression of moods in books also reflects much longer–term trends of years or even decades. These changes in literary mood are seemingly driven by major <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e010" xlink:type="simple"/></inline-formula> century phenomena such as World War II, The Great Depression, or the Baby Boom.</p>
+      <p>We also found a general decrease in emotional word usage in the past decades up to the present, which was observed also in fiction writing on its own. We interpret this as a genuine decrease in the literary expression of emotion, but an alternative explanation could be that mood words have changed, rather than decreased in usage, through the <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e011" xlink:type="simple"/></inline-formula> century. This seems unlikely to explain the observed decrease, however, because we used contemporary word lists, analyzed recently in Twitter data to characterize recent events <xref ref-type="bibr" rid="pone.0059030-Lansdall1">[24]</xref>, any bias of which should have increased in usage towards the present.</p>
+      <p>Our results also support the popular notion that American authors express more emotion than the British. Somewhat surprisingly, this difference has apparently developed only since the 1960s, and as part of a more general stylistic differentiation in American versus British English, reflected similarly in content-free word frequencies. This relative increase of American mood word use roughly coincides with the increase of anti–social and narcissistic sentiments in U.S. popular song lyrics from 1980 to 2007 <xref ref-type="bibr" rid="pone.0059030-DeWall1">[6]</xref>, as evidenced by steady increases in angry/antisocial lyrics and in the percentage of first-person singular pronouns (e.g., <italic>I</italic>, <italic>me</italic>, <italic>mine</italic>), with a corresponding decrease in words indicating social interactions (e.g., <italic>mate</italic>, <italic>talk</italic>, <italic>child</italic>) over the same 27-year period <xref ref-type="bibr" rid="pone.0059030-DeWall1">[6]</xref>.</p>
+      <p>As these findings appear to genuinely reflect changes in published language, a remaining question is whether word usage represents real behavior in a population, or possibly an absence of that behavior which is increasingly played out via literary fiction (or online discourse). It has been suggested, for example, that it was the suppression of desire in ordinary Elizabethan English life that increased demand for writing “obsessed with romance and sex” <xref ref-type="bibr" rid="pone.0059030-Shapiro1">[27]</xref>. So while it is easy to conclude that Americans have themselves become more ‘emotional’ over the past several decades, perhaps songs and books may not reflect the real population any more than catwalk models reflect the average body; the observed changes reflect the book market, rather than a direct change in American culture. We believe the changes do reflect changes in culture, however, because unlike lyrics of the top 10 songs, the book data are independent of book sales <xref ref-type="bibr" rid="pone.0059030-Michel1">[2]</xref>. Although authors may not be a perfectly representative subset of the general population, at least the Google dataset is not as overtly commercial as song lyrics or any of the other ubiquitous “most popular” lists of online media. Furthermore, the association of mood changes with major <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e012" xlink:type="simple"/></inline-formula> century economic and political events supports the fact that word usage, as retrieved from Google dataset, reveals the long term response to these events in a much broader population of book authors. The dynamics of the feedback between book authors and the wider public can be explored by future studies involving the Ngram dataset.</p>
+      <p>In any case, changes in culture consist of changes in cultural artifacts, of which words are an informative sample <xref ref-type="bibr" rid="pone.0059030-Michel1">[2]</xref>, <xref ref-type="bibr" rid="pone.0059030-DeWall1">[6]</xref>–<xref ref-type="bibr" rid="pone.0059030-Twenge1">[8]</xref>, <xref ref-type="bibr" rid="pone.0059030-Hahn1">[28]</xref>–<xref ref-type="bibr" rid="pone.0059030-Acerbi1">[30]</xref>. Future studies will surely explore diversity more closely. A population-level mean – including what we have reported here – does not necessarily track a typical behavior, so the meaning of patterns will become refined by addressing changes cross-culturally (e.g. non-English and non-Western languages), and at the smaller community scale <xref ref-type="bibr" rid="pone.0059030-Mateos1">[31]</xref>. Another promising development is the analysis of more complex sets of cultural traits that might be more diagnostic than mood words or content-free words.</p>
+      <p>More generally, we hope that we can contribute to the world of Big Data studies by showing that time depth is a crucial dimension. Our results on the long–term, mass scale encourage the more detailed use of word data to characterize the evolution of cultural differences and trends, to detect patterns previously unknown through conventional history <xref ref-type="bibr" rid="pone.0059030-Hughes1">[7]</xref>, <xref ref-type="bibr" rid="pone.0059030-OConnor1">[25]</xref>. While new theoretical and modelling approaches have rapidly multiplied in the field of cultural evolution (see e.g. <xref ref-type="bibr" rid="pone.0059030-Sperber1">[32]</xref>–<xref ref-type="bibr" rid="pone.0059030-Rendell1">[36]</xref>), we believe that the current availability and abundance of quantitative data represents an extraordinary, and much needed, opportunity to provide empirical validation in human cultural dynamics studies.</p>
+    </sec>
+    <sec id="s4" sec-type="methods">
+      <title>Methods</title>
+      <p>For this study we assessed the emotional valence of the text in books using a text analysis tool, namely WordNet Affect <xref ref-type="bibr" rid="pone.0059030-Strapparava1">[37]</xref>–<xref ref-type="bibr" rid="pone.0059030-Strapparava3">[39]</xref>. WordNet Affect builds on WordNet <xref ref-type="bibr" rid="pone.0059030-Miller1">[40]</xref> by labeling synonymous terms which may represent mood states. Six mood categories, each represented by a different number of terms, have been analyzed: Anger (N = 146), Disgust (N = 30), Fear (N = 92), Joy (N = 224), Sadness (N = 115), and Surprise (N = 41). The text analysis was performed on word stems; the latter were formed using Porter's Algorithm <xref ref-type="bibr" rid="pone.0059030-Porter1">[41]</xref>. Both WordNet Affect and Porter's Algorithm are considered as standard tools in text mining and have been applied in several relevant tasks <xref ref-type="bibr" rid="pone.0059030-Lansdall1">[24]</xref>, <xref ref-type="bibr" rid="pone.0059030-Chaumartin1">[42]</xref>–<xref ref-type="bibr" rid="pone.0059030-Roberts1">[46]</xref>. We obtained the time series of stemmed word frequencies via Google's Ngram tool (<ext-link ext-link-type="uri" xlink:href="http://books.google.com/ngrams/datasets" xlink:type="simple">http://books.google.com/ngrams/datasets</ext-link>) in four distinct data sets: 1-grams English (combining both British and American English), 1-grams English Fiction (containing only fiction books), 1-grams American English, and 1-grams British English.</p>
+      <p>For each stemmed word we collected the amount of occurrences (case insensitive) in each year from 1900 to 2000 (both included). We excluded years before 1900 since the number of books before 1900 is considerably lower, and years after 2000 since books published recently are still being included in the data set, and therefore latest records are incomplete and possibly biased. Because the number of books scanned in the data set varies from year to year, to obtain frequencies for performing the analysis we normalized the yearly amount of occurrences using the occurrences, for each year, of the word “the”, which is considered as a reliable indicator of the total number of words in the data set. We preferred to normalize by the word “the”, rather than by the total number of words, to avoid the effect of the influx of data, special characters, etc. that may have come into books recently. The word “the” is about 5–6% of all words, and a good representative of real writing, and real sentences. To test the robustness of the normalization, we also performed the same analysis reported in <xref ref-type="fig" rid="pone-0059030-g001">Figure 1</xref> (differences between <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e013" xlink:type="simple"/></inline-formula>-scores (see below) for Joy and Sadness in the 1-grams English data set) using two alternative normalizations, namely the cumulative count of the top 10 most frequent words each year (<xref ref-type="supplementary-material" rid="pone.0059030.s002">Figure S2a</xref>), and the total counts of 1-grams as in <xref ref-type="bibr" rid="pone.0059030-Michel1">[2]</xref> (<xref ref-type="supplementary-material" rid="pone.0059030.s002">Figure S2b</xref>). The resulting time series are higly correlated (see the legend of <xref ref-type="supplementary-material" rid="pone.0059030.s002">Figure S2</xref>), confirming the robustness of the normalization.</p>
+      <p>For a year <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e014" xlink:type="simple"/></inline-formula>, given the count <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e015" xlink:type="simple"/></inline-formula> of the word “the” in the corpus as well as the counts <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e016" xlink:type="simple"/></inline-formula> of the <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e017" xlink:type="simple"/></inline-formula> WordNet terms representing one of the six considered mood types, we computed a mood score (<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e018" xlink:type="simple"/></inline-formula>) as follows:<disp-formula id="pone.0059030.e019"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0059030.e019" xlink:type="simple"/><label>(1)</label></disp-formula>i.e. a mood score is essentially the average normalized frequency across the considered mood terms. In order to compare different types of moods effectively, after computing the mood scores for the entire set of years (1900 to 2000), we converted them to their <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e020" xlink:type="simple"/></inline-formula>-score equivalent (<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e021" xlink:type="simple"/></inline-formula>), using:<disp-formula id="pone.0059030.e022"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0059030.e022" xlink:type="simple"/><label>(2)</label></disp-formula>where <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e023" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e024" xlink:type="simple"/></inline-formula> denote the mean and standard deviation of the mood scores across the considered set of years.</p>
+      <p>When determining the ‘absolute’ trends of moods (results in <xref ref-type="fig" rid="pone-0059030-g002">Figure 2</xref>), to avoid any possible bias related to normalization, we compared the <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e025" xlink:type="simple"/></inline-formula>-scores of moods time series with a <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e026" xlink:type="simple"/></inline-formula>-score derived by a random sample of stems. This random sample was obtained by extracting <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e027" xlink:type="simple"/></inline-formula> random terms from the Part of Speech database, which is a combination of Moby Part-of-Speech II and WordNet database, and contains <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e028" xlink:type="simple"/></inline-formula> terms (<ext-link ext-link-type="uri" xlink:href="http://wordlist.sourceforge.net/pos-readme" xlink:type="simple">http://wordlist.sourceforge.net/pos-readme</ext-link>). The terms were stemmed using Porter's Algorithm <xref ref-type="bibr" rid="pone.0059030-Porter1">[41]</xref>. Duplicated stems and stems shorter then two letters were finally eliminated obtaining a sample of <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e029" xlink:type="simple"/></inline-formula> stems that we used for the analysis.</p>
+      <p>Finally (results in <xref ref-type="fig" rid="pone-0059030-g003">Figure 3</xref>), we compared the difference between American English and British English books in three other data sets (in addition to mood terms): content-free words, using the list of the <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e030" xlink:type="simple"/></inline-formula> content-free words provided by Huges et al. <xref ref-type="bibr" rid="pone.0059030-Hughes1">[7]</xref>, the same random stems used for <xref ref-type="fig" rid="pone-0059030-g002">Figure 2</xref>, and the list of the 100 largest urban agglomerations in the world (from <ext-link ext-link-type="uri" xlink:href="http://en.wikipedia.org/wiki/List_of_urban_agglomerations_by_population_(United_Nations)" xlink:type="simple">http://en.wikipedia.org/wiki/List_of_urban_agglomerations_by_population_(United_Nations)</ext-link>, containing terms like <italic>Tokyo</italic>, <italic>Karachi</italic>, and <italic>Berlin</italic>. Agglomerations with composite names, e.g. <italic>New York</italic>–<italic>Newark</italic>, <italic>Rio de Janeiro</italic> were excluded).</p>
+    </sec>
+    <sec id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material id="pone.0059030.s001" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0059030.s001" position="float" xlink:type="simple">
+        <label>Figure S1</label>
+        <caption>
+          <p><bold>Decrease in the use of emotion-related words through time in fiction books.</bold> Difference between <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e031" xlink:type="simple"/></inline-formula>-scores of the six emotions and of a random sample of stems (see Methods) for years from 1900 to 2000 (raw data and smoothed trend) in the 1-grams English Fiction data set. Red: the trend for Fear (raw data and smoothed trend), the emotion with the highest final value. Blue: the trend for Disgust (raw data and smoothed trend), the emotion with the lowest final value. Values are smoothed using Friedman's ‘super smoother’ through R function supsmu() <xref ref-type="bibr" rid="pone.0059030-R1">[47]</xref>.</p>
+          <p>(TIFF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0059030.s002" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0059030.s002" position="float" xlink:type="simple">
+        <label>Figure S2</label>
+        <caption>
+          <p><bold>Historical periods of positive and negative moods with alternative normalizations.</bold> Difference between <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e032" xlink:type="simple"/></inline-formula>-scores of Joy and Sadness for years from 1900 to 2000 (raw data and smoothed trend). Values above zero indicate generally ‘happy’ periods, and values below the zero indicate generally ‘sad’ periods. Values are smoothed using Friedman's ‘super smoother’ through R function supsmu() <xref ref-type="bibr" rid="pone.0059030-R1">[47]</xref>. A: Frequencies are normalized using the cumulative count of the top 10 most frequent words for each year. Correlations with the time series used in the analysis (normalized with the yearly count of “the”) are statistically significant (Pearson's <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e033" xlink:type="simple"/></inline-formula> for row data, and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e034" xlink:type="simple"/></inline-formula> for smoothed data. In both cases <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e035" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e036" xlink:type="simple"/></inline-formula>). B: Frequencies are normalized using the total counts of 1-grams for each year. Also in this case correlations with the time series used in the analysis are statistically significant (Pearson's <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e037" xlink:type="simple"/></inline-formula> for row data, and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e038" xlink:type="simple"/></inline-formula> for smoothed data. In both cases <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e039" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0059030.e040" xlink:type="simple"/></inline-formula>).</p>
+          <p>(TIFF)</p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0059030-Weinberger1">
+        <label>1</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Weinberger</surname><given-names>D</given-names></name> (<year>2011</year>) <article-title>The machine that would predict the future</article-title>. <source>Scientific American</source> <volume>305(6)</volume>: <fpage>52</fpage>–<lpage>57</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Michel1">
+        <label>2</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Michel</surname><given-names>J-P</given-names></name>, <name name-style="western"><surname>Shen</surname><given-names>YK</given-names></name>, <name name-style="western"><surname>Aiden</surname><given-names>AP</given-names></name>, <name name-style="western"><surname>Veres</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Gray</surname><given-names>MK</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Quantitative analysis of culture using millions of digitized books</article-title>. <source>Science</source> <volume>331</volume>: <fpage>176</fpage>–<lpage>182</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Lieberman1">
+        <label>3</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lieberman</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Michel</surname><given-names>J-P</given-names></name>, <name name-style="western"><surname>Jackson</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Tang</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Nowak</surname><given-names>MA</given-names></name> (<year>2007</year>) <article-title>Quantifying the evolutionary dynamics of language</article-title>. <source>Nature</source> <volume>449</volume>: <fpage>713</fpage>–<lpage>716</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Pagel1">
+        <label>4</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pagel</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Atkinson</surname><given-names>QD</given-names></name>, <name name-style="western"><surname>Meade</surname><given-names>A</given-names></name> (<year>2007</year>) <article-title>Frequency of word-use predicts rates of lexical evolution throughout Indo-European history</article-title>. <source>Nature</source> <volume>449</volume>: <fpage>717</fpage>–<lpage>720</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Bentley1">
+        <label>5</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bentley</surname><given-names>RA</given-names></name> (<year>2008</year>) <article-title>Random drift versus selection in academic vocabulary</article-title>. <source>PLoS ONE</source> <volume>3(8)</volume>: <fpage>e3057</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-DeWall1">
+        <label>6</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>DeWall</surname><given-names>CN</given-names></name>, <name name-style="western"><surname>Pond</surname><given-names>RS</given-names><suffix>Jr</suffix></name>, <name name-style="western"><surname>Campbell</surname><given-names>WK</given-names></name>, <name name-style="western"><surname>Twenge</surname><given-names>JM</given-names></name> (<year>2011</year>) <article-title>Tuning in to Psychological Change: Linguistic Markers of Psychological Traits and Emotions Over Time in Popular U.S. Song Lyrics</article-title>. <source>Psychology of Aesthetics, Creativity and the Arts</source> <volume>5</volume>: <fpage>200</fpage>–<lpage>207</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Hughes1">
+        <label>7</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hughes</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Foti</surname><given-names>NJ</given-names></name>, <name name-style="western"><surname>Krakauer</surname><given-names>DC</given-names></name>, <name name-style="western"><surname>Rockmore</surname><given-names>DN</given-names></name> (<year>2012</year>) <article-title>Quantitative patterns of stylistic inuence in the evolution of literature</article-title>. <source>Proceedings of the National Academy USA</source> <volume>109</volume>: <fpage>7682</fpage>–<lpage>7686</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Twenge1">
+        <label>8</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Twenge</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Campbell</surname><given-names>KW</given-names></name>, <name name-style="western"><surname>Gentile</surname><given-names>B</given-names></name> (<year>2012</year>) <article-title>Increases in individualistic words and phrases in American books, 1960-2008</article-title>. <source>PLoS ONE</source> <volume>7(7)</volume>: <fpage>e40181</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Bollen1">
+        <label>9</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bollen</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Mao</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Zeng</surname><given-names>X-J</given-names></name> (<year>2011</year>) <article-title>Twitter mood predicts the stock market</article-title>. <source>Journal of Computational Science</source> <volume>2</volume>: <fpage>1</fpage>–<lpage>8</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Go1">
+        <label>10</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Go</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Bhayani</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Huang</surname><given-names>L</given-names></name> (<year>2009</year>) <article-title>Twitter sentiment classification using distant supervision</article-title>. <source>CS224N Project Report, Stanford</source> <fpage>1</fpage>–<lpage>12</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Pak1">
+        <label>11</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pak</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Paroubek</surname><given-names>P</given-names></name> (<year>2010</year>) <article-title>Twitter as a corpus for sentiment analysis and opinion mining</article-title>. <source>Proceedings of LREC</source> <fpage>1320</fpage>–<lpage>1326</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Agarwal1">
+        <label>12</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Agarwal A, Xie B, Vovsha I, Rambow O, Passonneau R (2011) Sentiment analysis of Twitter data. Proceedings of the Workshop on Languages in Social Media: 30–38.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Altmann1">
+        <label>13</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Altmann</surname><given-names>EG</given-names></name>, <name name-style="western"><surname>Pierrehumbert</surname><given-names>JB</given-names></name>, <name name-style="western"><surname>Motter</surname><given-names>AE</given-names></name> (<year>2011</year>) <article-title>Niche as a determinant of word fate in online groups</article-title>. <source>PLoS ONE</source> <volume>6(5)</volume>: <fpage>e19009</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Bentley2">
+        <label>14</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bentley</surname><given-names>RA</given-names></name>, <name name-style="western"><surname>Ormerod</surname><given-names>P</given-names></name> (<year>2010</year>) <article-title>A rapid method for assessing social versus independent interest in health issues</article-title>. <source>Social Science and Medicine</source> <volume>71</volume>: <fpage>482</fpage>–<lpage>485</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Bentley3">
+        <label>15</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bentley</surname><given-names>RA</given-names></name>, <name name-style="western"><surname>Garnett</surname><given-names>P</given-names></name>, <name name-style="western"><surname>O'Brien</surname><given-names>MJ</given-names></name>, <name name-style="western"><surname>Brock</surname><given-names>WA</given-names></name> (<year>2012</year>) <article-title>Word Diffusion and Climate Science</article-title>. <source>PLoS ONE</source> <volume>7(11)</volume>: <fpage>e47966</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Saavedra1">
+        <label>16</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Saavedra</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Hagerty</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Uzzi</surname><given-names>B</given-names></name> (<year>2011</year>) <article-title>Synchronicity, instant messaging, and performance among financial traders</article-title>. <source>Proceedings of the National Academy of Sciences USA</source> <volume>108</volume>: <fpage>5296</fpage>–<lpage>5301</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Saavedra2">
+        <label>17</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Saavedra</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Duch</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Uzzi</surname><given-names>B</given-names></name> (<year>2011</year>) <article-title>Tracking Traders' Understanding of the Market Using e-Communication Data</article-title>. <source>PLoS ONE</source> <volume>6(10)</volume>: <fpage>e26705</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Preis1">
+        <label>18</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Preis</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Moat</surname><given-names>HS</given-names></name>, <name name-style="western"><surname>Stanley</surname><given-names>HE</given-names></name>, <name name-style="western"><surname>Bishop</surname><given-names>SR</given-names></name> (<year>2012</year>) <article-title>Quantifying the advantage of looking forward</article-title>. <source>Scientific Reports</source> <volume>2</volume>: <fpage>Article 350</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Fortunato1">
+        <label>19</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fortunato</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Jordan</surname><given-names>F</given-names></name> (<year>2010</year>) <article-title>Your place or mine? A phylogenetic comparative analysis of marital residence in Indo-European and Austronesian societies</article-title>. <source>Philosophical Transactions Royal Society B</source> <volume>365</volume>: <fpage>3913</fpage>–<lpage>3922</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Evans1">
+        <label>20</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Evans</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Levinson</surname><given-names>SC</given-names></name> (<year>2009</year>) <article-title>The myth of language universals: Language diversity and its importance for cognitive science</article-title>. <source>Behavioral and Brain Sciences</source> <volume>32</volume>: <fpage>429</fpage>–<lpage>492</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Nettle1">
+        <label>21</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nettle</surname><given-names>D</given-names></name> (<year>1999</year>) <article-title>Linguistic diversity of the Americas can be reconciled with a recent colonisation</article-title>. <source>Proceedings of the National Academy of Sciences USA</source> <volume>96</volume>: <fpage>3325</fpage>–<lpage>3329</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Nettle2">
+        <label>22</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nettle</surname><given-names>D</given-names></name> (<year>2007</year>) <article-title>Language and genes: A new perspective on the origins of human cultural diversity</article-title>. <source>Proceedings of the National Academy of Sciences USA</source> <volume>104</volume>: <fpage>10755</fpage>–<lpage>10756</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Nichols1">
+        <label>23</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nichols</surname><given-names>J</given-names></name> (<year>2008</year>) <article-title>Language spread rates and prehistoric American migration rates</article-title>. <source>Current Anthropology</source> <volume>49</volume>: <fpage>1109</fpage>–<lpage>1118</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Lansdall1">
+        <label>24</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lansdall</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Lampos</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Cristianini</surname><given-names>N</given-names></name> (<year>2012</year>) <article-title>Effects of the Recession on Public Mood in the UK, Proceedings of WWW'</article-title>. <volume>12</volume>: <fpage>1221</fpage>–<lpage>1226</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-OConnor1">
+        <label>25</label>
+        <mixed-citation publication-type="book" xlink:type="simple">O'Connor B, Balasubramanyan B, Routledge BR, Smith NA (2012). From tweets to polls: Linking sentiment to public opinion time series. Proceedings of the International AAI Conference on Weblogs and Social Media. Menlo Park, CA: The AAAI Press.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Schellenberg1">
+        <label>26</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schellenberg</surname><given-names>EG</given-names></name>, <name name-style="western"><surname>von Scheve</surname><given-names>C</given-names></name> (<year>2012</year>) <article-title>Emotional cues in American popular music: Five decades of the Top 40</article-title>. <source>Psychology of Aesthetics, Creativity, and the Arts</source> <volume>6</volume>: <fpage>196</fpage>–<lpage>203</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Shapiro1">
+        <label>27</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Shapiro</surname><given-names>J</given-names></name> (<year>2012</year>) <article-title>The Queen's revels</article-title>. <source>New York Times Book Review (15 July</source> <volume>2012)</volume>: <fpage>14</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Hahn1">
+        <label>28</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hahn</surname><given-names>MW</given-names></name>, <name name-style="western"><surname>Bentley</surname><given-names>RA</given-names></name> (<year>2003</year>) <article-title>Drift as a mechanism for cultural change: An example from baby names</article-title>. <source>Proceedings of the Royal Society B</source> <volume>270</volume>: <fpage>S1</fpage>–<lpage>S4</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Berger1">
+        <label>29</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Berger</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Le Mens</surname><given-names>G</given-names></name> (<year>2009</year>) <article-title>How adoption speed affects the abandonment of cultural tastes</article-title>. <source>Proceedings of the National Academy of Sciences USA</source> <volume>106</volume>: <fpage>8146</fpage>–<lpage>8150</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Acerbi1">
+        <label>30</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Acerbi</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Ghirlanda</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Enquist</surname><given-names>M</given-names></name> (<year>2012</year>) <article-title>The Logic of Fashion Cycles</article-title>. <source>PLoS ONE</source> <volume>7(3)</volume>: <fpage>e32541</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Mateos1">
+        <label>31</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mateos</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Longley</surname><given-names>PA</given-names></name>, <name name-style="western"><surname>O'Sullivan</surname><given-names>D</given-names></name> (<year>2011</year>) <article-title>Ethnicity and Population Structure in Personal Naming Networks</article-title>. <source>PLoS ONE</source> <volume>6(9)</volume>: <fpage>e22943</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Sperber1">
+        <label>32</label>
+        <mixed-citation publication-type="book" xlink:type="simple">Sperber D (1996) Explaining culture. A naturalistic approach. Oxford: Blackwell.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Bentley4">
+        <label>33</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bentley</surname><given-names>RA</given-names></name>, <name name-style="western"><surname>Hahn</surname><given-names>MW</given-names></name>, <name name-style="western"><surname>Shennann</surname><given-names>SJ</given-names></name> (<year>2004</year>) <article-title>Random drift and culture change</article-title>. <source>Proceedings of the Royal Society B</source> <volume>271</volume>: <fpage>1443</fpage>–<lpage>1450</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Mesoudi1">
+        <label>34</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mesoudi</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Whiten</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Laland</surname><given-names>KN</given-names></name> (<year>2006</year>) <article-title>Towards a unified science of cultural evolution</article-title>. <source>Behavioral and Brain Sciences</source> <volume>29(4)</volume>: <fpage>329</fpage>–<lpage>383</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Acerbi2">
+        <label>35</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Acerbi</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Enquist</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Ghirlanda</surname><given-names>S</given-names></name> (<year>2009</year>) <article-title>Cultural evolution and individual development of of openness and conservatism</article-title>. <source>Proceedings of the National Academy of Sciences USA</source> <volume>106(45)</volume>: <fpage>18931</fpage>–<lpage>18935</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Rendell1">
+        <label>36</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rendell</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Boyd</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Cownden</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Enquist</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Eriksson</surname><given-names>K</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Why copy others? insights from the social learning strategies tournament</article-title>. <source>Science</source> <volume>328</volume>: <fpage>208</fpage>–<lpage>213</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Strapparava1">
+        <label>37</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Strapparava</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Valitutti</surname><given-names>A</given-names></name> (<year>2004</year>) <article-title>Wordnet-affect: an affective extension of wordnet</article-title>. <source>Proceedings of the 4th International Conference on Language Resources and Evaluation</source> <fpage>1413</fpage>–<lpage>1418</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Strapparava2">
+        <label>38</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Strapparava</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Valitutti</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Stock</surname><given-names>O</given-names></name> (<year>2006</year>) <article-title>The affective weight of lexicon</article-title>. <source>Proceedings of the Fifth International Conference on Language Resources and Evaluation (LREC)</source> <fpage>423</fpage>–<lpage>426</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Strapparava3">
+        <label>39</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Strapparava</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Mihalcea</surname><given-names>R</given-names></name> (<year>2008</year>) <article-title>Learning to identify emotions in text</article-title>. <source>Proceedings of SAC'</source> <volume>08</volume>: <fpage>1556</fpage>–<lpage>60</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Miller1">
+        <label>40</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Miller</surname><given-names>GA</given-names></name> (<year>1995</year>) <article-title>WordNet: a lexical database for English</article-title>. <source>CACM</source> <volume>38(11)</volume>: <fpage>39</fpage>–<lpage>41</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Porter1">
+        <label>41</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Porter</surname><given-names>MF</given-names></name> (<year>1980</year>) <article-title>An algorithm for suffix stripping</article-title>. <source>Program</source> <volume>14(3)</volume>: <fpage>130</fpage>–<lpage>137</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Chaumartin1">
+        <label>42</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Chaumartin FR (2007) UPAR7: A knowledge-based system for headline sentiment tag-ging.Proceedings of the 4th International Workshop on Semantic Evaluations., 422–425.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Neviarouskaya1">
+        <label>43</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Neviarouskaya</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Prendinger</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Ishizuka</surname><given-names>M</given-names></name> (<year>2007</year>) <article-title>Textual affect sensing for sociable and expressive online communication</article-title>. <source>Affective Computing and Intelligent Interaction</source> <fpage>218</fpage>–<lpage>229</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Hu1">
+        <label>44</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Hu X, Downie JS, Ehmann AF (2009) Lyric text mining in music mood classification. 10th International Society for Music Information Retrieval Conference: 411–416.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Calvo1">
+        <label>45</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Calvo</surname><given-names>RA</given-names></name>, <name name-style="western"><surname>D'Mello</surname><given-names>S</given-names></name> (<year>2010</year>) <article-title>Affect Detection: An Interdisciplinary Review of Models, Methods, and Their Applications</article-title>. <source>TAC</source> <volume>1(1)</volume>: <fpage>18</fpage>–<lpage>37</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-Roberts1">
+        <label>46</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Roberts K, Harabagiu SM (2012) Statistical and Similarity Methods for Classifying Emotion in Suicide Notes. Biomedical Informatics Insights (Suppl. 1): 195–204.</mixed-citation>
+      </ref>
+      <ref id="pone.0059030-R1">
+        <label>47</label>
+        <mixed-citation publication-type="book" xlink:type="simple">R Development Core Team (2010) R: A language and environment for statistical computing. R Foundation for Statistical Computing. Vienna: The R Project for Statistical Computing. Available: <ext-link ext-link-type="uri" xlink:href="http://www.R-project.org" xlink:type="simple">http://www.R-project.org</ext-link>. Accessed 2013 Feb 22.</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

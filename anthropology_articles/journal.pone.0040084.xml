@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosone</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group><issn pub-type="epub">1932-6203</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="publisher-id">PONE-D-12-02565</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0040084</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Computational biology</subject>
+            <subj-group>
+              <subject>Synthetic biology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Theoretical biology</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Computer science</subject>
+          <subj-group>
+            <subject>Algorithms</subject>
+          </subj-group>
+          <subj-group>
+            <subject>Computer modeling</subject>
+          </subj-group>
+          <subj-group>
+            <subject>Computerized simulations</subject>
+          </subj-group>
+          <subj-group>
+            <subject>Numerical analysis</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Mathematics</subject>
+          <subj-group>
+            <subject>Applied mathematics</subject>
+            <subj-group>
+              <subject>Complex systems</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Social and behavioral sciences</subject>
+          <subj-group>
+            <subject>Anthropology</subject>
+            <subj-group>
+              <subject>Social anthropology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Information science</subject>
+            <subj-group>
+              <subject>Information theory</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Computational Biology</subject>
+          <subject>Computer Science</subject>
+          <subject>Mathematics</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>Quantifying and Tracing Information Cascades in Swarms</article-title><alt-title alt-title-type="running-head">Information Cascades in Swarms</alt-title></title-group><contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Wang</surname>
+            <given-names>X. Rosalind</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Miller</surname>
+            <given-names>Jennifer M.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Lizier</surname>
+            <given-names>Joseph T.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Prokopenko</surname>
+            <given-names>Mikhail</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Rossi</surname>
+            <given-names>Louis F.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1"><label>1</label><addr-line>CSIRO Information and Communication Technologies Centre, Marsfield, New South Wales, Australia</addr-line>       </aff><aff id="aff2"><label>2</label><addr-line>Department of Mathematical Sciences, University of Delaware, Newark, Delaware, United States of America</addr-line>       </aff><aff id="aff3"><label>3</label><addr-line>Max Planck Institute for Mathematics in the Sciences, Leipzig, Germany</addr-line>       </aff><contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>de Polavieja</surname>
+            <given-names>Gonzalo G.</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group><aff id="edit1">Cajal Institute, Consejo Superior de Investigaciones Científicas, Spain</aff><author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">Rosalind.Wang@csiro.au</email></corresp>
+        <fn fn-type="con">
+          <p>Performed the experiments: XRW JTL JMM LFR. Analyzed the data: XRW MP. Contributed reagents/materials/analysis tools: XRW JTL JMM LFR. Wrote the paper: XRW MP. Conceived the experiments: XRW JTL LFR. Designed the experiments: XRW JTL JMM.</p>
+        </fn>
+      <fn fn-type="conflict">
+        <p>The authors have declared that no competing interests exist.</p>
+      </fn></author-notes><pub-date pub-type="collection">
+        <year>2012</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>12</day>
+        <month>7</month>
+        <year>2012</year>
+      </pub-date><volume>7</volume><issue>7</issue><elocation-id>e40084</elocation-id><history>
+        <date date-type="received">
+          <day>21</day>
+          <month>1</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>31</day>
+          <month>5</month>
+          <year>2012</year>
+        </date>
+      </history><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2012</copyright-year><copyright-holder>Wang et al</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><abstract>
+        <p>We propose a novel, information-theoretic, characterisation of cascades within the spatiotemporal dynamics of swarms, explicitly measuring the extent of collective communications. This is complemented by dynamic tracing of collective memory, as another element of distributed computation, which represents capacity for swarm coherence. The approach deals with both global and local information dynamics, ultimately discovering diverse ways in which an individual’s spatial position is related to its information processing role. It also allows us to contrast cascades that propagate conflicting information with waves of coordinated motion. Most importantly, our simulation experiments provide the first direct information-theoretic evidence (verified in a simulation setting) for the long-held conjecture that the information cascades occur in waves rippling through the swarm. Our experiments also exemplify how features of swarm dynamics, such as cascades’ wavefronts, can be filtered and predicted. We observed that maximal information transfer tends to follow the stage with maximal collective memory, and principles like this may be generalised in wider biological and social contexts.</p>
+      </abstract><funding-group><funding-statement>LFR and JMM are funded by United States National Science Foundation grants CCF-0726556 and CCF-0829748. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. No other external fundings were received for this study.</funding-statement></funding-group><counts>
+        <page-count count="7"/>
+      </counts></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Animal groups in nature often exhibit striking examples of spatial aggregation, e.g. schools of fish, swarms of locusts, herds of wildebeest, and flocks of birds <xref ref-type="bibr" rid="pone.0040084-Lissaman1">[1]</xref>–<xref ref-type="bibr" rid="pone.0040084-Sinclair1">[3]</xref>. Such aggregations may provide individuals with protection, mate choices, foraging, habitat assessment, migratory routes, etc. <xref ref-type="bibr" rid="pone.0040084-Camazine1">[4]</xref>, <xref ref-type="bibr" rid="pone.0040084-Giraldeau1">[5]</xref>. Complex large-scale patterns and structures emerge within swarms through individual decisions based on perception of local conditions. It has been observed that small perturbations cascade through an entire swarm in a wave-like manner <xref ref-type="bibr" rid="pone.0040084-Potts1">[6]</xref>, with these cascades conjectured to embody information transfer <xref ref-type="bibr" rid="pone.0040084-Couzin1">[7]</xref>. Even a few individuals may strongly bias the motion of an entire group. For instance, if a certain number of fish in close proximity turn together, this may result in a wave of turning across the whole group <xref ref-type="bibr" rid="pone.0040084-Radakov1">[8]</xref>. Formation of waves is a widespread phenomenon observed in animal groups <xref ref-type="bibr" rid="pone.0040084-Potts1">[6]</xref>, <xref ref-type="bibr" rid="pone.0040084-Couzin1">[7]</xref>, <xref ref-type="bibr" rid="pone.0040084-Kastberger1">[9]</xref>, seeming to rapidly transfer information over long ranges. Such waves are typically conjectured as information cascades <xref ref-type="bibr" rid="pone.0040084-Couzin1">[7]</xref>, and we aim to quantify these cascades in precise information-theoretic terms.</p>
+      <p>In a seminal work, Bikhchandani et al. <xref ref-type="bibr" rid="pone.0040084-Bikhchandani1">[10]</xref> defined an “informational cascade” as a phenomenon occurring “when it is optimal for an individual, having observed the actions of those ahead of him, to follow the behaviour of the preceding individual without regard to his own information”, i.e. via an independence of an individual’s action from their private information signal. They identified two social regularities that can be explained by informational cascades: localised conformity of behaviour and fragility of mass behaviours. Their approach was not information-theoretic and did not quantify a precise information content stored/acquired within a group or transferred by a cascade.</p>
+      <p>Information cascades in collective systems often result in a rapid autocatalytic adaptive response to changing conditions <xref ref-type="bibr" rid="pone.0040084-Couzin1">[7]</xref>. This heightened response allows the group to be extremely sensitive to weak or ambiguous external stimuli, though retaining some susceptibility to noise, incorrect decisions and false alarms <xref ref-type="bibr" rid="pone.0040084-Giraldeau1">[5]</xref>, <xref ref-type="bibr" rid="pone.0040084-Couzin1">[7]</xref>, <xref ref-type="bibr" rid="pone.0040084-Galef1">[11]</xref>.</p>
+      <p>Dall et al. <xref ref-type="bibr" rid="pone.0040084-Dall1">[12]</xref> mentioned that public information favours group cohesion, argued that information implies utility as well as uncertainty reduction, and proposed an explicit statistical decision theory framework. Their approach did not quantify either the degree of swarm cohesiveness due to public information, or information cascades <italic>per se</italic>. They pointed out that Shannon-Weaver entropy and similar ideas focused on simple reductions of uncertainty do not suffice in organismal biology. We argue that the <italic>information dynamics</italic> model used in our study goes beyond these simple ideas by utilising a directed measure (transfer entropy <xref ref-type="bibr" rid="pone.0040084-Schreiber1">[13]</xref>) for information cascades, as well as localising average information-theoretic quantities.</p>
+      <p>As pointed out by Katz <italic>et al.</italic> <xref ref-type="bibr" rid="pone.0040084-Katz1">[14]</xref> important questions are how animals integrate information from widely disparate sources in real time <xref ref-type="bibr" rid="pone.0040084-Couzin2">[15]</xref> and how this nonlinear integration translates into higher-order collective computational capabilities. There is an emerging understanding that information is a crucial currency for animals from both a behavioural and evolutionary perspective <xref ref-type="bibr" rid="pone.0040084-Dall1">[12]</xref>, <xref ref-type="bibr" rid="pone.0040084-Polani1">[16]</xref>. In this work, we take an information-theoretic viewpoint on distributed computation occurring within swarms, utilising a recently introduced framework for local information dynamics.</p>
+      <p>Coherence in the swarm is ultimately related to collective <italic>memory</italic> (e.g. long range interaction) <xref ref-type="bibr" rid="pone.0040084-Couzin2">[15]</xref>, <xref ref-type="bibr" rid="pone.0040084-Sperati1">[17]</xref>, which benefits individuals locally and the “localised conformity of behaviour” becomes efficient <xref ref-type="bibr" rid="pone.0040084-Bikhchandani1">[10]</xref>. Thus our first hypothesis is that the collective memory within the swarm that is used for computation is captured by <italic>Active Information Storage</italic> (AIS) <xref ref-type="bibr" rid="pone.0040084-Lizier1">[18]</xref>, <xref ref-type="bibr" rid="pone.0040084-Lizier2">[19]</xref>. The local AIS of an agent in the system is the amount of information in its past that is used in predicting its next state. The overall swarm’s AIS is the average over all individuals at any given time.</p>
+      <p>Information cascades, on the other hand, are manifestations of long range <italic>communications</italic> that either dynamically reorganise the swarm reducing the “fragility of mass behaviour” <xref ref-type="bibr" rid="pone.0040084-Bikhchandani1">[10]</xref> or propagate incorrect decisions <xref ref-type="bibr" rid="pone.0040084-Galef1">[11]</xref>. Our second hypothesis is that information cascades are captured by conditional <italic>Transfer Entropy</italic> (TE) <xref ref-type="bibr" rid="pone.0040084-Lizier3">[20]</xref>, <xref ref-type="bibr" rid="pone.0040084-Lizier4">[21]</xref>, which characterises the communication aspect of distributed computation. The local information transfer between a source and a destination agent is defined as the information provided by the source about the destination’s next state that was not contained in the past of the destination <xref ref-type="bibr" rid="pone.0040084-Schreiber1">[13]</xref>. Importantly, TE properly measures a directed, dynamic transfer of information.</p>
+      <p>At this stage we would like to contrast the measures of <italic>transfer entropy</italic> and <italic>information flow</italic>. These measures must be used separately to quantify information transfer and causal information flow respectively.</p>
+      <p>Transfer entropy was introduced by Schreiber <xref ref-type="bibr" rid="pone.0040084-Schreiber1">[13]</xref> and has seen been applied in different settings. For instance, in computational neuroscience, the study <xref ref-type="bibr" rid="pone.0040084-Lizier5">[22]</xref> presented a novel method for interregional connectivity analysis, using multivariate extensions to the mutual information and transfer entropy. The method identified the underlying directed information structure between brain regions, highlighting changes in the structure according to behavioral conditions. The study also pointed out differences between transfer entropy and Granger causality. The main advantage is the capture of nonlinear relationships because nonlinear coupling cannot be detected by linear methods (e.g. Granger causality, nor with the non-directional mutual information).</p>
+      <p>Other relevant neuroscientific studies include the work of Wibral <italic>et al.</italic> <xref ref-type="bibr" rid="pone.0040084-Wibral1">[23]</xref> which utilized transfer entropy analysis of magnetoencephalography (MEG) source-level signals in detecting changes in cortical and subcortical networks between the different auditory task types, the work of Chicharro and Ledberg <xref ref-type="bibr" rid="pone.0040084-Chicharro1">[24]</xref> which considers brain as a biological system consisting of multiple interacting subsystems and shows that the influence of causal connections on the natural dynamics of the system often cannot be analysed in terms of the causal effect of one subsystem on another.</p>
+      <p><italic>Information flow</italic> was proposed as a measure for causal information flow by Ay and Polani <xref ref-type="bibr" rid="pone.0040084-Ay1">[25]</xref>, and it is important to realise a crucial difference between (1) transfer entropy and (2) information flow. As argued by Lizier and Prokopenko <xref ref-type="bibr" rid="pone.0040084-Lizier6">[26]</xref>, predictive transfer (measured with transfer entropy) refers to the amount of information that a source variable adds to the next state of a destination variable; i.e. “If I know the state of the source, how much does that help to predict the state of the destination?”. On the other hand, causal effect (measured with information flow) refers to the extent to which the source variable has a direct influence on the next state of a destination variable, i.e. “If I change the state of the source, to what extent does that alter the state of the destination?”.</p>
+      <p>The difference between transfer entropy as a method to capture information transfer, and information flow as a measure to capture causal effect/flow, is very important and may cast observations in a different light. In this work, we stay completely within the interpretation of predictive information transfer, and do not make any claims on detecting causal information flows.</p>
+      <p>Memory typically refers to the storage of information by an agent or process to be used in its future. It can be understood in a wider (collective/distributed) context, where stigmergy is used as a means to share information between agents via environment <xref ref-type="bibr" rid="pone.0040084-Lizier1">[18]</xref>. Grassé <xref ref-type="bibr" rid="pone.0040084-Grase1">[27]</xref> introduced the term stigmergy (“previous work directs and triggers new building actions”) to describe a decentralised pathway of information flow in social insects. Stigmergy is a mechanism of indirect coordination among agents acting in the environment, where local traces left in the environment by decentralised actions stimulate the performance of subsequent actions by the same or a different agent. In a more applied sense, Klyubin <italic>et al.</italic> <xref ref-type="bibr" rid="pone.0040084-Klyubin1">[28]</xref> treated agent’s sensors as extracting information and actuators as having the capability to “imprint” information on the environment, thus viewing agents as creating, maintaining and making use of various information “flows”. For example, the individuals within a swarm can put some information out into the environment, then retrieve it at a later point in time by sensing –– i.e., individuals do not have to keep all of the information internally and can share a distributed collective memory through interactions with the environment or other individuals.</p>
+      <p>One may take a causation approach to measuring memory by computing causal information flows using interventionist approach of Ay and Polani <xref ref-type="bibr" rid="pone.0040084-Ay1">[25]</xref>. In other words, one would attempt to impose on source variables and determine the changes in the destinations brought about by these impositions. For instance, if a swarm model is described by differential equations, one may estimate the effects of interactions between individuals by modifying terms of the model. In this work, however, we take a simpler approach to measuring memory via information storage, without causal flows.</p>
+      <p>To re-iterate, we hypothesise that AIS captures the active/predictive collective memory within the swarm while TE measures information cascades. To verify these hypotheses, we explore two scenarios. Our first experiment checks how different local initial perturbations affect a single swarm. The second experiment introduces a different type of perturbations, brought about by three separate but merging swarms. We use a Lagrangian model for modelling and simulating aggregations of discrete individuals. Each individual responds to its neighbours in three concentric zones with repulsion, orientation, or attraction, respectively <xref ref-type="bibr" rid="pone.0040084-Couzin3">[29]</xref>–<xref ref-type="bibr" rid="pone.0040084-Vicsek1">[32]</xref>. The experiments quantitatively confirm our conjectures by tracing AIS and TE over time. The observed local and global maxima of these measures allow us to identify different elements of swarm dynamics (see Movie S1, S2, S3, S4 for the videos).</p>
+    </sec>
+    <sec id="s2">
+      <title>Results</title>
+      <p>Initially, the individuals in the centre of the swarm are not affected by changes at the swarm’s periphery. As the changes propagate deeper, more and more individuals get engaged in collective computation and the collective memory grows, creating coordinated motion. When the majority of individuals are dynamically coordinated, average AIS of the swarm reaches its maximum (<xref ref-type="fig" rid="pone-0040084-g001">Fig. 1</xref> at <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e001" xlink:type="simple"/></inline-formula>).</p>
+      <fig id="pone-0040084-g001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0040084.g001</object-id>
+        <label>Figure 1</label>
+        <caption>
+          <title>Information storage and transfer over time for a swarm initially in a square configuration.</title>
+          <p>Shown here are the average active information storage (AIS) per particle and average transfer entropy (TE) per particle pair.</p>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0040084.g001" xlink:type="simple"/>
+      </fig>
+      <p><xref ref-type="fig" rid="pone-0040084-g001">Figures 1</xref>, <xref ref-type="fig" rid="pone-0040084-g002">2</xref> and Movie S1 trace information dynamics over time, and show that local AIS can be positive and negative. Positive local AIS indicates that the past informs about the next state, while negative values indicate that the past misinforms about the next state <xref ref-type="bibr" rid="pone.0040084-Lizier1">[18]</xref>, <xref ref-type="bibr" rid="pone.0040084-Lizier4">[21]</xref>. Negative local storage means that an individual’s movement is unusually strongly influenced by other individuals (via high transfer) at this time, given the past history of that individual.</p>
+      <fig id="pone-0040084-g002" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0040084.g002</object-id>
+        <label>Figure 2</label>
+        <caption>
+          <title>Local information dynamics for a swarm initially in a square configuration.</title>
+          <p>(Top) Local average information storage through the swarm at key time steps. (Bottom) Local average information transfer in a swarm at key time steps. The individuals’ two-dimensional positions are plotted on the <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e002" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e003" xlink:type="simple"/></inline-formula> axes, and their colours represent the AIS and TE values in bits, as shown by the scale on the colour bar. Note that the axes scales are adjusted, and the colours are scaled differently for positive and negative values.</p>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0040084.g002" xlink:type="simple"/>
+      </fig>
+      <p>We argue that negative local AIS represents processing of new data propagated from elsewhere. For example, in <xref ref-type="fig" rid="pone-0040084-g002">Fig. 2C</xref> some of individuals in the centre are trying to compute their next state while being influenced by competing signals from their neighbours. In such situations, their past is misinformative about the next state. This results in the overall AIS decrease from the maximum. This decrease may be interrupted when the misinformed individuals are outnumbered by the individuals moving coherently. However, as the swarm synchronies to a steady motion, AIS (i.e. active collective memory) converges to a positive constant near zero. This can be seen by writing the joint probability <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e004" xlink:type="simple"/></inline-formula> as <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e005" xlink:type="simple"/></inline-formula> according to Bayes’ Rule, making the log term in Equation 6 equal to <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e006" xlink:type="simple"/></inline-formula>. When the swarm is in steady motion, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e007" xlink:type="simple"/></inline-formula>, making the log term approximately zero. The ‘bell’ shaped curve of AIS is reminiscent of many complexity curves <xref ref-type="bibr" rid="pone.0040084-Lizier7">[33]</xref>, <xref ref-type="bibr" rid="pone.0040084-Prokopenko1">[34]</xref>, indicating that the most complex collective behaviour can be characterised information-theoretically.</p>
+      <p>Now we turn our attention to the communication aspect of computation, modelling information cascades by TE. As the swarm begins to ‘absorb’ the initial changes originated at the periphery, the first wave results in slightly increasing overall TE (<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e008" xlink:type="simple"/></inline-formula>). The moment the wave reaches the centre, some individuals there acquire high local TE, being strongly influenced by their neighbours. Their new dynamics generates a new information wave spreading outwards through the swarm, achieving a local maximum at <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e009" xlink:type="simple"/></inline-formula> followed by a local minimum when it dissipates at <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e010" xlink:type="simple"/></inline-formula>. At this time AIS attained its global maximum, and the computation is non-trivial involving both memory and communication.</p>
+      <p>Local TE can also be positive or negative <xref ref-type="bibr" rid="pone.0040084-Lizier3">[20]</xref>, <xref ref-type="bibr" rid="pone.0040084-Lizier4">[21]</xref> (<xref ref-type="fig" rid="pone-0040084-g002">Fig. 2</xref>, bottom row, and Movie S2). Positive local TE means that the source agent is informative about the next state of the destination, given the destination’s history (the movement is strongly affected by its neighbours). Negative TE indicates that the source misleads an observer (when the individual is either exhibiting strong independent motion or is under the collective influence of several neighbours rather than the coherent influence of a single neighbour, e.g. <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e011" xlink:type="simple"/></inline-formula>). These information dynamics suggest that transfer alternates with storage. Indeed, <xref ref-type="fig" rid="pone-0040084-g002">Figure 2</xref> shows in most cases, areas of high local storage often have low or negative local transfer and vice versa.</p>
+      <p>Individuals that begin to move coherently (i.e. have comparably high local TE) form a front of a cascade as seen at <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e012" xlink:type="simple"/></inline-formula>. At that time, TE reaches its global maximum because the formed cascades dominate incoherent individuals. Not surprisingly, this stage has followed the time when memory (AIS) was highest. Eventually, the cascades help to coordinate the swarm, creating a steady configuration. TE decreases as the swarm ‘crystallises’.</p>
+      <p>Our second experiment (<xref ref-type="fig" rid="pone-0040084-g003">Fig. 3</xref> &amp; <xref ref-type="fig" rid="pone-0040084-g004">4</xref>, and Movie S3 &amp; Movie S4) models three swarms that eventually start interacting with each other. Thus, this experiment allows us to model different boundary perturbations.</p>
+      <fig id="pone-0040084-g003" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0040084.g003</object-id>
+        <label>Figure 3</label>
+        <caption>
+          <title>Information storage and transfer over time for a swarm initially consists of three squares in a checker configuration.</title>
+          <p>Shown here are the average active information storage (AIS) per particle and average transfer entropy (TE) per particle pair.</p>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0040084.g003" xlink:type="simple"/>
+      </fig>
+      <fig id="pone-0040084-g004" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0040084.g004</object-id>
+        <label>Figure 4</label>
+        <caption>
+          <title>Local average information dynamics in a swarm at key time steps.</title>
+          <p>A-H, active information storage, I-P, transfer entropy. The swarm initially consists of three squares in a checker configuration. The individuals’ two-dimensional positions are plotted on the <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e013" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e014" xlink:type="simple"/></inline-formula> axes, and their colours represent the AIS and TE values in bits, as shown by the scale on the colour bar. Note that the axes scales are adjusted, and the colours are scaled differently for positive and negative values.</p>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0040084.g004" xlink:type="simple"/>
+      </fig>
+      <p>When the swarms start to interact and the individuals become more dynamically coordinated, the overall local storage increases until it reaches global maximum at <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e015" xlink:type="simple"/></inline-formula> (<xref ref-type="fig" rid="pone-0040084-g004">Figure 4A–C</xref>). This is the moment when all three swarms merge into a single coordinated entity, confined within a spatial extent that will not change significantly past this point. Importantly, the majority of individuals are dynamically coordinated at this instant, which is followed by several ‘waves’ (<xref ref-type="fig" rid="pone-0040084-g004">Figure 4D–H</xref>) that interleave groups of individuals with higher and lower local AIS. This process non-monotonically reduces AIS, while the swarm converges to the state of synchrony, with AIS being near zero (similar to the first experiment).</p>
+      <p>Similar to the first experiment, as the swarms merge (<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e016" xlink:type="simple"/></inline-formula>), the overall TE is mostly increasing because there are several significant information cascades ‘rippling’ through the swarm. This shows that as the swarm is merging into one group, the specific individuals are under the most influence from their neighbours. The maximum TE lags behind that of AIS (analogously to the first experiment) again highlighting rich computation in terms of both collective communication and memory.</p>
+      <p>Tracing TE reveals some new features. Firstly, when the swarms merge, while moving from left to right, we can observe asymmetry in local values: a front of negative local TE on the left (where individuals were ‘surprised’ because the direction of dominant attraction was roughly opposite to the current direction of the overall swarm motion), and a front of positive local TE on the right (where these two directions concurred).</p>
+      <p>The second new feature is propagation of an initial asymmetry in swarms. For example, negative local TE at <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e017" xlink:type="simple"/></inline-formula> (<xref ref-type="fig" rid="pone-0040084-g004">Fig. 4O</xref>) are particularly visible. As the swarm progresses towards a steady state, there are further local fluctuations reducing the overall information storage and transfer values, showing that the distributed computation declines.</p>
+    </sec>
+    <sec id="s3">
+      <title>Discussion</title>
+      <p>The reported results provide the first quantitative evidence (verified in a simulation setting) with a direct measure of information for the long-held conjecture that the information cascades occur in waves rippling through the swarm. The cascades can be observed via coherent changes in local TE, and are akin to information cascades in other systems, e.g. gliders in cellular automata <xref ref-type="bibr" rid="pone.0040084-Lizier3">[20]</xref>. Our characterisation deals with weak and ambiguous external stimuli by incorporating both positive and negative local TE. In contrast to previous studies, information cascades are not just observed as changes in behaviours and activities, but are rather rigorously determined and computed.</p>
+      <p>In addition, we introduced a novel information-theoretic characterisation of swarm’s collective memory, which is identified with AIS. Higher values of AIS are associated with higher levels of dynamic coordination. This study reveals different ways in which a particle’s spatial position is dynamically related to its information processing role.</p>
+      <p>Collective communication and memory are two necessary elements of distributed computation (in addition to information modification <xref ref-type="bibr" rid="pone.0040084-Lizier4">[21]</xref>, <xref ref-type="bibr" rid="pone.0040084-Langton1">[35]</xref>). The information-theoretic approach clearly separates different elements of distributed computation taking place in swarms, filtering and predicting important hot spots (e.g. a cascade’s wavefront, collective memory’s core, etc.). In addition, this framework may reveal new biological/social principles that govern coherent aggregation of living organisms (e.g. maximal information transfer tends to follow the stage with maximal collective memory).</p>
+    </sec>
+    <sec id="s4" sec-type="methods">
+      <title>Methods</title>
+      <p>We use a three-zone swarming model that features continuous, concentric circular and overlapping zones with smooth transitions. In an appropriate limit corresponding to a swarm consisting of a large number of individuals, the dynamics of the system is governed by a system of partial differential equations describing the density and velocity of the swarm <xref ref-type="bibr" rid="pone.0040084-Miller1">[36]</xref>. To perform simulations, the density and velocity fields are systematically discretized into individuals with two-dimensional position vector <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e018" xlink:type="simple"/></inline-formula>, velocity <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e019" xlink:type="simple"/></inline-formula> and acceleration <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e020" xlink:type="simple"/></inline-formula>. For this model, individuals turn toward a desired direction,<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0040084.e021" xlink:type="simple"/><label>(1)</label></disp-formula>where <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e022" xlink:type="simple"/></inline-formula> is a turning rate parameter and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e023" xlink:type="simple"/></inline-formula> is the desired direction of the <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e024" xlink:type="simple"/></inline-formula> individual. The desired direction is a linear combination of influences,<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0040084.e025" xlink:type="simple"/><label>(2)</label></disp-formula>where <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e026" xlink:type="simple"/></inline-formula>, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e027" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e028" xlink:type="simple"/></inline-formula> are the influences from the zones of repulsion, orientation and attraction, respectively and are given by:</p>
+      <p><disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0040084.e029" xlink:type="simple"/><label>(3)</label></disp-formula><disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0040084.e030" xlink:type="simple"/><label>(4)</label></disp-formula>and<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0040084.e031" xlink:type="simple"/><label>(5)</label></disp-formula>where <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e032" xlink:type="simple"/></inline-formula>, the relative position of individuals <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e033" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e034" xlink:type="simple"/></inline-formula>. The lengths <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e035" xlink:type="simple"/></inline-formula> represent the sizes of the repulsion, orientation and attraction zones, respectively. The parameter <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e036" xlink:type="simple"/></inline-formula> in Equation 2 controls the relative importance of attraction over repulsion. An individual will be influenced to move away from other individuals that are within the innermost zone of repulsion, to align with individuals in the central zone of orientation and to move toward individuals in the outer zone of attraction. The constant <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e037" xlink:type="simple"/></inline-formula> specifies the importance of attraction relative to orientation and repulsion.</p>
+      <p>We integrated the individual trajectories using the scipy.integrate.odeint Python package so that they are numerically resolved to a relative error of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e038" xlink:type="simple"/></inline-formula>. To construct time series, we subsampled the trajectories at time intervals of <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e039" xlink:type="simple"/></inline-formula>. We start our investigation with individuals in a square configuration <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e040" xlink:type="simple"/></inline-formula> in size, or individuals in three squares of checker configuration initially, each square is <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e041" xlink:type="simple"/></inline-formula> in size.</p>
+      <p>AIS for agent <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e042" xlink:type="simple"/></inline-formula> is the local mutual information from its semi-infinite past <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e043" xlink:type="simple"/></inline-formula> (as <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e044" xlink:type="simple"/></inline-formula>) to its next state <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e045" xlink:type="simple"/></inline-formula> at time step <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e046" xlink:type="simple"/></inline-formula> <xref ref-type="bibr" rid="pone.0040084-Lizier1">[18]</xref>:<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0040084.e047" xlink:type="simple"/><label>(6)</label></disp-formula>with <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e048" xlink:type="simple"/></inline-formula> representing an approximation with finite history length <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e049" xlink:type="simple"/></inline-formula>. The overall AIS is the average <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e050" xlink:type="simple"/></inline-formula>.</p>
+      <p>The local TE <xref ref-type="bibr" rid="pone.0040084-Lizier3">[20]</xref> from a source agent <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e051" xlink:type="simple"/></inline-formula> to a destination agent <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e052" xlink:type="simple"/></inline-formula> is the local mutual information between the previous state of the source <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e053" xlink:type="simple"/></inline-formula> and the next state of the destination <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e054" xlink:type="simple"/></inline-formula>, <italic>conditioned</italic> on the past of the destination <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e055" xlink:type="simple"/></inline-formula>. In this study, we also condition it on another contributor <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e056" xlink:type="simple"/></inline-formula> to form the <italic>conditional transfer entropy</italic> <xref ref-type="bibr" rid="pone.0040084-Lizier4">[21]</xref>:<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0040084.e057" xlink:type="simple"/><label>(7)</label></disp-formula>Again, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e058" xlink:type="simple"/></inline-formula> represents finite-<inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e059" xlink:type="simple"/></inline-formula> approximation, and the overall TE is the average: <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e060" xlink:type="simple"/></inline-formula>.</p>
+      <p>To apply information dynamics to swarms, we accumulated the observations across agents and measured the state transitions with relative variables <xref ref-type="bibr" rid="pone.0040084-Wang1">[37]</xref>. For local AIS, the variables in Eq. 6 are: <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e061" xlink:type="simple"/></inline-formula>, and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e062" xlink:type="simple"/></inline-formula>. For TE, we do not take into account the speed in <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e063" xlink:type="simple"/></inline-formula>, and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e064" xlink:type="simple"/></inline-formula> is the relative positions and velocities between two individuals, thus, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e065" xlink:type="simple"/></inline-formula>, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e066" xlink:type="simple"/></inline-formula>, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e067" xlink:type="simple"/></inline-formula>, and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e068" xlink:type="simple"/></inline-formula>.</p>
+      <p>For each individual, we compute local TE from all neighbours within a certain radius and average these values into the local TE for that individual. While each TE could be viewed as akin to a vector, i.e. having magnitude and relative direction from the source to the destination, these components are quite separate and the total information transferred to an individual does not add together in a simple vector-wise fashion. (Indeed, it adds together properly by considering incrementally conditioned transfer entropy terms, see <xref ref-type="bibr" rid="pone.0040084-Lizier4">[21]</xref>). As such, it is more meaningful to consider the average information received by the individual from each source. The average TE for the swarm is the average of these averages. For example, <xref ref-type="fig" rid="pone-0040084-g002">Figs. 2E–H</xref> show the local TE values for individuals at different times, while <xref ref-type="fig" rid="pone-0040084-g001">Fig. 1</xref> traces the swarm average over time.</p>
+    </sec>
+    <sec id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material id="pone.0040084.s001" mimetype="video/quicktime" position="float" xlink:href="info:doi/10.1371/journal.pone.0040084.s001" xlink:type="simple">
+        <label>Movie S1</label>
+        <caption>
+          <p><bold>Local active information storage (AIS) of swarm individuals over time for experiment 1.</bold> We start the simulation with the swarm individuals in a square configuration <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e069" xlink:type="simple"/></inline-formula> in size. The top panel shows the average AIS per individual as depicted in <xref ref-type="fig" rid="pone-0040084-g002">Figure 2</xref> in the main text, with the vertical line highlighting the specified time. The bottom panel shows the swarm dynamics at the specified time, the individuals’ two-dimensional positions are plotted on the <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e070" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e071" xlink:type="simple"/></inline-formula> axes. The local AIS values for each individual is shown here in different colours, according to the scale on the right. Note the colours are scaled differently for positive and negative values.</p>
+          <p>(MOV)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0040084.s002" mimetype="video/quicktime" position="float" xlink:href="info:doi/10.1371/journal.pone.0040084.s002" xlink:type="simple">
+        <label>Movie S2</label>
+        <caption>
+          <p><bold>Local transfer entropy (TE) of swarm individuals over time for experiment 1.</bold> We start the simulation with the swarm individuals in a square configuration <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e072" xlink:type="simple"/></inline-formula> in size. The top panel shows the average TE per particle pair as depicted in Figure 0 in the main text, with the vertical line highlighting the specified time. The bottom panel shows the swarm dynamics at the specified time, the individuals’ two-dimensional positions are plotted on the <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e073" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e074" xlink:type="simple"/></inline-formula> axes. The local TE values for each individual is shown here in different colours, according to the scale on the right. Note the colours are scaled differently for positive and negative values.</p>
+          <p>(MOV)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0040084.s003" mimetype="video/quicktime" position="float" xlink:href="info:doi/10.1371/journal.pone.0040084.s003" xlink:type="simple">
+        <label>Movie S3</label>
+        <caption>
+          <p><bold>Local active information storage (AIS) of swarm individuals over time for experiment 2.</bold> We start the simulation with the swarm individuals in three squares of checker configuration; each square is <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e075" xlink:type="simple"/></inline-formula> in size. The top panel shows the overall AIS as depicted in <xref ref-type="fig" rid="pone-0040084-g002">Figure 2</xref> in the main text, with the vertical line highlighting the specified time. The bottom panel shows the swarm dynamics at the specified time, the individuals’ two-dimensional positions are plotted on the <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e076" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e077" xlink:type="simple"/></inline-formula> axes, with the colours of each individual denoting the value of its local AIS. The local AIS values for each individual is shown here in different colours, according to the scale on the right. Note the colours are scaled differently for positive and negative values.</p>
+          <p>(MOV)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0040084.s004" mimetype="video/quicktime" position="float" xlink:href="info:doi/10.1371/journal.pone.0040084.s004" xlink:type="simple">
+        <label>Movie S4</label>
+        <caption>
+          <p><bold>Local transfer entropy (TE) of swarm individuals over time for experiment 2.</bold> We start the simulation with the swarm individuals in three squares of checker configuration; each square is <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e078" xlink:type="simple"/></inline-formula> in size. The top panel shows the overall TE as depicted in <xref ref-type="fig" rid="pone-0040084-g004">Figure 4</xref> in the main text, with the vertical line highlighting the specified time. The bottom panel shows the swarm dynamics at the specified time, the individuals’ two-dimensional positions are plotted on the <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e079" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0040084.e080" xlink:type="simple"/></inline-formula> axes, with the colours of each individual denoting the value of its local AIS. The local AIS values for each individual is shown here in different colours, according to the scale on the right. Note the colours are scaled differently for positive and negative values.</p>
+          <p>(MOV)</p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We would like to thank the High Performance Computing and Communications Centre (<ext-link ext-link-type="uri" xlink:href="http://www.hpccc.gov.au/" xlink:type="simple">http://www.hpccc.gov.au/</ext-link>) for the use of their supercomputer clusters in performing the experiments for this paper. Part of this work was completed during a stay of JMM at the CSIRO in Sydney, Australia, and JMM thanks CSIRO for support and hospitality.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0040084-Lissaman1">
+        <label>1</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lissaman</surname><given-names>PBS</given-names></name><name name-style="western"><surname>Shollenberger</surname><given-names>CA</given-names></name></person-group>             <year>1970</year>             <article-title>Formation flight of birds.</article-title>             <source>Science</source>             <volume>168</volume>             <fpage>1003</fpage>             <lpage>1005</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Parrish1">
+        <label>2</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Parrish</surname><given-names>JK</given-names></name><name name-style="western"><surname>Edelstein-Keshet</surname><given-names>L</given-names></name></person-group>             <year>1999</year>             <article-title>Complexity, pattern, and evolutionary trade-offs in animal aggregation.</article-title>             <source>Science</source>             <volume>284</volume>             <fpage>99</fpage>             <lpage>101</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Sinclair1">
+        <label>3</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Sinclair</surname><given-names>ARE</given-names></name><name name-style="western"><surname>Norton-Griffiths</surname><given-names>M</given-names></name></person-group>             <collab xlink:type="simple">editors</collab>             <year>1979</year>             <article-title>Serengeti: Dynamics of an Ecosystem.</article-title>             <source>University of Chicago Press</source>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Camazine1">
+        <label>4</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Camazine</surname><given-names>S</given-names></name><name name-style="western"><surname>Deneubourg</surname><given-names>JL</given-names></name><name name-style="western"><surname>Franks</surname><given-names>NR</given-names></name><name name-style="western"><surname>Sneyd</surname><given-names>J</given-names></name><name name-style="western"><surname>Theraulaz</surname><given-names>G</given-names></name><etal/></person-group>             <year>2003</year>             <article-title>Self-Organization in Biological Systems.</article-title>             <source>Princeton University Press</source>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Giraldeau1">
+        <label>5</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Giraldeau</surname><given-names>LA</given-names></name><name name-style="western"><surname>Valone</surname><given-names>TJ</given-names></name><name name-style="western"><surname>Templeton</surname><given-names>JJ</given-names></name></person-group>             <year>2002</year>             <article-title>Potential disadvantages of using socially acquired information.</article-title>             <source>Proc R Soc B</source>             <volume>357</volume>             <fpage>15591566</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Potts1">
+        <label>6</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Potts</surname><given-names>WK</given-names></name></person-group>             <year>1984</year>             <article-title>The chorus-line hypothesis of manoeuvre coordination in avian flocks.</article-title>             <source>Nature</source>             <volume>309</volume>             <fpage>344</fpage>             <lpage>345</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Couzin1">
+        <label>7</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Couzin</surname><given-names>ID</given-names></name><name name-style="western"><surname>James</surname><given-names>R</given-names></name><name name-style="western"><surname>Croft</surname><given-names>DP</given-names></name><name name-style="western"><surname>Krause</surname><given-names>J</given-names></name></person-group>             <year>2006</year>             <article-title>Social organization and information transfer in schooling fishes.</article-title>             <source>In: Brown C, Laland K, Krause J, editors, Fish Cognition and Behavior, Blackwell Publishing, Fish and Aquatic Resources.</source>             <fpage>166</fpage>             <lpage>185</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Radakov1">
+        <label>8</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Radakov</surname><given-names>DV</given-names></name></person-group>             <year>1973</year>             <article-title>Schooling in the ecology of fish. New York: John Wiley &amp; Sons Inc.</article-title>             <source>Translated from Russian by H. Mills</source>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Kastberger1">
+        <label>9</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kastberger</surname><given-names>G</given-names></name><name name-style="western"><surname>Schmelzer</surname><given-names>E</given-names></name><name name-style="western"><surname>Kranner</surname><given-names>I</given-names></name></person-group>             <year>2008</year>             <article-title>Social waves in giant honeybees repel hornets.</article-title>             <source>PLoS ONE</source>             <volume>3</volume>             <fpage>e3141</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Bikhchandani1">
+        <label>10</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bikhchandani</surname><given-names>S</given-names></name><name name-style="western"><surname>Hirshleifer</surname><given-names>D</given-names></name><name name-style="western"><surname>Welch</surname><given-names>I</given-names></name></person-group>             <year>1992</year>             <article-title>A theory of fads, fashions, custom, and cultural change as informational cascades.</article-title>             <source>J Polit Econ</source>             <volume>100</volume>             <fpage>992</fpage>             <lpage>1026</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Galef1">
+        <label>11</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Galef</surname><given-names>BG</given-names><suffix>Jr</suffix></name><name name-style="western"><surname>Giraldeau</surname><given-names>LA</given-names></name></person-group>             <year>2001</year>             <article-title>Social influences on foraging in vertebrates: causal mechanisms and adaptive functions.</article-title>             <source>Anim Behav</source>             <volume>61</volume>             <fpage>3</fpage>             <lpage>15</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Dall1">
+        <label>12</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Dall</surname><given-names>SRX</given-names></name><name name-style="western"><surname>Giraldeau</surname><given-names>LA</given-names></name><name name-style="western"><surname>Olsson</surname><given-names>O</given-names></name><name name-style="western"><surname>McNamara</surname><given-names>JM</given-names></name><name name-style="western"><surname>Stephens</surname><given-names>DW</given-names></name></person-group>             <year>2005</year>             <article-title>Information and its use by animals in evolutionary ecology.</article-title>             <source>Trends Ecol Evol</source>             <volume>20</volume>             <fpage>187</fpage>             <lpage>193</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Schreiber1">
+        <label>13</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Schreiber</surname><given-names>T</given-names></name></person-group>             <year>2000</year>             <article-title>Measuring information transfer.</article-title>             <source>Phys Rev Lett</source>             <volume>85</volume>             <fpage>461</fpage>             <lpage>464</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Katz1">
+        <label>14</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Katz</surname><given-names>Y</given-names></name><name name-style="western"><surname>Tunstrøm</surname><given-names>K</given-names></name><name name-style="western"><surname>Ioannou</surname><given-names>CC</given-names></name><name name-style="western"><surname>Huepe</surname><given-names>C</given-names></name><name name-style="western"><surname>Couzin</surname><given-names>ID</given-names></name></person-group>             <year>2011</year>             <article-title>Inferring the structure and dynamics of interactions in schooling fish.</article-title>             <source>Proc Natl Acad Sci USA</source>             <volume>108</volume>             <fpage>18720</fpage>             <lpage>18725</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Couzin2">
+        <label>15</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Couzin</surname><given-names>ID</given-names></name></person-group>             <year>2007</year>             <article-title>Collective minds.</article-title>             <source>Nature</source>             <volume>445</volume>             <fpage>715</fpage>             <lpage>715</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Polani1">
+        <label>16</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Polani</surname><given-names>D</given-names></name></person-group>             <year>2009</year>             <article-title>Information: currency of life?</article-title>             <source>HFSP J</source>             <volume>3</volume>             <fpage>307</fpage>             <lpage>316</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Sperati1">
+        <label>17</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Sperati</surname><given-names>V</given-names></name><name name-style="western"><surname>Trianni</surname><given-names>V</given-names></name><name name-style="western"><surname>Nolfi</surname><given-names>S</given-names></name></person-group>             <year>2008</year>             <article-title>Evolving coordinated group behaviour thorugh maximization of mean mutual information.</article-title>             <source>Swarm Intelligence</source>             <volume>2</volume>             <fpage>73</fpage>             <lpage>95</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Lizier1">
+        <label>18</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lizier</surname><given-names>JT</given-names></name><name name-style="western"><surname>Prokopenko</surname><given-names>M</given-names></name><name name-style="western"><surname>Zomaya</surname><given-names>AY</given-names></name></person-group>             <year>2012</year>             <article-title>Local measures of information storage in complex distributed computation.</article-title>             <source>Information Sciences</source>             <volume>208</volume>             <fpage>39</fpage>             <lpage>54</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Lizier2">
+        <label>19</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lizier</surname><given-names>JT</given-names></name><name name-style="western"><surname>Prokopenko</surname><given-names>M</given-names></name><name name-style="western"><surname>Zomaya</surname><given-names>AY</given-names></name></person-group>             <year>2007</year>             <article-title>Detecting non-trivial computation in complex dynamics.</article-title>             <source>In: Almeida e Costa F, Rocha LM, Costa E, Harvey I, Coutinho A, editors, Proceedings of the 9th European Conference on Artificial Life (ECAL 2007), Lisbon, Portugal. Berlin/Heidelberg: Springer, volume 4648 of Lecture Notes in Artificial Intelligence, 895–904.</source>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Lizier3">
+        <label>20</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lizier</surname><given-names>JT</given-names></name><name name-style="western"><surname>Prokopenko</surname><given-names>M</given-names></name><name name-style="western"><surname>Zomaya</surname><given-names>AY</given-names></name></person-group>             <year>2008</year>             <article-title>Local information transfer as a spatiotemporal filter for complex systems.</article-title>             <source>Phys Rev E</source>             <volume>77</volume>             <fpage>026110</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Lizier4">
+        <label>21</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lizier</surname><given-names>JT</given-names></name><name name-style="western"><surname>Prokopenko</surname><given-names>M</given-names></name><name name-style="western"><surname>Zomaya</surname><given-names>AY</given-names></name></person-group>             <year>2010</year>             <article-title>Information modification and particle collision in distributed computation.</article-title>             <source>Chaos</source>             <volume>20</volume>             <fpage>037109</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Lizier5">
+        <label>22</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lizier</surname><given-names>JT</given-names></name><name name-style="western"><surname>Heinzle</surname><given-names>J</given-names></name><name name-style="western"><surname>Horstmann</surname><given-names>A</given-names></name><name name-style="western"><surname>Haynes</surname><given-names>JD</given-names></name><name name-style="western"><surname>Prokopenko</surname><given-names>M</given-names></name></person-group>             <year>2010</year>             <article-title>Multivariate informationtheoretic measures reveal directed information structure and task relevant changes in fMRI connectivity.</article-title>             <source>Journal of Computational Neuroscience</source>             <volume>30</volume>             <fpage>85</fpage>             <lpage>107</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Wibral1">
+        <label>23</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Wibral</surname><given-names>M</given-names></name><name name-style="western"><surname>Rahm</surname><given-names>B</given-names></name><name name-style="western"><surname>Rieder</surname><given-names>M</given-names></name><name name-style="western"><surname>Lindner</surname><given-names>M</given-names></name><name name-style="western"><surname>Vicente</surname><given-names>R</given-names></name><etal/></person-group>             <year>2011</year>             <article-title>Transfer entropy in magnetoencephalographic data: Quantifying information flow in cortical and cerebellar networks.</article-title>             <source>Progress in Biophysics and Molecular Biology</source>             <volume>105</volume>             <fpage>80</fpage>             <lpage>97</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Chicharro1">
+        <label>24</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Chicharro</surname><given-names>D</given-names></name><name name-style="western"><surname>Ledberg</surname><given-names>A</given-names></name></person-group>             <year>2012</year>             <article-title>When two become one: The limits of causality analysis of brain dynamics.</article-title>             <source>PLoS ONE</source>             <volume>7</volume>             <fpage>e32466</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Ay1">
+        <label>25</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Ay</surname><given-names>N</given-names></name><name name-style="western"><surname>Polani</surname><given-names>D</given-names></name></person-group>             <year>2008</year>             <article-title>Information flows in causal networks.</article-title>             <source>Advances in Complex Systems</source>             <volume>11</volume>             <fpage>17</fpage>             <lpage>41</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Lizier6">
+        <label>26</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lizier</surname><given-names>JT</given-names></name><name name-style="western"><surname>Prokopenko</surname><given-names>M</given-names></name></person-group>             <year>2010</year>             <article-title>Differentiating information transfer and causal effect.</article-title>             <source>European Physical Journal B</source>             <volume>73</volume>             <fpage>605</fpage>             <lpage>615</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Grase1">
+        <label>27</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Grasśe</surname><given-names>PP</given-names></name></person-group>             <year>1959</year>             <article-title>La reconstruction du nid et les coordinations interindividuelles chez Bellicositermes natalensis et Cubitermes sp. La theorie de la stigmergie: Essai d’interpretation des termites constructeurs.</article-title>             <source>Insectes Sociaux</source>             <volume>6</volume>             <fpage>41</fpage>             <lpage>83</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Klyubin1">
+        <label>28</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Klyubin</surname><given-names>AS</given-names></name><name name-style="western"><surname>Polani</surname><given-names>D</given-names></name><name name-style="western"><surname>Nehaniv</surname><given-names>CL</given-names></name></person-group>             <year>2004</year>             <article-title>Tracking information flow through the environment: Simple cases of stigmergy.</article-title>             <source>In: Pollack J, Bedau M, Husbands P, Ikegami T, Watson RA, editors, Artificial Life IX: Proceedings of the Ninth International Conference on the Simulation and Synthesis of Living Systems. The MIT Press, 563–568.</source>             <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2307/40041279" xlink:type="simple">10.2307/40041279</ext-link></comment>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Couzin3">
+        <label>29</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Couzin</surname><given-names>ID</given-names></name><name name-style="western"><surname>Krause</surname><given-names>J</given-names></name><name name-style="western"><surname>James</surname><given-names>R</given-names></name><name name-style="western"><surname>Ruxton</surname><given-names>GD</given-names></name><name name-style="western"><surname>Franks</surname><given-names>N</given-names></name></person-group>             <year>2002</year>             <article-title>Collective memory and spatial sorting in animal groups.</article-title>             <source>J Theor Biol</source>             <volume>218</volume>             <fpage>1</fpage>             <lpage>11</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Huth1">
+        <label>30</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Huth</surname><given-names>A</given-names></name><name name-style="western"><surname>Wissel</surname><given-names>C</given-names></name></person-group>             <year>1992</year>             <article-title>The simulation of the movement of fish schools.</article-title>             <source>J Theor Biol</source>             <volume>156</volume>             <fpage>365</fpage>             <lpage>385</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Lukeman1">
+        <label>31</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lukeman</surname><given-names>R</given-names></name><name name-style="western"><surname>Li</surname><given-names>YX</given-names></name><name name-style="western"><surname>Edelstein-Keshet</surname><given-names>L</given-names></name></person-group>             <year>2010</year>             <article-title>Inferring individual rules from collective behavior.</article-title>             <source>Proc Natl Acad Sci USA</source>             <volume>107</volume>             <fpage>12576</fpage>             <lpage>12580</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Vicsek1">
+        <label>32</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Vicsek</surname><given-names>T</given-names></name><name name-style="western"><surname>Czirok</surname><given-names>A</given-names></name><name name-style="western"><surname>Ben-Jacob</surname><given-names>E</given-names></name><name name-style="western"><surname>Cohen</surname><given-names>I</given-names></name><name name-style="western"><surname>Shochet</surname><given-names>O</given-names></name></person-group>             <year>1995</year>             <article-title>Novel Type of Phase Transition in a System of Self-Driven Particles.</article-title>             <source>Phys Rev Lett</source>             <volume>75</volume>             <fpage>1226</fpage>             <lpage>1229</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Lizier7">
+        <label>33</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lizier</surname><given-names>JT</given-names></name><name name-style="western"><surname>Pritam</surname><given-names>S</given-names></name><name name-style="western"><surname>Prokopenko</surname><given-names>M</given-names></name></person-group>             <year>2011</year>             <article-title>Information dynamics in small-world Boolean networks.</article-title>             <source>Artificial Life</source>             <volume>17</volume>             <fpage>293</fpage>             <lpage>314</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Prokopenko1">
+        <label>34</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Prokopenko</surname><given-names>M</given-names></name><name name-style="western"><surname>Boschetti</surname><given-names>F</given-names></name><name name-style="western"><surname>Ryan</surname><given-names>AJ</given-names></name></person-group>             <year>2009</year>             <article-title>An information-theoretic primer on complexity, selforganization, and emergence.</article-title>             <source>Complexity</source>             <volume>15</volume>             <fpage>11</fpage>             <lpage>28</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Langton1">
+        <label>35</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Langton</surname><given-names>CG</given-names></name></person-group>             <year>1990</year>             <article-title>Computation at the edge of chaos: phase transitions and emergent computation.</article-title>             <source>Physica D</source>             <volume>42</volume>             <fpage>12</fpage>             <lpage>37</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Miller1">
+        <label>36</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Miller</surname><given-names>JM</given-names></name><name name-style="western"><surname>Kolpas</surname><given-names>A</given-names></name><name name-style="western"><surname>JuchemNeto</surname><given-names>JP</given-names></name><name name-style="western"><surname>Rossi</surname><given-names>LF</given-names></name></person-group>             <year>2011</year>             <article-title>A continuum three-zone model for swarms.</article-title>             <source>B Math Biol</source>             <fpage>1</fpage>             <lpage>26</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0040084-Wang1">
+        <label>37</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Wang</surname><given-names>XR</given-names></name><name name-style="western"><surname>Miller</surname><given-names>JM</given-names></name><name name-style="western"><surname>Lizier</surname><given-names>JT</given-names></name><name name-style="western"><surname>Prokopenko</surname><given-names>M</given-names></name><name name-style="western"><surname>Rossi</surname><given-names>LF</given-names></name></person-group>             <year>2011</year>             <article-title>Measuring information storage and transfer in swarms.</article-title>             <source>In: Lenaerts T, Giacobini M, Bersini H, Bourgine P, Dorigo M, et al., editors, Proceedings of the Eleventh European Conference on the Synthesis and Simulation of Living Systems (ECAL 2011). Paris, France: MIT Press, 838–845.</source>          </element-citation>
+      </ref>
+    </ref-list>
+    
+  </back>
+</article>

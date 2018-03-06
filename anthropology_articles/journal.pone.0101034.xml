@@ -1,0 +1,1285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group>
+<journal-title>PLoS ONE</journal-title></journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-13-45089</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0101034</article-id>
+<article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Computer and information sciences</subject><subj-group><subject>Systems science</subject><subj-group><subject>Operations research</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Medicine and health sciences</subject><subj-group><subject>Epidemiology</subject><subj-group><subject>Social epidemiology</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>People and places</subject><subj-group><subject>Demography</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Social sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Social anthropology</subject></subj-group></subj-group><subj-group><subject>Economics</subject></subj-group><subj-group><subject>Sociology</subject><subj-group><subject>Sexual and gender issues</subject><subject>Social discrimination</subject><subject>Social policy</subject><subject>Social research</subject></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Unintended Pregnancies among Young Women Living in Urban Slums: Evidence from a Prospective Study in Nairobi City, Kenya</article-title>
+<alt-title alt-title-type="running-head">Unintended Pregnancies among Young Women in Slums</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Beguy</surname><given-names>Donatien</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Mumah</surname><given-names>Joyce</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Gottschalk</surname><given-names>Lindsey</given-names></name><xref ref-type="aff" rid="aff2"><sup>2</sup></xref></contrib>
+</contrib-group>
+<aff id="aff1"><label>1</label><addr-line>African Population and Health Research Center, Urbanization and Wellbeing and Population Dynamics and Reproductive Health Programs, Nairobi, Kenya</addr-line></aff>
+<aff id="aff2"><label>2</label><addr-line>Johns Hopkins School of Public Health, Baltimore, Maryland, United States of America</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Helleringer</surname><given-names>Stephane</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Columbia University, United States of America</addr-line></aff>
+<author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">dbeguy@aphrc.org</email></corresp>
+<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn>
+<fn fn-type="con"><p>Conceived and designed the experiments: DB JM. Performed the experiments: DB JM. Analyzed the data: DB. Contributed reagents/materials/analysis tools: DB JM LG. Wrote the paper: DB JM LG.</p></fn>
+</author-notes>
+<pub-date pub-type="collection"><year>2014</year></pub-date>
+<pub-date pub-type="epub"><day>31</day><month>7</month><year>2014</year></pub-date>
+<volume>9</volume>
+<issue>7</issue>
+<elocation-id>e101034</elocation-id>
+<history>
+<date date-type="received"><day>4</day><month>11</month><year>2013</year></date>
+<date date-type="accepted"><day>3</day><month>6</month><year>2014</year></date>
+</history>
+<permissions>
+<copyright-year>2014</copyright-year>
+<copyright-holder>Beguy et al</copyright-holder><license xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions>
+<abstract><sec>
+<title>Background</title>
+<p>Despite the significant proportion of young people residing in slum communities, little attention has been paid to the sexual and reproductive health (SRH) challenges they face during their transition to adulthood within this harsh environment. Little is known about the extent to which living in extreme environments, like slums, impact SRH outcomes, especially during this key developmental period. This paper aims to fill this research gap by examining the levels of and factors associated with unintended pregnancies among young women aged 15–22 in two informal settlements in Nairobi, Kenya.</p>
+</sec><sec>
+<title>Methods</title>
+<p>We use data from two waves of a 3-year prospective survey that collected information from adolescents living in the two slums in 2007–2010. In total, 849 young women aged 15–22 were considered for analysis. We employed Cox and logistic regression models to investigate factors associated with timing of pregnancy experience and unintended pregnancy among adolescents who were sexually active by Wave 1 or Wave 2.</p>
+</sec><sec>
+<title>Findings</title>
+<p>About two thirds of sexually experienced young women (69%) have ever been pregnant by Wave 2. For 41% of adolescents, the pregnancies were unintended, with 26% being mistimed and 15% unwanted. Multivariate analysis shows a significant association between a set of factors including age at first sex, schooling status, living arrangements and timing of pregnancy experience. In addition, marital status, schooling status, age at first sex and living arrangements are the only factors that are significantly associated with unintended pregnancy among the young women.</p>
+</sec><sec>
+<title>Conclusions</title>
+<p>Overall, this study underscores the importance of looking at reproductive outcomes of early sexual initiation, the serious health risks early fertility entail, especially among out-of school girls, and sexual activity in general among young women living in slum settlements. This provides greater impetus for addressing reproductive behaviors among young women living in resource-poor settings such as slums.</p>
+</sec></abstract>
+<funding-group><funding-statement>Collection of data used in this study is funded by the Wellcome Trust. Analysis and writing time was supported by funding from the Strengthening Evidence for Programming on Unintended Pregnancy (STEP UP) Research Program Consortium through a grant by UK Department for International Development and the Measurement, Learning and Evaluation project (MLE) through a grant from the Bill and Melinda Gates Foundation. This research was also made possible through the generous core funding to APHRC by the William and Flora Hewlett Foundation and Swedish International Development Agency (SIDA). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts><page-count count="10"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title>Background</title>
+<p>Approximately one-third of the African population is between the ages of ten and twenty-four, the highest proportion of youth anywhere in the world <xref ref-type="bibr" rid="pone.0101034-Ringheim1">[1]</xref>, <xref ref-type="bibr" rid="pone.0101034-PopulationReference1">[2]</xref>. This means that one-third of the population in this region is in the process of transitioning to adulthood, a transition that includes, among other monumental changes, the beginning of a person’s sexual and reproductive life <xref ref-type="bibr" rid="pone.0101034-Beguy1">[3]</xref>. It is during this transitional period that many young women in sub-Saharan Africa (SSA) first enter into motherhood. SSA has the highest level of adolescent fertility in the world, which significantly contributes to the region’s lifetime average of 5.1 births per woman <xref ref-type="bibr" rid="pone.0101034-Singh1">[4]</xref>, <xref ref-type="bibr" rid="pone.0101034-Singh2">[5]</xref>.</p>
+<p>Though childbearing is a natural part of the transition to adulthood, evidence shows that a significant portion of adolescent fertility is unintended–either unwanted or mistimed–across countries in SSA <xref ref-type="bibr" rid="pone.0101034-Singh3">[6]</xref>. Unintended adolescent pregnancy poses a clear public health challenge, as both unintended pregnancy and pregnancy at a young age are associated with adverse health outcomes for mother and newborn. It is estimated that one-third of all unintended pregnancies in Africa end in induced abortion <xref ref-type="bibr" rid="pone.0101034-World1">[7]</xref>. This is disconcerting given that the majority of abortions in the region are performed under unsafe conditions due to restrictive abortion laws, lack of knowledge, and inaccessibility of services <xref ref-type="bibr" rid="pone.0101034-Singh3">[6]</xref>–<xref ref-type="bibr" rid="pone.0101034-Grimes1">[8]</xref>. Young women 15–24 account for over half of all unsafe abortions as well as over half of all maternal deaths from unsafe abortions in the region <xref ref-type="bibr" rid="pone.0101034-Shah1">[9]</xref>, <xref ref-type="bibr" rid="pone.0101034-Olukoya1">[10]</xref>. About a quarter of the growing number of deaths among 10–24 years old women in SSA is due to maternal mortality <xref ref-type="bibr" rid="pone.0101034-Patton1">[11]</xref>. Among women who carry their unintended pregnancies to term, adolescents face an increased risk for obstetric complications such as obstructed labor, anemia, and preeclampsia, which can result in long-term morbidities and even death <xref ref-type="bibr" rid="pone.0101034-Klein1">[12]</xref>–<xref ref-type="bibr" rid="pone.0101034-Kabakyenga1">[14]</xref>. Evidence also suggests that women with unintended pregnancies are less likely to seek appropriate prenatal care, placing them at higher risk for complications before and after delivery <xref ref-type="bibr" rid="pone.0101034-Gage1">[15]</xref>–<xref ref-type="bibr" rid="pone.0101034-Gipson1">[17]</xref>. This lack of appropriate prenatal care has implications for the children born to adolescent parents, as they tend to have higher incidences of low birth weight, prematurity, stillbirth, and neonatal mortality <xref ref-type="bibr" rid="pone.0101034-Ochako1">[18]</xref>–<xref ref-type="bibr" rid="pone.0101034-Marston1">[21]</xref>. In addition to acute health risks, adolescent mothers may also face social consequences of unintended pregnancy, including poor educational and employment prospects, marital instability, single parenthood, social ostracism, and an increased risk of getting into or remaining in poverty <xref ref-type="bibr" rid="pone.0101034-Singh1">[4]</xref>, <xref ref-type="bibr" rid="pone.0101034-Gupta1">[22]</xref>.</p>
+<p>The population of sub-Saharan Africa is growing faster than anywhere else in the world, and the strains of population growth are increasingly felt in the region’s urban areas. As sub-Saharan Africa undergoes rapid urbanization, the population of adolescents transitioning to adulthood in informal settlements–or “slums”–is quickly rising <xref ref-type="bibr" rid="pone.0101034-UNHABITAT1">[23]</xref>–<xref ref-type="bibr" rid="pone.0101034-UNHabitat1">[27]</xref>. Slum communities are characterized by a lack of basic infrastructure, poor schooling facilities, high risk of sexual and gender-based violence, high levels of substance abuse and poor livelihood opportunities, all of which negatively impact the health and wellbeing of residents <xref ref-type="bibr" rid="pone.0101034-African1">[28]</xref>–<xref ref-type="bibr" rid="pone.0101034-Fotso2">[30]</xref>. Even with overall reductions in the proportion of the SSA population living in poverty, the slums in SSA continue to grow at an alarming rate. Between 1990 and 2010, the proportion of urban residents in SSA living in slum settlements declined from 70 to 62%, yet the population of slum dwellers doubled from 103 to 200 million <xref ref-type="bibr" rid="pone.0101034-UNHabitat1">[27]</xref>.</p>
+<p>Despite the significant proportion of adolescents residing in slum communities, little attention has been paid to the sexual and reproductive health (SRH) challenges they face during their transition to adulthood within this harsh environment. While it is well established that there are social determinants of SRH–which may include education, poverty, social norms, and health systems–little is known about the extent to which living in extreme environments, like slums, impacts SRH, especially during this key developmental period <xref ref-type="bibr" rid="pone.0101034-World2">[31]</xref>. Studies of adolescents living in informal settlements in Bangladesh, Brazil and Kenya provide some of the few insights into the reproductive health challenges facing this population and suggest that adolescent girls in these communities are especially at risk for unplanned pregnancies given poor education, insecurity within the community, and low-levels of autonomy stemming from cultural norms and the desperation of poverty <xref ref-type="bibr" rid="pone.0101034-Rashid1">[32]</xref>–<xref ref-type="bibr" rid="pone.0101034-Kabiru1">[35]</xref>. Evidence from slum communities in Nairobi indicate that adolescents living in the slums engage in riskier sexual behaviors than their peers in non-slum parts of cities, including early sexual debut, transactional sex, and multiple sexual partnerships <xref ref-type="bibr" rid="pone.0101034-African1">[28]</xref>, <xref ref-type="bibr" rid="pone.0101034-Kabiru1">[35]</xref>, <xref ref-type="bibr" rid="pone.0101034-Zulu1">[36]</xref>. Additionally, adolescents’ knowledge about contraception is inadequate, and access to contraceptive methods is limited in slum communities, impinging an adolescent girl’s ability to control her reproductive life <xref ref-type="bibr" rid="pone.0101034-Ezeh1">[37]</xref>. This is especially troubling, since adolescents are already at a disadvantage when it comes to accessing contraceptive services in SSA, independent of poverty. In Kenya, for example, 45% of all sexually active unmarried adolescents have an unmet need for contraception <xref ref-type="bibr" rid="pone.0101034-Hussain1">[38]</xref>. Because the urban poorest population tends to have the greatest unmet need, these estimates are likely even greater among adolescents in the slums <xref ref-type="bibr" rid="pone.0101034-Ezeh1">[37]</xref>.</p>
+<p>There are adolescents, however, that transition to adulthood in the slums without experiencing a major adverse reproductive health event. Studies from Brazil and Kenya suggest that there are protective factors, such as having a father present in the home, that are associated with delayed sexual debut and fewer incidences of unintended pregnancy among adolescents in slum communities <xref ref-type="bibr" rid="pone.0101034-Marques1">[34]</xref>, <xref ref-type="bibr" rid="pone.0101034-Ngom1">[39]</xref>. Further research may be able to elucidate additional factors that help adolescents in these communities lead healthy and fulfilling sexual and reproductive lives.</p>
+<p>This paper seeks to expand on this limited body of research by examining the factors associated with unintended pregnancies among young women aged 15–22 living in two informal settlements in Nairobi city, Korogocho and Viwandani. The use of prospective data allows us to investigate the association between pregnancy experience and status between two waves of data collection and various relevant factors captured during the first wave. Unlike other similar studies, we therefore control for the temporal ordering of the explanatory factors and the outcome variables. The findings may help in understanding the circumstances and factors surrounding unintended pregnancies among young people in order to inform policy development, design and implement appropriate interventions, and identify areas for further research. Understanding and identifying ways to address the poor reproductive health outcomes among adolescents and young adults is central to the attainment of the Millennium Development Goals (MDGs) and other development indicators in Kenya and other sub-Saharan African countries. As urbanization continues unabated in the region, the wellbeing of the urban poor will increasingly drive national development indicators. Preventing unintended pregnancies among young women would greatly reduce maternal and infant mortality and disability adjusted life years (DALYs) among this vulnerable age group, increase educational and livelihood opportunities for girls, and ease the strain of population growth on communities and nations. Beyond reducing their adverse health consequences, averting unintended pregnancies among adolescents and young female adults living in urban slums could also contribute to slowing rates of urban growth which is substantially brought about by natural increase in SSA <xref ref-type="bibr" rid="pone.0101034-Chen1">[40]</xref>. Ezeh et al. <xref ref-type="bibr" rid="pone.0101034-Ezeh1">[37]</xref> show that in Kenya and other countries in SSA, mistimed and unwanted fertility significantly contribute to the high fertility among the urban poor.</p>
+<sec id="s1a">
+<title>Study context</title>
+<p>Korogocho and Viwandani slums are located about 7 kilometers from each other, and are located about 12 and 7 kilometers from the central business district, respectively. Though both slums are in some of the most congested slum areas in Nairobi city, there are remarkable differences in terms of demographic, economic and health dynamics between the two communities. In terms of population, Korogocho is home to a stable community which has settled there for many years. On the contrary, Viwandani, which is located in the industrial area, attracts a highly mobile population in search of employment in the industries. The duration of residence among migrants is higher in Korogocho, corroborating the relative stability of the population in Korogocho compared to Viwandani <xref ref-type="bibr" rid="pone.0101034-Emina1">[41]</xref>. The majority of individuals are migrants although the proportion is much higher in Viwandani compared to Korogocho (95% vs. 75%). The majority of migrants moved into the slums when they are young adults. Between 13% and 24% migrated into the two slums while aged 15–19 years. Korogocho exhibits a higher dependency ratio, with Viwandani attracting more adult males (15–64) than Korogocho. Previous findings show that 18% of young women aged 12–22 entered into first union by age 18. By age 22, 34% of these young women were already married or living with a partner. However, for 77% of them, sexual debut occurred outside of marriage or other union <xref ref-type="bibr" rid="pone.0101034-Beguy1">[3]</xref>. Furthermore, another study indicates that 16% of females aged 10–19 living in Kibera slum in Nairobi reported that they had ever been married <xref ref-type="bibr" rid="pone.0101034-Erulkar1">[42]</xref>.</p>
+</sec></sec><sec id="s2">
+<title>Data and Methods</title>
+<sec id="s2a">
+<title>Data</title>
+<p>We draw from data collected between 2007 and 2010 under a 3-year prospective cohort study – the Transitions to Adulthood Project (TTA), which was part of the larger Urbanization, Poverty, and Health Dynamics (UPHD) research program. The UPHD was nested into the Nairobi Urban Health and Demographic Surveillance System (NUHDSS), a longitudinal platform set in 2002 by the African Population and Health Research Center to collect and monitor health and demographic data from residents living in Korogocho and Viwandani slums. The TTA study follows a cohort of randomly selected NUHDSS residents aged 12–22 years (at baseline) to identify protective and risk factors in their lives, and to examine how these factors influence various markers of the transition to adulthood. The Kenya Medical Research Institute’s ethical review board provided ethical approval for the TTA study.</p>
+</sec><sec id="s2b">
+<title>Study participants, procedures</title>
+<p>The baseline survey was conducted between October 2007 and June 2008. The second and third rounds were conducted between March 2009 and August 2009, April 2010 and August 2010, respectively. Duration between rounds of surveys ranged between 9.6 and 21.6 months. The surveys collected information on, among other details, socio-demographic characteristics; parent-child relationships, sibling and other influence, domestic turbulence and sexual abuse, self-esteem, peer influence, and delinquent behavior (questions on drug use and depression added in Wave 2), concerns, aspirations, and expectations or perceived life chances, circumcision, marriage and dating, sexual behavior, contraceptive use, childbearing, and childbearing aspirations, HIV/AIDS-related knowledge and HIV testing, attitudes towards sex and contraceptive use (Attitudes to condom use added in Wave 2) and civic participation. In addition, we administered a life history calendar to capture transitions in schooling, independent housing, marital status, sexual intercourse, pregnancy, and income generation. For each survey, the questionnaires were pilot-tested among adolescents in areas within the two slums that were not covered by the routine NUHDSS data collection. The questionnaire was mainly administered in Kiswahili, the lingua franca in the two slum areas, after original and translated versions were reviewed by language professionals to ensure comparability.</p>
+<p>In total, 4,058 youth (50% males) aged 12–22 were interviewed during the baseline survey. In Wave 2, 2,674 young people were interviewed. Overall, refusals were low (&lt;5%) among youth whom fieldworkers were able to reach and the relatively low re-interview rate is mainly attributable to difficulties in locating some of the youth given the high mobility of residents in the area <xref ref-type="bibr" rid="pone.0101034-Beguy2">[43]</xref>. In this study, we limit the sample to 849 young women aged 15–22 who were observed at both Waves 1 and 2 of data collection, and who had non-missing data on the variables used for our analyses.</p>
+</sec><sec id="s2c">
+<title>Measures</title>
+<p>The first outcome variable is pregnancy experience as measured by the response to the question “Since our last visit, have you been pregnant?” that was asked during Wave 2. A binary variable indicating whether a pregnancy occurred or not (Yes vs. No) is derived from this question to capture young people’s pregnancy experience. The second outcome variable is the pregnancy intention as measured by young women’s answers to direct questions on last pregnancies during the three survey rounds. Young women who were not pregnant at the time of the survey were asked: “At the time you became pregnant the last time, did you want to become pregnant then, did you want to wait until later, or did you not want to have any (more) children at all?”. For those who were pregnant at the time they were interviewed, they responded to the question: “For your current pregnancy, did you want to become pregnant, did you want to wait until later, or did you not want to have any (more) children at all?” The answers were “then”, “later” and “not at all”. The variable pregnancy intention has 3 categories: intended, mistimed and unwanted. Intended pregnancy is a pregnancy that was planned by the woman. Mistimed pregnancy is a pregnancy for which a woman reported wanting to waiting until later before getting pregnant, while unwanted pregnancy refers to a pregnancy for which a woman indicated that she did not want any more children at all. Mistimed and unwanted pregnancies constitute unintended pregnancies. To note, for pregnancies that are already terminated, the planning status is reported retrospectively at the time of conception and not at the time of the survey, suggesting that it might be affected by recall bias or “ex post-facto rationalization” by respondents.</p>
+<p>We include in our regression analysis the following socio-demographic characteristics measured at Wave 1: slum area of residence (Korogocho vs. Viwandani), age group (15–17 vs. 18–22), educational level (primary or lower vs. secondary or higher), ethnic group (Kikuyu, Luyha, Luo, Kamba, Somali, Other ethnic groups), religion (No religion, Catholic, Other Christian and Muslim), schooling status (in school vs. out of school). Other characteristics associated with first sex were also considered: age at first sex (less than 15, 15–17 and 18–23); relationship with first sexual partner which has three categories (husband/partner, boyfriend and other); contraceptive use at first sex (Yes vs. No). For socio-economic status, adolescents are grouped into three categories based on a wealth index computed using principal component analysis: poor, middle, rich. We also included a variable capturing parental presence in the young people’s life: living with mother only, father only, both parents, neither parent.</p>
+</sec><sec id="s2d">
+<title>Analytical approach</title>
+<p>All analyses were conducted using Stata 12.1 <xref ref-type="bibr" rid="pone.0101034-Stata1">[44]</xref>. We provide descriptive findings on sexual experience, pregnancy experience and pregnancy intention using univariate statistics. We used survival analysis through the Cox regression model to investigate the influence of various factors on the timing of pregnancy experience between the two waves <xref ref-type="bibr" rid="pone.0101034-Cleves1">[45]</xref>–<xref ref-type="bibr" rid="pone.0101034-Cox2">[47]</xref>. Women were considered to be at risk from first wave until they become pregnant or censored at the time of the survey for those who were still not pregnant. Hazard ratios are obtained from Cox model. A hazard ratio greater than one indicates higher risk of pregnancy experience. Conversely, the risk is lower when the hazard ratio is less than one. On the other hand, we employed multivariable logistic regression to investigate factors associated with unintended pregnancy among adolescents who were sexually active at Wave 1 or by Wave 2. To increase the size of the sample for analysis, we included in the multivariate analysis young women who have not initiated sex by Wave 1 but have become sexually active by Wave 2. For these young women, some of the explanatory factors such as use of contraception at first sex, relationship with first partner and age at first sex were captured retrospectively at Wave 2. To control for the temporal ordering of the explanatory factors and outcome variables, we use information collected at Wave 1 (baseline) or between Wave 1 and Wave 2 to explain pregnancy experience/intention in Wave 2. To account for potential lack of independence for adolescents living in the same household, we adjusted estimates for the standard errors using clustered sandwich estimator (Huber/White/sandwich estimate of variance) <xref ref-type="bibr" rid="pone.0101034-Rogers1">[48]</xref>, <xref ref-type="bibr" rid="pone.0101034-Williams1">[49]</xref> implemented in Stata 12.</p>
+<p>Of the 1,378 adolescent girls aged 15–22 interviewed at Wave 1, 849 (62%) were re-interviewed at Wave 2. Findings from a model predicting attrition between Wave 1 and Wave 2 among this sub-sample indicate that adolescents aged 20–22, those from Luhya and Luo ethnic groups were more likely to be lost to follow-up. On the contrary, those still in school, and those living with at least one parent father were less likely to drop out between the two surveys (results not shown). We therefore computed weights to adjust for attrition between Wave 1 and 2.</p>
+</sec><sec id="s2e">
+<title>Ethics statement</title>
+<p>The Kenya Medical Research Institute’s ethical review board provided ethical approval for the TTA study. We obtained written or verbal consent from all study participants. For respondents who are willing to participate in the survey but could not or were not willing to sign the consent form, verbal consent was obtained and the field interviewer had to note on the consent form that the participant was willing to participate but unable to sign the consent form. Parental consent was also obtained for those aged 12–17 years. The consent form and process were approved by the KEMRI ethical review board.</p>
+</sec></sec><sec id="s3">
+<title>Results</title>
+<sec id="s3a">
+<title>Descriptive findings</title>
+<sec id="s3a1">
+<title>Sample description</title>
+<p><xref ref-type="table" rid="pone-0101034-t001">Table 1</xref> presents some key socio-demographic characteristics of the study participants at the time of the Wave 1 survey. In total, 849 girls aged 15–22 observed at Waves 1 and 2 are considered for analysis in this paper. About 78% are aged 15–19, a bit more than half (53%) are from Viwandani, 72% are Catholic or Other Christian; and 78% have never been married. In addition, 49% were still in school at the time of Wave 1 survey; 47% have reached at a secondary level of education.</p>
+<table-wrap id="pone-0101034-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0101034.t001</object-id><label>Table 1</label><caption>
+<title>Percentage of female adolescents (15–22) who reported having initiated sex, by socio-demographic characteristics (as of Wave 1).</title>
+</caption><alternatives><graphic id="pone-0101034-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0101034.t001" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Socio-demographics</td>
+<td colspan="3" align="left" rowspan="1">All</td>
+<td colspan="3" align="left" rowspan="1">Unmarried</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">N</td>
+<td align="left" rowspan="1" colspan="1">% total</td>
+<td align="left" rowspan="1" colspan="1">% Everhad sex</td>
+<td align="left" rowspan="1" colspan="1">N</td>
+<td align="left" rowspan="1" colspan="1">% total</td>
+<td align="left" rowspan="1" colspan="1">% Everhad sex</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Total</td>
+<td align="left" rowspan="1" colspan="1">849</td>
+<td align="left" rowspan="1" colspan="1">100.0</td>
+<td align="left" rowspan="1" colspan="1">37.3</td>
+<td align="left" rowspan="1" colspan="1">665</td>
+<td align="left" rowspan="1" colspan="1">100.0</td>
+<td align="left" rowspan="1" colspan="1">25.3</td>
+</tr>
+<tr>
+<td colspan="2" align="left" rowspan="1"><italic>Age group</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">15–19</td>
+<td align="left" rowspan="1" colspan="1">658</td>
+<td align="left" rowspan="1" colspan="1">77.5</td>
+<td align="left" rowspan="1" colspan="1">26.4</td>
+<td align="left" rowspan="1" colspan="1">566</td>
+<td align="left" rowspan="1" colspan="1">85.1</td>
+<td align="left" rowspan="1" colspan="1">20.2</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">20–22</td>
+<td align="left" rowspan="1" colspan="1">191</td>
+<td align="left" rowspan="1" colspan="1">22.5</td>
+<td align="left" rowspan="1" colspan="1">74.7</td>
+<td align="left" rowspan="1" colspan="1">99</td>
+<td align="left" rowspan="1" colspan="1">14.9</td>
+<td align="left" rowspan="1" colspan="1">54.3</td>
+</tr>
+<tr>
+<td colspan="3" align="left" rowspan="1"><italic>Slum area</italic><italic>of residence</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">ss</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Korogocho</td>
+<td align="left" rowspan="1" colspan="1">402</td>
+<td align="left" rowspan="1" colspan="1">47.3</td>
+<td align="left" rowspan="1" colspan="1">39.0</td>
+<td align="left" rowspan="1" colspan="1">336</td>
+<td align="left" rowspan="1" colspan="1">50.5</td>
+<td align="left" rowspan="1" colspan="1">32.3</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Viwandani</td>
+<td align="left" rowspan="1" colspan="1">447</td>
+<td align="left" rowspan="1" colspan="1">52.7</td>
+<td align="left" rowspan="1" colspan="1">35.7</td>
+<td align="left" rowspan="1" colspan="1">329</td>
+<td align="left" rowspan="1" colspan="1">49.5</td>
+<td align="left" rowspan="1" colspan="1">18.1</td>
+</tr>
+<tr>
+<td colspan="3" align="left" rowspan="1"><italic>Socio-economic</italic><italic>status</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Poor</td>
+<td align="left" rowspan="1" colspan="1">290</td>
+<td align="left" rowspan="1" colspan="1">34.2</td>
+<td align="left" rowspan="1" colspan="1">39.1</td>
+<td align="left" rowspan="1" colspan="1">226</td>
+<td align="left" rowspan="1" colspan="1">34.0</td>
+<td align="left" rowspan="1" colspan="1">26.8</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Middle</td>
+<td align="left" rowspan="1" colspan="1">203</td>
+<td align="left" rowspan="1" colspan="1">23.9</td>
+<td align="left" rowspan="1" colspan="1">33</td>
+<td align="left" rowspan="1" colspan="1">165</td>
+<td align="left" rowspan="1" colspan="1">24.8</td>
+<td align="left" rowspan="1" colspan="1">23.2</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Rich</td>
+<td align="left" rowspan="1" colspan="1">356</td>
+<td align="left" rowspan="1" colspan="1">41.9</td>
+<td align="left" rowspan="1" colspan="1">38.2</td>
+<td align="left" rowspan="1" colspan="1">274</td>
+<td align="left" rowspan="1" colspan="1">41.2</td>
+<td align="left" rowspan="1" colspan="1">25.3</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Religion</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">None</td>
+<td align="left" rowspan="1" colspan="1">95</td>
+<td align="left" rowspan="1" colspan="1">11.1</td>
+<td align="left" rowspan="1" colspan="1">52.9</td>
+<td align="left" rowspan="1" colspan="1">66</td>
+<td align="left" rowspan="1" colspan="1">9.9</td>
+<td align="left" rowspan="1" colspan="1">38.5</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Catholic</td>
+<td align="left" rowspan="1" colspan="1">224</td>
+<td align="left" rowspan="1" colspan="1">26.3</td>
+<td align="left" rowspan="1" colspan="1">44.7</td>
+<td align="left" rowspan="1" colspan="1">169</td>
+<td align="left" rowspan="1" colspan="1">25.4</td>
+<td align="left" rowspan="1" colspan="1">32.3</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Other Christian</td>
+<td align="left" rowspan="1" colspan="1">384</td>
+<td align="left" rowspan="1" colspan="1">45.3</td>
+<td align="left" rowspan="1" colspan="1">36.7</td>
+<td align="left" rowspan="1" colspan="1">308</td>
+<td align="left" rowspan="1" colspan="1">46.3</td>
+<td align="left" rowspan="1" colspan="1">26.2</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Muslim</td>
+<td align="left" rowspan="1" colspan="1">147</td>
+<td align="left" rowspan="1" colspan="1">17.3</td>
+<td align="left" rowspan="1" colspan="1">17.4</td>
+<td align="left" rowspan="1" colspan="1">121</td>
+<td align="left" rowspan="1" colspan="1">18.2</td>
+<td align="left" rowspan="1" colspan="1">6.1</td>
+</tr>
+<tr>
+<td colspan="2" align="left" rowspan="1"><italic>Education level</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Primary</td>
+<td align="left" rowspan="1" colspan="1">453</td>
+<td align="left" rowspan="1" colspan="1">53.4</td>
+<td align="left" rowspan="1" colspan="1">43.7</td>
+<td align="left" rowspan="1" colspan="1">333</td>
+<td align="left" rowspan="1" colspan="1">50.1</td>
+<td align="left" rowspan="1" colspan="1">28.7</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Secondary or higher</td>
+<td align="left" rowspan="1" colspan="1">396</td>
+<td align="left" rowspan="1" colspan="1">46.6</td>
+<td align="left" rowspan="1" colspan="1">29.9</td>
+<td align="left" rowspan="1" colspan="1">332</td>
+<td align="left" rowspan="1" colspan="1">49.9</td>
+<td align="left" rowspan="1" colspan="1">21.8</td>
+</tr>
+<tr>
+<td colspan="2" align="left" rowspan="1"><italic>Schooling status</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">No</td>
+<td align="left" rowspan="1" colspan="1">433</td>
+<td align="left" rowspan="1" colspan="1">51.0</td>
+<td align="left" rowspan="1" colspan="1">62.7</td>
+<td align="left" rowspan="1" colspan="1">276</td>
+<td align="left" rowspan="1" colspan="1">41.5</td>
+<td align="left" rowspan="1" colspan="1">45.5</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Yes</td>
+<td align="left" rowspan="1" colspan="1">416</td>
+<td align="left" rowspan="1" colspan="1">49.0</td>
+<td align="left" rowspan="1" colspan="1">10.9</td>
+<td align="left" rowspan="1" colspan="1">389</td>
+<td align="left" rowspan="1" colspan="1">58.5</td>
+<td align="left" rowspan="1" colspan="1">10.9</td>
+</tr>
+<tr>
+<td colspan="2" align="left" rowspan="1"><italic>Marital status</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Never married</td>
+<td align="left" rowspan="1" colspan="1">708</td>
+<td align="left" rowspan="1" colspan="1">83.4</td>
+<td align="left" rowspan="1" colspan="1">25.3</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Currently married</td>
+<td align="left" rowspan="1" colspan="1">141</td>
+<td align="left" rowspan="1" colspan="1">16.6</td>
+<td align="left" rowspan="1" colspan="1">97.5</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">-</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+</tr>
+<tr>
+<td colspan="2" align="left" rowspan="1"><italic>Ethnic group</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Kikuyu</td>
+<td align="left" rowspan="1" colspan="1">335</td>
+<td align="left" rowspan="1" colspan="1">39.5</td>
+<td align="left" rowspan="1" colspan="1">38.8</td>
+<td align="left" rowspan="1" colspan="1">271</td>
+<td align="left" rowspan="1" colspan="1">40.8</td>
+<td align="left" rowspan="1" colspan="1">29.1</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Luhya</td>
+<td align="left" rowspan="1" colspan="1">81</td>
+<td align="left" rowspan="1" colspan="1">9.5</td>
+<td align="left" rowspan="1" colspan="1">50.7</td>
+<td align="left" rowspan="1" colspan="1">64</td>
+<td align="left" rowspan="1" colspan="1">9.6</td>
+<td align="left" rowspan="1" colspan="1">41.5</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Luo</td>
+<td align="left" rowspan="1" colspan="1">100</td>
+<td align="left" rowspan="1" colspan="1">11.7</td>
+<td align="left" rowspan="1" colspan="1">50.6</td>
+<td align="left" rowspan="1" colspan="1">77</td>
+<td align="left" rowspan="1" colspan="1">11.6</td>
+<td align="left" rowspan="1" colspan="1">40.2</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Kamba</td>
+<td align="left" rowspan="1" colspan="1">139</td>
+<td align="left" rowspan="1" colspan="1">16.4</td>
+<td align="left" rowspan="1" colspan="1">39.9</td>
+<td align="left" rowspan="1" colspan="1">97</td>
+<td align="left" rowspan="1" colspan="1">14.6</td>
+<td align="left" rowspan="1" colspan="1">22.2</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Other</td>
+<td align="left" rowspan="1" colspan="1">194</td>
+<td align="left" rowspan="1" colspan="1">22.9</td>
+<td align="left" rowspan="1" colspan="1">20.4</td>
+<td align="left" rowspan="1" colspan="1">155</td>
+<td align="left" rowspan="1" colspan="1">23.3</td>
+<td align="left" rowspan="1" colspan="1">6.3</td>
+</tr>
+<tr>
+<td colspan="2" align="left" rowspan="1"><italic>Parental presence</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mother only</td>
+<td align="left" rowspan="1" colspan="1">23</td>
+<td align="left" rowspan="1" colspan="1">2.7</td>
+<td align="left" rowspan="1" colspan="1">37.3</td>
+<td align="left" rowspan="1" colspan="1">21</td>
+<td align="left" rowspan="1" colspan="1">3.2</td>
+<td align="left" rowspan="1" colspan="1">34.3</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Father only</td>
+<td align="left" rowspan="1" colspan="1">235</td>
+<td align="left" rowspan="1" colspan="1">27.7</td>
+<td align="left" rowspan="1" colspan="1">31.4</td>
+<td align="left" rowspan="1" colspan="1">213</td>
+<td align="left" rowspan="1" colspan="1">32.0</td>
+<td align="left" rowspan="1" colspan="1">29.8</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Both parents</td>
+<td align="left" rowspan="1" colspan="1">419</td>
+<td align="left" rowspan="1" colspan="1">49.3</td>
+<td align="left" rowspan="1" colspan="1">21.3</td>
+<td align="left" rowspan="1" colspan="1">383</td>
+<td align="left" rowspan="1" colspan="1">57.6</td>
+<td align="left" rowspan="1" colspan="1">19.3</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Neither</td>
+<td align="left" rowspan="1" colspan="1">172</td>
+<td align="left" rowspan="1" colspan="1">20.3</td>
+<td align="left" rowspan="1" colspan="1">84.2</td>
+<td align="left" rowspan="1" colspan="1">49</td>
+<td align="left" rowspan="1" colspan="1">7.4</td>
+<td align="left" rowspan="1" colspan="1">48.6</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap></sec><sec id="s3a2">
+<title>Sexual initiation</title>
+<p>Findings indicate that about 37% of young women aged 15–22 have already initiated sex in their lives, with the proportion being significantly higher among those aged 20–22 (<xref ref-type="table" rid="pone-0101034-t001">Table 1</xref>). Young women living in Viwandani are marginally less likely to report having initiated sex; 36% compared to 39% of their Korogocho counterparts reported sexual debut. Young women who are still in school are less likely to have initiated sex; the proportion of those who have already experienced sex is lower among those with at least a secondary level of education (30% vs. 44%). When considering religion, Muslims exhibit the lowest proportion of those who have initiated sex. With respect to ethnic group, the highest percentage of sexually experienced is observed among young women from Luo and Luyha ethnic groups. As expected, the proportion of those who reported sexual debut is much higher among currently married young women (98% vs. 25%). Young women who live with neither parent are much more likely to have initiated sex. As indicated in <xref ref-type="table" rid="pone-0101034-t001">Table 1</xref>, similar trends of bivariate associations are observed among unmarried female youth. Results on the sexual experience by parental presence among the married women (not shown) indicated that the majority of them do not live with their parents (85%), and that 99% of those young women have initiated sex.</p>
+</sec><sec id="s3a3">
+<title>Pregnancy experience and pregnancy intention</title>
+<p><xref ref-type="table" rid="pone-0101034-t002">Table 2</xref> shows data on young women’s pregnancy experience and their pregnancy intention at Wave 2 of young women who have already initiated sex by Wave 1 or between Wave 1 and 2, by socio-demographics. About two-thirds of sexually experienced female youth (69%) have ever been pregnant by Wave 2, with the percentage being higher among those aged 20–22. The proportion of those who have already been pregnant is higher among those with primary education. Ever-married young women are significantly more likely to report having experienced a pregnancy (93%) compared with those who have never been married (55%). Those who have had their first sexual experience with their husband/partner, or never used contraception at first sex are proportionately more likely to have ever been pregnant. The percentage of ever pregnant young women is higher among those who live with neither parent, and those who have initiated sex before age 15.</p>
+<table-wrap id="pone-0101034-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0101034.t002</object-id><label>Table 2</label><caption>
+<title>Pregnancy experience and pregnancy intention for young women aged 15–22 who have ever been pregnant.</title>
+</caption><alternatives><graphic id="pone-0101034-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0101034.t002" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Socio-demographics</td>
+<td colspan="2" align="left" rowspan="1">Ever pregnantat Wave 2</td>
+<td colspan="4" align="left" rowspan="1">Pregnancy intentionat Wave 2</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">N</td>
+<td align="left" rowspan="1" colspan="1">%</td>
+<td align="left" rowspan="1" colspan="1">N</td>
+<td align="left" rowspan="1" colspan="1">% Intended</td>
+<td align="left" rowspan="1" colspan="1">% Mistimed</td>
+<td align="left" rowspan="1" colspan="1">% Unwanted</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Total</td>
+<td align="left" rowspan="1" colspan="1">471</td>
+<td align="left" rowspan="1" colspan="1">69.2</td>
+<td align="left" rowspan="1" colspan="1">316</td>
+<td align="left" rowspan="1" colspan="1">59.2</td>
+<td align="left" rowspan="1" colspan="1">25.9</td>
+<td align="left" rowspan="1" colspan="1">14.9</td>
+</tr>
+<tr>
+<td colspan="2" align="left" rowspan="1"><italic>Age group</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">15–19</td>
+<td align="left" rowspan="1" colspan="1">255</td>
+<td align="left" rowspan="1" colspan="1">60.4</td>
+<td align="left" rowspan="1" colspan="1">148</td>
+<td align="left" rowspan="1" colspan="1">48.6</td>
+<td align="left" rowspan="1" colspan="1">34.5</td>
+<td align="left" rowspan="1" colspan="1">16.9</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">20–22</td>
+<td align="left" rowspan="1" colspan="1">216</td>
+<td align="left" rowspan="1" colspan="1">79.6</td>
+<td align="left" rowspan="1" colspan="1">168</td>
+<td align="left" rowspan="1" colspan="1">68.5</td>
+<td align="left" rowspan="1" colspan="1">18.5</td>
+<td align="left" rowspan="1" colspan="1">13.1</td>
+</tr>
+<tr>
+<td colspan="3" align="left" rowspan="1"><italic>Slum area of residence</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Korogocho</td>
+<td align="left" rowspan="1" colspan="1">222</td>
+<td align="left" rowspan="1" colspan="1">63.5</td>
+<td align="left" rowspan="1" colspan="1">139</td>
+<td align="left" rowspan="1" colspan="1">42.4</td>
+<td align="left" rowspan="1" colspan="1">36.7</td>
+<td align="left" rowspan="1" colspan="1">20.9</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Viwandani</td>
+<td align="left" rowspan="1" colspan="1">249</td>
+<td align="left" rowspan="1" colspan="1">74.3</td>
+<td align="left" rowspan="1" colspan="1">177</td>
+<td align="left" rowspan="1" colspan="1">72.3</td>
+<td align="left" rowspan="1" colspan="1">17.5</td>
+<td align="left" rowspan="1" colspan="1">10.2</td>
+</tr>
+<tr>
+<td colspan="3" align="left" rowspan="1"><italic>Socio-economic status</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Poor</td>
+<td align="left" rowspan="1" colspan="1">180</td>
+<td align="left" rowspan="1" colspan="1">65.6</td>
+<td align="left" rowspan="1" colspan="1">115</td>
+<td align="left" rowspan="1" colspan="1">60.9</td>
+<td align="left" rowspan="1" colspan="1">27.8</td>
+<td align="left" rowspan="1" colspan="1">11.3</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Middle</td>
+<td align="left" rowspan="1" colspan="1">121</td>
+<td align="left" rowspan="1" colspan="1">70.2</td>
+<td align="left" rowspan="1" colspan="1">81</td>
+<td align="left" rowspan="1" colspan="1">55.6</td>
+<td align="left" rowspan="1" colspan="1">29.6</td>
+<td align="left" rowspan="1" colspan="1">14.8</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Rich</td>
+<td align="left" rowspan="1" colspan="1">170</td>
+<td align="left" rowspan="1" colspan="1">72.4</td>
+<td align="left" rowspan="1" colspan="1">120</td>
+<td align="left" rowspan="1" colspan="1">60</td>
+<td align="left" rowspan="1" colspan="1">21.7</td>
+<td align="left" rowspan="1" colspan="1">18.3</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Religion</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">None</td>
+<td align="left" rowspan="1" colspan="1">71</td>
+<td align="left" rowspan="1" colspan="1">71.8</td>
+<td align="left" rowspan="1" colspan="1">50</td>
+<td align="left" rowspan="1" colspan="1">60</td>
+<td align="left" rowspan="1" colspan="1">28</td>
+<td align="left" rowspan="1" colspan="1">12</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Catholic</td>
+<td align="left" rowspan="1" colspan="1">141</td>
+<td align="left" rowspan="1" colspan="1">68.8</td>
+<td align="left" rowspan="1" colspan="1">92</td>
+<td align="left" rowspan="1" colspan="1">60.9</td>
+<td align="left" rowspan="1" colspan="1">23.9</td>
+<td align="left" rowspan="1" colspan="1">15.2</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Other Christian</td>
+<td align="left" rowspan="1" colspan="1">230</td>
+<td align="left" rowspan="1" colspan="1">66.1</td>
+<td align="left" rowspan="1" colspan="1">150</td>
+<td align="left" rowspan="1" colspan="1">54.7</td>
+<td align="left" rowspan="1" colspan="1">29.3</td>
+<td align="left" rowspan="1" colspan="1">16</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Muslim</td>
+<td align="left" rowspan="1" colspan="1">29</td>
+<td align="left" rowspan="1" colspan="1">89.7</td>
+<td align="left" rowspan="1" colspan="1">24</td>
+<td align="left" rowspan="1" colspan="1">79.2</td>
+<td align="left" rowspan="1" colspan="1">8.3</td>
+<td align="left" rowspan="1" colspan="1">12.5</td>
+</tr>
+<tr>
+<td colspan="2" align="left" rowspan="1"><italic>Education level</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Primary</td>
+<td align="left" rowspan="1" colspan="1">277</td>
+<td align="left" rowspan="1" colspan="1">78.7</td>
+<td align="left" rowspan="1" colspan="1">212</td>
+<td align="left" rowspan="1" colspan="1">57.1</td>
+<td align="left" rowspan="1" colspan="1">26.4</td>
+<td align="left" rowspan="1" colspan="1">16.5</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Secondary or higher</td>
+<td align="left" rowspan="1" colspan="1">194</td>
+<td align="left" rowspan="1" colspan="1">55.7</td>
+<td align="left" rowspan="1" colspan="1">104</td>
+<td align="left" rowspan="1" colspan="1">63.5</td>
+<td align="left" rowspan="1" colspan="1">25</td>
+<td align="left" rowspan="1" colspan="1">11.5</td>
+</tr>
+<tr>
+<td colspan="2" align="left" rowspan="1"><italic>Marital status</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Never married</td>
+<td align="left" rowspan="1" colspan="1">298</td>
+<td align="left" rowspan="1" colspan="1">55.4</td>
+<td align="left" rowspan="1" colspan="1">160</td>
+<td align="left" rowspan="1" colspan="1">39.4</td>
+<td align="left" rowspan="1" colspan="1">37.5</td>
+<td align="left" rowspan="1" colspan="1">23.1</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Currently married</td>
+<td align="left" rowspan="1" colspan="1">173</td>
+<td align="left" rowspan="1" colspan="1">93.1</td>
+<td align="left" rowspan="1" colspan="1">156</td>
+<td align="left" rowspan="1" colspan="1">79.5</td>
+<td align="left" rowspan="1" colspan="1">14.1</td>
+<td align="left" rowspan="1" colspan="1">6.4</td>
+</tr>
+<tr>
+<td colspan="2" align="left" rowspan="1"><italic>Ethnic group</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Kikuyu</td>
+<td align="left" rowspan="1" colspan="1">177</td>
+<td align="left" rowspan="1" colspan="1">65.5</td>
+<td align="left" rowspan="1" colspan="1">113</td>
+<td align="left" rowspan="1" colspan="1">52.2</td>
+<td align="left" rowspan="1" colspan="1">31</td>
+<td align="left" rowspan="1" colspan="1">16.8</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Luhya</td>
+<td align="left" rowspan="1" colspan="1">66</td>
+<td align="left" rowspan="1" colspan="1">72.7</td>
+<td align="left" rowspan="1" colspan="1">46</td>
+<td align="left" rowspan="1" colspan="1">52.2</td>
+<td align="left" rowspan="1" colspan="1">26.1</td>
+<td align="left" rowspan="1" colspan="1">21.7</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Luo</td>
+<td align="left" rowspan="1" colspan="1">82</td>
+<td align="left" rowspan="1" colspan="1">61.0</td>
+<td align="left" rowspan="1" colspan="1">49</td>
+<td align="left" rowspan="1" colspan="1">44.9</td>
+<td align="left" rowspan="1" colspan="1">36.7</td>
+<td align="left" rowspan="1" colspan="1">18.4</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Kamba</td>
+<td align="left" rowspan="1" colspan="1">92</td>
+<td align="left" rowspan="1" colspan="1">71.7</td>
+<td align="left" rowspan="1" colspan="1">63</td>
+<td align="left" rowspan="1" colspan="1">69.8</td>
+<td align="left" rowspan="1" colspan="1">20.6</td>
+<td align="left" rowspan="1" colspan="1">9.5</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Other</td>
+<td align="left" rowspan="1" colspan="1">54</td>
+<td align="left" rowspan="1" colspan="1">85.2</td>
+<td align="left" rowspan="1" colspan="1">45</td>
+<td align="left" rowspan="1" colspan="1">84.4</td>
+<td align="left" rowspan="1" colspan="1">8.9</td>
+<td align="left" rowspan="1" colspan="1">6.7</td>
+</tr>
+<tr>
+<td colspan="3" align="left" rowspan="1"><italic>Relationship with first partner</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Husband/Partner</td>
+<td align="left" rowspan="1" colspan="1">113</td>
+<td align="left" rowspan="1" colspan="1">86.7</td>
+<td align="left" rowspan="1" colspan="1">95</td>
+<td align="left" rowspan="1" colspan="1">81.1</td>
+<td align="left" rowspan="1" colspan="1">10.5</td>
+<td align="left" rowspan="1" colspan="1">8.4</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Boyfriend/Other</td>
+<td align="left" rowspan="1" colspan="1">358</td>
+<td align="left" rowspan="1" colspan="1">63.7</td>
+<td align="left" rowspan="1" colspan="1">221</td>
+<td align="left" rowspan="1" colspan="1">49.8</td>
+<td align="left" rowspan="1" colspan="1">32.6</td>
+<td align="left" rowspan="1" colspan="1">17.6</td>
+</tr>
+<tr>
+<td colspan="3" align="left" rowspan="1"><italic>Age at first sex</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Less than 15</td>
+<td align="left" rowspan="1" colspan="1">73</td>
+<td align="left" rowspan="1" colspan="1">74.0</td>
+<td align="left" rowspan="1" colspan="1">51</td>
+<td align="left" rowspan="1" colspan="1">54.9</td>
+<td align="left" rowspan="1" colspan="1">29.4</td>
+<td align="left" rowspan="1" colspan="1">15.7</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">15–17</td>
+<td align="left" rowspan="1" colspan="1">244</td>
+<td align="left" rowspan="1" colspan="1">71.7</td>
+<td align="left" rowspan="1" colspan="1">172</td>
+<td align="left" rowspan="1" colspan="1">52.9</td>
+<td align="left" rowspan="1" colspan="1">29.7</td>
+<td align="left" rowspan="1" colspan="1">17.4</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">18–23</td>
+<td align="left" rowspan="1" colspan="1">154</td>
+<td align="left" rowspan="1" colspan="1">63.0</td>
+<td align="left" rowspan="1" colspan="1">93</td>
+<td align="left" rowspan="1" colspan="1">73.1</td>
+<td align="left" rowspan="1" colspan="1">17.2</td>
+<td align="left" rowspan="1" colspan="1">9.7</td>
+</tr>
+<tr>
+<td colspan="3" align="left" rowspan="1"><italic>Contraceptive use at first sex</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">No</td>
+<td align="left" rowspan="1" colspan="1">255</td>
+<td align="left" rowspan="1" colspan="1">78.4</td>
+<td align="left" rowspan="1" colspan="1">192</td>
+<td align="left" rowspan="1" colspan="1">60.9</td>
+<td align="left" rowspan="1" colspan="1">24</td>
+<td align="left" rowspan="1" colspan="1">15.1</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Yes</td>
+<td align="left" rowspan="1" colspan="1">216</td>
+<td align="left" rowspan="1" colspan="1">58.3</td>
+<td align="left" rowspan="1" colspan="1">124</td>
+<td align="left" rowspan="1" colspan="1">56.5</td>
+<td align="left" rowspan="1" colspan="1">29</td>
+<td align="left" rowspan="1" colspan="1">14.5</td>
+</tr>
+<tr>
+<td colspan="3" align="left" rowspan="1"><italic>Parental presence</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mother only</td>
+<td align="left" rowspan="1" colspan="1">10</td>
+<td align="left" rowspan="1" colspan="1">40</td>
+<td align="left" rowspan="1" colspan="1">3</td>
+<td align="left" rowspan="1" colspan="1">100</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Father only</td>
+<td align="left" rowspan="1" colspan="1">103</td>
+<td align="left" rowspan="1" colspan="1">56.3</td>
+<td align="left" rowspan="1" colspan="1">55</td>
+<td align="left" rowspan="1" colspan="1">30.9</td>
+<td align="left" rowspan="1" colspan="1">43.6</td>
+<td align="left" rowspan="1" colspan="1">25.5</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Both parents</td>
+<td align="left" rowspan="1" colspan="1">147</td>
+<td align="left" rowspan="1" colspan="1">53.1</td>
+<td align="left" rowspan="1" colspan="1">75</td>
+<td align="left" rowspan="1" colspan="1">34.7</td>
+<td align="left" rowspan="1" colspan="1">40</td>
+<td align="left" rowspan="1" colspan="1">25.3</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Neither</td>
+<td align="left" rowspan="1" colspan="1">211</td>
+<td align="left" rowspan="1" colspan="1">88.2</td>
+<td align="left" rowspan="1" colspan="1">183</td>
+<td align="left" rowspan="1" colspan="1">77</td>
+<td align="left" rowspan="1" colspan="1">15.3</td>
+<td align="left" rowspan="1" colspan="1">7.7</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p>In addition, findings show that overall, 41% of pregnancies were unintended, with 26% being mistimed and 15% unwanted. The percentage of young women with unintended pregnancy is estimated at 51% and 31% for 15–19 and 20–22 years old, respectively. Adolescents who have never been married exhibit higher levels of unintended pregnancy (61% vs. 20% for those who are currently or formerly married). The proportion of unintended pregnancy is higher among those who had their first sexual encounter with their boyfriend as compared with those who first experienced sex with their husband/partner (50% vs. 19%). In addition, the percentage of those who have had an unintended pregnancy is higher among those who initiated sex before age 18 and those who live with at least one parent.</p>
+</sec></sec><sec id="s3b">
+<title>Multivariate analysis</title>
+<p>Results from multivariate analysis for timing of pregnancy experience (Cox model) and pregnancy intention (logistic regression) are presented in <xref ref-type="table" rid="pone-0101034-t003">Table 3</xref>. Estimations indicate that being in school is negatively associated with the timing of pregnancy experience as young women who are still in school are significantly less likely to have had a pregnancy. Young women from Luhya ethnic group get pregnant earlier as they are as twice as likely to become pregnant compared with their Kikuyu counterparts. Early initiation of sex increases the chances of pregnancy as those who initiated sex before age 18 have had a pregnancy episode earlier than those who experienced first sex from age 18. Young women who live with their mother only or both parents experience a pregnancy later than those who live with neither parent. In addition, marital status, schooling status, age at first sex and living arrangements are the only factors that are significantly associated with unintended pregnancy among these young women. In fact, young women who have initiated sex before age 18 are more likely to experience an unintended pregnancy but the coefficient is statistically significant only for those whose sexual debut occurred between ages 15 and 17. Also, being in school reduces the chances of experiencing an unintended pregnancy (at 10% level). Young women who were married are much less likely to have had an unintended pregnancy. Interestingly, adolescents living with their father only or both parents are much more likely to have had an unintended pregnancy than their counterparts who live with neither parent.</p>
+<table-wrap id="pone-0101034-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0101034.t003</object-id><label>Table 3</label><caption>
+<title>Factors associated with timing of pregnancy experience (Cox regression) and unintended pregnancy among young women aged 15–22 (Logistic regression).</title>
+</caption><alternatives><graphic id="pone-0101034-t003-3" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0101034.t003" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Socio-demographics</td>
+<td align="left" rowspan="1" colspan="1">Hazard ratios (95% CI) (Cox regression model)</td>
+<td align="left" rowspan="1" colspan="1">Odd ratios (95% CI) from(Logistic regression model)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Becoming pregnant(Among those who initiatedsex by Wave 1 or Wave 2)</td>
+<td align="left" rowspan="1" colspan="1">Had an Unintended pregnancy(Among those ever pregnant at Wave 2)</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Age group</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>15–17</italic></td>
+<td align="left" rowspan="1" colspan="1">Ref.</td>
+<td align="left" rowspan="1" colspan="1">Ref.</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">18–19</td>
+<td align="left" rowspan="1" colspan="1">0.72 (0.48–1.09)</td>
+<td align="left" rowspan="1" colspan="1">0.59 (0.21–1.65)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">20–22</td>
+<td align="left" rowspan="1" colspan="1">1.00 (0.66–1.50)</td>
+<td align="left" rowspan="1" colspan="1">0.60 (0.21–1.74)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Slum area</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Korogocho</td>
+<td align="left" rowspan="1" colspan="1">Ref.</td>
+<td align="left" rowspan="1" colspan="1">Ref.</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Viwandani</td>
+<td align="left" rowspan="1" colspan="1">0.82 (0.61–1.10)</td>
+<td align="left" rowspan="1" colspan="1">0.61 (0.31–1.21)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Wealth status</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Poor</td>
+<td align="left" rowspan="1" colspan="1">Ref.</td>
+<td align="left" rowspan="1" colspan="1">Ref.</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Middle</td>
+<td align="left" rowspan="1" colspan="1">1.26 (0.90–1.77)</td>
+<td align="left" rowspan="1" colspan="1">1.11 (0.54–2.26)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Rich</td>
+<td align="left" rowspan="1" colspan="1">0.89 (0.66–1.20)</td>
+<td align="left" rowspan="1" colspan="1">1.01 (0.50–2.01)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Religion</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">None</td>
+<td align="left" rowspan="1" colspan="1">Ref.</td>
+<td align="left" rowspan="1" colspan="1">Ref.</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Catholic</td>
+<td align="left" rowspan="1" colspan="1">1.35 (0.90–2.01)</td>
+<td align="left" rowspan="1" colspan="1">0.84 (0.37–1.94)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Other Christian</td>
+<td align="left" rowspan="1" colspan="1">1.21 (0.85–1.72)</td>
+<td align="left" rowspan="1" colspan="1">1.08 (0.50–2.33)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Muslim</td>
+<td align="left" rowspan="1" colspan="1">1.14 (0.68–1.91)</td>
+<td align="left" rowspan="1" colspan="1">1.32 (0.22–7.84)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Education</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Primary</td>
+<td align="left" rowspan="1" colspan="1">Ref.</td>
+<td align="left" rowspan="1" colspan="1">Ref.</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Secondary or higher</td>
+<td align="left" rowspan="1" colspan="1">0.95 (0.72–1.26)</td>
+<td align="left" rowspan="1" colspan="1">0.94 (0.48–1.83)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Currently in school</italic></td>
+<td align="left" rowspan="1" colspan="1">0.41** (0.19–0.91)</td>
+<td align="left" rowspan="1" colspan="1">0.32* (0.10–1.02)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Currently married</italic></td>
+<td align="left" rowspan="1" colspan="1">1.03 (0.69–1.53)</td>
+<td align="left" rowspan="1" colspan="1">0.34** (0.15–0.79)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Ethnic group (Kikuyu)</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Kikuyu</td>
+<td align="left" rowspan="1" colspan="1">Ref.</td>
+<td align="left" rowspan="1" colspan="1">Ref.</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Luhya</td>
+<td align="left" rowspan="1" colspan="1">2.13*** (1.43–3.18)</td>
+<td align="left" rowspan="1" colspan="1">1.06 (0.46–2.46)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Luo</td>
+<td align="left" rowspan="1" colspan="1">0.91 (0.64–1.31)</td>
+<td align="left" rowspan="1" colspan="1">1.74 (0.76–3.96)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Kamba</td>
+<td align="left" rowspan="1" colspan="1">1.06 (0.70–1.61)</td>
+<td align="left" rowspan="1" colspan="1">0.95 (0.40–2.27)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Other</td>
+<td align="left" rowspan="1" colspan="1">1.22 (0.84–1.78)</td>
+<td align="left" rowspan="1" colspan="1">0.28* (0.07–1.16)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Relationship with first sex partner</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Boyfriend/Other</td>
+<td align="left" rowspan="1" colspan="1">Ref.</td>
+<td align="left" rowspan="1" colspan="1">Ref.</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Husband/Partner</td>
+<td align="left" rowspan="1" colspan="1">1.09 (0.79–1.52)</td>
+<td align="left" rowspan="1" colspan="1">0.82 (0.39–1.75)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Age at first sex</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Less than 15 years</td>
+<td align="left" rowspan="1" colspan="1">1.54** (1.05–2.25)</td>
+<td align="left" rowspan="1" colspan="1">1.11 (0.40–3.10)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">15–17</td>
+<td align="left" rowspan="1" colspan="1">1.30* (0.97–1.75)</td>
+<td align="left" rowspan="1" colspan="1">2.17** (1.02–4.58)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>18–23</italic></td>
+<td align="left" rowspan="1" colspan="1">Ref.</td>
+<td align="left" rowspan="1" colspan="1">Ref.</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Used contraceptive at first sex</italic></td>
+<td align="left" rowspan="1" colspan="1">1.01 (0.72–1.41)</td>
+<td align="left" rowspan="1" colspan="1">1.33 (0.73–2.42)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>Parental presence</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Neither</td>
+<td align="left" rowspan="1" colspan="1">Ref.</td>
+<td align="left" rowspan="1" colspan="1">Ref.</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mother only</td>
+<td align="left" rowspan="1" colspan="1">0.37** (0.17–0.81)</td>
+<td align="left" rowspan="1" colspan="1">-</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Father only</td>
+<td align="left" rowspan="1" colspan="1">1.12 (0.69–1.82)</td>
+<td align="left" rowspan="1" colspan="1">3.13** (1.14–8.59)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Both parents</td>
+<td align="left" rowspan="1" colspan="1">0.55** (0.35–0.87)</td>
+<td align="left" rowspan="1" colspan="1">3.21** (1.28–8.02)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Wald Chi-square</td>
+<td align="left" rowspan="1" colspan="1">47.93***</td>
+<td align="left" rowspan="1" colspan="1">74.43***</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Person-months or N</td>
+<td align="left" rowspan="1" colspan="1">5419.2</td>
+<td align="left" rowspan="1" colspan="1">313</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt101"><label/><p>Significant at p&lt;0.01*** p&lt;0.05** p&lt;0.1*.</p></fn></table-wrap-foot></table-wrap></sec></sec><sec id="s4">
+<title>Discussion</title>
+<p>In this paper, we use data from baseline and second round survey of a three-year prospective study, to examine the pregnancy experience and intention of young women aged 15–22 in two informal settlements in Nairobi. About two-thirds of sexually experienced adolescents have ever been pregnant by Wave 2. For 41% of adolescents, the pregnancies were unintended, with 26% being mistimed and 15% unwanted. Findings indicate a significant association between a set of factors including age at first sex, schooling status, living arrangements and timing of pregnancy experience. In addition, marital status, schooling status, age at first sex and living arrangements are the only factors that are significantly associated with unintended pregnancy among the young women. These findings contribute to filling the gap in understanding and meeting the sexual and reproductive challenges and needs of young women living in resource-poor urban settings such as informal settlements in the country.</p>
+<p>Overall, our findings show that early sexual initiation was prevalent as about 37% of female youth aged 15–22 had already initiated sexual intercourse, though the proportion of sexually experienced adolescents vary significantly with age, marital status and schooling status. Young women were less likely to initiate sex if they were currently in school, with at least a secondary education and never married. Most notably, the odds for young women currently in school reporting a pregnancy experience are substantially lower than for those who are out-of-school, suggesting that pregnancy may lead to school drop-out among young women. Earlier studies in Kenya have reported that 13,000 girls drop out of school annually due to early childbearing <xref ref-type="bibr" rid="pone.0101034-MugandaOnyando1">[50]</xref>. Although school environment seems to be protective against childbearing, it may also be true that both drop-out and pregnancy are influenced by a same set of factors. This findings call for more school-based studies to help disentangle the association. This result mirrors studies done in other African context were initiation of first sex (before age 18) was less likely during adolescence if the girl was educated or exposed to mass media <xref ref-type="bibr" rid="pone.0101034-Kabiru1">[35]</xref>, <xref ref-type="bibr" rid="pone.0101034-Gupta2">[51]</xref>. Similarly, other studies indicated the role of education in reducing fertility in Kenya and elsewhere in sub-Saharan Africa <xref ref-type="bibr" rid="pone.0101034-Singh1">[4]</xref>,<xref ref-type="bibr" rid="pone.0101034-Kravdal1">[52]</xref>. This indicates that keeping girls in school and formal education in general might be an effective strategy to enable young girls delay sexual debut. Increased education might therefore act as a protective mechanism that not only prevents early sexual initiation, but more education improves the understanding by young women of the need to protect themselves from unintended pregnancy.</p>
+<p>Moreover, about two-thirds of girls with previous sexual experience had experienced a pregnancy; 41% of them reported having had an unintended pregnancy. In addition, our results indicated that age at first sexual intercourse was associated with timing of pregnancy experience on one hand and pregnancy intention on the other. Young women whose sexual debut occurred before age 18 got their pregnancy earlier than those who initiated sex from age 18. In addition, young women who had initiated sexual intercourse between the ages of 15–17 had significantly higher odds of experiencing an unintended pregnancy, indicating that early sexual initiation was associated with adverse SRH outcomes. Early sexual debut is much likely to automatically increase young women’s exposure to the risk of pregnancy, especially in the slum settlements where use of contraception is limited. More than often, young people’s first sexual experience is unplanned, a pattern that predisposes them to irregular and ineffective contraceptive use. Extant literature indicates that premarital sexual activity among adolescents is increasing but less than half are using any modern contraception to avoid pregnancy <xref ref-type="bibr" rid="pone.0101034-Kennedy1">[53]</xref>, <xref ref-type="bibr" rid="pone.0101034-Blanc1">[54]</xref>. It is reported that barriers to accessing health care such as lack of decision-making power, access to and control over resources, and socio-cultural norms regarding adolescent sexual behavior and childbearing contribute to low use of contraception <xref ref-type="bibr" rid="pone.0101034-Glasier1">[55]</xref>. Moreover, the nature of services offered, who and the attitude of who is offering the services reportedly influences young people’s attitude toward contraceptive use, as well as their ability to express their needs and consequent health seeking behavior <xref ref-type="bibr" rid="pone.0101034-Blanc2">[56]</xref>. Provider bias and attitude toward adolescent therefore discourages young people from accessing essential contraceptive information and services. This finding highlights the fact that targeted programs are needed to reach adolescents and young adults with a range of SRH information and services at different stages - before they initiate sex or as sexually active unmarried adolescents. Moreover, reproductive health interventions including uptake of family planning which often do not reach adolescents, should be scaled up to include adolescent friendly services, with targeted responses required. Given that schooling was shown to be protective, bringing comprehensive sexuality education into schools and moving beyond the fear that sex education for young people encourages risky behaviors is important. In fact, previous studies show that providing sex education to young people in schools has the potential to be protective, especially in delaying early sexual initiation <xref ref-type="bibr" rid="pone.0101034-Kiragu1">[57]</xref>.</p>
+<p>Findings also indicate that ethnicity had statistically significant effect on timing to pregnancy between Wave 1 and 2; young women from Luhya ethnic group are more likely to become pregnant than those from Kikuyu tribe. This finding is consistent with higher levels of fertility observed in Western Kenya where Luhyas come from. This may partly due to Kikuyu women’s higher access to education, higher involvement in economic activities that empower them to have a better control over their reproductive lives. Also, Kikuyus are known to be less pronatalist than their counterparts from Luo and Luhya ethnic groups <xref ref-type="bibr" rid="pone.0101034-Fotso1">[29]</xref>, <xref ref-type="bibr" rid="pone.0101034-Dodoo1">[58]</xref>, <xref ref-type="bibr" rid="pone.0101034-Place1">[59]</xref>.</p>
+<p>Living with a mother only or both parents reduced the risks of becoming pregnant. Evidence from other SSA settings indicates that parental monitoring and control reduces the likelihood of involvement in problem behavior and is likely to lead to delayed onset of sexual experience <xref ref-type="bibr" rid="pone.0101034-Babalola1">[60]</xref>, <xref ref-type="bibr" rid="pone.0101034-KumiKyereme1">[61]</xref>. In particular, living with both parents is associated with lower risk of sexual experience, and therefore lower chances of getting pregnant. It also appears that having the mother in the household is important in preventing pregnancy experience, suggesting that the father’s absence does not deter the mother’s ability to control her daughter’s activities. However, on the other hand, living with a father only or both parents was significantly associated with higher chances of experiencing an unintended pregnancy. In a study on transition to first sex by adolescents in Kenya, Kabiru et al. <xref ref-type="bibr" rid="pone.0101034-Kabiru1">[35]</xref> found that high level of parental monitoring was associated with greater odds of transitioning to first sex for females in the slums, which is positively associated with higher levels of unintended pregnancy. It is noted that the social context of slum environment especially cramped living conditions and shared living space, might expose children to early sexual activity <xref ref-type="bibr" rid="pone.0101034-Dodoo2">[62]</xref>. Furthermore, perception by adolescents of parents being overly controlling has been shown to instead increase risky sexual behavior <xref ref-type="bibr" rid="pone.0101034-Rodgers1">[63]</xref>. Our findings therefore highlight the fact that ways to adequately involve parents in sexual and reproductive health interventions targeted towards adolescents must be explored and tested, especially in resource-poor settings such as slums.</p>
+<p>Current marital status is significantly associated with unintended pregnancy, with currently married adolescents being much less likely to have had an unintended pregnancy. However, adolescent childbearing is associated with increased risk of adverse health outcomes, regardless of whether a pregnancy is intended or not. Adolescent fertility still has significant implications not only for the health of the adolescent girl but also for larger demographic processes, especially high fertility rates in sub-Saharan Africa. It is reported that adolescent girls are more likely to die during pregnancy and delivery, because of their physical immaturity <xref ref-type="bibr" rid="pone.0101034-Temin1">[64]</xref>. Moreover, younger mothers are also more likely to have babies with significant mortality and morbidity risk. For example, a study of 76 countries showed children born to mothers between the ages of 12–20 had a greater risk of dying before age five, being stunted, underweight or suffering from anemia <xref ref-type="bibr" rid="pone.0101034-Temin1">[64]</xref>. Overall, this study underscores the importance of looking at reproductive outcomes of early sexual initiation, the serious health risks early fertility entail, especially among out-of school girls, and sexual activity in general. This provides greater impetus for addressing adolescent and young females’ reproductive behaviors, especially in resource-poor settings such as slums. In particular, it is paramount to identify and dismantle barriers that prevent adolescents and young women living in slum areas, from accessing existing family planning services.</p>
+<p>While the prospective nature of the data used helps partially overcome the causality issue that is often encountered when using cross-sectional data, findings in this paper should be interpreted in light of some limitations. For instance, given the relatively short duration between the two waves of data collection, not many episodes of pregnancy were observed among adolescents. As a result, the analysis of pregnancy experience and status is based on a relatively small number of cases. In addition, our analysis could be affected by unobserved potential confounding variables that may influence both the observed explanatory variables and pregnancy experience/status. Finally, retrospective self-reporting of the status of pregnancies might be biased as mother’s feelings about pregnancy might change over time.</p>
+<p>Despite these inherent limitations, the findings of this study have far-reaching implications for reproductive health of poor adolescents and young women in Kenya. Two clear policy and programmatic implications arise from our findings. First, it is important to design appropriate and realistic programs that are focused on reducing the number of unintended pregnancies; thereby helping reduce the ensuing induced abortions among adolescents and young women living in poor urban areas. These programs should be cognizant of the fact that these individual level behavior factors are exacerbated by an environment affected by extreme poverty. Poverty has been considered a root cause of poor SRH outcomes especially in slum environments. Targeted multipronged interventions which address the economic, education and gender consideration of young people will therefore have the most direct influence on their behavior.</p>
+<p>Although the Kenyan government has made significant strides in addressing the sexual and reproductive health (SRH) needs of young people, including passing significant policies such as the National School Health Policy, the implementation of this policy and its reach to young people is still low. The accelerated implementation of this and other youth related policies to include a comprehensive school health program to address youth SRH and broader health needs are of essence. Finally, finding innovative ways to demystify comprehensive sexuality education and looking for innovative delivery channels by which comprehensive sexuality education can be brought to schools is a necessity. Reaching young women in their early adolescence, while they are still in school, will have a potential of not only reducing risky sexual behaviors, but reduce unintended adolescent fertility, which will have significant impact on their wellbeing.</p>
+</sec></body>
+<back><ref-list>
+<title>References</title>
+<ref id="pone.0101034-Ringheim1"><label>1</label>
+<mixed-citation publication-type="other" xlink:type="simple">Ringheim K, Gribble J (2010) Improving the reproductive health of sub-Saharan Africa's youth: a route to achieve the Millennium Development Goals. Washington, D.C.: Population Reference Bureau [PRB].</mixed-citation>
+</ref>
+<ref id="pone.0101034-PopulationReference1"><label>2</label>
+<mixed-citation publication-type="other" xlink:type="simple">Population Reference Bureau (2012) PRB World Population Data Sheet 2012. Population Reference Bureau [PRB].</mixed-citation>
+</ref>
+<ref id="pone.0101034-Beguy1"><label>3</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Beguy</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Kabiru</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Zulu</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Ezeh</surname><given-names>A</given-names></name> (<year>2011</year>) <article-title>Timing and Sequencing of Events Marking the Transition to Adulthood in Two Informal Settlements in Nairobi, Kenya</article-title>. <source>Journal of Urban Health</source> <volume>88</volume>: <fpage>318</fpage>–<lpage>340</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Singh1"><label>4</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Singh</surname><given-names>S</given-names></name> (<year>1998</year>) <article-title>Adolescent childbearing in Developing Countries: A Global Review</article-title>. <source>Studies in Family Planning</source> <volume>29</volume>: <fpage>117</fpage>–<lpage>136</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Singh2"><label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Singh</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Darroch</surname><given-names>JE</given-names></name> (<year>2000</year>) <article-title>Adolescent Pregnancy and Childbearing: Levels and Trends in Developed Countries</article-title>. <source>Family Planning Perspectives</source> <volume>32</volume>: <fpage>14</fpage>–<lpage>23</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Singh3"><label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Singh</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Sedgh</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Hussain</surname><given-names>R</given-names></name> (<year>2010</year>) <article-title>Unintended pregnancy, worldwide levels, trends, and outcomes</article-title>. <source>Studies in Family Planning</source> <volume>41</volume>: <fpage>241</fpage>–<lpage>250</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-World1"><label>7</label>
+<mixed-citation publication-type="book" xlink:type="simple">World Health Organization (2011) Unsafe abortion: global and regional estimates of the incidence of unsafe abortion and associated mortality in 2008. Geneva: World Health Organization. 56 p.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Grimes1"><label>8</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Grimes</surname><given-names>DA</given-names></name>, <name name-style="western"><surname>Janie</surname><given-names>Benson</given-names></name>, <name name-style="western"><surname>Susheela</surname><given-names>Singh</given-names></name>, <name name-style="western"><surname>Mariana</surname><given-names>Romero</given-names></name>, <name name-style="western"><surname>Bela</surname><given-names>Ganatra</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Unsafe abortion: the preventable pandemic</article-title>. <source>The Lancet</source> <volume>368</volume>: <fpage>1908</fpage>–<lpage>1919</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Shah1"><label>9</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Shah</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Ahman</surname><given-names>E</given-names></name> (<year>2004</year>) <article-title>Age patterns of unsafe abortion in developing country regions</article-title>. <source>Reproductive Health Matters</source> <volume>12</volume>: <fpage>9</fpage>–<lpage>17</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Olukoya1"><label>10</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Olukoya</surname><given-names>P</given-names></name> (<year>2004</year>) <article-title>Reducing Maternal Mortality from Unsafe Abortion among Adolescents in Africa</article-title>. <source>African Journal of Reproductive Health/La Revue Africaine de la Santé Reproductive</source> <volume>8</volume>: <fpage>57</fpage>–<lpage>62</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Patton1"><label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Patton</surname><given-names>GC</given-names></name>, <name name-style="western"><surname>Coffey</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Sawyer</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Viner</surname><given-names>RM</given-names></name>, <name name-style="western"><surname>Haller</surname><given-names>DM</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Global patterns of mortality in young people: a systematic analysis of population health data</article-title>. <source>The Lancet</source> <volume>374</volume>: <fpage>881</fpage>–<lpage>892</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Klein1"><label>12</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Klein</surname><given-names>JD</given-names></name> (<year>2005</year>) <collab xlink:type="simple">the Committee on Adolescence</collab> (<year>2005</year>) <article-title>Adolescent Pregnancy: Current Trends and Issues</article-title>. <source>Pediatrics</source> <volume>116</volume>: <fpage>281</fpage>–<lpage>286</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Adeyinka1"><label>13</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Adeyinka</surname><given-names>DA</given-names></name>, <name name-style="western"><surname>Oladimeji</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Adekanbi</surname><given-names>TI</given-names></name>, <name name-style="western"><surname>Adeyinka</surname><given-names>FE</given-names></name>, <name name-style="western"><surname>Falope</surname><given-names>Y</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Outcome of adolescent pregnancies in southwestern Nigeria: a case–control study</article-title>. <source>Journal of Maternal-Fetal and Neonatal Medicine</source> <volume>23</volume>: <fpage>785</fpage>–<lpage>789</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Kabakyenga1"><label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kabakyenga</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Ostergren</surname><given-names>PO</given-names></name>, <name name-style="western"><surname>Turyakira</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Mukasa</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Pettersson</surname><given-names>K</given-names></name> (<year>2011</year>) <article-title>Individual and health facility factors and the risk for obstructed labour and its adverse outcomes in south-western Uganda</article-title>. <source>BMC Pregnancy and Childbirth</source> <volume>11</volume>: <fpage>73</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Gage1"><label>15</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gage</surname><given-names>AJ</given-names></name> (<year>1998</year>) <article-title>Sexual activity and contraceptive use: The components of the decisionmaking process</article-title>. <source>Studies in Family Planning</source> <volume>29</volume>: <fpage>154</fpage>–<lpage>166</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Magadi1"><label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Magadi</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Madise</surname><given-names>NJ</given-names></name>, <name name-style="western"><surname>Rodrigues</surname><given-names>RN</given-names></name> (<year>2000</year>) <article-title>Frequency and timing of antenatal care in Kenya: explaining the variations between women of different communities</article-title>. <source>Social Science &amp; Medicine</source> <volume>51</volume>: <fpage>551</fpage>–<lpage>561</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Gipson1"><label>17</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gipson</surname><given-names>JD</given-names></name>, <name name-style="western"><surname>Koenig</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Hindin</surname><given-names>MJ</given-names></name> (<year>2008</year>) <article-title>The Effects of Unintended Pregnancy on Infant, Child, and Parental Health: A Review of the Literature</article-title>. <source>Studies in Family Planning</source> <volume>39</volume>: <fpage>18</fpage>–<lpage>38</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Ochako1"><label>18</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ochako</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Fotso</surname><given-names>JC</given-names></name>, <name name-style="western"><surname>Ikamari</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Khasakhala</surname><given-names>A</given-names></name> (<year>2011</year>) <article-title>Utilization of maternal health services among young women in Kenya: Insights from the Kenya Demographic and Health Survey, 2003</article-title>. <source>BMC Pregnancy and Childbirth</source> <volume>11</volume>: <fpage>1</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Liran1"><label>19</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Liran</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Vardi</surname><given-names>IS</given-names></name>, <name name-style="western"><surname>Sergienko</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Sheiner</surname><given-names>E</given-names></name> (<year>2012</year>) <article-title>Adverse perinatal outcome in teenage pregnancies: is it all due to lack of prenatal care and ethnicity?</article-title> <source>Journal of Maternal-Fetal and Neonatal Medicine</source> <volume>0</volume>: <fpage>1</fpage>–<lpage>4</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Uzun1"><label>20</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Uzun</surname><given-names>AK</given-names></name>, <name name-style="western"><surname>Orhon</surname><given-names>FS</given-names></name>, <name name-style="western"><surname>Baskan</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Ulukol</surname><given-names>B</given-names></name> (<year>2012</year>) <article-title>A comparison between adolescent mothers and adult mothers in terms of maternal and infant outcomes at follow-ups</article-title>. <source>Journal of Maternal-Fetal and Neonatal Medicine</source> <volume>0</volume>: <fpage>1</fpage>–<lpage>5</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Marston1"><label>21</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Marston</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Cleland</surname><given-names>J</given-names></name> (<year>2003</year>) <article-title>Do unintended pregnancies carried to term lead to adverse outcomes for mother aand child? An assessment in five developing countries</article-title>. <source>Population Studies</source> <volume>57</volume>: <fpage>77</fpage>–<lpage>93</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Gupta1"><label>22</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gupta</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Mahy</surname><given-names>M</given-names></name> (<year>2003</year>) <article-title>Sexual initiation among adolescent girls and boys: Trends and differentials in sub-Saharan Africa</article-title>. <source>Archives of Sexual Behavior</source> <volume>32</volume>: <fpage>41</fpage>–<lpage>53</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-UNHABITAT1"><label>23</label>
+<mixed-citation publication-type="other" xlink:type="simple">UN-HABITAT (2003) The Challenge of Slums: Global Report on Human Settlements.</mixed-citation>
+</ref>
+<ref id="pone.0101034-UNHABITAT2"><label>24</label>
+<mixed-citation publication-type="other" xlink:type="simple">UN-HABITAT (2003) Slums of the World: the face of urban poverty in the new Millenium. Nairobi: Global Urban Observatory.</mixed-citation>
+</ref>
+<ref id="pone.0101034-UNHABITAT3"><label>25</label>
+<mixed-citation publication-type="other" xlink:type="simple">UN-HABITAT (2008) State of the World's Cities 2008/2009 - Harmonious Cities. Nairobi: UN-HABITAT.</mixed-citation>
+</ref>
+<ref id="pone.0101034-UNHABITAT4"><label>26</label>
+<mixed-citation publication-type="other" xlink:type="simple">UN-HABITAT (2008) The State of African Cities 2008 - A framework for addressing urban challenges in Africa. Nairobi: UN-HABITAT.</mixed-citation>
+</ref>
+<ref id="pone.0101034-UNHabitat1"><label>27</label>
+<mixed-citation publication-type="book" xlink:type="simple">UN-Habitat (2010) State of African Cities 2010. Governance, Inequalities and Urban Land Markets UN-Habitat. 270 p.</mixed-citation>
+</ref>
+<ref id="pone.0101034-African1"><label>28</label>
+<mixed-citation publication-type="other" xlink:type="simple">African Population and Health Research Center (2002) Population and Health Dynamics in Nairobi's Informal Settlements: Report of the Nairobi Cross-sectional Slums Survey (NCSS) 2000. Nairobi: African Population and Health Research Center.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Fotso1"><label>29</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fotso</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Ezeh</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Madise</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Ziraba</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Ogollah</surname><given-names>R</given-names></name> (<year>2008</year>) <article-title>What does access to maternal care mean among the urban poor? Factors associated with use of appropriate maternal health services in the slum settlements of Nairobi, Kenya</article-title>. <source>Maternal and Child Health Journal</source> <volume>13</volume>: <fpage>130</fpage>–<lpage>137</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Fotso2"><label>30</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fotso</surname><given-names>JC</given-names></name>, <name name-style="western"><surname>Ezeh</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Oronje</surname><given-names>R</given-names></name> (<year>2008</year>) <article-title>Provision and Use of Maternal Health Services among Urban Poor Women in Kenya: What Do We Know and What Can We Do?</article-title>. <source>Journal of Urban Health</source> <volume>85</volume>: <fpage>428</fpage>–<lpage>442</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-World2"><label>31</label>
+<mixed-citation publication-type="other" xlink:type="simple">World Health Organization (2010) Social determinants of sexual and reproductive health: Informing future research and programme implementation. Geneva: World Health Organization.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Rashid1"><label>32</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rashid</surname><given-names>SF</given-names></name> (<year>2006</year>) <article-title>Emerging Changes in Reproductive Behaviour among Married Adolescent Girls in an Urban Slum in Dhaka, Bangladesh</article-title>. <source>Reproductive Health Matters</source> <volume>14</volume>: <fpage>151</fpage>–<lpage>159</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Rashid2"><label>33</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rashid</surname><given-names>SF</given-names></name> (<year>2011</year>) <article-title>Human rights and reproductive health: political realities and pragmatic choices for married adolescent women living in urban slums, Bangladesh</article-title>. <source>BMC International Health &amp; Human Rights</source> <volume>11</volume> (Suppl 3)<fpage>S3</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Marques1"><label>34</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Marques</surname><given-names>NM</given-names></name>, <name name-style="western"><surname>Ebrahim</surname><given-names>GJ</given-names></name> (<year>1991</year>) <article-title>The Antecedents of Adolescent Pregnancy in a Brazilian Squatter Community</article-title>. <source>Journal of Tropical Pediatrics</source> <volume>37</volume>: <fpage>194</fpage>–<lpage>198</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Kabiru1"><label>35</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kabiru</surname><given-names>CW</given-names></name>, <name name-style="western"><surname>Beguy</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Undie</surname><given-names>CC</given-names></name>, <name name-style="western"><surname>Zulu</surname><given-names>EM</given-names></name>, <name name-style="western"><surname>Ezeh</surname><given-names>AC</given-names></name> (<year>2010</year>) <article-title>Transition into first sex among adolescents in slum and non-slum communities in Nairobi, Kenya</article-title>. <source>Journal of Youth Studies</source> <volume>13</volume>: <fpage>453</fpage>–<lpage>471</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Zulu1"><label>36</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zulu</surname><given-names>EM</given-names></name>, <name name-style="western"><surname>Dodoo</surname><given-names>FNA</given-names></name>, <name name-style="western"><surname>Ezeh</surname><given-names>AC</given-names></name> (<year>2002</year>) <article-title>Sexual risk-taking in the slums of Nairobi, Kenya, 1993–98</article-title>. <source>Population Studies</source> <volume>56</volume>: <fpage>311</fpage>–<lpage>323</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Ezeh1"><label>37</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ezeh</surname><given-names>AC</given-names></name>, <name name-style="western"><surname>Kodzi</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Emina</surname><given-names>J</given-names></name> (<year>2010</year>) <article-title>Reaching the Urban Poor with Family Planning Services</article-title>. <source>Studies in Family Planning</source> <volume>41</volume>: <fpage>109</fpage>–<lpage>116</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Hussain1"><label>38</label>
+<mixed-citation publication-type="other" xlink:type="simple">Hussain R (2012) Abortion and unintended pregnancy in Kenya. New York: Guttmacher Institute.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Ngom1"><label>39</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ngom</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Magadi</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Owuor</surname><given-names>T</given-names></name> (<year>2003</year>) <article-title>Parental presence and adolescent reproductive health among the Nairobi urban poor</article-title>. <source>Journal of Adolescent Health</source> <volume>33</volume>: <fpage>369</fpage>–<lpage>377</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Chen1"><label>40</label>
+<mixed-citation publication-type="other" xlink:type="simple">Chen N, Valente P, Zlotnik H (1998) What do we know about recent trends in urbanization? In: Bilsborrow RE, editor. Migration, urbanization, and development: new directions and issues. Norwell, Massachussets: UNFPA-Kluwer Academic Publishers. 59–88.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Emina1"><label>41</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Emina</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Beguy</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Zulu</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Ezeh</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Muindi</surname><given-names>K</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Monitoring of Health and Demographic Outcomes in Poor Urban Settlements: Evidence from the Nairobi Urban Health and Demographic Surveillance System</article-title>. <source>Journal of Urban Health</source> <volume>88</volume>: <fpage>200</fpage>–<lpage>218</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Erulkar1"><label>42</label>
+<mixed-citation publication-type="other" xlink:type="simple">Erulkar AS, Matheka JK (2007) Adolescence in the Kibera slums of Nairobi Kenya. Nairobi and New York: The Population Council.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Beguy2"><label>43</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Beguy</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Bocquier</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Zulu</surname><given-names>EM</given-names></name> (<year>2010</year>) <article-title>Circular migration patterns and determinants in Nairobi slum settlements</article-title>. <source>Demographic Research</source> <volume>23</volume>: <fpage>549</fpage>–<lpage>586</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Stata1"><label>44</label>
+<mixed-citation publication-type="other" xlink:type="simple">Stata Corporation (2011) Stata/SE 12 for Windows. College Station, TX StataCorp LP.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Cleves1"><label>45</label>
+<mixed-citation publication-type="other" xlink:type="simple">Cleves MA, Gould WW, Gutierrez RG, Marchenko YU (2008) An introduction to survival analysis using Stata. College Station, Texas: Stata Press.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Cox1"><label>46</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cox</surname><given-names>DR</given-names></name> (<year>1972</year>) <article-title>Regression models and life-tables</article-title>. <source>Journal of the Royal Statistical Society Series B (Methodological)</source> <volume>34</volume>: <fpage>187</fpage>–<lpage>220</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Cox2"><label>47</label>
+<mixed-citation publication-type="book" xlink:type="simple">Cox DR, Oakes R (1984) Analysis of survival data. New York: Chapman and Hall. 201 p.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Rogers1"><label>48</label>
+<mixed-citation publication-type="other" xlink:type="simple">Rogers WH (1993) Regression standard errors in clustered samples. Stata Technical Bulletin 13.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Williams1"><label>49</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Williams</surname><given-names>RL</given-names></name> (<year>2000</year>) <article-title>A note on robust variance estimation for cluster-correlated data</article-title>. <source>Biometrics</source> <volume>56</volume>: <fpage>645</fpage>–<lpage>646</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-MugandaOnyando1"><label>50</label>
+<mixed-citation publication-type="other" xlink:type="simple">Muganda-Onyando R, Martin O (2008) Down the drain: Counting the Cost of teenage pregnancy and school dropout in Kenya. Nairobi: Center for the Study of Adolescence.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Gupta2"><label>51</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gupta</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Mahy</surname><given-names>M</given-names></name> (<year>2003</year>) <article-title>Adolescent childbearing in sub-Saharan Africa: Can increased schooling alone raise ages at first birth?</article-title> <source>Demographic Research</source> <volume>8</volume>: <fpage>93</fpage>–<lpage>106</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Kravdal1"><label>52</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kravdal</surname><given-names>Ø</given-names></name> (<year>2002</year>) <article-title>Education and Fertility in Sub-Saharan Africa: Individual And Community Effects</article-title>. <source>Demography</source> <volume>39</volume>: <fpage>233</fpage>–<lpage>250</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Kennedy1"><label>53</label>
+<mixed-citation publication-type="other" xlink:type="simple">Kennedy E, Natalie G, Peter A, Mick C (2011) Adolescent fertility and family planning in East Asia and the Pacific: a review of DHS reports. Reproductive Health 8.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Blanc1"><label>54</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Blanc</surname><given-names>AK</given-names></name>, <name name-style="western"><surname>Way</surname><given-names>AA</given-names></name> (<year>1998</year>) <article-title>Sexual Behavior and Contraceptive Knowledge and Use among Adolescents in Developing Countries</article-title>. <source>Studies in Family Planning</source> <volume>29</volume>: <fpage>106</fpage>–<lpage>116</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Glasier1"><label>55</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Glasier</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Gülmezoglu</surname><given-names>AM</given-names></name>, <name name-style="western"><surname>Schmid</surname><given-names>GP</given-names></name>, <name name-style="western"><surname>Garcia Moreno</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Van Look</surname><given-names>PF</given-names></name> (<year>2006</year>) <article-title>Sexual and reproductive health: a matter of life and death</article-title>. <source>The Lancet</source> <volume>368</volume>: <fpage>1595</fpage>–<lpage>1607</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Blanc2"><label>56</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Blanc</surname><given-names>AK</given-names></name>, <name name-style="western"><surname>Way</surname><given-names>AA</given-names></name> (<year>1998</year>) <article-title>Sexual behavior and contraceptive knowledge and use among adolescents in developing countries</article-title>. <source>Studies in family planning</source>: <fpage>106</fpage>–<lpage>116</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Kiragu1"><label>57</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kiragu</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Zabin</surname><given-names>LS</given-names></name> (<year>1995</year>) <article-title>Contraceptive use among high school students in Kenya</article-title>. <source>International Family Planning Perspectives</source>: <fpage>108</fpage>–<lpage>113</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Dodoo1"><label>58</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dodoo</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Tempenis</surname><given-names>M</given-names></name> (<year>2002</year>) <article-title>Gender, power, and reproduction: ruralurban differences in the relationship between fertility goals and contraceptive Use in kenya*</article-title>. <source>Rural Sociol</source> <volume>67</volume>: <fpage>46</fpage>–<lpage>70</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Place1"><label>59</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Place</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Adato</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Hebinck</surname><given-names>P</given-names></name> (<year>2007</year>) <article-title>Understanding rural poverty and investment in agriculture: an assessment of integrated quantitative and qualitative research in western kenya</article-title>. <source>World Dev</source> <volume>35</volume>: <fpage>312</fpage>–<lpage>325</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Babalola1"><label>60</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Babalola</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Tambashe</surname><given-names>BO</given-names></name>, <name name-style="western"><surname>Vondrasek</surname><given-names>C</given-names></name> (<year>2005</year>) <article-title>Parental factors and sexual risk-taking among young people in Cote d'Ivoire</article-title>. <source>African Journal of Reproductive Health</source> <volume>9</volume>: <fpage>49</fpage>–<lpage>65</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-KumiKyereme1"><label>61</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kumi-Kyereme</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Awusabo-Asare</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Biddlecom</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Tanle</surname><given-names>A</given-names></name> (<year>2007</year>) <article-title>Influence of Social Connectedness, Communication and Monitoring on Adolescent Sexual Activity in Ghana</article-title>. <source>African Journal of Reproductive Health</source> <volume>11</volume>: <fpage>133</fpage>–<lpage>149</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Dodoo2"><label>62</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dodoo</surname><given-names>FN</given-names></name>, <name name-style="western"><surname>Zulu</surname><given-names>EM</given-names></name>, <name name-style="western"><surname>Ezeh</surname><given-names>AC</given-names></name> (<year>2007</year>) <article-title>Urban-rural differences in the socioeconomic deprivation-sexual behavior link in Kenya</article-title>. <source>Soc Sci Med</source> <volume>64</volume>: <fpage>1019</fpage>–<lpage>1031</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Rodgers1"><label>63</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rodgers</surname><given-names>KB</given-names></name> (<year>1999</year>) <article-title>Parenting Processes Related to Sexual Risk-Taking Behaviors of Adolescent Males and Females</article-title>. <source>Journal of Marriage and Family</source> <volume>61</volume>: <fpage>99</fpage>–<lpage>109</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0101034-Temin1"><label>64</label>
+<mixed-citation publication-type="other" xlink:type="simple">Temin M, Levine R (2009) Start with a girl: a new agenda for global health Washington DC: Center for Global Development. Available: <ext-link ext-link-type="uri" xlink:href="http://www.cgd.org/content/publications/detail/1422899" xlink:type="simple">www.cgd.org/content/publications/detail/1422899</ext-link> p.</mixed-citation>
+</ref>
+</ref-list></back>
+</article>

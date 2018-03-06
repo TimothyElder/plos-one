@@ -1,0 +1,2582 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1d3 20150301//EN" "http://jats.nlm.nih.gov/publishing/1.1d3/JATS-journalpublishing1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="1.1d3" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1371/journal.pone.0185757</article-id>
+<article-id pub-id-type="publisher-id">PONE-D-16-38238</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3"><subject>Physical sciences</subject><subj-group><subject>Physics</subject><subj-group><subject>Thermodynamics</subject><subj-group><subject>Entropy</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Neuroscience</subject><subj-group><subject>Cognitive science</subject><subj-group><subject>Cognitive psychology</subject><subj-group><subject>Language</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Psychology</subject><subj-group><subject>Cognitive psychology</subject><subj-group><subject>Language</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Psychology</subject><subj-group><subject>Cognitive psychology</subject><subj-group><subject>Language</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Physical sciences</subject><subj-group><subject>Physics</subject><subj-group><subject>Acoustics</subject><subj-group><subject>Bioacoustics</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Bioacoustics</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Physical sciences</subject><subj-group><subject>Mathematics</subject><subj-group><subject>Probability theory</subject><subj-group><subject>Probability distribution</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Linguistics</subject><subj-group><subject>Computational linguistics</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Neuroscience</subject><subj-group><subject>Cognitive science</subject><subj-group><subject>Cognitive psychology</subject><subj-group><subject>Music cognition</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Psychology</subject><subj-group><subject>Cognitive psychology</subject><subj-group><subject>Music cognition</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Psychology</subject><subj-group><subject>Cognitive psychology</subject><subj-group><subject>Music cognition</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Cultural anthropology</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Psychology</subject><subj-group><subject>Emotions</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Psychology</subject><subj-group><subject>Emotions</subject></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Music viewed by its entropy content: A novel window for comparative analysis</article-title>
+<alt-title alt-title-type="running-head">Music viewed by its entropy content</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Febres</surname>
+<given-names>Gerardo</given-names>
+</name>
+<role content-type="http://credit.casrai.org/">Conceptualization</role>
+<role content-type="http://credit.casrai.org/">Data curation</role>
+<role content-type="http://credit.casrai.org/">Formal analysis</role>
+<role content-type="http://credit.casrai.org/">Funding acquisition</role>
+<role content-type="http://credit.casrai.org/">Investigation</role>
+<role content-type="http://credit.casrai.org/">Methodology</role>
+<role content-type="http://credit.casrai.org/">Resources</role>
+<role content-type="http://credit.casrai.org/">Software</role>
+<role content-type="http://credit.casrai.org/">Validation</role>
+<role content-type="http://credit.casrai.org/">Visualization</role>
+<role content-type="http://credit.casrai.org/">Writing – original draft</role>
+<role content-type="http://credit.casrai.org/">Writing – review &amp; editing</role>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Jaffe</surname>
+<given-names>Klaus</given-names>
+</name>
+<role content-type="http://credit.casrai.org/">Formal analysis</role>
+<role content-type="http://credit.casrai.org/">Methodology</role>
+<role content-type="http://credit.casrai.org/">Supervision</role>
+<role content-type="http://credit.casrai.org/">Writing – review &amp; editing</role>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+</contrib-group>
+<aff id="aff001"><label>1</label> <addr-line>Departamento de Procesos y Sistemas, Universidad Simón Bolívar, Sartenejas, Baruta, Miranda, Venezuela</addr-line></aff>
+<aff id="aff002"><label>2</label> <addr-line>Laboratorio de Evolución, Universidad Simón Bolívar, Sartenejas, Baruta, Miranda, Venezuela</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Metze</surname>
+<given-names>Konradin</given-names>
+</name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>University of Campinas, BRAZIL</addr-line></aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">gerardofebres@usb.ve</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<day>17</day>
+<month>10</month>
+<year>2017</year>
+</pub-date>
+<pub-date pub-type="collection">
+<year>2017</year>
+</pub-date>
+<volume>12</volume>
+<issue>10</issue>
+<elocation-id>e0185757</elocation-id>
+<history>
+<date date-type="received">
+<day>23</day>
+<month>9</month>
+<year>2016</year>
+</date>
+<date date-type="accepted">
+<day>19</day>
+<month>9</month>
+<year>2017</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2017</copyright-year>
+<copyright-holder>Febres, Jaffe</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0185757"/>
+<abstract>
+<p>Polyphonic music files were analyzed using the set of symbols that produced the Minimal Entropy Description, which we call the Fundamental Scale. This allowed us to create a novel space to represent music pieces by developing: (a) a method to adjust a textual description from its original scale of observation to an arbitrarily selected scale, (b) a method to model the structure of any textual description based on the shape of the symbol frequency profiles, and (c) the concept of higher order entropy as the entropy associated with the deviations of a frequency-ranked symbol profile from a perfect Zipfian profile. We call this diversity index the ‘2nd Order Entropy’. Applying these methods to a variety of musical pieces showed how the space of ‘symbolic specific diversity-entropy’ and that of ‘2nd order entropy’ captures characteristics that are unique to each music type, style, composer and genre. Some clustering of these properties around each musical category is shown. These methods allow us to visualize a historic trajectory of academic music across this space, from medieval to contemporary academic music. We show that the description of musical structures using entropy, symbol frequency profiles and specific symbolic diversity allows us to characterize traditional and popular expressions of music. These classification techniques promise to be useful in other disciplines for pattern recognition and machine learning.</p>
+</abstract>
+<funding-group>
+<funding-statement>The authors received no specific funding for this work.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="9"/>
+<table-count count="12"/>
+<page-count count="30"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability">
+<meta-name>Data Availability</meta-name>
+<meta-value>The experiments were performed with a computer program based on the Fundamental Scale Algorithm, fully explained in a previous publication, as cited in the paper and its references. Explicit texts of music files and intermediate numerical results are available under the name of MusicNet at <ext-link ext-link-type="uri" xlink:href="http://gfebres.net/Activities/MusicModels/MusicNet.Tree/MusicNet.htm" xlink:type="simple">http://gfebres.net/Activities/MusicModels/MusicNet.Tree/MusicNet.htm</ext-link> and on Figshare at <ext-link ext-link-type="uri" xlink:href="https://figshare.com/articles/Music_Characterizations_MIDI/5435953" xlink:type="simple">https://figshare.com/articles/Music_Characterizations_MIDI/5435953</ext-link>.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec001" sec-type="intro">
+<title>Introduction</title>
+<p>Understanding the structures underlying music is an old restlessness, always present among researchers. During the 1950’s, Meyer[<xref ref-type="bibr" rid="pone.0185757.ref001">1</xref>] and, more recently, Huron [<xref ref-type="bibr" rid="pone.0185757.ref002">2</xref>] linked musical structure to our emotions and expectations. Their description of musical structure and its influence on our emotions is based on considerations of explicit musical language, as written on the music sheet. By using other analytical resources, a group of researchers, Mavromatis [<xref ref-type="bibr" rid="pone.0185757.ref003">3</xref>] among them, offer models for the construction of melodies that assume that a Markovian process is behind each specific style of melody. These models, based on Finite State Machines (FSMs), generalized in stochastic terms by a Hidden Markov Model (HMM) [<xref ref-type="bibr" rid="pone.0185757.ref004">4</xref>], are able to produce melodies that fit within a certain music style after being properly trained. Extending the HMM to include harmonies requires the identification of an inconveniently large number of states. As an alternative method, Rohrmeier [<xref ref-type="bibr" rid="pone.0185757.ref005">5</xref>] proposes a system of grammar rules to model harmonic progressions, an important extension of Lerdahl and Jackendorf’s [<xref ref-type="bibr" rid="pone.0185757.ref006">6</xref>] previous work and their Generative Theory of Tonal Music (GTTM).</p>
+<p>We all share the intuitive idea of music as a flow of ordered sound waves. Formally, the presence of order in music was studied by Leonard Meyer [<xref ref-type="bibr" rid="pone.0185757.ref001">1</xref>], who pioneered the analysis of music as a phenomenon capable of creating emotions. Meyer analyzed in depth the expectancy experienced by the listener. In his explanations, Meyer used musical concepts and technical notations, which are difficult to represent in quantitative mathematical terms. But the idea of music as a means to create specific sensations such as tension, sadness, euphoria, happiness, rest and completeness is present throughout his study. Meyer described the emotions caused by music as the result of the interaction between the sound patterns perceived and the brain. In his words [<xref ref-type="bibr" rid="pone.0185757.ref001">1</xref>]: “The mind, for example, expects structural gaps to be filled; but what constitutes such a gap depends upon what constitutes completeness within a particular musical style system. Musical language, like verbal language, is heuristic in the sense “that its forms predetermine for us certain modes of observation and interpretation.”† Thus the expectations which result from the nature of human mental processes are always conditioned by the possibilities and probabilities inherent in the materials and their organization as presented in a particular musical style.” († Edward Sapir, “Language,” Encyclopedia of the Social Sciences, IX (New York: Macmillan Co., 1934), 157.).</p>
+<p>Meyer’s reference to conditional probabilities implies the possibility of capturing some of the essence of musical style by observing the values of entropy associated with each music style. However, the style of music has proved to be a difficult concept to address. As occurs with other types of languages, style is a way of classifying specific musical pieces. The determination of the style is based on characteristics describing the music, the time when it was composed, and the geographical context. Some researchers have set a style framework for music by quantifying these characteristics. In 1997, R. Dannenberg, B. Thom and D. Watson [<xref ref-type="bibr" rid="pone.0185757.ref007">7</xref>] produced readable Musical Instrument Digital Interface (MIDI) files by recording 10-second-long trumpet performances. Dannenberg et al. used neural networks to classify the style of each recorded performance according to several features of music. In 2004, P. J. Ponce de León and J. M. Iñesta [<xref ref-type="bibr" rid="pone.0185757.ref008">8</xref>] measured the pitch, note duration, silence duration, pitch interval, non-diatonic notes, syncopation, and other music components to build statistical characterizations of Jazz and Classical melody pieces. Perez-Sancho, J. M. Inesta and J. Calera-Ruiz [<xref ref-type="bibr" rid="pone.0185757.ref009">9</xref>] approached the same problem by categorizing the texts of MIDI files. They extracted the melodies from the MIDI files and segmented the resulting texts into sequences of characters representing different lengths of music beats. In 2004, P. van Kranenburg and E. Backer [<xref ref-type="bibr" rid="pone.0185757.ref010">10</xref>] studied music styles starting from certain music properties. They included the entropy of some parameters as properties. These studies indicate that it is possible to recognize properties related to the musical style in an automated fashion, but none fulfills the required generality to be considered a true style recognizer. Musical style is simply too fuzzy a concept to serve as a quantitative reference framework useful for classifying, with a single value, something as complex as music.</p>
+<p>A different approach sees music as a recursively nested group of structures (Rohrmeier [<xref ref-type="bibr" rid="pone.0185757.ref011">11</xref>]). Even considering just melody, music consists of kinds of fractal structures that make any attempt at its analysis a dauntingly complex task. Attempting to model polyphonic music ‘amplifies’ these difficulties to such an extent that Rohrmeier [<xref ref-type="bibr" rid="pone.0185757.ref011">11</xref>] considers the analysis of the structures of polyphonic music a practically impossible task.</p>
+<p>In studies where the focus is on the music sheet, the analysis is limited to the music as the composer intended it to sound—instruments, rhythms and tempo, scales, note pitches, keys, chords, temperament, volume, etc.—but leaving out of the assessment many other effects of real music that are present when it is performed with musical instruments. This study, in contrast, is performed with the recording of sounds as expressed in computerized music files. Subtleties such as the effects of relative position of the instruments, their timbre, syncopation, mistuning, the performer's style and even errors are represented in these files to some degree, depending on the recording quality and resolution.</p>
+<p>Other studies are devoted to detect relationships among some characteristics of musical pieces and the melody expressed as a sequence of notes. As one of those characterizations, Simonton [<xref ref-type="bibr" rid="pone.0185757.ref012">12</xref>] defined musical originality as inversely proportional to the number of times a specific pitch change is found within the first six notes of a piece. He evaluated the evolution of this conception of originality for more than 15600 pieces composed in a time span of more than 500 years. Simonton represented his findings as a polynomial which fluctuates several times within the period studied. Recently Hass [<xref ref-type="bibr" rid="pone.0185757.ref013">13</xref>] took the measurement of originality as defined by Simonton and applied it within the scope of certain geographical regions, the composer’s fame and the composer’s life span itself.</p>
+<p>Temperley [<xref ref-type="bibr" rid="pone.0185757.ref014">14</xref>–<xref ref-type="bibr" rid="pone.0185757.ref016">16</xref>] has worked on music models based on the conditional probability of musical patterns. Temperly considers music as a stream of notes, each one defined as the concurrence of metrical structure, harmonic structure and stream structure. Despite Temperley’s models consider a broad spectrum of musical elements, the data input used for his models is based on the music sheet, thus some previous interpretation and transcription is required to feed the computer.</p>
+<p>Some researchers have provided other useful schemas of the structures underlying music. In 2006, Mavromatis [<xref ref-type="bibr" rid="pone.0185757.ref017">17</xref>] presented models of Greek Chants depicting the melodic component of music as a process dominated by Markov chains. Later, in 2011, Rohrmeier [<xref ref-type="bibr" rid="pone.0185757.ref005">5</xref>] argued that that Markovian processes are too limited to properly model the complexity that arises when harmonies are added to melody. Rohrmeier proposes a Generative Theory of Tonal Harmony (GTTH) [<xref ref-type="bibr" rid="pone.0185757.ref005">5</xref>] as a set of recursive rules based on the Chomskian grammar and on the Generative Theory of Tonal Music (GTTM) by Lerdahl and Jackendorf [<xref ref-type="bibr" rid="pone.0185757.ref006">6</xref>]. Both branches of study—music as a phenomenon governed by Markovian processes and the recursive context-free rules to model harmonies—are developed for music as it is written on the music sheet, that is, music as an abstract entity represented by a set of meaningful symbols written on the music sheet, which are supposed to represent the sonic effects intended by the composer. As Rohrmeier points out in one of his notes in 2012 [<xref ref-type="bibr" rid="pone.0185757.ref018">18</xref>], even within this conception of music—its description on the music sheet, which is simpler than actual recorded sounds—GTTH does not suffice to properly model polyphonic music. In 2009, Mavromatis [<xref ref-type="bibr" rid="pone.0185757.ref019">19</xref>] suggested the application of the Minimal Description Length Principle (MDL) as an alternative to the Markovian models of melodies, and he explained why MDL should be a powerful tool to describe music. Nevertheless, he asserts that these advantages are subject to the huge computational complexity foreseen of the algorithms associated with this type of analysis.</p>
+<p>Even for the most intricate pieces of music, the music sheet is rather simple when compared with the actual music and with the recorded file that can be reproduced—the sounds we hear. The quantitative analysis of music is even more demanding if polyphonic music is the subject of study. Polyphony adds more dimensions to an already nearly unmanageable problem. To deal with polyphonic music, Cox [<xref ref-type="bibr" rid="pone.0185757.ref020">20</xref>] measured the entropy of the sound for each time beat. Cox represents his results in two time-dependent entropy profiles: one for pitch and another for rhythm. Polyphonic music can be described as the superposition of many monophonic sound streams. The result is an overwhelmingly large number of combinations of sound frequencies. Luckily, all these sound streams are synchronized in time, and therefore, their recording in a file leads to a one-dimensional text where certain character sequences may form patterns that represent the musical elements contained in the text file. It is worthwhile to mention the branch of research related to the development of methods for the automatic transcription polyphonic music directly from sound. This is a promising area of study with important practical applications. Two Ph.D. Thesis by Klapuri [<xref ref-type="bibr" rid="pone.0185757.ref021">21</xref>] and Chai [<xref ref-type="bibr" rid="pone.0185757.ref022">22</xref>] can be mentioned as sources of information in this regard.</p>
+<p>In an independent line of inquiry, Febres and Jaffe [<xref ref-type="bibr" rid="pone.0185757.ref023">23</xref>] presented the Fundamental Scale Algorithm (FSA). At issue is a method based on the MDL Principle that is applicable not only to music but also to most problems concerning the recognition of patterns in a large string of written symbols. The FSA is capable of unveiling the ‘dominant’ symbols of a description. In the present work, we apply the FSA to 455 MIDI files containing academic, traditional, and popular music. For each piece, the Fundamental Symbols—the set of symbols leading to the description of minimal symbolic entropy—is determined and the symbol frequency profiles built. To compare the shapes of profiles based on different numbers of symbols, the Scale Downgrading method is devised and presented. Additionally, a measure of Higher Order Entropy and a method for its calculation is proposed. We use these methods to represent different types of MIDI music in an entropy-diversity space. The dependence between the type of music and the selected representation space is analyzed.</p>
+</sec>
+<sec id="sec002" sec-type="materials|methods">
+<title>Methods</title>
+<p>We take a sample of more than 450 MIDI pieces and apply several techniques to investigate ways to quantitatively classify music. The study uses the actual music files as the observed object. We do not use the music sheet as a description of each piece. Instead, we use the computer file produced after a performance recording or any other means of music production. Then, we obtain what we call the Fundamental Symbols of each music piece. The Fundamental Symbols are the sequences of characters forming symbols for which the corresponding entropy is minimal. At this point, we can compare music pieces by considering already available parameters, such as symbolic diversity and entropy. We go further and use the Fundamental Symbols to build symbol frequency profiles that offer a graphically shaped model of each music piece. These graphical models can be visually compared with one another. They can also be built for groups of musical pieces belonging, for example, to composers or to specific styles or periods of music, enabling us to compare among properly defined groups of pieces sharing certain conditions. To quantify these comparisons, we depict the frequency profiles using the same number of dots. We do this by applying a method we call Scale Downgrading. The comparison of two profiles having the same number of points is performed by computing the Euclidean distance separating both profiles.</p>
+<p>We perform statistical tests to confirm the capacity of the method to differentiate certain genres and styles of music from others. The following sections describe in further detail the components of these methods. Additionally, we inspect the representations of music pieces, composers and genres in a 3-dimensional space formed by the specific diversity, entropy and second order entropy, which we define in the sections below.</p>
+<sec id="sec003">
+<title>Language recognition, diversity and entropy</title>
+<p>In this study, we propose a radically different method for studying the structure of music. Instead of analyzing the symbols written on the music sheet, we look at the sound recorded from actual performances by reading the text associated with the computerized file that contains the recording (the same as reading the text of an.MP3,.MP4 or.VAW file) or the file containing the synthetized version of the original recording (as with a MIDI file). To do this, we inspect the sequence of characters of the computerized files viewed as texts. Even for short files, this is not a simple task. A music file read as a text is a long sequence of characters that does not exhibit recognizable patterns, resulting in a code that is extremely difficult to interpret. Not knowing the rules of a grammar system, it is not possible to decide a priori how to recognize the symbols needed to interpret the description. There are no words in the sense we are used to, and the characters we see do not have any meaning to us. We cannot even be sure about the meaning of the space character “”. Thus, music files contain character strings to represent sounds according to the coding system used and the selected discretization level. But, as opposed to natural language text files, the music files do not show words or symbols that we humans can recognize without the help of some decoding device. Therefore, to find some order within these symbols—sequences of characters—that are camouflaged by the surrounding text, we consider the entropy of each possible set of symbols, that is, each possible way of reading the same written message. Given a space containing several types of elements, entropy is a property associated to the probability of finding each type of element, that is, the probability distribution associated with the set of elements classified by type. Referring to these elements as symbols, we can think of a message as a long sequence of symbols forming patterns. We may or may not recognize them, but those patterns are always there. In fact, there is always more than one possible pattern. Considering one or another pattern depends on the observer’s choice. Loosely speaking, the number of ways these symbols can be organized to form different patterns is an indication of the number of meanings we could associate to each pattern. Consequently, the symbol patterns are closely related to what we freely call “information”. Being exposed to a message, our brain needs to find some patterns—order—to interpret the information in a useful manner. The more the order we find in the patterns of the message, the more we can rely on what we think we are perceiving. Thus, order as perceived is a measure of information and therefore entropy is linked to information.</p>
+<p>In 1948 Shannon [<xref ref-type="bibr" rid="pone.0185757.ref024">24</xref>] proposed a way to quantify symbolic entropy (see <xref ref-type="disp-formula" rid="pone.0185757.e003">Eq (3)</xref>) to evaluate the amount of information required to transmit a message. Shannon’s expression operates over strings of known symbols. He applied his method to binary codes based on zeroes and ones. But we think the symbols do not have to be limited to single character symbols, i.e. a symbol could be a group of three zeroes and four ones (0001111). In that case the entropy should be computed considering each time the symbol ‘0001111’ appears as an accountable instance of that symbol. Also, there could be more than two elementary symbols in the alphabet used to code the message. Despite Shannon’s expression was originally intended to evaluate the cost of transmitting messages between devices, we use it in a ‘reverse’ mode: we strive to determine the ‘best’ way to group characters building up larger but cohesive symbols within a message with the objective of minimizing the cost of transmitting the message. We claim that after having a ‘best’ set of symbols, whose frequency distribution corresponds to the lowest (or nearly so) possible symbolic entropy value is a good representation of the structure of the language used for the message or description. We call this set the Fundamental Symbols, and the method used for its determination is the Fundamental Scale Algorithm [<xref ref-type="bibr" rid="pone.0185757.ref023">23</xref>]. The result is that the set of symbols <italic>Y</italic><sub><italic>i</italic></sub>, which can reproduce the description with such a frequency distribution <bold><italic>P</italic></bold>(<italic>Y</italic><sub><italic>i</italic></sub>) that the entropy associated with, is minimal. The set grouping the Fundamental Symbols is regarded as the Fundamental Language <bold><italic>B</italic></bold><sub>*</sub>. The asterisk as sub-index is used to recall that <bold><italic>B</italic></bold><sub>*</sub> is the result of an entropy minimization process. Thus, we can write
+<disp-formula id="pone.0185757.e001">
+<alternatives>
+<graphic id="pone.0185757.e001g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0185757.e001" xlink:type="simple"/>
+<mml:math display="block" id="M1">
+<mml:mrow><mml:msub><mml:mi mathvariant="bold-italic">B</mml:mi><mml:mo>*</mml:mo></mml:msub><mml:mo>=</mml:mo><mml:mspace width="4.pt"/><mml:mrow><mml:mo>{</mml:mo><mml:mrow><mml:msub><mml:mi>Y</mml:mi><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:mo>,</mml:mo><mml:mspace width="4.pt"/><mml:msub><mml:mi>Y</mml:mi><mml:mrow><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mspace width="4.pt"/><mml:mo>…</mml:mo><mml:mspace width="4.pt"/><mml:mo>,</mml:mo><mml:mspace width="4.pt"/><mml:msub><mml:mi>Y</mml:mi><mml:mi>D</mml:mi></mml:msub><mml:mspace width="4.pt"/><mml:mo>,</mml:mo><mml:mspace width="4.pt"/><mml:mi mathvariant="bold-italic">P</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>Y</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>}</mml:mo></mml:mrow><mml:mspace width="4.pt"/><mml:mo>.</mml:mo></mml:mrow>
+</mml:math>
+</alternatives>
+<label>(1)</label>
+</disp-formula></p>
+<p>In Expression (<xref ref-type="disp-formula" rid="pone.0185757.e001">1</xref>), the diversity—the number of different symbols—is represented as <italic>D</italic>. Once we know the set of Fundamental Symbols along with the frequency of each Fundamental Symbol—equivalent to their probability distribution—we can compute its symbolic specific diversity and the entropy of each piece of music, applying Expressions (<xref ref-type="disp-formula" rid="pone.0185757.e002">2</xref>) and (<xref ref-type="disp-formula" rid="pone.0185757.e003">3</xref>). The specific diversity <italic>d</italic> is calculated as
+<disp-formula id="pone.0185757.e002">
+<alternatives>
+<graphic id="pone.0185757.e002g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0185757.e002" xlink:type="simple"/>
+<mml:math display="block" id="M2">
+<mml:mrow><mml:mi>d</mml:mi><mml:mo>=</mml:mo><mml:mspace width="4.pt"/><mml:mfrac><mml:mi>D</mml:mi><mml:mi>N</mml:mi></mml:mfrac><mml:mo>,</mml:mo></mml:mrow>
+</mml:math>
+</alternatives>
+<label>(2)</label>
+</disp-formula>
+where <italic>D</italic> is the diversity of language <bold><italic>B</italic></bold>—the number of different symbols in the description—and <italic>N</italic> is the total number of symbols, repeated or not. A version of Shannon’s entropy <italic>h</italic> [<xref ref-type="bibr" rid="pone.0185757.ref024">24</xref>], generalized for languages composed of <italic>D</italic> symbols, is used to compute the quantity of information describing each music piece. The probabilities of occurrence of symbols <italic>Y</italic><sub><italic>i</italic></sub> are the components of the one-dimensional array <bold><italic>P</italic></bold>:
+<disp-formula id="pone.0185757.e003">
+<alternatives>
+<graphic id="pone.0185757.e003g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0185757.e003" xlink:type="simple"/>
+<mml:math display="block" id="M3">
+<mml:mrow><mml:mi>h</mml:mi><mml:mo>=</mml:mo><mml:mo>−</mml:mo><mml:mspace width="4.pt"/><mml:mi mathvariant="bold-italic">P</mml:mi><mml:mspace width="4.pt"/><mml:mi>l</mml:mi><mml:mi>o</mml:mi><mml:msub><mml:mi>g</mml:mi><mml:mi>D</mml:mi></mml:msub><mml:mspace width="4.pt"/><mml:mi mathvariant="bold-italic">P</mml:mi><mml:mo>.</mml:mo></mml:mrow>
+</mml:math>
+</alternatives>
+<label>(3)</label>
+</disp-formula></p>
+<p>The modeling of descriptions by means of their representation with its Fundamental Symbols is a powerful tool that reveals, at least partially, the structure underneath the description of the system. But the process to obtain these Fundamental Symbols is lengthy, and although it is solely based on the Minimum Description Length Principle, its implementation may look cumbersome and difficult to follow, causing a lack of confidence in the results it produces. To illustrate the representation of texts by means of the Fundamental Symbols, we analyzed a segment of a MIDI file and a short English text. The results are presented in <xref ref-type="table" rid="pone.0185757.t001">Table 1</xref>. Our choice of an English text is due to the unintelligibility to the naked eye of any music file text. The reader can verify that there is no overlap in the instances of the symbols, while symbols leave no empty space in the original message.</p>
+<table-wrap id="pone.0185757.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185757.t001</object-id>
+<label>Table 1</label> <caption><title>Fundamental symbols leading to minimal entropy computed for short texts.</title> <p>On the right, the object text is a tiny segment of the MIDI representation of the 4<sup>th</sup> movement of Beethoven’s violin concerto. On the left, the object text is an English text written for the purpose of this example. Symbolic models of the original texts were obtained by applying the Fundamental Scale Algorithm to the text’s objects.</p></caption>
+<alternatives>
+<graphic id="pone.0185757.t001g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.t001" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center" colspan="14">Fundamental symbols of two short texts</th>
+</tr>
+<tr>
+<th align="center" colspan="8">English text</th>
+<th align="center" colspan="6">MIDI Music file segment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="justify" colspan="8">This is a group of little sentences built to evaluate the functioning of the fundamental scale algorithm. These sentences will be read in several ways. A specific way of splitting symbols will lead to the set of symbols that minimize the entropy. The entropy is computed according to the frequency of appearance of each symbol</td>
+<td align="justify" colspan="6">‡¢$˜BT È- ¸Íé‚ú˜B ‰$˜BT‚ú˜B ‰$˜CT‚ú˜C $˜BT‚ú˜B $˜@T‚ú˜@ $˜BT‚ú˜B $˜@T‚ú˜@ ‰$˜BT‚ú˜B ‰$˜BT‚ú˜B ‰$˜@T‚ú˜@ ƒ$˜@T‚ú˜@ ƒ$˜BT‚ú˜B ‰$˜@T‚ú˜@ ƒ$˜@T‚ú˜@ ƒ$˜BT‚ú˜B ‰$˜@T ¸ÍéL¸ÍáÁ ¸Í€x˜@ $¸Í9Á ¸Í8ÁÉ¸Í7Á ¸Í6ÁÉ¸Í5Á ¸Í4ÁÉ¸Í3Á ¸Í2L˜@TL¸Í1ÁÉ¸Í0t˜@ $¸Í/ÁÉ¸Í.Á ¸Í-ÁÉ¸Í¤Á ¸Í+ÁÉ¸Í*Á ¸ÍóÁÉ¸ÍíH˜BT ¸Í2 È0—ú˜B $˜CT—ú˜C $˜BT—ú˜B $˜CT—ú˜C $˜BT ¸Í2 ¸Í3@¸Í4@¸Í5@¸Í6@¸Í7é˜B ¸Í8@¸Í9@</td>
+</tr>
+<tr>
+<td align="center" colspan="8">Entropy <italic>h</italic> = 0.7552, Diversity <italic>D</italic> = 55, Ø = space</td>
+<td align="left" colspan="6">Entr. <italic>h</italic> = 0.7482, Div. <italic>D</italic> = 50, Ø = space</td>
+</tr>
+<tr>
+<td align="left"><bold>Symbol</bold></td>
+<td align="center"><bold>Frq</bold>.</td>
+<td align="left"><bold>Symbol</bold></td>
+<td align="center"><bold>Frq</bold>.</td>
+<td align="left"><bold>Symb</bold>.</td>
+<td align="center"><bold>Frq</bold>.</td>
+<td align="left"><bold>Symb</bold>.</td>
+<td align="center"><bold>Frq</bold>.</td>
+<td align="left"><bold>Symb</bold>.</td>
+<td align="center"><bold>Frq</bold>.</td>
+<td align="left"><bold>Symb</bold>.</td>
+<td align="center"><bold>Frq</bold>.</td>
+<td align="left"><bold>Symb</bold>.</td>
+<td align="center"><bold>Frq</bold>.</td>
+</tr>
+<tr>
+<td align="left">Ø</td>
+<td align="center">43</td>
+<td align="left">l</td>
+<td align="center">6</td>
+<td align="left">ys.Ø</td>
+<td align="center">1</td>
+<td align="left">f</td>
+<td align="center">1</td>
+<td align="left">˜</td>
+<td align="left">40</td>
+<td align="left">1ÁÉ¸Í0</td>
+<td align="center">1</td>
+<td align="left">‡</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="left">e</td>
+<td align="center">27</td>
+<td align="left">ad inØ</td>
+<td align="center">1</td>
+<td align="left">Øli</td>
+<td align="center">1</td>
+<td align="left">g</td>
+<td align="center">1</td>
+<td align="left">Ø</td>
+<td align="left">28</td>
+<td align="left">ÍóÁÉ¸Í</td>
+<td align="center">1</td>
+<td align="left">¢</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="left">t</td>
+<td align="center">15</td>
+<td align="left">ymbols</td>
+<td align="center">1</td>
+<td align="left">c</td>
+<td align="center">3</td>
+<td align="left">m</td>
+<td align="center">1</td>
+<td align="left">‚ú</td>
+<td align="left">13</td>
+<td align="left">¸Í2 ¸Í</td>
+<td align="center">1</td>
+<td align="left">È</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="left">lgorithm. Th</td>
+<td align="center">1</td>
+<td align="left">mputed</td>
+<td align="center">1</td>
+<td align="left">bui</td>
+<td align="center">1</td>
+<td align="left">b</td>
+<td align="center">1</td>
+<td align="left">$</td>
+<td align="left">22</td>
+<td align="left">é‚ú˜</td>
+<td align="center">1</td>
+<td align="left">‚</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="left">symbols will</td>
+<td align="center">1</td>
+<td align="left">group</td>
+<td align="center">1</td>
+<td align="left">pli</td>
+<td align="center">1</td>
+<td align="left">r</td>
+<td align="center">1</td>
+<td align="left">B</td>
+<td align="left">22</td>
+<td align="left">Øƒ</td>
+<td align="center">2</td>
+<td align="left">ú</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="left">ntropy</td>
+<td align="center">2</td>
+<td align="left">n</td>
+<td align="center">5</td>
+<td align="left">ing</td>
+<td align="center">1</td>
+<td align="left">w</td>
+<td align="center">1</td>
+<td align="left">¸Í</td>
+<td align="left">11</td>
+<td align="left">—ú</td>
+<td align="center">2</td>
+<td align="left">€</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="left">frequency of</td>
+<td align="center">1</td>
+<td align="left">evalu</td>
+<td align="center">1</td>
+<td align="left">aØ</td>
+<td align="center">1</td>
+<td align="left">A</td>
+<td align="center">1</td>
+<td align="left">T</td>
+<td align="left">19</td>
+<td align="left">C</td>
+<td align="center">3</td>
+<td align="left">x</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="left">s</td>
+<td align="center">11</td>
+<td align="left">uncti</td>
+<td align="center">1</td>
+<td align="left">o</td>
+<td align="center">2</td>
+<td align="left">y</td>
+<td align="center">1</td>
+<td align="left">@</td>
+<td align="left">18</td>
+<td align="left">Í9Á</td>
+<td align="center">1</td>
+<td align="left">¸</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="left">specific wa</td>
+<td align="center">1</td>
+<td align="left">veral</td>
+<td align="center">1</td>
+<td align="left">h</td>
+<td align="center">2</td>
+<td align="left">.</td>
+<td align="center">1</td>
+<td align="left">3@¸Í4@¸Í5@¸Í6</td>
+<td align="left">1</td>
+<td align="left">L¸Í</td>
+<td align="center">1</td>
+<td align="left">Á</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="left">of</td>
+<td align="center">5</td>
+<td align="left">ad to</td>
+<td align="center">1</td>
+<td align="left">es</td>
+<td align="center">1</td>
+<td align="left">i</td>
+<td align="center">1</td>
+<td align="left">¸Í6ÁÉ¸Í5Á ¸Í</td>
+<td align="left">1</td>
+<td align="left">2 È</td>
+<td align="center">1</td>
+<td align="left">2</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="left">a</td>
+<td align="center">9</td>
+<td align="left">minim</td>
+<td align="center">1</td>
+<td align="left">iz</td>
+<td align="center">1</td>
+<td align="left"/>
+<td align="center"/>
+<td align="left">.Á ¸Í-ÁÉ¸Í¤Á</td>
+<td align="left">1</td>
+<td align="left">-</td>
+<td align="center">1</td>
+<td align="left">L</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="left">th</td>
+<td align="center">4</td>
+<td align="left">symbo</td>
+<td align="center">1</td>
+<td align="left">Th</td>
+<td align="center">1</td>
+<td align="left"/>
+<td align="center"/>
+<td align="left">¸Í+ÁÉ¸Í*Á ¸</td>
+<td align="left">1</td>
+<td align="left">CT</td>
+<td align="center">1</td>
+<td align="left">/</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="left">ccording</td>
+<td align="center">1</td>
+<td align="left">onin</td>
+<td align="center">1</td>
+<td align="left">co</td>
+<td align="center">1</td>
+<td align="left"/>
+<td align="center"/>
+<td align="left">T—ú˜C</td>
+<td align="left">2</td>
+<td align="left">ƒ</td>
+<td align="center">2</td>
+<td align="left">í</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="left">appeara</td>
+<td align="center">1</td>
+<td align="left">fund</td>
+<td align="center">1</td>
+<td align="left">nc</td>
+<td align="center">1</td>
+<td align="left"/>
+<td align="center"/>
+<td align="left">8ÁÉ¸Í7Á</td>
+<td align="left">1</td>
+<td align="left">t˜</td>
+<td align="center">1</td>
+<td align="left">H</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="left">This i</td>
+<td align="center">1</td>
+<td align="left">will</td>
+<td align="center">1</td>
+<td align="left">ch</td>
+<td align="center">1</td>
+<td align="left"/>
+<td align="center"/>
+<td align="left">‰</td>
+<td align="left">7</td>
+<td align="left">ÁÉ</td>
+<td align="center">1</td>
+<td align="left">0</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="center"/>
+<td align="left"/>
+<td align="center"/>
+<td align="left"/>
+<td align="center"/>
+<td align="left"/>
+<td align="center"/>
+<td align="left">éL¸ÍáÁ</td>
+<td align="left">1</td>
+<td align="left">7é</td>
+<td align="center">1</td>
+<td align="left">9</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="center"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="center"/>
+<td align="left">4ÁÉ¸Í3</td>
+<td align="left">1</td>
+<td align="left">8@</td>
+<td align="center">1</td>
+<td align="center"/>
+<td align="center"/>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>The small experiment containing an English text is the only one we can attempt to interpret by looking for some meaning in the symbols found. Note that, in general, the algorithm does not find words. It does find suffixes, prefixes, roots and other character sequences that effectively reduce the entropy. In other cases, the algorithm finds the space character “” (represented in <xref ref-type="table" rid="pone.0185757.t001">Table 1</xref> as ‘Ø’). In fact, whatever the meaning of the space character, it is the most frequent symbol in English text, indicating that the space is among the most important symbols in the written English codification system. However, in most cases, it is difficult to find explanations for why a sequence of characters was selected as a Fundamental Symbol. We must simply accept that the Fundamental Scale Algorithm found a specific character sequence to be an effective entropy reducer, and therefore, it ends up being a Fundamental Symbol of that particular description.</p>
+<p>Tracking meaning for the symbols found in the MIDI text is even more difficult. The MIDI file text is the result of coding the superposition of many sonic effects such as pitch, volume, timbre and rhythm—and all those effects for several instruments playing at the same time. Yet, the set of Fundamental Symbols along with their frequencies constitute a model of a MIDI file capable of capturing the essence and even subtleties of the sound associated with a performance of a music piece. It is worth emphasizing that our purpose is to develop methods for information pattern detections with no knowledge of the rules of the language used to code that information. Using some knowledge of coding protocols (such as MIDI) goes against our own objective and the generality of the method.</p>
+</sec>
+<sec id="sec004">
+<title>Symbol frequency profiles</title>
+<p>The value of entropy <italic>h</italic> is a good basis for the comparison of descriptions. But it may not be enough to properly represent the many dimensional differences of entities such as those we are dealing with. For that reason, we complement our treatment of each music piece with the shape associated with the values of array <bold><italic>P</italic></bold>. To obtain the shape, we ranked the symbols according to their appearance frequency <bold><italic>P</italic></bold>(<italic>Y</italic><sub><italic>i</italic></sub>) and plotted <bold><italic>P</italic></bold>(<italic>Y</italic><sub><italic>i</italic></sub>) vs Rank (<italic>r</italic>), both in logarithmic scales.</p>
+<p>The frequency profile drawn with as many points as the symbol diversity represents a shape of <italic>D</italic> different dimensions associated with the musical piece. The profile shape can change in many different ways, thus having the capacity to represent many of the subtleties differentiating one musical piece from another.</p>
+<p>The symbol frequency profile representing the complete set of fundamental symbols is made of as many symbols as symbolic diversity <italic>D</italic> indicates. The leftmost point in the profile represents the most frequently appearing symbol in the textual description. The one to its right is the second-most frequent symbol, and so on. This region of the profile is usually called the profile’s ‘head’. At the other extreme, at the right, the least frequent symbols are represented forming the so-called ‘tail’ of the profile.</p>
+</sec>
+</sec>
+<sec id="sec005">
+<title>Scale downgrading</title>
+<p>When comparing the shape of several frequency profiles, the different number of symbols for which each profile was created is a problem. To solve this, we present a method we called Scale Downgrading to represent a symbol frequency profile with a smaller number of symbols while keeping its general shape. The scale downgrading is a transformation applied over the original profile to determine which frequency of fictitious symbols—each one formed by joining profile-neighbor symbols—would have in order to maintain the general profile’s shape. It is important to highlight that the downgrading transformation eliminates whichever meaning any symbol may have had at the original scale. After a profile’s scale has been downgraded, each resulting symbol is the result of joining, totally or partially, several symbols. These symbols might be neighbors in the sense of their frequency but not in the sense of the places they occupy in the text. Therefore, the resulting downgraded scale symbols do not actually exist as a recognizable sequence of characters in the text, and for practical purposes, they do not have any physical meaning. They do, however, serve as a valuable way to normalize the descriptions of the shapes we use as one of the bases for comparison. Details of the mathematical formulation to compute the scale downgrading are shown in <xref ref-type="supplementary-material" rid="pone.0185757.s002">S1 Appendix</xref>.</p>
+<sec id="sec006">
+<title>Distance to Zipf’s reference profile</title>
+<p>Any symbol frequency profile built with the probabilities of encountering a symbol is a probability distribution. The symbols ordered according to their frequencies give these probability distributions the shape we are considering—hypothetically for now—characteristic of music style. After properly applying the scale downgrading transformation, the two distributions can be represented at the same scale, that is, both distributions with the same number of points. Under this condition, the difference between the two distributions can be evaluated as the Euclidian distance computed with each corresponding pair of probability points. Within this context, the Zipfian profile, whose shape is a straight line in the log-log graph, can be used as a common reference profile. Thus, comparing a symbol frequency profile with the Zipf reference profile provides us with a parameter to characterize music. We call this parameter the Zipf reference distance.</p>
+<p>Euclidian distances <italic>E</italic> are computed to measure the distance between the shapes of two selected profiles. For a given downgraded diversity <italic>S</italic>, and a pair of profiles having frequencies <italic>f</italic><sub><italic>r</italic></sub> and <italic>g</italic><sub><italic>r</italic></sub> for the symbols occupying <italic>r-</italic>th place, the Euclidean distance <italic>E</italic> between the two profiles is computed as
+<disp-formula id="pone.0185757.e004">
+<alternatives>
+<graphic id="pone.0185757.e004g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0185757.e004" xlink:type="simple"/>
+<mml:math display="block" id="M4">
+<mml:mrow><mml:mi>E</mml:mi><mml:mo>=</mml:mo><mml:msqrt><mml:mrow><mml:mstyle displaystyle="true"><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mi>r</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>S</mml:mi></mml:msubsup><mml:mrow><mml:msup><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mtext>log</mml:mtext><mml:msub><mml:mi>f</mml:mi><mml:mi>r</mml:mi></mml:msub><mml:mo>−</mml:mo><mml:mtext>log</mml:mtext><mml:msub><mml:mi>g</mml:mi><mml:mi>r</mml:mi></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:mstyle></mml:mrow></mml:msqrt><mml:mo>.</mml:mo></mml:mrow>
+</mml:math>
+</alternatives>
+<label>(4)</label>
+</disp-formula></p>
+<p>Note the use of the logarithms of the symbol frequencies to maintain the meaning of the shapes, since for these purposes, the graph axes are logarithmic. To compute the distance from profile <italic>f</italic><sub><italic>r</italic></sub> to the Zipf reference profile, we just need to replace gr with the Zipfian distribution shown in <xref ref-type="disp-formula" rid="pone.0185757.e005">Eq (5)</xref>
+<disp-formula id="pone.0185757.e005">
+<alternatives>
+<graphic id="pone.0185757.e005g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0185757.e005" xlink:type="simple"/>
+<mml:math display="block" id="M5">
+<mml:mrow><mml:msub><mml:mi>g</mml:mi><mml:mi>r</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mspace width="4.pt"/><mml:mfrac><mml:mrow><mml:msub><mml:mi>g</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow><mml:mi>r</mml:mi></mml:mfrac><mml:mo>,</mml:mo></mml:mrow>
+</mml:math>
+</alternatives>
+<label>(5)</label>
+</disp-formula>
+where <italic>g</italic><sub>1</sub> represents the probability of the most frequent symbol.</p>
+</sec>
+<sec id="sec007">
+<title>Higher order entropy</title>
+<p>The use of the symbolic diversity <italic>d</italic> and the symbolic entropy <italic>h</italic> to characterize music pieces allowed for differentiating among genres of music. However, two pieces of music, even though having different ranked frequency profiles, may share similar values of entropy. When this is the case, the difference between two profiles can be described as the way they ‘oscillate’ around their respective middle line. Looking for ways to evaluate the effects of these oscillations, we explored the value of the entropy associated with these oscillations. Therefore, we elevated the comparison of descriptions to a finer level of detail. Details of the mathematical formulation to compute the Higher Order Entropy are shown in <xref ref-type="supplementary-material" rid="pone.0185757.s003">S2 Appendix</xref>. In this work, we refer to the 2<sup>nd</sup> order entropy with the symbol <italic>h</italic>, adding a superscript between brackets (<italic>h</italic><sup><italic>[2]</italic></sup>).</p>
+</sec>
+<sec id="sec008">
+<title>Music selection</title>
+<p>Music is the result of the superposition of a vast variety of sounds. But music sounds reproduce not only to the information written on the music sheet but also to the addition of small differences introduced by the interpreter. Music is thus the result of a large number of different symbols to form sound sequences. These sound sequences are included in the file produced by the recording of a musical piece. Despite the unreadable condition of any of these files for humans, the files contain all the information regarding the music, and thus, we can appreciate this information as music when we reproduce the file and hear it. Due to the limitations of the Fundamental Scale [<xref ref-type="bibr" rid="pone.0185757.ref023">23</xref>] Algorithm and the enormous complexity of most conventional music recording formats, we had to rely on MIDI file coding to discretize the symbols forming these pieces of music while keeping the computations within a feasible condition for our algorithm in its current condition. Using formal music recording formats such as.MP3,.MP4 or.WAV is still desirable and a matter of further improvement of technical aspects of the Fundamental Scale Algorithm [<xref ref-type="bibr" rid="pone.0185757.ref023">23</xref>]. Nevertheless, MIDI music provides the conditions for us to advance with this study.</p>
+<p><xref ref-type="table" rid="pone.0185757.t002">Table 2</xref> shows a synthesis of the music selection we used as a subject to apply the entropy measurement method. The selection includes pieces from Classical and popular music of different genres. Our music library is organized as a tree. To have some reference of the place where a music piece, or group of pieces, is located within the tree, we assigned a name to each tree level. <xref ref-type="table" rid="pone.0185757.t002">Table 2</xref> also shows this classification structure fed with more than 450 pieces from 71 composers and 15 different periods or types of music.</p>
+<table-wrap id="pone.0185757.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185757.t002</object-id>
+<label>Table 2</label> <caption><title>Music classification tree <italic>MusicNet</italic> and the data associated with top levels of the tree.</title></caption>
+<alternatives>
+<graphic id="pone.0185757.t002g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.t002" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center" colspan="13">MusicNet</th>
+</tr>
+<tr>
+<th align="center" colspan="7"/>
+<th align="center" colspan="2">Specific diversity</th>
+<th align="center" colspan="2">Entropy</th>
+<th align="center" colspan="2">2<sup>nd</sup> order entropy</th>
+</tr>
+<tr>
+<th align="center"/>
+<th align="center">Type</th>
+<th align="left">Period Style</th>
+<th align="left"/>
+<th align="left">Genre</th>
+<th align="center">Comps.</th>
+<th align="center">Pieces</th>
+<th align="right">Ave.</th>
+<th align="right">Std. Dev.</th>
+<th align="right">Ave.</th>
+<th align="right">Std. Dev.</th>
+<th align="right">Ave.</th>
+<th align="right">Std. Dev.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" rowspan="9">West.</td>
+<td align="center" rowspan="7">Academic</td>
+<td align="left">Medieval</td>
+<td align="left"/>
+<td align="left"/>
+<td align="center">12</td>
+<td align="center">41</td>
+<td align="char" char=".">0.062</td>
+<td align="char" char=".">0.026</td>
+<td align="char" char=".">0.649</td>
+<td align="char" char=".">0.048</td>
+<td align="char" char=".">0.949</td>
+<td align="char" char=".">0.037</td>
+</tr>
+<tr>
+<td align="left" colspan="2">Renaissance</td>
+<td align="left"/>
+<td align="center">10</td>
+<td align="center">31</td>
+<td align="char" char=".">0.048</td>
+<td align="char" char=".">0.016</td>
+<td align="char" char=".">0.622</td>
+<td align="char" char=".">0.037</td>
+<td align="char" char=".">0.935</td>
+<td align="char" char=".">0.041</td>
+</tr>
+<tr>
+<td align="left">Baroque</td>
+<td align="left"/>
+<td align="left"/>
+<td align="center">8</td>
+<td align="center">55</td>
+<td align="char" char=".">0.039</td>
+<td align="char" char=".">0.013</td>
+<td align="char" char=".">0.581</td>
+<td align="char" char=".">0.057</td>
+<td align="char" char=".">0.911</td>
+<td align="char" char=".">0.050</td>
+</tr>
+<tr>
+<td align="left">Classical</td>
+<td align="left"/>
+<td align="left"/>
+<td align="center">7</td>
+<td align="center">46</td>
+<td align="char" char=".">0.039</td>
+<td align="char" char=".">0.019</td>
+<td align="char" char=".">0.567</td>
+<td align="char" char=".">0.059</td>
+<td align="char" char=".">0.895</td>
+<td align="char" char=".">0.049</td>
+</tr>
+<tr>
+<td align="left">Romantic</td>
+<td align="left"/>
+<td align="left"/>
+<td align="center">13</td>
+<td align="center">89</td>
+<td align="char" char=".">0.049</td>
+<td align="char" char=".">0.021</td>
+<td align="char" char=".">0.602</td>
+<td align="char" char=".">0.068</td>
+<td align="char" char=".">0.914</td>
+<td align="char" char=".">0.061</td>
+</tr>
+<tr>
+<td align="left" colspan="2">Impressionistic</td>
+<td align="left"/>
+<td align="center">4</td>
+<td align="center">34</td>
+<td align="char" char=".">0.050</td>
+<td align="char" char=".">0.015</td>
+<td align="char" char=".">0.582</td>
+<td align="char" char=".">0.052</td>
+<td align="char" char=".">0.921</td>
+<td align="char" char=".">0.044</td>
+</tr>
+<tr>
+<td align="left" colspan="2">20th Century</td>
+<td align="left"/>
+<td align="center">8</td>
+<td align="center">35</td>
+<td align="char" char=".">0.052</td>
+<td align="char" char=".">0.017</td>
+<td align="char" char=".">0.559</td>
+<td align="char" char=".">0.057</td>
+<td align="char" char=".">0.888</td>
+<td align="char" char=".">0.062</td>
+</tr>
+<tr>
+<td align="center" rowspan="2">Popular / Contemp.</td>
+<td align="center"/>
+<td align="left"/>
+<td align="left">Movie Themes</td>
+<td align="center"/>
+<td align="center">18</td>
+<td align="char" char=".">0.048</td>
+<td align="char" char=".">0.010</td>
+<td align="char" char=".">0.615</td>
+<td align="char" char=".">0.051</td>
+<td align="char" char=".">0.934</td>
+<td align="char" char=".">0.033</td>
+</tr>
+<tr>
+<td align="right"/>
+<td align="left"/>
+<td align="left">Rock</td>
+<td align="center">5</td>
+<td align="center">24</td>
+<td align="char" char=".">0.041</td>
+<td align="char" char=".">0.010</td>
+<td align="char" char=".">0.585</td>
+<td align="char" char=".">0.043</td>
+<td align="char" char=".">0.919</td>
+<td align="char" char=".">0.045</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="right">Venezuelan</td>
+<td align="left">Traditional</td>
+<td align="center">&gt;20</td>
+<td align="center">56</td>
+<td align="char" char=".">0.049</td>
+<td align="char" char=".">0.014</td>
+<td align="char" char=".">0.540</td>
+<td align="char" char=".">0.056</td>
+<td align="char" char=".">0.929</td>
+<td align="char" char=".">0.036</td>
+</tr>
+<tr>
+<td align="center" rowspan="2">Asian</td>
+<td align="center">Traditional</td>
+<td align="center"/>
+<td align="left">Hindu-Raga</td>
+<td align="left">Raga</td>
+<td align="center">Several</td>
+<td align="center">14</td>
+<td align="char" char=".">0.083</td>
+<td align="char" char=".">0.019</td>
+<td align="char" char=".">0.697</td>
+<td align="char" char=".">0.061</td>
+<td align="char" char=".">0.974</td>
+<td align="char" char=".">0.026</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="center"/>
+<td align="left">Chinese</td>
+<td align="left"/>
+<td align="center">Several</td>
+<td align="center">12</td>
+<td align="char" char=".">0.048</td>
+<td align="char" char=".">0.015</td>
+<td align="char" char=".">0.582</td>
+<td align="char" char=".">0.038</td>
+<td align="char" char=".">0.915</td>
+<td align="char" char=".">0.046</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+</sec>
+<sec id="sec009" sec-type="results">
+<title>Results</title>
+<p>All pieces of music were organized into a classification tree we refer to as <italic>MusicNet</italic>. By computing the Fundamental Scale to all leaves of <italic>MusicNet</italic>, we were able to obtain the fundamental symbols of each music piece included in our dataset as well as for each music subset defined by composer, type, genre, period, or any other characteristic property of the included music. <italic>MusicNet</italic> is too lush to be extensively presented here. But we include the upper levels of the tree in <xref ref-type="table" rid="pone.0185757.t002">Table 2</xref> and a link that allows access to the whole tree in <xref ref-type="supplementary-material" rid="pone.0185757.s001">S1 DataLink</xref>. <xref ref-type="table" rid="pone.0185757.t002">Table 2</xref> displays the datasets of MIDI music used for our tests and values of specific diversity, entropy and 2<sup>nd</sup> order entropy accompanied with their respective standard deviations.</p>
+<sec id="sec010">
+<title>Diversity and entropy</title>
+<p>Diversity and entropy are quantitative characterizations of communication systems. Within the scope of a communication system, the diversity and the entropy may reveal differences regarding style or even period of its evolution. All pieces of our music library are organized into three groups: occidental academic, traditional and Rock/Movie Themes.</p>
+<p>Figs <xref ref-type="fig" rid="pone.0185757.g001">1</xref> and <xref ref-type="fig" rid="pone.0185757.g002">2</xref> are included to visually show how different styles and genres produce clustering of the values of some properties. <xref ref-type="fig" rid="pone.0185757.g001">Fig 1</xref> shows that several music groups express with several symbolic diversities. According to Heap’s Law, for any description, the number of different symbols is expected to increase as the description’s length grows. The rates at which these growths occur—the slopes of the clouds of dots—, are evidence of different behavior among groups being compared. <xref ref-type="fig" rid="pone.0185757.g002">Fig 2</xref>, represents the same classes of musical pieces, grouping around different sectors of the entropy-specific diversity plane, implying a sensible distinction in the representative distribution of symbol frequency (entropy) for the music groups as selected.</p>
+<fig id="pone.0185757.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185757.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>Diversity as a function of piece length measured in symbols for different classes of music.</title>
+<p>Each bubble represents a piece of music. The vertical axis represents the symbolic diversity <italic>D</italic> expressed in thousands of symbols. The horizontal axis represents the length <italic>L</italic> of the piece description expressed in symbols.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.g001" xlink:type="simple"/>
+</fig>
+<fig id="pone.0185757.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185757.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>Entropy as a function of specific diversity for different classes of music.</title>
+<p>Each bubble represents a piece of music. The vertical axis represents the entropy <italic>h</italic>. The horizontal axis represents the specific diversity <italic>d = D/L</italic>. Top and bottom row show the same graphs presented at different scales.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.g002" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec011">
+<title>Information profiles</title>
+<p>We are interested in knowing the effect of degrading the scale of observation of musical descriptions. Prior to this computation, we know that degrading the scale—equivalent to viewing the system from a remoter perspective—means observing fewer details. Therefore, as the number of symbols used in the description decreases, we expect to obtain less information. Thus, there are at least two reasons to inspect these information profiles: (a) to evaluate whether they capture information about the music’s type or class and (b) to obtain a sense of the minimal degraded diversity that maintains the essence of the system by showing a shape that resembles the description at its original symbol diversity. The use of this <italic>minimal degraded diversity</italic> allowed us to compare the shapes of many music frequency profiles at the same diversity, a condition needed for a fair comparison. The downgraded values of the diversity were selected so that at any scale, the number of degrees of freedom of the symbol frequency profile (symbolic probability profile) is a power of <italic>2</italic>. The number of degrees of freedom of any probability distribution is <italic>k</italic>– 1, <italic>k</italic> being the number of different categories in the distribution. Thus, the number of different symbols considered for each degraded symbol diversity is <italic>S</italic> = 2<sup><italic>i</italic></sup> + 1, and <italic>i</italic> is a positive integer. Examples of degraded symbol frequency profiles are shown in <xref ref-type="fig" rid="pone.0185757.g003">Fig 3</xref> and Figures A and B in <xref ref-type="supplementary-material" rid="pone.0185757.s005">S1 Fig</xref>. To obtain them, we started from the description at their original symbol diversity <italic>D</italic> and degraded the observation scale <italic>S</italic> by applying Equations C, D, F and G in <xref ref-type="supplementary-material" rid="pone.0185757.s002">S1 Appendix</xref>. Amount of information (the entropy) values were computed for each of these profiles, thus providing the data needed to build the information profiles for several pieces of music. These information profiles are presented at the bottom of <xref ref-type="fig" rid="pone.0185757.g003">Fig 3</xref> and Figures A and B in <xref ref-type="supplementary-material" rid="pone.0185757.s005">S1 Fig</xref>.</p>
+<fig id="pone.0185757.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185757.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>Variation of frequency profiles for several degraded scales and information profiles calculated for <italic>Hindu-Raga</italic>.<italic>Miyan ki Malhar</italic>.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.g003" xlink:type="simple"/>
+</fig>
+<p>The information profiles show the scale of observation in the vertical axis and the scale of observation—the diversity <italic>S</italic> of symbols used in the description—in its horizontal axis. These graphs have been called by two different names: researchers who consider Shannon’s information [<xref ref-type="bibr" rid="pone.0185757.ref024">24</xref>] as a direct measure of complexity [<xref ref-type="bibr" rid="pone.0185757.ref025">25</xref>,<xref ref-type="bibr" rid="pone.0185757.ref026">26</xref>] call them <italic>Complexity Profiles</italic>; those who consider complexity as the pseudo-equilibrium [<xref ref-type="bibr" rid="pone.0185757.ref027">27</xref>–<xref ref-type="bibr" rid="pone.0185757.ref030">30</xref>] the system reaches when it bounds its disorder by self-organizing its symbols prefer to call these graphs <italic>Information Profiles</italic>. These names, which refer to the same type of graph, arise from the different interpretation of complexity. The first group of researchers see complexity as proportional to the length of the symbolic description, while the latter group pays more attention to the system’s activity to keep itself organized. Although these names refer to different concepts, both seem to be valid. In any case, these information profiles show how sensitive are the description lengths of a MIDI piece to the change in the observation scale, represented here by the downgraded diversity.</p>
+<p>When comparing the information profiles for the <italic>Hindu-Raga</italic>.<italic>Miyan ki Malhar</italic> with the other two music pieces included in <xref ref-type="supplementary-material" rid="pone.0185757.s008">S4 Fig</xref>, it is visually clear that the Hindu-Raga piece is differentiated by showing a promontory in the profile at a diversity <italic>S</italic> = 17 that none of the other present at that scale. But the downgraded diversity <italic>S</italic> = 17 is not detailed enough to recognize the slight differences between the profiles of <italic>Beethoven</italic>.<italic>Symph9</italic>.<italic>Mov_3</italic> and <italic>LAURO</italic>.<italic>Antonio-ValsVenezolanoNro3</italic>.<italic>Natalia</italic> included in <xref ref-type="supplementary-material" rid="pone.0185757.s008">S4 Fig</xref>. To find visually different profile shapes among the three samples analyzed, we had to inspect the profiles with a diversity <italic>S = 129</italic>. With that level of refinement in the profile drawing, we were able to distinguish each music piece’s profile from another. We thus selected this diversity value (<italic>S</italic> = 129) as the diversity we should downgrade all pieces to in order to obtain characteristic property values for each piece.</p>
+</sec>
+<sec id="sec012">
+<title>Symbol frequency profiles</title>
+<p>The hypothetical association between the shape of the frequency profiles and the identity of each music piece was considered. To assess this hypothesis, we rely on two distinct interpretations of four pieces of music. After obtaining the fundamental symbol set for each piece of music, we downgraded the scales to 129 symbols. The resulting profiles are shown in <xref ref-type="fig" rid="pone.0185757.g004">Fig 4</xref>, along with Zipf’s reference profiles. The graphs suggest that the symbol frequency profiles built with the Fundamental Symbols capture some of the essence of music pieces and represent that essence by means of a profile’s shape. This is, however, a subjective statement that should be qualified, at least for the small set of pieces performed more than once in our sample of music.</p>
+<fig id="pone.0185757.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185757.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title>Symbol-ranked frequency profiles for eight performances grouped by pairs associated with the same music piece.</title>
+<p>Pairs of graphs show two performances of Bach’s Toccata &amp; Fugue, Ravel’s Bolero, Rachmaninov’s Piano Concerto #2 and the Venezuelan waltz ‘El Diablo Suelto’. Each circle represents a symbol. As a helpful reference, each graph shows a Zipf profile represented by grey ‘+’ signs. The vertical axis is the probability of encountering a symbol with the text. The horizontal axis shows the rank of the symbols according to their frequency. Both axis scales are logarithmic. Links to sound: JSBach.ToccataFuga.Organ, JSBach.ToccataFuga.Piano, Ravel's Bolero.1, Ravel's Bolero.2, Rach.PC2.PianoSolo.mid, Rach.PC2.PianoAndOrchestra.mid. DiabloSuelto1.mid, Diablo Suelto 2.mid.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.g004" xlink:type="simple"/>
+</fig>
+<p><xref ref-type="table" rid="pone.0185757.t003">Table 3</xref> shows the results of computing the distance between pairs of pieces. For each pair of pieces, the distance reveals how distant the shape of a profile is from another. We expected this distance be minimum for those pairs formed with the two different performances of the same piece. In general, the method worked well, indicating a short distance separating different performances of the same piece. Only Diablo Suelto.Perf.2 appeared closer to Toccata and Fugue with organ, thus indicating that this method is not infallible.</p>
+<table-wrap id="pone.0185757.t003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185757.t003</object-id>
+<label>Table 3</label> <caption><title>Distances between profile pairs taken from profiles shown in <xref ref-type="fig" rid="pone.0185757.g001">Fig 1</xref>.</title> <p>Pairs of interpretations of music pieces are compared against each other and with respect to the Zipf reference profile. The comparison consists of the computation of the Euclidian distance over the logarithmic difference for each dimension, as indicated in <xref ref-type="disp-formula" rid="pone.0185757.e002">Eq (2)</xref>.</p></caption>
+<alternatives>
+<graphic id="pone.0185757.t003g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.t003" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<tbody>
+<tr>
+<td align="center" colspan="11">Distances between profiles</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="left"/>
+<td align="center"/>
+<td align="center" colspan="2"><bold>Toccata &amp; Fugue</bold></td>
+<td align="center" colspan="2"><bold>Ravel's Bolero</bold></td>
+<td align="center" colspan="2"><bold>Rachmaninov PC2</bold></td>
+<td align="center" colspan="2"><bold>Diablo Suelto</bold></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="center"><bold>Zipf's Ref</bold>.</td>
+<td align="center"><bold>Piano</bold></td>
+<td align="center"><bold>Organ</bold></td>
+<td align="center"><bold>Perf. 1</bold></td>
+<td align="center"><bold>Perf. 2</bold></td>
+<td align="center"><bold>Piano Solo</bold></td>
+<td align="center"><bold>Orchestra</bold></td>
+<td align="center"><bold>Perf. 1</bold></td>
+<td align="center"><bold>Perf. 2</bold></td>
+</tr>
+<tr>
+<td align="center" rowspan="2"><bold>Toccata &amp; Fugue</bold></td>
+<td align="right"><bold>Piano</bold></td>
+<td align="center">11.27</td>
+<td align="center">0</td>
+<td align="center"><bold>2.24</bold></td>
+<td align="center">8.31</td>
+<td align="center">6.11</td>
+<td align="center">3.81</td>
+<td align="center">5.27</td>
+<td align="center">3.66</td>
+<td align="center">3.39</td>
+</tr>
+<tr>
+<td align="right"><bold>Organ</bold></td>
+<td align="center">10.96</td>
+<td align="left"/>
+<td align="center">0</td>
+<td align="center">8.34</td>
+<td align="center">6.32</td>
+<td align="center">3.03</td>
+<td align="center">4.50</td>
+<td align="center">3.11</td>
+<td align="center"><bold>2.18</bold></td>
+</tr>
+<tr>
+<td align="center" rowspan="2"><bold>Ravel's Bolero</bold></td>
+<td align="right"><bold>Perf. 1</bold></td>
+<td align="center">19.12</td>
+<td align="center"/>
+<td align="left"/>
+<td align="center">0</td>
+<td align="center"><bold>3.09</bold></td>
+<td align="center">9.68</td>
+<td align="center">11.18</td>
+<td align="center">10.92</td>
+<td align="center">8.28</td>
+</tr>
+<tr>
+<td align="right"><bold>Perf. 2</bold></td>
+<td align="center">17.03</td>
+<td align="center"/>
+<td align="left"/>
+<td align="left"/>
+<td align="center">0</td>
+<td align="center">8.25</td>
+<td align="center">9.82</td>
+<td align="center">9.00</td>
+<td align="center">6.86</td>
+</tr>
+<tr>
+<td align="center" rowspan="2"><bold>Rachmaninov PC2</bold></td>
+<td align="right"><bold>Piano Solo</bold></td>
+<td align="center">9.86</td>
+<td align="center"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="center">0</td>
+<td align="center"><bold>1.94</bold></td>
+<td align="center">2.32</td>
+<td align="center">2.00</td>
+</tr>
+<tr>
+<td align="right"><bold>Orchestra</bold></td>
+<td align="center">8.81</td>
+<td align="center"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="center">0</td>
+<td align="center">2.59</td>
+<td align="center">3.43</td>
+</tr>
+<tr>
+<td align="center" rowspan="2"><bold>Diablo Suelto</bold></td>
+<td align="right"><bold>Perf. 1</bold></td>
+<td align="center">8.27</td>
+<td align="center"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="center">0</td>
+<td align="center">3.15</td>
+</tr>
+<tr>
+<td align="right"><bold>Perf. 2</bold></td>
+<td align="center">11.16</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="center">0</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>The profile distances to the Zipf reference also signal closeness between performances of the same music piece. Again, only the most freely interpretable piece, ‘<italic>El Diablo Suelto’</italic>, breaks the tendency to place the performances of the same music piece as the closest. But whenever the music piece performance sticks to the original musical arrangement, as it must for academic music, the profiles’ shapes remain remarkably similar, and the distances to Zipf’s reference are very close in magnitude.</p>
+<p>We also propose the use of these profiles as a way to visualize the differences between classes of music. Each profile has <italic>D</italic> − 1 degrees of freedom. This means the profile’s shape can be altered in <italic>D</italic> − 1 different ways by modifying the frequency of the <italic>D</italic> different symbols that make up the description of the musical piece.</p>
+<p>An option to sense the profile’s shape around its middle straight line is to build a distribution based on the distance from the points representing each symbol's frequency to this straight line. Afterwards, a property we refer to as the Second Order Entropy can be computed. Details on the meaning of the Second Order Entropy are included in <xref ref-type="supplementary-material" rid="pone.0185757.s003">S2 Appendix</xref>. <xref ref-type="fig" rid="pone.0185757.g005">Fig 5</xref> illustrates the symbol frequency profiles computed for our sample of Impressionistic music. Graphs (a) and (b) show first and second order symbol profiles correspondingly. Frequency profiles computed for all the groups of music contained in our data set are included in <xref ref-type="supplementary-material" rid="pone.0185757.s006">S2</xref> and <xref ref-type="supplementary-material" rid="pone.0185757.s007">S3</xref> Figs. All frequency profiles in <xref ref-type="supplementary-material" rid="pone.0185757.s006">S2 Fig</xref> were computed at a scale or downgraded diversity <italic>D</italic> = 129 using the numeric values of the probability of each symbol and each style of music, which are included in <xref ref-type="supplementary-material" rid="pone.0185757.s004">S1 Table</xref>. The 2<sup>nd</sup> order frequency profiles shown in <xref ref-type="supplementary-material" rid="pone.0185757.s007">S3 Fig</xref> were all computed at a downgraded diversity <italic>D</italic> = 33.</p>
+<fig id="pone.0185757.g005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185757.g005</object-id>
+<label>Fig 5</label>
+<caption>
+<title>Symbol-ranked frequency profiles for Impressionistic music.</title>
+<p>Graph (a. Left) shows the traditional symbol profile. Graph (b. Right) shows the profile for the 2<sup>nd</sup> order symbols.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.g005" xlink:type="simple"/>
+</fig>
+<p>When observing these frequency profiles, a reasonable question arises: Are these profiles capable of depicting the organized change that might be produced by an evolutionary process of music? The seven graphs corresponding to academic music, from Medieval to 20<sup>th</sup> Century music, suggest that the answer is <italic>yes</italic>. For most periods and music styles, the frequency profiles exhibit two easily recognizable regions: a higher-ranked frequency region located toward the head of the ranked distribution and a second region at the right of the ranked distribution that extends to the symbol rank's cut-off value, where sometimes an elbow-shaped profile appears near the last ranked symbol at rank <italic>D = 129</italic>. For Medieval music, the distribution head's region occupies most of the profile range, showing a bow-shaped profile. While the academic type of music covers the time until the 20<sup>th</sup> Century period, this bowed section progressively shortens until the transition of the two regions reaches the middle of the logarithmic horizontal axis. The last tail elbow also softens until it disappears at the Classical music profile. The slope at the transition zone also shows a gradual increase from the Medieval music, where the transition zone is very soft, up to the 20<sup>th</sup> Century music, which shows a rather stiff transition zone. The vertical range of the profiles also grows as the time period progresses. With the sole exception of Impressionistic music, all other considered styles of academic music require a larger range of frequency values in the vertical axis when compared with the previous music period.</p>
+<p>When looking at traditional and popular music, we observe a shorter vertical range of values if compared against the academic music profiles. From all non-academic music considered, Hindu-Raga music exhibits the flattest profile, while Chinese music has the steepest. The comparison of these profiles suggests that it is possible to capture structural music differences by observing these shapes. On the other hand, there are profile similitudes between some pairs of classes of music. Baroque music and Rock music, for example, have similarly shaped profiles. Also, the music from the Impressionistic and Chinese periods exhibits similar overall profiles. However, reducing the profile shapes to a quantifiable index proves difficult and perhaps overly simplistic. In this sense, the inclusion of an additional characteristic, like our recently defined 2<sup>nd</sup> Order Entropy, seems justified.</p>
+</sec>
+<sec id="sec013">
+<title>Recognizable music genres and styles</title>
+<p>Using the entropy and the Zipf reference distance as parameters, musical pieces were characterized. We grouped all pieces of academic music by composer, and for traditional and popular music, by composer or style.</p>
+<p>Classification of music genres and styles is usually guided by chronological and geographical conditions. Actual musical structure should represent the dominant musical aspects of music. However, music classification is usually dominated by circumstances related to its origin. Thus, currently accepted music classification schemes may not properly split musical groups in terms of the actual structure of each piece or group of pieces. Yet, because musical style is a field of enormous diversity, we must start from musical group categorizations and measure the actual differences among those groups.</p>
+<p>Tables <xref ref-type="table" rid="pone.0185757.t004">4</xref> and <xref ref-type="table" rid="pone.0185757.t005">5</xref> show the entropy and the Zipf’s reference distance for the musical pieces’ groups included in this study. Mean values and standard deviations are the parameters used to compare these groups. Most groups are defined according to the corresponding composer. The composers’ names are not relevant at this point. For both Tables, the groups are organized according to the time period for academic music and by geographical condition for traditional and popular music. Averages and standard deviations for the pieces of each composer are also presented in Tables <xref ref-type="table" rid="pone.0185757.t004">4</xref> and <xref ref-type="table" rid="pone.0185757.t005">5</xref>.</p>
+<table-wrap id="pone.0185757.t004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185757.t004</object-id>
+<label>Table 4</label> <caption><title>Entropy and distance to Zipf’s reference for academic music grouped by composer and period.</title></caption>
+<alternatives>
+<graphic id="pone.0185757.t004g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.t004" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center" colspan="15">Entropy and distance from Zipf's ref. of academic music grouped by composer</th>
+</tr>
+<tr>
+<th align="left"/>
+<th align="center" colspan="2">0.Medieval</th>
+<th align="center" colspan="2">1.Renaiss.</th>
+<th align="center" colspan="2">2.Baroque</th>
+<th align="center" colspan="2">3.Classical</th>
+<th align="center" colspan="2">4.Romantic</th>
+<th align="center" colspan="2">5.Impress.</th>
+<th align="center" colspan="2">6.Twentieth</th>
+</tr>
+<tr>
+<th align="center"/>
+<th align="center">Entr.</th>
+<th align="center">Zipf's dist.</th>
+<th align="center">Entr.</th>
+<th align="center">Zipf's dist.</th>
+<th align="center">Entr.</th>
+<th align="center">Zipf's dist.</th>
+<th align="center">Entr.</th>
+<th align="center">Zipf's dist.</th>
+<th align="center">Entr.</th>
+<th align="center">Zipf's dist.</th>
+<th align="center">Entr.</th>
+<th align="center">Zipf's dist.</th>
+<th align="center">Entr.</th>
+<th align="center">Zipf's dist.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><bold>Ave</bold></td>
+<td align="char" char=".">0.658</td>
+<td align="char" char=".">0.126</td>
+<td align="char" char=".">0.643</td>
+<td align="char" char=".">0.127</td>
+<td align="char" char=".">0.624</td>
+<td align="char" char=".">0.129</td>
+<td align="char" char=".">0.598</td>
+<td align="char" char=".">0.209</td>
+<td align="char" char=".">0.614</td>
+<td align="char" char=".">0.219</td>
+<td align="char" char=".">0.634</td>
+<td align="char" char=".">0.221</td>
+<td align="char" char=".">0.578</td>
+<td align="char" char=".">0.239</td>
+</tr>
+<tr>
+<td align="left"><bold>S.d</bold>.</td>
+<td align="char" char=".">0.101</td>
+<td align="char" char="."><bold>0.041</bold></td>
+<td align="char" char=".">0.032</td>
+<td align="char" char="."><bold>0.035</bold></td>
+<td align="char" char=".">0.055</td>
+<td align="char" char="."><bold>0.026</bold></td>
+<td align="char" char=".">0.049</td>
+<td align="char" char=".">0.062</td>
+<td align="char" char=".">0.062</td>
+<td align="char" char=".">0.072</td>
+<td align="char" char=".">0.040</td>
+<td align="char" char=".">0.074</td>
+<td align="char" char=".">0.056</td>
+<td align="char" char=".">0.086</td>
+</tr>
+<tr>
+<td align="left" colspan="15">Data. Each number corresponds to a group of pieces by a composer:</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="char" char=".">0.643</td>
+<td align="char" char=".">0.133</td>
+<td align="char" char=".">0.593</td>
+<td align="char" char=".">0.174</td>
+<td align="char" char=".">0.526</td>
+<td align="char" char=".">0.163</td>
+<td align="char" char=".">0.593</td>
+<td align="char" char=".">0.273</td>
+<td align="char" char=".">0.516</td>
+<td align="char" char=".">0.351</td>
+<td align="char" char=".">0.591</td>
+<td align="char" char=".">0.289</td>
+<td align="char" char=".">0.609</td>
+<td align="char" char=".">0.193</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="char" char=".">0.585</td>
+<td align="char" char=".">0.130</td>
+<td align="char" char=".">0.663</td>
+<td align="char" char=".">0.186</td>
+<td align="char" char=".">0.579</td>
+<td align="char" char=".">0.156</td>
+<td align="char" char=".">0.541</td>
+<td align="char" char=".">0.255</td>
+<td align="char" char=".">0.522</td>
+<td align="char" char=".">0.327</td>
+<td align="char" char=".">0.689</td>
+<td align="char" char=".">0.122</td>
+<td align="char" char=".">0.526</td>
+<td align="char" char=".">0.262</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="char" char=".">0.618</td>
+<td align="char" char=".">0.140</td>
+<td align="char" char=".">0.625</td>
+<td align="char" char=".">0.128</td>
+<td align="char" char=".">0.692</td>
+<td align="char" char=".">0.083</td>
+<td align="char" char=".">0.548</td>
+<td align="char" char=".">0.251</td>
+<td align="char" char=".">0.640</td>
+<td align="char" char=".">0.218</td>
+<td align="char" char=".">0.657</td>
+<td align="char" char=".">0.178</td>
+<td align="char" char=".">0.556</td>
+<td align="char" char=".">0.384</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="char" char=".">0.779</td>
+<td align="char" char=".">0.065</td>
+<td align="char" char=".">0.585</td>
+<td align="char" char=".">0.144</td>
+<td align="char" char=".">0.657</td>
+<td align="char" char=".">0.125</td>
+<td align="char" char=".">0.650</td>
+<td align="char" char=".">0.133</td>
+<td align="char" char=".">0.648</td>
+<td align="char" char=".">0.186</td>
+<td align="char" char=".">0.602</td>
+<td align="char" char=".">0.296</td>
+<td align="char" char=".">0.600</td>
+<td align="char" char=".">0.209</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="char" char=".">0.612</td>
+<td align="char" char=".">0.116</td>
+<td align="char" char=".">0.679</td>
+<td align="char" char=".">0.090</td>
+<td align="char" char=".">0.649</td>
+<td align="char" char=".">0.130</td>
+<td align="char" char=".">0.657</td>
+<td align="char" char=".">0.133</td>
+<td align="char" char=".">0.522</td>
+<td align="char" char=".">0.298</td>
+<td align="left"/>
+<td align="left"/>
+<td align="char" char=".">0.606</td>
+<td align="char" char=".">0.133</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="char" char=".">0.575</td>
+<td align="char" char=".">0.186</td>
+<td align="char" char=".">0.678</td>
+<td align="char" char=".">0.112</td>
+<td align="char" char=".">0.639</td>
+<td align="char" char=".">0.117</td>
+<td align="left"/>
+<td align="left"/>
+<td align="char" char=".">0.634</td>
+<td align="char" char=".">0.180</td>
+<td align="left"/>
+<td align="left"/>
+<td align="char" char=".">0.686</td>
+<td align="char" char=".">0.118</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="char" char=".">0.706</td>
+<td align="char" char=".">0.065</td>
+<td align="char" char=".">0.652</td>
+<td align="char" char=".">0.100</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="char" char=".">0.690</td>
+<td align="char" char=".">0.146</td>
+<td align="left"/>
+<td align="left"/>
+<td align="char" char=".">0.502</td>
+<td align="char" char=".">0.337</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="char" char=".">0.626</td>
+<td align="char" char=".">0.154</td>
+<td align="char" char=".">0.650</td>
+<td align="char" char=".">0.099</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="char" char=".">0.627</td>
+<td align="char" char=".">0.274</td>
+<td align="left"/>
+<td align="left"/>
+<td align="char" char=".">0.603</td>
+<td align="char" char=".">0.202</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="char" char=".">0.660</td>
+<td align="char" char=".">0.145</td>
+<td align="char" char=".">0.630</td>
+<td align="char" char=".">0.156</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="char" char=".">0.658</td>
+<td align="char" char=".">0.135</td>
+<td align="left"/>
+<td align="left"/>
+<td align="char" char=".">0.510</td>
+<td align="char" char=".">0.311</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="char" char=".">0.526</td>
+<td align="char" char=".">0.181</td>
+<td align="char" char=".">0.672</td>
+<td align="char" char=".">0.080</td>
+<td align="center" colspan="3"/>
+<td align="left"/>
+<td align="char" char=".">0.674</td>
+<td align="char" char=".">0.161</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left"/>
+<td align="char" char=".">0.902</td>
+<td align="char" char=".">0.069</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="char" char=".">0.593</td>
+<td align="char" char=".">0.188</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="char" char=".">0.694</td>
+<td align="char" char=".">0.125</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="char" char=".">0.560</td>
+<td align="char" char=".">0.255</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t004fn001"><p>The averages for entropy and Zipf’s distance for academic music are 0.543 and 0.181 respectively. The standard deviations for entropy and Zipf’s distance for academic music are 0.069 and 0.078 respectively.</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<table-wrap id="pone.0185757.t005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185757.t005</object-id>
+<label>Table 5</label> <caption><title>Entropy and distance to the Zipf’s reference for traditional and popular music grouped by composer and style.</title></caption>
+<alternatives>
+<graphic id="pone.0185757.t005g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.t005" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center" colspan="13">Entropy and distance from Zipf's Ref of traditional and popular music grouped by composer</th>
+</tr>
+<tr>
+<th align="center"/>
+<th align="center" colspan="2">Chinese</th>
+<th align="center" colspan="2">HinduRaga</th>
+<th align="center" colspan="2">MovieThemes</th>
+<th align="center" colspan="2">Rock</th>
+<th align="center" colspan="2">Venezuelan</th>
+<th align="center" colspan="2">Venezuelan</th>
+</tr>
+<tr>
+<th align="center"/>
+<th align="center">Entr.</th>
+<th align="center">Zipf's dist.</th>
+<th align="center">Entr.</th>
+<th align="center">Zipf's dist.</th>
+<th align="center">Entr.</th>
+<th align="center">Zipf's dist.</th>
+<th align="center">Entr.</th>
+<th align="center">Zipf's dist.</th>
+<th align="center">Entr.</th>
+<th align="center">Zipf's dist.</th>
+<th align="center">Entr.</th>
+<th align="center">Zipf's dist.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right"><bold>Ave</bold>.</td>
+<td align="char" char=".">0.582</td>
+<td align="char" char=".">0.266</td>
+<td align="char" char="."><bold>0.696</bold></td>
+<td align="char" char=".">0.146</td>
+<td align="char" char=".">0.615</td>
+<td align="char" char=".">0.254</td>
+<td align="char" char=".">0.588</td>
+<td align="char" char=".">0.260</td>
+<td align="char" char="."><bold>0.534</bold></td>
+<td align="char" char=".">0.305</td>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="right"><bold>Std.Dev</bold>.</td>
+<td align="char" char="."><bold>0.038</bold></td>
+<td align="char" char=".">0.057</td>
+<td align="char" char=".">0.064</td>
+<td align="char" char=".">0.087</td>
+<td align="char" char="."><bold>0.051</bold></td>
+<td align="char" char=".">0.095</td>
+<td align="char" char="."><bold>0.042</bold></td>
+<td align="char" char=".">0.046</td>
+<td align="char" char=".">0.062</td>
+<td align="char" char=".">0.122</td>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="left" colspan="13">Data. Each number corresponds to a group of pieces:</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="char" char=".">0.5710</td>
+<td align="char" char=".">0.321</td>
+<td align="char" char=".">0.720</td>
+<td align="char" char=".">0.122</td>
+<td align="char" char=".">0.556</td>
+<td align="char" char=".">0.175</td>
+<td align="char" char=".">0.520</td>
+<td align="char" char=".">0.205</td>
+<td align="char" char=".">0.522</td>
+<td align="char" char=".">0.277</td>
+<td align="char" char=".">0.629</td>
+<td align="char" char=".">0.101</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="char" char=".">0.5560</td>
+<td align="char" char=".">0.334</td>
+<td align="char" char=".">0.719</td>
+<td align="char" char=".">0.106</td>
+<td align="char" char=".">0.701</td>
+<td align="char" char=".">0.087</td>
+<td align="char" char=".">0.635</td>
+<td align="char" char=".">0.310</td>
+<td align="char" char=".">0.423</td>
+<td align="char" char=".">0.461</td>
+<td align="char" char=".">0.489</td>
+<td align="char" char=".">0.195</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="char" char=".">0.6232</td>
+<td align="char" char=".">0.296</td>
+<td align="char" char=".">0.770</td>
+<td align="char" char=".">0.083</td>
+<td align="char" char=".">0.600</td>
+<td align="char" char=".">0.304</td>
+<td align="char" char=".">0.630</td>
+<td align="char" char=".">0.268</td>
+<td align="char" char=".">0.582</td>
+<td align="char" char=".">0.250</td>
+<td align="char" char=".">0.467</td>
+<td align="char" char=".">0.210</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="char" char=".">0.6158</td>
+<td align="char" char=".">0.193</td>
+<td align="char" char=".">0.744</td>
+<td align="char" char=".">0.089</td>
+<td align="char" char=".">0.678</td>
+<td align="char" char=".">0.230</td>
+<td align="char" char=".">0.580</td>
+<td align="char" char=".">0.308</td>
+<td align="char" char=".">0.494</td>
+<td align="char" char=".">0.316</td>
+<td align="char" char=".">0.496</td>
+<td align="char" char=".">0.190</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="char" char=".">0.5226</td>
+<td align="char" char=".">0.319</td>
+<td align="char" char=".">0.732</td>
+<td align="char" char=".">0.110</td>
+<td align="char" char=".">0.684</td>
+<td align="char" char=".">0.115</td>
+<td align="char" char=".">0.577</td>
+<td align="char" char=".">0.209</td>
+<td align="char" char=".">0.472</td>
+<td align="char" char=".">0.553</td>
+<td align="char" char=".">0.470</td>
+<td align="char" char=".">0.342</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="char" char=".">0.6309</td>
+<td align="char" char=".">0.185</td>
+<td align="char" char=".">0.762</td>
+<td align="char" char=".">0.115</td>
+<td align="char" char=".">0.630</td>
+<td align="char" char=".">0.140</td>
+<td align="center"/>
+<td align="center"/>
+<td align="char" char=".">0.506</td>
+<td align="char" char=".">0.272</td>
+<td align="char" char=".">0.496</td>
+<td align="char" char=".">0.212</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="char" char=".">0.5989</td>
+<td align="char" char=".">0.184</td>
+<td align="char" char=".">0.709</td>
+<td align="char" char=".">0.128</td>
+<td align="char" char=".">0.525</td>
+<td align="char" char=".">0.372</td>
+<td align="center"/>
+<td align="center"/>
+<td align="char" char=".">0.586</td>
+<td align="char" char=".">0.413</td>
+<td align="char" char=".">0.619</td>
+<td align="char" char=".">0.226</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="char" char=".">0.5766</td>
+<td align="char" char=".">0.254</td>
+<td align="char" char=".">0.727</td>
+<td align="char" char=".">0.110</td>
+<td align="char" char=".">0.630</td>
+<td align="char" char=".">0.197</td>
+<td align="center"/>
+<td align="center"/>
+<td align="char" char=".">0.561</td>
+<td align="char" char=".">0.190</td>
+<td align="char" char=".">0.526</td>
+<td align="char" char=".">0.355</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="char" char=".">0.5109</td>
+<td align="char" char=".">0.338</td>
+<td align="char" char=".">0.716</td>
+<td align="char" char=".">0.121</td>
+<td align="char" char=".">0.651</td>
+<td align="char" char=".">0.341</td>
+<td align="center"/>
+<td align="center"/>
+<td align="char" char=".">0.625</td>
+<td align="char" char=".">0.144</td>
+<td align="char" char=".">0.501</td>
+<td align="char" char=".">0.197</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="char" char=".">0.5547</td>
+<td align="char" char=".">0.225</td>
+<td align="char" char=".">0.713</td>
+<td align="char" char=".">0.139</td>
+<td align="char" char=".">0.545</td>
+<td align="char" char=".">0.296</td>
+<td align="center"/>
+<td align="center"/>
+<td align="char" char=".">0.521</td>
+<td align="char" char=".">0.450</td>
+<td align="char" char=".">0.433</td>
+<td align="char" char=".">0.248</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="char" char=".">0.6099</td>
+<td align="char" char=".">0.301</td>
+<td align="char" char=".">0.597</td>
+<td align="char" char=".">0.335</td>
+<td align="char" char=".">0.598</td>
+<td align="char" char=".">0.418</td>
+<td align="center"/>
+<td align="center"/>
+<td align="char" char=".">0.601</td>
+<td align="char" char=".">0.349</td>
+<td align="char" char=".">0.521</td>
+<td align="char" char=".">0.406</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="char" char=".">0.6116</td>
+<td align="char" char=".">0.246</td>
+<td align="char" char=".">0.712</td>
+<td align="char" char=".">0.124</td>
+<td align="char" char=".">0.635</td>
+<td align="char" char=".">0.335</td>
+<td align="center"/>
+<td align="center"/>
+<td align="char" char=".">0.634</td>
+<td align="char" char=".">0.268</td>
+<td align="char" char=".">0.446</td>
+<td align="char" char=".">0.467</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="left"/>
+<td align="left"/>
+<td align="char" char=".">0.640</td>
+<td align="char" char=".">0.398</td>
+<td align="char" char=".">0.636</td>
+<td align="char" char=".">0.211</td>
+<td align="center"/>
+<td align="center"/>
+<td align="char" char=".">0.573</td>
+<td align="char" char=".">0.230</td>
+<td align="char" char=".">0.643</td>
+<td align="char" char=".">0.149</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="left"/>
+<td align="left"/>
+<td align="char" char=".">0.721</td>
+<td align="char" char=".">0.104</td>
+<td align="char" char=".">0.558</td>
+<td align="char" char=".">0.208</td>
+<td align="center"/>
+<td align="center"/>
+<td align="char" char=".">0.584</td>
+<td align="char" char=".">0.302</td>
+<td align="char" char=".">0.465</td>
+<td align="char" char=".">0.509</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="left"/>
+<td align="left"/>
+<td align="char" char=".">0.748</td>
+<td align="char" char=".">0.091</td>
+<td align="char" char=".">0.541</td>
+<td align="char" char=".">0.346</td>
+<td align="center"/>
+<td align="center"/>
+<td align="char" char=".">0.501</td>
+<td align="char" char=".">0.401</td>
+<td align="char" char=".">0.623</td>
+<td align="char" char=".">0.344</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="left"/>
+<td align="left"/>
+<td align="char" char=".">0.720</td>
+<td align="char" char=".">0.122</td>
+<td align="char" char=".">0.609</td>
+<td align="char" char=".">0.371</td>
+<td align="center"/>
+<td align="center"/>
+<td align="char" char=".">0.444</td>
+<td align="char" char=".">0.331</td>
+<td align="char" char=".">0.512</td>
+<td align="char" char=".">0.485</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="left"/>
+<td align="left"/>
+<td align="char" char=".">0.505</td>
+<td align="char" char=".">0.291</td>
+<td align="char" char=".">0.664</td>
+<td align="char" char=".">0.167</td>
+<td align="center"/>
+<td align="center"/>
+<td align="char" char=".">0.543</td>
+<td align="char" char=".">0.404</td>
+<td align="char" char=".">0.554</td>
+<td align="char" char=".">0.199</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="left"/>
+<td align="left"/>
+<td align="char" char=".">0.646</td>
+<td align="char" char=".">0.102</td>
+<td align="char" char=".">0.629</td>
+<td align="char" char=".">0.254</td>
+<td align="center"/>
+<td align="center"/>
+<td align="char" char=".">0.582</td>
+<td align="char" char=".">0.385</td>
+<td align="char" char=".">0.521</td>
+<td align="char" char=".">0.581</td>
+</tr>
+<tr>
+<td align="center" colspan="3"/>
+<td align="char" char=".">0.622</td>
+<td align="char" char=".">0.095</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="char" char=".">0.528</td>
+<td align="char" char=".">0.345</td>
+<td align="char" char=".">0.605</td>
+<td align="char" char=".">0.131</td>
+</tr>
+<tr>
+<td align="right"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="char" char=".">0.512</td>
+<td align="char" char=".">0.303</td>
+<td align="char" char=".">0.464</td>
+<td align="char" char=".">0.210</td>
+</tr>
+<tr>
+<td align="right"/>
+<td align="left"/>
+<td align="left"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="left"/>
+<td align="char" char=".">0.629</td>
+<td align="char" char=".">0.101</td>
+<td align="center"/>
+<td align="center"/>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t005fn001"><p>The averages for entropy and Zipf’s distance for traditional and popular music are 0.603 and 0.246 respectively. The standard deviations for entropy and Zipf’s distance for traditional and popular music are 0.076 and 0.100 respectively.</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<p>It is straightforward to see that for academic music, the baroque, renaissance and medieval periods exhibit the lowest Zipf’s reference-distance standard deviations. This suggests that all other periods of music—Classical, Romantic, Impressionistic and Twentieth—are not easily distinguished by means of entropy and Zipf’s reference distance as properties. Taking advantage of the fact these two groups of music are formed with successive periods, we can consider two sub-groups of academic music. The first sub-group contains Baroque and previous music, while the second sub-group contains music from the Classical period and afterward. <xref ref-type="fig" rid="pone.0185757.g006">Fig 6</xref> (left) shows entropy vs Zipf’s reference distance for the composers classified within each of these groups, which is the data shown in <xref ref-type="table" rid="pone.0185757.t004">Table 4</xref>.</p>
+<fig id="pone.0185757.g006" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185757.g006</object-id>
+<label>Fig 6</label>
+<caption>
+<title>Entropy vs distance to Zipf’s reference for separable groups of music.</title>
+<p>Left: academic music. Right: traditional and popular music.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.g006" xlink:type="simple"/>
+</fig>
+<p>By similar reasoning, in comparing the standard deviations of entropy and Zipf’s reference distance for the groups of music included in <xref ref-type="table" rid="pone.0185757.t005">Table 5</xref>, we recognize three sub-groups of music: Hindu-Raga, Rock-MovieThemes-Chinese and Venezuelan. <xref ref-type="fig" rid="pone.0185757.g006">Fig 6</xref> (right) shows the data included in <xref ref-type="table" rid="pone.0185757.t005">Table 5</xref> represented in the plane entropy vs Zipf’s reference distance.</p>
+<p><xref ref-type="fig" rid="pone.0185757.g006">Fig 6</xref> illustrates how the entropy and Zipf’s ref. distance for the selected music sub-groups have probability distributions with different mean values. Student t-Tests were performed to evaluate the likelihood of two of these distributions having the same mean values. The results are shown in Tables <xref ref-type="table" rid="pone.0185757.t006">6</xref> and <xref ref-type="table" rid="pone.0185757.t007">7</xref>. The p-values are very low, and therefore, we can affirm that these groups tend to occupy different places in the space entropy-Zipf’s ref. distance.</p>
+<table-wrap id="pone.0185757.t006" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185757.t006</object-id>
+<label>Table 6</label> <caption><title>Student t-tests for entropy and distance to Zipf’s reference for academic music sub-groups.</title></caption>
+<alternatives>
+<graphic id="pone.0185757.t006g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.t006" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center" colspan="5">Academic music separable groups</th>
+</tr>
+<tr>
+<th align="center"/>
+<th align="center" colspan="2">Baroque and Prev.</th>
+<th align="center" colspan="2">Classical and Post.</th>
+</tr>
+<tr>
+<th align="center"/>
+<th align="center"><italic>Entropy</italic></th>
+<th align="center">Zipf's dist.</th>
+<th align="center"><italic>Entropy</italic></th>
+<th align="center">Zipf's dist.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><bold>Average</bold></td>
+<td align="char" char=".">0.6445</td>
+<td align="char" char=".">0.1269</td>
+<td align="center">0.6034</td>
+<td align="center">0.2234</td>
+</tr>
+<tr>
+<td align="left"><bold>Std.Dev</bold>.</td>
+<td align="char" char=".">0.0730</td>
+<td align="char" char=".">0.0360</td>
+<td align="center">0.0590</td>
+<td align="center">0.0761</td>
+</tr>
+<tr>
+<td align="center" colspan="5">t-Tests p-values:</td>
+</tr>
+<tr>
+<td align="left" colspan="3">Baroque and Pre vs. Classical and Post.</td>
+<td align="right">Entropy</td>
+<td align="right">0.01171</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="right">Dist. Zipf Ref.</td>
+<td align="right"><bold>1.03E-07</bold></td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<table-wrap id="pone.0185757.t007" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185757.t007</object-id>
+<label>Table 7</label> <caption><title>Student t-tests for entropy and distance to Zipf’s reference for traditional and popular music sub-groups.</title></caption>
+<alternatives>
+<graphic id="pone.0185757.t007g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.t007" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center" colspan="7">Traditional and popular music separable groups</th>
+</tr>
+<tr>
+<th align="center"/>
+<th align="center" colspan="2">Hindu-Raga</th>
+<th align="center" colspan="2">Rock.MovieThemes.Chinese</th>
+<th align="center" colspan="2">Venezuelan</th>
+</tr>
+<tr>
+<th align="center"/>
+<th align="center"><italic>Entropy</italic></th>
+<th align="center">Zipf's dist.</th>
+<th align="center"><italic>Entropy</italic></th>
+<th align="center">Dist. Ref.</th>
+<th align="center"><italic>Entropy</italic></th>
+<th align="center">Zipf's dist.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><bold>Average</bold></td>
+<td align="char" char=".">0.6959</td>
+<td align="char" char=".">0.1465</td>
+<td align="char" char=".">0.5998</td>
+<td align="char" char=".">0.2589</td>
+<td align="right">0.5054</td>
+<td align="right">0.3261</td>
+</tr>
+<tr>
+<td align="left"><bold>Std.Dev</bold>.</td>
+<td align="char" char=".">0.0872</td>
+<td align="char" char=".">0.0872</td>
+<td align="char" char=".">0.0484</td>
+<td align="char" char=".">0.0780</td>
+<td align="right">0.05710</td>
+<td align="right">0.0815</td>
+</tr>
+<tr>
+<td align="center" colspan="7">t-Tests p-values:</td>
+</tr>
+<tr>
+<td align="left" colspan="4">Rock.MovieThemes.Chinese vs Hindu Raga</td>
+<td align="left"/>
+<td align="right">Entropy</td>
+<td align="right"><bold>7.11E-08</bold></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="right">Dist. Zipf Ref.</td>
+<td align="right"><bold>7.94E-06</bold></td>
+</tr>
+<tr>
+<td align="left" colspan="4">Venezuelan vs Hindu-Raga. Entropy</td>
+<td align="left"/>
+<td align="right">Entropy</td>
+<td align="right"><bold>1.62E-05</bold></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="right">Dist. Zipf Ref.</td>
+<td align="right"><bold>2.87E-05</bold></td>
+</tr>
+<tr>
+<td align="left" colspan="4">Rock.MovieThemes.Chinese vs Venezuelan</td>
+<td align="left"/>
+<td align="right">Entropy</td>
+<td align="right"><bold>1.73E-06</bold></td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="right">Dist. Zipf Ref.</td>
+<td align="right">0.03116</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>To complement the significance tests over these groups of music, we conducted ANOVA Univariate Tests of Significance. We kept the Academic and Traditional music categories. We obtained the results shown in Tables <xref ref-type="table" rid="pone.0185757.t008">8</xref> and <xref ref-type="table" rid="pone.0185757.t009">9</xref>. These results confirm significant values for the ratio <italic>F</italic> of the Zipf’s ref. distance variance and the variance of the same property for the whole subgroup. For academic music, this ratio ranges within values comparable to those for traditional and popular music (5.55 and 7.6, respectively), indicating that the distance to Zipf’s reference has approximately the same significance for the music styles contained in both groups. Considering entropy, the ratio of variances F indicates a much more significant value for traditional music (25.76) than for academic music (1.46). Actually, the results indicate that entropy by itself, does not recognize differences among the styles included for academic music.</p>
+<table-wrap id="pone.0185757.t008" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185757.t008</object-id>
+<label>Table 8</label> <caption><title>Univariate ANOVA tests for entropy and distance to Zipf’s reference for academic music sub-groups.</title> <p>Degrees of freedom = Number of groups– 1, <italic>SS</italic> = Sum of squares of variance errors, <italic>MS</italic> = Mean of squares of variance errors, <italic>F = MS /</italic> Degrees of freedom.</p></caption>
+<alternatives>
+<graphic id="pone.0185757.t008g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.t008" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center" colspan="10">Results for Univariate ANOVA Test of Significance for Academic music groups</th>
+</tr>
+<tr>
+<th align="justify"/>
+<th align="justify"/>
+<th align="center" colspan="4">Entropy</th>
+<th align="center" colspan="4">Distance to Zipf's Reference</th>
+</tr>
+<tr>
+<th align="justify"/>
+<th align="center">Degrees of freedomm</th>
+<th align="center"><italic>SS</italic></th>
+<th align="center"><italic>MS</italic></th>
+<th align="center"><italic>F</italic></th>
+<th align="center"><italic>p- value</italic></th>
+<th align="center"><italic>SS</italic></th>
+<th align="center"><italic>MS</italic></th>
+<th align="center"><italic>F</italic></th>
+<th align="center"><italic>p-value</italic></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="justify">Intercept</td>
+<td align="center">1</td>
+<td align="char" char=".">18.98709</td>
+<td align="char" char=".">18.98709</td>
+<td align="char" char=".">4107.39</td>
+<td align="char" char=".">0.000000</td>
+<td align="char" char=".">1.619136</td>
+<td align="char" char=".">1.619136</td>
+<td align="char" char=".">391.32</td>
+<td align="char" char=".">0.000000</td>
+</tr>
+<tr>
+<td align="justify">Style</td>
+<td align="center">6</td>
+<td align="char" char=".">0.04038</td>
+<td align="char" char=".">0.00673</td>
+<td align="char" char=".">1.456</td>
+<td align="char" char=".">0.212138</td>
+<td align="char" char=".">0.137689</td>
+<td align="char" char=".">0.022948</td>
+<td align="char" char=".">5.5463</td>
+<td align="char" char=".">0.000175</td>
+</tr>
+<tr>
+<td align="justify">Error</td>
+<td align="center">51</td>
+<td align="char" char=".">0.23576</td>
+<td align="char" char=".">0.00462</td>
+<td align="right"/>
+<td align="right"/>
+<td align="char" char=".">0.211018</td>
+<td align="char" char=".">0.004138</td>
+<td align="right"/>
+<td align="right"/>
+</tr>
+<tr>
+<td align="justify">Total</td>
+<td align="center">57</td>
+<td align="char" char=".">0.27614</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="char" char=".">0.348707</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<table-wrap id="pone.0185757.t009" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185757.t009</object-id>
+<label>Table 9</label> <caption><title>Univariate ANOVA tests for entropy and distance to Zipf’s reference for traditional and popular music sub-groups.</title> <p>Degrees of freedom = Number of groups– 1, <italic>SS</italic> = Sum of squares of variance errors, <italic>MS</italic> = Mean of squares of variance errors, <italic>F = MS /</italic> Degrees of freedom.</p></caption>
+<alternatives>
+<graphic id="pone.0185757.t009g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.t009" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center" colspan="10">Results for Univariate ANOVA Test of Significance for Traditional and Popular music groups</th>
+</tr>
+<tr>
+<th align="justify"/>
+<th align="justify"/>
+<th align="center" colspan="4">Entropy</th>
+<th align="center" colspan="4">Distance to Zipf's Reference</th>
+</tr>
+<tr>
+<th align="justify"/>
+<th align="center">Degrees of freedomm</th>
+<th align="center"><italic>SS</italic></th>
+<th align="center"><italic>MS</italic></th>
+<th align="center"><italic>F</italic></th>
+<th align="center"><italic>p- value</italic></th>
+<th align="center"><italic>SS</italic></th>
+<th align="center"><italic>MS</italic></th>
+<th align="center"><italic>F</italic></th>
+<th align="center"><italic>p-value</italic></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="justify">Intercept</td>
+<td align="center">1</td>
+<td align="char" char=".">21.86110</td>
+<td align="char" char=".">21.86110</td>
+<td align="char" char=".">6380.30</td>
+<td align="char" char=".">0.00000</td>
+<td align="char" char=".">3.646193</td>
+<td align="char" char=".">3.64619</td>
+<td align="char" char=".">338.4282</td>
+<td align="char" char=".">0.00000</td>
+</tr>
+<tr>
+<td align="justify">Style</td>
+<td align="center">4</td>
+<td align="char" char=".">0.35305</td>
+<td align="char" char=".">0.08826</td>
+<td align="char" char=".">25.76</td>
+<td align="char" char=".">0.00000</td>
+<td align="char" char=".">0.327639</td>
+<td align="char" char=".">0.08191</td>
+<td align="char" char=".">7.6026</td>
+<td align="char" char=".">0.00003</td>
+</tr>
+<tr>
+<td align="justify">Error</td>
+<td align="center">90</td>
+<td align="char" char=".">0.30837</td>
+<td align="char" char=".">0.00343</td>
+<td align="right"/>
+<td align="right"/>
+<td align="char" char=".">0.969651</td>
+<td align="char" char=".">0.01077</td>
+<td align="right"/>
+<td align="right"/>
+</tr>
+<tr>
+<td align="justify">Total</td>
+<td align="center">94</td>
+<td align="char" char=".">0.66142</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="char" char=".">1.297291</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>We also performed ANOVA Multivariate Tests of Significance. The results, presented in <xref ref-type="table" rid="pone.0185757.t010">Table 10</xref>, reveal consistency with previously presented tests. Interpreting the Wilks’ Λ values as suggested in [<xref ref-type="bibr" rid="pone.0185757.ref031">31</xref>] indicates that for the groups of academic and popular music considered here, the location of each group’s entropy and Zipf’s reference distance mean values explain approximately 50% of the music type they are associated with.</p>
+<table-wrap id="pone.0185757.t010" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185757.t010</object-id>
+<label>Table 10</label> <caption><title>Multivariate ANOVA tests for entropy and distance to Zipf’s reference for traditional and popular music sub-groups.</title> <p>Λ value = Wilks’ lambda value. <italic>F =</italic> Mean of Squared Errors <italic>/</italic> Degrees of freedom.</p></caption>
+<alternatives>
+<graphic id="pone.0185757.t010g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.t010" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center" colspan="12">Results for Multivariate ANOVA Tests of Significance</th>
+</tr>
+<tr>
+<th align="center"/>
+<th align="left"/>
+<th align="center" colspan="5">Academic music</th>
+<th align="center" colspan="5">Traditional and Popular music</th>
+</tr>
+<tr>
+<th align="center"/>
+<th align="center">Test</th>
+<th align="center"><italic>Value</italic></th>
+<th align="center"><italic>F</italic></th>
+<th align="center"><italic>Effect df</italic></th>
+<th align="center"><italic>Error df</italic></th>
+<th align="center"><italic>p-value</italic></th>
+<th align="center"><italic>Value</italic></th>
+<th align="center"><italic>F</italic></th>
+<th align="center"><italic>Effect df</italic></th>
+<th align="center"><italic>Error df</italic></th>
+<th align="center"><italic>p-value</italic></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Intercept</td>
+<td align="center">Wilks</td>
+<td align="char" char=".">0.00358</td>
+<td align="char" char=".">6959.4</td>
+<td align="center">2</td>
+<td align="center">50</td>
+<td align="char" char=".">0.0000</td>
+<td align="char" char=".">0.00850</td>
+<td align="char" char=".">5189.7</td>
+<td align="center">2</td>
+<td align="center">89</td>
+<td align="char" char=".">0.0000</td>
+</tr>
+<tr>
+<td align="left">Style</td>
+<td align="center">Wilks</td>
+<td align="char" char=".">0.50079</td>
+<td align="char" char=".">3.442</td>
+<td align="center">12</td>
+<td align="center">100</td>
+<td align="char" char=".">0.0003</td>
+<td align="char" char=".">0.45872</td>
+<td align="char" char=".">10.602</td>
+<td align="center">8</td>
+<td align="center">178</td>
+<td align="char" char=".">0.0000</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="sec014">
+<title>Clusters and tendencies</title>
+<p>The frequency profiles built lead yield values of symbolic diversity, entropy and 2nd order entropy for our selected set of MIDI-musical pieces. These values are available in full extension in <xref ref-type="supplementary-material" rid="pone.0185757.s001">S1 DataLink</xref> [<xref ref-type="bibr" rid="pone.0185757.ref032">32</xref>]. <xref ref-type="fig" rid="pone.0185757.g007">Fig 7</xref> presents 3D graphs for the diversity <italic>d</italic>, entropy <italic>h</italic><sup>[1]</sup> and 2nd order entropy <italic>h</italic><sup>[2]</sup> of our music data sample.</p>
+<fig id="pone.0185757.g007" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185757.g007</object-id>
+<label>Fig 7</label>
+<caption>
+<title>Three views of the representation of selected MIDI pieces in the space specific diversity, entropy, and 2<sup>nd</sup> order entropy (<italic>d</italic>, <italic>h</italic><sup><italic>[1]</italic></sup>, <italic>h</italic><sup><italic>[2]</italic></sup>).</title>
+<p>Each bubble represents a MIDI piece.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.g007" xlink:type="simple"/>
+</fig>
+<p>In the graphs of <xref ref-type="fig" rid="pone.0185757.g007">Fig 7</xref>, each bubble corresponds to a single music piece. When a musical work is complex and can be divided by parts, such as suites, concerts and symphonies, each part is considered a single piece and is represented by a bubble. <xref ref-type="fig" rid="pone.0185757.g006">Fig 6</xref> and <xref ref-type="supplementary-material" rid="pone.0185757.s010">S6</xref> and <xref ref-type="supplementary-material" rid="pone.0185757.s011">S7</xref> Figs show the average values of the same properties, but this time, they are computed for sets of musical pieces grouped according to music types and composer. Thus, in these figures, each bubble corresponds to a different music period/style or a composer. Three views of the same 3D plot are presented.</p>
+<p>The graphs shown in <xref ref-type="fig" rid="pone.0185757.g007">Fig 7</xref> may appear, at first glance, as a disorganized mix of bubbles representing music styles in our 3D space. Certainly, there are clusters of types of music sharing the local space. Therefore, it would be difficult to split some clusters according to their location. However, despite the difficulty of seeing through this dense cloud of bubbles, for some specific types of music, the separation of their cluster’s locations seems a feasible task. Medieval music (old-rose bubbles), for example, occupies a subspace of relatively high entropy and high diversity compared to the location of Renaissance music (light green bubbles). Following the chronological time direction, Baroque music (dark green bubbles) maintains the general tendency towards a reduction of its symbolic diversity <italic>d</italic> and its entropy <italic>h</italic> (represented as <italic>h1</italic> in the 3D graphs). Comparing Classical music (light blue) with Baroque, its predecessor in time, we observe a stabilization of diversity <italic>d</italic> and entropy <italic>h</italic> values; however, a noticeable reduction appears in the values of the second order entropy <italic>h</italic><sup>[2]</sup> (represented as <italic>h2</italic> in the 3D graphs).</p>
+<p>On the other hand, if we consider ‘distant’ types of music, such as Hindu-Raga (yellow bubbles) and Venezuelan music (orange bubbles), there is very little or no overlap between the spaces where the bubbles are; these clusters occupy different spaces, and our representation allows them to be separated. <xref ref-type="fig" rid="pone.0185757.g008">Fig 8</xref> reveals how all periods of academic music are located in different sectors of the 3D space formed by diversity <italic>d</italic>, entropy <italic>h</italic> and 2<sup>nd</sup> order entropy <italic>h</italic><sup>[2]</sup>. It is worth mentioning that in <xref ref-type="fig" rid="pone.0185757.g008">Fig 8</xref>, the size of the bubbles does not represent the dispersion of the music pieces grouped under a music style or period; thus, there is more overlap among types of music than suggested by the representation of the bubbles in the graph.</p>
+<fig id="pone.0185757.g008" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185757.g008</object-id>
+<label>Fig 8</label>
+<caption>
+<title>Three views of the representation of music period/style groups in the space specific diversity, entropy, 2<sup>nd</sup> order entropy (<italic>d</italic>, <italic>h</italic><sup><italic>[1]</italic></sup>, <italic>h</italic><sup><italic>[2]</italic></sup>).</title>
+<p>Each bubble represents a group of music pieces sharing the same style/period.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.g008" xlink:type="simple"/>
+</fig>
+<p>To have a quantitative sense of the overlap occurring for these clusters, we present the averages and standard deviations of the properties that characterize each type of music in our sample. Tables <xref ref-type="table" rid="pone.0185757.t011">11</xref> and <xref ref-type="table" rid="pone.0185757.t012">12</xref> show the results. To appreciate any tendency of specific diversity <italic>d</italic> and entropies <italic>h</italic> and <italic>h</italic><sup>[2]</sup> over time, we plotted these variables as functions of time. The resulting graphs are included in <xref ref-type="fig" rid="pone.0185757.g009">Fig 9</xref> and <xref ref-type="supplementary-material" rid="pone.0185757.s009">S5 Fig</xref>. For the Chinese and Hindu-Raga music pieces, we do not have information about the time when they were composed. Therefore, we did not include these types of music in these graphs.</p>
+<table-wrap id="pone.0185757.t011" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185757.t011</object-id>
+<label>Table 11</label> <caption><title>Properties of western academic music.</title></caption>
+<alternatives>
+<graphic id="pone.0185757.t011g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.t011" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center" colspan="9">Properties of western academic music</th>
+</tr>
+<tr>
+<th align="left"/>
+<th align="left"/>
+<th align="right">Medieval</th>
+<th align="right">Renaissance</th>
+<th align="right">Baroque</th>
+<th align="right">Classical</th>
+<th align="right">Romantic</th>
+<th align="right">Impress.</th>
+<th align="right">20th Century</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right"/>
+<td align="left">Num.Elem.</td>
+<td align="right"><italic>41</italic></td>
+<td align="right"><italic>31</italic></td>
+<td align="right"><italic>55</italic></td>
+<td align="right"><italic>89</italic></td>
+<td align="right"><italic>46</italic></td>
+<td align="right"><italic>34</italic></td>
+<td align="right"><italic>35</italic></td>
+</tr>
+<tr>
+<td align="center" rowspan="2">Specific diversity <italic>d</italic></td>
+<td align="left">Average</td>
+<td align="right">0.0618</td>
+<td align="right">0.0479</td>
+<td align="right">0.0388</td>
+<td align="right">0.0390</td>
+<td align="right">0.0485</td>
+<td align="right">0.0500</td>
+<td align="right">0.0518</td>
+</tr>
+<tr>
+<td align="left">Std.Dev.</td>
+<td align="right">0.0258</td>
+<td align="right">0.0159</td>
+<td align="right">0.0127</td>
+<td align="right">0.0192</td>
+<td align="right">0.0210</td>
+<td align="right">0.0150</td>
+<td align="right">0.0168</td>
+</tr>
+<tr>
+<td align="center" rowspan="2">Entropy <italic>h</italic></td>
+<td align="left">Average</td>
+<td align="right">0.6489</td>
+<td align="right">0.6219</td>
+<td align="right">0.5806</td>
+<td align="right">0.5662</td>
+<td align="right">0.6023</td>
+<td align="right">0.5819</td>
+<td align="right">0.5592</td>
+</tr>
+<tr>
+<td align="left">Std.Dev.</td>
+<td align="right">0.0475</td>
+<td align="right">0.0373</td>
+<td align="right">0.0566</td>
+<td align="right">0.0585</td>
+<td align="right">0.0676</td>
+<td align="right">0.0521</td>
+<td align="right">0.0570</td>
+</tr>
+<tr>
+<td align="center" rowspan="2">2nd order entropy <italic>h[2]</italic></td>
+<td align="left">Average</td>
+<td align="right">0.9446</td>
+<td align="right">0.9014</td>
+<td align="right">0.9085</td>
+<td align="right">0.8668</td>
+<td align="right">0.8521</td>
+<td align="right">0.8829</td>
+<td align="right">0.8917</td>
+</tr>
+<tr>
+<td align="left">Std.Dev.</td>
+<td align="right">0.0320</td>
+<td align="right">0.0629</td>
+<td align="right">0.0499</td>
+<td align="right">0.0693</td>
+<td align="right">0.0945</td>
+<td align="right">0.1153</td>
+<td align="right">0.0679</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<table-wrap id="pone.0185757.t012" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185757.t012</object-id>
+<label>Table 12</label> <caption><title>Properties of some traditional and popular music.</title></caption>
+<alternatives>
+<graphic id="pone.0185757.t012g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.t012" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center" colspan="7">Properties of popular and traditional music</th>
+</tr>
+<tr>
+<th align="left"/>
+<th align="left"/>
+<th align="right">Hindu Raga</th>
+<th align="right">Chinese</th>
+<th align="right">Venezuelan</th>
+<th align="right">Movie Thms.</th>
+<th align="right">Rock</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right"/>
+<td align="left">Num.Elem.</td>
+<td align="right"><italic>14</italic></td>
+<td align="right"><italic>12</italic></td>
+<td align="right"><italic>56</italic></td>
+<td align="right"><italic>18</italic></td>
+<td align="right"><italic>24</italic></td>
+</tr>
+<tr>
+<td align="center" rowspan="2">Specific diversity <italic>d</italic></td>
+<td align="left">Average</td>
+<td align="right">0.0828</td>
+<td align="right">0.0476</td>
+<td align="right">0.0493</td>
+<td align="right">0.0485</td>
+<td align="right">0.0415</td>
+</tr>
+<tr>
+<td align="left">Std.Dev.</td>
+<td align="right">0.0189</td>
+<td align="right">0.0153</td>
+<td align="right">0.0143</td>
+<td align="right">0.0104</td>
+<td align="right">0.0103</td>
+</tr>
+<tr>
+<td align="center" rowspan="2">Entropy <italic>h</italic></td>
+<td align="left">Average</td>
+<td align="right">0.6971</td>
+<td align="right">0.5818</td>
+<td align="right">0.5398</td>
+<td align="right">0.6150</td>
+<td align="right">0.5853</td>
+</tr>
+<tr>
+<td align="left">Std.Dev.</td>
+<td align="right">0.0607</td>
+<td align="right">0.0380</td>
+<td align="right">0.0558</td>
+<td align="right">0.0511</td>
+<td align="right">0.0431</td>
+</tr>
+<tr>
+<td align="center" rowspan="2">2nd order entropy <italic>h[2]</italic></td>
+<td align="left">Average</td>
+<td align="right">0.9539</td>
+<td align="right">0.8608</td>
+<td align="right">0.9259</td>
+<td align="right">0.8915</td>
+<td align="right">0.8594</td>
+</tr>
+<tr>
+<td align="left">Std.Dev.</td>
+<td align="right">0.0288</td>
+<td align="right">0.0777</td>
+<td align="right">0.0614</td>
+<td align="right">0.0104</td>
+<td align="right">0.0696</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<fig id="pone.0185757.g009" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185757.g009</object-id>
+<label>Fig 9</label>
+<caption>
+<title>Change of the second order entropy over the last few centuries for genres and styles of music.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.g009" xlink:type="simple"/>
+</fig>
+</sec>
+</sec>
+<sec id="sec015" sec-type="conclusions">
+<title>Discussion</title>
+<p>Music can be transmitted by sounds and by writing. However, the communication of music by writing lacks music’s essence and does not produce, at least not for most people, the emotions and sensations associated with a pattern of sounds. Music writing should be considered a useful tool for composing, making arrangements, recording, and teaching music. Thus, transferring musical information is possible by means of music sheets or other kinds of written music representation. However, we think that, rigorously speaking, written forms of music convey information instead of real music. Thus, we devote our discussion to some of the properties of the information associated with a set of MIDI files. Our purpose is to demonstrate that the properties of these texts, even though indirectly, can be used to characterize and, to some degree, depict the actual pattern of sounds we call music.</p>
+<sec id="sec016">
+<title>Diversity and entropy</title>
+<p>The dependence of Diversity <italic>D</italic> vs Length <italic>N</italic> is nearly linear. Only for short music pieces does the Diversity-Length curve show slight concavity. For all other ranges, the Diversity <italic>D</italic> of music can be modeled as a linear relationship with the length <italic>N</italic> of the music description. The slope change observed near the origin may be due to the English and Spanish overhead texts, which are generally included to start and end the MIDI files. These natural language segments are considered noise, and its presence should not have an important effect on the overall music description when the music piece is reasonably large in terms of symbols. Nevertheless, the specific diversity <italic>d</italic>, represented by slope <italic>D</italic>/<italic>N</italic>, keeps close to a constant value for every type of music, becoming a characteristic value that may distinguish one type or style of music from another. <xref ref-type="fig" rid="pone.0185757.g001">Fig 1</xref> illustrates how the point clusters for different types of music tend to group around different lines, leading to different averages of specific diversity <italic>d</italic>, as shown in Tables <xref ref-type="table" rid="pone.0185757.t004">4</xref> and <xref ref-type="table" rid="pone.0185757.t005">5</xref>. The specific diversity value measured for individual pieces ranges from 0.0183 (<italic>Academic</italic>: <italic>Impressionistic</italic>: <italic>RAVEL</italic>.<italic>Maurice</italic>, <italic>Bolero2</italic>) to 0.1341 (<italic>Academic</italic>: <italic>Romantic</italic>: <italic>SAINTSAENS</italic>.<italic>Camille</italic>: <italic>CarnavalDesAnimaux</italic>: <italic>08</italic>.<italic>PersonnagesLonguesOreilles</italic>). A complete set of values can be found in the link signaled in <xref ref-type="supplementary-material" rid="pone.0185757.s001">S1 DataLink</xref>.</p>
+<p>As can be seen in <xref ref-type="fig" rid="pone.0185757.g002">Fig 2</xref>, the graphs show that entropy is aligned with a very stiff slope in the space entropy <italic>h</italic> vs specific diversity <italic>d</italic>. And even though the entropy values represented fill a wide range of values (from <italic>0</italic>.<italic>45</italic> to <italic>0</italic>.<italic>8</italic>), they seem to closely follow an average curve of the form <italic>h</italic> = <italic>d</italic><sup><italic>α</italic></sup>, similar to those found for natural human languages in a previous work [<xref ref-type="bibr" rid="pone.0185757.ref033">33</xref>]. The large dispersion of entropy is, then, a consequence of the small range of specific diversities <italic>d</italic> where music is established. Nevertheless, the standard deviations of entropy observed in Tables <xref ref-type="table" rid="pone.0185757.t004">4</xref> and <xref ref-type="table" rid="pone.0185757.t005">5</xref> are generally small compared to the range of entropy averages, suggesting that entropy values capture some of the essence of the type or period of music and therefore justify its inclusion in a music entropy model. Values of the <italic>2</italic><sup><italic>nd</italic></sup> order entropy average range from <italic>0</italic>.<italic>89</italic> (<italic>Academic</italic>: <italic>20</italic><sup><italic>th</italic></sup> <italic>Century)</italic> to <italic>0</italic>.<italic>97 (Asian</italic>: <italic>Traditional</italic>: <italic>Hindu-Raga</italic>). The standard deviation is approximately <italic>0</italic>.<italic>05</italic> and is generally smaller than the range of variation of the average 2<sup>nd</sup> order entropy from one group to another.</p>
+</sec>
+<sec id="sec017">
+<title>Symbol frequency profiles</title>
+<p>The frequency profiles shown in <xref ref-type="fig" rid="pone.0185757.g004">Fig 4</xref> provide matter for interesting observations. By looking at the profiles of different performances of the same musical piece, we addressed the capability of the method to identify a musical piece. The first three pairs of profiles correspond to academic music pieces, while the last corresponds to a popular-traditional piece. Despite the little freedom academic music leaves to the performer to depart from the music sheet, these two versions of Bach’s Toccata &amp; Fugue, Ravel’s Bolero and Rachmaninov’s Piano Concert exhibit recognizably different sounds. The performance of Ravel’s Bolero 2 offers neater sounds and the instruments are better defined, while performance 1 has excellent volume control along the whole interpretation. The two versions of Johan Sebastian Bach’s Toccata &amp; Fugue and Rachmaninov’s Piano Concerto #2 are played with different instrumentations. Thus, the differences in sound are basically established by the characteristic timbre of the instruments and the persistence of the sounds. This last effect is very noticeable when comparing the organ version of Toccata &amp; Fugue with its counterpart version with the piano. Despite the differences among the music pieces presented, the profiles show an undeniable correspondence.</p>
+<p>At the bottom of <xref ref-type="fig" rid="pone.0185757.g001">Fig 1</xref>, we compare the profiles of two interpretations of ‘El Diablo Suelto’, a relatively well known traditional Venezuelan waltz that is typically used by interpreters to introduce important variations in the arrangement and while performing. These two performances are very different. The velocity, pitch, syncopation and ornaments used in each one make these profiles representative of noticeably different expressions of the same music piece. Yet, even with the important distance between these two interpretations, the similarities of the two profiles are visually evident, especially in the tails, thus strongly suggesting that the frequency profile may serve as a useful tool for identifying versions of the same musical piece.</p>
+<p>Changing the focus from specific musical pieces and their identity to groups of music genres and styles and their characteristics, we proceeded with several comparisons. First, we inspect the shapes of the ordered frequency profiles for all types of music included in this study. Comparing them visually, we find similarities among the profiles of different types of music. Baroque and Rock show very similarly shaped profiles, as do the chronologically successive periods of the Romantic and Impressionistic. In another comparison, we find that Hindu-Raga and Venezuelan music have the flattest and steepest profile shapes, respectively, locating their shapes at opposite extremes of a scale somehow built to evaluate these shapes. The results presented in Tables <xref ref-type="table" rid="pone.0185757.t004">4</xref>–<xref ref-type="table" rid="pone.0185757.t010">10</xref> verify the significance of these qualitative observations of differences and similitudes for the profiles representing groups of music styles.</p>
+<p>Tables <xref ref-type="table" rid="pone.0185757.t004">4</xref> and <xref ref-type="table" rid="pone.0185757.t005">5</xref> indicate that by using entropy and Zipf’s reference distance as characterizations of the frequency profiles, groups of music genres and styles can be formed to obtain almost separable distributions, thus making these music groups recognizable. Tables <xref ref-type="table" rid="pone.0185757.t006">6</xref>–<xref ref-type="table" rid="pone.0185757.t010">10</xref> show that parameter distributions for originally set groups of music are different, even though they present important overlaps, especially for those groups corresponding to close conditions, such as the chronological.</p>
+<p>Finally, having statistically established the degree of significance of this method for the description of music styles and genres, a set of these 128 degree-of-freedom ‘fingerprints’ for groups of MIDI music is included in <xref ref-type="supplementary-material" rid="pone.0185757.s010">S6 Fig</xref>.</p>
+</sec>
+<sec id="sec018">
+<title>Clustering of music genres and styles</title>
+<p>By building larger sets of music, we have shown that musical genre and style define where, in the plane entropy vs Zipf’s reference distance, a piece of music is represented. The low p-values in Tables <xref ref-type="table" rid="pone.0185757.t006">6</xref> and <xref ref-type="table" rid="pone.0185757.t007">7</xref> show that the mean values of these parameters for the corresponding music sub-groups are definitively different. The graphs in <xref ref-type="fig" rid="pone.0185757.g006">Fig 6</xref> also indicate that there is little overlap between these groups. For academic music in particular, the clouds of dots look almost separable. This is perhaps a consequence of the important changes music underwent during the transition from Baroque to Classical. While Baroque and previous music is easily recognized, music types from later periods differ from one another in more-subtle aspects. Another known fact is the rapid change in orchestration during the Classical period, specifically with Beethoven, who doubled the number of certain instruments to the typical orchestra at the time and, as is well accepted, was responsible for the standardization of the orchestra [<xref ref-type="bibr" rid="pone.0185757.ref034">34</xref>,<xref ref-type="bibr" rid="pone.0185757.ref035">35</xref>], giving the music of his time a noticeably different sound. On the side of traditional and popular music, the analysis is similar. Hindu-Raga and Venezuelan music have very particular characteristics. Hindu-Raga music differs from western music in the number of notes it uses, more than the 12 semi-tones defined for western music. Thus, it should not be surprising that Hindu-Raga music appears as an almost separable group from the dodecaphonic music included in the two other groups. When comparing the group Rock-MovieThemes-Chinese with the Venezuelan music, the result is different: the p-values are low, indicating both groups come from different probability distributions for the entropy and the distance to the Zipf’s reference. However, for this pair of groups, the difference does not suffice to make these groups separable.</p>
+<p>Looking at the music groups as they were registered in our data, the Univariate and Multivariate performed tests show interesting results that we discuss here. The Univariate ANOVA analysis suggests that the entropy and Zipf’s reference distance have different distributions for academic and traditional music. Entropy showed the least of the differences for academic music (<italic>F</italic> = 1.456), suggesting that using entropy by itself is too weak a parameter to split classes of some academic music periods. Using both parameters, however, offers possibilities for music style classification, even though the overlap between some pairs of groups is strong. This is an expected result, given the independence of the process of classification with respect to the actual musical characteristics of the pieces being classified.</p>
+<p>The Wilks tests presented in section 3.4 for the multivariate ANOVA tests show that the entropy and the reference distance of Zipf account for approximately 50% of the location of the mean values for a multivariate distribution of the music groups based on these parameters. While this 50% is not high enough to establish a better separation between music groups, it is certainly enough to accept notable differences in musical genres and styles to be detected by the methods proposed in this study.</p>
+</sec>
+<sec id="sec019">
+<title>About the evolution of music</title>
+<p>Indeed, in <xref ref-type="fig" rid="pone.0185757.g007">Fig 7</xref>, it is difficult to distinguish the dominant locations for all types of music. The locations of individual pieces of some types of music are dispersed, and their central location is not easily recognized. However, this does not mean that a piece, properly classified as a specific type of music, does not lie relatively near a certain location that corresponds to the type of music in the space considered. Take, for example, Romantic music (darker blue bubbles) and Baroque music (darker green bubbles). Despite the noticeable dispersion of the bubbles, each group occupies a different volume within the space represented in <xref ref-type="fig" rid="pone.0185757.g007">Fig 7</xref>. Both music type clusters are shaped as bows. The one representing Romantic music is located toward the center of the cube, while the Baroque music type cluster is located near the high second-order entropy corner. This aspect of the discussion is important because the standard deviations of the three properties evaluated, presented in Tables <xref ref-type="table" rid="pone.0185757.t004">4</xref> and <xref ref-type="table" rid="pone.0185757.t005">5</xref>, are of the same order as the variation of the averages of the same properties, thus giving the false idea that these clusters are indistinctly dispersed throughout the same space and are, therefore, not separable by the properties suggested here. The reason for why our clusters may be separable while exhibiting high standard deviations, with an apparent full overlap, lies in the clusters’ arched shapes.</p>
+<p><xref ref-type="fig" rid="pone.0185757.g008">Fig 8</xref> shows how each type of music tends to occupy different sectors of the space diversity-entropy. Focusing on academic music, a progression can be seen from the location of Medieval music, located in the sector of high diversity and entropy, to the location of more-recent music, such as Classical and Impressionistic, located at relatively lower specific diversity and entropy. The ordered locations of each type of academic music upon the time parameter suggests that some types of music evolve in a way that can be detected in the mentioned space: <italic>d</italic>, <italic>h</italic><sup>[1]</sup>, <italic>h</italic><sup>[2]</sup>.</p>
+<p>Traditional Hindu-Raga and traditional Venezuelan music are easily recognizable. There must be properties that make them well defined and different from each other. The fact that Hindu-Raga and Venezuelan music appear to be far from any other style of music in <xref ref-type="fig" rid="pone.0185757.g008">Fig 8</xref> is unsurprising. In fact, it should be taken as a sign of fitness of the space <italic>d</italic>, <italic>h</italic><sup>[1]</sup>, <italic>h</italic><sup>[2]</sup> to represent music differences, and it confirms the prominent distinctions between the profile shapes seen for these types of music in the profiles shown in <xref ref-type="supplementary-material" rid="pone.0185757.s006">S2</xref> and <xref ref-type="supplementary-material" rid="pone.0185757.s007">S3</xref> Figs.</p>
+<p>Considering <xref ref-type="fig" rid="pone.0185757.g009">Fig 9</xref> and <xref ref-type="supplementary-material" rid="pone.0185757.s009">S5 Fig</xref>, we see that academic music has evolved to produce profiles associated with a lower value of the 2<sup>nd</sup> order entropy. For academic music, this tendency seems to be sustained from Medieval music to the Impressionistic period. Traditional music and popular music exhibit a 2<sup>nd</sup> order entropy comparable to the academic music of the 20<sup>th</sup> Century.</p>
+<p>The specific diversity <italic>d</italic>, on the other hand, reveals a slight reduction with time but an increase in the dispersion of this variable starting from Classical music and the Romantic period. This does not allow us to make a clear statement about the sustained tendency of a reduction in specific diversity over time. On the side of traditional and popular music, specific diversity and entropy show less dispersion than their counterpart from academic music at comparable times.</p>
+<p><xref ref-type="fig" rid="pone.0185757.g009">Fig 9</xref> and <xref ref-type="supplementary-material" rid="pone.0185757.s009">S5 Fig</xref> show the behavior of variables <italic>d</italic>, <italic>h</italic><sup>[1]</sup>, <italic>h</italic><sup>[2]</sup>, with each one plotted vs time for academic music. There seems to be a tendency to lower the value of these variables with time. However, the evident increase of the dispersion of these indexes hides the overall change over time of academic music’s entropy. Yet, when the three properties <italic>d</italic>, <italic>h</italic><sup>[1]</sup>, and <italic>h</italic><sup>[2]</sup> form a joint view and time is a parameter, a clustering that migrates from one extreme position to another emerges from the graphs (Figs <xref ref-type="fig" rid="pone.0185757.g007">7</xref> and <xref ref-type="fig" rid="pone.0185757.g008">8</xref>). This suggests that the combination of the properties <italic>d</italic>, <italic>h</italic><sup>[1]</sup>, and <italic>h</italic><sup>[2]</sup> offers a good basis upon which to build a space where the music style can be recognized.</p>
+</sec>
+<sec id="sec020">
+<title>Models to represent types of music</title>
+<p>The discussion presented above evaluates to what extent these models properly represent the differences among types and styles of music. Although using these methods for some types of music may lead to better results than with other types, we feel we have shown the capacity of the method to capture the most-important characteristics of pieces of music covering a wide range of styles and genres. A numerical model for each of the types of music considered is presented in <xref ref-type="supplementary-material" rid="pone.0185757.s004">S1 Table</xref>. These models express the structure and the dominant characteristic by means of the relationship of the numbers in any one of the columns of <xref ref-type="supplementary-material" rid="pone.0185757.s004">S1 Table</xref>. We consider important the fact that the 129 numbers for each type of music properly depict the corresponding type of MIDI music. The reader should recall that these 129 numbers came from degrading a larger set of Fundamental Symbols, which we claim were the best symbolic representation, down to 129 equivalent symbols. Therefore, these 129 symbols represent the most-relevant properties of the structure of the object modeled.</p>
+<p>The method can be applied to find a descriptive profile for any group defined. Grouping these pieces by author, we obtained a model for the composers included in this study. Some of these profiles are presented as graphs in <xref ref-type="supplementary-material" rid="pone.0185757.s008">S4 Fig</xref>. The closeness or separation from one of these composers’ dominant style can be evaluated by computing the Euclidian distance between any pair of profiles, as was explained in section 2.4 (Distance to Zipf’s reference profile).</p>
+</sec>
+</sec>
+<sec id="sec021" sec-type="conclusions">
+<title>Conclusions</title>
+<p>Texts produced with music coded by the MIDI synthesizer can be analyzed using symbolic diversity and entropy as variables that can be used to characterize music type and even more-subtle properties, such as style. The inclusion of higher order entropies accentuates the detectable differences between music styles.</p>
+<p>We did not use any knowledge of the mechanisms of the MIDI coding process. We started by looking at file texts that seemed to be totally meaningless and indecipherable. By discovering the set of Fundamental Symbols for each music text description, we found several important facts: 1: There is a fundamental symbol set that describes each piece of music. 2: The Fundamental Scale concept, presented in former works, is useful for determining the set of fundamental symbols of machine-coded texts, such as MIDI-music text descriptions. 3: The scale downgrading method proposed allows for comparison of properties of systems of a different nature and at different scales.</p>
+<p>By applying the Fundamental Scale Algorithm, we have gone beyond the theoretical considerations about the Minimal Description Length Principle. We built frequency symbol profiles that work as quantitative descriptions for several hundred MIDI pieces. Due to the shapes of these profiles, which are practically unique, these profiles represent a sort of ‘signature’ of the complete polyphonic sound of each musical piece, with most of its subtleties and complexity. After comparing our results for musical pieces according to their music style and period of time, we can affirm that the method works as a consistent procedure to visualize and classify music styles and to quantify differences among them. Due to the arched shapes of the clusters representing each type of music, we did not attempt to create probability fields for each type of music in the space diversity-entropy. However, we foresee the possibility of handling transformations to the shape of the space <italic>d</italic>, <italic>h</italic><sup><italic>[1]</italic></sup> and <italic>h</italic><sup><italic>[2]</italic></sup> to achieve the conditions required for a reasonable separation of these clusters, or alternatively, to estimate the probability associating each location in that space with each type of music. However, that would lie within the scope of a future work. For the time being, locating text descriptions in the space specific diversity, entropy and 2nd order entropy and the Euclidian distance between symbol frequency profiles presents a promising tool for classifying MIDI music descriptions, with applications in many research fields, such as quantitative linguistics, pattern recognition, and machine learning.</p>
+<p>Music is a reflex of social and cultural likes. We have strived to compare music styles over a quantitative basis. Our results reveal that for all the indexes used to characterize musical genres and styles, there is an increasing dispersion over time. Perhaps this is the image of a society constantly committed to overcoming any cultural barrier, thus making music an expanding phenomenon that grows in any direction of the space we use to observe it. This novel quantitative way of analyzing music might eventually allow us to gain a deeper insight into the musical structures that elicit emotions, illuminating the working of our brains and allowing us to get a better handle on music.</p>
+</sec>
+<sec id="sec022">
+<title>Supporting information</title>
+<supplementary-material id="pone.0185757.s001" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.s001" xlink:type="simple">
+<label>S1 DataLink</label>
+<caption>
+<title/>
+<p>(DOCX)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0185757.s002" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.s002" xlink:type="simple">
+<label>S1 Appendix</label>
+<caption>
+<title/>
+<p>(DOCX)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0185757.s003" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.s003" xlink:type="simple">
+<label>S2 Appendix</label>
+<caption>
+<title/>
+<p>(DOCX)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0185757.s004" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.s004" xlink:type="simple">
+<label>S1 Table</label>
+<caption>
+<title/>
+<p>(DOCX)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0185757.s005" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.s005" xlink:type="simple">
+<label>S1 Fig</label>
+<caption>
+<title/>
+<p>(DOCX)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0185757.s006" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.s006" xlink:type="simple">
+<label>S2 Fig</label>
+<caption>
+<title/>
+<p>(DOCX)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0185757.s007" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.s007" xlink:type="simple">
+<label>S3 Fig</label>
+<caption>
+<title/>
+<p>(DOCX)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0185757.s008" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.s008" xlink:type="simple">
+<label>S4 Fig</label>
+<caption>
+<title/>
+<p>(DOCX)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0185757.s009" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.s009" xlink:type="simple">
+<label>S5 Fig</label>
+<caption>
+<title/>
+<p>(DOCX)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0185757.s010" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.s010" xlink:type="simple">
+<label>S6 Fig</label>
+<caption>
+<title/>
+<p>(DOCX)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0185757.s011" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" position="float" xlink:href="info:doi/10.1371/journal.pone.0185757.s011" xlink:type="simple">
+<label>S7 Fig</label>
+<caption>
+<title/>
+<p>(DOCX)</p>
+</caption>
+</supplementary-material>
+</sec>
+</body>
+<back>
+<ack>
+<p>We want to thank those musicians and enthusiasts who produced several web sites where MIDI sequences of several kinds of music are available, accompanied with additional information presented in a well-organized manner. Here we explicitly acknowledge them: <ext-link ext-link-type="uri" xlink:href="http://www.midiworld.com/" xlink:type="simple">midiworld.com</ext-link>, gregorypino74.jimdo.com/partituras-instrumentales. <ext-link ext-link-type="uri" xlink:href="http://www.classicalarchives.com/midi.html" xlink:type="simple">classicalarchives.com/midi.html</ext-link>, <ext-link ext-link-type="uri" xlink:href="http://www.cse.iitk.ac.in/users/tvp/music/" xlink:type="simple">cse.iitk.ac.in/users/tvp/music/</ext-link>, <ext-link ext-link-type="uri" xlink:href="http://faculty.pittstate.edu/~yliu/music/Mchinese.html" xlink:type="simple">faculty.pittstate.edu/~ilia/music/Mchinese.html</ext-link>, <ext-link ext-link-type="uri" xlink:href="http://www.venezuela.ch/es/musica.html" xlink:type="simple">venezuela.ch</ext-link>.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0185757.ref001"><label>1</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Meyer</surname> <given-names>L</given-names></name>. <source>Emotion and meaning in music</source>. <publisher-loc>Chicago</publisher-loc>: <publisher-name>The University of Chicago Press</publisher-name>; <year>1956</year>.</mixed-citation></ref>
+<ref id="pone.0185757.ref002"><label>2</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Huron</surname> <given-names>D</given-names></name>. <article-title>Sweet Anticipation: Music and the Psychology of Expectation</article-title>. <source>Music Percept</source>. <year>2007</year>;<volume>24</volume>: <fpage>511</fpage>–<lpage>514</lpage>.</mixed-citation></ref>
+<ref id="pone.0185757.ref003"><label>3</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mavromatis</surname> <given-names>P</given-names></name>. <article-title>A hidden markov model of melody production in Greek church chant</article-title>. <source>Comput Musicol</source>. <year>2005</year>;<volume>14</volume>: <fpage>93</fpage>–<lpage>112</lpage>.</mixed-citation></ref>
+<ref id="pone.0185757.ref004"><label>4</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rabiner</surname> <given-names>LR</given-names></name>. <article-title>A tutorial on hidden Markov models and selected applications in speech recognition [Internet]</article-title>. <source>Ieee</source>. <year>1989</year>. pp. <fpage>257</fpage>–<lpage>286</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1109/5.18626" xlink:type="simple">10.1109/5.18626</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0185757.ref005"><label>5</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rohrmeier</surname> <given-names>M</given-names></name>. <article-title>Towards a generative syntax of tonal harmony</article-title>. <source>J Math Music</source>. <year>2011</year>;<volume>5</volume>: <fpage>35</fpage>–<lpage>53</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1080/17459737.2011.573676" xlink:type="simple">10.1080/17459737.2011.573676</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0185757.ref006"><label>6</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Lerdahl</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Jackendoff</surname> <given-names>R</given-names></name>. <source>A Generative Theory of Tonal Music</source>. <publisher-loc>Cambridge, MA</publisher-loc>: <publisher-name>MIT Press</publisher-name>; <year>1983</year>.</mixed-citation></ref>
+<ref id="pone.0185757.ref007"><label>7</label><mixed-citation publication-type="other" xlink:type="simple">Dannenberg RB, Thom B, Watson D. A Machine Learning Approach to Musical Style Recognition A Machine Learning Approach to Musical Style Recognition. International Computer Music Conference,. 1997.</mixed-citation></ref>
+<ref id="pone.0185757.ref008"><label>8</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ponce de Leon</surname> <given-names>PJ</given-names></name>, <name name-style="western"><surname>Inesta</surname> <given-names>JM</given-names></name>. <article-title>Pattern Recognition Approach for Music Style Identification Using Shallow Statistical Descriptors</article-title>. <source>IEEE Trans Syst Man Cybern</source>. <year>2007</year>;<volume>37</volume>: <fpage>248</fpage>–<lpage>257</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1109/TSMCC.2006.876045" xlink:type="simple">10.1109/TSMCC.2006.876045</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0185757.ref009"><label>9</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Perez Sancho</surname> <given-names>C.</given-names></name>, <name name-style="western"><surname>Iñesta</surname> <given-names>JM</given-names></name>, <name name-style="western"><surname>Rubio</surname> <given-names>JC</given-names></name>. <article-title>A text categorization approach for music style recognition</article-title>. <source>Lect Notes Comput Sci</source>. <year>2005</year>;<volume>3523</volume>: <fpage>649</fpage>–<lpage>657</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1007/11492542_79" xlink:type="simple">10.1007/11492542_79</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0185757.ref010"><label>10</label><mixed-citation publication-type="other" xlink:type="simple">van Kranenburg P, Backer E. Musical style recognition—a quantitative approach. Conference on Interdisciplinary Musicology (CIM04). 2004. pp. 1–10.</mixed-citation></ref>
+<ref id="pone.0185757.ref011"><label>11</label><mixed-citation publication-type="other" xlink:type="simple">Rohrmeier M. Music Syntax Theory [Internet]. 2012 [cited 9 Dec 2015]. <ext-link ext-link-type="uri" xlink:href="http://www.musica.ed.ac.uk/archive/2012/martin-rohrmeier/" xlink:type="simple">http://www.musica.ed.ac.uk/archive/2012/martin-rohrmeier/</ext-link></mixed-citation></ref>
+<ref id="pone.0185757.ref012"><label>12</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Simonton</surname> <given-names>DK</given-names></name>. <article-title>Computer Content Analysis of Melodic Structure: Classical Composers and their Compositions</article-title>. <source>Psychol Music</source>. <year>1994</year>;<volume>22</volume>: <fpage>31</fpage>–<lpage>43</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1177/0305735694221003" xlink:type="simple">10.1177/0305735694221003</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0185757.ref013"><label>13</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hass</surname> <given-names>RW</given-names></name>. <article-title>An exploration of the relationship between melodic originality and fame in early 20th-century American popular music</article-title>. <source>Psychol Music</source>. <year>2016</year>;<volume>44</volume>: <fpage>710</fpage>–<lpage>729</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1177/0305735615590429" xlink:type="simple">10.1177/0305735615590429</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0185757.ref014"><label>14</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Temperley</surname> <given-names>D</given-names></name>. <source>The Cognition of Basic Musical Structures</source>. <publisher-loc>Cambridge, Massachusetts</publisher-loc>: <publisher-name>The MIT Press</publisher-name>; <year>2001</year>.</mixed-citation></ref>
+<ref id="pone.0185757.ref015"><label>15</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Temperley</surname> <given-names>D</given-names></name>. <source>Music And Probability</source>. <publisher-loc>Cambridge, Massachusetts</publisher-loc>: <publisher-name>The MIT Press</publisher-name>; <year>2007</year>.</mixed-citation></ref>
+<ref id="pone.0185757.ref016"><label>16</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Temperley</surname> <given-names>D</given-names></name>. <article-title>A Unified Probabilistic Model for Polyphonic Music Analysis</article-title>. <source>J New Music Res</source>. <year>2009</year>;<volume>38</volume>: <fpage>3</fpage>–<lpage>18</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1080/09298210902928495" xlink:type="simple">10.1080/09298210902928495</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0185757.ref017"><label>17</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Mavromatis</surname> <given-names>P</given-names></name>. <chapter-title>A Hidden Markov Model of Melody Production in Greek Church Chant</chapter-title>. <source>Comput Musicol</source>. <publisher-name>CCARH and The MIT Press</publisher-name>; <year>2005</year>;<fpage>14</fpage>.</mixed-citation></ref>
+<ref id="pone.0185757.ref018"><label>18</label><mixed-citation publication-type="other" xlink:type="simple">Rohrmeier M. Musical syntax and its cognitive implications [Internet]. 2012. <ext-link ext-link-type="uri" xlink:href="http://www.musica.ed.ac.uk/wp-content/uploads/Manual_Upload/Martin_Rohrmeier_MusicalSyntax.pdf" xlink:type="simple">http://www.musica.ed.ac.uk/wp-content/uploads/Manual_Upload/Martin_Rohrmeier_MusicalSyntax.pdf</ext-link></mixed-citation></ref>
+<ref id="pone.0185757.ref019"><label>19</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mavromatis</surname> <given-names>P</given-names></name>. <article-title>Minimum Description Length Modeling of Musical Structure</article-title>. <source>J Math Music</source>. <year>2009</year>;<volume>0</volume>: <fpage>1</fpage>–<lpage>21</lpage>.</mixed-citation></ref>
+<ref id="pone.0185757.ref020"><label>20</label><mixed-citation publication-type="other" xlink:type="simple">Cox G. On the Relationship Between Entropy and Meaning in Music: An Exploration with Recurrent Neural Networks. Proc Annu Meet Cogn Sci Soc. 2010;</mixed-citation></ref>
+<ref id="pone.0185757.ref021"><label>21</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Klapuri</surname> <given-names>A</given-names></name>. <article-title>Signal Processing Methods for the Automatic Music Transcription [Internet]</article-title>. <source>Computer Music Journal. Tampere University of Technology</source>. <year>2004</year>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1007/0-387-32845-9" xlink:type="simple">10.1007/0-387-32845-9</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0185757.ref022"><label>22</label><mixed-citation publication-type="other" xlink:type="simple">Chai W. Automated analysis of musical structure. Massashusetts Institute of Technology. 2005.</mixed-citation></ref>
+<ref id="pone.0185757.ref023"><label>23</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Febres</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Jaffe</surname> <given-names>K</given-names></name>. <article-title>A Fundamental Scale of Descriptions for Analyzing Information Content of Communication Systems</article-title>. <source>Entropy</source>. <year>2015</year>;<volume>17</volume>: <fpage>1606</fpage>–<lpage>1633</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.3390/e17041606" xlink:type="simple">10.3390/e17041606</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0185757.ref024"><label>24</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Shannon</surname> <given-names>CE</given-names></name>. <article-title>A mathematical theory of communication</article-title>. <source>Bell Syst Tech J</source>. <year>1948</year>;<volume>27</volume>: <fpage>379</fpage>–<lpage>423</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1145/584091.584093" xlink:type="simple">10.1145/584091.584093</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0185757.ref025"><label>25</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bar-Yam</surname> <given-names>Y</given-names></name>. <article-title>Multiscale Complexity/Entropy</article-title>. <source>Adv Complex Syst</source>. <year>2004</year>;<volume>7</volume>: <fpage>47</fpage>–<lpage>63</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1142/S0219525904000068" xlink:type="simple">10.1142/S0219525904000068</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0185757.ref026"><label>26</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bar-Yam</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Harmon</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Bar-Yam</surname> <given-names>Y</given-names></name>. <article-title>Computationally tractable pairwise complexity profile</article-title>. <source>Complexity</source>. <year>2013</year>;<volume>18</volume>: <fpage>20</fpage>–<lpage>27</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1002/cplx.21437" xlink:type="simple">10.1002/cplx.21437</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0185757.ref027"><label>27</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lopez Ruiz</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Mancini</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Calbet</surname> <given-names>X</given-names></name>. <article-title>Statistical Measure Of Complexity</article-title>. <source>Phys Lett A</source>. <year>1995</year>;<volume>209</volume>: <fpage>321</fpage>–<lpage>326</lpage>.</mixed-citation></ref>
+<ref id="pone.0185757.ref028"><label>28</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Prokopenko</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Boschetti</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Ryan</surname> <given-names>AJ</given-names></name>. <article-title>An information-theoretic primer on complexity, self-organisation and emergence</article-title>. <source>Complexity</source>. <year>2008</year>;<volume>15</volume>: <fpage>11</fpage>–<lpage>28</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1002/cplx.20249" xlink:type="simple">10.1002/cplx.20249</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0185757.ref029"><label>29</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Prokopenko</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Gershenson</surname> <given-names>C</given-names></name>. <article-title>Entropy Methods in Guided Self-Organisation</article-title>. <source>Entropy</source>. <year>2014</year>;<volume>16</volume>: <fpage>5232</fpage>–<lpage>5241</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.3390/e16105232" xlink:type="simple">10.3390/e16105232</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0185757.ref030"><label>30</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Fernandez</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Maldonado</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Gershenson</surname> <given-names>C</given-names></name>. <chapter-title>Information Measures of Complexity, Emergence, Self-organization, Homeostasis, and Autopoiesis</chapter-title>. <name name-style="western"><surname>Prokopenko</surname></name>, editor. <source>Inception</source>. <publisher-loc>Berlin. Heidelgerg</publisher-loc>: <publisher-name>Springer</publisher-name>; <year>2014</year>.</mixed-citation></ref>
+<ref id="pone.0185757.ref031"><label>31</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Carey</surname> <given-names>Gregory</given-names></name>. <article-title>Multivariate analysis of variance (MANOVA)</article-title>. <source>Biometrics</source>. <year>1998</year>; <fpage>1</fpage>–<lpage>14</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/0169-7439(90)80094-M" xlink:type="simple">10.1016/0169-7439(90)80094-M</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0185757.ref032"><label>32</label><mixed-citation publication-type="other" xlink:type="simple">Febres G. MusicNet [Internet]. 2017. 10.6084/m9.figshare.5435953</mixed-citation></ref>
+<ref id="pone.0185757.ref033"><label>33</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Febres</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Jaffe</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Gershenson</surname> <given-names>C</given-names></name>. <article-title>Complexity measurement of natural and artificial languages</article-title>. <source>Complexity</source>. <year>2015</year>;<volume>20</volume>: <fpage>429</fpage>–<lpage>453</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1002/cplx.21529" xlink:type="simple">10.1002/cplx.21529</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0185757.ref034"><label>34</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Westrup</surname> <given-names>J</given-names></name>. <chapter-title>Instrumentation and Orchestration: 3. 1750 to 1800</chapter-title>. In: <name name-style="western"><surname>Sadie</surname> <given-names>S</given-names></name>, editor. <source>New Grove Dictionary of Music and Musicians</source>. <edition>2nd ed</edition>. <publisher-loc>New York</publisher-loc>; <year>2001</year>.</mixed-citation></ref>
+<ref id="pone.0185757.ref035"><label>35</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Holoman</surname> <given-names>DK</given-names></name>. “<chapter-title>Instrumentation and Orchestration: 4. 19th Century</chapter-title>.” In: <name name-style="western"><surname>Sadie</surname> <given-names>S</given-names></name>, editor. <source>New Grove Dictionary of Music and Musicians</source>. <edition>2nd ed</edition>. <publisher-loc>New York</publisher-loc>; <year>2001</year>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

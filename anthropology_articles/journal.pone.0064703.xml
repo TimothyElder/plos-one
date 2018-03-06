@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group>
+<journal-title>PLoS ONE</journal-title></journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-12-25299</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0064703</article-id>
+<article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Biology</subject><subj-group><subject>Population biology</subject><subj-group><subject>Epidemiology</subject><subj-group><subject>Social epidemiology</subject></subj-group></subj-group></subj-group><subj-group><subject>Systems biology</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Mathematics</subject><subj-group><subject>Applied mathematics</subject><subj-group><subject>Algorithms</subject><subject>Complex systems</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Social and behavioral sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Social anthropology</subject></subj-group></subj-group><subj-group><subject>Law</subject><subj-group><subject>Criminal justice system</subject><subj-group><subject>Criminal investigations</subject></subj-group></subj-group></subj-group><subj-group><subject>Psychology</subject><subj-group><subject>Behavior</subject><subject>Personality</subject></subj-group></subj-group><subj-group><subject>Sociology</subject><subj-group><subject>Computational sociology</subject><subject>Crime and criminology</subject><subject>Demography</subject><subject>Sexual and gender issues</subject><subject>Social networks</subject><subject>Social research</subject><subject>Social stratification</subject><subject>Social systems</subject><subject>Social theory</subject></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>The Phenomenology of Specialization of Criminal Suspects</article-title>
+<alt-title alt-title-type="running-head">The Phenomenology of Criminal Specialization</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Tumminello</surname><given-names>Michele</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref><xref ref-type="aff" rid="aff2"><sup>2</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Edling</surname><given-names>Christofer</given-names></name><xref ref-type="aff" rid="aff3"><sup>3</sup></xref><xref ref-type="aff" rid="aff4"><sup>4</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Liljeros</surname><given-names>Fredrik</given-names></name><xref ref-type="aff" rid="aff4"><sup>4</sup></xref><xref ref-type="aff" rid="aff5"><sup>5</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Mantegna</surname><given-names>Rosario N.</given-names></name><xref ref-type="aff" rid="aff6"><sup>6</sup></xref><xref ref-type="aff" rid="aff7"><sup>7</sup></xref><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Sarnecki</surname><given-names>Jerzy</given-names></name><xref ref-type="aff" rid="aff8"><sup>8</sup></xref></contrib>
+</contrib-group>
+<aff id="aff1"><label>1</label><addr-line>Department of Social and Decision Sciences, Carnegie Mellon University, Pittsburgh, Pennsylvania, United States of America</addr-line></aff>
+<aff id="aff2"><label>2</label><addr-line>Department of Statistical and Mathematical Sciences “Silvio Vianelli,” University of Palermo, Palermo, Italy</addr-line></aff>
+<aff id="aff3"><label>3</label><addr-line>Department of Sociology, Lund University, Lund, Sweden</addr-line></aff>
+<aff id="aff4"><label>4</label><addr-line>Institute for Futures Studies, Stockholm, Sweden</addr-line></aff>
+<aff id="aff5"><label>5</label><addr-line>Department of Sociology, Stockholm University, Stockholm, Sweden</addr-line></aff>
+<aff id="aff6"><label>6</label><addr-line>Department of Physics and Chemistry, University of Palermo, Palermo, Italy</addr-line></aff>
+<aff id="aff7"><label>7</label><addr-line>Center for Network Science and Department of Economics, Central European University, Budapest, Hungary</addr-line></aff>
+<aff id="aff8"><label>8</label><addr-line>Department of Criminology, Stockholm University, Stockholm, Sweden</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Amaral</surname><given-names>Luís A. Nunes.</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Northwestern University, United States of America</addr-line></aff>
+<author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">rn.mantegna@gmail.com</email></corresp>
+<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn>
+<fn fn-type="con"><p>Conceived and designed the experiments: MT CE FL RNM JS. Performed the experiments: MT. Analyzed the data: MT CE FL RNM JS. Wrote the paper: MT CE FL RNM JS.</p></fn>
+</author-notes>
+<pub-date pub-type="collection"><year>2013</year></pub-date>
+<pub-date pub-type="epub"><day>15</day><month>5</month><year>2013</year></pub-date>
+<volume>8</volume>
+<issue>5</issue>
+<elocation-id>e64703</elocation-id>
+<history>
+<date date-type="received"><day>9</day><month>8</month><year>2012</year></date>
+<date date-type="accepted"><day>17</day><month>4</month><year>2013</year></date>
+</history>
+<permissions>
+<copyright-year>2013</copyright-year>
+<copyright-holder>Tumminello et al</copyright-holder><license xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions>
+<abstract>
+<p>A criminal career can be either general, with the criminal committing different types of crimes, or specialized, with the criminal committing a specific type of crime. A central problem in the study of crime specialization is to determine, from the perspective of the criminal, which crimes should be considered similar and which crimes should be considered distinct. We study a large set of Swedish suspects to empirically investigate generalist and specialist behavior in crime. We show that there is a large group of suspects who can be described as generalists. At the same time, we observe a non-trivial pattern of specialization across age and gender of suspects. Women are less prone to commit crimes of certain types, and, for instance, are more prone to specialize in crimes related to fraud. We also find evidence of temporal specialization of suspects. Older persons are more specialized than younger ones, and some crime types are preferentially committed by suspects of different ages.</p>
+</abstract>
+<funding-group><funding-statement>The authors have no support or funding to report.</funding-statement></funding-group><counts><page-count count="8"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title>Introduction</title>
+<p>Specialization in crime is a central problem for criminology as well as crime prevention and enforcement <xref ref-type="bibr" rid="pone.0064703-Loeber1">[1]</xref>, <xref ref-type="bibr" rid="pone.0064703-Tracy1">[2]</xref>. Understanding specialization in crime implies the possibility of increasing the efficiency of the justice system through various measures targeting different groups of offenders (e.g., using selective detention and targeted treatment). The problem of specialization in crime is complex, both theoretically and methodologically. Although the empirical results that support the existence of crime specialization are admittedly weak, research has not yet been able to rule out specialization <xref ref-type="bibr" rid="pone.0064703-Osgood1">[3]</xref>. The issue is whether some offenders commit a disproportionately large number of the same type of crime during their criminal career, and whether this tendency is accentuated over time <xref ref-type="bibr" rid="pone.0064703-Piquero1">[4]</xref>. In this study we advance previous research on criminal careers by studying how different types of crimes are interrelated. This allows us to detect structural patterns in criminal behavior at the collective level that are not emergent at the individual level.</p>
+<sec id="s1a">
+<title>Theoretical Aspects</title>
+<p>Many criminologists <xref ref-type="bibr" rid="pone.0064703-Bursik1">[5]</xref>–<xref ref-type="bibr" rid="pone.0064703-Piquero2">[7]</xref> have noted that the existence of specialization (or lack thereof) has major implications for understanding the causes of crime. Gottfredson and Hirschi's influential <italic>A General Theory of Crime</italic> <xref ref-type="bibr" rid="pone.0064703-Gottfredson1">[8]</xref>, for example, articulates positions that are inconsistent with the idea of crime specialization. According to their theory, persons with low self-control are expected to be more prone to criminal behavior than persons with high self-control. Among persons with low self-control, we should expect a great diversity of crime types <xref ref-type="bibr" rid="pone.0064703-Gottfredson1">[8]</xref>. Social-bond theory <xref ref-type="bibr" rid="pone.0064703-Hirschi1">[9]</xref>, <xref ref-type="bibr" rid="pone.0064703-Kornhauser1">[10]</xref>, which focuses on the importance of attachment, commitment, and involvement in society along with pro-social beliefs, also suggests that offenders are generalists, who commit crimes due to a low level of social control.</p>
+<p>Other research strongly points to specialization by focusing on the causes of specific types of crimes. Examples include theories targeting the relationship between the various functions of the brain and delinquency, such as brain damage <xref ref-type="bibr" rid="pone.0064703-Damasio1">[11]</xref>, <xref ref-type="bibr" rid="pone.0064703-Nylen1">[12]</xref> and low or unstable serotonin levels <xref ref-type="bibr" rid="pone.0064703-Virkkunen1">[13]</xref>, <xref ref-type="bibr" rid="pone.0064703-Alm1">[14]</xref>. This line of research focuses primarily on the causes of violent crime, assuming that aggressive individuals are specialists in violent crime. Similar considerations apply to theories that search for causes of violence in the interaction between genetic and social factors <xref ref-type="bibr" rid="pone.0064703-Bowes1">[15]</xref>, or in social rather than biological factors <xref ref-type="bibr" rid="pone.0064703-Wolfgang1">[16]</xref>.</p>
+<p>The main thesis in Sutherland's theory on differential association <xref ref-type="bibr" rid="pone.0064703-Sutherland1">[17]</xref>, <xref ref-type="bibr" rid="pone.0064703-Sutherland2">[18]</xref> is that crime is a learned behavior, suggesting a high level of crime specialization. Sutherland proposed that learning about criminal behavior, much like learning about other behaviors, occurs through interactions with those in the individual's immediate social environment. The theory assumes that the individual's behavior is influenced by the total outcome of the influences received from the social environment. If the individual’s social environment is composed of a large number of individuals who are contemptuous of the law and break it with little compunction, the likelihood of delinquent behavior increases. Accordingly, we therefore expect specialization in crime within this theory.</p>
+<p>It has also been suggested that specialization emerges during a criminal career. Cloward and Ohlin <xref ref-type="bibr" rid="pone.0064703-Cloward1">[19]</xref> argued that a lack of legitimate opportunities leads to three different kinds of delinquent subcultures that specialize in specific types of crimes, depending on the structure of the illegitimate opportunities.</p>
+</sec><sec id="s1b">
+<title>Methodological Problems</title>
+<p>What constitutes a crime, and consequently criminal behavior, varies considerably across time and space <xref ref-type="bibr" rid="pone.0064703-Foucault1">[20]</xref>. This variability introduces some challenges in determining whether an individual is engaging in repetitive or diversified criminal behavior over the long term. Creating appropriate distinctions among different criminal acts is difficult. Legal classification offers a comprehensive breakdown into many small categories of crime organized based on chapters of the penal code. We take advantage of the finely detailed resolution of official classification and coding. In fact, the classification allows us to empirically establish how crime categories organize into larger clusters that emerge from individual’s criminal behavior.</p>
+<p>Our database is the Swedish national register of persons suspected of criminal offenses, which contains more detailed information on crimes as compared to registers on sentenced persons. Due to the nature of records of suspected criminal offences, a proportion of all committed crimes is not covered, which is a limitation of our data. On the other hand, our data have three significant advantages over self-reported data. In fact, our database includes information about a very large number of crimes, precise information on the timing, and detailed legal definition of the offenses.</p>
+<p>In this paper we apply methods from network analysis <xref ref-type="bibr" rid="pone.0064703-Newman1">[21]</xref> to identify the systematic occurrence of crimes in a large set of criminal suspects. This is a new way of using network analytical tools in criminology. Network analysis has mainly been used to study co-offending <xref ref-type="bibr" rid="pone.0064703-Sarnecki1">[22]</xref>, where individuals are nodes and offenses define edges. In this study, we do the reverse and treat types of crimes as nodes and individuals as defining the edges, allowing us to study the clustering of types of crimes.</p>
+</sec></sec><sec id="s2" sec-type="materials|methods">
+<title>Materials and Methods</title>
+<sec id="s2a">
+<title>Description of the Database</title>
+<p>We have information about all the suspects of crimes committed in the Stockholm area during the period from 1991 to 2007, including a coded identity of suspects, their gender and age, and the types of crimes they have been suspected of. Crime in Sweden is on average of Western European level <xref ref-type="bibr" rid="pone.0064703-vonDijk1">[23]</xref>. Stockholm is Sweden's capital and the country's largest city (870 000 inhabitants). Crime in Stockholm per 100,000 population is at slightly higher level compared to the rest of the country. N<sub>C</sub> = 376 different types of crimes, according to the penal code, appear in the database. These types of crimes were attached to N = 336,069 different suspects. It is worth noting an essential aspect of these data. As in most complex systems, the data show a large degree of heterogeneity. In the investigated time period, 12 rare types of crimes occur only once, whereas, at the other extreme, one rather common type of crime was implicated to as many as 81,532 different suspects. In short, the range of the number of different suspects implicated in a given type of crime spans almost five orders of magnitude. Another source of heterogeneity lies in the number of different types of crimes each suspect has been suspected of. A total of 169,603 suspects were suspected of only a single type of crime and, at other extreme, one specific suspect has been implicated in 159 different types of crimes. So, even in terms of suspects, we observe heterogeneity over more than two orders of magnitude (see also <xref ref-type="supplementary-material" rid="pone.0064703.s001">Fig. S1</xref>). Different criminal instances are recorded for each type of crime. The total number of criminal instances is 1,851,960. The interval of criminal instances for suspect is ranging from the minimum value of 1 to the maximum value of 2,347.</p>
+</sec><sec id="s2b">
+<title>Spectral Analysis</title>
+<p>We use spectral analysis to establish the extent to which there is a tendency toward generalist or specialist criminal behavior. Specifically, we first determine the correlation among types of crimes in the following way. The correlation matrix of types of crimes is calculated by associating a vector of dimension N = 336,069, that is the total number of suspects in the database, with each type of crime. For each type of crime C, the <italic>C<sub>i</sub></italic> component of the associated vector is set 1 if the suspect <italic>i</italic> has been suspected of crime type C, or 0 otherwise. The correlation between two types of crimes A and B is calculated as the correlation coefficient between the corresponding vectors:<disp-formula id="pone.0064703.e001"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0064703.e001" xlink:type="simple"/><label>(1)</label></disp-formula>where <italic>N<sub>A</sub></italic> (<italic>N<sub>B</sub></italic>) is the total number of suspects implicated in type of crime A (B), and <italic>N<sub>A,B</sub></italic> the total number of suspects implicated in both types of crimes.</p>
+<p>We then focus on the spectrum of eigenvalues of the correlation matrix of types of crimes, that is the matrix of correlation coefficients (1). The analysis of eigenvalues and eigenvectors of the correlation matrix allows us to see that the eigenvector of the largest eigenvalue presents most of its components of the same sign, and therefore does not present a block-like structure that would indicate a partitioning of different types of crimes. The existence of such a “common mode” <xref ref-type="bibr" rid="pone.0064703-Laloux1">[24]</xref>, <xref ref-type="bibr" rid="pone.0064703-Plerou1">[25]</xref> in the present system can be interpreted as indicating generalist behavior in some suspects. Specifically, the largest eigenvalue of the sample correlation matrix is λ<sub>M</sub> = 11.26, and 89% of the components of the corresponding eigenvector have the same sign. The presence of 169,603 people suspected of only a single type of crime is not altering the basic characteristics of the correlation matrix. In fact, by repeating the analysis with only suspects implicated in two or more types of crimes we obtain very similar results (see <xref ref-type="supplementary-material" rid="pone.0064703.s002">Fig. S2</xref>).</p>
+<p>To provide a more quantitative indication of the presence of generalists in the database and their impact on the properties of the correlation matrix of types of crimes, we compare the empirical spectrum of the sample correlation matrix with the spectrum of a correlation matrix R<sub>G</sub> obtained from a random shuffling of the original database. In the shuffling we preserve the heterogeneity of both suspects and types of crimes observed in the original data. Specific criminal patterns, i.e., specialist patterns within particular groups of types of crimes, are destroyed by the shuffling, and all the suspects therefore present a generalist profile in the shuffled realizations. Specifically, in our shuffling procedures we perform 100 different realizations. The largest eigenvalue of R<sub>G</sub> has a mean value of 16.72 (see <xref ref-type="fig" rid="pone-0064703-g001">Fig. 1</xref>), which corresponds to 16.72/N<sub>C</sub> = 0.045 of the total variance, and the corresponding eigenvector (see <xref ref-type="fig" rid="pone-0064703-g002">Fig. 2</xref>) essentially displays all components with the same sign.</p>
+<fig id="pone-0064703-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0064703.g001</object-id><label>Figure 1</label><caption>
+<title>Density of eigenvalues of the correlation matrix of types of crimes associated with (i) the original data (top panel); (ii) 100 random shufflings of the database mimicking pure generalists (middle panel); and (iii) 100 random shufflings of the database mimicking pure specialists (bottom panel).</title>
+<p>The largest eigenvalue of the empirical correlation matrix, which accounts for the generalist behavior of suspects, is about two third of the corresponding eigenvalue in the case of pure generalists, and about two times the one obtained for pure specialists. The second largest eigenvalue of the empirical correlation matrix, which suggests the presence of clusters of types of crimes, and therefore the presence of specialists in the set of suspects, is also intermediate between the corresponding ones obtained for pure generalists and pure specialists.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0064703.g001" position="float" xlink:type="simple"/></fig><fig id="pone-0064703-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0064703.g002</object-id><label>Figure 2</label><caption>
+<title>Components of the eigenvector corresponding to the first eigenvalue of the correlation matrix of types of crimes for the original data, and average components of the first eigenvector over 100 independent realizations of the generalists' and specialists' shufflings.</title>
+<p>In the latter cases, error bars correspond to one standard deviation over 100 realizations. The color of a spot indicates the chapter of the penal code of types of crimes belonging to the 6 most populated chapters. Specifically, we label types of crimes as follows: chapter 8 - theft, robbery and other types of crimes of stealing as blue (102 crimes), chapter 3 - types of crimes against life and health as red (60 crimes), chapter 9 - fraud and other acts of dishonesty as cyan (22 crimes), chapter 6 - sexual offences as violet (21 crimes), offences against the environmental code as orange (19 crimes), and chapter 4 - types of crimes against liberty and peace as green (17 crimes). In the case of generalists' and specialists' simulations we also show the interval of plus and minus one standard deviation around the average value. Types of crimes are ordered according to their occurrence in the database as shown in the bottom panel of the figure.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0064703.g002" position="float" xlink:type="simple"/></fig>
+<p>The comparison between the top and middle panel in <xref ref-type="fig" rid="pone-0064703-g001">Fig. 1</xref> shows that the empirical correlation matrix actually presents a set of eigenvalues outside of the bulk of the distribution. To check the hypothesis that these eigenvalues may be attributed to specialist behavior, we have simulated the correlation matrix of a system in which suspects are pure specialists. Here we use the term “specialists” to indicate suspects who explore only one specific group of types of crimes, which is identified, in the simulations, by a chapter of the penal code. In our simulations, each suspect is initially associated with a randomly selected type of crime, the probability that a type of crime is selected being proportional to the frequency of the type of crime in the original database. The first type of crime allows one to associate each suspect with a specific chapter of the penal code. So, once the first type of crime is selected, each suspect will continue to randomly explore types of crimes belonging to the chapter of that first type of crime until a number of types of crimes equal to the total number of types of crimes alleged for the suspect in the original database is reached. Again, the types of crimes are selected randomly within a group of types of crimes by setting the probability that a type of crime is selected as proportional to the frequency of that type of crime in the original database. This approach allows us, on average, to preserve the heterogeneity of both types of crimes and suspects. The density of eigenvalues of the correlation matrix of 100 realizations of the simulated database of specialists is reported in the bottom panel of <xref ref-type="fig" rid="pone-0064703-g001">Fig. 1</xref>. The largest eigenvalue has an average value of 5.51, which is significantly smaller than the largest eigenvalue of the empirical correlation matrix (λ<sub>M</sub> = 11.26). The eigenvector components (already for the eigenvector associated with the first eigenvalue) are organized in different groups of types of crimes which are belonging to the same penal chapter and are each characterized by components of the same sign and absolute value decreasing as a function of the frequency of the type of crime (see the panel of <xref ref-type="fig" rid="pone-0064703-g002">Fig. 2</xref> referring to specialists' simulations) In summary, the spectral analysis of the correlation matrix of types of crimes supports the presence of both generalist and specialist suspects in the database.</p>
+<p>The simulation of the pure specialists hypothesizes that each group of types of crimes is defined by the corresponding chapter of the penal code. We acknowledge that this is a simplifying assumption and therefore, before we perform the following analyses we look for an approach allowing us to detect clusters of types of crimes directly from real data by using an unsupervised clustering procedure based on network theory.</p>
+<p>We start from the bipartite network of types of crimes and suspects. The basic information characterizing the network can be summarized as follows. The number of suspects is 336,069 and the number of types of crimes is 376. In the bipartite network we count 1,078,908 links, it is therefore a quite sparse and heterogeneous bipartite network. The degree of types of crimes ranges from the minimum values of 1 to the maximum value of 81,532. The average value is 2,869 and its standard deviation is 7,206. The degree of suspects also covers a broad range starting from 1 and ending to 159. In the case of suspects, the average degree is 5.51 and its standard deviation is 17.3. Starting from the bipartite network we obtained the projected network of types of crimes as follows. We constructed a projected network of types of crimes by linking two types of crimes when they have been both associated with at least one suspect and we weighted the link as the number of suspects implicated in both crimes. In this way, we obtained a network of 376 crimes connected by 41,556 links in a single large component. Such a network is an almost complete network (in fact a complete network would present 70,500 links).</p>
+<p>On this weighted projected network we performed a community search with the Infomap algorithm <xref ref-type="bibr" rid="pone.0064703-Rosvall1">[26]</xref>, which is a successful and accurate community detection algorithm <xref ref-type="bibr" rid="pone.0064703-Fortunato1">[27]</xref>. Unfortunately, the algorithm failed to partition the system. The failure was probably due to the fact that the projected network is an almost complete network and community detection is notoriously difficult in almost complete networks. To overcome this difficulty we decided to filter the weighted projected network of types of crimes by selecting only those links presenting an excess (or over-expression) of co-occurrence of suspects while properly taking into account the heterogeneity of both types of crimes and suspects. Specifically, we select the links by adapting a recently proposed method, which is constructing statistically validated networks <xref ref-type="bibr" rid="pone.0064703-Tumminello1">[28]</xref> in heterogeneous complex systems.</p>
+</sec><sec id="s2c">
+<title>Statistically Validated Networks</title>
+<p>To take into account the presence in the database of suspects who were implicated in only one type of crime and suspects that were implicated in many types of crimes, the database has been decomposed into several subsets of data with homogeneous profiles of suspects. Specifically, the first subset <italic>S<sub>1</sub></italic> of the database includes all of the suspects who were suspected of 1 type of crime, the second subset <italic>S<sub>2</sub></italic> included all the suspects who were suspected of exactly 2 different types of crimes, and so on. Each subset <italic>S<sub>f</sub></italic> is therefore identified by the common number <italic>f</italic> of different types of crimes alleged to each suspect in the subset. Altogether we consider n<sub>s</sub> = 159 different subsets <italic>S<sub>f</sub></italic>. By construction, each suspect can be present in only one subset, while a given type of crime can potentially be present in all of the different subsets.</p>
+<p>The heterogeneity of crime types is still apparent within each subset {S<sub>f</sub>}. Indeed the number of suspects for type of crime varies a lot across different crime types, in spite of the homogeneity of suspects in the subset. For each subset, to properly take into account the heterogeneity of the types of crimes, we set a link between two types of crimes, when the suspicion of two types of crimes has been directed to the same suspects with an occurrence that cannot be explained under a null hypothesis of random co-occurrence of types of crimes. The appropriate null hypothesis is constructed in the following way. Let us consider two types of crimes, say A and B, and a specific subset {<italic>S<sub>f</sub></italic>}. Let us call N<sub>A</sub><sup>f</sup> the number of suspects in {<italic>S<sub>f</sub></italic>} who were suspected of type of crime A, and N<sub>B</sub><sup>f</sup> the number of suspects in {S<sub>f</sub>} suspected of type of crime B. Let us call N<sub>AB</sub><sup>f</sup> the number of suspects in {<italic>S<sub>f</sub></italic>} who were suspected of both types of crimes, A and B. Under the null hypothesis of random co-occurrence, the probability of observing X co-occurrences is given by the hypergeometric distribution<disp-formula id="pone.0064703.e002"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0064703.e002" xlink:type="simple"/><label>(2)</label></disp-formula>where N<sup>f</sup> is the total number of suspects in the subset {S<sub>f</sub>}. By using this distribution one can associate a <italic>p</italic>-value with the observed number N<sub>AB</sub><sup>f</sup> of co-occurrences, that is</p>
+<p><disp-formula id="pone.0064703.e003"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0064703.e003" xlink:type="simple"/><label>(3)</label></disp-formula>This null hypothesis explicitly takes into account the heterogeneity of both the types of crimes, A and B, by conditioning the probability of co-occurrence to the two occurrences N<sub>A</sub><sup>f</sup> and N<sub>B</sub><sup>f</sup>. We can therefore choose a statistical threshold and assign a link to only those pairs of crime types that are characterized by a p-value lower than the selected threshold. In the present study, we have chosen a statistical threshold of 0.01. To build a weighted network of types of crimes based on the excess of co-occurrence, we compute the p-value associated with all pairs of types of crimes in each subset {<italic>S<sub>f</sub></italic>}. We therefore perform a multiple comparison involving all pairs of types of crimes present in each subset of the database. In a statistical test performing multiple comparisons, the statistical threshold needs to be properly redefined with respect to the univariate case. Here we use the False Discovery Rate (FDR) method to modify the univariate statistical threshold u<sub>t</sub> = 0.01. The FDR method prescribes that the threshold u<sub>t</sub> = 0.01 is initially divided by the total number of tested hypotheses T. Then all the calculated <italic>p</italic>-values are sorted in increasing order (p<sub>1</sub>&lt;p<sub>2</sub>&lt;…&lt;p<sub>T</sub>), and the FDR threshold σ<sub>FDR</sub> is set equal to p<sub>q</sub>, where q is the largest k such that p<sub>k</sub>&lt;k u<sub>t/</sub>T. In the present case, the total number of tested hypotheses is the sum over all the subsets {S<sub>f</sub>} of the total number of pairs of types of crimes with at least one person suspected of both types of crimes in {<italic>S<sub>f</sub></italic>}. Specifically, the total number of tested hypotheses is 831,944, and σ<sub>FDR</sub> = 0.000071. Each calculated <italic>p</italic>-value is compared with the threshold σ<sub>FDR</sub>, and a link between two types of crimes is set if the co-occurrence <italic>p</italic>-value is smaller than σ<sub>FDR</sub> in at least one subset {S<sub>f</sub>} of the original database, while the weight of the link is set equal to the total number of subsets in which such a statistically significant excess of co-occurrence is detected. The resulting network is called an FDR network after <xref ref-type="bibr" rid="pone.0064703-Tumminello1">[28]</xref>. The FDR network of types of crimes includes 295 types of crimes connected by 1107 weighted links, and the weight of the links ranges between 1 and 38. The subset of suspects which contributes the most to the formation of links in the network is the subset {S<sub>4</sub>} of suspects with only 4 types of crimes in their records (362 links), followed by subsets {S<sub>5</sub>} and {S<sub>7</sub>} (351 links each) and {S<sub>3</sub>} (349 links). The subset with the smallest number of types of crimes per suspect, {S<sub>2</sub>}, contributes to 248 links. Finally, no subset of suspects with more than 50 types of crimes contributes to the statistical validation of a single link (see <xref ref-type="supplementary-material" rid="pone.0064703.s004">Table S1</xref> for details).</p>
+</sec></sec><sec id="s3">
+<title>Results and Discussion</title>
+<sec id="s3a">
+<title>Clusters of Types of Crimes</title>
+<p>The FDR statistically validated network is a network which is much more sparse than the original projected network. In fact, it has 295 nodes and 1,107 links. By applying the Infomap algorithm <xref ref-type="bibr" rid="pone.0064703-Rosvall1">[26]</xref> the FDR is partitioned in several clusters. Specifically, the algorithm revealed 28 clusters of types of crimes of sizes ranging between 2 and 39. <xref ref-type="fig" rid="pone-0064703-g003">Fig. 3</xref> shows the interrelations of clusters of the FDR network. A link between two clusters is set if at least one significant co-occurrence is detected between a type of crime belonging to the first cluster and a type of crime belonging to the second one. In the figure, the size of a node is a linear function of the number of suspects who explored the corresponding cluster, and the weight of a link between two clusters is a monotonic increasing function of the sum of all the weights of links bridging types of crimes of the two clusters in the FDR network. Each cluster of types of crimes has been characterized in terms of the types of crimes it includes and according to the demographic information associated with suspects who were implicated in one or more types of crimes in the cluster. Demographic information includes gender and year of birth of suspects. We have grouped the years of birth into four categories, 1903–1948, 1949–1962, 1963–1973 and 1974–1987, such that the number of suspects does not vary a lot across the different categories. In <xref ref-type="table" rid="pone-0064703-t001">Table 1</xref>, we report information about the number of crime types (2nd column), number of criminal instances (3rd column), and number of suspects (5th column) belonging to each cluster (labeled in Column 1) detected with Infomap in the FDR network of types of crimes. On Columns 4, 6, and 7 of <xref ref-type="table" rid="pone-0064703-t001">Table 1</xref> we report the results of the characterization analysis of all the clusters as performed according to the method described in Ref. <xref ref-type="bibr" rid="pone.0064703-Tumminello2">[29]</xref>. Unless specifically indicated, each entry of the 4th, 6th, and 7th column of the Table represents a statistically validated (<italic>p</italic>-value smaller than 1% after correction for multiple hypothesis testing) over-representation of the displayed attributes in the corresponding cluster. The complete list of types of crimes belonging to each cluster is provided in <xref ref-type="supplementary-material" rid="pone.0064703.s005">Table S2</xref>.</p>
+<fig id="pone-0064703-g003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0064703.g003</object-id><label>Figure 3</label><caption>
+<title>Interrelations of clusters of the FDR statistically validated network of types of crimes.</title>
+<p>The weight of a link between any two clusters is a monotonic increasing function of the sum of all the weights of links bridging types of crimes of the two clusters. The size of the node associated with each cluster of types of crimes is proportional to the number of suspects involved (see <xref ref-type="table" rid="pone-0064703-t001">Table 1</xref>) in that cluster.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0064703.g003" position="float" xlink:type="simple"/></fig><table-wrap id="pone-0064703-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0064703.t001</object-id><label>Table 1</label><caption>
+<title>Characterization of clusters in the FDR network of crime types.</title>
+</caption><alternatives><graphic id="pone-0064703-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0064703.t001" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Cluster</td>
+<td align="left" rowspan="1" colspan="1"># Crimetypes</td>
+<td align="left" rowspan="1" colspan="1">#Instances</td>
+<td align="left" rowspan="1" colspan="1">Code Chapter(# of crime types)</td>
+<td align="left" rowspan="1" colspan="1">#Suspects</td>
+<td align="left" rowspan="1" colspan="1">Birth Year</td>
+<td align="left" rowspan="1" colspan="1">Gender</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Threats/Assaults, known victim</td>
+<td align="left" rowspan="1" colspan="1">39</td>
+<td align="left" rowspan="1" colspan="1">390,483</td>
+<td align="left" rowspan="1" colspan="1">Ch4(14);Ch3(15)</td>
+<td align="left" rowspan="1" colspan="1">121,207</td>
+<td align="left" rowspan="1" colspan="1">1949–1962; 1963–1973</td>
+<td align="left" rowspan="1" colspan="1">Male</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Drugs/Weapons</td>
+<td align="left" rowspan="1" colspan="1">30</td>
+<td align="left" rowspan="1" colspan="1">450,435</td>
+<td align="left" rowspan="1" colspan="1">Drugs(10); Weapons Knives Acts(5)</td>
+<td align="left" rowspan="1" colspan="1">125,011</td>
+<td align="left" rowspan="1" colspan="1">1974–1987</td>
+<td align="left" rowspan="1" colspan="1">Female</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Theft</td>
+<td align="left" rowspan="1" colspan="1">38</td>
+<td align="left" rowspan="1" colspan="1">223,676</td>
+<td align="left" rowspan="1" colspan="1">Ch8(34)</td>
+<td align="left" rowspan="1" colspan="1">53,614</td>
+<td align="left" rowspan="1" colspan="1">1963–1973; 1974–1987</td>
+<td align="left" rowspan="1" colspan="1">Male</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Fraud/Forgery</td>
+<td align="left" rowspan="1" colspan="1">34</td>
+<td align="left" rowspan="1" colspan="1">159,965</td>
+<td align="left" rowspan="1" colspan="1">Ch9(16); Ch10(6); Ch14(6)</td>
+<td align="left" rowspan="1" colspan="1">72,602</td>
+<td align="left" rowspan="1" colspan="1">1949–1962; 1963–1973</td>
+<td align="left" rowspan="1" colspan="1">Female</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">White-collar crimes</td>
+<td align="left" rowspan="1" colspan="1">18</td>
+<td align="left" rowspan="1" colspan="1">35,299</td>
+<td align="left" rowspan="1" colspan="1">Tax offences(11); Ch11(5)</td>
+<td align="left" rowspan="1" colspan="1">18,466</td>
+<td align="left" rowspan="1" colspan="1">1903–1948; 1949–1962; 1963–1973</td>
+<td align="left" rowspan="1" colspan="1">Male</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Violent resistance</td>
+<td align="left" rowspan="1" colspan="1">6</td>
+<td align="left" rowspan="1" colspan="1">68,959</td>
+<td align="left" rowspan="1" colspan="1">Ch17(6)</td>
+<td align="left" rowspan="1" colspan="1">29,827</td>
+<td align="left" rowspan="1" colspan="1">1963–1973; 1974–1987</td>
+<td align="left" rowspan="1" colspan="1">Male</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Severe traffic violations</td>
+<td align="left" rowspan="1" colspan="1">7</td>
+<td align="left" rowspan="1" colspan="1">335,278</td>
+<td align="left" rowspan="1" colspan="1">Road Traffic Act(5)</td>
+<td align="left" rowspan="1" colspan="1">92,879</td>
+<td align="left" rowspan="1" colspan="1">1903–1948; 1949–1962; 1963–1973</td>
+<td align="left" rowspan="1" colspan="1">Male</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Threats/Violence, unknown victim</td>
+<td align="left" rowspan="1" colspan="1">11</td>
+<td align="left" rowspan="1" colspan="1">80,774</td>
+<td align="left" rowspan="1" colspan="1">Ch3(9)</td>
+<td align="left" rowspan="1" colspan="1">49,319</td>
+<td align="left" rowspan="1" colspan="1">1963–1973; 1974–1987</td>
+<td align="left" rowspan="1" colspan="1">Male</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Sexual molestation of children/Sexual molestation</td>
+<td align="left" rowspan="1" colspan="1">14</td>
+<td align="left" rowspan="1" colspan="1">14,121</td>
+<td align="left" rowspan="1" colspan="1">Ch6(13)</td>
+<td align="left" rowspan="1" colspan="1">9,675</td>
+<td align="left" rowspan="1" colspan="1">1903–1948; 1949–1962</td>
+<td align="left" rowspan="1" colspan="1">Male</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Vandalism/Graffiti</td>
+<td align="left" rowspan="1" colspan="1">5</td>
+<td align="left" rowspan="1" colspan="1">14,726</td>
+<td align="left" rowspan="1" colspan="1">Ch12(4)</td>
+<td align="left" rowspan="1" colspan="1">8,834</td>
+<td align="left" rowspan="1" colspan="1">1974–1987</td>
+<td align="left" rowspan="1" colspan="1">Male</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Environmental crime</td>
+<td align="left" rowspan="1" colspan="1">12</td>
+<td align="left" rowspan="1" colspan="1">2,113</td>
+<td align="left" rowspan="1" colspan="1">Environmental Code(12)</td>
+<td align="left" rowspan="1" colspan="1">1,533</td>
+<td align="left" rowspan="1" colspan="1">1903–1948; 1949–1962</td>
+<td align="left" rowspan="1" colspan="1">Male</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Alcohol</td>
+<td align="left" rowspan="1" colspan="1">7</td>
+<td align="left" rowspan="1" colspan="1">7,473</td>
+<td align="left" rowspan="1" colspan="1">Alcohol Act(6)</td>
+<td align="left" rowspan="1" colspan="1">5,842</td>
+<td align="left" rowspan="1" colspan="1">1949–1962</td>
+<td align="left" rowspan="1" colspan="1">Male</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mugging</td>
+<td align="left" rowspan="1" colspan="1">7</td>
+<td align="left" rowspan="1" colspan="1">10,808</td>
+<td align="left" rowspan="1" colspan="1">Ch8(7)</td>
+<td align="left" rowspan="1" colspan="1">6,646</td>
+<td align="left" rowspan="1" colspan="1">1974–1987</td>
+<td align="left" rowspan="1" colspan="1">Male</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Danger to another</td>
+<td align="left" rowspan="1" colspan="1">8</td>
+<td align="left" rowspan="1" colspan="1">14,280</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">11,802</td>
+<td align="left" rowspan="1" colspan="1">1974–1987</td>
+<td align="left" rowspan="1" colspan="1">Male</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Car/Boat theft</td>
+<td align="left" rowspan="1" colspan="1">3</td>
+<td align="left" rowspan="1" colspan="1">3,065</td>
+<td align="left" rowspan="1" colspan="1">Ch8(3)<xref ref-type="table-fn" rid="nt101">1</xref></td>
+<td align="left" rowspan="1" colspan="1">1,804</td>
+<td align="left" rowspan="1" colspan="1">1963–1973; 1974–1987</td>
+<td align="left" rowspan="1" colspan="1">Male</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Robbery</td>
+<td align="left" rowspan="1" colspan="1">10</td>
+<td align="left" rowspan="1" colspan="1">5,707</td>
+<td align="left" rowspan="1" colspan="1">Ch8(10)</td>
+<td align="left" rowspan="1" colspan="1">3,889</td>
+<td align="left" rowspan="1" colspan="1">1963–1973; 1974–1987</td>
+<td align="left" rowspan="1" colspan="1">Male</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Migration</td>
+<td align="left" rowspan="1" colspan="1">7</td>
+<td align="left" rowspan="1" colspan="1">3,631</td>
+<td align="left" rowspan="1" colspan="1">Aliens act(4)</td>
+<td align="left" rowspan="1" colspan="1">3,152</td>
+<td align="left" rowspan="1" colspan="1">1963–1973; 1974–1987</td>
+<td align="left" rowspan="1" colspan="1">Female</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Arson</td>
+<td align="left" rowspan="1" colspan="1">4</td>
+<td align="left" rowspan="1" colspan="1">9,194</td>
+<td align="left" rowspan="1" colspan="1">Ch13(3)</td>
+<td align="left" rowspan="1" colspan="1">7,936</td>
+<td align="left" rowspan="1" colspan="1">1903–1948</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Computer crimes</td>
+<td align="left" rowspan="1" colspan="1">3</td>
+<td align="left" rowspan="1" colspan="1">2,212</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">1,887</td>
+<td align="left" rowspan="1" colspan="1">1903–1948; 1949–1962</td>
+<td align="left" rowspan="1" colspan="1">Male</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Work environment</td>
+<td align="left" rowspan="1" colspan="1">5</td>
+<td align="left" rowspan="1" colspan="1">857</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">751</td>
+<td align="left" rowspan="1" colspan="1">1903–1948; 1949–1962</td>
+<td align="left" rowspan="1" colspan="1">Male</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Sex-buyers</td>
+<td align="left" rowspan="1" colspan="1">4</td>
+<td align="left" rowspan="1" colspan="1">861</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">654</td>
+<td align="left" rowspan="1" colspan="1">1949–1962; 1963–1973</td>
+<td align="left" rowspan="1" colspan="1">Male</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Murder</td>
+<td align="left" rowspan="1" colspan="1">5</td>
+<td align="left" rowspan="1" colspan="1">809</td>
+<td align="left" rowspan="1" colspan="1">Ch3(5)</td>
+<td align="left" rowspan="1" colspan="1">735</td>
+<td align="left" rowspan="1" colspan="1">1974–1987</td>
+<td align="left" rowspan="1" colspan="1">Male</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Theft military firearms</td>
+<td align="left" rowspan="1" colspan="1">4</td>
+<td align="left" rowspan="1" colspan="1">561</td>
+<td align="left" rowspan="1" colspan="1">Ch8(4) <xref ref-type="table-fn" rid="nt101">1</xref></td>
+<td align="left" rowspan="1" colspan="1">464</td>
+<td align="left" rowspan="1" colspan="1">1963–1973; 1974–1987</td>
+<td align="left" rowspan="1" colspan="1">Male</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Robbery, no firearms</td>
+<td align="left" rowspan="1" colspan="1">3</td>
+<td align="left" rowspan="1" colspan="1">4,094</td>
+<td align="left" rowspan="1" colspan="1">Ch8(3) <xref ref-type="table-fn" rid="nt101">1</xref></td>
+<td align="left" rowspan="1" colspan="1">3,064</td>
+<td align="left" rowspan="1" colspan="1">1963–1973; 1974–1987</td>
+<td align="left" rowspan="1" colspan="1">Male</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Assault against children</td>
+<td align="left" rowspan="1" colspan="1">4</td>
+<td align="left" rowspan="1" colspan="1">785</td>
+<td align="left" rowspan="1" colspan="1">Ch3(4) <xref ref-type="table-fn" rid="nt101">1</xref></td>
+<td align="left" rowspan="1" colspan="1">713</td>
+<td align="left" rowspan="1" colspan="1">1949–1962; 1963–1973</td>
+<td align="left" rowspan="1" colspan="1">Male</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Theft w/o breaking</td>
+<td align="left" rowspan="1" colspan="1">3</td>
+<td align="left" rowspan="1" colspan="1">3,765</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">3,223</td>
+<td align="left" rowspan="1" colspan="1">1963–1973; 1974–1987</td>
+<td align="left" rowspan="1" colspan="1">Male</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Maritime crimes</td>
+<td align="left" rowspan="1" colspan="1">2</td>
+<td align="left" rowspan="1" colspan="1">77</td>
+<td align="left" rowspan="1" colspan="1">Road Traffic Act(2) <xref ref-type="table-fn" rid="nt101">1</xref></td>
+<td align="left" rowspan="1" colspan="1">64</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">Male</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Theft w/o breaking hospital/church</td>
+<td align="left" rowspan="1" colspan="1">2</td>
+<td align="left" rowspan="1" colspan="1">1,770</td>
+<td align="left" rowspan="1" colspan="1">Ch8(2) <xref ref-type="table-fn" rid="nt101">1</xref></td>
+<td align="left" rowspan="1" colspan="1">1,283</td>
+<td align="left" rowspan="1" colspan="1">1949–1962; 1963–1973</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt101"><label>1</label><p>Not statistically significant as the cluster is too small with respect to the total number of crimes with that attribute.</p></fn></table-wrap-foot></table-wrap>
+<p>The clusters detected with our network-based method arrange types of crimes in a partition that shows seven clusters characterized by an over-expression of a unique chapter of the penal code and four clusters with an over-expression of more than two distinct chapters. Some of the other twelve clusters show over-expression of Chapters 3 (Crimes against life and health) and 8 (Theft, robbery, and other crimes of stealing) and of traffic violations, whereas only five clusters are not characterized by over-expression of at least one chapter of the penal code. The network of clusters shown in <xref ref-type="fig" rid="pone-0064703-g003">Fig. 3</xref> allows us to discuss some relevant connections between clusters. A tight connection is observed between the cluster <italic>Threats/Assaults, known victim</italic> and <italic>Sexual molestation of children/Sexual molestation</italic>, indicating the presence of a pattern that relates types of crimes of assault in which the suspect is acquainted with the victim to sexual offenses against underage victims. <italic>Cluster Threats/Assaults, known victim</italic> is also strongly connected to the cluster <italic>Violent resistance</italic>, which is the cluster of violence against public servants, and cluster <italic>Violent resistance</italic>, in turn, is connected with cluster <italic>Threats/Violence, unknown victim</italic>, which includes types of crimes of assault in which the suspect is not acquainted with the victim. The loop is finally closed by the connection between cluster <italic>Threats/Violence</italic>, <italic>unknown victim</italic>, and the cluster <italic>Threats/Assaults, known victim</italic>. An expected connection is observed between the cluster <italic>Fraud/Forgery</italic> and the cluster <italic>White-collar crime</italic>. Another interesting loop cycle is the one that involves the clusters <italic>Drugs/Weapons</italic>, <italic>Theft</italic> and <italic>Severe traffic violations</italic>.</p>
+</sec><sec id="s3b">
+<title>Generalist and Specialist Behavior</title>
+<p>In this section, we discuss the generalist behavior of suspects belonging to different categories of gender and year of birth. The generalist behavior is investigated by comparing the properties of the real system with the properties of a system obtained by randomly shuffling the original database (pure generalist hypothesis). Specifically, for each category of suspects, we count the total number of clusters of types of crimes found in the FDR network that each suspect explores during their criminal activity, both for real and shuffled data. Then we count the fraction of suspects who explore only one cluster, the fraction of suspects who explore 2 clusters, and so on. People who were suspected of only one type of crime are forced to explore only one cluster both in the real and the shuffled database. Therefore this group of suspects is removed from the present analysis. The suspects explore, on average, fewer clusters than are observed for pure generalists (shuffled data), and this result is stable across the different categories of suspects. In <xref ref-type="table" rid="pone-0064703-t002">Table 2</xref>, we report the mean value and the standard deviation of the number of explored clusters of types of crimes both for real data (second and third column) and for the pure generalist simulation (fourth and fifth column). Results for generalists average over 1,000 independent shuffled replicas of the empirical database. The mean value of real data is always significantly less than the mean value of simulated data, indicating the presence of a certain degree of specialization. For all reported cases the <italic>p</italic>-value associated with a null hypothesis that both empirical and simulated mean values come from the same distribution is always less than 10<sup>−16</sup> when tested with a Welch's <italic>t</italic>-test.</p>
+<table-wrap id="pone-0064703-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0064703.t002</object-id><label>Table 2</label><caption>
+<title>Mean value of the number of visited clusters of crime types.</title>
+</caption><alternatives><graphic id="pone-0064703-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0064703.t002" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Category</td>
+<td align="left" rowspan="1" colspan="1">mean</td>
+<td align="left" rowspan="1" colspan="1">std</td>
+<td align="left" rowspan="1" colspan="1">mean</td>
+<td align="left" rowspan="1" colspan="1">std</td>
+<td align="left" rowspan="1" colspan="1">P(1)</td>
+<td align="left" rowspan="1" colspan="1">P(1)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">(data)</td>
+<td align="left" rowspan="1" colspan="1">(data)</td>
+<td align="left" rowspan="1" colspan="1">(simul.)</td>
+<td align="left" rowspan="1" colspan="1">(simul.)</td>
+<td align="left" rowspan="1" colspan="1">(data)</td>
+<td align="left" rowspan="1" colspan="1">(simul.)</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">All</td>
+<td align="left" rowspan="1" colspan="1">2.68</td>
+<td align="left" rowspan="1" colspan="1">1.87</td>
+<td align="left" rowspan="1" colspan="1">3.73</td>
+<td align="left" rowspan="1" colspan="1">2.55</td>
+<td align="left" rowspan="1" colspan="1">0.264</td>
+<td align="left" rowspan="1" colspan="1">0.06</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">1903–1948</td>
+<td align="left" rowspan="1" colspan="1">2.07</td>
+<td align="left" rowspan="1" colspan="1">1.31</td>
+<td align="left" rowspan="1" colspan="1">3.13</td>
+<td align="left" rowspan="1" colspan="1">1.99</td>
+<td align="left" rowspan="1" colspan="1">0.385</td>
+<td align="left" rowspan="1" colspan="1">0.0746</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">1949–1962</td>
+<td align="left" rowspan="1" colspan="1">2.64</td>
+<td align="left" rowspan="1" colspan="1">1.83</td>
+<td align="left" rowspan="1" colspan="1">3.92</td>
+<td align="left" rowspan="1" colspan="1">2.75</td>
+<td align="left" rowspan="1" colspan="1">0.269</td>
+<td align="left" rowspan="1" colspan="1">0.0555</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">1963–1973</td>
+<td align="left" rowspan="1" colspan="1">2.83</td>
+<td align="left" rowspan="1" colspan="1">1.96</td>
+<td align="left" rowspan="1" colspan="1">3.92</td>
+<td align="left" rowspan="1" colspan="1">2.72</td>
+<td align="left" rowspan="1" colspan="1">0.234</td>
+<td align="left" rowspan="1" colspan="1">0.0562</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">1974–1987</td>
+<td align="left" rowspan="1" colspan="1">3.01</td>
+<td align="left" rowspan="1" colspan="1">2.05</td>
+<td align="left" rowspan="1" colspan="1">3.78</td>
+<td align="left" rowspan="1" colspan="1">2.47</td>
+<td align="left" rowspan="1" colspan="1">0.2</td>
+<td align="left" rowspan="1" colspan="1">0.0576</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Male</td>
+<td align="left" rowspan="1" colspan="1">2.83</td>
+<td align="left" rowspan="1" colspan="1">1.95</td>
+<td align="left" rowspan="1" colspan="1">3.88</td>
+<td align="left" rowspan="1" colspan="1">2.63</td>
+<td align="left" rowspan="1" colspan="1">0.232</td>
+<td align="left" rowspan="1" colspan="1">0.0554</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Female</td>
+<td align="left" rowspan="1" colspan="1">2.07</td>
+<td align="left" rowspan="1" colspan="1">1.34</td>
+<td align="left" rowspan="1" colspan="1">3.12</td>
+<td align="left" rowspan="1" colspan="1">2.09</td>
+<td align="left" rowspan="1" colspan="1">0.391</td>
+<td align="left" rowspan="1" colspan="1">0.0784</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p>Our results, summarized in <xref ref-type="table" rid="pone-0064703-t002">Table 2</xref>, show that specialization is more pronounced in women than in men both in absolute and relative terms with respect to the pure generalist case. In fact, the relative decrease in the mean value of the number of explored clusters with respect to the one observed for the pure generalist case is 27% for men and 34% for women. Specialization is also more pronounced in older than in younger suspects, again both in absolute and relative terms. In fact, the relative decrease in the mean value of the category of youngest suspects (1974–1987) is 20%, whereas it is 34% for the oldest suspects (1903–1948).</p>
+<p>In <xref ref-type="table" rid="pone-0064703-t002">Table 2</xref> we also report for real and simulated data the fraction of suspects who explored one cluster P(1). This subset of suspects can be considered as the subset of pure specialists limiting their criminal action to only types of crimes belonging to a single cluster. The fraction of pure specialists in real data is significantly higher than the amount expected in the pure generalist case. The standard deviation of P(1), over the 1,000 independent shufflings of the database, in the generalist case is always less than 0.0014. Results show that real data present a significant number of pure specialists. It is worth remembering that this fraction does not include individuals suspected of only one type of crime. Again, <xref ref-type="table" rid="pone-0064703-t002">Table 2</xref> shows that women have a higher proportion of pure specialists than men, and that the degree of pure specialization increases with age.</p>
+</sec><sec id="s3c">
+<title>Conclusions</title>
+<p>The study of criminal specialization is complicated by the fact that classifications of crime types are to a considerable extent ad hoc derivations from the penal code rather than empirically based on criminals’ behavior. We used concepts and tools from network science to empirically detect clusters of types of crimes and relationships among them. Several empirically derived indicators support the conclusion that there is a core of clusters that connect “traditional” types of crimes, including violent crimes, drug related crimes, thefts, burglaries, and frauds of different types. Close to this core, we also find financial crime, traffic violations, and organized robbery. On the other hand, the periphery of the crime types network contains a heterogeneous set of types of crimes, including “modern” crimes such as environmental violations, but also sex crimes. In parallel, we observe a non-trivial pattern of specialization across time and gender. In general, women are implicated in types of crimes classified in fewer clusters, and tend to be more specialized than men. We also find that older persons are the most specialized suspects. This can be due to three different or combined factors: (i) suspects tend to specialize over time; (ii) there is a group of specialized individuals who remain in crime, while the generalists distance themselves from criminal activity; and (iii) there is a cohort effect such that the younger generation tends to consist of generalists while the older generation consists of specialists.</p>
+<p>The spectral analysis of the correlation matrix of types of crimes supports the idea that there is a limited number of crime specialists and only minor specialization in a few select types of offenses <xref ref-type="bibr" rid="pone.0064703-Loeber1">[1]</xref>. The analysis of clusters of types of crimes in the FDR network shows that types of crimes of a similar nature are grouped in large clusters. This observation suggests that some suspects tend to concentrate their criminal activity into the major crime categories <xref ref-type="bibr" rid="pone.0064703-Blumstein1">[30]</xref> obtained from the unsupervised classification based on network theory. However, we also observed small groups of quite homogeneous types of crimes that indicate the presence of specialization at the level of minor categories of types of crimes as well. Prominent examples are the cluster <italic>Sexual molestation of children/Sexual molestation</italic>, <italic>Environmental crime</italic>, <italic>Murder,</italic> and <italic>Robbery</italic>.</p>
+<p>The results reported in <xref ref-type="table" rid="pone-0064703-t002">Table 2</xref> also indicate that the little specialization that still exists occurs after adolescence and increases with criminal career progression <xref ref-type="bibr" rid="pone.0064703-Blumstein1">[30]</xref>, <xref ref-type="bibr" rid="pone.0064703-Piquero3">[31]</xref>. More specific results about the relation between criminal-career progression and specialization are reported in <xref ref-type="supplementary-material" rid="pone.0064703.s003">Fig. S3</xref>. We also observe that specialization in women is higher than in men. Our results also suggest that age-group specialization is related to the category of crime. Indeed, in <xref ref-type="table" rid="pone-0064703-t001">Table 1</xref> one may observe that some clusters, namely <italic>Drugs/Weapons</italic>, <italic>Vandalism/Graffiti</italic>, <italic>Mugging</italic>, and <italic>Murder</italic> present a statistically significant over-expression of young people among the suspects of these types of crimes. At the other extreme, the cluster <italic>Arson</italic> presents an overrepresentation of old people among the suspects. Specialization also seems to be related to the type of victim, like underage victims in cluster <italic>Sexual molestation of children/Sexual molestation</italic>, to the use of firearms (<italic>Drugs/Weapons</italic> versus <italic>Robbery</italic> and <italic>Robbery, no firearms</italic>), and to the level of organization required (<italic>Robbery</italic> of banks, post offices or security vans).</p>
+<p>In conclusion, the present analysis contributes to the understanding of the interrelationships among types of crimes, allows for an evaluation of the degree of generalism and specialism of suspects present in the database, and reveals different types of specialization that can be characterized by the attributes of suspects and victims, by the means used, and by the types of crimes. Some criminological theories imply specialization and others do not. Our results show specialization for certain offenses and certain types of offenders but not for others. We suggest that different types of offenses and offenders can be modeled and explained by different theoretical approaches depending on the degree of specialization associated with the criminal activity of interest.</p>
+</sec></sec><sec id="s4">
+<title>Supporting Information</title>
+<supplementary-material id="pone.0064703.s001" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0064703.s001" position="float" xlink:type="simple"><label>Figure S1</label><caption>
+<p>Heterogeneity of types of crimes and suspects. The top panel describes the heterogeneity of types of crimes in terms of the number of different suspects per type of crime. Type of crimes are ordered in decreasing order of number of suspects per type of crime. The bottom panel describes the heterogeneity of suspects, as the number of suspects (vertical axis) alleged of a number of different types of crimes (horizontal axis).</p>
+<p>(TIFF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0064703.s002" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0064703.s002" position="float" xlink:type="simple"><label>Figure S2</label><caption>
+<p>Comparison of the eigenvalues of the correlation matrix of types of crimes obtained by including all suspects (black circles) or suspects suspected of two or more crime types (red circles). The y-axis gives the value of the eigenvalue whereas the x-axis gives its rank.</p>
+<p>(TIFF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0064703.s003" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0064703.s003" position="float" xlink:type="simple"><label>Figure S3</label><caption>
+<p>Criminal specialization as a function of criminal career progression. As a proxy of the criminal career progression, we consider the number of types of crimes alleged to each suspect (t in the horizontal axis) in the past. The degree of specialization is calculated as the fraction of suspects, at a level t of career progression, who explore, when suspected of crime type t+1, the same cluster they explored through type of crime t (P[C(t+1) = C(t)] in the vertical axis). The size and internal pattern of circles that have been used to display data points in the figure, change from left to right, in order to provide a guide to the eye for the decreasing statistics (number of suspects) that has been used to calculate the probability at increasing values of t.</p>
+<p>(TIFF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0064703.s004" mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" xlink:href="info:doi/10.1371/journal.pone.0064703.s004" position="float" xlink:type="simple"><label>Table S1</label><caption>
+<p>List of validated links in the FDR crime types network. The validation information is provided for each link and for each subset of suspects contributing to the validation of each link.</p>
+<p>(XLSX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0064703.s005" mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" xlink:href="info:doi/10.1371/journal.pone.0064703.s005" position="float" xlink:type="simple"><label>Table S2</label><caption>
+<p>List of types of crimes belonging to each cluster in the network.</p>
+<p>(XLSX)</p>
+</caption></supplementary-material></sec></body>
+<back><ref-list>
+<title>References</title>
+<ref id="pone.0064703-Loeber1"><label>1</label>
+<mixed-citation publication-type="other" xlink:type="simple">Loeber R, Farrington DP, eds. (1998) Serious &amp; Violent Juvenile Offenders. Risk Factors and Successful Interventions, Thousand Oaks: Sage.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Tracy1"><label>2</label>
+<mixed-citation publication-type="other" xlink:type="simple">Tracy PE, Kempf-Leonard K (1996) Continuity and Discontinuity in Criminal Careers. New York: Plenum Press.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Osgood1"><label>3</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Osgood</surname><given-names>DW</given-names></name>, <name name-style="western"><surname>Schreck</surname><given-names>CJ</given-names></name> (<year>2007</year>) <article-title>A new method for studying the extent, stability, and predictors of individual specialization in violence</article-title>. <source>Criminology</source> <volume>45</volume>: <fpage>273</fpage>–<lpage>312</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Piquero1"><label>4</label>
+<mixed-citation publication-type="other" xlink:type="simple">Piquero AR, Farrington DP, Blumstein A (2007) Key Issues in Criminal Career Research. Cambridge: Cambridge University Press.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Bursik1"><label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bursik</surname><given-names>RJ</given-names><suffix>Jr</suffix></name> (<year>1980</year>) <article-title>The Dynamics of Specialization in Juvenile Offenses</article-title>. <source>Social Forces</source> <volume>58</volume>: <fpage>851</fpage>–<lpage>864</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Kempf1"><label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kempf</surname><given-names>K</given-names></name> (<year>1987</year>) <article-title>Specialization and the criminal career</article-title>. <source>Criminology</source> <volume>25</volume>: <fpage>399</fpage>–<lpage>420</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Piquero2"><label>7</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Piquero</surname><given-names>A</given-names></name> (<year>2000</year>) <article-title>Frequency, Specialization, and Violence in Offending Careers</article-title>. <source>J. of Research in Crime and Delinquency</source> <volume>37</volume>: <fpage>392</fpage>–<lpage>418</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Gottfredson1"><label>8</label>
+<mixed-citation publication-type="other" xlink:type="simple">Gottfredson MR, Hirschi T (1990) General Theory of Crime. Stanford University Press.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Hirschi1"><label>9</label>
+<mixed-citation publication-type="other" xlink:type="simple">Hirschi T (1969) Causes of Delinquency, University of California Press.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Kornhauser1"><label>10</label>
+<mixed-citation publication-type="other" xlink:type="simple">Kornhauser RR (1978) Social Sources of Delinquency - An Appraisal of Analytic Models, University of Chicago Press.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Damasio1"><label>11</label>
+<mixed-citation publication-type="other" xlink:type="simple">Damasio AR (1995) Descartes’ Error: Emotion, Reason, and Human Brain, New York: Avon Books.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Nylen1"><label>12</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nylen</surname><given-names>TC</given-names></name> (<year>1999</year>) <article-title>Frontal Lobe Function: Mr</article-title>. <source>Phineas Gage’s Famous Injury, J. of Neuropsychiatry and Clinical Neurosciences</source> <volume>11(2)</volume>: <fpage>280</fpage>–<lpage>281</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Virkkunen1"><label>13</label>
+<mixed-citation publication-type="other" xlink:type="simple">Virkkunen M, Linnoila M (1993) Brain serotonin, Type II alcoholism and impulsive violence. J. of Studies on Alcohol, Suppl 11: 163–169.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Alm1"><label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Alm</surname><given-names>PO</given-names></name>, <name name-style="western"><surname>Af Klinteberg</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Humble</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Leppert</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Sörensen</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>1996</year>) <article-title>Criminality and psychopathy as related to thyroid activity in former juvenile delinquents</article-title>. <source>Acta Psychiatrica Scandinavica</source> <volume>94</volume>: <fpage>112</fpage>–<lpage>117</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Bowes1"><label>15</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bowes</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Arseneault</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Maughan</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Taylor</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Caspi</surname><given-names>A</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>School, Neighborhood, and Family Factors Are Associated With Children's Bullying Involvement: A Nationally Representative Longitudinal Study. J. of the Am</article-title>. <source>Academy of Child &amp; Adolescent Psychiatry</source> <volume>48</volume>: <fpage>545</fpage>–<lpage>553</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Wolfgang1"><label>16</label>
+<mixed-citation publication-type="other" xlink:type="simple">Wolfgang ME, Ferracuti F (1967) The subculture of violence: Toward an integrated theory of criminality, Tavistock, London.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Sutherland1"><label>17</label>
+<mixed-citation publication-type="other" xlink:type="simple">Sutherland EH (1949) White Collar Crime: The Uncut Version, New Heaven Yale University Press.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Sutherland2"><label>18</label>
+<mixed-citation publication-type="other" xlink:type="simple">Sutherland EH, Cressey DR, Luckenbill DF (1992) Principles of criminology. Rowman &amp; Littlefield.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Cloward1"><label>19</label>
+<mixed-citation publication-type="other" xlink:type="simple">Cloward RA, Ohlin LE (1960) Delinquency and opportunity, Free Press Corporation.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Foucault1"><label>20</label>
+<mixed-citation publication-type="other" xlink:type="simple">Foucault M (1975) Surveiller et punir: Naissance de la prison, Paris: Gallimard.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Newman1"><label>21</label>
+<mixed-citation publication-type="other" xlink:type="simple">Newman M (2010) Networks: An Introduction, Oxford: Oxford University Press.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Sarnecki1"><label>22</label>
+<mixed-citation publication-type="other" xlink:type="simple">Sarnecki J (2001) Delinquent networks, Studies in Criminology, Cambridge: Cambridge University Press.</mixed-citation>
+</ref>
+<ref id="pone.0064703-vonDijk1"><label>23</label>
+<mixed-citation publication-type="other" xlink:type="simple">von Dijk J (2008) The World of Crime: Breaking the Silence on Problems of Security, Justice and Development Across the World. Sage Publications, Inc.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Laloux1"><label>24</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Laloux</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Cizeau</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Bouchaud</surname><given-names>J-P</given-names></name>, <name name-style="western"><surname>Potters</surname><given-names>M</given-names></name> (<year>1999</year>) <article-title>Noise dressing of financial correlation matrices</article-title>. <source>Phys Revi Lett</source> <volume>83</volume>: <fpage>1467</fpage>–<lpage>1470</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Plerou1"><label>25</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Plerou</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Gopikrishnan</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Rosenow</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Amaral</surname><given-names>LAN</given-names></name>, <name name-style="western"><surname>Stanley</surname><given-names>HE</given-names></name> (<year>1999</year>) <article-title>Universal and nonuniversal properties of cross correlations in financial time series</article-title>. <source>Phys Rev Lett</source> <volume>83</volume>: <fpage>1471</fpage>–<lpage>1474</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Rosvall1"><label>26</label>
+<mixed-citation publication-type="other" xlink:type="simple">Rosvall M, Bergstrom CT (2008) Maps of random walks on complex networks reveal community structure. Proc Natl Acad Sci USA 105, 1118–1123.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Fortunato1"><label>27</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fortunato</surname><given-names>S</given-names></name> (<year>2010</year>) <article-title>Community detection in graphs</article-title>. <source>Physics Reports</source> <volume>486</volume>: <fpage>75</fpage>–<lpage>174</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Tumminello1"><label>28</label>
+<mixed-citation publication-type="other" xlink:type="simple">Tumminello M, Miccichè S, Lillo F, Piilo J, Mantegna RN (2011) Statistically validated networks in bipartite complex systems, PLoS ONE 6 (3) e17994</mixed-citation>
+</ref>
+<ref id="pone.0064703-Tumminello2"><label>29</label>
+<mixed-citation publication-type="other" xlink:type="simple">Tumminello M, <etal>et al</etal>.. (2011) Community characterization of heterogeneous complex systems. J Stat Mech-Theory Exp P01019.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Blumstein1"><label>30</label>
+<mixed-citation publication-type="other" xlink:type="simple">Blumstein A, Cohen J, Roth JA, Visher CA, eds. (1986) Criminal Careers and ‘Career Criminals’ Volume 1. Washington DC: National Academy Press.</mixed-citation>
+</ref>
+<ref id="pone.0064703-Piquero3"><label>31</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Piquero</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Patern Oster</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Mazerolle</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Brame</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Dean</surname><given-names>CW</given-names></name> (<year>1999</year>) <article-title>Onset Age and Offense Specialization</article-title>. <source>J. of Research in Crime and Delinquency</source> <volume>36</volume>: <fpage>275</fpage>–<lpage>299</lpage>.</mixed-citation>
+</ref>
+</ref-list></back>
+</article>

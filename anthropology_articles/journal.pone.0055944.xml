@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="publisher-id">PONE-D-12-26964</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0055944</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Mathematics</subject>
+          <subj-group>
+            <subject>Statistics</subject>
+            <subj-group>
+              <subject>Statistical methods</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Science policy</subject>
+          <subj-group>
+            <subject>Science education</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Social and behavioral sciences</subject>
+          <subj-group>
+            <subject>Anthropology</subject>
+            <subj-group>
+              <subject>Social anthropology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Psychology</subject>
+            <subj-group>
+              <subject>Social psychology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Science education</subject>
+          </subj-group>
+          <subj-group>
+            <subject>Sociology</subject>
+            <subj-group>
+              <subject>Computational sociology</subject>
+              <subject>Social networks</subject>
+              <subject>Social stratification</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Science Policy</subject>
+          <subject>Mathematics</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Spread of Academic Success in a High School Social Network</article-title>
+        <alt-title alt-title-type="running-head">Spread of Academic Success in High School Network</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Blansky</surname>
+            <given-names>Deanna</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Kavanaugh</surname>
+            <given-names>Christina</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Boothroyd</surname>
+            <given-names>Cara</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Benson</surname>
+            <given-names>Brianna</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Gallagher</surname>
+            <given-names>Julie</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Endress</surname>
+            <given-names>John</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Sayama</surname>
+            <given-names>Hiroki</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Maine-Endwell High School, Endwell, New York, United States of America</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Binghamton University, State University of New York, Binghamton, New York, United States of America</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Gómez</surname>
+            <given-names>Sergio</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>Universitat Rovira i Virgili, Spain</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">sayama@binghamton.edu</email></corresp>
+        <fn fn-type="conflict">
+          <p>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: DB CK CB BB JG JE HS. Performed the experiments: DB CK CB BB JG JE HS. Analyzed the data: DB CK CB BB HS. Contributed reagents/materials/analysis tools: JE HS. Wrote the paper: HS.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>13</day>
+        <month>2</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>8</volume>
+      <issue>2</issue>
+      <elocation-id>e55944</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>3</day>
+          <month>9</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>7</day>
+          <month>1</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Blansky et al</copyright-holder>
+        <license xlink:type="simple">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Application of social network analysis to education has revealed how social network positions of K-12 students correlate with their behavior and academic achievements. However, no study has been conducted on how their social network influences their academic progress over time. Here we investigated correlations between high school students’ academic progress over one year and the social environment that surrounds them in their friendship network. We found that students whose friends’ average GPA (Grade Point Average) was greater (or less) than their own had a higher tendency toward increasing (or decreasing) their academic ranking over time, indicating social contagion of academic success taking place in their social network.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>This material is based upon work supported by the US National Science Foundation under Grant No. 1027752. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="4"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Application of social network analysis <xref ref-type="bibr" rid="pone.0055944-Wasserman1">[1]</xref> to educational systems is a promising yet unexplored research area. A small number of studies investigated how the positions of K-12 students in their social network are correlated with their behavior and academic achievements. Farmer and Rodkin’s work <xref ref-type="bibr" rid="pone.0055944-Farmer1">[2]</xref> was among the earliest of its kind, in which they studied correlations between social network centralities of elementary school children and their behavioral traits, such as cooperativeness, leadership, popularity, athleticism and aggressiveness. More recently, Bishop <xref ref-type="bibr" rid="pone.0055944-Bishop1">[3]</xref> found, through statistical analysis of the Add Health data <xref ref-type="bibr" rid="pone.0055944-Add1">[4]</xref>, that students in positions with higher centrality had significantly better grades than those with lower centrality. Similar correlations between academic achievements and centrality or popularity in social networks were also found in different data sets <xref ref-type="bibr" rid="pone.0055944-Fryer1">[5]</xref>, <xref ref-type="bibr" rid="pone.0055944-Boothroyd1">[6]</xref>, though it was also reported that the correlations depended significantly on ethnic and other social contexts <xref ref-type="bibr" rid="pone.0055944-Fryer1">[5]</xref>.</p>
+      <p>These earlier findings naturally leads one to ask another question that may be more relevant to educators and students themselves: How does a student’s social network environment influence his or her academic progress <italic>over time</italic>? Unfortunately, none of the studies mentioned above provides a direct clue to this question, because their statistical analyses were all applied to static snapshots of students’ social networks and their grades, without any temporal changes taken into consideration.</p>
+      <p>To gain insight into the aforementioned question, we investigated, for the first time, the correlations between high school students’ academic progress over one year and the social environment that surrounds them in their friendship network. The students’ social network was reconstructed based on the results of an electronic survey asking them about their friendships, while the data about their academic progresses were obtained directly from their school’s official academic records. Our results showed that students whose friends’ average GPA (Grade Point Average) was greater (or less) than their own had a higher tendency toward increasing (or decreasing) their academic ranking over time, indicating social contagion of academic success taking place in their social network.</p>
+    </sec>
+    <sec id="s2" sec-type="methods">
+      <title>Methods</title>
+      <sec id="s2a">
+        <title>Ethics Statement</title>
+        <p>The study was approved by the Binghamton University Institutional Review Board with permission from the Maine-Endwell Central School District. All data were obtained with written informed consent reviewed by the Binghamton University Institutional Review Board (IRB). According to the research protocol reviewed and approved by the Binghamton University IRB, the researchers are not allowed to share the data with third parties outside the research team. Contact the corresponding author for more details.</p>
+        <p>We reconstructed a social network of the eleventh grade class at Maine-Endwell High School, Endwell, NY, USA, by developing an online survey and administering it on January 11, 2011. We received 160 responses (response rate: 92%), two of which were incomplete and therefore excluded from the statistical analysis (<italic>N = </italic>158). In the survey, the students were given a list of all the other students taking the survey, and asked to decide whether each of them were a best friend, a friend, an acquaintance, someone they did not know, or if they were related. The first three categories were used for social network reconstruction and analysis. Those self-reported friendships were represented as directed links in the reconstructed network.</p>
+        <p>The survey data were supplemented by data from the School’s student record database that contained information about GPA (at two time points: January 2011 and January 2012), attendance, disciplinary action, and gender for each student. All the data were anonymized and stored using randomized ID’s so that no personally identifiable information was kept in our records.</p>
+        <p>The GPA data were used to measure each student’s academic progress over the year. The original GPA distributions were highly skewed negatively, and there was an overall trend of GPAs moving upward over the year. We therefore transformed the raw GPA scores into academic rankings within the class. Rankings were calculated by subtracting the student’s position in the class from the total number of students, so that greater ranking values mean higher academic ranks. We then characterized the social environment surrounding a student by calculating the difference in ranking between each student’s self-reported neighbors’ average GPA and his/her own GPA (<bold><italic>x<sub>i</sub></italic></bold>, where <bold><italic>i</italic></bold> is the type of the network: acquaintance, friend, or best friend). The student’s academic progress (<bold><italic>y</italic></bold>) was characterized by the increase or decrease of his/her academic ranking in the period spanning January 2011-January 2012.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <p><xref ref-type="fig" rid="pone-0055944-g001">Figure 1</xref> shows the reconstructed social network of students and its degree distribution at three different levels (A: acquaintance and above, B: friend and above, C: best or close friend only; directions of links are omitted for clarity). At all levels, there were no disconnected nodes or components. As seen in <xref ref-type="fig" rid="pone-0055944-g001">Figure 1A</xref>, the network was very dense if all the acquaintances were taken into account, because the students knew almost everybody in the same class. In contrast, the friendship (1B) and best/close friendship (1C) networks had non-trivial structures. Some community structures were also revealed in the best/close friendship network (<xref ref-type="fig" rid="pone-0055944-g001">Figure 1C</xref>).</p>
+      <fig id="pone-0055944-g001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0055944.g001</object-id>
+        <label>Figure 1</label>
+        <caption>
+          <title>The social network in the junior class of Maine-Endwell High School at three different levels.</title>
+          <p>Top: Visualizations of networks. Nodes (blue dots) represent individual students. Links (thin red lines) represent their friendships reconstructed from results of the online survey administered in January 2011. Directions of links are omitted for clarity. These plots show the entire network (i.e., there were no disconnected nodes or components in our data). Bottom: Complementary cumulative degree distributions and other network metrics. Red solid lines are for out-degrees, while blue dashed lines for in-degrees. Densities and transitivities were calculated using directed links, while average clustering coefficients were calculated after converting all the links into undirected ones. (A) A network made of all levels of links (acquaintances, friends, and best or close friends). (B) A network made of links for friends and best or close friends only. (C) A network made of best or close friends only.</p>
+        </caption>
+        <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0055944.g001" position="float" xlink:type="simple"/>
+      </fig>
+      <p>We conducted a linear regression analysis to model the relationships between a student’s academic progress (<bold><italic>y</italic></bold>) and several independent variables, including the student’s original academic ranking and the social environment surrounding the student). The analysis produced the following model equation (also see <xref ref-type="table" rid="pone-0055944-t001">Table 1</xref>):<disp-formula id="pone.0055944.e001"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0055944.e001" xlink:type="simple"/></disp-formula></p>
+      <table-wrap id="pone-0055944-t001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0055944.t001</object-id>
+        <label>Table 1</label>
+        <caption>
+          <title>Result of linear regression of the student’s academic progress over one year (<italic>y</italic>) on four independent variables measured in January 2011.</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone-0055944-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0055944.t001" xlink:type="simple"/>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>DF</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>SS</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>MS</italic>
+                </td>
+                <td align="left" rowspan="1" colspan="1"><italic>F</italic>-statistic</td>
+                <td align="left" rowspan="1" colspan="1"><italic>p</italic>-value</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>
+                    <italic>g</italic>
+                  </bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">1</td>
+                <td align="left" rowspan="1" colspan="1">9011.83</td>
+                <td align="left" rowspan="1" colspan="1">9011.83</td>
+                <td align="left" rowspan="1" colspan="1">12.7903</td>
+                <td align="left" rowspan="1" colspan="1">0.000467***</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>
+                    <italic>x</italic>
+                  </bold>
+                  <sub>acquaintance</sub>
+                </td>
+                <td align="left" rowspan="1" colspan="1">1</td>
+                <td align="left" rowspan="1" colspan="1">1877.14</td>
+                <td align="left" rowspan="1" colspan="1">1877.14</td>
+                <td align="left" rowspan="1" colspan="1">2.6642</td>
+                <td align="left" rowspan="1" colspan="1">0.104686</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>
+                    <italic>x</italic>
+                  </bold>
+                  <sub>friend</sub>
+                </td>
+                <td align="left" rowspan="1" colspan="1">1</td>
+                <td align="left" rowspan="1" colspan="1">4481.44</td>
+                <td align="left" rowspan="1" colspan="1">4481.44</td>
+                <td align="left" rowspan="1" colspan="1">6.3604</td>
+                <td align="left" rowspan="1" colspan="1">0.012692*</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>
+                    <italic>x</italic>
+                  </bold>
+                  <sub>best friend</sub>
+                </td>
+                <td align="left" rowspan="1" colspan="1">1</td>
+                <td align="left" rowspan="1" colspan="1">2785.15</td>
+                <td align="left" rowspan="1" colspan="1">2785.15</td>
+                <td align="left" rowspan="1" colspan="1">3.9529</td>
+                <td align="left" rowspan="1" colspan="1">0.048574*</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Error</td>
+                <td align="left" rowspan="1" colspan="1">153</td>
+                <td align="left" rowspan="1" colspan="1">107801.</td>
+                <td align="left" rowspan="1" colspan="1">704.58</td>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Total</td>
+                <td align="left" rowspan="1" colspan="1">157</td>
+                <td align="left" rowspan="1" colspan="1">125956.</td>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1"/>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+        <table-wrap-foot>
+          <fn id="nt101">
+            <label/>
+            <p><italic>y</italic>  =  −14.124 + 0.204<italic>g</italic> + 0.127<italic>x</italic><sub>acquaintance</sub> + 0.230<italic>x</italic><sub>friend</sub> + 0.147<italic>x</italic><sub>best friend</sub></p>
+          </fn>
+          <fn id="nt102">
+            <label/>
+            <p>Independent variables are: <bold><italic>g</italic></bold>: student’s academic ranking, and <bold><italic>x</italic></bold><italic><sub>i</sub></italic>: difference in ranking between each student’s self-reported neighbors’ average GPA and his/her own GPA, where <bold><italic>i</italic></bold> is either acquaintance, friend or best friend. A highly significant effect of <bold><italic>g</italic></bold> was due to the fact that top-ranked students did not change their academic rankings much after one year.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <p>Here <bold><italic>g</italic></bold> is the student’s original academic ranking, which had a highly significant effect on <bold><italic>y</italic></bold> but this was due to the fact that top-ranked students did not change their academic rankings much after one year. Among the three types of <bold><italic>x</italic></bold>, the friends (<bold><italic>x</italic></bold><sub>friend</sub>) had the most significant effect on <bold><italic>y</italic></bold> (<italic>p</italic> = 0.0127). <xref ref-type="fig" rid="pone-0055944-g002">Figure 2</xref> is a scatter plot of <bold><italic>x</italic></bold><sub>friend</sub> and <bold><italic>y</italic></bold>, showing a clear positive correlation between these two variables.</p>
+      <fig id="pone-0055944-g002" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0055944.g002</object-id>
+        <label>Figure 2</label>
+        <caption>
+          <title>Positive correlation between the social network environment and the student’s academic progress over one year.</title>
+          <p>The horizontal axis represents the difference in ranking between a student’s friends’ average GPA and his/her own GPA (<bold><italic>x</italic></bold> = <bold><italic>x</italic></bold><sub>friend</sub>). The vertical axis represents the increase/decrease in the student’s ranking after one year (<bold><italic>y</italic></bold>). Each dot represents data from one student.</p>
+        </caption>
+        <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0055944.g002" position="float" xlink:type="simple"/>
+      </fig>
+      <p>However, we note that <bold><italic>x</italic></bold> and <bold><italic>y</italic></bold> must be inherently correlated due to their definitions. Namely, a large (or small) value of <bold><italic>x</italic></bold> means that the student is likely ranked low (or high) in the class and thus tends to have a large (or small) room for improvement over the following year, naturally causing positive correlation between <bold><italic>x</italic></bold> and <bold><italic>y</italic></bold> even without any social interactions. To determine whether there was any social influence in effect in the students’ network, we need to compare the observed result with hypothetical null models where social network structures are randomized and neutralized. If the ups and downs of the students’ grades are simply due to individual students’ independent fluctuations, then the observed correlation should not differ from correlations seen in randomized networks.</p>
+      <p>We therefore conducted a Monte Carlo simulation by randomizing the network topologies and calculating Pearson’s correlation coefficients between <bold><italic>x</italic></bold><sub>friend</sub> and <bold><italic>y</italic></bold> for 500 independent simulated cases. In so doing, we kept the number of outgoing links of each student fixed, in order to preserve the out-degree distributions captured in the survey data. This simulates a hypothetical scenario where each student randomly identified a certain number of other students as his or her friends. Similar network randomization techniques that preserve global network topology have been proposed and used extensively in network science <xref ref-type="bibr" rid="pone.0055944-NewmanM1">[7]</xref>, <xref ref-type="bibr" rid="pone.0055944-Gkantsidis1">[8]</xref>. Our assumption in conducing this simulation is that, if the neighbors’ academic rankings had actual social influence on the student’s academic progress, then the correlation coefficient observed in <xref ref-type="fig" rid="pone-0055944-g002">Figure 2</xref> should be significantly higher than its randomized counterparts.</p>
+      <p><xref ref-type="fig" rid="pone-0055944-g003">Figure 3</xref> compares the actual correlation coefficient with the distribution of simulated correlation coefficients generated from 500 randomized networks. The actual correlation coefficient was larger than the largest simulated coefficient, indicating that the neighbors’ average GPA had a true correlation with the student’s academic progress over the following year.</p>
+      <fig id="pone-0055944-g003" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0055944.g003</object-id>
+        <label>Figure 3</label>
+        <caption>
+          <title>Comparison of Pearson’s correlation coefficients (<italic>r</italic>) between actual and simulated cases.</title>
+          <p>A large dot shows the actual correlation coefficient observed in <xref ref-type="fig" rid="pone-0055944-g002">Figure 2</xref>, while the box-whisker plot shows the distribution of simulated correlation coefficients calculated on randomized network topologies in which the out-degrees of individual nodes were all fixed.</p>
+        </caption>
+        <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0055944.g003" position="float" xlink:type="simple"/>
+      </fig>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>The results presented above have some important implications. Firstly, the positive correlation between the neighbors’ average GPA and the student’s academic progress indicates that social contagion of academic success may be taking place in the students’ social network, similar to those reported on obesity <xref ref-type="bibr" rid="pone.0055944-Christakis1">[9]</xref>, emotions <xref ref-type="bibr" rid="pone.0055944-Fowler1">[10]</xref> and other cognitive or behavioral traits <xref ref-type="bibr" rid="pone.0055944-Coronges1">[11]</xref>, <xref ref-type="bibr" rid="pone.0055944-Iyengar1">[12]</xref>. While most educators already know from their experience the importance of social environment for a student’s academic success, our study presents the first quantitative supporting evidence for such empirical knowledge, especially from a social network viewpoint.</p>
+      <p>Secondly, the regression analysis revealed that the correlation was most significant at the friendship level (<xref ref-type="table" rid="pone-0055944-t001">Table 1</xref>), while the correlations at acquaintance and best/close friendship levels were not as significant. This may be understood in that students tend to choose their best or close friends primarily using a homophilic mechanism on personalities, interests, tastes, favorites, and so on, so the interaction with them would not cause much changes to the student (and also that acquaintances would not cause much changes either, obviously). This finding, that an intermediate level of friendship has the highest influence on an individual, has an interesting similarity to Granovetter’s well-known ‘weak tie’ observation <xref ref-type="bibr" rid="pone.0055944-Granovetter1">[13]</xref>.</p>
+      <p>Thirdly, our research suggests the possibility of a quick test to predict a student’s academic progress that does not require large-scale surveys or complicated social network analysis. The key information used is a student’s self-reported friends’ average GPA relative to the student’s own GPA. This information can be easily collected from a single individual student. One could ask a student who are his/her friends in the class, and test if those self-reported friends’ average GPA is higher or lower than the student’s. If our finding is validated through more extensive studies, this test might serve as a simple, handy predictor of the student’s future performance in various educational settings.</p>
+      <p>We note that our work is still limited in several aspects. First, the size of the subject population was very small (<italic>N</italic> = 158). It would be desirable to replicate the same study at different schools to test the robustness and generalizability of our observations. Second, the students’ background did not involve much cultural or ethnic diversity. Our subjects were predominantly white, living in a suburban or rural area in Upstate New York. We did not have data to control potential confounding effects of those socio-cultural variables. Lastly, the students’ social network was reconstructed using their self-report responses to the survey, without any other more objective or observational data (e.g., email or text exchanges, physical contacts). We currently do not have capability or resource to collect such data, but recent social science research <xref ref-type="bibr" rid="pone.0055944-Eagle1">[14]</xref>, <xref ref-type="bibr" rid="pone.0055944-Stehl1">[15]</xref> has demonstrated that emerging technologies are enabling researchers to capture more detailed social dynamics of students at school. It will be very interesting to compare such high-resolution social network data with official school records and analyze correlations between the students’ socio-behavioral patterns and their academic trajectories.</p>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We thank Rita Spathis for reviewing the draft of this manuscript, and Benjamin James Bush and Jin Akaishi for their help in conducting the initial survey and data analysis.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0055944-Wasserman1">
+        <label>1</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Wasserman S, Faust K (1994) Social Network Analysis: Methods and Applications. Cambridge, UK: Cambridge University Press. 857 p.</mixed-citation>
+      </ref>
+      <ref id="pone.0055944-Farmer1">
+        <label>2</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Farmer</surname><given-names>TW</given-names></name>, <name name-style="western"><surname>Rodkin</surname><given-names>PC</given-names></name> (<year>1996</year>) <article-title>Antisocial and prosocial correlates of classroom social positions: the social network centrality perspective</article-title>. <source>Social Development</source> <volume>5</volume>: <fpage>174</fpage>–<lpage>188</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055944-Bishop1">
+        <label>3</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Bishop N (2009) The relation between peer group grades, social network structure, and secondary school academic achievement. Paper presented at the 2009 Annual Meeting of the American Sociological Association. Available: <ext-link ext-link-type="uri" xlink:href="http://www.allacademic.com/meta/p308630_index.html" xlink:type="simple">http://www.allacademic.com/meta/p308630_index.html</ext-link>. Accessed 31 August 2012.</mixed-citation>
+      </ref>
+      <ref id="pone.0055944-Add1">
+        <label>4</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Add Health Data (1994-) Available: <ext-link ext-link-type="uri" xlink:href="http://www.cpc.unc.edu/projects/addhealth/data" xlink:type="simple">http://www.cpc.unc.edu/projects/addhealth/data</ext-link>. Accessed 31 Aug 2012.</mixed-citation>
+      </ref>
+      <ref id="pone.0055944-Fryer1">
+        <label>5</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fryer</surname><given-names>RG</given-names></name>, <name name-style="western"><surname>Torelli</surname><given-names>P</given-names></name> (<year>2010</year>) <article-title>An empirical analysis of ‘acting white’</article-title>. <source>J Public Econ</source> <volume>94</volume>: <fpage>380</fpage>–<lpage>396</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055944-Boothroyd1">
+        <label>6</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Boothroyd C, Benson B, Blansky D, Kavanaugh C, Gallagher J, <etal>et al</etal>.. (2011) Academic achievement and personal satisfaction in high school social networks. Poster presented at NetSci 2011: International School and Conference on Network Science. Available: <ext-link ext-link-type="uri" xlink:href="https://sites.google.com/a/binghamton.edu/netsci-high-2011-2012/netsci-high-2011" xlink:type="simple">https://sites.google.com/a/binghamton.edu/netsci-high-2011-2012/netsci-high-2011</ext-link>. Accessed 31 Aug 2012.</mixed-citation>
+      </ref>
+      <ref id="pone.0055944-NewmanM1">
+        <label>7</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Newman M</surname><given-names>E</given-names></name> (<year>2003</year>) <article-title>The structure and function of complex networks</article-title>. <source>SIAM Review</source> <volume>45</volume>: <fpage>167</fpage>–<lpage>256</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055944-Gkantsidis1">
+        <label>8</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Gkantsidis C, Mihail M, Zegura E (2003) The Markov chain simulation method for generating connected power law random graphs. In Proc 5th Workshop on Algorithm Engineering and Experiments (ALENEX).</mixed-citation>
+      </ref>
+      <ref id="pone.0055944-Christakis1">
+        <label>9</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Christakis</surname><given-names>NA</given-names></name>, <name name-style="western"><surname>Fowler</surname><given-names>JH</given-names></name> (<year>2007</year>) <article-title>The spread of obesity in a large social network over 32 years</article-title>. <source>New Engl J Med</source> <volume>357</volume>: <fpage>370</fpage>–<lpage>379</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055944-Fowler1">
+        <label>10</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fowler</surname><given-names>JH</given-names></name>, <name name-style="western"><surname>Christakis</surname><given-names>NA</given-names></name> (<year>2008</year>) <article-title>Dynamic spread of happiness in a large social network: longitudinal analysis over 20 years in the Framingham Heart Study</article-title>. <source>Br Med J</source> <volume>337</volume>: <fpage>a2338</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055944-Coronges1">
+        <label>11</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Coronges</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Stacy</surname><given-names>AW</given-names></name>, <name name-style="western"><surname>Valente</surname><given-names>TW</given-names></name> (<year>2011</year>) <article-title>Social network influences of alcohol and marijuana cognitive associations</article-title>. <source>Addict Behav</source> <volume>36</volume>: <fpage>1305</fpage>–<lpage>1308</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055944-Iyengar1">
+        <label>12</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Iyengar</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Van den Bulte</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Valente</surname><given-names>TW</given-names></name> (<year>2011</year>) <article-title>Opinion leadership and social contagion in new product diffusion</article-title>. <source>Marketing Sci</source> <volume>30</volume>: <fpage>195</fpage>–<lpage>212</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055944-Granovetter1">
+        <label>13</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Granovetter</surname><given-names>MS</given-names></name> (<year>1973</year>) <article-title>The strength of weak ties</article-title>. <source>Am J Sociol</source> <volume>78</volume>: <fpage>1360</fpage>–<lpage>1380</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055944-Eagle1">
+        <label>14</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Eagle N (2011) Mobile phones as sensors for social research. In: Hesse-Biber SN, editor. The Handbook of Emergent Technologies in Social Research. Oxford, UK: Oxford University Press. Chap 22.</mixed-citation>
+      </ref>
+      <ref id="pone.0055944-Stehl1">
+        <label>15</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Stehlé</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Voirin</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Barrat</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Cattuto</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Isella</surname><given-names>L</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>High-resolution measurements of face-to-face contact patterns in a primary school</article-title>. <source>PLOS ONE</source> <volume>6(8)</volume>: <fpage>e23176</fpage>.</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

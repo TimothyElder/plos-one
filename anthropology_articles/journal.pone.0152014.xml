@@ -1,0 +1,1366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article article-type="research-article" dtd-version="3.0" xml:lang="en" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1371/journal.pone.0152014</article-id>
+<article-id pub-id-type="publisher-id">PONE-D-15-47244</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Surgical and invasive medical procedures</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Congenital disorders</subject><subj-group><subject>Birth defects</subject><subj-group><subject>Cleft lip and palate</subject><subj-group><subject>Cleft palate</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Developmental biology</subject><subj-group><subject>Morphogenesis</subject><subj-group><subject>Birth defects</subject><subj-group><subject>Cleft lip and palate</subject><subj-group><subject>Cleft palate</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Otorhinolaryngology</subject><subj-group><subject>Cleft lip and palate</subject><subj-group><subject>Cleft palate</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Simulation and modeling</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Oral medicine</subject><subj-group><subject>Orthodontics</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Physical anthropology</subject><subj-group><subject>Anthropometry</subject><subj-group><subject>Cephalometry</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Physical anthropology</subject><subj-group><subject>Anthropometry</subject><subj-group><subject>Cephalometry</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Musculoskeletal system</subject><subj-group><subject>Skeleton</subject><subj-group><subject>Maxilla</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Musculoskeletal system</subject><subj-group><subject>Skeleton</subject><subj-group><subject>Maxilla</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Congenital disorders</subject><subj-group><subject>Birth defects</subject><subj-group><subject>Cleft lip and palate</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Developmental biology</subject><subj-group><subject>Morphogenesis</subject><subj-group><subject>Birth defects</subject><subj-group><subject>Cleft lip and palate</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Otorhinolaryngology</subject><subj-group><subject>Cleft lip and palate</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Digestive system</subject><subj-group><subject>Mouth</subject><subj-group><subject>Mandible</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Digestive system</subject><subj-group><subject>Mouth</subject><subj-group><subject>Mandible</subject></subj-group></subj-group></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Computer-Assisted Orthognathic Surgery for Patients with Cleft Lip/Palate: From Traditional Planning to Three-Dimensional Surgical Simulation</article-title>
+<alt-title alt-title-type="running-head">3D Virtual Orthognathic Surgery</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Lonic</surname>
+<given-names>Daniel</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Pai</surname>
+<given-names>Betty Chien-Jung</given-names>
+</name>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Yamaguchi</surname>
+<given-names>Kazuaki</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Chortrakarnkij</surname>
+<given-names>Peerasak</given-names>
+</name>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Lin</surname>
+<given-names>Hsiu-Hsia</given-names>
+</name>
+<xref ref-type="aff" rid="aff004"><sup>4</sup></xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Lo</surname>
+<given-names>Lun-Jou</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+</contrib-group>
+<aff id="aff001"><label>1</label> <addr-line>Department of Plastic and Reconstructive Surgery and Craniofacial Research Center, Chang Gung Memorial Hospital, Chang Gung University, Taoyuan, Taiwan</addr-line></aff>
+<aff id="aff002"><label>2</label> <addr-line>Department of Craniofacial Orthodontics, and Craniofacial Research Center, Chang Gung Memorial Hospital, Chang Gung University, Taoyuan, Taiwan</addr-line></aff>
+<aff id="aff003"><label>3</label> <addr-line>Division of Plastic Surgery, Siriraj Hospital, Mahidol University, Bangkok, Thailand</addr-line></aff>
+<aff id="aff004"><label>4</label> <addr-line>Craniofacial Research Center, Chang Gung Memorial Hospital, Taoyuan, Taiwan</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Cray</surname>
+<given-names>James</given-names>
+</name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Medical University of South Carolina, UNITED STATES</addr-line></aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<fn fn-type="con" id="contrib001">
+<p>Conceived and designed the experiments: DL BP PC LJL. Performed the experiments: DL BP. Analyzed the data: DL KY HHL. Wrote the paper: DL. Final editing and project supervision: LJL.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">lunjoulo@cgmh.org.tw</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<day>22</day>
+<month>3</month>
+<year>2016</year>
+</pub-date>
+<pub-date pub-type="collection">
+<year>2016</year>
+</pub-date>
+<volume>11</volume>
+<issue>3</issue>
+<elocation-id>e0152014</elocation-id>
+<history>
+<date date-type="received">
+<day>1</day>
+<month>11</month>
+<year>2015</year>
+</date>
+<date date-type="accepted">
+<day>8</day>
+<month>3</month>
+<year>2016</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2016</copyright-year>
+<copyright-holder>Lonic et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0152014"/>
+<abstract>
+<sec id="sec001">
+<title>Background</title>
+<p>Although conventional two-dimensional (2D) methods for orthognathic surgery planning are still popular, the use of three-dimensional (3D) simulation is steadily increasing. In facial asymmetry cases such as in cleft lip/palate patients, the additional information can dramatically improve planning accuracy and outcome. The purpose of this study is to investigate which parameters are changed most frequently in transferring a traditional 2D plan to 3D simulation, and what planning parameters can be better adjusted by this method.</p>
+</sec>
+<sec id="sec002">
+<title>Patients and Methods</title>
+<p>This prospective study enrolled 30 consecutive patients with cleft lip and/or cleft palate (mean age 18.6±2.9 years, range 15 to 32 years). All patients received two-jaw single-splint orthognathic surgery. 2D orthodontic surgery plans were transferred into a 3D setting. Severe bony collisions in the ramus area after 2D plan transfer were noted. The position of the maxillo-mandibular complex was evaluated and eventually adjusted. Position changes of roll, midline, pitch, yaw, genioplasty and their frequency within the patient group were recorded as an alternation of the initial 2D plan. Patients were divided in groups of no change from the original 2D plan and changes in one, two, three and four of the aforementioned parameters as well as subgroups of unilateral, bilateral cleft lip/palate and isolated cleft palate cases. Postoperative OQLQ scores were obtained for 20 patients who finished orthodontic treatment.</p>
+</sec>
+<sec id="sec003">
+<title>Results</title>
+<p>83.3% of 2D plans were modified, mostly concerning yaw (63.3%) and midline (36.7%) adjustments. Yaw adjustments had the highest mean values in total and in all subgroups. Severe bony collisions as a result of 2D planning were seen in 46.7% of patients. Possible asymmetry was regularly foreseen and corrected in the 3D simulation.</p>
+</sec>
+<sec id="sec004">
+<title>Conclusion</title>
+<p>Based on our findings, 3D simulation renders important information for accurate planning in complex cleft lip/palate cases involving facial asymmetry that is regularly missed in conventional 2D planning.</p>
+</sec>
+</abstract>
+<funding-group>
+<funding-statement>This work was funded by Chang Gung Memorial Hospital, Grants CMRPG381601-3 and CMRPG3B0291-3, cgmh.org.tw. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="8"/>
+<table-count count="3"/>
+<page-count count="19"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability">
+<meta-name>Data Availability</meta-name>
+<meta-value>All relevant data are within the paper.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec005" sec-type="intro">
+<title>Introduction</title>
+<p>Orthognathic surgery (OGS) is a powerful procedure for reshaping the osseous structures of the midface and mandible in patients with congenital or developmental dentofacial deformities [<xref ref-type="bibr" rid="pone.0152014.ref001">1</xref>]. These changes also affect facial soft tissues and can significantly improve overall facial appearance. Achieving a successful outcome requires precise and safe surgical technique, appropriate orthodontic management and, maybe most importantly, accurate preoperative planning to ideally align the bone segments [<xref ref-type="bibr" rid="pone.0152014.ref002">2</xref>, <xref ref-type="bibr" rid="pone.0152014.ref003">3</xref>]. Surgical design should not only consider skeletal and dental aspects, but also harmonize the soft tissue, profile and overall facial appearance.</p>
+<p>The majority of OGS procedures are still planned using traditional two-dimensional (2D) cephalometry; nontheless, three-dimensional (3D) simulation in OGS planning has gained increasing popularity [<xref ref-type="bibr" rid="pone.0152014.ref004">4</xref>]. The application of 3D planning enables the surgeon to virtually simulate the surgery before entering the operating room [<xref ref-type="bibr" rid="pone.0152014.ref005">5</xref>]. Because the benefits of 3D simulation and its distribution of use are still discordant, a reevaluation of the possibilities and limitations of both 2D and 3D methods is needed [<xref ref-type="bibr" rid="pone.0152014.ref006">6</xref>]. Numerous studies have demonstrated the feasibility and accuracy of 3D simulation [<xref ref-type="bibr" rid="pone.0152014.ref004">4</xref>, <xref ref-type="bibr" rid="pone.0152014.ref007">7</xref>–<xref ref-type="bibr" rid="pone.0152014.ref017">17</xref>], and the increasing use in OGS planning has lead to significant outcome improvement [<xref ref-type="bibr" rid="pone.0152014.ref018">18</xref>]. On the other hand, more information has to be processed when planning OGS in three dimensions, especially in cases involving facial asymmetry such as in patients with cleft lip/palate (CL/P)[<xref ref-type="bibr" rid="pone.0152014.ref012">12</xref>, <xref ref-type="bibr" rid="pone.0152014.ref019">19</xref>].</p>
+<p>When OGS planning is carried out using 2D cephalometry, both occlusal and skeletal relationships have to be adressed. However, if 2D cephalometry planning is transferred into a 3D simulation environment, previously undetected problems can show up as pitch, roll and yaw discrepancies, severe bony collisions in the ramus area, genioplasty malposition, and midline deviation. These issues have to be corrected respecting facial symmetry, harmony and soft tissue appearance, and the initial 2D treatment plan should be altered accordingly in agreement with the orthodontist.</p>
+<p>Although the “normal” face is almost always asymmetrical [<xref ref-type="bibr" rid="pone.0152014.ref020">20</xref>, <xref ref-type="bibr" rid="pone.0152014.ref021">21</xref>] to some degree, asymmetry in its exaggerated form is the leading feature in CL/P patients [<xref ref-type="bibr" rid="pone.0152014.ref022">22</xref>, <xref ref-type="bibr" rid="pone.0152014.ref023">23</xref>], more so in the unilateral, but also in the bilateral and isolated cleft palate cases. Concomitant malocclusion and pathological dentition are ubiquitous in these cases, and facial asymmetry makes OGS planning especially demanding. Malocclusion, bony deficiencies and facial asymmetry all have to be addressed in the surgical plan to yield an optimal result.</p>
+<p>The purpose of this study is to investigate which parameters are changed most frequently for improvement of OGS planning when a traditional 2D plan is transferred to 3D simulation, and how extensive these changes are in terms of angular or linear measurements. Furthermore we try to show if modifying the 2D plan is more the exception or the rule in the preoperative planning process of orthognathic procedures for cleft lip/palate patients with facial deformity and asymmetry.</p>
+</sec>
+<sec id="sec006" sec-type="materials|methods">
+<title>Materials and Methods</title>
+<p>This prospective study enrolled 30 consecutive CL/P patients from January 2012 through December 2014. The mean age was 18.6±2.9 years, ranging from 15 to 32 years. 20 unilateral CL/P (16 left sided, 4 right sided, mean age 18.0±1.4 years, range 15–20 years, 14 female, 6 male), 6 bilateral CL/P (mean age 18.8±1.2 years, range 17–20 years, 4 female, 2 male) and 4 isolated cleft palate patients (mean age 21.3±7.2 years, range 17–32 years, 3 female, 1 male) were identified in three subgroups. Inclusion criteria were 1) patients planned for single-splint two-jaw OGS, and 2) patients with cone-beam computed tomography (CBCT) scans. Exclusion criteria were the presence of traumatic or syndromic craniofacial deformities. Ethical approval was completed by the Institutional Review Board of Chang Gung Memorial Hospital, Taiwan under IRB 103-2822B. All patients gave written informed consent for using their data in an anonymized fashion. If patients were under 20 years of age, written informed consent was obtained from the parents, next of kin, caretakers, or guardians. Patient records and datasets were anonymized and de-identified prior to analysis.</p>
+<p>Image scanning and evaluation were conducted in the following sequence (<xref ref-type="fig" rid="pone.0152014.g001">Fig 1</xref>). Step 1: After preoperative frontal and lateral cephalograms and photographs, conventional orthodontic OGS planning without articulator setup [<xref ref-type="bibr" rid="pone.0152014.ref024">24</xref>] was carried out using 2D cephalometry. For 3D simulation, CBCT images were obtained for all patients using an i-CAT CBCT scanner (Imaging Sciences International, Hatfield, PA) with a voxel resolution of 0.4 mm in upright position to prevent unwanted gravitational effects on the soft tissue. DICOM files were imported into one of two commercial software programs, Simplant OMS (Materialise, Leuven, Belgium) or Dolphin 3D (Dolphin Imaging &amp; Management Solutions, Chatsworth, California, USA). The initial position of the skeletal structures was recorded as Position0.</p>
+<fig id="pone.0152014.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0152014.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>Principles of single-splint two-jaw orthognathic surgery.</title>
+<p>Both maxilla and mandible are completely osteotomized, fixed in the final dental splint and moved as a united “maxillo-mandibular complex” (MMC) to the desired position. The maxillary segment is then referred to as the Le Fort I segment, and the mandible consists of two proximal (ramus) segments and one distal segment bearing the dental arch and the neurovascular bundle after osteotomy. The rotation movements are described as pitch, roll and yaw, en-bloc linear horizontal movements as left and right shifts or advancements and setbacks in the antero-posterior direction, and en-bloc linear vertical movements as extrusion and intrusion according to the movement in relation to the skull base.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0152014.g001" xlink:type="simple"/>
+</fig>
+<p>Step 2: Image segmentation was performed to obtain 3D representation of hard tissues used for 3D simulation. Occlusion was determined from dental plaster models with the dental splint in vitro using a 3Shape Orthodontics System dental surface scanner (Copenhagen, Denmark). The resulting STL files were imported into the respective 3D simulation software [<xref ref-type="bibr" rid="pone.0152014.ref025">25</xref>]. After defining Le Fort I and BSSO osteotomy planes, the maxillary and mandibular segments were aligned according to the plaster model by automatic registration. The artefact-affected dental arches were replaced by plaster model images for a more accurate dental surface [<xref ref-type="bibr" rid="pone.0152014.ref026">26</xref>]. The final occlusion, determined by the occlusal splint, was transferred into the 3D plan by moving the mandible to the fixed maxilla. Subsequently the segments were then moved as one united maxillo-mandibular complex (MMC), maintaining the planned terminal occlusion while resembling the MMC movements during actual single-splint surgery (<xref ref-type="fig" rid="pone.0152014.g002">Fig 2</xref>). At this stage, the conventional 2D plan was transferred into the 3D environment by MMC movement according to the orthodontist’s specifications. While some MMC movements (e.g. Le Fort I advancement) could be applied identically, others had to be translated into angular values such as pitch or roll rotation. Linear impaction or extrusion (in millimeters) of the Le Fort I plane at the level of the canine or first molar was used for roll or pitch correction in 2D. Although the MMC movements are angular in 3D Dolphin or Simplant software in the frontal (roll) or right lateral (pitch) view of the patient’s skull, they can also be displayed as linear movements (in millimeters) and matched to the specifications of the 2D plan. The resulting 3D position based on the 2D plan transfer was marked as Position1.</p>
+<fig id="pone.0152014.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0152014.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>Flowchart of the methodology.</title>
+<p>In the first step, the patient’s initial preoperative Cone-Beam Computer Tomography (CBCT) defines Position0. After segmentation, the conventional orthodontic 2D plan is transferred into the 3D simulation and recorded as Position1. The transferred plan is then adjusted for roll, midline, pitch, yaw, and genioplasty positions by the surgical team, and the resulting 3D simulation is noted as Position2. The changes in each parameter from Position1 to Position2 are recorded and evaluated.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0152014.g002" xlink:type="simple"/>
+</fig>
+<p>Step 3: During 3D simulation the MMC was moved and rotated by the surgical team until the best position in terms of skeletal harmony, symmetry, facial proportion, teeth exposure in relation to the upper lip, and surgical feasibility was achieved. Midline correction was the utmost concern, followed by facial symmetry. Therefore our simulation sequence started with roll and midline adjustment in the frontal, followed by pitch correction in the lateral and yaw correction in the basal view, with the rotation center in the upper dental midline at the U1 incisor tip level. Bony collisions between proximal and distal mandibular segments were noted and defined as severe if distal segment aspects were lateral to the proximal segment after 2D surgery plan transfer. Proximal and distal mandibular segments were aligned and evaluated for cheek symmetry by removing premature contacts in the ramus area or keeping the inter-segmental space. The surgical team and orthodontist reviewed the final plan and agreed on the MMC position, which was the recorded as as Position2.</p>
+<p>Step 4: As a primary outcome measure, Position1 and Position2 were evaluated in frontal, lateral and basal views with respect to midline, pitch, roll and yaw correction [<xref ref-type="bibr" rid="pone.0152014.ref027">27</xref>]. Furthermore, the need for genioplasty and correction of severe bony collisions for achieving facial harmony were noted. Absolute pitch, roll and yaw corrections were noted in degrees, absolute midline and genioplasty corrections in millimeters. Figs <xref ref-type="fig" rid="pone.0152014.g003">3</xref> and <xref ref-type="fig" rid="pone.0152014.g004">4</xref> show the steps from initial Position0 (Figs <xref ref-type="fig" rid="pone.0152014.g003">3</xref> and <xref ref-type="fig" rid="pone.0152014.g004">4A–4D</xref>) to translated 2D planning Position1 (Figs <xref ref-type="fig" rid="pone.0152014.g003">3</xref> and <xref ref-type="fig" rid="pone.0152014.g004">4E–4H</xref>) to adjusted 3D planning Position2 (Figs <xref ref-type="fig" rid="pone.0152014.g003">3</xref> and <xref ref-type="fig" rid="pone.0152014.g004">4I–4L</xref>). Parameter changes were recorded as alternations of the initial 2D plan. Linear midline correction was subdivided into changes less than 1 mm, between 1 to 2 mm and more than 2 mm respectively. Pitch correction of equal to or more than 1mm in the upper first molar Le Fort I level were judged as parameter change. Because of the importance of roll correction for occlusal canting, any change was recorded as a parameter change. Two aspects of yaw correction were recorded; firstly, cases of the aforementioned severe bony collisions in the ramus area were noted. Secondly, to account for possible CBCT imaging errors, patients needing more than one degree of yaw rotation correction were considered having a parameter change. Genioplasty changes were recorded if the position was altered in terms of rotation, impaction, elongation, advancement or general indication. Patients were divided in groups of no change and changes in one, two, three and four parameters. For further analysis, all parameter changes were also investigated within the subgroups of unilateral CL/P, bilateral CL/P and isolated cleft palate patients, and the mean changes, standard deviations and ranges for each parameter were calculated.</p>
+<fig id="pone.0152014.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0152014.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>Visualization of the three positions in sample patient #25 (<xref ref-type="table" rid="pone.0152014.t001">Table 1</xref>).</title>
+<p>Isolated cleft palate patient. From left to right frontal, left lateral, right lateral and basal views are shown of the same position. Subfigures A-D show the initial Position0, Subfigures E-H the result of the 2D plan translation into the 3D environment and Subfigures I-L the adjusted Position2 in the 3D plan agreed upon by the orthodontists and the surgical team. Note the severe bony collision in the right ramus area of this patient in Subfigures E and G and the subsequent large bony gap in the left ramus area. Through counterclockwise yaw rotation the collision and overall asymmetry were resolved (Subfigures H and L, E and I). The genioplasty position was altered by shortening the chin segment, thus reducing the patient’s facial height (Subfigures I-L).</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0152014.g003" xlink:type="simple"/>
+</fig>
+<fig id="pone.0152014.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0152014.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title>Visualization of the three positions in sample patient #29 (<xref ref-type="table" rid="pone.0152014.t001">Table 1</xref>).</title>
+<p>Bilateral cleft lip/palate patient. From left to right frontal, left lateral, right lateral and basal views are shown of the same position. Subfigures A-D show the initial Position0, Subfigures E-H the result of the 2D plan translation into 3D environment and Subfigures I-L the adjusted Position2 in 3D simulation agreed upon by the orthodontists and the surgical team. Bony collisions were not seen in this patient, but a yaw correction of 2° counterclockwise seen from basal Subfigures H to L was implemented.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0152014.g004" xlink:type="simple"/>
+</fig>
+<p>Additionally, patients who finished orthodontic treatment were asked to fill out the OQLQ questionnaire [<xref ref-type="bibr" rid="pone.0152014.ref028">28</xref>, <xref ref-type="bibr" rid="pone.0152014.ref029">29</xref>] (<xref ref-type="fig" rid="pone.0152014.g005">Fig 5a</xref>) in the Chinese translation (<xref ref-type="fig" rid="pone.0152014.g005">Fig 5b</xref>) to measure their quality of life in relation to their dentofacial deformity. Ranging from 0 to 88, lower OQLQ scores indicate better and higher scores indicate poorer quality of life. The 22 items cover 4 topics: facial esthetics (scoring 0 to 20), oral function (scoring 0 to 20), awareness of dentofacial esthetics (scoring 0 to 16), and social aspects of dentofacial deformity (scoring 0 to 32) [<xref ref-type="bibr" rid="pone.0152014.ref030">30</xref>]. Means, standard deviations and ranges for total scores and each topic were recorded.</p>
+<fig id="pone.0152014.g005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0152014.g005</object-id>
+<label>Fig 5</label>
+<caption>
+<title>OQLQ questionnaire.</title>
+<p>English (Fig 5a) and Chinese (Fig 5b) versions of the OQLQ questionnaire measuring the patient’s dentofacial deformity in relation to their quality of life. It consists of a 4-point scale ranging from “bothers you a little” (score 1) to “bothers you a lot” (score 4). If the patient did not feel impaired by the subject (“does not apply, does not bother me”), it was rated as N/A or 0 points. Ranging from 0 to 88, lower OQLQ scores indicate better and higher score indicate poorer quality of life. The 22 items cover 4 topics: facial esthetics (items 1, 7, 10, 11, and 14 scoring 0 to 20), oral function (items 2–6 scoring 0 to 20), awareness of dentofacial esthetics (items 8, 9, 12, and 13) scoring 0 to 16), and social aspects of dentofacial deformity (items 15–22 scoring 0 to 32) [<xref ref-type="bibr" rid="pone.0152014.ref030">30</xref>].</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0152014.g005" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec007" sec-type="results">
+<title>Results</title>
+<p>Datasets of 30 consecutive (17 male, 13 female) CL/P patients were evaluated (<xref ref-type="table" rid="pone.0152014.t001">Table 1</xref>). Regarding our primary outcome measure, 5 patients (16.7%) underwent no change, 6 (20.0%) had a change in one, 16 (53.3%) had a change in two, 1 (3.3%) had a change in three and 2 (6.7%) had a change in four parameters (<xref ref-type="fig" rid="pone.0152014.g006">Fig 6</xref>). 25 (83.3%) patients underwent the procedure with at least one modification of the initial 2D plan. Yaw was most frequently changed (19 patients, 63.3%, mean 3.0±3.1°, range 0–12°), followed by midline (11 patients, 36.7%, mean 1.0±1.7mm, range 0–6.5mm), roll (10 patients, 33.3%, mean 1.1±2.0°, range 0–7.5°), genioplasty (6 patients, 20.0%, mean 1.0±2.1mm, range 0–6.5mm) and pitch (3 patients, 10.0%, mean 0.3±1.0°, range 0–4°). Five (45.5%) out of 11 patients had a midline movement over 2 mm, 5 (45.5%) between 1 to 2 mm, and 1(9.0%) under 1 mm (<xref ref-type="fig" rid="pone.0152014.g007">Fig 7</xref>). Fourteen (73.7%) of 19 patients with yaw modification had severe bony collisions with surgically aberrant configurations of the proximal and distal segments after translation of the 2D treatment plan into 3D simulation, occuring in 46.7% of total cases (14 out of 30) (<xref ref-type="table" rid="pone.0152014.t002">Table 2</xref>).</p>
+<fig id="pone.0152014.g006" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0152014.g006</object-id>
+<label>Fig 6</label>
+<caption>
+<title>Pie chart of patients with different amounts of position changes.</title>
+<p>According to the changes from Position1 (2D planning) to Position2 (3D simulation), 5 (16.7%) patients underwent no change, 6 (20.0%) had a change in one, 16 (53.3%) had a change in two, 1 (3.3%) had a change in three and 2 (6.7%) had a change in four parameters (<xref ref-type="fig" rid="pone.0152014.g004">Fig 4</xref>). 26 (83.3%) patients underwent the procedure with at least one modification of the initial 2D planning, while 16.7% had no changes from the 2D plan.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0152014.g006" xlink:type="simple"/>
+</fig>
+<fig id="pone.0152014.g007" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0152014.g007</object-id>
+<label>Fig 7</label>
+<caption>
+<title>Frequency of parameter changes in the patients.</title>
+<p>Most frequently changed parameter was yaw rotation (19 patients, 63.3%), followed by midline adjustment (11 patients, 36.7%), roll rotation (9 patients, 33.3%), genioplasty position (6 patients, 20.0%) and pitch rotation (3 patients, 10.0%). Of the 11 patients that had a modification of the midline from 2D to 3D planning, 6 (45.5%) had a movement over 2 mm, 5 (45.5%) between 1 to 2 mm, and 1(9.0%) under 1 mm.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0152014.g007" xlink:type="simple"/>
+</fig>
+<table-wrap id="pone.0152014.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0152014.t001</object-id>
+<label>Table 1</label> <caption><title>Patient information and 2D cephalometry plan for orthognathic surgery.</title></caption>
+<alternatives>
+<graphic id="pone.0152014.t001g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0152014.t001" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="2">Pt. No.</th>
+<th align="left" rowspan="2">Gender/Age (years)</th>
+<th align="left" rowspan="2">Diagnosis</th>
+<th align="center" colspan="3">Surgical procedures 2D plan Position1</th>
+</tr>
+<tr>
+<th align="left">Le Fort I osteotomy</th>
+<th align="left">BSSO</th>
+<th align="left">Genioplasty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left">F/32</td>
+<td align="left">CP</td>
+<td align="left">ANS Adv 3 mm, Impaction R posterior 5 mm, L posterior 2 mm, ML Shift to R 3.5 mm</td>
+<td align="left">Setback 5mm</td>
+<td align="left">Adv 3mm</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">F/20</td>
+<td align="left">BCLP</td>
+<td align="left">ANS Adv 5 mm, impaction level U6 2 mm</td>
+<td align="left">Setback R 7mm, L 4mm</td>
+<td align="left">Adv 6 mm</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">F/17</td>
+<td align="left">LCLP</td>
+<td align="left">ANS Adv 5 mm, Extrusion 3 mm at U1, 5 mm at LU6, ML Shift to L 3 mm</td>
+<td align="left">Setback R 3mm</td>
+<td align="left">Nil</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">F/17</td>
+<td align="left">BCLP</td>
+<td align="left">ANS Adv 10mm Impaction at U1 2mm</td>
+<td align="left">Setback R 6 mm, L 4 mm, Kole Setback 8mm</td>
+<td align="left">Nil</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">F/18</td>
+<td align="left">RCLP</td>
+<td align="left">U1 Extrusion 2 mm, PNS Impaction 3mm, ML Shift to L 2 mm</td>
+<td align="left">Setback R 10 mm, L 6 mm</td>
+<td align="left">Nil</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">M/18</td>
+<td align="left">RCLP</td>
+<td align="left">2-piece Le Fort I, ANS Adv 10 mm, Extrusion 4mm R U6: Extrusion 4mm, Adv 13mm, L U6: Intrusion 4mm, Adv 7mm ML Shift L 7mm</td>
+<td align="left">Setback R 1 mm, L 5mm</td>
+<td align="left">Nil</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">M/20</td>
+<td align="left">LCLP</td>
+<td align="left">ANS Adv 6 mm, R U6 impaction 1mm, Adv 5.5mm; L U6 Adv 4.5mm, ML Shift to L 1 mm</td>
+<td align="left">Setback, R 5 mm, L 1 mm</td>
+<td align="left">Nil</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">M/18</td>
+<td align="left">LCLP</td>
+<td align="left">ANS Adv 6 mm, Extrusion 1mm, R U6 impaction 3.5mm, Adv 6mm, L U6 Impaction 0.5mm, Adv 6mm</td>
+<td align="left">Setback 5mm</td>
+<td align="left">Adv 3mm</td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left">F/17</td>
+<td align="left">LCLP</td>
+<td align="left">ANS Adv 4mm, UR6 Impaction 4mm, Adv 2mm, UL6 Impaction 1mm, Adv 5mm</td>
+<td align="left">Setback, R 6mm, L 3mm</td>
+<td align="left">Shift to R 3 mm</td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td align="left">F/17</td>
+<td align="left">CP</td>
+<td align="left">ANS Impaction 7mm, R U6 Adv 9mm, L U6 Adv 11mm</td>
+<td align="left">Setback 5mm</td>
+<td align="left">Adv 6mm</td>
+</tr>
+<tr>
+<td align="left">11</td>
+<td align="left">F/15</td>
+<td align="left">RCLP</td>
+<td align="left">ANS Adv 5mm, U6 level Intrusion 5mm</td>
+<td align="left">Setback, R 3mm, L 4mm</td>
+<td align="left">Nil</td>
+</tr>
+<tr>
+<td align="left">12</td>
+<td align="left">M/19</td>
+<td align="left">LCLP</td>
+<td align="left">ANS Adv 5mm</td>
+<td align="left">Setback, R 10mm, L 0mm</td>
+<td align="left">Nil</td>
+</tr>
+<tr>
+<td align="left">13</td>
+<td align="left">M/20</td>
+<td align="left">LCLP</td>
+<td align="left">Adv 6mm</td>
+<td align="left">Setback R 10mm L 8mm</td>
+<td align="left">Nil</td>
+</tr>
+<tr>
+<td align="left">14</td>
+<td align="left">M/19</td>
+<td align="left">BCLP</td>
+<td align="left">ANS Adv 5mm, Extrusion 1mm, UR6 Impaction 2mm, Adv 2mm, L U6 Impaction 1mm, forward 2mm, ML Shift to R 1mm</td>
+<td align="left">Setback R 10 mm, L 17mm</td>
+<td align="left">Nil</td>
+</tr>
+<tr>
+<td align="left">15</td>
+<td align="left">M/18</td>
+<td align="left">LCLP</td>
+<td align="left">ANS Adv 7mm, R U6 Adv 3mm, L U6 Adv 10mm.</td>
+<td align="left">Setback 5mm</td>
+<td align="left">Nil</td>
+</tr>
+<tr>
+<td align="left">16</td>
+<td align="left">M/18</td>
+<td align="left">CP</td>
+<td align="left">2-piece Le Fort I, R segment Adv 2mm, L segment Adv 6mm, L U6 segment impaction 4mm</td>
+<td align="left">Setback 4mm</td>
+<td align="left">Adv 3mm, Impaction</td>
+</tr>
+<tr>
+<td align="left">17</td>
+<td align="left">M/19</td>
+<td align="left">LCLP</td>
+<td align="left">R U6 Intrusion 4mm</td>
+<td align="left">Setback R 10mm, L 8mm</td>
+<td align="left">Nil</td>
+</tr>
+<tr>
+<td align="left">18</td>
+<td align="left">M/18</td>
+<td align="left">LCLP</td>
+<td align="left">2-piece Le Fort I, ANS Adv 9mm Rotate to right side 3mm, L post segment arch constriction 3mm on L U6</td>
+<td align="left">Setback R 6mm, L 3mm</td>
+<td align="left">Adv</td>
+</tr>
+<tr>
+<td align="left">19</td>
+<td align="left">M/19</td>
+<td align="left">LCLP</td>
+<td align="left">ANS Adv 8mm, Extrusion 3mm</td>
+<td align="left">Setback, R 6mm, L 3mm</td>
+<td align="left">Nil</td>
+</tr>
+<tr>
+<td align="left">20</td>
+<td align="left">F/15</td>
+<td align="left">LCLP</td>
+<td align="left">Adv 5mm</td>
+<td align="left">Setback, R 6mm, L 3mm</td>
+<td align="left">Nil</td>
+</tr>
+<tr>
+<td align="left">21</td>
+<td align="left">F/20</td>
+<td align="left">BCLP</td>
+<td align="left">ANS Adv 5mm, Intrusion 3mm</td>
+<td align="left">Setback R 5mm, L 3mm</td>
+<td align="left">Adv 6mm</td>
+</tr>
+<tr>
+<td align="left">22</td>
+<td align="left">M/18</td>
+<td align="left">LCLP</td>
+<td align="left">ANS Adv 6mm</td>
+<td align="left">Setback R 3mm, L 2mm</td>
+<td align="left">Nil</td>
+</tr>
+<tr>
+<td align="left">23</td>
+<td align="left">F/16</td>
+<td align="left">RCLP</td>
+<td align="left">ANS Adv 5mm, PNS Intrusion 8mm</td>
+<td align="left">R Setback 2mm, L Adv 2mm</td>
+<td align="left">Nil</td>
+</tr>
+<tr>
+<td align="left">24</td>
+<td align="left">M/18</td>
+<td align="left">LCLP</td>
+<td align="left">ANS Adv 8mm, U1 Extrusion 3mm, PNS Impaction 4mm</td>
+<td align="left">Setback 5mm</td>
+<td align="left">Adv 5mm</td>
+</tr>
+<tr>
+<td align="left">25</td>
+<td align="left">F/18</td>
+<td align="left">CP</td>
+<td align="left">ANS Adv 5mm, R U6Adv 8mm Impaction 4mm L U6 Adv 3.5mm</td>
+<td align="left">Setback 5mm</td>
+<td align="left">Adv</td>
+</tr>
+<tr>
+<td align="left">26</td>
+<td align="left">M/18</td>
+<td align="left">LCLP</td>
+<td align="left">2 piece Le Fort I, ANS Adv 8mm, R U6 Extrusion 4mm, L piece Adv 8mm, constriction 8mm on L U6</td>
+<td align="left">Setback R 4mm, L 1mm</td>
+<td align="left">Nil</td>
+</tr>
+<tr>
+<td align="left">27</td>
+<td align="left">M/19</td>
+<td align="left">BCLP</td>
+<td align="left">2-piece Le Fort I, R post segment Adv 3mm, L post segment Adv 5mm, PNS Intrusion 3mm</td>
+<td align="left">Setback, R 5mm, L 15mm</td>
+<td align="left">Adv. 10mm</td>
+</tr>
+<tr>
+<td align="left">28</td>
+<td align="left">M/18</td>
+<td align="left">LCLP</td>
+<td align="left">Adv 10mm, Setback R 9mm, PNS Impaction 3.5mm</td>
+<td align="left">Setback, R 9mm, L 7mm</td>
+<td align="left">Adv 6mm</td>
+</tr>
+<tr>
+<td align="left">29</td>
+<td align="left">F/18</td>
+<td align="left">BCLP</td>
+<td align="left">Adv 8mm, PNS Impaction 4mm, R U6 extrusion 2mm</td>
+<td align="left">Setback 3mm</td>
+<td align="left">Nil</td>
+</tr>
+<tr>
+<td align="left">30</td>
+<td align="left">M/20</td>
+<td align="left">LCLP</td>
+<td align="left">2-piece Le Fort 1, ANS Adv 7mm, R U6 Adv 7mm L U6 Adv 9mm, Intrusion 2mm at U1, Extrusion 3mm at U6 level</td>
+<td align="left">Setback 6mm</td>
+<td align="left">Adv 5mm</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t001fn001"><p>Abbreviations: Pt. No., Patient number; F, female; M, male; LCLP, left cleft lip and palate; RCLP, right cleft lip and palate; BCLP, bilateral cleft lip and palate; CP, cleft palate; BSSO, bilateral sagittal split osteotomy; R, right; L, left; Adv, advancement; U1, central incisor midpoint; U6, upper first molar; ANS, anterior nasal spine; PNS, posterior nasal spine; ML, Midline; SBCC, severe bony collision correction</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<table-wrap id="pone.0152014.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0152014.t002</object-id>
+<label>Table 2</label> <caption><title>Parameter changes from 2D planning to 3D simulation in the CL/P subgroups.</title></caption>
+<alternatives>
+<graphic id="pone.0152014.t002g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0152014.t002" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">Case No.</th>
+<th align="center">Diagnosis</th>
+<th align="center">Gender</th>
+<th align="center">Age (years)</th>
+<th align="center">Yaw (°)</th>
+<th align="center">SBC</th>
+<th align="center">Roll (°)</th>
+<th align="center">Pitch (°)</th>
+<th align="center">Mid (mm)</th>
+<th align="center">Genio (mm)</th>
+<th align="center">No. of PC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">3</td>
+<td align="center">LCLP</td>
+<td align="center">F</td>
+<td align="center">17</td>
+<td align="center">4</td>
+<td align="center">1</td>
+<td align="center">5</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">LCLP</td>
+<td align="center">M</td>
+<td align="center">20</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">LCLP</td>
+<td align="center">M</td>
+<td align="center">18</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">LCLP</td>
+<td align="center">F</td>
+<td align="center">17</td>
+<td align="center">3</td>
+<td align="center">1</td>
+<td align="center">3</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">12</td>
+<td align="center">LCLP</td>
+<td align="center">M</td>
+<td align="center">19</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">13</td>
+<td align="center">LCLP</td>
+<td align="center">M</td>
+<td align="center">20</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">15</td>
+<td align="center">LCLP</td>
+<td align="center">M</td>
+<td align="center">18</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">17</td>
+<td align="center">LCLP</td>
+<td align="center">M</td>
+<td align="center">19</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">3</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">18</td>
+<td align="center">LCLP</td>
+<td align="center">M</td>
+<td align="center">18</td>
+<td align="center">6</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">3</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">19</td>
+<td align="center">LCLP</td>
+<td align="center">M</td>
+<td align="center">19</td>
+<td align="center">2.5</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">20</td>
+<td align="center">LCLP</td>
+<td align="center">F</td>
+<td align="center">15</td>
+<td align="center">3</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">5</td>
+<td align="center">0</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">22</td>
+<td align="center">LCLP</td>
+<td align="center">M</td>
+<td align="center">18</td>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">3</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">24</td>
+<td align="center">LCLP</td>
+<td align="center">M</td>
+<td align="center">18</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">4</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">26</td>
+<td align="center">LCLP</td>
+<td align="center">M</td>
+<td align="center">18</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">7.5</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">28</td>
+<td align="center">LCLP</td>
+<td align="center">M</td>
+<td align="center">18</td>
+<td align="center">12</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">6.5</td>
+<td align="center">6.5</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">30</td>
+<td align="center">LCLP</td>
+<td align="center">M</td>
+<td align="center">20</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">2</td>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">RCLP</td>
+<td align="center">F</td>
+<td align="center">18</td>
+<td align="center">7</td>
+<td align="center">1</td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">RCLP</td>
+<td align="center">M</td>
+<td align="center">18</td>
+<td align="center">8</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">3</td>
+<td align="center">0</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">11</td>
+<td align="center">RCLP</td>
+<td align="center">F</td>
+<td align="center">15</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">3</td>
+<td align="center">0</td>
+<td align="center">6</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">23</td>
+<td align="center">RCLP</td>
+<td align="center">F</td>
+<td align="center">16</td>
+<td align="center">3.5</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center"><bold>Mean ±SD (range)</bold></td>
+<td align="center"><bold>UCLP</bold></td>
+<td align="center"/>
+<td align="center"><bold>18.0±1.4 (15–20)</bold></td>
+<td align="center"><bold>2.6±3.4 (0 to 12)</bold></td>
+<td align="center"><bold>0.4±0.5</bold></td>
+<td align="center"><bold>1.3±2.1 (0–7.5)</bold></td>
+<td align="center"><bold>0.5±1.1 (0–4)</bold></td>
+<td align="center"><bold>1.2±2.0 (0–6.5)</bold></td>
+<td align="center"><bold>0.8±2.0 (0–6.5)</bold></td>
+<td align="center"><bold>1.6±1.0 (0–4)</bold></td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">BCLP</td>
+<td align="center">F</td>
+<td align="center">20</td>
+<td align="center">2</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">BCLP</td>
+<td align="center">F</td>
+<td align="center">17</td>
+<td align="center">2</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">14</td>
+<td align="center">BCLP</td>
+<td align="center">M</td>
+<td align="center">19</td>
+<td align="center">6</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">21</td>
+<td align="center">BCLP</td>
+<td align="center">F</td>
+<td align="center">20</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">27</td>
+<td align="center">BCLP</td>
+<td align="center">M</td>
+<td align="center">19</td>
+<td align="center">7</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">5</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">29</td>
+<td align="center">BCLP</td>
+<td align="center">F</td>
+<td align="center">18</td>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center"><bold>Mean ±SD (range)</bold></td>
+<td align="center"><bold>BCLP</bold></td>
+<td align="center"/>
+<td align="center"><bold>18.8±1.2 (17–20)</bold></td>
+<td align="center"><bold>3.2±2.7 (0–7)</bold></td>
+<td align="center"><bold>0.7±0.5</bold></td>
+<td align="center"><bold>0</bold></td>
+<td align="center"><bold>0</bold></td>
+<td align="center"><bold>0.3±0.8 (0–2)</bold></td>
+<td align="center"><bold>0.8±2.0 (0–5)</bold></td>
+<td align="center"><bold>1.2±0.8 (0–2)</bold></td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">CP</td>
+<td align="center">F</td>
+<td align="center">32</td>
+<td align="center">6</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0,5</td>
+<td align="center">0</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center">CP</td>
+<td align="center">F</td>
+<td align="center">17</td>
+<td align="center">6</td>
+<td align="center">1</td>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">16</td>
+<td align="center">CP</td>
+<td align="center">M</td>
+<td align="center">18</td>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">5</td>
+<td align="center">0</td>
+<td align="center">2,5</td>
+<td align="center">3</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">25</td>
+<td align="center">CP</td>
+<td align="center">F</td>
+<td align="center">18</td>
+<td align="center">5</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">6</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center"><bold>Mean ±SD (range)</bold></td>
+<td align="center"><bold>CP</bold></td>
+<td align="center"/>
+<td align="center"><bold>21.3±7.2 (17–32)</bold></td>
+<td align="center"><bold>4.8±1.9 (2–6)</bold></td>
+<td align="center"><bold>0.8±0.5</bold></td>
+<td align="center"><bold>1.8±2.4 (0–5)</bold></td>
+<td align="center"><bold>0</bold></td>
+<td align="center"><bold>0.8±1.2 (0–2.5)</bold></td>
+<td align="center"><bold>2.3±2.9 (0–6)</bold></td>
+<td align="center"><bold>2.5±1.0 (2–4)</bold></td>
+</tr>
+<tr>
+<td align="center"><bold>Mean ± SD (range)</bold></td>
+<td align="center"><bold>Total</bold></td>
+<td align="center"/>
+<td align="center"><bold>18.6±2.9 (15–32)</bold></td>
+<td align="center"><bold>3.0±3.1 (0–12)</bold></td>
+<td align="center"><bold>0.5±0.5</bold></td>
+<td align="center"><bold>1.1±2.0 (0–7.5)</bold></td>
+<td align="center"><bold>0.3±1.0 (0–4)</bold></td>
+<td align="center"><bold>1.0±1.7 (0–6.5)</bold></td>
+<td align="center"><bold>1.0±2.1 (0–6.5)</bold></td>
+<td align="center"><bold>1.6±1.0 (0–4)</bold></td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t002fn001"><p>Abbreviations: LCLP: left cleft lip/palate, RCLP: right cleft lip/palate; UCL/P: unilateral cleft lip/palate; BCLP: bilateral cleft lip/palate; CP: isolated cleft palate; M: male, F: female; Age/y, patient age in years; yaw, absolute yaw correction in degrees, SBC, severe bony collision (1: present, 0: not present); roll, absolute roll correction in degrees; pitch, absolute pitch correction in degrees; Mid, midline correction in millimeters; genio, genioplasty alternation in millimeters; No. of PC, number of parameter changes from 2D to 3D plan; SD, standard deviation.</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<p>Subgroup analysis of the unilateral CL/P group yielded yaw adjustments in 10 patients (50%, mean 2.6±3.4°, range 0 to 12°) with 7 (35%) patients showing severe bony collisions, roll adjustments in 8 patients (40%, mean 1.3±2.1°, range 0–7.5°), pitch adjustments in 3 patients (15%, mean 0.4±1.1°, range 0–4), midline corrections in 8 patients (40%, mean 1.2±2.0mm, range 0-6-5mm), and genioplasty alterations in 3 patients (15%, mean 0.8±2.0 mm, range 0–6.5mm), with a mean of 1.6±1.0 (range 0–3) parameter changes. The bilateral CL/P subgroup demonstrated yaw correction in all 6 patients (100%, mean 3.2±2.7°, range 0–7°) with severe bony collisions in 4 patients (66%), no roll or pitch corrections, one midline correction of 2mm (16.7%, mean 0.3±0.8mm), and one genioplasty correction of 5 mm (16.7%, mean 0.8±2.0mm) with a mean of 1.2±0.8 parameter changes (range 0–2). The isolated cleft palate subgroup demonstrated yaw correction in all 4 patients (100%, mean 4.8±1.9°, range 2–6°) with severe bony collisions in 3 patients (75%), roll adjustments in 2 patients (50%, mean 1.8±2.4°, range 0–5°), no pitch corrections, midline corrections in 2 patients (50%, mean 0.8±1.2mm, range 0–2.5mm), and genioplasty alterations in 2 patients (50%, mean 2.3±2.9mm, range 0–6mm) with a mean of 2.5±1.0 (range 2–4) parameter changes.</p>
+<p>Additionally, post-treatment OQLQ scores were obtained for 20 patients (13 unilateral CL/P, 4 bilateral CL/P, 3 isolated cleft palate) who finished orthodontic treatment (<xref ref-type="table" rid="pone.0152014.t003">Table 3</xref>). Total mean scores were 25.2±17.1, ranging from 2 to 60. Regarding subitem scores, the total mean facial aesthetic score was 7.5±5.0 (range 1–17), the total mean oral function score 3.0±3.6 (range 0–12), the total mean dentofacial aesthetics awareness score 5.0±3.3, (range 0–11), and the total mean score for social aspects of dentofacial deformity 9.8±7.8 (range 0–26). The mean subitem scores for each subgroup (uni-/bilateral CL/P, isolated cleft palate) are shown in <xref ref-type="table" rid="pone.0152014.t003">Table 3</xref>.</p>
+<table-wrap id="pone.0152014.t003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0152014.t003</object-id>
+<label>Table 3</label> <caption><title>Total and subitem OQLQ scores in the unilateral cleft lip/palate, bilateral cleft lip palate and isolated cleft palate group.</title></caption>
+<alternatives>
+<graphic id="pone.0152014.t003g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0152014.t003" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">Case No.</th>
+<th align="center">Diagnosis</th>
+<th align="center">Gender</th>
+<th align="center">OQLQ (0–88)</th>
+<th align="center">Facial aesthetics (0–20)</th>
+<th align="center">Oral Function (0–20)</th>
+<th align="center">Awareness (0–16)</th>
+<th align="center">Social Aspects (0–32)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">7</td>
+<td align="center">LCLP</td>
+<td align="center">M</td>
+<td align="center">29</td>
+<td align="center">9</td>
+<td align="center">4</td>
+<td align="center">8</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">LCLP</td>
+<td align="center">M</td>
+<td align="center">4</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">2</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">12</td>
+<td align="center">LCLP</td>
+<td align="center">M</td>
+<td align="center">55</td>
+<td align="center">15</td>
+<td align="center">7</td>
+<td align="center">9</td>
+<td align="center">24</td>
+</tr>
+<tr>
+<td align="center">13</td>
+<td align="center">LCLP</td>
+<td align="center">M</td>
+<td align="center">5</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">18</td>
+<td align="center">LCLP</td>
+<td align="center">M</td>
+<td align="center">23</td>
+<td align="center">7</td>
+<td align="center">2</td>
+<td align="center">5</td>
+<td align="center">9</td>
+</tr>
+<tr>
+<td align="center">19</td>
+<td align="center">LCLP</td>
+<td align="center">M</td>
+<td align="center">26</td>
+<td align="center">7</td>
+<td align="center">4</td>
+<td align="center">9</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">20</td>
+<td align="center">LCLP</td>
+<td align="center">F</td>
+<td align="center">12</td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">4</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">22</td>
+<td align="center">LCLP</td>
+<td align="center">M</td>
+<td align="center">15</td>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">4</td>
+<td align="center">9</td>
+</tr>
+<tr>
+<td align="center">28</td>
+<td align="center">LCLP</td>
+<td align="center">M</td>
+<td align="center">22</td>
+<td align="center">10</td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">RCLP</td>
+<td align="center">F</td>
+<td align="center">11</td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">3</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">RCLP</td>
+<td align="center">M</td>
+<td align="center">35</td>
+<td align="center">15</td>
+<td align="center">1</td>
+<td align="center">8</td>
+<td align="center">11</td>
+</tr>
+<tr>
+<td align="center">11</td>
+<td align="center">RCLP</td>
+<td align="center">F</td>
+<td align="center">17</td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">2</td>
+<td align="center">11</td>
+</tr>
+<tr>
+<td align="center">23</td>
+<td align="center">RCLP</td>
+<td align="center">F</td>
+<td align="center">10</td>
+<td align="center">8</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center"><bold>Mean ±SD (range)</bold></td>
+<td align="center"><bold>UCLP</bold></td>
+<td align="center"/>
+<td align="center"><bold>20.3±14.0 (5–55)</bold></td>
+<td align="center"><bold>6.7±4.7 (1–15)</bold></td>
+<td align="center"><bold>1.8±2.3 (0–7)</bold></td>
+<td align="center"><bold>4.4±3.2 (0–9)</bold></td>
+<td align="center"><bold>7.5±6.0 (0–24)</bold></td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">BLCP</td>
+<td align="center">F</td>
+<td align="center">26</td>
+<td align="center">9</td>
+<td align="center">6</td>
+<td align="center">6</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">14</td>
+<td align="center">BLCP</td>
+<td align="center">M</td>
+<td align="center">2</td>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">21</td>
+<td align="center">BCLP</td>
+<td align="center">F</td>
+<td align="center">27</td>
+<td align="center">3</td>
+<td align="center">1</td>
+<td align="center">11</td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td align="center">29</td>
+<td align="center">BCLP</td>
+<td align="center">F</td>
+<td align="center">33</td>
+<td align="center">5</td>
+<td align="center">6</td>
+<td align="center">7</td>
+<td align="center">15</td>
+</tr>
+<tr>
+<td align="center"><bold>Mean ±SD (range)</bold></td>
+<td align="center"><bold>BCLP</bold></td>
+<td align="center"/>
+<td align="center"><bold>22±13.7 (2–33)</bold></td>
+<td align="center"><bold>4.8±3.1 (2–9)</bold></td>
+<td align="center"><bold>3.3±3.2 (0–6)</bold></td>
+<td align="center"><bold>6±4.5 (0–11)</bold></td>
+<td align="center"><bold>8±6.8 (0–15)</bold></td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center">CP</td>
+<td align="center">F</td>
+<td align="center">60</td>
+<td align="center">17</td>
+<td align="center">10</td>
+<td align="center">7</td>
+<td align="center">26</td>
+</tr>
+<tr>
+<td align="center">16</td>
+<td align="center">CP</td>
+<td align="center">M</td>
+<td align="center">34</td>
+<td align="center">13</td>
+<td align="center">1</td>
+<td align="center">4</td>
+<td align="center">16</td>
+</tr>
+<tr>
+<td align="center">25</td>
+<td align="center">CP</td>
+<td align="center">F</td>
+<td align="center">57</td>
+<td align="center">13</td>
+<td align="center">12</td>
+<td align="center">8</td>
+<td align="center">24</td>
+</tr>
+<tr>
+<td align="center"><bold>Mean ±SD (range)</bold></td>
+<td align="center"><bold>CP</bold></td>
+<td align="center"/>
+<td align="center"><bold>50.3±14.2 (34–57)</bold></td>
+<td align="center"><bold>14.3±2.3 (13–17)</bold></td>
+<td align="center"><bold>7.7±5.9 (1–12)</bold></td>
+<td align="center"><bold>6.3±2.1 (4–8)</bold></td>
+<td align="center"><bold>22±5.3 (16–26)</bold></td>
+</tr>
+<tr>
+<td align="center"><bold>Mean±SD (range)</bold></td>
+<td align="center"><bold>Total</bold></td>
+<td align="center"/>
+<td align="center"><bold>25.2±17.1 (2–60)</bold></td>
+<td align="center"><bold>7.5±5.0 (1–17)</bold></td>
+<td align="center"><bold>3.0±3.6 (0–12)</bold></td>
+<td align="center"><bold>52±3.3 (0–11)</bold></td>
+<td align="center"><bold>9.82±7.8 (0–26)</bold></td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t003fn001"><p>Abbreviations: LCLP: left cleft lip/palate, RCLP: right cleft lip/palate, UCLP: unilateral cleft lip/palate, M: male, F: female; OQLQ: Orthognathic quality of life questionnaire; SD: standard deviation</p></fn>
+</table-wrap-foot>
+</table-wrap>
+</sec>
+<sec id="sec008" sec-type="conclusions">
+<title>Discussion</title>
+<p>Regarding our primary outcome measure, we can report that in our patient group the large majority (83.3%) of transferred 2D planning datasets had to be adjusted in 3D simulation. Yaw rotation was the most frequently altered parameter and was adjusted in 19 (63.3%) out of 30 patients with the highest mean value and value range. Furthermore, we encountered severe bony collisions (e.g. <xref ref-type="fig" rid="pone.0152014.g003">Fig 3E–3H</xref>) in 14 (73.7%) out of 19 patients requiring yaw correction. It is technically difficult to follow such a plan during surgery if anatomical and functional mandibular repositioning is the goal. Following such a flawed plan would result in significant cheek asymmetry or temporo-mandibular joint problems. These issues can be avoided by using 3D simulation, because osseous collisions between the distal and proximal mandibular segments can be addressed in the planning phase and compensated by yaw rotation. Cheek symmetry can furthermore be improved through proper positioning of the proximal segments in the ramus area. Although the maxilla can show antero-posterior discrepancy from both sides in the piriform area after MMC yaw rotation, this asymmetry is comparatively less noticeable and can be corrected by bone grafting or fat injection to the underprojected side. Also, minor changes of the MMC position can conceal any residual asymmetry of the soft tissue [<xref ref-type="bibr" rid="pone.0152014.ref031">31</xref>].</p>
+<p>Patients needing midline correction, a total 11 (36.7%) out of 30, were divided in 3 subgroups (<xref ref-type="fig" rid="pone.0152014.g007">Fig 7</xref>). In 45.5% of patients the midline was corrected for more than 2mm, in another 45.5% for 1–2mm and in 1 patient (9%) for less than 1mm. Crowded or absent upper incisor dentition can potentially complicate dental midline definition in 2D cephalograms due to the bony and dental overlap. The difference between midline definitions overall and especially between 2D and 3D images can also be a reason for correction [<xref ref-type="bibr" rid="pone.0152014.ref032">32</xref>]. The 3D midline is a plane perpendicular to the Frankfurt horizontal plane through the nasion and basion, whereas the 2D midline is usually the dorsum midline between crista galli, anterior nasal spine, and dental as well as mandibular midpoints [<xref ref-type="bibr" rid="pone.0152014.ref033">33</xref>]. 2D frontal cephalometry distortion and absence of an additional reference point in the skull base may lead to this discrepancy in midline position assessment [<xref ref-type="bibr" rid="pone.0152014.ref034">34</xref>]. Therefore we attribute midline adjustment to a greater information yield of 3D imaging. Especially when combined with roll and yaw correction, the midline can also be altered by rotation in the frontal view [<xref ref-type="bibr" rid="pone.0152014.ref035">35</xref>] and may have to be readjusted. Similar considerations lead to pitch and genioplasty position adjustments. While 2D methods rely on the assumption that the patient’s skull is symmetric, structure superimposition creates distortion that can only be resolved by reassessment in three dimensions [<xref ref-type="bibr" rid="pone.0152014.ref036">36</xref>]. This distortion can be especially detrimental to surgical accuracy in CL/P patients with substantial facial asymmetry.</p>
+<p>It must be noted that the case numbers in the subgroups are too small to generalize our findings. However, when looking at the differences and similarities between the subgroups several of the tendencies in our dataset uphold our arguments for 3D simulation advantages over conventional 2D methods. The unilateral CL/P group showed yaw adjustments in 50% and severe bony collisions in 35% of patients; in contrast, all bilateral and isolated cleft palate cases had yaw adjustments, also to a higher mean and range extent. While facial asymmetry is generally believed to be more prominent in unilateral cases [<xref ref-type="bibr" rid="pone.0152014.ref037">37</xref>], these findings could implicate that skeletal facial asymmetry may be underappreciated in bilateral CL/P and isolated cleft palate patients and cannot be detected reliably by 2D methods. Roll correction does not seem to be an issue in bilateral cases, while it is commonly corrected in our unilateral subgroup (40%). Pitch correction is rarely altered compared to 2D cephalometry, with changes in only 15% of our unilateral CL/P patients, and no changes in both our bilateral CL/P and isolated cleft palate patients. Midline adjustments are more apparent and regularly encountered in the unilateral subgroup (40%), but the case number in the bilateral CL/P and isolated cleft palate patients is too limited to extract statistically significant values. Genioplasty alterations can be found in all subgroups; however, positioning the genioplasty segment is the last step in achieving facial symmetry and compensates for the midfacial alterations in the lower part of the face, where asymmetry is most apparent [<xref ref-type="bibr" rid="pone.0152014.ref038">38</xref>]. Therefore, we consider genioplasty alterations to be the result of the previous changes of yaw, roll, pitch and midline and not characteristic for a certain subgroup.</p>
+<p>The impact of 3D planning during single-splint surgery is manifold. The exact Le Fort I segment position can be evaluated preoperatively (<xref ref-type="fig" rid="pone.0152014.g008">Fig 8</xref>). The 3D position of the Le Fort I segment in relation to the maxilla is recorded in both lateral and piriform areas to facilitate proper positioning of the MMC during surgery. Midline shift, in this case to the right, and impaction in both upper first molar and piriform levels (<xref ref-type="fig" rid="pone.0152014.g008">Fig 8a</xref>) are noted as well as the different amounts of advancement or setback in the aforemetioned four levels (<xref ref-type="fig" rid="pone.0152014.g008">Fig 8b</xref>). The Le Fort I to maxilla relation defines the overall MMC position and can then be transferred by CAD/CAM manufactured splints, intraoperative navigation and/or positioning guides. Numerous studies have shown the higher accuracy of 3D simulation compared to traditional 2D planning [<xref ref-type="bibr" rid="pone.0152014.ref010">10</xref>, <xref ref-type="bibr" rid="pone.0152014.ref039">39</xref>]. A recent randomized controlled trial showed that alignment of the lower inter-incisal point (p = 0.03), mandibular sagittal plane (p = 0.01), and centering of the dental midlines (p = 0.03) were significantly more accurate in patients with 3D simulation than in the traditional 2D group [<xref ref-type="bibr" rid="pone.0152014.ref012">12</xref>]. For we also transfer our planning information with CAD/CAM splints, we can clinically confirm previous findings of a high-degree correlation between predicted and actual outcomes of 3D planning [<xref ref-type="bibr" rid="pone.0152014.ref009">9</xref>]. A prospective multicenter study demonstrated a maximum root-mean-square difference in pre- and postoperative CBCT images of 1.0 mm and 1.5 degrees for the maxilla and 1.1 mm and 1.8 degrees for the mandible [<xref ref-type="bibr" rid="pone.0152014.ref011">11</xref>]. Our group also published that MMC position can be reproduced during surgery by either intraoperative navigation [<xref ref-type="bibr" rid="pone.0152014.ref040">40</xref>] with a mean accuracy of 0.66 mm difference (range 0.05–1.46mm), or positioning guides [<xref ref-type="bibr" rid="pone.0152014.ref039">39</xref>] with accuracies of 0.18–0.33mm in the maxilla and 0.99–1.56mm in the mandible comparing the superimposed pre- and postoperative CBCT images [<xref ref-type="bibr" rid="pone.0152014.ref017">17</xref>].</p>
+<fig id="pone.0152014.g008" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0152014.g008</object-id>
+<label>Fig 8</label>
+<caption>
+<title>Position analysis of the Le Fort I segment of sample patient #29 (<xref ref-type="table" rid="pone.0152014.t001">Table 1</xref>).</title>
+<p>Bilateral cleft lip/palate patient. The 3D position of the Le Fort I segment in relation to the superior fixed part of the maxilla is recorded in both lateral and piriform areas to facilitate proper positioning of the MMC during surgery. Midline shifts in the patient’s right lateral pillar and impaction of the left piriform aperture (<xref ref-type="fig" rid="pone.0152014.g005">Fig 5a</xref>) are noted as well as the different amounts of advancement or setback in both left and right lateral and piriform levels (<xref ref-type="fig" rid="pone.0152014.g005">Fig 5b</xref>). This information is the result of the 3D alternation of the MMC and helps to transfer the results of 3D simulation into the surgical setting.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0152014.g008" xlink:type="simple"/>
+</fig>
+<p>Increased freedom of movement in single-splint OGS also leads to a longer learning period, making the visualization of the exact Le Fort I segment position especially useful. MMC control can be challenging for the beginner and sometimes even for the experienced surgeon, more so if the preoperative evaluation is insufficient. In contrast to 2D cephalometry, 3D simulation also facilitates thorough morphology analysis and helps to reduce the surgical difficulty by predicting problems like bony collisions and anomalies. The level and type of Le Fort I osteotomy can be assessed in more detail. Planning adjustments (e.g. two-segmental Le Fort I) after failed alveolar bone grafting, collisions in the pterygoid area after yaw rotation or setback, and the level of the Le Fort I osteotomy for correcting under-projection of the piriform area on the cleft side can also be anticipated.</p>
+<p>Drawbacks of 2D planning for mandibular positioning show up in 3D simulation after treatment plan transfer. Osseous collisions or gaps in the BSSO segments and the need of bone grafting are reliably detected in 3D simulation [<xref ref-type="bibr" rid="pone.0152014.ref041">41</xref>], making the ramus area adjustments predictable in terms of lower face symmetry. This finding is regularly missed in 2D cephalograms (Figs <xref ref-type="fig" rid="pone.0152014.g003">3H</xref> and <xref ref-type="fig" rid="pone.0152014.g004">4H</xref>), but easily corrected in the 3D basal view (Figs <xref ref-type="fig" rid="pone.0152014.g003">3L</xref> and <xref ref-type="fig" rid="pone.0152014.g004">4L</xref>). Moreover, the course of the inferior alveolar nerve in the mandibular body can be visualized preoperatively, making the BSSO procedure safer and more predictable [<xref ref-type="bibr" rid="pone.0152014.ref042">42</xref>].</p>
+<p>Advocates of traditional planning methods argue that jaw and dental relations can be precisely simulated without the use of 3D methods. However, a recent investigation shows that face-bow transfer accuracy is inferior to 3D simulation in terms of anatomical reference plane definition [<xref ref-type="bibr" rid="pone.0152014.ref043">43</xref>]. While stone model casts are still needed for digitalization to ensure proper representation of the occlusal surface in the CBCT pictures [<xref ref-type="bibr" rid="pone.0152014.ref026">26</xref>], the remaining steps can easily be done in 3D simulation, and the development of intraoral scanners is already promoted to overcome these limitations and completely digitalize the data acquisition process [<xref ref-type="bibr" rid="pone.0152014.ref044">44</xref>]. Several options of MMC placement can be evaluated during 3D simulation without the need of going through repeated traditional articulator setups. It is a general trend that 3D simulation is about to replace traditional analytical model surgery based on 2D treatment plans [<xref ref-type="bibr" rid="pone.0152014.ref045">45</xref>], especially when two-jaw OGS is conducted [<xref ref-type="bibr" rid="pone.0152014.ref046">46</xref>]. Also, the traditional stone model method mainly focuses on occlusal relation and does not address overall facial harmony, because the soft tissue envelope cannot be assessed.</p>
+<p>We can additionally report that the post-treatment evaluation of OQLQ scores showed comparable scores to patients in a previously published non-cleft control group, and largely higher scores than patients in the preoperative group of non-cleft patients [<xref ref-type="bibr" rid="pone.0152014.ref030">30</xref>]. Dental function was assessed very positive among all the subgroups. In our patient sample, the unilateral CL/P group showed the highest overall satisfaction with a close following by the bilateral CL/P group. While we cannot report a significant case number in the isolated cleft palate group, these patients seem to have a tendency for a more impaired quality of life and especially a larger burden regarding social aspects of the dentofacial deformity compared to the cleft lip groups. However, these findings are purely descriptive due to the limited case number and warrant further evaluation in a separate study.</p>
+<p>Limitations of our study include the focus on planning and conducting two-jaw OGS solely for cleft lip/palate patients. Also, our subgroup analysis can only be descriptive in both functional and outcome measures due to the limited case number, and conclusions should not be generalized. However, certain tendencies can be recognized in the data, and while the planning responsibilities and sequences are diverse in OGS practice around the world, there is still applicable information from this study regardless of these differences. Firstly, the surgeon has to be aware that the intraoperative situation is less predictable and the accurate transfer of the plan may be harder to achieve with a 2D cephalometry-based surgical plan. Reaching a treatment consensus is much easier if both orthodontist and surgeon can adjust their planning together using a 3D simulation that is based on more overall information. Secondly, while we conduct our surgery using only the single-splint and not the two-splint method, both techniques need proper preoperative planning. 3D planning and CAD/CAM splint fabrication for two-splint surgery is already being carried out with high accuracy [<xref ref-type="bibr" rid="pone.0152014.ref044">44</xref>], and addressing bony collisions in the ramus area beforehand is even more useful in two-splint surgery, possibly avoiding the need for intraoperative adjustments and losing the purpose of the intermediate occlusal splint altogether. Finally, our patient collection is limited to CL/P patients, where more prominent features of facial asymmetry may translate into a higher incidence of treatment plan alterations; however, in our experience we regularly alter treatment plans of non-cleft patients with facial asymmetry and also frequently observe severe bony collisions in the ramus area. Therefore we are currently preparing another study focusing on the incidence of same treatment plan changes in the general population. The subgroup analysis of unilateral CL/P, bilateral CL/P and isolated cleft palate treatment plan adjustments should also be expanded in further subgroup studies to validate the trends we have seen in this investigation.</p>
+</sec>
+<sec id="sec009" sec-type="conclusions">
+<title>Conclusion</title>
+<p>In our patient group, consisting exclusively of CL/P patients, we demonstrated the greater information yield of 3D simulation over 2D planning. 83.3% of our 2D surgical plans were modified, mostly concerning yaw and midline adjustments. Severe bony collisions, occurring in a total 46.7% of cases, could regularly be anticipated and corrected during 3D simulation before surgery. Based on our findings, 3D simulation renders important information for accurate planning in complex CL/P cases involving facial asymmetry that is regularly missed in 2D methods. Intraoperative findings can be predicted due to more detailed imaging of the facial bony structures in terms of position, orientation and form, and major intraoperative changes of the treatment plan due to lack of technical feasibility can be avoided.</p>
+</sec>
+</body>
+<back>
+<ack>
+<p>The study was performed in the Craniofacial Imaging Lab, and supported by grants from Chang Gung Memorial Hospital, CMRPG381601-3 and CMRPG3B0291-3. We thank Hsin-Wen Chang, and Dora Niu for image processing and collecting data, Daniel Chiung-Shing Huang (DDS, PhD), Ellen Ko (DDS) and Cheng-Hui Lin (MD) for study plan suggestion.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0152014.ref001"><label>1</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Proffit</surname> <given-names>WR</given-names></name>, <name name-style="western"><surname>Fields</surname> <given-names>HW</given-names> <suffix>Jr</suffix></name>, <name name-style="western"><surname>Moray</surname> <given-names>LJ</given-names></name>. <article-title>Prevalence of malocclusion and orthodontic treatment need in the United States: estimates from the NHANES III survey</article-title>. <source>The International journal of adult orthodontics and orthognathic surgery</source>. <year>1998</year>;<volume>13</volume>(<issue>2</issue>):<fpage>97</fpage>–<lpage>106</lpage>. Epub 1998/09/23. <object-id pub-id-type="pmid">9743642</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref002"><label>2</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Altobelli</surname> <given-names>DE</given-names></name>, <name name-style="western"><surname>Kikinis</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Mulliken</surname> <given-names>JB</given-names></name>, <name name-style="western"><surname>Cline</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Lorensen</surname> <given-names>W</given-names></name>, <name name-style="western"><surname>Jolesz</surname> <given-names>F</given-names></name>. <article-title>Computer-assisted three-dimensional planning in craniofacial surgery</article-title>. <source>Plastic and reconstructive surgery</source>. <year>1993</year>;<volume>92</volume>(<issue>4</issue>):<fpage>576</fpage>–<lpage>85</lpage>; discussion 86–7. Epub 1993/09/01. <object-id pub-id-type="pmid">8356120</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref003"><label>3</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Caloss</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Atkins</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Stella</surname> <given-names>JP</given-names></name>. <article-title>Three-dimensional imaging for virtual assessment and treatment simulation in orthognathic surgery</article-title>. <source>Oral and maxillofacial surgery clinics of North America</source>. <year>2007</year>;<volume>19</volume>(<issue>3</issue>):<fpage>287</fpage>–<lpage>309</lpage>, v. Epub 2007/12/20. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.coms.2007.04.006" xlink:type="simple">10.1016/j.coms.2007.04.006</ext-link></comment> <object-id pub-id-type="pmid">18088886</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref004"><label>4</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Haas</surname> <given-names>OL</given-names> <suffix>Jr</suffix></name>, <name name-style="western"><surname>Becker</surname> <given-names>OE</given-names></name>, <name name-style="western"><surname>de Oliveira</surname> <given-names>RB</given-names></name>. <article-title>Computer-aided planning in orthognathic surgery-systematic review</article-title>. <source>International journal of oral and maxillofacial surgery</source>. <year>2014</year>. Epub 2014/11/30. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ijom.2014.10.025" xlink:type="simple">10.1016/j.ijom.2014.10.025</ext-link></comment> <object-id pub-id-type="pmid">25432508</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref005"><label>5</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kusnoto</surname> <given-names>B</given-names></name>. <article-title>Two-dimensional cephalometry and computerized orthognathic surgical treatment planning</article-title>. <source>Clinics in plastic surgery</source>. <year>2007</year>;<volume>34</volume>(<issue>3</issue>):<fpage>417</fpage>–<lpage>26</lpage>. Epub 2007/08/21. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.cps.2007.04.005" xlink:type="simple">10.1016/j.cps.2007.04.005</ext-link></comment> <object-id pub-id-type="pmid">17692701</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref006"><label>6</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>da Silva</surname> <given-names>MB</given-names></name>, <name name-style="western"><surname>Sant'Anna</surname> <given-names>EF</given-names></name>. <article-title>The evolution of cephalometric diagnosis in orthodontics</article-title>. <source>Dental press journal of orthodontics</source>. <year>2013</year>;<volume>18</volume>(<issue>3</issue>):<fpage>63</fpage>–<lpage>71</lpage>. Epub 2013/10/08. <object-id pub-id-type="pmid">24094013</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref007"><label>7</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gateno</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Xia</surname> <given-names>JJ</given-names></name>, <name name-style="western"><surname>Teichgraeber</surname> <given-names>JF</given-names></name>, <name name-style="western"><surname>Christensen</surname> <given-names>AM</given-names></name>, <name name-style="western"><surname>Lemoine</surname> <given-names>JJ</given-names></name>, <name name-style="western"><surname>Liebschner</surname> <given-names>MA</given-names></name>, <etal>et al</etal>. <article-title>Clinical feasibility of computer-aided surgical simulation (CASS) in the treatment of complex cranio-maxillofacial deformities</article-title>. <source>Journal of oral and maxillofacial surgery: official journal of the American Association of Oral and Maxillofacial Surgeons</source>. <year>2007</year>;<volume>65</volume>(<issue>4</issue>):<fpage>728</fpage>–<lpage>34</lpage>. Epub 2007/03/21. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.joms.2006.04.001" xlink:type="simple">10.1016/j.joms.2006.04.001</ext-link></comment> <object-id pub-id-type="pmid">17368370</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref008"><label>8</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Xia</surname> <given-names>JJ</given-names></name>, <name name-style="western"><surname>Gateno</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Teichgraeber</surname> <given-names>JF</given-names></name>, <name name-style="western"><surname>Christensen</surname> <given-names>AM</given-names></name>, <name name-style="western"><surname>Lasky</surname> <given-names>RE</given-names></name>, <name name-style="western"><surname>Lemoine</surname> <given-names>JJ</given-names></name>, <etal>et al</etal>. <article-title>Accuracy of the computer-aided surgical simulation (CASS) system in the treatment of patients with complex craniomaxillofacial deformity: A pilot study</article-title>. <source>Journal of oral and maxillofacial surgery: official journal of the American Association of Oral and Maxillofacial Surgeons</source>. <year>2007</year>;<volume>65</volume>(<issue>2</issue>):<fpage>248</fpage>–<lpage>54</lpage>. Epub 2007/01/24. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.joms.2006.10.005" xlink:type="simple">10.1016/j.joms.2006.10.005</ext-link></comment> <object-id pub-id-type="pmid">17236929</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref009"><label>9</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Aboul-Hosn Centenero</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Hernandez-Alfaro</surname> <given-names>F</given-names></name>. <article-title>3D planning in orthognathic surgery: CAD/CAM surgical splints and prediction of the soft and hard tissues results—our experience in 16 cases</article-title>. <source>Journal of cranio-maxillo-facial surgery: official publication of the European Association for Cranio-Maxillo-Facial Surgery</source>. <year>2012</year>;<volume>40</volume>(<issue>2</issue>):<fpage>162</fpage>–<lpage>8</lpage>. Epub 2011/04/05. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.jcms.2011.03.014" xlink:type="simple">10.1016/j.jcms.2011.03.014</ext-link></comment> <object-id pub-id-type="pmid">21458285</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref010"><label>10</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lin</surname> <given-names>HH</given-names></name>, <name name-style="western"><surname>Lo</surname> <given-names>LJ</given-names></name>. <article-title>Three-dimensional computer-assisted surgical simulation and intraoperative navigation in orthognathic surgery: a literature review</article-title>. <source>Journal of the Formosan Medical Association = Taiwan yi zhi</source>. <year>2015</year>;<volume>114</volume>(<issue>4</issue>):<fpage>300</fpage>–<lpage>7</lpage>. Epub 2015/03/07. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.jfma.2015.01.017" xlink:type="simple">10.1016/j.jfma.2015.01.017</ext-link></comment> <object-id pub-id-type="pmid">25744942</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref011"><label>11</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hsu</surname> <given-names>SS</given-names></name>, <name name-style="western"><surname>Gateno</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Bell</surname> <given-names>RB</given-names></name>, <name name-style="western"><surname>Hirsch</surname> <given-names>DL</given-names></name>, <name name-style="western"><surname>Markiewicz</surname> <given-names>MR</given-names></name>, <name name-style="western"><surname>Teichgraeber</surname> <given-names>JF</given-names></name>, <etal>et al</etal>. <article-title>Accuracy of a computer-aided surgical simulation protocol for orthognathic surgery: a prospective multicenter study</article-title>. <source>Journal of oral and maxillofacial surgery: official journal of the American Association of Oral and Maxillofacial Surgeons</source>. <year>2013</year>;<volume>71</volume>(<issue>1</issue>):<fpage>128</fpage>–<lpage>42</lpage>. Epub 2012/06/15. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.joms.2012.03.027" xlink:type="simple">10.1016/j.joms.2012.03.027</ext-link></comment> <object-id pub-id-type="pmid">22695016</object-id>; PubMed Central PMCID: PMCPMC3443525.</mixed-citation></ref>
+<ref id="pone.0152014.ref012"><label>12</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>De Riu</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Meloni</surname> <given-names>SM</given-names></name>, <name name-style="western"><surname>Baj</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Corda</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Soma</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Tullio</surname> <given-names>A</given-names></name>. <article-title>Computer-assisted orthognathic surgery for correction of facial asymmetry: results of a randomised controlled clinical trial</article-title>. <source>The British journal of oral &amp; maxillofacial surgery</source>. <year>2014</year>;<volume>52</volume>(<issue>3</issue>):<fpage>251</fpage>–<lpage>7</lpage>. Epub 2014/01/15. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.bjoms.2013.12.010" xlink:type="simple">10.1016/j.bjoms.2013.12.010</ext-link></comment> <object-id pub-id-type="pmid">24418178</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref013"><label>13</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Li</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Zhang</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Sun</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Yuan</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Shen</surname> <given-names>SG</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>X</given-names></name>. <article-title>A novel method of computer aided orthognathic surgery using individual CAD/CAM templates: a combination of osteotomy and repositioning guides</article-title>. <source>The British journal of oral &amp; maxillofacial surgery</source>. <year>2013</year>;<volume>51</volume>(<issue>8</issue>):<fpage>e239</fpage>–<lpage>44</lpage>. Epub 2013/04/10. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.bjoms.2013.03.007" xlink:type="simple">10.1016/j.bjoms.2013.03.007</ext-link></comment> <object-id pub-id-type="pmid">23566536</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref014"><label>14</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Shehab</surname> <given-names>MF</given-names></name>, <name name-style="western"><surname>Barakat</surname> <given-names>AA</given-names></name>, <name name-style="western"><surname>AbdElghany</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Mostafa</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Baur</surname> <given-names>DA</given-names></name>. <article-title>A novel design of a computer-generated splint for vertical repositioning of the maxilla after Le Fort I osteotomy</article-title>. <source>Oral Surg Oral Med Oral Pathol Oral Radiol</source>. <year>2013</year>;<volume>115</volume>(<issue>2</issue>):<fpage>e16</fpage>–<lpage>25</lpage>. Epub 2013/01/15. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.oooo.2011.09.035" xlink:type="simple">10.1016/j.oooo.2011.09.035</ext-link></comment> <object-id pub-id-type="pmid">23312923</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref015"><label>15</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sun</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Luebbers</surname> <given-names>HT</given-names></name>, <name name-style="western"><surname>Agbaje</surname> <given-names>JO</given-names></name>, <name name-style="western"><surname>Schepers</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Vrielinck</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Lambrichts</surname> <given-names>I</given-names></name>, <etal>et al</etal>. <article-title>Accuracy of upper jaw positioning with intermediate splint fabrication after virtual planning in bimaxillary orthognathic surgery</article-title>. <source>The Journal of craniofacial surgery</source>. <year>2013</year>;<volume>24</volume>(<issue>6</issue>):<fpage>1871</fpage>–<lpage>6</lpage>. Epub 2013/11/14. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/SCS.0b013e31829a80d9" xlink:type="simple">10.1097/SCS.0b013e31829a80d9</ext-link></comment> <object-id pub-id-type="pmid">24220365</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref016"><label>16</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zinser</surname> <given-names>MJ</given-names></name>, <name name-style="western"><surname>Sailer</surname> <given-names>HF</given-names></name>, <name name-style="western"><surname>Ritter</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Braumann</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Maegele</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Zoller</surname> <given-names>JE</given-names></name>. <article-title>A paradigm shift in orthognathic surgery? A comparison of navigation, computer-aided designed/computer-aided manufactured splints, and "classic" intermaxillary splints to surgical transfer of virtual orthognathic planning</article-title>. <source>Journal of oral and maxillofacial surgery: official journal of the American Association of Oral and Maxillofacial Surgeons</source>. <year>2013</year>;<volume>71</volume>(<issue>12</issue>):<fpage>2151.e1</fpage>–<lpage>21</lpage>. Epub 2013/11/19. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.joms.2013.07.007" xlink:type="simple">10.1016/j.joms.2013.07.007</ext-link></comment> <object-id pub-id-type="pmid">24237776</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref017"><label>17</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lin</surname> <given-names>HH</given-names></name>, <name name-style="western"><surname>Chang</surname> <given-names>HW</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>CH</given-names></name>, <name name-style="western"><surname>Kim</surname> <given-names>SG</given-names></name>, <name name-style="western"><surname>Lo</surname> <given-names>LJ</given-names></name>. <article-title>Three-dimensional computer-assisted orthognathic surgery: experience of 37 patients</article-title>. <source>Annals of plastic surgery</source>. <year>2015</year>;<volume>74</volume> <issue>Suppl 2</issue>:<fpage>S118</fpage>–<lpage>26</lpage>. Epub 2015/03/19. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/sap.0000000000000455" xlink:type="simple">10.1097/sap.0000000000000455</ext-link></comment> <object-id pub-id-type="pmid">25785379</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref018"><label>18</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Xia</surname> <given-names>JJ</given-names></name>, <name name-style="western"><surname>Shevchenko</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Gateno</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Teichgraeber</surname> <given-names>JF</given-names></name>, <name name-style="western"><surname>Taylor</surname> <given-names>TD</given-names></name>, <name name-style="western"><surname>Lasky</surname> <given-names>RE</given-names></name>, <etal>et al</etal>. <article-title>Outcome study of computer-aided surgical simulation in the treatment of patients with craniomaxillofacial deformities</article-title>. <source>Journal of oral and maxillofacial surgery: official journal of the American Association of Oral and Maxillofacial Surgeons</source>. <year>2011</year>;<volume>69</volume>(<issue>7</issue>):<fpage>2014</fpage>–<lpage>24</lpage>. Epub 2011/06/21. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.joms.2011.02.018" xlink:type="simple">10.1016/j.joms.2011.02.018</ext-link></comment> <object-id pub-id-type="pmid">21684451</object-id>; PubMed Central PMCID: PMCPmc3119456.</mixed-citation></ref>
+<ref id="pone.0152014.ref019"><label>19</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gateno</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Xia</surname> <given-names>JJ</given-names></name>, <name name-style="western"><surname>Teichgraeber</surname> <given-names>JF</given-names></name>. <article-title>New 3-dimensional cephalometric analysis for orthognathic surgery</article-title>. <source>Journal of oral and maxillofacial surgery: official journal of the American Association of Oral and Maxillofacial Surgeons</source>. <year>2011</year>;<volume>69</volume>(<issue>3</issue>):<fpage>606</fpage>–<lpage>22</lpage>. Epub 2011/01/25. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.joms.2010.09.010" xlink:type="simple">10.1016/j.joms.2010.09.010</ext-link></comment> <object-id pub-id-type="pmid">21257250</object-id>; PubMed Central PMCID: PMCPmc3059215.</mixed-citation></ref>
+<ref id="pone.0152014.ref020"><label>20</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kwon</surname> <given-names>TG</given-names></name>, <name name-style="western"><surname>Park</surname> <given-names>HS</given-names></name>, <name name-style="western"><surname>Ryoo</surname> <given-names>HM</given-names></name>, <name name-style="western"><surname>Lee</surname> <given-names>SH</given-names></name>. <article-title>A comparison of craniofacial morphology in patients with and without facial asymmetry—a three-dimensional analysis with computed tomography</article-title>. <source>International journal of oral and maxillofacial surgery</source>. <year>2006</year>;<volume>35</volume>(<issue>1</issue>):<fpage>43</fpage>–<lpage>8</lpage>. Epub 2005/06/01. <object-id pub-id-type="pmid">15925488</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref021"><label>21</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Farkas</surname> <given-names>LG</given-names></name>, <name name-style="western"><surname>Cheung</surname> <given-names>G</given-names></name>. <article-title>Facial asymmetry in healthy North American Caucasians. An anthropometrical study</article-title>. <source>The Angle orthodontist</source>. <year>1981</year>;<volume>51</volume>(<issue>1</issue>):<fpage>70</fpage>–<lpage>7</lpage>. Epub 1981/01/01. <object-id pub-id-type="pmid">6939355</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref022"><label>22</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Abuhijleh</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Aydemir</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Toygar-Memikoglu</surname> <given-names>U</given-names></name>. <article-title>Three-dimensional craniofacial morphology in unilateral cleft lip and palate</article-title>. <source>Journal of oral science</source>. <year>2014</year>;<volume>56</volume>(<issue>2</issue>):<fpage>165</fpage>–<lpage>72</lpage>. Epub 2014/06/17. <object-id pub-id-type="pmid">24930754</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref023"><label>23</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Meyer-Marcotty</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Alpers</surname> <given-names>GW</given-names></name>, <name name-style="western"><surname>Gerdes</surname> <given-names>AB</given-names></name>, <name name-style="western"><surname>Stellzig-Eisenhauer</surname> <given-names>A</given-names></name>. <article-title>Impact of facial asymmetry in visual perception: a 3-dimensional data analysis</article-title>. <source>American journal of orthodontics and dentofacial orthopedics: official publication of the American Association of Orthodontists, its constituent societies, and the American Board of Orthodontics</source>. <year>2010</year>;<volume>137</volume>(<issue>2</issue>):<fpage>168.e1</fpage>–<lpage>8</lpage>; discussion -9. Epub 2010/02/16. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ajodo.2008.11.023" xlink:type="simple">10.1016/j.ajodo.2008.11.023</ext-link></comment> <object-id pub-id-type="pmid">20152669</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref024"><label>24</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rinchuse</surname> <given-names>DJ</given-names></name>, <name name-style="western"><surname>Kandasamy</surname> <given-names>S</given-names></name>. <article-title>Articulators in orthodontics: an evidence-based perspective</article-title>. <source>American journal of orthodontics and dentofacial orthopedics: official publication of the American Association of Orthodontists, its constituent societies, and the American Board of Orthodontics</source>. <year>2006</year>;<volume>129</volume>(<issue>2</issue>):<fpage>299</fpage>–<lpage>308</lpage>. Epub 2006/02/14. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ajodo.2005.03.019" xlink:type="simple">10.1016/j.ajodo.2005.03.019</ext-link></comment> <object-id pub-id-type="pmid">16473725</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref025"><label>25</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dai</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Tang</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Xin</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Hu</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Si</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Dong</surname> <given-names>Y</given-names></name>, <etal>et al</etal>. <article-title>Accurate movement of jaw segment in virtual 3D orthognathic surgery</article-title>. <source>The Journal of craniofacial surgery</source>. <year>2014</year>;<volume>25</volume>(<issue>2</issue>):<fpage>e140</fpage>–<lpage>3</lpage>. Epub 2014/03/14. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/scs.0000000000000414" xlink:type="simple">10.1097/scs.0000000000000414</ext-link></comment> <object-id pub-id-type="pmid">24621754</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref026"><label>26</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lin</surname> <given-names>HH</given-names></name>, <name name-style="western"><surname>Chiang</surname> <given-names>WC</given-names></name>, <name name-style="western"><surname>Lo</surname> <given-names>LJ</given-names></name>, <name name-style="western"><surname>Sheng-Pin Hsu</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>CH</given-names></name>, <name name-style="western"><surname>Wan</surname> <given-names>SY</given-names></name>. <article-title>Artifact-resistant superimposition of digital dental models and cone-beam computed tomography images</article-title>. <source>Journal of oral and maxillofacial surgery: official journal of the American Association of Oral and Maxillofacial Surgeons</source>. <year>2013</year>;<volume>71</volume>(<issue>11</issue>):<fpage>1933</fpage>–<lpage>47</lpage>. Epub 2013/08/06. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.joms.2013.06.199" xlink:type="simple">10.1016/j.joms.2013.06.199</ext-link></comment> <object-id pub-id-type="pmid">23911142</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref027"><label>27</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lin</surname> <given-names>HH</given-names></name>, <name name-style="western"><surname>Chuang</surname> <given-names>YF</given-names></name>, <name name-style="western"><surname>Weng</surname> <given-names>JL</given-names></name>, <name name-style="western"><surname>Lo</surname> <given-names>LJ</given-names></name>. <article-title>Comparative validity and reproducibility study of various landmark-oriented reference planes in 3-dimensional computed tomographic analysis for patients receiving orthognathic surgery</article-title>. <source>PloS one</source>. <year>2015</year>;<volume>10</volume>(<issue>2</issue>):<fpage>e0117604</fpage>. Epub 2015/02/11. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0117604" xlink:type="simple">10.1371/journal.pone.0117604</ext-link></comment> <object-id pub-id-type="pmid">25668209</object-id>; PubMed Central PMCID: PMCPMC4323243.</mixed-citation></ref>
+<ref id="pone.0152014.ref028"><label>28</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cunningham</surname> <given-names>SJ</given-names></name>, <name name-style="western"><surname>Garratt</surname> <given-names>AM</given-names></name>, <name name-style="western"><surname>Hunt</surname> <given-names>NP</given-names></name>. <article-title>Development of a condition-specific quality of life measure for patients with dentofacial deformity: I. Reliability of the instrument</article-title>. <source>Community dentistry and oral epidemiology</source>. <year>2000</year>;<volume>28</volume>(<issue>3</issue>):<fpage>195</fpage>–<lpage>201</lpage>. Epub 2000/06/01. <object-id pub-id-type="pmid">10830646</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref029"><label>29</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cunningham</surname> <given-names>SJ</given-names></name>, <name name-style="western"><surname>Garratt</surname> <given-names>AM</given-names></name>, <name name-style="western"><surname>Hunt</surname> <given-names>NP</given-names></name>. <article-title>Development of a condition-specific quality of life measure for patients with dentofacial deformity: II. Validity and responsiveness testing</article-title>. <source>Community dentistry and oral epidemiology</source>. <year>2002</year>;<volume>30</volume>(<issue>2</issue>):<fpage>81</fpage>–<lpage>90</lpage>. Epub 2002/05/10. <object-id pub-id-type="pmid">12000348</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref030"><label>30</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lee</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>McGrath</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Samman</surname> <given-names>N</given-names></name>. <article-title>Impact of orthognathic surgery on quality of life</article-title>. <source>Journal of oral and maxillofacial surgery: official journal of the American Association of Oral and Maxillofacial Surgeons</source>. <year>2008</year>;<volume>66</volume>(<issue>6</issue>):<fpage>1194</fpage>–<lpage>9</lpage>. Epub 2008/05/20. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.joms.2008.01.006" xlink:type="simple">10.1016/j.joms.2008.01.006</ext-link></comment> <object-id pub-id-type="pmid">18486784</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref031"><label>31</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bergeron</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Yu</surname> <given-names>CC</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>YR</given-names></name>. <article-title>Single-splint technique for correction of severe facial asymmetry: correlation between intraoperative maxillomandibular complex roll and restoration of mouth symmetry</article-title>. <source>Plastic and reconstructive surgery</source>. <year>2008</year>;<volume>122</volume>(<issue>5</issue>):<fpage>1535</fpage>–<lpage>41</lpage>. Epub 2008/10/31. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/PRS.0b013e31818820d8" xlink:type="simple">10.1097/PRS.0b013e31818820d8</ext-link></comment> <object-id pub-id-type="pmid">18971738</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref032"><label>32</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Maglione</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Costantinides</surname> <given-names>F</given-names></name>. <article-title>Localization of basicranium midline by submentovertex projection for the evaluation of condylar asymmetry</article-title>. <source>International journal of dentistry</source>. <year>2012</year>;<volume>2012</volume>:<fpage>285693</fpage>. Epub 2012/02/09. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1155/2012/285693" xlink:type="simple">10.1155/2012/285693</ext-link></comment> <object-id pub-id-type="pmid">22315603</object-id>; PubMed Central PMCID: PMCPmc3272349.</mixed-citation></ref>
+<ref id="pone.0152014.ref033"><label>33</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hurst</surname> <given-names>CA</given-names></name>, <name name-style="western"><surname>Eppley</surname> <given-names>BL</given-names></name>, <name name-style="western"><surname>Havlik</surname> <given-names>RJ</given-names></name>, <name name-style="western"><surname>Sadove</surname> <given-names>AM</given-names></name>. <article-title>Surgical cephalometrics: applications and developments</article-title>. <source>Plastic and reconstructive surgery</source>. <year>2007</year>;<volume>120</volume>(<issue>6</issue>):<fpage>92e</fpage>–<lpage>104e</lpage>. Epub 2007/11/28. <object-id pub-id-type="pmid">18040171</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref034"><label>34</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chien</surname> <given-names>PC</given-names></name>, <name name-style="western"><surname>Parks</surname> <given-names>ET</given-names></name>, <name name-style="western"><surname>Eraso</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Hartsfield</surname> <given-names>JK</given-names></name>, <name name-style="western"><surname>Roberts</surname> <given-names>WE</given-names></name>, <name name-style="western"><surname>Ofner</surname> <given-names>S</given-names></name>. <article-title>Comparison of reliability in anatomical landmark identification using two-dimensional digital cephalometrics and three-dimensional cone beam computed tomography in vivo</article-title>. <source>Dento maxillo facial radiology</source>. <year>2009</year>;<volume>38</volume>(<issue>5</issue>):<fpage>262</fpage>–<lpage>73</lpage>. Epub 2009/05/29. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1259/dmfr/81889955" xlink:type="simple">10.1259/dmfr/81889955</ext-link></comment> <object-id pub-id-type="pmid">19474253</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref035"><label>35</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Song</surname> <given-names>WW</given-names></name>, <name name-style="western"><surname>Kim</surname> <given-names>SS</given-names></name>, <name name-style="western"><surname>Sandor</surname> <given-names>GK</given-names></name>, <name name-style="western"><surname>Kim</surname> <given-names>YD</given-names></name>. <article-title>Maxillary yaw as the primary predictor of maxillary dental midline deviation: 3D analysis using cone-beam computed tomography</article-title>. <source>Journal of oral and maxillofacial surgery: official journal of the American Association of Oral and Maxillofacial Surgeons</source>. <year>2013</year>;<volume>71</volume>(<issue>4</issue>):<fpage>752</fpage>–<lpage>62</lpage>. Epub 2012/09/27. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.joms.2012.07.043" xlink:type="simple">10.1016/j.joms.2012.07.043</ext-link></comment> <object-id pub-id-type="pmid">23010372</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref036"><label>36</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Halazonetis</surname> <given-names>DJ</given-names></name>. <article-title>From 2-dimensional cephalograms to 3-dimensional computed tomography scans</article-title>. <source>American journal of orthodontics and dentofacial orthopedics: official publication of the American Association of Orthodontists, its constituent societies, and the American Board of Orthodontics</source>. <year>2005</year>;<volume>127</volume>(<issue>5</issue>):<fpage>627</fpage>–<lpage>37</lpage>. Epub 2005/05/07. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ajodo.2005.01.004" xlink:type="simple">10.1016/j.ajodo.2005.01.004</ext-link></comment> <object-id pub-id-type="pmid">15877045</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref037"><label>37</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Guyuron</surname> <given-names>B</given-names></name>. <article-title>MOC-PS(SM) CME article: late cleft lip nasal deformity</article-title>. <source>Plastic and reconstructive surgery</source>. <year>2008</year>;<volume>121</volume>(<issue>4 Suppl</issue>):<fpage>1</fpage>–<lpage>11</lpage>. Epub 2008/04/11. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/01.prs.0000305955.67554.40" xlink:type="simple">10.1097/01.prs.0000305955.67554.40</ext-link></comment> <object-id pub-id-type="pmid">18379379</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref038"><label>38</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Huang</surname> <given-names>CS</given-names></name>, <name name-style="western"><surname>Liu</surname> <given-names>XQ</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>YR</given-names></name>. <article-title>Facial asymmetry index in normal young adults</article-title>. <source>Orthodontics &amp; craniofacial research</source>. <year>2013</year>;<volume>16</volume>(<issue>2</issue>):<fpage>97</fpage>–<lpage>104</lpage>. Epub 2013/01/18. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/ocr.12010" xlink:type="simple">10.1111/ocr.12010</ext-link></comment> <object-id pub-id-type="pmid">23324075</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref039"><label>39</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lin</surname> <given-names>HH</given-names></name>, <name name-style="western"><surname>Chang</surname> <given-names>HW</given-names></name>, <name name-style="western"><surname>Lo</surname> <given-names>LJ</given-names></name>. <article-title>Development of customized positioning guides using computer-aided design and manufacturing technology for orthognathic surgery</article-title>. <source>International journal of computer assisted radiology and surgery</source>. <year>2015</year>;<volume>10</volume>(<issue>12</issue>):<fpage>2021</fpage>–<lpage>33</lpage>. Epub 2015/05/20. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s11548-015-1223-0" xlink:type="simple">10.1007/s11548-015-1223-0</ext-link></comment> <object-id pub-id-type="pmid">25981638</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref040"><label>40</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chang</surname> <given-names>HW</given-names></name>, <name name-style="western"><surname>Lin</surname> <given-names>HH</given-names></name>, <name name-style="western"><surname>Chortrakarnkij</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Kim</surname> <given-names>SG</given-names></name>, <name name-style="western"><surname>Lo</surname> <given-names>LJ</given-names></name>. <article-title>Intraoperative navigation for single-splint two-jaw orthognathic surgery: From model to actual surgery</article-title>. <source>Journal of cranio-maxillo-facial surgery: official publication of the European Association for Cranio-Maxillo-Facial Surgery</source>. <year>2015</year>;<volume>43</volume>(<issue>7</issue>):<fpage>1119</fpage>–<lpage>26</lpage>. Epub 2015/07/15. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.jcms.2015.06.009" xlink:type="simple">10.1016/j.jcms.2015.06.009</ext-link></comment> <object-id pub-id-type="pmid">26160383</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref041"><label>41</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mori</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Shimizu</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Minami</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Kwon</surname> <given-names>TG</given-names></name>, <name name-style="western"><surname>Mano</surname> <given-names>T</given-names></name>. <article-title>Development of a simulation system in mandibular orthognathic surgery based on integrated three-dimensional data</article-title>. <source>Oral and maxillofacial surgery</source>. <year>2011</year>;<volume>15</volume>(<issue>3</issue>):<fpage>131</fpage>–<lpage>8</lpage>. Epub 2010/10/29. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s10006-010-0247-4" xlink:type="simple">10.1007/s10006-010-0247-4</ext-link></comment> <object-id pub-id-type="pmid">20981462</object-id>; PubMed Central PMCID: PMCPmc3157604.</mixed-citation></ref>
+<ref id="pone.0152014.ref042"><label>42</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Huang</surname> <given-names>CS</given-names></name>, <name name-style="western"><surname>Syu</surname> <given-names>JJ</given-names></name>, <name name-style="western"><surname>Ko</surname> <given-names>EW</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>YR</given-names></name>. <article-title>Quantitative evaluation of cortical bone thickness in mandibular prognathic patients with neurosensory disturbance after bilateral sagittal split osteotomy</article-title>. <source>Journal of oral and maxillofacial surgery: official journal of the American Association of Oral and Maxillofacial Surgeons</source>. <year>2013</year>;<volume>71</volume>(<issue>12</issue>):<fpage>2153.e1</fpage>–<lpage>10</lpage>. Epub 2013/10/19. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.joms.2013.08.004" xlink:type="simple">10.1016/j.joms.2013.08.004</ext-link></comment> <object-id pub-id-type="pmid">24135253</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref043"><label>43</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zizelmann</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Hammer</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Gellrich</surname> <given-names>NC</given-names></name>, <name name-style="western"><surname>Schwestka-Polly</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Rana</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Bucher</surname> <given-names>P</given-names></name>. <article-title>An evaluation of face-bow transfer for the planning of orthognathic surgery</article-title>. <source>Journal of oral and maxillofacial surgery: official journal of the American Association of Oral and Maxillofacial Surgeons</source>. <year>2012</year>;<volume>70</volume>(<issue>8</issue>):<fpage>1944</fpage>–<lpage>50</lpage>. Epub 2011/11/15. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.joms.2011.08.025" xlink:type="simple">10.1016/j.joms.2011.08.025</ext-link></comment> <object-id pub-id-type="pmid">22079061</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref044"><label>44</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hernandez-Alfaro</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Guijarro-Martinez</surname> <given-names>R</given-names></name>. <article-title>New protocol for three-dimensional surgical planning and CAD/CAM splint generation in orthognathic surgery: an in vitro and in vivo study</article-title>. <source>International journal of oral and maxillofacial surgery</source>. <year>2013</year>;<volume>42</volume>(<issue>12</issue>):<fpage>1547</fpage>–<lpage>56</lpage>. Epub 2013/06/19. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ijom.2013.03.025" xlink:type="simple">10.1016/j.ijom.2013.03.025</ext-link></comment> <object-id pub-id-type="pmid">23768749</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref045"><label>45</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lonic</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Lo</surname> <given-names>LJ</given-names></name>. <article-title>Three-dimensional simulation of orthognathic surgery-surgeon's perspective</article-title>. <source>Journal of the Formosan Medical Association = Taiwan yi zhi</source>. <year>2015</year>. Epub 2015/10/21. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.jfma.2015.09.002" xlink:type="simple">10.1016/j.jfma.2015.09.002</ext-link></comment> <object-id pub-id-type="pmid">26482093</object-id>.</mixed-citation></ref>
+<ref id="pone.0152014.ref046"><label>46</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hammoudeh</surname> <given-names>JA</given-names></name>, <name name-style="western"><surname>Howell</surname> <given-names>LK</given-names></name>, <name name-style="western"><surname>Boutros</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Scott</surname> <given-names>MA</given-names></name>, <name name-style="western"><surname>Urata</surname> <given-names>MM</given-names></name>. <article-title>Current Status of Surgical Planning for Orthognathic Surgery: Traditional Methods versus 3D Surgical Planning</article-title>. <source>Plastic and reconstructive surgery Global open</source>. <year>2015</year>;<volume>3</volume>(<issue>2</issue>):<fpage>e307</fpage>. Epub 2015/03/10. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/gox.0000000000000184" xlink:type="simple">10.1097/gox.0000000000000184</ext-link></comment> <object-id pub-id-type="pmid">25750846</object-id>; PubMed Central PMCID: PMCPMC4350313.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

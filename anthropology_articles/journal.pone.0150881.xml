@@ -1,0 +1,2177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article article-type="research-article" dtd-version="3.0" xml:lang="en" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-15-50287</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0150881</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Sociology</subject><subj-group><subject>Communications</subject><subj-group><subject>Social communication</subject><subj-group><subject>Social media</subject><subj-group><subject>Twitter</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Computer and information sciences</subject><subj-group><subject>Network analysis</subject><subj-group><subject>Social networks</subject><subj-group><subject>Social media</subject><subj-group><subject>Twitter</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Sociology</subject><subj-group><subject>Social networks</subject><subj-group><subject>Social media</subject><subj-group><subject>Twitter</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Cultural anthropology</subject><subj-group><subject>Religion</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Sociology</subject><subj-group><subject>Religion</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Mental health and psychiatry</subject><subj-group><subject>Mood disorders</subject><subj-group><subject>Depression</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Psychology</subject><subj-group><subject>Emotions</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Psychology</subject><subj-group><subject>Emotions</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Linguistics</subject><subj-group><subject>Lexicons</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Psychology</subject><subj-group><subject>Emotions</subject><subj-group><subject>Happiness</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Psychology</subject><subj-group><subject>Emotions</subject><subj-group><subject>Happiness</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Sociology</subject><subj-group><subject>Communications</subject><subj-group><subject>Social communication</subject><subj-group><subject>Social media</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Computer and information sciences</subject><subj-group><subject>Network analysis</subject><subj-group><subject>Social networks</subject><subj-group><subject>Social media</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Sociology</subject><subj-group><subject>Social networks</subject><subj-group><subject>Social media</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Sociology</subject><subj-group><subject>Social research</subject></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Life Satisfaction and the Pursuit of Happiness on Twitter</article-title>
+<alt-title alt-title-type="running-head">Life Satisfaction and the Pursuit of Happiness on Twitter</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Yang</surname> <given-names>Chao</given-names></name>
+<xref ref-type="corresp" rid="cor001">*</xref>
+<xref ref-type="aff" rid="aff001"/>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Srinivasan</surname> <given-names>Padmini</given-names></name>
+<xref ref-type="aff" rid="aff001"/>
+</contrib>
+</contrib-group>
+<aff id="aff001">
+<addr-line>Computer Science, The University of Iowa, Iowa City, Iowa, United States of America</addr-line>
+</aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Du</surname> <given-names>Wen-Bo</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1">
+<addr-line>Beihang University, CHINA</addr-line>
+</aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<fn fn-type="con" id="contrib001">
+<p>Conceived and designed the experiments: CY PS. Performed the experiments: CY PS. Analyzed the data: CY PS. Contributed reagents/materials/analysis tools: CY PS. Wrote the paper: CY PS.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">chao.yang.us@gmail.com</email></corresp>
+</author-notes>
+<pub-date pub-type="collection">
+<year>2016</year>
+</pub-date>
+<pub-date pub-type="epub">
+<day>16</day>
+<month>3</month>
+<year>2016</year>
+</pub-date>
+<volume>11</volume>
+<issue>3</issue>
+<elocation-id>e0150881</elocation-id>
+<history>
+<date date-type="received">
+<day>18</day>
+<month>11</month>
+<year>2015</year>
+</date>
+<date date-type="accepted">
+<day>20</day>
+<month>2</month>
+<year>2016</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2016</copyright-year>
+<copyright-holder>Yang, Srinivasan</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0150881"/>
+<abstract>
+<p>Life satisfaction refers to a somewhat stable cognitive assessment of one’s own life. Life satisfaction is an important component of subjective well being, the scientific term for happiness. The other component is affect: the balance between the presence of positive and negative emotions in daily life. While affect has been studied using social media datasets (particularly from Twitter), life satisfaction has received little to no attention. Here, we examine trends in posts about life satisfaction from a two-year sample of Twitter data. We apply a surveillance methodology to extract expressions of both satisfaction and dissatisfaction with life. A noteworthy result is that consistent with their definitions trends in life satisfaction posts are immune to external events (political, seasonal etc.) unlike affect trends reported by previous researchers. Comparing users we find differences between satisfied and dissatisfied users in several linguistic, psychosocial and other features. For example the latter post more tweets expressing anger, anxiety, depression, sadness and on death. We also study users who change their status over time from satisfied with life to dissatisfied or vice versa. Noteworthy is that the psychosocial tweet features of users who change from satisfied to dissatisfied are quite different from those who stay satisfied over time. Overall, the observations we make are consistent with intuition and consistent with observations in the social science research. This research contributes to the study of the subjective well being of individuals through social media.</p>
+</abstract>
+<funding-group>
+<funding-statement>The authors have no support or funding to report.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="13"/>
+<table-count count="14"/>
+<page-count count="30"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability">
+<meta-name>Data Availability</meta-name>
+<meta-value>All life satisfaction gold standard tweets and a sample of life satisfaction tweets detected by our algorithm are included as Supporting Information files (S6_dataset.zip, S7_dataset.zip). Due to restrictions from Twitter, we only provide tweet ids if the file has large number of tweets. Our lexicon and retrieval templates are also included as Supporting Information files (S8_lexicon.txt, S9_templates.txt).</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec001" sec-type="intro">
+<title>1 Introduction</title>
+<p>The pursuit of happiness is recognized as an unalienable human right in the US constitution. In 1972, Bhutan’s King Jigme Singye Wangchuck rejected GDP as the measure of prosperity and coined gross national happiness (GNH). In 2008 the kingdom introduced a GNH index. Organizations such as the Happy Planet Index [<xref ref-type="bibr" rid="pone.0150881.ref001">1</xref>] monitor global happiness. In academia happiness with its various conceptualizations, determinants, correlates, consequences etc., has long been studied in the social sciences [<xref ref-type="bibr" rid="pone.0150881.ref002">2</xref>]. There is even the journal of Happiness Studies which started in 2000. Somewhat recently happiness research became recognized as important for shedding light on its complement, depression. With all of this collective enthusiasm over happiness it is not surprising to observe a flurry of interest in the study of happiness using social media. However, this is still a nascent field.</p>
+<p>Subjective well-being (SWB) is the scientific term for happiness. A concise overview of SWB [<xref ref-type="bibr" rid="pone.0150881.ref003">3</xref>] is provided by Ed Diener a leading researcher in the field. SWB is determined by 3 components: 1) the presence of positive emotions 2) the absence of negative emotions and 3) life satisfaction [<xref ref-type="bibr" rid="pone.0150881.ref004">4</xref>]. The first two determine <italic>affect balance</italic> and are influenced by daily events (eating tasty food, facing traffic congestion etc.). Life satisfaction is a longer-term cognitive assessment of one’s own life. This assessment does not mandate the use of specific criteria such as health, career, family. Instead individuals may use any criteria they think relevant. As examples: ‘<italic>I enjoyed my lunch</italic>’ and ‘<italic>I hate this boring movie</italic>’ reflect positive and negative affect respectively while ‘<italic>I’ve achieved all I wish for in life</italic>’ is about life satisfaction.</p>
+<p>Social media research on happiness is mostly limited to studying positive and negative affect [<xref ref-type="bibr" rid="pone.0150881.ref005">5</xref>–<xref ref-type="bibr" rid="pone.0150881.ref013">13</xref>]. In contrast, life satisfaction, our focus, has been studied much less [<xref ref-type="bibr" rid="pone.0150881.ref014">14</xref>–<xref ref-type="bibr" rid="pone.0150881.ref017">17</xref>]. A ‘bridging’ paper [<xref ref-type="bibr" rid="pone.0150881.ref016">16</xref>] tests for correlations between Facebook’s GNH index (measuring positive versus negative words in status updates) and responses to a widely respected life satisfaction survey by Diener et al., [<xref ref-type="bibr" rid="pone.0150881.ref018">18</xref>]. Unsurprisingly they do not find a correlation. This may be because FB status updates relate more to affect while the survey is on life satisfaction. Kross et al. [<xref ref-type="bibr" rid="pone.0150881.ref015">15</xref>] studied Facebook users over a 2-week period and found greater usage leads to lower life satisfaction and lower positive affect. It is unclear though how seriously one should view fluctuations in life satisfaction over a two-week period. Quercia et al. [<xref ref-type="bibr" rid="pone.0150881.ref012">12</xref>, <xref ref-type="bibr" rid="pone.0150881.ref019">19</xref>] take a different angle. Their case study contextualized in the socioeconomic status of London neighborhoods presents a positive correlation between positivity in tweet sentiment and lower levels of deprivation (measured using IMD, Indices of Multiple Deprivation). Also some LDA based topics correlate positively with deprivation (e.g., celebrity gossip) and others negatively (e.g., vacations). As they state, the connection to subjective well-being research is indirect; prior works link living conditions with subjective well-being and other works link well-being with positivity in user-generated content.</p>
+<p>The research of Schwartz et al. [<xref ref-type="bibr" rid="pone.0150881.ref017">17</xref>] studying the language of well-being most directly relates to our work. They analyzed tweets originating in 1,293 US counties for which results from life satisfaction surveys were independently available. Using lexicon features (LIWC and PERMA a special lexicon founded on well-being research [<xref ref-type="bibr" rid="pone.0150881.ref020">20</xref>]) and LDA derived topic features they built models to predict life satisfaction at the county level. Tweet topics and lexical features were of value to the predictors beyond demographic and socio-economic features. Consistent with life satisfaction research in psychology terms and topics such as about physical activity and social engagement related positively to subjective well-being and disengagement words (sleepy, tired) related negatively. A significant difference in our research is methodology. We identify, through passive surveillance, tweeters expressing life satisfaction or dissatisfaction via their tweets. In contrast [<xref ref-type="bibr" rid="pone.0150881.ref017">17</xref>] rely on external survey data to gauge the level of life satisfaction in a county. Individuals surveyed and individuals whose tweets are analyzed may differ. Another difference is their focus on county level aggregations. In contrast we are interested in location independent observations comparing two groups: those whose tweets express life satisfaction and those expressing dissatisfaction. There are significant points of commonality; both explore connections between LIWC and PERMA variables and life satisfaction. We expect and we do achieve mostly consistent results. We present these comparisons in the discussion section.</p>
+<p>A challenge when studying SWB using social media (either affect balance or life satisfaction) is to have a reliable method to identify relevant posts. Lexicon approaches are popular, mostly the LabMT lexicon built from Twitter data [<xref ref-type="bibr" rid="pone.0150881.ref005">5</xref>, <xref ref-type="bibr" rid="pone.0150881.ref009">9</xref>–<xref ref-type="bibr" rid="pone.0150881.ref011">11</xref>] and to some extent ANEW [<xref ref-type="bibr" rid="pone.0150881.ref008">8</xref>], LIWC [<xref ref-type="bibr" rid="pone.0150881.ref012">12</xref>, <xref ref-type="bibr" rid="pone.0150881.ref017">17</xref>, <xref ref-type="bibr" rid="pone.0150881.ref019">19</xref>] and also WordNet derivatives [<xref ref-type="bibr" rid="pone.0150881.ref021">21</xref>]. These methods generally use some function of the number of appearances of lexicon words in the post to estimate affect (for example see [<xref ref-type="bibr" rid="pone.0150881.ref009">9</xref>]). Some used OpinionFinder for assessments of emotion as a proxy for ‘happiness’ and found assortivity in Twitter friend networks [<xref ref-type="bibr" rid="pone.0150881.ref006">6</xref>]. Another used the Profile of Mood States (POMS) [<xref ref-type="bibr" rid="pone.0150881.ref007">7</xref>] to examine the impact of events on public mood with tweets. We emphasize: for the most part when social media researchers use the term ‘happiness’ or ‘mood’ they refer to the affect components of SWB. An exception [<xref ref-type="bibr" rid="pone.0150881.ref017">17</xref>] is research with the PERMA lexicon [<xref ref-type="bibr" rid="pone.0150881.ref020">20</xref>]. PERMA designed by Seligman is organized around his model of five elements of well-being: positive emotion, engagement, relationships, meaning in life, and accomplishment. It has 1,524 words arranged in ten categories: a positive and a negative category for each element. While our work is focussed on life satisfaction as reflected in Diener et al., [<xref ref-type="bibr" rid="pone.0150881.ref018">18</xref>] we also consider PERMA in our analysis.</p>
+<p>In sum, our goal is to conduct passive surveillance of life satisfaction expressions on Twitter. This is in contrast to direct surveys of life satisfaction via social media as for example done in [<xref ref-type="bibr" rid="pone.0150881.ref016">16</xref>]. For life satisfaction surveillance we need to be able to find posts expressing either satisfaction or dissatisfaction with one’s life. In recent research we presented a methodology to find such posts on Twitter [<xref ref-type="bibr" rid="pone.0150881.ref022">22</xref>]. An overview is in the Methods section. A distinct feature is that our methodology is based on a well respected life satisfaction survey (Diener’s Satisfaction With Life Scale [<xref ref-type="bibr" rid="pone.0150881.ref018">18</xref>, <xref ref-type="bibr" rid="pone.0150881.ref023">23</xref>]). In essence, we derived a set of template-driven, retrieval strategies from this survey to get the tweets conveying self-ratings of life satisfaction. In our previous paper this strategy achieves recall, precision and F scores between 0.59 and 0.65. This performance is particularly noteworthy given the extremely low signal to noise ratio of life satisfaction expressions in Twitter and the performance of baseline systems. We use this method for finding relevant tweets as the basis of our life satisfaction surveillance strategy. This previous work on methodology [<xref ref-type="bibr" rid="pone.0150881.ref022">22</xref>] was done on 2 days of Twitter data (roughly 4 million tweets/day). Here we present surveillance results from a two-year collection of Twitter data (about 3 billion tweets written in the first person). Our contributions in this paper, which are distinct from the previous work, are as follows.
+<list list-type="order"><list-item><p>We provide additional validation of our surveillance strategy by directly surveying a sample of Twitter users using the original SWLS survey. Results from the two are consistent (Section 2.2). Also, as expected our two-year trends in life satisfaction posts do not fluctuate with current events (politics, disasters, etc.), (Section 3.1). This differs from reported Twitter trends in affect (e.g., [<xref ref-type="bibr" rid="pone.0150881.ref009">9</xref>]). Crucially, the difference is consistent with the definitions of life satisfaction and affect within subjective-well being [<xref ref-type="bibr" rid="pone.0150881.ref004">4</xref>] and further validates our methods.</p></list-item> <list-item><p>In static analysis (i.e., disregarding time) we compare users on their Twitter metadata, features related to language use, psychological processes and personal concerns. Users expressing life satisfaction clearly differ from those expressing dissatisfaction (Section 3.2). For example dissatisfied users use more swear and sexual words, and convey more negative emotions such as sadness and anger in their tweets. Our findings are also largely consistent with observations made by Schwartz et al. [<xref ref-type="bibr" rid="pone.0150881.ref017">17</xref>] (<xref ref-type="sec" rid="sec006">Results</xref> and <xref ref-type="sec" rid="sec019">Discussion</xref> Section).</p></list-item> <list-item><p>Inspired by the work of Lewinsohn et al. [<xref ref-type="bibr" rid="pone.0150881.ref024">24</xref>] we explore psychosocial variables over time (Section 3.3). Several strong and intuitively acceptable observations arise that are also consistent with findings in Sociology (see also <xref ref-type="sec" rid="sec019">Discussion</xref> section). For example, dissatisfied users post more tweets over their timeline on death depression, sadness, anger, anxiety. They also post more negative tweets about home, health and religion.</p></list-item> <list-item><p>We study users whose tweets indicate a change in position over time: from satisfied to dissatisfied or in the other direction (Section 3.3.2). We observe for example that those who change from satisfied to dissatisfied post more negative tweets (death depression etc.) than the group changing in the other direction. Noteworthy too is that there are even greater differences between satisfied users who change to dissatisfied and satisfied users who stay satisfied with life.</p></list-item></list></p>
+<p>Overall we contribute the first ever study with Twitter expressions of life satisfaction, a key component of subjective well-being. The study complements prior social media research on affect, the other important component of subjective well-being.</p>
+</sec>
+<sec id="sec002">
+<title>2 Dataset Description</title>
+<p>We used the Twitter Streaming API to collect tweets from Oct. 2012 to Oct. 2014 limited to first person tweets (FP). That is each tweet must have ‘<italic>I</italic>’, ‘<italic>me’</italic>, ‘<italic>my</italic>’ or ‘<italic>mine</italic>’ to increase the likelihood of getting posts conveying self referencing life satisfaction expressions. Contrast the statements: ‘<italic>I hate my life</italic>’ and ‘<italic>You truly have achieved your goals in life</italic>’. This filter differentiates our work from most prior social media research on well being. We collected all metadata such as tweet id, text, utc time, utc offset, geo, place, user id, user name, etc., and user details such as number of followers, number of friends (followings), number of tweets, location eld, etc., (see <xref ref-type="table" rid="pone.0150881.t001">Table 1</xref>).</p>
+<table-wrap id="pone.0150881.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.t001</object-id>
+<label>Table 1</label>
+<caption>
+<title>Summary of Tweet Dataset.</title>
+</caption>
+<alternatives>
+<graphic id="pone.0150881.t001g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.t001" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">Time span</th>
+<th align="center">2012-10-03 to 2014-09-30</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><bold># Tweets (about 2 years)</bold></td>
+<td align="center">About 3 billion</td>
+</tr>
+<tr>
+<td align="center"><bold># Tweets per day</bold></td>
+<td align="center">About 4 million</td>
+</tr>
+<tr>
+<td align="center"><bold># Unique users per day</bold></td>
+<td align="center">About 3 million</td>
+</tr>
+<tr>
+<td align="center"><bold># Tweets with geo tags per day</bold></td>
+<td align="center">About 100,000</td>
+</tr>
+<tr>
+<td align="center"><bold># Replies per day</bold></td>
+<td align="center">About 600,000</td>
+</tr>
+<tr>
+<td align="center"><bold># Retweets per day</bold></td>
+<td align="center">About 1 million</td>
+</tr>
+<tr>
+<td align="center"><bold># URLs per day (non-unique)</bold></td>
+<td align="center">About 1 million</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<sec id="sec003">
+<title>2.1 Validity Checks for Dataset</title>
+<p>As per Twitter documentation their Streaming API provides a real time random sample from the complete corpus. We conducted a few validity checks for common sense expectations similar to Dodds et al. [<xref ref-type="bibr" rid="pone.0150881.ref009">9</xref>]. In <xref ref-type="supplementary-material" rid="pone.0150881.s001">S1 Fig</xref> hourly peak occurrences for tweets with the keywords ‘morning,’ ‘noon’ or ‘evening’ are as expected, e.g., the peak occurrence for ‘morning’ happens around 8 am. Similarly peak occurrences for ‘breakfast,’ ‘lunch,’ and ‘dinner’ are as expected, see <xref ref-type="supplementary-material" rid="pone.0150881.s002">S2 Fig</xref>. Our dataset has expected properties at least as gauged by these two sets of keywords.</p>
+</sec>
+<sec id="sec004">
+<title>2.2 Validity of Surveillance Method</title>
+<p>Previously [<xref ref-type="bibr" rid="pone.0150881.ref022">22</xref>], we evaluated our surveillance method by the quality of retrieved tweets using a gold standard set and measures such as precision and recall. We also compared our method with two other popular approaches: using lexicons (labMT and ANEW) and using machine learning. We observed that the lexicon-based methods have low precision. While our machine learning method has better performance than the lexicon approaches, our template-based surveillance method is still much more effective at detecting life satisfaction expressions on Twitter.</p>
+<p>Here we present an additional validity test using the SWLS scale as a survey just as intended by its designers. The question we ask is: is there a difference in SWLS life satisfaction scores between satisfied and dissatisfied users identified by our surveillance strategy? Users were selected for survey as follows. Each day we retrieved Class S and D tweets (tweets conveying authors’ life satisfaction and life dissatisfaction respectively) using our strictest retrieval strategy (no intervening words allowed, no words allowed before or after the retrieval template text). See the Methods section for details. Then we randomly selected 120 Class S users and 120 Class D users (users posting the day’s Class S and Class D tweets) as our target users. These numbers were limited by Twitter API constraints. Selected users were invited to take the SWLS survey within 24 hours of their life satisfaction tweet post time. To stimulate participation we promised the chance to win a $50 Amazon gift card. Invitations were sent from 5 different project accounts. The invitation tweet was written in casual language (“win $50 Amazon gift card, complete our survey about life satisfaction”). In the invitation tweet, the user clicked our survey introduction webpage (<ext-link ext-link-type="uri" xlink:href="http://lifesatisfaction.herokuapp.com" xlink:type="simple">http://lifesatisfaction.herokuapp.com</ext-link>) which directed the user to the survey webpage at Surveygizmo (<ext-link ext-link-type="uri" xlink:href="http://www.surveygizmo.com" xlink:type="simple">http://www.surveygizmo.com</ext-link>) after ensuring that the participant is a valid Twitter user and the one we invited. The estimated time for answering the survey was about 3 minutes. The survey was conducted with IRB approval.</p>
+<p>The experiment started Oct. 27th, 2014, and ended on Mar. 16th, 2015. We sent close to 29,890 invitations but received only 137 survey answers (response rate of 0.46%). Due to retweets respondents to our invites included some non-targeted users. After filtering these out 104 respondents remained. This low response rate highlights the extreme difficulty of surveying <italic>specific</italic> Twitter users. Note this is different from conducting a survey to the general Twitter population.</p>
+<p><xref ref-type="table" rid="pone.0150881.t002">Table 2</xref> summarizes the SWLS scores for Class S and D users. The SWLS gives a score ranging from 5 to 35. Independent t-test on the scores shows that the two classes are significantly different (p value &lt; 0.0001) with the predicted Class S users indicating greater life satisfaction than predicted Class D users.</p>
+<table-wrap id="pone.0150881.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.t002</object-id>
+<label>Table 2</label>
+<caption>
+<title>Summary of SWLS Survey Results.</title>
+</caption>
+<alternatives>
+<graphic id="pone.0150881.t002g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.t002" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left"/>
+<th align="center">Class S Users identified by our strategy</th>
+<th align="center">Class D Users identified by our strategy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"># users invited</td>
+<td align="center">14,945</td>
+<td align="center">14,945</td>
+</tr>
+<tr>
+<td align="left"># participants</td>
+<td align="center">48</td>
+<td align="center">56</td>
+</tr>
+<tr>
+<td align="left">Response rate</td>
+<td align="center">0.32%</td>
+<td align="center">0.37%</td>
+</tr>
+<tr>
+<td align="left">SWLS score mean</td>
+<td align="center">24.35</td>
+<td align="center">19.63</td>
+</tr>
+<tr>
+<td align="left">SWLS score std.</td>
+<td align="center">6.29</td>
+<td align="center">6.67</td>
+</tr>
+<tr>
+<td align="left">t test (p value)</td>
+<td align="center" colspan="2"><bold>&lt;0.0001</bold></td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="sec005">
+<title>2.3 Life Satisfaction Tweets and Users Detected</title>
+<p><xref ref-type="table" rid="pone.0150881.t003">Table 3</xref> summarizes the life satisfaction (LS) tweets and users detected by our surveillance strategy. As expected the proportion of LS tweets is very low. There were about 4 million LS tweets in the 3 billion first person tweet dataset (0.13%) evenly split between the two classes. A Class S (Class D) user is one who posted at least 1 life satisfaction (life dissatisfaction) tweet. At least 17% of users belong to both classes. We analyze such users in a later section. This overlap is at least 17% because the Streaming API used to collect our two-year dataset does not necessarily get the complete set of tweets for a given user. It provides only a random 1% subset of tweets for a query (here the first person query). We overcome this limitation in the next section when we compare user groups.</p>
+<table-wrap id="pone.0150881.t003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.t003</object-id>
+<label>Table 3</label>
+<caption>
+<title>Life Satisfaction (LS) Tweets and Users Detected in the Two-Year Dataset.</title>
+<p>S: Satisfied users, D: Dissatisfied users.</p>
+</caption>
+<alternatives>
+<graphic id="pone.0150881.t003g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.t003" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">Time Span</th>
+<th align="center">2012-10-03 to 2014-09-30</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><bold># Class S tweets</bold></td>
+<td align="center">1,945,198 (0.065%)</td>
+</tr>
+<tr>
+<td align="center"><bold># Class D tweets</bold></td>
+<td align="center">1,908,571 (0.064%)</td>
+</tr>
+<tr>
+<td align="center"><bold># LS tweets per day</bold></td>
+<td align="center">about 4,750</td>
+</tr>
+<tr>
+<td align="center"><bold># unique Class S users</bold></td>
+<td align="center">1,943,832</td>
+</tr>
+<tr>
+<td align="center"><bold># unique Class D users</bold></td>
+<td align="center">1,907,363</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+</sec>
+<sec id="sec006" sec-type="results">
+<title>3 Results</title>
+<sec id="sec007">
+<title>3.1 Temporal Trends in Postings of Life Satisfaction Tweets</title>
+<p><xref ref-type="fig" rid="pone.0150881.g001">Fig 1</xref> shows the distribution of LS tweets for 2013. Time series plots for the full data are in <xref ref-type="supplementary-material" rid="pone.0150881.s003">S3 Fig</xref>. The figures plot percentage of Class S or Class D tweets over all the FP tweets for each week. Orange (circle) and blue (triangle) lines represent the time series of Class S and Class D tweets respectively.</p>
+<fig id="pone.0150881.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>Trend in postings of life satisfaction tweets over one-year period.</title>
+<p>X axis: week. Y axis: Percentage computed as <inline-formula id="pone.0150881.e001"><alternatives><graphic id="pone.0150881.e001g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0150881.e001" xlink:type="simple"/><mml:math display="inline" id="M1"><mml:mrow><mml:mfrac><mml:mtext># Class S (or D) tweets in a day</mml:mtext> <mml:mtext># First Person Tweets in the day</mml:mtext></mml:mfrac> <mml:mo>×</mml:mo> <mml:mn>100</mml:mn> <mml:mo>%</mml:mo></mml:mrow></mml:math></alternatives></inline-formula>.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.g001" xlink:type="simple"/>
+</fig>
+<p>Overall the key observation is that the two time series show random fluctuations. Political, economic, seasonal and other events do not appear to influence these distributions with very few exceptions. This is noteworthy given the event based fluctuations observed for affect in [<xref ref-type="bibr" rid="pone.0150881.ref009">9</xref>]. We compare these further in the Discussion section. There are significantly more Class S tweets than Class D tweets posted around Christmas and Valentines. We cannot explain the Class D dip on 2013-02-26 or the Class S peek on 2013-10-25. Overall, the time series from 2013-03 to 2013-10 is slightly different from the time series after 2014-04. This may be because the Streaming API unexpectedly returned far more tweets than expected. For example, sometime in March 2014, the API returned 16 million tweets a day—far more than the roughly 4 million till that point. To make the data comparable, we selected 4 million from the 16 million tweets. For every 4 tweets, we selected the first one. Therefore, the time series after March 2014 could be slightly different from the date before. We observed the Streaming API returns 4 million tweets again after Feb. 2015.</p>
+</sec>
+<sec id="sec008">
+<title>3.2 Static Differences between Users</title>
+<p>We compare users using a static, i.e., a time-independent perspective where the time of post is not considered. Temporal analysis is in the next section. We compare Class S and Class D users in their Twitter features (number of followers, followings and metadata characteristics). We also compare their word usage patterns with Linguistic Inquiry and Word Count (LIWC) software developed by Pennebaker et al. [<xref ref-type="bibr" rid="pone.0150881.ref025">25</xref>] and PERMA lexicon by Seligman [<xref ref-type="bibr" rid="pone.0150881.ref020">20</xref>]. LIWC is popular for calculating the degree to which people use different categories of words and has been applied to a wide array of texts. It has about 80 categories such as ‘<italic>Friends</italic>,’ ‘<italic>Work</italic>,’ and ‘<italic>Money</italic>’ and also sentiment categories such as ‘<italic>Positive/Negative emotion</italic>.’ Some categories are hierarchically arranged as for example ‘<italic>Biological Processes</italic>’ broken down into ‘<italic>body, health, sexual</italic>’ and ‘<italic>ingestion</italic>’. We are interested in categories pertaining to linguistic differences, psychological processes and personal concerns. The PERMA lexicon reflects the view that there are five elements to “well-being”: Positive emotion, Engagement, Relationships, Meaning, Achievement. Each has positive and negative polarity.</p>
+<p>Since our dataset does not have the complete set of tweets posted by a user, we generate a new dataset as follows. We randomly selected a subset of Class S and Class D users in our dataset limited to tweets retrieved using our high accuracy strategies (see <xref ref-type="sec" rid="sec020">Methods</xref> section). Then we crawled their tweets as many as we can, since Twitter API only returns most recent 3200 tweets for users. In our dataset, we can crawl all the tweets for about 80% users. Then we applied our surveillance method to find all LS tweets posted by these users and made sure that they did not change their LS status from one class to the other. This left us with 14,506 Class S users and 14,743 Class D users with no overlap. We aggregated all crawled tweets for each user into a pseudo document and used these to compare user characteristics. Note because of Twitter API limitations we were able to crawl the full set for only 80% of users. We use Wilcoxon Rank-Sum Test instead of t test, since t test requires “normality” which is not satisfied from our observations. In addition, we use Bonferroni correction given the multiple tests performed.</p>
+<sec id="sec009">
+<title>3.2.1 Followers &amp; metadata differences</title>
+<p>Class S and Class D users are similar in numbers of followers and followings. We show their complementary cumulative distribution (CCDF) in <xref ref-type="supplementary-material" rid="pone.0150881.s004">S4</xref> and <xref ref-type="supplementary-material" rid="pone.0150881.s005">S5</xref> Figs.</p>
+<p><xref ref-type="table" rid="pone.0150881.t004">Table 4</xref> compares the two classes on metadata. Most differences are significant (Bonferroni-corrected p&lt;0.05). Class S users have longer active lifespan (days between the first and last tweet), use more hashtags but include fewer URLs. Considering a minimum of 5% in difference Class S uses fewer emoticons and get fewer retweets.</p>
+<table-wrap id="pone.0150881.t004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.t004</object-id>
+<label>Table 4</label>
+<caption>
+<title>Metadata Features Class S and Class D users differ significantly (Bonferroni-corrected p&lt;0.05) in 8 of 12 features.</title>
+<p>Significant differences are in italics, differences &gt; 10% are in bold.</p>
+</caption>
+<alternatives>
+<graphic id="pone.0150881.t004g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.t004" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Metadata</th>
+<th align="center">Class S Avg.</th>
+<th align="center">Class D Avg.</th>
+<th align="center">Sig.</th>
+<th align="center">S—D (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><italic># tweets</italic></td>
+<td align="char" char="."><italic>2,301.0</italic></td>
+<td align="char" char="."><italic>2,401.4</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-4.3</italic></td>
+</tr>
+<tr>
+<td align="left"><italic><bold>User active days</bold></italic></td>
+<td align="char" char="."><italic><bold>249.1</bold></italic></td>
+<td align="char" char="."><italic><bold>198.0</bold></italic></td>
+<td align="char" char="."><italic><bold>.0000</bold></italic></td>
+<td align="char" char="."><italic><bold>20.5</bold></italic></td>
+</tr>
+<tr>
+<td align="left">Most frq. hour</td>
+<td align="char" char=".">10.9</td>
+<td align="char" char=".">11.2</td>
+<td align="char" char=".">.0135</td>
+<td align="char" char=".">-2.4</td>
+</tr>
+<tr>
+<td align="left"><italic><bold># urls</bold></italic></td>
+<td align="char" char="."><italic><bold>347.6</bold></italic></td>
+<td align="char" char="."><italic><bold>383.5</bold></italic></td>
+<td align="char" char="."><italic><bold>.0000</bold></italic></td>
+<td align="char" char="."><italic><bold>-10.3</bold></italic></td>
+</tr>
+<tr>
+<td align="left"><italic><bold># hashtags</bold></italic></td>
+<td align="char" char="."><italic><bold>205.9</bold></italic></td>
+<td align="char" char="."><italic><bold>158.5</bold></italic></td>
+<td align="char" char="."><italic><bold>.0000</bold></italic></td>
+<td align="char" char="."><italic><bold>23.1</bold></italic></td>
+</tr>
+<tr>
+<td align="left"><italic><bold># unique hashtags</bold></italic></td>
+<td align="char" char="."><italic><bold>107.8</bold></italic></td>
+<td align="char" char="."><italic><bold>84.6</bold></italic></td>
+<td align="char" char="."><italic><bold>.0000</bold></italic></td>
+<td align="char" char="."><italic><bold>21.5</bold></italic></td>
+</tr>
+<tr>
+<td align="left"><italic># retweets</italic></td>
+<td align="char" char="."><italic>638.2</italic></td>
+<td align="char" char="."><italic>674.5</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-5.7</italic></td>
+</tr>
+<tr>
+<td align="left">Avg. tweet size</td>
+<td align="char" char=".">9.9</td>
+<td align="char" char=".">9.8</td>
+<td align="char" char=".">.0599</td>
+<td align="char" char=".">0.3</td>
+</tr>
+<tr>
+<td align="left"><italic># emoticon</italic>s</td>
+<td align="char" char="."><italic>1,174.0</italic></td>
+<td align="char" char="."><italic>1,265.8</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-7.8</italic></td>
+</tr>
+<tr>
+<td align="left"><italic># pos emoticons</italic></td>
+<td align="char" char="."><italic>159.6</italic></td>
+<td align="char" char="."><italic>160.5</italic></td>
+<td align="char" char="."><italic>.0001</italic></td>
+<td align="char" char="."><italic>-0.5</italic></td>
+</tr>
+<tr>
+<td align="left"># neg emoticons</td>
+<td align="char" char=".">306.1</td>
+<td align="char" char=".">292.6</td>
+<td align="char" char=".">.0026</td>
+<td align="char" char=".">4.4</td>
+</tr>
+<tr>
+<td align="left"># unique words</td>
+<td align="char" char=".">5,876.3</td>
+<td align="char" char=".">5,903.1</td>
+<td align="char" char=".">.9247</td>
+<td align="char" char=".">-0.5</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="sec010">
+<title>3.2.2 Language differences</title>
+<p><xref ref-type="table" rid="pone.0150881.t005">Table 5</xref> compares linguistic style and word usage. Class D users write more often in the present tense, and make more frequent use of personal pronouns and first person singular structures. They also use conjunctions and adverbs more frequently. Class S shows higher use of the exclamation mark. Interestingly, Class D write swear words more frequently. The two groups do not differ in word count (also seen in <xref ref-type="table" rid="pone.0150881.t004">Table 4</xref>, last row) and in their use of first or third person plural structures.</p>
+<table-wrap id="pone.0150881.t005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.t005</object-id>
+<label>Table 5</label>
+<caption>
+<title>Linguistic Features Class S and Class D users differ significantly (Bonferroni-corrected p&lt;0.05) in 21 of 25 features.</title>
+<p>Significant differences are in italics, differences &gt; 10% are in bold.</p>
+</caption>
+<alternatives>
+<graphic id="pone.0150881.t005g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.t005" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Categories</th>
+<th align="left">Example Words</th>
+<th align="center">Class S Avg.</th>
+<th align="center">Class D Avg.</th>
+<th align="center">Sig.</th>
+<th align="center">S—D (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Word count</td>
+<td align="left"/>
+<td align="char" char=".">9.5</td>
+<td align="char" char=".">9.6</td>
+<td align="char" char=".">.6379</td>
+<td align="char" char=".">-1.0</td>
+</tr>
+<tr>
+<td align="left"><italic>QMark</italic></td>
+<td align="left"/>
+<td align="char" char="."><italic>211.8</italic></td>
+<td align="char" char="."><italic>225.5</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-6.5</italic></td>
+</tr>
+<tr>
+<td align="left"><italic><bold>Exclam.</bold></italic></td>
+<td align="left"/>
+<td align="char" char="."><italic><bold>475.3</bold></italic></td>
+<td align="char" char="."><italic><bold>401.8</bold></italic></td>
+<td align="char" char="."><italic><bold>.0000</bold></italic></td>
+<td align="char" char="."><italic><bold>15.5</bold></italic></td>
+</tr>
+<tr>
+<td align="left"><italic>Total function words</italic></td>
+<td align="left"/>
+<td align="char" char="."><italic>9,401.1</italic></td>
+<td align="char" char="."><italic>10,099.5</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-7.4</italic></td>
+</tr>
+<tr>
+<td align="left"> <italic>Total pronouns</italic></td>
+<td align="left"/>
+<td align="char" char="."><italic>3,539.2</italic></td>
+<td align="char" char="."><italic>3,893.1</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-9.9</italic></td>
+</tr>
+<tr>
+<td align="left"> <italic><bold>Personal pronouns</bold></italic></td>
+<td align="left"><italic><bold>I, them, her</bold></italic></td>
+<td align="char" char="."><italic><bold>2,575.2</bold></italic></td>
+<td align="char" char="."><italic><bold>2,873.8</bold></italic></td>
+<td align="char" char="."><italic><bold>.0000</bold></italic></td>
+<td align="char" char="."><italic><bold>-11.6</bold></italic></td>
+</tr>
+<tr>
+<td align="left"> <italic><bold>1st pers singular</bold></italic></td>
+<td align="left"><italic><bold>I, me, mine</bold></italic></td>
+<td align="char" char="."><italic><bold>1,559.5</bold></italic></td>
+<td align="char" char="."><italic><bold>1,790.3</bold></italic></td>
+<td align="char" char="."><italic><bold>.0000</bold></italic></td>
+<td align="char" char="."><italic><bold>-14.8</bold></italic></td>
+</tr>
+<tr>
+<td align="left"> <italic>1st pers plural</italic></td>
+<td align="left"><italic>We, us, our</italic></td>
+<td align="char" char="."><italic>113.9</italic></td>
+<td align="char" char="."><italic>115.7</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-1.6</italic></td>
+</tr>
+<tr>
+<td align="left"> <italic>2nd person</italic></td>
+<td align="left"><italic>You, your, thou</italic></td>
+<td align="char" char="."><italic>620.1</italic></td>
+<td align="char" char="."><italic>672.9</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-8.5</italic></td>
+</tr>
+<tr>
+<td align="left"> <italic>3rd pers singular</italic></td>
+<td align="left"><italic>She, her, him</italic></td>
+<td align="char" char="."><italic>181.8</italic></td>
+<td align="char" char="."><italic>195.0</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-7.3</italic></td>
+</tr>
+<tr>
+<td align="left"> 3rd pers plural</td>
+<td align="left">They, their</td>
+<td align="char" char=".">99.9</td>
+<td align="char" char=".">99.8</td>
+<td align="char" char=".">.0017</td>
+<td align="char" char=".">0.2</td>
+</tr>
+<tr>
+<td align="left"> <italic>Impersonal pronouns</italic></td>
+<td align="left"><italic>It, it’s, those</italic></td>
+<td align="char" char="."><italic>964.0</italic></td>
+<td align="char" char="."><italic>1,019.3</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-5.7</italic></td>
+</tr>
+<tr>
+<td align="left"> <italic>Articles</italic></td>
+<td align="left"><italic>A, an, the</italic></td>
+<td align="char" char="."><italic>762.3</italic></td>
+<td align="char" char="."><italic>783.7</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-2.8</italic></td>
+</tr>
+<tr>
+<td align="left"> <italic>Common verbs</italic></td>
+<td align="left"><italic>Walk, went, see</italic></td>
+<td align="char" char="."><italic>3,010.1</italic></td>
+<td align="char" char="."><italic>3,292.5</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-9.4</italic></td>
+</tr>
+<tr>
+<td align="left"> <italic>Auxiliary verbs</italic></td>
+<td align="left"><italic>Am, will, have</italic></td>
+<td align="char" char="."><italic>1,741.3</italic></td>
+<td align="char" char="."><italic>1,895.4</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-8.9</italic></td>
+</tr>
+<tr>
+<td align="left"> <italic>Past tense</italic></td>
+<td align="left"><italic>Went, ran, had</italic></td>
+<td align="char" char="."><italic>440.7</italic></td>
+<td align="char" char="."><italic>466.8</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-5.9</italic></td>
+</tr>
+<tr>
+<td align="left"> <italic><bold>Present tense</bold></italic></td>
+<td align="left"><italic><bold>Is, does, hear</bold></italic></td>
+<td align="char" char="."><italic><bold>2,159.7</bold></italic></td>
+<td align="char" char="."><italic><bold>2,392.9</bold></italic></td>
+<td align="char" char="."><italic><bold>.0000</bold></italic></td>
+<td align="char" char="."><italic><bold>-10.8</bold></italic></td>
+</tr>
+<tr>
+<td align="left"> <italic>Future tense</italic></td>
+<td align="left"><italic>Will, gonna</italic></td>
+<td align="char" char="."><italic>187.6</italic></td>
+<td align="char" char="."><italic>203.3</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-8.4</italic></td>
+</tr>
+<tr>
+<td align="left"> <italic><bold>Adverbs</bold></italic></td>
+<td align="left"><italic><bold>Very, really</bold></italic></td>
+<td align="char" char="."><italic><bold>940.2</bold></italic></td>
+<td align="char" char="."><italic><bold>1,047.6</bold></italic></td>
+<td align="char" char="."><italic><bold>.0000</bold></italic></td>
+<td align="char" char="."><italic><bold>-11.4</bold></italic></td>
+</tr>
+<tr>
+<td align="left"> Prepositions</td>
+<td align="left">To, with, above</td>
+<td align="char" char=".">1,686.7</td>
+<td align="char" char=".">1,719.0</td>
+<td align="char" char=".">.0031</td>
+<td align="char" char=".">-1.9</td>
+</tr>
+<tr>
+<td align="left"> <italic><bold>Conjunctions</bold></italic></td>
+<td align="left"><italic><bold>And, but</bold></italic></td>
+<td align="char" char="."><italic><bold>838.6</bold></italic></td>
+<td align="char" char="."><italic><bold>957.2</bold></italic></td>
+<td align="char" char="."><italic><bold>.0000</bold></italic></td>
+<td align="char" char="."><italic><bold>-14.1</bold></italic></td>
+</tr>
+<tr>
+<td align="left"> <italic>Negations</italic></td>
+<td align="left"><italic>No, not, never</italic></td>
+<td align="char" char="."><italic>461.4</italic></td>
+<td align="char" char="."><italic>476.3</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-3.2</italic></td>
+</tr>
+<tr>
+<td align="left"> Quantifiers</td>
+<td align="left">Few, many</td>
+<td align="char" char=".">413.8</td>
+<td align="char" char=".">425.3</td>
+<td align="char" char=".">.0010</td>
+<td align="char" char=".">-2.8</td>
+</tr>
+<tr>
+<td align="left"> <italic>Numbers</italic></td>
+<td align="left"><italic>Second</italic></td>
+<td align="char" char="."><italic>110.1</italic></td>
+<td align="char" char="."><italic>118.6</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-7.7</italic></td>
+</tr>
+<tr>
+<td align="left"><italic><bold>Swear words</bold></italic></td>
+<td align="left"><italic><bold>Damn, piss</bold></italic></td>
+<td align="char" char="."><italic><bold>220.4</bold></italic></td>
+<td align="char" char="."><italic><bold>246.6</bold></italic></td>
+<td align="char" char="."><italic><bold>.0000</bold></italic></td>
+<td align="char" char="."><italic><bold>-11.9</bold></italic></td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="sec011">
+<title>3.2.3 Differences in psychological processes</title>
+<p>LIWC has psychological process categories such as relating to friends and family, cognitive processes such as certainty, and biological processes such as health and sexuality. <xref ref-type="table" rid="pone.0150881.t006">Table 6</xref> shows significant differences in most of these categories. Considering only differences above 10% we see that Class D expresses more negative emotion, anger and sadness and also discrepancy (cognitive process). Discrepancy includes words like ‘<italic>should</italic>,’ ‘<italic>would</italic>,’ ‘<italic>expect</italic>,’ ‘<italic>hope</italic>’ and ‘<italic>need</italic>’ that may express determination and aspirations for the future [<xref ref-type="bibr" rid="pone.0150881.ref026">26</xref>, <xref ref-type="bibr" rid="pone.0150881.ref027">27</xref>]. Also Class D mention significantly more sexual words. Overall, categories under Affective Processes exhibit the largest differences.</p>
+<table-wrap id="pone.0150881.t006" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.t006</object-id>
+<label>Table 6</label>
+<caption>
+<title>LIWC Psychological Processes.</title>
+<p>Class S and Class D users differ significantly (Bonferroni-corrected p&lt;0.05) in 24 of 32 features. Significant differences are in italics, differences &gt; 10% are in bold.</p>
+</caption>
+<alternatives>
+<graphic id="pone.0150881.t006g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.t006" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Categories</th>
+<th align="left">Example Words</th>
+<th align="left">Class S Avg.</th>
+<th align="left">Class D Avg.</th>
+<th align="left">Sig.</th>
+<th align="left">S—D (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><italic>Social processes</italic></td>
+<td align="left"><italic>Mate, talk, they, child</italic></td>
+<td align="char" char="."><italic>2,058.9</italic></td>
+<td align="char" char="."><italic>2,175.3</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-5.7</italic></td>
+</tr>
+<tr>
+<td align="left"> Family</td>
+<td align="left">Daughter, husband</td>
+<td align="char" char=".">92.7</td>
+<td align="char" char=".">88.5</td>
+<td align="char" char=".">.0007</td>
+<td align="char" char=".">4.6</td>
+</tr>
+<tr>
+<td align="left"> <italic>Friends</italic></td>
+<td align="left"><italic>Buddy, friend, neighbor</italic></td>
+<td align="char" char="."><italic>52.9</italic></td>
+<td align="char" char="."><italic>55.7</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-5.4</italic></td>
+</tr>
+<tr>
+<td align="left"> Humans</td>
+<td align="left">Adult, baby, boy</td>
+<td align="char" char=".">243.2</td>
+<td align="char" char=".">247.2</td>
+<td align="char" char=".">.0006</td>
+<td align="char" char=".">-1.6</td>
+</tr>
+<tr>
+<td align="left"><italic>Affective proc.</italic></td>
+<td align="left"><italic>Happy, cried, abandon</italic></td>
+<td align="char" char="."><italic>1,801.3</italic></td>
+<td align="char" char="."><italic>1,932.4</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-7.3</italic></td>
+</tr>
+<tr>
+<td align="left"> <italic>Positive emotion</italic></td>
+<td align="left"><italic>Love, nice, sweet</italic></td>
+<td align="char" char="."><italic>1,165.7</italic></td>
+<td align="char" char="."><italic>1,220.8</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-4.7</italic></td>
+</tr>
+<tr>
+<td align="left"> <italic><bold>Negative emo.</bold></italic></td>
+<td align="left"><italic><bold>Hurt, ugly, nasty</bold></italic></td>
+<td align="char" char="."><italic><bold>626.5</bold></italic></td>
+<td align="char" char="."><italic><bold>701.2</bold></italic></td>
+<td align="char" char="."><italic><bold>.0000</bold></italic></td>
+<td align="char" char="."><italic><bold>-11.9</bold></italic></td>
+</tr>
+<tr>
+<td align="left"> <italic>Anxiety</italic></td>
+<td align="left"><italic>Worried, fearful</italic></td>
+<td align="char" char="."><italic>65.0</italic></td>
+<td align="char" char="."><italic>68.5</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-5.3</italic></td>
+</tr>
+<tr>
+<td align="left"> <italic><bold>Anger</bold></italic></td>
+<td align="left"><italic><bold>Hate, kill, annoyed</bold></italic></td>
+<td align="char" char="."><italic><bold>323.1</bold></italic></td>
+<td align="char" char="."><italic><bold>364.9</bold></italic></td>
+<td align="char" char="."><italic><bold>.0000</bold></italic></td>
+<td align="char" char="."><italic><bold>-12.9</bold></italic></td>
+</tr>
+<tr>
+<td align="left"> <italic><bold>Sadness</bold></italic></td>
+<td align="left"><italic><bold>Crying, grief, sad</bold></italic></td>
+<td align="char" char="."><italic><bold>102.1</bold></italic></td>
+<td align="char" char="."><italic><bold>117.0</bold></italic></td>
+<td align="char" char="."><italic><bold>.0000</bold></italic></td>
+<td align="char" char="."><italic><bold>-14.7</bold></italic></td>
+</tr>
+<tr>
+<td align="left"><italic>Cognitive proc.</italic></td>
+<td align="left"><italic>cause, know, ought</italic></td>
+<td align="char" char="."><italic>2,525.9</italic></td>
+<td align="char" char="."><italic>2,700.7</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-6.9</italic></td>
+</tr>
+<tr>
+<td align="left"> <italic>Insight</italic></td>
+<td align="left"><italic>think, know, consider</italic></td>
+<td align="char" char="."><italic>323.1</italic></td>
+<td align="char" char="."><italic>341.0</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-5.5</italic></td>
+</tr>
+<tr>
+<td align="left"> <italic>Causation</italic></td>
+<td align="left"><italic>because, effect, hence</italic></td>
+<td align="char" char="."><italic>259.8</italic></td>
+<td align="char" char="."><italic>282.5</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-8.7</italic></td>
+</tr>
+<tr>
+<td align="left"> <italic><bold>Discrepancy</bold></italic></td>
+<td align="left"><italic><bold>should, would, could</bold></italic></td>
+<td align="char" char="."><italic><bold>350.6</bold></italic></td>
+<td align="char" char="."><italic><bold>395.2</bold></italic></td>
+<td align="char" char="."><italic><bold>.0000</bold></italic></td>
+<td align="char" char="."><italic><bold>-12.7</bold></italic></td>
+</tr>
+<tr>
+<td align="left"> <italic>Tentative</italic></td>
+<td align="left"><italic>maybe, perhaps, guess</italic></td>
+<td align="char" char="."><italic>394.0</italic></td>
+<td align="char" char="."><italic>424.5</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-7.7</italic></td>
+</tr>
+<tr>
+<td align="left"> Certainty</td>
+<td align="left">always, never</td>
+<td align="char" char=".">313.8</td>
+<td align="char" char=".">314.6</td>
+<td align="char" char=".">.5448</td>
+<td align="char" char=".">-0.3</td>
+</tr>
+<tr>
+<td align="left"> Inhibition</td>
+<td align="left">block, constrain, stop</td>
+<td align="char" char=".">99.3</td>
+<td align="char" char=".">101.3</td>
+<td align="char" char=".">.0032</td>
+<td align="char" char=".">-2.0</td>
+</tr>
+<tr>
+<td align="left"> <italic>Inclusive</italic></td>
+<td align="left"><italic>And, with, include</italic></td>
+<td align="char" char="."><italic>525.6</italic></td>
+<td align="char" char="."><italic>561.6</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-6.8</italic></td>
+</tr>
+<tr>
+<td align="left"> <italic>Exclusive</italic></td>
+<td align="left"><italic>But, without, exclude</italic></td>
+<td align="char" char="."><italic>473.9</italic></td>
+<td align="char" char="."><italic>517.8</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-9.3</italic></td>
+</tr>
+<tr>
+<td align="left"><italic>Perceptual proc.</italic></td>
+<td align="left"><italic>Observing, heard</italic></td>
+<td align="char" char="."><italic>481.7</italic></td>
+<td align="char" char="."><italic>508.1</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-5.5</italic></td>
+</tr>
+<tr>
+<td align="left"> <italic>See</italic></td>
+<td align="left"><italic>View, saw, seen</italic></td>
+<td align="char" char="."><italic>190.4</italic></td>
+<td align="char" char="."><italic>203.6</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-6.9</italic></td>
+</tr>
+<tr>
+<td align="left"> <italic>Hear</italic></td>
+<td align="left"><italic>Listen, hearing</italic></td>
+<td align="char" char="."><italic>127.5</italic></td>
+<td align="char" char="."><italic>131.4</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-3.1</italic></td>
+</tr>
+<tr>
+<td align="left"> <italic>Feel</italic></td>
+<td align="left"><italic>Feels, touch</italic></td>
+<td align="char" char="."><italic>133.3</italic></td>
+<td align="char" char="."><italic>143.1</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-7.4</italic></td>
+</tr>
+<tr>
+<td align="left"><italic>Biological proc.</italic></td>
+<td align="left"><italic>Eat, blood, pain</italic></td>
+<td align="char" char="."><italic>667.5</italic></td>
+<td align="char" char="."><italic>731.6</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-9.6</italic></td>
+</tr>
+<tr>
+<td align="left"> <italic>Body</italic></td>
+<td align="left"><italic>Cheek, hands, spit</italic></td>
+<td align="char" char="."><italic>255.5</italic></td>
+<td align="char" char="."><italic>271.5</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-6.3</italic></td>
+</tr>
+<tr>
+<td align="left"> <italic>Health</italic></td>
+<td align="left"><italic>Clinic, flu, pill</italic></td>
+<td align="char" char="."><italic>118.3</italic></td>
+<td align="char" char="."><italic>124.8</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-5.5</italic></td>
+</tr>
+<tr>
+<td align="left"> <italic><bold>Sexual</bold></italic></td>
+<td align="left"><italic><bold>Horny, love, incest</bold></italic></td>
+<td align="char" char="."><italic><bold>242.6</bold></italic></td>
+<td align="char" char="."><italic><bold>285.4</bold></italic></td>
+<td align="char" char="."><italic><bold>.0000</bold></italic></td>
+<td align="char" char="."><italic><bold>-17.6</bold></italic></td>
+</tr>
+<tr>
+<td align="left"> Ingestion</td>
+<td align="left">Dish, eat, pizza</td>
+<td align="char" char=".">104.0</td>
+<td align="char" char=".">105.0</td>
+<td align="char" char=".">.0119</td>
+<td align="char" char=".">-1.0</td>
+</tr>
+<tr>
+<td align="left">Relativity</td>
+<td align="left">Area, bend, exit, stop</td>
+<td align="char" char=".">2,344.1</td>
+<td align="char" char=".">2,388.7</td>
+<td align="char" char=".">.0751</td>
+<td align="char" char=".">-1.9</td>
+</tr>
+<tr>
+<td align="left"> <italic>Motion</italic></td>
+<td align="left"><italic>Arrive, car, go</italic></td>
+<td align="char" char="."><italic>368.3</italic></td>
+<td align="char" char="."><italic>398.0</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-8.1</italic></td>
+</tr>
+<tr>
+<td align="left"> Space</td>
+<td align="left">Down, in, thin</td>
+<td align="char" char=".">873.1</td>
+<td align="char" char=".">869.4</td>
+<td align="char" char=".">.2821</td>
+<td align="char" char=".">0.4</td>
+</tr>
+<tr>
+<td align="left"> Time</td>
+<td align="left">End, until, season</td>
+<td align="char" char=".">1,044.7</td>
+<td align="char" char=".">1,064.8</td>
+<td align="char" char=".">.0203</td>
+<td align="char" char=".">-1.9</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>A limitation is that while we see significant differences in the extent to which categories such as Family, Friends and Health are discussed, we do not know whether negative or positive emotion dominates. Thus we overlay sentiment analysis and consider the relative distribution of sentiment in <xref ref-type="fig" rid="pone.0150881.g002">Fig 2</xref>. We do this for each category with a minimum difference of 5% that does not have a natural sentiment loading (e.g., anxiety). Interestingly, in each category Class S reflects more positive sentiment. This is particularly pronounced for Health, Sexual and Biological Processes.</p>
+<fig id="pone.0150881.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>Comparison of user classes on sentiment and LIWC psychological processes.</title>
+<p>X axis: Psychological process categories. Y axis: % of positive sentiment tweets − % of negative sentiment tweets. Tweets from Class S users are more positive than negative compared to tweets from Class D users in all categories. The biggest differences are in biological processes, sexuality and health.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.g002" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec012">
+<title>3.2.4 Differences in personal concerns</title>
+<p><xref ref-type="table" rid="pone.0150881.t007">Table 7</xref> compares along key dimensions labeled Personal in LIWC. These are also the dimensions thought to influence life satisfaction (e.g. Lim and Putnam [<xref ref-type="bibr" rid="pone.0150881.ref028">28</xref>], Hadaway [<xref ref-type="bibr" rid="pone.0150881.ref029">29</xref>], and Strine et al. [<xref ref-type="bibr" rid="pone.0150881.ref030">30</xref>]). All categories show significant differences except for Leisure and Home. Money, Religion, and Death show more than 10% difference. Class S more often uses words related to Money and Religion while Class D uses words related to Death more often. Overlaying sentiment analysis on the four categories with a minimum of 5% difference (excluding Death which has a negative loading) we get the comparisons in <xref ref-type="fig" rid="pone.0150881.g003">Fig 3</xref>. Interestingly, Class S is more positive on all categories.</p>
+<table-wrap id="pone.0150881.t007" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.t007</object-id>
+<label>Table 7</label>
+<caption>
+<title>LIWC Personal Concerns.</title>
+<p>Class S and Class D users differ significantly (Bonferroni-corrected p&lt;0.05) in all except Leisure and Home. Significant differences are in italics, differences &gt; 10% are in bold.</p>
+</caption>
+<alternatives>
+<graphic id="pone.0150881.t007g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.t007" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Categories</th>
+<th align="left">Example Words</th>
+<th align="left">Class S Avg.</th>
+<th align="left">Class D Avg.</th>
+<th align="left">Sig.</th>
+<th align="left">S—D (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><italic>Work</italic></td>
+<td align="left"><italic>Job, majors, xerox</italic></td>
+<td align="char" char="."><italic>226.7</italic></td>
+<td align="char" char="."><italic>215.2</italic></td>
+<td align="char" char="."><italic>.0001</italic></td>
+<td align="char" char="."><italic>5.1</italic></td>
+</tr>
+<tr>
+<td align="left"><italic>Achievement</italic></td>
+<td align="left"><italic>Earn, hero, win</italic></td>
+<td align="char" char="."><italic>266.6</italic></td>
+<td align="char" char="."><italic>252.2</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>5.4</italic></td>
+</tr>
+<tr>
+<td align="left">Leisure</td>
+<td align="left">Cook, chat, movie</td>
+<td align="char" char=".">295.0</td>
+<td align="char" char=".">287.3</td>
+<td align="char" char=".">.4706</td>
+<td align="char" char=".">2.6</td>
+</tr>
+<tr>
+<td align="left">Home</td>
+<td align="left">Apartment, family</td>
+<td align="char" char=".">80.3</td>
+<td align="char" char=".">81.1</td>
+<td align="char" char=".">.0022</td>
+<td align="char" char=".">-1.0</td>
+</tr>
+<tr>
+<td align="left"><italic><bold>Money</bold></italic></td>
+<td align="left"><italic><bold>Audit, cash, owe</bold></italic></td>
+<td align="char" char="."><italic><bold>92.4</bold></italic></td>
+<td align="char" char="."><italic><bold>81.9</bold></italic></td>
+<td align="char" char="."><italic><bold>.0000</bold></italic></td>
+<td align="char" char="."><italic><bold>11.3</bold></italic></td>
+</tr>
+<tr>
+<td align="left"><italic><bold>Religion</bold></italic></td>
+<td align="left"><italic><bold>Altar, church</bold></italic></td>
+<td align="char" char="."><italic><bold>107.3</bold></italic></td>
+<td align="char" char="."><italic><bold>89.0</bold></italic></td>
+<td align="char" char="."><italic><bold>.0000</bold></italic></td>
+<td align="char" char="."><italic><bold>17.0</bold></italic></td>
+</tr>
+<tr>
+<td align="left"><italic><bold>Death</bold></italic></td>
+<td align="left"><italic><bold>Bury, coffin, kill</bold></italic></td>
+<td align="char" char="."><italic><bold>38.0</bold></italic></td>
+<td align="char" char="."><italic><bold>43.9</bold></italic></td>
+<td align="char" char="."><italic><bold>.0000</bold></italic></td>
+<td align="char" char="."><italic><bold>-15.6</bold></italic></td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<fig id="pone.0150881.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>Comparison of user classes on sentiment and LIWC personal concerns.</title>
+<p>X axis: Personal concerns categories. Y axis: % of positive sentiment tweets − % of negative sentiment tweets. Tweets from Class S users are more positive than negative compared to tweets from Class D users in all categories. The biggest differences are in achievement and religion.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.g003" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec013">
+<title>3.2.5 Differences in PERMA categories</title>
+<p><xref ref-type="table" rid="pone.0150881.t008">Table 8</xref> compares classes along the ten PERMA categories (for the 5 elements of ‘well-being’). Differences in the negative categories are strong (larger than 10%), consistent and in the right direction: Class S exhibits lower frequencies than Class D. For positive categories, Class S has higher frequencies on two, engagement and meaning. But for positive emotion, positive relationships and achievement, Class S has lower frequencies compared to Class D and the differences in the later two are above 5%. When compared to LIWC results, we note that with both lexicons Class S uses less positive emotion than Class D (though the difference is less than 5% in either case). However, with LIWC achievement, usage in Class S is higher than in Class D (7.1%). This conflicts with the PERMA result (Class S &lt; Class D by 7.2%). The lexicons differ, LIWC has 186 achievement words and PERMA has 129 positive achievement words with only 46 overlap. A thorough analysis is required to look at the semantic differences between the two lexicons which should provide further clarification.</p>
+<table-wrap id="pone.0150881.t008" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.t008</object-id>
+<label>Table 8</label>
+<caption>
+<title>PERMA.</title>
+<p>Class S and Class D users differ significantly (Bonferroni-corrected p&lt;0.05) in all except Engagement. Significant differences are in italics, differences &gt; 10% are in bold.</p>
+</caption>
+<alternatives>
+<graphic id="pone.0150881.t008g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.t008" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Categories</th>
+<th align="left">Example Words</th>
+<th align="left">Class S Avg.</th>
+<th align="left">Class D Avg.</th>
+<th align="left">Sig.</th>
+<th align="left">S—D (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><italic>Positive Emotion</italic></td>
+<td align="left"><italic>satisfied, cheerful</italic></td>
+<td align="char" char="."><italic>83.4</italic></td>
+<td align="char" char="."><italic>86.3</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-3.5</italic></td>
+</tr>
+<tr>
+<td align="left"><italic><bold>Neg. Emotion</bold></italic></td>
+<td align="left"><italic><bold>suicidal, crying</bold></italic></td>
+<td align="char" char="."><italic><bold>53.4</bold></italic></td>
+<td align="char" char="."><italic><bold>64.4</bold></italic></td>
+<td align="char" char="."><italic><bold>.0000</bold></italic></td>
+<td align="char" char="."><italic><bold>-20.5</bold></italic></td>
+</tr>
+<tr>
+<td align="left">Engagement</td>
+<td align="left">careful, devoted</td>
+<td align="char" char=".">14.7</td>
+<td align="char" char=".">14.0</td>
+<td align="char" char=".">.6638</td>
+<td align="char" char=".">5.1</td>
+</tr>
+<tr>
+<td align="left"><italic><bold>Disengagement</bold></italic></td>
+<td align="left"><italic><bold>laziness, weariness</bold></italic></td>
+<td align="char" char="."><italic><bold>15.6</bold></italic></td>
+<td align="char" char="."><italic><bold>17.5</bold></italic></td>
+<td align="char" char="."><italic><bold>.0000</bold></italic></td>
+<td align="char" char="."><italic><bold>-12.5</bold></italic></td>
+</tr>
+<tr>
+<td align="left"><italic>Pos. Relationships</italic></td>
+<td align="left"><italic>neighbors, friendship</italic></td>
+<td align="char" char="."><italic>174.6</italic></td>
+<td align="char" char="."><italic>191.5</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-9.7</italic></td>
+</tr>
+<tr>
+<td align="left"><italic><bold>Neg. Relationships</bold></italic></td>
+<td align="left"><italic><bold>hate, envy</bold></italic></td>
+<td align="char" char="."><italic><bold>44.0</bold></italic></td>
+<td align="char" char="."><italic><bold>52.6</bold></italic></td>
+<td align="char" char="."><italic><bold>.0000</bold></italic></td>
+<td align="char" char="."><italic><bold>-19.6</bold></italic></td>
+</tr>
+<tr>
+<td align="left"><italic>Meaning</italic></td>
+<td align="left"><italic>represent, religious</italic></td>
+<td align="char" char="."><italic>62.8</italic></td>
+<td align="char" char="."><italic>58.7</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>6.5</italic></td>
+</tr>
+<tr>
+<td align="left"><italic><bold>Lack of meaning</bold></italic></td>
+<td align="left"><italic><bold>looser, vague</bold></italic></td>
+<td align="char" char="."><italic><bold>1.9</bold></italic></td>
+<td align="char" char="."><italic><bold>2.2</bold></italic></td>
+<td align="char" char="."><italic><bold>.0000</bold></italic></td>
+<td align="char" char="."><italic><bold>-17.4</bold></italic></td>
+</tr>
+<tr>
+<td align="left"><italic>Achievement</italic></td>
+<td align="left"><italic>adorned, merit</italic></td>
+<td align="char" char="."><italic>26.3</italic></td>
+<td align="char" char="."><italic>28.2</italic></td>
+<td align="char" char="."><italic>.0000</italic></td>
+<td align="char" char="."><italic>-7.2</italic></td>
+</tr>
+<tr>
+<td align="left"><italic><bold>Lack of Achievement</bold></italic></td>
+<td align="left"><italic><bold>subpar, beaten</bold></italic></td>
+<td align="char" char="."><italic><bold>2.6</bold></italic></td>
+<td align="char" char="."><italic><bold>2.8</bold></italic></td>
+<td align="char" char="."><italic><bold>.0000</bold></italic></td>
+<td align="char" char="."><italic><bold>-10.9</bold></italic></td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="sec014">
+<title>3.2.6 Summary</title>
+<p>This comparison relies primarily on features extracted using LIWC software. We find some differences between Class S and Class D in Twitter metadata features such as in active life span, the number of hashtags and URLs. But there are no differences in the numbers of followers and followings. Language differences exist, most interesting in the numbers of swear words and exclamation marks. In Psychological processes, we find several differences, especially in writings on sexuality, communications of sadness, anger, overall negative emotion and discrepancy (somewhat indicative of aspirations for the future). Overlaying sentiment analysis we find for example Class D is more negative in posts about health, biological processes and sex. In LIWC’s Personal concerns we find most differences in money, religion and death. Again overlaying sentiment analysis we find Class S is more positive about money and religion. We also find that Class D is more negative in all the 5 PERMA elements of “well-being”. The results are more mixed in the positive categories of PERMA. Comparisons in this section were ‘static’ in that time of post is not considered. Temporal analysis is presented next.</p>
+</sec>
+</sec>
+<sec id="sec015">
+<title>3.3 Differences between Users in Temporal Characteristics</title>
+<p>In 1999 Lewinsohn et al. [<xref ref-type="bibr" rid="pone.0150881.ref024">24</xref>] studied how life satisfaction and psychosocial variables relate over time. They surveyed a group of individuals at two time points, 8 months apart, on life satisfaction, depression, social support, personality, health etc. They then analyzed 4 groups: those with high (or low) LS ratings in both surveys and the two groups where LS ratings changed from one to the other. They found for example that people with low life satisfaction were more likely to have depression later. Inspired by this work we present two types of temporal analyses. The first is of users who always post LS tweets of one kind only, either satisfaction or dissatisfaction. The second analysis is of users who change their life assessment at some point, tweeting first a satisfaction (or dissatisfaction post) and later a post of the opposite status. We examine expressions of psychosocial features before, around and after the time of posting the LS tweet.</p>
+<p>Lewinsohn et al. [<xref ref-type="bibr" rid="pone.0150881.ref024">24</xref>] explored depression, social support and social interaction, pleasant activities, cognitions (e.g. irrational beliefs, expectancies of positive and negative outcomes), stress, personalities, health, and demographic variables like gender, age and marital status. Of these we are able to map social support to ‘<italic>Friends and Family</italic>’ category in LIWC, pleasant activities to ‘<italic>Leisure category</italic>’ in LIWC and LIWC has ‘<italic>Health</italic>’. We used a lexical approach to track Depression (with the words ‘<italic>depressing</italic>,’ ‘<italic>depress</italic>,’ and ‘<italic>depression</italic>’). We also consider LIWC categories that were not in Lewinsohn et al. [<xref ref-type="bibr" rid="pone.0150881.ref024">24</xref>]. These are ‘<italic>Anger</italic>’, ‘<italic>Anxiety</italic>’, ‘<italic>Death</italic>’, ‘<italic>Sadness</italic>’, ‘<italic>Home</italic>’, ‘<italic>Money</italic>’, ‘<italic>Religion</italic>’, and ‘<italic>Work</italic>’. <xref ref-type="table" rid="pone.0150881.t009">Table 9</xref> lists our categories. The table also shows categories (such as ‘<italic>Health</italic>’) differentiated using sentiment analysis.</p>
+<table-wrap id="pone.0150881.t009" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.t009</object-id>
+<label>Table 9</label>
+<caption>
+<title>Psychosocial Categories.</title>
+<p>+: Wildcard matching (E.g. ‘<italic>kill</italic>’ can match ‘<italic>killed</italic>,’ ‘<italic>killing</italic>,’ etc.)</p>
+</caption>
+<alternatives>
+<graphic id="pone.0150881.t009g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.t009" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Category</th>
+<th align="left">Example Words</th>
+<th align="left">Lexicon Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Anger</td>
+<td align="left">Hate, kill, annoyed</td>
+<td align="left">185+</td>
+</tr>
+<tr>
+<td align="left">Anxiety</td>
+<td align="left">Worried, fearful, nervous</td>
+<td align="left">91+</td>
+</tr>
+<tr>
+<td align="left">Death</td>
+<td align="left">Bury, coffin, kill</td>
+<td align="left">63+</td>
+</tr>
+<tr>
+<td align="left">Depression</td>
+<td align="left">Depress, depression</td>
+<td align="left">2+</td>
+</tr>
+<tr>
+<td align="left">Sadness</td>
+<td align="left">Crying, grief, sad</td>
+<td align="left">101+</td>
+</tr>
+<tr>
+<td align="left">Health (Pos)</td>
+<td align="left">Health, healthy</td>
+<td align="left">234+</td>
+</tr>
+<tr>
+<td align="left">Health (Neg)</td>
+<td align="left">Clinic, flu, pill</td>
+<td align="left">234+</td>
+</tr>
+<tr>
+<td align="left">Home (Pos)</td>
+<td align="left">Apartment, kitchen, family</td>
+<td align="left">93+</td>
+</tr>
+<tr>
+<td align="left">Home (Neg)</td>
+<td align="left">Apartment, kitchen, family</td>
+<td align="left">93+</td>
+</tr>
+<tr>
+<td align="left">Leisure (Pos)</td>
+<td align="left">Cook, chat, movie</td>
+<td align="left">228+</td>
+</tr>
+<tr>
+<td align="left">Leisure (Neg)</td>
+<td align="left">Cook, chat, movie</td>
+<td align="left">228+</td>
+</tr>
+<tr>
+<td align="left">Money (Pos)</td>
+<td align="left">Audit, cash, owe</td>
+<td align="left">173+</td>
+</tr>
+<tr>
+<td align="left">Money (Neg)</td>
+<td align="left">Audit, cash, owe</td>
+<td align="left">173+</td>
+</tr>
+<tr>
+<td align="left">Religion (Pos)</td>
+<td align="left">Altar, church, mosque</td>
+<td align="left">160+</td>
+</tr>
+<tr>
+<td align="left">Religion (Neg)</td>
+<td align="left">Altar, church, mosque</td>
+<td align="left">160+</td>
+</tr>
+<tr>
+<td align="left">Social Support (Pos)</td>
+<td align="left">Daughter, husband, friend</td>
+<td align="left">102+</td>
+</tr>
+<tr>
+<td align="left">Social Support (Neg)</td>
+<td align="left">Daughter, husband, friend</td>
+<td align="left">102+</td>
+</tr>
+<tr>
+<td align="left">Work (Pos)</td>
+<td align="left">Job, majors, xerox</td>
+<td align="left">326+</td>
+</tr>
+<tr>
+<td align="left">Work (Neg)</td>
+<td align="left">Job, majors, xerox</td>
+<td align="left">326+</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>We studied 4 user groups (1,278 users in each): S (always posted life satisfaction), D (always posted dissatisfaction), and those who changed status, S = &gt;D and D = &gt;S at some point in time with the obvious interpretations. Criteria for selection include: the user should have at least 10 tweets totally and the user account should be at least 300 days old prior to posting their LS tweet. Additionally for S = &gt;D and D = &gt;S, the interval between change of status from S (or D) to D (or S) should be at least 30 days.</p>
+<p>We compared groups using tweet prevalence plots centered on the notion of a ‘Day 0’ defined specific to each user as follows. For S (and D) this is the date on which the user posted the first satisfaction (dissatisfaction) tweet. For S = &gt;D and D = &gt;S, this is the date when the user posted the first LS tweet contradicting their previous status. (See <xref ref-type="fig" rid="pone.0150881.g004">Fig 4</xref> as an example prevalence plot for the psychosocial variable Depression). For points on the X axis to the right of 0 the prevalence score is calculated by accumulating tweets from Day 0. For points on the X axis to the left of 0 we accumulate tweets from that day to Day 0. Thus Day 0 is a fulcrum point for combining trends across a set of users. We calculate prevalence percentages at different days for each combination of psychosocial variable and user group. Two examples are given below.
+<disp-formula id="pone.0150881.e002"><alternatives><graphic id="pone.0150881.e002g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0150881.e002" xlink:type="simple"/><mml:math display="block" id="M2"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="left"><mml:mrow><mml:mi>P</mml:mi> <mml:mi>r</mml:mi> <mml:mi>e</mml:mi> <mml:mi>v</mml:mi> <mml:mi>a</mml:mi> <mml:mi>l</mml:mi> <mml:mi>e</mml:mi> <mml:mi>n</mml:mi> <mml:mi>c</mml:mi> <mml:mi>e</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>S</mml:mi> <mml:mo>,</mml:mo> <mml:mi>a</mml:mi> <mml:mi>n</mml:mi> <mml:mi>g</mml:mi> <mml:mi>e</mml:mi> <mml:mi>r</mml:mi> <mml:mo>,</mml:mo> <mml:mo>+</mml:mo> <mml:mn>100</mml:mn> <mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mtd></mml:mtr> <mml:mtr><mml:mtd><mml:mo>=</mml:mo> <mml:mfrac><mml:mtext># first person tweets conveying anger from group S between days 0 to +100</mml:mtext> <mml:mtext># first person tweets from group S between days 0 to +100</mml:mtext></mml:mfrac> <mml:mo>*</mml:mo> <mml:mn>100</mml:mn></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(1)</label></disp-formula> <disp-formula id="pone.0150881.e003"><alternatives><graphic id="pone.0150881.e003g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0150881.e003" xlink:type="simple"/><mml:math display="block" id="M3"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="left"><mml:mrow><mml:mi>P</mml:mi> <mml:mi>r</mml:mi> <mml:mi>e</mml:mi> <mml:mi>v</mml:mi> <mml:mi>a</mml:mi> <mml:mi>l</mml:mi> <mml:mi>e</mml:mi> <mml:mi>n</mml:mi> <mml:mi>c</mml:mi> <mml:mi>e</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>D</mml:mi> <mml:mo>,</mml:mo> <mml:mi>a</mml:mi> <mml:mi>n</mml:mi> <mml:mi>x</mml:mi> <mml:mi>i</mml:mi> <mml:mi>e</mml:mi> <mml:mi>t</mml:mi> <mml:mi>y</mml:mi> <mml:mo>,</mml:mo> <mml:mo>-</mml:mo> <mml:mn>200</mml:mn> <mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mtd></mml:mtr> <mml:mtr><mml:mtd><mml:mo>=</mml:mo> <mml:mfrac><mml:mtext># first person tweets conveying anxiety from group D between days -200 to 0</mml:mtext> <mml:mtext># first person tweets from group S between days -200 to 0</mml:mtext></mml:mfrac> <mml:mo>*</mml:mo> <mml:mn>100</mml:mn></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(2)</label></disp-formula></p>
+<fig id="pone.0150881.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title>Prevalence of tweets about Depression.</title>
+<p>X axis day -200 to day +300 around Day 0. Y axis: Prevalence of tweets about Depression calculated using Eqs (<xref ref-type="disp-formula" rid="pone.0150881.e002">1</xref>) and (<xref ref-type="disp-formula" rid="pone.0150881.e003">2</xref>). The left panel shows trends for S (orange line) and D (blue line) groups while the right panel shows trends for S = &gt;D (orange to blue line) and D = &gt;S (blue to orange) groups.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.g004" xlink:type="simple"/>
+</fig>
+<p>We start with <xref ref-type="fig" rid="pone.0150881.g005">Fig 5</xref> presenting three summary prevalence trends. These summaries are across a) all positive psychosocial variables b) all negative psychosocial variables and c) all psychosocial categories. See <xref ref-type="table" rid="pone.0150881.t009">Table 9</xref> for these categories. About 20% of the first person tweets posted by Group D tends to be about the psychosocial categories. (The fact that there are more tweets on the negative side than positive is an artifact since we are considering more negative than positive categories.) Focusing on the negative categories (blue lines), we note that these tweets are more prevalent from Class D than Class S. This also appears to account for differences between the two groups in totals (green lines). Overall the trend lines are steady except for a dip around Day 0, more so for negative than for positive categories. This is not an outcome of the accumulation process since we observe a dip on Day 0, even if a different day is chosen as the fulcrum point for accumulation. It appears that on and just around the day that a life satisfaction post is made the tendency to post on these psychosocial categories reduces.</p>
+<fig id="pone.0150881.g005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.g005</object-id>
+<label>Fig 5</label>
+<caption>
+<title>Tweet distribution around ‘Day 0’.</title>
+<p>X axis: Time in days around day ‘0’. Y axis: Percentages calculated as per Eqs (<xref ref-type="disp-formula" rid="pone.0150881.e002">1</xref>) and (<xref ref-type="disp-formula" rid="pone.0150881.e003">2</xref>). The only difference is that the accumulations are across multiple categories. Orange, blue and green represent positive, negative and all categories respectively. Continuous lines represent group S while dashed lines represent group D.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.g005" xlink:type="simple"/>
+</fig>
+<p>The X-axis in <xref ref-type="fig" rid="pone.0150881.g005">Fig 5</xref> spans from day -1000 to day +1000. The question to ask is how many users are actually active over this long time span? Active life span of a user is the time between the first and the last tweet. We are assured of 1,278 active users in each group on Day 0 but there will be attrition as we move away from Day 0 in either direction. Attrition rate is important as comparisons involving time points with few users will not be meaningful. <xref ref-type="fig" rid="pone.0150881.g006">Fig 6</xref> shows attrition for each group. For example, 50% of S users are active at -80 days and at +150 days. <xref ref-type="table" rid="pone.0150881.t010">Table 10</xref> highlights select data points. For example that attrition is faster for S and D compared to the other groups before Day 0 but not so after Day 0. Given attritions we limit our analysis to the range having about a minimum of 20% of the users (about 250 users in each group). Thus we limit analysis to the range Day -200 to Day +300.</p>
+<fig id="pone.0150881.g006" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.g006</object-id>
+<label>Fig 6</label>
+<caption>
+<title>User attrition rates for groups.</title>
+<p>X axis: day -1000 to day +1000 relative to Day 0. Y axis: Percentage of Day 0 users still active. For example at least 50% of the 1,278 S users are active between day -80 and day +150.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.g006" xlink:type="simple"/>
+</fig>
+<table-wrap id="pone.0150881.t010" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.t010</object-id>
+<label>Table 10</label>
+<caption>
+<title>Number of days before and after ‘Day 0’ for different percentages of active users.</title>
+</caption>
+<alternatives>
+<graphic id="pone.0150881.t010g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.t010" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="2">Group</th>
+<th align="center" colspan="3">Before ‘Day 0’</th>
+<th align="center">At ‘Day 0’</th>
+<th align="center" colspan="3">After ‘Day 0’</th>
+</tr>
+<tr>
+<th align="center">20%</th>
+<th align="center">50%</th>
+<th align="center">75%</th>
+<th align="center">100%</th>
+<th align="center">75%</th>
+<th align="center">50%</th>
+<th align="center">20%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">S</td>
+<td align="center">-270</td>
+<td align="center">-80</td>
+<td align="center">-20</td>
+<td align="center">1,278</td>
+<td align="center">90</td>
+<td align="center">150</td>
+<td align="center">420</td>
+</tr>
+<tr>
+<td align="left">D</td>
+<td align="center">-185</td>
+<td align="center">-60</td>
+<td align="center">-20</td>
+<td align="center">1,278</td>
+<td align="center">70</td>
+<td align="center">190</td>
+<td align="center">340</td>
+</tr>
+<tr>
+<td align="left">S⇒D</td>
+<td align="center">-375</td>
+<td align="center">-175</td>
+<td align="center">-115</td>
+<td align="center">1,278</td>
+<td align="center">50</td>
+<td align="center">115</td>
+<td align="center">285</td>
+</tr>
+<tr>
+<td align="left">D⇒S</td>
+<td align="center">-375</td>
+<td align="center">-200</td>
+<td align="center">-115</td>
+<td align="center">1,278</td>
+<td align="center">50</td>
+<td align="center">115</td>
+<td align="center">285</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>We first compare S and D groups and then S = &gt;D and D = &gt;S groups. Relevant prevalence plots for the psychosocial categories are Figs <xref ref-type="fig" rid="pone.0150881.g004">4</xref> (Depression), <xref ref-type="fig" rid="pone.0150881.g007">7</xref> (Death), <xref ref-type="fig" rid="pone.0150881.g008">8</xref> (Sadness), <xref ref-type="fig" rid="pone.0150881.g009">9</xref> (Anger), <xref ref-type="fig" rid="pone.0150881.g010">10</xref> (Anxiety), <xref ref-type="fig" rid="pone.0150881.g011">11</xref> (Health), <xref ref-type="fig" rid="pone.0150881.g012">12</xref> (Home) and <xref ref-type="fig" rid="pone.0150881.g013">13</xref> (Religion). In these the X-axis represents days and the Y-axis represents a percentage as calculated by Eqs (<xref ref-type="disp-formula" rid="pone.0150881.e002">1</xref>) and (<xref ref-type="disp-formula" rid="pone.0150881.e003">2</xref>). Blue lines stand for the D group and orange lines for S group. Color transitions in the S = &gt;D and D = &gt;S graphs indicate change in LS status. Plots have two panels each, one comparing S and D and the other comparing S = &gt;D and D = &gt;S groups. Plots for Home, Health and Religion have 4 panels since each category is differentiated by sentiment (e.g., Home(neg) and Home(pos)).</p>
+<fig id="pone.0150881.g007" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.g007</object-id>
+<label>Fig 7</label>
+<caption>
+<title>Prevalence of tweets about Death.</title>
+<p>X axis day -200 to day +300 around Day 0. Y axis: Prevalence of tweets about Death calculated using Eqs (<xref ref-type="disp-formula" rid="pone.0150881.e002">1</xref>) and (<xref ref-type="disp-formula" rid="pone.0150881.e003">2</xref>). The left panel shows trends for S (orange line) and D (blue line) groups while the right panel shows trends for S = &gt;D (orange to blue line) and D = &gt;S (blue to orange line) groups.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.g007" xlink:type="simple"/>
+</fig>
+<fig id="pone.0150881.g008" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.g008</object-id>
+<label>Fig 8</label>
+<caption>
+<title>Prevalence of tweets about Sadness.</title>
+<p>X axis day -200 to day +300 around Day 0. Y axis: Prevalence of tweets about Sadness calculated using Eqs (<xref ref-type="disp-formula" rid="pone.0150881.e002">1</xref>) and (<xref ref-type="disp-formula" rid="pone.0150881.e003">2</xref>). The left panel shows trends for S (orange line) and D (blue line) groups while the right panel shows trends for S = &gt;D (orange to blue line) and D = &gt;S (blue to orange line) groups.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.g008" xlink:type="simple"/>
+</fig>
+<fig id="pone.0150881.g009" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.g009</object-id>
+<label>Fig 9</label>
+<caption>
+<title>Prevalence of tweets about Anger.</title>
+<p>X axis day -200 to day +300 around Day 0. Y axis: Prevalence of tweets about Anger calculated using Eqs (<xref ref-type="disp-formula" rid="pone.0150881.e002">1</xref>) and (<xref ref-type="disp-formula" rid="pone.0150881.e003">2</xref>). The left panel shows trends for S (orange line) and D (blue line) groups while the right panel shows trends for S = &gt;D (orange to blue line) and D = &gt;S (blue to orange line) groups.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.g009" xlink:type="simple"/>
+</fig>
+<fig id="pone.0150881.g010" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.g010</object-id>
+<label>Fig 10</label>
+<caption>
+<title>Prevalence of tweets about Anxiety.</title>
+<p>X axis day -200 to day +300 around Day 0. Y axis: Prevalence of tweets about Anxiety calculated using Eqs (<xref ref-type="disp-formula" rid="pone.0150881.e002">1</xref>) and (<xref ref-type="disp-formula" rid="pone.0150881.e003">2</xref>). The left panel shows trends for S (orange line) and D (blue line) groups while the right panel shows trends for S = &gt;D (orange to blue line) and D = &gt;S (blue to orange line) groups.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.g010" xlink:type="simple"/>
+</fig>
+<fig id="pone.0150881.g011" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.g011</object-id>
+<label>Fig 11</label>
+<caption>
+<title>Prevalence of tweets about Health.</title>
+<p>X axis day -200 to day +300 around Day 0. Y axis: Prevalence of tweets about Health calculated using Eqs (<xref ref-type="disp-formula" rid="pone.0150881.e002">1</xref>) and (<xref ref-type="disp-formula" rid="pone.0150881.e003">2</xref>). The top panels are trends for tweets indicating positive sentiment about Health. The bottom panels are for negative sentiment about Health. The left panels shows trends for S (orange line) and D (blue line) groups while the right panels shows trends for S = &gt;D (orange to blue line) and D = &gt;S (blue to orange line) groups.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.g011" xlink:type="simple"/>
+</fig>
+<fig id="pone.0150881.g012" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.g012</object-id>
+<label>Fig 12</label>
+<caption>
+<title>Prevalence of tweets about Home.</title>
+<p>X axis day -200 to day +300 around Day 0. Y axis: Prevalence of tweets about Home calculated using Eqs (<xref ref-type="disp-formula" rid="pone.0150881.e002">1</xref>) and (<xref ref-type="disp-formula" rid="pone.0150881.e003">2</xref>). The top panels are trends for tweets indicating positive sentiment about Home. The bottom panels are for negative sentiment about Home. The left panels shows trends for S (orange line) and D (blue line) groups while the right panels shows trends for S = &gt;D (orange to blue line) and D = &gt;S (blue to orange line) groups.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.g012" xlink:type="simple"/>
+</fig>
+<fig id="pone.0150881.g013" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.g013</object-id>
+<label>Fig 13</label>
+<caption>
+<title>Prevalence of tweets about Religion.</title>
+<p>X axis day -200 to day +300 around Day 0. Y axis: Prevalence of tweets about Religion calculated using Eqs (<xref ref-type="disp-formula" rid="pone.0150881.e002">1</xref>) and (<xref ref-type="disp-formula" rid="pone.0150881.e003">2</xref>). The top panels are trends for tweets indicating positive sentiment about Religion. The bottom panels are for negative sentiment about religion. The left panels shows trends for S (orange line) and D (blue line) groups while the right panels shows trends for S = &gt;D (orange to blue line) and D = &gt;S (blue to orange line) groups.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.g013" xlink:type="simple"/>
+</fig>
+<sec id="sec016">
+<title>3.3.1 S Users versus D Users</title>
+<p>Consistent with intuitive expectations group D posts more throughout the timeline than group S on the negative psychosocial categories: Depression, Death, Sadness, Health(neg), Home(neg), Work(neg), Social Support(neg). This is also the case with Anger, Anxiety and Religion(neg), though the trends for S and D overlap just slightly around Day 0. D users also post more than S for Leisure(neg), though the difference is small. In general all of these graphs show dips around Day 0. The notable exceptions are for Death and Depression where the trends for S show a dip and the trend lines for D actually go up around Day 0.</p>
+<p>S and D groups do not show clear or consistent differences on positive variables. The one observation that stands out is that S users post more than D throughout on Religion(pos). As mentioned earlier, D users post more than S on Religion(neg).</p>
+<p><xref ref-type="table" rid="pone.0150881.t011">Table 11</xref> summarizes these trends ignoring the region around Day 0. The 4th column indicates whether the pattern of difference observed is as intuitively expected or surprising. Inconsistent differences are seen only in a couple of trends. One pattern (for (Leisure(pos)) is marked ‘Unclear;’ even though the trend is consistent its interpretation is unclear. Overall all the observed differences are as intuitively expected.</p>
+<table-wrap id="pone.0150881.t011" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.t011</object-id>
+<label>Table 11</label>
+<caption>
+<title>Comparison of groups S and D on psychosocial categories.</title>
+<p>Inconsistent: trends before and after Day 0 are not the same &gt;: S has significantly more psychosocial tweets than D &lt;: S has significantly fewer psychosocial tweets than D.</p>
+</caption>
+<alternatives>
+<graphic id="pone.0150881.t011g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.t011" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Category</th>
+<th align="center">Before Day 0 S vs. D</th>
+<th align="center">After Day 0 S vs. D</th>
+<th align="left">Pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Anger</td>
+<td align="center">&lt;</td>
+<td align="center">&lt;</td>
+<td align="left">As expected</td>
+</tr>
+<tr>
+<td align="left">Anxiety</td>
+<td align="center">&lt;</td>
+<td align="center">&lt;</td>
+<td align="left">As expected</td>
+</tr>
+<tr>
+<td align="left">Death</td>
+<td align="center">&lt;</td>
+<td align="center">&lt;</td>
+<td align="left">As expected</td>
+</tr>
+<tr>
+<td align="left">Depression</td>
+<td align="center">&lt;</td>
+<td align="center">&lt;</td>
+<td align="left">As expected</td>
+</tr>
+<tr>
+<td align="left">Sadness</td>
+<td align="center">&lt;</td>
+<td align="center">&lt;</td>
+<td align="left">As expected</td>
+</tr>
+<tr>
+<td align="left">Health (Pos)</td>
+<td align="center">&lt;</td>
+<td align="center">&lt;</td>
+<td align="left">Surprising</td>
+</tr>
+<tr>
+<td align="left">Health (Neg)</td>
+<td align="center">&lt;</td>
+<td align="center">&lt;</td>
+<td align="left">As expected</td>
+</tr>
+<tr>
+<td align="left">Home (Pos)</td>
+<td align="center">&lt;</td>
+<td align="center">&gt;</td>
+<td align="left">Inconsistent</td>
+</tr>
+<tr>
+<td align="left">Home (Neg)</td>
+<td align="center">&lt;</td>
+<td align="center">&lt;</td>
+<td align="left">As expected</td>
+</tr>
+<tr>
+<td align="left">Leisure (Pos)</td>
+<td align="center">&lt;</td>
+<td align="center">&lt;</td>
+<td align="left">Unclear</td>
+</tr>
+<tr>
+<td align="left">Leisure (Neg)</td>
+<td align="center">&lt;</td>
+<td align="center">&lt;</td>
+<td align="left">As expected</td>
+</tr>
+<tr>
+<td align="left">Money (Pos)</td>
+<td align="center">&gt;</td>
+<td align="center">&gt;</td>
+<td align="left">As expected</td>
+</tr>
+<tr>
+<td align="left">Money (Neg)</td>
+<td align="center">&lt;</td>
+<td align="center">&lt;</td>
+<td align="left">As expected</td>
+</tr>
+<tr>
+<td align="left">Religion (Pos)</td>
+<td align="center">&gt;</td>
+<td align="center">&gt;</td>
+<td align="left">As expected</td>
+</tr>
+<tr>
+<td align="left">Religion (Neg)</td>
+<td align="center">&lt;</td>
+<td align="center">&lt;</td>
+<td align="left">As expected</td>
+</tr>
+<tr>
+<td align="left">Social Support (Pos)</td>
+<td align="center">&gt;</td>
+<td align="center">&gt;</td>
+<td align="left">As expected</td>
+</tr>
+<tr>
+<td align="left">Social Support (Neg)</td>
+<td align="center">&lt;</td>
+<td align="center">&lt;</td>
+<td align="left">As expected</td>
+</tr>
+<tr>
+<td align="left">Work (Pos)</td>
+<td align="center">&lt;</td>
+<td align="center">&gt;</td>
+<td align="left">Inconsistent</td>
+</tr>
+<tr>
+<td align="left">Work (Neg)</td>
+<td align="center">&lt;</td>
+<td align="center">&lt;</td>
+<td align="left">As expected</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="sec017">
+<title>3.3.2 S = &gt;D users versus D = &gt;S users</title>
+<p>Overall differences were smaller between these two user groups compared to between S and D. Notable differences were found in the pure negative categories: Anger, Anxiety, Sadness, Death, and then Depression. Interestingly, in each of these negative categories those who start off satisfied and change to dissatisfied post more than those who start dissatisfied and change to satisfied. Noteworthy too is that tweet prevalence from S = &gt;D users in these 5 negative categories were each higher or equal to those from the stable dissatisfied D users; these in turn were higher than for the stable satisfied S users! That is, the group changing from satisfied to dissatisfied looks very different from the one that stays satisfied throughout. While these observations are made at the group level, an idea to explore in future research is whether tweet frequency in these categories may be used to predict which user is likely to change of expression from life satisfaction to dissatisfaction. Trends in the other categories were unremarkable because of small differences (even if significant) except for Religion(neg). Here we see S = &gt;D users posting more than D = &gt;S, especially before Day 0. <xref ref-type="table" rid="pone.0150881.t012">Table 12</xref> summarizes these trends ignoring the region around Day 0. The last column of the table is limited to noting consistency and inconsistency as we have few intuitive expectations of patterns of differences between these two groups.</p>
+<table-wrap id="pone.0150881.t012" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.t012</object-id>
+<label>Table 12</label>
+<caption>
+<title>Comparison of groups S⇒D and D⇒S on psychosocial categories.</title>
+<p>&gt;: S⇒D has significantly more psychosocial tweets than D⇒S &lt;: S⇒D has significantly fewer psychosocial tweets than D⇒S =: Groups has similar number of PV tweet in the figure (lines have overlap, even though it may be statistically significant).</p>
+</caption>
+<alternatives>
+<graphic id="pone.0150881.t012g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.t012" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Category</th>
+<th align="center">Before ‘Day 0’ S⇒D vs. D⇒S</th>
+<th align="center">After ‘Day 0’ S⇒D vs. D⇒S</th>
+<th align="left">Pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Anger</td>
+<td align="center">&gt;</td>
+<td align="center">&gt;</td>
+<td align="left">Consistent</td>
+</tr>
+<tr>
+<td align="left">Anxiety</td>
+<td align="center">&gt;</td>
+<td align="center">&gt;</td>
+<td align="left">Consistent</td>
+</tr>
+<tr>
+<td align="left">Death</td>
+<td align="center">&gt;</td>
+<td align="center">&gt;</td>
+<td align="left">Consistent</td>
+</tr>
+<tr>
+<td align="left">Depression</td>
+<td align="center">&gt;</td>
+<td align="center">&gt;</td>
+<td align="left">Consistent</td>
+</tr>
+<tr>
+<td align="left">Sadness</td>
+<td align="center">&gt;</td>
+<td align="center">&gt;</td>
+<td align="left">Consistent</td>
+</tr>
+<tr>
+<td align="left">Health (Pos)</td>
+<td align="center">&gt;</td>
+<td align="center">&lt;</td>
+<td align="left">Inconsistent</td>
+</tr>
+<tr>
+<td align="left">Health (Neg)</td>
+<td align="center">=</td>
+<td align="center">&gt;</td>
+<td align="left">Inconsistent</td>
+</tr>
+<tr>
+<td align="left">Home (Pos)</td>
+<td align="center">&gt;</td>
+<td align="center">&lt;</td>
+<td align="left">Inconsistent</td>
+</tr>
+<tr>
+<td align="left">Home (Neg)</td>
+<td align="center">&gt;</td>
+<td align="center">&gt;</td>
+<td align="left">Consistent</td>
+</tr>
+<tr>
+<td align="left">Leisure (Pos)</td>
+<td align="center">&gt;</td>
+<td align="center">&gt;</td>
+<td align="left">Consistent</td>
+</tr>
+<tr>
+<td align="left">Leisure (Neg)</td>
+<td align="center">&gt;</td>
+<td align="center">&gt;</td>
+<td align="left">Consistent</td>
+</tr>
+<tr>
+<td align="left">Money (Pos)</td>
+<td align="center">=</td>
+<td align="center">&lt;</td>
+<td align="left">Inconsistent</td>
+</tr>
+<tr>
+<td align="left">Money (Neg)</td>
+<td align="center">=</td>
+<td align="center">&gt;</td>
+<td align="left">Inconsistent</td>
+</tr>
+<tr>
+<td align="left">Religion (Pos)</td>
+<td align="center">&gt;</td>
+<td align="center">=</td>
+<td align="left">Inconsistent</td>
+</tr>
+<tr>
+<td align="left">Religion (Neg)</td>
+<td align="center">&gt;</td>
+<td align="center">&gt;</td>
+<td align="left">Consistent</td>
+</tr>
+<tr>
+<td align="left">Social Support (Pos)</td>
+<td align="center">=</td>
+<td align="center">&lt;</td>
+<td align="left">Inconsistent</td>
+</tr>
+<tr>
+<td align="left">Social Support (Neg)</td>
+<td align="center">&gt;</td>
+<td align="center">&gt;</td>
+<td align="left">Consistent</td>
+</tr>
+<tr>
+<td align="left">Work (Pos)</td>
+<td align="center">&gt;</td>
+<td align="center">&lt;</td>
+<td align="left">Inconsistent</td>
+</tr>
+<tr>
+<td align="left">Work (Neg)</td>
+<td align="center">&gt;</td>
+<td align="center">&gt;</td>
+<td align="left">Consistent</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="sec018">
+<title>3.3.3 Summary</title>
+<p>Overall temporal patterns related to psychosocial categories show greater differences between S and D user postings compared to S = &gt;D versus D = &gt;S users. Death, Depression, Anxiety, Anger and Sadness categories yield strong, intuitively consistent results. The remaining categories, especially on the negative side also provide intuitive and consistent results. The least interesting results are from comparisons on the positive variables. The one exception is Religion.</p>
+</sec>
+</sec>
+</sec>
+<sec id="sec019" sec-type="conclusions">
+<title>4 Discussion</title>
+<p>We present results from the first ever surveillance of life satisfaction expressions on Twitter. The research complements recent investigations of affect expressions [<xref ref-type="bibr" rid="pone.0150881.ref005">5</xref>–<xref ref-type="bibr" rid="pone.0150881.ref013">13</xref>] (termed happiness by the authors) in that both affect and life satisfaction are components of subjective well-being. While affect has been studied in several papers, life satisfaction has received far less attention especially with Twitter data [<xref ref-type="bibr" rid="pone.0150881.ref014">14</xref>–<xref ref-type="bibr" rid="pone.0150881.ref017">17</xref>].</p>
+<p>We build on recent research where we develop and test a strategy for surveillance of life satisfaction expressions [<xref ref-type="bibr" rid="pone.0150881.ref022">22</xref>]. Our strategy is unique in that it is founded on a well-respected and widely used survey of life satisfaction (SWLS) and it emphasizes both precision and recall. In this regard our strategy stands apart from general social media surveillance research (e.g., for flu [<xref ref-type="bibr" rid="pone.0150881.ref031">31</xref>], depression [<xref ref-type="bibr" rid="pone.0150881.ref032">32</xref>], etc.). Our previous paper paves the way for deriving surveillance strategies from other surveys. In this paper we apply the surveillance strategy to a two-year stretch of Twitter data. This data is intentionally limited to first person tweets that are written in the present tense so as to mimic self-ratings in the SWLS survey as much as possible.</p>
+<p>Our current results provide additional validity to our surveillance method. In the previous paper, we assessed the method using annotated data and by comparing with more standard approaches. In this paper a survey of select Twitter users using the same SWLS survey produced results consistent with results from the surveillance strategy. This portion of our research also indicates the extreme difficulty of conducting surveys with specific Twitter users.</p>
+<p>The temporal prevalence trends extracted from the two-year Twitter stream indicate that expressions of life satisfaction are immune to current events (political, seasonal, disasters etc.) and show only random fluctuations. This is in stark contrast to the findings of Dodds et al., [<xref ref-type="bibr" rid="pone.0150881.ref009">9</xref>] where they show that the trend in happiness (affect) is influenced strongly by current events and illustrate this with many examples. These two observations across papers are jointly consistent with the overall definitions of life satisfaction (as a cognitive and long-term assessment of one’s own life), and affect (positive and negative emotion felt daily due to various reasons). Thus we expect and we see stability in life satisfaction expressions on Twitter and we expect and we see external events influencing trends in affect in Dodds et al., research [<xref ref-type="bibr" rid="pone.0150881.ref009">9</xref>]. The fact that the trends are consistent with definitions further validate our methods. Note that stability in life satisfaction does not imply that a person may not change his/her assessment. It only means that life satisfaction assessments are stable compared to affect.</p>
+<p>When we compare Twitter users expressing satisfaction with those expressing dissatisfaction we do not find differences in followers and followings. Instead we find linguistic differences such as in the usage of urls, hashtags, personal pronouns, first person singular structures. More interesting observations are on differences in the use of swear words, in conveying negative emotion, anger, sadness and sexuality, etc. These are more frequent amongst users expressing dissatisfaction. There are also differences in prevalence of posts on money, religion and death.</p>
+<p>We can also compare our results with those in Table 2 of Schwartz et al. [<xref ref-type="bibr" rid="pone.0150881.ref017">17</xref>]. Despite differences between the two studies (discussed before), we find interesting consistencies. We have also tested 15 of the 20 features listed on their Table 2. We are in strong agreement in 7 of these 15 features, with differences between satisfied and dissatisfied tweeters larger than 10% and in the right direction. These are money, negative relationships, sexual terms, swear words, negative emotion, anger, disengagement. For example we find Class S posts more than Class D in money and this feature is positively correlated with life satisfaction in [<xref ref-type="bibr" rid="pone.0150881.ref017">17</xref>]. Also Class D posts more sexual terms than Class S and this feature is negatively correlated in [<xref ref-type="bibr" rid="pone.0150881.ref017">17</xref>]. Additionally we note through our sentiment overlays that Class S is also more positive in the money posts and Class D is more negative in the sexual posts. If we consider a difference threshold of 5% then we have consistent results for another 3 features: work, achievement and body. A difference is that they find positive emotion to be strongly correlated with life satisfaction. In contrast, we find that Class S posts slightly less than Class D (less than 5% difference). As said earlier both groups are consistent in findings regarding negative emotion. We postulate that our results may differ because of a combination of two points. First the individuals whose writings we study are the ones who post on life satisfaction. Second, it is recognized in several systems of thought (from popular self-help (e.g., [<xref ref-type="bibr" rid="pone.0150881.ref033">33</xref>]) to older philosophical systems (e.g, [<xref ref-type="bibr" rid="pone.0150881.ref034">34</xref>])) that emotional stability leads to greater satisfaction in life.</p>
+<p>Temporal analysis of our Twitter data provide results that can be intuitively appreciated. For example, users expressing life dissatisfaction post more tweets throughout the timeline on all clearly negative categories considered, death, anxiety, depression, sadness and anger compared to users expressing life satisfaction. Those who change from satisfaction to dissatisfaction also post more on these categories than those who change the other way. Overall, the results for satisfied users compared to dissatisfied users are different in the intuitively correct direction for almost all of the negative categories. Differences for the positive categories are not remarkable with the exception of Religion(pos).</p>
+<p>Our results are also consistent with observations and conclusions made in life satisfaction research from sociology and psychology. We highlight some parallels. Twitter users who express life satisfaction post more positive tweets and fewer negative tweets on religion compared to users expressing life dissatisfaction. The link between religiosity and life satisfaction is well documented in sociology and the current focus appears to be more on understanding the mechanism by which the two relate (Lim and Putnam [<xref ref-type="bibr" rid="pone.0150881.ref028">28</xref>], Ferriss [<xref ref-type="bibr" rid="pone.0150881.ref035">35</xref>], Greeley and Hout [<xref ref-type="bibr" rid="pone.0150881.ref036">36</xref>], Hadaway [<xref ref-type="bibr" rid="pone.0150881.ref029">29</xref>], Inglehart [<xref ref-type="bibr" rid="pone.0150881.ref037">37</xref>]). It is not surprising that in psychology and psychiatry there is a strong line of inquiry on the link between life dissatisfaction and depression. Studies indicate that the two tend to exhibit concurrently (Heli Koivumaa-Honkanen et al. [<xref ref-type="bibr" rid="pone.0150881.ref038">38</xref>]). Interestingly the authors also suggest that the life satisfaction scale itself may be used to assess the risk of developing depression in the future [<xref ref-type="bibr" rid="pone.0150881.ref038">38</xref>]. Guney et al. [<xref ref-type="bibr" rid="pone.0150881.ref039">39</xref>] also find negative and significant correlations between life satisfaction on one side and depression and anxiety on the other side. Our Twitter observations are consistent with these findings.</p>
+<p>There are also papers examining various angles such as correlations between poor health and life satisfaction, about life dissatisfaction indicating an elevated risk for adverse health, on the link between declining social support and declining life satisfaction (e.g., Strine et al. [<xref ref-type="bibr" rid="pone.0150881.ref030">30</xref>]). Similar observations are in (Palmore and Luikart [<xref ref-type="bibr" rid="pone.0150881.ref040">40</xref>], Wan et al. [<xref ref-type="bibr" rid="pone.0150881.ref041">41</xref>]). Again our results are generally consistent. We find that Twitter users expressing life satisfaction make fewer negative posts about social support and about health than users expressing life dissatisfaction.</p>
+<p>Probably the most important general finding from our study is that we can gather meaningful observations about life satisfaction from Twitter, a large, global social network. The observations are consistent with the definition of life satisfaction in the social sciences; the observations clearly differentiate between life satisfaction and affect, key components of subjective well being and they are consistent with findings in social science research on associated factors. Our results also provide additional, albeit indirect, validation for our surveillance tool. Several directions are open for future work. We have not considered gradations in satisfaction levels and leave this complex goal for future research. We could explore a prediction model to predict change from satisfied to dissatisfied using the features explored and additional ones. We could also study the Twitter social networks of different user groups for further insight.</p>
+</sec>
+<sec id="sec020" sec-type="materials|methods">
+<title>Methods</title>
+<p>The study is approved by university of Iowa IRB. IRB ID #: 201307803, PI: Chao Yang, Title: Expressions of Satisfaction With Life by Twitter Users.</p>
+<sec id="sec021">
+<title>4.1 Overview of Surveillance Method</title>
+<p>We start in a principled way with a highly reputed self-assessment scale in psychology called the Satisfaction With Life Scale (SWLS) designed in 1985 by Diener [<xref ref-type="bibr" rid="pone.0150881.ref018">18</xref>] et al. The scale has been cited more than 9,800 times and used in many areas, including studies in psychology [<xref ref-type="bibr" rid="pone.0150881.ref042">42</xref>] and social media [<xref ref-type="bibr" rid="pone.0150881.ref015">15</xref>] (but not in the manner we propose). The scale has five statements as shown in <xref ref-type="table" rid="pone.0150881.t013">Table 13</xref>. A respondent is asked to self-rate for each statement on a scale from 1 to 7 (Strongly Disagree (1); Disagree; Slightly Disagree; Neither Agree or Disagree; Slightly Agree; Agree; Strongly Agree (7)). Notice that the SWLS survey deliberately steers away from specific criteria such as career, home, family, etc. Our goal is to find tweets that can be seen as valid responses to the survey. Those tweets are the life satisfaction (LS) tweets of interest.</p>
+<table-wrap id="pone.0150881.t013" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.t013</object-id>
+<label>Table 13</label>
+<caption>
+<title>Diener et al.’s [<xref ref-type="bibr" rid="pone.0150881.ref018">18</xref>] Satisfaction With Life Scale.</title>
+</caption>
+<alternatives>
+<graphic id="pone.0150881.t013g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.t013" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">Statement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1. In most ways my life is close to my ideal.</td>
+</tr>
+<tr>
+<td align="left">2. The conditions of my life are excellent.</td>
+</tr>
+<tr>
+<td align="left">3. I am satisfied with life.</td>
+</tr>
+<tr>
+<td align="left">4. So far I have gotten the important things I want in life.</td>
+</tr>
+<tr>
+<td align="left">5. If I could live my life over, I would change almost nothing</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>Given the many possible ways for expressing life satisfaction assessments in tweets, we developed a process that takes statements in the scale and generalizes them into templates. Each template is then transformed into a set of retrieval strategies. Finally, we use an information retrieval system to retrieve the LS tweets from a daily Tweet collection using these search queries. In this manner, we transformed the survey into a Twitter surveillance strategy. While details are in [<xref ref-type="bibr" rid="pone.0150881.ref022">22</xref>], we briefly summarize the process here. <xref ref-type="table" rid="pone.0150881.t014">Table 14</xref> is used to illustrate this process with one statement from the SWLS.</p>
+<table-wrap id="pone.0150881.t014" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0150881.t014</object-id>
+<label>Table 14</label>
+<caption>
+<title>Illustration of Methodology.</title>
+</caption>
+<alternatives>
+<graphic id="pone.0150881.t014g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.t014" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+</colgroup>
+<tbody>
+<tr>
+<td align="left"><bold>Step 1.</bold> Starting Point: A statement from SWLS Ex: ‘<italic>I am satisfied with life</italic>’ (SWLS Statement 3)</td>
+</tr>
+<tr>
+<td align="left"><bold>Step 2.</bold> Obtain alternate statements from crowdworkers Ex: ‘<italic>my life is peachy</italic>’, ‘<italic>I am totally loving my life</italic>’</td>
+</tr>
+<tr>
+<td align="left"><bold>Step 3.</bold> Convert statements to general templates Ex: ‘<italic>my life is [peachy]</italic>’ Because of the generalized template structure we also consider many statements such as: ‘<italic>my life is great</italic>’; ‘<italic>my life is wonderful</italic>’; ‘<italic>my life is fabulous</italic>’ etc. These expansions are done using a lexicon of synonyms.</td>
+</tr>
+<tr>
+<td align="left"><bold>Step 4.</bold> Build retrieval strategies. Multiple strategies are generated for each template. These are built by combining one option from each of 1) and 2) below. The strictest strategy is when we select 0 for both. 1) Allow 0, 1, 2, or 3 words in between words of the template. 2) Allow 0, 1, 2, or 3 additional words before and after the template Ex: The tweet ‘<italic>My life is really peachy</italic>’ will be retrieved (1 word in between and no additional words before or after) Ex: The tweet ‘<italic>My life is truly peachy for ever</italic>’ will be retrieved (1 word in between and up to 2 words before and after).</td>
+</tr>
+<tr>
+<td align="left"><bold>Step 5.</bold> Run the retrieval strategies on the tweet dataset to retrieve life satisfaction tweets.</td>
+</tr>
+<tr>
+<td align="left"><bold>Step 6.</bold> Filter retrieved tweets.</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>Staring with an SWLS survey statement (Step 1) we first obtained an initial set of essentially equivalent statements through crowdsourcing with MTurk (Step 2). For example the sentence ‘<italic>my life is peachy</italic>’ is synonymous to the SWLS statement 3.</p>
+<p>Next, we manually generalized the statements into templates (Step 3); each template supports many equivalent expressions. Bracketed words in a template may be substituted by a variety of synonyms from a lexicon or a dictionary (e.g., happy, delighted, content are synonymous in this context). We built two sets of templates to retrieve tweets expressing life satisfaction versus life dissatisfaction. Dissatisfaction templates have their own synonym sets e.g., ‘<italic>sad, depressing, miserable</italic>’</p>
+<p>Then we built a set of 16 retrieval strategies (search queries) from each template (Step 4). The strategies differ along 2 dimensions: i) the number of intervening words allowed in a template (P) and ii) the number of words allowed before or after a text segment that satisfies the template (Q). We vary P and Q over (0,1,2,3) which gives us 16 combinations for building retrieval strategies. The strictest strategy is when P and Q are set to 0. Here for example, we would look for tweets saying ‘<italic>my life is peachy</italic>’ (or ‘<italic>my life is fantastic</italic>’ etc.) and exactly that. With P = 2 we also retrieve ‘<italic>life is oh so peachy</italic>’. With Q = 2 we also get tweets stating ‘<italic>For sure life is peachy for me</italic>’. The square brackets indicate that synonyms may be used (‘<italic>wonderful, excellent, peachy</italic>’ etc.). A similar set of strategies is built to obtain the dissatisfaction tweets with appropriate synonyms such as ‘<italic>horrible, horrid, terrible</italic>’. In step 5, we use the retrieval strategies to retrieve life satisfaction tweets from the dataset. Finally in step 6 we use a few filters to a) remove irrelevant tweets and to b) deal with negation. For example the tweet ‘<italic>My life is amazing because of my cat.</italic>’ is not relevant. Similarly tweets in past or future tense (‘<italic>I used to have a happy life</italic>’), referring to third persons (‘<italic>my friend has a great life</italic>’), asking questions (‘<italic>Is my life good?</italic>’), etc. are filtered out. When the satisfaction templates retrieve tweets with negation such as ‘<italic>My life is not perfect</italic>’ and ‘<italic>I am not happy</italic>,’ these are automatically moved to our set of dissatisfaction tweets. Note that ‘<italic>my life is imperfect</italic>’ or ‘<italic>unhappy</italic>’ are captured directly in the dissatisfaction templates. Overall, our template based retrieval strategies emphasize precision while also accommodating a variety of synonymous expressions to enhance recall. Crucially we focus on tweets that are in the first person (FP), so that we have a better chance of finding expressions that approximate self-ratings. This overview is necessarily limited, details are provided in our previous paper [<xref ref-type="bibr" rid="pone.0150881.ref022">22</xref>].</p>
+<p>We provide our two-day life satisfaction gold standard dataset (about 7.42 million tweets) as well as a random sample of life satisfaction tweets automatically detected in 2013 (25K for each class) using our method in <xref ref-type="supplementary-material" rid="pone.0150881.s006">S1</xref> and <xref ref-type="supplementary-material" rid="pone.0150881.s007">S2</xref> Datasets respectively. Due to the restriction of Twitter, we only provide the tweet ID for the life satisfaction irrelevant tweets in the gold standard dataset and the random sample of automatically detected LS tweets. In addition, we provide the lexicon and templates used in our method in <xref ref-type="supplementary-material" rid="pone.0150881.s008">S1 Lexicon</xref> and <xref ref-type="supplementary-material" rid="pone.0150881.s009">S1 Template</xref> respectively.</p>
+</sec>
+</sec>
+<sec id="sec022">
+<title>Supporting Information</title>
+<supplementary-material id="pone.0150881.s001" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.s001" xlink:type="simple">
+<label>S1 Fig</label>
+<caption>
+<title>Distribution of tweets with the keywords ‘Morning,’ ‘Noon,’ and ‘Evening’ over hours of the day.</title>
+<p>Peak points for each keyword are as to be expected.</p>
+<p>(TIF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0150881.s002" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.s002" xlink:type="simple">
+<label>S2 Fig</label>
+<caption>
+<title>Distribution of tweets with the keywords ‘Breakfast,’ ‘Lunch,’ and ‘Dinner’ over hours of the day.</title>
+<p>Peak points for each keyword are as to be expected.</p>
+<p>(TIF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0150881.s003" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.s003" xlink:type="simple">
+<label>S3 Fig</label>
+<caption>
+<title>Trend in postings of life satisfaction tweets over a two-year period.</title>
+<p>X axis: week. Y axis: Percentage computed as <inline-formula id="pone.0150881.e004"><alternatives><graphic id="pone.0150881.e004g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0150881.e004" xlink:type="simple"/><mml:math display="inline" id="M4"><mml:mrow><mml:mfrac><mml:mtext># Class S (or D) tweets in a day</mml:mtext> <mml:mtext># First Person Tweets in the day</mml:mtext></mml:mfrac> <mml:mo>×</mml:mo> <mml:mn>100</mml:mn> <mml:mo>%</mml:mo></mml:mrow></mml:math></alternatives></inline-formula>.</p>
+<p>(TIF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0150881.s004" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.s004" xlink:type="simple">
+<label>S4 Fig</label>
+<caption>
+<title>Complementary cumulative distribution function (CCDF) for number of followers on a log-log graph.</title>
+<p>Yellow represents Class S users and blue represents Class D users. The two groups show unremarkable differences.</p>
+<p>(TIF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0150881.s005" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.s005" xlink:type="simple">
+<label>S5 Fig</label>
+<caption>
+<title>Complementary cumulative distribution function (CCDF) for number of followings on a log-log graph.</title>
+<p>Yellow represents Class S users and blue represents Class D users. The two groups show unremarkable differences.</p>
+<p>(TIF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0150881.s006" mimetype="application/zip" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.s006" xlink:type="simple">
+<label>S1 Dataset</label>
+<caption>
+<title>Two-day life satisfaction gold standard dataset.</title>
+<p>(ZIP)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0150881.s007" mimetype="application/zip" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.s007" xlink:type="simple">
+<label>S2 Dataset</label>
+<caption>
+<title>Random sample of life satisfaction tweets automatically detected in 2013.</title>
+<p>(ZIP)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0150881.s008" mimetype="text/plain" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.s008" xlink:type="simple">
+<label>S1 Lexicon</label>
+<caption>
+<title>Lexicon of our template based method.</title>
+<p>(TXT)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0150881.s009" mimetype="text/plain" position="float" xlink:href="info:doi/10.1371/journal.pone.0150881.s009" xlink:type="simple">
+<label>S1 Template</label>
+<caption>
+<title>Templates of our template based method.</title>
+<p>(TXT)</p>
+</caption>
+</supplementary-material>
+</sec>
+</body>
+<back>
+<ack>
+<p>We thank Olivia Slater and Eric Post for help building the templates and lexicons for the method of life satisfaction surveillance. We also thank an anonymous reviewer for suggestions and pointing us to the PERMA lexicon and related research.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0150881.ref001">
+<label>1</label>
+<mixed-citation publication-type="other" xlink:type="simple">Happy Planet Index. <ext-link ext-link-type="uri" xlink:href="http://aiweb.techfak.uni-bielefeld.de/content/bworld-robot-control-software/" xlink:type="simple">http://aiweb.techfak.uni-bielefeld.de/content/bworld-robot-control-software/</ext-link>. [Online; accessed 21-Jan-2016].</mixed-citation>
+</ref>
+<ref id="pone.0150881.ref002">
+<label>2</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Zoltán</surname> <given-names>Kövecses</given-names></name>. <article-title>The Conceptual Structure of Happiness</article-title>. <source>Collegium</source>, <volume>3</volume>:<fpage>131</fpage>–<lpage>142</lpage>, <year>2008</year>.</mixed-citation>
+</ref>
+<ref id="pone.0150881.ref003">
+<label>3</label>
+<mixed-citation publication-type="other" xlink:type="simple">Ed Diener. Are life satisfaction and happiness the same thing? <ext-link ext-link-type="uri" xlink:href="http://internal.psychology.illinois.edu/~ediener/faq.html#LS" xlink:type="simple">http://internal.psychology.illinois.edu/~ediener/faq.html#LS</ext-link>. [Online; accessed 21-Jan-2016].</mixed-citation>
+</ref>
+<ref id="pone.0150881.ref004">
+<label>4</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Yi-Chen</surname> <given-names>Lee</given-names></name>, <name name-style="western"><surname>Yi-Cheng</surname> <given-names>Lin</given-names></name>, <name name-style="western"><surname>Chin-Lan</surname> <given-names>Huang</given-names></name>, and <name name-style="western"><surname>Barbara</surname> <given-names>L Fredrickson</given-names></name>. <article-title>The construct and measurement of peace of mind</article-title>. <source>Journal of Happiness Studies</source>, <volume>14</volume>(<issue>2</issue>):<fpage>571</fpage>–<lpage>590</lpage>, <year>2013</year>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s10902-012-9343-5" xlink:type="simple">10.1007/s10902-012-9343-5</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0150881.ref005">
+<label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Catherine</surname> <given-names>A Bliss</given-names></name>, <name name-style="western"><surname>Isabel</surname> <given-names>M Kloumann</given-names></name>, <name name-style="western"><surname>Kameron</surname> <given-names>Decker Harris</given-names></name>, <name name-style="western"><surname>Christopher</surname> <given-names>M Danforth</given-names></name>, and <name name-style="western"><surname>Peter</surname> <given-names>Sheridan Dodds</given-names></name>. <article-title>Twitter reciprocal reply networks exhibit assortativity with respect to happiness</article-title>. <source>Journal of Computational Science</source>, <volume>3</volume>(<issue>5</issue>):<fpage>388</fpage>–<lpage>397</lpage>, <year>2012</year>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.jocs.2012.05.001" xlink:type="simple">10.1016/j.jocs.2012.05.001</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0150881.ref006">
+<label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Johan</surname> <given-names>Bollen</given-names></name>, <name name-style="western"><surname>Bruno</surname> <given-names>Gonçalves</given-names></name>, <name name-style="western"><surname>Guangchen</surname> <given-names>Ruan</given-names></name>, and <name name-style="western"><surname>Huina</surname> <given-names>Mao</given-names></name>. <article-title>Happiness is assortative in online social networks</article-title>. <source>Artificial Life</source>, <volume>17</volume>(<issue>3</issue>):<fpage>237</fpage>–<lpage>251</lpage>, <year>2011</year>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1162/artl_a_00034" xlink:type="simple">10.1162/artl_a_00034</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0150881.ref007">
+<label>7</label>
+<mixed-citation publication-type="other" xlink:type="simple">Johan Bollen, Alberto Pepe, and Huina Mao. Modeling public mood and emotion: Twitter sentiment and socio-economic phenomena.<italic>Proceedings of the Fifth International AAAI Conference on Weblogs and Social Media (ICWSM)</italic>, 2011.</mixed-citation>
+</ref>
+<ref id="pone.0150881.ref008">
+<label>8</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Peter</surname> <given-names>Sheridan Dodds</given-names></name> and <name name-style="western"><surname>Christopher</surname> <given-names>M Danforth</given-names></name>. <article-title>Measuring the happiness of large-scale written expression: Songs, blogs, and presidents</article-title>. <source>Journal of Happiness Studies</source>, <volume>11</volume>(<issue>4</issue>):<fpage>441</fpage>–<lpage>456</lpage>, <year>2010</year>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s10902-009-9150-9" xlink:type="simple">10.1007/s10902-009-9150-9</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0150881.ref009">
+<label>9</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Peter</surname> <given-names>Sheridan Dodds</given-names></name>, <name name-style="western"><surname>Kameron</surname> <given-names>Decker Harris</given-names></name>, <name name-style="western"><surname>Isabel</surname> <given-names>M Kloumann</given-names></name>, <name name-style="western"><surname>Catherine</surname> <given-names>A Bliss</given-names></name>, and <name name-style="western"><surname>Christopher</surname> <given-names>M Danforth</given-names></name>. <article-title>Temporal patterns of happiness and information in a global social network: Hedonometrics and twitter</article-title>. <source>PloS one</source>, <volume>6</volume>(<issue>12</issue>):<fpage>e26752</fpage>, <year>2011</year>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0026752" xlink:type="simple">10.1371/journal.pone.0026752</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0150881.ref010">
+<label>10</label>
+<mixed-citation publication-type="other" xlink:type="simple">M R Frank, L Mitchell, PS Dodds, and et al. Happiness and the patterns of life: A study of geolocated tweets.<italic>Scientific Reports</italic>, 2013.</mixed-citation>
+</ref>
+<ref id="pone.0150881.ref011">
+<label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Lewis</surname> <given-names>Mitchell</given-names></name>, <name name-style="western"><surname>Morgan</surname> <given-names>R Frank</given-names></name>, <name name-style="western"><surname>Kameron</surname> <given-names>Decker Harris</given-names></name>, <name name-style="western"><surname>Peter</surname> <given-names>Sheridan Dodds</given-names></name>, and <name name-style="western"><surname>Christopher</surname> <given-names>M Danforth</given-names></name>. <article-title>The Geography of Happiness: Connecting Twitter sentiment and expression, demographics, and objective characteristics of place</article-title>. <source>PLoS ONE</source>, <volume>8</volume>(<issue>5</issue>):<fpage>e64417</fpage>, <year>2013</year>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0064417" xlink:type="simple">10.1371/journal.pone.0064417</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0150881.ref012">
+<label>12</label>
+<mixed-citation publication-type="other" xlink:type="simple">Daniele Quercia, Jonathan Ellis, Licia Capra, and Jon Crowcroft. Tracking “gross community happiness” from tweets. In <italic>CSCW’12: Proceedings of the ACM 2012 conference on Computer Supported Cooperative Work</italic>. ACM Request Permissions, February 2012.</mixed-citation>
+</ref>
+<ref id="pone.0150881.ref013">
+<label>13</label>
+<mixed-citation publication-type="book" xlink:type="simple">
+<name name-style="western"><surname>Dongsheng</surname> <given-names>Wang</given-names></name>, <name name-style="western"><surname>Abdelilah</surname> <given-names>Khiati</given-names></name>, <name name-style="western"><surname>Jongsoo</surname> <given-names>Sohn</given-names></name>, <name name-style="western"><surname>Bok-Gyu</surname> <given-names>Joo</given-names></name>, and <name name-style="western"><surname>In-Jeong</surname> <given-names>Chung</given-names></name>. <chapter-title>An improved method for measurement of gross national happiness using social network services</chapter-title>. In <source>Advanced Technologies, Embedded and Multimedia for Human-centric Computing</source>, pages <fpage>23</fpage>–<lpage>30</lpage>. <publisher-name>Springer</publisher-name>, <year>2014</year>.</mixed-citation>
+</ref>
+<ref id="pone.0150881.ref014">
+<label>14</label>
+<mixed-citation publication-type="other" xlink:type="simple">Adam D.I. Kramer. An unobtrusive behavioral model of gross national happiness. In <italic>Proceedings of the SIGCHI Conference on Human Factors in Computing Systems</italic>, pages 287–290. ACM, 2010.</mixed-citation>
+</ref>
+<ref id="pone.0150881.ref015">
+<label>15</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Ethan</surname> <given-names>Kross</given-names></name>, <name name-style="western"><surname>Philippe</surname> <given-names>Verduyn</given-names></name>, <name name-style="western"><surname>Emre</surname> <given-names>Demiralp</given-names></name>, <name name-style="western"><surname>Jiyoung</surname> <given-names>Park</given-names></name>, <name name-style="western"><surname>David</surname> <given-names>Seungjae Lee</given-names></name>, <name name-style="western"><surname>Natalie</surname> <given-names>Lin</given-names></name>, <name name-style="western"><surname>Holly</surname> <given-names>Shablack</given-names></name>, <name name-style="western"><surname>John</surname> <given-names>Jonides</given-names></name>, and <name name-style="western"><surname>Oscar</surname> <given-names>Ybarra</given-names></name>. <article-title>Facebook use predicts declines in subjective well-being in young adults</article-title>. <source>PloS one</source>, <volume>8</volume>(<issue>8</issue>):<fpage>e69841</fpage>, <year>2013</year>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0069841" xlink:type="simple">10.1371/journal.pone.0069841</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0150881.ref016">
+<label>16</label>
+<mixed-citation publication-type="other" xlink:type="simple">N Wang, M Kosinski, D J Stillwell, and J Rust. Can well-being be measured using Facebook status updates? Validation of Facebook’s Gross National Happiness Index.<italic>Social Indicators Research</italic>, pages 1–9, 2012.</mixed-citation>
+</ref>
+<ref id="pone.0150881.ref017">
+<label>17</label>
+<mixed-citation publication-type="other" xlink:type="simple">Hansen Andrew Schwartz, Johannes C Eichstaedt, Margaret L Kern, Lukasz Dziurzynski, Richard E Lucas, Megha Agrawal, Gregory J Park, Shrinidhi K Lakshmikanth, Sneha Jha, Martin EP Seligman, et al. Characterizing geographic variation in well-being using tweets. In <italic>Proceedings of the Seventh International AAAI Conference on Weblogs and Social Media (ICWSM)</italic>, 2013.</mixed-citation>
+</ref>
+<ref id="pone.0150881.ref018">
+<label>18</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>ED</surname> <given-names>Diener</given-names></name>, <name name-style="western"><surname>Robert</surname> <given-names>A Emmons</given-names></name>, <name name-style="western"><surname>Randy</surname> <given-names>J Larsen</given-names></name>, and <name name-style="western"><surname>Sharon</surname> <given-names>Griffin</given-names></name>. <article-title>The satisfaction with life scale</article-title>. <source>Journal of Personality Assessment</source>, <volume>49</volume>(<issue>1</issue>):<fpage>71</fpage>–<lpage>75</lpage>, <year>1985</year>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1207/s15327752jpa4901_13" xlink:type="simple">10.1207/s15327752jpa4901_13</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0150881.ref019">
+<label>19</label>
+<mixed-citation publication-type="other" xlink:type="simple">Daniele Quercia. Hyperlocal happiness from tweets.<italic>Twitter: A Digital Socioscope</italic>, page 96, 2015.</mixed-citation>
+</ref>
+<ref id="pone.0150881.ref020">
+<label>20</label>
+<mixed-citation publication-type="other" xlink:type="simple">Martin EP Seligman.<italic>Flourish: A Visionary New Understanding of Happiness and Well-being</italic>. Simon and Schuster, 2012.</mixed-citation>
+</ref>
+<ref id="pone.0150881.ref021">
+<label>21</label>
+<mixed-citation publication-type="other" xlink:type="simple">Leonardo Allisio, Valeria Mussa, Cristina Bosco, Viviana Patti, and Giancarlo Ruffo. Felicittà: Visualizing and estimating happiness in italian cities from geotagged tweets. In <italic>Proc. of ESSEM 2013</italic>, pages 95–106, 2013.</mixed-citation>
+</ref>
+<ref id="pone.0150881.ref022">
+<label>22</label>
+<mixed-citation publication-type="other" xlink:type="simple">Chao Yang and Padmini Srinivasan. Translating Surveys to Surveillance on Social Media: Methodological Challenges &amp; Solutions. In <italic>Proceedings of the 2014 ACM Conference on Web Science</italic>, WebSci’14, pages 4–12, New York, NY, USA, 2014. ACM.</mixed-citation>
+</ref>
+<ref id="pone.0150881.ref023">
+<label>23</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>William</surname> <given-names>Pavot</given-names></name> and <name name-style="western"><surname>Ed</surname> <given-names>Diener</given-names></name>. <article-title>Review of the satisfaction with life scale</article-title>. <source>Psychological Assessment</source>, <volume>5</volume>(<issue>2</issue>):<fpage>164</fpage>, <year>1993</year>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1037/1040-3590.5.2.164" xlink:type="simple">10.1037/1040-3590.5.2.164</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0150881.ref024">
+<label>24</label>
+<mixed-citation publication-type="other" xlink:type="simple">Peter M Lewinsohn, J Redner, and J Seeley. The relationship between life satisfaction and psychosocial variables: New perspectives. Subjective well-being: An Interdisciplinary Perspective, pages 141–169, 1991.</mixed-citation>
+</ref>
+<ref id="pone.0150881.ref025">
+<label>25</label>
+<mixed-citation publication-type="other" xlink:type="simple">James W Pennebaker, Cindy K Chung, Molly Ireland, Amy Gonzales, and Roger J Booth. The development and psychometric properties of LIWC2007. Austin, TX, LIWC. Net, 2007.</mixed-citation>
+</ref>
+<ref id="pone.0150881.ref026">
+<label>26</label>
+<mixed-citation publication-type="other" xlink:type="simple">Jalal Mahmud. Why do you write this? Prediction of influencers from word use. In <italic>Eighth International AAAI Conference on Weblogs and Social Media</italic>, 2014.</mixed-citation>
+</ref>
+<ref id="pone.0150881.ref027">
+<label>27</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Rianne</surname> <given-names>Van der Zanden</given-names></name>, <name name-style="western"><surname>Keshia</surname> <given-names>Curie</given-names></name>, <name name-style="western"><surname>Monique</surname> <given-names>Van Londen</given-names></name>, <name name-style="western"><surname>Jeannet</surname> <given-names>Kramer</given-names></name>, <name name-style="western"><surname>Gerard</surname> <given-names>Steen</given-names></name>, and <name name-style="western"><surname>Pim</surname> <given-names>Cuijpers</given-names></name>. <article-title>Web-based depression treatment: Associations of clients’ word use with adherence and outcome</article-title>. <source>Journal of Affective Disorders</source>, <volume>160</volume>:<fpage>10</fpage>–<lpage>13</lpage>, <year>2014</year>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.jad.2014.01.005" xlink:type="simple">10.1016/j.jad.2014.01.005</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0150881.ref028">
+<label>28</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Chaeyoon</surname> <given-names>Lim</given-names></name> and <name name-style="western"><surname>Robert</surname> <given-names>D Putnam</given-names></name>. <article-title>Religion, social networks, and life satisfaction</article-title>. <source>American Sociological Review</source>, <volume>75</volume>(<issue>6</issue>):<fpage>914</fpage>–<lpage>933</lpage>, <year>2010</year>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1177/0003122410386686" xlink:type="simple">10.1177/0003122410386686</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0150881.ref029">
+<label>29</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Christopher</surname> <given-names>Kirk Hadaway</given-names></name>. <article-title>Life satisfaction and religion: A reanalysis</article-title>. <source>Social Forces</source>, <volume>57</volume>(<issue>2</issue>):<fpage>636</fpage>–<lpage>643</lpage>, <year>1978</year>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/sf/57.2.636" xlink:type="simple">10.1093/sf/57.2.636</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0150881.ref030">
+<label>30</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Tara</surname> <given-names>W Strine</given-names></name>, <name name-style="western"><surname>Daniel</surname> <given-names>P Chapman</given-names></name>, <name name-style="western"><surname>Lina</surname> <given-names>S Balluz</given-names></name>, <name name-style="western"><surname>David</surname> <given-names>G Moriarty</given-names></name>, and <name name-style="western"><surname>Ali</surname> <given-names>H Mokdad</given-names></name>. <article-title>The associations between life satisfaction and health-related quality of life, chronic illness, and health behaviors among us community-dwelling adults</article-title>. <source>Journal of Community Health</source>, <volume>33</volume>(<issue>1</issue>):<fpage>40</fpage>–<lpage>50</lpage>, <year>2008</year>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s10900-007-9066-4" xlink:type="simple">10.1007/s10900-007-9066-4</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0150881.ref031">
+<label>31</label>
+<mixed-citation publication-type="other" xlink:type="simple">Eiji Aramaki, Sachiko Maskawa, and Mizuki Morita. Twitter catches the flu: detecting influenza epidemics using twitter. In <italic>Proceedings of the Conference on Empirical Methods in Natural Language Processing</italic>, pages 1568–1576. Association for Computational Linguistics, 2011.</mixed-citation>
+</ref>
+<ref id="pone.0150881.ref032">
+<label>32</label>
+<mixed-citation publication-type="other" xlink:type="simple">Munmun De Choudhury, Michael Gamon, Scott Counts, and Eric Horvitz. Predicting depression via social media. In <italic>Seventh International AAAI Conference on Weblogs and Social Media</italic>, 2013.</mixed-citation>
+</ref>
+<ref id="pone.0150881.ref033">
+<label>33</label>
+<mixed-citation publication-type="book" xlink:type="simple">
+<name name-style="western"><surname>Don</surname> <given-names>Miguel Ruiz</given-names></name> and <name name-style="western"><surname>Janet</surname> <given-names>Mills</given-names></name>. <source>The Four Agreements: A Practical Guide to Personal Freedom</source>. <publisher-name>Amber-Allen Publishing</publisher-name>, <year>2010</year>.</mixed-citation>
+</ref>
+<ref id="pone.0150881.ref034">
+<label>34</label>
+<mixed-citation publication-type="book" xlink:type="simple">
+<name name-style="western"><surname>William</surname> <given-names>Hart</given-names></name>. <source>The Art of Living: Vipassana Meditation as Taught by SN Goenka</source>. <publisher-name>Pariyatti</publisher-name>, <year>2011</year>.</mixed-citation>
+</ref>
+<ref id="pone.0150881.ref035">
+<label>35</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Abbott</surname> <given-names>L Ferriss</given-names></name>. <article-title>Religion and the quality of life</article-title>. <source>Journal of Happiness Studies</source>, <volume>3</volume>(<issue>3</issue>):<fpage>199</fpage>–<lpage>215</lpage>, <year>2002</year>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1023/A:1020684404438" xlink:type="simple">10.1023/A:1020684404438</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0150881.ref036">
+<label>36</label>
+<mixed-citation publication-type="other" xlink:type="simple">Andrew Greeley and Michael Hout. Happiness and lifestyle among conservative christians. The Truth about Conservative Christians, pages 150–61, 2006.</mixed-citation>
+</ref>
+<ref id="pone.0150881.ref037">
+<label>37</label>
+<mixed-citation publication-type="other" xlink:type="simple">Ronald Inglehart. Faith and freedom: Traditional and modern ways to happiness. International Differences in Well-being, pages 351–397, 2010.</mixed-citation>
+</ref>
+<ref id="pone.0150881.ref038">
+<label>38</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Heli</surname> <given-names>Koivumaa-Honkanen</given-names></name>, <name name-style="western"><surname>Jaakko</surname> <given-names>Kaprio</given-names></name>, <name name-style="western"><surname>Risto</surname> <given-names>Honkanen</given-names></name>, <name name-style="western"><surname>Heimo</surname> <given-names>Viinamäki</given-names></name>, and <name name-style="western"><surname>Markku</surname> <given-names>Koskenvuo</given-names></name>. <article-title>Life satisfaction and depression in a 15-year follow-up of healthy adults</article-title>. <source>Social Psychiatry and Psychiatric Epidemiology</source>, <volume>39</volume>(<issue>12</issue>):<fpage>994</fpage>–<lpage>999</lpage>, <year>2004</year>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s00127-004-0833-6" xlink:type="simple">10.1007/s00127-004-0833-6</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0150881.ref039">
+<label>39</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Sevgi</surname> <given-names>Guney</given-names></name>, <name name-style="western"><surname>Temel</surname> <given-names>Kalafat</given-names></name>, and <name name-style="western"><surname>Murat</surname> <given-names>Boysan</given-names></name>. <article-title>Dimensions of mental health: life satisfaction, anxiety and depression: a preventive mental health study in ankara university students population</article-title>. <source>Procedia-Social and Behavioral Sciences</source>, <volume>2</volume>(<issue>2</issue>):<fpage>1210</fpage>–<lpage>1213</lpage>, <year>2010</year>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.sbspro.2010.03.174" xlink:type="simple">10.1016/j.sbspro.2010.03.174</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0150881.ref040">
+<label>40</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Erdman</surname> <given-names>Palmore</given-names></name> and <name name-style="western"><surname>Clark</surname> <given-names>Luikart</given-names></name>. <article-title>Health and social factors related to life satisfaction</article-title>. <source>Journal of Health and Social Behavior</source>, pages <fpage>68</fpage>–<lpage>80</lpage>, <year>1972</year>.</mixed-citation>
+</ref>
+<ref id="pone.0150881.ref041">
+<label>41</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Choi</surname> <given-names>K Wan</given-names></name>, <name name-style="western"><surname>James</surname> <given-names>Jaccard</given-names></name>, and <name name-style="western"><surname>Sharon</surname> <given-names>L Ramey</given-names></name>. <article-title>The relationship between social support and life satisfaction as a function of family structure</article-title>. <source>Journal of Marriage and the Family</source>, pages <fpage>502</fpage>–<lpage>513</lpage>, <year>1996</year>.</mixed-citation>
+</ref>
+<ref id="pone.0150881.ref042">
+<label>42</label>
+<mixed-citation publication-type="book" xlink:type="simple">
+<name name-style="western"><surname>Michael</surname> <given-names>Argyle</given-names></name>. <source>The Psychology of Happiness</source>. <publisher-name>Routledge</publisher-name>, <year>2013</year>.</mixed-citation>
+</ref>
+</ref-list>
+</back>
+</article>

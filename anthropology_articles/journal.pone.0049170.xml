@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="publisher-id">PONE-D-12-20450</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0049170</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Computational biology</subject>
+            <subj-group>
+              <subject>Population genetics</subject>
+              <subj-group>
+                <subject>Gene pool</subject>
+                <subject>Genetic polymorphism</subject>
+                <subject>Haplotypes</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Sequence analysis</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Evolutionary biology</subject>
+            <subj-group>
+              <subject>Evolutionary processes</subject>
+              <subj-group>
+                <subject>Mutation</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Evolutionary systematics</subject>
+              <subj-group>
+                <subject>Phylogenetics</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Organismal evolution</subject>
+              <subj-group>
+                <subject>Human evolution</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Population genetics</subject>
+              <subj-group>
+                <subject>Genetic polymorphism</subject>
+                <subject>Haplotypes</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Evolutionary genetics</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genetics</subject>
+            <subj-group>
+              <subject>Human genetics</subject>
+              <subj-group>
+                <subject>Y-linked</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Population genetics</subject>
+              <subj-group>
+                <subject>Genetic polymorphism</subject>
+                <subject>Haplotypes</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Heredity</subject>
+              <subject>Molecular genetics</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Paleontology</subject>
+            <subj-group>
+              <subject>Biogeography</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Population biology</subject>
+            <subj-group>
+              <subject>Population genetics</subject>
+              <subj-group>
+                <subject>Genetic polymorphism</subject>
+                <subject>Haplotypes</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Social and behavioral sciences</subject>
+          <subj-group>
+            <subject>Anthropology</subject>
+            <subj-group>
+              <subject>Biological anthropology</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Genetics and Genomics</subject>
+          <subject>Computational Biology</subject>
+          <subject>Evolutionary Biology</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Molecular Dissection of the Basal Clades in the Human Y Chromosome Phylogenetic Tree</article-title>
+        <alt-title alt-title-type="running-head">Refining the Deepest Clades in the Human MSY Tree</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Scozzari</surname>
+            <given-names>Rosaria</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Massaia</surname>
+            <given-names>Andrea</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>D’Atanasio</surname>
+            <given-names>Eugenia</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Myres</surname>
+            <given-names>Natalie M.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Perego</surname>
+            <given-names>Ugo A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Trombetta</surname>
+            <given-names>Beniamino</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Cruciani</surname>
+            <given-names>Fulvio</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Dipartimento di Biologia e Biotecnologie “Charles Darwin”, Sapienza Università di Roma, Rome, Italy</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Sorenson Molecular Genealogy Foundation, Salt Lake City, Utah, United States of America</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>AncestryDNA, Provo, Utah, United States of America</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>Dipartimento di Biologia e Biotecnologie “Lazzaro Spallanzani”, Università di Pavia, Pavia, Italy</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Caramelli</surname>
+            <given-names>David</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>University of Florence, Italy</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">fulvio.cruciani@uniroma1.it</email></corresp>
+        <fn fn-type="conflict">
+          <p>NMM is affiliated to AncestryDNA based in Utah. NMM and UAP are affiliated to Sorenson Molecular Genealogy Foundation. AncestryDNA sell kits to determine ancestry (<ext-link ext-link-type="uri" xlink:href="http://dna.ancestry.com/" xlink:type="simple">http://dna.ancestry.com/</ext-link>). Sorenson Molecular Genealogy Foundation sold their database to Ancestry.com this year: <ext-link ext-link-type="uri" xlink:href="http://corporate.ancestry.com/press/press-releases/2012/05/ancestry.com-dna-launches/" xlink:type="simple">http://corporate.ancestry.com/press/press-releases/2012/05/ancestry.com-dna-launches/</ext-link>. There are no other patents, products in development or marketed products to declare. This does not alter the authors' adherence to all the PLoS ONE policies on sharing data and materials.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: RS FC. Performed the experiments: AM EDA. Analyzed the data: AM BT. Contributed reagents/materials/analysis tools: RS NMM UAP. Wrote the paper: RS FC. Reviewed the manuscript prior to submission: RS NMM UAP FC.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2012</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>7</day>
+        <month>11</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>7</volume>
+      <issue>11</issue>
+      <elocation-id>e49170</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>4</day>
+          <month>7</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>4</day>
+          <month>10</month>
+          <year>2012</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2012</copyright-year>
+        <copyright-holder>Scozzari et al</copyright-holder>
+        <license xlink:type="simple">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>One hundred and forty-six previously detected mutations were more precisely positioned in the human Y chromosome phylogeny by the analysis of 51 representative Y chromosome haplogroups and the use of 59 mutations from literature. Twenty-two new mutations were also described and incorporated in the revised phylogeny. This analysis made it possible to identify new haplogroups and to resolve a deep trifurcation within haplogroup B2. Our data provide a highly resolved branching in the African-specific portion of the Y tree and support the hypothesis of an origin in the north-western quadrant of the African continent for the human MSY diversity.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>This work was supported by the Italian Ministry of Education, University and Research (grant “Progetti di Ricerca di Interesse Nazionale”, n. 2009P2CNKK). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="5"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>The male specific portion of the Y chromosome (MSY) is the largest haplotypic block in the human genome. Due to the lack of allelic recombination, the history of mutational accumulation in the MSY can be described in a unique evolutionary haplogroup tree. The MSY tree has been largely used for the study of the human evolutionary history <xref ref-type="bibr" rid="pone.0049170-Underhill1">[1]</xref>, <xref ref-type="bibr" rid="pone.0049170-Chiaroni1">[2]</xref>, and is currently becoming an increasingly important resource in forensic <xref ref-type="bibr" rid="pone.0049170-Butler1">[3]</xref>, <xref ref-type="bibr" rid="pone.0049170-Kayser1">[4]</xref> and sex-chromosome evolution studies <xref ref-type="bibr" rid="pone.0049170-Rozen1">[5]</xref>–<xref ref-type="bibr" rid="pone.0049170-Trombetta1">[13]</xref>.</p>
+      <p>The number of phylogenetically characterized Y-specific markers has substantially increased in recent years. In the MSY phylogeny reported by Karafet et al. <xref ref-type="bibr" rid="pone.0049170-Karafet1">[14]</xref>, 80 mutations belong to the deepest portion of the tree (haplogroups A1a, A1b, A2, A3 and B), defining a total of 34 distinct African-specific haplogroups/paragroups. An independent high resolution MSY phylogeny has been recently obtained from 2,870 Y-SNPs discovered (or re-discovered) in the course of a large whole-genome re-sequencing study, but the observed variable sites all belong to the recent “out of Africa” CT clade <xref ref-type="bibr" rid="pone.0049170-The1">[15]</xref>. Recently, in a re-sequencing study of the Y chromosome, the root of the tree moved to a new position and several changes at the basal nodes of the phylogeny were introduced <xref ref-type="bibr" rid="pone.0049170-Cruciani2">[16]</xref>. Interestingly, the estimated coalescence age and deep branching pattern of the revised MSY tree appear to be more similar to those of the mtDNA phylogeny <xref ref-type="bibr" rid="pone.0049170-Mishmar1">[17]</xref>, <xref ref-type="bibr" rid="pone.0049170-Behar1">[18]</xref> than previously reported <xref ref-type="bibr" rid="pone.0049170-Underhill1">[1]</xref>.</p>
+      <p>To increase the level of phylogenetic resolution in the African-specific portion of the MSY tree, we mapped 146 previously detected mutations <xref ref-type="bibr" rid="pone.0049170-Cruciani2">[16]</xref> with respect to 59 mutations defining internal nodes in the Y chromosome phylogeny reported by Karafet et al. <xref ref-type="bibr" rid="pone.0049170-Karafet1">[14]</xref>. We also mapped eleven previously unreported mutations from our database, and nine new mutations that had been identified through the re-sequencing of two Y chromosomes belonging to the widespread African-specific haplogroup A3b. Finally, two additional mutations identified during the process of phylogenetic mapping were also included in the analysis. The new integrated MSY tree represents an improved resource for the study of human prehistory and genome evolution.</p>
+    </sec>
+    <sec id="s2">
+      <title>Results</title>
+      <sec id="s2a">
+        <title>Newly Described Mutations</title>
+        <p>Information regarding 22 previously undescribed mutations is given in <xref ref-type="table" rid="pone-0049170-t001">Table 1</xref>. The first set of eleven mutations came from our database (mutations in the range V2-V249 in <xref ref-type="table" rid="pone-0049170-t001">Table 1</xref>). Nine new mutations (mutations in the range of V262-V317 in <xref ref-type="table" rid="pone-0049170-t001">Table 1</xref>) were discovered by sequencing two A3b subjects, while two additional mutations (V254 and V341) were identified during the process of phylogenetic mapping. Apart from one exception (V306, corresponding to the SNP rs113042298), none of these mutations is present in the current SNP database (dbSNP, build 135).</p>
+        <table-wrap id="pone-0049170-t001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0049170.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Information on the mutations here reported and analyzed for the first time.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0049170-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0049170.t001" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">SNP</td>
+                  <td align="left" rowspan="1" colspan="1">Y-Position<xref ref-type="table-fn" rid="nt101">a</xref></td>
+                  <td align="left" rowspan="1" colspan="1">Mutation</td>
+                  <td align="left" rowspan="1" colspan="1">Forward Primer</td>
+                  <td align="left" rowspan="1" colspan="1">Reverse Primer</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">V2</td>
+                  <td align="left" rowspan="1" colspan="1">6778215</td>
+                  <td align="left" rowspan="1" colspan="1">A to C</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">TTGCTGAGTGTACTGGGATCTT</named-content>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">AAGACACCCCAGTTGTCATTTC</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">V3</td>
+                  <td align="left" rowspan="1" colspan="1">6778229</td>
+                  <td align="left" rowspan="1" colspan="1">T to C</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">TTGCTGAGTGTACTGGGATCTT</named-content>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">AAGACACCCCAGTTGTCATTTC</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">V11</td>
+                  <td align="left" rowspan="1" colspan="1">6892902</td>
+                  <td align="left" rowspan="1" colspan="1">A to T</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">CTGGCCTTAGGAAATAGGTCAA</named-content>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">AGGGTCATTATCGTTGAGGAAG</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">V33</td>
+                  <td align="left" rowspan="1" colspan="1">6894717</td>
+                  <td align="left" rowspan="1" colspan="1">G to T</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">AACACCAGGATTTGTTTTGGAG</named-content>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">TTCAGCAACACTGTAGAATCAGG</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">V34</td>
+                  <td align="left" rowspan="1" colspan="1">6894718</td>
+                  <td align="left" rowspan="1" colspan="1">C to T</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">AACACCAGGATTTGTTTTGGAG</named-content>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">TTCAGCAACACTGTAGAATCAGG</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">V37</td>
+                  <td align="left" rowspan="1" colspan="1">6818279</td>
+                  <td align="left" rowspan="1" colspan="1">G to A</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">ATTATTTGAATGCAAGTGGGGA</named-content>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">TGAAACTGAATTAAAGGAAGGTGG</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">V73</td>
+                  <td align="left" rowspan="1" colspan="1">16691696</td>
+                  <td align="left" rowspan="1" colspan="1">A to G</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">TGAAGGAGATTTAATTGGGGTAGA</named-content>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">TTTCCATACCATGCCTTTCTTT</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">V87</td>
+                  <td align="left" rowspan="1" colspan="1">17947454</td>
+                  <td align="left" rowspan="1" colspan="1">A to T</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">CATCCCTTGGTCATCCCTC</named-content>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">CTAGACCCTGATTCATGTAAGCC</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">V147</td>
+                  <td align="left" rowspan="1" colspan="1">6739492</td>
+                  <td align="left" rowspan="1" colspan="1">G to A</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">GTTTTGTGGGTGAGAGAGGAAG</named-content>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">CCATTTCTACATGGAGGAAGTTTT</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">V248</td>
+                  <td align="left" rowspan="1" colspan="1">7589991</td>
+                  <td align="left" rowspan="1" colspan="1">C to T</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">GGCAGCCCTCAGGATATGTA</named-content>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">GATTCCACTAAACCCGACGA</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">V249<xref ref-type="table-fn" rid="nt102">b</xref></td>
+                  <td align="left" rowspan="1" colspan="1">25207704; 26841450;27120952</td>
+                  <td align="left" rowspan="1" colspan="1">T/T/T toG/G/G</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">GGCCAAATCAGAGAAATGGA</named-content>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">CGCAGAACCTGAAATTGTGA</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">V254</td>
+                  <td align="left" rowspan="1" colspan="1">6870497</td>
+                  <td align="left" rowspan="1" colspan="1">G to A</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">AAATGCAGTGTTCCAGGGAGT</named-content>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">TTAAGTAGCTCCCGAGAAGTTAAAG</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">V262</td>
+                  <td align="left" rowspan="1" colspan="1">6659209</td>
+                  <td align="left" rowspan="1" colspan="1">C to G</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">CTACAACGCCCAGCTGATTT</named-content>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">CTGTCTTATGGCCACCCAAG</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">V265</td>
+                  <td align="left" rowspan="1" colspan="1">6661164</td>
+                  <td align="left" rowspan="1" colspan="1">A to G</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">CTCTAGCAATTAGGGCTTCAG</named-content>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">TGTTGCCTAGATGACAAGCA</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">V303</td>
+                  <td align="left" rowspan="1" colspan="1">2798066 - 2798068</td>
+                  <td align="left" rowspan="1" colspan="1">del TTT</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">GGCACCCTGTAGAACCCATA</named-content>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">GAAAAAGAGCAGGCATGGTG</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">V304</td>
+                  <td align="left" rowspan="1" colspan="1">2796955 - 2796957</td>
+                  <td align="left" rowspan="1" colspan="1">del GAA</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">GCTTTGGGGGAGTTAGGAAA</named-content>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">TACAGGGTGCCAGATGGACT</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">V305</td>
+                  <td align="left" rowspan="1" colspan="1">2854573</td>
+                  <td align="left" rowspan="1" colspan="1">T to C</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">ACCCCTGGGTTCAACTATCC</named-content>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">ATTACTCAGGGGTGGTGACG</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">V306</td>
+                  <td align="left" rowspan="1" colspan="1">7594967</td>
+                  <td align="left" rowspan="1" colspan="1">G to C</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">CCTTAAAGGGCTCGGAGAGA</named-content>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">CACTCGACATCGACCTCTCA</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">V313</td>
+                  <td align="left" rowspan="1" colspan="1">7622390</td>
+                  <td align="left" rowspan="1" colspan="1">G to A</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">GAGACTCAGGCAGGCATCAT</named-content>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">TCCAAAGGTTCACAGCTGATT</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">V314</td>
+                  <td align="left" rowspan="1" colspan="1">7642949</td>
+                  <td align="left" rowspan="1" colspan="1">A to T</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">AGGCCTCATCCAGACCTATG</named-content>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">CCACCATGCTGGCTTATTTT</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">V317</td>
+                  <td align="left" rowspan="1" colspan="1">2908553</td>
+                  <td align="left" rowspan="1" colspan="1">G to A</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">AAGATGCCAGCCTCGAGTTA</named-content>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">TTTTTGATCTGAGGCCCATC</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">V341</td>
+                  <td align="left" rowspan="1" colspan="1">4840884</td>
+                  <td align="left" rowspan="1" colspan="1">A to T</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">TTCAGCTATTGCCTTCTATGG</named-content>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene" xlink:type="simple">TTTAAGCTCGTGGGAAATGC</named-content>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt101">
+              <label>a</label>
+              <p>Position according to the February 2009 human Y-chromosome reference sequence (GRCh37).</p>
+            </fn>
+            <fn id="nt102">
+              <label>b</label>
+              <p>PCR primers amplify three paralogous MSY regions.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="s2b">
+        <title>Phylogenetic Mapping</title>
+        <p>Most of the mutations here analyzed belong to the African portion of the MSY phylogeny, which is comprised of haplogroups A1b, A1a, A2, A3 and B <xref ref-type="bibr" rid="pone.0049170-Cruciani2">[16]</xref>. Through phylogenetic mapping it was possible to identify 15 new African haplogroups and to resolve one basal trifurcation (<xref ref-type="fig" rid="pone-0049170-g001">Figure 1</xref>). A new deep branch within the “out of Africa” haplogroup C was also identified (<xref ref-type="supplementary-material" rid="pone.0049170.s001">Figure S1</xref>).</p>
+        <sec id="s2b1">
+          <title>Haplogroup A1b</title>
+          <p>The P114 mutation, which defines haplogroup A1b according to Karafet et al. <xref ref-type="bibr" rid="pone.0049170-Karafet1">[14]</xref>, had been detected in central-western Africa at very low frequencies (in total, three chromosomes from Cameroon) <xref ref-type="bibr" rid="pone.0049170-Cruciani2">[16]</xref>, <xref ref-type="bibr" rid="pone.0049170-Batini1">[19]</xref>. Thirty-two additional biallelic mutations have been recently discovered for haplogroup A1b, which now appears to be one of the two deepest-rooting branches of the MSY tree <xref ref-type="bibr" rid="pone.0049170-Cruciani2">[16]</xref>. Here, these mutations were analyzed in three Y chromosomes that were ancestral at both P114 and the markers that, according to <xref ref-type="bibr" rid="pone.0049170-Cruciani2">[16]</xref>, define macro-haplogroup A1a-T (samples 1–3 in <xref ref-type="supplementary-material" rid="pone.0049170.s002">Table S1</xref>) and in one Y chromosome derived at P114 (sample 4 in <xref ref-type="supplementary-material" rid="pone.0049170.s002">Table S1</xref>). The four chromosomes turned out to carry the derived allele at 19 of the 32 markers analyzed, resulting in one terminal haplogroup, defined by P114 and three other mutations, and three new paragroups (<xref ref-type="fig" rid="pone-0049170-g001">Figure 1</xref>). We identified a third allele (A) for the V161 polymorphism, which had been previously reported as a biallelic G to C tranversion on the A1b branch <xref ref-type="bibr" rid="pone.0049170-Cruciani2">[16]</xref>. The presence of nucleotide A at the orthologous MSY position in the chimp reference sequence (October 2010 chimp assembly, UCSC Genome Browser), along with the structure of the human MSY tree as shown in <xref ref-type="fig" rid="pone-0049170-g001">Figure 1</xref>, suggest that this triallelic polymorphism may have originated from two independent mutations, from A to C (V161.1) within the A1b branch, and from A to G (V161.2) at the root of macro-haplogroup A1a-T.</p>
+        </sec>
+        <sec id="s2b2">
+          <title>Haplogroup A1a</title>
+          <p>Haplogroup A1a is present at relatively low frequencies in western and northern Africa <xref ref-type="bibr" rid="pone.0049170-Underhill2">[20]</xref>–<xref ref-type="bibr" rid="pone.0049170-Rosa1">[25]</xref>. In the phylogeny by Karafet et al. <xref ref-type="bibr" rid="pone.0049170-Karafet1">[14]</xref>, A1a is defined by mutations M31 and P82. Twenty additional mutations have been reported for this branch <xref ref-type="bibr" rid="pone.0049170-Cruciani2">[16]</xref>. These mutations, along with M31, P82 and a mutation identified within the P82 amplicon (V147), were analyzed in two A-M31 chromosomes (samples 5 and 6 in <xref ref-type="supplementary-material" rid="pone.0049170.s002">Table S1</xref>). This analysis led to the splitting of A1a into two branches that shared all but four of the 23 mutations analyzed (<xref ref-type="fig" rid="pone-0049170-g001">Figure 1</xref>).</p>
+          <fig id="pone-0049170-g001" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0049170.g001</object-id>
+            <label>Figure 1</label>
+            <caption>
+              <title>Revised topology of the deepest portion of the human MSY tree.</title>
+              <p>The names of the mutations genotyped are indicated on the branches (green, mutations from the paper by Karafet et al. <xref ref-type="bibr" rid="pone.0049170-Karafet1">[14]</xref>; black, mutations from the paper by Cruciani et al. <xref ref-type="bibr" rid="pone.0049170-Cruciani2">[16]</xref>; red, previously undescribed mutations, see text). For the sake of clarity, the internal structure of haplogroups B-M108.1 (2 branches) and B-50f2(P) (8 branches) is not shown (black triangles). The phylogenetic position of mutations mapping within haplogroup CT is shown in <xref ref-type="supplementary-material" rid="pone.0049170.s001">Figure S1</xref>. Dashed lines indicate putative branchings (no positive control available). The microsatellite intermediate allele DYS449.2, that was found to delineate new phylogenetic structure in human Y chromosome haplogroup tree <xref ref-type="bibr" rid="pone.0049170-Myres1">[42]</xref>, was not observed in 19 Y*(xBT) and 4 B chromosomes analyzed.</p>
+            </caption>
+            <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0049170.g001" position="float" xlink:type="simple"/>
+          </fig>
+        </sec>
+        <sec id="s2b3">
+          <title>Haplogroup A2</title>
+          <p>Haplogroup A2 was first reported as a clade limited to Khoisan-speaking populations in southern Africa <xref ref-type="bibr" rid="pone.0049170-Hammer1">[26]</xref>. Recently, a new deep A2 paragroup was found among western Pygmies from central Africa by Batini et al. <xref ref-type="bibr" rid="pone.0049170-Batini1">[19]</xref>. In the tree by Karafet et al. <xref ref-type="bibr" rid="pone.0049170-Karafet1">[14]</xref>, haplogroup A2 is defined by P3 and other 17 phylogenetically equivalent markers, with three mutations that define three terminal branches (A-M114, A-P28 and A-P262). Here, 19 mutations that had been identified for haplogroup A2 <xref ref-type="bibr" rid="pone.0049170-Cruciani2">[16]</xref>, as well as the markers P3, M114, P28, P262, were genotyped in three A2 Y chromosomes (samples 7–9 in <xref ref-type="supplementary-material" rid="pone.0049170.s002">Table S1</xref>). This analysis made it possible to identify a new branch (A-V218) within haplogroup A-P262. The newly reported V73 mutation was found to be phylogenetically equivalent to M114 (<xref ref-type="fig" rid="pone-0049170-g001">Figure 1</xref>).</p>
+        </sec>
+        <sec id="s2b4">
+          <title>Haplogroup A3</title>
+          <p>In the tree by Karafet et al. <xref ref-type="bibr" rid="pone.0049170-Karafet1">[14]</xref>, haplogroup A3 is defined by the M32 mutation and contains two African-specific clades, A3a and A3b. A3a is a rare branch that has been observed exclusively in eastern Africa <xref ref-type="bibr" rid="pone.0049170-Batini1">[19]</xref>–<xref ref-type="bibr" rid="pone.0049170-Cruciani3">[21]</xref>. The sister clade, A3b, is further subdivided into a southern African (A3b1 or A-M51) and a mainly eastern African (A3b2 or A-M13) haplogroup <xref ref-type="bibr" rid="pone.0049170-Batini1">[19]</xref>–<xref ref-type="bibr" rid="pone.0049170-Cruciani3">[21]</xref>, <xref ref-type="bibr" rid="pone.0049170-Wood1">[23]</xref>, <xref ref-type="bibr" rid="pone.0049170-Semino1">[27]</xref>–<xref ref-type="bibr" rid="pone.0049170-Naidoo1">[30]</xref>. Since both A3b1 and A3b2 are quite common, but are yet poorly resolved haplogroups, we performed a MSY re-sequencing analysis of about 90 kb for each of two A3b chromosomes (one A-M51* and one A-M13*) to find additional informative markers. We detected a total of 9 new mutations (V262–V317 in <xref ref-type="table" rid="pone-0049170-t001">Table 1</xref>). A total of 41 markers (9 new mutations, 7 mutations from our database, 15 mutations identified in a previous study <xref ref-type="bibr" rid="pone.0049170-Cruciani2">[16]</xref>, and 10 mutations defining A3 branches in Karafet et al. <xref ref-type="bibr" rid="pone.0049170-Karafet1">[14]</xref>) were analyzed in ten subjects (samples 10–19 in <xref ref-type="supplementary-material" rid="pone.0049170.s002">Table S1</xref>). Mutation V249 joined haplogroups A2 and A3 and should be considered to be phylogenetically equivalent to the PK1 marker, which was originally thought to be only associated with the A2 lineage, but which has recently been found to cluster haplogroups A2 and A3 <xref ref-type="bibr" rid="pone.0049170-Batini1">[19]</xref>. The phylogenetic mapping of the other mutations led to the identification of five new haplogroups, doubling the number of both A3b1 and A3b2 terminal branches. Finally, the P289 marker <xref ref-type="bibr" rid="pone.0049170-Karafet1">[14]</xref> was positioned upstream of both A3a and A3b (<xref ref-type="fig" rid="pone-0049170-g001">Figure 1</xref>).</p>
+        </sec>
+        <sec id="s2b5">
+          <title>Haplogroup B</title>
+          <p>Haplogroup B (B-M60 <xref ref-type="bibr" rid="pone.0049170-Karafet1">[14]</xref>, <xref ref-type="bibr" rid="pone.0049170-Underhill2">[20]</xref>) is essentially a sub-Saharan clade. The majority of haplogroup B lineages show well defined and restricted geographic and ethnic distributions. An exception is represented by haplogroup B-M109, which is present in central, eastern, and southern Africa <xref ref-type="bibr" rid="pone.0049170-Batini1">[19]</xref>–<xref ref-type="bibr" rid="pone.0049170-Cruciani3">[21]</xref>, <xref ref-type="bibr" rid="pone.0049170-Wood1">[23]</xref>, <xref ref-type="bibr" rid="pone.0049170-Semino1">[27]</xref>, <xref ref-type="bibr" rid="pone.0049170-Gomes1">[29]</xref>, <xref ref-type="bibr" rid="pone.0049170-Naidoo1">[30]</xref>. Extensive sequencing of one B-M109 chromosome recently led to the identification of 17 mutations for this haplogroup <xref ref-type="bibr" rid="pone.0049170-Cruciani2">[16]</xref>. Here, a total of 33 mutations (17 previously described mutations <xref ref-type="bibr" rid="pone.0049170-Cruciani2">[16]</xref>, 2 mutations - V254 and V341 - identified during the mapping process, and 14 mutations defining haplogroup B branches in Karafet et al. <xref ref-type="bibr" rid="pone.0049170-Karafet1">[14]</xref>) were analyzed in 13 haplogroup B chromosomes (<xref ref-type="supplementary-material" rid="pone.0049170.s002">Table S1</xref>, samples 20–32). We substantially increased the resolution of the B2a clade (B-M150), with five new branches detected (<xref ref-type="fig" rid="pone-0049170-g001">Figure 1</xref>). The trifurcation B2a/B2b/B2c within the major clade B2 reported by Karafet et al. <xref ref-type="bibr" rid="pone.0049170-Karafet1">[14]</xref> was resolved by repositioning the M112 mutation (<xref ref-type="fig" rid="pone-0049170-g001">Figure 1</xref>).</p>
+        </sec>
+        <sec id="s2b6">
+          <title>“Out of Africa” haplogroups</title>
+          <p>All Y-clades that are not exclusively African belong to the macro-haplogroup CT, which is defined by mutations M168, M294 and P9.1 <xref ref-type="bibr" rid="pone.0049170-Karafet1">[14]</xref>, <xref ref-type="bibr" rid="pone.0049170-Underhill3">[31]</xref> and is subdivided into two major clades, DE and CF <xref ref-type="bibr" rid="pone.0049170-Underhill1">[1]</xref>, <xref ref-type="bibr" rid="pone.0049170-Karafet1">[14]</xref>. In a recent study <xref ref-type="bibr" rid="pone.0049170-Cruciani2">[16]</xref>, sequencing of two chromosomes belonging to haplogroups C and R, led to the identification of 25 new mutations, eleven of which were in the C-chromosome and seven in the R-chromosome. Here, the seven mutations which were found to be shared by chromosomes of haplogroups C and R <xref ref-type="bibr" rid="pone.0049170-Cruciani2">[16]</xref>, were also found to be present in one DE sample (sample 33 in <xref ref-type="supplementary-material" rid="pone.0049170.s002">Table S1</xref>), and positioned at the root of macro-haplogroup CT (<xref ref-type="fig" rid="pone-0049170-g001">Figure 1</xref> and <xref ref-type="supplementary-material" rid="pone.0049170.s001">Figure S1</xref>). Six haplogroup C chromosomes (samples 34–39 in <xref ref-type="supplementary-material" rid="pone.0049170.s002">Table S1</xref>) were analyzed for the eleven haplogroup C-specific mutations <xref ref-type="bibr" rid="pone.0049170-Cruciani2">[16]</xref> and for SNPs defining branches C1 to C6 in the tree by Karafet et al. <xref ref-type="bibr" rid="pone.0049170-Karafet1">[14]</xref> (<xref ref-type="supplementary-material" rid="pone.0049170.s001">Figure S1</xref>). Through this analysis we identified a chromosome from southern Europe as a new deep branch within haplogroup C (C-V20 or C7, <xref ref-type="supplementary-material" rid="pone.0049170.s001">Figure S1</xref>). Previously, only a few examples of C chromosomes (only defined by the marker RPS4Y<sub>711</sub>) had been found in southern Europe <xref ref-type="bibr" rid="pone.0049170-Semino2">[32]</xref>, <xref ref-type="bibr" rid="pone.0049170-Battaglia1">[33]</xref>. To improve our knowledge regarding the distribution of haplogroup C in Europe, we surveyed 1965 European subjects for the mutation RPS4Y<sub>711</sub> and identified one additional haplogroup C chromosome from southern Europe, which has also been classified as C7 (data not shown). Further studies are needed to establish whether C7 chromosomes are the relics of an ancient European gene pool or the signal of a recent geographical spread from Asia. Two mutations, V248 and V87, which had never been previously described, were found to be specific to haplogroups C2 and C3, respectively (<xref ref-type="supplementary-material" rid="pone.0049170.s001">Figure S1</xref>). Three of the seven R-specific mutations (V45, V69 and V88) were previously mapped within haplogroup R <xref ref-type="bibr" rid="pone.0049170-Cruciani4">[34]</xref>, whereas the remaining four mutations have been here positioned at the root of haplogroups F (V186 and V205), K (V104) and P (V231) (<xref ref-type="supplementary-material" rid="pone.0049170.s001">Figure S1</xref>) through the analysis of 12 haplogroup F samples (samples 40–51, in <xref ref-type="supplementary-material" rid="pone.0049170.s002">Table S1</xref>).</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Discussion</title>
+      <p>Here we report the mapping of 227 Y chromosome mutations mainly belonging to the African specific clades, greatly increasing the level of resolution for the deepest portion of the tree.</p>
+      <p>The structure of haplogroup A3b has been greatly refined. Based on the relative number of mutations accumulated, both the southern African A3b1 (A-M51) and the eastern African A3b2 (A-M13) clades seem to have experienced relatively recent expansions resulting in multiple terminal short sister clades. As for haplogroup B, a recent analysis of the microsatellite diversity of the B2a (B-M150) clade had shown a relatively deep coalescence for this haplogroup, suggesting a scenario that predates the diffusion of the Bantu languages <xref ref-type="bibr" rid="pone.0049170-Batini1">[19]</xref>. Here, the fine dissection of the B2a clade, with five new branches identified, opens up the possibility to better understand the phylogeographic pattern associated with this widespread and still poorly studied sub-Saharan clade. Finally, the basal A1b haplogroup, an extremely rare haplogroup <xref ref-type="bibr" rid="pone.0049170-Cruciani2">[16]</xref>, <xref ref-type="bibr" rid="pone.0049170-Batini1">[19]</xref>, appears to be subdivided into a number of deep branches (<xref ref-type="fig" rid="pone-0049170-g001">Figure 1</xref>), a finding that highlights the importance of targeted studies of rare haplogroups in phylogenetic analyses. This haplogroup represents one of the two deepest-rooting branches of the most recently reported MSY tree <xref ref-type="bibr" rid="pone.0049170-Cruciani2">[16]</xref>. New whole-chromosome African sequences are likely to provide a finer resolution of the basal portion of the Y chromosome phylogeny and, possibly, more deep-rooting Y chromosome branches.</p>
+      <p>Two A1b chromosomes from a previous work (one from Algeria and one from Cameroon) <xref ref-type="bibr" rid="pone.0049170-Cruciani2">[16]</xref> were included in this study together with two newly identified A1b chromosomes, whose geographic origin can be traced back to west-central Africa (Ghana) on the basis of the microsatellite profile (data not shown). It is worth noting that three additional A1b chromosomes have been recently found in Caribbean populations, which exhibit substantial Y-STR haplotype sharing with Y chromosomes from Gabon <xref ref-type="bibr" rid="pone.0049170-Simms1">[35]</xref>, <xref ref-type="bibr" rid="pone.0049170-Simms2">[36]</xref>. Taken together, all these data reinforce the hypothesis of an origin in the north-western quadrant of the African continent for the A1b haplogroup <xref ref-type="bibr" rid="pone.0049170-Cruciani2">[16]</xref>, and, together with recent findings of ancient Y-lineages in central-western Africa <xref ref-type="bibr" rid="pone.0049170-Batini1">[19]</xref>, provide new evidence regarding the geographical origin of human MSY diversity.</p>
+      <p>Different geographical regions in the African continent have been proposed for the origin of different portions of the human genome <xref ref-type="bibr" rid="pone.0049170-Behar1">[18]</xref>, <xref ref-type="bibr" rid="pone.0049170-Tishkoff1">[37]</xref>, <xref ref-type="bibr" rid="pone.0049170-Henn1">[38]</xref>. Current whole-genome sequencing projects [e.g. 15,39] and new methods to analyze ancient DNA samples <xref ref-type="bibr" rid="pone.0049170-Meyer1">[40]</xref> are likely to provide a more coherent picture of the demographic history and origin of our species.</p>
+    </sec>
+    <sec id="s4" sec-type="materials|methods">
+      <title>Materials and Methods</title>
+      <sec id="s4a">
+        <title>Ethics Statement</title>
+        <p>This study is part of a research project approved by the “Policlinico Umberto I, Sapienza Università di Roma” Ethical Committee (protocol number 1016/10, according to the DM 15/7/1997 and following). The data were analyzed anonymously.</p>
+      </sec>
+      <sec id="s4b">
+        <title>DNA Samples</title>
+        <p>Samples were chosen on the basis of their SNP/microsatellite genotype as determined in the present or previous studies <xref ref-type="bibr" rid="pone.0049170-Cruciani3">[21]</xref>, <xref ref-type="bibr" rid="pone.0049170-Scozzari1">[41]</xref>. A total of 51 DNA samples from the collections of the Authors were analyzed. Haplogroup information and country of origin of each sample is reported in <xref ref-type="supplementary-material" rid="pone.0049170.s002">Table S1</xref>. Haplogroup nomenclature follows the same criterion as reported in <xref ref-type="bibr" rid="pone.0049170-Cruciani2">[16]</xref>.</p>
+      </sec>
+      <sec id="s4c">
+        <title>Identification of New Mutations by Sequencing</title>
+        <p>Overall, about 90 Kb were sequenced for each of two unrelated Y chromosomes belonging to haplogroups A3b1 (89.8 kb) and A3b2 (89.3 kb).</p>
+        <p>We designed polymerase chain reaction (PCR) and sequence primers on the basis of the Y-chromosome sequence reported in the February 2009 assembly of the UCSC Genome Browser (<ext-link ext-link-type="uri" xlink:href="http://genome.ucsc.edu/" xlink:type="simple">http://genome.ucsc.edu/</ext-link>) using Primer3 software (<ext-link ext-link-type="uri" xlink:href="http://frodo.wi.mit.edu/primer3/" xlink:type="simple">http://frodo.wi.mit.edu/primer3/</ext-link>). Sequencing templates were obtained through PCR in a 50-µl reaction containing 50 ng of genomic DNA, 200 µM each deoxyribonucleotide (dNTP), 2.5 mM MgCl<sub>2</sub>, 1 unit of Taq polymerase, and 10 pmoles of each primer. A touch-down PCR program was used with an annealing temperature that decreased from 62°C to 55°C over 14 cycles, followed by 30 cycles with an annealing temperature of 55°C.</p>
+        <p>Following DNA amplification, PCR products were purified using theQIAquick PCR purification kit (Qiagen, Hilden, Germany). Cycle sequencing was performed using the BigDye Terminator Cycle Sequencing Kit with Amplitaq DNA polymerase (Applied Biosystems, Foster City, CA) and an internal or PCR primer. Cycle sequencing products were purified by ethanol precipitation and run on an ABI Prism 3730XL DNA sequencer (Applied Biosystems). Chromatograms were aligned and analyzed for mutations using Sequencher 4.8 (Gene Codes Corporation, Ann Arbor, MI).</p>
+      </sec>
+      <sec id="s4d">
+        <title>Genotyping and Phylogenetic Mapping</title>
+        <p>To obtain a refined MSY tree, we determined the allelic state at 168 markers (22 newly described mutations and 146 previously reported mutations <xref ref-type="bibr" rid="pone.0049170-Cruciani2">[16]</xref>) in 51 Y chromosomes which were representative of different Y haplogroups (<xref ref-type="supplementary-material" rid="pone.0049170.s002">Table S1</xref>). Fifty-nine mutations reported by Karafet et al. <xref ref-type="bibr" rid="pone.0049170-Karafet1">[14]</xref> were also analyzed (<xref ref-type="fig" rid="pone-0049170-g001">Figure 1</xref> and <xref ref-type="supplementary-material" rid="pone.0049170.s001">Figure S1</xref>). In order to detect the presence, if any, of the intermediate variant allele DYS449.2 <xref ref-type="bibr" rid="pone.0049170-Myres1">[42]</xref>, nineteen Y*(xBT) and 4 B chromosomes were typed for the DYS449 microsatellite by sequencing.</p>
+      </sec>
+    </sec>
+    <sec id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material id="pone.0049170.s001" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0049170.s001" position="float" xlink:type="simple">
+        <label>Figure S1</label>
+        <caption>
+          <p><bold>Structure of the macro-haplogroup CT.</bold> For details on mutations see legend to <xref ref-type="fig" rid="pone-0049170-g001">Figure 1</xref>. Dashed lines indicate putative branchings (no positive control available). The position of V248 (haplogroup C2) and V87 (haplogroup C3) compared to mutations that define internal branches was not determined. Note that mutations V45, V69 and V88 have been previously mapped (Cruciani et al. 2010; Eur J Hum Genet 18∶800–807).</p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0049170.s002" mimetype="application/x-excel" xlink:href="info:doi/10.1371/journal.pone.0049170.s002" position="float" xlink:type="simple">
+        <label>Table S1</label>
+        <caption>
+          <p>
+            <bold>Haplogroup affiliation for 51 Y chromosomes analyzed in this study.</bold>
+          </p>
+          <p>(XLS)</p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We are grateful to all the donors for providing DNA samples.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0049170-Underhill1">
+        <label>1</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Underhill</surname><given-names>PA</given-names></name>, <name name-style="western"><surname>Kivisild</surname><given-names>T</given-names></name> (<year>2007</year>) <article-title>Use of Y chromosome and mitochondrial DNA population structure in tracing human migrations</article-title>. <source>Annu Rev Genet</source> <volume>41</volume>: <fpage>539</fpage>–<lpage>564</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Chiaroni1">
+        <label>2</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chiaroni</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Underhill</surname><given-names>PA</given-names></name>, <name name-style="western"><surname>Cavalli-Sforza</surname><given-names>LL</given-names></name> (<year>2009</year>) <article-title>Y chromosome diversity, human expansion, drift, and cultural evolution</article-title>. <source>Proc Natl Acad Sci U S A</source> <volume>106</volume>: <fpage>20174</fpage>–<lpage>20179</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Butler1">
+        <label>3</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Butler JM (2005) Forensic DNA typing. London: Elsevier Academic Press.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Kayser1">
+        <label>4</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kayser</surname><given-names>M</given-names></name> (<year>2007</year>) <article-title>Uni-parental markers in human identity testing including forensic DNA analysis</article-title>. <source>BioTechniques</source> <volume>43</volume>: <fpage>S16</fpage>–<lpage>S21</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Rozen1">
+        <label>5</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rozen</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Skaletsky</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Marszalek</surname><given-names>JD</given-names></name>, <name name-style="western"><surname>Minx</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Cordum</surname><given-names>HS</given-names></name>, <etal>et al</etal>. (<year>2003</year>) <article-title>Abundant gene conversion between arms of palindromes in human and ape Y chromosomes</article-title>. <source>Nature</source> <volume>423</volume>: <fpage>873</fpage>–<lpage>876</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Rozen2">
+        <label>6</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rozen</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Marszalek</surname><given-names>JD</given-names></name>, <name name-style="western"><surname>Alagappan</surname><given-names>RK</given-names></name>, <name name-style="western"><surname>Skaletsky</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Page</surname><given-names>DC</given-names></name> (<year>2009</year>) <article-title>Remarkably little variation in proteins encoded by the Y chromosome’s single-copy genes, implying effective purifying selection</article-title>. <source>Am J Hum Genet</source> <volume>85</volume>: <fpage>923</fpage>–<lpage>928</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Bosch1">
+        <label>7</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bosch</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Hurles</surname><given-names>ME</given-names></name>, <name name-style="western"><surname>Navarro</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Jobling</surname><given-names>MA</given-names></name> (<year>2004</year>) <article-title>Dynamics of a human interparalog gene conversion hotspot</article-title>. <source>Genome Res</source> <volume>14</volume>: <fpage>835</fpage>–<lpage>844</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Repping1">
+        <label>8</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Repping</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Korver</surname><given-names>CM</given-names></name>, <name name-style="western"><surname>Oates</surname><given-names>RD</given-names></name>, <name name-style="western"><surname>Silber</surname><given-names>S</given-names></name>, <name name-style="western"><surname>van der Veen</surname><given-names>F</given-names></name>, <etal>et al</etal>. (<year>2004</year>) <article-title>Are sequence family variants useful for identifying deletions in the human Y chromosome?</article-title> <source>Am J Hum Genet</source> <volume>75</volume>: <fpage>514</fpage>–<lpage>517</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Repping2">
+        <label>9</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Repping</surname><given-names>S</given-names></name>, <name name-style="western"><surname>van Daalen</surname><given-names>SKM</given-names></name>, <name name-style="western"><surname>Brown</surname><given-names>LG</given-names></name>, <name name-style="western"><surname>Korver</surname><given-names>CM</given-names></name>, <name name-style="western"><surname>Lange</surname><given-names>J</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>High mutation rates have driven extensive structural polymorphism among human Y chromosomes</article-title>. <source>Nat Genet</source> <volume>38</volume>: <fpage>463</fpage>–<lpage>467</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Jobling1">
+        <label>10</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jobling</surname><given-names>MA</given-names></name> (<year>2008</year>) <article-title>Copy number variation on the human Y chromosome</article-title>. <source>Cytogenet Genome Res</source> <volume>123</volume>: <fpage>253</fpage>–<lpage>262</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Rosser1">
+        <label>11</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rosser</surname><given-names>ZH</given-names></name>, <name name-style="western"><surname>Balaresque</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Jobling</surname><given-names>MA</given-names></name> (<year>2009</year>) <article-title>Gene conversion between the X chromosome and the male-specific region of the Y chromosome at a translocation hotspot</article-title>. <source>Am J Hum Genet</source> <volume>85</volume>: <fpage>130</fpage>–<lpage>134</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Cruciani1">
+        <label>12</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cruciani</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Trombetta</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Macaulay</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Scozzari</surname><given-names>R</given-names></name> (<year>2010</year>) <article-title>About the X-to-Y gene conversion rate</article-title>. <source>Am J Hum Genet</source> <volume>86</volume>: <fpage>495</fpage>–<lpage>497</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Trombetta1">
+        <label>13</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Trombetta</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Cruciani</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Underhill</surname><given-names>PA</given-names></name>, <name name-style="western"><surname>Sellitto</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Scozzari</surname><given-names>R</given-names></name> (<year>2010</year>) <article-title>Footprints of X-to-Y gene conversion in recent human evolution</article-title>. <source>Mol Biol Evol</source> <volume>27</volume>: <fpage>714</fpage>–<lpage>725</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Karafet1">
+        <label>14</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Karafet</surname><given-names>TM</given-names></name>, <name name-style="western"><surname>Mendez</surname><given-names>FL</given-names></name>, <name name-style="western"><surname>Meilerman</surname><given-names>MB</given-names></name>, <name name-style="western"><surname>Underhill</surname><given-names>PA</given-names></name>, <name name-style="western"><surname>Zegura</surname><given-names>SL</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>New binary polymorphisms reshape and increase resolution of the human Y chromosomal haplogroup tree</article-title>. <source>Genome Res</source> <volume>18</volume>: <fpage>830</fpage>–<lpage>838</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-The1">
+        <label>15</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><collab xlink:type="simple">The 1000 Genomes Project Consortium</collab> (<year>2010</year>) <article-title>A map of human genome variation from population-scale sequencing</article-title>. <source>Nature</source> <volume>467</volume>: <fpage>1061</fpage>–<lpage>1073</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Cruciani2">
+        <label>16</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cruciani</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Trombetta</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Massaia</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Destro-Bisol</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Sellitto</surname><given-names>D</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>A revised root for the human Y chromosomal phylogenetic tree: the origin of patrilineal diversity in Africa</article-title>. <source>Am J Hum Genet</source> <volume>88</volume>: <fpage>814</fpage>–<lpage>818</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Mishmar1">
+        <label>17</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mishmar</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Ruiz-Pesini</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Golik</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Macaulay</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Clark</surname><given-names>AG</given-names></name>, <etal>et al</etal>. (<year>2003</year>) <article-title>Natural selection shaped regional mtDNA variation in humans</article-title>. <source>Proc Natl Acad Sci U S A</source> <volume>100</volume>: <fpage>171</fpage>–<lpage>176</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Behar1">
+        <label>18</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Behar</surname><given-names>DM</given-names></name>, <name name-style="western"><surname>Villems</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Soodyall</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Blue-Smith</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Pereira</surname><given-names>L</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>The dawn of human matrilineal diversity</article-title>. <source>Am J Hum Genet</source> <volume>82</volume>: <fpage>1130</fpage>–<lpage>1140</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Batini1">
+        <label>19</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Batini</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Ferri</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Destro-Bisol</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Brisighelli</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Luiselli</surname><given-names>D</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Signatures of the preagricultural peopling processes in sub-Saharan Africa as revealed by the phylogeography of early Y chromosome lineages</article-title>. <source>Mol Biol Evol</source> <volume>28</volume>: <fpage>2603</fpage>–<lpage>2613</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Underhill2">
+        <label>20</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Underhill</surname><given-names>PA</given-names></name>, <name name-style="western"><surname>Shen</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Lin</surname><given-names>AA</given-names></name>, <name name-style="western"><surname>Jin</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Passarino</surname><given-names>G</given-names></name>, <etal>et al</etal>. (<year>2000</year>) <article-title>Y chromosome sequence variation and the history of human populations</article-title>. <source>Nat Genet</source> <volume>26</volume>: <fpage>358</fpage>–<lpage>361</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Cruciani3">
+        <label>21</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cruciani</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Santolamazza</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Shen</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Macaulay</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Moral</surname><given-names>P</given-names></name>, <etal>et al</etal>. (<year>2002</year>) <article-title>A back migration from Asia to sub-Saharan Africa is supported by high-resolution analysis of human Y-chromosome haplotypes</article-title>. <source>Am J Hum Genet</source> <volume>70</volume>: <fpage>1197</fpage>–<lpage>1214</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Gonalves1">
+        <label>22</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gonçalves</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Rosa</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Freitas</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Fernandes</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Kivisild</surname><given-names>T</given-names></name>, <etal>et al</etal>. (<year>2003</year>) <article-title>Y-chromosome lineages in Cabo Verde Islands witness the diverse geographic origin of its first male settlers</article-title>. <source>Hum Genet</source> <volume>113</volume>: <fpage>467</fpage>–<lpage>472</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Wood1">
+        <label>23</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wood</surname><given-names>ET</given-names></name>, <name name-style="western"><surname>Stover</surname><given-names>DA</given-names></name>, <name name-style="western"><surname>Ehret</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Destro-Bisol</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Spedini</surname><given-names>G</given-names></name>, <etal>et al</etal>. (<year>2005</year>) <article-title>Contrasting patterns of Y chromosome and mtDNA variation in Africa: evidence for sex-biased demographic processes</article-title>. <source>Eur J Hum Genet</source> <volume>13</volume>: <fpage>867</fpage>–<lpage>876</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-King1">
+        <label>24</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>King</surname><given-names>TE</given-names></name>, <name name-style="western"><surname>Parkin</surname><given-names>EJ</given-names></name>, <name name-style="western"><surname>Swinfield</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Cruciani</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Scozzari</surname><given-names>R</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Africans in Yorkshire? The deepest-rooting clade of the Y phylogeny within an English genealogy</article-title>. <source>Eur J Hum Genet</source> <volume>15</volume>: <fpage>288</fpage>–<lpage>293</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Rosa1">
+        <label>25</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rosa</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Ornelas</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Jobling</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Brehm</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Villems</surname><given-names>R</given-names></name> (<year>2007</year>) <article-title>Y-chromosomal diversity in the population of Guinea-Bissau: a multiethnic perspective</article-title>. <source>BMC Evol Biol</source> <volume>7</volume>: <fpage>124</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Hammer1">
+        <label>26</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hammer</surname><given-names>MF</given-names></name>, <name name-style="western"><surname>Karafet</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Rasanayagam</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Wood</surname><given-names>ET</given-names></name>, <name name-style="western"><surname>Altheide</surname><given-names>TK</given-names></name>, <etal>et al</etal>. (<year>1998</year>) <article-title>Out of Africa and back again: nested cladistic analysis of human Y chromosome variation</article-title>. <source>Mol Biol Evol</source> <volume>15</volume>: <fpage>427</fpage>–<lpage>441</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Semino1">
+        <label>27</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Semino</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Santachiara-Benerecetti</surname><given-names>AS</given-names></name>, <name name-style="western"><surname>Falaschi</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Cavalli-Sforza</surname><given-names>LL</given-names></name>, <name name-style="western"><surname>Underhill</surname><given-names>PA</given-names></name> (<year>2002</year>) <article-title>Ethiopians and Khoisan share the deepest clades of the human Y-chromosome phylogeny</article-title>. <source>Am J Hum Genet</source> <volume>70</volume>: <fpage>265</fpage>–<lpage>268</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Hassan1">
+        <label>28</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hassan</surname><given-names>HY</given-names></name>, <name name-style="western"><surname>Underhill</surname><given-names>PA</given-names></name>, <name name-style="western"><surname>Cavalli-Sforza</surname><given-names>LL</given-names></name>, <name name-style="western"><surname>Ibrahim</surname><given-names>ME</given-names></name> (<year>2008</year>) <article-title>Y-chromosome variation among Sudanese: restricted gene flow, concordance with language, geography, and history</article-title>. <source>Am J Phys Anthropol</source> <volume>137</volume>: <fpage>316</fpage>–<lpage>323</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Gomes1">
+        <label>29</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gomes</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Sánchez-Diz</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Amorim</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Carracedo</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Gusmão</surname><given-names>L</given-names></name> (<year>2010</year>) <article-title>Digging deeper into East African human Y chromosome lineages</article-title>. <source>Hum Genet</source> <volume>127</volume>: <fpage>603</fpage>–<lpage>613</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Naidoo1">
+        <label>30</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Naidoo</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Schlebusch</surname><given-names>CM</given-names></name>, <name name-style="western"><surname>Makkan</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Patel</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Mahabeer</surname><given-names>R</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Development of a single base extension method to resolve Y chromosome haplogroups in sub-Saharan African populations</article-title>. <source>Investig Genet</source> <volume>1</volume>: <fpage>6</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Underhill3">
+        <label>31</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Underhill</surname><given-names>PA</given-names></name>, <name name-style="western"><surname>Passarino</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Lin</surname><given-names>AA</given-names></name>, <name name-style="western"><surname>Shen</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Mirazón Lahr</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2001</year>) <article-title>The phylogeography of Y chromosome binary haplotypes and the origins of modern human populations</article-title>. <source>Ann Hum Genet</source> <volume>65</volume>: <fpage>43</fpage>–<lpage>62</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Semino2">
+        <label>32</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Semino</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Passarino</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Oefner</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Lin</surname><given-names>AA</given-names></name>, <name name-style="western"><surname>Arbuzova</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2000</year>) <article-title>The genetic legacy of Paleolithic <italic>Homo sapiens sapiens</italic> in extant Europeans: a Y chromosome perspective</article-title>. <source>Science</source> <volume>290</volume>: <fpage>1155</fpage>–<lpage>1159</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Battaglia1">
+        <label>33</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Battaglia</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Fornarino</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Al-Zahery</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Olivieri</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Pala</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Y-chromosomal evidence of the cultural diffusion of agriculture in Southeast Europe</article-title>. <source>Eur J Hum Genet</source> <volume>17</volume>: <fpage>820</fpage>–<lpage>830</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Cruciani4">
+        <label>34</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cruciani</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Trombetta</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Sellitto</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Massaia</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Destro-Bisol</surname><given-names>G</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Human Y chromosome haplogroup R-V88: a paternal genetic record of early mid Holocene trans-Saharan connections and the spread of Chadic languages</article-title>. <source>Eur J Hum Genet</source> <volume>18</volume>: <fpage>800</fpage>–<lpage>807</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Simms1">
+        <label>35</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Simms</surname><given-names>TM</given-names></name>, <name name-style="western"><surname>Martinez</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Herrera</surname><given-names>KJ</given-names></name>, <name name-style="western"><surname>Wright</surname><given-names>MR</given-names></name>, <name name-style="western"><surname>Perez</surname><given-names>OA</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Paternal lineages signal distinct genetic contributions from British Loyalists and continental Africans among different Bahamian islands</article-title>. <source>Am J Phys Anthropol</source> <volume>146</volume>: <fpage>594</fpage>–<lpage>608</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Simms2">
+        <label>36</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Simms</surname><given-names>TM</given-names></name>, <name name-style="western"><surname>Wright</surname><given-names>MR</given-names></name>, <name name-style="western"><surname>Hernandez</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Perez</surname><given-names>OA</given-names></name>, <name name-style="western"><surname>Ramirez</surname><given-names>EC</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Y-chromosomal diversity in Haiti and Jamaica: contrasting levels of sex-biased gene flow</article-title>. <source>Am J Phys Anthropol</source> <volume>148</volume>: <fpage>618</fpage>–<lpage>631</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Tishkoff1">
+        <label>37</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tishkoff</surname><given-names>SA</given-names></name>, <name name-style="western"><surname>Reed</surname><given-names>FA</given-names></name>, <name name-style="western"><surname>Friedlaender</surname><given-names>FR</given-names></name>, <name name-style="western"><surname>Ehret</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Ranciaro</surname><given-names>A</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>The genetic structure and history of Africans and African Americans</article-title>. <source>Science</source> <volume>324</volume>: <fpage>1035</fpage>–<lpage>1044</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Henn1">
+        <label>38</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Henn</surname><given-names>BM</given-names></name>, <name name-style="western"><surname>Gignoux</surname><given-names>CR</given-names></name>, <name name-style="western"><surname>Jobin</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Granka</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Macpherson</surname><given-names>JM</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Hunter-gatherer genomic diversity suggests a southern African origin for modern humans</article-title>. <source>Proc Natl Acad Sci U S A</source> <volume>108</volume>: <fpage>5154</fpage>–<lpage>5162</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Wei1">
+        <label>39</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Wei W, Ayub Q, Chen Y, McCharty S, Hou Y, <etal>et al</etal>.. (2012) A calibrated human Y-chromosomal phylogeny based on resequencing. Genome Res, epub ahead of print, DOI: 10.1101/gr.143198.112.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Meyer1">
+        <label>40</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Meyer M, Kircher M, Gansauge MT, Li H, Racimo F, <etal>et al</etal>.. (2012) A high-coverage genome sequence from an archaic Denisovan individual. Science, epub ahead of print, DOI: 10.1126/science.1224344.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Scozzari1">
+        <label>41</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Scozzari</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Cruciani</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Pangrazio</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Santolamazza</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Vona</surname><given-names>G</given-names></name>, <etal>et al</etal>. (<year>2001</year>) <article-title>Human Y-chromosome variation in the western Mediterranean area: implications for the peopling of the region</article-title>. <source>Hum Immunol</source> <volume>62</volume>: <fpage>871</fpage>–<lpage>884</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0049170-Myres1">
+        <label>42</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Myres</surname><given-names>NM</given-names></name>, <name name-style="western"><surname>Ritchie</surname><given-names>KH</given-names></name>, <name name-style="western"><surname>Lin</surname><given-names>AA</given-names></name>, <name name-style="western"><surname>Hughes</surname><given-names>RH</given-names></name>, <name name-style="western"><surname>Woodward</surname><given-names>SR</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Y-chromosome short tandem repeat intermediate variant alleles DYS392.2, DYS449.2, and DYS385.2 delineate new phylogenetic substructure in human Y-chromosome haplogroup tree</article-title>. <source>Croat Med J</source> <volume>50</volume>: <fpage>239</fpage>–<lpage>249</lpage>.</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

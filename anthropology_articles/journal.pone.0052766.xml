@@ -1,0 +1,1465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="publisher-id">PONE-D-12-06765</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0052766</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Computer science</subject>
+          <subj-group>
+            <subject>Computerized simulations</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Engineering</subject>
+          <subj-group>
+            <subject>Human factors engineering</subject>
+            <subj-group>
+              <subject>Man computer interface</subject>
+              <subj-group>
+                <subject>Virtual reality</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Mental health</subject>
+            <subj-group>
+              <subject>Psychology</subject>
+              <subj-group>
+                <subject>Behavior</subject>
+                <subject>Experimental psychology</subject>
+                <subject>Human relations</subject>
+                <subject>Social psychology</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Social and behavioral sciences</subject>
+          <subj-group>
+            <subject>Anthropology</subject>
+            <subj-group>
+              <subject>Psychological anthropology</subject>
+              <subject>Social anthropology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Psychology</subject>
+            <subj-group>
+              <subject>Behavior</subject>
+              <subject>Experimental psychology</subject>
+              <subject>Human relations</subject>
+              <subject>Social psychology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Sociology</subject>
+            <subj-group>
+              <subject>Crime and criminology</subject>
+              <subj-group>
+                <subject>Assault</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Social discrimination</subject>
+              <subj-group>
+                <subject>Social prejudice</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Social stratification</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Mental Health</subject>
+          <subject>Computer Science</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Bystander Responses to a Violent Incident in an Immersive Virtual Environment</article-title>
+        <alt-title alt-title-type="running-head">Bystander Responses in a Virtual Enviroment</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Slater</surname>
+            <given-names>Mel</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Rovira</surname>
+            <given-names>Aitor</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Southern</surname>
+            <given-names>Richard</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Swapp</surname>
+            <given-names>David</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Zhang</surname>
+            <given-names>Jian J.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Campbell</surname>
+            <given-names>Claire</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Levine</surname>
+            <given-names>Mark</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff7">
+            <sup>7</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Institució Catalana de Recerca i Estudis Avançats (ICREA), Passeig Lluís Companys, Barcelona, Spain</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>The Event Lab, Departament de Personalitat, Avaluació i Tractaments Psicològics Facultat de Psicologia, Campus de Mundet, Edifici Teatre Passeig de la Vall d'Hebron, Barcelona, Spain</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Department of Computer Science, University College London, London, United Kingdom</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>National Centre for Computer Animation, The Media School, Bournemouth University, Poole Dorset, United Kingdom</addr-line>
+      </aff>
+      <aff id="aff5">
+        <label>5</label>
+        <addr-line>Department of Psychology, Lancaster University, Fylde College, Lancaster, United Kingdom</addr-line>
+      </aff>
+      <aff id="aff6">
+        <label>6</label>
+        <addr-line>Department of Psychology, Edge Hill University, Ormskirk, United Kingdom</addr-line>
+      </aff>
+      <aff id="aff7">
+        <label>7</label>
+        <addr-line>Department of Psychology, University of Exeter, Streatham Campus, Northcote House, Exeter, United Kingdom</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Krueger</surname>
+            <given-names>Frank</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>George Mason University/Krasnow Institute for Advanced Study, United States of America</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">melslater@ub.edu</email></corresp>
+        <fn fn-type="conflict">
+          <p>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: MS ML. Performed the experiments: AR DS RS. Analyzed the data: MS. Wrote the paper: MS ML AR RS DS JJZ CC. Computer animation: RS JJZ.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>2</day>
+        <month>1</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>8</volume>
+      <issue>1</issue>
+      <elocation-id>e52766</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>1</day>
+          <month>3</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>22</day>
+          <month>11</month>
+          <year>2012</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Slater et al</copyright-holder>
+        <license xlink:type="simple">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Under what conditions will a bystander intervene to try to stop a violent attack by one person on another? It is generally believed that the greater the size of the crowd of bystanders, the less the chance that any of them will intervene. A complementary model is that social identity is critical as an explanatory variable. For example, when the bystander shares common social identity with the victim the probability of intervention is enhanced, other things being equal. However, it is generally not possible to study such hypotheses experimentally for practical and ethical reasons. Here we show that an experiment that depicts a violent incident at life-size in immersive virtual reality lends support to the social identity explanation. 40 male supporters of Arsenal Football Club in England were recruited for a two-factor between-groups experiment: the victim was either an Arsenal supporter or not (in-group/out-group), and looked towards the participant for help or not during the confrontation. The response variables were the numbers of verbal and physical interventions by the participant during the violent argument. The number of physical interventions had a significantly greater mean in the in-group condition compared to the out-group. The more that participants perceived that the Victim was looking to them for help the greater the number of interventions in the in-group but not in the out-group. These results are supported by standard statistical analysis of variance, with more detailed findings obtained by a symbolic regression procedure based on genetic programming. Verbal interventions made during their experience, and analysis of post-experiment interview data suggest that in-group members were more prone to confrontational intervention compared to the out-group who were more prone to make statements to try to diffuse the situation.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>This work was funded by the UK EPSRC project “Visual and Behavioural Fidelity of Virtual Humans with Applications to Bystander Intervention in Violent Emergencies” (EP/F032420/1; EP/F030215/1; EP/F030355/1). <ext-link ext-link-type="uri" xlink:href="http://www.epsrc.ac.uk" xlink:type="simple">http://www.epsrc.ac.uk</ext-link>. European Senior Research Grant TRAVERSE grant number 227985. <ext-link ext-link-type="uri" xlink:href="http://erc.europa.eu/" xlink:type="simple">http://erc.europa.eu/</ext-link>. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="13"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>A violent and unprovoked attack by one person on another unfolds in close view of an unrelated bystander: under what conditions will the bystander be likely to intervene to help the victim? In this paper we address the hypothesis that group affiliation between the bystander and the victim provides a powerful incentive for the bystander to try to intervene to stop the attack, or prevent harm to the victim, and in particular that this operates even though the perpetrator and victim are virtual human characters. Our experiment involved fans of an English football team, Arsenal. In one experimental condition (in-group) the fan conversed with a virtual character that was clearly an Arsenal supporter and in another condition the character was just a general football enthusiast but not an Arsenal fan (out-group). The virtual character was later threatened by a perpetrator that, in the in-group condition, specifically attacked his Arsenal affiliation. Our expectation was that based on group affiliation, those in the in-group would intervene more than those in the out-group. First we place this in the general context of studies of bystander intervention, and then describe the detailed design of the experiment and the results.</p>
+      <p>Research on the behaviour of bystanders in emergencies began with the response to the rape and murder of Kitty Genovese in New York in 1964. Social psychologists Bibb Latane and John Darley read a report on the murder in the New York Times suggesting that 38 witnesses had watched the murder unfold over 30 minutes from their apartment windows– and yet failed to intervene. In order to understand why this might have happened, they set out to create laboratory based experimental analogies of the event. They set up carefully choreographed situations in which bystanders were faced with a non-violent emergency situation while on their own or in the presence of others <xref ref-type="bibr" rid="pone.0052766-Darley1">[1]</xref>, <xref ref-type="bibr" rid="pone.0052766-Latan1">[2]</xref>. The research led to the discovery of the ‘bystander effect’ – the idea that people are more likely to intervene on their own than in the presence of others <xref ref-type="bibr" rid="pone.0052766-Darley1">[1]</xref>. This is one of the most reliable and robust findings in social psychology <xref ref-type="bibr" rid="pone.0052766-Latan2">[3]</xref>, <xref ref-type="bibr" rid="pone.0052766-Fischer1">[4]</xref>.</p>
+      <p>However, as Cherry pointed out <xref ref-type="bibr" rid="pone.0052766-Cherry1">[5]</xref>, through translating the events surrounding the Genovese murder into laboratory settings, Latane and Darley neglected some of the key features of the event. Despite the fact that the original murder involved violence by a man against a woman, subsequent experimental analogies tended to remove both the gendered nature of the attack and the violence. Although there are thousands of studies using non-violent emergency settings, it is possible to find only a few experiments that did retain violence as the emergency variable <xref ref-type="bibr" rid="pone.0052766-Harari1">[6]</xref>, <xref ref-type="bibr" rid="pone.0052766-Schwartz1">[7]</xref>, <xref ref-type="bibr" rid="pone.0052766-Schwartz2">[8]</xref>, <xref ref-type="bibr" rid="pone.0052766-Shotland1">[9]</xref>, <xref ref-type="bibr" rid="pone.0052766-Borofsky1">[10]</xref>. These found results that were at odds with the traditional bystander paradigm. In violent emergencies, what seemed to be most important about the likelihood of bystander intervention was not the presence of others, but rather the bystanders’ beliefs about the nature of the relationship between perpetrator and victim <xref ref-type="bibr" rid="pone.0052766-Shotland1">[9]</xref>, <xref ref-type="bibr" rid="pone.0052766-Borofsky1">[10]</xref>. In an experiment that did vary the number of bystanders to a violent emergency Harari et al. <xref ref-type="bibr" rid="pone.0052766-Harari1">[6]</xref> showed that the presence of others actually enhanced the likelihood of bystander intervention in a simulated rape situation. This finding has been supported by contemporary work which presents violence to participants by means of a CCTV video link, where the presence of others is not found to inhibit helping <xref ref-type="bibr" rid="pone.0052766-Fischer2">[11]</xref> and can sometimes enhance it <xref ref-type="bibr" rid="pone.0052766-Levine1">[12]</xref>. A recent meta-analysis by Fisher and colleagues <xref ref-type="bibr" rid="pone.0052766-Fischer1">[4]</xref> confirms that intervention behaviour in violent emergencies does not fit the traditional bystander effect explanation.</p>
+      <p>If violent emergencies are different in some way, it is important to understand the processes at work. Almost all violence research shares a similar limitation. In order to circumvent the practical and ethical problems of presenting violence in experimental settings, these experiments tend to avoid placing participants in <italic>direct</italic> contact with the violence itself. The only exception is the work described in <xref ref-type="bibr" rid="pone.0052766-Borofsky1">[10]</xref> in which a role-play setting was used, and confederates actually staged a violent confrontation in front of naive participants who were also taking part in the role-play game. However, it is highly unlikely that contemporary ethics boards would allow this kind of design. The other studies either have the violence happening at a distance where it is possible to avoid the event <xref ref-type="bibr" rid="pone.0052766-Harari1">[6]</xref> or present the violence as happening contemporaneously but where it can only be heard <xref ref-type="bibr" rid="pone.0052766-Schwartz1">[7]</xref>, <xref ref-type="bibr" rid="pone.0052766-Schwartz2">[8]</xref>, <xref ref-type="bibr" rid="pone.0052766-Shotland1">[9]</xref>, or happening in another room where it can be seen on CCTV link <xref ref-type="bibr" rid="pone.0052766-Fischer2">[11]</xref>. This distancing of participants from the violence is required to satisfy the ethical and practical difficulties of experimental design, but may itself introduce psychological effects that interfere with the veridical nature of the situation. Imagining the violence, or having it happen in another room, is not the same as being physically where the violence erupts.</p>
+      <p>In <xref ref-type="bibr" rid="pone.0052766-Rovira1">[13]</xref> we argued that the use of immersive virtual environments (IVE) goes some way towards solving this problem, since there is mounting evidence that when people are faced with events and situations in an IVE they tend to behave and respond as if these were real <xref ref-type="bibr" rid="pone.0052766-SanchezVives1">[14]</xref>. IVEs portray a simulated computer generated reality at life size that is sensorially surrounding. Participants perceive this world through wide field-of-view stereo vision and sound. The form of perception involves more or less natural sensorimotor contingencies - meaning that the whole body is used for perception much as in physical reality, based at least on head-gaze direction and orientation achieved through head-tracking. This gives rise to the sensation of being in the virtual place that is depicted, a place-illusion. Additionally when there are dynamically unfolding events in the environment that personally refer to the participant, and where actions of the participant apparently cause responses in the virtual environment, this gives rise to a plausibility-illusion, meaning that events have the illusory quality of being real. When the participant has the double illusion - of being in the virtual place and where events that are happening are apparently really happening, this can give rise to behaviour and responses that are appropriate to the situation as if it were playing out in reality <xref ref-type="bibr" rid="pone.0052766-Slater1">[15]</xref>.</p>
+      <p>IVEs provide therefore a powerful tool for experimental studies in social psychology <xref ref-type="bibr" rid="pone.0052766-Blascovich1">[16]</xref> and classic effects such as proxemics <xref ref-type="bibr" rid="pone.0052766-Hall1">[17]</xref> where distances that people maintain between themselves are governed by social norms, have been reproduced several times in IVEs with respect to virtual humanoid characters <xref ref-type="bibr" rid="pone.0052766-Wilcox1">[18]</xref>, <xref ref-type="bibr" rid="pone.0052766-Llobera1">[19]</xref>, <xref ref-type="bibr" rid="pone.0052766-Bailenson1">[20]</xref>. Moreover, IVEs have been useful for experiments that would otherwise be difficult to carry out in any other way, such as the study of male risk taking in the presence of observers, specifically the differential effects of the observers being male or female <xref ref-type="bibr" rid="pone.0052766-Frankenhuis1">[21]</xref>.</p>
+      <p>Closer to the present study which focuses on responses to violence, the Stanley Milgram obedience paradigm <xref ref-type="bibr" rid="pone.0052766-Milgram1">[22]</xref> has been reproduced with IVE avoiding the ethical difficulties of deception <xref ref-type="bibr" rid="pone.0052766-Slater2">[23]</xref>, <xref ref-type="bibr" rid="pone.0052766-Cheetham1">[24]</xref>. IVEs provide environments completely under control of a computer program but where people respond realistically. Every experimental condition can be exactly reproduced across trials as needed, and hence can be used for laboratory based experiments.</p>
+      <p>It has been argued before that IVEs provide an excellent tool for the study of prosocial behaviour <xref ref-type="bibr" rid="pone.0052766-Gillath1">[25]</xref>. The experiment described in the present study is specifically concerned with the likelihood of prosocial behaviour when participants are placed in direct proximity to violent behaviour. We explore the hypothesis that the psychological relationships between bystanders and the others involved are important in bystander behaviour, in this case specifically the relationship between the bystander and the victim <xref ref-type="bibr" rid="pone.0052766-Levine1">[12]</xref>, <xref ref-type="bibr" rid="pone.0052766-Levine2">[26]</xref>, <xref ref-type="bibr" rid="pone.0052766-Levine3">[27]</xref>, <xref ref-type="bibr" rid="pone.0052766-Levine4">[28]</xref>. The experimental conditions provide a context where it is certain that the violence between perpetrator and victim is of the same magnitude and intensity for each experimental trial. Participants (n = 40) <italic>all supporters of the Arsenal Football Club</italic>, entered into a virtual reality that represents a bar. A male virtual human (V) approached and conversed with them about football for a few minutes. In one condition V wore an Arsenal football shirt and spoke enthusiastically about the club (in-group condition). In a second condition V wore an unaffiliated red sports shirt, and asked questions about Arsenal without special enthusiasm, using neutral responses and displaying ambivalence about Arsenal’s prospects (out-group condition). After a few minutes of this conversation another male virtual human (P, perpetrator) who had been sitting by the bar walked over to V (victim) and started an argument that he continually escalated until it became a physical attack (<xref ref-type="fig" rid="pone-0052766-g001">Figure 1</xref>).</p>
+      <fig id="pone-0052766-g001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0052766.g001</object-id>
+        <label>Figure 1</label>
+        <caption>
+          <title>The Victim and Perpetrator.</title>
+          <p>The Victim (V) is in the red shirt, with an Arsenal emblem in the in-group condition, and with a plain football shirt of the same colour in the out-group condition. The perpetrator (P) had been sitting by the bar. (a) P stood up to approach V and (b) started an argument. (c) As the argument progressed V made conciliatory statements and postures while (d) P became ever more aggressive finally pushing V violently against a wall.</p>
+        </caption>
+        <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0052766.g001" position="float" xlink:type="simple"/>
+      </fig>
+      <p>The main response variable was the extent to which the participant attempted to intervene during this confrontation. Interventions were verbal utterances or physical moves towards the two virtual characters and were coded from video recordings by two independent researchers (Methods). There were two binary factors <italic>group</italic> and <italic>LookAt</italic>. <italic>Group</italic> was whether V was in-group (Arsenal supporter) or out-group with respect to the participant. <italic>LookAt</italic> was whether or not occasionally during the confrontation V would look towards the participant or not (<italic>LookAt</italic> = ‘on’ or ‘off’). The experiment used a between-groups design, with n = 40, 10 participants allocated arbitrarily to one of the four cells of the 2×2 design. The degree of support for the Arsenal club was similar between the 4 experimental conditions (<xref ref-type="supplementary-material" rid="pone.0052766.s004">Text S1</xref>). At the end of their session they answered a questionnaire, and this was followed by an interview and debriefing. The data from two participants could not be used due to video recording failures.</p>
+    </sec>
+    <sec id="s2">
+      <title>Results</title>
+      <sec id="s2a">
+        <title>Numbers of Interventions</title>
+        <p><xref ref-type="table" rid="pone-0052766-t001">Table 1</xref> shows the means and standard errors of the numbers of interventions indicating that the mean number of interventions was higher for the in-group than the out-group, but that the <italic>LookAt</italic> factor had no effect. Two-way analysis of variance was carried out on the response variables, the number of physical (<italic>nPhys</italic>) and number of verbal (<italic>nVerbal</italic>) interventions. ANOVA for <italic>nPhys</italic> indicates that the mean is greater for the in-group than for the out-group condition (P = 0.02) but with no significant differences for the <italic>LookAt</italic> factor and no interaction effect. However, the residual errors of the fit were strongly non-normal (Shapiro-Wilk test P = 0.0008). To overcome this problem a square root transformation was applied to <italic>nPhys</italic>. This resulted in the same conclusions for <italic>group</italic> (P = 0.016, partial η<sup>2</sup> = 0.15) and no significance for <italic>LookAt</italic> (P = 0.297, partial η<sup>2</sup> = 0.03). The normality of the residuals is improved although not ideal (Shapiro-Wilk P = 0.034). For the response variable <italic>nVerbal</italic> the results were similar: ANOVA of <italic>nVerbal</italic> on <italic>group</italic> and <italic>LookAt</italic> shows no significant interaction term, <italic>group</italic> has significance level P = 0.095, and for <italic>LookAt</italic> P = 0.228. However, again the residual errors are far from normal (SW P = 0.0008). The square root transformation gives P = 0.060, partial η<sup>2</sup> = 0.10 for <italic>group</italic> and P = 0.112, partial η<sup>2</sup> = 0.07 for <italic>LookAt</italic>. The residual errors are compatible with normality (SW P = 0.24).</p>
+        <table-wrap id="pone-0052766-t001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0052766.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Means and Standard Errors of Numbers of Interventions.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0052766-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0052766.t001" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td colspan="2" align="left" rowspan="1">No. Verbal Interventions</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Group</italic>
+                  </td>
+                  <td colspan="2" align="left" rowspan="1">
+                    <italic>LookAt</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">Off</td>
+                  <td align="left" rowspan="1" colspan="1">On</td>
+                  <td align="left" rowspan="1" colspan="1">All</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Outgroup</td>
+                  <td align="left" rowspan="1" colspan="1">3.9±1.4</td>
+                  <td align="left" rowspan="1" colspan="1">2.0±1.3</td>
+                  <td align="left" rowspan="1" colspan="1">2.9±1.0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Ingroup</td>
+                  <td align="left" rowspan="1" colspan="1">6.8±1.8</td>
+                  <td align="left" rowspan="1" colspan="1">4.7±1.9</td>
+                  <td align="left" rowspan="1" colspan="1">5.8±1.3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">All</td>
+                  <td align="left" rowspan="1" colspan="1">5.4±1.2</td>
+                  <td align="left" rowspan="1" colspan="1">3.4±1.2</td>
+                  <td align="left" rowspan="1" colspan="1">4.4±0.8</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td colspan="2" align="left" rowspan="1">
+                    <bold>No. Physical Interventions</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Outgroup</td>
+                  <td align="left" rowspan="1" colspan="1">2.8±1.1</td>
+                  <td align="left" rowspan="1" colspan="1">1.8±1.0</td>
+                  <td align="left" rowspan="1" colspan="1">2.3±0.7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Ingroup</td>
+                  <td align="left" rowspan="1" colspan="1">6.8±2.1</td>
+                  <td align="left" rowspan="1" colspan="1">6.1±2.2</td>
+                  <td align="left" rowspan="1" colspan="1">6.5±1.5</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">All</td>
+                  <td align="left" rowspan="1" colspan="1">4.9±1.3</td>
+                  <td align="left" rowspan="1" colspan="1">4.1±1.3</td>
+                  <td align="left" rowspan="1" colspan="1">4.5±0.9</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt101">
+              <label/>
+              <p>n = 9 for each of the two Out-group cells, n = 10 for each of the two In-group cells, n = 38 in total.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>The factor <italic>LookAt</italic> represents whether the V avatar was <italic>programmed</italic> to occasionally look toward the participants. Additionally, the post experience questionnaire included the statement (<italic>VictimLooked</italic>) “After the argument started, the victim looked at me wanting help” which was scored on a scale from 1 (least agreement) to 7 (most agreement). <italic>VictimLooked</italic> therefore represents the <italic>belief</italic> of the participants as to whether the victim <italic>looked towards them for help</italic>. There is no significant difference between the mean <italic>VictimLooked</italic> score of those who were in the group <italic>LookAt</italic> = ‘on’ (mean 3.3, SD = 1.8, n = 20) and those in the group <italic>LookAt</italic> = ‘off’ (mean 4.0, SD = 1.5, n = 20) (P = 0.12, Mann-Whitney U). Hence the response to this question was not based on the number of actual looks of the victim towards the participant, and therefore was a belief. It turns out that <italic>VictimLooked</italic> plays a significant role in the number of interventions.</p>
+        <p><xref ref-type="fig" rid="pone-0052766-g002">Figure 2</xref> shows the scatter plots of <italic>nPhys</italic> and <italic>nVerbal</italic> on the questionnaire response <italic>VictimLooked</italic> for the out-group and in-group. These reveal a quite different relationship in the two cases. In the case of the in-group there is a positive association between the number of interventions (verbal or physical) and the perception that the victim was looking towards the participant for help. In the case of the out-group there appears to be no relationship in the <italic>nPhys</italic> case and a possible negative relationship in the <italic>nVerbal</italic> case. Using the same strategy as above in order to obtain residual errors compatible with normality, ANCOVA of <italic>nPhys</italic><sup>0.5</sup> on <italic>group</italic> with <italic>VictimLooked</italic> as a covariate shows that the slopes of the regression line are different between the in-group and out-group (P = 0.004, partial η<sup>2</sup> = 0.22 for the slopes, SW P = 0.18). For the number of verbal interventions, using <italic>nVerbal</italic><sup>0.5</sup> the difference in slopes between in-group and out-group is significant at P = 0.004 (partial η<sup>2</sup> = 0.22 for the slope, SW P = 0.12).</p>
+        <fig id="pone-0052766-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0052766.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Number of interventions by <italic>VictimLooked</italic> and <italic>Group</italic>.</title>
+            <p>(a) For the verbal interventions and (b) for the physical interventions.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0052766.g002" position="float" xlink:type="simple"/>
+        </fig>
+        <p>These results indicate that the response to the belief that the victim was looking towards the bystander for help was different between the in-group and out-group. For those in the in-group condition the greater their belief that the victim was looking to them for help the greater the number of verbal and physical interventions. For those in the out-group condition there is no such association. These results are further corroborated using multivariate analysis of variance on the response vector (<italic>nPhys</italic><sup>0.5</sup>, <italic>nVerbal</italic><sup>0.5</sup>) (<xref ref-type="supplementary-material" rid="pone.0052766.s005">Text S2</xref>).</p>
+      </sec>
+      <sec id="s2b">
+        <title>Numbers of Interventions - Symbolic Regression</title>
+        <p>The previous section provided standard analyses for these types of data. Even though this revealed positive results consistent with our initial hypothesis, in this section we also employ a quite different method using symbolic regression, to throw further light on the experimental results. The purpose is to consider the relationship between the number of interventions, and the experimental factors, but now also including any possible influence of the subjective variables as elicited through the post-experience questionnaire (<xref ref-type="table" rid="pone-0052766-t002">Table 2</xref>). Standard statistical analysis is based, amongst other things, on the assumption of linearity in the parameters. But in such a complex situation as the one under consideration, on what grounds is such an assumption valid when considering the multivariate influence of a number of factors potentially influencing bystander intervention? Symbolic regression does not rely on such linearity, being a method for discovering relationships between variables using the technique of genetic programming <xref ref-type="bibr" rid="pone.0052766-Koza1">[29]</xref> (<xref ref-type="supplementary-material" rid="pone.0052766.s006">Text S3</xref>). It has recently been shown to be able to discover complex physical laws automatically <xref ref-type="bibr" rid="pone.0052766-Schmidt1">[30]</xref>, using a program called Eureqa, which was used in the analysis presented below. In the context that we apply this technique here, we consider it as a data reduction method. It allows us to succinctly represent the original data but with quite simple equations while preserving the variance in the original data. It is not a technique that can be compared with statistical significance testing, it is rather a data exploration method, that can lead to understanding of complex data, where models generated by this technique can be used for hypothesis formation in later experimental study.</p>
+        <table-wrap id="pone-0052766-t002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0052766.t002</object-id>
+          <label>Table 2</label>
+          <caption>
+            <title>The Post-Questionnaire and Corresponding Variable Names.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0052766-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0052766.t002" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Variable</td>
+                  <td align="left" rowspan="1" colspan="1">Statement</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Uncomfortable</td>
+                  <td align="left" rowspan="1" colspan="1">After the argument started, I was feeling uncomfortable with the situation.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">OtherSafety</td>
+                  <td align="left" rowspan="1" colspan="1">After the argument started I was sometimes concerned for the safety of the man being threatened.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">OwnSafety</td>
+                  <td align="left" rowspan="1" colspan="1">After the argument started I was sometimes concerned for my own safety.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">HelpMe</td>
+                  <td align="left" rowspan="1" colspan="1">After the argument started I looked around for help.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">OtherPeople</td>
+                  <td align="left" rowspan="1" colspan="1">After the argument started I looked around to check in case other people might arrive to make the situation worse.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">VictimLooked</td>
+                  <td align="left" rowspan="1" colspan="1">After the argument started, the victim looked at me wanting help.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MoveAway</td>
+                  <td align="left" rowspan="1" colspan="1">After the argument started I felt I should move away from those people.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AgressorAware</td>
+                  <td align="left" rowspan="1" colspan="1">After the argument started, the aggressor was aware of me looking at him.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">ShouldStopIt</td>
+                  <td align="left" rowspan="1" colspan="1">After the argument started, I felt I should do something to stop it.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CouldStopIt</td>
+                  <td align="left" rowspan="1" colspan="1">After the argument started, I felt I could do something to stop it.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">GetOut</td>
+                  <td align="left" rowspan="1" colspan="1">After the argument started I felt that I needed to get out.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Thinking</td>
+                  <td align="left" rowspan="1" colspan="1">My mind started wandering and thinking about other things during the argument.</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt102">
+              <label/>
+              <p>All items were presented as statements on a 1–7 Likert scale where 1 meant least agreement and 7 most agreement with the corresponding statement.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>The operators that were used for the symbolic regression were: Constant, +, −, ×, /, sqrt, exp, log. The program was run for both <italic>nPhys</italic> and <italic>nVerbal</italic>. The population size (number of formulae per generation) was chosen by Eureqa as 2560. For each analysis the program was run on a 40 core cluster (see Methods) and left running for many hours until the solution set of equations stabilized. The fitness metric used was mean absolute error.</p>
+        <p>We consider first <italic>nPhys</italic>. The Eureqa program was left to run for more than 2000 core hours. It reported 28 equations. Each has an associated size parameter that represents the complexity of the equation (ranging from 1, least, to 53, most complex), a fitness value, the square of the correlation coefficient between the response variable and the fitted values from the equation, and the Akaike Information Criterion (AIC). The AIC is an information theoretic measure of the relative goodness of fit of a model to the data. Smaller AIC values represent better goodness of fit, taking also into account the complexity of the model. The AIC is often used in model selection procedures, as discussed extensively in <xref ref-type="bibr" rid="pone.0052766-Burnham1">[31]</xref>.</p>
+        <p>The model with the smallest AICs is shown in Eq (1). Here <italic>group</italic> is 0 for out-group and 1 for in-group. Similarly <italic>LookAt</italic> is 0 for ‘off’, and 1 for ‘on’. The other variables are from the questionnaire (<xref ref-type="table" rid="pone-0052766-t002">Table 2</xref>).<disp-formula id="pone.0052766.e001"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0052766.e001" xlink:type="simple"/><label>(1)</label></disp-formula></p>
+        <p>(R<sup>2</sup> = 0.85, AIC = 108, Size = 26).</p>
+        <p><xref ref-type="fig" rid="pone-0052766-g003">Figure 3a</xref> shows the relationship between the observed and fitted number of interventions based on Eq (1) (the diagram is very similar for all the top fitting equations generated). The high fitting equations all, of course, give similar results and Eq (1) is marginally preferred since it has high explanatory power (in terms of correlation) and the smallest AIC, and on the range of complexity of the models produced is about half way along the scale amongst all generated equations.</p>
+        <fig id="pone-0052766-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0052766.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>The fitted number of interventions by <italic>VictimLooked</italic> from Eqs.</title>
+            <p>(1) and (2). (a) The fitted against observed values for <italic>nPhys</italic>. (b) The fitted against observed for <italic>nVerbal</italic>.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0052766.g003" position="float" xlink:type="simple"/>
+        </fig>
+        <p>The equation shows a clear distinction between in-group and out-group. For the out-group (group = 0) the entire first term, on the left-hand side of the plus sign, vanishes (20 of the 28 equations generated have this exponential term). For the in-group (group = 1), it can be seen that <italic>LookAt</italic> has a very small but positive influence on the number of interventions but <italic>VictimLooked</italic> has a greater influence. As it ranges from 1 to 7 the number of interventions increases by 0.015*exp(<italic>VictimLooked</italic>), which is, for example, 2 for <italic>VictimLooked</italic> = 5, and 16 for <italic>VictimLooked</italic> = 7, other things being equal.</p>
+        <p>The second term only includes a few of the questionnaire variables. Examining this term, the number of interventions is proportional to concern about the safety of others, and the feeling that the fight should be stopped. It is inversely proportional to the feeling of wanting to get out, and the fear that other people might turn up to make things worse.</p>
+        <p>Now we turn to the number of verbal interventions <italic>nVerbal</italic>, and follow the same analysis. Here the genetic program ran for 1930 core hours. 28 equations were produced with size complexity ranging from 1 to 71. The equation with the lowest AIC is shown in Eq (2).<disp-formula id="pone.0052766.e002"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0052766.e002" xlink:type="simple"/><label>(2)</label></disp-formula></p>
+        <p>(R<sup>2</sup> = 0.93, AIC = 83, Size = 29).</p>
+        <p>As before all the high fitting equations give very similar results and we take Eq. (2) as representative. <xref ref-type="fig" rid="pone-0052766-g003">Figure 3b</xref> shows the plot of fitted by observed values over the data set for Eq. (2). Examining the equation we see this time there is no effect of <italic>group</italic>. The number of verbal interventions is proportional to the feeling of the need to stop the fight, and inversely proportional to the fear that other people might arrive and make things worse. Also there is a positive association with participant fears for their own safety. The most interesting variable again is <italic>VictimLooked</italic>, the <italic>belief</italic> that the V avatar was looking towards the participant for help. The variable <italic>MoveAway</italic> is strongly related with <italic>VictimLooked</italic> which must be taken into account otherwise the equations explode into huge values as <italic>VictimLooked</italic> increases. <xref ref-type="fig" rid="pone-0052766-g004">Figure 4</xref> shows that there is a very strong positive correlation between these two variables (apart from 1 outlier) (r = 0.71, P = 3.3×10<sup>−7</sup>), with regression line <italic>MoveAway</italic> = −0.38+0.82<italic>VictimLooked</italic>. Moreover 22 out of the 28 equations include the exponential term involving these two variables. We maintain this relationship when examining the effect of <italic>VictimLooked</italic> on <italic>nVerbal</italic> rather than fixing <italic>MoveAway</italic> at a constant value, and taking this into account high values of <italic>VictimLooked</italic> are associated with a larger number of interventions.</p>
+        <fig id="pone-0052766-g004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0052766.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>Scatter diagram of <italic>MoveAway</italic> against <italic>VictimLooked</italic>.</title>
+            <p>Note the one outlying point when <italic>VictimLooked</italic> = 1 and <italic>MoveAway</italic> = 7.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0052766.g004" position="float" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s2c">
+        <title>The Interviews</title>
+        <p>After the experimental trial there was a short interview with the participants, followed by their debriefing where the purposes of the experiment were explained. The interviews concentrated on several main questions: their feelings and responses during their experience, the extent to which they judged their responses to be realistic, factors that might have increased their intervention, and factors that drew them out of the experience. Summaries of the interviews were coded into key codes and frequency tables constructed, using the HyperResearch software <xref ref-type="bibr" rid="pone.0052766-HesseBiber1">[32]</xref>.</p>
+        <p>We consider first the responses and feelings of participants during their experience. <xref ref-type="table" rid="pone-0052766-t003">Table 3</xref> shows the codes and two example sentences of each code and <xref ref-type="table" rid="pone-0052766-t004">Table 4</xref> the code frequencies.</p>
+        <table-wrap id="pone-0052766-t003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0052766.t003</object-id>
+          <label>Table 3</label>
+          <caption>
+            <title>Codes for the Interview Questions: What feelings/responses did you have while this was happening?</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0052766-t003-3" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0052766.t003" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Code</td>
+                  <td align="left" rowspan="1" colspan="1">Example Statements</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">wanted to stop it</td>
+                  <td align="left" rowspan="1" colspan="1">1. I felt like I would like to stop it (the confrontation) myself, basically back up the person that I was speaking to Arsenal about, protect him.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">2. I wanted to calm him down. I wanted to separate them.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">uncomfortable</td>
+                  <td align="left" rowspan="1" colspan="1">1. I felt very uncomfortable.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">2. I felt a little bit uncomfortable.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">torn about intervening</td>
+                  <td align="left" rowspan="1" colspan="1">1. I thought about intervening, do something about it, try to calm him down, but probably would have made it worse.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">2. I wanted to do something, but I felt I probably couldn’t and if I did, I might make things worse to myself. So I just tried to calm him down a little bit, but obviously he didn’t want.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">would avoid confrontation</td>
+                  <td align="left" rowspan="1" colspan="1">1. I would avoid confrontation.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">2. I would probably have walked out of the CAVE, like I would have done in real life if there was a problem. I was a bit afraid of talking to the man with the white shirt, in case that he would interact with me and get aggressive.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">even though VR</td>
+                  <td align="left" rowspan="1" colspan="1">1. I knew it was VR, and I’m quite surprise how so angry made me feel, the other guy (P), … I got to the point that I wanted touch him physically or pushing away I felt a bit frustrated I couldn’t.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">2. I was aware it was a simulation, and I was safe in that respect. I knew it was an aggressive confrontation and I think that has some impact and kind of made me a bit nervous.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">anger</td>
+                  <td align="left" rowspan="1" colspan="1">1. I was quite angry as well, about the way he (P) was treating him, the Arsenal fan.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">2. I’m quite surprise how so angry made me feel.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">frustration</td>
+                  <td align="left" rowspan="1" colspan="1">1. I got to the point that I wanted touch him physically or pushing away I felt a bit frustrated I couldn’t.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">2. …but it was a kind of frustrating I couldn’t because I tried to speak to the guy (P) and he just ignored me.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">anxiety or fear</td>
+                  <td align="left" rowspan="1" colspan="1">1. Very similar feelings as in real life: flustered, panic, helpless and wanting to resolve the situation and not knowing how.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">2. Frightened, I was feeling more alert, more mentally prepared for a fight.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">helplessness</td>
+                  <td align="left" rowspan="1" colspan="1">1. Helplessness, unable to help the Arsenal supporter.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">2. Helpless because even if was to get involved, I don’t know how useful I would be.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">confrontational</td>
+                  <td align="left" rowspan="1" colspan="1">1. I wanted to say I’m wearing an Arsenal shirt as well [<italic>he was</italic>], so your problem is with me as well, I was just criticizing his argument basically.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">2. I thought about punching the aggressor.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">uninvolved</td>
+                  <td align="left" rowspan="1" colspan="1">1. I felt like an observer all the time.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">2. To be honest, with VR, I was quite divorced, I was just a kind of watching.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">silly or humorous</td>
+                  <td align="left" rowspan="1" colspan="1">1. I thought it was a bit silly.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">2. Humorous.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">concerned for or felt sorry for V</td>
+                  <td align="left" rowspan="1" colspan="1">1. I was concerned for the safety for the man with the red shirt.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">2. I felt a bit sorry for the victim, a little compassion for him.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">wanted to leave</td>
+                  <td align="left" rowspan="1" colspan="1">1. I did feel that I wanted to leave.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">2. I wanted to leave I didn’t want to get involved.</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <table-wrap id="pone-0052766-t004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0052766.t004</object-id>
+          <label>Table 4</label>
+          <caption>
+            <title>Frequencies of the Codes in <xref ref-type="table" rid="pone-0052766-t003">Table 3</xref>.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0052766-t004-4" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0052766.t004" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td colspan="2" align="left" rowspan="1">Frequency of statement</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Code</td>
+                  <td align="left" rowspan="1" colspan="1">Out-group %</td>
+                  <td align="left" rowspan="1" colspan="1">In-group %</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">wanted to stop it</td>
+                  <td align="left" rowspan="1" colspan="1">16</td>
+                  <td align="left" rowspan="1" colspan="1">18</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">uncomfortable</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">9</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">torn about intervening</td>
+                  <td align="left" rowspan="1" colspan="1">11</td>
+                  <td align="left" rowspan="1" colspan="1">13</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">would avoid confrontation</td>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">even though VR</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">anger</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">frustration</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">anxiety or fear</td>
+                  <td align="left" rowspan="1" colspan="1">14</td>
+                  <td align="left" rowspan="1" colspan="1">18</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">helplessness</td>
+                  <td align="left" rowspan="1" colspan="1">7</td>
+                  <td align="left" rowspan="1" colspan="1">7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">confrontational</td>
+                  <td align="left" rowspan="1" colspan="1">7</td>
+                  <td align="left" rowspan="1" colspan="1">13</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">uninvolved</td>
+                  <td align="left" rowspan="1" colspan="1">11</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">silly or humorous</td>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">concerned for or felt sorry for V</td>
+                  <td align="left" rowspan="1" colspan="1">16</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">wanted to leave</td>
+                  <td align="left" rowspan="1" colspan="1">7</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>TOTAL no. of statements</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>44</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>45</bold>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <p>The impression from the interviews as shown in <xref ref-type="table" rid="pone-0052766-t004">Table 4</xref> is that those in the out-group tended to sympathize with or feel sorry for V. Also many of them wanted to just leave the situation, felt uninvolved, or a few found the situation silly. For those in the in-group it seems to be more anger and frustration that could be the driving force of their intervention, and their response was more likely to be a confrontational one. None of them felt uninvolved, found the situation funny or silly, felt sorry for V or wanted to leave. Some of the in-group expressed surprise at their own responses even though they were aware that it was virtual reality, whereas none of the out-group expressed such surprise. This fits with the fact that many of the out-group felt uninvolved and none of the in-group felt so.</p>
+        <p><xref ref-type="table" rid="pone-0052766-t005">Tables 5</xref> and <xref ref-type="table" rid="pone-0052766-t006">6</xref> give the results for the interview question regarding the authenticity of response in comparison with reality. We do not show the separate tables for in-group and out-group since there is no difference between them in this regard, although there is some suggestion of a difference between the <italic>LookAt</italic> groups. It seems that those in the <italic>LookAt</italic> ‘off’ group were more likely to remark on the lack of interaction, and to contrast their behaviour in virtual reality and reality. They were less likely to report their responses as being realistic. In the combined sample just over half found that their responses were realistic.</p>
+        <table-wrap id="pone-0052766-t005" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0052766.t005</object-id>
+          <label>Table 5</label>
+          <caption>
+            <title>Codes for the Interview Question: Were your responses realistic?</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0052766-t005-5" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0052766.t005" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Code</td>
+                  <td align="left" rowspan="1" colspan="1">example statements</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">realistic or quite realistic</td>
+                  <td align="left" rowspan="1" colspan="1">1. I think that’s what I would do in real life.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">2. Pretty authentic. I’ve been in situation like this before, and run your mind afterwards think ‘I could have done this, I could have done that, or I should have done this’. but at that time you feel like a deer in the headlights, you are sort of frozen. You want to help, but you don’t want that guy to throw a punch on you, it’s a fine line.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">lacked interaction</td>
+                  <td align="left" rowspan="1" colspan="1">1. The fact that he (P) didn’t recognized me when he came over, I felt I was just watching.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">2. I behaved as in real life up to the point that I realized that there was no reaction from them.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">contrasts VR and reality</td>
+                  <td align="left" rowspan="1" colspan="1">1. In real life, I would try to put some distance between them and me, pub fights might be tricky, they might have weapons.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">2. I thought about it, but I wasn’t sure if they would respond to me. Anyway, in real life I would probably have not intervened. I would have been more scared in real life.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">detached</td>
+                  <td align="left" rowspan="1" colspan="1">1. I was completely detached.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">2. It was not authentic at all.</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <table-wrap id="pone-0052766-t006" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0052766.t006</object-id>
+          <label>Table 6</label>
+          <caption>
+            <title>Frequencies of the Codes in <xref ref-type="table" rid="pone-0052766-t005">Table 5</xref>.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0052766-t006-6" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0052766.t006" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td colspan="3" align="left" rowspan="1">Frequency of statement</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Code</td>
+                  <td align="left" rowspan="1" colspan="1">LookAt off %</td>
+                  <td align="left" rowspan="1" colspan="1">LookAt on %</td>
+                  <td align="left" rowspan="1" colspan="1">Combined%</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">realistic or quite realistic</td>
+                  <td align="left" rowspan="1" colspan="1">44</td>
+                  <td align="left" rowspan="1" colspan="1">62</td>
+                  <td align="left" rowspan="1" colspan="1">52</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">lacked interaction</td>
+                  <td align="left" rowspan="1" colspan="1">15</td>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                  <td align="left" rowspan="1" colspan="1">10</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">contrasts VR and reality</td>
+                  <td align="left" rowspan="1" colspan="1">37</td>
+                  <td align="left" rowspan="1" colspan="1">24</td>
+                  <td align="left" rowspan="1" colspan="1">31</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">detached</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">10</td>
+                  <td align="left" rowspan="1" colspan="1">6</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>TOTAL no. of statements</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>27</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>21</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>48</bold>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <p>Participants were asked what might have increased or decreased their degree of intervention. The results are shown in <xref ref-type="table" rid="pone-0052766-t007">Tables 7</xref> and <xref ref-type="table" rid="pone-0052766-t008">8</xref>. Most frequently they said that if the setup had been more interactive (i.e., the characters responding to their actions after the argument had started) then they would have been more likely to intervene. There were two other aspects that are opposed. On the one side a number of participants said that they would have been more likely to intervene if the perpetrator had become more aggressive. On the other side some participants said that they might have intervened had the perpetrator been less aggressive. Others emphasized that had the victim explicitly called for help they would have been more likely to have intervened. Another important contributory factor could have been greater rapport - for example, the victim having been a friend - or someone in need such as a child.</p>
+        <table-wrap id="pone-0052766-t007" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0052766.t007</object-id>
+          <label>Table 7</label>
+          <caption>
+            <title>Codes for the Interview Question: What would have made it more likely for you to intervene?</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0052766-t007-7" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0052766.t007" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Code</td>
+                  <td align="left" rowspan="1" colspan="1">example statements</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Aspects that would have increased intervention …</italic>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">call for help</td>
+                  <td align="left" rowspan="1" colspan="1">1. If the guy who was threatened would have directly spoken to me.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">2. If V would have looked at me and said something to me at some point, something like this “Can you believe this guy?”</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">more interactivity</td>
+                  <td align="left" rowspan="1" colspan="1">1. If P would have said anything to me.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">2. If there had been a reaction from them to my first interventions.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">more aggression</td>
+                  <td align="left" rowspan="1" colspan="1">1. If the aggressor started punching, if the situation would become more physical.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">2. If it had turned physical, I would have stepped in. If there was another person joining, I would have definitely stepped in.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">more rapport</td>
+                  <td align="left" rowspan="1" colspan="1">1. If it was a child against a man or a woman against a man, or even if he is a stranger if I maybe spent a match or discuss the football before hand, so there a was a bit of relationship.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">2. If the victim was my friend, probably if there was a connection between him and I.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">more realism</td>
+                  <td align="left" rowspan="1" colspan="1">1. A greater degree of realism.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">safety of intervention</td>
+                  <td align="left" rowspan="1" colspan="1">1. Maybe if the person with the white shirt would have been less aggressive.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">2. If P would not have said that he hated Gooners, or if there were more Arsenal fans around.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Aspect that would have decreased intervention …</italic>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">knew it was VR</td>
+                  <td align="left" rowspan="1" colspan="1">1. I knew I was in virtual reality, I wouldn’t intervene because I didn’t know if I had to.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">2. Deep down I knew it was virtual reality.</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <table-wrap id="pone-0052766-t008" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0052766.t008</object-id>
+          <label>Table 8</label>
+          <caption>
+            <title>Frequencies of the Codes in <xref ref-type="table" rid="pone-0052766-t007">Table 7</xref>.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0052766-t008-8" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0052766.t008" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Code</td>
+                  <td align="left" rowspan="1" colspan="1">Frequency of statement %</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">call for help</td>
+                  <td align="left" rowspan="1" colspan="1">11</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">more interactivity</td>
+                  <td align="left" rowspan="1" colspan="1">41</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">more aggression</td>
+                  <td align="left" rowspan="1" colspan="1">16</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">more rapport</td>
+                  <td align="left" rowspan="1" colspan="1">11</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">more realism</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">safety of intervention</td>
+                  <td align="left" rowspan="1" colspan="1">11</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">knew it was VR</td>
+                  <td align="left" rowspan="1" colspan="1">8</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Total no. of statements</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>37</bold>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <p>Finally participants were asked to talk about technical factors that drew them out of the experience. It will be seen from the video (Video S1) that, for example, there is no lip sync when the characters talk. This is very obvious when looking at the video, but barely noticeable when immersed in the environment with the life-sized characters. The combination of gesture and natural turn taking in conversation, amongst other things, are probably factors in making this glaring defect not noticeable. Only 5 out of 40 people mentioned the lack of lip sync and it was the fifth most mentioned aspect in this question. <xref ref-type="table" rid="pone-0052766-t009">Table 9</xref> shows the list of topics raised by the participants and the number of times they were mentioned. By far the greatest number of issues were concerned with ‘plausibility’ of the situation itself, and the technical factors tend to come down lower in the list.</p>
+        <table-wrap id="pone-0052766-t009" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0052766.t009</object-id>
+          <label>Table 9</label>
+          <caption>
+            <title>Frequencies of Statements in Response to the Interview Question: What factors tended to draw you out of the experience?</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0052766-t009-9" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0052766.t009" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Topic</td>
+                  <td align="left" rowspan="1" colspan="1">No. of people</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">No other people around</td>
+                  <td align="left" rowspan="1" colspan="1">9</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">The pub does not look like a real English pub</td>
+                  <td align="left" rowspan="1" colspan="1">7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Dialogue with the victim not realistic</td>
+                  <td align="left" rowspan="1" colspan="1">7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">No response from characters during the argument</td>
+                  <td align="left" rowspan="1" colspan="1">6</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">No background noise or music</td>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">No mouth movement of the characters</td>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Lack of sense of touch</td>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Animations not smooth</td>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CAVE walls and edges visible</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Aggressor appears from nowhere</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Mirror on top not appropriate</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Illumination not realistic</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Victim appears from nowhere at the start</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Anatomical proportions of the characters</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">No bar staff</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Clipping (part of a character going out of view)</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Lack of sense of smell</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">The victim was too defensive</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Victim looks ghostly due to Cave rendering</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Lack of facial animation</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>TOTAL No. of Statements</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>71</bold>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Discussion</title>
+      <p>The principal finding of this research with respect to the bystander issue is that participants in the in-group condition made more attempts at physical and verbal intervention than those in the out-group condition. Second, for those in the in-group the number of physical interventions was associated with the belief that the victim was looking towards them for help.</p>
+      <p>This second finding relies on the important distinction between the experimentally manipulated <italic>LookAt</italic> factor, and the questionnaire report after the experiment about how much the subjects thought that the victim was looking towards them for help (<italic>VictimLooked</italic>). To be clear, <italic>LookAt</italic> refers to whether or not <italic>in fact</italic> the program was making the victim sometimes look towards the participant. The second refers to the <italic>reported belief</italic> of the participant that the victim was looking towards him <italic>for help</italic>. The analysis of covariance (and <xref ref-type="fig" rid="pone-0052766-g002">Figure 2</xref>) showed that the belief that the victim was looking towards the participant for help had a differential effect depending on group. For those in the in-group condition, if they believed that the victim was looking towards them for help their number of interventions tended to be greater. For those in the out-group condition this relationship did not occur. This would not be surprising if it occurred in reality. If you consider you have group affiliation with someone and that person is looking to you for help surely this would be a more important event, more likely to move you to action, than if someone with whom you have no affiliation looks towards you for help. It is especially striking then that this also occurs also in virtual reality (where the only real people were the participants themselves): the more that the participants believed that the victim was looking towards them for help the more often did they intervene - but only those in the in-group condition.</p>
+      <p>Third, the use of symbolic regression as a data exploration method complemented and supported the results found from the classical analysis. Specifically, it provided a further demonstration that those in the in-group and out-group conditions responded quite differently to the influence of the <italic>LookAt</italic> factor and the <italic>VictimLooked</italic> response. Additionally, for those in both in-group and out-group the feeling that they should stop the argument was positively associated with an increased number of physical interventions, as was concern for the safety of the victim. However, the fear that other people might turn up to make the situation worse was inversely related to the number of physical interventions as was the feeling of wanting to get out.</p>
+      <p>The picture looks different for the number of verbal interventions. Here the group did not seem to play much role. Important factors contributing positively to the number of such interventions were the feelings by participants that they ‘should stop it’, concern for their own safety, and a strong perception that the victim was looking towards them for help. The factors that contributed negatively were the feeling of wanting to move away from the protagonists, and also the fear that other people might turn up to make the situation worse. However, in the vast majority of equations generated by the symbolic regression the belief that the victim was looking towards them for help is always together with the feeling of wanting to move away from the protagonists. These two variables have opposite effects, but in these data they are very strongly positively correlated. When <italic>VictimLooked</italic> is high, and <italic>MoveAway</italic> is held at its correlated value according to the regression relationship between them, then the number of verbal interventions becomes very high.</p>
+      <p>The out-group and in-group participants had about the same reported desire to stop the argument, the same level of feeling of being torn about intervening or not, and the same level of anxiety or fear. However, those in the in-group condition expressed greater anger and frustration, whereas those in the out-group condition were more likely to feel sorry for the victim, feel uninvolved or find the situation silly. Those in the in-group condition were more likely to react in a confrontational way compared with those in the out-group, who were looking more to defuse the situation. When we classify the verbal interventions as to whether they were more aimed at defusing the situation or more confrontational, amongst the out-group 17% were confrontational compared to 40% for the in-group, and 73% were defusing utterances compared to 60% for the in-group. These data suggest that the in-group were more likely to respond to the situation through anger and confrontation compared to the out-group, who were either less likely to become involved at all, or more likely to make verbal interventions to defuse the situation. This is not too surprising since by insulting the Arsenal affiliation of the victim in the in-group situation, the perpetrator was also of course indirectly insulting the participants who were all Arsenal supporters.</p>
+      <p>These data also suggest that physical interventions were more related to the safety of the victim, whereas verbal interventions were more related to safety of the self. The equations for the verbal interventions are more likely to include the ‘own safety’ than those for the physical interventions.</p>
+      <p>A final point regarding the ‘out-group’ is that in a sense it is not really an ‘out-group’ condition. Rather it is simply not ‘in-group’. Recalling the fact that all the participants were Arsenal supporters, for the ‘out-group’ the victim was portrayed as a football supporter of unknown affiliation (though highly unlikely to be Arsenal). The fact that there are clearly different results between the in-group and out-group condition is therefore a quite strong one: it is ‘in-group’ versus simply not ‘in-group’.</p>
+      <p>An important issue is the extent to which these findings are generalizable. We have shown an example where the group affiliation was a real one: strong supporters of a particular football team. This is unlike many laboratory based experiments where an abstract group affiliation is created for the purposes of the experiment. Our experimental manipulation involved activating the Arsenal affiliation through the virtual character V wearing an Arsenal football shirt, and talking enthusiastically about the club (in-group). The affiliation was not activated for those in the out-group condition, since V was not wearing an Arsenal shirt, and did not engage in enthusiastic conversation about the club. Our interest focused on the extent to which this activated (or not) psychological group affiliation impacted intervention behaviour. Our procedure was therefore designed to generate meaningful psychological group membership - the Arsenal fans were representative of a particular group. Our claim is that it is the perception that the victim belongs to the same group as the participant (in this context he was ‘one of us’) that leads people to be more likely to intervene. Hence our general hypothesis is that had the group identification been through some other means (social class, race, members of a tennis club, or even arbitrary groups conjured for an experiment) the results would have been similar.</p>
+      <p>It could be argued that the group of participants might have been too diverse in order to draw these types of conclusions. However, we argue that diversity of the sample is not relevant to this study. Arsenal fans are clearly made up of men, women, Londoners, working class, middle class, and people of different ethnic origins. However, the point is that under some circumstances they come to define themselves as members of the same group (in this case Arsenal fans) - and when this aspect of identity is important to them they are more likely to intervene to help a victim of violence when they think that person shares group membership with themselves in this context. Such group membership can be so powerful that it has been shown to at least temporarily cut across even racial bias in a context where group affiliation was created in a laboratory setting <xref ref-type="bibr" rid="pone.0052766-Kurzban1">[33]</xref>, <xref ref-type="bibr" rid="pone.0052766-VanBavel1">[34]</xref>. It has further been argued with respect to the famous Milgram obedience and Zimbardo Stanford prison experiments <xref ref-type="bibr" rid="pone.0052766-Zimbardo1">[35]</xref> that group identification is an excellent predictor of conformity <xref ref-type="bibr" rid="pone.0052766-Reicher1">[36]</xref>, <xref ref-type="bibr" rid="pone.0052766-Haslam1">[37]</xref>. For example, it was demonstrated, on the basis of the complete set of Milgram’s experiments, that the more that subjects identified with the experimenter and his causes (science, answering an important scientific problem) the more likely that they would administer the shocks. On the other hand they would be more likely to disobey the more that they identified with the Learner (representing the general community). Milgram’s original set of experiments provided a range of circumstances that led to varying degrees of identification with one of these groups (science or the community), and the degree of obedience varied accordingly.</p>
+      <p>Now we consider how our experiment could be improved. In <xref ref-type="bibr" rid="pone.0052766-Slater1">[15]</xref> the concept of ‘plausibility’ of experiences in IVEs was introduced, referring to the illusion of participants that the virtual events are really happening (even though they know that this is not the case). It was argued that plausibility depends at least on three factors: (i) the extent to which there are events that refer personally to the participant, (ii) the extent to which the environment responds to actions of the participant, (iii) and the credibility of the scenario in terms of how much they fit expectations from a similar situation in reality. With respect to the technical setup there were no differences between in-group and out-group, and this is reflected in the fact that there are no differences in reported responses and feelings elicited through the interviews. However, the evidence does suggest (<xref ref-type="table" rid="pone-0052766-t006">Table 6</xref>) a greater tendency for the group with <italic>LookAt</italic> ‘on’ to say that their responses were realistic, and for those with <italic>LookAt</italic> ‘off’ to mention the lack of interaction. This is consistent with (i) above.</p>
+      <p>However, an overwhelming conclusion from these data is that the plausibility of the experience would be greatly improved through more interactivity (i.e., (ii) above). Recall that there was an interactive episode at the start of the experiment, where in order to establish the in-group and out-group conditions, the eventual victim did have a conversation with the participant. However, once the argument started there was no further interaction in the sense that the virtual characters did not respond to anything that the participant said or did, except for the pre-programmed <italic>LookAt</italic> factor. Another aspect of plausibility that would need to be improved based on the results of this experiment is the credibility of the scenario itself (iii). As seen from <xref ref-type="table" rid="pone-0052766-t009">Table 9</xref> the types of factors that drew people out of the scenario were to do with the setting rather than the technical aspects of the display: no other people around in the pub, it did not look like a real English pub, and the dialogue with the victim itself not being realistic. More than 50% of the statements made in <xref ref-type="table" rid="pone-0052766-t009">Table 9</xref> refer to these types of general credibility, and the remainder are specific technical issues such as ‘Illumination not realistic’ or ‘Lack of facial animation’, none of which were commonly stated. By technical issues we refer to aspects of the scenario that require only programming to solve (such as the provision of lip sync). By more general credibility issues we refer to the simulation itself - aspects that require a better understanding of what needs to be there for this to be believable as a fight in a London pub.</p>
+      <p>Apart from the introduction of interactivity and other issues relating to credibility, there are several improvements for later versions of this experiment. For example, we have not said anything about the role of the social identity of the perpetrator with respect to the participant. Moreover there are clearly other issues involved - such as participant fear of being harmed by the perpetrator. This has not been considered at all, but could also be incorporated into an experiment through manipulation of the appearance of the perpetrator (for example, to look more or less menacing). Finally, future experiments will also manipulate the number of bystanders, and thus directly tackle the question of the role of the number of bystanders in intervention.</p>
+      <p>In this paper we have shown that immersive virtual reality can be usefully exploited to study the likelihood of bystander intervention in interpersonal violent incidents. The paradigm allows the investigation of what participants did do and think during an actual experience involving violence rather than their opinion of what they might do or what they think others might do - whether based on watching a video or on a verbal description of a situation <xref ref-type="bibr" rid="pone.0052766-Banyard1">[38]</xref>. Moreover we have exploited the powerful tool of genetic programming to explore these data in a deeper way than is possible with normal statistical methods, highlighted by the elegant distinction between the in-group and out-group conditions shown in Eq. (1).</p>
+      <p>Of course, there is still no proof that what participants would do in a physically real situation would match that which we find in virtual reality. However, as reported in the introduction to this paper there is evidence to suggest that people do respond realistically in IVEs. In fact since these experiments can never be carried out in reality, ultimately the question of the validity of people’s responses to the virtual situation can never be known through laboratory based experiments of any kind. However, our approach can be used in the process of constructing theories, that can then be further tested with the use of experiments in virtual reality, and moreover ultimately examine how well these theories fit what might be found in actual experiences in the field.</p>
+      <p>To conclude, we note that the findings for this type of research can also have implications for policy. For example, by creating an atmosphere where it is thought that not running away from a violent scene is the right thing to do, and by encouraging people to ask for help when they are victims of such a situation, it may be possible to engineer pro-social behaviour in specific circumstances where this is thought desirable by policy makers, and actually to manipulate the same variables to avoid it in other situations (e.g., “do not approach this man since he is considered armed and dangerous”). Here it would be a question of using the group to enforce social norms for the prevention of violent behaviour. The key to tackling the so called ‘walk–on-by’ society lies in using the power of group identification to promote social solidarity – and to persuade and empower bystanders to intervene, in situations where this is considered by the authorities to be appropriate.</p>
+    </sec>
+    <sec id="s4" sec-type="methods">
+      <title>Methods</title>
+      <sec id="s4a">
+        <title>Ethics Statement</title>
+        <p>The experiment was approved by the UCL Research Ethics Committee, and was carried out under written informed consent from each participant.</p>
+      </sec>
+      <sec id="s4b">
+        <title>The Virtual Reality System</title>
+        <p>A four screen projection system driven by a 5 PC cluster was used. We refer to this by generic name ‘Cave’ being the type of system described in <xref ref-type="bibr" rid="pone.0052766-CruzNeira1">[39]</xref>. The Cave has three 3 m×2.2 m back-projected screens: front, left, and right, and a 3 m×3 m front projection surface on the floor. The computers in the cluster contain Intel Pentium 3.2 GHz processors with 1 gigabyte of RAM and Nvidia Quadro FX 5600 graphics cards. The display resolution is 1024×768 pixels for each screen.</p>
+        <p>The participants were fitted with Crystal Eyes shutter glasses that were synchronized with the projectors, delivering active stereo at 45 Hz each eye. Head-tracking was performed with an InterSense IS-900 tracking device.</p>
+        <p>The program was written using the XVR programming platform as described in <xref ref-type="bibr" rid="pone.0052766-Tecchia1">[40]</xref>. The virtual characters were animated using the Hardware Accelerated Library for Character Animation, HALCA <xref ref-type="bibr" rid="pone.0052766-Gillies1">[41]</xref>.</p>
+      </sec>
+      <sec id="s4c">
+        <title>The Scenario</title>
+        <p>Two professional actors were hired to act the scene for the character animation motion capture. A Vicon motion capture system with 6 infrared cameras was used to capture their motions simultaneously. Sound was also recorded at the same time using Audacity software (audacity.sourceforge.net) with two wireless microphones attached to each actor. This raw data was then cleaned up, synchronized and split into pieces so that each one could be later assigned to a button on the interface to be played when needed during the study.</p>
+        <p>During the experiment the free-flowing conversation between the participant and V was achieved by operator control. A number of utterances had been recorded for V, each one making a statement or asking a question of the participant. Each such utterance was selected interactively by a hidden operator who could hear the responses of the participant. The operator sat by a computer screen, and all the phrases were represented visually as selectable buttons on the screen. When a button was selected (by point-and-click with the mouse) then V would say the phrase with a corresponding animation.</p>
+        <p>There was a defined script that the operator followed, but when the participant said something that fell outside of the script, then a number of general phrases could be selected by the operator in order to keep the conversation going in a natural way. For example, if the participant said something out of line, the operator could select a phrase such as “Totally agree with you” which would then be said by V. The overall effect for most of the time for most participants sounded as if it were a normal conversation between two people.</p>
+      </sec>
+      <sec id="s4d">
+        <title>Procedures and Scenario Details</title>
+        <p>40 male participants were recruited by advertisements around the UCL campus, where we specified that we needed football supporters (‘soccer’ in American usage). They were required to complete a questionnaire that asked about their favourite team in the English Premier League and how much they supported this team. We only recruited those who supported Arsenal Football Club to the level of at least 4 on a scale from 1 (not at all) to 7 (very much so). They were paid £7 ($10–12) for their participation. The experiment was approved by the UCL Research Ethics Committee.</p>
+        <p>Upon arrival at the laboratory participants were given a short questionnaire to complete that obtained information as to their English proficiency, medication, recent alcohol intake, degree of computer game playing, and past familiarity with virtual reality. Their age was obtained at the recruitment stage, in order to ensure that no one under 18 would be recruited.</p>
+        <p>After this they were given an information sheet to read, and the same information was again told to them verbally. This described the equipment that would be used. It also warned them that some people experience a degree of nausea in virtual reality systems, and that they were free to withdraw at any time without giving reasons. They were told that they would virtually visit a bar where something was to take place and that they should feel free to interact with other people there. They were warned that experience was going to involve discussion about football and the language and situation depicted was realistic. It included the statement “If you are someone who would be put off by witnessing realistic scenes that might include bad language or aggressive behaviour, then you should not take part in this experience.”</p>
+        <p>After participants had agreed to take part they were given a consent form to read and sign, and again told that they were free to leave the experiment without having to give reasons. They were then invited to take off their shoes to enter the Cave, and put on the eyeglasses.</p>
+        <p>The participants entered the virtual reality and were asked to look around and observe the scene, which was a bar of size 4.5 meters deep by 18 meters wide. The participant was then left alone in the bar having been instructed to look around for items related to football for 2 minutes. This allowed them to become familiar with the bar and accommodate to the virtual reality display including the shutter glasses and the overall brightness of the scene. After this time, a virtual character entered the scene and started a conversation with the participant by saying “You alright mate?” in the in-group version, and “Hi, how is it going?” in the out-group one.</p>
+        <p>Not every conversation was the same across all participants in each detail due to different responses by the participants. <xref ref-type="supplementary-material" rid="pone.0052766.s002">Table S1</xref> shows two such conversations, one when V is an Arsenal football club fan (in-group) and the other when just a general football fan (out-group).</p>
+        <p>After about 2 minutes of this conversation they were interrupted by another character (P) that had been sitting by the bar, who stood up and approached V and said to him “Oy! Have you got a problem?” and then accused V of “staring” at him (<xref ref-type="fig" rid="pone-0052766-g001">Figure 1</xref>). This quickly became a strong verbal attack on V, with V remaining submissive throughout. Eventually after 140 s the P avatar started to violently push V, at which point the program ended and the participant took off the glasses and left the Cave.</p>
+        <p>The participants then were asked to complete a questionnaire about their various responses to the situation (<xref ref-type="table" rid="pone-0052766-t002">Table 2</xref>) followed by an interview and debriefing where the purposes of the experiment were explained to them, and they were asked not to discuss it with others for 3 months in case they spoke with a future participant. They were then paid the £7 ($10) and the experimental trial was complete.</p>
+      </sec>
+      <sec id="s4e">
+        <title>Experimental Design</title>
+        <p>The experimental design was 2×2 between groups, with 10 participants arbitrarily assigned to each of the 4 cells. The two factors were <italic>Group</italic> (in-group/out-group) and <italic>LookAt</italic> (off/on). In-group was signified by V wearing an Arsenal football shirt, and maintaining an initial enthusiastic conversation about Arsenal. Out-group was signified V wearing a football shirt the same as for the in-group except without the Arsenal insignia, and during the conversation his responses were neutral and did not show much interest in the team (<xref ref-type="supplementary-material" rid="pone.0052766.s002">Table S1</xref>).</p>
+        <p><italic>LookAt</italic> referred to whether V had been programmed to occasionally look at the participant during the confrontation or not. If ‘yes’ then 5 times during the confrontation V looked toward the participant for 3 seconds. This was possible since the head-tracking streamed continual real-time data to the computer program about the position and orientation of the participant’s head. If ‘no’ there was no particular programmed action that would lead V to look towards the participant, but this may occasionally have occurred by chance (depending on where the participant was standing at the time).</p>
+      </sec>
+      <sec id="s4f">
+        <title>Response Variables</title>
+        <p>Our major response variable of interest concerned the extent to which participants intervened during the confrontation. A video camera was mounted above the Cave looking down at the scenario and recorded each entire experimental trial. The video for two participants could not be analyzed, one for a participant in condition ‘out-group’ and <italic>LookAt</italic> ‘off’ and the other in condition ‘out-group’ and <italic>LookAt</italic> ‘on’. These participants were eliminated from all analysis involving counts of the number of interventions. The videos were analyzed independently by two different people, covering the time from when P first accosted V to the end. They had been instructed to count the number of verbal (<italic>Verbal</italic>) and physical (<italic>Physical</italic>) interventions.</p>
+      </sec>
+      <sec id="s4g">
+        <title>Video Analysis</title>
+        <p><xref ref-type="supplementary-material" rid="pone.0052766.s001">Figure S1</xref> shows two stills from one of the recordings - with first P at the start of the confrontation and then a moment while the participant was intervening by placing himself between V and P and raising his hand.</p>
+        <p>First one of the experimenters carried out a review of all the videos noting the number of times that the participant said something to the virtual characters (variable <italic>nVerbalApprox</italic>) and the number of physical interventions - meaning the number of times that the participant moved closer to the characters or reached out towards them (<italic>nPhysApprox</italic>). Second and independently someone not associated with the research, and not knowing its purposes was hired to carry out a complete video analysis using the ELAN system and as paid work (<ext-link ext-link-type="uri" xlink:href="http://www.lat-mpi.eu/tools/elan" xlink:type="simple">www.lat-mpi.eu/tools/elan</ext-link>).</p>
+        <p>The instructions were to record the total number of utterances during the relevant period (<italic>nVerbalElan</italic>) and also the number of physical interventions (<italic>nPhySElan</italic>). The instructions for the physical interventions were to regard as an intervention or an attempt at intervention an action accompanied with verbal intervention or reaching out to either of the avatars. When not accompanied by these it was considered intervention if the participant was walking with purpose towards the avatars or was followed by another form of physical or verbal intervention. Walking or stepping towards the avatars was not considered to be intervention if the participant took a step forwards, backwards, or to the left or right when far from the avatars, if they walked or stepped forwards and this was followed by them standing passively watching the avatars or when they were walking around the environment and the avatars and appeared to be simply investigating the surroundings.</p>
+        <p>Although the procedures used for the approximate and ELAN based intervention recordings were not the same the results are strongly correlated. <xref ref-type="supplementary-material" rid="pone.0052766.s003">Table S2</xref> shows the correlation coefficients between the various measures of intervention. The approximate and ELAN based methods were consistent, with highly significant positive correlations.</p>
+        <p>Since the ELAN based method was carried out by someone not involved in the research team and more thorough, with the notion of ‘intervention’ more rigorously and conservatively defined, we base all analysis on this, so that <italic>nPhys</italic> = <italic>nPhysElan</italic>, and <italic>nVerbal</italic> = <italic>nVerbalElan</italic>.</p>
+      </sec>
+    </sec>
+    <sec id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material id="pone.0052766.s001" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0052766.s001" position="float" xlink:type="simple">
+        <label>Figure S1</label>
+        <caption>
+          <p><bold>A still from a video recording from above.</bold> (a) The participant can be seen near the centre with the victim to his left, and the perpetrator to his right. (b) The participant has stepped between the victim and perpetrator standing in front of the latter and raising his hand.</p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0052766.s002" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0052766.s002" position="float" xlink:type="simple">
+        <label>Table S1</label>
+        <caption>
+          <p>
+            <bold>Examples of Conversations between the Virtual Character V, and participant S.</bold>
+          </p>
+          <p>(DOCX)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0052766.s003" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0052766.s003" position="float" xlink:type="simple">
+        <label>Table S2</label>
+        <caption>
+          <p>
+            <bold>Pearson Correlation Coefficients Between the Intervention Variables.</bold>
+          </p>
+          <p>(DOCX)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0052766.s004" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0052766.s004" position="float" xlink:type="simple">
+        <label>Text S1</label>
+        <caption>
+          <p>
+            <bold>Degree of Support for the Arsenal Football Club.</bold>
+          </p>
+          <p>(DOCX)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0052766.s005" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0052766.s005" position="float" xlink:type="simple">
+        <label>Text S2</label>
+        <caption>
+          <p>
+            <bold>MANOVA for the Number of Physical and Verbal Interactions.</bold>
+          </p>
+          <p>(DOCX)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0052766.s006" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0052766.s006" position="float" xlink:type="simple">
+        <label>Text S3</label>
+        <caption>
+          <p>
+            <bold>Symbolic Regression.</bold>
+          </p>
+          <p>(DOCX)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0052766.s007" mimetype="Video/mp4" xlink:href="info:doi/10.1371/journal.pone.0052766.s007" position="float" xlink:type="simple">
+        <label>Video S1</label>
+        <caption>
+          <p>
+            <bold>The experimental scenario for the in-group condition.</bold>
+          </p>
+          <p>(MP4)</p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We thank Victoria Stafford for the ELAN video analysis and the actor Morgan Roberts who performed in the video.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0052766-Darley1">
+        <label>1</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Darley</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Latané</surname><given-names>B</given-names></name> (<year>1968</year>) <article-title>Bystander Intervention in Emergencies - Diffusion of Responsibility</article-title>. <source>Journal of Personality and Social Psychology</source> <volume>8</volume>: <fpage>377</fpage>–<lpage>383</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Latan1">
+        <label>2</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Latané</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Rodin</surname><given-names>J</given-names></name> (<year>1969</year>) <article-title>A lady in distress: Inhibiting effects of friends and strangers on bystander intervention</article-title>. <source>Journal of Experimental Social Psychology</source> <volume>5</volume>: <fpage>189</fpage>–<lpage>202</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Latan2">
+        <label>3</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Latané</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Nida</surname><given-names>S</given-names></name> (<year>1981</year>) <article-title>10 Years of Research on Group-Size and Helping</article-title>. <source>Psychological Bulletin</source> <volume>89</volume>: <fpage>308</fpage>–<lpage>324</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Fischer1">
+        <label>4</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fischer</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Krueger</surname><given-names>JI</given-names></name>, <name name-style="western"><surname>Greitemeyer</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Vogrincic</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Kastenmüller</surname><given-names>A</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>The bystander-effect: A meta-analytic review on bystander Intervention in dangerous and non-dangerous emergencies</article-title>. <source>Psychological Bulletin</source> <volume>137</volume>: <fpage>517</fpage>–<lpage>537</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Cherry1">
+        <label>5</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Cherry F (1995) The “stubborn particulars” of social psychology: essays on the research process: Routledge.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Harari1">
+        <label>6</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Harari</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Harari</surname><given-names>O</given-names></name>, <name name-style="western"><surname>White</surname><given-names>RV</given-names></name> (<year>1985</year>) <article-title>The reaction to rape by American male bystanders</article-title>. <source>The Journal of social psychology</source> <volume>125</volume>: <fpage>633</fpage>–<lpage>658</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Schwartz1">
+        <label>7</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schwartz</surname><given-names>SH</given-names></name>, <name name-style="western"><surname>Gottlieb</surname><given-names>A</given-names></name> (<year>1976</year>) <article-title>Bystander reactions to a violent theft: Crime in Jerusalem</article-title>. <source>Journal of Personality and Social Psychology</source> <volume>34</volume>: <fpage>1188</fpage>–<lpage>1199</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Schwartz2">
+        <label>8</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schwartz</surname><given-names>SH</given-names></name>, <name name-style="western"><surname>Gottlieb</surname><given-names>A</given-names></name> (<year>1980</year>) <article-title>Bystander anonymity and reactions to emergencies</article-title>. <source>Journal of Personality and Social Psychology</source> <volume>39</volume>: <fpage>418</fpage>–<lpage>430</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Shotland1">
+        <label>9</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Shotland</surname><given-names>RL</given-names></name>, <name name-style="western"><surname>Straw</surname><given-names>MK</given-names></name> (<year>1976</year>) <article-title>Bystander response to an assault: When a man attacks a woman</article-title>. <source>Journal of Personality and Social Psychology</source> <volume>34</volume>: <fpage>990</fpage>–<lpage>999</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Borofsky1">
+        <label>10</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Borofsky</surname><given-names>GL</given-names></name>, <name name-style="western"><surname>Stollak</surname><given-names>GE</given-names></name>, <name name-style="western"><surname>Messe</surname><given-names>LA</given-names></name> (<year>1971</year>) <article-title>Sex differences in bystander reactions to physical assault</article-title>. <source>Journal of Experimental Social Psychology</source> <volume>7</volume>: <fpage>313</fpage>–<lpage>318</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Fischer2">
+        <label>11</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fischer</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Greitemeyer</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Pollozek</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Frey</surname><given-names>D</given-names></name> (<year>2006</year>) <article-title>The unresponsive bystander: Are bystanders more responsive in dangerous emergencies?</article-title> <source>European Journal of Social Psychology</source> <volume>36</volume>: <fpage>267</fpage>–<lpage>278</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Levine1">
+        <label>12</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Levine</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Crowther</surname><given-names>S</given-names></name> (<year>2008</year>) <article-title>The responsive bystander: How social group membership and group size can encourage as well as inhibit bystander intervention</article-title>. <source>Journal of Personality and Social Psychology</source> <volume>95</volume>: <fpage>1429</fpage>–<lpage>1439</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Rovira1">
+        <label>13</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rovira</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Swapp</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Spanlang</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Slater</surname><given-names>M</given-names></name> (<year>2009</year>) <article-title>The use of virtual reality in the study of people's responses to violent incidents</article-title>. <source>Frontiers in Behavioral Neuroscience</source> <volume>3</volume>: <fpage>59</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.3389/neuro.08.059.2009" xlink:type="simple">10.3389/neuro.08.059.2009</ext-link></comment>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-SanchezVives1">
+        <label>14</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sanchez-Vives</surname><given-names>MV</given-names></name>, <name name-style="western"><surname>Slater</surname><given-names>M</given-names></name> (<year>2005</year>) <article-title>From Presence to Consciousness through Virtual Reality</article-title>. <source>Nature Reviews Neuroscience</source> <volume>6</volume>: <fpage>332</fpage>–<lpage>339</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Slater1">
+        <label>15</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Slater</surname><given-names>M</given-names></name> (<year>2009</year>) <article-title>Place Illusion and Plausibility can lead to realistic behaviour in immersive virtual environments</article-title>. <source>Philos Trans R Soc Lond</source> <volume>364</volume>: <fpage>3549</fpage>–<lpage>3557</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Blascovich1">
+        <label>16</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Blascovich</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Loomis</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Beall</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Swinth</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Hoyt</surname><given-names>C</given-names></name>, <etal>et al</etal>. (<year>2002</year>) <article-title>Immersive virtual environment technology as a methodological tool for social psychology</article-title>. <source>Psychological Inquiry</source> <volume>13</volume>: <fpage>103</fpage>–<lpage>124</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Hall1">
+        <label>17</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Hall ET (1973) The hidden dimension. Leonardo: 94–94.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Wilcox1">
+        <label>18</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wilcox</surname><given-names>LM</given-names></name>, <name name-style="western"><surname>Allison</surname><given-names>RS</given-names></name>, <name name-style="western"><surname>Elfassy</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Grelik</surname><given-names>C</given-names></name> (<year>2006</year>) <article-title>Personal space in virtual reality</article-title>. <source>ACM Transactions on Applied Perception (TAP)</source> <volume>3</volume>: <fpage>412</fpage>–<lpage>428</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Llobera1">
+        <label>19</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Llobera J, Spanlang B, Ruffini G, Slater M (2010) Proxemics with Multiple Dynamic Characters in an Immersive Virtual Environment ACM Transactions on Applied Perception (TAP) 8: Article 3.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Bailenson1">
+        <label>20</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bailenson</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Blascovich</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Beall</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Loomis</surname><given-names>J</given-names></name> (<year>2003</year>) <article-title>Interpersonal Distance in Immersive Virtual Environments</article-title>. <source>Personality and Social Psychology Bulletin</source> <volume>29</volume>: <fpage>819</fpage>–<lpage>833</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Frankenhuis1">
+        <label>21</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Frankenhuis</surname><given-names>WE</given-names></name>, <name name-style="western"><surname>Dotsch</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Karremans</surname><given-names>JC</given-names></name>, <name name-style="western"><surname>Wigboldus</surname><given-names>DHJ</given-names></name> (<year>2010</year>) <article-title>Male physical risk taking in a virtual environment</article-title>. <source>Journal of Evolutionary Psychology</source> <volume>8</volume>: <fpage>75</fpage>–<lpage>86</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Milgram1">
+        <label>22</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Milgram S (1974) Obedience to Authority: McGraw-Hill.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Slater2">
+        <label>23</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Slater</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Antley</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Davison</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Swapp</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Guger</surname><given-names>C</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>A virtual reprise of the Stanley milgram obedience experiments</article-title>. <source>PLoS ONE</source> <volume>1</volume>: <fpage>e39</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0000039" xlink:type="simple">10.1371/journal.pone.0000039</ext-link></comment>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Cheetham1">
+        <label>24</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Cheetham M, Pedroni AF, Antley A, Slater M, Jáncke L (2009) Virtual milgram: empathic concern or personal distress? Evidence from functional MRI and dispositional measures. Frontiers in Human Neuroscience 3.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Gillath1">
+        <label>25</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gillath</surname><given-names>O</given-names></name>, <name name-style="western"><surname>McCall</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Shaver</surname><given-names>PR</given-names></name>, <name name-style="western"><surname>Blascovich</surname><given-names>J</given-names></name> (<year>2008</year>) <article-title>What can virtual reality teach us about prosocial tendencies in real and virtual environments?</article-title> <source>Media Psychology</source> <volume>11</volume>: <fpage>259</fpage>–<lpage>282</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Levine2">
+        <label>26</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Levine</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Cassidy</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Brazier</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Reicher</surname><given-names>S</given-names></name> (<year>2002</year>) <article-title>Self-categorization and bystander non-intervention: Two experimental studies</article-title>. <source>Journal of Applied Social Psychology</source> <volume>32</volume>: <fpage>1452</fpage>–<lpage>1463</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Levine3">
+        <label>27</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Levine</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Thompson</surname><given-names>K</given-names></name> (<year>2004</year>) <article-title>Identity, place, and bystander intervention: Social categories and helping after natural disasters</article-title>. <source>Journal of Social Psychology</source> <volume>144</volume>: <fpage>229</fpage>–<lpage>245</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Levine4">
+        <label>28</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Levine</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Prosser</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Evans</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Reicher</surname><given-names>S</given-names></name> (<year>2005</year>) <article-title>Identity and emergency intervention: How social group membership and inclusiveness of group boundaries shape helping behavior</article-title>. <source>Personality and Social Psychology Bulletin</source> <volume>31</volume>: <fpage>443</fpage>–<lpage>453</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Koza1">
+        <label>29</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Koza JR (1992) Genetic programming: on the programming of computers by means of natural selection: The MIT press.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Schmidt1">
+        <label>30</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schmidt</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Lipson</surname><given-names>H</given-names></name> (<year>2009</year>) <article-title>Distilling free-form natural laws from experimental data</article-title>. <source>Science</source> <volume>324</volume>: <fpage>81</fpage>–<lpage>85</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Burnham1">
+        <label>31</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Burnham KP, Anderson DR (2002) Model Selection and Multimodel Inference: A Practical Information-Theoretic Approach: Springer.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-HesseBiber1">
+        <label>32</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hesse-Biber</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Dupuis</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Kinder</surname><given-names>TS</given-names></name> (<year>1991</year>) <article-title>HyperRESEARCH: A computer program for the analysis of qualitative data with an emphasis on hypothesis testing and multimedia analysis</article-title>. <source>Qualitative Sociology</source> <volume>14</volume>: <fpage>289</fpage>–<lpage>306</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Kurzban1">
+        <label>33</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kurzban</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Tooby</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Cosmides</surname><given-names>L</given-names></name> (<year>2001</year>) <article-title>Can race be erased? Coalitional computation and social categorization</article-title>. <source>PNAS</source> <volume>98</volume>: <fpage>15387</fpage>–<lpage>15392</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-VanBavel1">
+        <label>34</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Van Bavel</surname><given-names>JJ</given-names></name>, <name name-style="western"><surname>Cunningham</surname><given-names>WA</given-names></name> (<year>2009</year>) <article-title>Self-categorization with a novel mixed-race group moderates automatic social and racial biases</article-title>. <source>Personality and Social Psychology Bulletin</source> <volume>35</volume>: <fpage>321</fpage>–<lpage>335</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Zimbardo1">
+        <label>35</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Zimbardo P (2007) The Lucifer effect: Understanding how good people turn evil. Random House Inc, New York.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Reicher1">
+        <label>36</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Reicher</surname><given-names>SD</given-names></name>, <name name-style="western"><surname>Haslam</surname><given-names>SA</given-names></name>, <name name-style="western"><surname>Smith</surname><given-names>JR</given-names></name> (<year>2012</year>) <article-title>Working Toward the Experimenter Reconceptualizing Obedience Within the Milgram Paradigm as Identification-Based Followership</article-title>. <source>Perspectives on Psychological Science</source> <volume>7</volume>: <fpage>315</fpage>–<lpage>324</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Haslam1">
+        <label>37</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Haslam</surname><given-names>SA</given-names></name>, <name name-style="western"><surname>Reicher</surname><given-names>SD</given-names></name> (<year>2012</year>) <article-title>Contesting the ‘‘Nature’’ Of Conformity: What Milgram and Zimbardo’s Studies Really Show</article-title>. <source>PLoS Biol</source> <volume>10</volume>: <fpage>e1001426</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Banyard1">
+        <label>38</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Banyard</surname><given-names>V</given-names></name> (<year>2008</year>) <article-title>Measurement and Correlates of Prosocial Bystander Behavior: The Case of Interpersonal Violence</article-title>. <source>Violence and Victims</source> <volume>23</volume>: <fpage>83</fpage>–<lpage>97</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-CruzNeira1">
+        <label>39</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cruz-Neira</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Sandin</surname><given-names>DJ</given-names></name>, <name name-style="western"><surname>DeFanti</surname><given-names>TA</given-names></name>, <name name-style="western"><surname>Kenyon</surname><given-names>RV</given-names></name>, <name name-style="western"><surname>Hart</surname><given-names>JC</given-names></name> (<year>1992</year>) <article-title>The CAVE: audio visual experience automatic virtual environment</article-title>. <source>Communications of the ACM</source> <volume>35</volume>: <fpage>64</fpage>–<lpage>72</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Tecchia1">
+        <label>40</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tecchia</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Carrozzino</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Bacinelli</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Rossi</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Vercelli</surname><given-names>D</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>A flexible framework for wide-spectrum vr development</article-title>. <source>Presence: Teleoperators and Virtual Environments</source> <volume>19</volume>: <fpage>302</fpage>–<lpage>312</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0052766-Gillies1">
+        <label>41</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gillies</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Spanlang</surname><given-names>B</given-names></name> (<year>2010</year>) <article-title>Comparing and evaluating real-time character engines for virtual environments</article-title>. <source>PRESENCE: Teleoperators and Virtual Environments</source> <volume>19</volume>: <fpage>95</fpage>–<lpage>117</lpage>.</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

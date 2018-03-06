@@ -1,0 +1,1635 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1d3 20150301//EN" "http://jats.nlm.nih.gov/publishing/1.1d3/JATS-journalpublishing1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="1.1d3" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1371/journal.pone.0168585</article-id>
+<article-id pub-id-type="publisher-id">PONE-D-16-22850</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Nutrition</subject><subj-group><subject>Malnutrition</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Nutrition</subject><subj-group><subject>Malnutrition</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Research design</subject><subj-group><subject>Survey research</subject><subj-group><subject>Surveys</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>People and places</subject><subj-group><subject>Population groupings</subject><subj-group><subject>Age groups</subject><subj-group><subject>Children</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>People and places</subject><subj-group><subject>Population groupings</subject><subj-group><subject>Families</subject><subj-group><subject>Children</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Physical anthropology</subject><subj-group><subject>Anthropometry</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Physical anthropology</subject><subj-group><subject>Anthropometry</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Physical sciences</subject><subj-group><subject>Mathematics</subject><subj-group><subject>Statistics (mathematics)</subject><subj-group><subject>Confidence intervals</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Nutrition</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Nutrition</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Physical sciences</subject><subj-group><subject>Mathematics</subject><subj-group><subject>Probability theory</subject><subj-group><subject>Probability distribution</subject><subj-group><subject>Normal distribution</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Mathematical and statistical techniques</subject><subj-group><subject>Statistical methods</subject><subj-group><subject>Monte Carlo method</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Physical sciences</subject><subj-group><subject>Mathematics</subject><subj-group><subject>Statistics (mathematics)</subject><subj-group><subject>Statistical methods</subject><subj-group><subject>Monte Carlo method</subject></subj-group></subj-group></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>The Effect of Random Error on Diagnostic Accuracy Illustrated with the Anthropometric Diagnosis of Malnutrition</article-title>
+<alt-title alt-title-type="running-head">Effect of Random Error on Diagnostic Accuracy</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes" equal-contrib="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Grellety</surname>
+<given-names>Emmanuel</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+<contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Golden</surname>
+<given-names>Michael H.</given-names>
+</name>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+</contrib-group>
+<aff id="aff001"><label>1</label> <addr-line>Research Center Health Policy and Systems - International Health, School of Public Health, Université Libre de Bruxelles, Brussels, Belgium</addr-line></aff>
+<aff id="aff002"><label>2</label> <addr-line>Department of Medicine and Therapeutics, University of Aberdeen, Aberdeen, Scotland</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Schooling</surname>
+<given-names>C. Mary</given-names>
+</name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Hunter College, UNITED STATES</addr-line></aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The studentship does not alter our adherence to PLOS ONE policies on sharing data and materials. MG received no support and has no competing interests.</p>
+</fn>
+<fn fn-type="con">
+<p><list list-type="simple"><list-item><p><bold>Conceptualization:</bold> MHG.</p></list-item> <list-item><p><bold>Formal analysis:</bold> EG MHG.</p></list-item> <list-item><p><bold>Methodology:</bold> EG MHG.</p></list-item> <list-item><p><bold>Supervision:</bold> MHG.</p></list-item> <list-item><p><bold>Writing – original draft:</bold> MHG.</p></list-item> <list-item><p><bold>Writing – review &amp; editing:</bold> EG MHG.</p></list-item></list>
+</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">Emmanuel.Grellety.Bosviel@ulb.ac.be</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<day>28</day>
+<month>12</month>
+<year>2016</year>
+</pub-date>
+<pub-date pub-type="collection">
+<year>2016</year>
+</pub-date>
+<volume>11</volume>
+<issue>12</issue>
+<elocation-id>e0168585</elocation-id>
+<history>
+<date date-type="received">
+<day>7</day>
+<month>6</month>
+<year>2016</year>
+</date>
+<date date-type="accepted">
+<day>2</day>
+<month>12</month>
+<year>2016</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2016</copyright-year>
+<copyright-holder>Grellety, Golden</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0168585"/>
+<abstract>
+<sec id="sec001">
+<title>Background</title>
+<p>It is often thought that random measurement error has a minor effect upon the results of an epidemiological survey. Theoretically, errors of measurement should always increase the spread of a distribution. Defining an illness by having a measurement outside an established healthy range will lead to an inflated prevalence of that condition if there are measurement errors.</p>
+</sec>
+<sec id="sec002">
+<title>Methods and results</title>
+<p>A Monte Carlo simulation was conducted of anthropometric assessment of children with malnutrition. Random errors of increasing magnitude were imposed upon the populations and showed that there was an increase in the standard deviation with each of the errors that became exponentially greater with the magnitude of the error. The potential magnitude of the resulting error of reported prevalence of malnutrition were compared with published international data and found to be of sufficient magnitude to make a number of surveys and the numerous reports and analyses that used these data unreliable.</p>
+</sec>
+<sec id="sec003">
+<title>Conclusions</title>
+<p>The effect of random error in public health surveys and the data upon which diagnostic cut-off points are derived to define “health” has been underestimated. Even quite modest random errors can more than double the reported prevalence of conditions such as malnutrition. Increasing sample size does not address this problem, and may even result in less accurate estimates. More attention needs to be paid to the selection, calibration and maintenance of instruments, measurer selection, training &amp; supervision, routine estimation of the likely magnitude of errors using standardization tests, use of statistical likelihood of error to exclude data from analysis and full reporting of these procedures in order to judge the reliability of survey reports.</p>
+</sec>
+</abstract>
+<funding-group>
+<funding-statement>Nutriset provided a PhD maintenance studentship to Université Libre de Bruxelles in support of EG. No funds were provided to support any aspect of research or publication. Nutriset had no role in any aspect of this research including data collection, design, analysis, interpretation or writing of the article and does not require prior notification of publication.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="12"/>
+<table-count count="6"/>
+<page-count count="27"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability">
+<meta-name>Data Availability</meta-name>
+<meta-value>All relevant data underlying this study can be found at: URL: <ext-link ext-link-type="uri" xlink:href="https://figshare.com/articles/data_anthro_for_deposit_pdf/4294085" xlink:type="simple">https://figshare.com/articles/data_anthro_for_deposit_pdf/4294085</ext-link>; DOI: <ext-link ext-link-type="uri" xlink:href="https://dx.doi.org/10.6084/m9.figshare.4294085.v1" xlink:type="simple">https://dx.doi.org/10.6084/m9.figshare.4294085.v1</ext-link>.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec004" sec-type="intro">
+<title>Introduction</title>
+<p>For many illnesses biochemical, anthropometric or other measurements are made and compared with the distribution of the parameter derived from a normal healthy population. In order to assess the prevalence of the illness in the population an epidemiological survey is conducted and the proportion of the survey population that falls outside the “healthy” range is defined as having the condition. Measurements are taken from sufficient subjects to assess the confidence intervals of the prevalence using standard epidemiological statistical techniques.</p>
+<p>It is usually assumed that increasing the number of subjects in the survey will automatically improve the precision of the assessment, and standard formulae are applied to determine the optimum number of measurements, the sample size, that need to be made to achieve the desired precision. It is often assumed that the effect of random errors in the measurements will be neutral because those erroneous measurements which overestimate will be matched by those that underestimate the parameter measured and thus effectively cancel each other out. For this reason most survey guidelines relegate the possible effects of random error to having a minor effect at best and the emphasis is placed on the sampling frame and increasing the sample size to improve the precision, and thus the assumed accuracy, of the estimated parameter. However, increasing the sample size may also lead to deterioration in the care that is taken with each measurement, particularly if this involves increasing the number of observers, less practice, poorer supervision or training and using multiple centres.</p>
+<p>The prevalence of “cases” depends upon the number of measurements falling outside the normal range and thus into the tails of the distribution; that is below or above a cut-off point. We have therefore examined the effect of random errors of measurement on the numbers of cases falling outside the normal range that defines the illness; for this we have used the example of the anthropometric assessment of malnutrition in children.</p>
+<sec id="sec005">
+<title>Theoretical considerations</title>
+<p>Consider <xref ref-type="fig" rid="pone.0168585.g001">Fig 1</xref>, which shows a normal (Gaussian) distribution with vertical gridlines at one standard deviation intervals. If there is a random (non-systematic) error in a measurement then the recorded value will either move to the right or left of the true value with respect to the other values in the distribution, and this movement of data points will be entirely at random.</p>
+<fig id="pone.0168585.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0168585.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>Effect of random error on a Gaussian distribution.</title>
+<p>Gaussian distribution curve illustrating how a random error in measurement will result in different proportions of data-points moving from one segment to another to increase the value of the standard deviation. The red line has a Standard deviation of 1.0. The dotted blue line has a standard deviation of 1.2. The grey areas show how the area in the centre of the curve has moved towards the tails thus increasing the areas below -2.0Z and above 2.0Z. Both distributions are Gaussian without generating moments of kurtosis or skewness. For explanation of the letters see the text.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0168585.g001" xlink:type="simple"/>
+</fig>
+<p>Consider the points recorded in area C. With random error some of them will move into area D and some into area B. Similarly, some of the points in D will move into C and others into E, etc. With a Gaussian distribution, the number of points entering C from D should be balanced by the points moving from D to C so that the mean value will not change with random error. This is the assumption that is tacitly made and the reason why random error is frequently not considered to be an important source of error. It is also the reason why many epidemiologists consider that the precision of an estimate is always improved by simply increasing the sample size, even if this involves using less experienced staff with consequent deterioration in quality control.</p>
+<p>In contrast, the number of points moving from C to B is a function of the area of C and the number of points moving from B back to C a function of the area of B. These areas are not the same. Thus, with a random error in measurement there will be more points moving from C to B than from B to C. Similarly there will be more points moving from B to A than from A to B. The same effect will be seen at the upper end of the distribution so that more points will move from D to E than from E to D and more from E to F than from F to E so that symmetry is maintained and random error should not generate moments of skewness or kurtosis. The resulting effect of a random error will simply be to broaden the distribution. If the distribution is Gaussian then the results of random error will be neutral in terms of the mean and the distribution will remain Gaussian, but there will be an increase in the variance and thus the standard deviation (SD) of the distribution. The magnitude of the effect will depend upon the mean magnitude of the errors of measurement. If the errors themselves are random and are plotted they are also expected to form a distribution with a mean of zero and a standard deviation related to the absolute size of the errors; if this were not the case then the errors would have a systematic bias component and not be entirely random. Theoretically random errors always increase the SD, never diminish the SD. These errors will presumably be related to the technical error of the measurement (TEM) which should be determined before, during and after a series of measurements in a survey [<xref ref-type="bibr" rid="pone.0168585.ref001">1</xref>,<xref ref-type="bibr" rid="pone.0168585.ref002">2</xref>]. The observed variance (SD<sup>2</sup>) will then be related to the true variance of the variable being measured plus the variance of the errors (TEM<sup>2</sup>) of the measurers, and a better estimate of the true prevalence could be statistically computed by subtraction of the variance of the TEM from the observed variance of the measurements.</p>
+<p>The effect that this has on the proportion of a distribution falling outside the cut-off point being used to define abnormality, in relation to the true proportion outside this cut-off point is then a function of the relative areas of the segments above and below the cut-off point chosen. Because the ratio of adjacent segments increases the further they deviate from the mean value the effect will be increasingly pronounced as the tails of the distribution are approached and the further the cut-off point is from the mean the greater the effect of a random error on the observed prevalence. <xref ref-type="table" rid="pone.0168585.t001">Table 1</xref> gives the relative areas of the segments shown in <xref ref-type="fig" rid="pone.0168585.g001">Fig 1</xref>. Thus, 2.5 more measurements will move from the 0/1 SD segment (C, D) than will move from the 1/2 segment (B, E) back to the 0/1 segment. At the tails of the distribution, for every one measurement that moves from the 3/4 SD segment to the 2/3 SD segment, 16.2 points will move from the 2/3 SD segment to the 3/4 SD segment. The effect will affect both the upper and lower tails of the distribution.</p>
+<table-wrap id="pone.0168585.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0168585.t001</object-id>
+<label>Table 1</label> <caption><title>The relative movement of points with distance from the mean.</title></caption>
+<alternatives>
+<graphic id="pone.0168585.t001g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0168585.t001" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">SD segment</th>
+<th align="center">marked</th>
+<th align="center">Area</th>
+<th align="center">relative to the area above</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0 to 1</td>
+<td align="center">C &amp; D</td>
+<td align="center">0.341</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="center">1 to 2</td>
+<td align="center">B &amp; E</td>
+<td align="center">0.136</td>
+<td align="center">x 2.5</td>
+</tr>
+<tr>
+<td align="center">2 to 3</td>
+<td align="center">A &amp; F</td>
+<td align="center">0.021</td>
+<td align="center">x 6.4</td>
+</tr>
+<tr>
+<td align="center">3 to 4</td>
+<td align="center">tail</td>
+<td align="center">0.001</td>
+<td align="center">x 16.2</td>
+</tr>
+<tr>
+<td align="center">4 to 5</td>
+<td align="center">tail</td>
+<td align="center">3^-5</td>
+<td align="center">x 42.0</td>
+</tr>
+<tr>
+<td align="center">&lt;5</td>
+<td align="center">tail</td>
+<td align="center">3^-7</td>
+<td align="center">x 109.5</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>It is usually the case that an illness is diagnosed when an individual falls beyond the distribution seen in 95% of a “healthy” population (i.e. ±2 SD with 2.5% of “unhealthy” below, and 2.5% above the cut-off) 5% will be classified as “unhealthy”. But with such conditions as acute malnutrition, obesity, anaemia, hypertension, diabetes, etc. random measurement error has the potential of inflating the numbers diagnosed as unhealthy far beyond this 5%. Where a more extreme cut off point is used such as ±3 SD only 0.135% of truly “healthy” subjects will fall below/above this cut-off. The effect of measurement error can then start to dominate estimates, so that the majority of values recorded outside this range are more likely to be erroneous values than true “cases”. The ratio of true to false values below the cut-off point will then be a function of the population mean, the cut-off point and the magnitude of the random error (the overall TEM of the measurers). The reported prevalence will not only depend upon the degree to which the mean and distribution of the observed population deviates from the mean and distribution of the healthy population, but also on the precision with which the measurements have been made. Importantly, this effect is completely independent of the sample size; it depends only on the precision with which the measurements are taken.</p>
+</sec>
+<sec id="sec006">
+<title>Effect of measurement error on anthropometric variables used to assess malnutrition in children</title>
+<p>Anthropometric surveys of children are conducted to assess the nutritional status of a population [<xref ref-type="bibr" rid="pone.0168585.ref003">3</xref>]. Weight, height, and mid-upper arm circumference (MUAC) are the primary measurements taken; these are standardised for age &amp; sex, combined and compared with international standards, in this case the WHO<sub>2006</sub> standards [<xref ref-type="bibr" rid="pone.0168585.ref004">4</xref>] to determine the individual’s weight-for-height Z-score (WHZ), height-for-age Z-score (HAZ), weight-for-age Z-score (WAZ) and MUAC-for-age (MUACage) or absolute MUAC. Each measurement is always subject to measurement error [<xref ref-type="bibr" rid="pone.0168585.ref005">5</xref>–<xref ref-type="bibr" rid="pone.0168585.ref007">7</xref>] and compounded when entered into the equations using more than a single measurement. The precision of the instruments used and the published standards’ intervals often requires height to be rounded to the nearest 1.0 or 0.5 cm, weight to the nearest 100g, age to the nearest month and MUAC to the nearest 1mm; these approximations are not thought to have more than a trivial effect on the results [<xref ref-type="bibr" rid="pone.0168585.ref008">8</xref>].</p>
+<p>There is a difference of height of about 0.7cm between measuring a child recumbent and standing [<xref ref-type="bibr" rid="pone.0168585.ref009">9</xref>]. There is also a mean diurnal variation in height of about 0.7cm in children less than 5 years of age [<xref ref-type="bibr" rid="pone.0168585.ref010">10</xref>]; this depends upon the length of time that the child has been standing, running, playing and otherwise active. This variation is thought to be due to compression of the inter-vertebral discs [<xref ref-type="bibr" rid="pone.0168585.ref011">11</xref>]. Children measured early in the morning are likely to be different from those measured late in the day; malnourished children are likely to be less active than well-nourished children. Measurements made in paediatric practice in the USA showed a mean difference of 1.2cm ± 1.6cm (SD) between the practitioners and experienced nurses specifically trained in anthropometry; only 30% of the measurements were within 0.5cm [<xref ref-type="bibr" rid="pone.0168585.ref012">12</xref>].</p>
+<p>Although, the scales used in surveys have divisions of 100g the children frequently move whilst being weighed so that the needle may deviate by several divisions. Frequently, nappies, socks or pants are not removed; the amount of food, stool, urine and the state of hydration of the child are other sources of variation.</p>
+<p>Age is the most problematic of the variables. In most Western cultures it is rounded down to the nearest completed month, in other cultures age is rounded up to the next highest month. In most developing countries there is no birth registration and birthdays are not celebrated; consequently, as a child ages the actual age becomes increasingly vague in the memory of the mother. Age is then approximated by using a calendar of local memorable events and the mother asked to remember to which event the birth most closely approximated. These calendars are normally quite crude and are not capable of identifying the actual month of birth. The questioning takes some time and is often administered in a perfunctory way, particularly if the survey team is tired or asked to complete excessive interviews in a single day. Even with full birth registration, there are often quite gross errors in reported age in young children; in a census from Scotland 7.7% of ages were erroneously reported by the respondent [<xref ref-type="bibr" rid="pone.0168585.ref013">13</xref>]. In Singapore children’s age in census data of respondents giving ages in English showed that 66% were erroneous [<xref ref-type="bibr" rid="pone.0168585.ref014">14</xref>]. In Ghana age was misstated in 35% of children by a year or more [<xref ref-type="bibr" rid="pone.0168585.ref015">15</xref>]; similarly, in Bangladesh, 26% of under 6 year old children had their ages misstated by a year or more [<xref ref-type="bibr" rid="pone.0168585.ref016">16</xref>], and the error increases with age up to 5 years [<xref ref-type="bibr" rid="pone.0168585.ref017">17</xref>,<xref ref-type="bibr" rid="pone.0168585.ref018">18</xref>]. Even when there is a birth registration paper, this may be grossly in error. Delayed registration is the usual cause for error [<xref ref-type="bibr" rid="pone.0168585.ref019">19</xref>]. In Mali children must be registered within 7 days of birth, if this date is missed then the parent has to attend court in a distant administrative centre to obtain a birth paper. This results in children being registered as being born within 7 days of the date of registration, even if the child was born long before that date [<xref ref-type="bibr" rid="pone.0168585.ref020">20</xref>]. There can also be problems with calendars and customs; for example, the Chinese traditionally record a child as one year at birth and this is incremented by one year as each Chinese new year passes—traditional Chinese may state that a child is two years of age shortly after birth if there happens to be a New Year between the birth and the survey [<xref ref-type="bibr" rid="pone.0168585.ref021">21</xref>]. Of more concern is an interaction with nutritional status and misstatement of age, with errors most frequently found in the malnourished [<xref ref-type="bibr" rid="pone.0168585.ref022">22</xref>].</p>
+<p>The MUAC tape is a narrow plastic band placed around the upper arm; the reading obtained depends critically on the tension that the enumerator applies to the tape when the reading is taken. Experience shows that even with trained experienced observers it is rare to get a technical error of the measurement of less than 2mm.</p>
+<p>To these errors must be added errors due to digit preference, number transposition and recording &amp; data entry [<xref ref-type="bibr" rid="pone.0168585.ref023">23</xref>,<xref ref-type="bibr" rid="pone.0168585.ref024">24</xref>]. It is common practice for surveys in developing countries for survey teams to be recruited from the friends and families of those involved in the survey and they usually have almost no experience; the team members’ eye sight is not usually checked and glasses are expensive and uncommon in many countries.</p>
+<p>In anthropological research and in collection of data to set standards the investigators take great care to minimise measurement errors [<xref ref-type="bibr" rid="pone.0168585.ref011">11</xref>,<xref ref-type="bibr" rid="pone.0168585.ref025">25</xref>] and estimates of the errors are made and reported, but this is not usually the case when surveys are carried out for other purposes. Some errors are systematic and epidemiologists take great care to try to eliminate systematic errors; but there are always random errors. Studies only vary in the degree of those errors which are generally thought to be reduced or eliminated by simply increasing the sample size.</p>
+<p>In order to investigate the effect of random errors on the derived prevalence we generated artificial populations of known distribution and then imposed random errors on the data and examined the effect on the distribution and the prevalence of malnutrition recorded.</p>
+</sec>
+</sec>
+<sec id="sec007" sec-type="materials|methods">
+<title>Methods</title>
+<sec id="sec008">
+<title>Monte Carlo simulation of populations containing malnourished children</title>
+<p>To examine weight variation, 50 populations, each of 2020 subjects were generated. These were composed of 10 boys and 10 girls at each 0.5 cm interval in height from 60 to 110 cm (101 intervals). To examine age related variables (height-for-age and MUAC-for-age) the populations generated were of 2160 subjects composed of 20 boys and 20 girls aged at each month from 6 to 59 months (54 intervals).</p>
+<p>In order to generate the simulated populations, for the anthropometric variable under consideration, the LMS (lambda-mu-sigma) parameters were downloaded from WHO’s website [<xref ref-type="bibr" rid="pone.0168585.ref026">26</xref>] and entered into an Excel spread sheet corresponding to each sex specific height (for weight analysis) and age (for height and MUAC analysis) of the child in the reference population. To generate a population of children with a given distribution for WHZ, each child’s weight was generated using the following equation:
+<disp-formula id="pone.0168585.e001">
+<alternatives>
+<graphic id="pone.0168585.e001g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0168585.e001" xlink:type="simple"/>
+<mml:math display="block" id="M1">
+<mml:mrow><mml:mtext>Weight </mml:mtext><mml:mo>=</mml:mo><mml:mtext> M x </mml:mtext><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mtext>Z x S x L</mml:mtext></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mtext> </mml:mtext><mml:mo>+</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>^</mml:mo><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mn>1</mml:mn><mml:mo>/</mml:mo><mml:mtext>L</mml:mtext></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mtext> </mml:mtext></mml:mrow>
+</mml:math>
+</alternatives>
+<label>(1)</label>
+</disp-formula>
+Where LMS are the parameters that define the sex and height specific distribution of each individual; Z is the normally distributed Z-score that has been randomly assigned to the child with a defined mean and standard deviation (most of the population’s mean Z-score was either -0.6 Z or -1.0 Z: all simulated populations were generated with a standard deviation of 1.0 Z-score).</p>
+<p>For example, the WHZ parameters for a 70.0 cm male are L = -0.3521; M = 8.4227; S = 0.08229. To obtain the weight corresponding to a WHZ of -2.7 Z that could have been assigned to this individual child the equation is solved as follows:
+<disp-formula id="pone.0168585.e002">
+<alternatives>
+<graphic id="pone.0168585.e002g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0168585.e002" xlink:type="simple"/>
+<mml:math display="block" id="M2">
+<mml:mrow><mml:mtext>Wt</mml:mtext><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mtext>Kg</mml:mtext></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mtext> </mml:mtext><mml:mo>=</mml:mo><mml:mtext> </mml:mtext><mml:mn>8.4227</mml:mn><mml:mtext> x </mml:mtext><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mo>−</mml:mo><mml:mn>2.7</mml:mn><mml:mtext> x </mml:mtext><mml:mn>0.08229</mml:mn><mml:mtext> x </mml:mtext><mml:mo>−</mml:mo><mml:mn>0.3521</mml:mn></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>+</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>^</mml:mo><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mn>1</mml:mn><mml:mo>/</mml:mo><mml:mo>−</mml:mo><mml:mn>0.3521</mml:mn></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mtext> </mml:mtext><mml:mo>=</mml:mo><mml:mtext> </mml:mtext><mml:mn>6.801</mml:mn><mml:mtext>kg</mml:mtext></mml:mrow>
+</mml:math>
+</alternatives>
+</disp-formula></p>
+<p>In this way populations were generated with a uniform distribution of height (60 to 110 cm) or age (6 to 59 months) and an equal number of males and females. The height and age distributions of the simulated populations were not adjusted to allow for death of children during these intervals or for variations in birth rate and growth of the population. No attempt was made to examine subgroups of children’s height or age to focus on those ages which experience a higher or lower prevalence of malnutrition; the randomly assigned Z-scores were thus evenly distributed across the age and height intervals of the simulated populations.</p>
+<p>To examine the effect of error in the WHZ, HAZ and MUAC/age random errors in the weight, height, age and MUAC were generated using the Mersenne Twister algorithm [<xref ref-type="bibr" rid="pone.0168585.ref027">27</xref>] in PopTools [<xref ref-type="bibr" rid="pone.0168585.ref028">28</xref>]. The random errors were then added to the “true” values of the simulated populations and compared with the distribution of the same population before the random errors were added. The added random errors all had a Gaussian distribution with a mean of zero. The standard deviation of the random errors was varied systematically to examine the effect of the magnitude of the error on the distribution of the anthropometric variable. The number of children that fall below the cut-off points for global acute malnutrition (GAM = moderate acute malnutrition + severe acute malnutrition), defined as &lt;-2.0 Z or MUAC of &lt;125 mm and the number that fall below the cut-off points for severe acute malnutrition (SAM) defined as &lt;-3.0 Z or a MUAC of &lt;115 mm were counted. Similar analyses were performed with height-for-age to determine the effects of errors in height and age in the prevalence of stunting in height.</p>
+<p>For each magnitude of the error, replicated error-populations were generated by adding the generated random error in weight to the “true” weight of the reference-population. The resulting Z-score of the children with the newly generated erroneous weights were then obtained using the formula:
+<disp-formula id="pone.0168585.e003">
+<alternatives>
+<graphic id="pone.0168585.e003g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0168585.e003" xlink:type="simple"/>
+<mml:math display="block" id="M3">
+<mml:mrow><mml:mtext>WHZ </mml:mtext><mml:mo>=</mml:mo><mml:mtext> </mml:mtext><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mtext>Wt</mml:mtext><mml:mo>/</mml:mo><mml:mtext>M</mml:mtext></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>^</mml:mo><mml:mtext>L</mml:mtext><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>/</mml:mo><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mtext>L x S</mml:mtext></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow>
+</mml:math>
+</alternatives>
+<label>(2)</label>
+</disp-formula></p>
+<p>Using the example above let us consider that the random error in one trial added to the weight of the 70 cm male child was +158g. The erroneous weight would then be 6.801 + 0.158kg = 6.959Kg. We solve the equation:
+<disp-formula id="pone.0168585.e004">
+<alternatives>
+<graphic id="pone.0168585.e004g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0168585.e004" xlink:type="simple"/>
+<mml:math display="block" id="M4">
+<mml:mrow><mml:mtext>WHZ </mml:mtext><mml:mo>=</mml:mo><mml:mtext> </mml:mtext><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mn>6.959</mml:mn><mml:mo>/</mml:mo><mml:mn>8.4227</mml:mn></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>^</mml:mo><mml:mo>−</mml:mo><mml:mn>0.3521</mml:mn><mml:mtext> </mml:mtext><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>/</mml:mo><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mo>−</mml:mo><mml:mn>0.3521</mml:mn><mml:mtext> x </mml:mtext><mml:mn>0.08229</mml:mn></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mtext> </mml:mtext><mml:mo>=</mml:mo><mml:mtext> </mml:mtext><mml:mo>−</mml:mo><mml:mn>2.4</mml:mn><mml:mtext> Z</mml:mtext><mml:mo>.</mml:mo></mml:mrow>
+</mml:math>
+</alternatives>
+</disp-formula></p>
+<p>Thus, we can conclude that, for this child, an error of plus 158 g has changed the calculated Z-score from -2.7 Z to -2.4 Z. Similarly if that child had been assigned an error of minus 204g then his erroneous Z score would have been -3.1 Z and he would have moved from having a diagnosis of moderate acute malnutrition to one of severe acute malnutrition.</p>
+<p>To examine the effects of an error in both height and in weight the same procedure was used to impose an error in weight, and a similar independent procedure was used to impose an error in the height of the individual children. As there were no intermediate LMS values between the 0.5 cm intervals for the heights of the children these were interpolated. The data from the 2020 children were individually pasted into the data entry spreadsheet of ENA for SMART software [<xref ref-type="bibr" rid="pone.0168585.ref029">29</xref>] (which has an interpolation algorithm incorporated to obtain values for children in intermediate heights) and the resultant WFH Z-scores generated.</p>
+<p>A modification was used to investigate the effects of an error in age. Because as a child gets older there is an increasing error in the reported age so that the age-error in a 6 month old child is likely to be much less than the age-error in a 5 year old child [<xref ref-type="bibr" rid="pone.0168585.ref017">17</xref>,<xref ref-type="bibr" rid="pone.0168585.ref018">18</xref>,<xref ref-type="bibr" rid="pone.0168585.ref030">30</xref>], the normally distributed random error imposed upon the age was multiplied by the true age divided by 12, before adding the age-error to the true age, using the formula:
+<disp-formula id="pone.0168585.e005">
+<alternatives>
+<graphic id="pone.0168585.e005g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0168585.e005" xlink:type="simple"/>
+<mml:math display="block" id="M5">
+<mml:mrow><mml:mtext>error x child’s age </mml:mtext><mml:mo>/</mml:mo><mml:mtext> </mml:mtext><mml:mn>12</mml:mn></mml:mrow>
+</mml:math>
+</alternatives>
+<label>(3)</label>
+</disp-formula></p>
+<p>All units are in months; “error” is the random error of age. Thus, for example, where the random number generator assigned an error of 1.20 months, this magnitude of error would only have been added specifically to a child of exactly 12 months of age. The age-error added to the true age of a 6 month old child would be 0.60 months, whereas, for a 4 year old child the added age-error would be 4.80 months (1.2 x 48/12 = 4.8). The height-for-age data sets were used to determine the effect of an error in age on the derived estimates of stunting prevalence.</p>
+<p>The effect of rounding was explored by dividing the weight by 1…n rounding the weight to the nearest 0.1 Kg and then multiplying the weight by 1…n to return the weight to its original magnitude rounded to “n” to emulate the effects of digit preference on the resulting Z-score.</p>
+</sec>
+<sec id="sec009">
+<title>Examination of the WHO database</title>
+<p>To examine the potential effect of measurement errors on published data, the prevalence of children having a weight-for-height of &lt;-2 Z and &lt;-3 Z were downloaded from the WHO global data base of malnutrition [<xref ref-type="bibr" rid="pone.0168585.ref031">31</xref>] using the NCHS references and not the new WHO<sub>2006</sub> data; nevertheless, these are used to illustrate the potential problems of error on estimates of country specific malnutrition. With a Gaussian distribution there is a unique mean and SD for every particular percentage of children &lt;-2 Z and &lt;-3 Z; i.e. there is a known relationship between the proportion of the population with GAM and SAM. The relationship between the proportions of children with WHZ and HAZ below -2Z and -3Z were plotted and compared graphically to the theoretical relationships that would obtain if the SD of the survey had been 0.8, 1.0 and 1.2.</p>
+</sec>
+</sec>
+<sec id="sec010" sec-type="results">
+<title>Results</title>
+<sec id="sec011">
+<title>Weight-for-height with weight measurement error</title>
+<p>To examine the effect of variation in the magnitude of error in weight on weight-for-height assessment 50 separate populations were generated, each with a mean WHZ if -0.6 Z and a standard deviation of about 1.0 Z (95%CI, 1.0008, 0.9992). Each survey had 50 replicate random errors imposed at each 100g interval (the maximum precision of the scales used in surveys) from 0 to 1000g. Thus, for each error 2500 results were considered (50 replicates of 50 individual surveys).</p>
+<p>The results of the errors in weight on the standard deviation, and prevalence of GAM and SAM of surveys with a mean of -0.6 Z and a standard deviation of 1.0 Z are shown in <xref ref-type="table" rid="pone.0168585.t002">Table 2</xref> and illustrated in Figs <xref ref-type="fig" rid="pone.0168585.g002">2</xref> to <xref ref-type="fig" rid="pone.0168585.g004">4</xref>. With each increase in the magnitude of the random error there is an increase in the width of the standard deviation of the distribution of Z-scores so that more and more children would be classified as having global acute malnutrition. The level at which WHO declares a “severe nutritional situation” is a prevalence of 10% GAM; &gt;15% is described as “critical” demanding immediate intervention [<xref ref-type="bibr" rid="pone.0168585.ref032">32</xref>]. In the present example where the true GAM was 8% a severe situation would be declared if there had been a random error of between 300 and 400g in weight measurement (<xref ref-type="fig" rid="pone.0168585.g003">Fig 3</xref>); if there was also an accompanying error in height measurement then the random error in weight would have needed to be much smaller to change the category of this population from “acceptable” to an “severe”.</p>
+<table-wrap id="pone.0168585.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0168585.t002</object-id>
+<label>Table 2</label> <caption><title>Effect of imposed random error in weight on distribution of weight-for-height.</title></caption>
+<alternatives>
+<graphic id="pone.0168585.t002g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0168585.t002" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">SD of error</th>
+<th align="center">SD-Z</th>
+<th align="center">GAM</th>
+<th align="center">SAM</th>
+</tr>
+<tr>
+<th align="center">g</th>
+<th align="center">Z</th>
+<th align="center">%</th>
+<th align="center">%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="char" char=".">1.000</td>
+<td align="char" char=".">8.01</td>
+<td align="char" char=".">0.87</td>
+</tr>
+<tr>
+<td align="center">100</td>
+<td align="char" char=".">1.008</td>
+<td align="char" char=".">8.23</td>
+<td align="char" char=".">0.92</td>
+</tr>
+<tr>
+<td align="center">200</td>
+<td align="char" char=".">1.031</td>
+<td align="char" char=".">8.81</td>
+<td align="char" char=".">1.12</td>
+</tr>
+<tr>
+<td align="center">300</td>
+<td align="char" char=".">1.069</td>
+<td align="char" char=".">9.70</td>
+<td align="char" char=".">1.49</td>
+</tr>
+<tr>
+<td align="center">400</td>
+<td align="char" char="." style="background-color:#FEECF2">1.119</td>
+<td align="char" char=".">10.73</td>
+<td align="char" char=".">2.00</td>
+</tr>
+<tr>
+<td align="center">500</td>
+<td align="char" char="." style="background-color:#FEECF2">1.182</td>
+<td align="char" char=".">12.06</td>
+<td align="char" char=".">2.75</td>
+</tr>
+<tr>
+<td align="center">600</td>
+<td align="char" char="." style="background-color:#FFCDE1">1.260</td>
+<td align="char" char=".">13.45</td>
+<td align="char" char=".">3.63</td>
+</tr>
+<tr>
+<td align="center">700</td>
+<td align="char" char="." style="background-color:#FFCDE1">1.338</td>
+<td align="char" char=".">14.74</td>
+<td align="char" char=".">4.55</td>
+</tr>
+<tr>
+<td align="center">800</td>
+<td align="char" char="." style="background-color:#FFCDE1">1.432</td>
+<td align="char" char=".">16.17</td>
+<td align="char" char=".">5.66</td>
+</tr>
+<tr>
+<td align="center">900</td>
+<td align="char" char="." style="background-color:#FFCDE1">1.535</td>
+<td align="char" char=".">17.43</td>
+<td align="char" char=".">6.78</td>
+</tr>
+<tr>
+<td align="center">1000</td>
+<td align="char" char="." style="background-color:#FFCDE1">1.647</td>
+<td align="char" char=".">18.96</td>
+<td align="char" char=".">8.05</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t002fn001"><p>Fifty replicates of 50 surveys, each with a mean of -0.6 Z and SD of 1.0 Z-score were generated and random error added to each survey. SDs of over 1.1 are shaded in light pink and those over 1.2 in pink.</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<fig id="pone.0168585.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0168585.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>Effect of imposed random error in weight on SD of the distribution of weight-for-height Z scores.</title>
+<p>The error bars are 95% confidence intervals. All results use WHO<sub>2006</sub> standards.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0168585.g002" xlink:type="simple"/>
+</fig>
+<fig id="pone.0168585.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0168585.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>Effect of imposed random error in weight on prevalence of global acute malnutrition (weight-for-height &lt;-2 Z).</title>
+<p>The error bars are 95% confidence intervals.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0168585.g003" xlink:type="simple"/>
+</fig>
+<fig id="pone.0168585.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0168585.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title>Effect of imposed random error in weight on prevalence of severe acute malnutrition (weight-for-height &lt;-3 Z).</title>
+<p>The error bars are 95% confidence intervals.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0168585.g004" xlink:type="simple"/>
+</fig>
+<p>The effect on severe acute malnutrition is even more pronounced (<xref ref-type="fig" rid="pone.0168585.g004">Fig 4</xref>) with an increase from less than 1% SAM to over 9% with the largest error investigated.</p>
+<p>During the imposition of the errors on the distribution, unexpectedly, it was noticed that there was a change in the mean value of the 50 test population surveys. This is shown in <xref ref-type="fig" rid="pone.0168585.g005">Fig 5</xref>. When the mean Z-score is negative, a further decrease in the mean Z-score of the population with imposed error will increase the observed or calculated prevalence of SAM and GAM in addition to the effect of an increase in the standard deviation of populations’ WHZ distribution. This effect on the mean, is generated from the fact that the WHO<sub>2006</sub> “Z-scores” are not actual multiples of the SDs of the population distribution of the 6 reference populations used by WHO to generate the 2006 standards, rather they are derived from the centiles of the population’s distribution and converted to so called “Z-scores” where the centile would fall on a normal distribution. Thus, the WHO’s “Z-scores” are not what is normally conceived as a Z-score in the statistical literature because the weight differences between 0 Z and -1 Z, -1 Z and -2 Z, -2 Z and -3 Z, etc. are all different. Thus, an imposed error has less effect upon the resulting change in WHZ if the error falls on a child near the median than if it falls on a child further from the median; as the population mean becomes more negative, an imposed positive error will have less effect on the distribution than an imposed negative error. The effect is relatively minor compared to the effect of increasing the magnitude of the error itself. However, the assumption, when using the WHO<sub>2006</sub> standards, that the mean value is not affected by a random measurement error is not correct. Thus, measurement error imposed in these circumstances has a slightly greater effect upon the calculated prevalence than would be the case with an increase in the width of the distribution alone.</p>
+<fig id="pone.0168585.g005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0168585.g005</object-id>
+<label>Fig 5</label>
+<caption>
+<title>Change in the population mean Z-score from 50 simulated surveys with an initial mean of -0.6 Z, with imposed measurement errors in weight.</title>
+<p>Error bars show 95% confidence intervals.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0168585.g005" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec012">
+<title>Effect of measurement error on the distribution of WHZ with different population mean WHZ</title>
+<p>In view of the change in the mean value with imposed error, weight-for-height surveys were constructed with means ranging from 0.0 Z to -1.0 Z. The SDs of the distributions are shown in <xref ref-type="fig" rid="pone.0168585.g006">Fig 6</xref> and the corresponding changes in GAM in <xref ref-type="fig" rid="pone.0168585.g007">Fig 7</xref>. There is an increase in the SD with the imposition of error as before; however, the rate of increase of the SD becomes greater as the mean of the distribution deviates progressively from 0.0 Z. This would not happen if the distribution of the WHO standard was truly Gaussian and is a consequence of slight difference in actual weight changes in the intervals 0.0 to -1.0Z, -1.0Z to -2.0Z etc. of the standards. Thus, with the WHO<sub>2006</sub> standards as a population becomes more malnourished the effect of measurement error is exaggerated. Nevertheless, the changes in SD with changing mean values for the population WHZ Z-scores is relatively small compared to the change that occurs with increasing error of the measurement.</p>
+<fig id="pone.0168585.g006" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0168585.g006</object-id>
+<label>Fig 6</label>
+<caption>
+<title>Effect of random error in weight, with no error in height, on the Change in SD of the WHZ distribution from 6 simulated surveys each with different population mean WHZ–Z-scores.</title>
+<p>The population mean WHZs were 0,-0.2,-0.4,-0.6,-0.8 and -1.0 Z.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0168585.g006" xlink:type="simple"/>
+</fig>
+<fig id="pone.0168585.g007" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0168585.g007</object-id>
+<label>Fig 7</label>
+<caption>
+<title>Effect of random error in weight, with no error in height, on the Change in GAM prevalence from 6 simulated surveys each with different population mean WHZ–Z-scores.</title>
+<p>The population means were 0 (bottom dashed line),-0.2,-0.4,-0.6,-0.8 and -1.0 Z (top solid line).</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0168585.g007" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec013">
+<title>Effect of “rounding” and digit preference</title>
+<p>In the same 50 simulated surveys, rounding was imposed on the true weight of the children as described in the methods section. The effects upon the distribution of the weights-for-height Z-scores are given in <xref ref-type="fig" rid="pone.0168585.g008">Fig 8</xref> and the resultant change in GAM and SAM is shown in <xref ref-type="table" rid="pone.0168585.t003">Table 3</xref>. There was an increase in the SD of the distribution of the Z-scores and the prevalence of GAM and SAM when the data were rounded to simulate digit preference. This increase in the SD and malnutrition prevalence was not as great as the increases seen with the imposition of a random error to the data.</p>
+<fig id="pone.0168585.g008" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0168585.g008</object-id>
+<label>Fig 8</label>
+<caption>
+<title>Effect of rounding/digit preference on the SD of WHZ distribution from 50 simulated surveys.</title>
+<p>The terminal digit of the weights of the children were manipulated using the excel formula: round(weight/n)*n to 0.1Kg where n varied from 1 to 10. The error bars are the 95% confidence intervals.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0168585.g008" xlink:type="simple"/>
+</fig>
+<table-wrap id="pone.0168585.t003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0168585.t003</object-id>
+<label>Table 3</label> <caption><title>Effect of rounding/digit preference of weight on the prevalence of GAM and SAM from 50 simulated surveys.</title></caption>
+<alternatives>
+<graphic id="pone.0168585.t003g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0168585.t003" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">Digit preference</th>
+<th align="center">GAM%</th>
+<th align="center">SAM%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="char" char=".">8.03</td>
+<td align="char" char=".">0.88</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="char" char=".">8.11</td>
+<td align="char" char=".">0.90</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="char" char=".">8.19</td>
+<td align="char" char=".">0.92</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="char" char=".">8.37</td>
+<td align="char" char=".">0.92</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="char" char=".">8.46</td>
+<td align="char" char=".">1.00</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="char" char=".">8.67</td>
+<td align="char" char=".">1.03</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="char" char=".">9.01</td>
+<td align="char" char=".">1.14</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="char" char=".">8.99</td>
+<td align="char" char=".">1.23</td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="char" char=".">9.21</td>
+<td align="char" char=".">1.32</td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="char" char=".">9.87</td>
+<td align="char" char=".">1.41</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t003fn001"><p>The weights of the children were manipulated using the excel formula: round(weight/n)*n to 0.1Kg.</p></fn>
+</table-wrap-foot>
+</table-wrap>
+</sec>
+<sec id="sec014">
+<title>Effect of measurement error in height, age and MUAC on the resulting distributions and resulting assessment of malnutrition</title>
+<p>The effects of random error in the measurement of height, age, weight and height combined and MUAC are shown in <xref ref-type="table" rid="pone.0168585.t004">Table 4</xref>. Each analysis was from a single representative simulated survey with a mean Z-score value of -1.0 Z and replicates of the imposed error term.</p>
+<table-wrap id="pone.0168585.t004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0168585.t004</object-id>
+<label>Table 4</label> <caption><title>Effect of random error in measurement of height, age, weight and height together and MUAC on the assessment of malnutrition.</title></caption>
+<alternatives>
+<graphic id="pone.0168585.t004g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0168585.t004" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center" colspan="4">SD of random imposed error</th>
+<th align="center">replicates</th>
+<th align="center">SD</th>
+<th align="center">&lt;-2 Z</th>
+<th align="center">&lt;-3 Z</th>
+</tr>
+<tr>
+<th align="center">Height</th>
+<th align="center">Weight</th>
+<th align="center">Age</th>
+<th align="center">MUAC</th>
+<th align="center"/>
+<th align="center"/>
+<th align="center"/>
+<th align="center"/>
+</tr>
+<tr>
+<th align="center">cm</th>
+<th align="center">g</th>
+<th align="center">mo</th>
+<th align="center">mm</th>
+<th align="center">#</th>
+<th align="center"/>
+<th align="center">%</th>
+<th align="center">%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" colspan="8"><bold>Height-for-age</bold></td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">-</td>
+<td align="center">0</td>
+<td align="center">-</td>
+<td align="center">50</td>
+<td align="char" char=".">1.000</td>
+<td align="char" char=".">15.97</td>
+<td align="char" char=".">2.13</td>
+</tr>
+<tr>
+<td align="center">0.5</td>
+<td align="center">-</td>
+<td align="center">0</td>
+<td align="center">-</td>
+<td align="center">50</td>
+<td align="char" char=".">1.012</td>
+<td align="char" char=".">16.13</td>
+<td align="char" char=".">2.25</td>
+</tr>
+<tr>
+<td align="center">1.0</td>
+<td align="center">-</td>
+<td align="center">0</td>
+<td align="center">-</td>
+<td align="center">50</td>
+<td align="char" char=".">1.047</td>
+<td align="char" char=".">16.82</td>
+<td align="char" char=".">2.61</td>
+</tr>
+<tr>
+<td align="center"><bold>1.5</bold></td>
+<td align="center"><bold>-</bold></td>
+<td align="center"><bold>0</bold></td>
+<td align="center">-</td>
+<td align="center">50</td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>1.102</bold></td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>18.28</bold></td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>3.30</bold></td>
+</tr>
+<tr>
+<td align="center"><bold>2.0</bold></td>
+<td align="center"><bold>-</bold></td>
+<td align="center"><bold>0</bold></td>
+<td align="center">-</td>
+<td align="center">50</td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>1.171</bold></td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>19.48</bold></td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>4.28</bold></td>
+</tr>
+<tr>
+<td align="center"><bold>2.5</bold></td>
+<td align="center"><bold>-</bold></td>
+<td align="center"><bold>0</bold></td>
+<td align="center">-</td>
+<td align="center">50</td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>1.262</bold></td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>21.21</bold></td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>5.51</bold></td>
+</tr>
+<tr>
+<td align="left" colspan="8"><bold>Height-for-age</bold><xref ref-type="table-fn" rid="t004fn001"><sup>a</sup></xref></td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">-</td>
+<td align="center">0</td>
+<td align="center">-</td>
+<td align="center">10</td>
+<td align="char" char=".">1.001</td>
+<td align="char" char=".">15.83</td>
+<td align="char" char=".">2.13</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">-</td>
+<td align="center">0.5</td>
+<td align="center">-</td>
+<td align="center">10</td>
+<td align="char" char=".">1.031</td>
+<td align="char" char=".">16.30</td>
+<td align="char" char=".">2.43</td>
+</tr>
+<tr>
+<td align="center"><bold>0</bold></td>
+<td align="center"><bold>-</bold></td>
+<td align="center"><bold>1</bold></td>
+<td align="center">-</td>
+<td align="center">10</td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>1.122</bold></td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>17.83</bold></td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>3.13</bold></td>
+</tr>
+<tr>
+<td align="center"><bold>0</bold></td>
+<td align="center"><bold>-</bold></td>
+<td align="center"><bold>1.5</bold></td>
+<td align="center">-</td>
+<td align="center">10</td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>1.258</bold></td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>19.93</bold></td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>4.08</bold></td>
+</tr>
+<tr>
+<td align="center"><bold>0</bold></td>
+<td align="center"><bold>-</bold></td>
+<td align="center"><bold>2</bold></td>
+<td align="center">-</td>
+<td align="center">10</td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>1.453</bold></td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>22.25</bold></td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>5.88</bold></td>
+</tr>
+<tr>
+<td align="center"><bold>0</bold></td>
+<td align="center"><bold>-</bold></td>
+<td align="center"><bold>2.5</bold></td>
+<td align="center">-</td>
+<td align="center">10</td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>1.686</bold></td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>24.37</bold></td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>7.88</bold></td>
+</tr>
+<tr>
+<td align="center"><bold>0</bold></td>
+<td align="center"><bold>-</bold></td>
+<td align="center"><bold>3</bold></td>
+<td align="center">-</td>
+<td align="center">10</td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>1.974</bold></td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>26.28</bold></td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>9.44</bold></td>
+</tr>
+<tr>
+<td align="left" colspan="8"><bold>Weight-for-height</bold></td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">50</td>
+<td align="char" char=".">1.004</td>
+<td align="char" char=".">16.14</td>
+<td align="char" char=".">2.57</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">50</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">50</td>
+<td align="char" char=".">1.007</td>
+<td align="char" char=".">16.23</td>
+<td align="char" char=".">2.64</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">100</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">50</td>
+<td align="char" char=".">1.013</td>
+<td align="char" char=".">16.30</td>
+<td align="char" char=".">2.68</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">150</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">50</td>
+<td align="char" char=".">1.024</td>
+<td align="char" char=".">16.51</td>
+<td align="char" char=".">2.80</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">200</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">50</td>
+<td align="char" char=".">1.039</td>
+<td align="char" char=".">16.99</td>
+<td align="char" char=".">2.99</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">250</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">50</td>
+<td align="char" char=".">1.059</td>
+<td align="char" char=".">17.42</td>
+<td align="char" char=".">3.30</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">300</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">50</td>
+<td align="char" char=".">1.081</td>
+<td align="char" char=".">17.94</td>
+<td align="char" char=".">3.67</td>
+</tr>
+<tr>
+<td align="center"><bold>0</bold></td>
+<td align="center"><bold>350</bold></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">50</td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>1.106</bold></td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>18.53</bold></td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>3.99</bold></td>
+</tr>
+<tr>
+<td align="center"><bold>0</bold></td>
+<td align="center"><bold>400</bold></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">50</td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>1.138</bold></td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>19.05</bold></td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>4.54</bold></td>
+</tr>
+<tr>
+<td align="center"><bold>0</bold></td>
+<td align="center"><bold>450</bold></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">50</td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>1.170</bold></td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>19.51</bold></td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>5.03</bold></td>
+</tr>
+<tr>
+<td align="center"><bold>0</bold></td>
+<td align="center"><bold>500</bold></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">50</td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>1.204</bold></td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>20.33</bold></td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>5.60</bold></td>
+</tr>
+<tr>
+<td align="left" colspan="8"><bold>Weight-for-height</bold></td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">20</td>
+<td align="char" char=".">1.000</td>
+<td align="char" char=".">16.14</td>
+<td align="char" char=".">2.38</td>
+</tr>
+<tr>
+<td align="center">0.5</td>
+<td align="center">100</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">20</td>
+<td align="char" char=".">1.018</td>
+<td align="char" char=".">16.81</td>
+<td align="char" char=".">2.74</td>
+</tr>
+<tr>
+<td align="center">1.0</td>
+<td align="center">200</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">20</td>
+<td align="char" char=".">1.069</td>
+<td align="char" char=".">17.80</td>
+<td align="char" char=".">3.44</td>
+</tr>
+<tr>
+<td align="center"><bold>1.5</bold></td>
+<td align="center"><bold>300</bold></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">20</td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>1.153</bold></td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>19.41</bold></td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>4.70</bold></td>
+</tr>
+<tr>
+<td align="center"><bold>2.0</bold></td>
+<td align="center"><bold>400</bold></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">20</td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>1.258</bold></td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>21.05</bold></td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>6.15</bold></td>
+</tr>
+<tr>
+<td align="center"><bold>2.5</bold></td>
+<td align="center"><bold>500</bold></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">20</td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>1.378</bold></td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>22.83</bold></td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>7.85</bold></td>
+</tr>
+<tr>
+<td align="left" colspan="8"><bold>MUAC-for-age</bold></td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">50</td>
+<td align="char" char=".">1.000</td>
+<td align="char" char=".">8.38</td>
+<td align="char" char=".">1.25</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">50</td>
+<td align="char" char=".">1.004</td>
+<td align="char" char=".">8.36</td>
+<td align="char" char=".">1.30</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">0</td>
+<td align="center">2</td>
+<td align="center">50</td>
+<td align="char" char=".">1.016</td>
+<td align="char" char=".">8.58</td>
+<td align="char" char=".">1.36</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">0</td>
+<td align="center">3</td>
+<td align="center">50</td>
+<td align="char" char=".">1.036</td>
+<td align="char" char=".">8.89</td>
+<td align="char" char=".">1.47</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">0</td>
+<td align="center">4</td>
+<td align="center">50</td>
+<td align="char" char=".">1.060</td>
+<td align="char" char=".">9.24</td>
+<td align="char" char=".">1.65</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">0</td>
+<td align="center">5</td>
+<td align="center">50</td>
+<td align="char" char=".">1.092</td>
+<td align="char" char=".">9.92</td>
+<td align="char" char=".">1.89</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><bold>0</bold></td>
+<td align="center"><bold>6</bold></td>
+<td align="center">50</td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>1.131</bold></td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>10.53</bold></td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>2.22</bold></td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><bold>0</bold></td>
+<td align="center"><bold>7</bold></td>
+<td align="center">50</td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>1.176</bold></td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>11.36</bold></td>
+<td align="char" char="." style="background-color:#FEECF2"><bold>2.65</bold></td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><bold>0</bold></td>
+<td align="center"><bold>8</bold></td>
+<td align="center">50</td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>1.226</bold></td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>12.05</bold></td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>3.09</bold></td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><bold>0</bold></td>
+<td align="center"><bold>9</bold></td>
+<td align="center">50</td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>1.281</bold></td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>13.11</bold></td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>3.70</bold></td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><bold>0</bold></td>
+<td align="center"><bold>10</bold></td>
+<td align="center">50</td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>1.340</bold></td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>14.05</bold></td>
+<td align="char" char="." style="background-color:#FFCDE1"><bold>4.23</bold></td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t004fn001"><p><sup>a</sup> For this analysis of age variation the random SD of the error was multiplied by age/12</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<p>The effect of an error in height measurement of 1.5cm is approximately the same as the effect of 350g error in weight. When there are errors in both weight and in height then the errors are additive and the resultant change in prevalence may be more pronounced. A positive or negative error in both weight and height will tend to cancel each other out (the child is both taller and heavier), whereas a negative error in one with a positive error in the other will magnify the error.</p>
+<p>Mother’s recall of age in most communities where surveys for malnutrition are conducted is probably subject to the greatest error and in nearly all surveys there is age “heaping” in the dataset to the nearest 6 and more particularly 12 months. The present analysis confirms that this has the greatest effect upon the calculated results. An error of only 1.5 months, for a 12 month old child (with proportionate errors in older and younger children), can raise the SD from 1.0 to above 1.2. The age is normally only assessed to the nearest month so that the estimate of stunting prevalence is particularly liable to overestimation because of errors of the reported age of the child. Even a random error of 3 months in a 12 month old child can change the assessment of severe stunting (Height-for-age) from 2.1% of children to 9.4% of children. This change in the reported prevalence due to random error is much greater than the expected error which will arise from other problems with the survey such as the sample size and a biased sampling frame, and is greater than the confidence intervals usually reported for HAZ. To this random error must be added any systematic error due to cultural practice of systematically rounding the age up or down, which would have the added effect of moving the mean of the whole distribution up or down. Where ages are rounded up so that the child will be recorded as older than the actual age, there will be an increase in the estimated prevalence of stunting added to the errors due to random error in age estimation. Where ages are rounded down the effect of random error will be mitigated.</p>
+<p>In assessment of malnutrition using MUAC it is recommended practice to use the absolute MUAC [<xref ref-type="bibr" rid="pone.0168585.ref032">32</xref>] rather than the WHO MUAC-for-age standards. For this reason the percent of children falling below the internationally agreed cut-off points for the assessment of global and severe malnutrition with an error in MUAC are given in <xref ref-type="table" rid="pone.0168585.t004">Table 4</xref>. It should be noted in this analysis that it is assumed that there is no error in age so that the change in prevalence is entirely due to the change in the accuracy with which the MUAC is measured and thus the error applies equally to absolute MUAC and MUAC-for-age.</p>
+<p>When using absolute MUAC, there is only a 10mm difference between normality (125mm) and severe malnutrition (&lt;115mm), and as an acceptable TEM is very difficult to achieve the effect of measurement error is likely to lead to many children being misclassified.</p>
+<p>With respect to the precision of the instruments used in anthropometry, errors in weight (300g to bring SD &gt;1.1 with 100g instrument precision) has a less effect than errors in height (1.5cm to bring SD&gt;1.1 with diurnal variation of 0.7cm and difficulties in measurements), MUAC (5mm to bring SD = 1.1, usual TEM of teams of about 4mm) and age (1month to bring SD&gt;1.1 with maximum precision of 1 month in most surveys) is by far the most problematic of all the measurements. With the exception of weight, the precision with which the other parameters can be measured is close to the maximum precision of the instruments used and errors of these measurements may account for most of the errors in survey data.</p>
+</sec>
+</sec>
+<sec id="sec015" sec-type="conclusions">
+<title>Discussion</title>
+<p>Our data show that with random error the distribution of each of the parameters that assess the prevalence of malnutrition widens and the numbers of children that fall into the tails of the distribution increases. There is always error of measurement. The observed distribution will always be wider than the true distribution and the prevalence of a condition depending upon a cut-off point defined by a “healthy” range will potentially be systematically overestimated, provided that the “healthy” range has been determined with a less random error than the survey. This appears to be a general phenomenon and our data confirms the theoretical effect of random measurement error and the magnitude of that effect on the quality of the data and consequently the results that will be reported from any survey measuring a continuous variable. This effect does not appear to be general knowledge among those conducting, analysing or interpreting such data. For example, one adviser to the humanitarian community, when asked how a survey could have a low standard deviation for WHZ responded that this could be due to measurement error [<xref ref-type="bibr" rid="pone.0168585.ref033">33</xref>]; such lack of knowledge is common and leads to data being accepted that should be used with circumspection or rejected.</p>
+<p>Since the 1930’s measurement errors have been recognised as important and attempts to measure and minimise such errors developed [<xref ref-type="bibr" rid="pone.0168585.ref034">34</xref>–<xref ref-type="bibr" rid="pone.0168585.ref036">36</xref>]. Nevertheless, even though many anthropometric surveys are of poor quality and have been heavily criticised [<xref ref-type="bibr" rid="pone.0168585.ref037">37</xref>,<xref ref-type="bibr" rid="pone.0168585.ref038">38</xref>], measurement error has rarely been invoked or considered as an important cause of misleading results. This is despite the previous recognition that random error can have an effect upon reported prevalence of an anthropometric deficit [<xref ref-type="bibr" rid="pone.0168585.ref039">39</xref>,<xref ref-type="bibr" rid="pone.0168585.ref040">40</xref>], and its incorporation in two recent survey manuals [<xref ref-type="bibr" rid="pone.0168585.ref040">40</xref>–<xref ref-type="bibr" rid="pone.0168585.ref042">42</xref>]. The imprecision with which the instruments are scaled for anthropometry is not thought to have a major effect on the results [<xref ref-type="bibr" rid="pone.0168585.ref008">8</xref>]. In none of the surveys analysed in our survey database [<xref ref-type="bibr" rid="pone.0168585.ref043">43</xref>] have the results of test-retest standardisation to determine the TEM been reported [<xref ref-type="bibr" rid="pone.0168585.ref002">2</xref>]. This is probably because such errors have commonly been thought to be “neutral” and surveyors have considered that such errors can be overcome by simply increasing the sample size. The present analysis shows that this is not the case. Measurement error can inflate the prevalence of a variable to an unacceptable degree and this is not ameliorated by increasing sample size. Consequently the estimates of the burden of diseases and even the definition of normal ranges of biological variables may be misleading. The errors caused by digit preference were found to be the basis for the “Pickering-Platt” controversy about the aetiology of hypertension and other measurement as well as sampling errors often lead to critical misinterpretation of epidemiological data [<xref ref-type="bibr" rid="pone.0168585.ref044">44</xref>].</p>
+<sec id="sec016">
+<title>Published survey data</title>
+<p>The present analysis shows that the effect of measurement error is not trivial, but can change a reported prevalence substantially; amounts that are far greater than the confidence intervals reported in many estimates of malnutrition prevalence. When relatively small scale surveys are conducted by International non-governmental organisations with intensive training and supervision of the staff and ensuring that the enumerators are not overburdened with excess home visits each day, the standard deviations of the WHZ are between 0.8 and 1.2 Z with 80% of them between 0.9 and 1.1 Z [<xref ref-type="bibr" rid="pone.0168585.ref045">45</xref>]. This constancy of the shape of the distribution is maintained even when the prevalence of malnutrition within the population increases to emergency levels. When larger and more complex surveys are considered, for example those included in the WHO database [<xref ref-type="bibr" rid="pone.0168585.ref031">31</xref>] or the DHS (Demographic and Health Surveys) surveys [<xref ref-type="bibr" rid="pone.0168585.ref046">46</xref>] the standard deviation is frequently greater than 1.2 leading to a higher reported prevalence of malnutrition than would be obtained with a focused survey using experienced staff and appropriate data cleaning methods. Although these inflated SDs could in some cases be due to subject heterogeneity it is unlikely that such heterogeneity affects all the populations analysed by Crowe et al. [<xref ref-type="bibr" rid="pone.0168585.ref046">46</xref>]; it is more likely that this effect is due to errors of measurement, recording or data entry.</p>
+<p>The implications of these findings are quite profound. <xref ref-type="fig" rid="pone.0168585.g009">Fig 9</xref> shows the data from the archival WHO Global Database on Child Growth and Malnutrition using NCHS standards for WHZ (wasting) and <xref ref-type="fig" rid="pone.0168585.g010">Fig 10</xref> shows the same results for HAZ (stunting). Each point represents one survey. The points would all fall on the solid line if the SD of the data was 1.0Z and outside the dashed lines if the SD of the data was &gt;1.2 Z or &lt;0.8. It is clear that for most of the surveys in the database the SD lies above the 1.2Z range and it is likely that in these surveys the prevalence of malnutrition is exaggerated. These data are used to calculate world-wide malnutrition rates and to inform policy and programs at national and international level. However, although publications based upon these data may have exaggerated the prevalence of malnutrition, it should be emphasised that estimates based on prevalence data are also likely to grossly underestimate the true seriousness of malnutrition globally and the numbers of children affected each year. This is because the incidence of malnutrition far exceeds its prevalence. The two effects may thus counterbalance each other, however the extent to which this is the case is unknown. The prevalence data has been used because there are no reliable incidence data.</p>
+<fig id="pone.0168585.g009" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0168585.g009</object-id>
+<label>Fig 9</label>
+<caption>
+<title>The relationship between GAM and SAM in 9,399 surveys reported in the archival WHO global database on child growth and malnutrition (NCHS standards).</title>
+<p>If the SD is 1.0 Z then all the surveys’ GAM/SAM ratios should lie upon the solid line, if the SD of the survey is between 0.8 Z and 1.2 Z then the data points should lie between the two dashed lines. Those surveys with points above the upper dashed line have an SD of greater than 1.2Z.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0168585.g009" xlink:type="simple"/>
+</fig>
+<fig id="pone.0168585.g010" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0168585.g010</object-id>
+<label>Fig 10</label>
+<caption>
+<title>The relationship between Global Stunting (&lt;-2Z HAZ) and Severe Stunting (&lt;-3HAZ) in 10,789 surveys reported in the archival WHO global database (NCHS standards).</title>
+<p>If the SD is 1.0 Z then all the surveys’ global stunting/Severe stunting ratios should lie upon the solid line, if the SD of the survey is between 0.8 Z and 1.2 Z then the data points should lie between the two dashed lines. Those surveys with points above the upper dashed line have an SD of greater than 1.2Z.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0168585.g010" xlink:type="simple"/>
+</fig>
+<p><xref ref-type="table" rid="pone.0168585.t005">Table 5</xref> shows the SDs of the anthropometric parameters of individual national surveys carried out in 15 West African countries using the guidelines for DHS and MICS (Multi-Indicator Cluster Survey) survey protocols compared to National Nutrition Surveys (NNS) conducted by national governments using SMART methodology [<xref ref-type="bibr" rid="pone.0168585.ref041">41</xref>, <xref ref-type="bibr" rid="pone.0168585.ref042">42</xref>]. The DHS and MICS surveys collect an enormous amount of data on many aspects of health, whereas the NNS surveys are focused on anthropometry with rigorous training, supervision, standardisation of each enumerator and plausibility testing of the overall data and of each team; very few additional variables are collected during a SMART survey in order to simplify training, maintain focus and avoid tiring the enumerator, child and family. Although the populations surveyed were the same, the SDs are significantly higher in each of the countries for the DHS &amp; MICS style surveys compared to the National nutrition surveys. This is consistent from country to country and for each indicator. It should be emphasised that the NNS surveys, each with an acceptable SD for WHZ, are also national surveys and therefore are likely to include a heterogeneous mix of subjects. It is not a valid criticism to ascribe the acceptable SD of the NGO’s small scale surveys to lack of subject heterogeneity.</p>
+<table-wrap id="pone.0168585.t005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0168585.t005</object-id>
+<label>Table 5</label> <caption><title>Comparison of standard deviations from individual National surveys using different survey protocols from West African Countries.</title></caption>
+<alternatives>
+<graphic id="pone.0168585.t005g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0168585.t005" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="2">Country</th>
+<th align="center" colspan="3">Weight-for-height<xref ref-type="table-fn" rid="t005fn005"><sup>d</sup></xref></th>
+<th align="center" colspan="3">Weight-for-age<xref ref-type="table-fn" rid="t005fn006"><sup>e</sup></xref></th>
+<th align="center" colspan="3">Height-for-age<xref ref-type="table-fn" rid="t005fn007"><sup>f</sup></xref></th>
+</tr>
+<tr>
+<th align="left">DHS<xref ref-type="table-fn" rid="t005fn002"><sup>a</sup></xref></th>
+<th align="left">MICS<xref ref-type="table-fn" rid="t005fn003"><sup>b</sup></xref></th>
+<th align="left">NNS<xref ref-type="table-fn" rid="t005fn004"><sup>c</sup></xref></th>
+<th align="left">DHS<xref ref-type="table-fn" rid="t005fn002"><sup>a</sup></xref></th>
+<th align="left">MICS<xref ref-type="table-fn" rid="t005fn003"><sup>b</sup></xref></th>
+<th align="left">NNS<xref ref-type="table-fn" rid="t005fn004"><sup>c</sup></xref></th>
+<th align="left">DHS<xref ref-type="table-fn" rid="t005fn002"><sup>a</sup></xref></th>
+<th align="left">MICS<xref ref-type="table-fn" rid="t005fn003"><sup>b</sup></xref></th>
+<th align="left">NNS<xref ref-type="table-fn" rid="t005fn004"><sup>c</sup></xref></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><bold>Benin</bold></td>
+<td align="char" char="." style="background-color:#FFEBF3">1.47</td>
+<td align="left"/>
+<td align="char" char="."><bold>1.09</bold></td>
+<td align="char" char="." style="background-color:#FFEBF3">1.39</td>
+<td align="left"/>
+<td align="char" char="."><bold>1.10</bold></td>
+<td align="char" char="." style="background-color:#FFC1DA">1.87</td>
+<td align="left"/>
+<td align="char" char="." style="background-color:#FFEBF3">1.36</td>
+</tr>
+<tr>
+<td align="left"><bold>Burkina Faso</bold></td>
+<td align="char" char="." style="background-color:#FFEBF3">1.42</td>
+<td align="char" char="." style="background-color:#FFC1DA">1.89</td>
+<td align="char" char="."><bold>1.07</bold></td>
+<td align="char" char="." style="background-color:#FFEBF3">1.44</td>
+<td align="char" char="." style="background-color:#FFD9E8">1.67</td>
+<td align="char" char="."><bold>1.06</bold></td>
+<td align="char" char="." style="background-color:#FFC1DA">1.91</td>
+<td align="char" char="." style="background-color:#FFC1DA">1.89</td>
+<td align="char" char="." style="background-color:#FFEBF3">1.21</td>
+</tr>
+<tr>
+<td align="left"><bold>CAR</bold></td>
+<td align="char" char="." style="background-color:#FFEBF3">1.29</td>
+<td align="char" char="."><bold>1.14</bold></td>
+<td align="char" char="."><bold>1.15</bold></td>
+<td align="char" char="." style="background-color:#FFEBF3">1.25</td>
+<td align="char" char="." style="background-color:#FFEBF3">1.24</td>
+<td align="char" char="." style="background-color:#FFEBF3">1.23</td>
+<td align="char" char="." style="background-color:#FFD9E8">1.60</td>
+<td align="char" char="." style="background-color:#FFD9E8">1.56</td>
+<td align="char" char="." style="background-color:#FFEBF3">1.48</td>
+</tr>
+<tr>
+<td align="left"><bold>Cameroon</bold></td>
+<td align="char" char="." style="background-color:#FFEBF3">1.23</td>
+<td align="char" char="." style="background-color:#FFEBF3">1.49</td>
+<td align="char" char="."><bold>1.20</bold></td>
+<td align="char" char="." style="background-color:#FFEBF3">1.20</td>
+<td align="char" char="." style="background-color:#FFEBF3">1.42</td>
+<td align="char" char="." style="background-color:#FFEBF3">1.25</td>
+<td align="char" char="." style="background-color:#FFD9E8">1.51</td>
+<td align="char" char="." style="background-color:#FFD9E8">1.77</td>
+<td align="char" char="." style="background-color:#FFD9E8">1.53</td>
+</tr>
+<tr>
+<td align="left"><bold>Chad</bold></td>
+<td align="char" char="." style="background-color:#FFEBF3">1.48</td>
+<td align="char" char="." style="background-color:#FFEBF3">1.44</td>
+<td align="char" char="."><bold>1.08</bold></td>
+<td align="char" char="." style="background-color:#FFEBF3">1.44</td>
+<td align="char" char="." style="background-color:#FFD9E8">1.51</td>
+<td align="char" char="."><bold>1.14</bold></td>
+<td align="char" char="." style="background-color:#FFD9E8">1.79</td>
+<td align="char" char="." style="background-color:#FFC1DA">2.09</td>
+<td align="char" char="." style="background-color:#FFEBF3">1.44</td>
+</tr>
+<tr>
+<td align="left"><bold>Gambia</bold></td>
+<td align="left"/>
+<td align="char" char="." style="background-color:#FFEBF3">1.22</td>
+<td align="char" char="."><bold>1.08</bold></td>
+<td align="left"/>
+<td align="char" char="." style="background-color:#FFEBF3">1.20</td>
+<td align="char" char="."><bold>1.08</bold></td>
+<td align="left"/>
+<td align="char" char="." style="background-color:#FFD9E8">1.55</td>
+<td align="char" char="." style="background-color:#FFEBF3">1.21</td>
+</tr>
+<tr>
+<td align="left"><bold>Guinea</bold></td>
+<td align="char" char="." style="background-color:#FFD9E8">1.58</td>
+<td align="char" char="." style="background-color:#FFC1DA">1.82</td>
+<td align="char" char="."><bold>1.07</bold></td>
+<td align="char" char="." style="background-color:#FFD9E8">1.52</td>
+<td align="char" char="." style="background-color:#FFEBF3">1.37</td>
+<td align="char" char="."><bold>1.19</bold></td>
+<td align="char" char="." style="background-color:#FFC1DA">2.01</td>
+<td align="char" char="." style="background-color:#FFC1DA">2.05</td>
+<td align="char" char="." style="background-color:#FFEBF3">1.35</td>
+</tr>
+<tr>
+<td align="left"><bold>Liberia</bold></td>
+<td align="char" char="." style="background-color:#FFEBF3">1.34</td>
+<td align="left"/>
+<td align="char" char="."><bold>1.12</bold></td>
+<td align="char" char="." style="background-color:#FFEBF3">1.35</td>
+<td align="left"/>
+<td align="char" char="."><bold>1.16</bold></td>
+<td align="char" char="." style="background-color:#FFC1DA">1.83</td>
+<td align="left"/>
+<td align="char" char="." style="background-color:#FFEBF3">1.46</td>
+</tr>
+<tr>
+<td align="left"><bold>Mali</bold></td>
+<td align="char" char="." style="background-color:#FFD9E8">1.55</td>
+<td align="left"/>
+<td align="char" char="."><bold>1.10</bold></td>
+<td align="char" char="." style="background-color:#FFD9E8">1.55</td>
+<td align="left"/>
+<td align="char" char="."><bold>1.12</bold></td>
+<td align="char" char="." style="background-color:#FFC1DA">2.10</td>
+<td align="left"/>
+<td align="char" char="." style="background-color:#FFEBF3">1.42</td>
+</tr>
+<tr>
+<td align="left"><bold>Mauritania</bold></td>
+<td align="left"/>
+<td align="char" char="." style="background-color:#FFEBF3">1.31</td>
+<td align="char" char="."><bold>1.07</bold></td>
+<td align="left"/>
+<td align="char" char="." style="background-color:#FFEBF3">1.32</td>
+<td align="char" char="."><bold>1.04</bold></td>
+<td align="left"/>
+<td align="char" char="." style="background-color:#FFD9E8">1.76</td>
+<td align="char" char="." style="background-color:#FFEBF3">1.25</td>
+</tr>
+<tr>
+<td align="left"><bold>Niger</bold></td>
+<td align="char" char="." style="background-color:#FFC1DA">2.15</td>
+<td align="char" char="." style="background-color:#FFEBF3">1.29</td>
+<td align="char" char="."><bold>1.10</bold></td>
+<td align="char" char="." style="background-color:#FFC1DA">1.85</td>
+<td align="char" char="." style="background-color:#FFEBF3">1.33</td>
+<td align="char" char="."><bold>1.18</bold></td>
+<td align="char" char="." style="background-color:#FFC1DA">2.47</td>
+<td align="char" char="." style="background-color:#FFD9E8">1.62</td>
+<td align="char" char="." style="background-color:#FFEBF3">1.41</td>
+</tr>
+<tr>
+<td align="left"><bold>Nigeria</bold></td>
+<td align="char" char="." style="background-color:#FFEBF3">1.24</td>
+<td align="char" char="." style="background-color:#FFEBF3">1.31</td>
+<td align="char" char="."><bold>1.19</bold></td>
+<td align="char" char="." style="background-color:#FFEBF3">1.21</td>
+<td align="char" char="." style="background-color:#FFEBF3">1.41</td>
+<td align="char" char="."><bold>1.12</bold></td>
+<td align="char" char="." style="background-color:#FFD9E8">1.57</td>
+<td align="char" char="." style="background-color:#FFC1DA">1.88</td>
+<td align="char" char="." style="background-color:#FFEBF3">1.38</td>
+</tr>
+<tr>
+<td align="left"><bold>Senegal</bold></td>
+<td align="char" char="." style="background-color:#FFEBF3">1.42</td>
+<td align="char" char="." style="background-color:#FFEBF3">1.28</td>
+<td align="char" char="."><bold>1.03</bold></td>
+<td align="char" char="." style="background-color:#FFEBF3">1.44</td>
+<td align="char" char="." style="background-color:#FFEBF3">1.35</td>
+<td align="char" char="."><bold>1.08</bold></td>
+<td align="char" char="." style="background-color:#FFD9E8">1.66</td>
+<td align="char" char="." style="background-color:#FFD9E8">1.69</td>
+<td align="char" char="." style="background-color:#FFEBF3">1.30</td>
+</tr>
+<tr>
+<td align="left"><bold>Sierra Leone</bold></td>
+<td align="char" char="." style="background-color:#FFD9E8">1.53</td>
+<td align="char" char="." style="background-color:#FFD9E8">1.58</td>
+<td align="char" char="."><bold>1.12</bold></td>
+<td align="char" char="." style="background-color:#FFD9E8">1.50</td>
+<td align="char" char="." style="background-color:#FFEBF3">1.42</td>
+<td align="char" char="."><bold>1.11</bold></td>
+<td align="char" char="." style="background-color:#FFC1DA">1.97</td>
+<td align="char" char="." style="background-color:#FFC1DA">1.88</td>
+<td align="char" char="." style="background-color:#FFEBF3">1.31</td>
+</tr>
+<tr>
+<td align="left"><bold>Togo</bold></td>
+<td align="char" char="." style="background-color:#FFD9E8">1.62</td>
+<td align="char" char="."><bold>1.05</bold></td>
+<td align="char" char="."><bold>1.03</bold></td>
+<td align="char" char="." style="background-color:#FFD9E8">1.52</td>
+<td align="char" char="."><bold>1.14</bold></td>
+<td align="char" char="."><bold>1.02</bold></td>
+<td align="char" char="." style="background-color:#FFC1DA">2.08</td>
+<td align="char" char="." style="background-color:#FFEBF3">1.34</td>
+<td align="char" char="."><bold>1.19</bold></td>
+</tr>
+<tr>
+<td align="left"><bold>MEAN</bold></td>
+<td align="char" char="."><bold>1.49</bold></td>
+<td align="char" char="."><bold>1.40</bold></td>
+<td align="char" char="."><bold>1.10</bold></td>
+<td align="char" char="."><bold>1.44</bold></td>
+<td align="char" char="."><bold>1.36</bold></td>
+<td align="char" char="."><bold>1.13</bold></td>
+<td align="char" char="."><bold>1.87</bold></td>
+<td align="char" char="."><bold>1.76</bold></td>
+<td align="char" char="."><bold>1.35</bold></td>
+</tr>
+<tr>
+<td align="left"><bold>SD</bold></td>
+<td align="char" char="."><bold>0.24</bold></td>
+<td align="char" char="."><bold>0.26</bold></td>
+<td align="char" char="."><bold>0.05</bold></td>
+<td align="char" char="."><bold>0.17</bold></td>
+<td align="char" char="."><bold>0.14</bold></td>
+<td align="char" char="."><bold>0.07</bold></td>
+<td align="char" char="."><bold>0.26</bold></td>
+<td align="char" char="."><bold>0.22</bold></td>
+<td align="char" char="."><bold>0.11</bold></td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t005fn001"><p>The data are from UNICEF West and Central African Regional Office, Unpublished report, “Report on the Quality of Anthropometric Data on Children’s Height and Weight in 100 Health and Nutrition Surveys in the West Central Africa Region”. CAR = Central African Republic. The increasing density of pink coloured shading shows results that are over 1.2, 1.5 and 1.8Z respectively.</p></fn>
+<fn id="t005fn002"><p><sup>a</sup> Demographic and Health Survey</p></fn>
+<fn id="t005fn003"><p><sup>b</sup> Multi-Indicator Cluster Survey</p></fn>
+<fn id="t005fn004"><p><sup>c</sup> National Nutrition Survey</p></fn>
+<fn id="t005fn005"><p><sup>d</sup> WHZ—highly significant ANOVA df 2,37, F = 15.0, p&lt;0.000; there is no difference between DHS and MICS p = 0.39</p></fn>
+<fn id="t005fn006"><p><sup>e</sup> WAZ -highly significant ANOVA df 2,37, F = 21.7, P&lt;0.000; there is no difference between DHS and MICS p = 0.27</p></fn>
+<fn id="t005fn007"><p><sup>f</sup> HAZ—highly significant ANOVA df 2,37, F = 25.8, p&lt;0.000; there is no difference between DHS and MICS, p = 0.24</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<p><xref ref-type="table" rid="pone.0168585.t006">Table 6</xref> shows the data from 100 DHS, MICS and NNS surveys. These data include surveys from additional countries and years from those shown in <xref ref-type="table" rid="pone.0168585.t005">Table 5</xref>. The prevalence of GAM and SAM derived from the mean of the observed SDs and also the prevalence that would have been reported had the SD been 1.0Z or 1.1Z are shown. For WHZ deficits the DHS and MICS surveys give about twice the prevalence than would have been reported if the surveys’ SDs were within the expected “good” range; for severe malnutrition the DHS and MICS surveys are close to ten times the expected values. With the NNS surveys the prevalences are within the acceptable range for WHZ. Weight-for-age and height-for-age values are higher which are probably due to difficulties in age determination; the discrepancy is much greater with the DHS and MICS surveys than the NNS surveys.</p>
+<table-wrap id="pone.0168585.t006" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0168585.t006</object-id>
+<label>Table 6</label> <caption><title>The GAM and SAM from 100 West African Surveys computed with the average observed SDs and prevalence that would obtain if the SD had been either 1.0Z or 1.1Z.</title></caption>
+<alternatives>
+<graphic id="pone.0168585.t006g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0168585.t006" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left">N</th>
+<th align="left">Mean Z</th>
+<th align="left">SD</th>
+<th align="left">SD obs</th>
+<th align="left">SD = 1.1</th>
+<th align="left">SD = 1</th>
+<th align="left">SD obs</th>
+<th align="left">SD = 1.1</th>
+<th align="left">SD = 1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" colspan="4"><bold>Weight-for-height</bold></td>
+<td align="center" colspan="3">Moderate (&lt;-2Z)</td>
+<td align="center" colspan="3">Severe (&lt;-3Z)</td>
+</tr>
+<tr>
+<td align="left">DHS<xref ref-type="table-fn" rid="t006fn002"><sup>a</sup></xref></td>
+<td align="center">45</td>
+<td align="center">-0.35</td>
+<td align="center">1.44</td>
+<td align="center"><bold>12.6</bold></td>
+<td align="center">6.7</td>
+<td align="center">5.0</td>
+<td align="center"><bold>3.3</bold></td>
+<td align="center">0.8</td>
+<td align="center">0.4</td>
+</tr>
+<tr>
+<td align="left">MICS<xref ref-type="table-fn" rid="t006fn003"><sup>b</sup></xref></td>
+<td align="center">28</td>
+<td align="center">-0.26</td>
+<td align="center">1.45</td>
+<td align="center"><bold>11.4</bold></td>
+<td align="center">5.6</td>
+<td align="center">4.1</td>
+<td align="center"><bold>2.9</bold></td>
+<td align="center">0.6</td>
+<td align="center">0.3</td>
+</tr>
+<tr>
+<td align="left">NNS<xref ref-type="table-fn" rid="t006fn004"><sup>c</sup></xref></td>
+<td align="center">27</td>
+<td align="center">-0.54</td>
+<td align="center">1.11</td>
+<td align="center"><bold>9.3</bold></td>
+<td align="center">9.2</td>
+<td align="center">7.2</td>
+<td align="center"><bold>1.3</bold></td>
+<td align="center">1.3</td>
+<td align="center">0.7</td>
+</tr>
+<tr>
+<td align="left" colspan="4"><bold>Weight-for-age</bold></td>
+<td align="center" colspan="3">Moderate (&lt;-2Z)</td>
+<td align="center" colspan="3">Severe (&lt;-3Z)</td>
+</tr>
+<tr>
+<td align="left">DHS<xref ref-type="table-fn" rid="t006fn002"><sup>a</sup></xref></td>
+<td align="center">45</td>
+<td align="center">-1.08</td>
+<td align="center">1.39</td>
+<td align="center"><bold>25.3</bold></td>
+<td align="center">20.0</td>
+<td align="center">17.8</td>
+<td align="center"><bold>8.3</bold></td>
+<td align="center">4.0</td>
+<td align="center">2.7</td>
+</tr>
+<tr>
+<td align="left">MICS<xref ref-type="table-fn" rid="t006fn003"><sup>b</sup></xref></td>
+<td align="center">28</td>
+<td align="center">-1.06</td>
+<td align="center">1.40</td>
+<td align="center"><bold>25.1</bold></td>
+<td align="center">19.7</td>
+<td align="center">17.4</td>
+<td align="center"><bold>8.3</bold></td>
+<td align="center">3.9</td>
+<td align="center">2.6</td>
+</tr>
+<tr>
+<td align="left">NNS<xref ref-type="table-fn" rid="t006fn004"><sup>c</sup></xref></td>
+<td align="center">27</td>
+<td align="center">-1.14</td>
+<td align="center">1.13</td>
+<td align="center"><bold>22.3</bold></td>
+<td align="center">21.7</td>
+<td align="center">19.5</td>
+<td align="center"><bold>5.0</bold></td>
+<td align="center">4.5</td>
+<td align="center">3.1</td>
+</tr>
+<tr>
+<td align="left" colspan="4"><bold>Height-for-age</bold></td>
+<td align="center" colspan="3">Moderate (&lt;-2Z)</td>
+<td align="center" colspan="3">Severe (&lt;-3Z)</td>
+</tr>
+<tr>
+<td align="left">DHS<xref ref-type="table-fn" rid="t006fn002"><sup>a</sup></xref></td>
+<td align="center">45</td>
+<td align="center">-1.40</td>
+<td align="center">1.80</td>
+<td align="center"><bold>37.0</bold></td>
+<td align="center">29.3</td>
+<td align="center">27.5</td>
+<td align="center"><bold>18.7</bold></td>
+<td align="center">7.3</td>
+<td align="center">5.5</td>
+</tr>
+<tr>
+<td align="left">MICS<xref ref-type="table-fn" rid="t006fn003"><sup>b</sup></xref></td>
+<td align="center">28</td>
+<td align="center">-1.46</td>
+<td align="center">1.82</td>
+<td align="center"><bold>38.4</bold></td>
+<td align="center">31.3</td>
+<td align="center">29.6</td>
+<td align="center"><bold>20.0</bold></td>
+<td align="center">8.1</td>
+<td align="center">6.2</td>
+</tr>
+<tr>
+<td align="left">NNS<xref ref-type="table-fn" rid="t006fn004"><sup>c</sup></xref></td>
+<td align="center">27</td>
+<td align="center">-1.35</td>
+<td align="center">1.36</td>
+<td align="center"><bold>31.7</bold></td>
+<td align="center">27.7</td>
+<td align="center">25.8</td>
+<td align="center"><bold>11.3</bold></td>
+<td align="center">6.7</td>
+<td align="center">4.9</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t006fn001"><p>Data are taken from: UNICEF West and Central African Regional Office, Unpublished report, “Report on the Quality of Anthropometric Data on Children’s Height and Weight in 100 Health and Nutrition Surveys in the West Central Africa Region”, 2014. The prevalence of global (&lt;-2Z) and acute (&lt;-3Z) wasting, underweight and stunting presented are calculated using the normal density function (“normdist”) in excel. Obs = observed mean survey SD.</p></fn>
+<fn id="t006fn002"><p><sup>a</sup> Demographic and Health Survey</p></fn>
+<fn id="t006fn003"><p><sup>b</sup> Multi-Indicator cluster Survey</p></fn>
+<fn id="t006fn004"><p><sup>c</sup> National Nutrition Survey (using SMART methodology)</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<p>The effect of a change in the SD from 0.8 to 1.6 upon the prevalence of Global malnutrition (wasting, stunting, MUAC-for-age) defined as a z-score of &lt;-2.0Z, with population means from -0.25Z to -1.0Z, is shown in <xref ref-type="fig" rid="pone.0168585.g011">Fig 11</xref>. Even within the “acceptable” range of survey results, 0.8 to 1.2, and a “good” range of 0.9 to 1.1, there are potential major changes in the prevalence computed from the raw survey data. Thus, with a mean Z-score of -0.75 Z an SD of 0.9 corresponds to a prevalence of 8.2% and an SD of 1.1 to a prevalence of 12.8%. Even within the “acceptable” range, the prevalence changes from 5.9% to 14.9%, a difference that moves the population from almost normal to a severe emergency situation. The corresponding change in severe malnutrition (&lt;-3.0Z) is shown in <xref ref-type="fig" rid="pone.0168585.g012">Fig 12</xref>. With a population mean Z-score of -1.0Z, an SD of 0.9 corresponds to a SAM rate of 1.3% whereas an SD of 1.1 gives a SAM rate of 3.5%—when the distribution is even more spread the prevalence rises alarmingly—at an SD of 1.6 the severe malnutrition rate exceeds 10%. This demonstrates the dramatic effect that measurement error can exert on reported results. Even within the acceptable range of survey data the SAM prevalence can vary by up to five fold. In our opinion reports from surveys with an SD of more than 1.2 are unreliable. The problems arise particularly with the estimate of SAM prevalence. These data are used to estimate the numbers of malnourished children that need to be treated and therefore the scale of the intervention that needs to be planned in terms of obtaining funds, procurement of supplies and deployment of trained staff.</p>
+<fig id="pone.0168585.g011" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0168585.g011</object-id>
+<label>Fig 11</label>
+<caption>
+<title>The percent of children with moderate malnutrition (&lt;-2.0 Z) with a change in the SD of a survey, based upon a Gaussian distribution.</title>
+<p>The mean Z of the distributions from top to bottom are -1.0 Z, -0.75 Z, -0.5 Z and -0.25 Z. The area representing an “acceptable” survey is given in light blue and a “good” survey in heavier blue.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0168585.g011" xlink:type="simple"/>
+</fig>
+<fig id="pone.0168585.g012" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0168585.g012</object-id>
+<label>Fig 12</label>
+<caption>
+<title>The percent of children with severe malnutrition (&lt;-3.0 Z) with a change in the SD of a survey, based upon a Gaussian distribution.</title>
+<p>The mean Z of the distributions from top to bottom are -1.0 Z, -0.75 Z, -0.5 Z and -0.25 Z. The area representing an “acceptable” survey is given in light blue and a “good” survey in heavier blue.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0168585.g012" xlink:type="simple"/>
+</fig>
+<p>An analysis of DHS and MICS shows elevated SD values with all of the mean SDs outside the acceptable range; none of mean SDs for any of the surveys was less than 1.0Z. In agreement with the data from West Africa, the 5th and 95th centiles of the SDs of 51 recent DHS surveys were HAZ 1.35–1.95; WAZ 1.17–1.46, and WHZ 1.08–1.50 [<xref ref-type="bibr" rid="pone.0168585.ref047">47</xref>]. Mei &amp; Grummer-Strawn conclude that they “concur with the WHO assertion that SD is in a relatively small range”. Figs <xref ref-type="fig" rid="pone.0168585.g011">11</xref> and <xref ref-type="fig" rid="pone.0168585.g012">12</xref> demonstrate that such “small” differences are not of little consequence but encompass potentially massive errors in the reported prevalence, particularly for severe malnutrition. Analysis of the NHANES data from the USA National surveys, which were enormous surveys of an undoubtedly heterogeneous population shows that despite the ethnic diversity and geographically large scale of these surveys, the SDs were all close to 1.0 Z. The DHS surveys are extensively used for research and direct funding decisions. Short et al. [<xref ref-type="bibr" rid="pone.0168585.ref048">48</xref>] identified 1117 peer reviewed publications based on these data and reported that the number based on the use of DHS data were highly correlated with trends in funding for health by the Government of the USA and globally.</p>
+<p>It is clear that even small changes in the SD of the distribution can have a profound effect upon the results obtained. Within the good range of SDs most values are likely to be reasonably reliable for moderate malnutrition; however, the effects of measurement error cannot be dismissed as trivial. These numbers are important. The prevalence of GAM and SAM are used internationally to declare an emergency and mobilise funds and other resources to provide humanitarian relief. Severe malnutrition is a much more lethal condition and is relatively expensive to treat; accurate estimation of the burden is critical to provide the products, staff and facilities to treat all the children with severe acute malnutrition. Overestimation is wasteful and diverts scarce resources from where they could more usefully be deployed.</p>
+</sec>
+<sec id="sec017">
+<title>Should we be concerned about measurement error?</title>
+<p>The whole of public health depends upon having reliable data. The question then arises as to whether random error is simply of theoretical interest or is of practical importance, and whether the differences are trivial or lead to major changes in perception, public health policy, the distribution of resources and the relative priority given to different countries and emergencies. We are aware of several surveys that clearly were misleading.</p>
+<list list-type="bullet">
+<list-item><p>A university in Asia did a large survey using its students in the capital city. They reported a SAM rate of 6% which was not in agreement with the Government’s survey which gave a prevalence of 1.3%. The SD of the University’s survey was 2.1 Z. Recalculation of the raw results using SMART flags and an SD of 1.0 gave a SAM rate of 1% which is within the confidence intervals of the national survey.</p></list-item>
+<list-item><p>In an East African country, two agencies did surveys in the same area from the same population at almost the same time. The International Agency reported a GAM rate of 20% (SD not reported) whereas the non-governmental organisation (NGO) reported 6% (SD 1.13).</p></list-item>
+<list-item><p>A large and complex survey was undertaken in an African country which gave a GAM rate of 19.8%; the WHZ SD was 1.59Z. As the result was questioned due to few malnourished children being admitted for treatment an NGO was asked to do a validation survey in the worst area of the original survey. They found a GAM rate of 4.8% with an SD of 1.03Z.</p></list-item>
+<list-item><p>In an East African country a survey was used to estimate that there were about 5,000 severely malnourished children were present in one large district needing immediate care. Mobile teams were established to scour the district for malnourished children and give relief. Over a 5 month period only 650 children were discovered with SAM in the whole district.</p></list-item>
+</list>
+<p>None of these cases were reported by the agencies involved. Each was caused by a poorly conducted, analysed, cleaned and reported anthropometric survey.</p>
+<p>Such problems are very rarely reported because of fears that they will affect careers, organisations’ reputations and funding. These surveys also influence National Governments and are used to demonstrate whether or not a country is meeting, or failing to meet, such milestones as the Millennium Development Goals (MDGs); this can impact their access to bi-lateral funds and is politically sensitive. In fact, it is possible that some MDGs could be thought to be met, with no change in the actual situation on the ground, simply from an improvement in the quality of surveys and a reduction of random errors of measurement as well as correction of other survey problems [<xref ref-type="bibr" rid="pone.0168585.ref037">37</xref>]. With a move towards regarding stunting in height (height-for-age) as a critical parameter of national nutritional health this becomes particularly problematic as the assessment of age is subject to relatively large errors in countries without accurate birth registration compared with measurements of weight, height and MUAC. By suppressing the reports, lessons are not learned so that the mistakes are repeated.</p>
+<p>Surveys are expensive and difficult to conduct with sufficient rigor to give reliable results. Teams are often recruited without any previous experience, are trained for a few days, often only in the class-room, but do not have to undergo any rigorous field evaluation or standardisation tests; they are often relatives or friends of the staff involved in organising the survey. The problems of conducting a reliable survey are many. They include problems of assessing population size, the topography, inaccessible areas, insecurity and physical threats to the teams, population movement, nomadic populations and sampling in urban areas and slums. If these difficulties are overcome and funds expended it is inexcusable to produce completely erroneous data because having arrived at the correct household the measurements were not taken with sufficient precision and accuracy to give valid estimates of the parameters of interest.</p>
+<p>There are many questions that policy makers require answered in order to organise services and use resources most efficiently. A survey provides the data to address those questions; it is the sensory nervous system of the government upon which the motor system depends. Calls to involve professional experts and having extensive training have largely gone unheeded [<xref ref-type="bibr" rid="pone.0168585.ref049">49</xref>]. We would advocate for Governments and Agencies to have permanent full-time survey teams employed that would undertake a whole range of different surveys in their populations, each focused on answering different sets of questions for which the various ministries require data. All technical staff improve with familiarity and practice, as the improvements of the technical errors from one survey to the next show [<xref ref-type="bibr" rid="pone.0168585.ref050">50</xref>]. The practice of recruiting large numbers of enumerators, most of whom have not been involved frequently in previous surveys, in multiple teams for several weeks or months at irregular intervals is bound to give erratic results, no matter how well they are trained over a short period of time. We consider such practice as unacceptable. The DHS’s commissioned evaluation states that “highly significant variation across interviewers is found in most surveys” [<xref ref-type="bibr" rid="pone.0168585.ref051">51</xref>].</p>
+</sec>
+<sec id="sec018">
+<title>Implications for data cleaning</title>
+<p>The question then arises as to how best to clean and analyse raw data from the field that is subject to random measurement, rounding, recording and data-entry error. The standard way recommended by WHO is only to exclude data considered to be biologically impossible and incompatible with life. This creates a very wide gate for all results that could possibly occur biologically to be included, even if they are in error. A few extreme values may be true but others are most likely to be errors. One major problem with identifying children with extreme values is the relatively small number of such subjects that are found in a survey with a manageable sample size. Thus, if we have 900 subjects in a survey and the true prevalence of SAM is 1%, then there are in fact only 9 actual children in the survey designated as having SAM. If in taking the 900 measurements of height or weight, 9 or more children’s data contain errors that would lead the children to be in the extreme tail of the distribution but not yet biologically impossible, those 9 children will also be classified as SAM, and effectively double the reported prevalence. The usual objective of a survey is to determine the prevalence of malnutrition in a defined population by selecting a representative sample of that population. Rather than include all biologically plausible values, we would want to exclude from analysis those measurements that are in error. Realistically this means excluding values that are much more likely to be errors than true values. This can be done statistically. If the population approximates a normal distribution then 99.8% of the children that are truly representative of the population should lie within ± 3.1 standard deviations of the mean of the population. In other words if there is a survey of 1000 children, on average, there will be 1 child with a Z score below and one child with a Z-score above the range of ± 3.1 SD from the mean of that population whose result is correct and that child is appropriately classified; the other children outside this range are much more likely to be errors of measurement, recording or data-entry than true values and should therefore be excluded from the analysis. More contentiously, even if more than one child’s measurements are accurate it could be argued that this child is unlikely to be representative of the population. If, for example, a child from a rich country with a weight for height of +2.1Z is visiting relatives in an impoverished country with a population mean weight-for-height of -1.0 Z and is by hazard included in the survey, then that child would not be representative of the population; alternatively, a particular child may have an inborn error of metabolism or a very rare disease which renders him unrepresentative of the population that is being surveyed.</p>
+<p>For these reasons it is strongly recommended that the “flags” used to clean the data should be set in relationship to the mean of the population under consideration not in relationship to values that are incompatible with life. When the different types of flags are compared the prevalence of malnutrition reported is less when using deviation from the population mean than using extreme values; the higher the standard deviation of the survey population’s Z score the larger the discrepancy between the two methods of cleaning the data [<xref ref-type="bibr" rid="pone.0168585.ref046">46</xref>]; this is a consequence of both the theory and the analysis presented herein.</p>
+<p>If a survey is thought to contain many errors of measurement, indicated by an excessive standard deviation, the present analysis suggests that the survey results should be rejected. However, this would be excessively wasteful of time and resources and potentially delay urgent action until reliable data is obtained. In theory, if the distribution is (approximately) Gaussian, there is a trivial change in the mean value of the data with random measurement, digit preference or rounding error. In these circumstances we can calculate the prevalence of GAM and SAM from the cumulative normal distribution function (probit) [<xref ref-type="bibr" rid="pone.0168585.ref003">3</xref>]; an SD range of 0.9 to 1.1 could be presented where the SD is still excessive after excluding flagged data. In this way surveys can be “rescued”. However, inferences should only be drawn with great caution because the data have been taken without sufficient training or care; a rapid, small-scale “validation” survey should be conducted and reported along with the “rescued” main survey. We would suggest that the confidence intervals which are calculated conventionally from the relative proportions above and below the cut-off should always be compared with calculated estimates, and if possible a correction made for the technical errors of the measurements. Nevertheless, the report should make it clear that the data need to be interpreted with circumspection.</p>
+</sec>
+<sec id="sec019">
+<title>Reporting</title>
+<p>Apart from reporting the results of the survey, all reports should also include the following information: the results of standardisation tests: the numbers of subjects excluded with the various flagging methods; the age and sex distribution of the subjects; the distribution of the data; and, the mean and SD of the parametric data collected in the survey. The raw uncleaned data should be made available for external evaluation and for research purposes.</p>
+</sec>
+</sec>
+<sec id="sec020" sec-type="conclusions">
+<title>Conclusion</title>
+<p>Measurement error is always present and will inflate the number of cases below a cut-off point in the tail of a distribution. With anthropometry even relatively small errors can increase the reported prevalence of malnutrition substantially. This has implications for prioritising resources to areas with the highest prevalence and for how the data is analysed and reported.</p>
+<p>Measurement error can also misclassify individual children that are referred for treatment, but this is likely to lead to more children being included than excluded and therefore does not represent a threat to individuals screened for treatment programs.</p>
+</sec>
+</body>
+<back>
+<glossary>
+<title>Abbreviations</title>
+<def-list>
+<def-item><term>GAM</term>
+<def><p>global acute malnutrition</p></def>
+</def-item>
+<def-item><term>HAZ</term>
+<def><p>height-for-age Z-score</p></def>
+</def-item>
+<def-item><term>LMS</term>
+<def><p>lambda-mu-sigma, statistical parameters in constructing density curves</p></def>
+</def-item>
+<def-item><term>MUAC</term>
+<def><p>mid-upper arm circumference</p></def>
+</def-item>
+<def-item><term>MUACage</term>
+<def><p>MUAC-for-age</p></def>
+</def-item>
+<def-item><term>SAM</term>
+<def><p>severe acute malnutrition</p></def>
+</def-item>
+<def-item><term>SD</term>
+<def><p>standard deviation</p></def>
+</def-item>
+<def-item><term>SD<sup>2</sup></term>
+<def><p>observed variance</p></def>
+</def-item>
+<def-item><term>TEM</term>
+<def><p>technical error of the measurement</p></def>
+</def-item>
+<def-item><term>TEM<sup>2</sup></term>
+<def><p>variance of the TEM</p></def>
+</def-item>
+<def-item><term>WAZ</term>
+<def><p>weight-for-age Z-score</p></def>
+</def-item>
+<def-item><term>WHZ</term>
+<def><p>weight-for-height Z-score</p></def>
+</def-item>
+</def-list>
+</glossary>
+<ref-list>
+<title>References</title>
+<ref id="pone.0168585.ref001"><label>1</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ulijaszek</surname> <given-names>SJ</given-names></name>, <name name-style="western"><surname>Lourie</surname> <given-names>JA</given-names></name>. <article-title>Anthropometry in health assessment: the importance of measurement error</article-title>. <source>Coll Antropol</source>. <year>1997</year>;<volume>21</volume>: <fpage>429</fpage>–<lpage>438</lpage>. <object-id pub-id-type="pmid">9439059</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref002"><label>2</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ulijaszek</surname> <given-names>SJ</given-names></name>, <name name-style="western"><surname>Kerr</surname> <given-names>DA</given-names></name>. <article-title>Anthropometric measurement error and the assessment of nutritional status</article-title>. <source>Br J Nutr</source>. <year>1999</year>;<volume>82</volume>: <fpage>165</fpage>–<lpage>177</lpage>. <object-id pub-id-type="pmid">10655963</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref003"><label>3</label><mixed-citation publication-type="other" xlink:type="simple">World Health Organization. Physical status: the use and interpretation of anthropometry. Geneva; 1995. WHO technical report series 854.</mixed-citation></ref>
+<ref id="pone.0168585.ref004"><label>4</label><mixed-citation publication-type="book" xlink:type="simple"><collab>World Health Organisation</collab>. <source>WHO Child Growth Standards: Methods and development: Length/height-for-age, weight-for-age, weight-for-length, weight-for-height and body mass index-for-age</source>. <publisher-loc>Geneva</publisher-loc>, <year>2006</year>. <publisher-name>World Health Organisation</publisher-name>. <ext-link ext-link-type="uri" xlink:href="http://www.who.int/childgrowth/publications/technical_report_pub/en/index.html" xlink:type="simple">http://www.who.int/childgrowth/publications/technical_report_pub/en/index.html</ext-link>.</mixed-citation></ref>
+<ref id="pone.0168585.ref005"><label>5</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Himes</surname> <given-names>JH</given-names></name>. <article-title>Reliability of anthropometric methods and replicate measurements</article-title>. <source>Am J Phys Anthropol</source>. <year>1989</year>;<volume>79</volume>: <fpage>77</fpage>–<lpage>80</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/ajpa.1330790108" xlink:type="simple">10.1002/ajpa.1330790108</ext-link></comment> <object-id pub-id-type="pmid">2750880</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref006"><label>6</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Harris</surname> <given-names>EF</given-names></name>, <name name-style="western"><surname>Smith</surname> <given-names>RN</given-names></name>. <article-title>Accounting for measurement error: a critical but often overlooked process</article-title>. <source>Archives of Oral Biology</source>. <year>2009</year>;<volume>54</volume>: <fpage>S107</fpage>–<lpage>S117</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.archoralbio.2008.04.010" xlink:type="simple">10.1016/j.archoralbio.2008.04.010</ext-link></comment> <object-id pub-id-type="pmid">18674753</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref007"><label>7</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kouchi</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Mochimaru</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Tsuzuki</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Yokoi</surname> <given-names>T</given-names></name>. <article-title>Random errors in anthropometry</article-title>. <source>J Human Ergology</source>. <year>1996</year>;<volume>25</volume>: <fpage>155</fpage>–<lpage>166</lpage>.</mixed-citation></ref>
+<ref id="pone.0168585.ref008"><label>8</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bairagi</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Chowdhury</surname> <given-names>MK</given-names></name>. <article-title>On error due to graduation of scaling for anthropometry</article-title>. <source>Am J Phys Anthropol</source>. <year>1982</year>;<volume>58</volume>: <fpage>331</fpage>–<lpage>333</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/ajpa.1330580311" xlink:type="simple">10.1002/ajpa.1330580311</ext-link></comment> <object-id pub-id-type="pmid">7124926</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref009"><label>9</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Onis</surname> <given-names>M</given-names></name>. <article-title>WHO Child Growth Standards based on length/height, weight and age</article-title>. <source>Acta Paediatr</source>. <year>2006</year>;<volume>95</volume>: <fpage>76</fpage>–<lpage>85</lpage>.</mixed-citation></ref>
+<ref id="pone.0168585.ref010"><label>10</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Siklar</surname> <given-names>Z</given-names></name>, <name name-style="western"><surname>Sanli</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Dallar</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Tanyer</surname> <given-names>G</given-names></name>. <article-title>Diurnal variation of height in children</article-title>. <source>Pediatrics International</source>. <year>2005</year>;<volume>47</volume>: <fpage>645</fpage>–<lpage>648</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1442-200x.2005.02144.x" xlink:type="simple">10.1111/j.1442-200x.2005.02144.x</ext-link></comment> <object-id pub-id-type="pmid">16354217</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref011"><label>11</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Mueller</surname> <given-names>WH</given-names></name>, <name name-style="western"><surname>Martorell</surname> <given-names>R</given-names></name>. <chapter-title>Reliability and accuracy of measurement</chapter-title>. In: <name name-style="western"><surname>Lohman</surname> <given-names>TG</given-names></name>, <name name-style="western"><surname>Roche</surname> <given-names>AF</given-names></name>, <name name-style="western"><surname>Martorell</surname> <given-names>R</given-names></name>, editors. <source>Anthropometric standardization reference manual</source>, <year>1988</year>. <publisher-loc>Champaign, Illinois</publisher-loc>: <publisher-name>Home Kinetics Books</publisher-name>. pp. <fpage>83</fpage>–<lpage>86</lpage>.</mixed-citation></ref>
+<ref id="pone.0168585.ref012"><label>12</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lipman</surname> <given-names>TH</given-names></name>, <name name-style="western"><surname>Hench</surname> <given-names>KD</given-names></name>, <name name-style="western"><surname>Benyi</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Delaune</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Gilluly</surname> <given-names>KA</given-names></name>, <name name-style="western"><surname>Johnson</surname> <given-names>L</given-names></name>, <etal>et al</etal>. <article-title>A multicentre randomised controlled trial of an intervention to improve the accuracy of linear growth measurement</article-title>. <source>Arch Dis Child</source>. <year>2004</year>;<volume>89</volume>: <fpage>342</fpage>–<lpage>346</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1136/adc.2003.030072" xlink:type="simple">10.1136/adc.2003.030072</ext-link></comment> <object-id pub-id-type="pmid">15033843</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref013"><label>13</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dunlop</surname> <given-names>JC</given-names></name>. <article-title>Misstatement of Age in the Returns of the Census of Scotland</article-title>. <source>Journal of the Royal Statistical Society</source>. <year>1923</year>;<volume>86</volume>: <fpage>547</fpage>–<lpage>569</lpage>.</mixed-citation></ref>
+<ref id="pone.0168585.ref014"><label>14</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Seng</surname> <given-names>YP</given-names></name>. <article-title>Errors in age reporting in statistically underdeveloped countries: With special reference to the Chinese population of Singapore</article-title>. <source>Population Studies</source>. <year>1959</year>;<volume>13</volume>: <fpage>164</fpage>–<lpage>182</lpage>.</mixed-citation></ref>
+<ref id="pone.0168585.ref015"><label>15</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Caldwell</surname> <given-names>JC</given-names></name>. <article-title>Study of age misstatement among young children in Ghana</article-title>. <source>Demography</source>. <year>1966</year>;<volume>3</volume>: <fpage>477</fpage>–<lpage>490</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2307/2060173" xlink:type="simple">10.2307/2060173</ext-link></comment> <object-id pub-id-type="pmid">21318718</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref016"><label>16</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bairagi</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Aziz</surname> <given-names>KM</given-names></name>, <name name-style="western"><surname>Chowdhury</surname> <given-names>MK</given-names></name>, <name name-style="western"><surname>Edmonston</surname> <given-names>B</given-names></name>. <article-title>Age misstatement for young children in rural Bangladesh</article-title>. <source>Demography</source>. <year>1982</year>;<volume>19</volume>: <fpage>447</fpage>–<lpage>458</lpage>. <object-id pub-id-type="pmid">7173466</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref017"><label>17</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bairagi</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Edmonston</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Khan</surname> <given-names>AD</given-names></name>. <article-title>Effects of age misstatement on the utility of age-dependent anthropometric indicators of nutritional status in rural Bangladesh</article-title>. <source>Am J Public Health</source>. <year>1987</year>;<volume>77</volume>: <fpage>280</fpage>–<lpage>282</lpage>. <object-id pub-id-type="pmid">3812830</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref018"><label>18</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Edmonston</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Bairagi</surname> <given-names>R</given-names></name>. <article-title>Errors in age reporting in Bengali populations</article-title>. <source>Rural Demogr</source>. <year>1981</year>;<volume>8</volume>: <fpage>63</fpage>–<lpage>87</lpage>. <object-id pub-id-type="pmid">12338519</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref019"><label>19</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lozy</surname> <given-names>M</given-names></name>. <article-title>Computer simulation of the effects of errors in birth registration on age-dependent anthropometric methods</article-title>. <source>Am J Clin Nutr</source>. <year>1976</year>;<volume>29</volume>: <fpage>585</fpage>–<lpage>590</lpage>. <object-id pub-id-type="pmid">1266796</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref020"><label>20</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Oshaug</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Pedersen</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Diarra</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Bendech</surname> <given-names>MA</given-names></name>, <name name-style="western"><surname>Hatloy</surname> <given-names>A</given-names></name>. <article-title>Problems and pitfalls in the use of estimated age in anthropometric measurements of children from 6 to 60 months of age: a case from Mali</article-title>. <source>J Nutr</source>. <year>1994</year>;<volume>124</volume>: <fpage>636</fpage>–<lpage>644</lpage>. <object-id pub-id-type="pmid">8169655</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref021"><label>21</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Swee-Hock</surname> <given-names>S</given-names></name>. <article-title>Errors in Chinese age statistics</article-title>. <source>Demography</source>. <year>1967</year>;<volume>4</volume>: <fpage>859</fpage>–<lpage>875</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2307/2060325" xlink:type="simple">10.2307/2060325</ext-link></comment> <object-id pub-id-type="pmid">21318696</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref022"><label>22</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bairagi</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Edmonston</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Hye</surname> <given-names>A</given-names></name>. <article-title>The influence of nutritional status on age misstatement for young children in rural Bangladesh</article-title>. <source>Genus</source>. <year>1991</year>;<volume>47</volume>: <fpage>193</fpage>–<lpage>204</lpage>. <object-id pub-id-type="pmid">12284822</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref023"><label>23</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>de Onis</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Onyango</surname> <given-names>AW</given-names></name>, <name name-style="western"><surname>Van den Broeck</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Chumlea</surname> <given-names>CW</given-names></name>, <name name-style="western"><surname>Martorell</surname> <given-names>R</given-names></name>. <article-title>Measurement and standardization protocols for anthropometry used in the construction of a new international growth reference</article-title>. <source>Food Nutr Bull</source>. <year>2004</year>;<volume>25</volume>: <fpage>S27</fpage>–<lpage>S36</lpage>. <object-id pub-id-type="pmid">15069917</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref024"><label>24</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hessel</surname> <given-names>PA</given-names></name>. <article-title>Terminal digit preference in blood pressure measurements: effects on epidemiological associations</article-title>. <source>Int J Epidemiol</source>. <year>1986</year>;<volume>15</volume>: <fpage>122</fpage>–<lpage>125</lpage>. <object-id pub-id-type="pmid">3957533</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref025"><label>25</label><mixed-citation publication-type="journal" xlink:type="simple"><collab>World Health Organisation</collab>. <article-title>Reliability of anthropometric measurements in the WHO Multicentre Growth Reference Study</article-title>. <source>Acta Paediatr Scand suppl</source>. <year>2006</year>;<volume>450</volume>: <fpage>38</fpage>–<lpage>46</lpage>.</mixed-citation></ref>
+<ref id="pone.0168585.ref026"><label>26</label><mixed-citation publication-type="other" xlink:type="simple">World Health Organisation. The WHO Child Growth Standards. 2016. <ext-link ext-link-type="uri" xlink:href="http://www.who.int/childgrowth/standards/en/" xlink:type="simple">http://www.who.int/childgrowth/standards/en/</ext-link>.</mixed-citation></ref>
+<ref id="pone.0168585.ref027"><label>27</label><mixed-citation publication-type="other" xlink:type="simple">Matsumoto M, Nishimura T. Mersenne Twister algorthms. 2016. <ext-link ext-link-type="uri" xlink:href="http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html" xlink:type="simple">http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html</ext-link>.</mixed-citation></ref>
+<ref id="pone.0168585.ref028"><label>28</label><mixed-citation publication-type="other" xlink:type="simple">Hood GM. PopTools version 3.2.5. Canberra, Australia. 2016. <ext-link ext-link-type="uri" xlink:href="http://www.poptools.org" xlink:type="simple">http://www.poptools.org</ext-link>.</mixed-citation></ref>
+<ref id="pone.0168585.ref029"><label>29</label><mixed-citation publication-type="other" xlink:type="simple">Erhardt J, Golden MH, Seaman J, Bilukha O. ENA for SMART 2016. <ext-link ext-link-type="uri" xlink:href="http://www.nutrisurvey.de/ena/ena.html" xlink:type="simple">http://www.nutrisurvey.de/ena/ena.html</ext-link>.</mixed-citation></ref>
+<ref id="pone.0168585.ref030"><label>30</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Byerlee</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Terera</surname> <given-names>G</given-names></name>. <article-title>Factors Affecting Reliability in Age Estimation in Rural West Africa: A Statistical Analysis</article-title>. <source>Population Studies</source>. <year>1981</year>;<volume>35</volume>: <fpage>455</fpage>–<lpage>465</lpage>.</mixed-citation></ref>
+<ref id="pone.0168585.ref031"><label>31</label><mixed-citation publication-type="book" xlink:type="simple"><collab>World Health Organisation</collab>. <source>WHO Global Database on Child Growth and Malnutrition</source>. <year>2016</year>. <ext-link ext-link-type="uri" xlink:href="http://www.who.int/nutgrowthdb/database/countries/en/" xlink:type="simple">http://www.who.int/nutgrowthdb/database/countries/en/</ext-link>.</mixed-citation></ref>
+<ref id="pone.0168585.ref032"><label>32</label><mixed-citation publication-type="book" xlink:type="simple"><collab>World Health Organization</collab>. <source>The Management of nutrition in major emergencies</source>. <year>2000</year>. <ext-link ext-link-type="uri" xlink:href="http://www.who.int/nutrition/publications/emergencies/9241545208/en/" xlink:type="simple">http://www.who.int/nutrition/publications/emergencies/9241545208/en/</ext-link>.</mixed-citation></ref>
+<ref id="pone.0168585.ref033"><label>33</label><mixed-citation publication-type="other" xlink:type="simple">Myatt M. Response to: When the survey SD value is out of acceptable range, especially &lt; 0.8. 2004 April. <ext-link ext-link-type="uri" xlink:href="http://www.en-net.org/question/1332.aspx" xlink:type="simple">http://www.en-net.org/question/1332.aspx</ext-link>.</mixed-citation></ref>
+<ref id="pone.0168585.ref034"><label>34</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dawson</surname> <given-names>HL</given-names></name>, <name name-style="western"><surname>Stoddard</surname> <given-names>GD</given-names></name>. <article-title>Physical Growth from Birth to Puberty</article-title>. <source>Review of Educational Research</source>. <year>1933</year>;<volume>3</volume>: <fpage>130</fpage>–<lpage>149</lpage>.</mixed-citation></ref>
+<ref id="pone.0168585.ref035"><label>35</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bakwin</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Bakwin</surname> <given-names>RM</given-names></name>. <article-title>Body build in infants: I. The technique of measuring the external dimensions of the body in infants</article-title>. <source>J Clin Invest</source>. <year>1931</year>;<volume>10</volume>: <fpage>369</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1172/JCI100357" xlink:type="simple">10.1172/JCI100357</ext-link></comment> <object-id pub-id-type="pmid">16693985</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref036"><label>36</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bayley</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Davis</surname> <given-names>FC</given-names></name>. <article-title>Growth changes in bodily size and proportions during the first three years: A developmental study of sixty-one children by repeated measurements</article-title>. <source>Biometrika</source>. <year>1935</year>;<volume>27</volume>: <fpage>26</fpage>–<lpage>87</lpage>.</mixed-citation></ref>
+<ref id="pone.0168585.ref037"><label>37</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Prudhon</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Spiegel</surname> <given-names>PB</given-names></name>. <article-title>A review of methodology and analysis of nutrition and mortality surveys conducted in humanitarian emergencies from October 1993 to April 2004</article-title>. <source>Emerg Themes Epidemiol</source>. <year>2007</year>;<volume>4</volume>: <fpage>10</fpage>–<lpage>21</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/1742-7622-4-10" xlink:type="simple">10.1186/1742-7622-4-10</ext-link></comment> <object-id pub-id-type="pmid">17543104</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref038"><label>38</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Spiegel</surname> <given-names>PB</given-names></name>, <name name-style="western"><surname>Salama</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Maloney</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>van der Veen</surname> <given-names>A</given-names></name>. <article-title>Quality of malnutrition assessment surveys conducted during famine in Ethiopia</article-title>. <source>JAMA</source>. <year>2004</year>;<volume>292</volume>: <fpage>613</fpage>–<lpage>618</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1001/jama.292.5.613" xlink:type="simple">10.1001/jama.292.5.613</ext-link></comment> <object-id pub-id-type="pmid">15292087</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref039"><label>39</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bairagi</surname> <given-names>R</given-names></name>. <article-title>Effects of bias and random error in anthropometry and in age on estimation of malnutrition</article-title>. <source>Am J Epidemiol</source>. <year>1986</year>;<volume>123</volume>: <fpage>185</fpage>–<lpage>191</lpage>. <object-id pub-id-type="pmid">3079629</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref040"><label>40</label><mixed-citation publication-type="other" xlink:type="simple">Kostermans K. Assessing the quality of anthropometric data: Background and Illustrated Guidelines for Survey Managers. Living Standards Measurement Study Working paper 101. The World Bank: Washington, D.C. 1993.</mixed-citation></ref>
+<ref id="pone.0168585.ref041"><label>41</label><mixed-citation publication-type="other" xlink:type="simple">Golden MH, Seaman J, Erhardt J, Robinson C, Woodruff B. SMART Methodology: Measuring Mortality, Nutritional Status, and Food Security in Crisis Situations, Version 1. 2006. <ext-link ext-link-type="uri" xlink:href="http://smartmethodology.org/survey-planning-tools/smart-methodology/smart-methodology-manual/" xlink:type="simple">http://smartmethodology.org/survey-planning-tools/smart-methodology/smart-methodology-manual/</ext-link>.</mixed-citation></ref>
+<ref id="pone.0168585.ref042"><label>42</label><mixed-citation publication-type="other" xlink:type="simple">Golden MH. The SMART Plausibility Check for Anthropometry. 2015. <ext-link ext-link-type="uri" xlink:href="http://smartmethodology.org/survey-planning-tools/smart-methodology/plausibility-check/" xlink:type="simple">http://smartmethodology.org/survey-planning-tools/smart-methodology/plausibility-check/</ext-link>.</mixed-citation></ref>
+<ref id="pone.0168585.ref043"><label>43</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Grellety</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Golden</surname> <given-names>MH</given-names></name>. <article-title>Weight-for-height and mid-upper-arm circumference should be used independently to diagnose acute malnutrition: policy implications</article-title>. <source>BMC Nutrition</source>. <year>2016</year>;<volume>2</volume>(<issue>10</issue>).</mixed-citation></ref>
+<ref id="pone.0168585.ref044"><label>44</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Murphy</surname> <given-names>EA</given-names></name>. <article-title>One cause? Many causes?: The argument from the bimodal distribution</article-title>. <source>J Chronic Dis</source>. <year>1964</year>;<volume>17</volume>: <fpage>301</fpage>–<lpage>324</lpage>. <object-id pub-id-type="pmid">14147007</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref045"><label>45</label><mixed-citation publication-type="other" xlink:type="simple">Golden MH, Grellety Y. Population Nutritional status during famine. 2002. <ext-link ext-link-type="uri" xlink:href="http://www.nutrisurvey.de/ena_beta/Golden_Population_nutritional_status_during_famile_surveywhzdis.pdf" xlink:type="simple">http://www.nutrisurvey.de/ena_beta/Golden_Population_nutritional_status_during_famile_surveywhzdis.pdf</ext-link>.</mixed-citation></ref>
+<ref id="pone.0168585.ref046"><label>46</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Crowe</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Seal</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Grijalva-Eternod</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Kerac</surname> <given-names>M</given-names></name>. <article-title>Effect of nutrition survey 'cleaning criteria' on estimates of malnutrition prevalence and disease burden: secondary data analysis</article-title>. <source>PeerJ</source>. <year>2014</year>;<volume>2</volume>: <fpage>e380</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.7717/peerj.380" xlink:type="simple">10.7717/peerj.380</ext-link></comment> <object-id pub-id-type="pmid">24883244</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref047"><label>47</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mei</surname> <given-names>Z</given-names></name>, <name name-style="western"><surname>Grummer-Strawn</surname> <given-names>LM</given-names></name>. <article-title>Standard deviation of anthropometric Z-scores as a data quality assessment tool using the 2006 WHO growth standards: a cross country analysis</article-title>. <source>Bull World Health Organ</source>. <year>2007</year>;<volume>85</volume>: <fpage>441</fpage>–<lpage>448</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2471/BLT.06.034421" xlink:type="simple">10.2471/BLT.06.034421</ext-link></comment> <object-id pub-id-type="pmid">17639241</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref048"><label>48</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Short</surname> <given-names>FM</given-names></name>, <name name-style="western"><surname>Choi</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Bird</surname> <given-names>S</given-names></name>. <article-title>A systematic review of Demographic and Health Surveys: data availability and utilization for research</article-title>. <source>Bull World Health Organ</source>. <year>2012</year>;<volume>90</volume>: <fpage>604</fpage>–<lpage>612</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2471/BLT.11.095513" xlink:type="simple">10.2471/BLT.11.095513</ext-link></comment> <object-id pub-id-type="pmid">22893744</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref049"><label>49</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Spiegel</surname> <given-names>PB</given-names></name>. <article-title>Who should be undertaking population-based surveys in humanitarian emergencies?</article-title> <source>Emerg Themes Epidemiol</source>. <year>2007</year>;<volume>4</volume>: <fpage>12</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/1742-7622-4-12" xlink:type="simple">10.1186/1742-7622-4-12</ext-link></comment> <object-id pub-id-type="pmid">17543107</object-id></mixed-citation></ref>
+<ref id="pone.0168585.ref050"><label>50</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kouchi</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Mochimaru</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Tsuzuki</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Yokoi</surname> <given-names>T</given-names></name>. <article-title>Interobserver errors in anthropometry</article-title>. <source>J Hum Ergol (Tokyo)</source>. <year>1999</year>;<volume>28</volume>: <fpage>15</fpage>–<lpage>24</lpage>.</mixed-citation></ref>
+<ref id="pone.0168585.ref051"><label>51</label><mixed-citation publication-type="other" xlink:type="simple">Pullum TW. An assessment of the quality of data on health and nutrition of the DHS surveys 1993–2003. 2008. <ext-link ext-link-type="uri" xlink:href="https://www.oecd.org/derec/unitedstates/42306459.pdf" xlink:type="simple">https://www.oecd.org/derec/unitedstates/42306459.pdf</ext-link>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

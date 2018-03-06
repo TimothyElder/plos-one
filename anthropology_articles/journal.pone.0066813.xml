@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group>
+<journal-title>PLoS ONE</journal-title></journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-13-01472</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0066813</article-id>
+<article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Computer science</subject><subj-group><subject>Natural language processing</subject></subj-group><subj-group><subject>Text mining</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Engineering</subject><subj-group><subject>Signal processing</subject><subj-group><subject>Data mining</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Mathematics</subject><subj-group><subject>Statistics</subject><subj-group><subject>Statistical methods</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Social and behavioral sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Linguistic anthropology</subject></subj-group></subj-group><subj-group><subject>Communications</subject><subj-group><subject>Natural language</subject></subj-group></subj-group><subj-group><subject>Linguistics</subject><subj-group><subject>Computational linguistics</subject><subject>Historical linguistics</subject></subj-group></subj-group><subj-group><subject>Sociology</subject><subj-group><subject>Culture</subject></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Language Individuation and Marker Words: Shakespeare and His Maxwell's Demon</article-title>
+<alt-title alt-title-type="running-head">Shakespeare and His Maxwell's Demon</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Marsden</surname><given-names>John</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Budden</surname><given-names>David</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Craig</surname><given-names>Hugh</given-names></name><xref ref-type="aff" rid="aff2"><sup>2</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Moscato</surname><given-names>Pablo</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+</contrib-group>
+<aff id="aff1"><label>1</label><addr-line>Centre for Bioinformatics, Biomarker Discovery &amp; Information-Based Medicine, The University of Newcastle, Callaghan, New South Wales, Australia</addr-line></aff>
+<aff id="aff2"><label>2</label><addr-line>Centre for Literary and Linguistic Computing, The University of Newcastle, Callaghan, New South Wales, Australia</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Altmann</surname><given-names>Eduardo G.</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Max Planck Institute for the Physics of Complex Systems, Germany</addr-line></aff>
+<author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">Pablo.Moscato@newcastle.edu.au</email></corresp>
+<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn>
+<fn fn-type="con"><p>Conceived and designed the experiments: JM DB HC PM. Performed the experiments: JM DB HC PM. Analyzed the data: JM DB HC PM. Contributed reagents/materials/analysis tools: JM DB HC PM. Wrote the paper: JM DB HC PM.</p></fn>
+</author-notes>
+<pub-date pub-type="collection"><year>2013</year></pub-date>
+<pub-date pub-type="epub"><day>27</day><month>6</month><year>2013</year></pub-date>
+<volume>8</volume>
+<issue>6</issue>
+<elocation-id>e66813</elocation-id>
+<history>
+<date date-type="received"><day>7</day><month>1</month><year>2013</year></date>
+<date date-type="accepted"><day>13</day><month>5</month><year>2013</year></date>
+</history>
+<permissions>
+<copyright-year>2013</copyright-year>
+<copyright-holder>Marsden et al</copyright-holder><license xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions>
+<abstract><sec>
+<title>Background</title>
+<p>Within the structural and grammatical bounds of a common language, all authors develop their own distinctive writing styles. Whether the relative occurrence of common words can be measured to produce accurate models of authorship is of particular interest. This work introduces a new score that helps to highlight such variations in word occurrence, and is applied to produce models of authorship of a large group of plays from the Shakespearean era.</p>
+</sec><sec>
+<title>Methodology</title>
+<p>A text corpus containing 55,055 unique words was generated from 168 plays from the Shakespearean era (16th and 17th centuries) of undisputed authorship. A new score, CM1, is introduced to measure variation patterns based on the frequency of occurrence of each word for the authors John Fletcher, Ben Jonson, Thomas Middleton and William Shakespeare, compared to the rest of the authors in the study (which provides a reference of relative word usage at that time). A total of 50 WEKA methods were applied for Fletcher, Jonson and Middleton, to identify those which were able to produce models yielding over 90% classification accuracy. This ensemble of WEKA methods was then applied to model Shakespearean authorship across all 168 plays, yielding a Matthews' correlation coefficient (MCC) performance of over 90%. Furthermore, the best model yielded an MCC of 99%.</p>
+</sec><sec>
+<title>Conclusions</title>
+<p>Our results suggest that different authors, while adhering to the structural and grammatical bounds of a common language, develop measurably distinct styles by the tendency to over-utilise or avoid particular common words and phrasings. Considering language and the potential of words as an abstract chaotic system with a high entropy, similarities can be drawn to the Maxwell's Demon thought experiment; authors subconsciously favour or filter certain words, modifying the probability profile in ways that could reflect their individuality and style.</p>
+</sec></abstract>
+<funding-group><funding-statement>This work has been supported by The University of Newcastle thanks to a funding contribution to the Priority Research Centre for Bioinformatics, Biomarker Discovery and Information-based Medicine (2006–2012). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts><page-count count="12"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title>Introduction</title>
+<p>Although authors are required to adhere to the grammatical and structural rules dictated by a written language, each author is able to develop a highly individual style within this framework <xref ref-type="bibr" rid="pone.0066813-DeSaussure1">[1]</xref>, <xref ref-type="bibr" rid="pone.0066813-Johnstone1">[2]</xref>. One form this language individuation takes is systematic variation in the relative frequencies of particular words and phrases. This variation in turn provides a basis for the accurate classification of authorship. The idea that this sort of variation occurs even in the use of the most common words, and that frequencies of these words could serve for authorship attribution, goes back to the 1960s (specifically, the statistical work of Ellegard on a set of anonymous eighteenth-century published letters <xref ref-type="bibr" rid="pone.0066813-Ellegrd1">[3]</xref> and of Mosteller and Wallace on the jointly authored Federalist papers <xref ref-type="bibr" rid="pone.0066813-Mosteller1">[4]</xref>), but was developed to a regular technique by Burrows in the 1980s. Burrows pioneered the use of multivariate techniques like Principal Components Analysis on sets of frequencies of very common words to attribute disputed texts <xref ref-type="bibr" rid="pone.0066813-Burrows1">[5]</xref>, <xref ref-type="bibr" rid="pone.0066813-Burrows2">[6]</xref>, and similar methodologies have since been widely used <xref ref-type="bibr" rid="pone.0066813-Forsyth1">[7]</xref>–<xref ref-type="bibr" rid="pone.0066813-Holmes1">[9]</xref>.</p>
+<p>Researchers have also explored the usefulness for attribution of slightly less common words, which tend to be lexical words rather than function words, and of very rare words <xref ref-type="bibr" rid="pone.0066813-Burrows3">[10]</xref>–<xref ref-type="bibr" rid="pone.0066813-Craig1">[12]</xref>. In general, authorship study using quantitative methods (most often relying on word frequencies, but also exploiting letter and word <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e001" xlink:type="simple"/></inline-formula>-grams, and the frequency of punctuation) is now well established and has been the subject of several reviews <xref ref-type="bibr" rid="pone.0066813-Holmes2">[13]</xref>–<xref ref-type="bibr" rid="pone.0066813-Stamatatos1">[15]</xref>. This field is variously referred to as <italic>stylometry</italic> and <italic>computational stylistics</italic>.</p>
+<p>The tendency recently has been to use longer and longer lists of marker words <xref ref-type="bibr" rid="pone.0066813-Rybicki1">[16]</xref>, as well as word sequences and collocations<xref ref-type="bibr" rid="pone.0066813-Juola1">[14]</xref>, <xref ref-type="bibr" rid="pone.0066813-Vickers1">[17]</xref>, <xref ref-type="bibr" rid="pone.0066813-CoyotlMorales1">[18]</xref>, and it may be useful to focus on the degree of distinctiveness in the frequencies of a subset of the very common words between authors, and their resulting power to provide efficient classification by author. It is also worth noting that while in many operations with natural language (such as topic detection and text searching), the usual practice is to discard the most common words (so-called ‘stopwords’ <xref ref-type="bibr" rid="pone.0066813-Fox1">[19]</xref>, <xref ref-type="bibr" rid="pone.0066813-Wilbur1">[20]</xref>). In contrast, these stopwords are the focus of the present analysis, and the constant added to the CM1 function, described below, provides a bias toward these very common words. They prove to be highly discriminating for the authors tested.</p>
+<p>The use of the word ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e009" xlink:type="simple"/></inline-formula>’ by seventeenth-century playwrite John Fletcher provides a striking example of idiosyncratic word usage, as previously demonstrated by Hoy <xref ref-type="bibr" rid="pone.0066813-Hoy1">[21]</xref>. This contribution focuses on the identification of such marker words and introduces a new score, CM<sub>–</sub>1, that allows for the identification of patterns of variation based on the relative frequency of word usage present in a text corpus dataset of 168 plays from the Shakespearean era. As an example, the CM<sub>–</sub>1 score confirms Fletcher's tendency to use ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e010" xlink:type="simple"/></inline-formula>’; <xref ref-type="fig" rid="pone-0066813-g001">Figure 1</xref> demonstrates the observed frequencies for ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e011" xlink:type="simple"/></inline-formula>’ in his 15 plays, plotted against 153 plays by other authors. Despite the wide range of frequencies, the spectacularly high median demonstrates ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e012" xlink:type="simple"/></inline-formula>’ to be an ideal marker for modeling Fletcher's authorship if restricted to a single word. More stylistic characteristics could be revealed by extending from one word to many, providing more robust authorship characterisation.</p>
+<fig id="pone-0066813-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066813.g001</object-id><label>Figure 1</label><caption>
+<title>Observed frequency of Fletcher's usage of the word ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e002" xlink:type="simple"/></inline-formula>’ in his 15 plays, compared to that of the 153 plays by other authors in the text corpus dataset.</title>
+<p>A significantly higher frequency of ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e003" xlink:type="simple"/></inline-formula>’ usage by Fletcher is demonstrated, indicating ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e004" xlink:type="simple"/></inline-formula>’ as an appropriate choice of marker to assist in the classification of his plays. Fletcher's predilection for the word ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e005" xlink:type="simple"/></inline-formula>’ has been previously shown by Hoy <xref ref-type="bibr" rid="pone.0066813-Hoy1">[21]</xref>.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066813.g001" position="float" xlink:type="simple"/></fig>
+<p>For some authors, such as Shakespeare, negative markers seem to yield more accurate language individuation. An interesting consequence of this observation is the notion that some writers are better defined by words they under-utilise, rather than those which they prefer. This has been discussed but not widely supported by in-depth analysis <xref ref-type="bibr" rid="pone.0066813-Craig1">[12]</xref>, <xref ref-type="bibr" rid="pone.0066813-Elliott1">[22]</xref>, and is one of the motivations of the present work. This variation in frequency may result from the conscious or subconscious censoring of particular words when authors choose formulations for their writing, or rather may be an implicit indicator of a preference for constructions or stances which reduce the need for these words. <xref ref-type="fig" rid="pone-0066813-g002">Figure 2</xref> demonstrates the observed frequencies for Shakespeare's usage of ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e013" xlink:type="simple"/></inline-formula>’ in his 28 considered plays, plotted against 140 plays by other authors.</p>
+<fig id="pone-0066813-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066813.g002</object-id><label>Figure 2</label><caption>
+<title>Observed frequency of Shakespeare's usage of the word ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e006" xlink:type="simple"/></inline-formula>’ in his 28 plays, compared to that of the 140 plays by other authors in the text corpus dataset.</title>
+<p>A significantly lower frequency of ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e007" xlink:type="simple"/></inline-formula>’ usage by Shakespeare is demonstrated, indicating ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e008" xlink:type="simple"/></inline-formula>’ as an appropriate choice of marker to assist in the classification of his plays.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066813.g002" position="float" xlink:type="simple"/></fig>
+<p>In this work, the CM<sub>–</sub>1 score (introduced in the Materials and Methods section) was applied to identify the 20 highest and 20 lowest scoring marker words for John Fletcher, Ben Jonson and Thomas Middleton. 50 methods from the popular open source data mining and machine learning package WEKA <xref ref-type="bibr" rid="pone.0066813-Witten1">[23]</xref> were utilised to produce models of authorship based on these markers, with performance evaluated in terms of Matthews' correlation coefficient. An ensemble of the best performing WEKA methods were finally applied to the classification of Shakespearean plays, considering only the 20 highest and 20 lowest CM1 scoring marker words generated from these 28 works (and the 140 plays by other authors).</p>
+</sec><sec id="s2" sec-type="materials|methods">
+<title>Materials and Methods</title>
+<sec id="s2a">
+<title>Text Corpus Dataset</title>
+<p>A text corpus containing 168 plays from the Shakespearean era was utilised for this work, containing texts of unambiguous authorship from the <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e015" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e016" xlink:type="simple"/></inline-formula> centuries. From this corpus, the Intelligent Archive by Craig and Whipp <xref ref-type="bibr" rid="pone.0066813-Craig2">[24]</xref> was applied to generate a set of approximately 55,055 unique words, composed of every word from across all 168 plays. The Intelligent Archive is a software tool which can be utilised to create sub-corpora and generate counts of word-forms according to a parameterised user input, taking into account the variations in spelling commonly found in <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e017" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e018" xlink:type="simple"/></inline-formula> century plays, in addition to facilitating disambiguation of words by both context and frequency. For each play, the frequency of each of the aforementioned 55,055 words was calculated and stored in the form of a <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e019" xlink:type="simple"/></inline-formula> matrix; a total of in excess of nine million word usage statistics.</p>
+</sec><sec id="s2b">
+<title>Methods</title>
+<p>Given the dataset generated by the Intelligent Archive, a method of filtering the full set <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e024" xlink:type="simple"/></inline-formula> of 55,055 unique words to determine a set of marker words (those which distinguish one author's work from that of the others) is required. Four authors (John Fletcher, Ben Jonson, Thomas Middleton and William Shakespeare) were chosen, as they account for the largest number of plays in the corpus dataset. One commonly accepted method of filtering such a dataset is Welch's <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e025" xlink:type="simple"/></inline-formula>-test,<disp-formula id="pone.0066813.e026"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0066813.e026" xlink:type="simple"/></disp-formula></p>
+<p>This adaptation of Student's <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e027" xlink:type="simple"/></inline-formula>-test allows for samples of unequal variance, but otherwise treats the two sample partitions <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e028" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e029" xlink:type="simple"/></inline-formula> of observations as homogeneous overall, with the moderator chosen as the standard deviation of the combined set <xref ref-type="bibr" rid="pone.0066813-Welch1">[25]</xref>. This assumption does not apply in the case of identifying marker words; one set contains the works of a single author, whereas the other contains the combined works of a large number of authors. Instead, a new method (the CM1 score) was devised, with a moderator that considers the range of values rather than the combined standard deviation.</p>
+<p>Let <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e036" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e037" xlink:type="simple"/></inline-formula> be a partition of the set <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e038" xlink:type="simple"/></inline-formula> of all plays in the dataset, meaning that <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e039" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e040" xlink:type="simple"/></inline-formula>. Let <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e041" xlink:type="simple"/></inline-formula> be one of the words used and let <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e042" xlink:type="simple"/></inline-formula> be the frequency of occurrence of the word <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e043" xlink:type="simple"/></inline-formula> in play <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e044" xlink:type="simple"/></inline-formula> of a given target author. Let <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e045" xlink:type="simple"/></inline-formula> be the set of all other plays not written by this author and, analogously, let <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e046" xlink:type="simple"/></inline-formula> be the frequency of occurrence of the word <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e047" xlink:type="simple"/></inline-formula> in play <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e048" xlink:type="simple"/></inline-formula>. The CM1 score is then defined as<disp-formula id="pone.0066813.e049"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0066813.e049" xlink:type="simple"/><label>(1)</label></disp-formula></p>
+<p>The CM<sub>–</sub>1 scores of all words were investigated in four partitions of the text corpus dataset, in which the target author plays <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e050" xlink:type="simple"/></inline-formula> were known to be the work of Fletcher, Jonson, Middleton or Shakespeare. From the original set of approximately 55,055 words, the 20 highest and 20 lowest CM<sub>–</sub>1-scoring marker words were selected and sorted according to their CM<sub>–</sub>1 scores.</p>
+<p>Like the <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e057" xlink:type="simple"/></inline-formula>-test, the CM<sub>–</sub>1 score calculates the difference between means; however, the score is moderated by the range of values for the non-authorial reference set <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e058" xlink:type="simple"/></inline-formula>, rather than the combined standard deviation of <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e059" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e060" xlink:type="simple"/></inline-formula>. The constant unity is added to the moderator so that variables of higher frequency will tend to result in higher scores, arising from the a priori view that more frequent variables will result in more reliable markers.</p>
+<p>Having calculated the 20 lowest and 20 highest marker words for Fletcher, Jonson and Middleton, 50 machine learning methods from the open source data mining and machine learning package WEKA <xref ref-type="bibr" rid="pone.0066813-Witten1">[23]</xref> were utilised to produce mathematical models of authorship. <xref ref-type="table" rid="pone-0066813-t001">Table 1</xref> lists all of the methods considered, along with their respective types, as categorised in WEKA version 3.6.4. In each case, a 10-by-10 fold cross validation of each author's marker words was performed, with the Matthews' correlation coefficient of the classification calculated. In data mining and machine learning, a 10-by-10 fold cross validation involves randomly partitioning the original dataset into 10 equal sized subsets; 9 used for training data, and the remaining subset reserved for evaluation. Evaluation is repeated 10 times, such that each subset is utilised exactly once for this purpose <xref ref-type="bibr" rid="pone.0066813-Geisser1">[26]</xref>.</p>
+<table-wrap id="pone-0066813-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066813.t001</object-id><label>Table 1</label><caption>
+<title>List of methods and their types.</title>
+</caption><alternatives><graphic id="pone-0066813-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066813.t001" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Method</td>
+<td align="left" rowspan="1" colspan="1">Type</td>
+<td align="left" rowspan="1" colspan="1">Method</td>
+<td align="left" rowspan="1" colspan="1">Type</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">BayesianLogisticRegression</td>
+<td align="left" rowspan="1" colspan="1">bayes</td>
+<td align="left" rowspan="1" colspan="1">MultiBoostAB</td>
+<td align="left" rowspan="1" colspan="1">meta</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">BayesNet</td>
+<td align="left" rowspan="1" colspan="1">bayes</td>
+<td align="left" rowspan="1" colspan="1">RandomCommittee</td>
+<td align="left" rowspan="1" colspan="1">meta</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ComplementNaiveBayes</td>
+<td align="left" rowspan="1" colspan="1">bayes</td>
+<td align="left" rowspan="1" colspan="1">RandomSubSpace</td>
+<td align="left" rowspan="1" colspan="1">meta</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">NaiveBayes</td>
+<td align="left" rowspan="1" colspan="1">bayes</td>
+<td align="left" rowspan="1" colspan="1">RotationForest</td>
+<td align="left" rowspan="1" colspan="1">meta</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">NaiveBayesUpdateable</td>
+<td align="left" rowspan="1" colspan="1">bayes</td>
+<td align="left" rowspan="1" colspan="1">Stacking</td>
+<td align="left" rowspan="1" colspan="1">meta</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Logistic</td>
+<td align="left" rowspan="1" colspan="1">functions</td>
+<td align="left" rowspan="1" colspan="1">ConjunctiveRule</td>
+<td align="left" rowspan="1" colspan="1">rules</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">MultilayerPerceptron</td>
+<td align="left" rowspan="1" colspan="1">functions</td>
+<td align="left" rowspan="1" colspan="1">DecisionTable</td>
+<td align="left" rowspan="1" colspan="1">rules</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">RBFNetwork</td>
+<td align="left" rowspan="1" colspan="1">functions</td>
+<td align="left" rowspan="1" colspan="1">DTNB</td>
+<td align="left" rowspan="1" colspan="1">rules</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">SimpleLogistic</td>
+<td align="left" rowspan="1" colspan="1">functions</td>
+<td align="left" rowspan="1" colspan="1">JRip</td>
+<td align="left" rowspan="1" colspan="1">rules</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">SMO</td>
+<td align="left" rowspan="1" colspan="1">functions</td>
+<td align="left" rowspan="1" colspan="1">NNge</td>
+<td align="left" rowspan="1" colspan="1">rules</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Spegasos</td>
+<td align="left" rowspan="1" colspan="1">functions</td>
+<td align="left" rowspan="1" colspan="1">OneR</td>
+<td align="left" rowspan="1" colspan="1">rules</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">VotedPerceptron</td>
+<td align="left" rowspan="1" colspan="1">functions</td>
+<td align="left" rowspan="1" colspan="1">PART</td>
+<td align="left" rowspan="1" colspan="1">rules</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">IB1</td>
+<td align="left" rowspan="1" colspan="1">lazy</td>
+<td align="left" rowspan="1" colspan="1">Ridor</td>
+<td align="left" rowspan="1" colspan="1">rules</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">IBk</td>
+<td align="left" rowspan="1" colspan="1">lazy</td>
+<td align="left" rowspan="1" colspan="1">ZeroR</td>
+<td align="left" rowspan="1" colspan="1">rules</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">KStar</td>
+<td align="left" rowspan="1" colspan="1">lazy</td>
+<td align="left" rowspan="1" colspan="1">ADTree</td>
+<td align="left" rowspan="1" colspan="1">trees</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">LWL</td>
+<td align="left" rowspan="1" colspan="1">lazy</td>
+<td align="left" rowspan="1" colspan="1">BFTree</td>
+<td align="left" rowspan="1" colspan="1">trees</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">AdaBoostM1</td>
+<td align="left" rowspan="1" colspan="1">meta</td>
+<td align="left" rowspan="1" colspan="1">FT</td>
+<td align="left" rowspan="1" colspan="1">trees</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">AttributeSelectedClassifier</td>
+<td align="left" rowspan="1" colspan="1">meta</td>
+<td align="left" rowspan="1" colspan="1">J48</td>
+<td align="left" rowspan="1" colspan="1">trees</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Bagging</td>
+<td align="left" rowspan="1" colspan="1">meta</td>
+<td align="left" rowspan="1" colspan="1">LADTree</td>
+<td align="left" rowspan="1" colspan="1">trees</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ClassificationViaClustering</td>
+<td align="left" rowspan="1" colspan="1">meta</td>
+<td align="left" rowspan="1" colspan="1">LMT</td>
+<td align="left" rowspan="1" colspan="1">trees</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ClassificationViaRegression</td>
+<td align="left" rowspan="1" colspan="1">meta</td>
+<td align="left" rowspan="1" colspan="1">NBTree</td>
+<td align="left" rowspan="1" colspan="1">trees</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Dagging</td>
+<td align="left" rowspan="1" colspan="1">meta</td>
+<td align="left" rowspan="1" colspan="1">RandomForest</td>
+<td align="left" rowspan="1" colspan="1">trees</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Decorate</td>
+<td align="left" rowspan="1" colspan="1">meta</td>
+<td align="left" rowspan="1" colspan="1">RandomTree</td>
+<td align="left" rowspan="1" colspan="1">trees</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">END</td>
+<td align="left" rowspan="1" colspan="1">meta</td>
+<td align="left" rowspan="1" colspan="1">REPTree</td>
+<td align="left" rowspan="1" colspan="1">trees</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">LogitBoost</td>
+<td align="left" rowspan="1" colspan="1">meta</td>
+<td align="left" rowspan="1" colspan="1">SimpleCart</td>
+<td align="left" rowspan="1" colspan="1">trees</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt101"><label/><p>List of methods utilised in this work and their respective types, as categorised in WEKA <xref ref-type="bibr" rid="pone.0066813-Witten1">[23]</xref> version 3.6.4. No manual tuning of parameters was undertaken, with all parameters set to their default values.</p></fn></table-wrap-foot></table-wrap>
+<p>A subset of the original 50 WEKA methods (those generating models that yielded a Matthews' correlation coefficient of over 90% for Fletcher, Jonson and Middleton) were selected for application to Shakespeare. This ensemble of WEKA methods was used to generate mathematical models of Shakespeare's writing style, considering only the 20 highest and 20 lowest CM<sub>–</sub>1 scoring marker words. The sensitivity (probability of determining the text to be written by the considered author, given that it was) and specificity (probability of determining the text to have not been written by the considered author, given that it was written by another) were calculated for a 10-by-10 fold cross validation of these models, and finally combined into the Matthews' correlation coefficient <xref ref-type="bibr" rid="pone.0066813-Baldi1">[27]</xref>, <xref ref-type="bibr" rid="pone.0066813-Johnstone2">[28]</xref> (which is the preferred approach for preserving classification performance for binary classification in an unbiased way).</p>
+<p>The Matthews' correlation coefficient, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e066" xlink:type="simple"/></inline-formula>, is defined as<disp-formula id="pone.0066813.e067"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0066813.e067" xlink:type="simple"/></disp-formula>where <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e068" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e069" xlink:type="simple"/></inline-formula> are the number of <italic>true positives</italic> and <italic>true negatives</italic> respectively (correct classification of an author having written (<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e070" xlink:type="simple"/></inline-formula>) or not written (<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e071" xlink:type="simple"/></inline-formula>) a given play), and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e072" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e073" xlink:type="simple"/></inline-formula> are the number of <italic>false positives</italic> and <italic>false negatives</italic> respectively (incorrectly determining a play as having been written by some author (<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e074" xlink:type="simple"/></inline-formula>), or failing to recognise that it has (<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e075" xlink:type="simple"/></inline-formula>)).</p>
+</sec></sec><sec id="s3">
+<title>Results</title>
+<sec id="s3a">
+<title>Selection of Marker Words using CM<sub>–</sub>1 Score</title>
+<p>The CM<sub>–</sub>1 score was calculated for all 55,055 unique words present in the text corpus dataset, for Fletcher, Jonson, Middleton and Shakespeare. The 50 highest and 50 lowest scoring words were ranked for each author, with the 20 highest and 20 lowest presented in <xref ref-type="table" rid="pone-0066813-t002">Tables 2</xref> and <xref ref-type="table" rid="pone-0066813-t003">3</xref>.</p>
+<table-wrap id="pone-0066813-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066813.t002</object-id><label>Table 2</label><caption>
+<title>20 highest ranking words by CM1 score (presented in descending order of score), for Fletcher, Jonson, Middleton and Shakespeare.</title>
+</caption><alternatives><graphic id="pone-0066813-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066813.t002" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Fletcher</td>
+<td align="left" rowspan="1" colspan="1">Jonson</td>
+<td align="left" rowspan="1" colspan="1">Middleton</td>
+<td align="left" rowspan="1" colspan="1">Shakespeare</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">have</td>
+<td align="left" rowspan="1" colspan="1">any</td>
+<td align="left" rowspan="1" colspan="1">so[adverbDegree]</td>
+<td align="left" rowspan="1" colspan="1">will[noun]</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">her[personalPronoun]</td>
+<td align="left" rowspan="1" colspan="1">in[adverb]</td>
+<td align="left" rowspan="1" colspan="1">master</td>
+<td align="left" rowspan="1" colspan="1">thee</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">will[verb]</td>
+<td align="left" rowspan="1" colspan="1">good</td>
+<td align="left" rowspan="1" colspan="1">me</td>
+<td align="left" rowspan="1" colspan="1">you</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">there</td>
+<td align="left" rowspan="1" colspan="1">have</td>
+<td align="left" rowspan="1" colspan="1">am</td>
+<td align="left" rowspan="1" colspan="1">did</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">dare</td>
+<td align="left" rowspan="1" colspan="1">aye</td>
+<td align="left" rowspan="1" colspan="1">gentleman</td>
+<td align="left" rowspan="1" colspan="1">that[conjunctive]</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">sure</td>
+<td align="left" rowspan="1" colspan="1">of</td>
+<td align="left" rowspan="1" colspan="1">have</td>
+<td align="left" rowspan="1" colspan="1">do</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">now</td>
+<td align="left" rowspan="1" colspan="1">they</td>
+<td align="left" rowspan="1" colspan="1">one</td>
+<td align="left" rowspan="1" colspan="1">good</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">a</td>
+<td align="left" rowspan="1" colspan="1">yes</td>
+<td align="left" rowspan="1" colspan="1">widow</td>
+<td align="left" rowspan="1" colspan="1">not</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">your</td>
+<td align="left" rowspan="1" colspan="1">them</td>
+<td align="left" rowspan="1" colspan="1">upon[preposition]</td>
+<td align="left" rowspan="1" colspan="1">speak</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">she</td>
+<td align="left" rowspan="1" colspan="1">your</td>
+<td align="left" rowspan="1" colspan="1">for[preposition]</td>
+<td align="left" rowspan="1" colspan="1">come</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">it</td>
+<td align="left" rowspan="1" colspan="1">here</td>
+<td align="left" rowspan="1" colspan="1">o</td>
+<td align="left" rowspan="1" colspan="1">hath</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">no[adjective]</td>
+<td align="left" rowspan="1" colspan="1">and</td>
+<td align="left" rowspan="1" colspan="1">there</td>
+<td align="left" rowspan="1" colspan="1">go</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">am</td>
+<td align="left" rowspan="1" colspan="1">a</td>
+<td align="left" rowspan="1" colspan="1">never</td>
+<td align="left" rowspan="1" colspan="1">say</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">do</td>
+<td align="left" rowspan="1" colspan="1">it</td>
+<td align="left" rowspan="1" colspan="1">I</td>
+<td align="left" rowspan="1" colspan="1">me</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">are</td>
+<td align="left" rowspan="1" colspan="1">him</td>
+<td align="left" rowspan="1" colspan="1">you</td>
+<td align="left" rowspan="1" colspan="1">him</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">and</td>
+<td align="left" rowspan="1" colspan="1">do</td>
+<td align="left" rowspan="1" colspan="1">now</td>
+<td align="left" rowspan="1" colspan="1">the</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">me</td>
+<td align="left" rowspan="1" colspan="1">the</td>
+<td align="left" rowspan="1" colspan="1">a</td>
+<td align="left" rowspan="1" colspan="1">so[adverbManner]</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">I</td>
+<td align="left" rowspan="1" colspan="1">he</td>
+<td align="left" rowspan="1" colspan="1">is</td>
+<td align="left" rowspan="1" colspan="1">he</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">too</td>
+<td align="left" rowspan="1" colspan="1">you</td>
+<td align="left" rowspan="1" colspan="1">it</td>
+<td align="left" rowspan="1" colspan="1">is</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ye</td>
+<td align="left" rowspan="1" colspan="1">or</td>
+<td align="left" rowspan="1" colspan="1">that[demonstrative]</td>
+<td align="left" rowspan="1" colspan="1">thou</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap><table-wrap id="pone-0066813-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066813.t003</object-id><label>Table 3</label><caption>
+<title>20 lowest ranking words by CM<sub>–</sub>1 score (presented in descending order of score), for Fletcher, Jonson, Middleton and Shakespeare.</title>
+</caption><alternatives><graphic id="pone-0066813-t003-3" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066813.t003" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Fletcher</td>
+<td align="left" rowspan="1" colspan="1">Jonson</td>
+<td align="left" rowspan="1" colspan="1">Middleton</td>
+<td align="left" rowspan="1" colspan="1">Shakespeare</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">in[preposition]</td>
+<td align="left" rowspan="1" colspan="1">my</td>
+<td align="left" rowspan="1" colspan="1">and</td>
+<td align="left" rowspan="1" colspan="1">all</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">of</td>
+<td align="left" rowspan="1" colspan="1">thou</td>
+<td align="left" rowspan="1" colspan="1">hath</td>
+<td align="left" rowspan="1" colspan="1">to[infinitive]</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">the</td>
+<td align="left" rowspan="1" colspan="1">me</td>
+<td align="left" rowspan="1" colspan="1">that[conjunction]</td>
+<td align="left" rowspan="1" colspan="1">now</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">my</td>
+<td align="left" rowspan="1" colspan="1">thy</td>
+<td align="left" rowspan="1" colspan="1">with</td>
+<td align="left" rowspan="1" colspan="1">ye</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">that[conjunction]</td>
+<td align="left" rowspan="1" colspan="1">to[preposition]</td>
+<td align="left" rowspan="1" colspan="1">the</td>
+<td align="left" rowspan="1" colspan="1">can</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">hath</td>
+<td align="left" rowspan="1" colspan="1">for[conjunction]</td>
+<td align="left" rowspan="1" colspan="1">this</td>
+<td align="left" rowspan="1" colspan="1">may</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">to[infinitive]</td>
+<td align="left" rowspan="1" colspan="1">from</td>
+<td align="left" rowspan="1" colspan="1">thou</td>
+<td align="left" rowspan="1" colspan="1">are</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">by[preposition]</td>
+<td align="left" rowspan="1" colspan="1">lord</td>
+<td align="left" rowspan="1" colspan="1">on[preposition]</td>
+<td align="left" rowspan="1" colspan="1">for[preposition]</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">his</td>
+<td align="left" rowspan="1" colspan="1">thee</td>
+<td align="left" rowspan="1" colspan="1">do</td>
+<td align="left" rowspan="1" colspan="1">must</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">lord</td>
+<td align="left" rowspan="1" colspan="1">king</td>
+<td align="left" rowspan="1" colspan="1">as</td>
+<td align="left" rowspan="1" colspan="1">see</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">with</td>
+<td align="left" rowspan="1" colspan="1">death</td>
+<td align="left" rowspan="1" colspan="1">thy</td>
+<td align="left" rowspan="1" colspan="1">their</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">to[preposition]</td>
+<td align="left" rowspan="1" colspan="1">that[relative]</td>
+<td align="left" rowspan="1" colspan="1">king</td>
+<td align="left" rowspan="1" colspan="1">your</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">which[relative]</td>
+<td align="left" rowspan="1" colspan="1">ye</td>
+<td align="left" rowspan="1" colspan="1">or</td>
+<td align="left" rowspan="1" colspan="1">only</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">as</td>
+<td align="left" rowspan="1" colspan="1">shall</td>
+<td align="left" rowspan="1" colspan="1">ye</td>
+<td align="left" rowspan="1" colspan="1">yet</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">thy</td>
+<td align="left" rowspan="1" colspan="1">that[conjunction]</td>
+<td align="left" rowspan="1" colspan="1">these</td>
+<td align="left" rowspan="1" colspan="1">a</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">but</td>
+<td align="left" rowspan="1" colspan="1">our[truePlural]</td>
+<td align="left" rowspan="1" colspan="1">doth</td>
+<td align="left" rowspan="1" colspan="1">they</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">than</td>
+<td align="left" rowspan="1" colspan="1">heaven</td>
+<td align="left" rowspan="1" colspan="1">of</td>
+<td align="left" rowspan="1" colspan="1">or</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">you</td>
+<td align="left" rowspan="1" colspan="1">yet</td>
+<td align="left" rowspan="1" colspan="1">their</td>
+<td align="left" rowspan="1" colspan="1">yes</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">doth</td>
+<td align="left" rowspan="1" colspan="1">never</td>
+<td align="left" rowspan="1" colspan="1">god</td>
+<td align="left" rowspan="1" colspan="1">still</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">aye</td>
+<td align="left" rowspan="1" colspan="1">blood</td>
+<td align="left" rowspan="1" colspan="1">thus</td>
+<td align="left" rowspan="1" colspan="1">but</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p><xref ref-type="fig" rid="pone-0066813-g003">Figure 3</xref> demonstrates the CM<sub>–</sub>1 score for the 50 highest and 50 lowest scoring marker words for John Fletcher, with the 20 highest and 20 lowest ranked words shown in red and green respectively. Fletcher's plays account for 15 of the 168 present in the text corpus dataset. ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e076" xlink:type="simple"/></inline-formula>’ is shown to dominate as a positive marker, with the lowest scoring negative markers included ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e077" xlink:type="simple"/></inline-formula>’, ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e078" xlink:type="simple"/></inline-formula>’ and the prepositional form of ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e079" xlink:type="simple"/></inline-formula>’.</p>
+<fig id="pone-0066813-g003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066813.g003</object-id><label>Figure 3</label><caption>
+<title>CM<sub>–</sub>1 scores for the 50 highest and 50 lowest ranked words for Fletcher, based on the 168 plays in the text corpus dataset.</title>
+<p>The 20 highest and 20 lowest ranked words are shown in red and green respectively, and are presented in <xref ref-type="table" rid="pone-0066813-t002">Tables 2</xref> and <xref ref-type="table" rid="pone-0066813-t003">3</xref>. As expected, the CM<sub>–</sub>1 score for ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e014" xlink:type="simple"/></inline-formula>’ is significantly higher than that of any other marker word.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066813.g003" position="float" xlink:type="simple"/></fig>
+<p>The difference between the probabilities of Fletcher's 20 highest and 20 lowest scoring marker words was calculated across all 168 plays from the text corpus dataset, with the results presented in <xref ref-type="fig" rid="pone-0066813-g004">Figure 4</xref>. All of Fletcher's plays score strong positive results against these markers, with the exception of <italic>The Faithful Shepherdess</italic>.</p>
+<fig id="pone-0066813-g004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066813.g004</object-id><label>Figure 4</label><caption>
+<title>Difference between the cumulative CM<sub>–</sub>1 scores for Fletcher's 20 highest and 20 lowest scoring marker words, as presented in <xref ref-type="table" rid="pone-0066813-t002">Tables 2</xref> and <xref ref-type="table" rid="pone-0066813-t003">3</xref>.</title>
+<p>Fletcher's plays are highlighted in green. It is observed that the majority of his plays score considerably higher than the majority of plays by the other authors. One notable exception, <italic>The Faithful Shepherdess</italic>, is considered to be of a significantly different genre to the remainder of Fletcher's plays, and has been omitted in two previous studies attempting to identify his stylistic signature <xref ref-type="bibr" rid="pone.0066813-Hoy1">[21]</xref>, <xref ref-type="bibr" rid="pone.0066813-Hope1">[36]</xref>.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066813.g004" position="float" xlink:type="simple"/></fig>
+<p><xref ref-type="fig" rid="pone-0066813-g005">Figure 5</xref> demonstrates the CM1 score for the 50 highest and 50 lowest scoring marker words for Ben Jonson, whose plays account for 17 of the 168 considered. Jonson's positive markers include ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e080" xlink:type="simple"/></inline-formula>’ and ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e081" xlink:type="simple"/></inline-formula>’, with ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e082" xlink:type="simple"/></inline-formula>’ and ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e083" xlink:type="simple"/></inline-formula>’ dominating the negative markers. The difference between Jonson's 20 highest and 20 lowest scoring marker words is presented in <xref ref-type="fig" rid="pone-0066813-g006">Figure 6</xref>.</p>
+<fig id="pone-0066813-g005" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066813.g005</object-id><label>Figure 5</label><caption>
+<title>CM<sub>–</sub>1 scores for the 50 highest and 50 lowest ranked words for Jonson, based on the 168 plays in the text corpus dataset.</title>
+<p>The 20 highest and 20 lowest ranked words are shown in red and green respectively, and are presented in <xref ref-type="table" rid="pone-0066813-t002">Tables 2</xref> and <xref ref-type="table" rid="pone-0066813-t003">3</xref>. CM<sub>–</sub>1 ranks ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e020" xlink:type="simple"/></inline-formula>’ and ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e021" xlink:type="simple"/></inline-formula>’ as words that Jonson distinctively overuses, in contrast to ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e022" xlink:type="simple"/></inline-formula>’ and ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e023" xlink:type="simple"/></inline-formula>’, which are distinctively underused.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066813.g005" position="float" xlink:type="simple"/></fig><fig id="pone-0066813-g006" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066813.g006</object-id><label>Figure 6</label><caption>
+<title>Difference between the cumulative CM<sub>–</sub>1 scores for Jonson's 20 highest and 20 lowest scoring marker words, as presented in <xref ref-type="table" rid="pone-0066813-t002">Tables 2</xref> and <xref ref-type="table" rid="pone-0066813-t003">3</xref>.</title>
+<p>Jonson's plays are highlighted in green. Although not as evident as with Fletcher, Jonson's plays demonstrate an overall higher score than the majority of plays by the other authors. The worst scoring of Jonson's plays, <italic>The Case is Altered</italic>, is generally regarded as a stylistic anomaly among his works <xref ref-type="bibr" rid="pone.0066813-Mack1">[35]</xref>.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066813.g006" position="float" xlink:type="simple"/></fig>
+<p><xref ref-type="fig" rid="pone-0066813-g007">Figure 7</xref> demonstrates the CM<sub>–</sub>1 score for the 50 highest and 50 lowest scoring marker words for Thomas Middleton, whose plays account for 18 of the 168 considered. Middleton's positive markers include ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e084" xlink:type="simple"/></inline-formula>’, ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e085" xlink:type="simple"/></inline-formula>’, ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e086" xlink:type="simple"/></inline-formula>’ and ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e087" xlink:type="simple"/></inline-formula>’, with his negative markers including ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e088" xlink:type="simple"/></inline-formula>’ and ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e089" xlink:type="simple"/></inline-formula>’. The difference between Middleton's 20 highest and 20 lowest scoring marker words is presented in <xref ref-type="fig" rid="pone-0066813-g008">Figure 8</xref>.</p>
+<fig id="pone-0066813-g007" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066813.g007</object-id><label>Figure 7</label><caption>
+<title>CM<sub>–</sub>1 scores for the 50 highest and 50 lowest ranked words for Middleton, based on the 168 plays in the text corpus dataset.</title>
+<p>The 20 highest and 20 lowest ranked words are shown in red and green respectively, and are presented in <xref ref-type="table" rid="pone-0066813-t002">Tables 2</xref> and <xref ref-type="table" rid="pone-0066813-t003">3</xref>. CM<sub>–</sub>1 ranks ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e030" xlink:type="simple"/></inline-formula>’, ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e031" xlink:type="simple"/></inline-formula>’, ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e032" xlink:type="simple"/></inline-formula>’ and the demonstrative form of ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e033" xlink:type="simple"/></inline-formula>’ among the words that Middleton distinctively overuses; ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e034" xlink:type="simple"/></inline-formula>’ is ranked amongst the words that Middleton underuses, as opposed to plays by Jonson, for which ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e035" xlink:type="simple"/></inline-formula>’ is a strong positive marker.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066813.g007" position="float" xlink:type="simple"/></fig><fig id="pone-0066813-g008" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066813.g008</object-id><label>Figure 8</label><caption>
+<title>Difference between the cumulative CM<sub>–</sub>1 scores for Middleton's 20 highest and 20 lowest scoring marker words, as presented in <xref ref-type="table" rid="pone-0066813-t002">Tables 2</xref> and <xref ref-type="table" rid="pone-0066813-t003">3</xref>.</title>
+<p>Eight of these marker words appeared among the ten word-variables determined earlier by Craig <xref ref-type="bibr" rid="pone.0066813-Craig4">[34]</xref> (by discriminant analysis). Middleton's plays are highlighted in green. It is observed that the majority of his plays score higher than the majority of plays by the other authors. The worst scoring of Middleton's plays, <italic>A Game at Chess</italic>, is unusual stylistically among his works, being a satire on contemporary international politics <xref ref-type="bibr" rid="pone.0066813-Taylor1">[32]</xref>, <xref ref-type="bibr" rid="pone.0066813-Taylor2">[33]</xref>.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066813.g008" position="float" xlink:type="simple"/></fig>
+<p>The final author considered was William Shakespeare, with <xref ref-type="fig" rid="pone-0066813-g009">Figure 9</xref> demonstrating the CM1 score for his 50 highest and 50 lowest scoring words. Shakespeare's plays are the most well represented in the dataset, accounting for 28 of the total 168 contained in the text corpus dataset. Shakespeare's highest scoring marker word is ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e090" xlink:type="simple"/></inline-formula>’, with his lowest ranking words including ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e091" xlink:type="simple"/></inline-formula>’ (matching a previous discussion by Craig <xref ref-type="bibr" rid="pone.0066813-Craig3">[29]</xref>) and the infinitive version of ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e092" xlink:type="simple"/></inline-formula>’.</p>
+<fig id="pone-0066813-g009" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066813.g009</object-id><label>Figure 9</label><caption>
+<title>CM<sub>–</sub>1 scores for the 50 highest and 50 lowest ranked words for Shakespeare, based on the 168 plays in the text corpus dataset.</title>
+<p>The 20 highest and 20 lowest ranked words are shown in red and green respectively, and are presented in <xref ref-type="table" rid="pone-0066813-t002">Tables 2</xref> and <xref ref-type="table" rid="pone-0066813-t003">3</xref>. CM<sub>–</sub>1 ranks ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e051" xlink:type="simple"/></inline-formula>’, ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e052" xlink:type="simple"/></inline-formula>’ and ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e053" xlink:type="simple"/></inline-formula>’ as words that Shakespeare distinctively overuses, in contrast to ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e054" xlink:type="simple"/></inline-formula>’ (as discussed by Craig <xref ref-type="bibr" rid="pone.0066813-Craig3">[29]</xref>), ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e055" xlink:type="simple"/></inline-formula>’ and the infinitive form of ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e056" xlink:type="simple"/></inline-formula>’, which are distinctively underused.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066813.g009" position="float" xlink:type="simple"/></fig>
+<p>Finally, the difference between Shakespeare's 20 highest and 20 lowest scoring marker words was calculated across all 168 plays from the text corpus dataset, with the results presented in <xref ref-type="fig" rid="pone-0066813-g010">Figure 10</xref>. Overall, Shakespeare's plays are demonstrated to rank considerably higher than those by other authors.</p>
+<fig id="pone-0066813-g010" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066813.g010</object-id><label>Figure 10</label><caption>
+<title>Difference between the cumulative CM<sub>–</sub>1 scores for Shakespeare's 20 highest and 20 lowest scoring marker words, as presented in <xref ref-type="table" rid="pone-0066813-t002">Tables 2</xref> and <xref ref-type="table" rid="pone-0066813-t003">3</xref>.</title>
+<p>Shakespeare's plays are highlighted in green. It is observed that the majority of his plays score higher than by other authors, although the overall range of values is lower than for Fletcher, Jonson and Middleton. This supports previous research suggesting that Shakespeare generally adheres to the norms of the work of his peer group <xref ref-type="bibr" rid="pone.0066813-Rosso1">[30]</xref>.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066813.g010" position="float" xlink:type="simple"/></fig></sec><sec id="s3b">
+<title>Selection of Modelling Methods from CM<sub>–</sub>1 Features</title>
+<p>Considering only the 20 highest and 20 lowest CM<sub>–</sub>1 marker words for Fletcher, Jonson and Middleton, and applying 50 methods from the popular open source data mining and machine learning package WEKA <xref ref-type="bibr" rid="pone.0066813-Witten1">[23]</xref>, a 10-by-10 fold cross-validation was performed. For each method, the performance of each fold was evaluated in terms of the Matthews' correlation coefficient to identify those that perform well with the pre-selection of markers based on the CM<sub>–</sub>1 score. These results, along with the mean performance for each method, are presented in <xref ref-type="fig" rid="pone-0066813-g011">Figures 11</xref>, <xref ref-type="fig" rid="pone-0066813-g012">12</xref> and <xref ref-type="fig" rid="pone-0066813-g013">13</xref>, for Fletcher, Jonson and Middleton respectively.</p>
+<fig id="pone-0066813-g011" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066813.g011</object-id><label>Figure 11</label><caption>
+<title>Authorship classification performance of 50 methods evaluated in terms of Matthews' correlation coefficient for Fletcher, resulting from a 10-by-10 fold cross validation of his 20 highest and 20 lowest CM<sub>–</sub>1 scoring marker words.</title>
+<p>The results of individual folds are presented in blue/green, with the average performance for each method in red.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066813.g011" position="float" xlink:type="simple"/></fig><fig id="pone-0066813-g012" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066813.g012</object-id><label>Figure 12</label><caption>
+<title>Authorship classification performance of 50 methods evaluated in terms of Matthews' correlation coefficient for Jonson, resulting from a 10-by-10 fold cross validation of his 20 highest and 20 lowest CM<sub>–</sub>1 scoring marker words.</title>
+<p>The results of individual folds are presented in blue/green, with the average performance for each method in red.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066813.g012" position="float" xlink:type="simple"/></fig><fig id="pone-0066813-g013" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066813.g013</object-id><label>Figure 13</label><caption>
+<title>Authorship classification performance of 50 methods evaluated in terms of Matthews' correlation coefficient for Middleton, resulting from a 10-by-10 fold cross validation of his 20 highest and 20 lowest CM<sub>–</sub>1 scoring marker words.</title>
+<p>The results of individual folds are presented in blue/green, with the average performance for each method in red.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066813.g013" position="float" xlink:type="simple"/></fig>
+<p>Of these 50 methods, the 8 best performing (i.e. those that yielded an average Matthews' correlation coefficient of over 90%) were selected for application to Shakespeare. These included: <italic>MultilayerPerceptron</italic>; <italic>SMO</italic>; <italic>IB1</italic>; <italic>IBk</italic>; <italic>LMT</italic>; <italic>FT</italic>; <italic>Logistic</italic>; and <italic>SimpleLogistic</italic>. Utilising only these methods and considering only the 20 highest and 20 lowest CM<sub>–</sub>1 marker words for Shakespeare, a further 10-by-10 fold cross-validation was performed to model his authorship. These results, along with the mean performance for each method, are presented in <xref ref-type="fig" rid="pone-0066813-g014">Figure 14</xref>. Of the 168 plays in the text corpus dataset, the 28 authored by Shakespeare were classified with an average Matthew's correlation coefficient of over 90%, with the best performing method (<italic>SMO</italic>) yielding a coefficient of 99%.</p>
+<fig id="pone-0066813-g014" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066813.g014</object-id><label>Figure 14</label><caption>
+<title>Authorship classification performance of 8 methods evaluated in terms of Matthews' correlation coefficient for Shakespeare, resulting from a 10-by-10 fold cross validation of his 20 highest and 20 lowest CM<sub>–</sub>1 scoring marker words.</title>
+<p>These 8 methods were selected as those which yielded the best classification performance for Fletcher, Jonson and Middleton. The results of individual folds are presented in blue/green, with the average performance for each method in red. The performance across all 8 methods is demonstrated to be above 80%, with the best performing method (<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e061" xlink:type="simple"/></inline-formula>) yielding classification performance of 99%.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066813.g014" position="float" xlink:type="simple"/></fig></sec><sec id="s3c">
+<title>Performance Comparison of CM<sub>–</sub>1 and Welch's <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e093" xlink:type="simple"/></inline-formula>-test</title>
+<p>By following the same procedure described in the Materials and Methods section for the CM<sub>–</sub>1 score, a list of 20 high and 20 low scoring marker words may be generated for each author using the <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e094" xlink:type="simple"/></inline-formula>-test. <xref ref-type="table" rid="pone-0066813-t004">Table 4</xref> presents these marker words for Shakespeare.</p>
+<table-wrap id="pone-0066813-t004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066813.t004</object-id><label>Table 4</label><caption>
+<title>20 highest (left) and lowest (right) ranking words by Welch's <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e062" xlink:type="simple"/></inline-formula>-test score for Shakespeare, presented in descending and ascending order of score respectively.</title>
+</caption><alternatives><graphic id="pone-0066813-t004-4" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066813.t004" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Highest</td>
+<td align="left" rowspan="1" colspan="1">Lowest</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">so[adverbManner]</td>
+<td align="left" rowspan="1" colspan="1">all</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">speak</td>
+<td align="left" rowspan="1" colspan="1">only</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">say</td>
+<td align="left" rowspan="1" colspan="1">can</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">pluck</td>
+<td align="left" rowspan="1" colspan="1">somewhat</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">amen</td>
+<td align="left" rowspan="1" colspan="1">amongst</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">spoke</td>
+<td align="left" rowspan="1" colspan="1">yes</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">hath</td>
+<td align="left" rowspan="1" colspan="1">reach</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">oath</td>
+<td align="left" rowspan="1" colspan="1">hopes</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">tonight</td>
+<td align="left" rowspan="1" colspan="1">joy</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">answer</td>
+<td align="left" rowspan="1" colspan="1">cast</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">wherefore</td>
+<td align="left" rowspan="1" colspan="1">still</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">beseech</td>
+<td align="left" rowspan="1" colspan="1">may</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">note</td>
+<td align="left" rowspan="1" colspan="1">enjoy</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">go</td>
+<td align="left" rowspan="1" colspan="1">must</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ear</td>
+<td align="left" rowspan="1" colspan="1">wrought</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">adieu</td>
+<td align="left" rowspan="1" colspan="1">reward</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">did</td>
+<td align="left" rowspan="1" colspan="1">private</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">brief</td>
+<td align="left" rowspan="1" colspan="1">ease</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">purpose</td>
+<td align="left" rowspan="1" colspan="1">clear</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">therefore</td>
+<td align="left" rowspan="1" colspan="1">to[infinitive]</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p>By considering the 5 best performing WEKA ensemble methods (<italic>SMO</italic>, <italic>IB1</italic>, <italic>IBk</italic>, <italic>MultilayerPerceptron</italic> and <italic>Logistic</italic>), the performance of models generated using CM1 score marker words can be compared directly to those generated using the equivalent <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e095" xlink:type="simple"/></inline-formula>-test marker words. These results are presented in <xref ref-type="table" rid="pone-0066813-t005">Table 5</xref>, with performance evaluated in terms of Matthews' correlation coefficient (MCC), specificity (precision) and sensitivity (recall). It is evident that CM<sub>–</sub>1 yields a higher MCC in all examples.</p>
+<table-wrap id="pone-0066813-t005" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066813.t005</object-id><label>Table 5</label><caption>
+<title>Performance results for the top 5 WEKA models, from the ensemble selected for Shakespeare authorship attribution based on performance against Fletcher, Jonson and Middleton (see Materials and Methods section).</title>
+</caption><alternatives><graphic id="pone-0066813-t005-5" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066813.t005" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td colspan="3" align="left" rowspan="1">CM1 Score</td>
+<td colspan="3" align="left" rowspan="1">Welch's t-test</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Method</td>
+<td align="left" rowspan="1" colspan="1">MCC</td>
+<td align="left" rowspan="1" colspan="1">Spec.</td>
+<td align="left" rowspan="1" colspan="1">Sens.</td>
+<td align="left" rowspan="1" colspan="1">MCC</td>
+<td align="left" rowspan="1" colspan="1">Spec.</td>
+<td align="left" rowspan="1" colspan="1">Sens.</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">SMO</td>
+<td align="left" rowspan="1" colspan="1">0.987</td>
+<td align="left" rowspan="1" colspan="1">1.000</td>
+<td align="left" rowspan="1" colspan="1">0.980</td>
+<td align="left" rowspan="1" colspan="1">0.960</td>
+<td align="left" rowspan="1" colspan="1">1.000</td>
+<td align="left" rowspan="1" colspan="1">0.940</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">IB1</td>
+<td align="left" rowspan="1" colspan="1">0.955</td>
+<td align="left" rowspan="1" colspan="1">0.987</td>
+<td align="left" rowspan="1" colspan="1">1.000</td>
+<td align="left" rowspan="1" colspan="1">0.863</td>
+<td align="left" rowspan="1" colspan="1">1.000</td>
+<td align="left" rowspan="1" colspan="1">0.800</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">IBk</td>
+<td align="left" rowspan="1" colspan="1">0.955</td>
+<td align="left" rowspan="1" colspan="1">0.987</td>
+<td align="left" rowspan="1" colspan="1">1.000</td>
+<td align="left" rowspan="1" colspan="1">0.863</td>
+<td align="left" rowspan="1" colspan="1">1.000</td>
+<td align="left" rowspan="1" colspan="1">0.800</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">MultilayerPerceptron</td>
+<td align="left" rowspan="1" colspan="1">0.934</td>
+<td align="left" rowspan="1" colspan="1">0.933</td>
+<td align="left" rowspan="1" colspan="1">0.920</td>
+<td align="left" rowspan="1" colspan="1">0.930</td>
+<td align="left" rowspan="1" colspan="1">0.993</td>
+<td align="left" rowspan="1" colspan="1">0.920</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Logistic</td>
+<td align="left" rowspan="1" colspan="1">0.923</td>
+<td align="left" rowspan="1" colspan="1">0.960</td>
+<td align="left" rowspan="1" colspan="1">0.980</td>
+<td align="left" rowspan="1" colspan="1">0.916</td>
+<td align="left" rowspan="1" colspan="1">0.967</td>
+<td align="left" rowspan="1" colspan="1">0.960</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt102"><label/><p>Performance is evaluated in terms of Matthews' correlation coefficient, specificity (precision) and sensitivity (recall) for marker words selected by both CM1 and Welch's <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e063" xlink:type="simple"/></inline-formula>-test scores.</p></fn></table-wrap-foot></table-wrap>
+<p>As the ensemble of best performing WEKA models may differ when repeating the experimental procedure with the <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e096" xlink:type="simple"/></inline-formula>-test as a method of marker selection, <xref ref-type="table" rid="pone-0066813-t006">Table 6</xref> provides a direct performance comparison between the overall 5 best performing models from the full set of 50 WEKA methods available. It is evident that the 3 best performing CM<sub>–</sub>1 models yield a higher MCC than any generated from <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e097" xlink:type="simple"/></inline-formula>-test marker words.</p>
+<table-wrap id="pone-0066813-t006" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066813.t006</object-id><label>Table 6</label><caption>
+<title>Performance results for the top 5 WEKA models for both CM1 and Welch's <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e064" xlink:type="simple"/></inline-formula>-test scores, evaluated in terms of Matthews' correlation coefficient, specificity (precision) and sensitivity (recall).</title>
+</caption><alternatives><graphic id="pone-0066813-t006-6" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066813.t006" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td colspan="4" align="left" rowspan="1">CM<sub>–</sub>1 Score</td>
+<td colspan="4" align="left" rowspan="1">Welch's t-test</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Method</td>
+<td align="left" rowspan="1" colspan="1">MCC</td>
+<td align="left" rowspan="1" colspan="1">Spec.</td>
+<td align="left" rowspan="1" colspan="1">Sens.</td>
+<td align="left" rowspan="1" colspan="1">Method</td>
+<td align="left" rowspan="1" colspan="1">MCC</td>
+<td align="left" rowspan="1" colspan="1">Spec.</td>
+<td align="left" rowspan="1" colspan="1">Sens.</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">SMO</td>
+<td align="left" rowspan="1" colspan="1">0.987</td>
+<td align="left" rowspan="1" colspan="1">1.000</td>
+<td align="left" rowspan="1" colspan="1">0.980</td>
+<td align="left" rowspan="1" colspan="1">NaiveBayes</td>
+<td align="left" rowspan="1" colspan="1">0.963</td>
+<td align="left" rowspan="1" colspan="1">1.000</td>
+<td align="left" rowspan="1" colspan="1">0.940</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">NaiveBayes</td>
+<td align="left" rowspan="1" colspan="1">0.979</td>
+<td align="left" rowspan="1" colspan="1">0.987</td>
+<td align="left" rowspan="1" colspan="1">1.000</td>
+<td align="left" rowspan="1" colspan="1">NaiveBayes</td>
+<td align="left" rowspan="1" colspan="1">0.963</td>
+<td align="left" rowspan="1" colspan="1">0.987</td>
+<td align="left" rowspan="1" colspan="1">0.980</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Updateable</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">NaiveBayes</td>
+<td align="left" rowspan="1" colspan="1">0.979</td>
+<td align="left" rowspan="1" colspan="1">0.987</td>
+<td align="left" rowspan="1" colspan="1">1.000</td>
+<td align="left" rowspan="1" colspan="1">Simple</td>
+<td align="left" rowspan="1" colspan="1">0.960</td>
+<td align="left" rowspan="1" colspan="1">1.000</td>
+<td align="left" rowspan="1" colspan="1">0.940</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Updateable</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Logistic</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">IB1</td>
+<td align="left" rowspan="1" colspan="1">0.955</td>
+<td align="left" rowspan="1" colspan="1">0.987</td>
+<td align="left" rowspan="1" colspan="1">1.000</td>
+<td align="left" rowspan="1" colspan="1">SMO</td>
+<td align="left" rowspan="1" colspan="1">0.960</td>
+<td align="left" rowspan="1" colspan="1">1.000</td>
+<td align="left" rowspan="1" colspan="1">0.940</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">IBk</td>
+<td align="left" rowspan="1" colspan="1">0.955</td>
+<td align="left" rowspan="1" colspan="1">0.987</td>
+<td align="left" rowspan="1" colspan="1">1.000</td>
+<td align="left" rowspan="1" colspan="1">LMT</td>
+<td align="left" rowspan="1" colspan="1">0.960</td>
+<td align="left" rowspan="1" colspan="1">1.000</td>
+<td align="left" rowspan="1" colspan="1">0.940</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap></sec></sec><sec id="s4">
+<title>Discussion</title>
+<p>Given a large dataset, such as the text corpus of 168 plays from the Shakespearean era, a commonly accepted method of filtering the data to facilitate classification is Welch's <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e098" xlink:type="simple"/></inline-formula>-test. This score treats the two sets of observations as homogenous overall; an assumption that does not apply when attempting to identify play authorship, where one set contains the work of a single author, and the other contains the combined works of many. Instead of moderating by the standard deviation of the combined set, a new score (the CM<sub>–</sub>1 score) is introduced, with a moderator that considers the overall range of values of the larger set. The CM<sub>–</sub>1 score, in addition to facilitating the selection of marker words that yield authorship classification performance of over 90% (in terms of Matthews' correlation coefficient), has demonstrated a remarkable agreement with previously published observations.</p>
+<p>The magnitude of CM<sub>–</sub>1 scores for Shakespeare's dominant negative markers is greater than that of his positive. Furthermore, the overall range of values for Shakespeare is comparatively small. This supports previous research suggesting that Shakespeare generally adheres to the norms of the work of his peer group <xref ref-type="bibr" rid="pone.0066813-Rosso1">[30]</xref>. Similarly, ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e099" xlink:type="simple"/></inline-formula>’ is shown to dominate as a positive marker for Fletcher, supporting Hoy's earlier observation that this word is characteristically overused in his plays <xref ref-type="bibr" rid="pone.0066813-Hoy1">[21]</xref>.</p>
+<p>Although the presented classification results demonstrate the CM<sub>–</sub>1 score as a powerful new method in the identification of individualising markers, the experimental method includes one simplification of the problem. The 20 highest and 20 lowest scoring marker words used for classification have been determined by considering the entire text corpus dataset, inclusive of each play as it is classified. To ensure that this method is able to generalise effectively to unencountered plays, a 10-by-10 fold cross validation was performed, with the frequency of each of the 55,055 individual words occurring as a high or low marker calculated across <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e100" xlink:type="simple"/></inline-formula> combinations of plays. This corresponds with the removal of every combination of 10% of plays by Shakespeare (3 plays), and for each, the removal of a random selection of 10% of plays by other authors (14 plays). Considering every possible selection of 14 plays by other authors would result in <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e101" xlink:type="simple"/></inline-formula> total combinations, which is infeasible to calculate.</p>
+<p><xref ref-type="fig" rid="pone-0066813-g015">Figure 15</xref> demonstrates the frequency of each of the 55,055 individual words occurring as one of the 20 highest (left) and lowest (right) scoring markers, for all words with nonzero occurrence. The marker words determined across the full text corpus are highlighted in green. This demonstrates the robustness of this selection of marker words against the removal and addition of plays (with the exception of ‘you’, which was 0.4% less likely to occur as a positive marker than ‘thee’).</p>
+<fig id="pone-0066813-g015" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066813.g015</object-id><label>Figure 15</label><caption>
+<title>Frequency of occurrence of words appearing among the 20 highest scoring marker words for Shakespeare, resulting from a 10 fold cross validation.</title>
+<p>This process involved the removal of 10% of plays by Shakespeare (3), and 10% of plays by other authors (14). The 20 highest (left) and lowest (right) scoring marker words were calculated for every possible triplet of removed plays by Shakespeare (<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e065" xlink:type="simple"/></inline-formula> combinations), and for each, a random selection of 14 plays by other authors. The marker words determined across the full text corpus are highlighted in green. This demonstrates this selection of words as valid for classification, and that the CM<sub>–</sub>1 score is robust against the removal and addition of plays.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066813.g015" position="float" xlink:type="simple"/></fig>
+<p>The authorship results presented suggest that authors' individual styles are distinctive to a quantifiable degree. The rates at which they use some of the most common words in the language are consistently different from each other, and when used together serve to model characteristic styles in authorship. This finding supports arguments regarding the importance of the idiolects of individual language users <xref ref-type="bibr" rid="pone.0066813-Johnstone3">[31]</xref>.</p>
+<sec id="s4a">
+<title>Weakly Attributed Plays</title>
+<p>Considering the 20 highest and 20 lowest CM<sub>–</sub>1 scoring marker words for Middleton (see <xref ref-type="table" rid="pone-0066813-t002">Tables 2</xref> and <xref ref-type="table" rid="pone-0066813-t003">3</xref>), <xref ref-type="fig" rid="pone-0066813-g008">Figure 8</xref> demonstrates the ability of this score to identify plays of his authorship. The observed dip in performance corresponds with the play <italic>A Game at Chess</italic>, as indicated in <xref ref-type="fig" rid="pone-0066813-g016">Figure 16</xref>. (The version of <italic>A Game at Chess</italic> considered is the manuscript belonging to Trinity College, Cambridge, in Middleton's hand (MS. 0.2.66).)Although there is no doubt Middleton wrote this play, it is unusual stylistically among his works, being a satire on contemporary international politics, allegorised in the form of a chess game <xref ref-type="bibr" rid="pone.0066813-Taylor1">[32]</xref>, <xref ref-type="bibr" rid="pone.0066813-Taylor2">[33]</xref>. Furthermore, eight of the marker words appearing in <xref ref-type="table" rid="pone-0066813-t002">Tables 2</xref> and <xref ref-type="table" rid="pone-0066813-t003">3</xref> (‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e102" xlink:type="simple"/></inline-formula>’, ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e103" xlink:type="simple"/></inline-formula>’, ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e104" xlink:type="simple"/></inline-formula>’, ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e105" xlink:type="simple"/></inline-formula>’, ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e106" xlink:type="simple"/></inline-formula>’, ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e107" xlink:type="simple"/></inline-formula>’, ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e108" xlink:type="simple"/></inline-formula>’ and ‘<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e109" xlink:type="simple"/></inline-formula>’) appear among the ten word-variables listed by Craig as the result of a discriminant analysis of Middleton's plays <xref ref-type="bibr" rid="pone.0066813-Craig4">[34]</xref>.</p>
+<fig id="pone-0066813-g016" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066813.g016</object-id><label>Figure 16</label><caption>
+<title>Difference between the cumulative CM<sub>–</sub>1 scores for the 20 highest and 20 lowest scoring marker words for Fletcher, Jonson, Middleton and Shakespeare.</title>
+<p>For each author, the left box represents the distribution of scores for their plays, and the right box the distribution of scores for plays by all other considered authors. The worst scoring play belonging to each author is indicated by a green cross. These are: a) <italic>The Faithful Shepherdess</italic> (Fletcher); b) <italic>The Case is Altered</italic> (Jonson); c) <italic>A Game at Chess</italic> (Middleton); and d) <italic>Love's Labour's Lost</italic> (Shakespeare).</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066813.g016" position="float" xlink:type="simple"/></fig>
+<p>Although performance outliers may be explained by a work being of a different genre, chronology may also be a contributing factor. As highlighted by one reviewer, <italic>A Game at Chess</italic> is Middleton's last play; it was completed just three years before his death at age 44. Future applications of the CM<sub>–</sub>1 score may include investigating the feasibility of temporal models of an author's unique style, rather than treating it as homogenous over time.</p>
+<p>Among Jonson's plays, the poorest attribution by a significant margin is that of <italic>The Case is Altered</italic>, as indicated in <xref ref-type="fig" rid="pone-0066813-g016">Figure 16</xref>. This play is generally regarded as an anomaly stylistically among Jonson's works. It is a romantic comedy, while Jonson's comedies are generally satirical. Jonson did not include it in his volume of collected works, and scholars have sometimes suggested that it is a collaboration <xref ref-type="bibr" rid="pone.0066813-Mack1">[35]</xref>. Something similar holds for Fletcher's <italic>The Faithful Shepherdess</italic>, which is the only one of his plays to score negatively in <xref ref-type="fig" rid="pone-0066813-g004">Figure 4</xref>. This play is generally considered to be of a significantly different genre to the remainder of Fletcher's plays, and has been omitted in two previous studies attempting to identify his stylistic signature <xref ref-type="bibr" rid="pone.0066813-Hoy1">[21]</xref>, <xref ref-type="bibr" rid="pone.0066813-Hope1">[36]</xref>.</p>
+</sec><sec id="s4b">
+<title>Maxwell's Demon</title>
+<p>If language and the potential of words are considered as an abstract chaotic system with a high entropy, then the art and process of authorship within the structural and grammatical bounds of language results in a reduction of the original system's entropy. The presented results demonstrate that different authors, while adhering to the bounds of language, reduce the entropy of the system in characteristically different and measurable ways. Perhaps a good model to describe this individual behaviour of authorship is <italic>Maxwell's Demon</italic>, introduced by James Clerk Maxwell in a letter he wrote to Peter Guthrie Tait in 1867 <xref ref-type="bibr" rid="pone.0066813-Knott1">[37]</xref>.</p>
+<p>The Second Law of Thermodynamics suggests that any process in a system will tend to increase the entropy of the universe. Two gases, one warmer than the other, brought into contact with each other, will always move towards equilibrium in temperature. In a letter of 1867 <xref ref-type="bibr" rid="pone.0066813-Knott1">[37]</xref>, James Clerk Maxwell formulated a thought experiment to illustrate how an exception to this law could be conceived. He pictured a ‘demon’ with superhuman powers, operating at a passage between two chambers. Its speed and facility allows it to follow the motion of molecules, and act quickly enough to let only faster molecules into one chamber, and only the slower moving molecules into the other. Without any apparent expenditure of effort, the two temperatures move further apart, in contradiction to the Second Law.</p>
+<p>Whatever the cogency of the perceived contradiction, this celebrated and much debated scientific fable provides an analogy for the processes of language production as they emerge from a computational analysis of writing style. All authors draw on the common elements of a given language, sharing with their audience a set of vocabulary items and an established set of implicit but firm rules for combining these items. Yet each author makes an individual selection from common vocabulary and, while remaining with the rules of grammar, follows characteristic, finely differentiated patterns in phrase and sentence structure. Each author, in other words, starts from a vast, inchoate set of potential utterances and brings to it the order of an individual style. Without apparent effort, in a largely automatic process, entropy is reduced.</p>
+<p>The described process must be faster than conscious thought, given the complexity of the task and the constraints of spontaneous production. Computational stylistics demonstrates this process in motion. Language individuation is multi-layered and subtle, but it leaves traces in simple frequencies, which can be monitored. As the user turns the common resources of a language into a personal discourse, some words in the language stream emerge at rates above the norm of similar language samples, and some are avoided entirely or otherwise substantially filtered. Maxwell's Demon is ‘finite’, yet unthinkably ‘sharpened’ in its ‘faculties’, recognising and dividing a swarm of individual, rapidly moving molecules with uncanny skill. Computational stylistics allow the observation of something similar is language; patterns of enhancement and suppression of the flows of very common words.</p>
+</sec></sec><sec id="s5">
+<title>Conclusion</title>
+<p>Maxwell's Demon effortlessly reduces entropy by identifying and sorting atoms at superhuman speeds, thus apparently defying the second law of thermodynamics. This proves to be a good analogy for the process by which individual language users make a consistent and distinctive idiolect from the language available to them, a process which occurs at the level of the very common function words as well as in the more noticeable lexical words. Experiments with word-variables chosen with the aid of a new score, designed to identify marker variables by comparing means of two heterogeneous groups of specimens (where one group is much more mixed than the other) demonstrate that a small set of very common words provides markers which can help separate plays into authorial groups at a high level of reliability. The results show that words used at a lower rate than the aggregate of other authors are just as useful as words used at a higher rate.</p>
+<p>The new score, CM<sub>–</sub>1, is adapted to the situation common in authorship problems where specimens need to be compared to a single authorial group on the one hand, and a mixed group of other authors on the other. The denominator for the difference in means is the range for the more mixed group rather than the standard deviation of the combined set, as with the <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e110" xlink:type="simple"/></inline-formula>-test. In the tests, markers identified by CM<sub>–</sub>1 out-perform those provided by Welch's <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0066813.e111" xlink:type="simple"/></inline-formula>-test. These results have implications for the understanding of individual differences in language, while the new score, the focus on the commonest variables, and the equal attention paid to under-utilised words all have implications for future authorship work. Future applications may also be found in other areas where there are very large numbers of possible marker variables available, such as the areas of transcriptomics, proteomics and other -omics, which are characterised by the use of high-throughput technologies.</p>
+</sec><sec id="s6">
+<title>Supporting Information</title>
+<supplementary-material id="pone.0066813.s001" mimetype="application/zip" xlink:href="info:doi/10.1371/journal.pone.0066813.s001" position="float" xlink:type="simple"><label>File S1</label><caption>
+<p><bold>Complete text corpus dataset (i.e. the frequencies of 55,055 unique words for 168 Shakespearean-era plays).</bold></p>
+<p>(ZIP)</p>
+</caption></supplementary-material><supplementary-material id="pone.0066813.s002" mimetype="application/zip" xlink:href="info:doi/10.1371/journal.pone.0066813.s002" position="float" xlink:type="simple"><label>File S2</label><caption>
+<p><bold>Reference figure combing </bold><xref ref-type="fig" rid="pone-0066813-g003"><bold>Figures 3</bold></xref><bold>–</bold><xref ref-type="fig" rid="pone-0066813-g010"><bold>10</bold></xref><bold> for side-by-side comparison.</bold></p>
+<p>(ZIP)</p>
+</caption></supplementary-material></sec></body>
+<back><ref-list>
+<title>References</title>
+<ref id="pone.0066813-DeSaussure1"><label>1</label>
+<mixed-citation publication-type="other" xlink:type="simple">De Saussure F (2011) Course in general linguistics. Columbia University Press.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Johnstone1"><label>2</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Johnstone</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Bean</surname><given-names>JM</given-names></name> (<year>1997</year>) <article-title>Self-expression and linguistic variation</article-title>. <source>Language in Society</source> <volume>26</volume>: <fpage>221</fpage>–<lpage>246</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Ellegrd1"><label>3</label>
+<mixed-citation publication-type="other" xlink:type="simple">Ellegård A (1962) A statistical method for determining authorship: The Junius Letters, 1769–1772. Acta Universitatis Gothoburgensis.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Mosteller1"><label>4</label>
+<mixed-citation publication-type="other" xlink:type="simple">Mosteller F, Wallace D (1964) Inference and disputed authorship: The Federalist. Addison-Wesley.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Burrows1"><label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Burrows</surname><given-names>J</given-names></name> (<year>1987</year>) <article-title>Word-patterns and story-shapes: The statistical analysis of narrative style</article-title>. <source>Literary and Linguistic Computing</source> <volume>2</volume>: <fpage>61</fpage>–<lpage>70</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Burrows2"><label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Burrows</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Hassall</surname><given-names>AJ</given-names></name> (<year>1988</year>) <article-title>Anna Boleyn and the authenticity of Fielding's feminine narratives</article-title>. <source>Eighteenth Century Studies</source> <volume>21</volume>: <fpage>427</fpage>–<lpage>453</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Forsyth1"><label>7</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Forsyth</surname><given-names>RS</given-names></name>, <name name-style="western"><surname>Holmes</surname><given-names>DI</given-names></name>, <name name-style="western"><surname>Tse</surname><given-names>EK</given-names></name> (<year>1999</year>) <article-title>Cicero, Sigonio, and Burrows: Investigating the authenticity of the Consolatio</article-title>. <source>Literary and Linguistic Computing</source> <volume>14</volume>: <fpage>375</fpage>–<lpage>400</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Hoover1"><label>8</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hoover</surname><given-names>DL</given-names></name> (<year>2001</year>) <article-title>Statistical stylistics and authorship attribution: An empirical investigation</article-title>. <source>Literary and Linguistic Computing</source> <volume>16</volume>: <fpage>421</fpage>–<lpage>444</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Holmes1"><label>9</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Holmes</surname><given-names>DI</given-names></name>, <name name-style="western"><surname>Gordon</surname><given-names>LJ</given-names></name>, <name name-style="western"><surname>Wilson</surname><given-names>C</given-names></name> (<year>2001</year>) <article-title>A widow and her soldier: Stylometry and the American Civil War</article-title>. <source>Literary and Linguistic Computing</source> <volume>16</volume>: <fpage>403</fpage>–<lpage>420</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Burrows3"><label>10</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Burrows</surname><given-names>J</given-names></name> (<year>2007</year>) <article-title>All the way through: Testing for authorship in different frequency strata</article-title>. <source>Literary and Linguistic Computing</source> <volume>22</volume>: <fpage>27</fpage>–<lpage>47</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Hieatt1"><label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hieatt</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Nicholson</surname><given-names>E</given-names></name> (<year>1987</year>) <article-title>Shakespeare's rare words: ‘Lover's Complaint’, Cymbeline, and Sonnets</article-title>. <source>Notes and Queries</source> <volume>34</volume>: <fpage>219</fpage>–<lpage>24</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Craig1"><label>12</label>
+<mixed-citation publication-type="other" xlink:type="simple">Craig H, Kinney AF, Palmer P, Watt TI (2009) Shakespeare, computers, and the mystery of authorship. Cambridge University Press.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Holmes2"><label>13</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Holmes</surname><given-names>DI</given-names></name> (<year>1998</year>) <article-title>The evolution of stylometry in humanities scholarship</article-title>. <source>Literary and Linguistic computing</source> <volume>13</volume>: <fpage>111</fpage>–<lpage>117</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Juola1"><label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Juola</surname><given-names>P</given-names></name> (<year>2007</year>) <article-title>Authorship attribution</article-title>. <source>Foundations and Trends in Information Retrieval</source> <volume>1</volume>: <fpage>233</fpage>–<lpage>334</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Stamatatos1"><label>15</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Stamatatos</surname><given-names>E</given-names></name> (<year>2009</year>) <article-title>A survey of modern authorship attribution methods</article-title>. <source>Journal of the American Society for information Science and Technology</source> <volume>60</volume>: <fpage>538</fpage>–<lpage>556</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Rybicki1"><label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rybicki</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Eder</surname><given-names>M</given-names></name> (<year>2011</year>) <article-title>Deeper Delta across genres and languages: Do we really need the most frequent words?</article-title> <source>Literary and Linguistic Computing</source> <volume>26</volume>: <fpage>315</fpage>–<lpage>321</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Vickers1"><label>17</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Vickers</surname><given-names>B</given-names></name> (<year>2012</year>) <article-title>Identifying Shakespeare's additions to The Spanish Tragedy (1602): A new(er) approach</article-title>. <source>Shakespeare</source> <volume>8</volume>: <fpage>13</fpage>–<lpage>43</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066813-CoyotlMorales1"><label>18</label>
+<mixed-citation publication-type="other" xlink:type="simple">Coyotl-Morales R, Villaseñor-Pineda L, Montes-y Gómez M, Rosso P (2006) Authorship attribution using word sequences. Progress in Pattern Recognition, Image Analysis and Applications : 844–853.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Fox1"><label>19</label>
+<mixed-citation publication-type="other" xlink:type="simple">Fox C (1989) A stop list for general text. In: ACM SIGIR Forum. ACM, volume 24, 19–21.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Wilbur1"><label>20</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wilbur</surname><given-names>WJ</given-names></name>, <name name-style="western"><surname>Sirotkin</surname><given-names>K</given-names></name> (<year>1992</year>) <article-title>The automatic identification of stop words</article-title>. <source>Journal of Information Science</source> <volume>18</volume>: <fpage>45</fpage>–<lpage>55</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Hoy1"><label>21</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hoy</surname><given-names>C</given-names></name> (<year>1960</year>) <article-title>The shares of Fletcher and his collaborators in the Beaumont and Fletcher canon (V)</article-title>. <source>Studies in Bibliography</source> <volume>13</volume>: <fpage>77</fpage>–<lpage>108</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Elliott1"><label>22</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Elliott</surname><given-names>WE</given-names></name>, <name name-style="western"><surname>Valenza</surname><given-names>RJ</given-names></name> (<year>1996</year>) <article-title>And then there were none: Winnowing the Shakespeare claimants</article-title>. <source>Computers and the Humanities</source> <volume>30</volume>: <fpage>191</fpage>–<lpage>245</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Witten1"><label>23</label>
+<mixed-citation publication-type="other" xlink:type="simple">Witten I, Frank E, Hall M (2011) Data mining: Practical machine learning tools and techniques. Morgan Kaufmann.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Craig2"><label>24</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Craig</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Whipp</surname><given-names>R</given-names></name> (<year>2010</year>) <article-title>Old spellings, new methods: Automated procedures for indeterminate linguistic data</article-title>. <source>Literary and Linguistic Computing</source> <volume>25</volume>: <fpage>37</fpage>–<lpage>52</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Welch1"><label>25</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Welch</surname><given-names>BL</given-names></name> (<year>1947</year>) <article-title>The generalization of Student's problem when several different population variances are involved</article-title>. <source>Biometrika</source> <volume>34</volume>: <fpage>28</fpage>–<lpage>35</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Geisser1"><label>26</label>
+<mixed-citation publication-type="other" xlink:type="simple">Geisser S (1993) Predictive inference, volume 55. Chapman &amp; Hall/CRC.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Baldi1"><label>27</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Baldi</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Brunak</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Chauvin</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Andersen</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Nielsen</surname><given-names>H</given-names></name> (<year>2000</year>) <article-title>Assessing the accuracy of prediction algorithms for classification: An overview</article-title>. <source>Bioinformatics</source> <volume>16</volume>: <fpage>412</fpage>–<lpage>424</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Johnstone2"><label>28</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Johnstone</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Milward</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Berretta</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Moscato</surname><given-names>P</given-names></name> (<year>2012</year>) <article-title>Multivariate protein signatures of preclinical Alzheimer's Disease in the Alzheimer's Disease Neuroimaging Initiative (ADNI) plasma proteome dataset</article-title>. <source>PloS One</source> <volume>7</volume>: <fpage>e34341</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Craig3"><label>29</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Craig</surname><given-names>H</given-names></name> (<year>2012</year>) <article-title>Shakespeare, John Davies of Hereford, and ‘A Lover's Complaint’</article-title>. <source>Shakespeare Quarterly</source> <volume>63</volume>: <fpage>147</fpage>–<lpage>174</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Rosso1"><label>30</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rosso</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Craig</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Moscato</surname><given-names>P</given-names></name> (<year>2009</year>) <article-title>Shakespeare and other English Renaissance authors as characterized by information theory complexity quantifiers</article-title>. <source>Physica A: Statistical Mechanics and its Applications</source> <volume>388</volume>: <fpage>916</fpage>–<lpage>926</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Johnstone3"><label>31</label>
+<mixed-citation publication-type="other" xlink:type="simple">Johnstone B (1996) The linguistic individual: Self-expression in language and linguistics. Oxford University Press.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Taylor1"><label>32</label>
+<mixed-citation publication-type="other" xlink:type="simple">Taylor G, Lavagnino J (2007) A Game at Chesse: An early form. Thomas Middleton: The collected works. Oxford University Press.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Taylor2"><label>33</label>
+<mixed-citation publication-type="other" xlink:type="simple">Taylor G, Lavagnino J (2007) A Game at Chess: A later form. Thomas Middleton: The collected works. Oxford University Press.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Craig4"><label>34</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Craig</surname><given-names>H</given-names></name> (<year>1999</year>) <article-title>Authorial attribution and computational stylistics: If you can tell authors apart, have you learned anything about them?</article-title> <source>Literary and Linguistic Computing</source> <volume>14</volume>: <fpage>103</fpage>–<lpage>113</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Mack1"><label>35</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mack</surname><given-names>R</given-names></name> (<year>1997</year>) <article-title>Ben Jonson's own ‘Comedy of Errors’: ‘That witty play,’ The Case is Altered</article-title>. <source>The Ben Jonson Journal</source> <volume>4</volume>: <fpage>47</fpage>–<lpage>63</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Hope1"><label>36</label>
+<mixed-citation publication-type="other" xlink:type="simple">Hope J (1994) The authorship of Shakespeare's plays: A socio-linguistic study. Cambridge University Press.</mixed-citation>
+</ref>
+<ref id="pone.0066813-Knott1"><label>37</label>
+<mixed-citation publication-type="other" xlink:type="simple">Knott C (1911) Life and scientific work of Peter Guthrie Tait, volume 1. Cambridge University Press.</mixed-citation>
+</ref>
+</ref-list></back>
+</article>

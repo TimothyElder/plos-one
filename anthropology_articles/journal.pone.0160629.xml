@@ -1,0 +1,1446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1d3 20150301//EN" "http://jats.nlm.nih.gov/publishing/1.1d3/JATS-journalpublishing1.dtd">
+<article article-type="research-article" dtd-version="1.1d3" xml:lang="en" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1371/journal.pone.0160629</article-id>
+<article-id pub-id-type="publisher-id">PONE-D-16-10637</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Mathematical and statistical techniques</subject><subj-group><subject>Statistical methods</subject><subj-group><subject>Forecasting</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Physical sciences</subject><subj-group><subject>Mathematics</subject><subj-group><subject>Statistics (mathematics)</subject><subj-group><subject>Statistical methods</subject><subj-group><subject>Forecasting</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Database and informatics methods</subject><subj-group><subject>Biological databases</subject><subj-group><subject>Sequence databases</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Molecular biology</subject><subj-group><subject>Molecular biology techniques</subject><subj-group><subject>Sequencing techniques</subject><subj-group><subject>Sequence analysis</subject><subj-group><subject>Sequence databases</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Molecular biology techniques</subject><subj-group><subject>Sequencing techniques</subject><subj-group><subject>Sequence analysis</subject><subj-group><subject>Sequence databases</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Computer and information sciences</subject><subj-group><subject>Information technology</subject><subj-group><subject>Data mining</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Cultural anthropology</subject><subj-group><subject>Religion</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Sociology</subject><subj-group><subject>Religion</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Physical sciences</subject><subj-group><subject>Mathematics</subject><subj-group><subject>Applied mathematics</subject><subj-group><subject>Algorithms</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Simulation and modeling</subject><subj-group><subject>Algorithms</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Engineering and technology</subject><subj-group><subject>Mining engineering</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Physical sciences</subject><subj-group><subject>Mathematics</subject><subj-group><subject>Probability theory</subject><subj-group><subject>Markov processes</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Physical sciences</subject><subj-group><subject>Mathematics</subject><subj-group><subject>Statistics (mathematics)</subject><subj-group><subject>Markov processes</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Physical sciences</subject><subj-group><subject>Mathematics</subject><subj-group><subject>Probability theory</subject><subj-group><subject>Markov models</subject></subj-group></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Location Prediction Based on Transition Probability Matrices Constructing from Sequential Rules for Spatial-Temporal K-Anonymity Dataset</article-title>
+<alt-title alt-title-type="running-head">Location Prediction for Spatial-Temporal K-Anonymity Dataset</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes" equal-contrib="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Zhang</surname>
+<given-names>Haitao</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+<contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Chen</surname>
+<given-names>Zewei</given-names>
+</name>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Liu</surname>
+<given-names>Zhao</given-names>
+</name>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+<xref ref-type="fn" rid="econtrib001"><sup>‡</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Zhu</surname>
+<given-names>Yunhong</given-names>
+</name>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+<xref ref-type="fn" rid="econtrib001"><sup>‡</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Wu</surname>
+<given-names>Chenxue</given-names>
+</name>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+<xref ref-type="fn" rid="econtrib001"><sup>‡</sup></xref>
+</contrib>
+</contrib-group>
+<aff id="aff001"><label>1</label> <addr-line>School of Geographic and Biological Information, Nanjing University of Posts and Telecommunications, Nanjing, China</addr-line></aff>
+<aff id="aff002"><label>2</label> <addr-line>School of Telecommunications and Information Engineering, Nanjing University of Posts and Telecommunications, Nanjing, China</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Du</surname>
+<given-names>Wen-Bo</given-names>
+</name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Beihang University, CHINA</addr-line></aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exits.</p>
+</fn>
+<fn fn-type="con">
+<p><list list-type="simple"> <list-item><p><bold>Conceived and designed the experiments:</bold> HTZ ZWC.</p></list-item> <list-item><p><bold>Performed the experiments:</bold> ZWC.</p></list-item> <list-item><p><bold>Analyzed the data:</bold> HTZ ZWC.</p></list-item> <list-item><p><bold>Contributed reagents/materials/analysis tools:</bold> ZL.</p></list-item> <list-item><p><bold>Wrote the paper:</bold> ZWC YHZ.</p></list-item> <list-item><p>Reviewer before submission: CXW.</p></list-item></list>
+</p>
+</fn>
+<fn fn-type="other" id="econtrib001">
+<p>‡ These authors also contributed equally to this work.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">zhanghaitao@njupt.edu.cn</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<day>10</day>
+<month>8</month>
+<year>2016</year>
+</pub-date>
+<pub-date pub-type="collection">
+<year>2016</year>
+</pub-date>
+<volume>11</volume>
+<issue>8</issue>
+<elocation-id>e0160629</elocation-id>
+<history>
+<date date-type="received">
+<day>31</day>
+<month>3</month>
+<year>2016</year>
+</date>
+<date date-type="accepted">
+<day>23</day>
+<month>7</month>
+<year>2016</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2016</copyright-year>
+<copyright-holder>Zhang et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0160629"/>
+<abstract>
+<p>Spatial-temporal k-anonymity has become a mainstream approach among techniques for protection of users’ privacy in location-based services (LBS) applications, and has been applied to several variants such as LBS snapshot queries and continuous queries. Analyzing large-scale spatial-temporal anonymity sets may benefit several LBS applications. In this paper, we propose two location prediction methods based on transition probability matrices constructing from sequential rules for spatial-temporal k-anonymity dataset. First, we define single-step sequential rules mined from sequential spatial-temporal k-anonymity datasets generated from continuous LBS queries for multiple users. We then construct transition probability matrices from mined single-step sequential rules, and normalize the transition probabilities in the transition matrices. Next, we regard a mobility model for an LBS requester as a stationary stochastic process and compute the n-step transition probability matrices by raising the normalized transition probability matrices to the power n. Furthermore, we propose two location prediction methods: rough prediction and accurate prediction. The former achieves the probabilities of arriving at target locations along simple paths those include only current locations, target locations and transition steps. By iteratively combining the probabilities for simple paths with n steps and the probabilities for detailed paths with n-1 steps, the latter method calculates transition probabilities for detailed paths with n steps from current locations to target locations. Finally, we conduct extensive experiments, and correctness and flexibility of our proposed algorithm have been verified.</p>
+</abstract>
+<funding-group>
+<award-group id="award001">
+<funding-source>
+<institution>National Natural Science Foundation of China (CN)</institution>
+</funding-source>
+<award-id>41201465</award-id>
+<principal-award-recipient>
+<name name-style="western">
+<surname>Zhang</surname>
+<given-names>Haitao</given-names>
+</name>
+</principal-award-recipient>
+</award-group>
+<award-group id="award002">
+<funding-source>
+<institution>Natural Science Foundation of Jiangsu Province (CN)</institution>
+</funding-source>
+<award-id>BK2012439</award-id>
+<principal-award-recipient>
+<name name-style="western">
+<surname>Zhang</surname>
+<given-names>Haitao</given-names>
+</name>
+</principal-award-recipient>
+</award-group>
+<funding-statement>This research is supported by Jiangsu Government Scholarship for Overseas Studies, grants from National Natural Science Foundation of China (grant number 41201465), and grants from the Natural Science Foundation of Jiangsu province (grant number BK2012439). The authors thank the Institute of Cartography and Geoinformatics, Leibniz University Hannover for providing us with a good work environment. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="7"/>
+<table-count count="11"/>
+<page-count count="22"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability">
+<meta-name>Data Availability</meta-name>
+<meta-value>All relevant data are within the paper and its Supporting Information files.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec001" sec-type="intro">
+<title>Introduction</title>
+<p>With the rapid development in mobile communication and the popularity of positioning devices (e.g. Global Position System, GPS), LBS are widely used because of simplification in computing [<xref ref-type="bibr" rid="pone.0160629.ref001">1</xref>]. However, the deployment of LBS would bring privacy problems (e.g., employers snoop whereabouts of the staff, stalkers attack user trajectories to find out their religion, sex orientation, etc.) if used illegally, which has raised great attention from academia to business circle [<xref ref-type="bibr" rid="pone.0160629.ref002">2</xref>][<xref ref-type="bibr" rid="pone.0160629.ref003">3</xref>].</p>
+<p>Early research on privacy protection for LBS users put emphasis on establishment of laws and treaties. While this research lacks flexibility, and has lagged behind attack technologies, some new technologies have been put forward. For instance, the use of hierarchical clustering [<xref ref-type="bibr" rid="pone.0160629.ref004">4</xref>], dummies [<xref ref-type="bibr" rid="pone.0160629.ref005">5</xref>][<xref ref-type="bibr" rid="pone.0160629.ref006">6</xref>], spatial transformation based on the Hilbert curve [<xref ref-type="bibr" rid="pone.0160629.ref007">7</xref>], private information retrieval (PIR) protocols [<xref ref-type="bibr" rid="pone.0160629.ref008">8</xref>] and spatial-temporal k-anonymity [<xref ref-type="bibr" rid="pone.0160629.ref009">9</xref>]. Spatial-temporal k-anonymity has become a mainstream privacy protection method for LBS users due to its simplification and various applications.</p>
+<p>Furthermore, the basic principle of cloaking a requestor’s identification as well as accurate time and position information has inspired several variants on the original method [<xref ref-type="bibr" rid="pone.0160629.ref010">10</xref>].</p>
+<p>As spatial and temporal properties are most important elements of spatial-temporal k-anonymity datasets (hereafter referred to as anonymity datasets), anonymity datasets can be formatted into a number of sequences of generalized regions. Analyzing large-scale anonymity datasets recorded and stored by LBS providers (such as Google Maps, Foursquare, Baidu Maps, etc.), can achieve a set of sequential rules reflecting LBS issuers’ movement behaviors. Furthermore, the sequential rules can be utilized to predict locations of future users, and provide assist decision support functions for LBS applications, such as intelligent navigation systems, personalized service systems, and so on [<xref ref-type="bibr" rid="pone.0160629.ref011">11</xref>][<xref ref-type="bibr" rid="pone.0160629.ref012">12</xref>]. Unfortunately, location prediction simply based on sequential rules does not perform well, as the prediction can only be single step, that is, the prediction only includes one source and one destination. A more practical location prediction method (such as multistep, etc.), is urgently needed in applications. To our knowledge, there is little literature that focuses on this subject by far.</p>
+<p>In this paper, based on sequential rules mined from large-scale anonymity datasets, we propose two location prediction methods. Simultaneously, privacy attack problems that may result from our proposed location prediction methods are also analyzed.</p>
+<p>The rest of this paper is organized as follows. Preliminary work is described in Section 2. Two location prediction methods based on preprocessing sequential rules from anonymity datasets are presented in Section 3. Comprehensive experiments are conducted in Section 4, and the results are analyzed. Section 5 concludes the paper and discusses further work.</p>
+<sec id="sec002">
+<title>Preliminaries</title>
+<p>In this section, the basic concepts of LBS queries and the primitives of LBS privacy are introduced. Examples of anonymity datasets adopted by a typical method of spatial-temporal k-anonymity are also presented.</p>
+</sec>
+<sec id="sec003">
+<title>LBS query</title>
+<p>A location service can be defined as a service that integrates the location of an LBS user with other information to provide added value to the user. Applications are designed by adopting two modes: push and pull [<xref ref-type="bibr" rid="pone.0160629.ref013">13</xref>]. Furthermore, there are two types of pull services, namely snapshot queries such as “recommend 10 nearby restaurants based on my profile”, and continuous queries such as “continually tell me the shopping mall nearest my location”. For a snapshot query, an LBS user only needs to report their current location to the service provider once to obtain the desired information. On the other hand, for a continuous query, an LBS user has to continually report their location to the service provider in a periodic or on-demand manner to obtain the desired results[<xref ref-type="bibr" rid="pone.0160629.ref014">14</xref>]. Additionally, in a continuous query, a consistent user identity (or pseudo-identifier) is used until the query expires, that is, LBS providers can link requests issued by the same (anonymous) user at different times in chronological order to obtain a sequence of requests.</p>
+</sec>
+<sec id="sec004">
+<title>Primitives of LBS privacy</title>
+<p>Privacy is an essential requirement for providing LBS, and can be grouped into two categories: identity and sensitive information [<xref ref-type="bibr" rid="pone.0160629.ref002">2</xref>]. Identity of each individual is unique which distinguishes an individual from a group of individuals (i.e., a security identifier or SID). Sensitive information consists of location and request content. Location privacy is the tracks of individuality or a group of people, which includes coordinates, landmarks, etc. Semantic location privacy is an instance of privacy regarding sensitive semantic information, for example, hospitals, religious buildings, and so on. Request content privacy involves sensitive attribute information, such as disease, salary, religion, and so on. It is worth noting that identity privacy can be associated with sensitive information privacy to cause more severe privacy invasion.</p>
+</sec>
+<sec id="sec005">
+<title>Spatial-temporal k-anonymity</title>
+<p>Spatial-temporal k-anonymity is a branch of the k-anonymity method, which is an obfuscation technique. Based on spatial-temporal k-anonymity, a query request submitted to LBS providers does not only contributed by the identity and location of LBS users, but also at least k pseudonyms of the users, including the requestor and others nearby, and a cloaking region enclosing the locations of the k (or more) LBS users. Thus, given a query request, an anonymity dataset is generated, consisting of at least k pseudonyms and a cloaking region. Consequently, identity privacy is protected by replacing the identities of requestors with pseudonyms, and location privacy is protected by replacing accurate locations of query requestors with cloaking regions. Furthermore, as an anonymity dataset includes at least k pseudonyms and a cloaking region, the association between pseudonyms and the cloaking region can be prevented at a certain degree. Likewise, the association between pseudonyms and the content of the request can also be avoided, as any pseudonym within the anonymity dataset may have issued the query request.</p>
+<p>Spatial-temporal k-anonymity and its optimized versions are widely used in LBS snapshot queries and continuous queries [<xref ref-type="bibr" rid="pone.0160629.ref002">2</xref>]. To better understand the follow-up analysis of anonymity datasets, we present an example workflow of generating an anonymity dataset adopted by the modified adaptive-interval cloaking algorithm [<xref ref-type="bibr" rid="pone.0160629.ref009">9</xref>].</p>
+<p>First, we present the basic definitions of an anonymity dataset for an LBS snapshot query <italic>SnAS</italic> = ⟨<italic>UP</italic>,<italic>CR</italic>,<italic>TC</italic>⟩, where <italic>UP</italic> = ⟨<italic>U</italic><sub>1</sub>,<italic>U</italic><sub>2</sub>,…,<italic>U</italic><sub><italic>k</italic></sub>⟩ represents a set of k user pseudonyms, <italic>CR</italic> = ⟨<italic>Cell</italic><sub><italic>1</italic></sub>,<italic>Cell</italic><sub><italic>2</italic></sub>,…,<italic>Cell</italic><sub><italic>m</italic></sub>⟩ represents a cloaking region that includes m grid cells enclosing the locations of the k users, and <italic>TC</italic> = 〈<italic>TI</italic><sub>1</sub>,<italic>TI</italic><sub>2</sub>,…,<italic>TI</italic><sub><italic>n</italic></sub>〉 represents temporal cloaking with n time intervals of equal duration. Moreover, the time intervals 〈<italic>TI</italic><sub>1</sub>,<italic>TI</italic><sub>2</sub>,…,<italic>TI</italic><sub><italic>n</italic></sub>〉 provide very little temporal information, that is, <italic>SnAS</italic> is a temporally-ordered sequence without a specified time.</p>
+<p><xref ref-type="fig" rid="pone.0160629.g001">Fig 1</xref> presents an example of an anonymity dataset for an LBS snapshot query, where <italic>SnAS</italic> = ⟨⟨<italic>U</italic><sub>11</sub>,<italic>U</italic><sub>12</sub>,<italic>U</italic><sub>13</sub>,<italic>U</italic><sub>14</sub>,<italic>U</italic><sub>15</sub>,<italic>U</italic><sub>16</sub>,<italic>U</italic><sub>17</sub>,<italic>U</italic><sub>18</sub>,<italic>U</italic><sub>19</sub>,<italic>U</italic><sub>26</sub>,<italic>U</italic><sub>27</sub>,<italic>U</italic><sub>28</sub>⟩,⟨<italic>Cell</italic><sub>22</sub>,<italic>Cell</italic><sub>23</sub>,<italic>Cell</italic><sub>33</sub>⟩,⟨1⟩⟩. We set k = 10, and for the sake of simplicity, we set the number of temporal cloaking to be 1.</p>
+<fig id="pone.0160629.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0160629.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>Example of an anonymity dataset for an LBS snapshot query.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.g001" xlink:type="simple"/>
+</fig>
+<p>Based on the definitions of anonymity datasets for a snapshot query, we define an anonymity dataset for an LBS continuous query as, <italic>CoAS</italic> = 〈<italic>SnAS</italic><sub>1</sub>,<italic>SnAS</italic><sub>2</sub>,…,<italic>SnAS</italic><sub><italic>s</italic></sub>〉 where <italic>SnAS</italic><sub><italic>i</italic></sub>(1 ≤ <italic>i</italic> ≤ <italic>s</italic>) represents an anonymity dataset for a snapshot query. In this paper, we focus on anonymity datasets for LBS continuous queries. <xref ref-type="fig" rid="pone.0160629.g002">Fig 2</xref> presents an example of an anonymity dataset for an LBS continuous query, where <italic>CoAS</italic> = 〈<italic>SnAS</italic><sub>1</sub>,<italic>SnAS</italic><sub>2</sub>,<italic>SnAS</italic><sub>3</sub>,<italic>SnAS</italic><sub>4</sub>〉,
+<disp-formula id="pone.0160629.e001">
+<alternatives>
+<graphic id="pone.0160629.e001g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e001" xlink:type="simple"/>
+<mml:math display="block" id="M1">
+<mml:mtable columnalign="left"><mml:mtr><mml:mtd><mml:mi>S</mml:mi><mml:mi>n</mml:mi><mml:mi>A</mml:mi><mml:msub><mml:mi>S</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>=</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>11</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>12</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>13</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>14</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>15</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>16</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>17</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>18</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>19</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>26</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>27</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>28</mml:mn></mml:mrow></mml:msub></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>,</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mn>22</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mn>23</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mn>33</mml:mn></mml:mrow></mml:msub></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>,</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mn>1</mml:mn><mml:mi>〉</mml:mi></mml:mrow></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>,</mml:mo></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>S</mml:mi><mml:mi>n</mml:mi><mml:mi>A</mml:mi><mml:msub><mml:mi>S</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mo>=</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:msub><mml:mi>U</mml:mi><mml:mn>3</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mn>4</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mn>5</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mn>6</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mn>8</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>14</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>15</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>16</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>17</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>18</mml:mn></mml:mrow></mml:msub></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>,</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mn>15</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mn>16</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mn>26</mml:mn></mml:mrow></mml:msub></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>,</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mn>2</mml:mn><mml:mi>〉</mml:mi></mml:mrow></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>,</mml:mo></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>S</mml:mi><mml:mi>n</mml:mi><mml:mi>A</mml:mi><mml:msub><mml:mi>S</mml:mi><mml:mn>3</mml:mn></mml:msub><mml:mo>=</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>11</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>12</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>13</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>14</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>22</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>23</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>24</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>25</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>26</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>27</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>28</mml:mn></mml:mrow></mml:msub></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>,</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mn>27</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mn>37</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mn>38</mml:mn></mml:mrow></mml:msub></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>,</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mn>3</mml:mn><mml:mi>〉</mml:mi></mml:mrow></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>,</mml:mo></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>S</mml:mi><mml:mi>n</mml:mi><mml:mi>A</mml:mi><mml:msub><mml:mi>S</mml:mi><mml:mn>4</mml:mn></mml:msub><mml:mo>=</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:msub><mml:mi>U</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mn>7</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mn>8</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mn>9</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>10</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>11</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>14</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>17</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>U</mml:mi><mml:mrow><mml:mn>19</mml:mn></mml:mrow></mml:msub></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>,</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mn>112</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mn>211</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mn>212</mml:mn></mml:mrow></mml:msub></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>,</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mn>4</mml:mn><mml:mi>〉</mml:mi></mml:mrow></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>.</mml:mo></mml:mtd></mml:mtr></mml:mtable>
+</mml:math>
+</alternatives>
+</disp-formula></p>
+<fig id="pone.0160629.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0160629.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>Example of an anonymity dataset for an LBS continuous query.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.g002" xlink:type="simple"/>
+</fig>
+<p>Finally, as we deal only with spatial-temporal properties of anonymity datasets, an anonymity dataset for an LBS continuous query can be denoted more briefly as
+<disp-formula id="pone.0160629.e002">
+<alternatives>
+<graphic id="pone.0160629.e002g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e002" xlink:type="simple"/>
+<mml:math display="block" id="M2">
+<mml:mtable columnalign="left"><mml:mtr><mml:mtd><mml:mi>C</mml:mi><mml:mi>o</mml:mi><mml:mi>A</mml:mi><mml:msup><mml:mi>S</mml:mi><mml:mo>'</mml:mo></mml:msup><mml:mo>=</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mi>S</mml:mi><mml:mi>n</mml:mi><mml:mi>A</mml:mi><mml:msub><mml:mi>S</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:msup><mml:mrow/><mml:mo>'</mml:mo></mml:msup><mml:mo>,</mml:mo><mml:mi>S</mml:mi><mml:mi>n</mml:mi><mml:mi>A</mml:mi><mml:msub><mml:mi>S</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:msup><mml:mrow/><mml:mo>'</mml:mo></mml:msup><mml:mo>,</mml:mo><mml:mi>S</mml:mi><mml:mi>n</mml:mi><mml:mi>A</mml:mi><mml:msub><mml:mi>S</mml:mi><mml:mn>3</mml:mn></mml:msub><mml:msup><mml:mrow/><mml:mo>'</mml:mo></mml:msup><mml:mo>,</mml:mo><mml:mi>S</mml:mi><mml:mi>n</mml:mi><mml:mi>A</mml:mi><mml:msub><mml:mi>S</mml:mi><mml:mn>4</mml:mn></mml:msub><mml:msup><mml:mrow/><mml:mo>'</mml:mo></mml:msup></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>,</mml:mo><mml:mspace width="0.45em"/><mml:mi>S</mml:mi><mml:mi>n</mml:mi><mml:mi>A</mml:mi><mml:msub><mml:mi>S</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:msup><mml:mrow/><mml:mo>'</mml:mo></mml:msup><mml:mo>=</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:mo>,</mml:mo><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:msup><mml:mi>m</mml:mi><mml:mn>1</mml:mn></mml:msup></mml:mrow></mml:msub></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>,</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mi>T</mml:mi><mml:msub><mml:mi>I</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:mi>T</mml:mi><mml:msub><mml:mi>I</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:mo>,</mml:mo><mml:mi>T</mml:mi><mml:msub><mml:mi>I</mml:mi><mml:mrow><mml:msup><mml:mi>n</mml:mi><mml:mn>1</mml:mn></mml:msup></mml:mrow></mml:msub></mml:mrow><mml:mi>〉</mml:mi></mml:mrow></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>,</mml:mo></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>S</mml:mi><mml:mi>n</mml:mi><mml:mi>A</mml:mi><mml:msub><mml:mi>S</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:msup><mml:mrow/><mml:mo>'</mml:mo></mml:msup><mml:mo>=</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:mo>,</mml:mo><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:msup><mml:mi>m</mml:mi><mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:msub></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>,</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mi>T</mml:mi><mml:msub><mml:mi>I</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:mi>T</mml:mi><mml:msub><mml:mi>I</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:mo>,</mml:mo><mml:mi>T</mml:mi><mml:msub><mml:mi>I</mml:mi><mml:mrow><mml:msup><mml:mi>n</mml:mi><mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:msub></mml:mrow><mml:mi>〉</mml:mi></mml:mrow></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>,</mml:mo></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>S</mml:mi><mml:mi>n</mml:mi><mml:mi>A</mml:mi><mml:msub><mml:mi>S</mml:mi><mml:mi>s</mml:mi></mml:msub><mml:msup><mml:mrow/><mml:mo>'</mml:mo></mml:msup><mml:mo>=</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:mo>,</mml:mo><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:msup><mml:mi>m</mml:mi><mml:mi>s</mml:mi></mml:msup></mml:mrow></mml:msub></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>,</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mi>T</mml:mi><mml:msub><mml:mi>I</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:mi>T</mml:mi><mml:msub><mml:mi>I</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:mo>,</mml:mo><mml:mi>T</mml:mi><mml:msub><mml:mi>I</mml:mi><mml:mrow><mml:msup><mml:mi>n</mml:mi><mml:mi>s</mml:mi></mml:msup></mml:mrow></mml:msub></mml:mrow><mml:mi>〉</mml:mi></mml:mrow></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>.</mml:mo></mml:mtd></mml:mtr></mml:mtable>
+</mml:math>
+</alternatives>
+</disp-formula></p>
+<p>In the case of the anonymity dataset in <xref ref-type="fig" rid="pone.0160629.g002">Fig 2</xref>, the simplified notation is as follows:
+<disp-formula id="pone.0160629.e003">
+<alternatives>
+<graphic id="pone.0160629.e003g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e003" xlink:type="simple"/>
+<mml:math display="block" id="M3">
+<mml:mtable columnalign="left"><mml:mtr><mml:mtd><mml:mi>C</mml:mi><mml:mi>o</mml:mi><mml:mi>A</mml:mi><mml:msup><mml:mi>S</mml:mi><mml:mo>'</mml:mo></mml:msup><mml:mo>=</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mi>S</mml:mi><mml:mi>n</mml:mi><mml:mi>A</mml:mi><mml:msub><mml:mi>S</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:msup><mml:mrow/><mml:mo>'</mml:mo></mml:msup><mml:mo>,</mml:mo><mml:mi>S</mml:mi><mml:mi>n</mml:mi><mml:mi>A</mml:mi><mml:msub><mml:mi>S</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:msup><mml:mrow/><mml:mo>'</mml:mo></mml:msup><mml:mo>,</mml:mo><mml:mi>S</mml:mi><mml:mi>n</mml:mi><mml:mi>A</mml:mi><mml:msub><mml:mi>S</mml:mi><mml:mn>3</mml:mn></mml:msub><mml:msup><mml:mrow/><mml:mo>'</mml:mo></mml:msup><mml:mo>,</mml:mo><mml:mi>S</mml:mi><mml:mi>n</mml:mi><mml:mi>A</mml:mi><mml:msub><mml:mi>S</mml:mi><mml:mn>4</mml:mn></mml:msub><mml:msup><mml:mrow/><mml:mo>'</mml:mo></mml:msup></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>,</mml:mo><mml:mspace width="0.45em"/><mml:mi>S</mml:mi><mml:mi>n</mml:mi><mml:mi>A</mml:mi><mml:msub><mml:mi>S</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:msup><mml:mrow/><mml:mo>'</mml:mo></mml:msup><mml:mo>=</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mn>22</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mn>23</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mn>33</mml:mn></mml:mrow></mml:msub></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>,</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mn>1</mml:mn><mml:mi>〉</mml:mi></mml:mrow></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>,</mml:mo></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>S</mml:mi><mml:mi>n</mml:mi><mml:mi>A</mml:mi><mml:msub><mml:mi>S</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:msup><mml:mrow/><mml:mo>'</mml:mo></mml:msup><mml:mo>=</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mn>15</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mn>16</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mn>26</mml:mn></mml:mrow></mml:msub></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>,</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mn>2</mml:mn><mml:mi>〉</mml:mi></mml:mrow></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>,</mml:mo><mml:mspace width="0.45em"/><mml:mi>S</mml:mi><mml:mi>n</mml:mi><mml:mi>A</mml:mi><mml:msub><mml:mi>S</mml:mi><mml:mn>3</mml:mn></mml:msub><mml:msup><mml:mrow/><mml:mo>'</mml:mo></mml:msup><mml:mo>=</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mn>27</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mn>37</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mn>38</mml:mn></mml:mrow></mml:msub></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>,</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mn>3</mml:mn><mml:mi>〉</mml:mi></mml:mrow></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>,</mml:mo></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>S</mml:mi><mml:mi>n</mml:mi><mml:mi>A</mml:mi><mml:msub><mml:mi>S</mml:mi><mml:mn>4</mml:mn></mml:msub><mml:msup><mml:mrow/><mml:mo>'</mml:mo></mml:msup><mml:mo>=</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mrow><mml:mi>〈</mml:mi><mml:mrow><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mn>112</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mn>211</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mi>C</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mn>212</mml:mn></mml:mrow></mml:msub></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>,</mml:mo><mml:mrow><mml:mi>〈</mml:mi><mml:mn>4</mml:mn><mml:mi>〉</mml:mi></mml:mrow></mml:mrow><mml:mi>〉</mml:mi></mml:mrow><mml:mo>.</mml:mo></mml:mtd></mml:mtr></mml:mtable>
+</mml:math>
+</alternatives>
+</disp-formula></p>
+</sec>
+<sec id="sec006">
+<title>Location prediction method</title>
+<p>In this section, two location prediction methods are proposed. Either follows 5 phases:</p>
+<list list-type="order">
+<list-item><p>Mining sequential rules from anonymity datasets for LBS continuous queries;</p></list-item>
+<list-item><p>Constructing transition probability matrices from the mined sequential rules;</p></list-item>
+<list-item><p>Normalizing the transition probabilities in the transition probability matrices;</p></list-item>
+<list-item><p>Computing n-step transition probability matrices by raising the normalized transition probability matrices to the power n;</p></list-item>
+<list-item><p>Designing a rough location prediction method and an accurate location prediction method based on the n-step transition probability matrices.</p></list-item>
+</list>
+</sec>
+<sec id="sec007">
+<title>Mining sequential rules from anonymity datasets for LBS continuous queries</title>
+<p>Prediction is an important type of data mining technology, and discovering temporal relationships in sequences of discrete events stored in large databases can help with the prediction of events[<xref ref-type="bibr" rid="pone.0160629.ref015">15</xref>]. Sequential patterns in sequences of events can reflect temporal relationships even without a specified time between events, and mining sequential patterns has become a popular technique for prediction. Meanwhile, as a sequential pattern only indicates that a sequence of events appears frequently in a database, it is not sufficient for the prediction of events. Thus, the concept of a sequential rule, also called a prediction rule, was proposed in [<xref ref-type="bibr" rid="pone.0160629.ref016">16</xref>].</p>
+<p>A sequential rule has the form <italic>X</italic> → <italic>Y</italic>, where <italic>X</italic> and <italic>Y</italic> are two sets of events. <italic>X</italic> → <italic>Y</italic> is interpreted to mean “if events <italic>X</italic> appear, the events <italic>Y</italic> are likely to occur afterward with a given confidence value or probability”. Events <italic>X</italic> and events <italic>Y</italic> occur in succession frequently within a single sequence. A sequential rule typically has two measures of significance: support and confidence. The support of a sequential rule is here defined as the number of sequences where the left part occurs before the right part, divided by the number of sequences; the confidence of a rule is the number of sequences where the left part occurs before the right part, divided by the number of sequences where the left part occurs. For example, for a sequential rule <italic>X</italic> → <italic>Y</italic>, the support value and the confidence value of the sequential rule are respectively formulated as follows: <italic>seq</italic>sup(<italic>X</italic> → <italic>Y</italic>) = <italic>seq</italic>sup(<italic>X</italic> ∪ <italic>Y</italic>)/|<italic>D</italic>| and <italic>seqconf</italic>(<italic>X</italic> → <italic>Y</italic>) = <italic>seq</italic>sup(<italic>X</italic> ∪ <italic>Y</italic>) / <italic>seq</italic>sup(<italic>X</italic>), where |<italic>D</italic>| is the number of sequences in a sequence database <italic>D</italic>, <italic>seq</italic>sup(<italic>X</italic>) is the number of sequences in <italic>D</italic> where <italic>X</italic> occurs, and <italic>seq</italic>sup(<italic>X</italic> ∪ <italic>Y</italic>) is the number of sequences in <italic>D</italic> where <italic>Y</italic> occurs after <italic>X</italic>. Neither <italic>seq</italic>sup(<italic>X</italic> → <italic>Y</italic>) nor <italic>seqconf</italic>(<italic>X</italic> → <italic>Y</italic>) are less than the user-defined thresholds <italic>seq</italic>sup<sub>min</sub> and <italic>seqconf</italic><sub>min</sub>.</p>
+<p>In this paper, we focus on spatial-temporal properties of anonymity datasets. Sequential rules mined from large-scale historical anonymity datasets generated by LBS continuous queries can be used to make location prediction for LBS users. In particular, a sequential rule of the form <italic>A</italic> → <italic>B</italic> with the confidence <italic>seqsconf</italic>(<italic>A</italic>– &gt; <italic>B</italic>) may indicate that, if an LBS user issued a continuous query and presented an anonymous request in grid cell <italic>A</italic>, then with the confidence <italic>seqsconf</italic>(<italic>A</italic> → <italic>B</italic>) (s)he will continue to present an anonymous request in grid cell <italic>B</italic>. That is, sequential rules mined from anonymity datasets can reflect the movement regularity of LBS users among a series of grid cells. <xref ref-type="table" rid="pone.0160629.t001">Table 1</xref> presents a sample of sequential rules mined from anonymity datasets generated by LBS continuous queries.</p>
+<table-wrap id="pone.0160629.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0160629.t001</object-id>
+<label>Table 1</label> <caption><title>Sample of sequential rules mined from anonymity datasets generated by LBS continuous queries.</title></caption>
+<alternatives>
+<graphic id="pone.0160629.t001g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.t001" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="justify">No.</th>
+<th align="justify">Rules</th>
+<th align="justify"><italic>seqconf</italic></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="justify"><bold>1</bold></td>
+<td align="justify">A-&gt;B</td>
+<td align="justify">0.2</td>
+</tr>
+<tr>
+<td align="justify"><bold>2</bold></td>
+<td align="justify">A-&gt;C</td>
+<td align="justify">0.5</td>
+</tr>
+<tr>
+<td align="justify"><bold>3</bold></td>
+<td align="justify">A-&gt;D</td>
+<td align="justify">0.2</td>
+</tr>
+<tr>
+<td align="justify"><bold>4</bold></td>
+<td align="justify">B-&gt;C</td>
+<td align="justify">0.7</td>
+</tr>
+<tr>
+<td align="justify"><bold>5</bold></td>
+<td align="justify">B-&gt;E</td>
+<td align="justify">0.3</td>
+</tr>
+<tr>
+<td align="justify"><bold>6</bold></td>
+<td align="justify">C-&gt;D</td>
+<td align="justify">0.1</td>
+</tr>
+<tr>
+<td align="justify"><bold>7</bold></td>
+<td align="justify">C-&gt;F</td>
+<td align="justify">0.6</td>
+</tr>
+<tr>
+<td align="justify"><bold>8</bold></td>
+<td align="justify">D-&gt;F</td>
+<td align="justify">0.9</td>
+</tr>
+<tr>
+<td align="justify"><bold>9</bold></td>
+<td align="justify">E-&gt;F</td>
+<td align="justify">0.8</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="sec008">
+<title>Constructing n-step transition matrices by normalizing the confidence values of sequential rules</title>
+<p>From a statistical standpoint, a mobility model for an LBS requester can be viewed as a stationary stochastic process [<xref ref-type="bibr" rid="pone.0160629.ref017">17</xref>]. Each movement of LBS users among a series of grid cells can be regarded as a discrete Markov process {<italic>X</italic><sub><italic>n</italic></sub>,<italic>n</italic>∈<italic>T</italic>}, where <italic>T</italic> is a discrete time set (e.g., <italic>T</italic> = {1,2,…}), the random variable <italic>X</italic> represents the location of an LBS user who requests an anonymous continuous query, and <italic>X</italic><sub><italic>n</italic></sub> represents the value of random variable <italic>X</italic> at time <italic>n</italic> (here, <italic>X</italic><sub><italic>n</italic></sub> represents the grid cell where the LBS user is located at time <italic>n</italic>). We refer to <italic>X</italic><sub><italic>n</italic></sub> as a state and call <italic>I</italic> = {<italic>i</italic><sub>1</sub>,<italic>i</italic><sub>2</sub>,<italic>i</italic><sub>3</sub>…<italic>i</italic><sub><italic>m</italic></sub>}, the set of all possible states of <italic>X</italic><sub><italic>n</italic></sub>, the state space of <italic>X</italic><sub><italic>n</italic></sub>. <italic>I</italic> can be achieved by counting of the number of distinguished grid cells appearing in the left and right parts of the sequential rules mined from large-scale historical anonymity datasets generated by LBS continuous queries. In the case of the collection of sequential rules in <xref ref-type="table" rid="pone.0160629.t001">Table 1</xref>, <italic>I</italic> = {<italic>A</italic>,<italic>B</italic>,<italic>C</italic>,<italic>D</italic>,<italic>E</italic>,<italic>F</italic>}.</p>
+<p>For any given <italic>n</italic> ∈ <italic>T</italic>, <italic>i</italic><sub>0</sub>,<italic>i</italic><sub>1</sub>…<italic>i</italic><sub><italic>n</italic>+1</sub> ∈ <italic>I</italic>, the discrete Markov process {<italic>X</italic><sub><italic>n</italic></sub>,<italic>n</italic>∈<italic>T</italic>} is called a 1-order Markov chain if the following formula holds: <italic>P</italic>{<italic>X</italic><sub><italic>n</italic>+1</sub> = <italic>i</italic><sub><italic>n</italic>+1</sub> | <italic>X</italic><sub>1</sub> = <italic>i</italic><sub>1</sub>,<italic>X</italic><sub>2</sub> = <italic>i</italic><sub>2</sub>,…,<italic>X</italic><sub><italic>n</italic></sub> = <italic>i</italic><sub><italic>n</italic></sub>} = <italic>P</italic>{<italic>X</italic><sub><italic>n</italic>+1</sub> == <italic>i</italic><sub><italic>n</italic>+1</sub> | <italic>X</italic><sub><italic>n</italic></sub> = <italic>i</italic><sub><italic>n</italic></sub>}, where <italic>P</italic>{<italic>X</italic><sub><italic>n</italic>+1</sub> = <italic>i</italic><sub><italic>n</italic>+1</sub> | <italic>X</italic><sub>1</sub> = <italic>i</italic><sub>1</sub>,<italic>X</italic><sub>2</sub> = <italic>i</italic><sub>2</sub>,…,<italic>X</italic><sub><italic>n</italic></sub> = <italic>i</italic><sub><italic>n</italic></sub>} is the conditional probability of <italic>X</italic><sub><italic>n</italic>+1</sub> = <italic>i</italic><sub><italic>n</italic>+1</sub> given <italic>X</italic><sub>0</sub> = <italic>i</italic><sub>0</sub>, <italic>X</italic><sub>1</sub> = <italic>i</italic><sub>1</sub>,…,<italic>X</italic><sub><italic>n</italic></sub> = <italic>i</italic><sub><italic>n</italic></sub>, and <italic>P</italic>{<italic>X</italic><sub><italic>n</italic>+1</sub> == <italic>i</italic><sub><italic>n</italic>+1</sub> | <italic>X</italic><sub><italic>n</italic></sub> = <italic>i</italic><sub><italic>n</italic></sub>} is the conditional probability of <italic>X</italic><sub><italic>n</italic>+1</sub> = <italic>i</italic><sub><italic>n</italic>+1</sub> given <italic>X</italic><sub><italic>n</italic></sub> = <italic>i</italic><sub><italic>n</italic></sub>. That is, a 1-order Markov chain {<italic>X</italic><sub><italic>n</italic></sub>,<italic>n</italic>∈<italic>T</italic>} can be characterized as memoryless: the next state <italic>X</italic><sub><italic>n</italic>+1</sub> = <italic>i</italic><sub><italic>n</italic>+1</sub> depends only on the current state <italic>X</italic><sub><italic>n</italic>+1</sub> = <italic>i</italic><sub><italic>n</italic>+1</sub> but not on the sequence of events that preceded it. In the case of sequential rules mined from anonymity datasets, the memoryless means that the future grid cell at which an LBS user arrives is independent of all but the most recent grid cell.</p>
+<p>The conditional probability <italic>P</italic>{<italic>X</italic><sub><italic>n</italic>+1</sub> == <italic>i</italic> | <italic>X</italic><sub><italic>n</italic></sub> = <italic>j</italic>}, <italic>i</italic>, <italic>j</italic> ∈ <italic>I</italic> can also be taken as a one-step transition probability from state <italic>i</italic> to state <italic>j</italic>, which is denoted by <italic>p</italic><sub><italic>ij</italic></sub>. In statistical significance, <italic>p</italic><sub><italic>ij</italic></sub> is consistent with the confidence value of the sequence rule of the form <italic>i</italic> → <italic>j</italic>. Based on all one-step transition probabilities that corresponding to the sequential rules, a transition matrix <inline-formula id="pone.0160629.e004"><alternatives><graphic id="pone.0160629.e004g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e004" xlink:type="simple"/><mml:math display="inline" id="M4"><mml:mrow><mml:mi>P</mml:mi><mml:mo>=</mml:mo><mml:mrow><mml:mo>{</mml:mo><mml:mrow><mml:mtable><mml:mtr><mml:mtd><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mrow><mml:mn>11</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:mtd><mml:mtd><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mrow><mml:mn>12</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:mtd><mml:mtd><mml:mrow><mml:mo>…</mml:mo></mml:mrow></mml:mtd><mml:mtd><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mi>m</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mrow><mml:mn>21</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:mtd><mml:mtd><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mrow><mml:mn>22</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:mtd><mml:mtd><mml:mrow><mml:mo>…</mml:mo></mml:mrow></mml:mtd><mml:mtd><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mrow><mml:mn>2</mml:mn><mml:mi>m</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mrow><mml:mo>…</mml:mo></mml:mrow></mml:mtd><mml:mtd><mml:mrow><mml:mo>…</mml:mo></mml:mrow></mml:mtd><mml:mtd><mml:mrow><mml:mo>…</mml:mo></mml:mrow></mml:mtd><mml:mtd><mml:mrow><mml:mo>…</mml:mo></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mrow><mml:mi>m</mml:mi><mml:mn>1</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:mtd><mml:mtd><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mrow><mml:mi>m</mml:mi><mml:mn>2</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:mtd><mml:mtd><mml:mrow><mml:mo>…</mml:mo></mml:mrow></mml:mtd><mml:mtd><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mrow><mml:mi>m</mml:mi><mml:mi>m</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mrow><mml:mo>}</mml:mo></mml:mrow></mml:mrow></mml:math></alternatives></inline-formula> can be constructed, where the dimension <italic>m</italic> is equal to the number of states in the state space <italic>I</italic>. Continuing with the sequential rules in <xref ref-type="table" rid="pone.0160629.t001">Table 1</xref>, the generated transition matrix is: <inline-formula id="pone.0160629.e005"><alternatives><graphic id="pone.0160629.e005g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e005" xlink:type="simple"/><mml:math display="inline" id="M5"><mml:mrow><mml:mi>P</mml:mi><mml:mo>=</mml:mo><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:mtable><mml:mtr><mml:mtd><mml:mrow/></mml:mtd><mml:mtd><mml:mi>A</mml:mi></mml:mtd><mml:mtd><mml:mi>B</mml:mi></mml:mtd><mml:mtd><mml:mi>C</mml:mi></mml:mtd><mml:mtd><mml:mi>D</mml:mi></mml:mtd><mml:mtd><mml:mi>E</mml:mi></mml:mtd><mml:mtd><mml:mi>F</mml:mi></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>A</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.2</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.5</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.2</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>B</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.7</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.3</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>C</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.1</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.6</mml:mn></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>D</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.9</mml:mn></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>E</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.8</mml:mn></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>F</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr></mml:mtable></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:mrow></mml:math></alternatives></inline-formula>.</p>
+<p>However, the transition matrix must be normalized so that the condition <inline-formula id="pone.0160629.e006"><alternatives><graphic id="pone.0160629.e006g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e006" xlink:type="simple"/><mml:math display="inline" id="M6"><mml:mrow><mml:mstyle displaystyle="true"><mml:munder><mml:mo>∑</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>∈</mml:mo><mml:mi>I</mml:mi></mml:mrow></mml:munder><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mstyle><mml:mo>=</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mi>i</mml:mi><mml:mo>∈</mml:mo><mml:mi>I</mml:mi></mml:mrow></mml:math></alternatives></inline-formula> holds. For example, for given <italic>i</italic> = <italic>A</italic>, <italic>i</italic> ∈ {<italic>A</italic>,<italic>B</italic>,<italic>C</italic>,<italic>D</italic>,<italic>E</italic>,<italic>F</italic>}, <inline-formula id="pone.0160629.e007"><alternatives><graphic id="pone.0160629.e007g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e007" xlink:type="simple"/><mml:math display="inline" id="M7"><mml:mrow><mml:mstyle displaystyle="true"><mml:munder><mml:mo>∑</mml:mo><mml:mi>A</mml:mi></mml:munder><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mrow><mml:mi>A</mml:mi><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mstyle></mml:mrow></mml:math></alternatives></inline-formula> must be equal to 1, while <inline-formula id="pone.0160629.e008"><alternatives><graphic id="pone.0160629.e008g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e008" xlink:type="simple"/><mml:math display="inline" id="M8"><mml:mrow><mml:mstyle displaystyle="true"><mml:munder><mml:mo>∑</mml:mo><mml:mi>A</mml:mi></mml:munder><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mrow><mml:mi>A</mml:mi><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mstyle></mml:mrow></mml:math></alternatives></inline-formula> = <italic>p</italic><sub><italic>AA</italic></sub> + <italic>p</italic><sub><italic>AB</italic></sub> + <italic>p</italic><sub><italic>AC</italic></sub> + <italic>p</italic><sub><italic>AD</italic></sub> + <italic>p</italic><sub><italic>AE</italic></sub> + <italic>p</italic><sub><italic>AF</italic></sub> = 0 + 0.2 + 0.5 + 0.2 + 0 + 0 = 0.9.</p>
+<p>The normalization formula of <italic>p</italic><sub><italic>ij</italic></sub> is <inline-formula id="pone.0160629.e009"><alternatives><graphic id="pone.0160629.e009g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e009" xlink:type="simple"/><mml:math display="inline" id="M9"><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:msup><mml:mrow/><mml:mo>‘</mml:mo></mml:msup><mml:mo>=</mml:mo><mml:msub><mml:mi>p</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>/</mml:mo><mml:mstyle displaystyle="true"><mml:munder><mml:mo>∑</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>∈</mml:mo><mml:mi>I</mml:mi></mml:mrow></mml:munder><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mstyle></mml:mrow></mml:math></alternatives></inline-formula>, <inline-formula id="pone.0160629.e010"><alternatives><graphic id="pone.0160629.e010g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e010" xlink:type="simple"/><mml:math display="inline" id="M10"><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mrow><mml:mi>A</mml:mi><mml:mtext>i</mml:mtext></mml:mrow></mml:msub><mml:msup><mml:mrow/><mml:mo>‘</mml:mo></mml:msup><mml:mo>=</mml:mo><mml:msub><mml:mi>p</mml:mi><mml:mrow><mml:mi>A</mml:mi><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>/</mml:mo><mml:mstyle displaystyle="true"><mml:munderover><mml:mo>∑</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mn>5</mml:mn></mml:munderover><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mrow><mml:mi>A</mml:mi><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mstyle></mml:mrow></mml:math></alternatives></inline-formula>. Then, we get <inline-formula id="pone.0160629.e011"><alternatives><graphic id="pone.0160629.e011g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e011" xlink:type="simple"/><mml:math display="inline" id="M11"><mml:mrow><mml:msubsup><mml:mi>p</mml:mi><mml:mrow><mml:mi>A</mml:mi><mml:mi>A</mml:mi></mml:mrow><mml:mo>'</mml:mo></mml:msubsup><mml:mo>=</mml:mo><mml:mn>0</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>, <inline-formula id="pone.0160629.e012"><alternatives><graphic id="pone.0160629.e012g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e012" xlink:type="simple"/><mml:math display="inline" id="M12"><mml:mrow><mml:msubsup><mml:mi>p</mml:mi><mml:mrow><mml:mi>A</mml:mi><mml:mi>B</mml:mi></mml:mrow><mml:mo>'</mml:mo></mml:msubsup><mml:mo>=</mml:mo><mml:mn>0.2222</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>, <inline-formula id="pone.0160629.e013"><alternatives><graphic id="pone.0160629.e013g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e013" xlink:type="simple"/><mml:math display="inline" id="M13"><mml:mrow><mml:msubsup><mml:mi>p</mml:mi><mml:mrow><mml:mi>A</mml:mi><mml:mi>C</mml:mi></mml:mrow><mml:mo>'</mml:mo></mml:msubsup><mml:mo>=</mml:mo><mml:mn>0.5556</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>, <inline-formula id="pone.0160629.e014"><alternatives><graphic id="pone.0160629.e014g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e014" xlink:type="simple"/><mml:math display="inline" id="M14"><mml:mrow><mml:msubsup><mml:mi>p</mml:mi><mml:mrow><mml:mi>A</mml:mi><mml:mi>D</mml:mi></mml:mrow><mml:mo>'</mml:mo></mml:msubsup><mml:mo>=</mml:mo><mml:mn>0.2222</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>, <inline-formula id="pone.0160629.e015"><alternatives><graphic id="pone.0160629.e015g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e015" xlink:type="simple"/><mml:math display="inline" id="M15"><mml:mrow><mml:msubsup><mml:mi>p</mml:mi><mml:mrow><mml:mi>A</mml:mi><mml:mi>E</mml:mi></mml:mrow><mml:mo>'</mml:mo></mml:msubsup><mml:mo>=</mml:mo><mml:mn>0</mml:mn></mml:mrow></mml:math></alternatives></inline-formula> and <inline-formula id="pone.0160629.e016"><alternatives><graphic id="pone.0160629.e016g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e016" xlink:type="simple"/><mml:math display="inline" id="M16"><mml:mrow><mml:msubsup><mml:mi>p</mml:mi><mml:mrow><mml:mi>A</mml:mi><mml:mi>F</mml:mi></mml:mrow><mml:mo>'</mml:mo></mml:msubsup><mml:mo>=</mml:mo><mml:mn>0</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>. We refer to a transition matrix with normalized transition probabilities as a one-step transition matrix, and denote by <italic>P</italic><sup>(1)</sup> the result corresponding to <italic>P</italic><sup>0</sup>.</p>
+<p>In addition, the normalized probabilities are time-invariant. One reason for this is that the confidence values of the sequential rules mined from large-scale historical anonymity datasets generated by LBS continuous queries essentially reflect routine behaviors of a large number of LBS users. On the other hand, sequential rules only reflect temporally-ordered relationships between routine behaviors without specifying times. That is, LBS users follow a common route regardless of when they move. Hence, the Markov chain {<italic>X</italic><sub><italic>n</italic></sub>,<italic>n</italic>∈<italic>T</italic>}, which corresponds to the movement of LBS users among a series of grid cells, can also be characterized as time-invariant, and further <italic>P</italic><sup>(1)</sup> can be considered to be independent of <italic>n</italic>. Furthermore, we can obtain the n-step transition matrix <italic>P</italic><sup>(<italic>n</italic>)</sup> from <italic>P</italic><sup>(1)</sup> using the formula <italic>P</italic><sup>(<italic>n</italic>)</sup> = (<italic>P</italic><sup>(1)</sup>)<sup><italic>n</italic></sup>. The maximum value of <italic>n</italic> can be determined from the conditions that <italic>P</italic><sup>(<italic>n</italic>)</sup> is not a zero matrix and that <italic>n</italic> is less than the length of the longest sequence of LBS anonymity datasets. Here, by raising <italic>P</italic><sup>(1)</sup> to an appropriate power, we obtain <italic>P</italic><sup>(2)</sup>, <italic>P</italic><sup>(3)</sup>, and <italic>P</italic><sup>(4)</sup> as follows:
+<disp-formula id="pone.0160629.e017">
+<alternatives>
+<graphic id="pone.0160629.e017g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e017" xlink:type="simple"/>
+<mml:math display="block" id="M17">
+<mml:mtable columnalign="left"><mml:mtr><mml:mtd><mml:msup><mml:mi>P</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msup><mml:mo>=</mml:mo><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:mtable><mml:mtr><mml:mtd><mml:mrow/></mml:mtd><mml:mtd><mml:mi>A</mml:mi></mml:mtd><mml:mtd><mml:mi>B</mml:mi></mml:mtd><mml:mtd><mml:mi>C</mml:mi></mml:mtd><mml:mtd><mml:mi>D</mml:mi></mml:mtd><mml:mtd><mml:mi>E</mml:mi></mml:mtd><mml:mtd><mml:mi>F</mml:mi></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>A</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.2222</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.556</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.2222</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>B</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.7</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.3</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>C</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.1429</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.8571</mml:mn></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>D</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>1</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>E</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>1</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>F</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr></mml:mtable></mml:mrow><mml:mo>]</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:mspace width="0.45em"/><mml:msup><mml:mi>P</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>2</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msup><mml:mo>=</mml:mo><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:mtable><mml:mtr><mml:mtd><mml:mrow/></mml:mtd><mml:mtd><mml:mi>A</mml:mi></mml:mtd><mml:mtd><mml:mi>B</mml:mi></mml:mtd><mml:mtd><mml:mi>C</mml:mi></mml:mtd><mml:mtd><mml:mi>D</mml:mi></mml:mtd><mml:mtd><mml:mi>E</mml:mi></mml:mtd><mml:mtd><mml:mi>F</mml:mi></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>A</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.1555</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.0794</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.0667</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.6984</mml:mn></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>B</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.1000</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.9000</mml:mn></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>C</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.1429</mml:mn></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>D</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>E</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>F</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr></mml:mtable></mml:mrow><mml:mo>]</mml:mo></mml:mrow><mml:mo>,</mml:mo></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:msup><mml:mi>P</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>3</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msup><mml:mo>=</mml:mo><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:mtable><mml:mtr><mml:mtd><mml:mrow/></mml:mtd><mml:mtd><mml:mi>A</mml:mi></mml:mtd><mml:mtd><mml:mi>B</mml:mi></mml:mtd><mml:mtd><mml:mi>C</mml:mi></mml:mtd><mml:mtd><mml:mi>D</mml:mi></mml:mtd><mml:mtd><mml:mi>E</mml:mi></mml:mtd><mml:mtd><mml:mi>F</mml:mi></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>A</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.0222</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.2794</mml:mn></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>B</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.1000</mml:mn></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>C</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>D</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>E</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>F</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr></mml:mtable></mml:mrow><mml:mo>]</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:mspace width="0.45em"/><mml:msup><mml:mi>P</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>4</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msup><mml:mo>=</mml:mo><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:mtable><mml:mtr><mml:mtd><mml:mrow/></mml:mtd><mml:mtd><mml:mi>A</mml:mi></mml:mtd><mml:mtd><mml:mi>B</mml:mi></mml:mtd><mml:mtd><mml:mi>C</mml:mi></mml:mtd><mml:mtd><mml:mi>D</mml:mi></mml:mtd><mml:mtd><mml:mi>E</mml:mi></mml:mtd><mml:mtd><mml:mi>F</mml:mi></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>A</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.0222</mml:mn></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>B</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>C</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>D</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>E</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>F</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr></mml:mtable></mml:mrow><mml:mo>]</mml:mo><mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable>
+</mml:math>
+</alternatives>
+</disp-formula></p>
+</sec>
+<sec id="sec009">
+<title>Prediction for arriving at a target location based on n-step transition matrices</title>
+<sec id="sec010">
+<title>Rough prediction</title>
+<p>This prediction consists of three main phases:</p>
+<p>First, we specify a grid cell as the target location. Continuing the examples of sequential rules in <xref ref-type="table" rid="pone.0160629.t001">Table 1</xref>, we assume that the grid cell represented by F is the target location.</p>
+<p>Second, from the n-step transition matrix, we directly derive paths along which LBS users can arrive at the target location with specified probabilities. As the paths only include the target location and the grid cell ("begin location" for short) where the LBS users are when they begin to move, we denote these paths as simple paths. Based on the transition matrices <italic>P</italic><sup>(1)</sup> ∼ <italic>P</italic><sup>(4)</sup>, we obtain all simple paths by ascending number of steps as shown in <xref ref-type="table" rid="pone.0160629.t002">Table 2</xref>.</p>
+<table-wrap id="pone.0160629.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0160629.t002</object-id>
+<label>Table 2</label> <caption><title>Simple paths for arriving at a target location <italic>F</italic>.</title></caption>
+<alternatives>
+<graphic id="pone.0160629.t002g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.t002" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">Steps</th>
+<th align="center">Begin location</th>
+<th align="center">Probability</th>
+<th align="center">Target location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" rowspan="3"><bold>1</bold></td>
+<td align="center">D</td>
+<td align="center">1</td>
+<td align="center" rowspan="9">F</td>
+</tr>
+<tr>
+<td align="center">C</td>
+<td align="center">0.8571</td>
+</tr>
+<tr>
+<td align="center">E</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center" rowspan="3"><bold>2</bold></td>
+<td align="center">A</td>
+<td align="center">0.6984</td>
+</tr>
+<tr>
+<td align="center">B</td>
+<td align="center">0.9000</td>
+</tr>
+<tr>
+<td align="center">C</td>
+<td align="center">0.1429</td>
+</tr>
+<tr>
+<td align="center" rowspan="2"><bold>3</bold></td>
+<td align="center">A</td>
+<td align="center">0.2749</td>
+</tr>
+<tr>
+<td align="center">B</td>
+<td align="center">0.10000</td>
+</tr>
+<tr>
+<td align="center"><bold>4</bold></td>
+<td align="center">A</td>
+<td align="center">0.0222</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>Finally, by matching the grid cell ("current location" for short) where an LBS user is currently with all simple paths, we can make a location prediction for LBS users’ arriving at the target location. In the case of the simple paths in <xref ref-type="table" rid="pone.0160629.t002">Table 2</xref>, the location prediction results are shown in <xref ref-type="table" rid="pone.0160629.t003">Table 3</xref>. For example, when an LBS user appears in grid cell <italic>A</italic>, three predictions (indicated by the shaded entries) can be performed. In particular, after leaving the grid cell <italic>A</italic>, the LBS user has the three probability values 0.6984, 0.2749 and 0.0222 for arriving at the target location <italic>F</italic> through 2-, 3-, and 4-step transitions respectively. Likewise, location prediction can be performed when LBS users occupy grid cells <italic>B</italic>, <italic>C</italic>, <italic>D</italic> and <italic>E</italic>.</p>
+<table-wrap id="pone.0160629.t003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0160629.t003</object-id>
+<label>Table 3</label> <caption><title>Rough prediction for arriving at a target location <italic>F</italic>.</title></caption>
+<alternatives>
+<graphic id="pone.0160629.t003g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.t003" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">Current location</th>
+<th align="center">Steps</th>
+<th align="center">Probability</th>
+<th align="center">Target location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" rowspan="3">A</td>
+<td align="center">2</td>
+<td align="center">0.6984</td>
+<td align="center" rowspan="9">F</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">0.2749</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">0.0222</td>
+</tr>
+<tr>
+<td align="center" rowspan="2">B</td>
+<td align="center">2</td>
+<td align="center">0.9000</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">0.10000</td>
+</tr>
+<tr>
+<td align="center" rowspan="2">C</td>
+<td align="center">1</td>
+<td align="center">0.8571</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">0.1429</td>
+</tr>
+<tr>
+<td align="center">D</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">E</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>As can be seen in <xref ref-type="table" rid="pone.0160629.t003">Table 3</xref>, the transitions from the current location to the target location can be classified as either single step or multistep. For single step transitions, the paths that LBS users follow are shown clearly. In particular, after leaving their current location, an LBS user arrives directly at the target location. For example, after leaving grid cell <italic>C</italic>, an LBS user arrives directly at the target location <italic>F</italic> with probability 0.8571.</p>
+<p>However, for multistep transitions, we find that the simple paths that LBS users follow include one or more intermediate locations, but these intermediate locations are unknown, so the detailed path between the current location and the target location cannot be investigated. For example, LBS users currently in grid cell <italic>C</italic> arrive at the target location <italic>F</italic> with probability 0.1429 through a 2-step transition. This simple path certainly includes one intermediate location, but we cannot know the intermediate location. If there are several options for the intermediate location, then the simple path actually contains several detailed paths, and the probability 0.1429 is the sum of the probabilities for those detailed paths. In many practical applications, it is significant to know these detailed paths to predict future movements of the LBS users [<xref ref-type="bibr" rid="pone.0160629.ref018">18</xref>].</p>
+</sec>
+<sec id="sec011">
+<title>Accurate prediction</title>
+<p>We propose a method of calculating probabilities for detailed paths to make accurate location predictions. The principle of calculating transition probabilities for detailed paths is to iteratively calculate the probabilities for detailed paths with (<italic>S</italic>+1) steps by combining the probabilities for detailed paths with <italic>n</italic>−1 steps and the probabilities of simple paths with <italic>n</italic> steps.</p>
+<p>The pseudo code for calculating transition probabilities for detailed paths is given below.</p>
+<p specific-use="line"><bold>Algorithm</bold> 1: <italic>R</italic>: <italic>CalcuDetailPath</italic>(<italic>L</italic>,<italic>TL</italic>)</p>
+<p specific-use="line"><bold>Input:</bold> <italic>L</italic>, a linked list of 1- to n-step transition matrices; <italic>TL</italic>, a target location.</p>
+<p specific-use="line"><bold>Output:</bold> <italic>R</italic>, a linked list of detailed paths with one to n transition steps.</p>
+<p specific-use="line">1.   <bold>{</bold>   <italic>P</italic><sup>(1)</sup> = <italic>L</italic>.<italic>Get</italic>(1);</p>
+<p specific-use="line">2.        <inline-formula id="pone.0160629.e018"><alternatives><graphic id="pone.0160629.e018g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e018" xlink:type="simple"/><mml:math display="inline" id="M18"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>s</mml:mi><mml:mi>i</mml:mi><mml:mi>m</mml:mi><mml:mi>p</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:msup><mml:mi>P</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msup><mml:mo>.</mml:mo><mml:mi>G</mml:mi><mml:mi>e</mml:mi><mml:mi>t</mml:mi><mml:mi>A</mml:mi><mml:mi>r</mml:mi><mml:mi>r</mml:mi><mml:mi>i</mml:mi><mml:mi>v</mml:mi><mml:mi>e</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>T</mml:mi><mml:mi>L</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></alternatives></inline-formula>;</p>
+<p specific-use="line">3.        <inline-formula id="pone.0160629.e019"><alternatives><graphic id="pone.0160629.e019g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e019" xlink:type="simple"/><mml:math display="inline" id="M19"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>D</mml:mi><mml:mi>e</mml:mi><mml:mi>t</mml:mi><mml:mi>a</mml:mi><mml:mi>i</mml:mi><mml:mi>l</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>s</mml:mi><mml:mi>i</mml:mi><mml:mi>m</mml:mi><mml:mi>p</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula>;</p>
+<p specific-use="line">4.        <inline-formula id="pone.0160629.e020"><alternatives><graphic id="pone.0160629.e020g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e020" xlink:type="simple"/><mml:math display="inline" id="M20"><mml:mrow><mml:mi>R</mml:mi><mml:mo>.</mml:mo><mml:mi>a</mml:mi><mml:mi>d</mml:mi><mml:mi>d</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>D</mml:mi><mml:mi>e</mml:mi><mml:mi>t</mml:mi><mml:mi>a</mml:mi><mml:mi>i</mml:mi><mml:mi>l</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></alternatives></inline-formula>;</p>
+<p specific-use="line">5.        <inline-formula id="pone.0160629.e021"><alternatives><graphic id="pone.0160629.e021g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e021" xlink:type="simple"/><mml:math display="inline" id="M21"><mml:mrow><mml:mi>C</mml:mi><mml:mi>a</mml:mi><mml:mi>l</mml:mi><mml:mi>c</mml:mi><mml:mi>u</mml:mi><mml:mi>D</mml:mi><mml:mi>e</mml:mi><mml:mi>t</mml:mi><mml:mi>a</mml:mi><mml:mi>i</mml:mi><mml:mi>l</mml:mi><mml:mi>P</mml:mi><mml:mi>a</mml:mi><mml:mi>t</mml:mi><mml:mi>h</mml:mi><mml:mi>I</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>L</mml:mi><mml:mo>,</mml:mo><mml:mi>T</mml:mi><mml:mi>L</mml:mi><mml:mo>,</mml:mo><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>D</mml:mi><mml:mi>e</mml:mi><mml:mi>t</mml:mi><mml:mi>a</mml:mi><mml:mi>i</mml:mi><mml:mi>l</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup><mml:mo>,</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mi>R</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></alternatives></inline-formula>;</p>
+<p specific-use="line">6.        Return <italic>R</italic>;</p>
+<p specific-use="line">7.    }</p>
+<p specific-use="line"><bold>Algorithm</bold> 2: <italic>CalcuDetailPathI</italic>(<italic>L</italic>,<italic>TL</italic>,<italic>R</italic><sub><italic>Exac_in</italic></sub>,<italic>S</italic>,<italic>refR</italic>)</p>
+<p specific-use="line"><bold>Input:</bold> <italic>L</italic>, a linked list of 1-step to n-step transition matrices; <italic>TL</italic>, a target location; <italic>R</italic><sub><italic>Detail_in</italic></sub>, a linked list of detailed paths with <italic>S</italic>-step transition steps; <italic>S</italic>, the transition steps in the current iteration; <italic>R</italic>, a parameter passed by reference, which represents a linked list of detailed paths with one to <italic>S</italic> transition steps.</p>
+<p specific-use="line"><bold>Output:</bold> null.</p>
+<p specific-use="line">1.   {   <italic>P</italic><sup>(<italic>S</italic>+1)</sup> = <italic>L</italic>.<italic>Get</italic>(<italic>S</italic> + 1);</p>
+<p specific-use="line">2.        <inline-formula id="pone.0160629.e022"><alternatives><graphic id="pone.0160629.e022g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e022" xlink:type="simple"/><mml:math display="inline" id="M22"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>s</mml:mi><mml:mi>i</mml:mi><mml:mi>m</mml:mi><mml:mi>p</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>S</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:msup><mml:mi>P</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>S</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msup><mml:mo>.</mml:mo><mml:mi>G</mml:mi><mml:mi>e</mml:mi><mml:mi>t</mml:mi><mml:mi>A</mml:mi><mml:mi>r</mml:mi><mml:mi>r</mml:mi><mml:mi>i</mml:mi><mml:mi>v</mml:mi><mml:mi>e</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>T</mml:mi><mml:mi>L</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></alternatives></inline-formula>;</p>
+<p specific-use="line">3.        For <inline-formula id="pone.0160629.e023"><alternatives><graphic id="pone.0160629.e023g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e023" xlink:type="simple"/><mml:math display="inline" id="M23"><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn><mml:mo>;</mml:mo><mml:mi>i</mml:mi><mml:mo>&lt;=</mml:mo><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>s</mml:mi><mml:mi>i</mml:mi><mml:mi>m</mml:mi><mml:mi>p</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>S</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup><mml:mo>⋅</mml:mo><mml:mi>c</mml:mi><mml:mi>o</mml:mi><mml:mi>u</mml:mi><mml:mi>n</mml:mi><mml:mi>t</mml:mi><mml:mo>;</mml:mo><mml:mi>i</mml:mi><mml:mo>++</mml:mo><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></alternatives></inline-formula></p>
+<p specific-use="line">4.      {  <inline-formula id="pone.0160629.e024"><alternatives><graphic id="pone.0160629.e024g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e024" xlink:type="simple"/><mml:math display="inline" id="M24"><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:msub><mml:mi>E</mml:mi><mml:mrow><mml:mi>S</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>s</mml:mi><mml:mi>i</mml:mi><mml:mi>m</mml:mi><mml:mi>p</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>S</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup><mml:mo>⋅</mml:mo><mml:mi>G</mml:mi><mml:mi>e</mml:mi><mml:mi>t</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>i</mml:mi><mml:mo stretchy="false">)</mml:mo><mml:mo>⋅</mml:mo><mml:mi>f</mml:mi><mml:mi>i</mml:mi><mml:mi>r</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi><mml:mi>S</mml:mi><mml:mi>t</mml:mi><mml:mi>a</mml:mi><mml:mi>t</mml:mi><mml:mi>e</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></alternatives></inline-formula>;</p>
+<p specific-use="line">5.            For (<italic>j</italic> = 1; <italic>j</italic> ≤ <italic>R</italic><sub><italic>Datai_in</italic></sub>⋅<italic>count</italic>;<italic>j</italic>++)</p>
+<p specific-use="line">6.            {    <italic>prob</italic><sub>1</sub> = <italic>R</italic><sub><italic>Detai_in</italic></sub>⋅<italic>Get</italic>(<italic>j</italic>)⋅<italic>probValue</italic>;</p>
+<p specific-use="line">7.            <italic>E</italic><sub><italic>S</italic></sub> = <italic>R</italic><sub><italic>Detai_in</italic></sub>⋅<italic>Get</italic>(<italic>j</italic>)⋅<italic>FirstState</italic>;</p>
+<p specific-use="line">8.              If (<italic>P</italic><sup>(1)</sup>⋅<italic>Exist</italic>(<italic>E</italic><sub><italic>S</italic>+1</sub>,<italic>E</italic><sub><italic>S</italic></sub>))</p>
+<p specific-use="line">9.                  { Pr<italic>ob</italic><sub>2</sub> = <italic>P</italic><sup>(1)</sup>⋅Pr<italic>obValue</italic>(<italic>E</italic><sub><italic>S</italic>+1</sub>,<italic>E</italic><sub><italic>S</italic></sub>);</p>
+<p specific-use="line">10.                  <inline-formula id="pone.0160629.e025"><alternatives><graphic id="pone.0160629.e025g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e025" xlink:type="simple"/><mml:math display="inline" id="M25"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>D</mml:mi><mml:mi>e</mml:mi><mml:mi>t</mml:mi><mml:mi>a</mml:mi><mml:mi>i</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>S</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup><mml:mo>⋅</mml:mo><mml:mi>a</mml:mi><mml:mi>d</mml:mi><mml:mi>d</mml:mi><mml:mi>p</mml:mi><mml:mi>r</mml:mi><mml:mi>o</mml:mi><mml:mi>b</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>p</mml:mi><mml:mi>r</mml:mi><mml:mi>o</mml:mi><mml:msub><mml:mi>b</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>×</mml:mo><mml:mi>p</mml:mi><mml:mi>r</mml:mi><mml:mi>o</mml:mi><mml:msub><mml:mi>b</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></alternatives></inline-formula>;</p>
+<p specific-use="line">11.                  <inline-formula id="pone.0160629.e026"><alternatives><graphic id="pone.0160629.e026g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e026" xlink:type="simple"/><mml:math display="inline" id="M26"><mml:mrow><mml:mi>S</mml:mi><mml:mi>u</mml:mi><mml:mi>b</mml:mi><mml:mi>s</mml:mi><mml:mo>=</mml:mo><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>D</mml:mi><mml:mi>e</mml:mi><mml:mi>t</mml:mi><mml:mi>a</mml:mi><mml:mi>i</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>S</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup><mml:mo>⋅</mml:mo><mml:mi>G</mml:mi><mml:mi>e</mml:mi><mml:mi>t</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>j</mml:mi><mml:mo stretchy="false">)</mml:mo><mml:mo>⋅</mml:mo><mml:mi>S</mml:mi><mml:mi>u</mml:mi><mml:mi>b</mml:mi><mml:mi>s</mml:mi></mml:mrow></mml:math></alternatives></inline-formula>;</p>
+<p specific-use="line">12.                  <inline-formula id="pone.0160629.e027"><alternatives><graphic id="pone.0160629.e027g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e027" xlink:type="simple"/><mml:math display="inline" id="M27"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>D</mml:mi><mml:mi>e</mml:mi><mml:mi>t</mml:mi><mml:mi>a</mml:mi><mml:mi>i</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>S</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup><mml:mo>⋅</mml:mo><mml:mi>a</mml:mi><mml:mi>d</mml:mi><mml:mi>d</mml:mi><mml:mi>P</mml:mi><mml:mi>a</mml:mi><mml:mi>t</mml:mi><mml:mi>h</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:msub><mml:mi>E</mml:mi><mml:mrow><mml:mi>S</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mi>S</mml:mi><mml:mi>u</mml:mi><mml:mi>b</mml:mi><mml:mi>s</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></alternatives></inline-formula>;</p>
+<p specific-use="line">13.            }//end if</p>
+<p specific-use="line">14.        }//end for</p>
+<p specific-use="line">15.    }//end for</p>
+<p specific-use="line">16.    <inline-formula id="pone.0160629.e028"><alternatives><graphic id="pone.0160629.e028g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e028" xlink:type="simple"/><mml:math display="inline" id="M28"><mml:mrow><mml:msub><mml:mi>R</mml:mi><mml:mrow><mml:mi>D</mml:mi><mml:mi>e</mml:mi><mml:mi>t</mml:mi><mml:mi>a</mml:mi><mml:mi>i</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>E</mml:mi><mml:mi>e</mml:mi><mml:mi>t</mml:mi><mml:mi>a</mml:mi><mml:mi>i</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>S</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula>;</p>
+<p specific-use="line">17.    <italic>R</italic>⋅<italic>add</italic>(<italic>R</italic><sub><italic>Detai_in</italic></sub>);</p>
+<p specific-use="line">18.    <italic>S</italic>++;</p>
+<p specific-use="line">19.    If (<italic>S</italic> ≤ <italic>L</italic>⋅<italic>count</italic>)</p>
+<p specific-use="line">20.    <italic>CalcuDetaiPathI</italic>(<italic>L</italic>,<italic>TL</italic>,<italic>R</italic><sub><italic>Detai_in</italic></sub>,<italic>S</italic>,<italic>R</italic>);</p>
+<p specific-use="line">21. }</p>
+<p><bold>Algorithm 1</bold> is the main procedure. Lines 1~4 are the initialization, where the simple paths with one transition step are obtained from <italic>P</italic><sup>(1)</sup>; line 5 calls the sub-procedure <bold>Algorithm 2</bold> to obtain a linked list of detailed paths with one to n transition steps; line 6 returns the final result <italic>R</italic>.</p>
+<p><bold>Algorithm 2</bold> performs recursive operations. Line 1 takes an (<italic>S</italic>+1)-step transition matrix <italic>P</italic><sup>(<italic>S</italic>+1)</sup> from a linked list of transition matrices <italic>L</italic>; line 2 obtains the simple paths <inline-formula id="pone.0160629.e029"><alternatives><graphic id="pone.0160629.e029g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e029" xlink:type="simple"/><mml:math display="inline" id="M29"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>s</mml:mi><mml:mi>i</mml:mi><mml:mi>m</mml:mi><mml:mi>p</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>S</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula> with one transition step from <italic>P</italic><sup>(<italic>S</italic>+1)</sup>; lines 3~15 combine <inline-formula id="pone.0160629.e030"><alternatives><graphic id="pone.0160629.e030g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e030" xlink:type="simple"/><mml:math display="inline" id="M30"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>s</mml:mi><mml:mi>i</mml:mi><mml:mi>m</mml:mi><mml:mi>p</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>S</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula> with the passed parameter <italic>R</italic><sub><italic>Detai_in</italic></sub> to obtain the detailed paths with (<italic>S</italic>+1) steps; line 8 checks for the state pair (<italic>E</italic><sub><italic>S</italic>+1</sub>,<italic>E</italic><sub><italic>S</italic></sub>), and line 10 calculates the probabilities for all detailed paths in <inline-formula id="pone.0160629.e031"><alternatives><graphic id="pone.0160629.e031g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e031" xlink:type="simple"/><mml:math display="inline" id="M31"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:msub><mml:mrow/><mml:mrow><mml:mi>D</mml:mi><mml:mi>e</mml:mi><mml:mi>t</mml:mi><mml:mi>a</mml:mi><mml:mi>i</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>S</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula>; lines 16~17 assign <inline-formula id="pone.0160629.e032"><alternatives><graphic id="pone.0160629.e032g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e032" xlink:type="simple"/><mml:math display="inline" id="M32"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:msub><mml:mrow/><mml:mrow><mml:mi>D</mml:mi><mml:mi>e</mml:mi><mml:mi>t</mml:mi><mml:mi>a</mml:mi><mml:mi>i</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>S</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula> to <italic>R</italic><sub><italic>Detai_in</italic></sub>; lines 18~19 check whether (<italic>S</italic>+2) is greater than the number of steps in the linked list <italic>L</italic>; line 20 passes <italic>R</italic><sub><italic>Detai_in</italic></sub> for the next recursive call of procedure <italic>CalcuDetailPathI</italic>.</p>
+<p>Next, we present the flowchart for the two algorithms and accurate location prediction based on the detailed paths obtained. The flowchart is depicted in <xref ref-type="fig" rid="pone.0160629.g003">Fig 3</xref>. The processes of the workflow are described below.</p>
+<fig id="pone.0160629.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0160629.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>Flowchart for making accurate location predictions based on the probabilities of detailed paths.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.g003" xlink:type="simple"/>
+</fig>
+<p>(1) As in the rough prediction, we first specify a grid cell as the target location. We again assume that grid cell <italic>F</italic> is the target location.</p>
+<p>(2) From the (<italic>S</italic>+1)-step transition matrix, we directly obtain all simple paths and the probabilities of arriving at <italic>F</italic> after (<italic>S</italic>+1) steps. Here, we obtain all simple paths with two steps from <italic>P</italic><sup>(2)</sup> and record them in <inline-formula id="pone.0160629.e033"><alternatives><graphic id="pone.0160629.e033g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e033" xlink:type="simple"/><mml:math display="inline" id="M33"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>s</mml:mi><mml:mi>i</mml:mi><mml:mi>m</mml:mi><mml:mi>p</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>2</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula>, so that <inline-formula id="pone.0160629.e034"><alternatives><graphic id="pone.0160629.e034g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e034" xlink:type="simple"/><mml:math display="inline" id="M34"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>s</mml:mi><mml:mi>i</mml:mi><mml:mi>m</mml:mi><mml:mi>p</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>2</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula> = ([<italic>A</italic> → <italic>F</italic>], [<italic>B</italic> → <italic>F</italic>], [<italic>C</italic> → <italic>F</italic>]).</p>
+<p>(3) Detailed paths with <italic>S</italic> steps are determined from the parameter passed by the previous iteration or by the initialization. Here, we initialize to obtain detailed paths with one step <inline-formula id="pone.0160629.e035"><alternatives><graphic id="pone.0160629.e035g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e035" xlink:type="simple"/><mml:math display="inline" id="M35"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>D</mml:mi><mml:mi>e</mml:mi><mml:mi>t</mml:mi><mml:mi>a</mml:mi><mml:mi>i</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula> from simple paths with one step <inline-formula id="pone.0160629.e036"><alternatives><graphic id="pone.0160629.e036g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e036" xlink:type="simple"/><mml:math display="inline" id="M36"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>s</mml:mi><mml:mi>i</mml:mi><mml:mi>m</mml:mi><mml:mi>p</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula> obtained from <italic>P</italic><sup>(1)</sup>, so that <inline-formula id="pone.0160629.e037"><alternatives><graphic id="pone.0160629.e037g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e037" xlink:type="simple"/><mml:math display="inline" id="M37"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>E</mml:mi><mml:mi>x</mml:mi><mml:mi>a</mml:mi><mml:mi>c</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula> = <inline-formula id="pone.0160629.e038"><alternatives><graphic id="pone.0160629.e038g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e038" xlink:type="simple"/><mml:math display="inline" id="M38"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>s</mml:mi><mml:mi>i</mml:mi><mml:mi>m</mml:mi><mml:mi>p</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula> = ([<italic>C</italic> → <italic>F</italic>], [<italic>D</italic> → <italic>F</italic>], [<italic>E</italic> → <italic>F</italic>]).</p>
+<p>(4) Assemble the start locations of the simple paths and the start locations of the detailed paths to obtain location pairs. For each start location of the detailed paths in <inline-formula id="pone.0160629.e039"><alternatives><graphic id="pone.0160629.e039g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e039" xlink:type="simple"/><mml:math display="inline" id="M39"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>D</mml:mi><mml:mi>e</mml:mi><mml:mi>t</mml:mi><mml:mi>a</mml:mi><mml:mi>i</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula> and each start location of the simple paths in <inline-formula id="pone.0160629.e040"><alternatives><graphic id="pone.0160629.e040g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e040" xlink:type="simple"/><mml:math display="inline" id="M40"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>s</mml:mi><mml:mi>i</mml:mi><mml:mi>m</mml:mi><mml:mi>p</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>2</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula>, we can obtain a location pair. For example, for the detailed path ([<italic>C</italic> → <italic>F</italic>] and the simple path [<italic>A</italic> → <italic>F</italic>], we obtain the location pair [<italic>A</italic> → <italic>C</italic>]. Likewise, we can obtain other location pairs: [<italic>B</italic> → <italic>C</italic>], [<italic>C</italic> → <italic>E</italic>]. Furthermore, we obtain ([<italic>A</italic> → <italic>D</italic>], [<italic>B</italic> → <italic>D</italic>], [<italic>C</italic> → <italic>D</italic>], [<italic>A</italic> → <italic>E</italic>], [<italic>B</italic> → <italic>E</italic>] and [<italic>C</italic> → <italic>E</italic>].</p>
+<p>(5) Check to see whether there are location pairs in <italic>P</italic><sup>(1)</sup> that place the start locations of the simple paths at the head of the detailed paths to obtain new detailed paths with n transition steps. Here, we obtain the location pairs [<italic>A</italic> → <italic>C</italic>], [<italic>A</italic> → <italic>D</italic>], [<italic>B</italic> → <italic>C</italic>] and [<italic>C</italic> → <italic>D</italic>], and the new detailed paths [<italic>A</italic> → <italic>C</italic> → <italic>F</italic>], [<italic>A</italic> → <italic>C</italic> → <italic>F</italic>], [<italic>B</italic> → <italic>C</italic> → <italic>F</italic>] and [<italic>C</italic> → <italic>D</italic> → <italic>F</italic>].</p>
+<p>(6) Multiply the probabilities of the location pairs by the probabilities of the detailed paths with <italic>S</italic> steps to obtain probabilities for the detailed paths with (<italic>S</italic>+1) steps. Here, By multiplying the probability 0.8571 for the detailed path [<italic>C</italic> → <italic>F</italic>] and the probability 0.5556 for the location pair [<italic>A</italic> → <italic>C</italic>], we obtain the probability 0.4762 for the detailed path [<italic>A</italic> → <italic>C</italic> → <italic>F</italic>]. Similarly, we obtain probabilities 0.2222, 0.59997, 0.3, and 0.1429 for the detailed paths [<italic>A</italic> → <italic>D</italic> → <italic>F</italic>], [<italic>B</italic> → <italic>C</italic> → <italic>F</italic>], [<italic>B</italic> → <italic>E</italic> → <italic>F</italic>] and [<italic>C</italic> → <italic>D</italic> → <italic>F</italic>], respectively.</p>
+<p>(7) Iterate to find detailed paths and probabilities for (<italic>S</italic> + 2) transition steps until the maximum number of transition steps is reached. Here, we first obtain all simple paths <inline-formula id="pone.0160629.e041"><alternatives><graphic id="pone.0160629.e041g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e041" xlink:type="simple"/><mml:math display="inline" id="M41"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>s</mml:mi><mml:mi>i</mml:mi><mml:mi>m</mml:mi><mml:mi>p</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>3</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula> = ([<italic>A</italic> → <italic>F</italic>], [<italic>B</italic> → <italic>F</italic>]) from <italic>P</italic><sup>(3)</sup>, then combine these with <inline-formula id="pone.0160629.e042"><alternatives><graphic id="pone.0160629.e042g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e042" xlink:type="simple"/><mml:math display="inline" id="M42"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>D</mml:mi><mml:mi>e</mml:mi><mml:mi>t</mml:mi><mml:mi>a</mml:mi><mml:mi>i</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>2</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula> = ([<italic>A</italic> → <italic>C</italic> → <italic>F</italic>], [<italic>A</italic> → <italic>D</italic> → <italic>F</italic>], [<italic>B</italic> → <italic>C</italic> → <italic>F</italic>], [<italic>B</italic> → <italic>E</italic> → <italic>F</italic>], [<italic>C</italic> → <italic>D</italic> → <italic>F</italic>]) in steps (2)~(6) and obtain <inline-formula id="pone.0160629.e043"><alternatives><graphic id="pone.0160629.e043g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e043" xlink:type="simple"/><mml:math display="inline" id="M43"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>E</mml:mi><mml:mi>x</mml:mi><mml:mi>a</mml:mi><mml:mi>c</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>3</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula> = ([<italic>A</italic> → <italic>B</italic> → <italic>C</italic> → <italic>F</italic>], [<italic>A</italic> → <italic>B</italic> → <italic>E</italic> → <italic>F</italic>], [<italic>A</italic> → <italic>C</italic> → <italic>D</italic> → <italic>F</italic>], [<italic>B</italic> → <italic>C</italic> → <italic>D</italic> → <italic>F</italic>]).</p>
+<p>Furthermore, we can combine <inline-formula id="pone.0160629.e044"><alternatives><graphic id="pone.0160629.e044g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e044" xlink:type="simple"/><mml:math display="inline" id="M44"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>D</mml:mi><mml:mi>e</mml:mi><mml:mi>t</mml:mi><mml:mi>a</mml:mi><mml:mi>i</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>3</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula> with <inline-formula id="pone.0160629.e045"><alternatives><graphic id="pone.0160629.e045g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e045" xlink:type="simple"/><mml:math display="inline" id="M45"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>s</mml:mi><mml:mi>i</mml:mi><mml:mi>m</mml:mi><mml:mi>p</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>4</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:mo stretchy="false">[</mml:mo><mml:mi>A</mml:mi><mml:mo>→</mml:mo><mml:mi>F</mml:mi><mml:mo stretchy="false">]</mml:mo></mml:mrow></mml:math></alternatives></inline-formula> to obtain <inline-formula id="pone.0160629.e046"><alternatives><graphic id="pone.0160629.e046g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e046" xlink:type="simple"/><mml:math display="inline" id="M46"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mrow><mml:mi>D</mml:mi><mml:mi>e</mml:mi><mml:mi>t</mml:mi><mml:mi>a</mml:mi><mml:mi>i</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>4</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula> = [<italic>A</italic> → <italic>B</italic> → <italic>C</italic> → <italic>D</italic> → <italic>E</italic>]. Finally, we obtain all detailed paths and probabilities of arriving at <italic>F</italic>, as shown in <xref ref-type="table" rid="pone.0160629.t004">Table 4</xref>.</p>
+<table-wrap id="pone.0160629.t004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0160629.t004</object-id>
+<label>Table 4</label> <caption><title>Detailed paths for arriving at the target location <italic>F</italic>.</title></caption>
+<alternatives>
+<graphic id="pone.0160629.t004g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.t004" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">Steps</th>
+<th align="center">Current location</th>
+<th align="center">Detailed path</th>
+<th align="center">Probability</th>
+<th align="center">Target location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" rowspan="3"><bold>1</bold></td>
+<td align="center">D</td>
+<td align="left">D-&gt;F</td>
+<td align="center">1</td>
+<td align="center" rowspan="13">F</td>
+</tr>
+<tr>
+<td align="center">C</td>
+<td align="left">C-&gt;F</td>
+<td align="center">0.8571</td>
+</tr>
+<tr>
+<td align="center">E</td>
+<td align="left">E-&gt;F</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center" rowspan="5"><bold>2</bold></td>
+<td align="center" rowspan="2">A</td>
+<td align="left">A-&gt;C-&gt;F</td>
+<td align="center">0.4762</td>
+</tr>
+<tr>
+<td align="left">A-&gt;D-&gt;F</td>
+<td align="center">0.2222</td>
+</tr>
+<tr>
+<td align="center" rowspan="2">B</td>
+<td align="left">B-&gt;C-&gt;F</td>
+<td align="center">0.59997</td>
+</tr>
+<tr>
+<td align="left">B-&gt;E-&gt;F</td>
+<td align="center">0.3</td>
+</tr>
+<tr>
+<td align="center">C</td>
+<td align="left">C-&gt;D-&gt;F</td>
+<td align="center">0.1429</td>
+</tr>
+<tr>
+<td align="center" rowspan="4"><bold>3</bold></td>
+<td align="center" rowspan="3">A</td>
+<td align="left">A-&gt;B-&gt;C-&gt;F</td>
+<td align="center">0.1333</td>
+</tr>
+<tr>
+<td align="left">A-&gt;B-&gt;E-&gt;F</td>
+<td align="center">0.0666</td>
+</tr>
+<tr>
+<td align="left">A-&gt;C-&gt;D-&gt;F</td>
+<td align="center">0.0794</td>
+</tr>
+<tr>
+<td align="center">B</td>
+<td align="left">B-&gt;C-&gt;D-&gt;F</td>
+<td align="center">0.10003</td>
+</tr>
+<tr>
+<td align="center"><bold>4</bold></td>
+<td align="center">A</td>
+<td align="left">A-&gt;B-&gt;C-&gt;D-&gt;F</td>
+<td align="center">0.0222</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>(8) From the detailed paths and probabilities, we can make accurate location predictions for arriving at the target location. The accurate location prediction results are shown in <xref ref-type="table" rid="pone.0160629.t005">Table 5</xref>. After leaving grid cell B, an LBS user will arrive at the target location F with probability 0.59997 along the detailed <italic>B</italic>, <italic>C</italic>, <italic>D</italic> [<italic>B</italic> → <italic>C</italic> → <italic>F</italic>], with probability 0.3 along the detailed path [<italic>B</italic> → <italic>E</italic> → <italic>F</italic>], and probability 0.10003 along the detailed path [<italic>B</italic> → <italic>C</italic> → <italic>D</italic> → <italic>F</italic>] (indicated by the shaded entries). Likewise, accurate location prediction can be performed when LBS users start from grid cells <italic>A</italic>, <italic>C</italic>, <italic>D</italic> and <italic>E</italic>.</p>
+<table-wrap id="pone.0160629.t005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0160629.t005</object-id>
+<label>Table 5</label> <caption><title>Accurate prediction for arriving at the target location F.</title></caption>
+<alternatives>
+<graphic id="pone.0160629.t005g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.t005" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">Current location</th>
+<th align="center">Steps</th>
+<th align="center">Detailed path</th>
+<th align="center">Probability</th>
+<th align="center">Target location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" rowspan="6">A</td>
+<td align="center" rowspan="2">2</td>
+<td align="left">A-&gt;C-&gt;F</td>
+<td align="center">0.4762</td>
+<td align="center" rowspan="13">F</td>
+</tr>
+<tr>
+<td align="left">A-&gt;D-&gt;F</td>
+<td align="center">0.2222</td>
+</tr>
+<tr>
+<td align="center" rowspan="3">3</td>
+<td align="left">A-&gt;B-&gt;C-&gt;F</td>
+<td align="center">0.1333</td>
+</tr>
+<tr>
+<td align="left">A-&gt;B-&gt;E-&gt;F</td>
+<td align="center">0.0666</td>
+</tr>
+<tr>
+<td align="left">A-&gt;C-&gt;D-&gt;F</td>
+<td align="center">0.0794</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="left">A-&gt;B-&gt;C-&gt;D-&gt;F</td>
+<td align="center">0.0222</td>
+</tr>
+<tr>
+<td align="center" rowspan="3">B</td>
+<td align="center" rowspan="2">2</td>
+<td align="left">B-&gt;C-&gt;F</td>
+<td align="center">0.59997</td>
+</tr>
+<tr>
+<td align="left">B-&gt;E-&gt;F</td>
+<td align="center">0.3</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="left">B-&gt;C-&gt;D-&gt;F</td>
+<td align="center">0.10003</td>
+</tr>
+<tr>
+<td align="center" rowspan="2">C</td>
+<td align="center">1</td>
+<td align="left">C-&gt;F</td>
+<td align="center">0.8571</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="left">C-&gt;D-&gt;F</td>
+<td align="center">0.1429</td>
+</tr>
+<tr>
+<td align="center">D</td>
+<td align="center">1</td>
+<td align="left">D-&gt;F</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">E</td>
+<td align="center">1</td>
+<td align="left">E-&gt;F</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+</sec>
+</sec>
+<sec id="sec012">
+<title>Experiments and Discussion</title>
+<sec id="sec013">
+<title>Data preparation</title>
+<sec id="sec014">
+<title>Simulated anonymity datasets for LBS continuous queries</title>
+<p>Because spatial-temporal k-anonymity and its variants have not been widely applied in business LBS systems, we adopt a software system developed in the literature to simulate large-scale anonymity datasets for LBS continuous queries from GPS trajectories. <xref ref-type="table" rid="pone.0160629.t006">Table 6</xref> summarizes the basic characteristics of the simulated datasets.</p>
+<table-wrap id="pone.0160629.t006" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0160629.t006</object-id>
+<label>Table 6</label> <caption><title>Basic characteristics of simulated anonymity datasets for LBS continuous queries.</title></caption>
+<alternatives>
+<graphic id="pone.0160629.t006g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.t006" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">Parameter</th>
+<th align="justify">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Number of sequences</td>
+<td align="left">490</td>
+</tr>
+<tr>
+<td align="left">Maximum number of cloaking regions in a single sequence</td>
+<td align="left">38</td>
+</tr>
+<tr>
+<td align="left">Minimum number of cloaking regions in a single sequence</td>
+<td align="left">2</td>
+</tr>
+<tr>
+<td align="left">Avg. number of cloaking regions for all sequences</td>
+<td align="left">19.8</td>
+</tr>
+<tr>
+<td align="left">Minimum number of time intervals(h) in a single sequence</td>
+<td align="left">1</td>
+</tr>
+<tr>
+<td align="left">Maximum number of time intervals (h) in a single sequence</td>
+<td align="left">12</td>
+</tr>
+<tr>
+<td align="left">Range of each cell of cloaking regions (m<sup>2</sup>)</td>
+<td align="left">105*88</td>
+</tr>
+<tr>
+<td align="left">Number of cells contained by all cloaking regions</td>
+<td align="left">692</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="sec015">
+<title>Sequential rules &amp; n-step transition matrix</title>
+<p>We adopt the RuleGrowth algorithm in SPMF [<xref ref-type="bibr" rid="pone.0160629.ref019">19</xref>] to mine sequential rules from simulated anonymity datasets. The parameters <italic>seq</italic>sup<sub>min</sub> and <italic>seqconf</italic><sub>min</sub> are set to be 0.02 and 0.24, respectively. The 18 mined sequential rules are given in <xref ref-type="table" rid="pone.0160629.t007">Table 7</xref>.</p>
+<table-wrap id="pone.0160629.t007" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0160629.t007</object-id>
+<label>Table 7</label> <caption><title>Sequential rules mined from simulated anonymity datasets for LBS continuous queries.</title></caption>
+<alternatives>
+<graphic id="pone.0160629.t007g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.t007" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">No.</th>
+<th align="center">Sequential rule</th>
+<th align="center">Confidence value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><bold>1</bold></td>
+<td align="center">D-&gt;M</td>
+<td align="center">0.3023</td>
+</tr>
+<tr>
+<td align="center"><bold>2</bold></td>
+<td align="center">A-&gt;E</td>
+<td align="center">0.2619</td>
+</tr>
+<tr>
+<td align="center"><bold>3</bold></td>
+<td align="center">B-&gt;E</td>
+<td align="center">0.2703</td>
+</tr>
+<tr>
+<td align="center"><bold>4</bold></td>
+<td align="center">C-&gt;E</td>
+<td align="center">0.2500</td>
+</tr>
+<tr>
+<td align="center"><bold>5</bold></td>
+<td align="center">D-&gt;E</td>
+<td align="center">0.2791</td>
+</tr>
+<tr>
+<td align="center"><bold>6</bold></td>
+<td align="center">F-&gt;E</td>
+<td align="center">0.2424</td>
+</tr>
+<tr>
+<td align="center"><bold>7</bold></td>
+<td align="center">D-&gt;N</td>
+<td align="center">0.2558</td>
+</tr>
+<tr>
+<td align="center"><bold>8</bold></td>
+<td align="center">H-&gt;E</td>
+<td align="center">0.3125</td>
+</tr>
+<tr>
+<td align="center"><bold>9</bold></td>
+<td align="center">E-&gt;I</td>
+<td align="center">0.3182</td>
+</tr>
+<tr>
+<td align="center"><bold>10</bold></td>
+<td align="center">F-&gt;I</td>
+<td align="center">0.2424</td>
+</tr>
+<tr>
+<td align="center"><bold>11</bold></td>
+<td align="center">G-&gt;I</td>
+<td align="center">0.2608</td>
+</tr>
+<tr>
+<td align="center"><bold>12</bold></td>
+<td align="center">O-&gt;N</td>
+<td align="center">0.2537</td>
+</tr>
+<tr>
+<td align="center"><bold>13</bold></td>
+<td align="center">H-&gt;I</td>
+<td align="center">0.3125</td>
+</tr>
+<tr>
+<td align="center"><bold>14</bold></td>
+<td align="center">J-&gt;I</td>
+<td align="center">0.2500</td>
+</tr>
+<tr>
+<td align="center"><bold>15</bold></td>
+<td align="center">P-&gt;N</td>
+<td align="center">0.2821</td>
+</tr>
+<tr>
+<td align="center"><bold>16</bold></td>
+<td align="center">K-&gt;N</td>
+<td align="center">0.2500</td>
+</tr>
+<tr>
+<td align="center"><bold>17</bold></td>
+<td align="center">K-&gt;I</td>
+<td align="center">0.3250</td>
+</tr>
+<tr>
+<td align="center"><bold>18</bold></td>
+<td align="center">L-&gt;I</td>
+<td align="center">0.2439</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>By normalizing the confidence values of the 18 mined sequential rules, we obtain the one-step transition matrix <italic>P</italic><sub><italic>simu</italic></sub><sup>(1)</sup>, and further calculate the 2-step transition matrix <italic>P</italic><sub><italic>simu</italic></sub><sup>(2)</sup>.</p>
+<disp-formula id="pone.0160629.e047">
+<alternatives>
+<graphic id="pone.0160629.e047g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e047" xlink:type="simple"/>
+<mml:math display="block" id="M47">
+<mml:mrow><mml:msubsup><mml:mi>P</mml:mi><mml:mrow><mml:mi>s</mml:mi><mml:mi>i</mml:mi><mml:mi>m</mml:mi><mml:mi>u</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mtable><mml:mtr><mml:mtd><mml:mrow/></mml:mtd><mml:mtd><mml:mi>A</mml:mi></mml:mtd><mml:mtd><mml:mi>B</mml:mi></mml:mtd><mml:mtd><mml:mi>C</mml:mi></mml:mtd><mml:mtd><mml:mi>D</mml:mi></mml:mtd><mml:mtd><mml:mi>E</mml:mi></mml:mtd><mml:mtd><mml:mi>F</mml:mi></mml:mtd><mml:mtd><mml:mi>G</mml:mi></mml:mtd><mml:mtd><mml:mi>H</mml:mi></mml:mtd><mml:mtd><mml:mi>I</mml:mi></mml:mtd><mml:mtd><mml:mi>J</mml:mi></mml:mtd><mml:mtd><mml:mi>K</mml:mi></mml:mtd><mml:mtd><mml:mi>L</mml:mi></mml:mtd><mml:mtd><mml:mi>M</mml:mi></mml:mtd><mml:mtd><mml:mi>N</mml:mi></mml:mtd><mml:mtd><mml:mi>O</mml:mi></mml:mtd><mml:mtd><mml:mi>P</mml:mi></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>A</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>1</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>B</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>1</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>C</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>1</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>D</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.3333</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.3611</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.3056</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>E</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>1</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>F</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.5</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.5</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>G</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>1</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>H</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.5</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.5</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>I</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>J</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>1</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>K</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.5652</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.4348</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>L</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>1</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>M</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>N</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>O</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>1</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>P</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>1</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr></mml:mtable></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow>
+</mml:math>
+</alternatives>
+</disp-formula>
+<disp-formula id="pone.0160629.e048">
+<alternatives>
+<graphic id="pone.0160629.e048g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0160629.e048" xlink:type="simple"/>
+<mml:math display="block" id="M48">
+<mml:mrow><mml:msubsup><mml:mi>P</mml:mi><mml:mrow><mml:mi>s</mml:mi><mml:mi>i</mml:mi><mml:mi>m</mml:mi><mml:mi>u</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>2</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mtable><mml:mtr><mml:mtd><mml:mrow/></mml:mtd><mml:mtd><mml:mi>A</mml:mi></mml:mtd><mml:mtd><mml:mi>B</mml:mi></mml:mtd><mml:mtd><mml:mi>C</mml:mi></mml:mtd><mml:mtd><mml:mi>D</mml:mi></mml:mtd><mml:mtd><mml:mi>E</mml:mi></mml:mtd><mml:mtd><mml:mi>F</mml:mi></mml:mtd><mml:mtd><mml:mi>G</mml:mi></mml:mtd><mml:mtd><mml:mi>H</mml:mi></mml:mtd><mml:mtd><mml:mi>I</mml:mi></mml:mtd><mml:mtd><mml:mi>J</mml:mi></mml:mtd><mml:mtd><mml:mi>K</mml:mi></mml:mtd><mml:mtd><mml:mi>L</mml:mi></mml:mtd><mml:mtd><mml:mi>M</mml:mi></mml:mtd><mml:mtd><mml:mi>N</mml:mi></mml:mtd><mml:mtd><mml:mi>O</mml:mi></mml:mtd><mml:mtd><mml:mi>P</mml:mi></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>A</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>1</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>B</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>1</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>C</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>1</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>D</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.3333</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>E</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>F</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.5</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>G</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>H</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mrow><mml:mn>0.5</mml:mn></mml:mrow></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>I</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>J</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>K</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>L</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>1</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>M</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>N</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>O</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi>P</mml:mi></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mn>0</mml:mn></mml:mtd></mml:mtr></mml:mtable></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow>
+</mml:math>
+</alternatives>
+</disp-formula>
+</sec>
+</sec>
+<sec id="sec016" sec-type="conclusions">
+<title>Results and Discussion</title>
+<sec id="sec017">
+<title>Experiment 1</title>
+<p>We specify the grid cell <italic>I</italic> as the target location, and derive simple paths for arriving at <italic>I</italic> from <italic>P</italic><sub><italic>simu</italic></sub><sup>(1)</sup> and <italic>P</italic><sub><italic>simu</italic></sub><sup>(2)</sup> directly. Based on the simple paths, we make the rough location predictions shown in <xref ref-type="table" rid="pone.0160629.t008">Table 8</xref>. Furthermore, we obtain detailed paths using the algorithm <italic>CalcuDetailPath</italic>, and make accurate location predictions based on the detailed paths. The results are shown in <xref ref-type="table" rid="pone.0160629.t009">Table 9</xref> and are mapped onto geographic background datasets in <xref ref-type="fig" rid="pone.0160629.g004">Fig 4</xref>.</p>
+<fig id="pone.0160629.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0160629.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title>Mapping display of accurate location predictions on geographic background datasets.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.g004" xlink:type="simple"/>
+</fig>
+<table-wrap id="pone.0160629.t008" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0160629.t008</object-id>
+<label>Table 8</label> <caption><title>Rough predictions for arriving at the target location <italic>I</italic>.</title></caption>
+<alternatives>
+<graphic id="pone.0160629.t008g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.t008" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">Current location</th>
+<th align="center">Steps</th>
+<th align="center">Probability</th>
+<th align="center">Target location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">A</td>
+<td align="center">2</td>
+<td align="center">1</td>
+<td align="center" rowspan="13">I</td>
+</tr>
+<tr>
+<td align="center">B</td>
+<td align="center">2</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">C</td>
+<td align="center">2</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">D</td>
+<td align="center">2</td>
+<td align="center">0.3333</td>
+</tr>
+<tr>
+<td align="center">E</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center" rowspan="2">F</td>
+<td align="center">1</td>
+<td align="center">0.5</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">0.5</td>
+</tr>
+<tr>
+<td align="center">G</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center" rowspan="2">H</td>
+<td align="center">1</td>
+<td align="center">0.5</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">0.5</td>
+</tr>
+<tr>
+<td align="center">J</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">K</td>
+<td align="center">1</td>
+<td align="center">0.5652</td>
+</tr>
+<tr>
+<td align="center">L</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<table-wrap id="pone.0160629.t009" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0160629.t009</object-id>
+<label>Table 9</label> <caption><title>Accurate predictions for arriving at the target location <italic>I</italic>.</title></caption>
+<alternatives>
+<graphic id="pone.0160629.t009g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.t009" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">Current location</th>
+<th align="center">Steps</th>
+<th align="center">Detailed path</th>
+<th align="center">Probability</th>
+<th align="center">Target location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">A</td>
+<td align="center">2</td>
+<td align="center">A-&gt;E-&gt;I</td>
+<td align="center">1</td>
+<td align="center" rowspan="6"><bold>I</bold></td>
+</tr>
+<tr>
+<td align="center">B</td>
+<td align="center">2</td>
+<td align="center">B-&gt;E-&gt;I</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">C</td>
+<td align="center">2</td>
+<td align="center">C-&gt;E-&gt;I</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">D</td>
+<td align="center">2</td>
+<td align="center">D-&gt;E-&gt;I</td>
+<td align="center">0.3333</td>
+</tr>
+<tr>
+<td align="center">F</td>
+<td align="center">2</td>
+<td align="center">F-&gt;E-&gt;I</td>
+<td align="center">0.5</td>
+</tr>
+<tr>
+<td align="center">H</td>
+<td align="center">2</td>
+<td align="center">H-&gt;E-&gt;I</td>
+<td align="center">0.5</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="sec018">
+<title>Experiment 2</title>
+<p>This experiment aims to verify the correctness of the proposed location prediction methods. As mentioned above, we find that the accurate prediction method is essentially an optimized version of the rough location prediction method. Thus, we only evaluate the correctness of the accurate prediction method with the <italic>realprecision</italic> measure. This measure is a direct measurement calculated as the number of correct predictions divided by the total number of predictions. For example, for the detailed path [<italic>A</italic> → <italic>E</italic> → <italic>I</italic>], the <italic>realprecision</italic> value is equal to the conditional probability <italic>P</italic>(<italic>A</italic> → <italic>E</italic> → <italic>I</italic>|<italic>A</italic>). The results of this experiment are shown in <xref ref-type="fig" rid="pone.0160629.g005">Fig 5</xref>, from which we see that for the detailed paths [<italic>H</italic> → <italic>E</italic> → <italic>I</italic>], [<italic>F</italic> → <italic>E</italic> → <italic>I</italic>] and [<italic>D</italic> → <italic>E</italic> → <italic>I</italic>], the <italic>realprecision</italic> measure and the prediction probability are similar, while for the detailed paths [<italic>A</italic> → <italic>E</italic> → <italic>I</italic>], [<italic>B</italic> → <italic>E</italic> → <italic>I</italic>] and [<italic>C</italic> → <italic>E</italic> → <italic>I</italic>], there are significant differences between the <italic>realprecision</italic> values and the prediction probabilities. Namely, the <italic>realprecision</italic> values are much lower than the prediction probabilities.</p>
+<fig id="pone.0160629.g005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0160629.g005</object-id>
+<label>Fig 5</label>
+<caption>
+<title>Comparison between real precision and location prediction probabilities.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.g005" xlink:type="simple"/>
+</fig>
+<p>Next, we analyze causes of this problem. According to the algorithm <italic>CalcuDetailPath</italic>, we find that the prediction probabilities for the detailed paths [<italic>A</italic> → <italic>E</italic> → <italic>I</italic>], [<italic>B</italic> → <italic>E</italic> → <italic>I</italic>] and [<italic>C</italic> → <italic>E</italic> → <italic>I</italic>] are products of the probabilities for the detailed path [<italic>E</italic> → <italic>I</italic>] and the location pairs [<italic>A</italic> → <italic>E</italic>], [<italic>B</italic> → <italic>E</italic>] and [<italic>C</italic> → <italic>E</italic>] in <italic>P</italic><sub><italic>simu</italic></sub><sup>(1)</sup>.</p>
+<p>Furthermore, we find from <xref ref-type="table" rid="pone.0160629.t007">Table 7</xref> and <italic>P</italic><sub><italic>simu</italic></sub><sup>(1)</sup> that there are significant differences between the confidence values and the normalized values for the sequential rules [<italic>A</italic> → <italic>E</italic>], [<italic>B</italic> → <italic>E</italic>], [<italic>C</italic> → <italic>E</italic>] and [<italic>E</italic> → <italic>I</italic>]. Specifically, the confidence values are 0.2619, 0.2703, 0.2500, and 0.3182, respectively, but the normalized values are all 1. We argue that reason is that the confidence threshold <italic>seqconf</italic><sub>min</sub> for sequential rule mining is too large to allow the discovery of enough sequential rules. Hence, we make the assumption that too large confidence threshold for sequential rules may result in significant differences between the <italic>realprecision</italic> values and the prediction probabilities for the detailed paths [<italic>A</italic> → <italic>E</italic> → <italic>I</italic>], [<italic>B</italic> → <italic>E</italic> → <italic>I</italic>], [<italic>C</italic> → <italic>E</italic> → <italic>I</italic>]. Next, we further test this hypothesis with <bold>Experiment 3</bold>.</p>
+</sec>
+<sec id="sec019">
+<title>Experiment 3</title>
+<p>First, we use the two lower confidence thresholds 0.2 and 0.22 to mine sequential rules and obtain 104 sequential rules and 56 sequential rules respectively, among which the sequential rules with start locations A, B, C, and E are shown in <xref ref-type="table" rid="pone.0160629.t010">Table 10</xref>.</p>
+<table-wrap id="pone.0160629.t010" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0160629.t010</object-id>
+<label>Table 10</label> <caption><title>Sequential rules with confidence thresholds 0.2 and 0.22 and start locations A, B, C, and E.</title></caption>
+<alternatives>
+<graphic id="pone.0160629.t010g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.t010" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center"><italic>seqconf</italic><sub>min</sub></th>
+<th align="center">Begin</th>
+<th align="center">Sequential rule</th>
+<th align="center">Confidence value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" rowspan="10"><bold>0.2</bold></td>
+<td align="center" rowspan="4"><bold>A</bold></td>
+<td align="center">A-&gt;E</td>
+<td align="center">0.2619</td>
+</tr>
+<tr>
+<td align="center">A-&gt;I</td>
+<td align="center">0.2381</td>
+</tr>
+<tr>
+<td align="center">A-&gt;N</td>
+<td align="center">0.2381</td>
+</tr>
+<tr>
+<td align="center">A-&gt;M</td>
+<td align="center">0.2381</td>
+</tr>
+<tr>
+<td align="center"><bold>B</bold></td>
+<td align="center">B-&gt;E</td>
+<td align="center">0.2703</td>
+</tr>
+<tr>
+<td align="center" rowspan="2"><bold>C</bold></td>
+<td align="center">C-&gt;E</td>
+<td align="center">0.2500</td>
+</tr>
+<tr>
+<td align="center">C-&gt;I</td>
+<td align="center">0.2273</td>
+</tr>
+<tr>
+<td align="center" rowspan="3"><bold>E</bold></td>
+<td align="center">E-&gt;I</td>
+<td align="center">0.2353</td>
+</tr>
+<tr>
+<td align="center">E-&gt;N</td>
+<td align="center">0.2059</td>
+</tr>
+<tr>
+<td align="center">E-&gt;M</td>
+<td align="center">0.2059</td>
+</tr>
+<tr>
+<td align="center" rowspan="8"><bold>0.22</bold></td>
+<td align="center" rowspan="4"><bold>A</bold></td>
+<td align="center">A-&gt;E</td>
+<td align="center">0.2619</td>
+</tr>
+<tr>
+<td align="center">A-&gt;I</td>
+<td align="center">0.2381</td>
+</tr>
+<tr>
+<td align="center">A-&gt;N</td>
+<td align="center">0.2381</td>
+</tr>
+<tr>
+<td align="center">A-&gt;M</td>
+<td align="center">0.2381</td>
+</tr>
+<tr>
+<td align="center"><bold>B</bold></td>
+<td align="center">B-&gt;E</td>
+<td align="center">0.2703</td>
+</tr>
+<tr>
+<td align="center" rowspan="2"><bold>C</bold></td>
+<td align="center">C-&gt;E</td>
+<td align="center">0.2500</td>
+</tr>
+<tr>
+<td align="center">C-&gt;I</td>
+<td align="center">0.2273</td>
+</tr>
+<tr>
+<td align="center"><bold>E</bold></td>
+<td align="center">E-&gt;I</td>
+<td align="center">0.2353</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>Next, we obtain normalized values for the confidence values of sequential rules (in <xref ref-type="table" rid="pone.0160629.t010">Table 10</xref>) of [<italic>A</italic> → <italic>E</italic>], [<italic>B</italic> → <italic>E</italic>], [<italic>C</italic> → <italic>E</italic>] and [<italic>E</italic> → <italic>I</italic>], which are shown in <xref ref-type="table" rid="pone.0160629.t011">Table 11</xref>, and the comparison of the differences between the confidence values and the normalized values is shown in <xref ref-type="fig" rid="pone.0160629.g006">Fig 6</xref>. We see that differences decrease along with decreasing confidence thresholds except in the case of the sequential rule [<italic>B</italic> → <italic>E</italic>].</p>
+<fig id="pone.0160629.g006" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0160629.g006</object-id>
+<label>Fig 6</label>
+<caption>
+<title>Comparison of differences between confidence values and normalized values for the sequential rules with confidence thresholds 0.2, 0.22 and 0.24.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.g006" xlink:type="simple"/>
+</fig>
+<table-wrap id="pone.0160629.t011" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0160629.t011</object-id>
+<label>Table 11</label> <caption><title>Sequential rules with confidence thresholds 0.2 and 0.22 and normalized confidence values.</title></caption>
+<alternatives>
+<graphic id="pone.0160629.t011g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.t011" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center"><italic>seqconf</italic><sub>min</sub></th>
+<th align="center">Sequential rule</th>
+<th align="center">Confidence value</th>
+<th align="center">Normalized value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" rowspan="4">0.2</td>
+<td align="center">A-&gt;E</td>
+<td align="center">0.2619</td>
+<td align="center">0.2683</td>
+</tr>
+<tr>
+<td align="center">B-&gt;E</td>
+<td align="center">0.2703</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">C-&gt;E</td>
+<td align="center">0.25</td>
+<td align="center">0.5238</td>
+</tr>
+<tr>
+<td align="center">E-&gt;I</td>
+<td align="center">0.2353</td>
+<td align="center">0.3636</td>
+</tr>
+<tr>
+<td align="center" rowspan="4">0.22</td>
+<td align="center">A-&gt;E</td>
+<td align="center">0.2619</td>
+<td align="center">0.2683</td>
+</tr>
+<tr>
+<td align="center">B-&gt;E</td>
+<td align="center">0.2703</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">C-&gt;E</td>
+<td align="center">0.25</td>
+<td align="center">0.5238</td>
+</tr>
+<tr>
+<td align="center">E-&gt;I</td>
+<td align="center">0.2353</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>Finally, by constructing n-step transition matrices and adapting the algorithm <italic>CalcuDetailPath</italic>, we obtain location prediction probabilities for the detailed paths [<italic>A</italic> → <italic>E</italic> → <italic>I</italic>], [<italic>B</italic> → <italic>E</italic> → <italic>I</italic>], [<italic>C</italic> → <italic>E</italic> → <italic>I</italic>]. The comparison of varying proximities between location prediction probabilities and <italic>realprecision</italic> values is shown in <xref ref-type="fig" rid="pone.0160629.g007">Fig 7</xref>.</p>
+<fig id="pone.0160629.g007" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0160629.g007</object-id>
+<label>Fig 7</label>
+<caption>
+<title>Comparison of varying proximities between location prediction probabilities and <italic>realprecision</italic> values for the sequential rules with confidence thresholds 0.2, 0.22 and 0.24.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.g007" xlink:type="simple"/>
+</fig>
+<p>We see that as the confidence threshold decreases, the location prediction probabilities for six of the detailed paths are all closer to their corresponding <italic>realprecision</italic> values.</p>
+<p>This experiment confirms our previous hypothesis from <bold>Experiment 2</bold>. Thus, we can conclude that proximity between location prediction probabilities and <italic>realprecision</italic> values for detailed paths can be adjusted flexibly by setting different confidence thresholds for mining sequential rules. That is, when users believe that the accuracy of the accurate prediction cannot meet their requirements, they can obtain higher prediction accuracy by decreasing confidence thresholds of mining sequence rules used to construct transition probability matrices.</p>
+</sec>
+</sec>
+</sec>
+<sec id="sec020">
+<title>Conclusion and future work</title>
+<p>Because of its ease of implementation, spatial-temporal k-anonymity has become a mainstream approach for protecting the privacy of LBS users. Analyzing large-scale anonymity datasets can benefit some LBS applications. In this paper, we propose two location prediction methods for the probabilities of arriving at specified locations based on transition probability matrices constructing from sequential rules for spatial-temporal k-anonymity dataset. By conducting extensive experiments, we have verified the correctness and flexibility of our proposed methods.</p>
+<p>However, because technologies are intent neutral, they harbor neither benevolent nor malevolent intent with respect to the individuals using them. Thus, our proposed location prediction methods can also lead to substantial privacy threats. For example, target locations that are regarded as privacy-sensitive regions, such as military zones, red-light districts, and so on, may be susceptible to more menacing attacks, because the existing spatial-temporal k-anonymity methods and its variants mainly concern the current and historical private information of LBS users but not the future information [<xref ref-type="bibr" rid="pone.0160629.ref020">20</xref>]. Hence, in the future, we will study the capabilities and limitations of those attacks methods to lay foundations for research into <ext-link ext-link-type="uri" xlink:href="http://dict.baidu.com/s?wd=performance%20optimization" xlink:type="simple">performance optimization</ext-link> for spatial-temporal k-anonymity methods and its variants, thus helping data miners and domain experts ensure that privacy-sensitive knowledge is released or accessible only to trusted parties.</p>
+</sec>
+<sec id="sec021">
+<title>Supporting Information</title>
+<supplementary-material id="pone.0160629.s001" mimetype="text/plain" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.s001" xlink:type="simple">
+<label>S1 Text</label>
+<caption>
+<title>Seqsup0.02_seqconf0.2.</title>
+<p>Sequential rules mined with parameters <italic>seq</italic>sup<sub>min</sub> and <italic>seqconf</italic><sub>min</sub> set to be 0.02 and 0.20, which are used in Experiment 3.</p>
+<p>(TXT)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0160629.s002" mimetype="text/plain" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.s002" xlink:type="simple">
+<label>S2 Text</label>
+<caption>
+<title>Seqsup0.02_seqconf0.2_1step.</title>
+<p>Accurate one-step location predictions for arriving at the target location <italic>I</italic>, which are used in Experiment 3.</p>
+<p>(TXT)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0160629.s003" mimetype="text/plain" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.s003" xlink:type="simple">
+<label>S3 Text</label>
+<caption>
+<title>Seqsup0.02_seqconf0.2_2step.</title>
+<p>Accurate two-step location predictions for arriving at the target location <italic>I</italic>, which are used in Experiment 3.</p>
+<p>(TXT)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0160629.s004" mimetype="text/plain" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.s004" xlink:type="simple">
+<label>S4 Text</label>
+<caption>
+<title>Seqsup0.02_seqconf0.2_3step.</title>
+<p>Accurate three-step location predictions for arriving at the target location <italic>I</italic>, which are used in Experiment 3.</p>
+<p>(TXT)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0160629.s005" mimetype="text/plain" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.s005" xlink:type="simple">
+<label>S5 Text</label>
+<caption>
+<title>Seqsup0.02_seqconf0.22.</title>
+<p>Sequential rules mined with parameters <italic>seq</italic>sup<sub>min</sub> and <italic>seqconf</italic><sub>min</sub> set to be 0.02 and 0.22, which are used in Experiment 3.</p>
+<p>(TXT)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0160629.s006" mimetype="text/plain" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.s006" xlink:type="simple">
+<label>S6 Text</label>
+<caption>
+<title>Seqsup0.02_seqconf0.22_1step.</title>
+<p>Accurate one-step location predictions for arriving at the target location <italic>I</italic>, which are used in Experiment 3.</p>
+<p>(TXT)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0160629.s007" mimetype="text/plain" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.s007" xlink:type="simple">
+<label>S7 Text</label>
+<caption>
+<title>Seqsup0.02_seqconf0.22_2step.</title>
+<p>Accurate two-step location predictions for arriving at the target location <italic>I</italic>, which are used in Experiment 3.</p>
+<p>(TXT)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0160629.s008" mimetype="text/plain" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.s008" xlink:type="simple">
+<label>S8 Text</label>
+<caption>
+<title>Seqsup0.02_seqconf0.22_3step.</title>
+<p>Accurate three-step location predictions for arriving at the target location <italic>I</italic>, which are used in Experiment 3.</p>
+<p>(TXT)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0160629.s009" mimetype="text/plain" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.s009" xlink:type="simple">
+<label>S9 Text</label>
+<caption>
+<title>Seqsup0.02_seqconf0.24.</title>
+<p>Sequential rules mined with parameters <italic>seq</italic>sup<sub>min</sub> and <italic>seqconf</italic><sub>min</sub> set to be 0.02 and 0.24, which are used in Experiment 1.</p>
+<p>(TXT)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0160629.s010" mimetype="text/plain" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.s010" xlink:type="simple">
+<label>S10 Text</label>
+<caption>
+<title>Seqsup0.02_seqconf0.24_1step.</title>
+<p>Accurate one-step location predictions for arriving at the target location <italic>I</italic>, which are used in Experiment 1 and 2.</p>
+<p>(TXT)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0160629.s011" mimetype="text/plain" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.s011" xlink:type="simple">
+<label>S11 Text</label>
+<caption>
+<title>Seqsup0.02_seqconf0.24_2step.</title>
+<p>Accurate two-step location predictions for arriving at the target location <italic>I</italic>, which are used in Experiment 1 and 2.</p>
+<p>(TXT)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0160629.s012" mimetype="text/plain" position="float" xlink:href="info:doi/10.1371/journal.pone.0160629.s012" xlink:type="simple">
+<label>S12 Text</label>
+<caption>
+<title>Test datasets.</title>
+<p>Test datasets are to evaluate the correctness of the accurate prediction method with the <italic>realprecision</italic> measure, which are used in Experiment 2 and 3.</p>
+<p>(TXT)</p>
+</caption>
+</supplementary-material>
+</sec>
+</body>
+<back>
+<ack>
+<p>This research is supported by grants from National Natural Science Foundation of China (grant number 41201465), and Natural Science Foundation of Jiangsu province (grant number BK2012439). The authors wish to thank the anonymous reviewers for their valuable comments.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0160629.ref001"><label>1</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Jochen</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Agnès</surname> <given-names>V</given-names></name>. <chapter-title>Location-Based Services</chapter-title>. <publisher-name>Elsevier Inc</publisher-name>. <year>2004</year>; <fpage>245</fpage>–<lpage>251</lpage>.</mixed-citation></ref>
+<ref id="pone.0160629.ref002"><label>2</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Bettini</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Jajodia</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Samarati</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>XS</given-names></name>. <chapter-title>Privacy in Location-Based Applications: Research Issues and Emerging Trends</chapter-title>. <publisher-name>Springer, Verlag Berlin Heidelberg</publisher-name>. <year>2009</year>.</mixed-citation></ref>
+<ref id="pone.0160629.ref003"><label>3</label><mixed-citation publication-type="other" xlink:type="simple">Pedreschi D, Bonchi F, Turini F, Verykios VS, Atzori M, Malin B, et al. Privacy protection and technologies, opportunities and threats. Mobility Data Mining&amp;Privacy. 2008; 101–119.</mixed-citation></ref>
+<ref id="pone.0160629.ref004"><label>4</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jaeheung</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Seokhyun</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Yookun</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Yoojin</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Yongsu</surname> <given-names>P</given-names></name>. <article-title>A Hierarchical Clustering-Based Spatial Cloaking Algorithm for Location-Based Services</article-title>. <source>Journal of Internet Technology</source>. <year>2012</year>; <volume>13</volume>(<issue>4</issue>): <fpage>645</fpage>–<lpage>653</lpage>.</mixed-citation></ref>
+<ref id="pone.0160629.ref005"><label>5</label><mixed-citation publication-type="other" xlink:type="simple">Kido H, Yanagisawa Y, Satoh T. Protection of Location Privacy using Dummies for Location-based Services. Proceedings of the 21st International Conference on Data Engineering Workshops. 2005.</mixed-citation></ref>
+<ref id="pone.0160629.ref006"><label>6</label><mixed-citation publication-type="other" xlink:type="simple">Hara T, Suzuki A, Iwata M, Arase Y, Xie X. Dummy-based User Location Anonymization under Real-World Constraints. Access, IEEE. 2016; 1–1.</mixed-citation></ref>
+<ref id="pone.0160629.ref007"><label>7</label><mixed-citation publication-type="other" xlink:type="simple">Um JH, Kim HD, Chang JW. An Advanced Cloaking Algorithm Using Hilbert Curves for Anonymous Location Based Service. Proceedings of Social Com 2nd 2010; 1093–1098.</mixed-citation></ref>
+<ref id="pone.0160629.ref008"><label>8</label><mixed-citation publication-type="other" xlink:type="simple">Shang N, Ghinita G, Zhou YB, Bertino E. Controlling data disclosure in computational PIR protocols. Proceedings of ASIACCS 2010 5th, 2010; 310–313.</mixed-citation></ref>
+<ref id="pone.0160629.ref009"><label>9</label><mixed-citation publication-type="other" xlink:type="simple">Gruteser M, Grunwald D. Anonymous Usage of Location-Based Services through Spatial and Temporal Cloaking. Proceedings of MobiSys 2003.</mixed-citation></ref>
+<ref id="pone.0160629.ref010"><label>10</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ni</surname> <given-names>WW</given-names></name>, <name name-style="western"><surname>Gu</surname> <given-names>MZ</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>X</given-names></name>. <article-title>Location privacy-preserving k nearest neighbor query under user's preference</article-title>. <source>Knowledge-Based Systems</source>. <year>2016</year>; <volume>103</volume>:<fpage>19</fpage>–<lpage>27</lpage>.</mixed-citation></ref>
+<ref id="pone.0160629.ref011"><label>11</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Giannotti</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Pedreschi</surname> <given-names>D</given-names></name>. <chapter-title>Mobility Data Mining and Privacy: Geographic Knowledge Discovery</chapter-title>. <publisher-name>Springer-Verlag Berlin Heidelberg</publisher-name>. <year>2008</year>; <fpage>243</fpage>–<lpage>292</lpage>.</mixed-citation></ref>
+<ref id="pone.0160629.ref012"><label>12</label><mixed-citation publication-type="other" xlink:type="simple">Zhang HT, Xu L, Huang HH, Gao SS. Mining spatial association rules from LBS anonymity dataset for improving utilization. Proceedings of Geoinformatics. 2013; 1–6.</mixed-citation></ref>
+<ref id="pone.0160629.ref013"><label>13</label><mixed-citation publication-type="other" xlink:type="simple">Chow CY, Mokbel MF. Enabling Private Continuous Queries for Revealed User Locations. Proceedings of SSTD. 2007; 258–275.</mixed-citation></ref>
+<ref id="pone.0160629.ref014"><label>14</label><mixed-citation publication-type="other" xlink:type="simple">Pan X, Meng XF, Xu JL. Distortion-based anonymity for continuous queries in location-based mobile services. Proceedings of GIS. 2009; 256–265.</mixed-citation></ref>
+<ref id="pone.0160629.ref015"><label>15</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Davor</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Karolj</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Danijel</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Maja</surname> <given-names>TP</given-names></name>. <article-title>Grid implementation of the weather research and forecasting model</article-title>. <source>Earth Science Informatics</source>. <year>2010</year>; <volume>3</volume>(<issue>4</issue>): <fpage>199</fpage>–<lpage>208</lpage>.</mixed-citation></ref>
+<ref id="pone.0160629.ref016"><label>16</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Philippe</surname> <given-names>FV</given-names></name>, <name name-style="western"><surname>Usef</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Roger</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Engelbert</surname> <given-names>MN</given-names></name>. <article-title>CMRULES: An Efficient Algorithm for Mining Sequential Rules Common to Several Sequences</article-title>. <source>Knowledge-based Systems</source>. <year>2012</year>; <volume>25</volume>(<issue>1</issue>): <fpage>63</fpage>–<lpage>76</lpage>.</mixed-citation></ref>
+<ref id="pone.0160629.ref017"><label>17</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Baum</surname> <given-names>LE</given-names></name>, <name name-style="western"><surname>Petrie</surname> <given-names>T</given-names></name>. <article-title>Statistical Inference for Probabilistic Functions of Finite State Markov Chains</article-title>. <source>Annals of Mathematical Statistics</source>. <year>1966</year>; <volume>37</volume>(<issue>6</issue>): <fpage>1554</fpage>–<lpage>1563</lpage>.</mixed-citation></ref>
+<ref id="pone.0160629.ref018"><label>18</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wanalertlak</surname> <given-names>W</given-names></name>, <name name-style="western"><surname>Lee</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Yu</surname> <given-names>CS</given-names></name>, <name name-style="western"><surname>Kim</surname> <given-names>MC</given-names></name>, <name name-style="western"><surname>Park</surname> <given-names>SM</given-names></name>, <name name-style="western"><surname>Kim</surname> <given-names>WT</given-names></name>. <article-title>Behavior-based mobility prediction for seamless handoffs in mobile wireless networks</article-title>. <source>Wireless Networks</source>. <year>2011</year>; <volume>17</volume>(<issue>3</issue>): <fpage>645</fpage>–<lpage>658</lpage>.</mixed-citation></ref>
+<ref id="pone.0160629.ref019"><label>19</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Philippe</surname> <given-names>FV</given-names></name>, <name name-style="western"><surname>Gomariz</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Gueniche</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Soltani</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Wu</surname> <given-names>CW</given-names></name>, <name name-style="western"><surname>Tseng</surname> <given-names>VS</given-names></name>. <article-title>SPMF: a Java Open-Source Pattern Mining Library</article-title>. <source>Journal of Machine Learning Research</source>. <year>2014</year>; <volume>15</volume>: <fpage>3569</fpage>–<lpage>3573</lpage>.</mixed-citation></ref>
+<ref id="pone.0160629.ref020"><label>20</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Renso</surname> <given-names>DC</given-names></name>, <name name-style="western"><surname>Spaccapietra</surname> <given-names>DS</given-names></name>, <name name-style="western"><surname>Zimnyi</surname> <given-names>DE</given-names></name>. <chapter-title>Mobility Data: Modeling, Management, and Understanding</chapter-title>. <publisher-name>Cambridge University Press</publisher-name>. <year>2013</year>; <fpage>174</fpage>–<lpage>193</lpage>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

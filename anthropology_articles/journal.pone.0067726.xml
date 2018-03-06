@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group>
+<journal-title>PLoS ONE</journal-title></journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-13-02756</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0067726</article-id>
+<article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Biology</subject><subj-group><subject>Computational biology</subject><subj-group><subject>Population modeling</subject></subj-group></subj-group><subj-group><subject>Ecology</subject><subj-group><subject>Community ecology</subject></subj-group></subj-group><subj-group><subject>Population biology</subject><subj-group><subject>Population modeling</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Earth sciences</subject><subj-group><subject>Geography</subject><subj-group><subject>Human geography</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Social and behavioral sciences</subject><subj-group><subject>Anthropology</subject><subj-group><subject>Paleoanthropology</subject></subj-group></subj-group><subj-group><subject>Archaeology</subject></subj-group><subj-group><subject>Geography</subject><subj-group><subject>Human geography</subject></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Disentangling the Spatio-Environmental Drivers of Human Settlement: An Eigenvector Based Variation Decomposition</article-title>
+<alt-title alt-title-type="running-head">Disentangling Drivers of Human Settlement</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Vandam</surname><given-names>Ralf</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Kaptijn</surname><given-names>Eva</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Vanschoenwinkel</surname><given-names>Bram</given-names></name><xref ref-type="aff" rid="aff2"><sup>2</sup></xref></contrib>
+</contrib-group>
+<aff id="aff1"><label>1</label><addr-line>Sagalassos Archaeological Research Project, Faculty of Arts, University of Leuven, Leuven, Belgium</addr-line></aff>
+<aff id="aff2"><label>2</label><addr-line>Laboratory of Aquatic Ecology, Evolution and Conservation, University of Leuven, Leuven, Belgium</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Petraglia</surname><given-names>Michael D.</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>University of Oxford, United Kingdom</addr-line></aff>
+<author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">ralf.vandam@arts.kuleuven.be</email></corresp>
+<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn>
+<fn fn-type="con"><p>Conceived and designed the experiments: BV EK RV. Performed the experiments: BV. Analyzed the data: BV. Contributed reagents/materials/analysis tools: BV EK RV. Wrote the paper: BV EK RV.</p></fn>
+</author-notes>
+<pub-date pub-type="collection"><year>2013</year></pub-date>
+<pub-date pub-type="epub"><day>2</day><month>7</month><year>2013</year></pub-date>
+<volume>8</volume>
+<issue>7</issue>
+<elocation-id>e67726</elocation-id>
+<history>
+<date date-type="received"><day>17</day><month>1</month><year>2013</year></date>
+<date date-type="accepted"><day>22</day><month>5</month><year>2013</year></date>
+</history>
+<permissions>
+<copyright-year>2013</copyright-year>
+<copyright-holder>Vandam et al</copyright-holder><license xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions>
+<abstract>
+<p>The relative importance of deterministic and stochastic processes driving patterns of human settlement remains controversial. A main reason for this is that disentangling the drivers of distributions and geographic clustering at different spatial scales is not straightforward and powerful analytical toolboxes able to deal with this type of data are largely deficient. Here we use a multivariate statistical framework originally developed in community ecology, to infer the relative importance of spatial and environmental drivers of human settlement. Using Moran’s eigenvector maps and a dataset of spatial variation in a set of relevant environmental variables we applied a variation partitioning procedure based on redundancy analysis models to assess the relative importance of spatial and environmental processes explaining settlement patterns. We applied this method on an archaeological dataset covering a 15 km<sup>2</sup> area in SW Turkey spanning a time period of 8000 years from the Late Neolithic/Early Chalcolithic up to the Byzantine period. Variation partitioning revealed both significant unique and commonly explained effects of environmental and spatial variables. Land cover and water availability were the dominant environmental determinants of human settlement throughout the study period, supporting the theory of the presence of farming communities. Spatial clustering was mainly restricted to small spatial scales. Significant spatial clustering independent of environmental gradients was also detected which can be indicative of expansion into unsuitable areas or an unexpected absence in suitable areas which could be caused by dispersal limitation. Integrating historic settlement patterns as additional predictor variables resulted in more explained variation reflecting temporal autocorrelation in settlement locations.</p>
+</abstract>
+<funding-group><funding-statement>B. Vanschoenwinkel is supported by a postdoctoral fellowship of the Research Fund Flanders (FWO). M. Waelkens received a ‘Methusalem 07/01 grant’ from the Flemish Ministry for Science Policy which helped to make this research possible and supports the doctoral research of R. Vandam and the postdoctoral research of E. Kaptijn. The research theme forms part of the IAP 07/09 (Belgian Science Policy Office) and GOA 13/04 (University of Leuven Research Fund) projects. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts><page-count count="11"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title>Introduction</title>
+<p>Spatial correlation (i.e. a geographic dependency of observations) is a fundamental attribute of the organization of biological systems <xref ref-type="bibr" rid="pone.0067726-Sokal1">[1]</xref>, <xref ref-type="bibr" rid="pone.0067726-Sokal2">[2]</xref> ranging from the growth of spatially discrete bacterial colonies in petri dishes over the patchy structure of plant and animal populations up to the spatial distribution of human settlements in the landscape <xref ref-type="bibr" rid="pone.0067726-Tilman1">[3]</xref>. Clustering of biological units such as individuals or populations can be driven by both environment dependent and - independent processes. Environments are typically heterogeneous at different spatial scales ranging from subtle differences in the physico-chemical environment of individual organisms up to large scale variation in habitat structure across landscapes driven by historic geomorphological processes and broad environmental gradients such as climate and productivity. Certain areas also typically contain more limiting resources than others or better meet the requirements of certain species than others <xref ref-type="bibr" rid="pone.0067726-Chase1">[4]</xref>. As a result these localities are more likely to be colonized and sustain populations. This type of deterministic distribution of organisms in space based on the quality of the environment is known as environmental filtering or species sorting <xref ref-type="bibr" rid="pone.0067726-Leibold1">[5]</xref>. This paradigm, however, assumes that there are no restrictions in the movements of organisms and that ultimately all suitable patches will be occupied. In reality, this assumption is often not met as migration is often not that efficient and certain suitable patches will remain unoccupied: a pattern known as dispersal limitation <xref ref-type="bibr" rid="pone.0067726-Winegardner1">[6]</xref>. Individuals and populations can also be unable or unwilling to migrate and resettle even though local conditions are no longer suitable <xref ref-type="bibr" rid="pone.0067726-Kuussaari1">[7]</xref>. While in animals and plants inability to migrate is a main reason why suitable patches remain unoccupied, social, cultural, financial and political barriers might play a similar role in humans <xref ref-type="bibr" rid="pone.0067726-McNeill1">[8]</xref>. Additionally, species sometimes expand into unsuitable areas where they would normally go extinct but nonetheless manage to persist as a result of continuous arrival of new migrants from sources (source sink dynamics) <xref ref-type="bibr" rid="pone.0067726-Brown1">[9]</xref>, <xref ref-type="bibr" rid="pone.0067726-Vanschoenwinkel1">[10]</xref>. Examples of this in human societies include, for instance, villages or a city such as Ancient Rome that cannot sustain themselves and would perish if resources and people were not continuously brought in from other sources through exchange or trade. Finally, historical patterns such as the point of entry of a species or race in a region or the location of the first population or settlement can have important consequences for the expansion of a species into an area resulting in persisting founder effects <xref ref-type="bibr" rid="pone.0067726-Luis1">[11]</xref>, <xref ref-type="bibr" rid="pone.0067726-Slatkin1">[12]</xref>. Consequently, in the case of time series analyses it can be feasible to use historic distributions as predictors of later patterns (temporal autocorrelation <xref ref-type="bibr" rid="pone.0067726-Angeler1">[13]</xref>). Disentangling the relative importance of history, environmental and spatial processes explaining distribution patterns, however, remains an important challenge both in ecology <xref ref-type="bibr" rid="pone.0067726-Logue1">[14]</xref>, anthropology and archaeology <xref ref-type="bibr" rid="pone.0067726-Johnson1">[15]</xref>, <xref ref-type="bibr" rid="pone.0067726-Kowalewski1">[16]</xref>, <xref ref-type="bibr" rid="pone.0067726-Fernandes1">[17]</xref>. In general, analyses of ancient settlement patterns typically conclude by pointing out a single environmental variable of presumed importance <xref ref-type="bibr" rid="pone.0067726-Johnson1">[15]</xref> without rigorously assessing the explanatory value of different sets of variables explaining reality <xref ref-type="bibr" rid="pone.0067726-Fernandes1">[17]</xref>. Different statistical approaches have been developed that can take into account the spatial structure of sites such as classical isolation by distance analysis using intuitive but limited partial Mantel tests <xref ref-type="bibr" rid="pone.0067726-Mantel1">[18]</xref>, <xref ref-type="bibr" rid="pone.0067726-Guillot1">[19]</xref> or multivariate ordinations including spatial descriptors such as polynomials constructed from X and Y coordinates (trend surface analysis <xref ref-type="bibr" rid="pone.0067726-Legendre1">[20]</xref>). The recent development of advanced spatial descriptors (PCNM - principal coordinates of neighboring matrices; MEM – Moran’s eigenvector maps <xref ref-type="bibr" rid="pone.0067726-Borcard1">[21]</xref>, <xref ref-type="bibr" rid="pone.0067726-Borcard2">[22]</xref>, <xref ref-type="bibr" rid="pone.0067726-Legendre2">[23]</xref>), however, provides important new opportunities since these are more powerful at detecting spatial variation and allow to identify the scales at which spatial clustering occurs. This is important since aggregation might be beneficial at certain scales but detrimental at others. For instance, while people may be more inclined to settle close to other settlements because they can trade with them or because of the abundance of a certain resource, starting up a new settlement too close to existing settlements may be a bad choice as it can lead to social-economic problems such as resource competition which may lead to conflict <xref ref-type="bibr" rid="pone.0067726-Tir1">[24]</xref> or abandonment of sites and shifts in settlement patterns <xref ref-type="bibr" rid="pone.0067726-Johnson1">[15]</xref>. What is more, by including sets of predictor variables representing spatial variables as surrogates for migration-based processes, environmental variables indicative of environmental filtering and historic factors in multivariate ordination models it is possible to use a variation partitioning procedure <xref ref-type="bibr" rid="pone.0067726-PeresNeto1">[25]</xref> to separate the unique effects of different sets of variables as well as the variation that is commonly explained by different variation components. For instance, the effects of an environmental condition that is confined to a certain geographic area may be detected as spatially structured environment. As such, the method is able to distinguish whether spatial distribution patterns are the result of spatially clustered environmental conditions or environment independent processes such as source sink dynamics or dispersal limitation <xref ref-type="bibr" rid="pone.0067726-Nhiwatiwa1">[26]</xref>. While this method has been extensively used in ecology, its potential use in other disciplines such as the social sciences remains largely unexplored.</p>
+<p>We applied this method on a dataset of archaeological artefacts collected in a region in south western Turkey and spanning a time period of almost 8000 years from the Late Neolithic/Early Chalcolithic (6500–5500 BC) up to the Byzantine period (610–1300 AD). We investigate changes in the relative importance of history (presence of earlier settlements), environmental and spatial variables explaining settlement distributions over time and discuss the relative importance of different processes that can explain clustering of human populations at different spatial scales. For this the dataset was subdivided into six periods which could be reliably distinguished based on period-characteristic material culture (1: Late Neolithic/Early Chalcolithic (6500–5500 BC); 2: Late Chalcolithic/Early Bronze Age I (4000–2600 BC); 3: Early Bronze Age II (2600–2300 BC); 4: Archaic-Classical/Hellenistic (750–200 BC). 5: Hellenistic (333–25 BC); 6: Byzantine (610–1300 BC).</p>
+</sec><sec id="s2" sec-type="methods">
+<title>Methods</title>
+<sec id="s2a">
+<title>Ethics Statement</title>
+<p>The research permit was granted by the Turkish Ministry of Culture and Tourism, General Directorate of Cultural Properties and Museum. All necessary permits were obtained for the described study, which complied with all relevant regulations.</p>
+</sec><sec id="s2b">
+<title>Study Area</title>
+<p>The research area consists of the southern part of the Burdur plain which is located in the Turkish Lake District and surrounded by the western Taurus Mountains (<xref ref-type="fig" rid="pone-0067726-g001">Fig. 1</xref>). It is situated in a tectonic ‘graben’ system <xref ref-type="bibr" rid="pone.0067726-Verhaert1">[27]</xref>, <xref ref-type="bibr" rid="pone.0067726-SimiloxTohon1">[28]</xref> of which the central part is occupied by Lake Burdur. The level of this lake has fluctuated considerably during the lake’s history, however. Around 20 000 BP, the lake reached its highest level and has declined ever since <xref ref-type="bibr" rid="pone.0067726-Kis1">[29]</xref>. The retreating lake resulted in a flat plain and the lacustrine deposits provided fertile soils suitable for agriculture. Two rivers drain the southern part of the Burdur plain, the Duğer Çayı and the Boz Çayı. From an archaeological point of view, the Burdur plain is considered as an important area. Previous excavations at Hacilar <xref ref-type="bibr" rid="pone.0067726-Mellaart1">[30]</xref>, Kuruçay Höyük <xref ref-type="bibr" rid="pone.0067726-Duru1">[31]</xref>, <xref ref-type="bibr" rid="pone.0067726-Duru2">[32]</xref> and the ongoing excavation of the University of Istanbul at Hacilar Büyük Höyük <xref ref-type="bibr" rid="pone.0067726-Umurtak1">[33]</xref> have revealed unique information on the Late Neolithic, Chalcolithic and Early Bronze Age periods in Anatolia. These excavations make the Burdur Plain one of the best studied regions of Anatolia for these time periods and even beyond. However, little is known about other possible settlements in the vicinity of these excavated sites. To remedy this, the Sagalassos Archaeological Research Project started a series of intensive survey seasons in the Burdur plain in 2010, which resulted in the discovery of hamlets and farmsteads dating from Late Prehistoric to Ottoman times <xref ref-type="bibr" rid="pone.0067726-Kaptijn1">[34]</xref>, <xref ref-type="bibr" rid="pone.0067726-Vandam1">[35]</xref>.</p>
+<fig id="pone-0067726-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0067726.g001</object-id><label>Figure 1</label><caption>
+<title>Background of the research area.</title>
+<p>Location of the research area (A) in the Burdur plain situated in the lake district of south-western Turkey. Blue dots represent springs (B) Overview picture of the Burdur plain featuring Lake Burdur in the background and typical field conditions in the valley plain during surveys. (C) Examples of pottery fragments indicative for different time periods. In chronological order from left to right: Early Chalcolithic, Late Chalcolithic, Archaic-Classical Hellenistic and Byzantine periods.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0067726.g001" position="float" xlink:type="simple"/></fig></sec><sec id="s2c">
+<title>Data Collection</title>
+<p>The area was surveyed by a team of researchers walking transects of 50×1 m spaced 20 m apart and collecting all manmade artefacts predating the 1920’s in the landscape. For the present analysis, the study area was divided in a regular grid of 9986 cells of 90×90 m. Based on GPS coordinates, artefacts collected in transects were assigned to corresponding grid cells in the dataset. From the collected artefacts only those that could be reliably attributed to a certain time period were retained for further analyses. Although absolute synchronicity of sites cannot be attested via the relative dating of archaeological survey, the fact that identical pottery fabrics, probably stemming from a single production center, were used on sites from the same time period suggests synchronicity (unpublished data). An overview of different artefacts and the time periods to which they correspond is provided in <xref ref-type="supplementary-material" rid="pone.0067726.s002">Table S1</xref>. In order to improve the resolution of the dataset it was decided not to simply attribute artefacts to certain grid cells based on the exact geographic location (all or nothing principle) falling within a certain cell. Instead, we used a simple weighting method based on the distance of each artefact to the four nearest grid cell centroids according to (Eq. 1). In this formula <italic>A<sub>xy</sub></italic> represents the artefact abundance assigned to a certain grid cell A with centroid coordinates x and y. N = the number of artefacts found in this cell, ai = the Euclidean distance of an artefact in cell A to the centroid of that cell and bi, ci and di = the Euclidean distances to the other three nearest cell centroids. As such, artefact abundance (calculated separately for artefacts from each time period) of each grid cell is no longer an integer number, but the column sum still correctly represents the total number of artefacts collected in the area. This approach can be considered as an elegant way to smoothen the response data, reducing the importance of the exact location of individual artefacts, which often will have been moved due to localized disturbances such as plowing. Using this approach a site x artefact abundance response datamatrix was constructed with six columns corresponding to each of the considered time periods.<disp-formula id="pone.0067726.e001"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0067726.e001" xlink:type="simple"/><label>(1)</label></disp-formula></p>
+</sec><sec id="s2d">
+<title>Environmental Data</title>
+<p>Environmental properties of each cell (the unit of the analysis) were attributed to the cell’s centroid and included elevation (m asl), distances to the nearest river, spring and hill and the percentage of different land cover types in radii of one and four km, respectively. Considered land cover categories included hills, badlands, valley floor, swamp and lake, as reconstructed from available GIS data layers. A last variable represents the estimated visible area of an object of 1 m high for an observer of 1.50 m and assuming a maximum visibility of 10 km. A detailed overview of the 15 environmental variables considered in this study is presented in <xref ref-type="supplementary-material" rid="pone.0067726.s003">Table S2</xref>.</p>
+</sec><sec id="s2e">
+<title>Data Analysis</title>
+<p>The distribution of archaeological artefacts from each of the six considered time periods was analysed using a variation partitioning procedure <xref ref-type="bibr" rid="pone.0067726-PeresNeto1">[25]</xref>, <xref ref-type="bibr" rid="pone.0067726-Borcard3">[36]</xref> based on redundancy analysis (RDA) models <xref ref-type="bibr" rid="pone.0067726-Legendre2">[23]</xref> with significances tested using 999 Monte Carlo permutations. This procedure decomposes the total variation in the response dataset into a pure spatial component (S|E), a pure environmental component (E|S), a component of the spatial structured environmental variation (E∩S) and the unexplained variation. Only significant predictor variables identified using a forward selection procedure <xref ref-type="bibr" rid="pone.0067726-Blanchet1">[37]</xref> based on the adjusted R<sup>2</sup> stopping criterion were retained in constructed models <xref ref-type="bibr" rid="pone.0067726-Borcard4">[38]</xref>. Artefact abundances were Hellinger transformed <xref ref-type="bibr" rid="pone.0067726-Legendre3">[39]</xref> prior to analyses (divide the abundances by the row sum and take the square root of the resulting ratiosartefact).</p>
+<p>In order to analyse the importance of spatial autocorrelation at different spatial scales, a set of Moran’s Eigenvector Maps (MEM’s) was constructed <xref ref-type="bibr" rid="pone.0067726-Borcard1">[21]</xref>, <xref ref-type="bibr" rid="pone.0067726-Dray1">[40]</xref>. In a regular matrix of sites these variables are wave-functions with different wave lengths corresponding to spatial correlation at different spatial scales <xref ref-type="bibr" rid="pone.0067726-Borcard2">[22]</xref>, <xref ref-type="bibr" rid="pone.0067726-Dray1">[40]</xref> (<xref ref-type="supplementary-material" rid="pone.0067726.s001">Fig. S1</xref>). Only MEM’s that have significant positive spatial autocorrelation as calculated using Moran’s I <xref ref-type="bibr" rid="pone.0067726-Moran1">[41]</xref> were used in the analyses. Forward selection was performed on this set of eigenfunctions. Only significant MEM variables retained in constructed models for each time period were included. Analogous to the variation partitioning procedure outlined above, spatio-environmental covariation was corrected for by including significant environmental variables as covariables in these analyses <xref ref-type="bibr" rid="pone.0067726-Legendre2">[23]</xref>.</p>
+<p>Secondly, in order to assess the potential importance of existing settlements during the previous time period as determinants of current settlement patterns, the artefact abundances in time period T minus1 were included as an additional variation component history [H] besides space [S] and environment [E] in a second set of variation partitioning analyses.</p>
+<p>Finally, by analyzing the fit of all MEM variables corresponding to significant positive autocorrelation with response variables of interest it is possible to investigate at which spatial scales, spatial clustering occurs in the dataset. Frequency distributions of the wavelengths (λ) of the MEM variables retained in RDA models after forward selection are generated in order to assess variation in the scales of spatial clustering that are relevant during different time periods. Wavelength is expressed in km and for a regular grid it can be interpreted as the distance between the centers of neighboring clusters. To test the ability of MEM’s with increasing wavelengths in explaining observed variation in artefact abundances, the amount of variation (adjusted R<sup>2</sup>) explained by pure spatial variation (S|E) was calculated for consecutive sets 10 MEM’s corresponding to increasing spatial scales. Additionally, the fitted site scores of the dominant first canonical axis of RDA models explaining the abundance of archeological artefacts using MEMs are plotted to highlight areas where artefact distributions are successfully predicted by MEM predictors.</p>
+<p>All analyses were carried out in R version 2.15.0 (R Development Core Team 2012) using the packages <bold>PCNM</bold> (MEM variables), <bold>AEM</bold> (Moran’s I spatial autocorrelation), <bold>vegan</bold> (Hellinger transformations, RDA, variation partitioning) and <bold>packfor</bold> (forward selection).</p>
+</sec></sec><sec id="s3">
+<title>Results</title>
+<p>The first 5249 MEM’s had positive eigenvalues. Of these only 1215 were characterized by significant positive spatial autocorrelation based on Moran’s I and were consequently retained in further analyses. Overall RDA models predicted a substantial fraction of observed variation ranging between 8 and 26%. Variation partitioning revealed that both spatial and environmental variables explained a significant proportion of variation in our datasets, even after correction for collinearity with other variation components. Considering artefact abundance during the previous time period as a separate historical variation component [H] generally resulted in better models explaining more variation, except for time period A-CH (<xref ref-type="table" rid="pone-0067726-t001">Table 1</xref>, <xref ref-type="fig" rid="pone-0067726-g002">Fig. 2</xref>).</p>
+<fig id="pone-0067726-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0067726.g002</object-id><label>Figure 2</label><caption>
+<title>Variation partitioning showing the amount of variation in human settlement patterns explained by different variation components.</title>
+<p>The upper panel (a) depicts results of a partitioning of variation based on spatial and environmental variables. The lower panel (b) shows results of a partitioning of variation based on a spatial, environmental and historical variation component. The historical variation component corresponds to artefact abundance patterns during the preceding time period. [E/S] = pure environmental variation corrected for space, [E/SH] = pure environmental variation corrected for space and history, [S/E] pure spatial variation corrected for environment, [E/SH] = pure spatial variation corrected for environment and history, [H/SH] = pure history, corrected for space and environment, [E∩S] = variation commonly explained by space and environment, [E∩S∩H] = variation commonly explained by space, environment and history.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0067726.g002" position="float" xlink:type="simple"/></fig><table-wrap id="pone-0067726-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0067726.t001</object-id><label>Table 1</label><caption>
+<title>Variation partitioning of artefact abundance datamatrices for each of the six considered time periods with corresponding P values.</title>
+</caption><alternatives><graphic id="pone-0067726-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0067726.t001" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td colspan="2" align="left" rowspan="1">T1</td>
+<td colspan="2" align="left" rowspan="1">T2</td>
+<td colspan="2" align="left" rowspan="1">T3</td>
+<td colspan="2" align="left" rowspan="1">T4</td>
+<td colspan="2" align="left" rowspan="1">T5</td>
+<td colspan="2" align="left" rowspan="1">T6</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Period</td>
+<td colspan="2" align="left" rowspan="1">NEO_ECH</td>
+<td colspan="2" align="left" rowspan="1">LCH_EBI</td>
+<td colspan="2" align="left" rowspan="1">EBII</td>
+<td colspan="2" align="left" rowspan="1">A-CH</td>
+<td colspan="2" align="left" rowspan="1">HELL</td>
+<td colspan="2" align="left" rowspan="1">BYZ</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Var %</td>
+<td align="left" rowspan="1" colspan="1">P</td>
+<td align="left" rowspan="1" colspan="1">Var %</td>
+<td align="left" rowspan="1" colspan="1">P</td>
+<td align="left" rowspan="1" colspan="1">Var %</td>
+<td align="left" rowspan="1" colspan="1">P</td>
+<td align="left" rowspan="1" colspan="1">Var %</td>
+<td align="left" rowspan="1" colspan="1">P</td>
+<td align="left" rowspan="1" colspan="1">Var %</td>
+<td align="left" rowspan="1" colspan="1">P</td>
+<td align="left" rowspan="1" colspan="1">Var %</td>
+<td align="left" rowspan="1" colspan="1">P</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>(a)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>[EUS]</bold></td>
+<td align="left" rowspan="1" colspan="1">8.13</td>
+<td align="left" rowspan="1" colspan="1">0.005</td>
+<td align="left" rowspan="1" colspan="1">21.48</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">15.7</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">25.8</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">18.27</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">18.41</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>[E]</bold></td>
+<td align="left" rowspan="1" colspan="1">0.25</td>
+<td align="left" rowspan="1" colspan="1">0.005</td>
+<td align="left" rowspan="1" colspan="1">6.5</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">2.20</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">5.10</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">4.67</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">2.18</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>[S]</bold></td>
+<td align="left" rowspan="1" colspan="1">8.10</td>
+<td align="left" rowspan="1" colspan="1">0.005</td>
+<td align="left" rowspan="1" colspan="1">19.6</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">15.3</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">24.25</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">17.07</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">18.09</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>[E/S]</bold></td>
+<td align="left" rowspan="1" colspan="1">0.04</td>
+<td align="left" rowspan="1" colspan="1">0.03</td>
+<td align="left" rowspan="1" colspan="1">1.88</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">0.45</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">1.56</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">1.21</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">0.32</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>[S/E]</bold></td>
+<td align="left" rowspan="1" colspan="1">7.90</td>
+<td align="left" rowspan="1" colspan="1">0.005</td>
+<td align="left" rowspan="1" colspan="1">15.01</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">13.53</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">20.63</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">13.68</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">16.41</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>[E∩S]</bold></td>
+<td align="left" rowspan="1" colspan="1">0.20</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">4.59</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">1.77</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">3.62</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">3.38</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">1.68</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>1-[EUS]</bold></td>
+<td align="left" rowspan="1" colspan="1">91.86</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">78.5</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">84.2</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">74.16</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">81.7</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">81.6</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>(b)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>[EUSUH]</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">24.25</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">21.9</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">25.80</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">23.5</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">20.49</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>[E]</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">6.5</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">2.20</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">5.1</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">4.67</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">2.18</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>[S]</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">19.6</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">15.3</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">24.25</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">17.07</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">18.09</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>[H]</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">5.41</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">8.4</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">0.025</td>
+<td align="left" rowspan="1" colspan="1">0.067</td>
+<td align="left" rowspan="1" colspan="1">14.13</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">6.14</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>[E/SH]</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">1.66</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">0.17</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">1.99</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">1.06</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">0.23</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>[S/HE]</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">13.4</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">12.30</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">20.5</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">7.4</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">13.15</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>[H/SE]</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">2.77</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">6.14</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">0.452</td>
+<td align="left" rowspan="1" colspan="1">5.57</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+<td align="left" rowspan="1" colspan="1">2.08</td>
+<td align="left" rowspan="1" colspan="1">0.001</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>1- [EUSUH]</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">75.75</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">78.09</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">74.2</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">76.5</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">79.51</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt101"><label/><p>Presented variation estimates correspond to adjusted R<sup>2</sup> values. Upper panel (a) represents results from a partitioning of spatial [S] and environmental variation [E]. In the lower panel (b), the presence of historic settlements present in the preceding time period [H] is included as an additional component in the analyses. NEO_ECH: Late Neolithic/Early Chalcolithic (6500–5500 BC); LCH_EBI: Late Chalcolithic/Early Bronze Age I (4000–2600 BC); EBII: Early Bronze Age II (2600–2300 BC); A-CH: Archaic-Classical/Hellenistic (750–200 BC). HELL: Hellenistic (333–25 BC); BYZ: Byzantine (610–1300 BC).</p></fn></table-wrap-foot></table-wrap>
+<p>In general, a higher abundance of artefacts was found in valleys and in closer proximity to springs and hills. The prevalence of swamp, in turn, had a negative effect on artefact abundance (<xref ref-type="table" rid="pone-0067726-t002">Table 2</xref>). Significant spatial variables retained in our models included latitude and longitude, in general supporting a higher abundance of artefacts in the south-western corner of the area, which contains many hills and springs. MEM’s fitted a broad range of scales of spatial clustering with wavelengths (λ) ranging from 150 m to almost 90 km and there were no consistent differences between the considered time periods (mean±SD: NEO_ECH: 2.52±6.22 km; LCH_EBI: 4.1±10.7 km; EBII: 2.2±5.0 km; A-CH: 4.1±10.4 km; HELL: 3.3±9.5 km; BYZ: 3.8±10.9 km; <xref ref-type="supplementary-material" rid="pone.0067726.s004">Table S3</xref>). Overall, however, most MEM’s retained after forward selection corresponded to clustering with relatively small inter cluster distances varying between 100 m and 5 km (<xref ref-type="fig" rid="pone-0067726-g003">Fig. 3</xref>). Despite the higher abundance of small scale MEM’s (λ &lt;2 km) retained after forward selection, partial redundancy analyses correcting for significant environmental variation, showed that sets of the larger scale MEM’s retained after forward selection typically explained more variation than sets of smaller scale MEM’s and this effect was most pronounced in later time periods (<xref ref-type="fig" rid="pone-0067726-g003">Fig. 3</xref>). Similarly, maps showing the fit of the first canonical axis to artefact abundance data, also show larger spatial clusters of cells where artefact abundances are adequately predicted by MEM variables in later time periods (<xref ref-type="fig" rid="pone-0067726-g004">Fig. 4</xref>).</p>
+<fig id="pone-0067726-g003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0067726.g003</object-id><label>Figure 3</label><caption>
+<title>Variation in artefact abundances explained by sets of MEM variables corresponding to increasingly broader spatial scales.</title>
+<p>Left panel- Variation in artefact abundances (adjusted R<sup>2</sup>) explained by sets of MEM variables (10 variables per category) corresponding to increasingly higher spatial scales (right panel). Category one groups the ten significant MEM’s corresponding to the smallest λ, category two groups the following 10 MEM’s and so on, R<sup>2</sup> was calculated using partial RDA models correcting for significant environmental variables and thus representing pure spatial variation [S/E]. Middle and right panel - frequency distributions of the wavelength (λ) of MEM variables retained in RDA models after forward selection illustrating variation in the scales of spatial clustering relevant during different time periods. Middle panels show all MEM’s, right panels zoom in on variation in spatial correlation within 0–10 km.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0067726.g003" position="float" xlink:type="simple"/></fig><fig id="pone-0067726-g004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0067726.g004</object-id><label>Figure 4</label><caption>
+<title>Maps of fitted site scores of the first canonical axis of RDA models explaining the abundance of archeological artefacts.</title>
+<p>Predictor variables are the significant Moran’s eigenvector maps retained after forward selection. A red color indicates high values, blue areas are indicative of low values. Separate maps are provided for RDA models for each of the six considered time periods. NEO_ECH: Late Neolithic/Early Chalcolithic (6500–5500 BC); LCH_EBI: Late Chalcolithic/Early Bronze Age I (4000–2600 BC); EBII: Early Bronze Age II (2600–2300 BC); A-CH: Archaic-Classical/Hellenistic (750–200 BC). HELL: Hellenistic (333–25 BC); BYZ: Byzantine (610–1300 BC).</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0067726.g004" position="float" xlink:type="simple"/></fig><table-wrap id="pone-0067726-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0067726.t002</object-id><label>Table 2</label><caption>
+<title>List of significant environmental and spatial predictor variables retained after a forward selection procedure in RDA models explaining the abundance of archaeological artefacts from each of the six considered time periods.</title>
+</caption><alternatives><graphic id="pone-0067726-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0067726.t002" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Period</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">T1</td>
+<td align="left" rowspan="1" colspan="1">T2</td>
+<td align="left" rowspan="1" colspan="1">T3</td>
+<td align="left" rowspan="1" colspan="1">T4</td>
+<td align="left" rowspan="1" colspan="1">T5</td>
+<td align="left" rowspan="1" colspan="1">T6</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">NEO_ECH</td>
+<td align="left" rowspan="1" colspan="1">LCH_EBI</td>
+<td align="left" rowspan="1" colspan="1">EBII</td>
+<td align="left" rowspan="1" colspan="1">A-CH</td>
+<td align="left" rowspan="1" colspan="1">HELL</td>
+<td align="left" rowspan="1" colspan="1">BYZ</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Env.</td>
+<td align="left" rowspan="1" colspan="1">NEAR_SPRNG</td>
+<td align="left" rowspan="1" colspan="1">+</td>
+<td align="left" rowspan="1" colspan="1">+</td>
+<td align="left" rowspan="1" colspan="1">+</td>
+<td align="left" rowspan="1" colspan="1">+</td>
+<td align="left" rowspan="1" colspan="1">+</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">NEAR_HILL</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">+</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">+</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">+</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">NEAR_RIVER</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">+</td>
+<td align="left" rowspan="1" colspan="1">+</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">P_VALLEY1</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">+</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">+</td>
+<td align="left" rowspan="1" colspan="1">+</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">P_VALLEY4</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">+</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">+</td>
+<td align="left" rowspan="1" colspan="1">+</td>
+<td align="left" rowspan="1" colspan="1">+</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">P_SWAMP1</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">P_SWAMP4</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">P_BADLAND1</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">P_BADLAND4</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">P_HILL1</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">P_HILL4</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">P_LAKE1</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">P_LAKE4</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">ELEVATION</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">VIEWSHED_1.4</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>–</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Space</td>
+<td align="left" rowspan="1" colspan="1">Coordinates</td>
+<td align="left" rowspan="1" colspan="1">X. Y</td>
+<td align="left" rowspan="1" colspan="1">X. Y</td>
+<td align="left" rowspan="1" colspan="1">X</td>
+<td align="left" rowspan="1" colspan="1">X. Y</td>
+<td align="left" rowspan="1" colspan="1">X. Y</td>
+<td align="left" rowspan="1" colspan="1">X.Y</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">No. sign. MEMs</td>
+<td align="left" rowspan="1" colspan="1">50</td>
+<td align="left" rowspan="1" colspan="1">66</td>
+<td align="left" rowspan="1" colspan="1">74</td>
+<td align="left" rowspan="1" colspan="1">83</td>
+<td align="left" rowspan="1" colspan="1">73</td>
+<td align="left" rowspan="1" colspan="1">64</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt102"><label/><p>(+) and (<bold>–</bold>) designate positive and negative effects. respectively. The variables NEAR_SPRNG. NEAR_HILL and NEAR_RIVER i.e. the distance to the nearest river, hill or lake were included in models as distances. As a result the sign of the measured effect was inversed in order to be able to interpret these variables as proximities.</p></fn></table-wrap-foot></table-wrap></sec><sec id="s4">
+<title>Discussion</title>
+<p>Results illustrate how patterns of human settlement can be decomposed into spatial correlation at different spatial scales. Part of this correlation was shown to be caused by spatially structured environmental conditions while most spatial correlation was independent of environmental gradients considered in our analyses. As outlined in detail below, these results reflect a number of general processes generating spatial structure in human societies. Additionally, despite the incompleteness of the archaeological record these relatively simple models considering a relatively small set of environmental variables already explained up to 26% of observed variation in artefact abundances. This indicates that human settlement in this region was characterized by a relatively strong deterministic component.</p>
+<sec id="s4a">
+<title>Environmental Filtering</title>
+<p>Our results, first of all, showed clear significant links between settlement patterns and local environmental conditions. In nature different processes can result in a close match between environmental gradients and species distributions. For many organisms that cannot control their own migration such as plants and many invertebrates, environmental filtering occurs as a result of random dispersal followed by differential establishment success <xref ref-type="bibr" rid="pone.0067726-Vanschoenwinkel2">[42]</xref>. Other groups and particularly higher organisms typically have better dispersal abilities and more complex nervous systems enabling them to use environmental cues to determine whether a locality is suitable for settlement: a process known as active habitat selection <xref ref-type="bibr" rid="pone.0067726-Binckley1">[43]</xref>. The combination of superior dispersal ability and the intellectual ability to make rational decisions makes that particularly the latter will probably be the most prominent process driving differential human settlement in environmentally heterogeneous landscapes, as observed in this study. At larger spatial scales and when suitable areas are in scarce supply, however, it is likely that human settlement may also reflect random dispersal followed by differential mortality. A potential example of this could be the colonisation of islands in the isolated parts of the Pacific Ocean by seafaring Polynesian people <xref ref-type="bibr" rid="pone.0067726-Keegan1">[44]</xref>. Examples of environmental filtering emerging from this study include preferential settlement close to water sources (springs, rivers, lakes), hilltop lookouts and in lowland valleys, as also reported for settlements other regions of the Near East and the Aegean <xref ref-type="bibr" rid="pone.0067726-Johnson2">[45]</xref>. The availability of water appears to have been important during the entire history of the area, which is logical as water is indispensable for settlements and especially for (early) farming communities and their settlement location choice <xref ref-type="bibr" rid="pone.0067726-Jones1">[46]</xref>. In contrast, a significant effect of the abundance of lowland valley around settlements was only detected from the Late Chalcolithic-Early Bronze Age onwards. There are solid indications that agriculture was already practiced in the area for about 1000 years prior to this time period <xref ref-type="bibr" rid="pone.0067726-DeCupere1">[47]</xref>, <xref ref-type="bibr" rid="pone.0067726-Helbaek1">[48]</xref>. Yet, it is very likely that higher populations sizes and an increase in the number of settlements from that time onward can explain why the predominant settlement in valleys is only detected in our dataset since the Late Chalcolithic-Early Bronze Age due to higher statistical power. Abundance of good land for agriculture, however, may not have been the only motivation for settling in valleys as other advantages such as the availability of resources such as good hunting grounds, wild plants, clay sources <xref ref-type="bibr" rid="pone.0067726-Esin1">[49]</xref>, <xref ref-type="bibr" rid="pone.0067726-Hodder1">[50]</xref> or mobility and communication <xref ref-type="bibr" rid="pone.0067726-Baird1">[51]</xref> may have been important. Areas dominated by badlands and marshland seem to have been avoided. While swamps may offer good hunting grounds for waterfowl as seen during the Neolithic period of Çatalhöyük <xref ref-type="bibr" rid="pone.0067726-Russel1">[52]</xref> and could be used for collecting wetland plants <xref ref-type="bibr" rid="pone.0067726-Hillman1">[53]</xref>, this type of land is unsuitable for agriculture and has the additional disadvantage that it can act as an important source of disease vectors such as mosquitoes transmitting malaria and other diseases <xref ref-type="bibr" rid="pone.0067726-Heratsi1">[54]</xref>, <xref ref-type="bibr" rid="pone.0067726-Dale1">[55]</xref>.</p>
+</sec><sec id="s4b">
+<title>Spatial Processes</title>
+<p>Besides environmental filtering, our analyses show clear evidence of spatial clustering independent of the considered environmental variables. In fact, the majority of explained variation was described by pure spatial variation. A similar observation was made for the Early Neolithic settlement pattern in Thessaly, Greece <xref ref-type="bibr" rid="pone.0067726-Perls1">[56]</xref>. This pattern may arise due to different processes. First of all, it can be an important indication for expansion of settlements into areas which, according to our models, would be deemed suboptimal and even unsuitable in terms of environmental conditions linked to resources. It is possible that these settled areas were not self sustaining and persisted by importing resources from elsewhere. This, however, is contradicted by current ideas on human settlements at that time which are assumed to be self supporting <xref ref-type="bibr" rid="pone.0067726-Dring1">[57]</xref>. The presence of sites under suboptimal environmental conditions might point towards a non-domestic/non-agricultural function of these sites as sanctuaries <xref ref-type="bibr" rid="pone.0067726-Peatfield1">[58]</xref>, cemeteries <xref ref-type="bibr" rid="pone.0067726-Vandam2">[59]</xref>, artisanal workshops <xref ref-type="bibr" rid="pone.0067726-BalkanAtli1">[60]</xref> or even temporary camps for transhumant herdsman<xref ref-type="bibr" rid="pone.0067726-Yalnkaya1">[61]</xref>. Secondly, individuals might also choose not to settle in presumed optimal areas close to certain critical resources if this means that they are further away from other resources. Under such conditions it could be more efficient to settle in apparently suboptimal localities that are situated at reasonable distances from a set of resources <xref ref-type="bibr" rid="pone.0067726-Hodder1">[50]</xref>. Thirdly, spatial grouping of settlements can be promoted because of inherent benefits such as increased protection, better risk management in times of crop failure when communities can rely on one another <xref ref-type="bibr" rid="pone.0067726-Halstead1">[62]</xref>, improved interactions and exchange of knowledge and goods <xref ref-type="bibr" rid="pone.0067726-Renfrew1">[63]</xref> and, lastly, social advantages such as the establishment of marriage networks <xref ref-type="bibr" rid="pone.0067726-Lehmann1">[64]</xref>, <xref ref-type="bibr" rid="pone.0067726-Wobst1">[65]</xref> and the opportunity to engage in social gatherings and communal events like feasting <xref ref-type="bibr" rid="pone.0067726-Dring2">[66]</xref>, <xref ref-type="bibr" rid="pone.0067726-Hayden1">[67]</xref>. Finally, spatial clustering may be associated with environmental characteristics that were not or could not be considered in this study. This scenario is likely since a considerable amount of relevant environmental information for human settlement during the considered time periods cannot be inferred based on recent observations. Current knowledge on historic conditions is notoriously incomplete and, as a result, it is possible that, for instance, environmental conditions that used to be spatially clustered in the past will now be described by spatial variables and detected as pure spatial variation.</p>
+<p>Spatial variables were selected describing both large and small scale correlation. In general artefacts were typically clustered at scales smaller than 1–2 km with 75% of the MEM spatial descriptors that were retained after forward selection corresponding to correlation at scales &lt;2 km. This indicates that typical inter-settlement distances were probably larger than this threshold ranging from anywhere between 1 and several km, a distance which matches well with commonly accepted estimates of the distance that can be covered while walking during one day <xref ref-type="bibr" rid="pone.0067726-Lee1">[68]</xref>. Nonetheless, despite this, sequential analysis of the variation in the response dataset explained by blocks of 10 MEMs corresponding to increasing spatial scales revealed higher levels of explained variation by large scale MEM’s (typically &gt;20 km) even when correcting for environmental variation. Aggregation at this scale could result from different processes including the outward spread of a population from a certain centre of origin <xref ref-type="bibr" rid="pone.0067726-Slatkin1">[12]</xref> or can be the result of the presence of certain unknown resources as discussed higher up.</p>
+</sec><sec id="s4c">
+<title>Spatio-environmental Covariation</title>
+<p>While we found unique effects of environmental conditions, independent of spatial variables [E] as well as unique effects of spatial correlation independent of similarities in environmental conditions [S], some variation was explained by spatio-environmental covariation, i.e. the variation that is explained jointly by space and environment [S<bold><italic>∩</italic></bold>E]. As a result, one cannot unequivocally attribute this explained variation to spatial or environmental processes. Often, environmental conditions themselves will be clustered in space resulting in a correlation between environmental similarity and spatial proximity, which is captured by the [S<bold><italic>∩</italic></bold>E] component in the analyses. In the current study this component seems to be less important than pure spatial variation but more important than pure environmental variation. Such a pattern was anticipated since particularly at larger spatial scales environmentally similar conditions tend to be spatially clustered <xref ref-type="bibr" rid="pone.0067726-Nhiwatiwa1">[26]</xref>.</p>
+</sec><sec id="s4d">
+<title>Historic Factors</title>
+<p>Overall, our results not only reflect spatial but also temporal autocorrelation. In the absence of strong environmental change or important demographic events such as disease outbreaks or wars, it is logical that suitable localities will remain settled throughout the history of an area. Additionally, social and ideological elements such as ancestral worship and location bound ideologies <xref ref-type="bibr" rid="pone.0067726-Hodder1">[50]</xref>, <xref ref-type="bibr" rid="pone.0067726-Baird1">[51]</xref> can contribute to persistence of settlements in the same location. Indeed, artefact data suggested that settlement patterns during preceding time periods were generally a good indicator of settlement patterns in the different time periods considered in this study. What is more, taking historic patterns into account led to models that explained up to 6% more variation in settlement patterns than models that did not take this into account. For most considered time periods history had a significant unique effect on settlement patterns, both independent of spatial and environmental variation. This does not hold true for the A-CH period. This discrepancy is due to a chronological gap in the dataset just before this period, as artefacts from the Middle to Late Bronze Ages as well as from Early Iron Age were very scarce probably reflecting a very low level of human activity in the area. Finally, since ultimately earlier settlement patterns are affected by space and environment (resulting in autocorrelation) it is no surprise that a substantial proportion of variation [E<bold>∩</bold>S<bold>∩</bold>H] was jointly explained by space, environment and history.</p>
+</sec><sec id="s4e">
+<title>Stochasticity and Unexplained Variation</title>
+<p>The large proportion of unexplained variation can be due to several factors. First of all, a high proportion of unexplained variation is typical for this type of multivariate analyses <xref ref-type="bibr" rid="pone.0067726-Cottenie1">[69]</xref>. Not all settlements will have been detected and not all environmental variables that are of potential concern such as the proximity of important ancient sources of minerals such as clay or obsidian could be quantified <xref ref-type="bibr" rid="pone.0067726-BalkanAtli1">[60]</xref>. Secondly, the relatively low density of human populations at that time ensures that a lot of areas which are suitable for settlement remained unsettled. As such, in terms of potential settlement, the dataset is highly unsaturated with a disproportionately large amount of empty cells and a very small amount of occupied cells. Therefore it is striking that despite a relatively small signal/noise ratio important and generally highly statistically significant patterns emerge which may reflect different deterministic drivers of human settlement. Finally, besides noise, the unexplained fraction also includes all variation generated by stochastic processes as well as rational motivations of people independent of the spatial proxies for responsible processes considered in this study.</p>
+</sec><sec id="s4f">
+<title>Perspectives</title>
+<p>Overall, this study illustrates how an integration of historical, local and regional processes can contribute to a better understanding of patterns of human settlements and may generate novel hypotheses. Specifically for the studied region, this study showed that, although there are some changes, the dominant drivers of human settlement implicated by the studied correlates have remained much the same during the studied periods. One could argue that the inclusion of large numbers of MEM gives a large weight to space in models. However, since this issue is largely resolved due to the use the use of adjusted r square values <xref ref-type="bibr" rid="pone.0067726-PeresNeto1">[25]</xref>, the method is suitable for comparative analyses. As such, if applied correctly, MEM based variation partitioning provides a powerful tool for comparative analyses among different regions and even for large scale meta-analyses covering many datasets <xref ref-type="bibr" rid="pone.0067726-Cottenie1">[69]</xref>. The MEM approach allows to detect presence of spatial structure in their datasets and identify relevant spatial scales, enabling researchers to identify whether these can be attributed to environmental filtering or environment independent processes related to migration and history. Nonetheless, particularly explaining patterns of clustering independent of environmental conditions in terms of responsible processes remains an important challenge.</p>
+</sec></sec><sec id="s5">
+<title>Supporting Information</title>
+<supplementary-material id="pone.0067726.s001" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0067726.s001" position="float" xlink:type="simple"><label>Figure S1</label><caption>
+<p><bold>Examples of Moran’s eigenvector maps corresponding to different spatial scales.</bold> Overview of 10 Moran’s eigenvector maps (MEM’s) illustrating the increasingly smaller spatial scales described by MEM’s with increasing ranks. Red represents positive peaks of the spatial wave functions, while blue corresponds to negative dips.</p>
+<p>(TIF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0067726.s002" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0067726.s002" position="float" xlink:type="simple"><label>Table S1</label><caption>
+<p><bold>Overview of the different trace artefacts indicative for the presence of humans during certain time periods.</bold></p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0067726.s003" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0067726.s003" position="float" xlink:type="simple"><label>Table S2</label><caption>
+<p><bold>Overview of environmental variables included in redundancy analysis models.</bold></p>
+<p>(DOCX)</p>
+</caption></supplementary-material><supplementary-material id="pone.0067726.s004" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" xlink:href="info:doi/10.1371/journal.pone.0067726.s004" position="float" xlink:type="simple"><label>Table S3</label><caption>
+<p><bold>Overview of different MEM variables retained in redundancy analysis models after forward selection for each of the seven considered time periods.</bold> Numbers correspond with the rank (R) of each of the generated MEMs with a positive Moran’s I (range: 1 - 3264). λ corresponds to the wavelength of each MEM expressed in km. Smaller wavelengths correspond to increasingly smaller scales of spatial clustering.</p>
+<p>(DOCX)</p>
+</caption></supplementary-material></sec></body>
+<back>
+<ack>
+<p>The archaeological survey was conducted by the Sagalassos Archaeological Research Project, under the supervision of prof. dr. Marc Waelkens and prof. dr. Jeroen Poblome. The authors would like thank Joeri Theelen of the Sagalassos Project for GIS assistance and Falko Buschke of the Laboratory of Aquatic Ecology, Evolution and Conservation for valuable feedback during discussions. Pierre Legendre and David Angeler kindly provided helpful comments on an earlier draft of this manuscript.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0067726-Sokal1"><label>1</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sokal</surname><given-names>RR</given-names></name>, <name name-style="western"><surname>Oden</surname><given-names>NL</given-names></name> (<year>1978</year>) <article-title>Spatial autocorrelation in biology. 1. Methodology</article-title>. <source>Biological Journal of the Linnean Society</source> <volume>10</volume>: <fpage>199</fpage>–<lpage>228</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Sokal2"><label>2</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sokal</surname><given-names>RR</given-names></name>, <name name-style="western"><surname>Oden</surname><given-names>NL</given-names></name> (<year>1978</year>) <article-title>Spatial autocorrelation in biology.2. Some biological implications and applications of evolutionary and ecological interest</article-title>. <source>Biological Journal of the Linnean Society</source> <volume>10</volume>: <fpage>229</fpage>–<lpage>249</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Tilman1"><label>3</label>
+<mixed-citation publication-type="other" xlink:type="simple">Tilman D, Kareiva PM, editors (1997) Spatial Ecology. The role of space in population dynamics and interspecific interactions. Princeton, NJ: Princeton University Press.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Chase1"><label>4</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chase</surname><given-names>JM</given-names></name> (<year>2003</year>) <article-title>Community assembly: when should history matter?</article-title> <source>Oecologia</source> <volume>136</volume>: <fpage>489</fpage>–<lpage>498</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Leibold1"><label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Leibold</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Holyoak</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Mouquet</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Amarasekare</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Chase</surname><given-names>JM</given-names></name>, <etal>et al</etal>. (<year>2004</year>) <article-title>The metacommunity concept: a framework for multi-scale community ecology</article-title>. <source>Ecology Letters</source> <volume>7</volume>: <fpage>601</fpage>–<lpage>613</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Winegardner1"><label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Winegardner</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Jones</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Ng</surname><given-names>ISY</given-names></name>, <name name-style="western"><surname>Siqueira</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Cottenie</surname><given-names>K</given-names></name> (<year>2012</year>) <article-title>The terminology of metacommunity concept</article-title>. <source>Trends in Ecology and Evolution</source> <volume>27</volume>: <fpage>253</fpage>–<lpage>254</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Kuussaari1"><label>7</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kuussaari</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Bommarco</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Heikkinen</surname><given-names>RK</given-names></name>, <name name-style="western"><surname>Helm</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Krauss</surname><given-names>J</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Extinction debt: a challenge for biodiversity conservation</article-title>. <source>Trends in Ecology &amp; Evolution</source> <volume>24</volume>: <fpage>564</fpage>–<lpage>571</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-McNeill1"><label>8</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>McNeill</surname><given-names>WH</given-names></name> (<year>1984</year>) <article-title>Human Migration in Historical Perspective</article-title>. <source>Population and Development Review</source> <volume>10</volume>: <fpage>1</fpage>–<lpage>18</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Brown1"><label>9</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Brown</surname><given-names>JH</given-names></name>, <name name-style="western"><surname>Kodric-Brown</surname><given-names>A</given-names></name> (<year>1977</year>) <article-title>Turnover rates in insular biogeography - effect of immigration on extinction</article-title>. <source>Ecology</source> <volume>58</volume>: <fpage>445</fpage>–<lpage>449</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Vanschoenwinkel1"><label>10</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Vanschoenwinkel</surname><given-names>B</given-names></name>, <name name-style="western"><surname>De Vries</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Seaman</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Brendonck</surname><given-names>L</given-names></name> (<year>2007</year>) <article-title>The role of metacommunity processes in shaping invertebrate rock pool communities along a dispersal gradient</article-title>. <source>Oikos</source> <volume>116</volume>: <fpage>1255</fpage>–<lpage>1266</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Luis1"><label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Luis</surname><given-names>JR</given-names></name>, <name name-style="western"><surname>Rowold</surname><given-names>DJ</given-names></name>, <name name-style="western"><surname>Regueiro</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Caeiro</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Cinnioğlu</surname><given-names>C</given-names></name>, <etal>et al</etal>. (<year>2004</year>) <article-title>The Levant versus the Horn of Africa: Evidence for Bidirectional Corridors of Human Migrations</article-title>. <source>The American Journal of Human Genetics</source> <volume>74</volume>: <fpage>532</fpage>–<lpage>544</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Slatkin1"><label>12</label>
+<mixed-citation publication-type="other" xlink:type="simple">Slatkin M, Excoffier L (2012) Serial founder effects during range expansion: a spatial analog of genetic drift. Genetics.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Angeler1"><label>13</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Angeler</surname><given-names>DG</given-names></name>, <name name-style="western"><surname>Viedma</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Moreno</surname><given-names>J</given-names></name> (<year>2009</year>) <article-title>Statistical performance and information content of time lag analysis and redundancy analysis in time series modeling</article-title>. <source>Ecology</source> <volume>90</volume>: <fpage>3245</fpage>–<lpage>3257</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Logue1"><label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Logue</surname><given-names>JB</given-names></name>, <name name-style="western"><surname>Mouquet</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Peter</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Hillebrand</surname><given-names>H</given-names></name> (<year>2011</year>) <collab xlink:type="simple">Metacommunity Working Group</collab> (<year>2011</year>) <article-title>Empirical approaches to metacommunities: a review and comparison with theory</article-title>. <source>Trends in Ecology &amp; Evolution</source> <volume>26</volume>: <fpage>482</fpage>–<lpage>491</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Johnson1"><label>15</label>
+<mixed-citation publication-type="other" xlink:type="simple">Johnson M, Perlès C (2004) An overview of Neolithic settlement patterns in eastern Thessaly. In: Cherry J, Scarre C, Shennan S, editors. Explaining Social Change: Studies In Honour Of Colin Renfrew. Cambridge: McDonald Institute for Archaeological Research. 65–81.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Kowalewski1"><label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kowalewski</surname><given-names>S</given-names></name> (<year>2008</year>) <article-title>Regional Settlement Pattern Studies</article-title>. <source>Journal of Archaeological Research</source> <volume>16</volume>: <fpage>225</fpage>–<lpage>285</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Fernandes1"><label>17</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fernandes</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Geeven</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Soetens</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Klontza-Jaklova</surname><given-names>V</given-names></name> (<year>2012</year>) <article-title>Deletion/Substitution/Addition (DSA) model selection algorithm applied to the study of archaeological settlement patterning</article-title>. <source>Journal of Archaeological Science</source> <volume>38</volume>: <fpage>2293</fpage>–<lpage>2300</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Mantel1"><label>18</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mantel</surname><given-names>N</given-names></name> (<year>1967</year>) <article-title>Detection of disease clustering and a generalized regression approach Cancer Research</article-title>. <volume>27</volume>: <fpage>209</fpage>–<lpage>220</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Guillot1"><label>19</label>
+<mixed-citation publication-type="other" xlink:type="simple">Guillot G, Rousset F (2013) Dismantling the Mantel tests. Methods in Ecology and Evolution. In Press.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Legendre1"><label>20</label>
+<mixed-citation publication-type="other" xlink:type="simple">Legendre P, Legendre L (1998) Numerical Ecology: Elsevier.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Borcard1"><label>21</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Borcard</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Legendre</surname><given-names>P</given-names></name> (<year>2002</year>) <article-title>All-scale spatial analysis of ecological data by means of principal coordinates of neighbour matrices</article-title>. <source>Ecological Modelling</source> <volume>153</volume>: <fpage>51</fpage>–<lpage>68</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Borcard2"><label>22</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Borcard</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Legendre</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Avois-Jacquet</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Tuomisto</surname><given-names>H</given-names></name> (<year>2004</year>) <article-title>Dissecting the spatial structure of ecological data at multiple scales</article-title>. <source>Ecology</source> <volume>85</volume>: <fpage>1826</fpage>–<lpage>1832</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Legendre2"><label>23</label>
+<mixed-citation publication-type="other" xlink:type="simple">Legendre P, Legendre L (2012) Numerical ecology. Oxford: Elsevier.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Tir1"><label>24</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tir</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Diehl</surname><given-names>PF</given-names></name> (<year>1998</year>) <article-title>Demographic Pressure and Interstate Conflict: Linking Population Growth and Density to Militarized Disputes and Wars, 1930–89</article-title>. <source>Journal of Peace Research</source> <volume>35</volume>: <fpage>319</fpage>–<lpage>339</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-PeresNeto1"><label>25</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Peres-Neto</surname><given-names>PR</given-names></name>, <name name-style="western"><surname>Legendre</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Dray</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Borcard</surname><given-names>D</given-names></name> (<year>2006</year>) <article-title>Variation partitioning of species data matrices: Estimation and comparison of fractions</article-title>. <source>Ecology</source> <volume>87</volume>: <fpage>2614</fpage>–<lpage>2625</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Nhiwatiwa1"><label>26</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nhiwatiwa</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Brendonck</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Waterkeyn</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Vanschoenwinkel</surname><given-names>B</given-names></name> (<year>2011</year>) <article-title>The importance of landscape and habitat properties in explaining instantaneous and long-term distributions of large branchiopods in subtropical temporary pans</article-title>. <source>Freshwater Biology</source> <volume>56</volume>: <fpage>1992</fpage>–<lpage>2008</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Verhaert1"><label>27</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Verhaert</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Similox-Tohon</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Vandycke</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Sintubin</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Muchez</surname><given-names>P</given-names></name> (<year>2006</year>) <article-title>Different stress states in the Burdur-Isparta region (SW Turkey) since Late Miocene times: a reflection of a transient stress regime</article-title>. <source>Journal of structural geology</source> <volume>28</volume>: <fpage>1067</fpage>–<lpage>1083</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-SimiloxTohon1"><label>28</label>
+<mixed-citation publication-type="other" xlink:type="simple">Similox-Tohon D, Fernandez-Alonso M, Waelkens M, Muchez P, Sintubin M (2008) Testing diagnostic geomorphological criteria of active normal faults in the Burdur-Isparta region (SW Turkey). In: Degryse P, Waelkens M, editors. Sagalassos VI Geo and Bio-Archaeology at Sagalassos and in its Territory. Leuven: Leuven University Press. 53–74.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Kis1"><label>29</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kis</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Erol</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Senel</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Ergin</surname><given-names>M</given-names></name> (<year>1989</year>) <article-title>Preliminary results of radiocarbon dating of coastal depostis of the Pleistocene pluvial Lake of Burdur, Turkey</article-title>. <source>Journal of Islamic Academy of Sciences</source> <volume>2–1</volume>: <fpage>37</fpage>–<lpage>40</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Mellaart1"><label>30</label>
+<mixed-citation publication-type="other" xlink:type="simple">Mellaart J (1970) Excavations at Hacilar. Edinburgh: University press</mixed-citation>
+</ref>
+<ref id="pone.0067726-Duru1"><label>31</label>
+<mixed-citation publication-type="other" xlink:type="simple">Duru R (1994) Kuruçay Höyük I: 1978–1988 kazılarının sunuçları neolitik ve erken kalkolitik çağ yerleşmeleri/Results of the excavations 1978–1988: the Neolithic and Early Chalcolithic periods. Ankara: Türk Tarih Kurumu Basımevi.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Duru2"><label>32</label>
+<mixed-citation publication-type="other" xlink:type="simple">Duru R (1996) Kuruçay Höyük II: 1978–1988 kazılarının sonuçları geç kalkolitik ve ilk tunç çağı yerleşmeleri/Results of the excavations 1978–1988: the Late Chalcolithic and the Early Bronze settlements. Ankara: Türk Tarih Kurumu Basımevi.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Umurtak1"><label>33</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Umurtak</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Duru</surname><given-names>R</given-names></name> (<year>2012</year>) <article-title><italic>Excavations at Hacılar Büyük Höyük 2011</italic></article-title>. <source>News of Archaeology from Anatolia’s Mediterranean Areas</source> <volume>10</volume>: <fpage>21</fpage>–<lpage>26</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Kaptijn1"><label>34</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kaptijn</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Vandam</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Poblome</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Waelkens</surname><given-names>M</given-names></name> (<year>2012</year>) <article-title>Inhabiting the Plain of Burdur: 2010 and 2011 Sagalassos Project Survey</article-title>. <source>News of Archaeology from Anatolia’s Mediterranean Areas</source> <volume>10</volume>: <fpage>142</fpage>–<lpage>147</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Vandam1"><label>35</label>
+<mixed-citation publication-type="other" xlink:type="simple">Vandam R, Kaptijn E, Poblome J, Waelkens M (2013) The 2012 archaeological survey of the Sagalassos Archaeological Survey Project. News of Archaeology from Anatolia’s Mediterranean Areas 13. In Press.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Borcard3"><label>36</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Borcard</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Legendre</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Drapeau</surname><given-names>P</given-names></name> (<year>1992</year>) <article-title>Partialling out the Spatial Component of Ecological Variation</article-title>. <source>Ecology</source> <volume>73</volume>: <fpage>1045</fpage>–<lpage>1055</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Blanchet1"><label>37</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Blanchet</surname><given-names>FG</given-names></name>, <name name-style="western"><surname>Legendre</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Borcard</surname><given-names>D</given-names></name> (<year>2008</year>) <article-title>Forward selection of explanatory variables</article-title>. <source>Ecology</source> <volume>89</volume>: <fpage>2623</fpage>–<lpage>2632</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Borcard4"><label>38</label>
+<mixed-citation publication-type="other" xlink:type="simple">Borcard D, Gillet F, Legendre P (2011) Numerical ecology with R; Gentleman R, Hornik K, Parmigiani GG, editors. New York: Springer.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Legendre3"><label>39</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Legendre</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Gallagher</surname><given-names>ED</given-names></name> (<year>2001</year>) <article-title>Ecologically meaningful transformations for ordination of species data</article-title>. <source>Oecologia</source> <volume>129</volume>: <fpage>271</fpage>–<lpage>280</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Dray1"><label>40</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dray</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Legendre</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Peres-Neto</surname><given-names>PR</given-names></name> (<year>2006</year>) <article-title>Spatial modelling: a comprehensive framework for principal coordinate analysis of neighbour matrices (PCNM)</article-title>. <source>Ecological Modelling</source> <volume>196</volume>: <fpage>483</fpage>–<lpage>493</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Moran1"><label>41</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Moran</surname><given-names>PAP</given-names></name> (<year>1950</year>) <article-title>Notes on continuous stochastic phenomena</article-title>. <source>Biometrika</source> <volume>37</volume>: <fpage>17</fpage>–<lpage>23</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Vanschoenwinkel2"><label>42</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Vanschoenwinkel</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Gielen</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Vandewaerde</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Seaman</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Brendonck</surname><given-names>L</given-names></name> (<year>2008</year>) <article-title>Relative importance of different dispersal vectors for small aquatic invertebrates in a rock pool metacommunity</article-title>. <source>Ecography</source> <volume>31</volume>: <fpage>567</fpage>–<lpage>577</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Binckley1"><label>43</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Binckley</surname><given-names>CA</given-names></name>, <name name-style="western"><surname>Resetarits</surname><given-names>WJ</given-names></name> (<year>2005</year>) <article-title>Habitat selection determines abundance, richness and species composition of beetles in aquatic communities</article-title>. <source>Biology Letters</source> <volume>1</volume>: <fpage>370</fpage>–<lpage>374</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Keegan1"><label>44</label>
+<mixed-citation publication-type="other" xlink:type="simple">Keegan W, F., Diamond JM (1987) Colonization of islands by humans: a biogeographical perspective. Advanced in Archaeological Method and Theory, VOL 19: Academic Press.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Johnson2"><label>45</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Johnson</surname><given-names>M</given-names></name> (<year>1996</year>) <article-title>Water, animals and agricultural technology: A study of settlement patterns and economic change in Neolithic southern Greece</article-title>. <source>Oxford journal of archaeology</source> <volume>15</volume>: <fpage>267</fpage>–<lpage>295</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Jones1"><label>46</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jones</surname><given-names>G</given-names></name> (<year>2005</year>) <article-title>Garden cultivation of staple crops and its implications for settlement location and continuity</article-title>. <source>World Archaeology</source> <volume>37</volume>: <fpage>164</fpage>–<lpage>176</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-DeCupere1"><label>47</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>De Cupere</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Duru</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Umurtak</surname><given-names>G</given-names></name> (<year>2008</year>) <article-title><italic>Animal husbandry at the Early Neolithic to Early Bronze Age site of Bademagacı</italic></article-title>. <source>Archaeozoology of the Near East</source> <volume>VIII</volume>: <fpage>367</fpage>–<lpage>406</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Helbaek1"><label>48</label>
+<mixed-citation publication-type="other" xlink:type="simple">Helbaek H (1970) The plant husbandry of Hacilar: a study of cultivation and domestication. In: Mellaart J, editor. Excavations at Hacilar. Edinburgh: University Press.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Esin1"><label>49</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Esin</surname><given-names>U</given-names></name> (<year>1998</year>) <article-title>The aceramic site of Asikli Höyük and its ecological conditions based on its floral and faunal remains</article-title>. <source>Tuba-Ar</source> <volume>1</volume>: <fpage>95</fpage>–<lpage>104</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Hodder1"><label>50</label>
+<mixed-citation publication-type="other" xlink:type="simple">Hodder I (2005) Peopling Çatalhöyük and its landscape. In: Hodder I, editor. Inhabiting Çatalhöyük: reports from the 1995–99 seasons. Cambridge: McDonald Inst of Archaeological. 1–30.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Baird1"><label>51</label>
+<mixed-citation publication-type="other" xlink:type="simple">Baird D (2005) The history of settlement and social landscapes in the Early Holocene in the Çatalhöyük area. In: Hodder I, editor. Çatalhöyük perspectives: reports from the 1995–99 seasons. Cambridge: McDonald Institute for Archaeological Research. 55–74.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Russel1"><label>52</label>
+<mixed-citation publication-type="other" xlink:type="simple">Russel N, McGowan K (2005) Çatalhöyük bird bones. In: Hodder I, editor. Inhabiting Çatalhöyük Reports from the 1995–1999 seasons. Cambridge: McDonald Institute for Archaeological Research. 99–110.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Hillman1"><label>53</label>
+<mixed-citation publication-type="other" xlink:type="simple">Hillman GC (1989) Late Palaeolithic plant foods from Wadi Kubbaniya in Upper Egypt: dietary diversity, infant weaning, and seasonality in a riverine environment. In: Harris D, Hillman GC, editors. Foraging and Farming: the evolution of plant exploitation. London: Unwin Hyman. 207–239.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Heratsi1"><label>54</label>
+<mixed-citation publication-type="other" xlink:type="simple">Heratsi M (1184) Jermants mkhitarutium (The consolation of fevers).</mixed-citation>
+</ref>
+<ref id="pone.0067726-Dale1"><label>55</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dale</surname><given-names>PER</given-names></name>, <name name-style="western"><surname>Connely</surname><given-names>R</given-names></name> (<year>2012</year>) <article-title>Wetlands and human health: an overview</article-title>. <volume>30</volume>: <fpage>165</fpage>–<lpage>171</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Perls1"><label>56</label>
+<mixed-citation publication-type="other" xlink:type="simple">Perlès C (2001) The early Neolithic in Greece: the first farming communities in Europe: Cambridge University Press.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Dring1"><label>57</label>
+<mixed-citation publication-type="other" xlink:type="simple">Düring BS (2011) The Prehistory of Asia Minor. From Complex Hunter-gatherers to Early Urban Societies. Cambridge: University Press. 1–360 p.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Peatfield1"><label>58</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Peatfield</surname><given-names>A</given-names></name> (<year>1992</year>) <article-title>Rural ritual in Bronze Age Crete: the peak sanctuary at Atsipadhes</article-title>. <source>Cambridge Archaeological Journal</source> <volume>2</volume>: <fpage>59</fpage>–<lpage>87</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Vandam2"><label>59</label>
+<mixed-citation publication-type="other" xlink:type="simple">Vandam R, Kaptijn E, Poblome J, Waelkens M (2013) The Bronze Age cemetery of Gâvur Evi Tepesi, SW Turkey. Anatolica. In Press.</mixed-citation>
+</ref>
+<ref id="pone.0067726-BalkanAtli1"><label>60</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Balkan-Atli</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Binder</surname><given-names>D</given-names></name> (<year>2001</year>) <article-title>Les ateliers de taille d’obsidienne: Fouilles de Kömürcü-Kaletepe</article-title>. <source>Anatolica Antiqua</source> <volume>9</volume>: <fpage>193</fpage>–<lpage>205</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Yalnkaya1"><label>61</label>
+<mixed-citation publication-type="other" xlink:type="simple">Yalçınkaya I, Otte M, Kozlowski J, Bar-Yosef O, editors (2002) La grotte d’Öküzini : évolution du Paléolithique final du sud-ouest de l’Anatolie Liège: Eraul 96.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Halstead1"><label>62</label>
+<mixed-citation publication-type="other" xlink:type="simple">Halstead P (1989) The economy has a normal surplus: economic stability and social change among early farming communities of Thessaly, Greece. Bad Year Economics: cultural responses to risk and uncertainty: 68–80.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Renfrew1"><label>63</label>
+<mixed-citation publication-type="other" xlink:type="simple">Renfrew C (1986) Introduction: Peer polity interaction and socio-political change; Renfrew C, Cherry J, editors. Cambridge: CUP Archive.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Lehmann1"><label>64</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lehmann</surname><given-names>G</given-names></name> (<year>2004</year>) <article-title>Reconstructing the social landscape of early Israel: Rural marriage alliances in the central hill country</article-title>. <source>Tel Aviv: Journal of the Institute of Archaeology of Tel Aviv University</source> <volume>2004</volume>: <fpage>141</fpage>–<lpage>193</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Wobst1"><label>65</label>
+<mixed-citation publication-type="other" xlink:type="simple">Wobst HM (1974) Boundary conditions for Paleolithic social systems: a simulation approach. American Antiquity: 147–178.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Dring2"><label>66</label>
+<mixed-citation publication-type="other" xlink:type="simple">Düring BS (2006) Constructing communities: clustered neighbourhood settlements of the Central Anatolian Neolithic ca. 8500–5500 Cal. BC: Nederlands Instituut voor het Nabije Oosten.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Hayden1"><label>67</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hayden</surname><given-names>B</given-names></name> (<year>1990</year>) <article-title>Nimrods, piscators, pluckers, and planters: the emergence of food production</article-title>. <source>Journal of anthropological archaeology</source> <volume>9</volume>: <fpage>31</fpage>–<lpage>69</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Lee1"><label>68</label>
+<mixed-citation publication-type="other" xlink:type="simple">Lee RB (1969)! Kung Bushman subsistence: an input-output analysis. In: Vayda AP, editor. Environment and Cultural Behavior. New York: Natural History Press.</mixed-citation>
+</ref>
+<ref id="pone.0067726-Cottenie1"><label>69</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cottenie</surname><given-names>K</given-names></name> (<year>2005</year>) <article-title>Integrating environmental and spatial processes in ecological community dynamics</article-title>. <source>Ecology Letters</source> <volume>8</volume>: <fpage>1175</fpage>–<lpage>1182</lpage>.</mixed-citation>
+</ref>
+</ref-list></back>
+</article>
